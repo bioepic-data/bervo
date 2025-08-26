@@ -2,7 +2,10 @@
 
 (Formerly the EcoSIM Ontology)
 
-**EXPERIMENTAL**
+## Browse
+
+<https://bioportal.bioontology.org/ontologies/BERVO>
+(OLS coming soon)
 
 ## Editing BERVO
 
