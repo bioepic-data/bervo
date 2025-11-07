@@ -6,6 +6,7 @@ Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(bervo:=<https://w3id.org/bervo/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/bervo.owl>
@@ -1647,6 +1648,15 @@ Declaration(NamedIndividual(<https://w3id.org/bervo/BERVO_8000297>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
+Declaration(AnnotationProperty(bervo:BERVO_has_unit))
+Declaration(AnnotationProperty(bervo:BERVO_Qualifier))
+Declaration(AnnotationProperty(bervo:BERVO_Attribute))
+Declaration(AnnotationProperty(bervo:BERVO_measured_in))
+Declaration(AnnotationProperty(bervo:BERVO_measurement_of))
+Declaration(AnnotationProperty(bervo:BERVO_Context))
+Declaration(AnnotationProperty(bervo:BERVO_has_value_type))
+Declaration(ObjectProperty(bervo:BERVO_involves_taxa))
+Declaration(ObjectProperty(bervo:BERVO_involves_chemicals))
 ############################
 #   Annotation Properties
 ############################
