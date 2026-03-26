@@ -7,6 +7,13 @@ Assigns appropriate BERVO:8 attribute concept terms to Column 15 (attributes)
 import csv
 import re
 from collections import defaultdict
+from pathlib import Path
+
+ONTOLOGY_DIR = Path(__file__).resolve().parents[1]
+
+
+def ontology_path(filename):
+    return ONTOLOGY_DIR / filename
 
 # Valid attribute terms - these match BERVO:8 concept labels
 # Based on actual BERVO:8 entries in the ontology
@@ -319,9 +326,9 @@ def assign_attributes(input_file, output_file):
     return changes, stats
 
 def main():
-    input_file = 'bervo-src.csv'
-    output_file = 'bervo-src-with-attributes.csv'
-    log_file = 'attributes_changes_log.txt'
+    input_file = ontology_path('bervo-src.csv')
+    output_file = ontology_path('bervo-src-with-attributes.csv')
+    log_file = ontology_path('attributes_changes_log.txt')
     
     print("Starting attribute assignment...")
     changes, stats = assign_attributes(input_file, output_file)

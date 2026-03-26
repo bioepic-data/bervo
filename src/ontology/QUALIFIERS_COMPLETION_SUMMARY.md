@@ -90,7 +90,7 @@ The comprehensive qualifier assignment script used pattern matching to assign qu
 - `bervo-src.csv` - Updated with complete qualifier assignments
 - `bervo-src-before-qualifiers.csv` - Backup of original file
 - `qualifiers_changes_log.txt` - Detailed log of 1,930 changes
-- `comprehensive_qualifiers_fixer.py` - Python script used for assignment
+- `utils/comprehensive_qualifiers_fixer.py` - Python script used for assignment
 
 ## Validation
 

@@ -6,11 +6,18 @@ Assigns contexts based on label, attribute, measured_in, and measurement_of anal
 
 import csv
 import re
+from pathlib import Path
+
+ONTOLOGY_DIR = Path(__file__).resolve().parents[1]
+
+
+def ontology_path(filename):
+    return ONTOLOGY_DIR / filename
 
 def get_bervo_labels():
     """Get all existing BERVO concept labels from the CSV."""
     labels = {}
-    with open('bervo-src.csv', 'r') as f:
+    with open(ontology_path('bervo-src.csv'), 'r', encoding='utf-8') as f:
         reader = csv.reader(f)
         for i, row in enumerate(reader):
             if i < 2:  # skip headers
@@ -174,7 +181,7 @@ def process_csv():
     bervo_labels = get_bervo_labels()
     
     rows = []
-    with open('bervo-src.csv', 'r') as f:
+    with open(ontology_path('bervo-src.csv'), 'r', encoding='utf-8') as f:
         reader = csv.reader(f)
         for row in reader:
             rows.append(row)
@@ -215,7 +222,7 @@ def process_csv():
             unchanged += 1
     
     # Write output
-    with open('bervo-src-with-contexts.csv', 'w', newline='') as f:
+    with open(ontology_path('bervo-src-with-contexts.csv'), 'w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)
         writer.writerows(rows)
     

@@ -1,8 +1,11 @@
 import csv
 import re
+from pathlib import Path
+
+ONTOLOGY_DIR = Path(__file__).resolve().parents[1]
 
 # Read the file
-with open('bervo-src.csv', 'r', encoding='utf-8') as f:
+with open(ONTOLOGY_DIR / 'bervo-src.csv', 'r', encoding='utf-8') as f:
     reader = csv.reader(f)
     rows = list(reader)
 
@@ -82,7 +85,7 @@ for i, row in enumerate(data_rows):
 print(f"\n\nTotal changes made: {changes_made}")
 
 # Write back
-with open('bervo-src_TEMP.csv', 'w', encoding='utf-8', newline='') as f:
+with open(ONTOLOGY_DIR / 'bervo-src_TEMP.csv', 'w', encoding='utf-8', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(header)
     writer.writerow(metadata)

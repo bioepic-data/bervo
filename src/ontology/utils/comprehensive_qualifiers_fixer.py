@@ -7,6 +7,13 @@ Assigns appropriate BERVO:8 concept terms to Column 14 (qualifiers)
 import csv
 import re
 from collections import defaultdict
+from pathlib import Path
+
+ONTOLOGY_DIR = Path(__file__).resolve().parents[1]
+
+
+def ontology_path(filename):
+    return ONTOLOGY_DIR / filename
 
 # Valid qualifier terms (text, not IDs) - these match BERVO:8 concept labels
 # Based on actual BERVO:8 entries in the ontology
@@ -215,9 +222,9 @@ def assign_qualifiers(input_file, output_file):
     return changes, stats
 
 def main():
-    input_file = 'bervo-src.csv'
-    output_file = 'bervo-src-with-qualifiers.csv'
-    log_file = 'qualifiers_changes_log.txt'
+    input_file = ontology_path('bervo-src.csv')
+    output_file = ontology_path('bervo-src-with-qualifiers.csv')
+    log_file = ontology_path('qualifiers_changes_log.txt')
     
     print("Starting qualifier assignment...")
     changes, stats = assign_qualifiers(input_file, output_file)

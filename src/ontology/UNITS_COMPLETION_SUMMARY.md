@@ -114,7 +114,7 @@ Examples:
 - `bervo-src.csv` - **Updated main file with all units**
 - `bervo-src.csv.backup` - Backup of original file before changes
 - `units_changes_log.txt` - Detailed log of all changes from first two batches
-- `comprehensive_units_fixer.py` - Python script used for automated fixes
+- `utils/comprehensive_units_fixer.py` - Python script used for automated fixes
 - `UNITS_COMPLETION_SUMMARY.md` - This summary document
 
 ## Verification

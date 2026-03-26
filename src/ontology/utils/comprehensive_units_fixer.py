@@ -7,6 +7,13 @@ Handles ~1,130 entries missing units in Column 13 (has_units).
 import csv
 import re
 import sys
+from pathlib import Path
+
+ONTOLOGY_DIR = Path(__file__).resolve().parents[1]
+
+
+def ontology_path(filename):
+    return ONTOLOGY_DIR / filename
 
 def extract_unit_from_definition(definition):
     """Extract unit patterns from definition text."""
@@ -122,7 +129,7 @@ def infer_units_from_label(label, category, definition=""):
 
 def main():
     # Read the CSV file
-    with open('bervo-src.csv', 'r', encoding='utf-8') as f:
+    with open(ontology_path('bervo-src.csv'), 'r', encoding='utf-8') as f:
         reader = csv.reader(f)
         rows = list(reader)
     
@@ -201,7 +208,7 @@ def main():
             })
     
     # Write updated CSV
-    with open('bervo-src-with-units.csv', 'w', encoding='utf-8', newline='') as f:
+    with open(ontology_path('bervo-src-with-units.csv'), 'w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(header)
         writer.writerow(metadata)
@@ -237,7 +244,7 @@ def main():
             print(f"\n... and {len(no_change_reasons) - 30} more")
     
     # Write detailed log
-    with open('units_changes_log.txt', 'w', encoding='utf-8') as f:
+    with open(ontology_path('units_changes_log.txt'), 'w', encoding='utf-8') as f:
         f.write("BERVO Units Assignment Detailed Log\n")
         f.write("="*80 + "\n\n")
         f.write(f"Changes made: {len(changes)}\n\n")

@@ -18,6 +18,8 @@ make export-google-sheet
 make compare-google-sheet
 ```
 
+Legacy curation helper scripts live in `utils/`. They are not part of the standard ODK build.
+
 For more details on ontology management, please see the 
 [OBO Academy Tutorials](https://oboacademy.github.io/obook/), the
 [OBO tutorial](https://github.com/jamesaoverton/obo-tutorial) or the [Gene Ontology Editors Tutorial](https://go-protege-tutorial.readthedocs.io/en/latest/)

@@ -7,6 +7,13 @@ Assigns appropriate BERVO:8 concept terms to Column 16 (measured_ins)
 import csv
 import re
 from collections import defaultdict
+from pathlib import Path
+
+ONTOLOGY_DIR = Path(__file__).resolve().parents[1]
+
+
+def ontology_path(filename):
+    return ONTOLOGY_DIR / filename
 
 # Valid measured_in terms - these match BERVO:8 concept labels
 VALID_MEASURED_INS = {
@@ -267,9 +274,9 @@ def assign_measured_ins(input_file, output_file):
     return changes, stats
 
 def main():
-    input_file = 'bervo-src.csv'
-    output_file = 'bervo-src-with-measured-ins.csv'
-    log_file = 'measured_ins_changes_log.txt'
+    input_file = ontology_path('bervo-src.csv')
+    output_file = ontology_path('bervo-src-with-measured-ins.csv')
+    log_file = ontology_path('measured_ins_changes_log.txt')
     
     print("Starting measured_ins assignment...")
     changes, stats = assign_measured_ins(input_file, output_file)

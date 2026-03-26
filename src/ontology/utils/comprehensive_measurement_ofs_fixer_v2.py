@@ -6,11 +6,18 @@ Assigns measurement_of based on label content analysis.
 
 import csv
 import re
+from pathlib import Path
+
+ONTOLOGY_DIR = Path(__file__).resolve().parents[1]
+
+
+def ontology_path(filename):
+    return ONTOLOGY_DIR / filename
 
 def get_bervo_labels():
     """Get all existing BERVO concept labels from the CSV."""
     labels = {}
-    with open('bervo-src.csv', 'r') as f:
+    with open(ontology_path('bervo-src.csv'), 'r', encoding='utf-8') as f:
         reader = csv.reader(f)
         for i, row in enumerate(reader):
             if i < 2:  # skip headers
@@ -37,68 +44,58 @@ def extract_measurement_of(label, attribute):
     label_lower = label.lower()
     
     # Skip certain types that generally don't have measurement_of
-    if any(term in label_lower for term in [
-        'equilibrium constant',
-        'rate constant',
-        'climate zone',
-        'biome',
-        'sequence',
-        'genome',
-        'binary',
-        'initial number',
-        'distance between',
-        'media addition',
-        'partitioning',
-        'numerator',
-        'denominator',
-        'thermal adaptation',
-        'plant maturity',
-        'plant water stress',
-        'self shading',
-        'maturity',
-        'phenological progress',
-        'constraint',
-        'harvest',
-        'leaf area index',
-        'secondary axes',
-        'time step',
-        'day',
-        'altitude',
-        'grain number',
-        'coefficient'
-    ]):
-        return 'NA'
+    skip_terms = [
+        'equilibrium constant', 'rate constant', 'climate zone', 'biome',
+        'sequence', 'genome', 'binary', 'initial number', 'distance between',
+        'media addition', 'numerator', 'denominator', 'thermal adaptation',
+        'plant maturity', 'plant water stress', 'self shading', 'maturity',
+        'phenological progress', 'constraint', 'harvest index', 'leaf area index',
+        'secondary axes', 'time step', 'day of', 'altitude', 'grain number',
+        'coefficient', 'index', 'counter', 'flag', 'partitioning of'
+    ]
     
-    # If attribute is NA, likely no measurement_of
-    if attribute == 'NA':
-        # But check for some exceptions where substance is still clear
-        if any(term in label_lower for term in [
-            'water vapor', 'salt', 'phosphorus', 'element', 'carbon', 'nitrogen'
-        ]):
-            pass  # Continue to normal processing
-        else:
+    for term in skip_terms:
+        if term in label_lower:
             return 'NA'
     
-    # Compound patterns (chemical formulas, gases, etc.)
+    # If attribute is NA, usually no measurement_of unless substance is obvious
+    if attribute == 'NA':
+        # Check for some clear substances even without attribute
+        obvious_substances = [
+            'water vapor', 'salt', 'phosphorus', 'nitrogen', 'element',
+            'co2', 'carbon dioxide', 'methane', 'ammonia', 'ammonium',
+            'nitrate', 'phosphate'
+        ]
+        has_obvious = any(term in label_lower for term in obvious_substances)
+        if not has_obvious:
+            return 'NA'
+    
+    # Ratios measure the ratio itself, not individual elements
+    if 'ratio' in label_lower or ':' in label_lower:
+        ratio_patterns = {
+            r'nitrogen\s+to\s+carbon|n\s*:\s*c|c\s*:\s*n|carbon\s+to\s+nitrogen': 'Nitrogen to carbon ratio',
+            r'phosphorus\s+to\s+carbon|p\s*:\s*c|c\s*:\s*p|carbon\s+to\s+phosphorus': 'Phosphorous to carbon ratio',
+            r'nitrogen\s+to\s+phosphorus|n\s*:\s*p|p\s*:\s*n|phosphorus\s+to\s+nitrogen': 'Nitrogen to phosphorus ratio',
+        }
+        for pattern, ratio_name in ratio_patterns.items():
+            if re.search(pattern, label_lower):
+                return ratio_name
+        # Other ratios don't have measurement_of
+        if 'ratio' in label_lower:
+            return 'NA'
+    
+    # Compound patterns (chemical formulas, gases, etc.) - check first as most specific
     compounds = {
-        r'\bco2\b': 'Carbon dioxide',
-        r'\bcarbon dioxide\b': 'Carbon dioxide',
-        r'\bch4\b': 'Methane',
-        r'\bmethane\b': 'Methane',
-        r'\bn2o\b': 'Nitrous oxide',
-        r'\bnitrous oxide\b': 'Nitrous oxide',
-        r'\bno2\b': 'Nitrogen dioxide',
-        r'\bnitrogen dioxide\b': 'Nitrogen dioxide',
-        r'\bno3\b': 'Nitrate',
-        r'\bnitrate': 'Nitrate',
-        r'\bnh4\b': 'Ammonium',
-        r'\bammonium': 'Ammonium',
-        r'\bnh3\b': 'Ammonia',
-        r'\bammonia\b': 'Ammonia',
+        r'\bco2\b|carbon\s+dioxide': 'Carbon dioxide',
+        r'\bch4\b|\bmethane\b': 'Methane',
+        r'\bn2o\b|nitrous\s+oxide': 'Nitrous oxide',
+        r'\bno2\b|nitrogen\s+dioxide': 'Nitrogen dioxide',
+        r'\bno3\b|nitrate': 'Nitrate',
+        r'\bnh4\b|ammonium': 'Ammonium',
+        r'\bnh3\b|\bammonia\b': 'Ammonia',
         r'\burea\b': 'Urea',
-        r'\bpo4\b': 'Phosphate',
-        r'\bphosphate': 'Phosphate',
-        r'\bwater vapor\b': 'Water vapor',
+        r'\bpo4\b|phosphate': 'Phosphate',
+        r'water\s+vapor': 'Water vapor',
         r'\bh2o\b': 'Water',
     }
     
@@ -106,26 +103,26 @@ def extract_measurement_of(label, attribute):
         if re.search(pattern, label_lower):
             return compound
     
-    # Organic compounds - check before general elements
-    organic = {
-        r'\bdissolved organic carbon\b|\bdoc\b': 'Dissolved organic carbon',
-        r'\bdissolved organic nitrogen\b|\bdon\b': 'Dissolved organic nitrogen',
-        r'\bdissolved organic phosphorus\b|\bdop\b': 'Dissolved organic phosphorus',
-        r'\bdissolved inorganic carbon\b|\bdic\b': 'Dissolved inorganic carbon',
-        r'\bdissolved inorganic nitrogen\b|\bdin\b': 'Dissolved inorganic nitrogen',
-        r'\bdissolved inorganic phosphorus\b|\bdip\b': 'Dissolved inorganic phosphorus',
-        r'\bsoil organic matter\b|\bsom\b': 'Soil organic matter',
-        r'\borganic matter\b': 'Organic matter',
-        r'\borganic carbon\b': 'Organic carbon',
+    # Organic compounds - check before general elements to avoid over-matching
+    organic_patterns = {
+        r'dissolved\s+organic\s+carbon|\bdoc\b': 'Dissolved organic carbon',
+        r'dissolved\s+organic\s+nitrogen|\bdon\b': 'Dissolved organic nitrogen',
+        r'dissolved\s+organic\s+phosphorus|\bdop\b': 'Dissolved organic phosphorus',
+        r'dissolved\s+inorganic\s+carbon|\bdic\b': 'Dissolved inorganic carbon',
+        r'dissolved\s+inorganic\s+nitrogen|\bdin\b': 'Dissolved inorganic nitrogen',
+        r'dissolved\s+inorganic\s+phosphorus|\bdip\b': 'Dissolved inorganic phosphorus',
+        r'soil\s+organic\s+matter|\bsom\b': 'Soil organic matter',
+        r'organic\s+matter': 'Organic matter',
+        r'organic\s+carbon': 'Organic carbon',
         r'\bcarboxyl\b': 'Carboxyl',
     }
     
-    for pattern, org in organic.items():
+    for pattern, org in organic_patterns.items():
         if re.search(pattern, label_lower):
             return org
     
     # Element patterns - after checking for compounds and organics
-    elements = {
+    element_patterns = {
         r'\bcarbon\b': 'Carbon',
         r'\bnitrogen\b': 'Nitrogen',
         r'\bphosphorus\b': 'Phosphorus',
@@ -142,12 +139,12 @@ def extract_measurement_of(label, attribute):
         r'\bmanganese\b': 'Manganese',
     }
     
-    for pattern, element in elements.items():
+    for pattern, element in element_patterns.items():
         if re.search(pattern, label_lower):
             return element
     
     # Biological materials - check after elements to avoid over-matching
-    bio_materials = {
+    bio_patterns = {
         r'\bleaf\b|\bleaves\b': 'Leaf',
         r'\broot\b|\broots\b': 'Root',
         r'\bbranch\b|\bbranches\b': 'Branch',
@@ -167,12 +164,12 @@ def extract_measurement_of(label, attribute):
         r'\bsoil\b': 'Soil',
     }
     
-    for pattern, material in bio_materials.items():
+    for pattern, material in bio_patterns.items():
         if re.search(pattern, label_lower):
             return material
     
     # Physical substances
-    substances = {
+    substance_patterns = {
         r'\bwater\b': 'Water',
         r'\bair\b': 'Air',
         r'\benergy\b': 'Energy',
@@ -186,42 +183,27 @@ def extract_measurement_of(label, attribute):
         r'\bsediment\b': 'Sediment',
     }
     
-    for pattern, substance in substances.items():
+    for pattern, substance in substance_patterns.items():
         if re.search(pattern, label_lower):
             return substance
-        if 'nitrogen to carbon' in label_lower or 'n:c' in label_lower or 'c:n' in label_lower:
-            return 'Nitrogen to carbon ratio'
-        elif 'phosphorus to carbon' in label_lower or 'p:c' in label_lower or 'c:p' in label_lower:
-            return 'Phosphorous to carbon ratio'
-        elif 'nitrogen to phosphorus' in label_lower or 'n:p' in label_lower or 'p:n' in label_lower:
-            return 'Nitrogen to phosphorus ratio'
-        else:
-            return 'NA'
     
     # If attribute suggests a specific measurement_of
     if attribute in ['Respiration', 'Fixation', 'Photosynthesis']:
         # These typically measure carbon or CO2
-        if 'carbon dioxide' in label_lower or 'co2' in label_lower:
-            return 'Carbon dioxide'
-        elif 'methane' in label_lower or 'ch4' in label_lower:
-            return 'Methane'
-        else:
-            return 'Carbon'
+        return 'Carbon'
     
     # Temperature measures heat/energy
     if attribute == 'Temperature':
         return 'Heat'
     
-    # Flux, concentration, mass of something specific
-    if attribute in ['Flux', 'Concentration', 'Mass', 'Amount', 'Content']:
-        # Try to find what's being measured
-        # Look for "of X" patterns
-        of_match = re.search(r'\bof\s+([a-z][a-z\s]+?)(?:\s+in|\s+at|\s+from|\s+to|$)', label_lower)
+    # Flux, concentration, mass, etc. without specific substance mentioned
+    if attribute in ['Flux', 'Concentration', 'Mass', 'Amount', 'Content', 'Volume']:
+        # Try to find what's being measured from "of X" patterns
+        of_match = re.search(r'\bof\s+([a-z][a-z\s]+?)(?:\s+in|\s+at|\s+from|\s+to|\s+during|$)', label_lower)
         if of_match:
             substance = of_match.group(1).strip()
-            # Check if this matches known substances
-            substance_title = substance.title()
-            return substance_title
+            # Return as title case
+            return substance.title()
     
     # Default to NA if nothing matches
     return 'NA'
@@ -231,7 +213,7 @@ def process_csv():
     bervo_labels = get_bervo_labels()
     
     rows = []
-    with open('bervo-src.csv', 'r') as f:
+    with open(ontology_path('bervo-src.csv'), 'r', encoding='utf-8') as f:
         reader = csv.reader(f)
         for row in reader:
             rows.append(row)
@@ -270,13 +252,13 @@ def process_csv():
             unchanged += 1
     
     # Write output
-    with open('bervo-src-with-measurement-ofs.csv', 'w', newline='') as f:
+    with open(ontology_path('bervo-src-with-measurement-ofs.csv'), 'w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)
         writer.writerows(rows)
     
     print(f"Completed! Changes: {changes}, Unchanged: {unchanged}")
-    print(f"\nTop 30 measurement_of assignments:")
-    for measurement, count in sorted(measurement_counts.items(), key=lambda x: x[1], reverse=True)[:30]:
+    print(f"\nTop 40 measurement_of assignments:")
+    for measurement, count in sorted(measurement_counts.items(), key=lambda x: x[1], reverse=True)[:40]:
         print(f"  {count:4d}  {measurement}")
     
     print(f"\nTotal unique measurements assigned: {len(measurement_counts)}")
