@@ -8,7 +8,6 @@
   const bioportalUrl = root.dataset.bioportalUrl;
   const summaryEl = document.getElementById("bervo-browser-summary");
   const searchEl = document.getElementById("bervo-search");
-  const typeFilterEl = document.getElementById("bervo-type-filter");
   const categoryFilterEl = document.getElementById("bervo-category-filter");
   const resultCountEl = document.getElementById("bervo-result-count");
   const resultsEl = document.getElementById("bervo-results");
@@ -20,8 +19,9 @@
     filtered: [],
     selectedId: null,
     query: "",
-    type: "",
     category: "",
+    entryById: new Map(),
+    entryByKey: new Map(),
   };
 
   function esc(value) {
@@ -36,12 +36,24 @@
     return new Intl.NumberFormat().format(value);
   }
 
-  function chips(items) {
+  function resolveEntry(term) {
+    return state.entryByKey.get(String(term).toLowerCase()) || null;
+  }
+
+  function renderChip(item, linkable) {
+    const targetEntry = linkable ? resolveEntry(item) : null;
+    if (targetEntry) {
+      return `<button type="button" class="bervo-browser__chip bervo-browser__chip--link" data-related-term-id="${esc(targetEntry.id)}">${esc(item)}</button>`;
+    }
+    return `<span class="bervo-browser__chip">${esc(item)}</span>`;
+  }
+
+  function chips(items, linkable = false) {
     if (!items || items.length === 0) {
       return '<p class="bervo-browser__empty">None recorded</p>';
     }
     return `<div class="bervo-browser__chip-list">${items
-      .map((item) => `<span class="bervo-browser__chip">${esc(item)}</span>`)
+      .map((item) => renderChip(item, linkable))
       .join("")}</div>`;
   }
 
@@ -52,6 +64,47 @@
       )
       .join("");
     selectEl.innerHTML = options;
+  }
+
+  function textBlock(title, value) {
+    if (!value) {
+      return "";
+    }
+    return `
+      <div class="bervo-browser__detail-block">
+        <h3>${esc(title)}</h3>
+        <p>${esc(value)}</p>
+      </div>
+    `;
+  }
+
+  function listBlock(title, items, linkable = false) {
+    if (!items || items.length === 0) {
+      return "";
+    }
+    return `
+      <div class="bervo-browser__detail-block">
+        <h3>${esc(title)}</h3>
+        ${chips(items, linkable)}
+      </div>
+    `;
+  }
+
+  function navigateToTerm(termId) {
+    if (!state.entryById.has(termId)) {
+      return;
+    }
+
+    const visibleInCurrentResults = state.filtered.some((entry) => entry.id === termId);
+    if (!visibleInCurrentResults) {
+      state.query = "";
+      state.category = "";
+      searchEl.value = "";
+      categoryFilterEl.value = "";
+    }
+
+    state.selectedId = termId;
+    applyFilters();
   }
 
   function renderSummary(summary) {
@@ -72,9 +125,8 @@
     const query = state.query.trim().toLowerCase();
     state.filtered = state.data.entries.filter((entry) => {
       const matchesQuery = !query || entry.search_blob.includes(query);
-      const matchesType = !state.type || entry.type === state.type;
       const matchesCategory = !state.category || entry.category === state.category;
-      return matchesQuery && matchesType && matchesCategory;
+      return matchesQuery && matchesCategory;
     });
 
     if (!state.filtered.some((entry) => entry.id === state.selectedId)) {
@@ -139,22 +191,32 @@
       return;
     }
 
+    const definitionBlock = entry.definition
+      ? `
+        <div class="bervo-browser__detail-block">
+          <h3>Definition</h3>
+          <p>${esc(entry.definition)}</p>
+          ${entry.definition_source ? `<p class="bervo-browser__detail-note">${esc(entry.definition_source)}</p>` : ""}
+        </div>
+      `
+      : "";
     const detailBlocks = [
-      ["Definition", entry.definition || "No definition recorded."],
-      ["Comment", entry.comment || "No comment recorded."],
-      ["EcoSIM Variable Name", entry.ecosim_variable_name || "Not recorded"],
-      ["File Name", entry.file_name || "Not recorded"],
-      ["Units", entry.has_units || "Not recorded"],
-      ["Definition Source", entry.definition_source || "Not recorded"],
+      textBlock("Comment", entry.comment),
+      textBlock("EcoSIM Variable Name", entry.ecosim_variable_name),
+      textBlock("File Name", entry.file_name),
+      textBlock("Units", entry.has_units),
+      listBlock("Parents", entry.parents),
+      listBlock("Attributes", entry.attributes, true),
+      listBlock("Qualifiers", entry.qualifiers, true),
+      listBlock("Measured In", entry.measured_ins, true),
+      listBlock("Measurement Of", entry.measurement_ofs, true),
+      listBlock("Contexts", entry.contexts, true),
+      listBlock("Value Types", entry.value_types, true),
+      listBlock("Related Synonyms", entry.related_synonyms),
+      listBlock("Exact Synonyms", entry.exact_synonyms),
+      listBlock("DbXrefs", entry.dbxrefs),
     ]
-      .map(
-        ([title, value]) => `
-          <div class="bervo-browser__detail-block">
-            <h3>${esc(title)}</h3>
-            <p>${esc(value)}</p>
-          </div>
-        `
-      )
+      .filter(Boolean)
       .join("");
 
     detailEl.innerHTML = `
@@ -171,65 +233,28 @@
 
       <div class="bervo-browser__chip-list" style="margin-bottom: 1rem;">
         ${entry.type ? `<span class="bervo-browser__tag">${esc(entry.type)}</span>` : ""}
-        ${entry.category ? `<span class="bervo-browser__tag">${esc(entry.category)}</span>` : ""}
+        ${entry.category ? renderChip(entry.category, true).replace("bervo-browser__chip", "bervo-browser__tag bervo-browser__tag--link") : ""}
         ${entry.group_curated ? `<span class="bervo-browser__tag">${esc(entry.group_curated)}</span>` : ""}
         ${entry.definition_curated ? `<span class="bervo-browser__tag">${esc(entry.definition_curated)}</span>` : ""}
       </div>
 
+      ${definitionBlock}
+
       <div class="bervo-browser__detail-grid">
         ${detailBlocks}
-        <div class="bervo-browser__detail-block">
-          <h3>Parents</h3>
-          ${chips(entry.parents)}
-        </div>
-        <div class="bervo-browser__detail-block">
-          <h3>Attributes</h3>
-          ${chips(entry.attributes)}
-        </div>
-        <div class="bervo-browser__detail-block">
-          <h3>Qualifiers</h3>
-          ${chips(entry.qualifiers)}
-        </div>
-        <div class="bervo-browser__detail-block">
-          <h3>Measured In</h3>
-          ${chips(entry.measured_ins)}
-        </div>
-        <div class="bervo-browser__detail-block">
-          <h3>Measurement Of</h3>
-          ${chips(entry.measurement_ofs)}
-        </div>
-        <div class="bervo-browser__detail-block">
-          <h3>Contexts</h3>
-          ${chips(entry.contexts)}
-        </div>
-        <div class="bervo-browser__detail-block">
-          <h3>Value Types</h3>
-          ${chips(entry.value_types)}
-        </div>
-        <div class="bervo-browser__detail-block">
-          <h3>Related Synonyms</h3>
-          ${chips(entry.related_synonyms)}
-        </div>
-        <div class="bervo-browser__detail-block">
-          <h3>Exact Synonyms</h3>
-          ${chips(entry.exact_synonyms)}
-        </div>
-        <div class="bervo-browser__detail-block">
-          <h3>DbXrefs</h3>
-          ${chips(entry.dbxrefs)}
-        </div>
       </div>
     `;
+
+    detailEl.querySelectorAll("[data-related-term-id]").forEach((button) => {
+      button.addEventListener("click", () => {
+        navigateToTerm(button.dataset.relatedTermId);
+      });
+    });
   }
 
   function bindEvents() {
     searchEl.addEventListener("input", (event) => {
       state.query = event.target.value;
-      applyFilters();
-    });
-
-    typeFilterEl.addEventListener("change", (event) => {
-      state.type = event.target.value;
       applyFilters();
     });
 
@@ -240,10 +265,8 @@
 
     clearEl.addEventListener("click", () => {
       state.query = "";
-      state.type = "";
       state.category = "";
       searchEl.value = "";
-      typeFilterEl.value = "";
       categoryFilterEl.value = "";
       applyFilters();
     });
@@ -256,10 +279,19 @@
         throw new Error(`HTTP ${response.status}`);
       }
       state.data = await response.json();
+      state.entryById = new Map(state.data.entries.map((entry) => [entry.id, entry]));
+      state.entryByKey = new Map();
+      state.data.entries.forEach((entry) => {
+        if (entry.id) {
+          state.entryByKey.set(entry.id.toLowerCase(), entry);
+        }
+        if (entry.label) {
+          state.entryByKey.set(entry.label.toLowerCase(), entry);
+        }
+      });
       state.filtered = state.data.entries.slice();
       state.selectedId = state.filtered[0] ? state.filtered[0].id : null;
 
-      populateSelect(typeFilterEl, state.data.summary.types, "types");
       populateSelect(categoryFilterEl, state.data.summary.categories, "categories");
       renderSummary(state.data.summary);
       bindEvents();

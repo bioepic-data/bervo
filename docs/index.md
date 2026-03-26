@@ -19,9 +19,9 @@ The Biological and Environmental Research Variable Ontology is a repo-first onto
   <div class="bervo-browser__hero">
     <div>
       <p class="bervo-browser__eyebrow">Ecological Ontology Explorer</p>
-      <h1>Browse BERVO terms, concepts, and properties on the docs home page.</h1>
+      <h1>Browse BERVO terms, concepts, and properties.</h1>
       <p class="bervo-browser__lede">
-        Search BERVO IDs, labels, definitions, categories, parentage, units, and curation fields in a lightweight static interface built for GitHub Pages.
+        Search BERVO IDs, labels, definitions, categories, parentage, units, and more.
       </p>
     </div>
     <div class="bervo-browser__hero-links">
@@ -41,13 +41,7 @@ The Biological and Environmental Research Variable Ontology is a repo-first onto
         <input id="bervo-search" type="search" placeholder="Search IDs, labels, definitions, categories..." />
       </label>
 
-      <div class="bervo-browser__filter-grid">
-        <label class="bervo-browser__field">
-          <span>Type</span>
-          <select id="bervo-type-filter">
-            <option value="">All types</option>
-          </select>
-        </label>
+      <div class="bervo-browser__filter-grid bervo-browser__filter-grid--single">
         <label class="bervo-browser__field">
           <span>Category</span>
           <select id="bervo-category-filter">
