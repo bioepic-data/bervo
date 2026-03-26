@@ -1,0 +1,152 @@
+# Contexts Column Completion Summary
+
+## Overview
+Successfully completed the contexts column (Column 18) for all BERVO ontology entries.
+
+## New BERVO Concepts Created
+
+Added 5 new BERVO:8 concepts for missing context values:
+
+| ID | Label | Definition |
+|----|-------|------------|
+| BERVO:8000553 | C4 carbon fixation | The process of fixing carbon dioxide in C4 plants. |
+| BERVO:8000554 | Dewpoint | The temperature at which air becomes saturated with water vapor and dew begins to form. |
+| BERVO:8000555 | Infection | The process of being infected by a pathogen or forming a symbiotic relationship (e.g., nodule infection). |
+| BERVO:8000556 | Non-band | Application or measurement outside of fertilizer bands in soil. |
+| BERVO:8000557 | Subsurface irrigation | The application of water below the soil surface through buried irrigation systems. |
+
+## Statistics
+
+### Before
+- With contexts: 235 (10.0%)
+- NA: 1 (0.0%)
+- Empty: 2,110 (90.0%)
+- **Total entries: 2,346**
+
+### After
+- With contexts: 657 (28.0%)
+- NA: 1,689 (72.0%)
+- Empty: 0 (0.0%)
+- **Total entries: 2,346**
+
+### Improvement
+- **422 new context values assigned**
+- **1,688 additional NA values assigned** (for entries where context doesn't apply)
+- **2,110 empty entries eliminated**
+- **100% completion achieved**
+
+## Top Context Assignments
+
+The most common contexts identified:
+
+| Count | Context | Description |
+|-------|---------|-------------|
+| 84 | Canopy | Canopy-level processes and measurements |
+| 60 | Precipitation | Precipitation-related variables |
+| 51 | Surface irrigation | Surface irrigation application |
+| 45 | Band | Fertilizer band application |
+| 36 | Surface | Surface-level measurements |
+| 35 | Snowpack | Snowpack-related processes |
+| 32 | Growth | Growth and development processes |
+| 31 | Fertilizer | Fertilizer application context |
+| 31 | Subsurface | Subsurface measurements |
+| 31 | Non-band | Non-band fertilizer application |
+| 29 | Runoff | Runoff processes |
+| 28 | Soil | Soil processes |
+| 23 | Atmosphere | Atmospheric context |
+| 18 | Irrigation | General irrigation |
+| 16 | Ecosystem | Ecosystem-level processes |
+| 16 | Surface litter | Surface litter layer |
+| 15 | Infection | Infection/nodulation processes |
+| 15 | Fire | Fire-related variables |
+| 13 | Root | Root-specific processes |
+| 13 | Subsurface irrigation | Subsurface irrigation application |
+
+## Assignment Strategy
+
+The script used a hierarchical pattern-matching approach based on:
+
+1. **Label content analysis**: Keywords indicating specific contexts
+   - Ecosystem-level: "ecosystem", "biome"
+   - Irrigation types: "surface irrigation", "subsurface irrigation"
+   - Fertilization: "band", "non-band", "fertilizer"
+   - Weather/climate: "precipitation", "rainfall", "snowpack"
+   - Fire: "fire"
+   - Growth: "growth stage", "phenological"
+
+2. **Spatial contexts**:
+   - Surface vs subsurface
+   - Canopy, root, branch specific locations
+   - Boundary layer
+
+3. **Process contexts**:
+   - Photosynthesis pathways (C4 carbon fixation)
+   - Infection/nodulation
+   - Runoff, precipitation
+
+4. **Measured_in inference**: When label doesn't explicitly state context, inferred from measured_in column:
+   - Soil processes (mineralization, decomposition)
+   - Plant processes (photosynthesis, transpiration)
+   - Root processes (uptake, fixation)
+   - Canopy processes
+
+## Examples of Assignments
+
+### Irrigation Contexts
+- "Surface irrigation magnesium hydrogen phosphate concentration" → Surface irrigation
+- "Irrigation flux into surface litter" → Irrigation
+- "Subsurface irrigation nitrate concentration" → Subsurface irrigation
+
+### Band vs Non-band
+- "Autotrophic microbial nitrate demand in band soil" → Band
+- "Phosphate concentration non-band micropore" → Non-band
+- "Current inorganic phosphate demand in band by all microbes" → Fertilizer
+
+### Weather/Climate
+- "Change factor for precipitation" → Precipitation
+- "Snowpack water equivalent" → Snowpack
+- "Surface runoff flux" → Runoff
+
+### Biological Processes
+- "Root layer nodule element" → Infection
+- "Growth yield" → Growth
+- "Clumping factor for self-shading in canopy layer" → Canopy
+
+### Standard Conditions
+- "Nitrogen solubility coefficient at standard ambient temperature" → Standard ambient temperature
+
+### Fire
+- "Plant carbon dioxide emission from fire" → Fire
+
+### NA Assignments (No context applies)
+- "Maximum" → NA
+- "Diameter" → NA
+- "pH" → NA
+- "Rate" → NA (generic rate constant)
+
+## Total Unique Context Values
+
+**47 unique context terms** are now present in the dataset, covering:
+- Spatial contexts (surface, subsurface, canopy, root, etc.)
+- Process contexts (irrigation, fertilization, precipitation, fire, etc.)
+- Ecosystem levels (ecosystem, soil, atmosphere, etc.)
+- Growth and development contexts
+- Environmental conditions (standard ambient temperature, dewpoint)
+
+## Files Created
+
+1. `utils/comprehensive_contexts_fixer.py` - Python script for automated assignment
+2. `bervo-src-before-contexts.csv` - Backup of original file
+3. `contexts_changes_log.txt` - This summary document
+
+## Validation
+
+- ✅ All 2,346 entries now have context values (either specific contexts or NA)
+- ✅ Build test passed: `make bervo-src.csv` successful
+- ✅ 0 empty entries remaining
+- ✅ 100% completion achieved
+- ✅ 5 new BERVO:8 concepts created and added to ontology
+
+## Notes
+
+Some existing context values in the original file (e.g., "Water", "Sodium", "Oxygen" used as contexts) were preserved but may need review as they might be more appropriate as measurement_of values rather than contexts. These represent less than 1% of entries and were already in the dataset prior to this work.

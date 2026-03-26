@@ -9,9 +9,34 @@
 
 ## Editing BERVO
 
-The source of truth for BERVO terms is here: https://docs.google.com/spreadsheets/d/1mS8VVtr-m24vZ7nQUtUbQrN8r-UBy3AwRzTfQsmwVL8/edit?usp=sharing
+The source of truth for BERVO is the repository on this branch.
+
+Editors should update:
+
+- `src/ontology/bervo-src.csv` for the ROBOT template that defines BERVO terms
+- `src/ontology/bervo-edit.owl` for the ODK edit file that imports the generated component
 
 All terms are preceded by the BERVO: prefix.
+
+The Google Sheet is still available as a collaboration artifact:
+
+https://docs.google.com/spreadsheets/d/1mS8VVtr-m24vZ7nQUtUbQrN8r-UBy3AwRzTfQsmwVL8/edit?usp=sharing
+
+However, it is no longer the authoritative source for builds or pull requests. Changes should be proposed in this repository, ideally through a GitHub issue and pull request.
+
+To rebuild the generated source component from the tracked CSV, run:
+
+```bash
+cd src/ontology
+make components/bervo-src.owl
+```
+
+To prepare a CSV for uploading back into Google Sheets, run:
+
+```bash
+cd src/ontology
+make export-google-sheet
+```
 
 ## Methods
 
@@ -41,4 +66,3 @@ These were examined in text format, we then asked Claude to convert to OBO forma
 We curated a handful of OBO stanzas where we linked each parameter to other concepts.
 
 This was loaded into a curategpt database, to serve as in-context examples.
-

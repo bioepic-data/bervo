@@ -1,0 +1,555 @@
+BERVO Attributes Assignment Log
+================================================================================
+
+Total changes: 1522
+
+ID: BERVO:0000000
+Label: Variable
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000001
+Label: Ecosystem net radiation
+Old: Radiation
+New: Flux
+--------------------------------------------------------------------------------
+ID: BERVO:0000013
+Label: Ecosystem harvest
+Old: Harvest
+New: Flux
+--------------------------------------------------------------------------------
+ID: BERVO:0000141
+Label: Cation exchange capacity of soil organic carbon
+Old: (empty)
+New: Capacity
+--------------------------------------------------------------------------------
+ID: BERVO:0000148
+Label: Allocation parameter
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000149
+Label: Minimum fraction of growth allocated to leaf
+Old: (empty)
+New: Fraction
+--------------------------------------------------------------------------------
+ID: BERVO:0000150
+Label: Minimum fraction of growth allocated to petiole
+Old: (empty)
+New: Fraction
+--------------------------------------------------------------------------------
+ID: BERVO:0000153
+Label: Number of hours with no grain filling required for physilogical maturity
+Old: (empty)
+New: Count
+--------------------------------------------------------------------------------
+ID: BERVO:0000154
+Label: Number of hours until full senescence after physl maturity
+Old: (empty)
+New: Count
+--------------------------------------------------------------------------------
+ID: BERVO:0000155
+Label: Maximum storage carbon content for remobiln from stalk, root reserves
+Old: (empty)
+New: Content
+--------------------------------------------------------------------------------
+ID: BERVO:0000156
+Label: Rate const for remobiln to storage from stalk,root reserves
+Old: (empty)
+New: Rate
+--------------------------------------------------------------------------------
+ID: BERVO:0000157
+Label: Minimum ratio of branch or mycorrhizae to root for calculating carbon transfer
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000162
+Label: Specific maintenance respiration rate
+Old: (empty)
+New: Rate
+--------------------------------------------------------------------------------
+ID: BERVO:0000163
+Label: Minimum water potential for organ expansion,extension
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000164
+Label: Minimum stomatal resistance to carbon dioxide
+Old: (empty)
+New: Resistance
+--------------------------------------------------------------------------------
+ID: BERVO:0000165
+Label: Distance behind growing point for secondary roots
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000166
+Label: Minimum average secondary root length
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000167
+Label: Root modulus of elasticity
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000168
+Label: Quantum efficiency
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000169
+Label: Shape parameter for electron transport response to photosynthetically active radiation
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000170
+Label: Electron requirement for carbon dioxide fixation by rubisco
+Old: (empty)
+New: Fixation
+--------------------------------------------------------------------------------
+ID: BERVO:0000171
+Label: Electron requirement for carbon dioxide fixation by PEP carboxylase
+Old: (empty)
+New: Fixation
+--------------------------------------------------------------------------------
+ID: BERVO:0000172
+Label: Ki for C3 leakage from bundle sheath to mesophyll in C4
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000173
+Label: Partition decarboxylation to carbon dioxide in C4
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000174
+Label: Partition leakage to bicarbonate in C4
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000175
+Label: C4 carbon dioxide compensation point
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000179
+Label: Minimum N:C,P:C in leaves relative to max values from PFT file
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000180
+Label: Minimum N:C,P:C in grain relative to max values from PFT file
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000181
+Label: Fraction of stalk area contributing to water, heat flow
+Old: (empty)
+New: Area
+--------------------------------------------------------------------------------
+ID: BERVO:0000182
+Label: Maximum stalk inner radius for tranpsiration
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000184
+Label: Specific volume
+Old: (empty)
+New: Volume
+--------------------------------------------------------------------------------
+ID: BERVO:0000185
+Label: Fraction used to calculate woody fraction of stalk,root
+Old: (empty)
+New: Fraction
+--------------------------------------------------------------------------------
+ID: BERVO:0000189
+Label: Parameter for calculating leaf area expansion
+Old: (empty)
+New: Area
+--------------------------------------------------------------------------------
+ID: BERVO:0000190
+Label: Parameter for calculating petiole extension
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000191
+Label: Parameter for calculating stalk extension
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000192
+Label: Maximum C:N ratio for nonstructural nitrogen transfer
+Old: Carbon to nitrogen ratio
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000193
+Label: Maximum C:P ratio for nonstructural phosphorus transfer
+Old: Carbon to phosphorus ratio
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000194
+Label: Minimum C:N ratio for nonstructural nitrogen transfer
+Old: Carbon to nitrogen ratio
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000195
+Label: Minimum C:P ratio for nonstructural phosphorus transfer
+Old: Carbon to phosphorus ratio
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000196
+Label: Nitrogen fixation yield from carbon oxidation
+Old: (empty)
+New: Fixation
+--------------------------------------------------------------------------------
+ID: BERVO:0000197
+Label: Specific respiration rate by bacterial nitrogen fixers
+Old: (empty)
+New: Rate
+--------------------------------------------------------------------------------
+ID: BERVO:0000198
+Label: Half saturation parameter for nodule maintenance respiration
+Old: (empty)
+New: Respiration
+--------------------------------------------------------------------------------
+ID: BERVO:0000199
+Label: Specific decomposition rate by bacterial N2 fixers
+Old: (empty)
+New: Rate
+--------------------------------------------------------------------------------
+ID: BERVO:0000200
+Label: Parameter to calculate nonstructural C,N,P exchange
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000205
+Label: Minimum fractions for root carbon recycling
+Old: (empty)
+New: Fraction
+--------------------------------------------------------------------------------
+ID: BERVO:0000206
+Label: Maximum fractions for root carbon recycling
+Old: (empty)
+New: Fraction
+--------------------------------------------------------------------------------
+ID: BERVO:0000207
+Label: Maximum fractions for root nitrogen recycling
+Old: (empty)
+New: Fraction
+--------------------------------------------------------------------------------
+ID: BERVO:0000208
+Label: Maximum fractions for root phosphorus recycling
+Old: (empty)
+New: Fraction
+--------------------------------------------------------------------------------
+ID: BERVO:0000209
+Label: Minimum fractions for bacteria carbon recycling
+Old: (empty)
+New: Fraction
+--------------------------------------------------------------------------------
+ID: BERVO:0000210
+Label: Maximum fractions for bacteria carbon recycling
+Old: (empty)
+New: Fraction
+--------------------------------------------------------------------------------
+ID: BERVO:0000211
+Label: Maximum fractions for bacteria nitrogen recycling
+Old: (empty)
+New: Fraction
+--------------------------------------------------------------------------------
+ID: BERVO:0000212
+Label: Maximum fractions for bacteria phosphorus recycling
+Old: (empty)
+New: Fraction
+--------------------------------------------------------------------------------
+ID: BERVO:0000213
+Label: Required hours after physical maturity until start of litterfall
+Old: (empty)
+New: Litterfall
+--------------------------------------------------------------------------------
+ID: BERVO:0000219
+Label: Root partitioning of storage carbon during leafout
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000220
+Label: Shoot partitioning of storage carbon during leafout
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000222
+Label: Maximum fractions for shoot nitrogen recycling
+Old: (empty)
+New: Fraction
+--------------------------------------------------------------------------------
+ID: BERVO:0000223
+Label: Maximum fractions for shoot phosphorus recycling
+Old: (empty)
+New: Fraction
+--------------------------------------------------------------------------------
+ID: BERVO:0000224
+Label: Minimum fractions for shoot carbon recycling
+Old: (empty)
+New: Fraction
+--------------------------------------------------------------------------------
+ID: BERVO:0000225
+Label: Maximum fractions for shoot carbon recycling
+Old: (empty)
+New: Fraction
+--------------------------------------------------------------------------------
+ID: BERVO:0000226
+Label: Number of hours after physiol maturity required for senescence
+Old: (empty)
+New: Count
+--------------------------------------------------------------------------------
+ID: BERVO:0000227
+Label: Number of hours required to initiate remobilization of storage carbon for leafout
+Old: (empty)
+New: Count
+--------------------------------------------------------------------------------
+ID: BERVO:0000229
+Label: Relative primary root sink strength 0.25=shallow,4.0=deep root profile
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000233
+Label: Fertilizer release type from fertilizer input file
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000234
+Label: Soil disturbance type
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000235
+Label: Köppen climate zone
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000247
+Label: Water table flag from site file
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0001838
+Label: Argon diffusivity
+Old: (empty)
+New: Diffusivity
+--------------------------------------------------------------------------------
+ID: BERVO:0001839
+Label: Carbon dioxide diffusivity
+Old: (empty)
+New: Diffusivity
+--------------------------------------------------------------------------------
+ID: BERVO:0001840
+Label: Methane diffusivity
+Old: (empty)
+New: Diffusivity
+--------------------------------------------------------------------------------
+ID: BERVO:0001841
+Label: Oxygen diffusivity
+Old: (empty)
+New: Diffusivity
+--------------------------------------------------------------------------------
+ID: BERVO:0001842
+Label: Nitrogen diffusivity
+Old: (empty)
+New: Diffusivity
+--------------------------------------------------------------------------------
+ID: BERVO:0001843
+Label: Nitrous oxide diffusivity
+Old: (empty)
+New: Diffusivity
+--------------------------------------------------------------------------------
+ID: BERVO:0001844
+Label: Ammonia diffusivity
+Old: (empty)
+New: Diffusivity
+--------------------------------------------------------------------------------
+ID: BERVO:0001845
+Label: Nitrate diffusivity
+Old: (empty)
+New: Diffusivity
+--------------------------------------------------------------------------------
+ID: BERVO:0001846
+Label: Phosphate diffusivity
+Old: (empty)
+New: Diffusivity
+--------------------------------------------------------------------------------
+ID: BERVO:0000291
+Label: Water viscosity
+Old: Viscosity
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000294
+Label: Total plant element balance
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000295
+Label: Cumulative hydrogen gas loss through lateral and lower boundaries
+Old: (empty)
+New: Loss
+--------------------------------------------------------------------------------
+ID: BERVO:0000302
+Label: Total soil heat content
+Old: Heat content
+New: Content
+--------------------------------------------------------------------------------
+ID: BERVO:0000315
+Label: Total evaporation
+Old: Evaporation
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000316
+Label: Total surface runoff
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000323
+Label: Total soil carbon dioxide
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000324
+Label: Total soil nitrogen
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000325
+Label: Canopy autotrophic respiration
+Old: (empty)
+New: Respiration
+--------------------------------------------------------------------------------
+ID: BERVO:0000326
+Label: Net ecosystem carbon dioxide exchange
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000328
+Label: Pft nodule infection
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000329
+Label: Pft cumulative nodule infection
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000331
+Label: Total surface litterfall element
+Old: (empty)
+New: Litterfall
+--------------------------------------------------------------------------------
+ID: BERVO:0000333
+Label: Root uptake of ammonium non-band
+Old: (empty)
+New: Uptake
+--------------------------------------------------------------------------------
+ID: BERVO:0000335
+Label: Vertical profile of root nitrogen fixation
+Old: (empty)
+New: Fixation
+--------------------------------------------------------------------------------
+ID: BERVO:0000340
+Label: Hydrogen phosphate demand in non-band by each root population
+Old: (empty)
+New: Uptake
+--------------------------------------------------------------------------------
+ID: BERVO:0000341
+Label: Hydrogen phosphate demand in band by each root population
+Old: (empty)
+New: Uptake
+--------------------------------------------------------------------------------
+ID: BERVO:0000342
+Label: Element translocated from leaf during senescence
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000343
+Label: Element translocated from sheath during senescence
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000345
+Label: Cumulative total gross carbon dioxide fixation
+Old: (empty)
+New: Fixation
+--------------------------------------------------------------------------------
+ID: BERVO:0000346
+Label: Total structural plant element in litterfall
+Old: (empty)
+New: Litterfall
+--------------------------------------------------------------------------------
+ID: BERVO:0000348
+Label: Cumulative total plant respiration
+Old: (empty)
+New: Respiration
+--------------------------------------------------------------------------------
+ID: BERVO:0000349
+Label: Pft level plant respiration
+Old: (empty)
+New: Respiration
+--------------------------------------------------------------------------------
+ID: BERVO:0000350
+Label: Plant element balance
+Old: (empty)
+New: NA
+--------------------------------------------------------------------------------
+ID: BERVO:0000351
+Label: Plant element litterfall
+Old: (empty)
+New: Litterfall
+--------------------------------------------------------------------------------
+
+... and 1422 more changes
+
+
+Statistics:
+================================================================================
+already_valid: 817
+attribute_Absorptivity: 1
+attribute_Activity: 5
+attribute_Amendment: 2
+attribute_Angle: 1
+attribute_Area: 15
+attribute_Capacity: 16
+attribute_Coefficient: 11
+attribute_Concentration: 4
+attribute_Content: 43
+attribute_Count: 16
+attribute_Density: 5
+attribute_Depth: 10
+attribute_Diffusivity: 12
+attribute_Emission: 2
+attribute_Equilibrium constant: 1
+attribute_Erosion: 11
+attribute_Fixation: 8
+attribute_Flux: 6
+attribute_Fraction: 47
+attribute_Gibbs free energy change: 1
+attribute_Heat flux: 6
+attribute_Height: 1
+attribute_Inhibition constant: 1
+attribute_Litterfall: 6
+attribute_Loss: 13
+attribute_Mass: 25
+attribute_Michaelis constant: 1
+attribute_Mineralization: 5
+attribute_Pressure: 7
+attribute_Primary productivity: 2
+attribute_Production: 5
+attribute_Rate: 35
+attribute_Rate constant: 3
+attribute_Resistance: 6
+attribute_Respiration: 22
+attribute_Solubility: 1
+attribute_Temperature: 24
+attribute_Transmission: 1
+attribute_Uptake: 38
+attribute_Volume: 14
+attribute_Water flux: 10
+changed: 1522
+had_invalid_data: 91
