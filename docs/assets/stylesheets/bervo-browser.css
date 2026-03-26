@@ -1,0 +1,297 @@
+.bervo-browser {
+  --bervo-ink: #1b1c20;
+  --bervo-muted: #56616f;
+  --bervo-line: rgba(27, 28, 32, 0.12);
+  --bervo-panel: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(244, 248, 247, 0.98));
+  --bervo-accent: #0f766e;
+  --bervo-accent-soft: rgba(15, 118, 110, 0.12);
+  --bervo-accent-strong: #0b5f59;
+  color: var(--bervo-ink);
+}
+
+.bervo-browser__hero {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  margin: 0 0 1.25rem;
+  border: 1px solid var(--bervo-line);
+  border-radius: 1.25rem;
+  background:
+    radial-gradient(circle at top right, rgba(15, 118, 110, 0.14), transparent 34%),
+    radial-gradient(circle at bottom left, rgba(191, 219, 254, 0.45), transparent 30%),
+    linear-gradient(135deg, #f9fbfa, #eef5f3);
+}
+
+.bervo-browser__eyebrow {
+  margin: 0 0 0.4rem;
+  color: var(--bervo-accent-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bervo-browser__hero h1 {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.1;
+}
+
+.bervo-browser__lede {
+  margin: 0;
+  max-width: 56rem;
+  color: var(--bervo-muted);
+}
+
+.bervo-browser__hero-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.bervo-browser__summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
+.bervo-browser__card {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--bervo-line);
+  border-radius: 1rem;
+  background: var(--bervo-panel);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.05);
+}
+
+.bervo-browser__card-label {
+  margin: 0 0 0.35rem;
+  color: var(--bervo-muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.bervo-browser__card-value {
+  margin: 0;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+.bervo-browser__layout {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(18rem, 24rem) minmax(0, 1fr);
+}
+
+.bervo-browser__panel {
+  padding: 1rem;
+  border: 1px solid var(--bervo-line);
+  border-radius: 1.25rem;
+  background: var(--bervo-panel);
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.06);
+}
+
+.bervo-browser__panel--filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+}
+
+.bervo-browser__field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.bervo-browser__field span {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--bervo-muted);
+}
+
+.bervo-browser__field input,
+.bervo-browser__field select {
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid rgba(86, 97, 111, 0.24);
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--bervo-ink);
+}
+
+.bervo-browser__filter-grid {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.bervo-browser__results-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bervo-browser__clear {
+  border: 0;
+  background: transparent;
+  color: var(--bervo-accent-strong);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.bervo-browser__results {
+  display: grid;
+  gap: 0.65rem;
+  max-height: 70vh;
+  overflow: auto;
+  padding-right: 0.2rem;
+}
+
+.bervo-browser__result {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid var(--bervo-line);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.86);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.bervo-browser__result:hover,
+.bervo-browser__result:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(15, 118, 110, 0.45);
+  box-shadow: 0 10px 20px rgba(15, 118, 110, 0.08);
+}
+
+.bervo-browser__result.is-active {
+  border-color: rgba(15, 118, 110, 0.65);
+  background: linear-gradient(180deg, rgba(226, 248, 245, 0.92), rgba(255, 255, 255, 0.98));
+}
+
+.bervo-browser__result-title {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.bervo-browser__result-id {
+  margin: 0 0 0.45rem;
+  font-size: 0.78rem;
+  color: var(--bervo-muted);
+}
+
+.bervo-browser__result-meta {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.bervo-browser__tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: var(--bervo-accent-soft);
+  color: var(--bervo-accent-strong);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.bervo-browser__detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.bervo-browser__detail-header h2 {
+  margin: 0 0 0.25rem;
+}
+
+.bervo-browser__detail-id {
+  margin: 0;
+  color: var(--bervo-muted);
+}
+
+.bervo-browser__detail-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.bervo-browser__detail-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.bervo-browser__detail-block {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--bervo-line);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.84);
+}
+
+.bervo-browser__detail-block h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--bervo-muted);
+}
+
+.bervo-browser__detail-block p {
+  margin: 0;
+}
+
+.bervo-browser__chip-list {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.bervo-browser__chip {
+  padding: 0.28rem 0.62rem;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.08);
+  color: var(--bervo-ink);
+  font-size: 0.8rem;
+}
+
+.bervo-browser__empty,
+.bervo-browser__loading,
+.bervo-browser__error {
+  color: var(--bervo-muted);
+}
+
+@media (max-width: 900px) {
+  .bervo-browser__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .bervo-browser__results {
+    max-height: 26rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .bervo-browser__hero,
+  .bervo-browser__panel {
+    padding: 1rem;
+  }
+
+  .bervo-browser__filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bervo-browser__results-meta,
+  .bervo-browser__detail-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

@@ -18,10 +18,20 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install docs dependencies
+        run: python -m pip install --upgrade pip && python -m pip install -r docs/requirements.txt
+
+      - name: Generate BERVO browser data
+        run: cd src/ontology && make browser_data
+
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONFIG_FILE: mkdocs.yaml
-

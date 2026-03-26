@@ -2,6 +2,7 @@ import shutil
 import subprocess
 import tempfile
 import unittest
+import json
 from pathlib import Path
 
 
@@ -51,6 +52,18 @@ class MakefileIntegrationTest(unittest.TestCase):
 
         self.assertIn("Wrote tmp/bervo-src-for-google-sheet.csv", result.stdout)
         self.assertEqual(template.read_bytes(), export_path.read_bytes())
+
+    def test_browser_data_generation_creates_json_snapshot(self) -> None:
+        browser_data = self.repo_copy / "docs" / "assets" / "data" / "bervo-browser.json"
+        browser_data.unlink(missing_ok=True)
+
+        self.run_make("browser_data")
+
+        self.assertTrue(browser_data.exists(), "make should generate the browser data snapshot")
+        payload = json.loads(browser_data.read_text(encoding="utf-8"))
+        self.assertIn("entries", payload)
+        self.assertGreater(len(payload["entries"]), 0)
+        self.assertEqual(payload["entries"][0]["id"], "BERVO:0000000")
 
     def test_legacy_sheet_export_alias_matches_template(self) -> None:
         template = self.ontology_dir / "bervo-src.csv"

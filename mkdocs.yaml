@@ -20,9 +20,14 @@ markdown_extensions:
 
 site_url: https://bioepic-data.github.io/bervo/
 repo_url: https://github.com/bioepic-data/bervo/
+extra_css:
+  - assets/stylesheets/bervo-browser.css
+extra_javascript:
+  - assets/javascripts/bervo-browser.js
 
 nav:
   - Getting started: index.md
+  - Ontology Browser: browser.md
   - Cite: cite.md
   - How-to guides:
       - Standard ODK workflows:
@@ -38,4 +43,3 @@ nav:
           - Continuous Integration: odk-workflows/ContinuousIntegration.md
           - Your ODK Repository Overview: odk-workflows/RepositoryFileStructure.md 
       - Contributing: contributing.md
-

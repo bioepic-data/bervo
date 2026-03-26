@@ -18,4 +18,11 @@ The Google Sheet is retained as a secondary collaboration artifact, but it is no
 
 Please open a GitHub issue for requested changes when possible, and submit ontology edits through this repository.
 
+## Browse BERVO
+
+A lightweight ontology browser is available in the documentation:
+
+- [Open the BERVO browser](browser.md)
+- [View BERVO on BioPortal](https://bioportal.bioontology.org/ontologies/BERVO)
+
 You can find descriptions of the standard ontology engineering workflows [here](odk-workflows/index.md).
