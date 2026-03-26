@@ -11,7 +11,7 @@ GOOGLE_SHEET_EXPORT_URL = $(GOOGLE_SHEET_URL)/export?exportFormat=csv
 GOOGLE_SHEET_SNAPSHOT = $(TMPDIR)/bervo-src-google-sheet.csv
 GOOGLE_SHEET_EXPORT = $(TMPDIR)/bervo-src-for-google-sheet.csv
 
-.PHONY: refresh-google-sheet-snapshot compare-google-sheet export-google-sheet remove-old-input
+.PHONY: refresh-google-sheet-snapshot compare-google-sheet export-google-sheet integration_test remove-old-input
 
 # Build the ODK-managed component from the repo-tracked template.
 $(BERVO_COMPONENT): $(BERVO_TEMPLATE) bervo-annotations.ttl | $(COMPONENTSDIR)
@@ -41,6 +41,9 @@ export-google-sheet: $(GOOGLE_SHEET_EXPORT)
 # Backwards-compatible alias for the historical sheet export filename.
 bervo_for_sheet.csv: $(BERVO_TEMPLATE)
 	cp $< $@
+
+integration_test:
+	python3 ../../tests/test_makefile_integration.py
 
 remove-old-input:
 	rm -f $(BERVO_COMPONENT) $(GOOGLE_SHEET_SNAPSHOT) $(GOOGLE_SHEET_EXPORT) bervo_for_sheet.csv
