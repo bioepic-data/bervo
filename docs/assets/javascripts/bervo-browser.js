@@ -164,7 +164,7 @@
           <p class="bervo-browser__detail-id">${esc(entry.id)}${entry.iri ? ` · <a href="${esc(entry.iri)}" target="_blank" rel="noopener noreferrer">IRI</a>` : ""}</p>
         </div>
         <div class="bervo-browser__detail-links">
-          <a class="md-button md-button--primary" href="${esc(bioportalUrl)}" target="_blank" rel="noopener noreferrer">BioPortal</a>
+          <a class="md-button md-button--primary" href="${esc(entry.bioportal_term_url || bioportalUrl)}" target="_blank" rel="noopener noreferrer">Open this term in BioPortal</a>
           <a class="md-button" href="${esc(entry.source_url)}" target="_blank" rel="noopener noreferrer">Source CSV</a>
         </div>
       </div>

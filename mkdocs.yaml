@@ -1,6 +1,10 @@
 site_name: BERVO
 theme:
   name: material
+  palette:
+    - scheme: default
+      primary: green
+      accent: brown
   features:
     - content.tabs.link
 plugins:
@@ -26,8 +30,7 @@ extra_javascript:
   - assets/javascripts/bervo-browser.js
 
 nav:
-  - Getting started: index.md
-  - Ontology Browser: browser.md
+  - Home: index.md
   - Cite: cite.md
   - How-to guides:
       - Standard ODK workflows:

@@ -64,6 +64,8 @@ class MakefileIntegrationTest(unittest.TestCase):
         self.assertIn("entries", payload)
         self.assertGreater(len(payload["entries"]), 0)
         self.assertEqual(payload["entries"][0]["id"], "BERVO:0000000")
+        self.assertIn("bioportal_term_url", payload["entries"][0])
+        self.assertIn("conceptid=https%3A%2F%2Fw3id.org%2Fbervo%2FBERVO_0000000", payload["entries"][0]["bioportal_term_url"])
 
     def test_legacy_sheet_export_alias_matches_template(self) -> None:
         template = self.ontology_dir / "bervo-src.csv"

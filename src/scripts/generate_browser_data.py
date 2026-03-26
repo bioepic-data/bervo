@@ -3,6 +3,7 @@
 import csv
 import json
 from pathlib import Path
+from urllib.parse import quote
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -72,6 +73,11 @@ def make_iri(term_id: str) -> str:
     return f"https://w3id.org/bervo/{term_id.replace(':', '_')}"
 
 
+def make_bioportal_term_url(term_iri: str, term_type: str) -> str:
+    page = "properties" if "Property" in term_type else "classes"
+    return f"{BIOPORTAL_URL}?p={page}&conceptid={quote(term_iri, safe='')}"
+
+
 def make_search_blob(entry: dict) -> str:
     parts = []
     for key, value in entry.items():
@@ -109,6 +115,7 @@ def read_entries() -> tuple[list[dict], dict]:
             entry["iri"] = make_iri(entry["id"])
             entry["has_definition"] = bool(entry["definition"])
             entry["bioportal_url"] = BIOPORTAL_URL
+            entry["bioportal_term_url"] = make_bioportal_term_url(entry["iri"], entry["type"])
             entry["source_url"] = GITHUB_SOURCE_URL
             entry["search_blob"] = make_search_blob(entry)
             entries.append(entry)

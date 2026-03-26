@@ -1,25 +1,45 @@
+.md-grid {
+  max-width: 92rem;
+}
+
+.md-main__inner {
+  margin-top: 0.75rem;
+}
+
+.md-content__inner {
+  margin-bottom: 2rem;
+}
+
 .bervo-browser {
-  --bervo-ink: #1b1c20;
-  --bervo-muted: #56616f;
-  --bervo-line: rgba(27, 28, 32, 0.12);
-  --bervo-panel: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(244, 248, 247, 0.98));
-  --bervo-accent: #0f766e;
-  --bervo-accent-soft: rgba(15, 118, 110, 0.12);
-  --bervo-accent-strong: #0b5f59;
+  --bervo-ink: #1f241f;
+  --bervo-muted: #645947;
+  --bervo-line: rgba(71, 58, 38, 0.16);
+  --bervo-panel: linear-gradient(180deg, rgba(255, 252, 245, 0.98), rgba(243, 238, 226, 0.98));
+  --bervo-accent: #3e6b3f;
+  --bervo-accent-soft: rgba(62, 107, 63, 0.13);
+  --bervo-accent-strong: #2d5230;
+  --bervo-earth: #8a6843;
+  --bervo-earth-soft: rgba(138, 104, 67, 0.12);
   color: var(--bervo-ink);
+}
+
+.bervo-browser--home {
+  width: min(96rem, calc(100vw - 2rem));
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .bervo-browser__hero {
   display: grid;
   gap: 1rem;
-  padding: 1.5rem;
+  padding: 2rem;
   margin: 0 0 1.25rem;
   border: 1px solid var(--bervo-line);
-  border-radius: 1.25rem;
+  border-radius: 1.6rem;
   background:
-    radial-gradient(circle at top right, rgba(15, 118, 110, 0.14), transparent 34%),
-    radial-gradient(circle at bottom left, rgba(191, 219, 254, 0.45), transparent 30%),
-    linear-gradient(135deg, #f9fbfa, #eef5f3);
+    radial-gradient(circle at top right, rgba(84, 132, 74, 0.2), transparent 34%),
+    radial-gradient(circle at bottom left, rgba(170, 132, 92, 0.22), transparent 36%),
+    linear-gradient(135deg, #fbf8ef, #edf2e6 42%, #efe6d8);
 }
 
 .bervo-browser__eyebrow {
@@ -52,17 +72,17 @@
 
 .bervo-browser__summary {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
-  gap: 0.9rem;
-  margin-bottom: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.4rem;
 }
 
 .bervo-browser__card {
-  padding: 1rem 1.1rem;
+  padding: 1.05rem 1.15rem;
   border: 1px solid var(--bervo-line);
   border-radius: 1rem;
   background: var(--bervo-panel);
-  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.05);
+  box-shadow: 0 18px 36px rgba(59, 44, 24, 0.07);
 }
 
 .bervo-browser__card-label {
@@ -81,16 +101,16 @@
 
 .bervo-browser__layout {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: minmax(18rem, 24rem) minmax(0, 1fr);
+  gap: 1.15rem;
+  grid-template-columns: minmax(22rem, 28rem) minmax(0, 1fr);
 }
 
 .bervo-browser__panel {
-  padding: 1rem;
+  padding: 1.15rem;
   border: 1px solid var(--bervo-line);
-  border-radius: 1.25rem;
+  border-radius: 1.4rem;
   background: var(--bervo-panel);
-  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.06);
+  box-shadow: 0 20px 42px rgba(59, 44, 24, 0.08);
 }
 
 .bervo-browser__panel--filters {
@@ -113,10 +133,10 @@
 .bervo-browser__field input,
 .bervo-browser__field select {
   width: 100%;
-  padding: 0.75rem 0.85rem;
-  border: 1px solid rgba(86, 97, 111, 0.24);
+  padding: 0.8rem 0.9rem;
+  border: 1px solid rgba(100, 89, 71, 0.28);
   border-radius: 0.85rem;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 250, 0.92);
   color: var(--bervo-ink);
 }
 
@@ -144,17 +164,17 @@
 .bervo-browser__results {
   display: grid;
   gap: 0.65rem;
-  max-height: 70vh;
+  max-height: 78vh;
   overflow: auto;
   padding-right: 0.2rem;
 }
 
 .bervo-browser__result {
   width: 100%;
-  padding: 0.9rem;
+  padding: 1rem;
   border: 1px solid var(--bervo-line);
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 252, 247, 0.9);
   text-align: left;
   cursor: pointer;
   transition: transform 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
@@ -163,13 +183,13 @@
 .bervo-browser__result:hover,
 .bervo-browser__result:focus-visible {
   transform: translateY(-1px);
-  border-color: rgba(15, 118, 110, 0.45);
-  box-shadow: 0 10px 20px rgba(15, 118, 110, 0.08);
+  border-color: rgba(62, 107, 63, 0.45);
+  box-shadow: 0 12px 24px rgba(62, 107, 63, 0.09);
 }
 
 .bervo-browser__result.is-active {
-  border-color: rgba(15, 118, 110, 0.65);
-  background: linear-gradient(180deg, rgba(226, 248, 245, 0.92), rgba(255, 255, 255, 0.98));
+  border-color: rgba(62, 107, 63, 0.68);
+  background: linear-gradient(180deg, rgba(232, 240, 225, 0.95), rgba(255, 251, 246, 0.98));
 }
 
 .bervo-browser__result-title {
@@ -194,7 +214,7 @@
   align-items: center;
   padding: 0.2rem 0.55rem;
   border-radius: 999px;
-  background: var(--bervo-accent-soft);
+  background: linear-gradient(180deg, var(--bervo-accent-soft), var(--bervo-earth-soft));
   color: var(--bervo-accent-strong);
   font-size: 0.76rem;
   font-weight: 700;
@@ -227,14 +247,14 @@
 .bervo-browser__detail-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
 }
 
 .bervo-browser__detail-block {
-  padding: 0.9rem 1rem;
+  padding: 1rem 1.05rem;
   border: 1px solid var(--bervo-line);
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.84);
+  background: rgba(255, 252, 247, 0.88);
 }
 
 .bervo-browser__detail-block h3 {
@@ -258,9 +278,16 @@
 .bervo-browser__chip {
   padding: 0.28rem 0.62rem;
   border-radius: 999px;
-  background: rgba(15, 118, 110, 0.08);
+  background: linear-gradient(180deg, rgba(62, 107, 63, 0.1), rgba(138, 104, 67, 0.08));
   color: var(--bervo-ink);
   font-size: 0.8rem;
+}
+
+.bervo-browser__notes {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  margin-top: 1.25rem;
 }
 
 .bervo-browser__empty,
@@ -275,7 +302,13 @@
   }
 
   .bervo-browser__results {
-    max-height: 26rem;
+    max-height: 28rem;
+  }
+
+  .bervo-browser--home {
+    width: auto;
+    margin-left: 0;
+    transform: none;
   }
 }
 
