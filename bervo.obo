@@ -22712,10 +22712,9 @@ property_value: bervo:BERVO_has_unit "NA" xsd:string
 
 [Term]
 id: bervo:BERVO_8000442
-name: State plane zone
-def: "A projection system zone dividing the United States into regions with minimized distortion, designated by state and zone number. Zone designation enables correct interpretation of easting and northing values." []
-comment: Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)
-xref: COMO:0000338
+name: Projected Coordinate System
+def: "A coordinate reference system that uses a map projection to represent locations on a curved surface as planar coordinates, enabling positions to be expressed as easting and northing values in linear units. A projected coordinate system includes a base geographic coordinate system, projection method, datum, linear unit, and projection parameters; examples include UTM Zone 13N and State Plane zones." []
+comment: Definition revised to generalize the previous State plane zone term to projected coordinate systems that can qualify easting and northing values.
 is_a: bervo:BERVO_8000232 ! Concept
 property_value: bervo:BERVO_has_unit "NA" xsd:string
 
@@ -23789,4 +23788,3 @@ id: bervo:BERVO_involves_taxa
 name: involves taxa
 def: "A property denoting that an instance of this variable may include one or more biological taxa." []
 comment: Definition source - Manual (JHC, Sep 25 2025)
-
