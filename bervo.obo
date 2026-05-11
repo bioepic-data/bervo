@@ -22712,10 +22712,9 @@ property_value: bervo:BERVO_has_unit "NA" xsd:string
 
 [Term]
 id: bervo:BERVO_8000442
-name: State plane zone
-def: "A projection system zone dividing the United States into regions with minimized distortion, designated by state and zone number. Zone designation enables correct interpretation of easting and northing values." []
-comment: Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)
-xref: COMO:0000338
+name: Projected Coordinate System
+def: "A coordinate reference system that uses a map projection to represent locations on a curved surface as planar coordinates, enabling positions to be expressed as easting and northing values in linear units. A projected coordinate system includes a base geographic coordinate system, projection method, datum, linear unit, and projection parameters; examples include UTM Zone 13N and State Plane zones." []
+comment: Definition revised to generalize the previous State plane zone term to projected coordinate systems that can qualify easting and northing values.
 is_a: bervo:BERVO_8000232 ! Concept
 property_value: bervo:BERVO_has_unit "NA" xsd:string
 
@@ -23480,6 +23479,55 @@ is_a: bervo:BERVO_8000232 ! Concept
 property_value: bervo:BERVO_has_unit "NA" xsd:string
 
 [Term]
+id: bervo:BERVO_8000532
+name: Azimuth
+def: "The horizontal direction of a line, view, or vector measured clockwise from a reference direction, typically geographic north. Azimuth describes orientation or bearing within a horizontal plane and is commonly reported in degrees." []
+comment: Definition source - Codex CLI (May 4 2026)
+synonym: "bearing" RELATED []
+synonym: "compass azimuth" RELATED []
+is_a: bervo:BERVO_8000255 ! Angle
+property_value: bervo:BERVO_has_unit "degree" xsd:string
+
+[Term]
+id: bervo:BERVO_8000533
+name: Field of view angle
+def: "The angular extent of the cone or region over which an instrument accepts incoming radiation or observes a scene. Field of view angle describes aperture width rather than the direction the instrument is aimed and is commonly reported in degrees." []
+comment: Definition source - Codex CLI (May 4 2026)
+synonym: "field of view" RELATED []
+synonym: "FOV" RELATED []
+is_a: bervo:BERVO_8000255 ! Angle
+property_value: bervo:BERVO_has_unit "degree" xsd:string
+
+[Term]
+id: bervo:BERVO_8000534
+name: Scattering correction factor
+def: "A dimensionless correction factor applied during optical canopy or leaf area index processing to adjust gap fraction or transmittance estimates for radiation scattered into the sensor field of view. This factor represents a data-processing correction rather than the physical scattering process itself." []
+comment: Definition source - Codex CLI (May 4 2026)
+is_a: bervo:BERVO_8000244 ! Quantitative value
+property_value: bervo:BERVO_has_unit "dimensionless" xsd:string
+
+[Term]
+id: bervo:BERVO_8000535
+name: Apparent clumping factor
+def: "A dimensionless index describing the apparent non-random spatial aggregation of foliage inferred from canopy optical measurements, commonly calculated as the ratio of effective leaf area index to clumping-corrected or true leaf area index. Values below 1 indicate more clumped foliage relative to a random distribution." []
+comment: Definition source - Codex CLI (May 4 2026)
+synonym: "ACF" RELATED []
+synonym: "apparent clumping index" RELATED []
+is_a: bervo:BERVO_8000244 ! Quantitative value
+property_value: bervo:BERVO_Context bervo:BERVO_8000117
+property_value: bervo:BERVO_has_unit "dimensionless" xsd:string
+
+[Term]
+id: bervo:BERVO_8000536
+name: Quality control flag
+def: "A controlled categorical code assigned to an observation or dataset to indicate a quality-control condition, processing decision, or measurement anomaly relevant to interpretation." []
+comment: Definition source - Codex CLI (May 11 2026)
+synonym: "QC flag" RELATED []
+synonym: "quality flag" RELATED []
+is_a: bervo:BERVO_9000003 ! Flag data type
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+
+[Term]
 id: bervo:BERVO_9000000
 name: Biogeochemical flux variable
 def: "A categorical classification system for organizing variables that represent the movement of chemical elements and compounds through ecosystem compartments. This data type groups parameters that quantify carbon, nitrogen, phosphorus, and other biogeochemical fluxes between atmosphere, biosphere, soil, and water reservoirs in earth system models." []
@@ -23789,4 +23837,3 @@ id: bervo:BERVO_involves_taxa
 name: involves taxa
 def: "A property denoting that an instance of this variable may include one or more biological taxa." []
 comment: Definition source - Manual (JHC, Sep 25 2025)
-
