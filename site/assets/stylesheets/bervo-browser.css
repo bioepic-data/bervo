@@ -1,0 +1,356 @@
+.md-grid {
+  max-width: 92rem;
+}
+
+.md-main__inner {
+  margin-top: 0.75rem;
+}
+
+.md-content__inner {
+  margin-bottom: 2rem;
+}
+
+.bervo-browser {
+  --bervo-ink: #1f241f;
+  --bervo-muted: #645947;
+  --bervo-line: rgba(71, 58, 38, 0.16);
+  --bervo-panel: linear-gradient(180deg, rgba(255, 252, 245, 0.98), rgba(243, 238, 226, 0.98));
+  --bervo-accent: #3e6b3f;
+  --bervo-accent-soft: rgba(62, 107, 63, 0.13);
+  --bervo-accent-strong: #2d5230;
+  --bervo-earth: #8a6843;
+  --bervo-earth-soft: rgba(138, 104, 67, 0.12);
+  color: var(--bervo-ink);
+}
+
+.bervo-browser--home {
+  width: min(96rem, calc(100vw - 2rem));
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.bervo-browser__hero {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  margin: 0 0 1rem;
+  border: 1px solid var(--bervo-line);
+  border-radius: 1.6rem;
+  background:
+    radial-gradient(circle at top right, rgba(84, 132, 74, 0.2), transparent 34%),
+    radial-gradient(circle at bottom left, rgba(170, 132, 92, 0.22), transparent 36%),
+    linear-gradient(135deg, #fbf8ef, #edf2e6 42%, #efe6d8);
+}
+
+.bervo-browser__eyebrow {
+  margin: 0 0 0.4rem;
+  color: var(--bervo-accent-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bervo-browser__hero h1 {
+  margin: 0 0 0.4rem;
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+  line-height: 1.05;
+}
+
+.bervo-browser__lede {
+  margin: 0;
+  max-width: 56rem;
+  color: var(--bervo-muted);
+  font-size: 0.95rem;
+}
+
+.bervo-browser__hero-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.bervo-browser__summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.bervo-browser__card {
+  padding: 1.05rem 1.15rem;
+  border: 1px solid var(--bervo-line);
+  border-radius: 1rem;
+  background: var(--bervo-panel);
+  box-shadow: 0 18px 36px rgba(59, 44, 24, 0.07);
+}
+
+.bervo-browser__card-label {
+  margin: 0 0 0.35rem;
+  color: var(--bervo-muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.bervo-browser__card-value {
+  margin: 0;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+.bervo-browser__layout {
+  display: grid;
+  gap: 1.15rem;
+  grid-template-columns: minmax(22rem, 28rem) minmax(0, 1fr);
+}
+
+.bervo-browser__panel {
+  padding: 1.15rem;
+  border: 1px solid var(--bervo-line);
+  border-radius: 1.4rem;
+  background: var(--bervo-panel);
+  box-shadow: 0 20px 42px rgba(59, 44, 24, 0.08);
+}
+
+.bervo-browser__panel--filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+}
+
+.bervo-browser__field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.bervo-browser__field span {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--bervo-muted);
+}
+
+.bervo-browser__field input,
+.bervo-browser__field select {
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid rgba(100, 89, 71, 0.28);
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 250, 0.92);
+  color: var(--bervo-ink);
+}
+
+.bervo-browser__filter-grid {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.bervo-browser__filter-grid--single {
+  grid-template-columns: 1fr;
+}
+
+.bervo-browser__results-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bervo-browser__clear {
+  border: 0;
+  background: transparent;
+  color: var(--bervo-accent-strong);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.bervo-browser__results {
+  display: grid;
+  gap: 0.5rem;
+  max-height: 78vh;
+  overflow: auto;
+  padding-right: 0.2rem;
+}
+
+.bervo-browser__result {
+  width: 100%;
+  padding: 0.72rem 0.8rem;
+  border: 1px solid var(--bervo-line);
+  border-radius: 0.9rem;
+  background: rgba(255, 252, 247, 0.9);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.bervo-browser__result:hover,
+.bervo-browser__result:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(62, 107, 63, 0.45);
+  box-shadow: 0 12px 24px rgba(62, 107, 63, 0.09);
+}
+
+.bervo-browser__result.is-active {
+  border-color: rgba(62, 107, 63, 0.68);
+  background: linear-gradient(180deg, rgba(232, 240, 225, 0.95), rgba(255, 251, 246, 0.98));
+}
+
+.bervo-browser__result-title {
+  margin: 0 0 0.18rem;
+  font-size: 0.94rem;
+  line-height: 1.2;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.bervo-browser__result-id {
+  margin: 0 0 0.32rem;
+  font-size: 0.74rem;
+  color: var(--bervo-muted);
+}
+
+.bervo-browser__result-meta {
+  display: flex;
+  gap: 0.28rem;
+  flex-wrap: wrap;
+}
+
+.bervo-browser__tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.16rem 0.45rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--bervo-accent-soft), var(--bervo-earth-soft));
+  color: var(--bervo-accent-strong);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.bervo-browser__tag--link,
+.bervo-browser__chip--link {
+  border: 0;
+  cursor: pointer;
+}
+
+.bervo-browser__detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.bervo-browser__detail-header h2 {
+  margin: 0 0 0.25rem;
+}
+
+.bervo-browser__detail-id {
+  margin: 0;
+  color: var(--bervo-muted);
+}
+
+.bervo-browser__detail-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.bervo-browser__detail-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+}
+
+.bervo-browser__detail-block {
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--bervo-line);
+  border-radius: 1rem;
+  background: rgba(255, 252, 247, 0.88);
+}
+
+.bervo-browser__detail > .bervo-browser__detail-block {
+  margin-bottom: 1rem;
+}
+
+.bervo-browser__detail-block h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--bervo-muted);
+}
+
+.bervo-browser__detail-block p {
+  margin: 0;
+}
+
+.bervo-browser__detail-note {
+  margin-top: 0.75rem !important;
+  font-size: 0.8rem;
+  color: var(--bervo-muted);
+}
+
+.bervo-browser__chip-list {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.bervo-browser__chip {
+  padding: 0.28rem 0.62rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(62, 107, 63, 0.1), rgba(138, 104, 67, 0.08));
+  color: var(--bervo-ink);
+  font-size: 0.8rem;
+}
+
+.bervo-browser__notes {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  margin-top: 1.25rem;
+}
+
+.bervo-browser__empty,
+.bervo-browser__loading,
+.bervo-browser__error {
+  color: var(--bervo-muted);
+}
+
+@media (max-width: 900px) {
+  .bervo-browser__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .bervo-browser__results {
+    max-height: 28rem;
+  }
+
+  .bervo-browser--home {
+    width: auto;
+    margin-left: 0;
+    transform: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .bervo-browser__hero,
+  .bervo-browser__panel {
+    padding: 1rem;
+  }
+
+  .bervo-browser__filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bervo-browser__results-meta,
+  .bervo-browser__detail-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

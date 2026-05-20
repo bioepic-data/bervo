@@ -3638,7 +3638,7 @@
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Leaf water content in bundle sheath, in C4 carbon dioxide fixation</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000553"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000564"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m3 H2O (gC)-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000274"/>
@@ -3657,7 +3657,7 @@
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Leaf water content in mesophyll in C4 carbon dioxide fixation</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000553"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000564"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m3 H2O (gC)-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000275"/>
@@ -10222,7 +10222,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Down-regulation of C4 photosynthesis</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000553"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000564"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NONE</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
@@ -11292,7 +11292,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Bundle sheath C4 carbon product to support C3 photosynthesis during C4 photosynthesis on a leaf node</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000553"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000564"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000252"/>
         <bervo:BERVO_has_unit>g d-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
@@ -11395,7 +11395,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000551"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000161"/>
         <bervo:BERVO_measurement_of rdf:resource="[vector of chemicals]"/>
     </Class>
     
@@ -20009,8 +20009,8 @@
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Shoot-root rate constant for nonstructural carbon exchange</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000270"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000161"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000551"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
@@ -36976,7 +36976,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>C4 photosynthesis</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000553"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000564"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
@@ -41832,14 +41832,15 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000442">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
-        <obo:IAO_0000115>A spatial reference system that represents locations on Earth using Cartesian coordinates (x, y) on a planar surface created by a particular map projection. Zone designation enables correct interpretation of easting and northing values.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="COMO:0000338"/>
+        <obo:IAO_0000115>A coordinate reference system that uses a map projection to represent locations on a curved surface as planar coordinates, enabling positions to be expressed as easting and northing values in linear units. A projected coordinate system includes a base geographic coordinate system, projection method, datum, linear unit, and projection parameters; examples include UTM Zone 13N and State Plane zones.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="Class"/>
+        <rdfs:comment>Definition revised to generalize the previous State plane zone term to projected coordinate systems that can qualify easting and northing values.</rdfs:comment>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025).  JMC manually edited label and definition on 3/23/26</rdfs:comment>
         <rdfs:label>Projected Coordinate System</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="NA"/>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
@@ -42486,7 +42487,7 @@
         <obo:IAO_0000115>A designation indicating that a term, identifier, or data entry is no longer current or recommended for use. Obsolete entries are retained for historical tracking.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000436"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
-        <rdfs:label>Obsolete</rdfs:label>
+        <rdfs:label>Obsolescence status</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
@@ -43702,23 +43703,6 @@
     
 
 
-    <!-- https://w3id.org/bervo/BERVO_8000551 -->
-
-    <Class rdf:about="https://w3id.org/bervo/BERVO_8000551">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
-        <obo:IAO_0000115>The aboveground portion of a vascular plant comprising stems, leaves, and reproductive structures. This organ system performs photosynthesis, supports plant canopy structure, and represents the primary site of carbon assimilation and transpiration in terrestrial vegetation.</obo:IAO_0000115>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Jan 8 2026)</rdfs:comment>
-        <rdfs:label>Shoot</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="NA"/>
-    </Class>
-    
-
-
     <!-- https://w3id.org/bervo/BERVO_8000552 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000552">
@@ -43741,14 +43725,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000553">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The electromagnetic in-phase response is the component of a secondary electromagnetic field that is perfectly aligned (0° phase shift) with the primary, transmitting field.</obo:IAO_0000115>
-        <obo:IAO_0000115>The process of fixing carbon dioxide in C4 plants.</obo:IAO_0000115>
         <rdfs:comment>Definition source - JMC manually edited 3/23/26</rdfs:comment>
-        <rdfs:comment>Definition source - Manual (JHC, Jan 9 2026)</rdfs:comment>
-        <rdfs:label>C4 carbon fixation</rdfs:label>
         <rdfs:label>Electromagnetic in-phase response</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000553"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
@@ -43834,6 +43814,124 @@
         <rdfs:label>Biological process</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000559 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000559">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000255"/>
+        <obo:IAO_0000115>The horizontal direction of a line, view, or vector measured clockwise from a reference direction, typically geographic north. Azimuth describes orientation or bearing within a horizontal plane and is commonly reported in degrees.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="Class"/>
+        <oboInOwl:hasExactSynonym>bearing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>compass azimuth</oboInOwl:hasExactSynonym>
+        <rdfs:comment> May 4 2026)</rdfs:comment>
+        <rdfs:comment>Definition source - Manual (JMC</rdfs:comment>
+        <rdfs:label>Azimuth</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="degree"/>
+        <bervo:BERVO_has_value_type rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000560 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000560">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000255"/>
+        <obo:IAO_0000115>The angular extent of the cone or region over which an instrument accepts incoming radiation or observes a scene. Field of view angle describes aperture width rather than the direction the instrument is aimed and is commonly reported in degrees.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="Class"/>
+        <oboInOwl:hasExactSynonym>FOV</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>field of view</oboInOwl:hasExactSynonym>
+        <rdfs:comment> May 4 2026)</rdfs:comment>
+        <rdfs:comment>Definition source - Manual (JMC</rdfs:comment>
+        <rdfs:label>Field of view angle</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="degree"/>
+        <bervo:BERVO_has_value_type rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000561 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000561">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <obo:IAO_0000115>A dimensionless correction factor applied during optical canopy or leaf area index processing to adjust gap fraction or transmittance estimates for radiation scattered into the sensor field of view. This factor represents a data-processing correction rather than the physical scattering process itself.</obo:IAO_0000115>
+        <rdfs:comment> May 4 2026)</rdfs:comment>
+        <rdfs:comment>Definition source - Manual (JMC</rdfs:comment>
+        <rdfs:label>Scattering correction factor</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>dimensionless</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000562 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000562">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <obo:IAO_0000115>A dimensionless index describing the apparent non-random spatial aggregation of foliage inferred from canopy optical measurements, commonly calculated as the ratio of effective leaf area index to clumping-corrected or true leaf area index. Values below 1 indicate more clumped foliage relative to a random distribution.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="Class"/>
+        <oboInOwl:hasExactSynonym>ACF</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>apparent clumping index</oboInOwl:hasExactSynonym>
+        <rdfs:comment> May 4 2026)</rdfs:comment>
+        <rdfs:comment>Definition source - Manual (JMC</rdfs:comment>
+        <rdfs:label>Apparent clumping factor</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="dimensionless"/>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000117"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000563 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000563">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000003"/>
+        <obo:IAO_0000115>A controlled categorical code assigned to an observation or dataset to indicate a quality-control condition, processing decision, or measurement anomaly relevant to interpretation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="Class"/>
+        <oboInOwl:hasExactSynonym>QC flag</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>quality flag</oboInOwl:hasExactSynonym>
+        <rdfs:comment> May 11 2026)</rdfs:comment>
+        <rdfs:comment>Definition source - Manual (JMC</rdfs:comment>
+        <rdfs:label>Quality control flag</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_value_type rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000564 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000564">
+        <obo:IAO_0000115>The process of fixing carbon dioxide in C4 plants.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Manual (JHC, Jan 9 2026)</rdfs:comment>
+        <rdfs:label>C4 carbon fixation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000564"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
