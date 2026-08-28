@@ -29,8 +29,13 @@ Flag these before reading the content:
 - **A whole-file CSV rewrite.** If `git diff --stat` shows ~2,300 changed rows for a
   few new terms, the file was re-encoded (CRLF → LF, or requoted). Ask for it to be
   redone in place.
-- **Edits to generated files.** Any change under `src/ontology/components/` is a
-  mistake; the content belongs in the CSV.
+- **Hand-edited generated files.** `src/ontology/components/bervo-src.owl` is a tracked
+  build product, and a content PR is *expected* to commit it regenerated alongside the
+  CSV edit — that is not a problem. What is a problem is a component diff that does not
+  correspond to the CSV diff: axioms changed that no CSV cell explains, or a component
+  change with no CSV change at all. That means someone edited the build output by hand,
+  and the next `just build` will silently discard it. Spot-check that each changed axiom
+  traces back to a changed cell.
 
 ## 3. Content review
 
