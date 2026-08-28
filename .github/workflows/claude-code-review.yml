@@ -9,13 +9,24 @@ name: Claude Code Review
 on:
   pull_request:
     types: [opened, synchronize]
+    # Ontology content, the tooling that validates it, and the instructions that
+    # govern how agents edit it. The instruction files matter as much as the
+    # content: a bad edit to AGENTS.md or a skill propagates into every later
+    # agent run, so they must not be exempt from review.
     paths:
       - 'src/ontology/bervo-src.csv'
       - 'src/ontology/bervo-edit.owl'
       - 'src/ontology/bervo-annotations.ttl'
       - 'src/ontology/bervo-odk.yaml'
+      - 'src/ontology/bervo.Makefile'
       - 'src/sparql/**'
       - 'src/scripts/**'
+      - 'tests/**'
+      - 'AGENTS.md'
+      - '.claude/**'
+      - 'justfile'
+      - '.github/workflows/**'
+      - '.github/actions/**'
   workflow_dispatch:
     inputs:
       model:
