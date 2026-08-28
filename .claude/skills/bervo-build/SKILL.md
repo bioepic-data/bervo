@@ -51,7 +51,11 @@ cd src/ontology && sh run.sh make components/bervo-src.owl
 
 - `.github/workflows/qc.yml` — `make test IMP=false PAT=false MIR=false` inside
   `obolibrary/odkfull:v1.6`, then `make integration_test`.
-- `.github/workflows/template-qc.yml` — the fast validator and pytest suite.
+- `.github/workflows/template-qc.yml` — the validator, the full pytest suite, and a check
+  that the committed component is current. It installs ROBOT directly via
+  `.github/actions/setup-robot`, **pinned to 1.9.7**; keep that close to the ROBOT version
+  in the ODK image `qc.yml` uses, and re-check them when bumping ODK. They currently
+  produce byte-identical output for this template.
 - `.github/workflows/docs.yml` — regenerates browser data and deploys the mkdocs site.
 
 Reproduce the fast checks locally with `just ci`.

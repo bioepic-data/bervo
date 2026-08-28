@@ -1,0 +1,67 @@
+name: Set up ROBOT
+description: >-
+  Install the ROBOT ontology toolkit and put it on PATH, so a runner outside the
+  ODK container can build the component and run the Makefile integration tests.
+
+inputs:
+  version:
+    description: >-
+      ROBOT version to install. Keep this close to the version in the ODK image
+      that qc.yml uses (obolibrary/odkfull), which is the authoritative build.
+    required: false
+    default: '1.9.7'
+  java-version:
+    description: Temurin JDK version (ROBOT needs 11 or newer)
+    required: false
+    default: '17'
+
+runs:
+  using: composite
+  steps:
+    - name: Set up Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: temurin
+        java-version: ${{ inputs.java-version }}
+
+    # The jar is ~95 MB, so cache it rather than re-downloading on every run.
+    - name: Cache ROBOT
+      id: cache-robot
+      uses: actions/cache@v4
+      with:
+        path: ~/.robot
+        key: robot-${{ inputs.version }}
+
+    - name: Download ROBOT
+      if: steps.cache-robot.outputs.cache-hit != 'true'
+      shell: bash
+      run: |
+        set -euo pipefail
+        mkdir -p ~/.robot
+        curl -fsSL --retry 3 --retry-delay 5 \
+          "https://github.com/ontodev/robot/releases/download/v${{ inputs.version }}/robot.jar" \
+          -o ~/.robot/robot.jar
+        # A truncated download would fail later with a confusing Java error.
+        test -s ~/.robot/robot.jar
+
+    - name: Install wrapper on PATH
+      shell: bash
+      run: |
+        set -euo pipefail
+        # Mirrors the wrapper shipped with ROBOT, which passes ROBOT_JAVA_ARGS
+        # through so a caller can raise the heap. Nothing in this repo sets it
+        # today -- qc.yml passes ROBOT_ENV as a make variable that the ODK
+        # Makefile never references, so that heap raise is inert (issue #49) --
+        # but matching upstream costs nothing and keeps the escape hatch open.
+        # The jar path is resolved now, not at call time: make and the test
+        # suite may invoke robot from a different HOME than this step has.
+        printf '#!/bin/sh\nexec java $ROBOT_JAVA_ARGS -jar "%s/.robot/robot.jar" "$@"\n' "$HOME" \
+          | sudo tee /usr/local/bin/robot >/dev/null
+        sudo chmod +x /usr/local/bin/robot
+
+    - name: Verify
+      shell: bash
+      run: |
+        set -euo pipefail
+        robot --version
+        test "$(robot --version)" = "ROBOT version ${{ inputs.version }}"
