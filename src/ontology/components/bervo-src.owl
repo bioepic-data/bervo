@@ -15982,7 +15982,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>g m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000012"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000086"/>
     </Class>
     
 
@@ -34505,11 +34505,9 @@
     <!-- https://w3id.org/bervo/BERVO_8000028 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000028">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000584"/>
         <obo:IAO_0000115>The dark, well-decomposed organic material that forms in soil through the breakdown and transformation of plant and animal matter by soil organisms. This stable organic component improves soil structure, water holding capacity, nutrient retention, and serves as a long-term carbon storage pool in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000000"/>
-        <oboInOwl:hasRelatedSynonym>SOM</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>organic matter</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Humus</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -35526,7 +35524,6 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000086">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>A state of matter consisting of particles that move freely and expand to fill available containers, including atmospheric gases and soil air. This phase of matter facilitates gas exchange processes, affects atmospheric composition, controls respiration and photosynthesis, and serves as a medium for volatile chemical transport in environmental systems.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>vapor</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Gas</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -44070,9 +44067,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000573">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000566"/>
-        <obo:IAO_0000115>The liberation of phosphoric acid and its dissociated phosphate species from fertilizer particles into soil solution, where they become subject to sorption, precipitation, or plant uptake.</obo:IAO_0000115>
+        <obo:IAO_0000115>The liberation of dihydrogen phosphate ions from fertilizer particles into soil solution, where they become subject to sorption, precipitation, or plant uptake.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
-        <rdfs:label>Phosphoric acid release</rdfs:label>
+        <rdfs:label>Dihydrogen phosphate release</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
@@ -44224,7 +44221,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000582 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000582">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000585"/>
         <obo:IAO_0000115>A chemical tracer that readily partitions into the gas phase, used to follow transport and loss pathways involving volatilization.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
         <rdfs:label>Volatile tracer</rdfs:label>
@@ -44241,7 +44238,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000583 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000583">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000068"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000585"/>
         <obo:IAO_0000115>A chemical tracer representing a plant-essential nutrient, used to follow nutrient transport, transformation, and loss through soil and water pathways.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
         <rdfs:label>Nutrient tracer</rdfs:label>
@@ -44263,6 +44260,23 @@
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_04000008"/>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
         <rdfs:label>Soil organic matter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000585 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000585">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>A chemical species followed through a system in order to quantify transport, transformation, or loss pathways, whether introduced deliberately or tracked as a natural constituent.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Tracer</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
