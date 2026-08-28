@@ -9744,13 +9744,13 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Canopy boundary layer resistance</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000540"/>
-        <bervo:BERVO_Context rdf:resource="Boundary Layer"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000004"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>h m-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_unit>m h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
-        <bervo:BERVO_measurement_of rdf:resource="Boundary Layer"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000004"/>
     </Class>
     
 
@@ -16055,7 +16055,7 @@
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
         <rdfs:label>Nutrient tracer loss through surface runoff</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000541"/>
-        <bervo:BERVO_Context rdf:resource="surface runoff"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000013"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
@@ -21101,7 +21101,7 @@
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
         <rdfs:label>Surface litter boundary layer conductance</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="Boundary Layer"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000004"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m t-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000060"/>
@@ -26599,7 +26599,7 @@
         <rdfs:comment>SurfSoilDataType.txt</rdfs:comment>
         <rdfs:label>Area upscaled soil surface boundary layer conductance</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
-        <bervo:BERVO_Context rdf:resource="Boundary Layer"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000004"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m d-2</bervo:BERVO_has_unit>
