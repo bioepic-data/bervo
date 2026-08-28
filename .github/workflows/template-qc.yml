@@ -43,6 +43,21 @@ jobs:
       - name: Run the test suite
         run: python3 -m pytest tests/ -q
 
+      # A CSV edit committed without rebuilding leaves the component stale, and
+      # nothing else catches that: the ODK job builds its own copy rather than
+      # checking the committed one. Verified that ROBOT 1.9.7 (pinned here) and
+      # 1.9.8 (the ODK image) produce byte-identical output for this template, so
+      # this does not couple the fast lane to one exact version in practice.
+      - name: Check the committed component is current
+        run: |
+          rm -f src/ontology/components/bervo-src.owl
+          make -C src/ontology components/bervo-src.owl
+          if ! git diff --quiet -- src/ontology/components/bervo-src.owl; then
+            echo "::error::components/bervo-src.owl is stale. Run 'just build' and commit the result."
+            git diff --stat -- src/ontology/components/bervo-src.owl
+            exit 1
+          fi
+
       - name: Check the column contract reference is current
         run: |
           python3 src/scripts/dump_column_contract.py

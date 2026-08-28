@@ -48,8 +48,11 @@ runs:
       shell: bash
       run: |
         set -euo pipefail
-        # Mirrors the wrapper shipped with ROBOT: pass ROBOT_JAVA_ARGS through so
-        # callers can raise the heap the way the ODK Makefile does.
+        # Mirrors the wrapper shipped with ROBOT, which passes ROBOT_JAVA_ARGS
+        # through so a caller can raise the heap. Nothing in this repo sets it
+        # today -- qc.yml passes ROBOT_ENV as a make variable that the ODK
+        # Makefile never references, so that heap raise is inert (issue #49) --
+        # but matching upstream costs nothing and keeps the escape hatch open.
         # The jar path is resolved now, not at call time: make and the test
         # suite may invoke robot from a different HOME than this step has.
         printf '#!/bin/sh\nexec java $ROBOT_JAVA_ARGS -jar "%s/.robot/robot.jar" "$@"\n' "$HOME" \
