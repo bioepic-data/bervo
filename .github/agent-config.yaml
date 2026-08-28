@@ -1,0 +1,32 @@
+# Central runtime configuration for BERVO's agentic GitHub Actions.
+#
+# Single source of truth for which Claude model backs each agent workflow. It is
+# read at run time by the composite action `.github/actions/resolve-agent-config`,
+# which exports the effective model as the `AGENT_MODEL` environment variable and
+# as a step output. To change a model tier repo-wide, edit this file — no workflow
+# YAML changes needed.
+#
+# Resolution order (highest priority first):
+#   1. an explicit per-run override (a workflow_dispatch `model:` input, passed to
+#      the action as `model-override`),
+#   2. the per-workflow `model:` below,
+#   3. `default_model`.
+#
+# Keys under `workflows:` are the workflow file stem under .github/workflows/.
+
+default_model: claude-sonnet-5
+provider: anthropic
+
+workflows:
+  # The interactive @claude mention responder (claude.yml). Handles open-ended
+  # requests against the ontology, so it gets the strongest model.
+  claude:
+    model: claude-opus-5
+
+  # Automated review of pull requests touching ontology content.
+  claude-code-review:
+    model: claude-opus-5
+
+  # Labelling and first-pass assessment of new issues. Cheap and high volume.
+  claude-issue-triage:
+    model: claude-haiku-4-5-20251001

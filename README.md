@@ -38,6 +38,39 @@ cd src/ontology
 make export-google-sheet
 ```
 
+## Working on BERVO with an AI agent
+
+This repository is set up for AI coding agents (Claude Code, Codex, Copilot, Goose).
+
+- **[AGENTS.md](AGENTS.md)** is the canonical instruction file — the source-of-truth
+  rules, the template contract, ID allocation policy, and the pitfalls that matter.
+  `CLAUDE.md`, `.github/copilot-instructions.md`, and `.goosehints` are symlinks to it.
+- **`.claude/skills/`** holds task-specific guidance: `bervo-terms` for curation,
+  `bervo-build` for builds and QC, `bervo-pr-review` for reviewing changes.
+- **`.claude/commands/`** provides `/add-term`, `/qc`, and `/pm`.
+- A **PostToolUse hook** validates `bervo-src.csv` automatically after any edit.
+- Mentioning **`@claude`** on an issue or PR triggers a response, and PRs touching
+  ontology content get an automated review. Both need `ANTHROPIC_API_KEY` in the
+  repository secrets and are skipped without it.
+
+## Commands
+
+Common tasks are exposed through [`just`](https://just.systems) (`just --list` for all):
+
+```bash
+just validate                # structural checks on bervo-src.csv
+just find "soil carbon"      # search IDs, labels, definitions, synonyms
+just next-id 0               # next free variable ID
+just show BERVO:0000001      # inspect one term
+just stats                   # term counts by ID block and category
+just test                    # run the test suite
+just build                   # rebuild the OWL component from the CSV
+```
+
+`just validate` runs `src/scripts/validate_bervo_src.py`, which checks the invariants
+ROBOT does not: ragged rows, duplicate IDs and labels, malformed IDs, and references
+to terms that do not exist.
+
 ## Methods
 
 See also [this slide deck](https://docs.google.com/presentation/d/1W6FHsfv1p4Ko_RVKFgrVg2ruJnZwBW3M9dKoz4HR7n8/edit#slide=id.p)

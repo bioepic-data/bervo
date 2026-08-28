@@ -1,0 +1,108 @@
+# Automated review of pull requests that touch BERVO ontology content.
+#
+# Runs only for PRs from the repository itself (not forks), where the workflow has
+# access to secrets. Fork PRs are reviewed by a human, or by an @claude mention
+# from a collaborator.
+
+name: Claude Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - 'src/ontology/bervo-src.csv'
+      - 'src/ontology/bervo-edit.owl'
+      - 'src/ontology/bervo-annotations.ttl'
+      - 'src/ontology/bervo-odk.yaml'
+      - 'src/sparql/**'
+      - 'src/scripts/**'
+  workflow_dispatch:
+    inputs:
+      model:
+        description: Model override for this run
+        required: false
+        default: ''
+
+jobs:
+  review:
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      HAS_CLAUDE_AUTH: ${{ (secrets.ANTHROPIC_API_KEY != '' || secrets.CLAUDE_CODE_OAUTH_TOKEN != '') && 'true' || 'false' }}
+    permissions:
+      contents: read
+      pull-requests: write
+      id-token: write
+      actions: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Resolve agent config
+        uses: ./.github/actions/resolve-agent-config
+        with:
+          workflow: claude-code-review
+          model-override: ${{ github.event.inputs.model }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install tooling
+        run: |
+          python -m pip install --upgrade pip pytest
+          curl -fsSL https://just.systems/install.sh | bash -s -- --to /usr/local/bin
+
+      # Run the deterministic checks first and hand the results to Claude, so the
+      # review spends its attention on curation judgement rather than on things a
+      # script already knows.
+      - name: Run structural validation
+        id: validate
+        continue-on-error: true
+        run: |
+          {
+            echo 'report<<VALIDATION_EOF'
+            python3 src/scripts/validate_bervo_src.py || true
+            echo VALIDATION_EOF
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Claude review
+        if: env.HAS_CLAUDE_AUTH == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_code_oauth_token: ${{ secrets.ANTHROPIC_API_KEY == '' && secrets.CLAUDE_CODE_OAUTH_TOKEN || '' }}
+          model: ${{ env.AGENT_MODEL }}
+          claude_args: |
+            --allowed-tools "Bash(just:*),Bash(python3:*),Bash(git:*),Bash(gh pr:*),WebSearch,WebFetch"
+          prompt: |
+            Review this pull request against the BERVO ontology.
+
+            Read AGENTS.md first, then follow the `bervo-pr-review` skill in
+            .claude/skills/bervo-pr-review/SKILL.md.
+
+            The structural validator has already run. Its output:
+
+            ```
+            ${{ steps.validate.outputs.report }}
+            ```
+
+            Do not repeat what the validator already reported. Focus on what it
+            cannot check:
+
+            - Is any added term a duplicate or near-duplicate of an existing one?
+              Check with `just find` on the label and each synonym. This is the most
+              valuable thing you can do.
+            - Are the definitions accurate, in house style, and properly sourced?
+            - Is each term's parent the most specific correct one?
+            - Are relationship columns filled in sensibly, and is `has_units` a
+              literal unit string rather than a term reference?
+            - Does the PR mix regenerated artefacts into a content change, or
+              re-encode the CSV?
+
+            Post one review comment. Separate blocking issues from suggestions from
+            nits, and say which is which. If a call needs domain expertise you do not
+            have, say so and name the question for a curator rather than guessing.

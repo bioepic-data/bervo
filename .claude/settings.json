@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(just:*)",
+      "Bash(python3 src/scripts/*)",
+      "Bash(python3 -m pytest:*)",
+      "Bash(robot:*)",
+      "Bash(runoak:*)",
+      "Bash(make:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(gh issue view:*)",
+      "Bash(gh issue list:*)",
+      "Bash(gh pr view:*)",
+      "Bash(gh pr list:*)",
+      "Bash(gh pr diff:*)",
+      "Edit",
+      "Write",
+      "WebFetch",
+      "WebSearch"
+    ],
+    "deny": [
+      "Read(./.github/token.txt)",
+      "Bash(git push --force:*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/validate_template.py\""
+          }
+        ]
+      }
+    ]
+  }
+}

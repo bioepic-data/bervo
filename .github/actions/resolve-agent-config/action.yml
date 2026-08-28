@@ -1,0 +1,28 @@
+name: Resolve agent config
+description: Resolve the Claude model for a workflow from .github/agent-config.yaml
+
+inputs:
+  workflow:
+    description: Workflow file stem under .github/workflows (e.g. "claude-code-review")
+    required: true
+  model-override:
+    description: Explicit model for this run; wins over the config file
+    required: false
+    default: ''
+
+outputs:
+  model:
+    description: The resolved model id
+    value: ${{ steps.resolve.outputs.model }}
+
+runs:
+  using: composite
+  steps:
+    - name: Resolve model
+      id: resolve
+      shell: bash
+      run: |
+        python3 -m pip install --quiet --disable-pip-version-check pyyaml
+        python3 "${{ github.action_path }}/resolve_agent_config.py" \
+          --workflow "${{ inputs.workflow }}" \
+          --model-override "${{ inputs.model-override }}"

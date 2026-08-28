@@ -1,0 +1,54 @@
+# Fast structural QC for the BERVO term template.
+#
+# Deliberately separate from qc.yml: this needs no Docker and no ODK image, so it
+# gives contributors a verdict on the source of truth in seconds rather than
+# minutes. qc.yml still runs the full ODK reasoning and report suite.
+
+name: Template QC
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  template-qc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install test dependencies
+        run: python -m pip install --upgrade pip pytest
+
+      - name: Validate bervo-src.csv
+        run: python3 src/scripts/validate_bervo_src.py
+
+      - name: Run validator tests
+        run: python3 -m pytest tests/test_validate_bervo_src.py -q
+
+      - name: Check the column contract reference is current
+        run: |
+          python3 src/scripts/dump_column_contract.py
+          if ! git diff --quiet -- .claude/skills/bervo-terms/references/column-contract.md; then
+            echo "::error::The template columns changed but the generated column contract was not updated."
+            echo "Run: python3 src/scripts/dump_column_contract.py"
+            git diff -- .claude/skills/bervo-terms/references/column-contract.md
+            exit 1
+          fi
+
+      - name: Warning summary
+        if: always()
+        run: |
+          echo "### BERVO template validation" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          python3 src/scripts/validate_bervo_src.py | tail -1 >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
