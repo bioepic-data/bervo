@@ -1,0 +1,103 @@
+# Interactive @claude responder for BERVO issues and pull requests.
+#
+# Requires either ANTHROPIC_API_KEY or CLAUDE_CODE_OAUTH_TOKEN in repository
+# secrets. Without one, the job is skipped rather than failing.
+
+name: Claude Code
+
+on:
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+  issues:
+    types: [opened, assigned]
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  claude:
+    # Gated on the *author's* association, so untrusted issue or comment text
+    # cannot trigger the agent. For `issues: assigned` this deliberately checks
+    # the issue author, not the assigner: assigning an externally-authored issue
+    # must not turn its body into an agent prompt.
+    if: |
+      (
+        github.event_name == 'issue_comment' &&
+        contains(github.event.comment.body, '@claude') &&
+        contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)
+      ) ||
+      (
+        github.event_name == 'pull_request_review_comment' &&
+        contains(github.event.comment.body, '@claude') &&
+        contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)
+      ) ||
+      (
+        github.event_name == 'pull_request_review' &&
+        contains(github.event.review.body, '@claude') &&
+        contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.review.author_association)
+      ) ||
+      (
+        github.event_name == 'issues' &&
+        (contains(github.event.issue.body, '@claude') || contains(github.event.issue.title, '@claude')) &&
+        contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)
+      )
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    # The `secrets` context is not available in a step-level `if`, but it is in a
+    # job-level `env`. Hoisting the check here lets the run be skipped cleanly when
+    # no Claude credential is configured, instead of failing the action.
+    env:
+      HAS_CLAUDE_AUTH: ${{ (secrets.ANTHROPIC_API_KEY != '' || secrets.CLAUDE_CODE_OAUTH_TOKEN != '') && 'true' || 'false' }}
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      id-token: write
+      actions: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Resolve agent config
+        uses: ./.github/actions/resolve-agent-config
+        with:
+          workflow: claude
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install tooling
+        run: |
+          python -m pip install --upgrade pip pytest
+          curl -fsSL https://just.systems/install.sh | bash -s -- --to /usr/local/bin
+
+      - name: Run Claude Code
+        if: env.HAS_CLAUDE_AUTH == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          # Prefer the API key; fall back to OAuth only when no key is set, so
+          # exactly one is ever non-empty and the action never has to arbitrate.
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_code_oauth_token: ${{ secrets.ANTHROPIC_API_KEY == '' && secrets.CLAUDE_CODE_OAUTH_TOKEN || '' }}
+          model: ${{ env.AGENT_MODEL }}
+          additional_permissions: |
+            actions: read
+          claude_args: |
+            --allowed-tools "Bash(just:*),Bash(python3:*),Bash(git:*),Bash(gh:*),Bash(robot:*),Edit,Write,WebSearch,WebFetch"
+          prompt: |
+            You are working in the BERVO ontology repository.
+
+            Read AGENTS.md before doing anything else. It defines the source of
+            truth (src/ontology/bervo-src.csv), which files are generated and must
+            never be hand-edited, and the template contract.
+
+            Use the skills in .claude/skills/ for the task at hand:
+            bervo-terms for term curation, bervo-build for builds and QC,
+            bervo-pr-review for reviewing changes.
+
+            Always run `just validate` after touching the template, and never
+            commit regenerated release artefacts alongside a content change.

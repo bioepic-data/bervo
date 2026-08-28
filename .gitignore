@@ -75,3 +75,10 @@ src/patterns/all_pattern_terms.txt
 
 
 
+
+# Python tooling
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.venv-docs/

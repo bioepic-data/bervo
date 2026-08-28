@@ -74,11 +74,22 @@ If you have never editted this ontology before, first follow a [general tutorial
 
 1. Clone the repository (In case you are not an offical team member, create a fork first)
 1. Create new branch in git, for example `git checkout -b issue123`
-1. Open src/ontology/bervo-edit.owl in your favourite editor, i.e. [Protege](https://protege.stanford.edu/). **Careful:** double check you are editing the correct file. There are many ontology files in this repository, but only one _editors file_!
-1. Perform your edit and save your changes
+1. Check the term does not already exist: `just find "your term"`
+1. Allocate an ID: `just next-id 0` for a variable, `8` for a concept, `9` for a grouping class
+1. Add your term as a row in `src/ontology/bervo-src.csv`. **Careful:** this is the source
+   of truth for BERVO terms. Most other ontology files in this repository are generated
+   from it and must not be hand-edited. Axioms that the template cannot express go in
+   `src/ontology/bervo-edit.owl`, the ODK _editors file_, which you can open in
+   [Protege](https://protege.stanford.edu/).
+1. Validate your change: `just validate`
 1. Commit changes to branch
 1. Push changes upstream
 1. Create pull request
+
+Do not include regenerated release artefacts (`bervo.owl`, `bervo-full.*`, `site/`) in a
+pull request that adds or edits terms — they produce enormous diffs that hide your change.
+
+If you are using an AI coding agent, see [AGENTS.md](AGENTS.md) for the full contract.
 
 ## Best Practices
 
