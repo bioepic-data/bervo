@@ -80,7 +80,7 @@ stats:
     for name, n in cats.most_common(10):
         print(f"  {n:>5}  {name}")
 
-# Search IDs, labels, definitions, and synonyms. Usage: just find "soil carbon"
+# Search IDs, labels, definitions, synonyms, and EcoSIM names. Usage: just find "soil carbon"
 find query:
     #!/usr/bin/env python3
     import csv
@@ -88,11 +88,20 @@ find query:
     rows = list(csv.reader(open("{{template}}", encoding="utf-8")))
     header, data = rows[0], rows[2:]
     cols = {n: i for i, n in enumerate(header)}
+    # EcoSIM provenance is searched too: 74% of terms carry a model variable
+    # name, and a request phrased in model terms should resolve directly.
     watch = [cols[n] for n in ("ID", "Label (description)", "Definition",
-                               "Exact Synonyms", "Related Synonyms") if n in cols]
+                               "Exact Synonyms", "Related Synonyms",
+                               "EcoSIM Variable Name", "File Name") if n in cols]
+    ecosim, fname = cols.get("EcoSIM Variable Name"), cols.get("File Name")
     hits = [r for r in data if any(q in r[i].casefold() for i in watch if i < len(r))]
+    def cell(r, i):
+        return r[i].strip() if i is not None and i < len(r) else ""
     for r in hits[:40]:
-        print(f"{r[0]:<20} {r[1]:<45} [{r[2]}]")
+        # Show both EcoSIM columns: they are searched, so a hit that matches
+        # neither the label nor the definition is otherwise unexplainable.
+        prov = " / ".join(x for x in (cell(r, ecosim), cell(r, fname)) if x)
+        print(f"{r[0]:<20} {r[1]:<45} [{r[2]}]" + (f"  <{prov}>" if prov else ""))
     print(f"\n{len(hits)} match(es)" + (" (showing first 40)" if len(hits) > 40 else ""))
 
 # Next free ID in a block: 0 = variables, 8 = concepts, 9 = grouping classes.

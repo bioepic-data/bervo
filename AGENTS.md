@@ -99,8 +99,14 @@ Columns that carry ontology semantics:
 | `Exact Synonyms` / `Related Synonyms` | `A oio:hasExactSynonym` / `hasRelatedSynonym` | `SPLIT=\|` |
 | `has_units`, `qualifiers`, `attributes`, `measured_ins`, `measurement_ofs`, `contexts`, `value_types` | `A`/`AI BERVO:…` | References to other BERVO terms, `SPLIT=\|` |
 
-Remaining columns (`EcoSIM Variable Name`, `File Name`, `Comment from …`, curation-status
-flags) are provenance and curation bookkeeping.
+Remaining columns are provenance and curation bookkeeping. Two of them matter more than
+that sounds: **`EcoSIM Variable Name` and `File Name` are populated on 1,749 of 2,352 terms
+(74%)**, recording the model parameter and source file a term came from. `just find`
+searches both, so a request phrased in model terms (`just find "Eco_NetRad_col"`) resolves
+directly, and a term's EcoSIM source file predicts its `Category` for 32 of the 33 files.
+See the "EcoSIM provenance" section of the `bervo-terms` skill.
+
+`EcoSIM Other Names` is populated on zero rows.
 
 Conventions:
 
@@ -149,7 +155,8 @@ with an `obsolete ` label prefix and a `replaced_by` where one applies.
 
 ## Adding or editing a term
 
-1. Search first — `just find "<text>"` greps IDs, labels, and synonyms. Duplicate labels
+1. Search first — `just find "<text>"` greps IDs, labels, definitions, synonyms, and the
+   EcoSIM variable name and source file. Duplicate labels
    are a hard error, and near-duplicates are the most common review finding.
 2. Allocate an ID with `just next-id <block>`.
 3. Append the row to `src/ontology/bervo-src.csv`, matching the header width exactly.
@@ -236,7 +243,8 @@ docs/                           # mkdocs sources; docs/assets/data is generated
 
 Task-specific instructions live in `.claude/skills/`:
 
-- **bervo-terms** — adding, editing, and reviewing terms in `bervo-src.csv`
+- **bervo-terms** — adding, editing, and reviewing terms in `bervo-src.csv`, including
+  EcoSIM provenance and cross-references to other ontologies
 - **bervo-build** — building, validating, and releasing
 - **bervo-pr-review** — reviewing a pull request that touches ontology content
 

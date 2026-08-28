@@ -9,13 +9,24 @@ name: Claude Code Review
 on:
   pull_request:
     types: [opened, synchronize]
+    # Ontology content, the tooling that validates it, and the instructions that
+    # govern how agents edit it. The instruction files matter as much as the
+    # content: a bad edit to AGENTS.md or a skill propagates into every later
+    # agent run, so they must not be exempt from review.
     paths:
       - 'src/ontology/bervo-src.csv'
       - 'src/ontology/bervo-edit.owl'
       - 'src/ontology/bervo-annotations.ttl'
       - 'src/ontology/bervo-odk.yaml'
+      - 'src/ontology/bervo.Makefile'
       - 'src/sparql/**'
       - 'src/scripts/**'
+      - 'tests/**'
+      - 'AGENTS.md'
+      - '.claude/**'
+      - 'justfile'
+      - '.github/workflows/**'
+      - '.github/actions/**'
   workflow_dispatch:
     inputs:
       model:
@@ -73,6 +84,18 @@ jobs:
       # back to the OAuth token rather than shadowing it, and an unusable
       # credential fails here in seconds instead of as an opaque is_error:true
       # three minutes into the agent run.
+      # Posting identity. With the App secrets set, comments and git operations
+      # come from the app (e.g. "ai4c-agent") instead of the generic
+      # "github-actions[bot]". continue-on-error means the step is a no-op when
+      # the secrets are absent, and the workflow falls back to github.token.
+      - name: Generate agent app token
+        id: agent-token
+        continue-on-error: true
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.AI4C_AGENT_APP_ID }}
+          private-key: ${{ secrets.AI4C_AGENT_PRIVATE_KEY }}
+
       - name: Resolve Claude auth
         if: env.HAS_CLAUDE_AUTH == 'true'
         uses: ./.github/actions/resolve-claude-auth
@@ -87,7 +110,7 @@ jobs:
         with:
           anthropic_api_key: ${{ env.AUTH_MODE == 'api_key' && secrets.ANTHROPIC_API_KEY || '' }}
           claude_code_oauth_token: ${{ env.AUTH_MODE == 'oauth' && secrets.CLAUDE_CODE_OAUTH_TOKEN || '' }}
-          github_token: ${{ github.token }}
+          github_token: ${{ steps.agent-token.outputs.token || github.token }}
           # `track_progress` is what makes the action actually run on a
           # pull_request event -- without it the step succeeds in seconds having
           # done nothing. It also gives one updating comment instead of many.
@@ -109,8 +132,16 @@ jobs:
             ${{ steps.validate.outputs.report }}
             ```
 
-            Do not repeat what the validator already reported. Focus on what it
-            cannot check:
+            If this PR changes only tooling, tests, workflows, or instruction
+            files (AGENTS.md, .claude/**, justfile) and adds no terms, the
+            term-level checklist below mostly does not apply. Check instead that
+            every documented fact still holds against bervo-src.csv, that every
+            documented command actually runs, and that guidance an agent will
+            follow is accurate — a wrong number in .claude/** propagates into
+            every later agent run.
+
+            Otherwise, do not repeat what the validator already reported. Focus
+            on what it cannot check:
 
             - Is any added term a duplicate or near-duplicate of an existing one?
               Check with `just find` on the label and each synonym. This is the most

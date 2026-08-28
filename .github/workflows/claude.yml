@@ -75,6 +75,18 @@ jobs:
           python -m pip install --upgrade pip pytest
           curl -fsSL https://just.systems/install.sh | bash -s -- --to /usr/local/bin
 
+      # Posting identity. With the App secrets set, comments and git operations
+      # come from the app (e.g. "ai4c-agent") instead of the generic
+      # "github-actions[bot]". continue-on-error means the step is a no-op when
+      # the secrets are absent, and the workflow falls back to github.token.
+      - name: Generate agent app token
+        id: agent-token
+        continue-on-error: true
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.AI4C_AGENT_APP_ID }}
+          private-key: ${{ secrets.AI4C_AGENT_PRIVATE_KEY }}
+
       - name: Resolve Claude auth
         if: env.HAS_CLAUDE_AUTH == 'true'
         uses: ./.github/actions/resolve-claude-auth
@@ -91,6 +103,7 @@ jobs:
           # exactly one is ever non-empty and the action never has to arbitrate.
           anthropic_api_key: ${{ env.AUTH_MODE == 'api_key' && secrets.ANTHROPIC_API_KEY || '' }}
           claude_code_oauth_token: ${{ env.AUTH_MODE == 'oauth' && secrets.CLAUDE_CODE_OAUTH_TOKEN || '' }}
+          github_token: ${{ steps.agent-token.outputs.token || github.token }}
           additional_permissions: |
             actions: read
           # One updating comment with progress, rather than a silent run.

@@ -50,8 +50,14 @@ This repository is set up for AI coding agents (Claude Code, Codex, Copilot, Goo
 - **`.claude/commands/`** provides `/add-term`, `/qc`, and `/pm`.
 - A **PostToolUse hook** validates `bervo-src.csv` automatically after any edit.
 - Mentioning **`@claude`** on an issue or PR triggers a response, and PRs touching
-  ontology content get an automated review. Both need `ANTHROPIC_API_KEY` in the
-  repository secrets and are skipped without it.
+  ontology content or agent instructions get an automated review. Both need
+  `ANTHROPIC_API_KEY` or `CLAUDE_CODE_OAUTH_TOKEN` in the repository secrets, and are
+  skipped without either.
+- The agents post as `github-actions[bot]` by default. To give them their own identity,
+  create a GitHub App, install it on this repository, and add its credentials as the
+  `AI4C_AGENT_APP_ID` and `AI4C_AGENT_PRIVATE_KEY` secrets — the workflows pick them up
+  automatically and fall back to the default token when they are absent. See
+  `docs/agent-identity.md`.
 
 ## Commands
 
@@ -59,7 +65,7 @@ Common tasks are exposed through [`just`](https://just.systems) (`just --list` f
 
 ```bash
 just validate                # structural checks on bervo-src.csv
-just find "soil carbon"      # search IDs, labels, definitions, synonyms
+just find "soil carbon"      # search IDs, labels, definitions, synonyms, EcoSIM names
 just next-id 0               # next free variable ID
 just show BERVO:0000001      # inspect one term
 just stats                   # term counts by ID block and category

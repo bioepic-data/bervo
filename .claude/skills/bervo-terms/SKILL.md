@@ -85,6 +85,93 @@ There is a known backlog of unresolvable-label warnings in `qualifiers`,
 unrelated task — they need curator judgement about whether the target term should
 exist. Fix only the ones your change touches.
 
+## EcoSIM provenance
+
+BERVO began as a catalogue of EcoSIM model parameters, and that origin is still the single
+biggest thing about the term set: **1,749 of 2,352 terms (74%) carry an
+`EcoSIM Variable Name` and a `File Name`** naming the EcoSIM source file they came from.
+
+These two columns are provenance, not logical content — `EcoSIM Variable Name` emits
+`oio:hasRelatedSynonym` and `File Name` emits `rdfs:comment`, so neither produces an
+axiom. Note that the synonym does put the EcoSIM code identifier into the released
+ontology, where lexical matchers and search will find it. They are the most useful
+handle you have when a term request comes from someone working with the model.
+
+### Finding a term from the model side
+
+`just find` searches the EcoSIM variable name as well as labels and definitions, so a
+request phrased in model terms resolves directly:
+
+```bash
+just find "Eco_NetRad_col"       # by EcoSIM variable name
+just find "CanopyDataType"       # everything from one EcoSIM source file
+```
+
+Always try this before creating a term for an EcoSIM parameter. A variable that exists in
+the model very often already exists in BERVO under a human-readable label you would not
+have guessed from the code identifier.
+
+### The source file usually tells you the category
+
+There are 33 distinct EcoSIM source files, and **32 of them map to one dominant BERVO
+`Category`**. This is the strongest placement heuristic available.
+
+Shares run from 60% to 100% across those 32, with one outlier at 19% (see below). The
+seven files below are simply the **largest by term count**; their shares are typical
+rather than exceptional — the median across all 33 files is 90%, and so is the mean of
+these seven. A file's absence from this table says nothing about how strong its prior
+is: `SoilPhysDataType.txt` (100%), `MicrobialDataType.txt` (98%) and `SOMDataType.txt`
+(97%) are all stronger than most of what is shown. The weaker end — `NitroPars.txt` and
+`FlagDataType.txt` at 60%, `ChemTracerParsMod.txt` 62%, `AqueChemDatatype.txt` 66% —
+needs a judgement call. Check your own file rather than reading across from these:
+
+| `File Name` | Dominant `Category` | Share |
+| --- | --- | --- |
+| `SoluteParMod.txt` | Constants for specific chemical reactions | 100% |
+| `SoilBGCDataType.txt` | Soil biogeochemistry variable | 98% |
+| `SoilWaterDataType.txt` | Soil and water variable | 96% |
+| `CanopyDataType.txt` | Canopy variable | 90% |
+| `ClimForcDataType.txt` | Climate force variable | 83% |
+| `PlantDataRateType.txt` | Plant rate variable | 81% |
+| `PlantTraitDataType.txt` | Plant trait variable | 79% |
+
+When adding a term from a known EcoSIM file, check what its file's neighbours use:
+
+```bash
+just find "SoilBGCDataType.txt"
+```
+
+**The one exception is `EcoSimSumDataType.txt`**: its 32 terms spread across 10 categories
+with a top share of 19%, because it is a summary/aggregation file with no natural home. The
+heuristic tells you nothing there.
+
+Treat this as a strong prior, not a rule — the minority cases are real, and the category
+should still be the most specific correct parent.
+
+### Naming conventions in EcoSIM variable names
+
+Suffixes mark the dimension a variable is resolved over. These are observed conventions,
+so confirm against the definition rather than assuming:
+
+| Suffix | Count | Reading |
+| --- | --- | --- |
+| `_col` | 361 | Column-level, i.e. aggregated over the whole ecosystem column |
+| `_vr` | 304 | Vertically resolved, i.e. per soil layer. Only ~19% say so explicitly — confirm |
+| `_pft` | 263 | Per plant functional type |
+| `_brch` | 70 | Per branch (64% of definitions mention a branch) |
+| `_2D`, `_2DH` | 43 | Two-dimensional / horizontal |
+
+Prefixes group tracers and chemistry: `trcg_`, `trcs_`, `trcn_`, `trcSalt_`, `TRChem_`,
+`DOM_`, and `Eco_`/`ECO_` for ecosystem-level quantities.
+
+A term whose EcoSIM name differs only by suffix from an existing term is usually a genuinely
+distinct variable (a column aggregate and its vertically resolved counterpart are different
+things) — but say so explicitly in the definition, or the two become impossible to tell
+apart.
+
+> `EcoSIM Other Names` is populated on **zero** rows. Leave it alone rather than inventing a
+> use for it.
+
 ## Cross-references to other ontologies
 
 The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 351
