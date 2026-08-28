@@ -9651,7 +9651,7 @@
         <bervo:BERVO_has_unit>s h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_unit>s m-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000201"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000579"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000118"/>
     </Class>
     
 
@@ -24437,7 +24437,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000283"/>
         <bervo:BERVO_has_unit>kPa</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000579"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000118"/>
     </Class>
     
 
@@ -36091,6 +36091,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000118">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000579"/>
         <obo:IAO_0000115>Water in its gaseous state present in the atmosphere, representing a major component of the global water cycle and greenhouse gas budget. This atmospheric moisture controls humidity, precipitation formation, heat transport, and energy balance processes that influence weather patterns and climate dynamics.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Water vapor</rdfs:label>
