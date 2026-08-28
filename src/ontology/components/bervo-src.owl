@@ -2989,7 +2989,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>h^-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="Ammonium release"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000569"/>
     </Class>
     
 
@@ -3008,7 +3008,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>h^-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="Ammonia release"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000570"/>
     </Class>
     
 
@@ -3027,7 +3027,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>h^-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="Urea release"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000571"/>
     </Class>
     
 
@@ -3047,7 +3047,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>h^-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="Nitrate release"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000572"/>
     </Class>
     
 
@@ -3066,7 +3066,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>h^-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="Phosphoric acid release"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000573"/>
     </Class>
     
 
@@ -4732,7 +4732,7 @@
         <rdfs:label>Gaseous argon diffusivity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000059"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>m2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000251"/>
@@ -4770,7 +4770,7 @@
         <rdfs:label>Gaseous carbon dioxide diffusivity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000059"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>m2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
@@ -4808,7 +4808,7 @@
         <rdfs:label>Gaseous methane diffusivity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000059"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>m2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000024"/>
@@ -4846,7 +4846,7 @@
         <rdfs:label>Gaseous oxygen diffusivity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000059"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>m2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
@@ -4884,7 +4884,7 @@
         <rdfs:label>Gaseous nitrogen diffusivity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000059"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>m2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
@@ -4922,7 +4922,7 @@
         <rdfs:label>Gaseous nitrous oxide diffusivity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000059"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>m2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000017"/>
@@ -4960,7 +4960,7 @@
         <rdfs:label>Gaseous ammonia diffusivity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000059"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>m2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
@@ -5359,7 +5359,7 @@
         <rdfs:label>Gaseous hydrogen diffusivity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000059"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>m2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000039"/>
@@ -6926,7 +6926,7 @@
         <rdfs:label>Gaseous tracer flux through roots</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
@@ -7306,7 +7306,7 @@
         <rdfs:label>Gaseous ammonia flux fron root disturbance band</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
@@ -9651,7 +9651,7 @@
         <bervo:BERVO_has_unit>s h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_unit>s m-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000201"/>
-        <bervo:BERVO_measurement_of rdf:resource="Vapor"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000118"/>
     </Class>
     
 
@@ -9766,7 +9766,7 @@
         <rdfs:label>Leaf gaseous concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>umol m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
@@ -9785,7 +9785,7 @@
         <rdfs:label>Leaf gaseous carbon dioxide concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>umol m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
@@ -9823,7 +9823,7 @@
         <rdfs:label>Gaseous carbon dioxide concentration difference across stomates</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>umol m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000201"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
@@ -9842,7 +9842,7 @@
         <rdfs:label>Canopy gaseous carbon dioxide concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>umol mol-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
@@ -14483,7 +14483,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m g-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
-        <bervo:BERVO_measurement_of rdf:resource="Petiole"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000580"/>
     </Class>
     
 
@@ -15492,7 +15492,7 @@
         <rdfs:label>Gaseous diffusivity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000059"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>m2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="[vector of chemicals]"/>
@@ -15979,10 +15979,10 @@
         <rdfs:label>Gaseous concentration in micropore</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>g m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000012"/>
-        <bervo:BERVO_measurement_of rdf:resource="Gaseous"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000086"/>
     </Class>
     
 
@@ -16002,7 +16002,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g/m2/hr</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="Solid soil organic matter hydrolysis"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000574"/>
     </Class>
     
 
@@ -16021,7 +16021,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g/m2/hr</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="Microbial residual hydrolysis"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000575"/>
     </Class>
     
 
@@ -16040,7 +16040,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g/m2/hr</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="Sorbed organic matter hydrolysis"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000576"/>
     </Class>
     
 
@@ -16059,7 +16059,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="Nutrient tracer"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000583"/>
     </Class>
     
 
@@ -16080,7 +16080,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000532"/>
         <bervo:BERVO_has_unit>NONE</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="Nitrification inhibition"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000577"/>
     </Class>
     
 
@@ -16099,7 +16099,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000265"/>
         <bervo:BERVO_has_unit>NONE</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="Nitrification inhibition"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000577"/>
     </Class>
     
 
@@ -16118,7 +16118,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000532"/>
         <bervo:BERVO_has_unit>NONE</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="Inhibition"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000568"/>
     </Class>
     
 
@@ -16137,7 +16137,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NONE</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="Urea hydrolysis inhibition"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000578"/>
     </Class>
     
 
@@ -16194,7 +16194,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000012"/>
-        <bervo:BERVO_measurement_of rdf:resource="Gases"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000086"/>
     </Class>
     
 
@@ -16464,7 +16464,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000536"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="Volatile tracers"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000582"/>
     </Class>
     
 
@@ -16483,7 +16483,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000536"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="Volatile tracers"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000582"/>
     </Class>
     
 
@@ -17681,7 +17681,7 @@
         <rdfs:label>Volumetric concentration of gaseous carbon dioxide</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>ppmv</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
@@ -17700,7 +17700,7 @@
         <rdfs:label>Volumetric concentration of gaseous oxygen</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>ppmv</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
@@ -20317,7 +20317,7 @@
         <rdfs:label>Root tortuosity to calculate root gaseous diffusivity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000059"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>m2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
@@ -20736,7 +20736,7 @@
         <rdfs:label>Root gaseous tracer content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>g d-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
@@ -20755,7 +20755,7 @@
         <rdfs:label>Root dissolved gaseous tracer content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="Gaseous"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>g d-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
@@ -23304,7 +23304,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g cm-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
-        <bervo:BERVO_measurement_of rdf:resource="Surface layer"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000030"/>
     </Class>
     
 
@@ -24437,7 +24437,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000283"/>
         <bervo:BERVO_has_unit>kPa</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
-        <bervo:BERVO_measurement_of rdf:resource="Vapor"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000118"/>
     </Class>
     
 
@@ -28119,7 +28119,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m3 d-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="Micropores"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000012"/>
     </Class>
     
 
@@ -30367,7 +30367,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g kg-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="Soil organic matter"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000584"/>
     </Class>
     
 
@@ -31634,7 +31634,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol d-2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="Carboxyl"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000581"/>
     </Class>
     
 
@@ -34505,11 +34505,9 @@
     <!-- https://w3id.org/bervo/BERVO_8000028 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000028">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000584"/>
         <obo:IAO_0000115>The dark, well-decomposed organic material that forms in soil through the breakdown and transformation of plant and animal matter by soil organisms. This stable organic component improves soil structure, water holding capacity, nutrient retention, and serves as a long-term carbon storage pool in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000000"/>
-        <oboInOwl:hasRelatedSynonym>SOM</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>organic matter</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Humus</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -35526,7 +35524,6 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000086">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>A state of matter consisting of particles that move freely and expand to fill available containers, including atmospheric gases and soil air. This phase of matter facilitates gas exchange processes, affects atmospheric composition, controls respiration and photosynthesis, and serves as a medium for volatile chemical transport in environmental systems.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>vapor</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Gas</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -36094,6 +36091,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000118">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000579"/>
         <obo:IAO_0000115>Water in its gaseous state present in the atmosphere, representing a major component of the global water cycle and greenhouse gas budget. This atmospheric moisture controls humidity, precipitation formation, heat transport, and energy balance processes that influence weather patterns and climate dynamics.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Water vapor</rdfs:label>
@@ -42978,7 +42976,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="Vapor"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000579"/>
     </Class>
     
 
@@ -43921,6 +43919,367 @@
         <rdfs:label>C4 carbon fixation</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000564"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000565 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000565">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Relating to substances or systems in the gas phase, in which molecules are not held in a condensed state and disperse to occupy the available volume. This concept describes the physical state in which a chemical species diffuses, is transported, or exchanges across soil, water, and atmosphere boundaries in terrestrial systems.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PATO_0001737"/>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Gaseous</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000566 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000566">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000106"/>
+        <obo:IAO_0000115>The liberation of a substance from a bound, sorbed, or encapsulated state into a surrounding medium, making it available for transport, transformation, or uptake.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Release</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000567 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000567">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000106"/>
+        <obo:IAO_0000115>The chemical or enzymatic cleavage of a compound by reaction with water, breaking larger molecules into smaller constituents. In soil systems this is the principal route by which polymeric organic matter becomes available for microbial uptake.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Hydrolysis</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000568 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000568">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000106"/>
+        <obo:IAO_0000115>The suppression or slowing of a chemical or biological process by a substance that interferes with the enzyme or reaction pathway responsible for it.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Inhibition</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000569 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000569">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000566"/>
+        <obo:IAO_0000115>The liberation of ammonium ions from fertilizer particles, mineral surfaces, or organic matter into soil solution, where they become available for plant uptake, nitrification, or adsorption.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Ammonium release</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000570 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000570">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000566"/>
+        <obo:IAO_0000115>The liberation of ammonia from fertilizer particles, soil solution, or decomposing organic matter, commonly preceding volatilization to the atmosphere or oxidation by nitrifying organisms.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Ammonia release</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000571 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000571">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000566"/>
+        <obo:IAO_0000115>The liberation of urea from fertilizer particles into soil solution, preceding its hydrolysis to ammonia by soil urease.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Urea release</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000572 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000572">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000566"/>
+        <obo:IAO_0000115>The liberation of nitrate ions from fertilizer particles or mineral surfaces into soil solution, where they become available for plant uptake, denitrification, or leaching.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Nitrate release</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000573 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000573">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000566"/>
+        <obo:IAO_0000115>The liberation of dihydrogen phosphate ions from fertilizer particles into soil solution, where they become subject to sorption, precipitation, or plant uptake.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Dihydrogen phosphate release</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000574 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000574">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000567"/>
+        <obo:IAO_0000115>The enzymatic cleavage of particulate soil organic matter into dissolved organic compounds, representing the first step in decomposition of the solid organic pool.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Solid soil organic matter hydrolysis</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000575 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000575">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000567"/>
+        <obo:IAO_0000115>The enzymatic cleavage of microbial cell residues and metabolic byproducts in soil, returning necromass carbon and nutrients to the dissolved organic pool.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Microbial residual hydrolysis</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000576 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000576">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000567"/>
+        <obo:IAO_0000115>The enzymatic cleavage of organic matter adsorbed onto soil mineral surfaces, releasing it from physical protection into the dissolved organic pool.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Sorbed organic matter hydrolysis</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000577 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000577">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000568"/>
+        <obo:IAO_0000115>The suppression of microbial oxidation of ammonia to nitrite and nitrate, typically by compounds applied alongside fertilizer to limit nitrogen loss through leaching and denitrification.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Nitrification inhibition</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000578 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000578">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000568"/>
+        <obo:IAO_0000115>The suppression of urease-mediated breakdown of urea to ammonia, typically by compounds applied alongside fertilizer to slow nitrogen release and reduce volatilization.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Urea hydrolysis inhibition</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000579 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000579">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000086"/>
+        <obo:IAO_0000115>A substance in the gas phase below its critical temperature, able to coexist with its condensed form. In environmental models this most often refers to water vapor in soil pores and the atmosphere.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Vapor</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000580 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000580">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>The stalk attaching a leaf blade to the stem, conducting water and photosynthate between them and positioning the blade for light interception.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0020038"/>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Petiole</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000581 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000581">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>The -COOH functional group, whose dissociation to -COO- governs the pH-dependent surface charge of organic matter and mineral surfaces in soil.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46883"/>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Carboxyl</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000582 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000582">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000585"/>
+        <obo:IAO_0000115>A chemical tracer that readily partitions into the gas phase, used to follow transport and loss pathways involving volatilization.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Volatile tracer</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000583 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000583">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000585"/>
+        <obo:IAO_0000115>A chemical tracer representing a plant-essential nutrient, used to follow nutrient transport, transformation, and loss through soil and water pathways.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Nutrient tracer</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000584 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000584">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000286"/>
+        <obo:IAO_0000115>The organic fraction of soil, comprising plant and microbial residues at all stages of decomposition together with stabilized humified compounds.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_04000008"/>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Soil organic matter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000585 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000585">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>A chemical species followed through a system in order to quantify transport, transformation, or loss pathways, whether introduced deliberately or tracked as a natural constituent.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Tracer</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
