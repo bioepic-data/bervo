@@ -41833,7 +41833,6 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000442">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>A coordinate reference system that uses a map projection to represent locations on a curved surface as planar coordinates, enabling positions to be expressed as easting and northing values in linear units. A projected coordinate system includes a base geographic coordinate system, projection method, datum, linear unit, and projection parameters; examples include UTM Zone 13N and State Plane zones.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="Class"/>
         <rdfs:comment>Definition revised to generalize the previous State plane zone term to projected coordinate systems that can qualify easting and northing values.</rdfs:comment>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025).  JMC manually edited label and definition on 3/23/26</rdfs:comment>
         <rdfs:label>Projected Coordinate System</rdfs:label>
@@ -43827,7 +43826,6 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000559">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000255"/>
         <obo:IAO_0000115>The horizontal direction of a line, view, or vector measured clockwise from a reference direction, typically geographic north. Azimuth describes orientation or bearing within a horizontal plane and is commonly reported in degrees.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="Class"/>
         <oboInOwl:hasExactSynonym>bearing</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>compass azimuth</oboInOwl:hasExactSynonym>
         <rdfs:comment> May 4 2026)</rdfs:comment>
@@ -43848,7 +43846,6 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000560">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000255"/>
         <obo:IAO_0000115>The angular extent of the cone or region over which an instrument accepts incoming radiation or observes a scene. Field of view angle describes aperture width rather than the direction the instrument is aimed and is commonly reported in degrees.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="Class"/>
         <oboInOwl:hasExactSynonym>FOV</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>field of view</oboInOwl:hasExactSynonym>
         <rdfs:comment> May 4 2026)</rdfs:comment>
@@ -43887,7 +43884,6 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000562">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <obo:IAO_0000115>A dimensionless index describing the apparent non-random spatial aggregation of foliage inferred from canopy optical measurements, commonly calculated as the ratio of effective leaf area index to clumping-corrected or true leaf area index. Values below 1 indicate more clumped foliage relative to a random distribution.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="Class"/>
         <oboInOwl:hasExactSynonym>ACF</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>apparent clumping index</oboInOwl:hasExactSynonym>
         <rdfs:comment> May 4 2026)</rdfs:comment>
@@ -43908,7 +43904,6 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000563">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000003"/>
         <obo:IAO_0000115>A controlled categorical code assigned to an observation or dataset to indicate a quality-control condition, processing decision, or measurement anomaly relevant to interpretation.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="Class"/>
         <oboInOwl:hasExactSynonym>QC flag</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>quality flag</oboInOwl:hasExactSynonym>
         <rdfs:comment> May 11 2026)</rdfs:comment>

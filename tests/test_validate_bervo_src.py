@@ -18,7 +18,7 @@ _spec.loader.exec_module(validator)
 HEADER = [
     "ID", "Label (description)", "Category", "Definition", "Type",
     "has_units", "qualifiers", "attributes", "measured_ins",
-    "measurement_ofs", "contexts", "value_types", "Parents",
+    "measurement_ofs", "contexts", "value_types", "Parents", "DbXrefs",
 ]
 TYPE_ROW = [
     "ID", "LABEL", "SC %", "A IAO:0000115", "TYPE",
@@ -26,6 +26,7 @@ TYPE_ROW = [
     "AI BERVO:Attribute SPLIT=|", "AI BERVO:measured_in SPLIT=|",
     "AI BERVO:measurement_of SPLIT=|", "AI BERVO:Context SPLIT=|",
     "AI BERVO:has_value_type SPLIT=|", "SC % SPLIT=|",
+    "AI oio:hasDbXref SPLIT=|",
 ]
 
 
@@ -176,6 +177,56 @@ class TestReferentialIntegrity(ValidatorTestCase):
     def test_root_is_not_reported_as_an_orphan(self):
         report = validator.validate(self.write([ROOT]))
         self.assertFalse(any("orphan class" in w for w in report.warnings), report.warnings)
+
+
+class TestCrossReferences(ValidatorTestCase):
+    """DbXrefs is `AI`, so a value ROBOT cannot expand becomes a relative IRI."""
+
+    def test_non_curie_xref_is_an_error(self):
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:0000001", "Soil carbon", DbXrefs="Class"),
+        ]))
+        self.assertTrue(
+            any("is not a CURIE" in e for e in report.errors), report.errors
+        )
+
+    def test_resolvable_prefix_passes_silently(self):
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:0000001", "Soil carbon", DbXrefs="CHEBI:17045"),
+        ]))
+        self.assertEqual(report.errors, [])
+        self.assertFalse(any("CHEBI" in w for w in report.warnings), report.warnings)
+
+    def test_undeclared_prefix_warns_once_not_per_row(self):
+        rows = [ROOT] + [
+            row(f"BERVO:000000{i}", f"Term {i}", DbXrefs="COMO:0000129")
+            for i in range(1, 6)
+        ]
+        report = validator.validate(self.write(rows))
+        hits = [w for w in report.warnings if "COMO" in w]
+        self.assertEqual(len(hits), 1, f"expected one grouped warning, got {hits}")
+        self.assertIn("5 DbXrefs value(s)", hits[0])
+
+    def test_multiple_undeclared_prefixes_each_get_one_warning(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:0000001", "A", DbXrefs="COMO:0000129"),
+            row("BERVO:0000002", "B", DbXrefs="MIXS:0000642"),
+        ]))
+        self.assertEqual(len([w for w in report.warnings if "COMO" in w]), 1)
+        self.assertEqual(len([w for w in report.warnings if "MIXS" in w]), 1)
+
+    def test_na_xref_is_ignored(self):
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:0000001", "Soil carbon", DbXrefs="NA"),
+        ]))
+        self.assertEqual(report.errors, [])
+
+    def test_split_xrefs_are_checked_individually(self):
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:0000001", "Soil carbon", DbXrefs="CHEBI:17045|Class"),
+        ]))
+        self.assertEqual(len([e for e in report.errors if "is not a CURIE" in e]), 1)
 
 
 class TestFix(ValidatorTestCase):

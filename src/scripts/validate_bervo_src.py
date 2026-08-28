@@ -19,6 +19,7 @@ import argparse
 import csv
 import re
 import sys
+import collections
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -74,6 +75,20 @@ TERM_REF_COLUMNS = (
 # Declared ``A`` rather than ``AI``: the value is a literal (a unit string such
 # as "g d-2 h-1"), not a reference. Never resolve these against the term list.
 LITERAL_COLUMNS = ("has_units",)
+
+# ``DbXrefs`` is declared ``AI oio:hasDbXref``, so every value is emitted as an
+# IRI. A value ROBOT cannot expand becomes a *relative* IRI, which is silently
+# meaningless -- so the shape of these values matters.
+XREF_COLUMN = "DbXrefs"
+CURIE = re.compile(r"^([A-Za-z][A-Za-z0-9_.]*):(\S+)$")
+
+# Prefixes ROBOT expands to an absolute IRI without extra configuration (the OBO
+# prefix map). A CURIE using anything else needs an explicit --add-prefix in
+# src/ontology/bervo.Makefile, or it is emitted as a relative IRI.
+RESOLVABLE_XREF_PREFIXES = {
+    "AGRO", "BFO", "CHEBI", "CL", "ENVO", "GO", "IAO", "NCBITaxon", "NCIT",
+    "OBI", "OM", "PATO", "PO", "RO", "UBERON", "UO",
+}
 
 # Columns whose values may be either a CURIE or a term label (ROBOT's ``SC %``
 # resolves both).
@@ -207,6 +222,8 @@ def validate(path: Path) -> Report:
         )
 
     # --- Pass 2: referential integrity, now that every term is known. ---
+    xref_prefixes: collections.Counter = collections.Counter()
+
     for offset, row in enumerate(data):
         line = FIRST_DATA_ROW + offset
         term_id = row[id_col].strip() if id_col < len(row) else ""
@@ -230,6 +247,19 @@ def validate(path: Path) -> Report:
                         f"{term_id}.{column} references {token!r}, which is not a term label{suggestion}",
                     )
 
+        col = index.get(XREF_COLUMN)
+        if col is not None and col < len(row):
+            for token in _split(row[col]):
+                match = CURIE.match(token)
+                if not match:
+                    report.error(
+                        line,
+                        f"{term_id}.{XREF_COLUMN} value {token!r} is not a CURIE; "
+                        f"it would be emitted as a meaningless relative IRI",
+                    )
+                else:
+                    xref_prefixes[match.group(1)] += 1
+
         parented = False
         for column in LABEL_OR_CURIE_COLUMNS:
             col = index.get(column)
@@ -245,6 +275,17 @@ def validate(path: Path) -> Report:
 
         if not parented and term_id not in ROOTLESS_IDS:
             report.warn(line, f"{term_id} has no Category and no Parents; it will be an orphan class")
+
+    # One warning per undeclared prefix rather than per row: 275 identical
+    # warnings would bury everything else.
+    for prefix, count in sorted(xref_prefixes.items()):
+        if prefix not in RESOLVABLE_XREF_PREFIXES:
+            report.warn(
+                None,
+                f"{count} {XREF_COLUMN} value(s) use the prefix {prefix!r}, which ROBOT "
+                f"cannot expand; they are emitted as relative IRIs. Declare it with "
+                f"--add-prefix in src/ontology/bervo.Makefile.",
+            )
 
     return report
 
