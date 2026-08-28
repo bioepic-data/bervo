@@ -25181,7 +25181,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001371">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001370"/>
         <obo:IAO_0000115>The average temperature over a complete year, calculated from daily or monthly temperature measurements and representing the thermal climate baseline for a location. This fundamental climate variable controls ecosystem processes including plant growth rates, species distributions, decomposition processes, and biogeochemical cycling patterns across terrestrial and aquatic environments.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="MIXS:0000642"/>
+        <oboInOwl:hasDbXref rdf:resource="https://w3id.org/mixs/0000642"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Mean annual temperature</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
@@ -33589,7 +33589,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001835">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
         <obo:IAO_0000115>The calendar date when a fire event occurred or was observed in terrestrial ecosystems. This parameter establishes temporal reference for fire disturbance effects, controlling burn history analysis and fire regime characterization in ecosystem management and research.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="MIXS:0001086"/>
+        <oboInOwl:hasDbXref rdf:resource="https://w3id.org/mixs/0001086"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Date of fire</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -33608,7 +33608,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001836">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
         <obo:IAO_0000115>The optical property of water indicating the degree of light scattering by suspended particles and dissolved substances. This parameter controls light penetration, aquatic productivity, and water quality assessment in freshwater and marine ecosystem studies.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="MIXS:0000191"/>
+        <oboInOwl:hasDbXref rdf:resource="https://w3id.org/mixs/0000191"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Turbidity of water</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -33626,7 +33626,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001837">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
         <obo:IAO_0000115>The volumetric flow rate and directional movement of water masses in aquatic environments. This parameter controls nutrient transport, sediment redistribution, and habitat conditions in rivers, lakes, and marine ecosystems.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="MIXS:0000203"/>
+        <oboInOwl:hasDbXref rdf:resource="https://w3id.org/mixs/0000203"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Water current</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -41839,7 +41839,7 @@
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_value_type rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
@@ -43808,8 +43808,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>A process carried out by living organisms or biological systems that transforms matter, energy, or information over time. This concept provides a general parent for process-oriented BERVO terms such as respiration, mineralization, production, and other organism- or ecosystem-driven activities.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
-        <rdfs:comment> Mar 26 2026)</rdfs:comment>
-        <rdfs:comment>Definition source - Manual (Codex</rdfs:comment>
+        <rdfs:comment>Definition source - Manual (Codex, Mar 26 2026)</rdfs:comment>
         <rdfs:label>Biological process</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -43828,13 +43827,12 @@
         <obo:IAO_0000115>The horizontal direction of a line, view, or vector measured clockwise from a reference direction, typically geographic north. Azimuth describes orientation or bearing within a horizontal plane and is commonly reported in degrees.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>bearing</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>compass azimuth</oboInOwl:hasExactSynonym>
-        <rdfs:comment> May 4 2026)</rdfs:comment>
-        <rdfs:comment>Definition source - Manual (JMC</rdfs:comment>
+        <rdfs:comment>Definition source - Manual (JMC, May 4 2026)</rdfs:comment>
         <rdfs:label>Azimuth</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="degree"/>
-        <bervo:BERVO_has_value_type rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>degree</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
@@ -43848,13 +43846,12 @@
         <obo:IAO_0000115>The angular extent of the cone or region over which an instrument accepts incoming radiation or observes a scene. Field of view angle describes aperture width rather than the direction the instrument is aimed and is commonly reported in degrees.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>FOV</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>field of view</oboInOwl:hasExactSynonym>
-        <rdfs:comment> May 4 2026)</rdfs:comment>
-        <rdfs:comment>Definition source - Manual (JMC</rdfs:comment>
+        <rdfs:comment>Definition source - Manual (JMC, May 4 2026)</rdfs:comment>
         <rdfs:label>Field of view angle</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="degree"/>
-        <bervo:BERVO_has_value_type rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>degree</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
@@ -43866,8 +43863,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000561">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <obo:IAO_0000115>A dimensionless correction factor applied during optical canopy or leaf area index processing to adjust gap fraction or transmittance estimates for radiation scattered into the sensor field of view. This factor represents a data-processing correction rather than the physical scattering process itself.</obo:IAO_0000115>
-        <rdfs:comment> May 4 2026)</rdfs:comment>
-        <rdfs:comment>Definition source - Manual (JMC</rdfs:comment>
+        <rdfs:comment>Definition source - Manual (JMC, May 4 2026)</rdfs:comment>
         <rdfs:label>Scattering correction factor</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -43886,13 +43882,12 @@
         <obo:IAO_0000115>A dimensionless index describing the apparent non-random spatial aggregation of foliage inferred from canopy optical measurements, commonly calculated as the ratio of effective leaf area index to clumping-corrected or true leaf area index. Values below 1 indicate more clumped foliage relative to a random distribution.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>ACF</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>apparent clumping index</oboInOwl:hasExactSynonym>
-        <rdfs:comment> May 4 2026)</rdfs:comment>
-        <rdfs:comment>Definition source - Manual (JMC</rdfs:comment>
+        <rdfs:comment>Definition source - Manual (JMC, May 4 2026)</rdfs:comment>
         <rdfs:label>Apparent clumping factor</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="dimensionless"/>
-        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000117"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000117"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>dimensionless</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
@@ -43906,13 +43901,12 @@
         <obo:IAO_0000115>A controlled categorical code assigned to an observation or dataset to indicate a quality-control condition, processing decision, or measurement anomaly relevant to interpretation.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>QC flag</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>quality flag</oboInOwl:hasExactSynonym>
-        <rdfs:comment> May 11 2026)</rdfs:comment>
-        <rdfs:comment>Definition source - Manual (JMC</rdfs:comment>
+        <rdfs:comment>Definition source - Manual (JMC, May 11 2026)</rdfs:comment>
         <rdfs:label>Quality control flag</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_value_type rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>

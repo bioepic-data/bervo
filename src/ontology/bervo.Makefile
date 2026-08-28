@@ -15,10 +15,13 @@ BROWSER_DATA = ../../docs/assets/data/bervo-browser.json
 .PHONY: refresh-google-sheet-snapshot compare-google-sheet export-google-sheet browser_data integration_test remove-old-input
 
 # Build the ODK-managed component from the repo-tracked template.
-$(BERVO_COMPONENT): $(BERVO_TEMPLATE) bervo-annotations.ttl | $(COMPONENTSDIR)
+# Depends on this makefile too: a --add-prefix change alters the emitted IRIs,
+# so the component must rebuild even when the template itself is unchanged.
+$(BERVO_COMPONENT): $(BERVO_TEMPLATE) bervo-annotations.ttl bervo.Makefile | $(COMPONENTSDIR)
 	$(ROBOT) template \
 	  --add-prefix 'BERVO: https://w3id.org/bervo/BERVO_' \
 	  --add-prefix 'oio: http://www.geneontology.org/formats/oboInOwl#' \
+	  --add-prefix 'MIXS: https://w3id.org/mixs/' \
 	  -t $< \
 	  annotate --annotation-file bervo-annotations.ttl \
 	  -o $@

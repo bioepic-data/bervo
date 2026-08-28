@@ -153,6 +153,22 @@ cross-reference using a new prefix without also declaring it** with `--add-prefi
 A `DbXrefs` value that is not CURIE-shaped at all (a bare word such as `Class`) is a hard
 error — it usually means a value landed in the wrong column.
 
+### The same trap applies to `NA`
+
+`qualifiers`, `attributes`, `measured_ins`, `measurement_ofs`, `contexts`, and `value_types`
+are all `AI` columns too. The `NA` sentinel in them is emitted as a relative IRI exactly like
+an undeclared prefix:
+
+```xml
+<bervo:BERVO_Qualifier rdf:resource="NA"/>
+```
+
+There are ~6,900 of these today (tracked in issue #44). The validator stays silent on them
+because `NA` carries a real curatorial meaning in the CSV — "deliberately not applicable", as
+opposed to an empty cell meaning "not yet curated". Follow the existing convention when
+editing rows; do not start converting `NA` to empty, or vice versa, as a side effect of
+another change.
+
 ## What not to do
 
 - Do not edit `src/ontology/components/bervo-src.owl` or any `bervo*.owl/obo/json`.
