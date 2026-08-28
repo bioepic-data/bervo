@@ -155,7 +155,8 @@ with an `obsolete ` label prefix and a `replaced_by` where one applies.
 
 ## Adding or editing a term
 
-1. Search first — `just find "<text>"` greps IDs, labels, and synonyms. Duplicate labels
+1. Search first — `just find "<text>"` greps IDs, labels, definitions, synonyms, and the
+   EcoSIM variable name and source file. Duplicate labels
    are a hard error, and near-duplicates are the most common review finding.
 2. Allocate an ID with `just next-id <block>`.
 3. Append the row to `src/ontology/bervo-src.csv`, matching the header width exactly.

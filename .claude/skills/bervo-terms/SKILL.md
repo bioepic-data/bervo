@@ -91,8 +91,8 @@ BERVO began as a catalogue of EcoSIM model parameters, and that origin is still 
 biggest thing about the term set: **1,749 of 2,352 terms (74%) carry an
 `EcoSIM Variable Name` and a `File Name`** naming the EcoSIM source file they came from.
 
-These two columns are provenance, not semantics — they emit `rdfs:comment` and
-`oio:hasRelatedSynonym`, not axioms — but they are the most useful handle you have when a
+These two columns are provenance, not semantics — `EcoSIM Variable Name` emits
+`oio:hasRelatedSynonym` and `File Name` emits `rdfs:comment`, not axioms — but they are the most useful handle you have when a
 term request comes from someone working with the model.
 
 ### Finding a term from the model side
@@ -112,7 +112,10 @@ have guessed from the code identifier.
 ### The source file usually tells you the category
 
 There are 33 distinct EcoSIM source files, and **32 of them map to one dominant BERVO
-`Category`**. This is the strongest placement heuristic available:
+`Category`**. This is the strongest placement heuristic available. Dominant-category shares
+range from 60% to 100%; the seven largest files are shown, and they are also among the
+strongest — the weaker tail (`NitroPars.txt` and `FlagDataType.txt` at 60%,
+`ChemTracerParsMod.txt` 62%, `AqueChemDatatype.txt` 66%) still needs a judgement call:
 
 | `File Name` | Dominant `Category` | Share |
 | --- | --- | --- |
@@ -130,6 +133,10 @@ When adding a term from a known EcoSIM file, check what its file's neighbours us
 just find "SoilBGCDataType.txt"
 ```
 
+**The one exception is `EcoSimSumDataType.txt`**: its 32 terms spread across 10 categories
+with a top share of 19%, because it is a summary/aggregation file with no natural home. The
+heuristic tells you nothing there.
+
 Treat this as a strong prior, not a rule — the minority cases are real, and the category
 should still be the most specific correct parent.
 
@@ -141,7 +148,7 @@ so confirm against the definition rather than assuming:
 | Suffix | Count | Reading |
 | --- | --- | --- |
 | `_col` | 361 | Column-level, i.e. aggregated over the whole ecosystem column |
-| `_vr` | 304 | Vertically resolved — labels often say so outright |
+| `_vr` | 304 | Vertically resolved, i.e. per soil layer (only ~19% of labels or definitions say so explicitly — confirm before relying on it) |
 | `_pft` | 263 | Per plant functional type |
 | `_brch` | 70 | Per branch (64% of definitions mention a branch) |
 | `_2D`, `_2DH` | 43 | Two-dimensional / horizontal |

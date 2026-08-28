@@ -93,11 +93,15 @@ find query:
     watch = [cols[n] for n in ("ID", "Label (description)", "Definition",
                                "Exact Synonyms", "Related Synonyms",
                                "EcoSIM Variable Name", "File Name") if n in cols]
-    ecosim = cols.get("EcoSIM Variable Name")
+    ecosim, fname = cols.get("EcoSIM Variable Name"), cols.get("File Name")
     hits = [r for r in data if any(q in r[i].casefold() for i in watch if i < len(r))]
+    def cell(r, i):
+        return r[i].strip() if i is not None and i < len(r) else ""
     for r in hits[:40]:
-        tag = f"  <{r[ecosim]}>" if ecosim is not None and ecosim < len(r) and r[ecosim].strip() else ""
-        print(f"{r[0]:<20} {r[1]:<45} [{r[2]}]{tag}")
+        # Show both EcoSIM columns: they are searched, so a hit that matches
+        # neither the label nor the definition is otherwise unexplainable.
+        prov = " / ".join(x for x in (cell(r, ecosim), cell(r, fname)) if x)
+        print(f"{r[0]:<20} {r[1]:<45} [{r[2]}]" + (f"  <{prov}>" if prov else ""))
     print(f"\n{len(hits)} match(es)" + (" (showing first 40)" if len(hits) > 40 else ""))
 
 # Next free ID in a block: 0 = variables, 8 = concepts, 9 = grouping classes.

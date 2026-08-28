@@ -120,8 +120,16 @@ jobs:
             ${{ steps.validate.outputs.report }}
             ```
 
-            Do not repeat what the validator already reported. Focus on what it
-            cannot check:
+            If this PR changes only tooling, tests, workflows, or instruction
+            files (AGENTS.md, .claude/**, justfile) and adds no terms, the
+            term-level checklist below mostly does not apply. Check instead that
+            every documented fact still holds against bervo-src.csv, that every
+            documented command actually runs, and that guidance an agent will
+            follow is accurate — a wrong number in .claude/** propagates into
+            every later agent run.
+
+            Otherwise, do not repeat what the validator already reported. Focus
+            on what it cannot check:
 
             - Is any added term a duplicate or near-duplicate of an existing one?
               Check with `just find` on the label and each synonym. This is the most
