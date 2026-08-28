@@ -1,0 +1,73 @@
+name: Resolve Claude auth
+description: >-
+  Pick a usable Claude credential and export AUTH_MODE. Validates the API key
+  against the Anthropic API so a stale or revoked key falls back to the OAuth
+  token instead of silently shadowing it.
+
+inputs:
+  anthropic-api-key:
+    description: ANTHROPIC_API_KEY secret (may be empty)
+    required: false
+    default: ''
+  oauth-token:
+    description: CLAUDE_CODE_OAUTH_TOKEN secret (may be empty)
+    required: false
+    default: ''
+  model:
+    description: Model the caller intends to use; checked against the key's model list
+    required: false
+    default: ''
+
+outputs:
+  auth-mode:
+    description: '"api_key", "oauth", or "none"'
+    value: ${{ steps.resolve.outputs.auth-mode }}
+
+runs:
+  using: composite
+  steps:
+    - name: Resolve
+      id: resolve
+      shell: bash
+      env:
+        API_KEY: ${{ inputs.anthropic-api-key }}
+        OAUTH: ${{ inputs.oauth-token }}
+        MODEL: ${{ inputs.model }}
+      run: |
+        mode=none
+
+        if [ -n "$API_KEY" ]; then
+          status=$(curl -sS -o /tmp/models.json -w '%{http_code}' \
+            'https://api.anthropic.com/v1/models?limit=100' \
+            -H "x-api-key: $API_KEY" \
+            -H 'anthropic-version: 2023-06-01') || status=000
+          echo "ANTHROPIC_API_KEY check: GET /v1/models -> HTTP $status"
+
+          if [ "$status" = "200" ]; then
+            mode=api_key
+            if [ -n "$MODEL" ]; then
+              python3 "$GITHUB_WORKSPACE/src/scripts/check_model_available.py" \
+                /tmp/models.json "$MODEL" || exit 1
+            fi
+          else
+            case "$status" in
+              401) reason="the key was rejected (401)" ;;
+              403) reason="the key lacks permission (403)" ;;
+              429) reason="rate limited or out of credit (429)" ;;
+              *)   reason="unexpected status $status" ;;
+            esac
+            if [ -n "$OAUTH" ]; then
+              echo "::warning::Ignoring ANTHROPIC_API_KEY because $reason; using CLAUDE_CODE_OAUTH_TOKEN instead. Remove or rotate the stale secret."
+              mode=oauth
+            else
+              echo "::error::ANTHROPIC_API_KEY is unusable: $reason, and no CLAUDE_CODE_OAUTH_TOKEN is set."
+              exit 1
+            fi
+          fi
+        elif [ -n "$OAUTH" ]; then
+          mode=oauth
+        fi
+
+        echo "Auth mode: $mode"
+        echo "auth-mode=$mode" >> "$GITHUB_OUTPUT"
+        echo "AUTH_MODE=$mode" >> "$GITHUB_ENV"

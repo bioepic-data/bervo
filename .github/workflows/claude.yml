@@ -75,14 +75,22 @@ jobs:
           python -m pip install --upgrade pip pytest
           curl -fsSL https://just.systems/install.sh | bash -s -- --to /usr/local/bin
 
-      - name: Run Claude Code
+      - name: Resolve Claude auth
         if: env.HAS_CLAUDE_AUTH == 'true'
+        uses: ./.github/actions/resolve-claude-auth
+        with:
+          anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
+          oauth-token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          model: ${{ env.AGENT_MODEL }}
+
+      - name: Run Claude Code
+        if: env.AUTH_MODE != 'none' && env.AUTH_MODE != ''
         uses: anthropics/claude-code-action@v1
         with:
           # Prefer the API key; fall back to OAuth only when no key is set, so
           # exactly one is ever non-empty and the action never has to arbitrate.
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          claude_code_oauth_token: ${{ secrets.ANTHROPIC_API_KEY == '' && secrets.CLAUDE_CODE_OAUTH_TOKEN || '' }}
+          anthropic_api_key: ${{ env.AUTH_MODE == 'api_key' && secrets.ANTHROPIC_API_KEY || '' }}
+          claude_code_oauth_token: ${{ env.AUTH_MODE == 'oauth' && secrets.CLAUDE_CODE_OAUTH_TOKEN || '' }}
           model: ${{ env.AGENT_MODEL }}
           additional_permissions: |
             actions: read
