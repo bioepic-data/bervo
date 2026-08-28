@@ -172,10 +172,17 @@ subtly broken ontology from a broken template, so run the validator first.
 
 **Errors** (fail CI): ragged rows, duplicate IDs, duplicate labels (case-insensitive),
 malformed IDs, missing labels, unrecognised `Type`, references to terms that do not exist,
-and `Category`/`Parents` values that resolve to neither an ID nor a label.
+`Category`/`Parents` values that resolve to neither an ID nor a label, and `DbXrefs` values
+that are not CURIE-shaped.
 
 **Warnings** (do not fail CI): missing `Type`, IDs outside the allocated blocks, orphan
-classes with no parent, and mixed `Class`/`owl:Class` spelling.
+classes with no parent, mixed `Class`/`owl:Class` spelling, unresolvable relationship
+labels, and `DbXrefs` prefixes ROBOT cannot expand (reported once per prefix, not per row).
+
+On cross-references specifically, see the "Cross-references to other ontologies" section of
+the `bervo-terms` skill: map concepts rather than variables, verify the target term exists,
+and declare any new prefix in `src/ontology/bervo.Makefile` or it is emitted as a broken
+relative IRI.
 
 The checked-in template is expected to be error-free at all times;
 `tests/test_validate_bervo_src.py` enforces that.

@@ -18,7 +18,7 @@ _spec.loader.exec_module(validator)
 HEADER = [
     "ID", "Label (description)", "Category", "Definition", "Type",
     "has_units", "qualifiers", "attributes", "measured_ins",
-    "measurement_ofs", "contexts", "value_types", "Parents",
+    "measurement_ofs", "contexts", "value_types", "Parents", "DbXrefs",
 ]
 TYPE_ROW = [
     "ID", "LABEL", "SC %", "A IAO:0000115", "TYPE",
@@ -26,6 +26,7 @@ TYPE_ROW = [
     "AI BERVO:Attribute SPLIT=|", "AI BERVO:measured_in SPLIT=|",
     "AI BERVO:measurement_of SPLIT=|", "AI BERVO:Context SPLIT=|",
     "AI BERVO:has_value_type SPLIT=|", "SC % SPLIT=|",
+    "AI oio:hasDbXref SPLIT=|",
 ]
 
 
@@ -176,6 +177,107 @@ class TestReferentialIntegrity(ValidatorTestCase):
     def test_root_is_not_reported_as_an_orphan(self):
         report = validator.validate(self.write([ROOT]))
         self.assertFalse(any("orphan class" in w for w in report.warnings), report.warnings)
+
+
+class TestCrossReferences(ValidatorTestCase):
+    """DbXrefs is `AI`, so a value ROBOT cannot expand becomes a relative IRI."""
+
+    def test_non_curie_xref_is_an_error(self):
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:0000001", "Soil carbon", DbXrefs="Class"),
+        ]))
+        self.assertTrue(
+            any("is not a CURIE" in e for e in report.errors), report.errors
+        )
+
+    def test_resolvable_prefix_passes_silently(self):
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:0000001", "Soil carbon", DbXrefs="CHEBI:17045"),
+        ]))
+        self.assertEqual(report.errors, [])
+        self.assertFalse(any("CHEBI" in w for w in report.warnings), report.warnings)
+
+    def test_undeclared_prefix_warns_once_not_per_row(self):
+        rows = [ROOT] + [
+            row(f"BERVO:000000{i}", f"Term {i}", DbXrefs="COMO:0000129")
+            for i in range(1, 6)
+        ]
+        report = validator.validate(self.write(rows))
+        hits = [w for w in report.warnings if "COMO" in w]
+        self.assertEqual(len(hits), 1, f"expected one grouped warning, got {hits}")
+        self.assertIn("5 DbXrefs value(s)", hits[0])
+
+    def test_multiple_undeclared_prefixes_each_get_one_warning(self):
+        # Deliberately two prefixes that are neither OBO-registered nor declared
+        # in bervo.Makefile -- a declared one would (correctly) not warn.
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:0000001", "A", DbXrefs="NOTREAL:0000129"),
+            row("BERVO:0000002", "B", DbXrefs="ALSOFAKE:0000642"),
+        ]))
+        self.assertEqual(len([w for w in report.warnings if "NOTREAL" in w]), 1)
+        self.assertEqual(len([w for w in report.warnings if "ALSOFAKE" in w]), 1)
+
+    def test_prefix_declared_in_the_makefile_does_not_warn(self):
+        """Regression: MIXS was declared in bervo.Makefile, so it must resolve."""
+        declared = sorted(validator.declared_prefixes() - {"BERVO", "oio"})
+        if not declared:
+            self.skipTest("no extra --add-prefix declarations to exercise")
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:0000001", "A", DbXrefs=f"{declared[0]}:0000642"),
+        ]))
+        self.assertFalse(
+            any(declared[0] in w for w in report.warnings),
+            f"{declared[0]} is declared in bervo.Makefile but still warned",
+        )
+
+    def test_na_xref_is_ignored(self):
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:0000001", "Soil carbon", DbXrefs="NA"),
+        ]))
+        self.assertEqual(report.errors, [])
+
+    def test_absolute_iri_xref_is_not_treated_as_a_curie(self):
+        """An http(s) value is already resolved; 'http' is not a prefix."""
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:0000001", "Soil carbon",
+                DbXrefs="http://purl.obolibrary.org/obo/CHEBI_17045"),
+        ]))
+        self.assertEqual(report.errors, [])
+        self.assertFalse(any("http" in w for w in report.warnings), report.warnings)
+
+    def test_split_xrefs_are_checked_individually(self):
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:0000001", "Soil carbon", DbXrefs="CHEBI:17045|Class"),
+        ]))
+        self.assertEqual(len([e for e in report.errors if "is not a CURIE" in e]), 1)
+
+
+class TestPrefixDeclarations(unittest.TestCase):
+    """The resolvable-prefix set must track bervo.Makefile, not duplicate it."""
+
+    def test_declared_prefixes_are_parsed_from_the_makefile(self):
+        declared = validator.declared_prefixes()
+        self.assertIn("BERVO", declared)
+        self.assertIn("oio", declared)
+
+    def test_makefile_prefixes_count_as_resolvable(self):
+        """Doing what the warning says -- adding --add-prefix -- must silence it."""
+        for prefix in validator.declared_prefixes():
+            self.assertIn(prefix, validator.resolvable_prefixes())
+
+    def test_every_makefile_prefix_used_in_the_template_resolves(self):
+        report = validator.validate(REPO_ROOT / "src" / "ontology" / "bervo-src.csv")
+        for warning in report.warnings:
+            for prefix in validator.declared_prefixes():
+                self.assertNotIn(
+                    f"prefix {prefix!r}", warning,
+                    f"{prefix} is declared in bervo.Makefile but still reported unresolvable",
+                )
+
+    def test_missing_makefile_degrades_gracefully(self):
+        self.assertEqual(validator.declared_prefixes(Path("/nonexistent/bervo.Makefile")), set())
 
 
 class TestFix(ValidatorTestCase):

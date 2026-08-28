@@ -85,6 +85,90 @@ There is a known backlog of unresolvable-label warnings in `qualifiers`,
 unrelated task — they need curator judgement about whether the target term should
 exist. Fix only the ones your change touches.
 
+## Cross-references to other ontologies
+
+The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 351
+cross-references on 342 terms today — about 15% of the ontology.
+
+### Map concepts, not variables
+
+**338 of the 342 cross-referenced terms are concepts (`8xxxxxx`); only 4 are variables.**
+This is the established convention and it makes sense: a concept like *Nitrous oxide* or
+*Leaf* has a clean equivalent in an existing ontology, whereas a BERVO variable like
+*Cumulative ecosystem heterotrophic respiration* is a model-specific composite that usually
+does not. Do not force a mapping onto a variable to fill the column in.
+
+Most terms carry exactly one cross-reference; nine carry two (typically a domain ontology
+plus a quality). Leave the column blank when no good match exists — a wrong mapping is
+worse than none.
+
+### Which ontology to reach for
+
+| Prefix | Use for | Current count |
+| --- | --- | --- |
+| `CHEBI` | Chemical entities — *Nitrous oxide* → `CHEBI:17045` | 26 |
+| `ENVO` | Environmental materials, features, biomes — *Runoff* → `ENVO:06105211` | 20 |
+| `PO` | Plant anatomy and development — *Leaf* → `PO:0025034` | 10 |
+| `PATO` | Qualities and properties — *Concentration* → `PATO:0000033` | 9 |
+| `GO` | Biological processes — *Biological process* → `GO:0008150` | 1 |
+| `AGRO` | Agronomy — *Irrigation* → `AGRO:00000006` | 1 |
+| `MIXS` | Sequence-metadata standard fields | 4 |
+| `COMO` | Measurement and experiment metadata concepts | 275 |
+
+`COMO` is the dominant prefix and covers the generic measurement/experiment vocabulary
+(`BERVO:8000298`–`BERVO:8000527` are largely a systematic COMO mapping): *Experimental
+context*, *Replicate series*, *Standard deviation*, *Genome N50*, and so on. Follow that
+existing pattern when adding a term in that space.
+
+### Verify the target term exists
+
+Never assert a cross-reference you have not checked — a plausible-looking ID that does not
+exist is worse than no mapping, because it looks authoritative.
+
+```bash
+runoak -i sqlite:obo:chebi info CHEBI:17045
+runoak -i ols:envo info ENVO:06105211
+```
+
+### Prefixes must be declared to resolve
+
+`DbXrefs` is declared `AI oio:hasDbXref` — the value is emitted as an **IRI**, not a string.
+ROBOT expands OBO-registered prefixes (`CHEBI`, `ENVO`, `PO`, `PATO`, `GO`, `AGRO`, …) to
+absolute IRIs automatically. Anything else is emitted as a *relative* IRI, which is
+silently meaningless:
+
+```xml
+<!-- ENVO: correct, absolute -->
+<oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105211"/>
+
+<!-- COMO: no prefix declaration, so this is a broken relative IRI -->
+<oboInOwl:hasDbXref rdf:resource="COMO:0000129"/>
+```
+
+`just validate` reports this as one grouped warning per undeclared prefix. **Do not add a
+cross-reference using a new prefix without also declaring it** with `--add-prefix` in the
+`robot template` call in `src/ontology/bervo.Makefile`, alongside the existing `BERVO:` and
+`oio:` declarations.
+
+A `DbXrefs` value that is not CURIE-shaped at all (a bare word such as `Class`) is a hard
+error — it usually means a value landed in the wrong column.
+
+### The same trap applies to `NA`
+
+`qualifiers`, `attributes`, `measured_ins`, `measurement_ofs`, `contexts`, and `value_types`
+are all `AI` columns too. The `NA` sentinel in them is emitted as a relative IRI exactly like
+an undeclared prefix:
+
+```xml
+<bervo:BERVO_Qualifier rdf:resource="NA"/>
+```
+
+There are ~6,900 of these today (tracked in issue #44). The validator stays silent on them
+because `NA` carries a real curatorial meaning in the CSV — "deliberately not applicable", as
+opposed to an empty cell meaning "not yet curated". Follow the existing convention when
+editing rows; do not start converting `NA` to empty, or vice versa, as a side effect of
+another change.
+
 ## What not to do
 
 - Do not edit `src/ontology/components/bervo-src.owl` or any `bervo*.owl/obo/json`.

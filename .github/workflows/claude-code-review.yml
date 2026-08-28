@@ -69,15 +69,34 @@ jobs:
             echo VALIDATION_EOF
           } >> "$GITHUB_OUTPUT"
 
-      - name: Claude review
+      # Picks a working credential and exports AUTH_MODE. A stale API key falls
+      # back to the OAuth token rather than shadowing it, and an unusable
+      # credential fails here in seconds instead of as an opaque is_error:true
+      # three minutes into the agent run.
+      - name: Resolve Claude auth
         if: env.HAS_CLAUDE_AUTH == 'true'
+        uses: ./.github/actions/resolve-claude-auth
+        with:
+          anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
+          oauth-token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          model: ${{ env.AGENT_MODEL }}
+
+      - name: Claude review
+        if: env.AUTH_MODE != 'none' && env.AUTH_MODE != ''
         uses: anthropics/claude-code-action@v1
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          claude_code_oauth_token: ${{ secrets.ANTHROPIC_API_KEY == '' && secrets.CLAUDE_CODE_OAUTH_TOKEN || '' }}
-          model: ${{ env.AGENT_MODEL }}
+          anthropic_api_key: ${{ env.AUTH_MODE == 'api_key' && secrets.ANTHROPIC_API_KEY || '' }}
+          claude_code_oauth_token: ${{ env.AUTH_MODE == 'oauth' && secrets.CLAUDE_CODE_OAUTH_TOKEN || '' }}
+          github_token: ${{ github.token }}
+          # `track_progress` is what makes the action actually run on a
+          # pull_request event -- without it the step succeeds in seconds having
+          # done nothing. It also gives one updating comment instead of many.
+          track_progress: true
+          # NOTE: the action has no `model:` input. The model must be passed
+          # through claude_args, or .github/agent-config.yaml has no effect.
           claude_args: |
-            --allowed-tools "Bash(just:*),Bash(python3:*),Bash(git:*),Bash(gh pr:*),WebSearch,WebFetch"
+            --model ${{ env.AGENT_MODEL }}
+            --allowedTools "mcp__github_inline_comment__create_inline_comment,Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*),Bash(gh pr review:*),Bash(just:*),Bash(python3:*),Bash(git:*),Bash(cat:*),Bash(grep:*),Bash(head:*),Bash(tail:*),WebSearch,WebFetch"
           prompt: |
             Review this pull request against the BERVO ontology.
 
