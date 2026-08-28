@@ -30,6 +30,7 @@ jobs:
     timeout-minutes: 20
     env:
       HAS_CLAUDE_AUTH: ${{ (secrets.ANTHROPIC_API_KEY != '' || secrets.CLAUDE_CODE_OAUTH_TOKEN != '') && 'true' || 'false' }}
+      HAS_API_KEY: ${{ secrets.ANTHROPIC_API_KEY != '' && 'true' || 'false' }}
     permissions:
       contents: read
       pull-requests: write
@@ -68,6 +69,26 @@ jobs:
             python3 src/scripts/validate_bervo_src.py || true
             echo VALIDATION_EOF
           } >> "$GITHUB_OUTPUT"
+
+      # The action hides Claude's output "for security", so an auth or
+      # model-access failure surfaces only as an opaque is_error:true after
+      # several minutes. This turns that into a clear message in seconds.
+      # It never echoes the key -- only HTTP status and model availability.
+      - name: Preflight - verify credentials and model access
+        if: env.HAS_API_KEY == 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          status=$(curl -sS -o /tmp/models.json -w '%{http_code}'             'https://api.anthropic.com/v1/models?limit=100'             -H "x-api-key: $ANTHROPIC_API_KEY"             -H 'anthropic-version: 2023-06-01') || status=000
+          echo "GET /v1/models -> HTTP $status"
+          case "$status" in
+            200) ;;
+            401) echo "::error::ANTHROPIC_API_KEY was rejected (401). Rotate the secret."; exit 1 ;;
+            403) echo "::error::ANTHROPIC_API_KEY lacks permission (403)."; exit 1 ;;
+            429) echo "::error::Rate limited or out of credit (429)."; exit 1 ;;
+            *)   echo "::error::Unexpected status $status from the Anthropic API."; exit 1 ;;
+          esac
+          python3 src/scripts/check_model_available.py /tmp/models.json "$AGENT_MODEL"
 
       - name: Claude review
         if: env.HAS_CLAUDE_AUTH == 'true'
