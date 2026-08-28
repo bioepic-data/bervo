@@ -91,11 +91,14 @@ jobs:
           # exactly one is ever non-empty and the action never has to arbitrate.
           anthropic_api_key: ${{ env.AUTH_MODE == 'api_key' && secrets.ANTHROPIC_API_KEY || '' }}
           claude_code_oauth_token: ${{ env.AUTH_MODE == 'oauth' && secrets.CLAUDE_CODE_OAUTH_TOKEN || '' }}
-          model: ${{ env.AGENT_MODEL }}
           additional_permissions: |
             actions: read
+          # One updating comment with progress, rather than a silent run.
+          track_progress: true
+          # The action has no `model:` input; it must go through claude_args.
           claude_args: |
-            --allowed-tools "Bash(just:*),Bash(python3:*),Bash(git:*),Bash(gh:*),Bash(robot:*),Edit,Write,WebSearch,WebFetch"
+            --model ${{ env.AGENT_MODEL }}
+            --allowedTools "Bash(just:*),Bash(python3:*),Bash(git:*),Bash(gh:*),Bash(robot:*),Edit,Write,WebSearch,WebFetch"
           prompt: |
             You are working in the BERVO ontology repository.
 

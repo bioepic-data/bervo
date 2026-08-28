@@ -58,9 +58,11 @@ jobs:
         with:
           anthropic_api_key: ${{ env.AUTH_MODE == 'api_key' && secrets.ANTHROPIC_API_KEY || '' }}
           claude_code_oauth_token: ${{ env.AUTH_MODE == 'oauth' && secrets.CLAUDE_CODE_OAUTH_TOKEN || '' }}
-          model: ${{ env.AGENT_MODEL }}
+          github_token: ${{ github.token }}
+          # The action has no `model:` input; it must go through claude_args.
           claude_args: |
-            --allowed-tools "Bash(just find:*),Bash(just show:*),Bash(gh issue:*),Bash(gh label:*)"
+            --model ${{ env.AGENT_MODEL }}
+            --allowedTools "Bash(just find:*),Bash(just show:*),Bash(gh issue:*),Bash(gh label:*)"
           prompt: |
             Triage BERVO issue #${{ env.ISSUE_NUMBER }}.
 
