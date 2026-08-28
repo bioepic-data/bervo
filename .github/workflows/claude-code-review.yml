@@ -67,6 +67,13 @@ jobs:
           python -m pip install --upgrade pip pytest
           curl -fsSL https://just.systems/install.sh | bash -s -- --to /usr/local/bin
 
+      # Without ROBOT the reviewer cannot run `just build`, so it can only infer
+      # from the component diff whether a regeneration was clean -- and the two
+      # Makefile integration tests fail for environmental reasons on every run,
+      # which it then has to explain away each time.
+      - name: Set up ROBOT
+        uses: ./.github/actions/setup-robot
+
       # Run the deterministic checks first and hand the results to Claude, so the
       # review spends its attention on curation judgement rather than on things a
       # script already knows.

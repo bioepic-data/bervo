@@ -1,8 +1,10 @@
 # Fast structural QC for the BERVO term template.
 #
 # Deliberately separate from qc.yml: this needs no Docker and no ODK image, so it
-# gives contributors a verdict on the source of truth in seconds rather than
-# minutes. qc.yml still runs the full ODK reasoning and report suite.
+# gives contributors a verdict on the source of truth in under a minute rather
+# than several. It installs ROBOT directly so the component build and the
+# Makefile integration tests are genuinely covered here; qc.yml still runs the
+# full ODK reasoning and report suite, and remains the authoritative build.
 
 name: Template QC
 
@@ -29,11 +31,17 @@ jobs:
       - name: Install test dependencies
         run: python -m pip install --upgrade pip pytest
 
+      # The Makefile integration tests shell out to `make components/bervo-src.owl`,
+      # which needs ROBOT. Without it they fail on every run and the failure looks
+      # like a real regression.
+      - name: Set up ROBOT
+        uses: ./.github/actions/setup-robot
+
       - name: Validate bervo-src.csv
         run: python3 src/scripts/validate_bervo_src.py
 
-      - name: Run validator tests
-        run: python3 -m pytest tests/test_validate_bervo_src.py -q
+      - name: Run the test suite
+        run: python3 -m pytest tests/ -q
 
       - name: Check the column contract reference is current
         run: |
