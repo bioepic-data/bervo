@@ -80,7 +80,7 @@ stats:
     for name, n in cats.most_common(10):
         print(f"  {n:>5}  {name}")
 
-# Search IDs, labels, definitions, and synonyms. Usage: just find "soil carbon"
+# Search IDs, labels, definitions, synonyms, and EcoSIM names. Usage: just find "soil carbon"
 find query:
     #!/usr/bin/env python3
     import csv

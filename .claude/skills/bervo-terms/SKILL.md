@@ -91,9 +91,11 @@ BERVO began as a catalogue of EcoSIM model parameters, and that origin is still 
 biggest thing about the term set: **1,749 of 2,352 terms (74%) carry an
 `EcoSIM Variable Name` and a `File Name`** naming the EcoSIM source file they came from.
 
-These two columns are provenance, not semantics — `EcoSIM Variable Name` emits
-`oio:hasRelatedSynonym` and `File Name` emits `rdfs:comment`, not axioms — but they are the most useful handle you have when a
-term request comes from someone working with the model.
+These two columns are provenance, not logical content — `EcoSIM Variable Name` emits
+`oio:hasRelatedSynonym` and `File Name` emits `rdfs:comment`, so neither produces an
+axiom. Note that the synonym does put the EcoSIM code identifier into the released
+ontology, where lexical matchers and search will find it. They are the most useful
+handle you have when a term request comes from someone working with the model.
 
 ### Finding a term from the model side
 
@@ -112,10 +114,16 @@ have guessed from the code identifier.
 ### The source file usually tells you the category
 
 There are 33 distinct EcoSIM source files, and **32 of them map to one dominant BERVO
-`Category`**. This is the strongest placement heuristic available. Dominant-category shares
-range from 60% to 100%; the seven largest files are shown, and they are also among the
-strongest — the weaker tail (`NitroPars.txt` and `FlagDataType.txt` at 60%,
-`ChemTracerParsMod.txt` 62%, `AqueChemDatatype.txt` 66%) still needs a judgement call:
+`Category`**. This is the strongest placement heuristic available.
+
+Shares run from 60% to 100% across those 32, with one outlier at 19% (see below). The
+seven files below are simply the **largest by term count**; their shares are typical
+rather than exceptional — the median across all 33 files is 90%, and so is the mean of
+these seven. A file's absence from this table says nothing about how strong its prior
+is: `SoilPhysDataType.txt` (100%), `MicrobialDataType.txt` (98%) and `SOMDataType.txt`
+(97%) are all stronger than most of what is shown. The weaker end — `NitroPars.txt` and
+`FlagDataType.txt` at 60%, `ChemTracerParsMod.txt` 62%, `AqueChemDatatype.txt` 66% —
+needs a judgement call. Check your own file rather than reading across from these:
 
 | `File Name` | Dominant `Category` | Share |
 | --- | --- | --- |
@@ -148,7 +156,7 @@ so confirm against the definition rather than assuming:
 | Suffix | Count | Reading |
 | --- | --- | --- |
 | `_col` | 361 | Column-level, i.e. aggregated over the whole ecosystem column |
-| `_vr` | 304 | Vertically resolved, i.e. per soil layer (only ~19% of labels or definitions say so explicitly — confirm before relying on it) |
+| `_vr` | 304 | Vertically resolved, i.e. per soil layer. Only ~19% say so explicitly — confirm |
 | `_pft` | 263 | Per plant functional type |
 | `_brch` | 70 | Per branch (64% of definitions mention a branch) |
 | `_2D`, `_2DH` | 43 | Two-dimensional / horizontal |

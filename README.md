@@ -59,7 +59,7 @@ Common tasks are exposed through [`just`](https://just.systems) (`just --list` f
 
 ```bash
 just validate                # structural checks on bervo-src.csv
-just find "soil carbon"      # search labels, definitions, synonyms, EcoSIM names
+just find "soil carbon"      # search IDs, labels, definitions, synonyms, EcoSIM names
 just next-id 0               # next free variable ID
 just show BERVO:0000001      # inspect one term
 just stats                   # term counts by ID block and category
