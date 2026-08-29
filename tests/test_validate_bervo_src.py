@@ -19,6 +19,7 @@ HEADER = [
     "ID", "Label (description)", "Category", "Definition", "Type",
     "has_units", "qualifiers", "attributes", "measured_ins",
     "measurement_ofs", "contexts", "value_types", "Parents", "DbXrefs",
+    "involves_chemicals",
 ]
 TYPE_ROW = [
     "ID", "LABEL", "SC %", "A IAO:0000115", "TYPE",
@@ -26,7 +27,7 @@ TYPE_ROW = [
     "AI BERVO:Attribute SPLIT=|", "AI BERVO:measured_in SPLIT=|",
     "AI BERVO:measurement_of SPLIT=|", "AI BERVO:Context SPLIT=|",
     "AI BERVO:has_value_type SPLIT=|", "SC % SPLIT=|",
-    "AI oio:hasDbXref SPLIT=|",
+    "AI oio:hasDbXref SPLIT=|", "C BERVO:involves_chemicals some %",
 ]
 
 
@@ -254,6 +255,43 @@ class TestCrossReferences(ValidatorTestCase):
         self.assertEqual(len([e for e in report.errors if "is not a CURIE" in e]), 1)
 
 
+class TestClassExpressionColumns(ValidatorTestCase):
+    """`C <prop> some %` fillers must name a class, but are not parents."""
+
+    def test_resolvable_filler_passes(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "Chemical", category="Variable"),
+            row("BERVO:0000001", "Soil carbon", involves_chemicals="Chemical"),
+        ]))
+        self.assertEqual(report.errors, [])
+
+    def test_unresolvable_filler_is_an_error(self):
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:0000001", "Soil carbon", involves_chemicals="Nonexistent"),
+        ]))
+        self.assertTrue(
+            any("is not a class" in e for e in report.errors), report.errors
+        )
+
+    def test_filler_case_typo_gets_a_suggestion(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "Chemical", category="Variable"),
+            row("BERVO:0000001", "Soil carbon", involves_chemicals="chemical"),
+        ]))
+        self.assertTrue(any("did you mean 'Chemical'?" in e for e in report.errors), report.errors)
+
+    def test_filler_does_not_count_as_a_parent(self):
+        """A term with only a restriction filler is still an orphan."""
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "Chemical", category="Variable"),
+            row("BERVO:8000002", "Loose", category="", involves_chemicals="Chemical"),
+        ]))
+        self.assertTrue(any("orphan class" in w for w in report.warnings), report.warnings)
+
+
 class TestPrefixDeclarations(unittest.TestCase):
     """The resolvable-prefix set must track bervo.Makefile, not duplicate it."""
 
@@ -284,7 +322,8 @@ class TestFix(ValidatorTestCase):
     def test_fix_trims_trailing_empty_fields(self):
         path = self.write([ROOT, row("BERVO:0000001", "Soil carbon")])
         with path.open("a", encoding="utf-8", newline="") as handle:
-            handle.write("BERVO:0000002,Soil nitrogen,Variable,,Class,,,,,,,,,,\r\n")
+            # One field wider than the header, the trailing one empty.
+            handle.write("BERVO:0000002,Soil nitrogen,Variable" + "," * (len(HEADER) - 2) + "\r\n")
 
         self.assertTrue(any("fields but the header has" in e for e in validator.validate(path).errors))
         self.assertEqual(validator.fix(path), 1)
@@ -319,7 +358,8 @@ class TestFix(ValidatorTestCase):
     def test_fix_leaves_non_empty_overflow_alone(self):
         path = self.write([ROOT])
         with path.open("a", encoding="utf-8", newline="") as handle:
-            handle.write("BERVO:0000002,Soil nitrogen,Variable,,Class,,,,,,,,,oops\r\n")
+            # One field wider than the header, and the overflow carries real data.
+            handle.write("BERVO:0000002,Soil nitrogen,Variable" + "," * (len(HEADER) - 3) + ",oops\r\n")
 
         self.assertEqual(validator.fix(path), 0, "a row with real overflow data needs a human, not a trim")
 

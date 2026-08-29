@@ -566,11 +566,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000017">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000000"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>EcoSIM output: The flux of chemical elements including carbon, nitrogen, and phosphorus transferred from living plant tissues to the soil surface through leaf, branch, and reproductive structure senescence. This process represents a major pathway for nutrient cycling and organic matter input to soils in terrestrial ecosystem models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LitrFallStrutElms_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>EcosimBGCFluxType.txt</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Total litterfall chemical elements</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000547"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
@@ -11344,11 +11349,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000616">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The total mass of various chemical elements including carbon, nitrogen, and phosphorus contained in aboveground plant organs and structural tissues. This elemental composition quantifies shoot biomass stoichiometry and represents nutrient investment in aboveground plant structural components.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>ShootElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Shoot structural chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -11383,12 +11393,17 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000618">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>This vector varaible summarizes mass of total chemical elements that are associated with the structural components of aboveground plant organs. It excludes nonstrucutral storage of chemical elements, and is a measure of aboveground plant biomass.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>ShootStrutElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>These are special classes - move to their own branch</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Canopy shoot chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
@@ -11396,7 +11411,7 @@
         <bervo:BERVO_has_unit>g d-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000161"/>
-        <bervo:BERVO_measurement_of rdf:resource="[vector of chemicals]"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000161"/>
     </Class>
     
 
@@ -11405,11 +11420,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000619">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>This vector variable quantifies the amount of chemical elements in the structural component of leaf. This variable is an important indicator of aboveground canopy size.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LeafStrutElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Canopy leaf chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
@@ -11425,11 +11445,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000620">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>This vector variable quantifies the amount of chemical elements in the structural component of petiole. This variable is an important indicator of aboveground canopy size.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PetoleStrutElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Canopy sheath chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
@@ -11445,11 +11470,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000621">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>This vector variable quantifies the amount of chemical elements in the structural component of stalk. This variable is an important indicator of aboveground canopy size.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>StalkStrutElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Canopy stalk chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
@@ -11465,11 +11495,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000623">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The total mass of chemical elements stored in stalk reserve pools including carbon, nitrogen, and phosphorus available for remobilization during plant growth and reproduction. This reserve element pool represents stored nutrients and energy that can be mobilized to support reproductive development and stress response.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>StalkRsrvElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Canopy reserve chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
@@ -11485,11 +11520,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000624">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The total mass of chemical elements comprising the structural components of plant husks, representing elemental investment in protective reproductive structures. This husk elemental content quantifies nutrient allocation to reproductive organ protection and contributes to total aboveground biomass accounting.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HuskStrutElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Canopy husk chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
@@ -11505,11 +11545,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000625">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The total mass of chemical elements contained in plant ear structural components, representing elemental investment in reproductive organ development. This ear elemental content quantifies nutrient allocation to grain-bearing structures and indicates reproductive biomass in agricultural and natural ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>EarStrutElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Canopy ear chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
@@ -11525,11 +11570,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000626">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The total mass of chemical elements incorporated into grain structural components, representing elemental investment in seed and reproductive output. This grain elemental content quantifies nutrient allocation to reproductive success and determines harvestable biomass quality in agricultural productivity assessments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>GrainStrutElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Canopy grain chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
@@ -11622,11 +11672,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000631">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of mobile chemical elements stored in canopy tissues as reserves for maintenance and growth processes, including nonstructural carbon, nitrogen, and phosphorus pools. These nonstructural elements represent metabolically active nutrient reserves that support aboveground plant organ development and stress response.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CanopyNonstElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Canopy nonstructural chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
@@ -11642,11 +11697,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000632">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The concentration of nonstructural chemical elements relative to total leaf and petiole structural biomass, used to calculate canopy osmotic and turgor pressures. This concentration controls stomatal conductance regulation and organ growth through osmoregulation mechanisms, representing plant adaptation to water stress conditions.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CanopyNonstElmConc_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Canopy nonstructural chemical element concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
@@ -11681,11 +11741,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000634">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of nonstructural chemical elements contained in nitrogen-fixing nodule bacteria associated with canopy root systems. This nodule elemental content indicates the growth status and metabolic activity of nitrogen-fixing symbionts that contribute to ecosystem nitrogen input.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CanopyNodulNonstElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Canopy nodule nonstructural chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000555"/>
@@ -11701,11 +11766,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000635">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The total chemical elemental biomass of nitrogen-fixing nodule bacteria including carbon, nitrogen, and phosphorus content. This nodule biomass represents the structural investment in nitrogen fixation symbionts and indicates the host plant&apos;s atmospheric nitrogen fixation capacity.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CanopyNodulElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Canopy nodule chemical elemental biomass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000555"/>
@@ -11741,11 +11811,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000637">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of mobile chemical elements stored in branch tissues as reserves for maintenance and growth of branch-associated organs. These nonstructural elements are accumulated through photosynthesis and nutrient assimilation and are depleted through respiration and growth processes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CanopyNonstElms_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Branch nonstructural chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -11819,11 +11894,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000641">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The elemental composition and concentration of chemical elements within the protective sheath tissues of plant branches, representing the mineral nutrient content of these structural components. This parameter is important for understanding nutrient allocation patterns in woody plants, tissue quality for decomposition processes, and the role of sheath tissues in nutrient storage and translocation within tree and shrub canopies.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PetoleStrutElms_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:comment>Vector?</rdfs:comment>
         <rdfs:label>Branch sheath chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -11840,11 +11920,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000642">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The elemental composition and concentration of chemical elements within the structural stalk or stem tissues of plant branches, indicating the mineral nutrient content of woody support structures. This measurement is crucial for understanding how plants allocate nutrients to structural components, affects wood quality and decomposition rates, and influences carbon and nutrient cycling in forest ecosystems where woody biomass represents a major nutrient pool.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>StalkStrutElms_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:comment>Vector?</rdfs:comment>
         <rdfs:label>Branch stalk chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -11861,11 +11946,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000643">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of chemical elements stored as reserves in branch stalk tissues, including carbon, nitrogen, and phosphorus available for remobilization. These branch reserves represent stored nutrients that can be mobilized to support reproductive development and stress response at the individual branch scale.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>StalkRsrvElms_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:comment>Vector?</rdfs:comment>
         <rdfs:label>Branch reserve chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -11882,11 +11972,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000644">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of chemical elements comprising the structural components of husks associated with a specific branch, representing elemental investment in protective reproductive structures. This branch-level husk elemental content quantifies nutrient allocation to reproductive organ protection within individual branch architecture.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HuskStrutElms_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:comment>Vector?</rdfs:comment>
         <rdfs:label>Branch husk chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -11903,11 +11998,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000645">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of chemical elements contained in ear structural components associated with a specific branch, representing elemental investment in reproductive organ development. This branch-level ear elemental content quantifies nutrient allocation to grain-bearing structures within individual branch units.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>EarStrutElms_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:comment>Vector?</rdfs:comment>
         <rdfs:label>Branch ear chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -11924,11 +12024,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000646">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of chemical elements incorporated into grain structural components produced by a specific branch, representing elemental investment in seed and reproductive output. This branch-level grain elemental content determines reproductive success and harvestable biomass quality at the individual branch scale.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>GrainStrutElms_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:comment>Vector?</rdfs:comment>
         <rdfs:label>Branch grain chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -11983,11 +12088,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000649">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of chemical elements comprising the structural components of nitrogen-fixing nodules associated with specific branches. This nodule elemental content represents the mineral composition of symbiotic structures supporting atmospheric nitrogen fixation at the individual branch scale.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CanopyNodulStrutElms_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:comment>Vector?</rdfs:comment>
         <rdfs:label>Branch nodule chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -12004,11 +12114,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000650">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of chemical elements that can be remobilized from structural sheath tissues within specific branches during senescence or nutrient stress. This remobilizable elemental pool represents nutrients that can be translocated to support other plant organs during periods of resource limitation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PetioleChemElmRemob_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:comment>Vector?</rdfs:comment>
         <rdfs:label>Branch sheath structural chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -12044,11 +12159,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000652">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of chemical elements that can be remobilized from structural leaf tissues within specific branches during senescence or resource limitation. This remobilizable leaf elemental pool represents nutrients that can be translocated from senescing leaves to support other plant functions.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LeafChemElmRemob_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:comment>Vector?</rdfs:comment>
         <rdfs:label>Branch leaf structural chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -12065,11 +12185,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000653">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The total mass of chemical elements including carbon, nitrogen, and phosphorus contained in leaf tissues at specific canopy nodes within branches. This nodal leaf elemental content represents the mineral composition and nutrient investment in photosynthetic organs at discrete canopy positions.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LeafElmntNode_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Leaf chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -12085,11 +12210,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000654">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The total mass of chemical elements contained in sheath tissues at specific canopy nodes, representing elemental composition of supportive leaf structures. This sheath elemental content quantifies nutrient allocation to protective and supportive leaf components within the canopy architecture.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PetioleElmntNode_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Sheath chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -12105,11 +12235,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000655">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of chemical elements contained in internode structural tissues between leaf attachment points on branches. This internode elemental content represents nutrient investment in stem segments that provide spacing and mechanical support between leaves within branch architecture.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>InternodeStrutElms_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Internode chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -12125,11 +12260,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000656">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of chemical elements contained in leaf tissues organized by specific canopy layers and nodes within branch structures. This layer-specific leaf elemental content represents the vertical distribution of nutrients in photosynthetic tissues throughout the canopy profile.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LeafElmsByLayerNode_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Layer leaf chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -12240,11 +12380,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000662">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The proportion of chemical elements contained within standing dead plant material relative to the total elemental pool in vegetation canopies. This measurement is essential for understanding nutrient cycling dynamics, decomposition processes, and the retention of essential elements in forest and grassland ecosystems following plant senescence.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>StandDeadKCompElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Standing dead chemical element fraction</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -12260,11 +12405,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000663">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of chemical elements contained in standing dead vegetation including senescent leaves, branches, and stems that remain attached to plants. This standing dead elemental content represents nutrients temporarily immobilized in senescing plant tissues before eventual litterfall and decomposition.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>StandDeadStrutElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Standing dead chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -12280,11 +12430,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000664">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of mobile chemical elements stored seasonally in plant tissues as reserves for periods of limited resource availability or high demand. These seasonal storage pools represent plant adaptive strategies for surviving unfavorable conditions and supporting rapid growth during favorable periods.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SeasonalNonstElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Plant stored nonstructural chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -15483,6 +15638,12 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000840">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000011"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The rate of molecular diffusion of gaseous chemical species through environmental media, determining the spread of gases through air and porous materials. This gaseous diffusivity affects atmospheric chemical transport and influences air quality and greenhouse gas dynamics.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>GasDifc_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ChemTranspDataType.txt</rdfs:comment>
@@ -15495,7 +15656,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>m2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
-        <bervo:BERVO_measurement_of rdf:resource="[vector of chemicals]"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000086"/>
     </Class>
     
 
@@ -15504,6 +15665,12 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000841">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000011"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The rate of molecular diffusion of dissolved chemical species through liquid media, determining the spread of solutes in water and soil solutions. This solute diffusivity affects contaminant transport rates and influences nutrient and pollutant distribution in aquatic and terrestrial systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SoluteDifusvty_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ChemTranspDataType.txt</rdfs:comment>
@@ -15516,7 +15683,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="[vector of chemicals]"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000125"/>
     </Class>
     
 
@@ -15622,6 +15789,12 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000848">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000011"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The maximum concentration of gaseous chemical species that can dissolve in aqueous solutions under specified conditions. This solubility of gases affects gas-water exchange processes and influences dissolved gas concentrations in aquatic and soil systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>GasSolbility_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ChemTranspDataType.txt</rdfs:comment>
@@ -15633,7 +15806,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g solute /g gas</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="[vector of chemicals]"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000086"/>
     </Class>
     
 
@@ -18398,11 +18571,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000995">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of specific chemical elements contained within heterotrophic microbial biomass in soil systems. This parameter quantifies the elemental composition of microbial communities and is essential for understanding nutrient cycling, microbial stoichiometry, and the role of microorganisms in biogeochemical processes within terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>mBiomeHeter_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Microbial biomass chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -18819,11 +18997,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001017">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Autotrophic microbial biomass chemical element quantifies the mass of specific chemical elements contained within autotrophic microbial biomass in soil systems. This parameter represents the elemental composition of nitrifying bacteria and other chemosynthetic microorganisms and is essential for understanding nitrogen cycling, microbial stoichiometry, and nutrient transformations in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>mBiomeAutor_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Autotrophic microbial biomass chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -20213,11 +20396,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001093">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Non-structural chemical element in roots represents the concentration of mobile nutrients and metabolites that are not incorporated into structural components like cellulose or lignin. These elements include soluble sugars, amino acids, and mineral nutrients that can be readily mobilized for growth, maintenance, or transport to other plant organs in vegetation dynamics models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RootMycoNonstElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Non-structural chemical element in roots</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -20290,11 +20478,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001097">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Root nodule chemical element quantifies the elemental composition of specialized root structures that house nitrogen-fixing bacteria in leguminous plants. These nodules contain essential elements like iron, molybdenum, and phosphorous that support nitrogen fixation processes, making them critical components for understanding biological nitrogen cycling in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RootNodulElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Root nodule chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000555"/>
@@ -20806,11 +20999,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001124">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Plant root element refers to any chemical element found in the roots of a plant. These elements play a crucial role in plant growth and nutrition, as well as in soil fertility and the wider ecosystem.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RootElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Plant root element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -20826,11 +21024,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001125">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Plant root structural element refers to the features that comprise the structure of a plant&apos;s roots, including the root hairs, root tip, and root cap. These elements are crucial for nutrient absorption, water uptake, and structural support.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RootStrutElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Plant root structural element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -21037,11 +21240,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001137">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>This variable tracks the root and mycorrhizae (when exists) biomass of chemical elements in different soil layers. It indicates the root distribution along the soil profile.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RootMassElm_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Root chemical element mass in soil layer</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -30127,11 +30335,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001648">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000030"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of chemical elements contained within solid organic matter fractions including humified plant and microbial residues. This parameter represents stable organic matter pools that control long-term carbon storage and nutrient cycling in soil ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SolidOM_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SOMDataType.txt</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Humus soil organic material chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -30204,11 +30417,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001652">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000030"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of chemical elements bound to soil mineral surfaces through adsorption processes within organic matter complexes. This parameter controls nutrient retention, chemical stability, and long-term storage of elements in mineral-organic associations.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SorbedOM_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SOMDataType.txt</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Adsorbed soil organic material chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -30224,10 +30442,15 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001653">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000030"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of chemical elements contained within dead microbial biomass and metabolic byproducts in soil organic matter. This parameter represents microbial-derived carbon and nutrients that contribute to soil organic matter formation and nutrient cycling processes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>OMBioResdu_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>SOMDataType.txt</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Microbial residue chemical element</rdfs:label>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_has_unit>C</bervo:BERVO_has_unit>
@@ -30414,11 +30637,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001663">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000030"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The cumulative mass of chemical elements contained within all living microbial biomass throughout the soil profile. This parameter represents the active biological component controlling decomposition, nutrient cycling, and biochemical transformations in soil ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>tMicBiome_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SOMDataType.txt</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Total microbial biomass chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -30453,11 +30681,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001665">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000030"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The cumulative mass of chemical elements contained within all litter fractions throughout the soil profile. This parameter represents element inputs from plant debris that control nutrient cycling and initial decomposition processes in soil ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>tLitrOM_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SOMDataType.txt</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Total litter chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -30473,11 +30706,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001666">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000030"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The mass of specific chemical elements present within litter layers distributed across different soil depths or canopy positions. This parameter quantifies element storage in detrital organic matter, controlling nutrient release patterns and biogeochemical cycling rates in forest floor and soil surface environments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>litrOM_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SOMDataType.txt</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Vertical layered litter chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -30493,11 +30731,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001667">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000030"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The cumulative mass of specific chemical elements contained within all humus fractions throughout soil profiles. This parameter represents element storage in highly decomposed organic matter, controlling long-term nutrient retention and release in stable soil organic matter pools.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>tHumOM_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SOMDataType.txt</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_chemicals</rdfs:comment>
         <rdfs:label>Total humus chemical element</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -44278,6 +44521,23 @@
         <obo:IAO_0000115>A chemical species followed through a system in order to quantify transport, transformation, or loss pathways, whether introduced deliberately or tracked as a natural constituent.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
         <rdfs:label>Tracer</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000586 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000586">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>A substance of definite composition, whether element, compound, or ion, whose transport, transformation, and exchange are tracked in environmental and earth-system models.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:label>Chemical</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>

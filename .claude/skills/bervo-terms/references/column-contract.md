@@ -36,13 +36,16 @@ Regenerate this table with `python3 src/scripts/dump_column_contract.py`.
 | 27 | `Comment from Jinyun` | `A rdfs:comment` | literal annotation |
 | 28 | `Comment from Harry` | `A rdfs:comment` | literal annotation |
 | 29 | `Comment from Chris` | `A rdfs:comment` | literal annotation |
+| 30 | `involves_chemicals` | `C BERVO:involves_chemicals some %` | **restriction filler** (must name a class) |
 
 ## Reading the template strings
 
 - `SC %` — subclass axiom; `%` is the cell value, resolved as a label or an ID.
+- `C <prop> some %` — an OWL existential restriction; `%` must name a class, and the
+  property is an ObjectProperty rather than an annotation property.
 - `A <prop>` — annotation with a **literal** value.
 - `AI <prop>` — annotation whose value is an **IRI**, so the cell must name a term.
 - `SPLIT=|` — the cell holds multiple `|`-separated values.
 
-The practical consequence: every `AI` and `SC` column is checked for referential
+The practical consequence: every `AI`, `SC` and `C` column is checked for referential
 integrity by `just validate`; `A` columns are free text.
