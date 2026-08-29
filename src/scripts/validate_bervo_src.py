@@ -111,6 +111,11 @@ def resolvable_prefixes() -> set[str]:
 # resolves both).
 LABEL_OR_CURIE_COLUMNS = ("Category", "Parents")
 
+# Declared ``C <property> some %``: the value is the filler of an OWL restriction,
+# so it must name a class. Checked for resolution like a term reference, but it is
+# not a parent -- a term with only this filled in is still an orphan.
+CLASS_EXPRESSION_COLUMNS = ("involves_chemicals",)
+
 # Terms legitimately without a parent: the ontology root and the properties.
 ROOTLESS_IDS = {"BERVO:0000000"} | MNEMONIC_IDS
 
@@ -278,6 +283,32 @@ def validate(path: Path) -> Report:
                     )
                 else:
                     xref_prefixes[match.group(1)] += 1
+
+        for column in CLASS_EXPRESSION_COLUMNS:
+            col = index.get(column)
+            if col is None or col >= len(row):
+                continue
+            # Deliberately not _split(): that drops NULL_TOKENS, and `NA` is the
+            # house convention in every neighbouring AI column. In an AI column it
+            # degrades to a harmless relative IRI (#44); here it would land inside
+            # a subclass axiom, so it has to be rejected rather than skipped.
+            for token in (t.strip() for t in row[col].split("|")):
+                if not token:
+                    continue
+                if token in NULL_TOKENS:
+                    report.error(
+                        line,
+                        f"{term_id}.{column} is a restriction filler and cannot be "
+                        f"{token!r}; leave it empty instead",
+                    )
+                elif token not in ids and token not in known_labels:
+                    hint = folded_labels.get(token.casefold())
+                    suggestion = f"; did you mean {hint!r}?" if hint else ""
+                    report.error(
+                        line,
+                        f"{term_id}.{column} restriction filler {token!r} is not a class"
+                        f"{suggestion}",
+                    )
 
         parented = False
         for column in LABEL_OR_CURIE_COLUMNS:

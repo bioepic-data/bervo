@@ -172,6 +172,36 @@ apart.
 > `EcoSIM Other Names` is populated on **zero** rows. Leave it alone rather than inventing a
 > use for it.
 
+## Variables that involve a set of chemicals
+
+Some variables apply to *any* chemical rather than a named one — `Gaseous diffusivity`
+alongside the specific `Gaseous argon diffusivity`. For those, `involves_chemicals` carries
+the fact that a set is involved, and `measurement_ofs` names the medium or class rather than
+a substance:
+
+| Term | `measurement_ofs` | `involves_chemicals` |
+| --- | --- | --- |
+| `Gaseous argon diffusivity` | `Argon` | *(blank)* |
+| `Gaseous diffusivity` | `Gas` | `Chemical` |
+
+`involves_chemicals` is the ontology's one **`C … some % SPLIT=|`** column: it emits an OWL
+existential restriction rather than an annotation, so its value must name a class. `Chemical`
+(`BERVO:8000586`) is the general filler. Do not put a literal or a bare adjective there —
+`just validate` reports an unresolvable filler as a hard error.
+
+**`NA` is an error here**, unlike every neighbouring column. In an `AI` column `NA` degrades
+to a harmless relative IRI (issue #44); in a restriction it would end up inside a subclass
+axiom. Leave the cell empty when the variable does not range over chemicals.
+
+**The variable ranging over many chemicals is what earns the column; the filler is still one
+class.** All 50 uses today are the single generic `Chemical` — do not enumerate the
+individual substances there. The column is `SPLIT=|` and each filler is checked
+independently, so several are possible, but nothing uses that yet and a specific substance
+belongs in `measurement_ofs`.
+
+Leave it blank unless the variable genuinely ranges over multiple chemicals. A variable about
+one named substance should say so in `measurement_ofs` instead.
+
 ## Cross-references to other ontologies
 
 The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 351
