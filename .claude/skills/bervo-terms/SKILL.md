@@ -193,8 +193,11 @@ existential restriction rather than an annotation, so its value must name a clas
 to a harmless relative IRI (issue #44); in a restriction it would end up inside a subclass
 axiom. Leave the cell empty when the variable does not range over chemicals.
 
-Multiple fillers are `|`-separated like the other multi-valued columns, and each is checked
-independently.
+**The variable ranging over many chemicals is what earns the column; the filler is still one
+class.** All 50 uses today are the single generic `Chemical` — do not enumerate the
+individual substances there. The column is `SPLIT=|` and each filler is checked
+independently, so several are possible, but nothing uses that yet and a specific substance
+belongs in `measurement_ofs`.
 
 Leave it blank unless the variable genuinely ranges over multiple chemicals. A variable about
 one named substance should say so in `measurement_ofs` instead.
