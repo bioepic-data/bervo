@@ -184,7 +184,7 @@ a substance:
 | `Gaseous argon diffusivity` | `Argon` | *(blank)* |
 | `Gaseous diffusivity` | `Gas` | `Chemical` |
 
-`involves_chemicals` is the ontology's one **`C … some %`** column: it emits an OWL
+`involves_chemicals` is the ontology's one **`C … some % SPLIT=|`** column: it emits an OWL
 existential restriction rather than an annotation, so its value must name a class. `Chemical`
 (`BERVO:8000586`) is the general filler. Do not put a literal or a bare adjective there —
 `just validate` reports an unresolvable filler as a hard error.
@@ -192,6 +192,9 @@ existential restriction rather than an annotation, so its value must name a clas
 **`NA` is an error here**, unlike every neighbouring column. In an `AI` column `NA` degrades
 to a harmless relative IRI (issue #44); in a restriction it would end up inside a subclass
 axiom. Leave the cell empty when the variable does not range over chemicals.
+
+Multiple fillers are `|`-separated like the other multi-valued columns, and each is checked
+independently.
 
 Leave it blank unless the variable genuinely ranges over multiple chemicals. A variable about
 one named substance should say so in `measurement_ofs` instead.

@@ -98,7 +98,7 @@ Columns that carry ontology semantics:
 | `Type` | `TYPE` | `Class`, `owl:AnnotationProperty`, or `owl:ObjectProperty` |
 | `Exact Synonyms` / `Related Synonyms` | `A oio:hasExactSynonym` / `hasRelatedSynonym` | `SPLIT=\|` |
 | `has_units`, `qualifiers`, `attributes`, `measured_ins`, `measurement_ofs`, `contexts`, `value_types` | `A`/`AI BERVO:…` | References to other BERVO terms, `SPLIT=\|` |
-| `involves_chemicals` | `C BERVO:involves_chemicals some %` | An OWL **existential restriction**, not an annotation. The filler must name a class; `NA` is an error, so leave it empty when it does not apply. See "Variables that involve a set of chemicals" in the `bervo-terms` skill. |
+| `involves_chemicals` | `C BERVO:involves_chemicals some % SPLIT=\|` | An OWL **existential restriction**, not an annotation. The filler must name a class; `NA` is an error, so leave it empty when it does not apply. See "Variables that involve a set of chemicals" in the `bervo-terms` skill. |
 
 Remaining columns are provenance and curation bookkeeping. Two of them matter more than
 that sounds: **`EcoSIM Variable Name` and `File Name` are populated on 1,749 of 2,352 terms
