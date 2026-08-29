@@ -27,7 +27,7 @@ TYPE_ROW = [
     "AI BERVO:Attribute SPLIT=|", "AI BERVO:measured_in SPLIT=|",
     "AI BERVO:measurement_of SPLIT=|", "AI BERVO:Context SPLIT=|",
     "AI BERVO:has_value_type SPLIT=|", "SC % SPLIT=|",
-    "AI oio:hasDbXref SPLIT=|", "C BERVO:involves_chemicals some %",
+    "AI oio:hasDbXref SPLIT=|", "C BERVO:involves_chemicals some % SPLIT=|",
 ]
 
 
@@ -290,6 +290,24 @@ class TestClassExpressionColumns(ValidatorTestCase):
             row("BERVO:8000002", "Loose", category="", involves_chemicals="Chemical"),
         ]))
         self.assertTrue(any("orphan class" in w for w in report.warnings), report.warnings)
+
+
+    def test_na_is_rejected_in_a_restriction_filler(self):
+        """NA is the house convention in AI columns; in a C column it is an axiom."""
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:0000001", "Soil carbon", involves_chemicals="NA"),
+        ]))
+        self.assertTrue(
+            any("cannot be 'NA'" in e for e in report.errors), report.errors
+        )
+
+    def test_split_fillers_are_checked_individually(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "Chemical", category="Variable"),
+            row("BERVO:0000001", "Soil carbon", involves_chemicals="Chemical|Nonexistent"),
+        ]))
+        self.assertEqual(len([e for e in report.errors if "is not a class" in e]), 1)
 
 
 class TestPrefixDeclarations(unittest.TestCase):

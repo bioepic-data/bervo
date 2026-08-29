@@ -189,6 +189,10 @@ existential restriction rather than an annotation, so its value must name a clas
 (`BERVO:8000586`) is the general filler. Do not put a literal or a bare adjective there —
 `just validate` reports an unresolvable filler as a hard error.
 
+**`NA` is an error here**, unlike every neighbouring column. In an `AI` column `NA` degrades
+to a harmless relative IRI (issue #44); in a restriction it would end up inside a subclass
+axiom. Leave the cell empty when the variable does not range over chemicals.
+
 Leave it blank unless the variable genuinely ranges over multiple chemicals. A variable about
 one named substance should say so in `measurement_ofs` instead.
 

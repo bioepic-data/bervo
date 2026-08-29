@@ -288,8 +288,20 @@ def validate(path: Path) -> Report:
             col = index.get(column)
             if col is None or col >= len(row):
                 continue
-            for token in _split(row[col]):
-                if token not in ids and token not in known_labels:
+            # Deliberately not _split(): that drops NULL_TOKENS, and `NA` is the
+            # house convention in every neighbouring AI column. In an AI column it
+            # degrades to a harmless relative IRI (#44); here it would land inside
+            # a subclass axiom, so it has to be rejected rather than skipped.
+            for token in (t.strip() for t in row[col].split("|")):
+                if not token:
+                    continue
+                if token in NULL_TOKENS:
+                    report.error(
+                        line,
+                        f"{term_id}.{column} is a restriction filler and cannot be "
+                        f"{token!r}; leave it empty instead",
+                    )
+                elif token not in ids and token not in known_labels:
                     hint = folded_labels.get(token.casefold())
                     suggestion = f"; did you mean {hint!r}?" if hint else ""
                     report.error(

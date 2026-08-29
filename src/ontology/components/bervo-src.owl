@@ -5605,6 +5605,12 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000294">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The cumulative mass of essential chemical elements stored in plant biomass across a modeling domain. This integrated measure includes carbon, nitrogen, phosphorus, and other nutrients in plant tissues and is crucial for verifying mass conservation and understanding ecosystem nutrient cycling in terrestrial biogeochemical models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PlantElemntStoreLandscape</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
@@ -11874,6 +11880,12 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000640">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>It records the amount of structural biomass of leaves over a branch in the canopy. It is an indicator plant canopy size.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LeafStrutElms_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>

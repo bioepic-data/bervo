@@ -36,7 +36,7 @@ Regenerate this table with `python3 src/scripts/dump_column_contract.py`.
 | 27 | `Comment from Jinyun` | `A rdfs:comment` | literal annotation |
 | 28 | `Comment from Harry` | `A rdfs:comment` | literal annotation |
 | 29 | `Comment from Chris` | `A rdfs:comment` | literal annotation |
-| 30 | `involves_chemicals` | `C BERVO:involves_chemicals some %` | **restriction filler** (must name a class) |
+| 30 | `involves_chemicals` | `C BERVO:involves_chemicals some % SPLIT=\|` | **restriction filler** (must name a class) |
 
 ## Reading the template strings
 
