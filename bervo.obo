@@ -24173,6 +24173,17 @@ property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
+id: bervo:BERVO_0001810
+name: Gravimetric water content
+def: "The mass of water present in soil expressed relative to the mass of dry soil. Gravimetric water content is commonly determined by weighing a moist soil sample, drying it to constant mass, and dividing the lost water mass by the dry soil mass." []
+comment: Definition source - Codex CLI (Jun 4 2026)
+synonym: "gravimetric soil water content" EXACT []
+synonym: "soil gravimetric water content" EXACT []
+is_a: bervo:BERVO_9000032 ! Soil and water variable
+property_value: bervo:BERVO_has_unit "g H2O g-1 dry soil" xsd:string
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000102
+
+[Term]
 id: bervo:BERVO_0001812
 name: Cumulative total surface runoff
 def: "The accumulated volume of water that has flowed over the land surface during a specified time period, representing the total surface water yield from precipitation events. This parameter is essential for watershed management, flood prediction, and understanding the hydrological response of landscapes to precipitation patterns and land use changes." []
