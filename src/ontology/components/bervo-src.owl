@@ -35572,7 +35572,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000072 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000072">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <obo:IAO_0000115>The proportion of carbon content relative to phosphorus content in biological materials, indicating the stoichiometric relationship between these essential elements. This ratio influences decomposition rates, nutrient cycling, microbial activity, and ecosystem responses to nutrient availability in terrestrial and aquatic environments.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Carbon to phosphorus ratio</rdfs:label>
@@ -35711,7 +35711,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000080 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000080">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <obo:IAO_0000115>The amount of soluble three-carbon compounds in plant tissue that can be readily metabolized for energy and growth processes. These compounds represent the mobile carbon reserves that plants use for respiration, growth, and stress responses, and are important for understanding plant carbon allocation and metabolic strategies.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Non-structural C3 content</rdfs:label>
@@ -35830,7 +35830,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000088 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000088">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000587"/>
         <obo:IAO_0000115>Soluble carbon-based molecules such as sugars, organic acids, and amino acids that can be readily metabolized by organisms for energy and biosynthesis. These compounds represent the mobile fraction of organic matter that controls microbial activity, decomposition rates, and nutrient cycling in terrestrial and aquatic ecosystems.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Non-structural organic compounds</rdfs:label>
@@ -36200,7 +36200,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000109 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000109">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <obo:IAO_0000115>The proportion of carbon content relative to nitrogen content in organic materials, indicating decomposition rates and nutrient cycling dynamics. This stoichiometric relationship controls microbial activity, organic matter decomposition, nitrogen mineralization, and ecosystem responses to environmental changes and management practices.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>C:N ratio</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
@@ -37558,7 +37558,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000189 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000189">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000587"/>
         <obo:IAO_0000115>Soluble sugars and readily mobilizable starch that can be quickly metabolized by plants for energy, growth, and stress responses. These carbon compounds represent the mobile energy reserves that plants use for respiration, osmotic adjustment, and resource allocation, and are important indicators of plant carbon status and stress tolerance.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Non-structural carbohydrate</rdfs:label>
@@ -39311,7 +39311,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000287 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000287">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <obo:IAO_0000115>The total amount of thermal energy contained within a system that can be released or absorbed during physical or chemical processes at constant pressure. This property controls phase transitions, chemical reaction rates, and energy balance processes that influence ecosystem functioning and environmental dynamics in terrestrial and aquatic systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000533"/>
         <oboInOwl:hasExactSynonym>enthalpy</oboInOwl:hasExactSynonym>
@@ -44578,7 +44578,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000587">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
-        <obo:IAO_0000115>Portion of a chemical substance distinguished by its chemical form, physical state, or location within a system and tracked as a stock in models or quantified as a fraction of a sample, such as dissolved inorganic carbon or organic nitrogen.</obo:IAO_0000115>
+        <obo:IAO_0000115>Portion of a chemical substance distinguished by its chemical form, physical state, or location within a system and tracked as a stock in models or quantified as a fraction of a sample, such as dissolved inorganic carbon or dissolved organic nitrogen.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>chemical fraction</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Fable 5.1 through Claude Code (Sep 3 2026)</rdfs:comment>
         <rdfs:label>Chemical pool</rdfs:label>
