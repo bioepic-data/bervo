@@ -13,9 +13,9 @@
         "val" : "BERVO"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-05-20"
+        "val" : "2026-09-03"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/bervo/releases/2026-05-20/bervo.json"
+      "version" : "http://purl.obolibrary.org/obo/bervo/releases/2026-09-03/bervo.json"
     },
     "nodes" : [ {
       "id" : "https://w3id.org/bervo/BERVO_0000000",
@@ -627,7 +627,7 @@
         "definition" : {
           "val" : "EcoSIM output: The flux of chemical elements including carbon, nitrogen, and phosphorus transferred from living plant tissues to the soil surface through leaf, branch, and reproductive structure senescence. This process represents a major pathway for nutrient cycling and organic matter input to soils in terrestrial ecosystem models."
         },
-        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "EcosimBGCFluxType.txt", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "EcosimBGCFluxType.txt" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "LitrFallStrutElms_col"
@@ -4846,7 +4846,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Ammonium%20release"
+          "val" : "https://w3id.org/bervo/BERVO_8000569"
         } ]
       }
     }, {
@@ -4879,7 +4879,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Ammonia%20release"
+          "val" : "https://w3id.org/bervo/BERVO_8000570"
         } ]
       }
     }, {
@@ -4912,7 +4912,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Urea%20release"
+          "val" : "https://w3id.org/bervo/BERVO_8000571"
         } ]
       }
     }, {
@@ -4945,7 +4945,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Nitrate%20release"
+          "val" : "https://w3id.org/bervo/BERVO_8000572"
         } ]
       }
     }, {
@@ -4978,7 +4978,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Phosphoric%20acid%20release"
+          "val" : "https://w3id.org/bervo/BERVO_8000573"
         } ]
       }
     }, {
@@ -7882,7 +7882,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "m2 h-1"
@@ -7948,7 +7948,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "m2 h-1"
@@ -8014,7 +8014,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "m2 h-1"
@@ -8080,7 +8080,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "m2 h-1"
@@ -8146,7 +8146,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "m2 h-1"
@@ -8212,7 +8212,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "m2 h-1"
@@ -8278,7 +8278,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "m2 h-1"
@@ -8971,7 +8971,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "m2 h-1"
@@ -9409,7 +9409,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000021"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Plant%20element%20(C,N,P,%20etc)"
+          "val" : "https://w3id.org/bervo/BERVO_8000021"
         } ]
       }
     }, {
@@ -11679,7 +11679,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "g d-2 h-1"
@@ -12339,7 +12339,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000175"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "g d-2 h-1"
@@ -16316,7 +16316,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000201"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Vapor"
+          "val" : "https://w3id.org/bervo/BERVO_8000118"
         } ]
       }
     }, {
@@ -16472,7 +16472,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000540"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Context",
-          "val" : "http://www.w3.org/2002/07/Boundary%20Layer"
+          "val" : "https://w3id.org/bervo/BERVO_8000004"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Context",
           "val" : "https://w3id.org/bervo/BERVO_8000007"
@@ -16490,7 +16490,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000007"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Boundary%20Layer"
+          "val" : "https://w3id.org/bervo/BERVO_8000004"
         } ]
       }
     }, {
@@ -16514,7 +16514,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "umol m-3"
@@ -16547,7 +16547,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "umol m-3"
@@ -16613,7 +16613,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "umol m-3"
@@ -16646,7 +16646,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000007"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "umol mol-1"
@@ -16970,7 +16970,7 @@
         } ],
         "basicPropertyValues" : [ {
           "pred" : "https://w3id.org/bervo/BERVO_Attribute",
-          "val" : "http://www.w3.org/2002/07/NA"
+          "val" : "https://w3id.org/bervo/BERVO_8000023"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Context",
           "val" : "http://www.w3.org/2002/07/NA"
@@ -16985,7 +16985,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000021"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/CO2%20concentration"
+          "val" : "https://w3id.org/bervo/BERVO_8000188"
         } ]
       }
     }, {
@@ -17282,7 +17282,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000145"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/CO2%20fixation"
+          "val" : "https://w3id.org/bervo/BERVO_8000188"
         } ]
       }
     }, {
@@ -19258,7 +19258,7 @@
         "definition" : {
           "val" : "The total mass of various chemical elements including carbon, nitrogen, and phosphorus contained in aboveground plant organs and structural tissues. This elemental composition quantifies shoot biomass stoichiometry and represents nutrient investment in aboveground plant structural components."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "ShootElms_pft"
@@ -19324,7 +19324,7 @@
         "definition" : {
           "val" : "This vector varaible summarizes mass of total chemical elements that are associated with the structural components of aboveground plant organs. It excludes nonstrucutral storage of chemical elements, and is a measure of aboveground plant biomass."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "These are special classes - move to their own branch", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "These are special classes - move to their own branch" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "ShootStrutElms_pft"
@@ -19349,7 +19349,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000161"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/%5Bvector%20of%20chemicals%5D"
+          "val" : "https://w3id.org/bervo/BERVO_8000161"
         } ]
       }
     }, {
@@ -19360,7 +19360,7 @@
         "definition" : {
           "val" : "This vector variable quantifies the amount of chemical elements in the structural component of leaf. This variable is an important indicator of aboveground canopy size."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "LeafStrutElms_pft"
@@ -19393,7 +19393,7 @@
         "definition" : {
           "val" : "This vector variable quantifies the amount of chemical elements in the structural component of petiole. This variable is an important indicator of aboveground canopy size."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "PetoleStrutElms_pft"
@@ -19426,7 +19426,7 @@
         "definition" : {
           "val" : "This vector variable quantifies the amount of chemical elements in the structural component of stalk. This variable is an important indicator of aboveground canopy size."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "StalkStrutElms_pft"
@@ -19459,7 +19459,7 @@
         "definition" : {
           "val" : "The total mass of chemical elements stored in stalk reserve pools including carbon, nitrogen, and phosphorus available for remobilization during plant growth and reproduction. This reserve element pool represents stored nutrients and energy that can be mobilized to support reproductive development and stress response."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "StalkRsrvElms_pft"
@@ -19492,7 +19492,7 @@
         "definition" : {
           "val" : "The total mass of chemical elements comprising the structural components of plant husks, representing elemental investment in protective reproductive structures. This husk elemental content quantifies nutrient allocation to reproductive organ protection and contributes to total aboveground biomass accounting."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "HuskStrutElms_pft"
@@ -19525,7 +19525,7 @@
         "definition" : {
           "val" : "The total mass of chemical elements contained in plant ear structural components, representing elemental investment in reproductive organ development. This ear elemental content quantifies nutrient allocation to grain-bearing structures and indicates reproductive biomass in agricultural and natural ecosystems."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "EarStrutElms_pft"
@@ -19558,7 +19558,7 @@
         "definition" : {
           "val" : "The total mass of chemical elements incorporated into grain structural components, representing elemental investment in seed and reproductive output. This grain elemental content quantifies nutrient allocation to reproductive success and determines harvestable biomass quality in agricultural productivity assessments."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "GrainStrutElms_pft"
@@ -19726,7 +19726,7 @@
         "definition" : {
           "val" : "The mass of mobile chemical elements stored in canopy tissues as reserves for maintenance and growth processes, including nonstructural carbon, nitrogen, and phosphorus pools. These nonstructural elements represent metabolically active nutrient reserves that support aboveground plant organ development and stress response."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "CanopyNonstElms_pft"
@@ -19759,7 +19759,7 @@
         "definition" : {
           "val" : "The concentration of nonstructural chemical elements relative to total leaf and petiole structural biomass, used to calculate canopy osmotic and turgor pressures. This concentration controls stomatal conductance regulation and organ growth through osmoregulation mechanisms, representing plant adaptation to water stress conditions."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "CanopyNonstElmConc_pft"
@@ -19825,7 +19825,7 @@
         "definition" : {
           "val" : "The mass of nonstructural chemical elements contained in nitrogen-fixing nodule bacteria associated with canopy root systems. This nodule elemental content indicates the growth status and metabolic activity of nitrogen-fixing symbionts that contribute to ecosystem nitrogen input."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "CanopyNodulNonstElms_pft"
@@ -19858,7 +19858,7 @@
         "definition" : {
           "val" : "The total chemical elemental biomass of nitrogen-fixing nodule bacteria including carbon, nitrogen, and phosphorus content. This nodule biomass represents the structural investment in nitrogen fixation symbionts and indicates the host plant's atmospheric nitrogen fixation capacity."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "CanopyNodulElms_pft"
@@ -19924,7 +19924,7 @@
         "definition" : {
           "val" : "The mass of mobile chemical elements stored in branch tissues as reserves for maintenance and growth of branch-associated organs. These nonstructural elements are accumulated through photosynthesis and nutrient assimilation and are depleted through respiration and growth processes."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "CanopyNonstElms_brch"
@@ -20056,7 +20056,7 @@
         "definition" : {
           "val" : "The elemental composition and concentration of chemical elements within the protective sheath tissues of plant branches, representing the mineral nutrient content of these structural components. This parameter is important for understanding nutrient allocation patterns in woody plants, tissue quality for decomposition processes, and the role of sheath tissues in nutrient storage and translocation within tree and shrub canopies."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)", "Use with BERVO:involves_chemicals", "Vector?" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)", "Vector?" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "PetoleStrutElms_brch"
@@ -20089,7 +20089,7 @@
         "definition" : {
           "val" : "The elemental composition and concentration of chemical elements within the structural stalk or stem tissues of plant branches, indicating the mineral nutrient content of woody support structures. This measurement is crucial for understanding how plants allocate nutrients to structural components, affects wood quality and decomposition rates, and influences carbon and nutrient cycling in forest ecosystems where woody biomass represents a major nutrient pool."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)", "Use with BERVO:involves_chemicals", "Vector?" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)", "Vector?" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "StalkStrutElms_brch"
@@ -20122,7 +20122,7 @@
         "definition" : {
           "val" : "The mass of chemical elements stored as reserves in branch stalk tissues, including carbon, nitrogen, and phosphorus available for remobilization. These branch reserves represent stored nutrients that can be mobilized to support reproductive development and stress response at the individual branch scale."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals", "Vector?" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Vector?" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "StalkRsrvElms_brch"
@@ -20155,7 +20155,7 @@
         "definition" : {
           "val" : "The mass of chemical elements comprising the structural components of husks associated with a specific branch, representing elemental investment in protective reproductive structures. This branch-level husk elemental content quantifies nutrient allocation to reproductive organ protection within individual branch architecture."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals", "Vector?" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Vector?" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "HuskStrutElms_brch"
@@ -20188,7 +20188,7 @@
         "definition" : {
           "val" : "The mass of chemical elements contained in ear structural components associated with a specific branch, representing elemental investment in reproductive organ development. This branch-level ear elemental content quantifies nutrient allocation to grain-bearing structures within individual branch units."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals", "Vector?" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Vector?" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "EarStrutElms_brch"
@@ -20221,7 +20221,7 @@
         "definition" : {
           "val" : "The mass of chemical elements incorporated into grain structural components produced by a specific branch, representing elemental investment in seed and reproductive output. This branch-level grain elemental content determines reproductive success and harvestable biomass quality at the individual branch scale."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals", "Vector?" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Vector?" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "GrainStrutElms_brch"
@@ -20320,7 +20320,7 @@
         "definition" : {
           "val" : "The mass of chemical elements comprising the structural components of nitrogen-fixing nodules associated with specific branches. This nodule elemental content represents the mineral composition of symbiotic structures supporting atmospheric nitrogen fixation at the individual branch scale."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals", "Vector?" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Vector?" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "CanopyNodulStrutElms_brch"
@@ -20353,7 +20353,7 @@
         "definition" : {
           "val" : "The mass of chemical elements that can be remobilized from structural sheath tissues within specific branches during senescence or nutrient stress. This remobilizable elemental pool represents nutrients that can be translocated to support other plant organs during periods of resource limitation."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals", "Vector?" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Vector?" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "PetioleChemElmRemob_brch"
@@ -20419,7 +20419,7 @@
         "definition" : {
           "val" : "The mass of chemical elements that can be remobilized from structural leaf tissues within specific branches during senescence or resource limitation. This remobilizable leaf elemental pool represents nutrients that can be translocated from senescing leaves to support other plant functions."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals", "Vector?" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Vector?" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "LeafChemElmRemob_brch"
@@ -20452,7 +20452,7 @@
         "definition" : {
           "val" : "The total mass of chemical elements including carbon, nitrogen, and phosphorus contained in leaf tissues at specific canopy nodes within branches. This nodal leaf elemental content represents the mineral composition and nutrient investment in photosynthetic organs at discrete canopy positions."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "LeafElmntNode_brch"
@@ -20485,7 +20485,7 @@
         "definition" : {
           "val" : "The total mass of chemical elements contained in sheath tissues at specific canopy nodes, representing elemental composition of supportive leaf structures. This sheath elemental content quantifies nutrient allocation to protective and supportive leaf components within the canopy architecture."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "PetioleElmntNode_brch"
@@ -20518,7 +20518,7 @@
         "definition" : {
           "val" : "The mass of chemical elements contained in internode structural tissues between leaf attachment points on branches. This internode elemental content represents nutrient investment in stem segments that provide spacing and mechanical support between leaves within branch architecture."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "InternodeStrutElms_brch"
@@ -20551,7 +20551,7 @@
         "definition" : {
           "val" : "The mass of chemical elements contained in leaf tissues organized by specific canopy layers and nodes within branch structures. This layer-specific leaf elemental content represents the vertical distribution of nutrients in photosynthetic tissues throughout the canopy profile."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "LeafElmsByLayerNode_brch"
@@ -20749,7 +20749,7 @@
         "definition" : {
           "val" : "The proportion of chemical elements contained within standing dead plant material relative to the total elemental pool in vegetation canopies. This measurement is essential for understanding nutrient cycling dynamics, decomposition processes, and the retention of essential elements in forest and grassland ecosystems following plant senescence."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "StandDeadKCompElms_pft"
@@ -20782,7 +20782,7 @@
         "definition" : {
           "val" : "The mass of chemical elements contained in standing dead vegetation including senescent leaves, branches, and stems that remain attached to plants. This standing dead elemental content represents nutrients temporarily immobilized in senescing plant tissues before eventual litterfall and decomposition."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "StandDeadStrutElms_pft"
@@ -20815,7 +20815,7 @@
         "definition" : {
           "val" : "The mass of mobile chemical elements stored seasonally in plant tissues as reserves for periods of limited resource availability or high demand. These seasonal storage pools represent plant adaptive strategies for surviving unfavorable conditions and supporting rapid growth during favorable periods."
         },
-        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "CanopyDataType.txt", "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "SeasonalNonstElms_pft"
@@ -24686,7 +24686,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000116"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Petiole"
+          "val" : "https://w3id.org/bervo/BERVO_8000580"
         } ]
       }
     }, {
@@ -26435,7 +26435,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "m2 h-1"
@@ -26444,7 +26444,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000050"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/%5Bvector%20of%20chemicals%5D"
+          "val" : "https://w3id.org/bervo/BERVO_8000086"
         } ]
       }
     }, {
@@ -26477,7 +26477,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/%5Bvector%20of%20chemicals%5D"
+          "val" : "https://w3id.org/bervo/BERVO_8000125"
         } ]
       }
     }, {
@@ -26675,7 +26675,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/%5Bvector%20of%20chemicals%5D"
+          "val" : "https://w3id.org/bervo/BERVO_8000086"
         } ]
       }
     }, {
@@ -27260,7 +27260,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "g m-3"
@@ -27269,7 +27269,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000012"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000086"
         } ]
       }
     }, {
@@ -27302,7 +27302,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000062"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Solid%20soil%20organic%20matter%20hydrolysis"
+          "val" : "https://w3id.org/bervo/BERVO_8000574"
         } ]
       }
     }, {
@@ -27335,7 +27335,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000062"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Microbial%20residual%20hydrolysis"
+          "val" : "https://w3id.org/bervo/BERVO_8000575"
         } ]
       }
     }, {
@@ -27368,7 +27368,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000062"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Sorbed%20organic%20matter%20hydrolysis"
+          "val" : "https://w3id.org/bervo/BERVO_8000576"
         } ]
       }
     }, {
@@ -27389,7 +27389,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000541"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Context",
-          "val" : "http://www.w3.org/2002/07/surface%20runoff"
+          "val" : "https://w3id.org/bervo/BERVO_8000013"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
           "val" : "http://www.w3.org/2002/07/NA"
@@ -27401,7 +27401,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000062"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Nutrient%20tracer"
+          "val" : "https://w3id.org/bervo/BERVO_8000583"
         } ]
       }
     }, {
@@ -27434,7 +27434,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000062"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Nitrification%20inhibition"
+          "val" : "https://w3id.org/bervo/BERVO_8000577"
         } ]
       }
     }, {
@@ -27467,7 +27467,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000062"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Nitrification%20inhibition"
+          "val" : "https://w3id.org/bervo/BERVO_8000577"
         } ]
       }
     }, {
@@ -27500,7 +27500,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000062"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Inhibition"
+          "val" : "https://w3id.org/bervo/BERVO_8000568"
         } ]
       }
     }, {
@@ -27533,7 +27533,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000062"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Urea%20hydrolysis%20inhibition"
+          "val" : "https://w3id.org/bervo/BERVO_8000578"
         } ]
       }
     }, {
@@ -27632,7 +27632,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000012"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Gases"
+          "val" : "https://w3id.org/bervo/BERVO_8000086"
         } ]
       }
     }, {
@@ -27830,7 +27830,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000062"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Cation%20exchange"
+          "val" : "https://w3id.org/bervo/BERVO_8000062"
         } ]
       }
     }, {
@@ -27863,7 +27863,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000062"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Anion%20exchange"
+          "val" : "https://w3id.org/bervo/BERVO_8000062"
         } ]
       }
     }, {
@@ -28094,7 +28094,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000062"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Volatile%20tracers"
+          "val" : "https://w3id.org/bervo/BERVO_8000582"
         } ]
       }
     }, {
@@ -28127,7 +28127,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000062"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Volatile%20tracers"
+          "val" : "https://w3id.org/bervo/BERVO_8000582"
         } ]
       }
     }, {
@@ -30203,7 +30203,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "ppmv"
@@ -30236,7 +30236,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "ppmv"
@@ -31447,7 +31447,7 @@
         "definition" : {
           "val" : "The mass of specific chemical elements contained within heterotrophic microbial biomass in soil systems. This parameter quantifies the elemental composition of microbial communities and is essential for understanding nutrient cycling, microbial stoichiometry, and the role of microorganisms in biogeochemical processes within terrestrial ecosystems."
         },
-        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "MicrobialDataType.txt", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "MicrobialDataType.txt" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "mBiomeHeter_vr"
@@ -32176,7 +32176,7 @@
         "definition" : {
           "val" : "Autotrophic microbial biomass chemical element quantifies the mass of specific chemical elements contained within autotrophic microbial biomass in soil systems. This parameter represents the elemental composition of nitrifying bacteria and other chemosynthetic microorganisms and is essential for understanding nitrogen cycling, microbial stoichiometry, and nutrient transformations in terrestrial ecosystems."
         },
-        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "MicrobialDataType.txt", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "MicrobialDataType.txt" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "mBiomeAutor_vr"
@@ -34603,7 +34603,7 @@
         "definition" : {
           "val" : "Non-structural chemical element in roots represents the concentration of mobile nutrients and metabolites that are not incorporated into structural components like cellulose or lignin. These elements include soluble sugars, amino acids, and mineral nutrients that can be readily mobilized for growth, maintenance, or transport to other plant organs in vegetation dynamics models."
         },
-        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "RootDataType.txt", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "RootDataType.txt" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "RootMycoNonstElms_pft"
@@ -34735,7 +34735,7 @@
         "definition" : {
           "val" : "Root nodule chemical element quantifies the elemental composition of specialized root structures that house nitrogen-fixing bacteria in leguminous plants. These nodules contain essential elements like iron, molybdenum, and phosphorous that support nitrogen fixation processes, making them critical components for understanding biological nitrogen cycling in terrestrial ecosystems."
         },
-        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "RootDataType.txt", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "RootDataType.txt" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "RootNodulElms_pft"
@@ -34781,7 +34781,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "m2 h-1"
@@ -35510,7 +35510,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "g d-2"
@@ -35543,7 +35543,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/Gaseous"
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_has_unit",
           "val" : "g d-2"
@@ -35632,7 +35632,7 @@
         "definition" : {
           "val" : "Plant root element refers to any chemical element found in the roots of a plant. These elements play a crucial role in plant growth and nutrition, as well as in soil fertility and the wider ecosystem."
         },
-        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "RootDataType.txt", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "RootDataType.txt" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "RootElms_pft"
@@ -35665,7 +35665,7 @@
         "definition" : {
           "val" : "Plant root structural element refers to the features that comprise the structure of a plant's roots, including the root hairs, root tip, and root cap. These elements are crucial for nutrient absorption, water uptake, and structural support."
         },
-        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "RootDataType.txt", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "RootDataType.txt" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "RootStrutElms_pft"
@@ -36031,7 +36031,7 @@
         "definition" : {
           "val" : "This variable tracks the root and mycorrhizae (when exists) biomass of chemical elements in different soil layers. It indicates the root distribution along the soil profile."
         },
-        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "RootDataType.txt", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "RootDataType.txt" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "RootMassElm_vr"
@@ -36140,7 +36140,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Context",
-          "val" : "http://www.w3.org/2002/07/Boundary%20Layer"
+          "val" : "https://w3id.org/bervo/BERVO_8000004"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
           "val" : "http://www.w3.org/2002/07/NA"
@@ -39968,7 +39968,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000025"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Surface%20layer"
+          "val" : "https://w3id.org/bervo/BERVO_8000030"
         } ]
       }
     }, {
@@ -41945,7 +41945,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000050"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Vapor"
+          "val" : "https://w3id.org/bervo/BERVO_8000118"
         } ]
       }
     }, {
@@ -43219,7 +43219,7 @@
         "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)" ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
-          "val" : "MIXS:0000642"
+          "val" : "https://w3id.org/mixs/0000642"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Attribute",
           "val" : "https://w3id.org/bervo/BERVO_8000133"
@@ -45691,7 +45691,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000079"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Context",
-          "val" : "http://www.w3.org/2002/07/Boundary%20Layer"
+          "val" : "https://w3id.org/bervo/BERVO_8000004"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Context",
           "val" : "https://w3id.org/bervo/BERVO_8000025"
@@ -48352,7 +48352,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000062"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Micropores"
+          "val" : "https://w3id.org/bervo/BERVO_8000012"
         } ]
       }
     }, {
@@ -51864,7 +51864,7 @@
         "definition" : {
           "val" : "The mass of chemical elements contained within solid organic matter fractions including humified plant and microbial residues. This parameter represents stable organic matter pools that control long-term carbon storage and nutrient cycling in soil ecosystems."
         },
-        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "SOMDataType.txt", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "SOMDataType.txt" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "SolidOM_vr"
@@ -51996,7 +51996,7 @@
         "definition" : {
           "val" : "The mass of chemical elements bound to soil mineral surfaces through adsorption processes within organic matter complexes. This parameter controls nutrient retention, chemical stability, and long-term storage of elements in mineral-organic associations."
         },
-        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "SOMDataType.txt", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "SOMDataType.txt" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "SorbedOM_vr"
@@ -52029,7 +52029,7 @@
         "definition" : {
           "val" : "The mass of chemical elements contained within dead microbial biomass and metabolic byproducts in soil organic matter. This parameter represents microbial-derived carbon and nutrients that contribute to soil organic matter formation and nutrient cycling processes."
         },
-        "comments" : [ "SOMDataType.txt", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "SOMDataType.txt" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "OMBioResdu_vr"
@@ -52282,7 +52282,7 @@
           "val" : "https://w3id.org/bervo/BERVO_8000062"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Soil%20organic%20matter"
+          "val" : "https://w3id.org/bervo/BERVO_8000584"
         } ]
       }
     }, {
@@ -52359,7 +52359,7 @@
         "definition" : {
           "val" : "The cumulative mass of chemical elements contained within all living microbial biomass throughout the soil profile. This parameter represents the active biological component controlling decomposition, nutrient cycling, and biochemical transformations in soil ecosystems."
         },
-        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "SOMDataType.txt", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "SOMDataType.txt" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "tMicBiome_col"
@@ -52425,7 +52425,7 @@
         "definition" : {
           "val" : "The cumulative mass of chemical elements contained within all litter fractions throughout the soil profile. This parameter represents element inputs from plant debris that control nutrient cycling and initial decomposition processes in soil ecosystems."
         },
-        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "SOMDataType.txt", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "SOMDataType.txt" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "tLitrOM_col"
@@ -52458,7 +52458,7 @@
         "definition" : {
           "val" : "The mass of specific chemical elements present within litter layers distributed across different soil depths or canopy positions. This parameter quantifies element storage in detrital organic matter, controlling nutrient release patterns and biogeochemical cycling rates in forest floor and soil surface environments."
         },
-        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "SOMDataType.txt", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "SOMDataType.txt" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "litrOM_vr"
@@ -52491,7 +52491,7 @@
         "definition" : {
           "val" : "The cumulative mass of specific chemical elements contained within all humus fractions throughout soil profiles. This parameter represents element storage in highly decomposed organic matter, controlling long-term nutrient retention and release in stable soil organic matter pools."
         },
-        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "SOMDataType.txt", "Use with BERVO:involves_chemicals" ],
+        "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)", "SOMDataType.txt" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "tHumOM_col"
@@ -54484,7 +54484,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Carboxyl"
+          "val" : "https://w3id.org/bervo/BERVO_8000581"
         } ]
       }
     }, {
@@ -57874,7 +57874,7 @@
         "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
-          "val" : "MIXS:0001086"
+          "val" : "https://w3id.org/mixs/0001086"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Attribute",
           "val" : "http://www.w3.org/2002/07/NA"
@@ -57909,7 +57909,7 @@
         "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
-          "val" : "MIXS:0000191"
+          "val" : "https://w3id.org/mixs/0000191"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Attribute",
           "val" : "http://www.w3.org/2002/07/NA"
@@ -57941,7 +57941,7 @@
         "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)" ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
-          "val" : "MIXS:0000203"
+          "val" : "https://w3id.org/mixs/0000203"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Attribute",
           "val" : "http://www.w3.org/2002/07/NA"
@@ -58538,6 +58538,42 @@
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
           "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_0001858",
+      "lbl" : "Gravimetric water content",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The mass of water present in soil expressed relative to the mass of dry soil, commonly determined by weighing a moist soil sample, drying it to constant mass, and dividing the lost water mass by the dry soil mass."
+        },
+        "comments" : [ "Definition source - Codex CLI (Jun 4 2026) via John-Marc Chandonia in PR #34" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "gravimetric soil water content"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "soil gravimetric water content"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "https://w3id.org/bervo/BERVO_8000126"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "g g-1"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "https://w3id.org/bervo/BERVO_8000062"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "https://w3id.org/bervo/BERVO_8000102"
         } ]
       }
     }, {
@@ -59547,13 +59583,6 @@
           "val" : "The dark, well-decomposed organic material that forms in soil through the breakdown and transformation of plant and animal matter by soil organisms. This stable organic component improves soil structure, water holding capacity, nutrient retention, and serves as a long-term carbon storage pool in terrestrial ecosystems."
         },
         "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)" ],
-        "synonyms" : [ {
-          "pred" : "hasRelatedSynonym",
-          "val" : "SOM"
-        }, {
-          "pred" : "hasRelatedSynonym",
-          "val" : "organic matter"
-        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
           "val" : "http://purl.obolibrary.org/obo/ENVO_01000000"
@@ -61367,10 +61396,6 @@
           "val" : "A state of matter consisting of particles that move freely and expand to fill available containers, including atmospheric gases and soil air. This phase of matter facilitates gas exchange processes, affects atmospheric composition, controls respiration and photosynthesis, and serves as a medium for volatile chemical transport in environmental systems."
         },
         "comments" : [ "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)" ],
-        "synonyms" : [ {
-          "pred" : "hasRelatedSynonym",
-          "val" : "vapor"
-        } ],
         "basicPropertyValues" : [ {
           "pred" : "https://w3id.org/bervo/BERVO_Attribute",
           "val" : "http://www.w3.org/2002/07/NA"
@@ -72615,9 +72640,6 @@
         },
         "comments" : [ "Definition revised to generalize the previous State plane zone term to projected coordinate systems that can qualify easting and northing values.", "Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025).  JMC manually edited label and definition on 3/23/26" ],
         "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
-          "val" : "http://www.w3.org/2002/07/Class"
-        }, {
           "pred" : "https://w3id.org/bervo/BERVO_Attribute",
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
@@ -72627,8 +72649,8 @@
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
-          "pred" : "https://w3id.org/bervo/BERVO_has_value_type",
-          "val" : "http://www.w3.org/2002/07/NA"
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measured_in",
           "val" : "http://www.w3.org/2002/07/NA"
@@ -74650,7 +74672,7 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
-          "val" : "http://www.w3.org/2002/07/Vapor"
+          "val" : "https://w3id.org/bervo/BERVO_8000579"
         } ]
       }
     }, {
@@ -76084,7 +76106,7 @@
         "definition" : {
           "val" : "A process carried out by living organisms or biological systems that transforms matter, energy, or information over time. This concept provides a general parent for process-oriented BERVO terms such as respiration, mineralization, production, and other organism- or ecosystem-driven activities."
         },
-        "comments" : [ " Mar 26 2026)", "Definition source - Manual (Codex" ],
+        "comments" : [ "Definition source - Manual (Codex, Mar 26 2026)" ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
           "val" : "http://purl.obolibrary.org/obo/GO_0008150"
@@ -76116,7 +76138,7 @@
         "definition" : {
           "val" : "The horizontal direction of a line, view, or vector measured clockwise from a reference direction, typically geographic north. Azimuth describes orientation or bearing within a horizontal plane and is commonly reported in degrees."
         },
-        "comments" : [ " May 4 2026)", "Definition source - Manual (JMC" ],
+        "comments" : [ "Definition source - Manual (JMC, May 4 2026)" ],
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "bearing"
@@ -76125,9 +76147,6 @@
           "val" : "compass azimuth"
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
-          "val" : "http://www.w3.org/2002/07/Class"
-        }, {
           "pred" : "https://w3id.org/bervo/BERVO_Attribute",
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
@@ -76135,10 +76154,10 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/degree"
-        }, {
-          "pred" : "https://w3id.org/bervo/BERVO_has_value_type",
           "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "degree"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measured_in",
           "val" : "http://www.w3.org/2002/07/NA"
@@ -76155,7 +76174,7 @@
         "definition" : {
           "val" : "The angular extent of the cone or region over which an instrument accepts incoming radiation or observes a scene. Field of view angle describes aperture width rather than the direction the instrument is aimed and is commonly reported in degrees."
         },
-        "comments" : [ " May 4 2026)", "Definition source - Manual (JMC" ],
+        "comments" : [ "Definition source - Manual (JMC, May 4 2026)" ],
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "FOV"
@@ -76164,9 +76183,6 @@
           "val" : "field of view"
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
-          "val" : "http://www.w3.org/2002/07/Class"
-        }, {
           "pred" : "https://w3id.org/bervo/BERVO_Attribute",
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
@@ -76174,10 +76190,10 @@
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/degree"
-        }, {
-          "pred" : "https://w3id.org/bervo/BERVO_has_value_type",
           "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "degree"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measured_in",
           "val" : "http://www.w3.org/2002/07/NA"
@@ -76194,7 +76210,7 @@
         "definition" : {
           "val" : "A dimensionless correction factor applied during optical canopy or leaf area index processing to adjust gap fraction or transmittance estimates for radiation scattered into the sensor field of view. This factor represents a data-processing correction rather than the physical scattering process itself."
         },
-        "comments" : [ " May 4 2026)", "Definition source - Manual (JMC" ],
+        "comments" : [ "Definition source - Manual (JMC, May 4 2026)" ],
         "basicPropertyValues" : [ {
           "pred" : "https://w3id.org/bervo/BERVO_Attribute",
           "val" : "http://www.w3.org/2002/07/NA"
@@ -76223,7 +76239,7 @@
         "definition" : {
           "val" : "A dimensionless index describing the apparent non-random spatial aggregation of foliage inferred from canopy optical measurements, commonly calculated as the ratio of effective leaf area index to clumping-corrected or true leaf area index. Values below 1 indicate more clumped foliage relative to a random distribution."
         },
-        "comments" : [ " May 4 2026)", "Definition source - Manual (JMC" ],
+        "comments" : [ "Definition source - Manual (JMC, May 4 2026)" ],
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "ACF"
@@ -76232,20 +76248,17 @@
           "val" : "apparent clumping index"
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
-          "val" : "http://www.w3.org/2002/07/Class"
-        }, {
           "pred" : "https://w3id.org/bervo/BERVO_Attribute",
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Context",
-          "val" : "http://www.w3.org/2002/07/NA"
+          "val" : "https://w3id.org/bervo/BERVO_8000117"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
-          "val" : "http://www.w3.org/2002/07/dimensionless"
+          "val" : "http://www.w3.org/2002/07/NA"
         }, {
-          "pred" : "https://w3id.org/bervo/BERVO_has_value_type",
-          "val" : "https://w3id.org/bervo/BERVO_8000117"
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "dimensionless"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measured_in",
           "val" : "http://www.w3.org/2002/07/NA"
@@ -76262,7 +76275,7 @@
         "definition" : {
           "val" : "A controlled categorical code assigned to an observation or dataset to indicate a quality-control condition, processing decision, or measurement anomaly relevant to interpretation."
         },
-        "comments" : [ " May 11 2026)", "Definition source - Manual (JMC" ],
+        "comments" : [ "Definition source - Manual (JMC, May 11 2026)" ],
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "QC flag"
@@ -76271,9 +76284,6 @@
           "val" : "quality flag"
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
-          "val" : "http://www.w3.org/2002/07/Class"
-        }, {
           "pred" : "https://w3id.org/bervo/BERVO_Attribute",
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
@@ -76283,8 +76293,8 @@
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
           "val" : "http://www.w3.org/2002/07/NA"
         }, {
-          "pred" : "https://w3id.org/bervo/BERVO_has_value_type",
-          "val" : "http://www.w3.org/2002/07/NA"
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_measured_in",
           "val" : "http://www.w3.org/2002/07/NA"
@@ -76308,6 +76318,689 @@
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Context",
           "val" : "https://w3id.org/bervo/BERVO_8000564"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000565",
+      "lbl" : "Gaseous",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Relating to substances or systems in the gas phase, in which molecules are not held in a condensed state and disperse to occupy the available volume. This concept describes the physical state in which a chemical species diffuses, is transported, or exchanges across soil, water, and atmosphere boundaries in terrestrial systems."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+          "val" : "http://purl.obolibrary.org/obo/PATO_0001737"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "https://w3id.org/bervo/BERVO_8000565"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000566",
+      "lbl" : "Release",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The liberation of a substance from a bound, sorbed, or encapsulated state into a surrounding medium, making it available for transport, transformation, or uptake."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000567",
+      "lbl" : "Hydrolysis",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The chemical or enzymatic cleavage of a compound by reaction with water, breaking larger molecules into smaller constituents. In soil systems this is the principal route by which polymeric organic matter becomes available for microbial uptake."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000568",
+      "lbl" : "Inhibition",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The suppression or slowing of a chemical or biological process by a substance that interferes with the enzyme or reaction pathway responsible for it."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000569",
+      "lbl" : "Ammonium release",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The liberation of ammonium ions from fertilizer particles, mineral surfaces, or organic matter into soil solution, where they become available for plant uptake, nitrification, or adsorption."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000570",
+      "lbl" : "Ammonia release",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The liberation of ammonia from fertilizer particles, soil solution, or decomposing organic matter, commonly preceding volatilization to the atmosphere or oxidation by nitrifying organisms."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000571",
+      "lbl" : "Urea release",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The liberation of urea from fertilizer particles into soil solution, preceding its hydrolysis to ammonia by soil urease."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000572",
+      "lbl" : "Nitrate release",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The liberation of nitrate ions from fertilizer particles or mineral surfaces into soil solution, where they become available for plant uptake, denitrification, or leaching."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000573",
+      "lbl" : "Dihydrogen phosphate release",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The liberation of dihydrogen phosphate ions from fertilizer particles into soil solution, where they become subject to sorption, precipitation, or plant uptake."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000574",
+      "lbl" : "Solid soil organic matter hydrolysis",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The enzymatic cleavage of particulate soil organic matter into dissolved organic compounds, representing the first step in decomposition of the solid organic pool."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000575",
+      "lbl" : "Microbial residual hydrolysis",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The enzymatic cleavage of microbial cell residues and metabolic byproducts in soil, returning necromass carbon and nutrients to the dissolved organic pool."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000576",
+      "lbl" : "Sorbed organic matter hydrolysis",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The enzymatic cleavage of organic matter adsorbed onto soil mineral surfaces, releasing it from physical protection into the dissolved organic pool."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000577",
+      "lbl" : "Nitrification inhibition",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The suppression of microbial oxidation of ammonia to nitrite and nitrate, typically by compounds applied alongside fertilizer to limit nitrogen loss through leaching and denitrification."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000578",
+      "lbl" : "Urea hydrolysis inhibition",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The suppression of urease-mediated breakdown of urea to ammonia, typically by compounds applied alongside fertilizer to slow nitrogen release and reduce volatilization."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000579",
+      "lbl" : "Vapor",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A substance in the gas phase below its critical temperature, able to coexist with its condensed form. In environmental models this most often refers to water vapor in soil pores and the atmosphere."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000580",
+      "lbl" : "Petiole",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The stalk attaching a leaf blade to the stem, conducting water and photosynthate between them and positioning the blade for light interception."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+          "val" : "http://purl.obolibrary.org/obo/PO_0020038"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000581",
+      "lbl" : "Carboxyl",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The -COOH functional group, whose dissociation to -COO- governs the pH-dependent surface charge of organic matter and mineral surfaces in soil."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_46883"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000582",
+      "lbl" : "Volatile tracer",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A chemical tracer that readily partitions into the gas phase, used to follow transport and loss pathways involving volatilization."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000583",
+      "lbl" : "Nutrient tracer",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A chemical tracer representing a plant-essential nutrient, used to follow nutrient transport, transformation, and loss through soil and water pathways."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000584",
+      "lbl" : "Soil organic matter",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The organic fraction of soil, comprising plant and microbial residues at all stages of decomposition together with stabilized humified compounds."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+          "val" : "http://purl.obolibrary.org/obo/ENVO_04000008"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000585",
+      "lbl" : "Tracer",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A chemical species followed through a system in order to quantify transport, transformation, or loss pathways, whether introduced deliberately or tracked as a natural constituent."
+        },
+        "comments" : [ "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000586",
+      "lbl" : "Chemical",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A substance of definite composition, whether element, compound, or ion."
+        },
+        "comments" : [ "Collects the substances whose transport, transformation, and exchange are tracked in environmental and earth-system models, and serves as the filler class for involves_chemicals restrictions.", "Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_has_unit",
+          "val" : "NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measured_in",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_measurement_of",
+          "val" : "http://www.w3.org/2002/07/NA"
+        } ]
+      }
+    }, {
+      "id" : "https://w3id.org/bervo/BERVO_8000587",
+      "lbl" : "Chemical pool",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Portion of the chemical material of a system, distinguished by chemical form, physical state, or location, and tracked as a stock in models or quantified as a fraction of a sample, such as dissolved inorganic carbon, dissolved organic nitrogen, or non-structural carbohydrate."
+        },
+        "comments" : [ "Definition source - Claude Fable 5.1 through Claude Code (Sep 3 2026)" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "chemical fraction"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "https://w3id.org/bervo/BERVO_Attribute",
+          "val" : "http://www.w3.org/2002/07/NA"
+        }, {
+          "pred" : "https://w3id.org/bervo/BERVO_Context",
+          "val" : "http://www.w3.org/2002/07/NA"
         }, {
           "pred" : "https://w3id.org/bervo/BERVO_Qualifier",
           "val" : "http://www.w3.org/2002/07/NA"
@@ -77958,6 +78651,10 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000000"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000017",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000018",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000000"
@@ -79005,6 +79702,10 @@
       "sub" : "https://w3id.org/bervo/BERVO_0000294",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000010"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000294",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000295",
       "pred" : "is_a",
@@ -80206,6 +80907,10 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000616",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000617",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
@@ -80214,33 +80919,65 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000618",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000619",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000619",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000620",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000620",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000621",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000621",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000623",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000623",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000624",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000624",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000625",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000625",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000626",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000626",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000627",
       "pred" : "is_a",
@@ -80262,9 +80999,17 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000631",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000632",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000632",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000633",
       "pred" : "is_a",
@@ -80274,9 +81019,17 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000634",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000635",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000635",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000636",
       "pred" : "is_a",
@@ -80285,6 +81038,10 @@
       "sub" : "https://w3id.org/bervo/BERVO_0000637",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000637",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000638",
       "pred" : "is_a",
@@ -80298,29 +81055,57 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000640",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000641",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000641",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000642",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000642",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000643",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000643",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000644",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000644",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000645",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000645",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000646",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000646",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000647",
       "pred" : "is_a",
@@ -80334,9 +81119,17 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000649",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000650",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000650",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000651",
       "pred" : "is_a",
@@ -80346,21 +81139,41 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000652",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000653",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000653",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000654",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000654",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000655",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000655",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000656",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000656",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000657",
       "pred" : "is_a",
@@ -80386,13 +81199,25 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000662",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000663",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000663",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000664",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000008"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000664",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000665",
       "pred" : "is_a",
@@ -81058,9 +81883,17 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000011"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000840",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000841",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000011"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000841",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000843",
       "pred" : "is_a",
@@ -81085,6 +81918,10 @@
       "sub" : "https://w3id.org/bervo/BERVO_0000848",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000011"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000848",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000849",
       "pred" : "is_a",
@@ -81666,6 +82503,10 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000014"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0000995",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0000996",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000014"
@@ -81753,6 +82594,10 @@
       "sub" : "https://w3id.org/bervo/BERVO_0001017",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000014"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0001017",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0001018",
       "pred" : "is_a",
@@ -82046,6 +82891,10 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000016"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0001093",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0001094",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_0001850"
@@ -82061,6 +82910,10 @@
       "sub" : "https://w3id.org/bervo/BERVO_0001097",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000016"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0001097",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0001098",
       "pred" : "is_a",
@@ -82170,9 +83023,17 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000016"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0001124",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0001125",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000016"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0001125",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0001126",
       "pred" : "is_a",
@@ -82217,6 +83078,10 @@
       "sub" : "https://w3id.org/bervo/BERVO_0001137",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000016"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0001137",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0001138",
       "pred" : "is_a",
@@ -84110,6 +84975,10 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000030"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0001648",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0001649",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000030"
@@ -84126,9 +84995,17 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000030"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0001652",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0001653",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000030"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0001653",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0001654",
       "pred" : "is_a",
@@ -84170,6 +85047,10 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000030"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0001663",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0001664",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000030"
@@ -84178,13 +85059,25 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000030"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0001665",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0001666",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000030"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0001666",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_0001667",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000030"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0001667",
+      "pred" : "https://w3id.org/bervo/BERVO_involves_chemicals",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_0001668",
       "pred" : "is_a",
@@ -84922,13 +85815,17 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000007"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_0001858",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_9000032"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000000",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_8000232"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000001",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000220"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000002",
       "pred" : "is_a",
@@ -84956,15 +85853,15 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000008",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000075"
+      "obj" : "https://w3id.org/bervo/BERVO_8000587"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000009",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000108"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000010",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000182"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000011",
       "pred" : "is_a",
@@ -84984,19 +85881,19 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000015",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000016",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000182"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000017",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000018",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000207"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000019",
       "pred" : "is_a",
@@ -85020,7 +85917,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000024",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000025",
       "pred" : "is_a",
@@ -85036,7 +85933,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000028",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000062"
+      "obj" : "https://w3id.org/bervo/BERVO_8000584"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000029",
       "pred" : "is_a",
@@ -85056,19 +85953,19 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000033",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000075"
+      "obj" : "https://w3id.org/bervo/BERVO_8000587"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000034",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000182"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000035",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000112"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000036",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000112"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000037",
       "pred" : "is_a",
@@ -85076,11 +85973,11 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000038",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000245"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000039",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000220"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000040",
       "pred" : "is_a",
@@ -85104,7 +86001,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000045",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000046",
       "pred" : "is_a",
@@ -85116,7 +86013,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000048",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000167"
+      "obj" : "https://w3id.org/bervo/BERVO_8000587"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000049",
       "pred" : "is_a",
@@ -85128,11 +86025,11 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000051",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000108"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000052",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000138"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000053",
       "pred" : "is_a",
@@ -85140,7 +86037,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000054",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000207"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000055",
       "pred" : "is_a",
@@ -85148,7 +86045,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000056",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000143"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000057",
       "pred" : "is_a",
@@ -85156,7 +86053,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000058",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000180"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000059",
       "pred" : "is_a",
@@ -85192,11 +86089,11 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000067",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000587"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000068",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000069",
       "pred" : "is_a",
@@ -85208,11 +86105,11 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000071",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000198"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000072",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000245"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000073",
       "pred" : "is_a",
@@ -85220,11 +86117,11 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000074",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000182"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000075",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000220"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000076",
       "pred" : "is_a",
@@ -85244,7 +86141,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000080",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000126"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000081",
       "pred" : "is_a",
@@ -85268,11 +86165,11 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000087",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000207"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000088",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000587"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000089",
       "pred" : "is_a",
@@ -85292,11 +86189,11 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000093",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000075"
+      "obj" : "https://w3id.org/bervo/BERVO_8000587"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000094",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000095",
       "pred" : "is_a",
@@ -85312,7 +86209,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000098",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000075"
+      "obj" : "https://w3id.org/bervo/BERVO_8000112"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000099",
       "pred" : "is_a",
@@ -85320,7 +86217,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000100",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000167"
+      "obj" : "https://w3id.org/bervo/BERVO_8000587"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000101",
       "pred" : "is_a",
@@ -85328,7 +86225,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000102",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000103",
       "pred" : "is_a",
@@ -85348,23 +86245,19 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000107",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000180"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000108",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000220"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000109",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000075"
-    }, {
-      "sub" : "https://w3id.org/bervo/BERVO_8000109",
-      "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000167"
+      "obj" : "https://w3id.org/bervo/BERVO_8000245"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000110",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000182"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000111",
       "pred" : "is_a",
@@ -85372,11 +86265,11 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000112",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000113",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000112"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000114",
       "pred" : "is_a",
@@ -85398,9 +86291,13 @@
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_8000102"
     }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000118",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000579"
+    }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000119",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000180"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000120",
       "pred" : "is_a",
@@ -85416,11 +86313,11 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000123",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000167"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000124",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000220"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000125",
       "pred" : "is_a",
@@ -85476,15 +86373,15 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000138",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000112"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000140",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000141",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000112"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000142",
       "pred" : "is_a",
@@ -85492,7 +86389,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000143",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000220"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000144",
       "pred" : "is_a",
@@ -85540,7 +86437,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000154",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000180"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000156",
       "pred" : "is_a",
@@ -85580,19 +86477,19 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000165",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000167"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000166",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000167",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000220"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000168",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000112"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000169",
       "pred" : "is_a",
@@ -85612,7 +86509,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000173",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000182"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000175",
       "pred" : "is_a",
@@ -85632,7 +86529,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000180",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000220"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000181",
       "pred" : "is_a",
@@ -85640,7 +86537,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000182",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000220"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000183",
       "pred" : "is_a",
@@ -85652,23 +86549,23 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000185",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000001"
+      "obj" : "https://w3id.org/bervo/BERVO_8000587"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000186",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000187",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000188",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000189",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000587"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000190",
       "pred" : "is_a",
@@ -85688,11 +86585,11 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000194",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000195",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000196",
       "pred" : "is_a",
@@ -85704,15 +86601,15 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000198",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000220"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000199",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000200",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000108"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000201",
       "pred" : "is_a",
@@ -85720,11 +86617,11 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000202",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000102"
+      "obj" : "https://w3id.org/bervo/BERVO_8000126"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000203",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000204",
       "pred" : "is_a",
@@ -85732,7 +86629,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000205",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000112"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000206",
       "pred" : "is_a",
@@ -85740,7 +86637,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000207",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000220"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000208",
       "pred" : "is_a",
@@ -85752,15 +86649,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000210",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000207"
-    }, {
-      "sub" : "https://w3id.org/bervo/BERVO_8000211",
-      "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000001"
-    }, {
-      "sub" : "https://w3id.org/bervo/BERVO_8000211",
-      "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000075"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000211",
       "pred" : "is_a",
@@ -85776,7 +86665,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000214",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000215",
       "pred" : "is_a",
@@ -85792,15 +86681,15 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000218",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000219",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000220",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000221",
       "pred" : "is_a",
@@ -85820,14 +86709,6 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000225",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000075"
-    }, {
-      "sub" : "https://w3id.org/bervo/BERVO_8000225",
-      "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000167"
-    }, {
-      "sub" : "https://w3id.org/bervo/BERVO_8000225",
-      "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_8000245"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000226",
@@ -85840,7 +86721,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000228",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000112"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000229",
       "pred" : "is_a",
@@ -85924,7 +86805,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000251",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000220"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000252",
       "pred" : "is_a",
@@ -86348,7 +87229,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000356",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000245"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000357",
       "pred" : "is_a",
@@ -86568,7 +87449,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000411",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000412",
       "pred" : "is_a",
@@ -86776,7 +87657,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000466",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000245"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000467",
       "pred" : "is_a",
@@ -86944,7 +87825,7 @@
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000508",
       "pred" : "is_a",
-      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+      "obj" : "https://w3id.org/bervo/BERVO_8000245"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_8000509",
       "pred" : "is_a",
@@ -87137,6 +88018,98 @@
       "sub" : "https://w3id.org/bervo/BERVO_8000563",
       "pred" : "is_a",
       "obj" : "https://w3id.org/bervo/BERVO_9000003"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000565",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000566",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000106"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000567",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000106"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000568",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000106"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000569",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000566"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000570",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000566"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000571",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000566"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000572",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000566"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000573",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000566"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000574",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000567"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000575",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000567"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000576",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000567"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000577",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000568"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000578",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000568"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000579",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000086"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000580",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000021"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000581",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000582",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000585"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000583",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000585"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000584",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000286"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000585",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000586",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000232"
+    }, {
+      "sub" : "https://w3id.org/bervo/BERVO_8000587",
+      "pred" : "is_a",
+      "obj" : "https://w3id.org/bervo/BERVO_8000586"
     }, {
       "sub" : "https://w3id.org/bervo/BERVO_9000000",
       "pred" : "is_a",
