@@ -34399,7 +34399,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000008 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000008">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000587"/>
         <obo:IAO_0000115>Carbon in ionic forms dissolved in water, including carbonate, bicarbonate, and dissolved carbon dioxide species. This carbon pool is fundamental for understanding aquatic carbon cycling, ocean acidification, carbonate chemistry, and the exchange of carbon dioxide between water bodies and the atmosphere in global carbon cycle studies.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>DIC</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
@@ -34872,7 +34872,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000033 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000033">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000587"/>
         <obo:IAO_0000115>Carbon that is incorporated into organic compounds derived from living organisms, representing the foundation of biological molecules and ecosystem carbon pools. This carbon form is essential for understanding primary productivity, decomposition processes, soil organic matter dynamics, and carbon sequestration in terrestrial and aquatic ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>OC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>biological carbon</oboInOwl:hasExactSynonym>
@@ -35145,7 +35145,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000048 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000048">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000587"/>
         <obo:IAO_0000115>Nitrogen in ionic forms dissolved in water, primarily including nitrate, nitrite, and ammonium ions that are readily available for biological uptake. This nitrogen pool represents the most bioavailable form of nitrogen in aquatic systems and soil solutions, controlling primary productivity and eutrophication in freshwater and marine environments.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>DIN</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
@@ -35483,7 +35483,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000067 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000067">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000587"/>
         <obo:IAO_0000115>Phosphorus in ionic forms dissolved in water, primarily as orthophosphate and polyphosphate species that are readily available for biological uptake. This phosphorus pool represents the most bioavailable form of phosphorus in aquatic systems, controlling primary productivity and eutrophication processes in freshwater and marine environments.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Dissolved inorganic phosphorus</rdfs:label>
@@ -35918,7 +35918,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000093 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000093">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000587"/>
         <obo:IAO_0000115>Carbon incorporated into structural components of organisms such as cellulose, lignin, and chitin that provide mechanical support and protection. This carbon pool represents a stable, slow-cycling component of organic matter that influences decomposition rates, carbon sequestration, and long-term carbon storage in terrestrial ecosystems.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Structural carbon</rdfs:label>
@@ -36043,7 +36043,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000100 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000100">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000587"/>
         <obo:IAO_0000115>Nitrogen from organic compounds that is dissolved in water, representing an important but often overlooked component of aquatic nitrogen cycling. This nitrogen pool includes amino acids, proteins, and other organic nitrogen compounds that can be mineralized or directly utilized by organisms in freshwater and marine ecosystems.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Dissolved organic nitrogen</rdfs:label>
@@ -36078,7 +36078,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000102 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000102">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
         <obo:IAO_0000115>A transparent, odorless, and tasteless liquid essential for all forms of life and the most abundant compound on Earth&apos;s surface. This molecule serves as the universal solvent, controls climate patterns, supports biological processes, and represents the fundamental medium for biogeochemical reactions and ecosystem functioning.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15377"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
@@ -37489,7 +37489,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000185 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000185">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000587"/>
         <obo:IAO_0000115>Phosphorus contained within organic compounds that is dissolved in water, representing an important but often underestimated component of aquatic phosphorus cycling. This phosphorus pool includes nucleic acids, phospholipids, and other organic phosphorus compounds that can be mineralized or directly utilized by organisms in freshwater and marine ecosystems.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Dissolved organic phosphorus</rdfs:label>
@@ -37789,7 +37789,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000202 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000202">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <obo:IAO_0000115>The amount of water present in a material such as soil, plant tissue, or atmospheric air, typically expressed as a percentage by mass or volume. This property controls biological activity, physical processes, material properties, and represents a fundamental parameter for understanding ecosystem functioning and environmental conditions.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>humidity</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
@@ -39763,7 +39763,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000312 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000312">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>A specification of chemical identity when molecular composition or structure varies as a dimension in experiments or datasets. This concept enables tracking of chemical diversity in reaction systems, metabolic pathways, or multi-component analyses where different molecules are analyzed or compared.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000027"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
@@ -44564,6 +44564,24 @@
         <rdfs:comment>Collects the substances whose transport, transformation, and exchange are tracked in environmental and earth-system models, and serves as the filler class for involves_chemicals restrictions.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
         <rdfs:label>Chemical</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000587 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000587">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+        <obo:IAO_0000115>Portion of a chemical substance distinguished by its chemical form, physical state, or location within a system and tracked as a stock in models or quantified as a fraction of a sample, such as dissolved inorganic carbon or organic nitrogen.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>chemical fraction</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Fable 5.1 through Claude Code (Sep 3 2026)</rdfs:comment>
+        <rdfs:label>Chemical pool</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
