@@ -34228,6 +34228,25 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0001858 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001858">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
+        <obo:IAO_0000115>The mass of water present in soil expressed relative to the mass of dry soil, commonly determined by weighing a moist soil sample, drying it to constant mass, and dividing the lost water mass by the dry soil mass.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>gravimetric soil water content</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>soil gravimetric water content</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Codex CLI (Jun 4 2026) via John-Marc Chandonia in PR #34</rdfs:comment>
+        <rdfs:label>Gravimetric water content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>g g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
