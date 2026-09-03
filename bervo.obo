@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2026-05-20
+data-version: releases/2026-09-03
 idspace: bervo https://w3id.org/bervo/ 
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
@@ -8,7 +8,7 @@ ontology: bervo
 property_value: dcterms:description "None" xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/unspecified
 property_value: dcterms:title "BERVO" xsd:string
-property_value: owl:versionInfo "2026-05-20" xsd:string
+property_value: owl:versionInfo "2026-09-03" xsd:string
 
 [Term]
 id: bervo:BERVO_0000000
@@ -265,6 +265,7 @@ def: "EcoSIM output: The flux of chemical elements including carbon, nitrogen, a
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
 synonym: "LitrFallStrutElms_col" RELATED []
 is_a: bervo:BERVO_9000000 ! Biogeochemical flux variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute bervo:BERVO_8000547
 property_value: bervo:BERVO_Context bervo:BERVO_8000062
 property_value: bervo:BERVO_has_unit "g d-2 h-1" xsd:string
@@ -2046,7 +2047,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000270
 property_value: bervo:BERVO_Context bervo:BERVO_8000153
 property_value: bervo:BERVO_has_unit "h^-1" xsd:string
 property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Ammonium%20release
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000569
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -2060,7 +2061,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000270
 property_value: bervo:BERVO_Context bervo:BERVO_8000153
 property_value: bervo:BERVO_has_unit "h^-1" xsd:string
 property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Ammonia%20release
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000570
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -2074,7 +2075,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000270
 property_value: bervo:BERVO_Context bervo:BERVO_8000153
 property_value: bervo:BERVO_has_unit "h^-1" xsd:string
 property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Urea%20release
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000571
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -2088,7 +2089,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000270
 property_value: bervo:BERVO_Context bervo:BERVO_8000153
 property_value: bervo:BERVO_has_unit "h^-1" xsd:string
 property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Nitrate%20release
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000572
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -2102,7 +2103,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000270
 property_value: bervo:BERVO_Context bervo:BERVO_8000153
 property_value: bervo:BERVO_has_unit "h^-1" xsd:string
 property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Phosphoric%20acid%20release
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000573
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -3332,7 +3333,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "m2 h-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000050
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000251
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000249
@@ -3360,7 +3361,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "m2 h-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000050
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000188
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000251
@@ -3388,7 +3389,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "m2 h-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000050
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000024
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000253
@@ -3416,7 +3417,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "m2 h-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000050
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000124
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000255
@@ -3444,7 +3445,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "m2 h-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000050
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000167
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000257
@@ -3472,7 +3473,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "m2 h-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000050
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000017
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000259
@@ -3500,7 +3501,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "m2 h-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000050
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000015
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000261
@@ -3794,7 +3795,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "m2 h-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000050
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000039
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000282
@@ -3971,11 +3972,12 @@ def: "The cumulative mass of essential chemical elements stored in plant biomass
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
 synonym: "PlantElemntStoreLandscape" RELATED []
 is_a: bervo:BERVO_9000010 ! Plant trait variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000021
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Plant%20element%20(C,N,P,%20etc)
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000021
 property_value: bervo:BERVO_Qualifier bervo:BERVO_8000254
 
 [Term]
@@ -4943,7 +4945,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2 h-1" xsd:string
 property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000171
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000366
@@ -5223,7 +5225,7 @@ property_value: bervo:BERVO_Context bervo:BERVO_8000175
 property_value: bervo:BERVO_has_unit "g d-2 h-1" xsd:string
 property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000015
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000386
@@ -6909,7 +6911,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "s h-1" xsd:string
 property_value: bervo:BERVO_has_unit "s m-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000201
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Vapor
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000118
 property_value: bervo:BERVO_Qualifier bervo:BERVO_8000253
 
 [Term]
@@ -6977,12 +6979,12 @@ comment: CanopyDataType.txt
 synonym: "CanopyBndlResist_col" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
 property_value: bervo:BERVO_Attribute bervo:BERVO_8000540
+property_value: bervo:BERVO_Context bervo:BERVO_8000004
 property_value: bervo:BERVO_Context bervo:BERVO_8000007
-property_value: bervo:BERVO_Context http://www.w3.org/2002/07/Boundary%20Layer
 property_value: bervo:BERVO_has_unit "h m-1" xsd:string
 property_value: bervo:BERVO_has_unit "m h-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000007
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Boundary%20Layer
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000004
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -6997,7 +6999,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "umol m-3" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000002
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000124
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000529
@@ -7011,7 +7013,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "umol m-3" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000002
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000188
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000530
@@ -7039,7 +7041,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "umol m-3" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000201
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000188
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000532
@@ -7053,7 +7055,7 @@ property_value: bervo:BERVO_Context bervo:BERVO_8000007
 property_value: bervo:BERVO_has_unit "umol mol-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000007
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000188
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000533
@@ -7188,11 +7190,11 @@ def: "The atmospheric carbon dioxide concentration at which photosynthetic carbo
 comment: CanopyDataType.txt
 synonym: "CO2CompenPoint_node" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
-property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Attribute bervo:BERVO_8000023
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "uM" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000021
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/CO2%20concentration
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000188
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -7318,7 +7320,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000264
 property_value: bervo:BERVO_Context bervo:BERVO_8000145
 property_value: bervo:BERVO_has_unit "NONE" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000145
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/CO2%20fixation
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000188
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -8160,6 +8162,7 @@ def: "The total mass of various chemical elements including carbon, nitrogen, an
 comment: CanopyDataType.txt
 synonym: "ShootElms_pft" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8188,12 +8191,13 @@ def: "This vector varaible summarizes mass of total chemical elements that are a
 comment: CanopyDataType.txt
 synonym: "ShootStrutElms_pft" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute bervo:BERVO_8000137
 property_value: bervo:BERVO_Context bervo:BERVO_8000007
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000007
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000161
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/%5Bvector%20of%20chemicals%5D
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000161
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -8203,6 +8207,7 @@ def: "This vector variable quantifies the amount of chemical elements in the str
 comment: CanopyDataType.txt
 synonym: "LeafStrutElms_pft" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context bervo:BERVO_8000007
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8217,6 +8222,7 @@ def: "This vector variable quantifies the amount of chemical elements in the str
 comment: CanopyDataType.txt
 synonym: "PetoleStrutElms_pft" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context bervo:BERVO_8000007
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8231,6 +8237,7 @@ def: "This vector variable quantifies the amount of chemical elements in the str
 comment: CanopyDataType.txt
 synonym: "StalkStrutElms_pft" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context bervo:BERVO_8000007
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8245,6 +8252,7 @@ def: "The total mass of chemical elements stored in stalk reserve pools includin
 comment: CanopyDataType.txt
 synonym: "StalkRsrvElms_pft" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context bervo:BERVO_8000007
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8259,6 +8267,7 @@ def: "The total mass of chemical elements comprising the structural components o
 comment: CanopyDataType.txt
 synonym: "HuskStrutElms_pft" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context bervo:BERVO_8000007
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8273,6 +8282,7 @@ def: "The total mass of chemical elements contained in plant ear structural comp
 comment: CanopyDataType.txt
 synonym: "EarStrutElms_pft" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context bervo:BERVO_8000007
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8287,6 +8297,7 @@ def: "The total mass of chemical elements incorporated into grain structural com
 comment: CanopyDataType.txt
 synonym: "GrainStrutElms_pft" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context bervo:BERVO_8000032
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8358,6 +8369,7 @@ def: "The mass of mobile chemical elements stored in canopy tissues as reserves 
 comment: CanopyDataType.txt
 synonym: "CanopyNonstElms_pft" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context bervo:BERVO_8000007
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8372,6 +8384,7 @@ def: "The concentration of nonstructural chemical elements relative to total lea
 comment: CanopyDataType.txt
 synonym: "CanopyNonstElmConc_pft" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute bervo:BERVO_8000023
 property_value: bervo:BERVO_Context bervo:BERVO_8000007
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8400,6 +8413,7 @@ def: "The mass of nonstructural chemical elements contained in nitrogen-fixing n
 comment: CanopyDataType.txt
 synonym: "CanopyNodulNonstElms_pft" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context bervo:BERVO_8000555
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8414,6 +8428,7 @@ def: "The total chemical elemental biomass of nitrogen-fixing nodule bacteria in
 comment: CanopyDataType.txt
 synonym: "CanopyNodulElms_pft" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context bervo:BERVO_8000555
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8442,6 +8457,7 @@ def: "The mass of mobile chemical elements stored in branch tissues as reserves 
 comment: CanopyDataType.txt
 synonym: "CanopyNonstElms_brch" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8484,6 +8500,7 @@ def: "It records the amount of structural biomass of leaves over a branch in the
 comment: CanopyDataType.txt
 synonym: "LeafStrutElms_brch" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8498,6 +8515,7 @@ def: "The elemental composition and concentration of chemical elements within th
 comment: CanopyDataType.txt
 synonym: "PetoleStrutElms_brch" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8512,6 +8530,7 @@ def: "The elemental composition and concentration of chemical elements within th
 comment: CanopyDataType.txt
 synonym: "StalkStrutElms_brch" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8526,6 +8545,7 @@ def: "The mass of chemical elements stored as reserves in branch stalk tissues, 
 comment: CanopyDataType.txt
 synonym: "StalkRsrvElms_brch" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8540,6 +8560,7 @@ def: "The mass of chemical elements comprising the structural components of husk
 comment: CanopyDataType.txt
 synonym: "HuskStrutElms_brch" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8554,6 +8575,7 @@ def: "The mass of chemical elements contained in ear structural components assoc
 comment: CanopyDataType.txt
 synonym: "EarStrutElms_brch" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8568,6 +8590,7 @@ def: "The mass of chemical elements incorporated into grain structural component
 comment: CanopyDataType.txt
 synonym: "GrainStrutElms_brch" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context bervo:BERVO_8000032
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8610,6 +8633,7 @@ def: "The mass of chemical elements comprising the structural components of nitr
 comment: CanopyDataType.txt
 synonym: "CanopyNodulStrutElms_brch" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context bervo:BERVO_8000555
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8624,6 +8648,7 @@ def: "The mass of chemical elements that can be remobilized from structural shea
 comment: CanopyDataType.txt
 synonym: "PetioleChemElmRemob_brch" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8652,6 +8677,7 @@ def: "The mass of chemical elements that can be remobilized from structural leaf
 comment: CanopyDataType.txt
 synonym: "LeafChemElmRemob_brch" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8666,6 +8692,7 @@ def: "The total mass of chemical elements including carbon, nitrogen, and phosph
 comment: CanopyDataType.txt
 synonym: "LeafElmntNode_brch" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8680,6 +8707,7 @@ def: "The total mass of chemical elements contained in sheath tissues at specifi
 comment: CanopyDataType.txt
 synonym: "PetioleElmntNode_brch" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8694,6 +8722,7 @@ def: "The mass of chemical elements contained in internode structural tissues be
 comment: CanopyDataType.txt
 synonym: "InternodeStrutElms_brch" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8708,6 +8737,7 @@ def: "The mass of chemical elements contained in leaf tissues organized by speci
 comment: CanopyDataType.txt
 synonym: "LeafElmsByLayerNode_brch" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8792,6 +8822,7 @@ def: "The proportion of chemical elements contained within standing dead plant m
 comment: CanopyDataType.txt
 synonym: "StandDeadKCompElms_pft" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute bervo:BERVO_8000247
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8806,6 +8837,7 @@ def: "The mass of chemical elements contained in standing dead vegetation includ
 comment: CanopyDataType.txt
 synonym: "StandDeadStrutElms_pft" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -8820,6 +8852,7 @@ def: "The mass of mobile chemical elements stored seasonally in plant tissues as
 comment: CanopyDataType.txt
 synonym: "SeasonalNonstElms_pft" RELATED []
 is_a: bervo:BERVO_9000008 ! Canopy variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -10446,7 +10479,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000137
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "m g-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000116
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Petiole
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000580
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -11187,12 +11220,13 @@ def: "The rate of molecular diffusion of gaseous chemical species through enviro
 comment: ChemTranspDataType.txt
 synonym: "GasDifc_vr" RELATED []
 is_a: bervo:BERVO_9000011 ! Chemical transport variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute bervo:BERVO_8000059
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "m2 h-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000050
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/%5Bvector%20of%20chemicals%5D
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000086
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000841
@@ -11201,11 +11235,12 @@ def: "The rate of molecular diffusion of dissolved chemical species through liqu
 comment: ChemTranspDataType.txt
 synonym: "SoluteDifusvty_vr" RELATED []
 is_a: bervo:BERVO_9000011 ! Chemical transport variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute bervo:BERVO_8000059
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "m2 h-1" xsd:string
 property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/%5Bvector%20of%20chemicals%5D
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000125
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -11285,11 +11320,12 @@ def: "The maximum concentration of gaseous chemical species that can dissolve in
 comment: ChemTranspDataType.txt
 synonym: "GasSolbility_vr" RELATED []
 is_a: bervo:BERVO_9000011 ! Chemical transport variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute bervo:BERVO_8000250
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g solute /g gas" xsd:string
 property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/%5Bvector%20of%20chemicals%5D
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000086
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -11541,8 +11577,8 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000023
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g m-3" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000012
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Gaseous
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000086
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000867
@@ -11555,7 +11591,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000095
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g/m2/hr" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Solid%20soil%20organic%20matter%20hydrolysis
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000574
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -11569,7 +11605,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000095
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g/m2/hr" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Microbial%20residual%20hydrolysis
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000575
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -11583,7 +11619,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000095
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g/m2/hr" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Sorbed%20organic%20matter%20hydrolysis
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000576
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -11594,10 +11630,10 @@ comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (S
 synonym: "trcn_SurfRunoff_flx_col" RELATED []
 is_a: bervo:BERVO_9000012 ! Soil biogeochemistry variable
 property_value: bervo:BERVO_Attribute bervo:BERVO_8000541
-property_value: bervo:BERVO_Context http://www.w3.org/2002/07/surface%20runoff
+property_value: bervo:BERVO_Context bervo:BERVO_8000013
 property_value: bervo:BERVO_has_unit "g d-2 h-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Nutrient%20tracer
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000583
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -11611,7 +11647,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000127
 property_value: bervo:BERVO_Context bervo:BERVO_8000062
 property_value: bervo:BERVO_has_unit "NONE" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Nitrification%20inhibition
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000577
 property_value: bervo:BERVO_Qualifier bervo:BERVO_8000532
 
 [Term]
@@ -11625,7 +11661,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000127
 property_value: bervo:BERVO_Context bervo:BERVO_8000062
 property_value: bervo:BERVO_has_unit "NONE" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Nitrification%20inhibition
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000577
 property_value: bervo:BERVO_Qualifier bervo:BERVO_8000265
 
 [Term]
@@ -11639,7 +11675,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000127
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NONE" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Inhibition
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000568
 property_value: bervo:BERVO_Qualifier bervo:BERVO_8000532
 
 [Term]
@@ -11653,7 +11689,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000127
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NONE" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Urea%20hydrolysis%20inhibition
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000578
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -11695,7 +11731,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000137
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000012
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Gases
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000086
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -11779,7 +11815,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000544
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "cmol kg-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Cation%20exchange
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000062
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -11793,7 +11829,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000544
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "cmol kg-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Anion%20exchange
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000062
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -11891,7 +11927,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000541
 property_value: bervo:BERVO_Context bervo:BERVO_8000053
 property_value: bervo:BERVO_has_unit "g d-2 h-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Volatile%20tracers
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000582
 property_value: bervo:BERVO_Qualifier bervo:BERVO_8000536
 
 [Term]
@@ -11905,7 +11941,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000541
 property_value: bervo:BERVO_Context bervo:BERVO_8000025
 property_value: bervo:BERVO_has_unit "g d-2 h-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Volatile%20tracers
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000582
 property_value: bervo:BERVO_Qualifier bervo:BERVO_8000536
 
 [Term]
@@ -12790,7 +12826,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "ppmv" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000188
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000958
@@ -12804,7 +12840,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "ppmv" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000124
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0000959
@@ -13318,6 +13354,7 @@ def: "The mass of specific chemical elements contained within heterotrophic micr
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
 synonym: "mBiomeHeter_vr" RELATED []
 is_a: bervo:BERVO_9000014 ! Microbial variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -13627,6 +13664,7 @@ def: "Autotrophic microbial biomass chemical element quantifies the mass of spec
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
 synonym: "mBiomeAutor_vr" RELATED []
 is_a: bervo:BERVO_9000014 ! Microbial variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -14655,6 +14693,7 @@ def: "Non-structural chemical element in roots represents the concentration of m
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
 synonym: "RootMycoNonstElms_pft" RELATED []
 is_a: bervo:BERVO_9000016 ! Root variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -14711,6 +14750,7 @@ def: "Root nodule chemical element quantifies the elemental composition of speci
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
 synonym: "RootNodulElms_pft" RELATED []
 is_a: bervo:BERVO_9000016 ! Root variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context bervo:BERVO_8000555
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -14730,7 +14770,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "m2 h-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000171
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000171
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0001099
@@ -15039,7 +15079,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000171
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000171
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0001121
@@ -15053,7 +15093,7 @@ property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000171
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000171
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/Gaseous
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
 
 [Term]
 id: bervo:BERVO_0001122
@@ -15091,6 +15131,7 @@ def: "Plant root element refers to any chemical element found in the roots of a 
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
 synonym: "RootElms_pft" RELATED []
 is_a: bervo:BERVO_9000016 ! Root variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -15105,6 +15146,7 @@ def: "Plant root structural element refers to the features that comprise the str
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
 synonym: "RootStrutElms_pft" RELATED []
 is_a: bervo:BERVO_9000016 ! Root variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -15260,6 +15302,7 @@ def: "This variable tracks the root and mycorrhizae (when exists) biomass of che
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
 synonym: "RootMassElm_vr" RELATED []
 is_a: bervo:BERVO_9000016 ! Root variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute bervo:BERVO_8000137
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -15303,7 +15346,7 @@ comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (S
 synonym: "PARR_col" RELATED []
 is_a: bervo:BERVO_9000017 ! Surface litter variable
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_Context http://www.w3.org/2002/07/Boundary%20Layer
+property_value: bervo:BERVO_Context bervo:BERVO_8000004
 property_value: bervo:BERVO_has_unit "m t-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000060
 property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
@@ -16923,7 +16966,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000233
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g cm-3" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000025
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Surface%20layer
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000030
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -17759,7 +17802,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000518
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "kPa" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000050
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Vapor
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000118
 property_value: bervo:BERVO_Qualifier bervo:BERVO_8000283
 
 [Term]
@@ -18301,7 +18344,7 @@ id: bervo:BERVO_0001371
 name: Mean annual temperature
 def: "The average temperature over a complete year, calculated from daily or monthly temperature measurements and representing the thermal climate baseline for a location. This fundamental climate variable controls ecosystem processes including plant growth rates, species distributions, decomposition processes, and biogeochemical cycling patterns across terrestrial and aquatic environments." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-xref: MIXS:0000642
+xref: https://w3id.org/mixs/0000642
 is_a: bervo:BERVO_0001370 ! Air temperature
 property_value: bervo:BERVO_Attribute bervo:BERVO_8000133
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
@@ -19345,8 +19388,8 @@ comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (S
 synonym: "CondGasXSnowM_col" RELATED []
 is_a: bervo:BERVO_9000022 ! Soil surface variable
 property_value: bervo:BERVO_Attribute bervo:BERVO_8000079
+property_value: bervo:BERVO_Context bervo:BERVO_8000004
 property_value: bervo:BERVO_Context bervo:BERVO_8000025
-property_value: bervo:BERVO_Context http://www.w3.org/2002/07/Boundary%20Layer
 property_value: bervo:BERVO_has_unit "m d-2" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
 property_value: bervo:BERVO_measurement_of bervo:BERVO_8000062
@@ -20468,7 +20511,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000190
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "m3 d-2" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Micropores
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000012
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -21957,6 +22000,7 @@ def: "The mass of chemical elements contained within solid organic matter fracti
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
 synonym: "SolidOM_vr" RELATED []
 is_a: bervo:BERVO_9000030 ! Soil organic matter variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -22013,6 +22057,7 @@ def: "The mass of chemical elements bound to soil mineral surfaces through adsor
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
 synonym: "SorbedOM_vr" RELATED []
 is_a: bervo:BERVO_9000030 ! Soil organic matter variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -22027,6 +22072,7 @@ def: "The mass of chemical elements contained within dead microbial biomass and 
 comment: SOMDataType.txt
 synonym: "OMBioResdu_vr" RELATED []
 is_a: bervo:BERVO_9000030 ! Soil organic matter variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "C" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000091
@@ -22129,7 +22175,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000126
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g kg-1" xsd:string
 property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Soil%20organic%20matter
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000584
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -22167,6 +22213,7 @@ def: "The cumulative mass of chemical elements contained within all living micro
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
 synonym: "tMicBiome_col" RELATED []
 is_a: bervo:BERVO_9000030 ! Soil organic matter variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -22195,6 +22242,7 @@ def: "The cumulative mass of chemical elements contained within all litter fract
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
 synonym: "tLitrOM_col" RELATED []
 is_a: bervo:BERVO_9000030 ! Soil organic matter variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -22209,6 +22257,7 @@ def: "The mass of specific chemical elements present within litter layers distri
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
 synonym: "litrOM_vr" RELATED []
 is_a: bervo:BERVO_9000030 ! Soil organic matter variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -22223,6 +22272,7 @@ def: "The cumulative mass of specific chemical elements contained within all hum
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
 synonym: "tHumOM_col" RELATED []
 is_a: bervo:BERVO_9000030 ! Soil organic matter variable
+relationship: bervo:BERVO_involves_chemicals bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "g d-2" xsd:string
@@ -23061,7 +23111,7 @@ property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "mol d-2 h-1" xsd:string
 property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Carboxyl
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000581
 property_value: bervo:BERVO_Qualifier bervo:BERVO_8000254
 
 [Term]
@@ -24501,7 +24551,7 @@ id: bervo:BERVO_0001835
 name: Date of fire
 def: "The calendar date when a fire event occurred or was observed in terrestrial ecosystems. This parameter establishes temporal reference for fire disturbance effects, controlling burn history analysis and fire regime characterization in ecosystem management and research." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
-xref: MIXS:0001086
+xref: https://w3id.org/mixs/0001086
 is_a: bervo:BERVO_9000005 ! Fire variable
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context bervo:BERVO_8000172
@@ -24516,7 +24566,7 @@ id: bervo:BERVO_0001836
 name: Turbidity of water
 def: "The optical property of water indicating the degree of light scattering by suspended particles and dissolved substances. This parameter controls light penetration, aquatic productivity, and water quality assessment in freshwater and marine ecosystem studies." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
-xref: MIXS:0000191
+xref: https://w3id.org/mixs/0000191
 is_a: bervo:BERVO_9000031 ! Water variable
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
@@ -24530,7 +24580,7 @@ id: bervo:BERVO_0001837
 name: Water current
 def: "The volumetric flow rate and directional movement of water masses in aquatic environments. This parameter controls nutrient transport, sediment redistribution, and habitat conditions in rivers, lakes, and marine ecosystems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)
-xref: MIXS:0000203
+xref: https://w3id.org/mixs/0000203
 is_a: bervo:BERVO_9000031 ! Water variable
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
@@ -24792,6 +24842,21 @@ property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
+id: bervo:BERVO_0001858
+name: Gravimetric water content
+def: "The mass of water present in soil expressed relative to the mass of dry soil, commonly determined by weighing a moist soil sample, drying it to constant mass, and dividing the lost water mass by the dry soil mass." []
+comment: Definition source - Codex CLI (Jun 4 2026) via John-Marc Chandonia in PR #34
+synonym: "gravimetric soil water content" EXACT []
+synonym: "soil gravimetric water content" EXACT []
+is_a: bervo:BERVO_9000032 ! Soil and water variable
+property_value: bervo:BERVO_Attribute bervo:BERVO_8000126
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "g g-1" xsd:string
+property_value: bervo:BERVO_measured_in bervo:BERVO_8000062
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000102
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
 id: bervo:BERVO_8000000
 name: Runoff
 def: "The flow of water over the ground surface when soil is saturated, impermeable, or precipitation intensity exceeds infiltration capacity. This hydrological process is fundamental for understanding water balance, erosion patterns, flood generation, and downstream water resource availability in watershed and ecosystem management applications." []
@@ -24811,7 +24876,7 @@ name: Phosphorus
 def: "An essential nutrient element required for plant growth, development, and energy transfer processes in all living organisms. This chemical element is often the limiting nutrient in terrestrial and aquatic ecosystems, controlling primary productivity, biogeochemical cycling, and ecosystem responses to environmental change and management practices." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "P" EXACT []
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000220 ! Element
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -24914,7 +24979,7 @@ name: Dissolved inorganic carbon
 def: "Carbon in ionic forms dissolved in water, including carbonate, bicarbonate, and dissolved carbon dioxide species. This carbon pool is fundamental for understanding aquatic carbon cycling, ocean acidification, carbonate chemistry, and the exchange of carbon dioxide between water bodies and the atmosphere in global carbon cycle studies." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "DIC" EXACT []
-is_a: bervo:BERVO_8000075 ! Carbon
+is_a: bervo:BERVO_8000587 ! Chemical pool
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -24929,7 +24994,7 @@ def: "A calcium salt of phosphoric acid that serves as an important mineral form
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "CaHPO4" EXACT []
 synonym: "DCP" EXACT []
-is_a: bervo:BERVO_8000108 ! Calcium
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -24944,7 +25009,7 @@ def: "A chemical compound formed when iron combines with phosphate ions, commonl
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "FePO4" EXACT []
 synonym: "ferric phosphate" EXACT []
-is_a: bervo:BERVO_8000182 ! Iron
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25018,7 +25083,7 @@ name: Ammonia
 def: "A colorless gas composed of nitrogen and hydrogen that is highly soluble in water and readily forms ammonium ions in aqueous solutions. This compound is a key intermediate in nitrogen cycling, serving as both a product of organic matter decomposition and a substrate for nitrification processes in soil and aquatic ecosystems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "NH3" EXACT []
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25032,7 +25097,7 @@ name: Iron hydroxide
 def: "A chemical compound formed when iron ions combine with hydroxide ions, commonly occurring as precipitates in soils and sediments. This compound affects iron bioavailability, soil color development, phosphorus sorption, and redox chemistry in terrestrial and aquatic environmental systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "Fe(OH)3" EXACT []
-is_a: bervo:BERVO_8000182 ! Iron
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25047,7 +25112,7 @@ def: "A greenhouse gas composed of two nitrogen atoms and one oxygen atom that c
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "N2O" EXACT []
 xref: CHEBI:17045
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25063,7 +25128,7 @@ comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (S
 synonym: "Epsom salt" EXACT []
 synonym: "MgSO4" EXACT []
 xref: CHEBI:32599
-is_a: bervo:BERVO_8000207 ! Magnesium
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25156,7 +25221,7 @@ comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (S
 synonym: "CH4" EXACT []
 synonym: "natural gas" EXACT []
 xref: CHEBI:16183
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25213,10 +25278,8 @@ id: bervo:BERVO_8000028
 name: Humus
 def: "The dark, well-decomposed organic material that forms in soil through the breakdown and transformation of plant and animal matter by soil organisms. This stable organic component improves soil structure, water holding capacity, nutrient retention, and serves as a long-term carbon storage pool in terrestrial ecosystems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-synonym: "organic matter" RELATED []
-synonym: "SOM" RELATED []
 xref: ENVO:01000000
-is_a: bervo:BERVO_8000062 ! Soil
+is_a: bervo:BERVO_8000584 ! Soil organic matter
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25290,7 +25353,7 @@ def: "Carbon that is incorporated into organic compounds derived from living org
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "biological carbon" EXACT []
 synonym: "OC" EXACT []
-is_a: bervo:BERVO_8000075 ! Carbon
+is_a: bervo:BERVO_8000587 ! Chemical pool
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25305,7 +25368,7 @@ def: "A chemical compound containing iron, hydrogen, and phosphate ions that occ
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "Fe(H2PO4)2" EXACT []
 synonym: "iron phosphate" EXACT []
-is_a: bervo:BERVO_8000182 ! Iron
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25321,7 +25384,7 @@ comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (S
 synonym: "hydroxyl ion" EXACT []
 synonym: "OH-" EXACT []
 xref: CHEBI:16234
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000112 ! Ion
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25335,7 +25398,7 @@ name: Chloride
 def: "An anion formed when chlorine gains an electron to achieve a stable electron configuration, commonly occurring in natural waters and soils. This ion affects soil salinity, plant salt tolerance, water quality, and serves as a conservative tracer for studying water movement and mixing processes in hydrological and ecological studies." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "Cl" EXACT []
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000112 ! Ion
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25364,7 +25427,7 @@ name: Protein to carbohydrate ratio
 def: "The proportion of protein content relative to carbohydrate content in biological material, indicating the nutritional quality and biochemical composition of organic matter. This ratio is important for understanding food web dynamics, decomposition rates, nutrient cycling, and the energetic value of biological resources in ecological systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "P:C ratio" EXACT []
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000245 ! Ratio
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25378,7 +25441,7 @@ name: Hydrogen
 def: "The lightest and most abundant chemical element in the universe that forms water molecules and organic compounds essential for all life processes. This element is fundamental for understanding acid-base chemistry, redox reactions, energy metabolism, and biogeochemical processes in environmental and ecological systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "H" EXACT []
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000220 ! Element
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25462,7 +25525,7 @@ id: bervo:BERVO_8000045
 name: Iron sulfate
 def: "A chemical compound consisting of iron and sulfate ions that occurs naturally in soils and water bodies and is commonly used as a soil amendment. This compound affects iron bioavailability, soil pH, plant nutrition, and serves as a source of both iron and sulfur nutrients in agricultural and ecological systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25502,7 +25565,7 @@ name: Dissolved inorganic nitrogen
 def: "Nitrogen in ionic forms dissolved in water, primarily including nitrate, nitrite, and ammonium ions that are readily available for biological uptake. This nitrogen pool represents the most bioavailable form of nitrogen in aquatic systems and soil solutions, controlling primary productivity and eutrophication in freshwater and marine environments." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "DIN" EXACT []
-is_a: bervo:BERVO_8000167 ! Nitrogen
+is_a: bervo:BERVO_8000587 ! Chemical pool
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25543,7 +25606,7 @@ name: Calcium sulfate
 def: "A chemical compound consisting of calcium, sulfur, and oxygen atoms that occurs naturally as gypsum and affects soil chemistry and plant nutrition. This mineral influences soil structure, water infiltration, calcium and sulfur availability, and serves as both a nutrient source and soil conditioner in agricultural and natural ecosystems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 xref: CHEBI:31346
-is_a: bervo:BERVO_8000108 ! Calcium
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25556,7 +25619,7 @@ id: bervo:BERVO_8000052
 name: Apatite
 def: "A group of phosphate minerals commonly found in rocks, soils, and biological systems that represent important sources of phosphorus for plants and ecosystems. These minerals control phosphorus availability through weathering processes, influence soil fertility, and serve as long-term reservoirs of phosphorus in terrestrial and marine biogeochemical cycles." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000138 ! Phosphate
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25583,7 +25646,7 @@ name: Magnesium hydroxide
 def: "A chemical compound consisting of magnesium and hydroxide ions that occurs in soils and affects pH and magnesium availability for plants. This compound influences soil alkalinity, nutrient cycling, and serves as a source of magnesium nutrition while affecting chemical equilibria in terrestrial and aquatic systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 xref: CHEBI:35149
-is_a: bervo:BERVO_8000207 ! Magnesium
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25610,7 +25673,7 @@ name: Sodium sulfate
 def: "A chemical compound consisting of sodium and sulfate ions that occurs in soils and water bodies, particularly in arid and saline environments. This compound affects soil salinity, plant salt tolerance, water quality, and serves as both a source of sodium and sulfur that can influence ecosystem functioning and agricultural productivity." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 xref: CHEBI:32149
-is_a: bervo:BERVO_8000143 ! Sodium
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25636,7 +25699,7 @@ id: bervo:BERVO_8000058
 name: Aluminum phosphate
 def: "A chemical compound consisting of aluminum and phosphate ions that forms in acidic soils and affects phosphorus availability for plants. This mineral complex influences nutrient cycling, soil chemistry, and plant nutrition by controlling phosphorus sorption and release processes in terrestrial ecosystems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000180 ! Aluminum
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25763,7 +25826,7 @@ id: bervo:BERVO_8000067
 name: Dissolved inorganic phosphorus
 def: "Phosphorus in ionic forms dissolved in water, primarily as orthophosphate and polyphosphate species that are readily available for biological uptake. This phosphorus pool represents the most bioavailable form of phosphorus in aquatic systems, controlling primary productivity and eutrophication processes in freshwater and marine environments." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000587 ! Chemical pool
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25777,7 +25840,7 @@ name: Nutrient
 def: "A chemical substance that provides nourishment essential for the growth, development, and maintenance of living organisms. These elements and compounds, including nitrogen, phosphorus, potassium, and others, control primary productivity, ecosystem functioning, and biogeochemical cycling in terrestrial and aquatic systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 xref: CHEBI:33284
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25819,7 +25882,7 @@ id: bervo:BERVO_8000071
 name: Potassium sulfate
 def: "A chemical compound consisting of potassium and sulfate ions that serves as a source of both potassium and sulfur nutrients for plants. This fertilizer compound affects plant nutrition, soil chemistry, and crop productivity while providing essential elements needed for plant growth and metabolic processes in agricultural and natural systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000198 ! Potassium
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25832,7 +25895,7 @@ id: bervo:BERVO_8000072
 name: Carbon to phosphorus ratio
 def: "The proportion of carbon content relative to phosphorus content in biological materials, indicating the stoichiometric relationship between these essential elements. This ratio influences decomposition rates, nutrient cycling, microbial activity, and ecosystem responses to nutrient availability in terrestrial and aquatic environments." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000245 ! Ratio
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25858,7 +25921,7 @@ id: bervo:BERVO_8000074
 name: Iron trihydroxide
 def: "A chemical compound consisting of iron and three hydroxide groups that forms as a precipitate in soils and sediments under oxidizing conditions. This mineral phase affects iron bioavailability, soil color, phosphorus sorption, and redox chemistry in terrestrial and aquatic environmental systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000182 ! Iron
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25872,7 +25935,7 @@ name: Carbon
 def: "A chemical element that forms the structural backbone of all organic compounds and serves as the foundation for life on Earth. This element is central to understanding photosynthesis, respiration, decomposition, and the global carbon cycle that connects atmospheric, terrestrial, and marine carbon reservoirs in earth system science." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 xref: CHEBI:27594
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000220 ! Element
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -25939,7 +26002,7 @@ id: bervo:BERVO_8000080
 name: Non-structural C3 content
 def: "The amount of soluble three-carbon compounds in plant tissue that can be readily metabolized for energy and growth processes. These compounds represent the mobile carbon reserves that plants use for respiration, growth, and stress responses, and are important for understanding plant carbon allocation and metabolic strategies." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000126 ! Content
 property_value: bervo:BERVO_Attribute bervo:BERVO_8000126
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26004,7 +26067,6 @@ id: bervo:BERVO_8000086
 name: Gas
 def: "A state of matter consisting of particles that move freely and expand to fill available containers, including atmospheric gases and soil air. This phase of matter facilitates gas exchange processes, affects atmospheric composition, controls respiration and photosynthesis, and serves as a medium for volatile chemical transport in environmental systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-synonym: "vapor" RELATED []
 is_a: bervo:BERVO_8000232 ! Concept
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
@@ -26018,7 +26080,7 @@ id: bervo:BERVO_8000087
 name: Magnesium bicarbonate
 def: "A chemical compound containing magnesium and bicarbonate ions that occurs in natural waters and affects water chemistry and plant nutrition. This compound influences water alkalinity, pH buffering capacity, and serves as a source of both magnesium and inorganic carbon in aquatic and soil systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000207 ! Magnesium
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26031,7 +26093,7 @@ id: bervo:BERVO_8000088
 name: Non-structural organic compounds
 def: "Soluble carbon-based molecules such as sugars, organic acids, and amino acids that can be readily metabolized by organisms for energy and biosynthesis. These compounds represent the mobile fraction of organic matter that controls microbial activity, decomposition rates, and nutrient cycling in terrestrial and aquatic ecosystems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000587 ! Chemical pool
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26099,7 +26161,7 @@ id: bervo:BERVO_8000093
 name: Structural carbon
 def: "Carbon incorporated into structural components of organisms such as cellulose, lignin, and chitin that provide mechanical support and protection. This carbon pool represents a stable, slow-cycling component of organic matter that influences decomposition rates, carbon sequestration, and long-term carbon storage in terrestrial ecosystems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000075 ! Carbon
+is_a: bervo:BERVO_8000587 ! Chemical pool
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26114,7 +26176,7 @@ def: "A chemical compound commonly found in rocks, shells, marine organisms, and
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "CaCO3" EXACT []
 xref: CHEBI:3311
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26168,7 +26230,7 @@ id: bervo:BERVO_8000098
 name: Carbonate
 def: "An anion consisting of one carbon atom and three oxygen atoms that forms when carbon dioxide dissolves in water and affects pH and alkalinity. This ion is fundamental for understanding ocean acidification, carbonate chemistry, shell formation, and carbon cycling in aquatic and terrestrial systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000075 ! Carbon
+is_a: bervo:BERVO_8000112 ! Ion
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26195,7 +26257,7 @@ id: bervo:BERVO_8000100
 name: Dissolved organic nitrogen
 def: "Nitrogen from organic compounds that is dissolved in water, representing an important but often overlooked component of aquatic nitrogen cycling. This nitrogen pool includes amino acids, proteins, and other organic nitrogen compounds that can be mineralized or directly utilized by organisms in freshwater and marine ecosystems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000167 ! Nitrogen
+is_a: bervo:BERVO_8000587 ! Chemical pool
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26223,7 +26285,7 @@ name: Water
 def: "A transparent, odorless, and tasteless liquid essential for all forms of life and the most abundant compound on Earth's surface. This molecule serves as the universal solvent, controls climate patterns, supports biological processes, and represents the fundamental medium for biogeochemical reactions and ecosystem functioning." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 xref: CHEBI:15377
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26289,7 +26351,7 @@ id: bervo:BERVO_8000107
 name: Aluminum sulfate
 def: "A chemical compound consisting of aluminum and sulfate ions that occurs in acidic soils and affects soil chemistry and plant nutrition. This compound influences soil pH, aluminum toxicity, nutrient availability, and plant growth in acid-sensitive ecosystems and agricultural systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000180 ! Aluminum
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26303,7 +26365,7 @@ name: Calcium
 def: "A chemical element essential for plant cell wall structure, membrane stability, and cellular signaling processes in all living organisms. This nutrient affects soil structure, plant growth, ecosystem productivity, and serves as a major component of shells, bones, and geological formations in earth systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "Ca" EXACT []
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000220 ! Element
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26317,8 +26379,7 @@ name: Carbon to nitrogen ratio
 def: "The proportion of carbon content relative to nitrogen content in organic materials, indicating decomposition rates and nutrient cycling dynamics. This stoichiometric relationship controls microbial activity, organic matter decomposition, nitrogen mineralization, and ecosystem responses to environmental changes and management practices." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "C:N ratio" EXACT []
-is_a: bervo:BERVO_8000075 ! Carbon
-is_a: bervo:BERVO_8000167 ! Nitrogen
+is_a: bervo:BERVO_8000245 ! Ratio
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26332,7 +26393,7 @@ name: Iron tetrahydroxide
 def: "A chemical compound consisting of iron and four hydroxide groups that forms under specific geochemical conditions in soils and sediments. This mineral phase affects iron mobility, redox chemistry, and the biogeochemical cycling of iron and associated elements in terrestrial and aquatic environmental systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "iron(II) hydroxide" EXACT []
-is_a: bervo:BERVO_8000182 ! Iron
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26360,7 +26421,7 @@ name: Ion
 def: "An atom or molecule that has gained or lost electrons and carries an electric charge, playing crucial roles in chemical reactions and biological processes. These charged particles control nutrient availability, soil chemistry, membrane transport, and electrochemical processes in terrestrial and aquatic environmental systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 xref: CHEBI:24870
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26374,7 +26435,7 @@ name: Ammonium
 def: "A positively charged ion consisting of one nitrogen and four hydrogen atoms that represents a major form of bioavailable nitrogen in soils and water. This nitrogen species is readily absorbed by plants, affects soil chemistry, and serves as a key component of nitrogen cycling in terrestrial and aquatic ecosystems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "NH4" EXACT []
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000112 ! Ion
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26444,6 +26505,7 @@ name: Water vapor
 def: "Water in its gaseous state present in the atmosphere, representing a major component of the global water cycle and greenhouse gas budget. This atmospheric moisture controls humidity, precipitation formation, heat transport, and energy balance processes that influence weather patterns and climate dynamics." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 is_a: bervo:BERVO_8000102 ! Water
+is_a: bervo:BERVO_8000579 ! Vapor
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26457,7 +26519,7 @@ name: Aluminum dihydroxide
 def: "A chemical compound consisting of aluminum and two hydroxide groups that occurs in acidic soils and affects aluminum availability and toxicity. This mineral form influences soil chemistry, plant aluminum stress, and the biogeochemical cycling of aluminum in terrestrial ecosystems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "Al(OH)3" EXACT []
-is_a: bervo:BERVO_8000180 ! Aluminum
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26514,7 +26576,7 @@ name: Nitrogen dioxide
 def: "A chemical compound consisting of one nitrogen and two oxygen atoms that serves as an air pollutant and component of atmospheric nitrogen cycling. This reactive gas affects air quality, acid rain formation, ozone chemistry, and represents both a product and precursor of various nitrogen transformation processes." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "NO2" EXACT []
-is_a: bervo:BERVO_8000167 ! Nitrogen
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26528,7 +26590,7 @@ name: Oxygen
 def: "A chemical element essential for aerobic respiration, combustion processes, and the formation of many chemical compounds in environmental systems. This element controls metabolic rates, decomposition processes, water quality, and serves as a key component of atmospheric composition and biogeochemical cycling." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "O2" EXACT []
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000220 ! Element
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26729,7 +26791,7 @@ def: "An anion consisting of one phosphorus atom and four oxygen atoms that repr
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "PO4" EXACT []
 synonym: "PO43-" EXACT []
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000112 ! Ion
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26743,7 +26805,7 @@ name: Calcium hydroxide
 def: "A chemical compound consisting of calcium and hydroxide ions that affects soil pH and calcium availability in terrestrial systems. This compound influences soil alkalinity, plant nutrition, and chemical weathering processes while serving as both a product and driver of mineral-water interactions in environmental systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 xref: CHEBI:35150
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26758,7 +26820,7 @@ def: "An anion consisting of one hydrogen, one carbon, and three oxygen atoms th
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "hydrogen carbonate" EXACT []
 xref: CHEBI:17544
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000112 ! Ion
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26785,7 +26847,7 @@ name: Sodium
 def: "A chemical element that is highly reactive and forms many important compounds affecting soil salinity, plant physiology, and water quality. This alkali metal influences soil structure, plant salt tolerance, groundwater chemistry, and serves as both an essential micronutrient and potential toxin in environmental systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "Na" EXACT []
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000220 ! Element
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -26932,7 +26994,7 @@ id: bervo:BERVO_8000154
 name: Aluminum tetrahydroxide
 def: "A chemical compound consisting of aluminum and four hydroxide groups that forms under specific geochemical conditions in soils and sediments. This mineral phase affects aluminum chemistry, soil acidity, and the mobility and toxicity of aluminum in terrestrial and aquatic environmental systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000180 ! Aluminum
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27066,7 +27128,7 @@ comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (S
 synonym: "carbamide" EXACT []
 synonym: "CO(NH2)2" EXACT []
 xref: CHEBI:16199
-is_a: bervo:BERVO_8000167 ! Nitrogen
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27080,7 +27142,7 @@ name: Sodium carbonate
 def: "A chemical compound consisting of sodium and carbonate ions that affects water and soil chemistry, particularly in alkaline environments. This compound influences pH, salinity, mineral precipitation, and serves as both a natural component of alkaline soils and waters and an industrial chemical with environmental applications." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 xref: CHEBI:29377
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27094,7 +27156,7 @@ name: Nitrogen
 def: "A chemical element essential for protein synthesis, nucleic acid formation, and overall plant growth and development in all living organisms. This element often limits primary productivity in terrestrial and aquatic ecosystems, controls plant nutrition, and serves as a key component of biogeochemical cycling and atmospheric chemistry." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "N" EXACT []
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000220 ! Element
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27110,7 +27172,7 @@ comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (S
 synonym: "NO3" EXACT []
 synonym: "NO3-" EXACT []
 xref: CHEBI:17632
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000112 ! Ion
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27180,7 +27242,7 @@ id: bervo:BERVO_8000173
 name: Iron hydrogen phosphate
 def: "A chemical compound containing iron, hydrogen, and phosphate ions that occurs in soils and affects both iron and phosphorus bioavailability. This mineral form influences nutrient cycling, soil chemistry, and plant nutrition through its role in controlling the solubility and mobility of iron and phosphorus in terrestrial systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000182 ! Iron
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27247,7 +27309,7 @@ def: "A lightweight metallic element that is the third most abundant element in 
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "Al" EXACT []
 xref: CHEBI:33620
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000220 ! Element
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27276,7 +27338,7 @@ def: "A chemical element essential for many biological processes including photo
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "Fe" EXACT []
 xref: CHEBI:18248
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000220 ! Element
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27315,7 +27377,7 @@ id: bervo:BERVO_8000185
 name: Dissolved organic phosphorus
 def: "Phosphorus contained within organic compounds that is dissolved in water, representing an important but often underestimated component of aquatic phosphorus cycling. This phosphorus pool includes nucleic acids, phospholipids, and other organic phosphorus compounds that can be mineralized or directly utilized by organisms in freshwater and marine ecosystems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000001 ! Phosphorus
+is_a: bervo:BERVO_8000587 ! Chemical pool
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27328,7 +27390,7 @@ id: bervo:BERVO_8000186
 name: Calcium phosphate
 def: "A chemical compound consisting of calcium and phosphate ions that occurs naturally in rocks, soils, and biological systems such as bones and teeth. This mineral affects soil fertility, phosphorus availability, and serves as both a nutrient source and a sink for phosphorus in terrestrial and aquatic biogeochemical cycles." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27341,7 +27403,7 @@ id: bervo:BERVO_8000187
 name: Calcium dihydrogen phosphate
 def: "A chemical compound containing calcium and dihydrogen phosphate ions that serves as a source of both calcium and phosphorus in soils and fertilizer applications. This compound affects nutrient availability, soil chemistry, and plant nutrition while representing an important form of phosphorus that can be readily dissolved and utilized by plants." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27355,7 +27417,7 @@ name: Carbon dioxide
 def: "A colorless gas consisting of one carbon and two oxygen atoms that plays central roles in photosynthesis, respiration, and global climate regulation. This greenhouse gas is fundamental for understanding carbon cycling, climate change, plant productivity, and the exchange of carbon between atmospheric, terrestrial, and marine reservoirs." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "CO2" EXACT []
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27368,7 +27430,7 @@ id: bervo:BERVO_8000189
 name: Non-structural carbohydrate
 def: "Soluble sugars and readily mobilizable starch that can be quickly metabolized by plants for energy, growth, and stress responses. These carbon compounds represent the mobile energy reserves that plants use for respiration, osmotic adjustment, and resource allocation, and are important indicators of plant carbon status and stress tolerance." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000587 ! Chemical pool
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27437,7 +27499,7 @@ id: bervo:BERVO_8000194
 name: Aluminum trihydroxide
 def: "A chemical compound consisting of aluminum and three hydroxide groups that forms in soils and affects aluminum chemistry and availability. This mineral phase influences soil acidity, aluminum toxicity, and the mobility of aluminum in terrestrial and aquatic systems where pH and redox conditions control its formation and dissolution." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27450,7 +27512,7 @@ id: bervo:BERVO_8000195
 name: Magnesium hydrogen phosphate
 def: "A chemical compound containing magnesium and hydrogen phosphate ions that affects the availability of both magnesium and phosphorus in soil and water systems. This compound influences nutrient cycling, soil chemistry, and plant nutrition by serving as a source of essential nutrients while affecting pH and ion equilibria." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27494,7 +27556,7 @@ comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (S
 synonym: "K" EXACT []
 synonym: "kalium" RELATED []
 xref: CHEBI:26216
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000220 ! Element
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27507,7 +27569,7 @@ id: bervo:BERVO_8000199
 name: Salt
 def: "A chemical compound formed when an acid reacts with a base, or more broadly, any ionic compound that affects the salinity of soils and water bodies. These compounds influence osmotic stress, plant tolerance, soil structure, and water quality while representing major constraints on ecosystem functioning in arid and coastal environments." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27520,7 +27582,7 @@ id: bervo:BERVO_8000200
 name: Calcium bicarbonate
 def: "A chemical compound containing calcium and bicarbonate ions that occurs in natural waters and affects water chemistry and nutrient availability. This compound influences water hardness, pH buffering capacity, and serves as a source of both calcium nutrition and inorganic carbon in aquatic and terrestrial systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000108 ! Calcium
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27548,7 +27610,7 @@ name: Water content
 def: "The amount of water present in a material such as soil, plant tissue, or atmospheric air, typically expressed as a percentage by mass or volume. This property controls biological activity, physical processes, material properties, and represents a fundamental parameter for understanding ecosystem functioning and environmental conditions." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "humidity" RELATED []
-is_a: bervo:BERVO_8000102 ! Water
+is_a: bervo:BERVO_8000126 ! Content
 property_value: bervo:BERVO_Attribute bervo:BERVO_8000126
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27561,7 +27623,7 @@ id: bervo:BERVO_8000203
 name: Aluminum hydroxide
 def: "A chemical compound consisting of aluminum and hydroxide ions that forms in soils and affects aluminum chemistry and plant nutrition. This compound influences soil pH, aluminum availability, and plant aluminum toxicity while serving as both a product of mineral weathering and a control on aluminum mobility in environmental systems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27589,7 +27651,7 @@ name: Acetate
 def: "An anion derived from acetic acid that commonly occurs in biological systems and serves as an important intermediate in microbial metabolism. This organic ion plays roles in fermentation processes, carbon cycling, methanogenesis, and represents a key component of anaerobic decomposition in soils and sediments." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 xref: CHEBI:30089
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000112 ! Ion
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27616,7 +27678,7 @@ name: Magnesium
 def: "A chemical element essential for chlorophyll structure, enzyme function, and cellular processes in all living organisms. This macronutrient affects photosynthesis, protein synthesis, and plant growth while serving as a key component of soil chemistry and agricultural fertility in terrestrial and aquatic ecosystems." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "Mg" EXACT []
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000220 ! Element
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27659,7 +27721,7 @@ def: "A chemical compound consisting of magnesium and carbonate ions that occurs
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "MgCO3" EXACT []
 xref: CHEBI:31793
-is_a: bervo:BERVO_8000207 ! Magnesium
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27674,8 +27736,6 @@ def: "The proportion of phosphorus content relative to carbon content in biologi
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "P:C" EXACT []
 synonym: "P:C ratio" EXACT []
-is_a: bervo:BERVO_8000001 ! Phosphorus
-is_a: bervo:BERVO_8000075 ! Carbon
 is_a: bervo:BERVO_8000245 ! Ratio
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
@@ -27717,7 +27777,7 @@ name: Chlorophyll
 def: "The green pigment complex in plants and algae that captures light energy and converts it into chemical energy during photosynthesis. This essential biomolecule controls light harvesting efficiency, determines photosynthetic capacity, and serves as an indicator of plant health and ecosystem productivity in terrestrial and aquatic environments." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 xref: CHEBI:28966
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27773,7 +27833,7 @@ name: Phosphoric acid
 def: "A chemical compound consisting of hydrogen and phosphate groups that serves as a source of phosphorus and affects soil acidity in terrestrial systems. This acid influences phosphorus availability, soil pH, mineral weathering, and serves as both a natural component of biogeochemical cycles and an important industrial chemical." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 xref: CHEBI:26078
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27786,7 +27846,7 @@ id: bervo:BERVO_8000219
 name: Iron dihydroxide
 def: "A chemical compound consisting of iron and two hydroxide groups that forms under specific redox and pH conditions in soils and aquatic systems. This mineral phase affects iron bioavailability, soil chemistry, and represents an intermediate oxidation state that influences iron cycling and plant nutrition." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27799,7 +27859,7 @@ id: bervo:BERVO_8000220
 name: Element
 def: "A pure chemical substance consisting of atoms with the same number of protons, representing the fundamental building blocks of all matter in environmental systems. These basic chemical units combine to form compounds and control the chemical composition, reactivity, and properties of materials in terrestrial and aquatic environments." []
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -27868,8 +27928,6 @@ def: "The proportion of nitrogen content relative to carbon content in biologica
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "N:C" EXACT []
 synonym: "N:C ratio" EXACT []
-is_a: bervo:BERVO_8000075 ! Carbon
-is_a: bervo:BERVO_8000167 ! Nitrogen
 is_a: bervo:BERVO_8000245 ! Ratio
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
@@ -27913,7 +27971,7 @@ synonym: "SO4" EXACT []
 synonym: "SO42-" EXACT []
 synonym: "sulphate" EXACT []
 xref: CHEBI:16189
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000112 ! Ion
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -28220,7 +28278,7 @@ def: "A chemical element and noble gas that constitutes approximately 0.93% of E
 comment: Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)
 synonym: "Ar" EXACT []
 xref: CHEBI:49475
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000220 ! Element
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -29708,7 +29766,7 @@ name: Stoichiometric ratio
 def: "The proportional relationship between reactants or products in chemical or biochemical reactions based on molecular formulas. Stoichiometric ratios are fundamental for calculating reaction yields, energy requirements, and elemental cycling rates in biogeochemical models." []
 comment: Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)
 xref: COMO:0000139
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000245 ! Ratio
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -30481,7 +30539,7 @@ name: Environmental chemical
 def: "A chemical compound detected or quantified in environmental samples including natural and anthropogenic substances. Environmental chemical identification enables assessment of environmental contamination and chemical cycling." []
 comment: Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)
 xref: COMO:0000258
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000586 ! Chemical
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -30900,11 +30958,10 @@ id: bervo:BERVO_8000442
 name: Projected Coordinate System
 def: "A coordinate reference system that uses a map projection to represent locations on a curved surface as planar coordinates, enabling positions to be expressed as easting and northing values in linear units. A projected coordinate system includes a base geographic coordinate system, projection method, datum, linear unit, and projection parameters; examples include UTM Zone 13N and State Plane zones." []
 comment: Definition revised to generalize the previous State plane zone term to projected coordinate systems that can qualify easting and northing values.
-xref: http://www.w3.org/2002/07/Class
 is_a: bervo:BERVO_8000232 ! Concept
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_has_value_type http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
 property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
@@ -31209,7 +31266,7 @@ name: Isotope ratio
 def: "The proportion of different isotopes of an element in a sample, measured by mass spectrometry. Isotope ratios track elemental sources and transformation processes." []
 comment: Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)
 xref: COMO:0000403
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000245 ! Ratio
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -31788,7 +31845,7 @@ property_value: bervo:BERVO_Attribute bervo:BERVO_8000518
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
 property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/Vapor
+property_value: bervo:BERVO_measurement_of bervo:BERVO_8000579
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
@@ -31797,7 +31854,7 @@ name: LC-MS peak area ratio
 def: "The relative intensity of a detected compound peak in liquid chromatography-mass spectrometry normalized to another peak. Peak ratios quantify relative abundances." []
 comment: Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)
 xref: COMO:0000555
-is_a: bervo:BERVO_8000232 ! Concept
+is_a: bervo:BERVO_8000245 ! Ratio
 property_value: bervo:BERVO_Attribute bervo:BERVO_8000079
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
@@ -32421,7 +32478,7 @@ property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 id: bervo:BERVO_8000558
 name: Biological process
 def: "A process carried out by living organisms or biological systems that transforms matter, energy, or information over time. This concept provides a general parent for process-oriented BERVO terms such as respiration, mineralization, production, and other organism- or ecosystem-driven activities." []
-comment:  Mar 26 2026)
+comment: Definition source - Manual (Codex, Mar 26 2026)
 xref: GO:0008150
 is_a: bervo:BERVO_8000232 ! Concept
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
@@ -32435,39 +32492,37 @@ property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 id: bervo:BERVO_8000559
 name: Azimuth
 def: "The horizontal direction of a line, view, or vector measured clockwise from a reference direction, typically geographic north. Azimuth describes orientation or bearing within a horizontal plane and is commonly reported in degrees." []
-comment:  May 4 2026)
+comment: Definition source - Manual (JMC, May 4 2026)
 synonym: "bearing" EXACT []
 synonym: "compass azimuth" EXACT []
-xref: http://www.w3.org/2002/07/Class
 is_a: bervo:BERVO_8000255 ! Angle
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_has_value_type http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "degree" xsd:string
 property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/degree
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
 id: bervo:BERVO_8000560
 name: Field of view angle
 def: "The angular extent of the cone or region over which an instrument accepts incoming radiation or observes a scene. Field of view angle describes aperture width rather than the direction the instrument is aimed and is commonly reported in degrees." []
-comment:  May 4 2026)
+comment: Definition source - Manual (JMC, May 4 2026)
 synonym: "field of view" EXACT []
 synonym: "FOV" EXACT []
-xref: http://www.w3.org/2002/07/Class
 is_a: bervo:BERVO_8000255 ! Angle
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_has_value_type http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "degree" xsd:string
 property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/degree
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
 id: bervo:BERVO_8000561
 name: Scattering correction factor
 def: "A dimensionless correction factor applied during optical canopy or leaf area index processing to adjust gap fraction or transmittance estimates for radiation scattered into the sensor field of view. This factor represents a data-processing correction rather than the physical scattering process itself." []
-comment:  May 4 2026)
+comment: Definition source - Manual (JMC, May 4 2026)
 is_a: bervo:BERVO_8000244 ! Quantitative value
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
@@ -32480,30 +32535,28 @@ property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 id: bervo:BERVO_8000562
 name: Apparent clumping factor
 def: "A dimensionless index describing the apparent non-random spatial aggregation of foliage inferred from canopy optical measurements, commonly calculated as the ratio of effective leaf area index to clumping-corrected or true leaf area index. Values below 1 indicate more clumped foliage relative to a random distribution." []
-comment:  May 4 2026)
+comment: Definition source - Manual (JMC, May 4 2026)
 synonym: "ACF" EXACT []
 synonym: "apparent clumping index" EXACT []
-xref: http://www.w3.org/2002/07/Class
 is_a: bervo:BERVO_8000244 ! Quantitative value
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_has_value_type bervo:BERVO_8000117
+property_value: bervo:BERVO_Context bervo:BERVO_8000117
+property_value: bervo:BERVO_has_unit "dimensionless" xsd:string
 property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/dimensionless
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
 
 [Term]
 id: bervo:BERVO_8000563
 name: Quality control flag
 def: "A controlled categorical code assigned to an observation or dataset to indicate a quality-control condition, processing decision, or measurement anomaly relevant to interpretation." []
-comment:  May 11 2026)
+comment: Definition source - Manual (JMC, May 11 2026)
 synonym: "QC flag" EXACT []
 synonym: "quality flag" EXACT []
-xref: http://www.w3.org/2002/07/Class
 is_a: bervo:BERVO_9000003 ! Flag data type
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
-property_value: bervo:BERVO_has_value_type http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
 property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
@@ -32515,6 +32568,310 @@ def: "The process of fixing carbon dioxide in C4 plants." []
 comment: Definition source - Manual (JHC, Jan 9 2026)
 property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_Context bervo:BERVO_8000564
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000565
+name: Gaseous
+def: "Relating to substances or systems in the gas phase, in which molecules are not held in a condensed state and disperse to occupy the available volume. This concept describes the physical state in which a chemical species diffuses, is transported, or exchanges across soil, water, and atmosphere boundaries in terrestrial systems." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+xref: PATO:0001737
+is_a: bervo:BERVO_8000232 ! Concept
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier bervo:BERVO_8000565
+
+[Term]
+id: bervo:BERVO_8000566
+name: Release
+def: "The liberation of a substance from a bound, sorbed, or encapsulated state into a surrounding medium, making it available for transport, transformation, or uptake." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+is_a: bervo:BERVO_8000106 ! Process
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000567
+name: Hydrolysis
+def: "The chemical or enzymatic cleavage of a compound by reaction with water, breaking larger molecules into smaller constituents. In soil systems this is the principal route by which polymeric organic matter becomes available for microbial uptake." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+is_a: bervo:BERVO_8000106 ! Process
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000568
+name: Inhibition
+def: "The suppression or slowing of a chemical or biological process by a substance that interferes with the enzyme or reaction pathway responsible for it." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+is_a: bervo:BERVO_8000106 ! Process
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000569
+name: Ammonium release
+def: "The liberation of ammonium ions from fertilizer particles, mineral surfaces, or organic matter into soil solution, where they become available for plant uptake, nitrification, or adsorption." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+is_a: bervo:BERVO_8000566 ! Release
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000570
+name: Ammonia release
+def: "The liberation of ammonia from fertilizer particles, soil solution, or decomposing organic matter, commonly preceding volatilization to the atmosphere or oxidation by nitrifying organisms." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+is_a: bervo:BERVO_8000566 ! Release
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000571
+name: Urea release
+def: "The liberation of urea from fertilizer particles into soil solution, preceding its hydrolysis to ammonia by soil urease." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+is_a: bervo:BERVO_8000566 ! Release
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000572
+name: Nitrate release
+def: "The liberation of nitrate ions from fertilizer particles or mineral surfaces into soil solution, where they become available for plant uptake, denitrification, or leaching." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+is_a: bervo:BERVO_8000566 ! Release
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000573
+name: Dihydrogen phosphate release
+def: "The liberation of dihydrogen phosphate ions from fertilizer particles into soil solution, where they become subject to sorption, precipitation, or plant uptake." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+is_a: bervo:BERVO_8000566 ! Release
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000574
+name: Solid soil organic matter hydrolysis
+def: "The enzymatic cleavage of particulate soil organic matter into dissolved organic compounds, representing the first step in decomposition of the solid organic pool." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+is_a: bervo:BERVO_8000567 ! Hydrolysis
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000575
+name: Microbial residual hydrolysis
+def: "The enzymatic cleavage of microbial cell residues and metabolic byproducts in soil, returning necromass carbon and nutrients to the dissolved organic pool." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+is_a: bervo:BERVO_8000567 ! Hydrolysis
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000576
+name: Sorbed organic matter hydrolysis
+def: "The enzymatic cleavage of organic matter adsorbed onto soil mineral surfaces, releasing it from physical protection into the dissolved organic pool." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+is_a: bervo:BERVO_8000567 ! Hydrolysis
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000577
+name: Nitrification inhibition
+def: "The suppression of microbial oxidation of ammonia to nitrite and nitrate, typically by compounds applied alongside fertilizer to limit nitrogen loss through leaching and denitrification." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+is_a: bervo:BERVO_8000568 ! Inhibition
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000578
+name: Urea hydrolysis inhibition
+def: "The suppression of urease-mediated breakdown of urea to ammonia, typically by compounds applied alongside fertilizer to slow nitrogen release and reduce volatilization." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+is_a: bervo:BERVO_8000568 ! Inhibition
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000579
+name: Vapor
+def: "A substance in the gas phase below its critical temperature, able to coexist with its condensed form. In environmental models this most often refers to water vapor in soil pores and the atmosphere." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+is_a: bervo:BERVO_8000086 ! Gas
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000580
+name: Petiole
+def: "The stalk attaching a leaf blade to the stem, conducting water and photosynthate between them and positioning the blade for light interception." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+xref: PO:0020038
+is_a: bervo:BERVO_8000021 ! Plant
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000581
+name: Carboxyl
+def: "The -COOH functional group, whose dissociation to -COO- governs the pH-dependent surface charge of organic matter and mineral surfaces in soil." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+xref: CHEBI:46883
+is_a: bervo:BERVO_8000232 ! Concept
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000582
+name: Volatile tracer
+def: "A chemical tracer that readily partitions into the gas phase, used to follow transport and loss pathways involving volatilization." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+is_a: bervo:BERVO_8000585 ! Tracer
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000583
+name: Nutrient tracer
+def: "A chemical tracer representing a plant-essential nutrient, used to follow nutrient transport, transformation, and loss through soil and water pathways." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+is_a: bervo:BERVO_8000585 ! Tracer
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000584
+name: Soil organic matter
+def: "The organic fraction of soil, comprising plant and microbial residues at all stages of decomposition together with stabilized humified compounds." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+xref: ENVO:04000008
+is_a: bervo:BERVO_8000286 ! Organic matter
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000585
+name: Tracer
+def: "A chemical species followed through a system in order to quantify transport, transformation, or loss pathways, whether introduced deliberately or tracked as a natural constituent." []
+comment: Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)
+is_a: bervo:BERVO_8000232 ! Concept
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000586
+name: Chemical
+def: "A substance of definite composition, whether element, compound, or ion." []
+comment: Collects the substances whose transport, transformation, and exchange are tracked in environmental and earth-system models, and serves as the filler class for involves_chemicals restrictions.
+is_a: bervo:BERVO_8000232 ! Concept
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_has_unit "NA" xsd:string
+property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Qualifier http://www.w3.org/2002/07/NA
+
+[Term]
+id: bervo:BERVO_8000587
+name: Chemical pool
+def: "Portion of the chemical material of a system, distinguished by chemical form, physical state, or location, and tracked as a stock in models or quantified as a fraction of a sample, such as dissolved inorganic carbon, dissolved organic nitrogen, or non-structural carbohydrate." []
+comment: Definition source - Claude Fable 5.1 through Claude Code (Sep 3 2026)
+synonym: "chemical fraction" EXACT []
+is_a: bervo:BERVO_8000586 ! Chemical
+property_value: bervo:BERVO_Attribute http://www.w3.org/2002/07/NA
+property_value: bervo:BERVO_Context http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_has_unit "NA" xsd:string
 property_value: bervo:BERVO_measured_in http://www.w3.org/2002/07/NA
 property_value: bervo:BERVO_measurement_of http://www.w3.org/2002/07/NA
