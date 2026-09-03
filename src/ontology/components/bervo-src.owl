@@ -34967,7 +34967,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000038 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000038">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <obo:IAO_0000115>The proportion of protein content relative to carbohydrate content in biological material, indicating the nutritional quality and biochemical composition of organic matter. This ratio is important for understanding food web dynamics, decomposition rates, nutrient cycling, and the energetic value of biological resources in ecological systems.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>P:C ratio</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
@@ -39311,7 +39311,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000287 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000287">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
         <obo:IAO_0000115>The total amount of thermal energy contained within a system that can be released or absorbed during physical or chemical processes at constant pressure. This property controls phase transitions, chemical reaction rates, and energy balance processes that influence ecosystem functioning and environmental dynamics in terrestrial and aquatic systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000533"/>
         <oboInOwl:hasExactSynonym>enthalpy</oboInOwl:hasExactSynonym>
@@ -40561,7 +40561,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000356 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000356">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <obo:IAO_0000115>The proportional relationship between reactants or products in chemical or biochemical reactions based on molecular formulas. Stoichiometric ratios are fundamental for calculating reaction yields, energy requirements, and elemental cycling rates in biogeochemical models.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000139"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
@@ -42496,7 +42496,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000466 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000466">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <obo:IAO_0000115>The proportion of different isotopes of an element in a sample, measured by mass spectrometry. Isotope ratios track elemental sources and transformation processes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000403"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
@@ -43252,7 +43252,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000508 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000508">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <obo:IAO_0000115>The relative intensity of a detected compound peak in liquid chromatography-mass spectrometry normalized to another peak. Peak ratios quantify relative abundances.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000555"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
@@ -44578,7 +44578,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000587">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
-        <obo:IAO_0000115>Portion of a chemical substance distinguished by its chemical form, physical state, or location within a system and tracked as a stock in models or quantified as a fraction of a sample, such as dissolved inorganic carbon or dissolved organic nitrogen.</obo:IAO_0000115>
+        <obo:IAO_0000115>Portion of the chemical material of a system, distinguished by chemical form, physical state, or location, and tracked as a stock in models or quantified as a fraction of a sample, such as dissolved inorganic carbon, dissolved organic nitrogen, or non-structural carbohydrate.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>chemical fraction</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Fable 5.1 through Claude Code (Sep 3 2026)</rdfs:comment>
         <rdfs:label>Chemical pool</rdfs:label>
