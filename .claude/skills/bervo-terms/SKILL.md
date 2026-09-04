@@ -65,8 +65,12 @@ duplicate and near-duplicate terms are the hardest problem to unwind later.
   `Category`/relationship cell that referenced the old label. After a label change,
   run `just validate` and fix the references it flags.
 - Never change an **ID**. If a term is wrong, obsolete it rather than repurposing it.
-- To obsolete: prefix the label with `obsolete `, and record a `replaced_by` where a
-  successor exists. Keep the row; never delete it and never reuse the ID.
+- To obsolete: prefix the label with `obsolete `, set `obsolete` to `true`, clear
+  `Category` and `Parents` so the term leaves the hierarchy, and put the successor's ID in
+  `replaced_by` where one exists. Move any `DbXrefs` and useful synonyms to the successor,
+  and re-point every relationship cell that named the old label. Keep the row; never
+  delete it and never reuse the ID. The validator errors if the label prefix and the
+  `obsolete` flag disagree.
 
 ## Interpreting validator output
 

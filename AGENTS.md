@@ -99,6 +99,8 @@ Columns that carry ontology semantics:
 | `Exact Synonyms` / `Related Synonyms` | `A oio:hasExactSynonym` / `hasRelatedSynonym` | `SPLIT=\|` |
 | `has_units`, `qualifiers`, `attributes`, `measured_ins`, `measurement_ofs`, `contexts`, `value_types` | `A`/`AI BERVO:…` | References to other BERVO terms, `SPLIT=\|` |
 | `involves_chemicals` | `C BERVO:involves_chemicals some % SPLIT=\|` | An OWL **existential restriction**, not an annotation. Each filler must name a class; `NA` is an error, so leave it empty when it does not apply. See "Variables that involve a set of chemicals" in the `bervo-terms` skill. |
+| `obsolete` | `AT owl:deprecated^^xsd:boolean` | `true` on an obsoleted term, empty otherwise. Must agree with the `obsolete ` label prefix; the validator errors when they disagree. |
+| `replaced_by` | `AI IAO:0100001` | The ID of the term that supersedes an obsoleted one. Must name an existing term. |
 
 Remaining columns are provenance and curation bookkeeping. Two of them matter more than
 that sounds: **`EcoSIM Variable Name` and `File Name` are populated on 1,749 of 2,352 terms
@@ -146,7 +148,8 @@ just next-id 9     # next free grouping class ID
 ```
 
 Never reuse an ID, even for a term that was removed. Obsolete terms stay in the template
-with an `obsolete ` label prefix and a `replaced_by` where one applies.
+with an `obsolete ` label prefix, `obsolete` set to `true`, no `Category` or `Parents`,
+and a `replaced_by` where one applies.
 
 > **Known inconsistency:** `src/ontology/bervo-idranges.owl` still declares only
 > `0`–`999999` and `1000000`–`1999999`, and uses the old `purl.obolibrary.org/obo/BERVO_`

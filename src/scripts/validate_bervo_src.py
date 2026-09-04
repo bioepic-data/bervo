@@ -69,7 +69,12 @@ TERM_REF_COLUMNS = (
     "measurement_ofs",
     "contexts",
     "value_types",
+    "replaced_by",
 )
+
+# ``AT owl:deprecated^^xsd:boolean``: the deprecation flag. It must agree with the
+# ``obsolete `` label prefix, or ROBOT report calls the label misused.
+OBSOLETE_COLUMN = "obsolete"
 
 # Declared ``A`` rather than ``AI``: the value is a literal (a unit string such
 # as "g d-2 h-1"), not a reference. Never resolve these against the term list.
@@ -118,6 +123,10 @@ CLASS_EXPRESSION_COLUMNS = ("involves_chemicals",)
 
 # Terms legitimately without a parent: the ontology root and the properties.
 ROOTLESS_IDS = {"BERVO:0000000"} | MNEMONIC_IDS
+
+# Obsolete terms keep their row and ID but leave the hierarchy, so a label with
+# this prefix is not an orphan either.
+OBSOLETE_PREFIX = "obsolete "
 
 
 @dataclass
@@ -323,7 +332,25 @@ def validate(path: Path) -> Report:
                         f"{term_id}.{column} references {token!r}, which is neither a BERVO ID nor a term label",
                     )
 
-        if not parented and term_id not in ROOTLESS_IDS:
+        obsolete = cell(label_col).casefold().startswith(OBSOLETE_PREFIX)
+        col = index.get(OBSOLETE_COLUMN)
+        if col is not None:
+            flagged = cell(col).casefold() == "true"
+            if obsolete and not flagged:
+                report.error(
+                    line,
+                    f"{term_id} has an '{OBSOLETE_PREFIX.strip()}' label prefix but "
+                    f"{OBSOLETE_COLUMN} is not 'true'",
+                )
+            elif flagged and not obsolete:
+                report.error(
+                    line,
+                    f"{term_id} has {OBSOLETE_COLUMN}=true but its label lacks the "
+                    f"'{OBSOLETE_PREFIX}' prefix",
+                )
+            if obsolete and parented:
+                report.warn(line, f"{term_id} is obsolete but still has a Category or Parents")
+        if not parented and not obsolete and term_id not in ROOTLESS_IDS:
             report.warn(line, f"{term_id} has no Category and no Parents; it will be an orphan class")
 
     # One warning per undeclared prefix rather than per row: 275 identical
