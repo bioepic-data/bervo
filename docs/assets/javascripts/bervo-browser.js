@@ -113,6 +113,7 @@
       ["Classes", prettyNumber(summary.class_count)],
       ["Properties", prettyNumber(summary.property_count)],
       ["Concepts", prettyNumber(summary.concept_count)],
+      ["Obsolete", prettyNumber(summary.obsolete_count || 0)],
     ]
       .map(
         ([label, value]) =>
@@ -151,11 +152,13 @@
       .map((entry) => {
         const activeClass = entry.id === state.selectedId ? " is-active" : "";
         const tags = [entry.type, entry.category].filter(Boolean);
+        const obsoleteClass = entry.obsolete ? " is-obsolete" : "";
         return `
-          <button class="bervo-browser__result${activeClass}" type="button" data-term-id="${esc(entry.id)}">
+          <button class="bervo-browser__result${activeClass}${obsoleteClass}" type="button" data-term-id="${esc(entry.id)}">
             <h3 class="bervo-browser__result-title">${esc(entry.label || entry.id)}</h3>
             <p class="bervo-browser__result-id">${esc(entry.id)}</p>
             <div class="bervo-browser__result-meta">
+              ${entry.obsolete ? '<span class="bervo-browser__tag bervo-browser__tag--obsolete">obsolete</span>' : ""}
               ${tags.map((tag) => `<span class="bervo-browser__tag">${esc(tag)}</span>`).join("")}
             </div>
           </button>
@@ -200,6 +203,19 @@
         </div>
       `
       : "";
+    const replacedBy = entry.replaced_by && resolveEntry(entry.replaced_by);
+    const obsoleteBlock = entry.obsolete
+      ? `
+        <div class="bervo-browser__detail-block bervo-browser__detail-block--obsolete">
+          <h3>Obsolete term</h3>
+          <p>This term is deprecated and should not be used in new annotations.${
+            entry.replaced_by
+              ? ` It is replaced by ${replacedBy ? renderChip(replacedBy.label || replacedBy.id, true) : esc(entry.replaced_by)}.`
+              : ""
+          }</p>
+        </div>
+      `
+      : "";
     const detailBlocks = [
       textBlock("Comment", entry.comment),
       textBlock("EcoSIM Variable Name", entry.ecosim_variable_name),
@@ -232,12 +248,14 @@
       </div>
 
       <div class="bervo-browser__chip-list" style="margin-bottom: 1rem;">
+        ${entry.obsolete ? '<span class="bervo-browser__tag bervo-browser__tag--obsolete">obsolete</span>' : ""}
         ${entry.type ? `<span class="bervo-browser__tag">${esc(entry.type)}</span>` : ""}
         ${entry.category ? renderChip(entry.category, true).replace("bervo-browser__chip", "bervo-browser__tag bervo-browser__tag--link") : ""}
         ${entry.group_curated ? `<span class="bervo-browser__tag">${esc(entry.group_curated)}</span>` : ""}
         ${entry.definition_curated ? `<span class="bervo-browser__tag">${esc(entry.definition_curated)}</span>` : ""}
       </div>
 
+      ${obsoleteBlock}
       ${definitionBlock}
 
       <div class="bervo-browser__detail-grid">

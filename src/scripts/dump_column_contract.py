@@ -55,6 +55,8 @@ def classify(template: str) -> str:
         return "**parent** (label or ID)"
     if template.startswith("AI"):
         return "**term reference** (label or ID)"
+    if template.startswith("AT "):
+        return "typed literal annotation"
     if template.startswith("A "):
         return "literal annotation"
     if template.startswith("C "):

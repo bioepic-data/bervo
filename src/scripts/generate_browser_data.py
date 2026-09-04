@@ -42,7 +42,11 @@ FIELD_MAP = {
     "Comment from Jinyun": "comment_from_jinyun",
     "Comment from Harry": "comment_from_harry",
     "Comment from Chris": "comment_from_chris",
+    "obsolete": "obsolete",
+    "replaced_by": "replaced_by",
 }
+
+BOOL_FIELDS = {"obsolete"}
 
 LIST_FIELDS = {
     "related_synonyms",
@@ -109,6 +113,8 @@ def read_entries() -> tuple[list[dict], dict]:
                 value = clean(raw_entry.get(csv_name, ""))
                 if json_name in LIST_FIELDS:
                     entry[json_name] = split_pipe_field(value)
+                elif json_name in BOOL_FIELDS:
+                    entry[json_name] = value.lower() == "true"
                 else:
                     entry[json_name] = value
 
@@ -129,14 +135,18 @@ def read_entries() -> tuple[list[dict], dict]:
 
 
 def summarise(entries: list[dict]) -> dict:
-    types = sorted({entry["type"] for entry in entries if entry["type"]})
-    categories = sorted({entry["category"] for entry in entries if entry["category"]})
-    concept_count = sum(1 for entry in entries if entry["category"] == "Concept")
-    class_count = sum(1 for entry in entries if entry["type"] in {"Class", "owl:Class"})
-    property_count = sum(1 for entry in entries if "Property" in entry["type"])
+    # term_count is the number of live terms. Obsolete rows are still shipped in
+    # entries so the browser can show them, but they are counted separately.
+    live = [entry for entry in entries if not entry.get("obsolete")]
+    types = sorted({entry["type"] for entry in live if entry["type"]})
+    categories = sorted({entry["category"] for entry in live if entry["category"]})
+    concept_count = sum(1 for entry in live if entry["category"] == "Concept")
+    class_count = sum(1 for entry in live if entry["type"] in {"Class", "owl:Class"})
+    property_count = sum(1 for entry in live if "Property" in entry["type"])
 
     return {
-        "term_count": len(entries),
+        "term_count": len(live),
+        "obsolete_count": len(entries) - len(live),
         "concept_count": concept_count,
         "class_count": class_count,
         "property_count": property_count,

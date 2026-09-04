@@ -34,6 +34,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001"/>
+    
+
+
     <!-- http://purl.org/dc/terms/description -->
 
     <AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
@@ -38781,12 +38787,13 @@
     <!-- https://w3id.org/bervo/BERVO_8000258 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000258">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000070"/>
         <obo:IAO_0000115>A water application method that delivers water directly to the root zone through underground distribution systems such as buried drip lines or subsurface emitters. This irrigation technique minimizes surface evaporation losses and provides efficient water delivery for agricultural and landscaping applications in earth system management.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="https://w3id.org/bervo/BERVO_8000557"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
-        <rdfs:label>Suburface irrigation</rdfs:label>
+        <rdfs:label>obsolete Suburface irrigation</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000070"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
@@ -43180,11 +43187,11 @@
     <!-- https://w3id.org/bervo/BERVO_8000504 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000504">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The temperature at which air becomes saturated and water vapor begins to condense into liquid water. Dew point indicates atmospheric moisture content.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="COMO:0000539"/>
+        <obo:IAO_0100001 rdf:resource="https://w3id.org/bervo/BERVO_8000554"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
-        <rdfs:label>Dew point</rdfs:label>
+        <rdfs:label>obsolete Dew point</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
@@ -44005,7 +44012,10 @@
     <!-- https://w3id.org/bervo/BERVO_8000554 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000554">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
         <obo:IAO_0000115>The temperature at which air becomes saturated with water vapor and dew begins to form.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="COMO:0000539"/>
+        <oboInOwl:hasExactSynonym>Dew point</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Manual (JHC, Jan 9 2026)</rdfs:comment>
         <rdfs:label>Dewpoint</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -44021,9 +44031,9 @@
     <!-- https://w3id.org/bervo/BERVO_8000555 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000555">
-        <obo:IAO_0000115>The process of being infected by a pathogen or forming a symbiotic relationship (e.g.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000558"/>
+        <obo:IAO_0000115>The process of being infected by a pathogen or forming a symbiotic relationship (e.g., nodule infection).</obo:IAO_0000115>
         <rdfs:comment>Definition source - Manual (JHC, Jan 9 2026)</rdfs:comment>
-        <rdfs:comment>nodule infection).</rdfs:comment>
         <rdfs:label>Infection</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -44038,6 +44048,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000556 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000556">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>Application or measurement outside of fertilizer bands in soil.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Manual (JHC, Jan 9 2026)</rdfs:comment>
         <rdfs:label>Non-band</rdfs:label>
@@ -44054,12 +44065,12 @@
     <!-- https://w3id.org/bervo/BERVO_8000557 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000557">
-        <obo:IAO_0000115>The application of water below the soil surface through buried irrigation systems.</obo:IAO_0000115>
-        <rdfs:comment>Definition source - Manual (JHC, Jan 9 2026)</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000070"/>
+        <obo:IAO_0000115>The application of water below the soil surface through buried distribution systems such as drip lines or emitters, delivering water directly to the root zone.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Manual (JHC, Jan 9 2026); merged with the definition of BERVO:8000258 (Sep 4 2026)</rdfs:comment>
         <rdfs:label>Subsurface irrigation</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000053"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000135"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000557"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
@@ -44182,6 +44193,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000564 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000564">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000264"/>
         <obo:IAO_0000115>The process of fixing carbon dioxide in C4 plants.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Manual (JHC, Jan 9 2026)</rdfs:comment>
         <rdfs:label>C4 carbon fixation</rdfs:label>

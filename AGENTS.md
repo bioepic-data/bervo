@@ -99,6 +99,8 @@ Columns that carry ontology semantics:
 | `Exact Synonyms` / `Related Synonyms` | `A oio:hasExactSynonym` / `hasRelatedSynonym` | `SPLIT=\|` |
 | `has_units`, `qualifiers`, `attributes`, `measured_ins`, `measurement_ofs`, `contexts`, `value_types` | `A`/`AI BERVO:…` | References to other BERVO terms, `SPLIT=\|` |
 | `involves_chemicals` | `C BERVO:involves_chemicals some % SPLIT=\|` | An OWL **existential restriction**, not an annotation. Each filler must name a class; `NA` is an error, so leave it empty when it does not apply. See "Variables that involve a set of chemicals" in the `bervo-terms` skill. |
+| `obsolete` | `AT owl:deprecated^^xsd:boolean` | `true` on an obsoleted term, empty otherwise. Must agree with the `obsolete ` label prefix; the validator errors when they disagree. |
+| `replaced_by` | `AI IAO:0100001` | The ID of the term that supersedes an obsoleted one. Must name an existing term. |
 
 Remaining columns are provenance and curation bookkeeping. Two of them matter more than
 that sounds: **`EcoSIM Variable Name` and `File Name` are populated on 1,749 of 2,352 terms
@@ -146,7 +148,8 @@ just next-id 9     # next free grouping class ID
 ```
 
 Never reuse an ID, even for a term that was removed. Obsolete terms stay in the template
-with an `obsolete ` label prefix and a `replaced_by` where one applies.
+with an `obsolete ` label prefix, `obsolete` set to `true`, no `Category` or `Parents`,
+and a `replaced_by` where one applies.
 
 > **Known inconsistency:** `src/ontology/bervo-idranges.owl` still declares only
 > `0`–`999999` and `1000000`–`1999999`, and uses the old `purl.obolibrary.org/obo/BERVO_`
@@ -180,12 +183,17 @@ subtly broken ontology from a broken template, so run the validator first.
 
 **Errors** (fail CI): ragged rows, duplicate IDs, duplicate labels (case-insensitive),
 malformed IDs, missing labels, unrecognised `Type`, references to terms that do not exist,
-`Category`/`Parents` values that resolve to neither an ID nor a label, and `DbXrefs` values
-that are not CURIE-shaped.
+`Category`/`Parents` values that resolve to neither an ID nor a label, `DbXrefs` values
+that are not CURIE-shaped, an `obsolete ` label prefix that disagrees with the `obsolete`
+flag, and a live term whose `Category`, `Parents` or `involves_chemicals` names an
+obsolete term.
 
 **Warnings** (do not fail CI): missing `Type`, IDs outside the allocated blocks, orphan
 classes with no parent, mixed `Class`/`owl:Class` spelling, unresolvable relationship
-labels, and `DbXrefs` prefixes ROBOT cannot expand (reported once per prefix, not per row).
+labels, annotation cells that reference an obsolete term, a `replaced_by` that points at
+another obsolete term, obsolete rows that still carry a parent, relationships or an
+`involves_chemicals` filler, and `DbXrefs` prefixes ROBOT cannot expand (reported once per
+prefix, not per row).
 
 On cross-references specifically, see the "Cross-references to other ontologies" section of
 the `bervo-terms` skill: map concepts rather than variables, verify the target term exists,

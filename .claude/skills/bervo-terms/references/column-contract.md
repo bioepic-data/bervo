@@ -37,6 +37,8 @@ Regenerate this table with `python3 src/scripts/dump_column_contract.py`.
 | 28 | `Comment from Harry` | `A rdfs:comment` | literal annotation |
 | 29 | `Comment from Chris` | `A rdfs:comment` | literal annotation |
 | 30 | `involves_chemicals` | `C BERVO:involves_chemicals some % SPLIT=\|` | **restriction filler** (must name a class) |
+| 31 | `obsolete` | `AT owl:deprecated^^xsd:boolean` | typed literal annotation |
+| 32 | `replaced_by` | `AI IAO:0100001` | **term reference** (label or ID) |
 
 ## Reading the template strings
 

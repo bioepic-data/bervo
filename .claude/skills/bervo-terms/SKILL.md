@@ -65,8 +65,20 @@ duplicate and near-duplicate terms are the hardest problem to unwind later.
   `Category`/relationship cell that referenced the old label. After a label change,
   run `just validate` and fix the references it flags.
 - Never change an **ID**. If a term is wrong, obsolete it rather than repurposing it.
-- To obsolete: prefix the label with `obsolete `, and record a `replaced_by` where a
-  successor exists. Keep the row; never delete it and never reuse the ID.
+- To obsolete: prefix the label with `obsolete `, set `obsolete` to `true`, clear
+  `Category` and `Parents` so the term leaves the hierarchy, set the row's own
+  relationship cells (`qualifiers`, `attributes`, `measured_ins`, `measurement_ofs`,
+  `contexts`, `value_types`) to `NA`, and leave `involves_chemicals` **empty**, since `NA`
+  is an error in that column. Put the successor's ID in `replaced_by` where one exists. Move any `DbXrefs` and useful synonyms to the successor, and re-point every
+  relationship cell on other rows that named the old label. Keep the row and its
+  definition; never delete it and never reuse the ID.
+- The validator enforces this: the label prefix and the `obsolete` flag must agree
+  (error); a live term whose `Category`, `Parents` or `involves_chemicals` names an
+  obsolete term is an error, because those three columns emit logical axioms; a reference
+  to an obsolete term from any annotation column (`qualifiers`, `attributes`,
+  `measured_ins`, `measurement_ofs`, `contexts`, `value_types`), a `replaced_by` that
+  points at another obsolete term, or an obsolete row that still carries relationships or
+  an `involves_chemicals` filler, is a warning.
 
 ## Interpreting validator output
 

@@ -19,7 +19,7 @@ HEADER = [
     "ID", "Label (description)", "Category", "Definition", "Type",
     "has_units", "qualifiers", "attributes", "measured_ins",
     "measurement_ofs", "contexts", "value_types", "Parents", "DbXrefs",
-    "involves_chemicals",
+    "involves_chemicals", "obsolete", "replaced_by",
 ]
 TYPE_ROW = [
     "ID", "LABEL", "SC %", "A IAO:0000115", "TYPE",
@@ -28,6 +28,7 @@ TYPE_ROW = [
     "AI BERVO:measurement_of SPLIT=|", "AI BERVO:Context SPLIT=|",
     "AI BERVO:has_value_type SPLIT=|", "SC % SPLIT=|",
     "AI oio:hasDbXref SPLIT=|", "C BERVO:involves_chemicals some % SPLIT=|",
+    "AT owl:deprecated^^xsd:boolean", "AI IAO:0100001",
 ]
 
 
@@ -178,6 +179,116 @@ class TestReferentialIntegrity(ValidatorTestCase):
     def test_root_is_not_reported_as_an_orphan(self):
         report = validator.validate(self.write([ROOT]))
         self.assertFalse(any("orphan class" in w for w in report.warnings), report.warnings)
+
+    def test_obsolete_term_is_not_reported_as_an_orphan(self):
+        """An obsoleted term leaves the hierarchy on purpose; it keeps its row and ID."""
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000002", "New concept", category="Variable"),
+            row("BERVO:8000001", "obsolete Old concept", category="",
+                obsolete="true", replaced_by="BERVO:8000002"),
+        ]))
+        self.assertEqual(report.errors, [])
+        self.assertFalse(any("orphan class" in w for w in report.warnings), report.warnings)
+
+    def test_obsolete_label_without_flag_is_an_error(self):
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:8000001", "obsolete Old concept", category=""),
+        ]))
+        self.assertTrue(any("obsolete is not 'true'" in e for e in report.errors), report.errors)
+
+    def test_obsolete_flag_without_label_prefix_is_an_error(self):
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:8000001", "Old concept", category="", obsolete="true"),
+        ]))
+        self.assertTrue(any("lacks the 'obsolete ' prefix" in e for e in report.errors), report.errors)
+
+    def test_obsolete_term_with_a_parent_warns(self):
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:8000001", "obsolete Old concept", obsolete="true"),
+        ]))
+        self.assertEqual(report.errors, [])
+        self.assertTrue(any("still has a Category" in w for w in report.warnings), report.warnings)
+
+    def test_live_term_with_obsolete_parent_is_an_error(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "obsolete Old concept", category="", obsolete="true"),
+            row("BERVO:8000002", "Child", category="obsolete Old concept"),
+            row("BERVO:8000003", "Other child", category="Variable", **{"Parents": "BERVO:8000001"}),
+        ]))
+        self.assertEqual(len([e for e in report.errors if "as a parent" in e]), 2, report.errors)
+
+    def test_live_term_referencing_obsolete_term_warns(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "obsolete Old concept", category="", obsolete="true"),
+            row("BERVO:0000001", "Soil carbon", contexts="obsolete Old concept"),
+        ]))
+        self.assertEqual(report.errors, [])
+        self.assertTrue(any("references obsolete term" in w for w in report.warnings), report.warnings)
+
+    def test_obsolete_term_as_restriction_filler_is_an_error(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "obsolete Chemical", category="", obsolete="true"),
+            row("BERVO:0000001", "Soil carbon", involves_chemicals="obsolete Chemical"),
+        ]))
+        self.assertTrue(any("is an obsolete term" in e for e in report.errors), report.errors)
+
+    def test_obsolete_term_keeping_relationships_warns(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "obsolete Old concept", category="", obsolete="true",
+                contexts="Variable", replaced_by="BERVO:0000000"),
+        ]))
+        self.assertEqual(report.errors, [])
+        self.assertTrue(any("still carries relationships (contexts)" in w for w in report.warnings), report.warnings)
+
+    def test_obsolete_term_keeping_restriction_filler_warns(self):
+        """involves_chemicals emits a real axiom, so an obsolete row must shed it too."""
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000002", "Chemical", category="Variable"),
+            row("BERVO:0000001", "obsolete Old var", category="", obsolete="true",
+                involves_chemicals="Chemical"),
+        ]))
+        self.assertEqual(report.errors, [])
+        self.assertTrue(
+            any("still carries relationships (involves_chemicals); leave involves_chemicals empty" in w
+                for w in report.warnings),
+            report.warnings,
+        )
+
+    def test_obsolete_relationship_warning_names_the_remedy_per_column(self):
+        """NA is right for annotation columns and wrong for the restriction column."""
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000002", "Chemical", category="Variable"),
+            row("BERVO:0000001", "obsolete Old var", category="", obsolete="true",
+                contexts="Chemical", involves_chemicals="Chemical"),
+        ]))
+        self.assertEqual(report.errors, [])
+        matching = [w for w in report.warnings if "still carries relationships" in w]
+        self.assertEqual(len(matching), 1, report.warnings)
+        self.assertIn("set contexts to NA and leave involves_chemicals empty", matching[0])
+
+    def test_replaced_by_chain_into_obsolete_term_warns_distinctly(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "obsolete Older", category="", obsolete="true"),
+            row("BERVO:8000002", "obsolete Old", category="", obsolete="true",
+                replaced_by="BERVO:8000001"),
+        ]))
+        self.assertEqual(report.errors, [])
+        self.assertTrue(any("live successor" in w for w in report.warnings), report.warnings)
+
+    def test_replaced_by_must_name_an_existing_term(self):
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:8000001", "obsolete Old concept", category="",
+                      obsolete="true", replaced_by="BERVO:8999999"),
+        ]))
+        self.assertTrue(any("replaced_by references unknown term" in e for e in report.errors), report.errors)
 
 
 class TestCrossReferences(ValidatorTestCase):
