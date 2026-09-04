@@ -38793,7 +38793,7 @@
         <rdfs:label>obsolete Suburface irrigation</rdfs:label>
         <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000070"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
@@ -44066,11 +44066,11 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000557">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000070"/>
-        <obo:IAO_0000115>The application of water below the soil surface through buried irrigation systems.</obo:IAO_0000115>
-        <rdfs:comment>Definition source - Manual (JHC, Jan 9 2026)</rdfs:comment>
+        <obo:IAO_0000115>The application of water below the soil surface through buried distribution systems such as drip lines or emitters, delivering water directly to the root zone.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Manual (JHC, Jan 9 2026); merged with the definition of BERVO:8000258 (Sep 4 2026)</rdfs:comment>
         <rdfs:label>Subsurface irrigation</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000070"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000557"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>

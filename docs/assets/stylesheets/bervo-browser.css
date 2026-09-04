@@ -236,6 +236,21 @@
   cursor: pointer;
 }
 
+.bervo-browser__tag--obsolete {
+  background: #f3e4e1;
+  color: #8a3b2f;
+}
+
+.bervo-browser__result.is-obsolete .bervo-browser__result-title {
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+
+.bervo-browser__detail-block--obsolete {
+  border-color: #d9a79c;
+  background: #fbf1ee;
+}
+
 .bervo-browser__detail-header {
   display: flex;
   justify-content: space-between;

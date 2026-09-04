@@ -75,6 +75,10 @@ TERM_REF_COLUMNS = (
 # ``AT owl:deprecated^^xsd:boolean``: the deprecation flag. It must agree with the
 # ``obsolete `` label prefix, or ROBOT report calls the label misused.
 OBSOLETE_COLUMN = "obsolete"
+# ``AI IAO:0100001``: the successor of an obsoleted term. Checked as a term
+# reference like the rest of TERM_REF_COLUMNS, but it is not a relationship an
+# obsolete row should have shed.
+REPLACED_BY_COLUMN = "replaced_by"
 
 # Declared ``A`` rather than ``AI``: the value is a literal (a unit string such
 # as "g d-2 h-1"), not a reference. Never resolve these against the term list.
@@ -127,6 +131,13 @@ ROOTLESS_IDS = {"BERVO:0000000"} | MNEMONIC_IDS
 # Obsolete terms keep their row and ID but leave the hierarchy, so a label with
 # this prefix is not an orphan either.
 OBSOLETE_PREFIX = "obsolete "
+
+
+def cell(row: list[str], col: int | None) -> str:
+    """The stripped value at ``col``, or "" when the row is short or the column absent."""
+    if col is None or col >= len(row):
+        return ""
+    return row[col].strip()
 
 
 @dataclass
@@ -185,6 +196,8 @@ def validate(path: Path) -> Report:
     # casefolded label -> canonical spelling, for "did you mean" hints.
     folded_labels: dict[str, str] = {}
     type_styles: dict[str, int] = defaultdict(int)
+    # IDs and labels of obsoleted terms: nothing live should point at them.
+    obsolete_terms: set[str] = set()
 
     for offset, row in enumerate(data):
         line = FIRST_DATA_ROW + offset
@@ -200,11 +213,11 @@ def validate(path: Path) -> Report:
             else:
                 report.error(line, f"has {len(row)} fields but the header has {width}")
 
-        def cell(col: int) -> str:
-            return row[col].strip() if col < len(row) else ""
-
-        term_id = cell(id_col)
-        label = cell(label_col)
+        term_id = cell(row, id_col)
+        label = cell(row, label_col)
+        if label.casefold().startswith(OBSOLETE_PREFIX):
+            obsolete_terms.add(term_id)
+            obsolete_terms.add(label)
 
         if not term_id:
             report.error(line, "has no ID")
@@ -237,7 +250,7 @@ def validate(path: Path) -> Report:
             known_labels.add(label)
             folded_labels.setdefault(key, label)
 
-        term_type = cell(type_col)
+        term_type = cell(row, type_col)
         if not term_type:
             report.warn(line, f"{term_id} has no Type; ROBOT will default it to owl:Class")
         elif term_type not in VALID_TYPES:
@@ -257,13 +270,21 @@ def validate(path: Path) -> Report:
 
     for offset, row in enumerate(data):
         line = FIRST_DATA_ROW + offset
-        term_id = row[id_col].strip() if id_col < len(row) else ""
+        term_id = cell(row, id_col)
+        obsolete = cell(row, label_col).casefold().startswith(OBSOLETE_PREFIX)
+        relationships: list[str] = []
 
         for column in TERM_REF_COLUMNS:
             col = index.get(column)
             if col is None or col >= len(row):
                 continue
             for token in _split(row[col]):
+                if column != REPLACED_BY_COLUMN:
+                    relationships.append(column)
+                if token in obsolete_terms:
+                    # An annotation pointing at a deprecated class still resolves,
+                    # so ROBOT emits it without complaint. Say so here.
+                    report.warn(line, f"{term_id}.{column} references obsolete term {token!r}")
                 if token.startswith("BERVO:"):
                     # A CURIE that does not exist is unambiguously wrong.
                     if token not in ids:
@@ -310,6 +331,11 @@ def validate(path: Path) -> Report:
                         f"{term_id}.{column} is a restriction filler and cannot be "
                         f"{token!r}; leave it empty instead",
                     )
+                elif token in obsolete_terms:
+                    report.error(
+                        line,
+                        f"{term_id}.{column} restriction filler {token!r} is an obsolete term",
+                    )
                 elif token not in ids and token not in known_labels:
                     hint = folded_labels.get(token.casefold())
                     suggestion = f"; did you mean {hint!r}?" if hint else ""
@@ -326,16 +352,18 @@ def validate(path: Path) -> Report:
                 continue
             for token in _split(row[col]):
                 parented = True
-                if token not in ids and token not in known_labels:
+                if token in obsolete_terms:
+                    # A live class under a deprecated parent inherits from a corpse.
+                    report.error(line, f"{term_id}.{column} names obsolete term {token!r} as a parent")
+                elif token not in ids and token not in known_labels:
                     report.error(
                         line,
                         f"{term_id}.{column} references {token!r}, which is neither a BERVO ID nor a term label",
                     )
 
-        obsolete = cell(label_col).casefold().startswith(OBSOLETE_PREFIX)
         col = index.get(OBSOLETE_COLUMN)
         if col is not None:
-            flagged = cell(col).casefold() == "true"
+            flagged = cell(row, col).casefold() == "true"
             if obsolete and not flagged:
                 report.error(
                     line,
@@ -350,6 +378,12 @@ def validate(path: Path) -> Report:
                 )
             if obsolete and parented:
                 report.warn(line, f"{term_id} is obsolete but still has a Category or Parents")
+            if obsolete and relationships:
+                report.warn(
+                    line,
+                    f"{term_id} is obsolete but still carries relationships "
+                    f"({', '.join(sorted(set(relationships)))}); set them to NA",
+                )
         if not parented and not obsolete and term_id not in ROOTLESS_IDS:
             report.warn(line, f"{term_id} has no Category and no Parents; it will be an orphan class")
 
