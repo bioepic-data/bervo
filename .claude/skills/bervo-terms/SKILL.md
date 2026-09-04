@@ -73,9 +73,12 @@ duplicate and near-duplicate terms are the hardest problem to unwind later.
   relationship cell on other rows that named the old label. Keep the row and its
   definition; never delete it and never reuse the ID.
 - The validator enforces this: the label prefix and the `obsolete` flag must agree
-  (error); a live term whose `Category` or `Parents` names an obsolete term is an error;
-  any other reference to an obsolete term, or an obsolete row that still carries
-  relationships, is a warning.
+  (error); a live term whose `Category`, `Parents` or `involves_chemicals` names an
+  obsolete term is an error, because those three columns emit logical axioms; a reference
+  to an obsolete term from any annotation column (`qualifiers`, `attributes`,
+  `measured_ins`, `measurement_ofs`, `contexts`, `value_types`), a `replaced_by` that
+  points at another obsolete term, or an obsolete row that still carries relationships or
+  an `involves_chemicals` filler, is a warning.
 
 ## Interpreting validator output
 

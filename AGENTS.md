@@ -185,12 +185,14 @@ subtly broken ontology from a broken template, so run the validator first.
 malformed IDs, missing labels, unrecognised `Type`, references to terms that do not exist,
 `Category`/`Parents` values that resolve to neither an ID nor a label, `DbXrefs` values
 that are not CURIE-shaped, an `obsolete ` label prefix that disagrees with the `obsolete`
-flag, and a live term whose `Category` or `Parents` names an obsolete term.
+flag, and a live term whose `Category`, `Parents` or `involves_chemicals` names an
+obsolete term.
 
 **Warnings** (do not fail CI): missing `Type`, IDs outside the allocated blocks, orphan
 classes with no parent, mixed `Class`/`owl:Class` spelling, unresolvable relationship
-labels, relationship cells that reference an obsolete term, obsolete rows that still carry
-a parent or relationships, and `DbXrefs` prefixes ROBOT cannot expand (reported once per
+labels, annotation cells that reference an obsolete term, a `replaced_by` that points at
+another obsolete term, obsolete rows that still carry a parent, relationships or an
+`involves_chemicals` filler, and `DbXrefs` prefixes ROBOT cannot expand (reported once per
 prefix, not per row).
 
 On cross-references specifically, see the "Cross-references to other ontologies" section of

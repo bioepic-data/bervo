@@ -210,7 +210,7 @@
           <h3>Obsolete term</h3>
           <p>This term is deprecated and should not be used in new annotations.${
             entry.replaced_by
-              ? ` It is replaced by ${replacedBy ? renderChip(replacedBy.id, true) : esc(entry.replaced_by)}.`
+              ? ` It is replaced by ${replacedBy ? renderChip(replacedBy.label || replacedBy.id, true) : esc(entry.replaced_by)}.`
               : ""
           }</p>
         </div>

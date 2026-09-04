@@ -135,6 +135,8 @@ def read_entries() -> tuple[list[dict], dict]:
 
 
 def summarise(entries: list[dict]) -> dict:
+    # term_count is the number of live terms. Obsolete rows are still shipped in
+    # entries so the browser can show them, but they are counted separately.
     live = [entry for entry in entries if not entry.get("obsolete")]
     types = sorted({entry["type"] for entry in live if entry["type"]})
     categories = sorted({entry["category"] for entry in live if entry["category"]})

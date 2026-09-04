@@ -282,9 +282,16 @@ def validate(path: Path) -> Report:
                 if column != REPLACED_BY_COLUMN:
                     relationships.append(column)
                 if token in obsolete_terms:
-                    # An annotation pointing at a deprecated class still resolves,
-                    # so ROBOT emits it without complaint. Say so here.
-                    report.warn(line, f"{term_id}.{column} references obsolete term {token!r}")
+                    if column == REPLACED_BY_COLUMN:
+                        report.warn(
+                            line,
+                            f"{term_id}.{column} points at obsolete term {token!r}; "
+                            f"point it at that term's live successor instead",
+                        )
+                    else:
+                        # An annotation pointing at a deprecated class still resolves,
+                        # so ROBOT emits it without complaint. Say so here.
+                        report.warn(line, f"{term_id}.{column} references obsolete term {token!r}")
                 if token.startswith("BERVO:"):
                     # A CURIE that does not exist is unambiguously wrong.
                     if token not in ids:
@@ -325,6 +332,9 @@ def validate(path: Path) -> Report:
             for token in (t.strip() for t in row[col].split("|")):
                 if not token:
                     continue
+                # The one column that emits a logical axiom: an obsolete row that
+                # keeps it still constrains inference, so it counts as a relationship.
+                relationships.append(column)
                 if token in NULL_TOKENS:
                     report.error(
                         line,

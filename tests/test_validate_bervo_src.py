@@ -245,6 +245,30 @@ class TestReferentialIntegrity(ValidatorTestCase):
         self.assertEqual(report.errors, [])
         self.assertTrue(any("still carries relationships (contexts)" in w for w in report.warnings), report.warnings)
 
+    def test_obsolete_term_keeping_restriction_filler_warns(self):
+        """involves_chemicals emits a real axiom, so an obsolete row must shed it too."""
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000002", "Chemical", category="Variable"),
+            row("BERVO:0000001", "obsolete Old var", category="", obsolete="true",
+                involves_chemicals="Chemical"),
+        ]))
+        self.assertEqual(report.errors, [])
+        self.assertTrue(
+            any("still carries relationships (involves_chemicals)" in w for w in report.warnings),
+            report.warnings,
+        )
+
+    def test_replaced_by_chain_into_obsolete_term_warns_distinctly(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "obsolete Older", category="", obsolete="true"),
+            row("BERVO:8000002", "obsolete Old", category="", obsolete="true",
+                replaced_by="BERVO:8000001"),
+        ]))
+        self.assertEqual(report.errors, [])
+        self.assertTrue(any("live successor" in w for w in report.warnings), report.warnings)
+
     def test_replaced_by_must_name_an_existing_term(self):
         report = validator.validate(self.write([
             ROOT, row("BERVO:8000001", "obsolete Old concept", category="",
