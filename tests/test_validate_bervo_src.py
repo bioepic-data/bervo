@@ -255,9 +255,23 @@ class TestReferentialIntegrity(ValidatorTestCase):
         ]))
         self.assertEqual(report.errors, [])
         self.assertTrue(
-            any("still carries relationships (involves_chemicals)" in w for w in report.warnings),
+            any("still carries relationships (involves_chemicals); leave involves_chemicals empty" in w
+                for w in report.warnings),
             report.warnings,
         )
+
+    def test_obsolete_relationship_warning_names_the_remedy_per_column(self):
+        """NA is right for annotation columns and wrong for the restriction column."""
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000002", "Chemical", category="Variable"),
+            row("BERVO:0000001", "obsolete Old var", category="", obsolete="true",
+                contexts="Chemical", involves_chemicals="Chemical"),
+        ]))
+        self.assertEqual(report.errors, [])
+        matching = [w for w in report.warnings if "still carries relationships" in w]
+        self.assertEqual(len(matching), 1, report.warnings)
+        self.assertIn("set contexts to NA and leave involves_chemicals empty", matching[0])
 
     def test_replaced_by_chain_into_obsolete_term_warns_distinctly(self):
         report = validator.validate(self.write([

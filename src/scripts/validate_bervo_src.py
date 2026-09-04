@@ -389,10 +389,19 @@ def validate(path: Path) -> Report:
             if obsolete and parented:
                 report.warn(line, f"{term_id} is obsolete but still has a Category or Parents")
             if obsolete and relationships:
+                # NA is the house sentinel in the annotation columns, but the
+                # restriction column rejects it, so the remedy differs per column.
+                annotation_cols = sorted({c for c in relationships if c not in CLASS_EXPRESSION_COLUMNS})
+                restriction_cols = sorted({c for c in relationships if c in CLASS_EXPRESSION_COLUMNS})
+                remedies = []
+                if annotation_cols:
+                    remedies.append(f"set {', '.join(annotation_cols)} to NA")
+                if restriction_cols:
+                    remedies.append(f"leave {', '.join(restriction_cols)} empty")
                 report.warn(
                     line,
                     f"{term_id} is obsolete but still carries relationships "
-                    f"({', '.join(sorted(set(relationships)))}); set them to NA",
+                    f"({', '.join(sorted(set(relationships)))}); {' and '.join(remedies)}",
                 )
         if not parented and not obsolete and term_id not in ROOTLESS_IDS:
             report.warn(line, f"{term_id} has no Category and no Parents; it will be an orphan class")
