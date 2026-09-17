@@ -34858,8 +34858,11 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000001">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
         <obo:IAO_0000115>An essential nutrient element required for plant growth, development, and energy transfer processes in all living organisms. This chemical element is often the limiting nutrient in terrestrial and aquatic ecosystems, controlling primary productivity, biogeochemical cycling, and ecosystem responses to environmental change and management practices.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28659"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/P"/>
         <oboInOwl:hasExactSynonym>P</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;P&quot;: Expressed as phosphorus</rdfs:comment>
         <rdfs:label>Phosphorus</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -35294,9 +35297,11 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
         <obo:IAO_0000115>A greenhouse gas composed of one carbon atom and four hydrogen atoms that is produced through anaerobic decomposition and other biological processes. This trace gas contributes significantly to global warming and is an important component of biogeochemical carbon cycling in wetlands, agricultural systems, and permafrost environments.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16183"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/CH4"/>
         <oboInOwl:hasExactSynonym>CH4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>natural gas</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;CH4&quot;: Expressed as methane</rdfs:comment>
         <rdfs:label>Methane</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -36214,7 +36219,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
         <obo:IAO_0000115>A chemical element that forms the structural backbone of all organic compounds and serves as the foundation for life on Earth. This element is central to understanding photosynthesis, respiration, decomposition, and the global carbon cycle that connects atmospheric, terrestrial, and marine carbon reservoirs in earth system science.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C&quot;: Expressed as carbon</rdfs:comment>
         <rdfs:label>Carbon</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -36526,8 +36533,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
         <obo:IAO_0000115>A chemical compound commonly found in rocks, shells, marine organisms, and soils that plays important roles in carbon cycling and pH regulation. This compound affects soil chemistry, carbon sequestration in marine systems, and serves as a major component of limestone and biological structures in earth system processes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3311"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/CaCO3"/>
         <oboInOwl:hasExactSynonym>CaCO3</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;CaCO3&quot;: Expressed as calcium carbonate</rdfs:comment>
         <rdfs:label>Calcium carbonate</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -36598,7 +36607,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000098">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000112"/>
         <obo:IAO_0000115>An anion consisting of one carbon atom and three oxygen atoms that forms when carbon dioxide dissolves in water and affects pH and alkalinity. This ion is fundamental for understanding ocean acidification, carbonate chemistry, shell formation, and carbon cycling in aquatic and terrestrial systems.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_41609"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/CO3"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;CO3&quot;: Expressed as carbonate</rdfs:comment>
         <rdfs:label>Carbonate</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -36669,7 +36681,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
         <obo:IAO_0000115>A transparent, odorless, and tasteless liquid essential for all forms of life and the most abundant compound on Earth&apos;s surface. This molecule serves as the universal solvent, controls climate patterns, supports biological processes, and represents the fundamental medium for biogeochemical reactions and ecosystem functioning.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15377"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/H2O"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;H2O&quot;: Expressed as water</rdfs:comment>
         <rdfs:label>Water</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -36772,8 +36786,11 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000108">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
         <obo:IAO_0000115>A chemical element essential for plant cell wall structure, membrane stability, and cellular signaling processes in all living organisms. This nutrient affects soil structure, plant growth, ecosystem productivity, and serves as a major component of shells, bones, and geological formations in earth systems.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22984"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Ca"/>
         <oboInOwl:hasExactSynonym>Ca</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Ca&quot;: Expressed as calcium</rdfs:comment>
         <rdfs:label>Calcium</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -36862,8 +36879,11 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000113">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000112"/>
         <obo:IAO_0000115>A positively charged ion consisting of one nitrogen and four hydrogen atoms that represents a major form of bioavailable nitrogen in soils and water. This nitrogen species is readily absorbed by plants, affects soil chemistry, and serves as a key component of nitrogen cycling in terrestrial and aquatic ecosystems.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28938"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/NH4"/>
         <oboInOwl:hasExactSynonym>NH4</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;NH4&quot;: Expressed as ammonium</rdfs:comment>
         <rdfs:label>Ammonium</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -37061,8 +37081,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000124">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
         <obo:IAO_0000115>A chemical element essential for aerobic respiration, combustion processes, and the formation of many chemical compounds in environmental systems. This element controls metabolic rates, decomposition processes, water quality, and serves as a key component of atmospheric composition and biogeochemical cycling.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/O2"/>
         <oboInOwl:hasExactSynonym>O2</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;O2&quot;: Expressed as oxygen (O2)</rdfs:comment>
         <rdfs:label>Oxygen</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -37317,9 +37339,12 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000138">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000112"/>
         <obo:IAO_0000115>An anion consisting of one phosphorus atom and four oxygen atoms that represents the primary form of bioavailable phosphorus in environmental systems. This ion controls plant nutrition, microbial activity, eutrophication processes, and serves as a key component of phosphorus cycling in terrestrial and aquatic ecosystems.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18367"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/PO4"/>
         <oboInOwl:hasExactSynonym>PO4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>PO43-</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;PO4&quot;: Expressed as phosphate</rdfs:comment>
         <rdfs:label>Phosphate</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -37355,8 +37380,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000112"/>
         <obo:IAO_0000115>An anion consisting of one hydrogen, one carbon, and three oxygen atoms that serves as an important component of carbonate chemistry and pH buffering systems. This ion affects water alkalinity, carbon cycling, ocean acidification, and serves as a form of dissolved inorganic carbon in aquatic and soil systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17544"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/HCO3"/>
         <oboInOwl:hasExactSynonym>hydrogen carbonate</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;HCO3&quot;: Expressed as hydrogen carbonate</rdfs:comment>
         <rdfs:label>Bicarbonate</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -37390,8 +37417,11 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000143">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
         <obo:IAO_0000115>A chemical element that is highly reactive and forms many important compounds affecting soil salinity, plant physiology, and water quality. This alkali metal influences soil structure, plant salt tolerance, groundwater chemistry, and serves as both an essential micronutrient and potential toxin in environmental systems.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26708"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Na"/>
         <oboInOwl:hasExactSynonym>Na</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Na&quot;: Expressed as sodium</rdfs:comment>
         <rdfs:label>Sodium</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -37793,8 +37823,11 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000167">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
         <obo:IAO_0000115>A chemical element essential for protein synthesis, nucleic acid formation, and overall plant growth and development in all living organisms. This element often limits primary productivity in terrestrial and aquatic ecosystems, controls plant nutrition, and serves as a key component of biogeochemical cycling and atmospheric chemistry.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25555"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/N"/>
         <oboInOwl:hasExactSynonym>N</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;N&quot;: Expressed as nitrogen</rdfs:comment>
         <rdfs:label>Nitrogen</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -37812,9 +37845,11 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000112"/>
         <obo:IAO_0000115>An anion consisting of one nitrogen and three oxygen atoms that represents the most oxidized form of inorganic nitrogen in environmental systems. This ion serves as a major source of nitrogen for plant uptake, affects water quality through eutrophication, and represents the final product of nitrification in soil and aquatic systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17632"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/NO3"/>
         <oboInOwl:hasExactSynonym>NO3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>NO3-</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;NO3&quot;: Expressed as nitrate</rdfs:comment>
         <rdfs:label>Nitrate</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -37990,8 +38025,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
         <obo:IAO_0000115>A lightweight metallic element that is the third most abundant element in Earth&apos;s crust and commonly occurs in soil minerals such as feldspars and clays. This element affects soil chemistry, plant nutrition, and can become toxic to plants under acidic conditions, influencing ecosystem productivity and species distributions.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33620"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Al"/>
         <oboInOwl:hasExactSynonym>Al</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Al&quot;: Expressed as aluminium</rdfs:comment>
         <rdfs:label>Aluminum</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -38027,8 +38064,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
         <obo:IAO_0000115>A chemical element essential for many biological processes including photosynthesis, respiration, and chlorophyll synthesis in plants and other organisms. This transition metal affects plant nutrition, soil color, redox chemistry, and serves as both an essential micronutrient and a potential toxin depending on its chemical form and concentration.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18248"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Fe"/>
         <oboInOwl:hasExactSynonym>Fe</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Fe&quot;: Expressed as iron</rdfs:comment>
         <rdfs:label>Iron</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -38130,8 +38169,11 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000188">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
         <obo:IAO_0000115>A colorless gas consisting of one carbon and two oxygen atoms that plays central roles in photosynthesis, respiration, and global climate regulation. This greenhouse gas is fundamental for understanding carbon cycling, climate change, plant productivity, and the exchange of carbon between atmospheric, terrestrial, and marine reservoirs.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16526"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/CO2"/>
         <oboInOwl:hasExactSynonym>CO2</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;CO2&quot;: Expressed as carbon dioxide</rdfs:comment>
         <rdfs:label>Carbon dioxide</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -38308,9 +38350,11 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
         <obo:IAO_0000115>A chemical element essential for plant growth, cellular processes, and osmotic regulation in all living organisms. This macronutrient controls enzyme activation, stomatal function, water relations, and plant stress tolerance while serving as a key component of soil fertility and agricultural productivity.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26216"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/K"/>
         <oboInOwl:hasExactSynonym>K</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>kalium</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;K&quot;: Expressed as potassium</rdfs:comment>
         <rdfs:label>Potassium</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -38467,8 +38511,11 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000207">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
         <obo:IAO_0000115>A chemical element essential for chlorophyll structure, enzyme function, and cellular processes in all living organisms. This macronutrient affects photosynthesis, protein synthesis, and plant growth while serving as a key component of soil chemistry and agricultural fertility in terrestrial and aquatic ecosystems.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25107"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Mg"/>
         <oboInOwl:hasExactSynonym>Mg</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Mg&quot;: Expressed as magnesium</rdfs:comment>
         <rdfs:label>Magnesium</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -38843,10 +38890,12 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000112"/>
         <obo:IAO_0000115>An anion consisting of one sulfur and four oxygen atoms that represents the most oxidized form of sulfur in environmental systems. This ion affects soil chemistry, plant nutrition, water quality, and serves as both an essential nutrient and a component of acid rain and mineral weathering processes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16189"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/SO4"/>
         <oboInOwl:hasExactSynonym>SO4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>SO42-</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>sulphate</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;SO4&quot;: Expressed as Sulfate</rdfs:comment>
         <rdfs:label>Sulfate</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -39428,8 +39477,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
         <obo:IAO_0000115>A logarithmic scale that measures the acidity or alkalinity of aqueous solutions, ranging from 0 to 14 with 7 representing neutrality. This property is critical for characterizing soil chemistry, water quality, nutrient availability, and biological activity in terrestrial and aquatic environmental systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000121"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/pH"/>
         <oboInOwl:hasRelatedSynonym>acidity</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;pH&quot;: Expressed as pH</rdfs:comment>
         <rdfs:label>pH</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -41009,7 +41060,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>A measure of a material&apos;s ability to conduct electrical current, primarily determined by dissolved ion concentration and mobility. Conductivity is an important indicator of water quality, salinity, and total dissolved solids in aquatic and terrestrial systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000124"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/EC"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;EC&quot;: Expressed as electrical conductivity</rdfs:comment>
         <rdfs:label>Conductivity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -45210,6 +45263,2701 @@
         <obo:IAO_0000115>Ability of a material to conduct heat, expressed as the heat flux through it per unit temperature gradient.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
         <rdfs:label>Thermal conductivity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000590 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000590">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+        <obo:IAO_0000115>Chemical compound whose molecules contain carbon bonded to hydrogen, other than the simple carbon oxides, carbonates, cyanides, and carbides that are treated as inorganic.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50860"/>
+        <oboInOwl:hasExactSynonym>organic molecular entity</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:label>Organic compound</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000591 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000591">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Hydrocarbon composed of two or more fused aromatic rings, formed largely by incomplete combustion of organic matter and persistent in soils, sediments, and water.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33848"/>
+        <oboInOwl:hasExactSynonym>PAH</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>polycyclic arene</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:label>Polycyclic aromatic hydrocarbon</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000592 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000592">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Saturated acyclic hydrocarbon of formula CnH2n+2, in which every carbon-carbon bond is single.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18310"/>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:label>Alkane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000593 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000593">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Organic compound in which at least one hydrogen atom is replaced by a halogen atom.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17792"/>
+        <oboInOwl:hasExactSynonym>halogenated organic compound</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:label>Organohalogen compound</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000594 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000594">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Ester of phthalic acid, a class of compounds used as plasticisers and encountered as environmental contaminants.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35484"/>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:label>Phthalate ester</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000595 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000595">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Ag and atomic number 47.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30512"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Ag"/>
+        <oboInOwl:hasExactSynonym>Ag</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Ag&quot;: Expressed as silver</rdfs:comment>
+        <rdfs:label>Silver</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000596 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000596">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol As and atomic number 33.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27563"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/As"/>
+        <oboInOwl:hasExactSynonym>As</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;As&quot;: Expressed as arsenic</rdfs:comment>
+        <rdfs:label>Arsenic</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000597 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000597">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol B and atomic number 5.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27560"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/B"/>
+        <oboInOwl:hasExactSynonym>B</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;B&quot;: Expressed as boron</rdfs:comment>
+        <rdfs:label>Boron</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000598 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000598">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Ba and atomic number 56.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32594"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Ba"/>
+        <oboInOwl:hasExactSynonym>Ba</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Ba&quot;: Expressed as barium</rdfs:comment>
+        <rdfs:label>Barium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000599 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000599">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Be and atomic number 4.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30501"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Be"/>
+        <oboInOwl:hasExactSynonym>Be</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Be&quot;: Expressed as beryllium</rdfs:comment>
+        <rdfs:label>Beryllium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000600 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000600">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Br and atomic number 35.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22927"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Br"/>
+        <oboInOwl:hasExactSynonym>Br</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Br&quot;: Expressed as bromine</rdfs:comment>
+        <rdfs:label>Bromine</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000601 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000601">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Cd and atomic number 48.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22977"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Cd"/>
+        <oboInOwl:hasExactSynonym>Cd</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Cd&quot;: Expressed as cadmium</rdfs:comment>
+        <rdfs:label>Cadmium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000602 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000602">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Cl and atomic number 17. Distinct from Chloride, the anion in which chlorine is usually measured in water.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23116"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Cl"/>
+        <oboInOwl:hasExactSynonym>Cl</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Cl&quot;: Expressed as chlorine</rdfs:comment>
+        <rdfs:label>Chlorine</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000603 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000603">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Co and atomic number 27.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27638"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Co"/>
+        <oboInOwl:hasExactSynonym>Co</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Co&quot;: Expressed as cobalt</rdfs:comment>
+        <rdfs:label>Cobalt</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000604 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000604">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Cr and atomic number 24.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28073"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Cr"/>
+        <oboInOwl:hasExactSynonym>Cr</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Cr&quot;: Expressed as chromium</rdfs:comment>
+        <rdfs:label>Chromium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000605 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000605">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Cu and atomic number 29.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28694"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Cu"/>
+        <oboInOwl:hasExactSynonym>Cu</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Cu&quot;: Expressed as copper</rdfs:comment>
+        <rdfs:label>Copper</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000606 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000606">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol F and atomic number 9.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24061"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/F"/>
+        <oboInOwl:hasExactSynonym>F</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;F&quot;: Expressed as fluorine</rdfs:comment>
+        <rdfs:label>Fluorine</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000607 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000607">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Hg and atomic number 80.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25195"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Hg"/>
+        <oboInOwl:hasExactSynonym>Hg</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Hg&quot;: Expressed as mercury</rdfs:comment>
+        <rdfs:label>Mercury</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000608 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000608">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Mn and atomic number 25.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18291"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Mn"/>
+        <oboInOwl:hasExactSynonym>Mn</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Mn&quot;: Expressed as manganese</rdfs:comment>
+        <rdfs:label>Manganese</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000609 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000609">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Mo and atomic number 42.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28685"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Mo"/>
+        <oboInOwl:hasExactSynonym>Mo</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Mo&quot;: Expressed as molybdenum</rdfs:comment>
+        <rdfs:label>Molybdenum</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000610 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000610">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Ni and atomic number 28.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28112"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Ni"/>
+        <oboInOwl:hasExactSynonym>Ni</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Ni&quot;: Expressed as nickel</rdfs:comment>
+        <rdfs:label>Nickel</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000611 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000611">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Pb and atomic number 82.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25016"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Pb"/>
+        <oboInOwl:hasExactSynonym>Pb</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Pb&quot;: Expressed as lead</rdfs:comment>
+        <rdfs:label>Lead</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000612 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000612">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Ra and atomic number 88. As a reporting basis, radium equivalent expresses the gamma output of a mixture of uranium, thorium, and potassium-40 as a single number.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33325"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Ra"/>
+        <oboInOwl:hasExactSynonym>Ra</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Ra&quot;: Expressed as Radium. Also known as &quot;radium equivalent.&quot; The radium equivalent concept allows a single index or number to describe the gamma output from different mixtures of uranium (i.e., radium), thorium, and 40K in a material.</rdfs:comment>
+        <rdfs:label>Radium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000613 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000613">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Re and atomic number 75.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49882"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Re"/>
+        <oboInOwl:hasExactSynonym>Re</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Re&quot;: Expressed as rhenium</rdfs:comment>
+        <rdfs:label>Rhenium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000614 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000614">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol S and atomic number 16.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26833"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/S"/>
+        <oboInOwl:hasExactSynonym>S</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;S&quot;: Expressed as Sulfur</rdfs:comment>
+        <rdfs:label>Sulfur</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000615 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000615">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Sb and atomic number 51.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30513"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Sb"/>
+        <oboInOwl:hasExactSynonym>Sb</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Sb&quot;: Expressed as antimony</rdfs:comment>
+        <rdfs:label>Antimony</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000616 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000616">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Se and atomic number 34.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27568"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Se"/>
+        <oboInOwl:hasExactSynonym>Se</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Se&quot;: Expressed as selenium</rdfs:comment>
+        <rdfs:label>Selenium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000617 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000617">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Si and atomic number 14.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27573"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Si"/>
+        <oboInOwl:hasExactSynonym>Si</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Si&quot;: Expressed as silicon</rdfs:comment>
+        <rdfs:label>Silicon</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000618 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000618">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Sn and atomic number 50.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27007"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Sn"/>
+        <oboInOwl:hasExactSynonym>Sn</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Sn&quot;: Expressed as tin</rdfs:comment>
+        <rdfs:label>Tin</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000619 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000619">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Sr and atomic number 38.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33324"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Sr"/>
+        <oboInOwl:hasExactSynonym>Sr</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Sr&quot;: Expressed as strontium</rdfs:comment>
+        <rdfs:label>Strontium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000620 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000620">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Th and atomic number 90.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33385"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Th"/>
+        <oboInOwl:hasExactSynonym>Th</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Th&quot;: Expressed as thorium</rdfs:comment>
+        <rdfs:label>Thorium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000621 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000621">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Ti and atomic number 22.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33341"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Ti"/>
+        <oboInOwl:hasExactSynonym>Ti</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Ti&quot;: Expressed as titanium</rdfs:comment>
+        <rdfs:label>Titanium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000622 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000622">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Tl and atomic number 81.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30440"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Tl"/>
+        <oboInOwl:hasExactSynonym>Tl</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Tl&quot;: Expressed as thallium</rdfs:comment>
+        <rdfs:label>Thallium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000623 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000623">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol U and atomic number 92.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27214"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/U"/>
+        <oboInOwl:hasExactSynonym>U</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;U&quot;: Expressed as uranium</rdfs:comment>
+        <rdfs:label>Uranium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000624 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000624">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol V and atomic number 23.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27698"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/V"/>
+        <oboInOwl:hasExactSynonym>V</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;V&quot;: Expressed as vanadium</rdfs:comment>
+        <rdfs:label>Vanadium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000625 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000625">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Zn and atomic number 30.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27363"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Zn"/>
+        <oboInOwl:hasExactSynonym>Zn</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Zn&quot;: Expressed as zinc</rdfs:comment>
+        <rdfs:label>Zinc</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000626 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000626">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
+        <obo:IAO_0000115>Chemical element with symbol Zr and atomic number 40.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33342"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Zr"/>
+        <oboInOwl:hasExactSynonym>Zr</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Zr&quot;: Expressed as zirconium</rdfs:comment>
+        <rdfs:label>Zirconium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000627 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000627">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000112"/>
+        <obo:IAO_0000115>Nitrogen oxoanion NO2-, the conjugate base of nitrous acid and an intermediate between ammonium and nitrate in nitrification and denitrification.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16301"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/NO2"/>
+        <oboInOwl:hasExactSynonym>NO2-</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;NO2&quot;: Expressed as nitrite</rdfs:comment>
+        <rdfs:label>Nitrite</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000628 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000628">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000112"/>
+        <obo:IAO_0000115>Anion CN-, the conjugate base of hydrogen cyanide.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17514"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/CN-"/>
+        <oboInOwl:hasExactSynonym>CN-</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;CN-&quot;: Expressed as cyanide</rdfs:comment>
+        <rdfs:label>Cyanide</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000629 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000629">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000112"/>
+        <obo:IAO_0000115>Organometallic cation CH3Hg+, the principal bioaccumulating form of mercury in aquatic food webs.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49747"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/CH3Hg"/>
+        <oboInOwl:hasExactSynonym>CH3Hg+</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>methylmercury(1+)</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;CH3Hg&quot;: Expressed at methylmercury</rdfs:comment>
+        <rdfs:label>Methylmercury</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000630 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000630">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+        <obo:IAO_0000115>Oxide of silicon, SiO2, the reporting basis for dissolved silica and silicate in natural waters.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30563"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/SiO2"/>
+        <oboInOwl:hasExactSynonym>SiO2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>silica</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;SiO2&quot;: Expressed as silicate</rdfs:comment>
+        <rdfs:label>Silicon dioxide</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000631 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000631">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000468"/>
+        <obo:IAO_0000115>Stable isotope of hydrogen with one proton and one neutron, 2H, whose abundance relative to protium is reported as delta 2H.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_29237"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/delta2H"/>
+        <oboInOwl:hasExactSynonym>2H</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hydrogen-2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>delta 2H</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;delta 2H&quot;: Expressed as deuterium</rdfs:comment>
+        <rdfs:label>Deuterium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000632 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000632">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000468"/>
+        <obo:IAO_0000115>Stable isotope of nitrogen with seven protons and eight neutrons, 15N, whose abundance relative to nitrogen-14 is reported as delta 15N.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36934"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/deltaN15"/>
+        <oboInOwl:hasExactSynonym>15N</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>delta 15N</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;delta N15&quot;: Expressed as nitrogen-15</rdfs:comment>
+        <rdfs:label>Nitrogen-15</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000633 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000633">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000468"/>
+        <obo:IAO_0000115>Stable isotope of oxygen with eight protons and ten neutrons, 18O, whose abundance relative to oxygen-16 is reported as delta 18O.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33815"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/deltaO18"/>
+        <oboInOwl:hasExactSynonym>18O</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>delta 18O</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;delta O18&quot;: Expressed as oxygen-18</rdfs:comment>
+        <rdfs:label>Oxygen-18</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000634 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000634">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Capacity of a water sample to neutralise acid, summed over all its titratable bases and commonly reported as an equivalent concentration of calcium carbonate.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/TA"/>
+        <oboInOwl:hasExactSynonym>alkalinity</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;TA&quot;: Expressed as total alkalinity</rdfs:comment>
+        <rdfs:label>Total alkalinity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000635 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000635">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Aromatic hydrocarbon of two fused benzene rings, C10H8, the simplest and most volatile polycyclic aromatic hydrocarbon.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16482"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C10H8"/>
+        <oboInOwl:hasExactSynonym>C10H8</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C10H8&quot;: Expressed as naphthalene</rdfs:comment>
+        <rdfs:label>Naphthalene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000636 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000636">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Naphthalene bearing one methyl substituent, C11H10, either the 1- or the 2- isomer.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50715"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C10H7CH3"/>
+        <oboInOwl:hasExactSynonym>C10H7CH3</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C10H7CH3&quot;: Expressed as methylnaphthalene</rdfs:comment>
+        <rdfs:label>Methylnaphthalene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000637 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000637">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Naphthalene bearing two methyl substituents, C12H12, any of its positional isomers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48853"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C10H6_CH3_2"/>
+        <oboInOwl:hasExactSynonym>C10H6(CH3)2</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C10H6(CH3)2&quot;: Expressed as dimethylnaphthalene</rdfs:comment>
+        <rdfs:label>Dimethylnaphthalene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000638 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000638">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Naphthalene bearing three methyl substituents, C13H14, any of its positional isomers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C10H5_CH3_3"/>
+        <oboInOwl:hasExactSynonym>C10H5(CH3)3</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C10H5(CH3)3&quot;: Expressed as trimethylnaphthalene</rdfs:comment>
+        <rdfs:label>Trimethylnaphthalene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000639 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000639">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Naphthalene bearing four methyl substituents, C14H16, any of its positional isomers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C10H4_CH3_4"/>
+        <oboInOwl:hasExactSynonym>C10H4(CH3)4</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C10H4(CH3)4&quot;: Expressed as tetramethylnaphthalene</rdfs:comment>
+        <rdfs:label>Tetramethylnaphthalene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000640 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000640">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Naphthalene bearing one ethyl substituent, C12H12, either the 1- or the 2- isomer.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C10H7C2H5"/>
+        <oboInOwl:hasExactSynonym>C10H7C2H5</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C10H7C2H5&quot;: Expressed as ethylnaphthalene</rdfs:comment>
+        <rdfs:label>Ethylnaphthalene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000641 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000641">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Polycyclic aromatic hydrocarbon of a naphthalene unit bridged by an ethylene group, C12H8.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33081"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C12H8"/>
+        <oboInOwl:hasExactSynonym>C12H8</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C12H8&quot;: Expressed as acenaphthylene</rdfs:comment>
+        <rdfs:label>Acenaphthylene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000642 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000642">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Aromatic hydrocarbons of molecular formula C12H10, such as acenaphthene and biphenyl, reported as a group where the analysis does not resolve the isomers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C12H10"/>
+        <oboInOwl:hasExactSynonym>C12H10</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>acenaphthene</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>biphenyl</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C12H10&quot;: Expressed as C12H10, e.g., acenaphthene, biphenyl</rdfs:comment>
+        <rdfs:label>C12H10 aromatic hydrocarbons</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000643 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000643">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Polycyclic aromatic hydrocarbon of two benzene rings joined by a five-membered ring, C13H10.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28266"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C13H10"/>
+        <oboInOwl:hasExactSynonym>C13H10</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C13H10&quot;: Expressed as fluorene</rdfs:comment>
+        <rdfs:label>Fluorene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000644 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000644">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Fluorene bearing one methyl substituent, C14H12, any of its positional isomers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C14H12"/>
+        <oboInOwl:hasExactSynonym>C14H12</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C14H12&quot;: Expressed as methylfluorene</rdfs:comment>
+        <rdfs:label>Methylfluorene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000645 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000645">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Polycyclic aromatic hydrocarbon of three angularly fused benzene rings, C14H10.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28851"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C14H10"/>
+        <oboInOwl:hasExactSynonym>C14H10</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C14H10&quot;: Expressed as phenanthrene</rdfs:comment>
+        <rdfs:label>Phenanthrene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000646 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000646">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Aromatic hydrocarbons of molecular formula C15H12, such as methylphenanthrene and methylanthracene, reported as a group where the analysis does not resolve the isomers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C15H12"/>
+        <oboInOwl:hasExactSynonym>C15H12</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>methylanthracene</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>methylphenanthrene</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C15H12&quot;: Expressed as C15H12, e.g., methylphenanthrene, Methylanthracene</rdfs:comment>
+        <rdfs:label>C15H12 aromatic hydrocarbons</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000647 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000647">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Aromatic hydrocarbons of molecular formula C16H10, such as fluoranthene and pyrene, reported as a group where the analysis does not resolve the isomers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C16H10"/>
+        <oboInOwl:hasExactSynonym>C16H10</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>fluoranthene</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>pyrene</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C16H10&quot;: Expressed as C16H10, e.g., fluoranthene, pyrene</rdfs:comment>
+        <rdfs:label>C16H10 aromatic hydrocarbons</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000648 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000648">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Phenanthrene bearing two methyl substituents, C16H14, any of its positional isomers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C16H14"/>
+        <oboInOwl:hasExactSynonym>C16H14</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C16H14&quot;: Expressed as dimethylphenanthrene</rdfs:comment>
+        <rdfs:label>Dimethylphenanthrene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000649 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000649">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Aromatic hydrocarbons of molecular formula C17H12, such as benzo[a]fluorene, methylfluoranthene, and methylpyrene, reported as a group where the analysis does not resolve the isomers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C17H12"/>
+        <oboInOwl:hasExactSynonym>C17H12</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>benzo[a]fluorene</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>methylfluoranthene</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>methylpyrene</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C17H12&quot;: Expressed as C17H12, e.g., benzo(a)fluorene, methylfluoranthene, methylpyrene</rdfs:comment>
+        <rdfs:label>C17H12 aromatic hydrocarbons</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000650 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000650">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Aromatic hydrocarbons of molecular formula C18H12, such as benz[a]anthracene, chrysene, and triphenylene, reported as a group where the analysis does not resolve the isomers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C18H12"/>
+        <oboInOwl:hasExactSynonym>C18H12</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>benz[a]anthracene</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>chrysene</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>triphenylene</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C18H12&quot;: Expressed as C18H12, e.g., benz(a)anthracene, chrysene, triphenylene</rdfs:comment>
+        <rdfs:label>C18H12 aromatic hydrocarbons</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000651 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000651">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Alkylated phenanthrene, 1-methyl-7-isopropylphenanthrene, C18H18, formed from resin diterpenoids and used as a marker of conifer wood combustion.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C18H18"/>
+        <oboInOwl:hasExactSynonym>C18H18</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C18H18&quot;: Expressed as retene</rdfs:comment>
+        <rdfs:label>Retene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000652 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000652">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Chrysene bearing one methyl substituent, C19H14, any of its positional isomers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C19H14"/>
+        <oboInOwl:hasExactSynonym>C19H14</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C19H14&quot;: Expressed as methylchrysene</rdfs:comment>
+        <rdfs:label>Methylchrysene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000653 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000653">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Aromatic hydrocarbons of molecular formula C20H12, such as benzo[b]fluoranthene, benzo[e]pyrene, and perylene, reported as a group where the analysis does not resolve the isomers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C20H12"/>
+        <oboInOwl:hasExactSynonym>C20H12</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>benzo[b]fluoranthene</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>benzo[e]pyrene</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>perylene</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C20H12&quot;: Expressed as C20H12, e.g., benzo(b)fluoranthene, benzo(e)pyrene, perylene</rdfs:comment>
+        <rdfs:label>C20H12 aromatic hydrocarbons</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000654 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000654">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <obo:IAO_0000115>Polycyclic aromatic hydrocarbon of five fused benzene rings, C22H14.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35299"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C22H14"/>
+        <oboInOwl:hasExactSynonym>C22H14</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dibenzo[a,h]anthracene</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C22H14&quot;: Expressed as Dibenz(a,h)anthracene</rdfs:comment>
+        <rdfs:label>Dibenz[a,h]anthracene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000655 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000655">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Heterocyclic aromatic compound of two benzene rings fused to a central furan ring, C12H8O.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28145"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C12H8O"/>
+        <oboInOwl:hasExactSynonym>C12H8O</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C12H8O&quot;: Expressed as dibenzofuran</rdfs:comment>
+        <rdfs:label>Dibenzofuran</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000656 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000656">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Heterocyclic aromatic compound of two benzene rings fused to a central thiophene ring, C12H8S.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23681"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C12H8S"/>
+        <oboInOwl:hasExactSynonym>C12H8S</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C12H8S&quot;: Expressed as dibenzothiophene</rdfs:comment>
+        <rdfs:label>Dibenzothiophene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000657 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000657">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Dibenzothiophene bearing one methyl substituent, C13H10S, any of its positional isomers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C13H10S"/>
+        <oboInOwl:hasExactSynonym>C13H10S</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C13H10S&quot;: Expressed as methyldibenzothiophene</rdfs:comment>
+        <rdfs:label>Methyldibenzothiophene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000658 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000658">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Heterocyclic aromatic compound of two benzene rings fused to a central pyrrole ring, C12H9N.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27543"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C12H9N"/>
+        <oboInOwl:hasExactSynonym>9H-carbazole</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C12H9N</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C12H9N&quot;: Expressed as carbazole</rdfs:comment>
+        <rdfs:label>Carbazole</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000659 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000659">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Aromatic hydrocarbon of a single six-membered ring, C6H6.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16716"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C6H6"/>
+        <oboInOwl:hasExactSynonym>C6H6</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C6H6&quot;: Expressed as benzene</rdfs:comment>
+        <rdfs:label>Benzene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000660 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000660">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Benzene bearing one methyl substituent, C7H8.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17578"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C7H8"/>
+        <oboInOwl:hasExactSynonym>C7H8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>methylbenzene</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C7H8&quot;: Expressed as Toluene</rdfs:comment>
+        <rdfs:label>Toluene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000661 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000661">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Benzene bearing one ethyl substituent, C8H10.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16101"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C8H10"/>
+        <oboInOwl:hasExactSynonym>C8H10</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C8H10&quot;: Expressed as ethylbenzene</rdfs:comment>
+        <rdfs:label>Ethylbenzene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000662 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000662">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Benzene bearing two methyl substituents, C8H10, in any of the ortho, meta, or para positions; the three isomers are commonly reported together as xylenes.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27338"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C6H4_CH3_2"/>
+        <oboInOwl:hasExactSynonym>C6H4(CH3)2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dimethylbenzene</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>xylenes</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C6H4(CH3)2&quot;: Expressed as xylenes</rdfs:comment>
+        <rdfs:label>Xylene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000663 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000663">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Benzene bearing one vinyl substituent, C8H8, the monomer of polystyrene.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27452"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C8H8"/>
+        <oboInOwl:hasExactSynonym>C8H8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>vinylbenzene</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C8H8&quot;: Expressed as styrene</rdfs:comment>
+        <rdfs:label>Styrene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000664 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000664">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Benzene bearing one hydroxyl substituent, C6H5OH.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15882"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C6H5OH"/>
+        <oboInOwl:hasExactSynonym>C6H5OH</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C6H5OH&quot;: Expressed as phenol</rdfs:comment>
+        <rdfs:label>Phenol</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000665 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000665">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Benzene bearing one amino substituent, C6H5NH2.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17296"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C6H5NH2"/>
+        <oboInOwl:hasExactSynonym>C6H5NH2</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C6H5NH2&quot;: Expressed as aniline</rdfs:comment>
+        <rdfs:label>Aniline</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000666 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000666">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Benzene bearing one nitro substituent, C6H5NO2.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27798"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C6H5NO2"/>
+        <oboInOwl:hasExactSynonym>C6H5NO2</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C6H5NO2&quot;: Expressed as nitrobenzene</rdfs:comment>
+        <rdfs:label>Nitrobenzene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000667 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000667">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Phenol bearing two nitro substituents, C6H4N2O5, any of its positional isomers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39352"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C6H4N2O5"/>
+        <oboInOwl:hasExactSynonym>C6H4N2O5</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C6H4N2O5&quot;: Expressed as dinitrophenol</rdfs:comment>
+        <rdfs:label>Dinitrophenol</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000668 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000668">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Toluene bearing two nitro substituents, C7H6N2O4, any of its positional isomers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23822"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C7H6N2O4"/>
+        <oboInOwl:hasExactSynonym>C7H6N2O4</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C7H6N2O4&quot;: Expressed as dinitrotoluene</rdfs:comment>
+        <rdfs:label>Dinitrotoluene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000669 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000669">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Cyclic alpha,beta-unsaturated ketone, 3,5,5-trimethylcyclohex-2-en-1-one, C9H14O, used as an industrial solvent.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_34800"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C9H14O"/>
+        <oboInOwl:hasExactSynonym>C9H14O</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C9H14O&quot;: Expressed as isophorone</rdfs:comment>
+        <rdfs:label>Isophorone</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000670 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000670">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Simplest ketone, propan-2-one, C3H6O.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15347"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C3H6O"/>
+        <oboInOwl:hasExactSynonym>C3H6O</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>propan-2-one</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C3H6O&quot;: Expressed as acetone</rdfs:comment>
+        <rdfs:label>Acetone</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000671 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000671">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Ketone butan-2-one, C4H8O, also known as methyl ethyl ketone.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28398"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C4H8O"/>
+        <oboInOwl:hasExactSynonym>C4H8O</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>MEK</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>methyl ethyl ketone</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C4H8O&quot;: Expressed as butanone</rdfs:comment>
+        <rdfs:label>Butanone</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000672 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000672">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Simplest diol, ethane-1,2-diol, C2H6O2.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30742"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C2H6O2"/>
+        <oboInOwl:hasExactSynonym>C2H6O2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ethane-1,2-diol</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C2H6O2&quot;: Expressed as Ethylene glycol</rdfs:comment>
+        <rdfs:label>Ethylene glycol</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000673 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000673">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000594"/>
+        <obo:IAO_0000115>Diethyl ester of phthalic acid, C12H14O4.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_34698"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C12H14O4"/>
+        <oboInOwl:hasExactSynonym>C12H14O4</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C12H14O4&quot;: Expressed as diethyl phthalate</rdfs:comment>
+        <rdfs:label>Diethyl phthalate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000674 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000674">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000594"/>
+        <obo:IAO_0000115>Mixed benzyl and butyl ester of phthalic acid, C19H20O4.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C19H20O4"/>
+        <oboInOwl:hasExactSynonym>C19H20O4</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>butyl benzyl phthalate</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C19H20O4&quot;: Expressed as benzyl butyl pththalate</rdfs:comment>
+        <rdfs:label>Benzyl butyl phthalate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000675 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000675">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Dimethyl ester of terephthalic acid, C10H10O4, an isomer of dimethyl phthalate with the ester groups in the para positions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_156286"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C10H10O4"/>
+        <oboInOwl:hasExactSynonym>C10H10O4</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C10H10O4&quot;: Expressed as dimethyl terephthalate</rdfs:comment>
+        <rdfs:label>Dimethyl terephthalate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000676 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000676">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Alkane of two carbon atoms, C2H6.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_42266"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C2H6"/>
+        <oboInOwl:hasExactSynonym>C2H6</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C2H6&quot;: Expressed as ethane</rdfs:comment>
+        <rdfs:label>Ethane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000677 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000677">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Straight-chain alkane of fifteen carbon atoms, C15H32.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28897"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C15H32"/>
+        <oboInOwl:hasExactSynonym>C15 n-alkane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C15H32</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>n-pentadecane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C15H32&quot;: Expressed as C15 n-alkane</rdfs:comment>
+        <rdfs:label>Pentadecane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000678 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000678">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Straight-chain alkane of sixteen carbon atoms, C16H34.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45296"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C16H34"/>
+        <oboInOwl:hasExactSynonym>C16 n-alkane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C16H34</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>n-hexadecane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C16H34&quot;: Expressed as C16 n-alkane</rdfs:comment>
+        <rdfs:label>Hexadecane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000679 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000679">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Straight-chain alkane of seventeen carbon atoms, C17H36.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16148"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C17H36"/>
+        <oboInOwl:hasExactSynonym>C17 n-alkane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C17H36</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>n-heptadecane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C17H36&quot;: Expressed as C17 n-alkane</rdfs:comment>
+        <rdfs:label>Heptadecane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000680 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000680">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Straight-chain alkane of eighteen carbon atoms, C18H38.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32926"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C18H38"/>
+        <oboInOwl:hasExactSynonym>C18 n-alkane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C18H38</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>n-octadecane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C18H38&quot;: Expressed as C18 n-alkane</rdfs:comment>
+        <rdfs:label>Octadecane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000681 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000681">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Straight-chain alkane of nineteen carbon atoms, C19H40.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32927"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C19H40"/>
+        <oboInOwl:hasExactSynonym>C19 n-alkane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C19H40</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>n-nonadecane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C19H40&quot;: Expressed as C19 n-alkane</rdfs:comment>
+        <rdfs:label>Nonadecane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000682 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000682">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Straight-chain alkane of twenty carbon atoms, C20H42.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_43619"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C20H42"/>
+        <oboInOwl:hasExactSynonym>C20 n-alkane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C20H42</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>eicosane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>n-icosane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C20H42&quot;: Expressed as C20 n-alkane</rdfs:comment>
+        <rdfs:label>Icosane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000683 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000683">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Straight-chain alkane of twenty-one carbon atoms, C21H44.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32931"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C21H44"/>
+        <oboInOwl:hasExactSynonym>C21 n-alkane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C21H44</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>heneicosane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>n-henicosane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C21H44&quot;: Expressed as C21 n-alkane</rdfs:comment>
+        <rdfs:label>Henicosane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000684 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000684">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Straight-chain alkane of twenty-two carbon atoms, C22H46.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46050"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C22H46"/>
+        <oboInOwl:hasExactSynonym>C22 n-alkane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C22H46</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>n-docosane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C22H46&quot;: Expressed as C22 n-alkane</rdfs:comment>
+        <rdfs:label>Docosane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000685 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000685">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Straight-chain alkane of twenty-three carbon atoms, C23H48.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32934"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C23H48"/>
+        <oboInOwl:hasExactSynonym>C23 n-alkane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C23H48</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>n-tricosane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C23H48&quot;: Expressed as C23 n-alkane</rdfs:comment>
+        <rdfs:label>Tricosane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000686 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000686">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Straight-chain alkane of twenty-four carbon atoms, C24H50.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32936"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C24H50"/>
+        <oboInOwl:hasExactSynonym>C24 n-alkane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C24H50</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>n-tetracosane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C24H50&quot;: Expressed as C24 n-alkane</rdfs:comment>
+        <rdfs:label>Tetracosane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000687 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000687">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Straight-chain alkane of twenty-five carbon atoms, C25H52.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32938"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C25H52"/>
+        <oboInOwl:hasExactSynonym>C25 n-alkane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C25H52</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>n-pentacosane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C25H52&quot;: Expressed as C25 n-alkane</rdfs:comment>
+        <rdfs:label>Pentacosane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000688 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000688">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Straight-chain alkane of twenty-six carbon atoms, C26H54.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32940"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C26H54"/>
+        <oboInOwl:hasExactSynonym>C26 n-alkane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C26H54</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>n-hexacosane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C26H54&quot;: Expressed as C26 n-alkane</rdfs:comment>
+        <rdfs:label>Hexacosane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000689 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000689">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Straight-chain alkane of twenty-seven carbon atoms, C27H56.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32941"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C27H56"/>
+        <oboInOwl:hasExactSynonym>C27 n-alkane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C27H56</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>n-heptacosane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C27H56&quot;: Expressed as C27 n-alkane</rdfs:comment>
+        <rdfs:label>Heptacosane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000690 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000690">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Straight-chain alkane of twenty-eight carbon atoms, C28H58.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32943"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C28H58"/>
+        <oboInOwl:hasExactSynonym>C28 n-alkane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C28H58</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>n-octacosane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C28H58&quot;: Expressed as C28 n-alkane</rdfs:comment>
+        <rdfs:label>Octacosane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000691 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000691">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Straight-chain alkane of twenty-nine carbon atoms, C29H60.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_7613"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C29H60"/>
+        <oboInOwl:hasExactSynonym>C29 n-alkane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C29H60</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>n-nonacosane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C29H60&quot;: Expressed as C29 n-alkane</rdfs:comment>
+        <rdfs:label>Nonacosane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000692 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000692">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Straight-chain alkane of thirty-one carbon atoms, C31H64.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_5659"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C31H64"/>
+        <oboInOwl:hasExactSynonym>C31 n-alkane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C31H64</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>n-hentriacontane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C31H64&quot;: Expressed as C31 n-alkane</rdfs:comment>
+        <rdfs:label>Hentriacontane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000693 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000693">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Methane bearing one chlorine atom, CH3Cl.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36014"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/CH3Cl"/>
+        <oboInOwl:hasExactSynonym>CH3Cl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>methyl chloride</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;CH3Cl&quot;: Expressed as chloromethane</rdfs:comment>
+        <rdfs:label>Chloromethane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000694 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000694">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Methane bearing two chlorine atoms, CH2Cl2.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15767"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/CH2Cl2"/>
+        <oboInOwl:hasExactSynonym>CH2Cl2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>methylene chloride</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;CH2Cl2&quot;: Expressed as dichloromethane</rdfs:comment>
+        <rdfs:label>Dichloromethane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000695 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000695">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Methane bearing three chlorine atoms, CHCl3.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35255"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/CHCl3"/>
+        <oboInOwl:hasExactSynonym>CHCl3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>trichloromethane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;CHCl3&quot;: Expressed as chloroform</rdfs:comment>
+        <rdfs:label>Chloroform</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000696 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000696">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Methane bearing one bromine atom, CH3Br.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39275"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/CH3Br"/>
+        <oboInOwl:hasExactSynonym>CH3Br</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>methyl bromide</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;CH3Br&quot;: Expressed as bromomethane</rdfs:comment>
+        <rdfs:label>Bromomethane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000697 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000697">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Methane bearing three bromine atoms, CHBr3.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38682"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/CHBr3"/>
+        <oboInOwl:hasExactSynonym>CHBr3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tribromomethane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;CHBr3&quot;: Expressed as bromoform</rdfs:comment>
+        <rdfs:label>Bromoform</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000698 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000698">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Methane bearing one bromine and two chlorine atoms, CHBrCl2, a trihalomethane formed during water chlorination.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_34591"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/CHBrCl2"/>
+        <oboInOwl:hasExactSynonym>CHBrCl2</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;CHBrCl2&quot;: Expressed as bromodichloromethane</rdfs:comment>
+        <rdfs:label>Bromodichloromethane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000699 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000699">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Methane bearing two bromine atoms and one chlorine atom, CHBr2Cl, a trihalomethane formed during water chlorination.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_34627"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/CHBr2Cl"/>
+        <oboInOwl:hasExactSynonym>CHBr2Cl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>chlorodibromomethane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;CHBr2Cl&quot;: Expressed as dibromochloromethane</rdfs:comment>
+        <rdfs:label>Dibromochloromethane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000700 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000700">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Ethane bearing one chlorine atom, C2H5Cl.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47554"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C2H5Cl"/>
+        <oboInOwl:hasExactSynonym>C2H5Cl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ethyl chloride</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C2H5Cl&quot;: Expressed as chloroethane</rdfs:comment>
+        <rdfs:label>Chloroethane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000701 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000701">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Ethane bearing two chlorine atoms, C2H4Cl2, either the 1,1- or the 1,2- isomer.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C2H4Cl2"/>
+        <oboInOwl:hasExactSynonym>C2H4Cl2</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C2H4Cl2&quot;: Expressed as dichloroethane</rdfs:comment>
+        <rdfs:label>Dichloroethane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000702 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000702">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Ethane bearing three chlorine atoms, C2H3Cl3, either the 1,1,1- or the 1,1,2- isomer.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C2H3Cl3"/>
+        <oboInOwl:hasExactSynonym>C2H3Cl3</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C2H3Cl3&quot;: Expressed as trichloroethane</rdfs:comment>
+        <rdfs:label>Trichloroethane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000703 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000703">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Ethane bearing four chlorine atoms, C2H2Cl4, either the 1,1,1,2- or the 1,1,2,2- isomer.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C2H2Cl4"/>
+        <oboInOwl:hasExactSynonym>C2H2Cl4</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C2H2Cl4&quot;: Expressed as tetrachloroethane</rdfs:comment>
+        <rdfs:label>Tetrachloroethane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000704 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000704">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Ethane in which all six hydrogen atoms are replaced by chlorine, C2Cl6.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39227"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C2Cl6"/>
+        <oboInOwl:hasExactSynonym>C2Cl6</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C2Cl6&quot;: Expressed as hexachloroethane</rdfs:comment>
+        <rdfs:label>Hexachloroethane</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000705 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000705">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Ethene bearing one chlorine atom, C2H3Cl, the monomer of polyvinyl chloride.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28509"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C2H3Cl"/>
+        <oboInOwl:hasExactSynonym>C2H3Cl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>vinyl chloride</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C2H3Cl&quot;: Expressed as vinyl chloride</rdfs:comment>
+        <rdfs:label>Chloroethene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000706 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000706">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Ethene bearing three chlorine atoms, C2HCl3, a chlorinated solvent and common groundwater contaminant.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16602"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C2HCl3"/>
+        <oboInOwl:hasExactSynonym>C2HCl3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>TCE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>trichloroethylene</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C2HCl3&quot;: Expressed as trichloroethylene</rdfs:comment>
+        <rdfs:label>Trichloroethene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000707 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000707">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Ethene in which all four hydrogen atoms are replaced by chlorine, C2Cl4, a chlorinated solvent and common groundwater contaminant.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17300"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C2Cl4"/>
+        <oboInOwl:hasExactSynonym>C2Cl4</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PCE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>perchloroethylene</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tetrachloroethylene</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C2Cl4&quot;: Expressed as tetrachloroethylene</rdfs:comment>
+        <rdfs:label>Tetrachloroethene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000708 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000708">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Buta-1,3-diene in which all six hydrogen atoms are replaced by chlorine, C4Cl6.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_5691"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C4Cl6"/>
+        <oboInOwl:hasExactSynonym>C4Cl6</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C4Cl6&quot;: Expressed as hexchlorobutadiene</rdfs:comment>
+        <rdfs:label>Hexachlorobutadiene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000709 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000709">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Cyclopenta-1,3-diene in which all six hydrogen atoms are replaced by chlorine, C5Cl6.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C5Cl6"/>
+        <oboInOwl:hasExactSynonym>C5Cl6</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C5Cl6&quot;: Expressed as hexachlorocyclopentadiene</rdfs:comment>
+        <rdfs:label>Hexachlorocyclopentadiene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000710 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000710">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Ether of two 2-chloroethyl groups, C4H8Cl2O.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_34573"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C4H8Cl2O"/>
+        <oboInOwl:hasExactSynonym>C4H8Cl2O</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>bis(chloroethyl) ether</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C4H8Cl2O&quot;: Expressed as bis(chloroethyl) ether</rdfs:comment>
+        <rdfs:label>Bis(2-chloroethyl) ether</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000711 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000711">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Benzene bearing one chlorine atom, C6H5Cl.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28097"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C6H5Cl"/>
+        <oboInOwl:hasExactSynonym>C6H5Cl</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C6H5Cl&quot;: Expressed as chlorobenzene</rdfs:comment>
+        <rdfs:label>Chlorobenzene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000712 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000712">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Benzene bearing two chlorine atoms, C6H4Cl2, any of the ortho, meta, or para isomers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23697"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C6H4Cl2"/>
+        <oboInOwl:hasExactSynonym>C6H4Cl2</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C6H4Cl2&quot;: Expressed as dichlorobenzene</rdfs:comment>
+        <rdfs:label>Dichlorobenzene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000713 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000713">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Benzene bearing three chlorine atoms, C6H3Cl3, any of its positional isomers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27096"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C6H3Cl3"/>
+        <oboInOwl:hasExactSynonym>C6H3Cl3</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C6H3Cl3&quot;: Expressed as trichlorobenzene</rdfs:comment>
+        <rdfs:label>Trichlorobenzene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000714 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000714">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Benzene in which all six hydrogen atoms are replaced by chlorine, C6Cl6, a persistent organochlorine fungicide.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_5692"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C6Cl6"/>
+        <oboInOwl:hasExactSynonym>C6Cl6</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C6Cl6&quot;: Expressed as hexachlorobenzene</rdfs:comment>
+        <rdfs:label>Hexachlorobenzene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000715 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000715">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000593"/>
+        <obo:IAO_0000115>Phenol bearing five chlorine atoms, C6HCl5O, a persistent organochlorine biocide and wood preservative.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17642"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C6HCl5O"/>
+        <oboInOwl:hasExactSynonym>C6HCl5O</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;C6HCl5O&quot;: Expressed as pentachlorophenol</rdfs:comment>
+        <rdfs:label>Pentachlorophenol</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
