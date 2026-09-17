@@ -92,9 +92,9 @@ Two rows carry a comment without a synonym:
 | Thaw depth (`BERVO:0001861`) | Soil heat variable | `surface-thaw_depth` | m |
 | Active layer mean temperature (`BERVO:0001862`) | Soil heat variable | `surface-active_layer_average_temperature` | K |
 | Surface water unfrozen fraction (`BERVO:0001863`) | Soil surface variable | `surface-unfrozen_fraction` | NONE |
-| Soil liquid water saturation (`BERVO:0001864`) | Soil and water variable | `saturation_liquid` | m3 m-3 |
-| Soil ice saturation (`BERVO:0001865`) | Soil and water variable | `saturation_ice` | m3 m-3 |
-| Soil gas saturation (`BERVO:0001866`) | Soil and water variable | `saturation_gas` | m3 m-3 |
+| Soil liquid water saturation (`BERVO:0001864`) | Soil and water variable | `saturation_liquid` | NONE |
+| Soil ice saturation (`BERVO:0001865`) | Soil and water variable | `saturation_ice` | NONE |
+| Soil gas saturation (`BERVO:0001866`) | Soil and water variable | `saturation_gas` | NONE |
 | Incoming shortwave radiation (`BERVO:0001867`) | Climate force variable | `surface-incoming_shortwave_radiation` | W m-2 |
 | Soil surface resistance to vapor transfer (`BERVO:0001868`) | Soil surface variable | `surface-rsoil`, `surface-soil_resistance` | s m-1 |
 | Microtopographic relief (`BERVO:0001869`) | Land surface variable | `surface-microtopographic_relief` | m |
