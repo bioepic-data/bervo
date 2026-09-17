@@ -28999,7 +28999,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001573 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001573">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000027"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001873"/>
         <obo:IAO_0000115>The total volume of liquid water that would result from completely melting all accumulated snow. This parameter represents the water storage capacity of the entire snowpack, essential for seasonal water resource assessment and flood forecasting in snow-dominated watersheds.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>VcumDrySnoWE_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
