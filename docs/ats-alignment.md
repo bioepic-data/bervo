@@ -118,8 +118,11 @@ Seven of the new variables also name the EcoSIM variable that supplies them:
 `SnowOnCanopy_pft`, `TEvapXAir2Toplay_col`, `TEvapXAir2LitR_col`, `EVAPW_col`,
 `EVAPS_col`, plus `tlai_day_pft` and `tsai_day_pft` for the two area indices.
 
-One hierarchy change: Water equivalent snowpack (`BERVO:0001577`) is now a child
-of Snow water equivalent rather than of Snow variable.
+Hierarchy changes: Water equivalent snowpack (`BERVO:0001577`) and Snow volume
+in snowpack (water equivalent) (`BERVO:0001573`) are now children of Snow water
+equivalent rather than of Snow variable, and Direct shortwave radiation
+(`BERVO:0001402`) and Diffuse shortwave radiation (`BERVO:0001403`) are
+children of Incoming shortwave radiation rather than of Climate force variable.
 
 ## Not mapped, and why
 

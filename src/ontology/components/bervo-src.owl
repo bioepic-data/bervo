@@ -25974,7 +25974,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001402 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001402">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001867"/>
         <obo:IAO_0000115>The solar radiation that travels in a straight path from the sun to Earth&apos;s surface without atmospheric scattering. This parameter represents the beam component of solar energy and is essential for calculating surface heating, photosynthesis rates, and directional light effects on ecosystem processes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RadSWDirect_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
@@ -25993,7 +25993,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001403 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001403">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001867"/>
         <obo:IAO_0000115>The solar radiation that has been scattered by atmospheric particles and molecules before reaching Earth&apos;s surface. This parameter represents the multidirectional component of solar energy and is important for modeling light penetration into plant canopies and understory photosynthesis.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RadSWDiffus_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
