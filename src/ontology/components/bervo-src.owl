@@ -7452,6 +7452,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000006"/>
         <obo:IAO_0000115>The layer-specific water flux from soil to plant roots across the vertical soil profile during the current model time step. This depth-resolved water uptake pattern reflects root distribution and soil water availability and is essential for modeling plant water acquisition strategies in terrestrial ecosystem models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TWaterPlantRoot2Soil_vr</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>subsurface_ecosim_water_source</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: subsurface_ecosim_water_source, the per-layer subsurface water source returned to ATS by the EcoSIM PK, computed as the sum over plant functional types of EcoSIM RPlantRootH2OUptk_pvr. Sign and layer conventions follow EcoSIM.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantDataRateType.txt</rdfs:comment>
         <rdfs:label>Current step vertical root water uptake profile</rdfs:label>
@@ -10677,6 +10679,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>The thermal infrared radiation emitted by plant canopy structures due to their temperature, representing outgoing longwave energy flux. This canopy-emitted longwave radiation is a critical component of surface energy balance, influencing atmospheric heating and land-atmosphere energy exchange in climate models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LWRadCanGPrev_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-canopy_longwave_radiation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-canopy_longwave_radiation.</rdfs:comment>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Longwave radiation emitted by canopy</rdfs:label>
@@ -10715,6 +10719,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>The amount of water intercepted and temporarily stored on leaf surfaces, branches, and other canopy structures following precipitation events. This canopy water storage influences evaporation rates, transpiration dynamics, and precipitation partitioning, representing an important component of forest hydrological processes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>WatHeldOnCanopy_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-canopy_surface_water</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-canopy_surface_water.</rdfs:comment>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Canopy held water content</rdfs:label>
@@ -10772,6 +10778,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>The energy flux associated with water phase change during canopy evaporation and transpiration processes, representing heat absorption during water vaporization. This latent heat flux is a major component of surface energy balance and determines canopy cooling effects in land-atmosphere energy exchange.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>EvapTransLHeat_pft</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-canopy_latent_heat</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-canopy_latent_heat, the column total returned to ATS by EcoSIM through Air_Heat_Latent_store_col.</rdfs:comment>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Canopy latent heat flux</rdfs:label>
@@ -10791,6 +10799,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>The conductive and convective heat transfer between air and vegetation canopy driven by temperature differences, representing direct thermal energy exchange. This sensible heat flux influences canopy temperature regulation and microclimate conditions, contributing to surface energy balance in ecosystem models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HeatXAir2PCan_pft</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-canopy_sensible_heat</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-canopy_sensible_heat, the column total returned to ATS by EcoSIM through Air_Heat_Sens_store_col.</rdfs:comment>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Air to canopy sensible heat flux</rdfs:label>
@@ -10925,6 +10935,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>The water vapor flux from plant canopy to atmosphere through stomatal regulation and leaf-atmosphere vapor pressure gradients. This transpiration process represents the primary pathway of water loss from terrestrial ecosystems and couples carbon assimilation with water use in land surface models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Transpiration_pft</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-transpiration</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-transpiration, summed over plant functional types.</rdfs:comment>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Canopy transpiration</rdfs:label>
@@ -11058,6 +11070,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>This variables indicates the total water-air exchange due to evaporation from canopy held water and transpirtion of water that plant take up from the soil. It is an important component of the ecosystem water cycling</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>QVegET_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-evapotranspiration</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-evapotranspiration.</rdfs:comment>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total canopy evaporation + transpiration</rdfs:label>
@@ -11077,6 +11091,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>Total canopy evaporation (VapXAir2CanG) is the sum of all forms of evaporation from the canopy, including wet canopy evaporation (evaporation of intercept rainfall), cuticular transpiration (water vapor loss through plant leaf cuticle), and lenticular transpiration (evaporation from leaf surface through stomata or pores). It is a key element in the water cycle and influences the energy balance and climate of a region. Canopy evaporation can be influenced by factors like the type of vegetation, leaf surface characteristics, environmental conditions (temperature, humidity), and regional rainfall patterns.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>VapXAir2Canopy_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-evaporation_canopy</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-evaporation_canopy, summed over plant functional types.</rdfs:comment>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total canopy evaporation</rdfs:label>
@@ -12685,6 +12701,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
         <obo:IAO_0000115>The mean elevation of terrain within a computational grid cell, representing topographic variation effects on atmospheric and hydrological processes. This grid cell altitude influences temperature lapse rates, precipitation patterns, atmospheric pressure, and surface runoff characteristics in spatially explicit Earth system models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>ALT_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-elevation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-elevation [m].</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>LandSurfDataType.txt</rdfs:comment>
         <rdfs:comment>more like relative altitude</rdfs:comment>
@@ -12821,6 +12839,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
         <obo:IAO_0000115>The angle of inclination of land surface relative to horizontal, expressed in degrees, affecting water flow, erosion, and solar radiation receipt. This topographic slope influences surface runoff velocity, soil stability, microclimate conditions, and vegetation establishment patterns in terrestrial ecosystem models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SL_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-slope_magnitude</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-slope_magnitude [-], the dimensionless magnitude of the surface gradient rather than an angle.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>How does this differ from the concept term?</rdfs:comment>
         <rdfs:comment>LandSurfDataType.txt</rdfs:comment>
@@ -12841,6 +12861,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
         <obo:IAO_0000115>The compass direction that a land surface faces, expressed in degrees from north, determining solar radiation exposure and microclimate conditions. This topographic aspect affects temperature distribution, moisture patterns, vegetation growth, and ecosystem dynamics through differential solar heating and drying effects.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>ASP_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-aspect</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-aspect.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>LandSurfDataType.txt</rdfs:comment>
         <rdfs:label>Aspect</rdfs:label>
@@ -20866,6 +20888,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
         <obo:IAO_0000115>Root water uptake refers to the process by which plant roots extract water from the soil. It is a vital parameter in earth systems modeling as it influences the distribution and availability of water in terrestrial ecosystems. Root water uptake is influenced by various factors such as soil moisture content, plant root characteristics, and environmental conditions. It is essential for accurately simulating the water cycle and understanding the dynamics of plant-water interactions in ecosystem models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>AllPlantRootH2OLoss_pvr</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>RPlantRootH2OUptk_pvr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Root water uptake</rdfs:label>
@@ -25388,6 +25411,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
         <obo:IAO_0000115>The temperature of the ambient air at a specified height above ground level. This fundamental meteorological parameter controls rates of biological processes, evapotranspiration, soil respiration, and chemical reactions in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TCA_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>TairK_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-air_temperature</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-air_temperature [K], written into EcoSIM TairK_col, the Kelvin form of TCA_col.</rdfs:comment>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Air temperature</rdfs:label>
@@ -25427,7 +25453,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
         <obo:IAO_0000115>Wind speed is a fundamental atmospheric quantity. It is the speed at which air is moving horizontally relative to the surface of the earth. Wind speed is measured in various units of speed, such as meters per second or kilometers per hour. It is an essential parameter in understanding atmospheric dynamics, weather forecasting, and in many environmental and engineering applications.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>WindSpeedAtm_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-wind_speed</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>&quot;Wind speed&quot; is a concept now, so this should be restructured as a variable measuring that attribute.</rdfs:comment>
+        <rdfs:comment>ATS: surface-wind_speed [m s-1]; the ATS-EcoSIM coupling multiplies by 3600 to give EcoSIM WindSpeedAtm_col in m h-1.</rdfs:comment>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>I think wind speed is one term rather than velocity of wind</rdfs:comment>
@@ -25436,6 +25464,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>m s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000184"/>
     </Class>
@@ -25467,12 +25496,15 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
         <obo:IAO_0000115>The partial pressure exerted by water vapor molecules in the atmosphere, representing the thermodynamic activity of atmospheric moisture. This parameter is fundamental for calculating vapor pressure deficit, humidity indices, and driving forces for plant transpiration and soil evaporation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>VPK_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-vapor_pressure_air</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-vapor_pressure_air [Pa]; the ATS-EcoSIM coupling divides by 1000 to give EcoSIM VPK_col in kPa.</rdfs:comment>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Atmospheric vapor pressure</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000518"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000131"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>Pa</bervo:BERVO_has_unit>
         <bervo:BERVO_has_unit>kPa</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000118"/>
@@ -25562,6 +25594,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
         <obo:IAO_0000115>Sky longwave radiation refers to the part of the electromagnetic spectrum that is radiated from the sky in the form of thermal radiation, or heat. This is a key component of the earth&apos;s energy balance, affecting both climatic and biological processes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LWRadSky_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-incoming_longwave_radiation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-incoming_longwave_radiation [W m-2]. EcoSIM SkyLonwRad_col is the per-area form of this variable in MJ m-2 h-1.</rdfs:comment>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Sky longwave radiation</rdfs:label>
@@ -25570,6 +25604,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>MJ m-2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_unit>MJ/h</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>W m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
@@ -25757,6 +25792,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001391"/>
         <obo:IAO_0000115>The molar concentration of oxygen gas in the atmosphere, representing the abundance of this essential gas for aerobic respiration and combustion processes. This parameter affects plant root respiration rates, soil microbial activity, and biogeochemical processes in waterlogged or oxygen-limited environments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>OXYE_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>atm_o2</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: atm_o2, a scalar property passed to EcoSIM by the EcoSIM PK.</rdfs:comment>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Atmospheric oxygen concentration</rdfs:label>
@@ -25776,6 +25813,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001391"/>
         <obo:IAO_0000115>Atmospheric N2O concentration refers to the quantity of nitrous oxide (N2O) present in each unit volume of air in the atmosphere. Also known as laughing gas, N2O is a powerful greenhouse gas that is released into the atmosphere through soil cultivation practices, especially the use of commercial and organic fertilizers, fossil fuel combustion, nitric acid production, and biomass burning. Monitoring the atmospheric N2O concentration is important for climate modeling and understanding global warming potential.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Z2OE_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>atm_n2o</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: atm_n2o, a scalar property passed to EcoSIM by the EcoSIM PK.</rdfs:comment>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Atmospheric nitrous oxide concentration</rdfs:label>
@@ -25795,6 +25834,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001391"/>
         <obo:IAO_0000115>The molar concentration of nitrogen gas in the atmosphere, representing the abundance of this inert diatomic gas. This parameter is important for atmospheric density calculations, pressure corrections, and understanding the nitrogen reservoir available for biological nitrogen fixation processes in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Z2GE_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>atm_n2</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: atm_n2, a scalar property passed to EcoSIM by the EcoSIM PK.</rdfs:comment>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Atmospheric nitrogen concentration</rdfs:label>
@@ -25814,6 +25855,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001391"/>
         <obo:IAO_0000115>The molar concentration of ammonia gas in the atmosphere, representing a key reactive nitrogen species. This parameter is essential for modeling atmospheric nitrogen deposition, soil acidification processes, and ecosystem nitrogen inputs that affect plant nutrition and soil chemistry.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>ZNH3E_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>atm_nh3</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: atm_nh3, a scalar property passed to EcoSIM by the EcoSIM PK.</rdfs:comment>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Atmospheric ammonia concentration</rdfs:label>
@@ -25833,6 +25876,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001391"/>
         <obo:IAO_0000115>The abundance of methane (CH4) gas in the Earth&apos;s atmosphere. It is expressed as the volume of CH4 per unit volume of air (parts per million, ppm) or as a mixing ratio. Methane is an important greenhouse gas and contributes to climate change. Monitoring and understanding changes in atmospheric CH4 concentration is crucial for climate models and Earth system simulations.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CH4E_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>atm_ch4</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: atm_ch4, a scalar property passed to EcoSIM by the EcoSIM PK.</rdfs:comment>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Atmospheric methane concentration</rdfs:label>
@@ -25852,6 +25897,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001391"/>
         <obo:IAO_0000115>The amount of hydrogen gas (H2) in the Earth&apos;s atmosphere, expressed typically in parts per million by volume (ppmv). Measuring this concentration is important in understanding the Earth&apos;s climate system, as H2 is one of the major constituent gases in the Earth&apos;s atmosphere and plays a critical role in various atmospheric processes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>H2GE_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>atm_h2</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: atm_h2, a scalar property passed to EcoSIM by the EcoSIM PK.</rdfs:comment>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Atmospheric hydrogen gas concentration</rdfs:label>
@@ -25871,6 +25918,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001391"/>
         <obo:IAO_0000115>The amount of carbon dioxide present in the atmosphere. It is an important parameter in earth science and biochemistry. The concentration of CO2 in the atmosphere can affect global warming and climate change, as CO2 is a greenhouse gas that traps heat in the earth&apos;s atmosphere.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CO2E_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>atm_co2</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: atm_co2, a scalar property passed to EcoSIM by the EcoSIM PK.</rdfs:comment>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Atmospheric carbon dioxide concentration</rdfs:label>
@@ -26219,6 +26268,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
         <obo:IAO_0000115>The liquid water precipitation that falls from clouds when water droplets reach sufficient size to overcome air resistance. This parameter represents the primary source of freshwater input to terrestrial ecosystems and is fundamental for hydrological modeling, soil moisture dynamics, and plant water availability assessments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RainFalPrec_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-precipitation_rain</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-precipitation_rain [m s-1], a depth per unit area per second; the ATS-EcoSIM coupling converts it to EcoSIM RainFalPrec_col as a volume per grid cell per hour.</rdfs:comment>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>This is a measurement, not a concept</rdfs:comment>
@@ -26226,6 +26277,7 @@
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_unit>m3 d-2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
@@ -26239,6 +26291,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
         <obo:IAO_0000115>Snowfall refers to the amount of snow that falls in a specific area in a certain time period. It is usually measured in millimeters or inches of water equivalent. Snowfall is an important aspect in climate and weather studies, as it affects factors such as surface albedo, soil moisture levels, hydrology, and ecosystem dynamics.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SnoFalPrec_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>snow-precipitation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-precipitation_snow</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-precipitation_snow and snow-precipitation [m SWE s-1], snow water equivalent depth per unit area per second; the ATS-EcoSIM coupling converts it to EcoSIM SnoFalPrec_col as a volume per grid cell per hour.</rdfs:comment>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>This is a measurement, not a concept</rdfs:comment>
@@ -26246,6 +26301,7 @@
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m SWE s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_unit>m3 d-2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
@@ -26647,6 +26703,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000022"/>
         <obo:IAO_0000115>The balance between incoming and outgoing radiation at the ground surface, representing the net radiative energy available. This parameter is fundamental for surface energy balance calculations and determines the energy available for heating, evapotranspiration, and photosynthesis processes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HeatByRad2Surf_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-net_radiation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-net_radiation [W m-2].</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfSoilDataType.txt</rdfs:comment>
         <rdfs:label>Total net radiation at ground surface</rdfs:label>
@@ -26654,6 +26712,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>MJ d-2 t-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>W m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
@@ -26666,6 +26725,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000022"/>
         <obo:IAO_0000115>The total energy associated with water phase changes at the ground surface, including evaporation and condensation processes. This parameter represents the latent heat component of surface energy balance and is fundamental for modeling water vapor exchange between soil, vegetation, and atmosphere.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HeatEvapAir2Surf_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-qE_latent_heat</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-qE_latent_heat [W m-2].</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>Split heat flux from chemical flux</rdfs:comment>
         <rdfs:comment>SurfSoilDataType.txt</rdfs:comment>
@@ -26674,6 +26735,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>MJ d-2 t-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>W m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
     </Class>
@@ -26686,6 +26748,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000022"/>
         <obo:IAO_0000115>Total sensible heat flux at ground surface refers to the total amount of energy, in Joules (J), transferred from the ground surface to the atmosphere as a result of differences in temperature. This process is one of the main ways energy is exchanged between the surface and the atmosphere, impacting climate and weather patterns.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HeatSensAir2Surf_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-qE_sensible_heat</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-qE_sensible_heat [W m-2].</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfSoilDataType.txt</rdfs:comment>
         <rdfs:label>Total sensible heat flux at ground surface</rdfs:label>
@@ -26693,6 +26757,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>MJ d-2 t-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>W m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000060"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
     </Class>
@@ -27231,6 +27296,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000024"/>
         <obo:IAO_0000115>The thermal state of soil at specified depths, measured in absolute temperature units. This parameter controls reaction rates, microbial activity, root growth, and nutrient cycling processes, making it fundamental for modeling all temperature-dependent biological and chemical processes in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TKS_vr</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>TKSoil1_vr</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: temperature [K] on the subsurface domain. EcoSIM TKSoil1_vr is the intermediate time step copy of this variable that receives it in the ATS-EcoSIM coupling.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilHeatDataType.txt</rdfs:comment>
         <rdfs:label>Soil temperature</rdfs:label>
@@ -27421,6 +27488,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000024"/>
         <obo:IAO_0000115>The downward thermal energy transfer rate from the surface into subsurface soil layers, calculated from energy balance equations. This parameter represents the ground heat flux component of surface energy partitioning and is essential for modeling soil temperature profiles and subsurface thermal dynamics.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HeatFlx2Grnd_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-ecosim_source</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-qE_conducted</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-qE_conducted [W m-2]. In the ATS-EcoSIM coupling, EcoSIM HeatFlx2Grnd_col divided by column area and by 3600 is returned to ATS as surface-ecosim_source [MW m-2], the surface energy source.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilHeatDataType.txt</rdfs:comment>
         <rdfs:label>Heat flux into ground, computed from surface energy balance model</rdfs:label>
@@ -27428,6 +27498,8 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>MJ d-2 h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>MW m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>W m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000132"/>
     </Class>
@@ -27707,6 +27779,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
         <obo:IAO_0000115>The soil water potential at which excess gravitational water has drained and water is held against gravity by capillary forces. This parameter defines the upper limit of plant-available water storage and is essential for modeling soil water retention, irrigation scheduling, and drought stress assessment.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PSIAtFldCapacity_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>field_capacity</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: field_capacity [MPa], an input parameter of the EcoSIM PK.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilPhysDataType.txt</rdfs:comment>
         <rdfs:label>Water potentials at field capacity</rdfs:label>
@@ -27726,6 +27800,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
         <obo:IAO_0000115>The soil water potential at which plants can no longer extract water and begin permanent wilting. This parameter represents the lower limit of plant-available water and is crucial for modeling plant water stress, irrigation timing, and ecosystem responses to drought conditions.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PSIAtWiltPoint_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>wilting_point</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: wilting_point [MPa], an input parameter of the EcoSIM PK.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilPhysDataType.txt</rdfs:comment>
         <rdfs:label>Water potentials at wilting point</rdfs:label>
@@ -27783,6 +27859,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
         <obo:IAO_0000115>The fraction of incoming solar radiation that is reflected by the ground surface back to the atmosphere. This parameter controls surface energy balance, soil heating rates, and local microclimate conditions, significantly affecting evapotranspiration and photosynthesis processes in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SurfAlbedo_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-albedo</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-albedo [-].</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilPhysDataType.txt</rdfs:comment>
         <rdfs:label>Surface albedo</rdfs:label>
@@ -28070,6 +28148,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
         <obo:IAO_0000115>The fraction of soil volume occupied by pore spaces filled with air or water, representing void space in the soil matrix. This parameter controls water storage capacity, gas diffusion rates, root penetration, and is fundamental for modeling soil hydraulic conductivity and aeration in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>POROSI_vr</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>POROS_vr</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>porosity</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: porosity [-] on the subsurface domain, written into EcoSIM POROS_vr in the ATS-EcoSIM coupling.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilPropertyDataType.txt</rdfs:comment>
         <rdfs:label>Soil porosity</rdfs:label>
@@ -28279,6 +28360,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
         <obo:IAO_0000115>The mass of dry soil per unit volume including pore spaces, representing soil compaction and structure. This parameter affects porosity, water storage capacity, root penetration resistance, and is fundamental for converting between mass-based and volume-based soil property measurements.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SoilBulkDensity_vr</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>bulk_density</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: bulk_density, computed in the ATS-EcoSIM coupling from density_rock and porosity.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilPropertyDataType.txt</rdfs:comment>
         <rdfs:label>Soil bulk density</rdfs:label>
@@ -28564,7 +28647,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001554">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000027"/>
         <obo:IAO_0000115>The fraction of incoming solar radiation reflected by the snow surface back to the atmosphere. This parameter controls snow surface energy balance, melting rates, and seasonal snow persistence, significantly affecting local and regional climate through snow-albedo feedback mechanisms.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SnowAlbedo_col</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>SoilAlbedo_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-snow_albedo</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-snow_albedo [-], written into EcoSIM SnowAlbedo_col in the ATS-EcoSIM coupling.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SnowDataType.txt</rdfs:comment>
         <rdfs:label>Snowpack albedo</rdfs:label>
@@ -28603,6 +28689,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000027"/>
         <obo:IAO_0000115>The thermal state of snow layers within a snowpack, measured in degrees Celsius or Kelvin. This parameter controls snow metamorphism, melting rates, sublimation processes, and ice formation, making it fundamental for predicting snowmelt timing and water resource availability.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TCSnow_snvr</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>snow-temperature</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: snow-temperature [K].</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SnowDataType.txt</rdfs:comment>
         <rdfs:label>Snow temperature</rdfs:label>
@@ -28718,6 +28806,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000027"/>
         <obo:IAO_0000115>The mass of snow per unit volume within a snowpack layer, representing compaction state and water equivalent. This parameter controls thermal conductivity, albedo characteristics, metamorphism rates, and mechanical properties affecting avalanche risk and meltwater production timing.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SnoDens_snvr</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>snow-density</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: snow-density [kg m-3].</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SnowDataType.txt</rdfs:comment>
         <rdfs:label>Snowpack density</rdfs:label>
@@ -28725,6 +28815,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000204"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>Mg m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>kg m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000204"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000204"/>
     </Class>
@@ -28889,6 +28980,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000027"/>
         <obo:IAO_0000115>The total vertical thickness of snow cover from ground surface to snow surface. This parameter represents water storage potential, insulation capacity, and habitat modification effects, fundamental for hydrological forecasting, avalanche assessment, and ecosystem impact studies.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SnowDepth_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>snow-depth</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-snow_depth</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-snow_depth and snow-depth [m].</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SnowDataType.txt</rdfs:comment>
         <rdfs:label>Snowpack depth</rdfs:label>
@@ -28981,7 +29075,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001577 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001577">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000027"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001873"/>
         <obo:IAO_0000115>The total volume of liquid water that would result from melting all snow components in the entire snowpack. This parameter integrates both ice and liquid water content, representing total water storage for hydrological forecasting and water resource management applications.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>VcumSnowWE_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
@@ -32193,6 +32287,7 @@
         <obo:IAO_0000115>The volume of water present in soil expressed as a fraction of the total soil volume, representing the three-dimensional water storage capacity and current moisture status of soil systems. This fundamental parameter controls plant water availability, microbial activity, and biogeochemical processes, and is essential for understanding soil hydrology, irrigation management, and ecosystem water balance in terrestrial environments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>THETW_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM THETW_vr is a volume fraction of bulk soil. The ATS-EcoSIM coupling currently writes ATS saturation_liquid, a fraction of pore volume, into it; see Soil liquid water saturation.</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Volumetric water content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
@@ -32267,7 +32362,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001747">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>The micropore water flux is the volume of water moving through the micropores in the soil per unit time. This can be influenced by various factors, including soil type, texture, precipitation, and evaporation rates among others.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>VLWatMicP1_vr</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>VLWatMicP_vr</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS water_content on the subsurface domain is an extensive molar quantity per cell; the ATS-EcoSIM coupling divides it by liquid water molar density and column area and writes the result into EcoSIM VLWatMicP1_vr, the intermediate time step copy of this variable.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Soil micropore water content</rdfs:label>
@@ -32324,7 +32421,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001750">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>The energy status or tension of water held within the smallest soil pores, representing the suction pressure required to extract water from micropore spaces typically less than 30 micrometers in diameter. This parameter controls plant water availability, microbial activity, and biogeochemical processes by determining how tightly water is bound to soil particles and influences water movement, root water uptake, and soil water retention in fine-textured soils.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>PSISM1_vr</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>PSISoilMatricP_vr</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>matric_pressure</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: matric_pressure [Pa]. In the ATS-EcoSIM coupling the ATS capillary pressure is converted to MPa and written into EcoSIM PSISM1_vr, the intermediate time step copy of this variable.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Soil micropore matric water potential</rdfs:label>
@@ -32332,6 +32432,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>Pa</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000012"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
@@ -32535,6 +32636,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>The depth to groundwater level measured within a specific soil profile or model domain, representing the local saturation boundary that develops from internal hydrological processes. This parameter differs from regional water tables by reflecting local soil moisture dynamics, perched water conditions, and site-specific hydrological controls that affect root zone hydrology and soil biogeochemical processes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>DepzIntWTBL_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-water_table_depth</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-water_table_depth [m], the water table diagnosed within the model column.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Internal water table depth</rdfs:label>
@@ -32688,13 +32791,15 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>The ability of soil to transmit water through its pore network as a function of soil water content, describing how water movement capacity changes with soil moisture conditions. This relationship is fundamental for modeling unsaturated water flow, irrigation efficiency, and drainage processes, and controls the rate of water infiltration, redistribution, and plant water availability in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HydroCond_3D</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>hydraulic_conductivity</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: hydraulic_conductivity, evaluated in the EcoSIM PK from permeability, liquid density, and viscosity.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Hydraulic conductivity at different moisture levels</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>NONE</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>m MPa-1 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
@@ -33585,12 +33690,15 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>The volumetric flow rate of water entering the soil surface from precipitation, irrigation, or surface water sources. This parameter quantifies the downward movement of water from the surface into soil pore spaces, fundamental for understanding soil water recharge and surface-subsurface water exchange processes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Qinflx2Soil_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-ecosim_water_source</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-ecosim_water_source [m s-1]; in the ATS-EcoSIM coupling, EcoSIM Qinflx2Soil_col divided by 3600 is returned to ATS as the surface water source.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Infiltration into soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_unit>m3 d-2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
@@ -33719,6 +33827,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>The volumetric flow rate of water delivered from atmospheric sources to terrestrial land surfaces. This parameter represents total precipitation input controlling surface water balance, ecosystem water supply, and hydrological cycle components in terrestrial environments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PrecipAtm2LandSurf_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-precipitation_total</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-precipitation_total [m s-1], rain plus snow water equivalent, used when the EcoSIM PK lets EcoSIM partition precipitation itself.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Precipitation from atmosphere to land surface</rdfs:label>
@@ -33726,6 +33836,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000131"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_unit>m3 d-2 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
@@ -34249,6 +34360,477 @@
         <bervo:BERVO_has_unit>g g-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001859 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001859">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000022"/>
+        <obo:IAO_0000115>Temperature of the interface between the land surface and the overlying air, the radiating and conducting surface itself rather than the air above it or the soil beneath it.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>surface-temperature</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-temperature [K], the surface skin temperature used by the surface energy balance.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Surface skin temperature</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>K</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000060"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000060"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001860 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001860">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000022"/>
+        <obo:IAO_0000115>Vertical depth of liquid water stored on the land surface above the soil, whether in depressions and puddles or as a continuous sheet of overland flow.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>surface-ponded_depth</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-ponded_depth [m].</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Ponded water depth</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000060"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001861 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001861">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000024"/>
+        <obo:IAO_0000115>Depth from the land surface to the lower boundary of the ground that is thawed at a given moment, as distinct from the maximum seasonal thaw that defines the active layer.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>surface-thaw_depth</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-thaw_depth [m], from the thaw depth column integrator. Instantaneous, so not an exact synonym of Active layer depth of a permafrost soil, which is the seasonal maximum.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Thaw depth</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001862 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001862">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000024"/>
+        <obo:IAO_0000115>Soil temperature averaged over the depth of the currently thawed active layer above permafrost.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>surface-active_layer_average_temperature</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-active_layer_average_temperature [K], from the active layer column integrator.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Active layer mean temperature</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>K</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001863 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001863">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000022"/>
+        <obo:IAO_0000115>Fraction of the water on the land surface that is liquid rather than ice, from zero for wholly frozen surface water to one for wholly liquid.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>surface-unfrozen_fraction</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-unfrozen_fraction [-].</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Surface water unfrozen fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NONE</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000060"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001864 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001864">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
+        <obo:IAO_0000115>Fraction of the soil pore volume occupied by liquid water.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>saturation_liquid</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: saturation_liquid [-] on the subsurface domain. In the ATS-EcoSIM coupling this value is written into EcoSIM THETW_vr, which BERVO records as Volumetric water content, a fraction of bulk soil volume rather than of pore volume.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Soil liquid water saturation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000429"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3 m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001865 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001865">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
+        <obo:IAO_0000115>Fraction of the soil pore volume occupied by ice.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>saturation_ice</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: saturation_ice [-] on the subsurface domain.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Soil ice saturation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000429"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3 m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000027"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001866 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001866">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
+        <obo:IAO_0000115>Fraction of the soil pore volume occupied by gas.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>saturation_gas</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: saturation_gas [-] on the subsurface domain.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Soil gas saturation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000429"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3 m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000086"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001867 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001867">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
+        <obo:IAO_0000115>Downward flux of shortwave solar radiation, direct and diffuse together, incident on the land surface per unit horizontal area.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>surface-incoming_shortwave_radiation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-incoming_shortwave_radiation [W m-2]. In the ATS-EcoSIM coupling this forcing is converted to MJ m-2 h-1 and written into EcoSIM RadSWGrnd_col, recorded in BERVO as Shortwave radiation incident on ground surface.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Incoming shortwave radiation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>W m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000115"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001868 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001868">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000022"/>
+        <obo:IAO_0000115>Resistance of the soil surface to the transfer of water vapor from soil pores to the air above, which holds evaporation below its potential rate as the surface dries.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>surface-rsoil</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-soil_resistance</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-rsoil and surface-soil_resistance [s m-1], the soil resistance of the top cells in the surface energy balance.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Soil surface resistance to vapor transfer</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000540"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>s m-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000118"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001869 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001869">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
+        <obo:IAO_0000115>Vertical range of land surface elevation over horizontal distances smaller than a model grid cell, giving the depth of the depressions that fill before water ponds continuously across the surface.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>surface-microtopographic_relief</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-microtopographic_relief [m].</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Microtopographic relief</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001870 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001870">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000024"/>
+        <obo:IAO_0000115>Rate of heat conduction through bulk soil per unit temperature gradient, integrating the solid, water, ice, and air phases present.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>thermal_conductivity</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: thermal_conductivity [W m-1 K-1] on the subsurface domain.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Soil thermal conductivity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000348"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>W m-1 K-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001871 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001871">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
+        <obo:IAO_0000115>Ratio of the effective permeability of soil to liquid water at its current saturation to the intrinsic permeability of the fully saturated soil, a dimensionless factor between zero and one.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>relative_permeability</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: relative_permeability [-] on the subsurface domain.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Soil relative permeability</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NONE</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001872 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001872">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
+        <obo:IAO_0000115>Difference between gas phase pressure and liquid water pressure in soil pores, arising from surface tension at the air-water interfaces, and equal in magnitude to the matric potential expressed as a pressure.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>capillary_pressure_gas_liq</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: capillary_pressure_gas_liq [Pa] on the subsurface domain. In the ATS-EcoSIM coupling this field is converted to MPa and written into EcoSIM PSISM1_vr, the intermediate time step copy of Soil micropore matric water potential.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Soil capillary pressure</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000518"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>Pa</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001873 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001873">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000027"/>
+        <obo:IAO_0000115>Depth of liquid water that would result from melting the entire snowpack over a unit area, combining its ice and liquid water content.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>snow-water_equivalent</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: snow-water_equivalent [m]. Generic depth form; Water equivalent snowpack is the EcoSIM volume per grid cell and is a child of this term.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Snow water equivalent</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000103"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001874 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001874">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <obo:IAO_0000115>Amount of snow intercepted and held on the foliage and branches of a plant canopy, expressed as a water volume per unit ground area.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SnowOnCanopy_pft</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-canopy_snow</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-canopy_snow, one value per plant functional type.</rdfs:comment>
+        <rdfs:comment>CanopyDataType.txt</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Canopy held snow content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3 d-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000103"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001875 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001875">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000022"/>
+        <obo:IAO_0000115>Water vapor exchange between the air and the exposed surface of the top soil layer, where neither litter nor snow covers it, accumulated over the model hour.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>TEvapXAir2Toplay_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-evaporation_ground</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-evaporation_ground, written from EcoSIM TEvapXAir2Toplay_col in the ATS-EcoSIM coupling.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:comment>SurfPhysData.F90</rdfs:comment>
+        <rdfs:label>Bare ground evaporation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000114"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3 H2O d-2 h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000060"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001876 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001876">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
+        <obo:IAO_0000115>Water vapor exchange between the air and the surface litter layer, accumulated over the model hour.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>TEvapXAir2LitR_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-evaporation_litter</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-evaporation_litter, written from EcoSIM TEvapXAir2LitR_col in the ATS-EcoSIM coupling.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:comment>SurfPhysData.F90</rdfs:comment>
+        <rdfs:label>Surface litter evaporation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000114"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3 H2O d-2 h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000096"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001877 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001877">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000027"/>
+        <obo:IAO_0000115>Evaporation of liquid water from the surface of the snowpack to the atmosphere.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>EVAPW_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-evaporation_snow</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-evaporation_snow, written from EcoSIM EVAPW_col in the ATS-EcoSIM coupling.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:comment>HydroThermData.F90</rdfs:comment>
+        <rdfs:label>Snowpack evaporation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000114"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3 H2O d-2 h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000103"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001878 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001878">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000027"/>
+        <obo:IAO_0000115>Direct conversion of snowpack ice to water vapor lost to the atmosphere, without passing through the liquid phase.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>EVAPS_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-sublimation_snow</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-sublimation_snow, written from EcoSIM EVAPS_col in the ATS-EcoSIM coupling.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:comment>HydroThermData.F90</rdfs:comment>
+        <rdfs:label>Snowpack sublimation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3 H2O d-2 h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000103"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000027"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001879 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001879">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>One-sided green leaf area of a plant canopy per unit horizontal ground area.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>surface-LAI</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>tlai_day_pft</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-LAI [m2 m-2]. In the ATS-EcoSIM coupling it is written into EcoSIM tlai_day_pft, the daily leaf area index of the prescribed phenology, divided evenly among the active plant functional types.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
+        <rdfs:label>Canopy leaf area index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000164"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m2 m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001880 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001880">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Projected area of the stems and branches of a plant canopy per unit horizontal ground area.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>surface-SAI</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>tsai_day_pft</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-SAI [m2 m-2]. In the ATS-EcoSIM coupling it is written into EcoSIM tsai_day_pft, the daily stem area index of the prescribed phenology, divided evenly among the active plant functional types.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
+        <rdfs:label>Canopy stem area index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000588"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m2 m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001881 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001881">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
+        <obo:IAO_0000115>Amount of substance of liquid water per unit volume, equal to its mass density divided by the molar mass of water.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>molar_density_liquid</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: molar_density_liquid [mol m-3] on the subsurface domain, used in the ATS-EcoSIM coupling to convert the molar water content of a cell to a water volume.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Liquid water molar density</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mol m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001882 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001882">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
+        <obo:IAO_0000115>Mass of the solid mineral and organic particles of soil per unit volume of the particles themselves, excluding pore space; with porosity it gives bulk density.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>density_rock</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: density_rock [kg m-3] on the subsurface domain. In the ATS-EcoSIM coupling, bulk density is computed from it as particle density times one minus porosity.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Soil particle density</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>kg m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
     </Class>
     
 
@@ -44594,6 +45176,23 @@
         <oboInOwl:hasExactSynonym>chemical fraction</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Fable 5.1 through Claude Code (Sep 3 2026)</rdfs:comment>
         <rdfs:label>Chemical pool</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000588 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000588">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Projected area of the stems and branches of vegetation per unit horizontal ground area, the stem counterpart of leaf area index.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
+        <rdfs:label>Stem area index</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
