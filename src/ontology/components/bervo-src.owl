@@ -35294,7 +35294,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000024 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000024">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
         <obo:IAO_0000115>A greenhouse gas composed of one carbon atom and four hydrogen atoms that is produced through anaerobic decomposition and other biological processes. This trace gas contributes significantly to global warming and is an important component of biogeochemical carbon cycling in wetlands, agricultural systems, and permafrost environments.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16183"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/CH4"/>
@@ -45519,12 +45519,12 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000602">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
-        <obo:IAO_0000115>Chemical element with symbol Cl and atomic number 17. Distinct from Chloride, the anion in which chlorine is usually measured in water.</obo:IAO_0000115>
+        <obo:IAO_0000115>Chemical element with symbol Cl and atomic number 17.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23116"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Cl"/>
         <oboInOwl:hasExactSynonym>Cl</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
-        <rdfs:comment>ODM2 speciation concept &quot;Cl&quot;: Expressed as chlorine</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;Cl&quot;: Expressed as chlorine Distinct from Chloride, the anion in which chlorine is usually measured in water.</rdfs:comment>
         <rdfs:label>Chlorine</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -45729,7 +45729,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000612">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000220"/>
-        <obo:IAO_0000115>Chemical element with symbol Ra and atomic number 88. As a reporting basis, radium equivalent expresses the gamma output of a mixture of uranium, thorium, and potassium-40 as a single number.</obo:IAO_0000115>
+        <obo:IAO_0000115>Chemical element with symbol Ra and atomic number 88.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33325"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/Ra"/>
         <oboInOwl:hasExactSynonym>Ra</oboInOwl:hasExactSynonym>
@@ -46360,7 +46360,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000642 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000642">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000591"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
         <obo:IAO_0000115>Aromatic hydrocarbons of molecular formula C12H10, such as acenaphthene and biphenyl, reported as a group where the analysis does not resolve the isomers.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C12H10"/>
         <oboInOwl:hasExactSynonym>C12H10</oboInOwl:hasExactSynonym>
@@ -46770,7 +46770,7 @@
         <obo:IAO_0000115>Benzene bearing one ethyl substituent, C8H10.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16101"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/C8H10"/>
-        <oboInOwl:hasExactSynonym>C8H10</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>C8H10</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
         <rdfs:comment>ODM2 speciation concept &quot;C8H10&quot;: Expressed as ethylbenzene</rdfs:comment>
         <rdfs:label>Ethylbenzene</rdfs:label>

@@ -60,9 +60,9 @@ BERVO term's `Comment`.
 | `EC` | Conductivity (`BERVO:8000348`) |  |
 | `pH` | pH (`BERVO:8000261`) |  |
 
-Three ODM2 concepts are not mapped: `Not Applicable` and `Unknown` are
-placeholders of the vocabulary rather than speciations, and `speciation` is
-the scheme itself.
+Two of the 145 concepts are not mapped: `Not Applicable` and `Unknown` are
+placeholders of the vocabulary rather than speciations. The SKOS export also
+describes the scheme itself, which is not a concept.
 
 ## Points to note
 
@@ -85,6 +85,17 @@ the scheme itself.
   trichloroethane, dichlorobenzene, and the methylated naphthalenes, get the
   generic name, and a CHEBI class cross-reference only where CHEBI has the
   generic class.
+- The cross-reference local part is the slug from the SKOS `rdf:about`, which
+  differs from the displayed label where the label has spaces or parentheses:
+  `delta2H` for "delta 2H", `C10H6_CH3_2` for "C10H6(CH3)2". Each emitted IRI
+  was checked on 2026-09-17 and redirects (301) to the same path with a
+  trailing slash, which returns the concept page.
+- ODM2 defines `CH3Hg` as "Expressed at methylmercury". The typo is verbatim
+  in the export and is quoted as is.
+- The n-alkane series runs C15 to C29 and then C31. ODM2 has no C30 concept.
+- C12H10 aromatic hydrocarbons sits under Organic compound rather than
+  Polycyclic aromatic hydrocarbon, because biphenyl's rings are not fused.
+- Methane (`BERVO:8000024`) moves under the new Alkane, beside Ethane.
 - Total alkalinity has no CHEBI term. It sits under Physical property beside
   pH.
 - Aluminum (`BERVO:8000180`) already carries `CHEBI:33620`, which is
@@ -146,7 +157,7 @@ the scheme itself.
 | Tetramethylnaphthalene (`BERVO:8000639`) | Polycyclic aromatic hydrocarbon | `C10H4(CH3)4` |  |
 | Ethylnaphthalene (`BERVO:8000640`) | Polycyclic aromatic hydrocarbon | `C10H7C2H5` |  |
 | Acenaphthylene (`BERVO:8000641`) | Polycyclic aromatic hydrocarbon | `C12H8` | `CHEBI:33081` |
-| C12H10 aromatic hydrocarbons (`BERVO:8000642`) | Polycyclic aromatic hydrocarbon | `C12H10` |  |
+| C12H10 aromatic hydrocarbons (`BERVO:8000642`) | Organic compound | `C12H10` |  |
 | Fluorene (`BERVO:8000643`) | Polycyclic aromatic hydrocarbon | `C13H10` | `CHEBI:28266` |
 | Methylfluorene (`BERVO:8000644`) | Polycyclic aromatic hydrocarbon | `C14H12` |  |
 | Phenanthrene (`BERVO:8000645`) | Polycyclic aromatic hydrocarbon | `C14H10` | `CHEBI:28851` |
