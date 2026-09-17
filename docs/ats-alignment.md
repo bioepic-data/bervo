@@ -112,6 +112,7 @@ Two rows carry a comment without a synonym:
 | Liquid water molar density (`BERVO:0001881`) | Water variable | `molar_density_liquid` | mol m-3 |
 | Soil particle density (`BERVO:0001882`) | Soil variable | `density_rock` | kg m-3 |
 | Stem area index (`BERVO:8000588`) | Concept | | |
+| Thermal conductivity (`BERVO:8000589`) | Physical property | | |
 
 Seven of the new variables also name the EcoSIM variable that supplies them:
 `SnowOnCanopy_pft`, `TEvapXAir2Toplay_col`, `TEvapXAir2LitR_col`, `EVAPW_col`,
