@@ -243,6 +243,10 @@ worse than none.
 | `AGRO` | Agronomy — *Irrigation* → `AGRO:00000006` | 1 |
 | `MIXS` | Sequence-metadata standard fields | 4 |
 | `COMO` | Measurement and experiment metadata concepts | 275 |
+| `ODM2` | ODM2 controlled vocabularies, as `ODM2:speciation/<id>` — *Nitrite* → `ODM2:speciation/NO2` | 143 |
+
+`ODM2` covers the ODM2 speciation vocabulary (see `docs/odm2-speciation.md`); the same
+prefix is meant for its other vocabularies, with the scheme name in the local part.
 
 `COMO` is the dominant prefix and covers the generic measurement/experiment vocabulary
 (`BERVO:8000298`–`BERVO:8000527` are largely a systematic COMO mapping): *Experimental
