@@ -35525,7 +35525,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000036">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000112"/>
         <obo:IAO_0000115>An anion formed when chlorine gains an electron to achieve a stable electron configuration, commonly occurring in natural waters and soils. This ion affects soil salinity, plant salt tolerance, water quality, and serves as a conservative tracer for studying water movement and mixing processes in hydrological and ecological studies.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Cl</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Cl-</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Cl</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Chloride</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -46198,7 +46199,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
         <obo:IAO_0000115>Capacity of a water sample to neutralise acid, summed over all its titratable bases and commonly reported as an equivalent concentration of calcium carbonate.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/TA"/>
-        <oboInOwl:hasExactSynonym>alkalinity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>alkalinity</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
         <rdfs:comment>ODM2 speciation concept &quot;TA&quot;: Expressed as total alkalinity</rdfs:comment>
         <rdfs:label>Total alkalinity</rdfs:label>

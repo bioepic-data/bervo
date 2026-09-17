@@ -67,8 +67,9 @@ the scheme itself.
 ## Points to note
 
 - ODM2 `Cl` is defined as "expressed as chlorine", so it maps to the new
-  element Chlorine, not to Chloride (`BERVO:8000036`), which keeps `Cl` as a
-  synonym.
+  element Chlorine, not to Chloride (`BERVO:8000036`). Chloride's exact synonym
+  `Cl` becomes `Cl-`, with `Cl` kept as a related synonym, so that no exact
+  synonym names two terms.
 - ODM2 `NO2` is nitrite. It maps to the new Nitrite, not to Nitrogen dioxide
   (`BERVO:8000123`), whose synonym is also `NO2`.
 - ODM2 `SiO2` is defined as "expressed as silicate". The BERVO term is
@@ -80,9 +81,10 @@ the scheme itself.
 - Twelve ODM2 concepts are molecular formulas that stand for several isomers
   ("C16H10, e.g., fluoranthene, pyrene"). Six of them get a formula-based
   label such as C16H10 aromatic hydrocarbons, with the named isomers as related
-  synonyms and no CHEBI cross-reference. The other six (dichloroethane,
-  trichloroethane, tetrachloroethane, and the like) get the generic name, and
-  a CHEBI class cross-reference only where CHEBI has the generic class.
+  synonyms and no CHEBI cross-reference. The rest, such as dichloroethane,
+  trichloroethane, dichlorobenzene, and the methylated naphthalenes, get the
+  generic name, and a CHEBI class cross-reference only where CHEBI has the
+  generic class.
 - Total alkalinity has no CHEBI term. It sits under Physical property beside
   pH.
 - Aluminum (`BERVO:8000180`) already carries `CHEBI:33620`, which is
