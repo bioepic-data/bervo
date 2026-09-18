@@ -131,8 +131,11 @@ Numeric IDs are 7 digits, allocated in blocks by term kind:
 | `8xxxxxx` | `BERVO:8000000`–`BERVO:8999999` | Concepts (units, qualifiers, attributes, contexts) | ~550 |
 | `9xxxxxx` | `BERVO:9000000`–`BERVO:9999999` | Grouping classes | ~35 |
 
-The ontology has two roots: `BERVO:0000000` ("Variable") heads the variable block and
-`BERVO:8000232` ("Concept") heads the concept block. Neither has a `Category`.
+The ontology has two roots, `BERVO:0000000` ("Variable") and `BERVO:8000232` ("Concept").
+Neither has a `Category`. A term's ID block does not decide which root it descends from:
+the ~212 constants under `Constant` (`BERVO:9000020`) carry `0xxxxxx` IDs and sit under
+Concept, and `Quality control flag` (`BERVO:8000563`) sits under Variable. Pick the block
+by the ID allocation table above and the parent by what the term is.
 
 Nine properties predate this scheme and keep mnemonic local names: `BERVO:has_unit`,
 `BERVO:Qualifier`, `BERVO:Attribute`, `BERVO:measured_in`, `BERVO:measurement_of`,
