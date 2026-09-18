@@ -57,6 +57,8 @@ are not mapped.
   includes soil rather than naming it, so the synonym is dropped.
 - Where a term carries more than one ODM2 comment, as Water does, each quoted
   definition ends with a period before the next begins.
+- Plant (`BERVO:8000021`) and Microbes (`BERVO:8000091`) move under the new
+  Organism from Concept. Bacteria stays under Microbes.
 - Mineral sits under Chemical, following CHEBI, and Apatite (`BERVO:8000052`)
   moves under it from Chemical.
 - `COB` joins the validator's list of OBO prefixes ROBOT can expand, for the
