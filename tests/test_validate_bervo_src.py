@@ -180,6 +180,11 @@ class TestReferentialIntegrity(ValidatorTestCase):
         report = validator.validate(self.write([ROOT]))
         self.assertFalse(any("orphan class" in w for w in report.warnings), report.warnings)
 
+    def test_concept_root_is_not_reported_as_an_orphan(self):
+        """Concept heads the 8xxxxxx block beside Variable, so it has no parent either."""
+        report = validator.validate(self.write([ROOT, row("BERVO:8000232", "Concept", category="")]))
+        self.assertFalse(any("orphan class" in w for w in report.warnings), report.warnings)
+
     def test_obsolete_term_is_not_reported_as_an_orphan(self):
         """An obsoleted term leaves the hierarchy on purpose; it keeps its row and ID."""
         report = validator.validate(self.write([

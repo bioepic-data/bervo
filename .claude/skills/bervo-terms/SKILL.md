@@ -89,7 +89,7 @@ Errors always block. Warnings need a judgement call:
 | `references '<label>' … did you mean '<other>'?` | Almost always a case or spelling typo. Fix it. |
 | `references '<label>', which is not a term label` (no suggestion) | Either the target term needs creating, or the cell should be a literal. Ask a curator if unclear. |
 | `has no Type` | Set `Class` unless it is a property. |
-| `has no Category and no Parents` | Give it a parent unless it is the root or a property. |
+| `has no Category and no Parents` | Give it a parent unless it is one of the two roots (`Variable`, `Concept`) or a property. |
 | `ID … outside the allocated blocks` | You allocated by hand. Use `just next-id`. |
 
 There is a known backlog of unresolvable-label warnings in `qualifiers`,

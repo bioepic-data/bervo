@@ -38977,9 +38977,9 @@
     <!-- https://w3id.org/bervo/BERVO_8000232 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000232">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The foundational category that serves as the parent classification for all conceptual terms in the Biological and Environmental Research Variable Ontology. This abstract class encompasses all non-variable concepts that describe entities, processes, and properties fundamental to understanding earth and environmental science systems.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>root class of ontology</rdfs:comment>
         <rdfs:label>Concept</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
