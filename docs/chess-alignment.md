@@ -53,6 +53,10 @@ plants.
 | `Le_2200`, `Le_FV2200`, `Le_WN` | Effective leaf area index (`BERVO:0001889`) | Plant trait variable | `m2 m-2` |
 | | Plant area index (`BERVO:0001890`) | Plant trait variable | `m2 m-2` |
 
+Plant area index has no CHESS column. It is what an optical canopy analyser
+measures before the woody correction, and the corrected columns are derived
+from it, so it is here as the quantity the corrections start from.
+
 The method-specific true LAI columns (`L_2200`, `L_SCATCOR`, `L_WN`, `L_LANG`,
 `L_ELLIP`, `L_FV2200`) all map to Canopy leaf area index (`BERVO:0001879`).
 They differ in retrieval method, not in the quantity. The clumping columns
@@ -76,13 +80,18 @@ given BERVO terms.
 | CHESS columns | BERVO term | Parent | Unit |
 | --- | --- | --- | --- |
 | `cwd` | Climatic water deficit (`BERVO:0001896`) | Soil and water variable | `mm` |
-| `mean annual precipitation`, `average seasonal precipitation` | Mean annual precipitation (`BERVO:0001897`) | Climate force variable | `mm` |
+| `mean annual precipitation` | Mean annual precipitation (`BERVO:0001897`) | Climate force variable | `mm` |
 
 ### Soil
 
 | CHESS columns | BERVO term | Parent | Unit |
 | --- | --- | --- | --- |
 | `infiltrations` | Soil infiltration rate (`BERVO:0001898`) | Soil and water variable | `mm h-1` |
+
+Soil infiltration rate is the capacity measured with an infiltrometer under
+an unlimited supply of water. Infiltration into soil (`BERVO:0001821`) is the
+flux that actually enters the soil under the rain or irrigation present, the
+quantity EcoSIM and ATS exchange. They share a dimension and not a meaning.
 | `microbial biomass carbon` | Soil microbial biomass carbon (`BERVO:0001899`) | Microbial biomass chemical element | `mg C kg-1` |
 | `microbial biomass nitrogen` | Soil microbial biomass nitrogen (`BERVO:0001900`) | Microbial biomass chemical element | `mg N kg-1` |
 | `nitrite_nitrogen` | Soil nitrite content (`BERVO:0001901`) | Soil biogeochemistry variable | `mg kg-1` |
@@ -94,8 +103,8 @@ given BERVO terms.
 
 | CHESS columns | BERVO term | Change made |
 | --- | --- | --- |
-| `Elevation`, `Elevation_m`, `Topographical_Elevation` | Measurement of altitude (`BERVO:0000683`) | `elevation` added as an exact synonym; columns noted in the comment |
-| `aet` | Evapotranspiration (`BERVO:0001809`) | `actual evapotranspiration` and `AET` added as exact synonyms |
+| `Elevation`, `Elevation_m`, `Topographical_Elevation` | Measurement of altitude (`BERVO:0000683`) | `elevation` added as a related synonym; columns noted in the comment. Three altitude variables overlap (`BERVO:0000670`, `BERVO:0000676`, `BERVO:0000683`) and which one should own the word is not settled |
+| `aet` | Evapotranspiration (`BERVO:0001809`) | `actual evapotranspiration` and `AET` added as related synonyms, since a potential evapotranspiration term may follow |
 | `swe`, `delta_swe` | Snow water equivalent (`BERVO:0001873`) | none; added for ATS in #65 |
 | `L_*` (true LAI, any method) | Canopy leaf area index (`BERVO:0001879`) | none |
 | `CII`, `ACF_*` | Apparent clumping factor (`BERVO:8000562`) | none |
@@ -117,7 +126,8 @@ given BERVO terms.
 - **Spectroscopy and LiDAR products** (hyperspectral reflectance, canopy
   water content from spectra, shade fraction, canopy height model, DTM/DSM).
   Data products rather than variables; deferred.
-- **`non-microbial biomass`** and **`mean seasonal temperature`**. Too
-  ambiguous to define without the dataset's own definition.
+- **`non-microbial biomass`**, **`mean seasonal temperature`**, and
+  **`average seasonal precipitation`**. Too ambiguous to define without the
+  dataset's own definition of the season.
 - **Administrative columns** (dates, photo references, plot identifiers,
   notes). Not variables.

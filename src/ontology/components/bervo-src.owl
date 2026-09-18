@@ -12817,8 +12817,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000683">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
         <obo:IAO_0000115>The vertical distance of a land surface point above a reference datum such as mean sea level, representing elevation in meters or feet across terrestrial landscapes. This parameter is fundamental for understanding atmospheric pressure variations, temperature gradients, precipitation patterns, and biodiversity distributions along elevational gradients in mountain and highland ecosystems.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>elevation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>ALTZ_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>elevation</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CHESS: Elevation, Elevation_m, Topographical_Elevation.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:comment>How does this differ from the concept term?</rdfs:comment>
@@ -33499,9 +33499,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001809">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>The combined rate of water loss from soil and plant surfaces through evaporation and plant transpiration processes, representing the primary pathway for water return to the atmosphere in terrestrial ecosystems. This parameter integrates plant physiological processes with physical evaporation and is fundamental for water balance calculations, irrigation scheduling, and understanding ecosystem water use efficiency.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>AET</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>actual evapotranspiration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>AET</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>EvapoTransp_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>actual evapotranspiration</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Evapotranspiration</rdfs:label>
@@ -34847,7 +34847,6 @@
         <oboInOwl:hasExactSynonym>FVC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>vegetation cover fraction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>fractional cover</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>vegetation cover</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CHESS: Vegetation_Cover, Cover_Percent, FractionalCover. Percent area covered by specified plant (BERVO:0001834) is the per-taxon form.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
         <rdfs:label>Fractional vegetation cover</rdfs:label>
@@ -34919,7 +34918,7 @@
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
     </Class>
     
 
@@ -34938,7 +34937,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m2 ha-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
     </Class>
     
@@ -34959,7 +34958,7 @@
         <bervo:BERVO_has_unit>ha-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_unit>m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
     </Class>
     
@@ -34993,7 +34992,7 @@
         <obo:IAO_0000115>One-sided area of all above-ground plant material, foliage and woody parts together, per unit horizontal ground area.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>PAI</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
-        <rdfs:comment>What an optical canopy analyser measures before woody area is removed; the sum of Canopy leaf area index (BERVO:0001879) and Stem area index (BERVO:8000588).</rdfs:comment>
+        <rdfs:comment>What an optical canopy analyser measures before woody area is removed; the sum of Canopy leaf area index (BERVO:0001879) and Canopy stem area index (BERVO:0001880). No CHESS column reports it; it is here because it is what the instrument measures before the woody correction.</rdfs:comment>
         <rdfs:label>Plant area index</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
@@ -35135,7 +35134,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
         <obo:IAO_0000115>Depth of precipitation received at a site over a year, averaged across a stated run of years.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>MAP</oboInOwl:hasExactSynonym>
-        <rdfs:comment>CHESS: mean annual precipitation, average seasonal precipitation.</rdfs:comment>
+        <rdfs:comment>CHESS: mean annual precipitation.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
         <rdfs:label>Mean annual precipitation</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
@@ -35153,9 +35152,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001898">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
-        <obo:IAO_0000115>Rate at which water enters the soil through its surface per unit area, measured as a depth of water per unit time.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which water can enter the soil through its surface under an unlimited supply of water at the surface, a property of the soil measured as a depth of water per unit time with an infiltrometer.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>infiltration capacity</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>infiltration rate</oboInOwl:hasExactSynonym>
-        <rdfs:comment>CHESS: infiltrations. Approaches Soil vertical saturated hydraulic conductivity (BERVO:0001501) at steady state under ponding.</rdfs:comment>
+        <rdfs:comment>CHESS: infiltrations. A capacity of the soil, distinct from Infiltration into soil (BERVO:0001821), which is the water flux actually entering the soil under the supply present. Falls toward Soil vertical saturated hydraulic conductivity (BERVO:0001501) as the profile wets.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
         <rdfs:label>Soil infiltration rate</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
@@ -35281,10 +35281,10 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>mg CaCO3 kg-1 per pH unit</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>mg CaCO3 kg-1 pH-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000261"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000094"/>
     </Class>
     
 
