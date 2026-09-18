@@ -35995,7 +35995,6 @@
         <oboInOwl:hasExactSynonym>ground</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>humus</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>loam</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>regolith</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:comment>ODM2 medium concept &quot;Soil&quot;: Specimen collected from soil or sensor emplaced to measure properties of soil. Soil includes the mixture of minerals, organic matter, gasses, liquids, and organisms that make up the upper layer of earth in which plants grow.</rdfs:comment>
         <rdfs:label>Soil</rdfs:label>
@@ -36693,7 +36692,7 @@
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/liquidAqueous"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/H2O"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
-        <rdfs:comment>ODM2 speciation concept &quot;H2O&quot;: Expressed as water ODM2 medium concept &quot;Liquid aqueous&quot;: Specimen collected as liquid water or sensor emplaced to measure properties of water in sampled environment.</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;H2O&quot;: Expressed as water. ODM2 medium concept &quot;Liquid aqueous&quot;: Specimen collected as liquid water or sensor emplaced to measure properties of water in sampled environment.</rdfs:comment>
         <rdfs:label>Water</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>

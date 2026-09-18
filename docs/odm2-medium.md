@@ -53,6 +53,10 @@ are not mapped.
   defines vegetation as the plant cover of an area, not taxonomically, which
   is a different thing from a plant. Vegetation is now its own term and
   `vegetation` is a related synonym of Plant.
+- Soil (`BERVO:8000062`) carried `regolith` as a related synonym. Regolith
+  includes soil rather than naming it, so the synonym is dropped.
+- Where a term carries more than one ODM2 comment, as Water does, each quoted
+  definition ends with a period before the next begins.
 - Mineral sits under Chemical, following CHEBI, and Apatite (`BERVO:8000052`)
   moves under it from Chemical.
 - `COB` joins the validator's list of OBO prefixes ROBOT can expand, for the
