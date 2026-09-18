@@ -12817,7 +12817,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000683">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
         <obo:IAO_0000115>The vertical distance of a land surface point above a reference datum such as mean sea level, representing elevation in meters or feet across terrestrial landscapes. This parameter is fundamental for understanding atmospheric pressure variations, temperature gradients, precipitation patterns, and biodiversity distributions along elevational gradients in mountain and highland ecosystems.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>elevation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>ALTZ_col</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>CHESS: Elevation, Elevation_m, Topographical_Elevation.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:comment>How does this differ from the concept term?</rdfs:comment>
         <rdfs:comment>LandSurfDataType.txt</rdfs:comment>
@@ -33497,6 +33499,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001809">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>The combined rate of water loss from soil and plant surfaces through evaporation and plant transpiration processes, representing the primary pathway for water return to the atmosphere in terrestrial ecosystems. This parameter integrates plant physiological processes with physical evaporation and is fundamental for water balance calculations, irrigation scheduling, and understanding ecosystem water use efficiency.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>AET</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>actual evapotranspiration</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>EvapoTransp_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
@@ -34831,6 +34835,456 @@
         <bervo:BERVO_has_unit>kg m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001883 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001883">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Fraction of a horizontal ground area covered by the vertical projection of vegetation, without regard to the taxa that compose it.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>FVC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>vegetation cover fraction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>fractional cover</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>vegetation cover</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>CHESS: Vegetation_Cover, Cover_Percent, FractionalCover. Percent area covered by specified plant (BERVO:0001834) is the per-taxon form.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Fractional vegetation cover</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m2 m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001884 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001884">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Diameter of a plant stem measured perpendicular to its axis at a stated height above the ground.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:comment>General form; Stem diameter at breast height is the forest inventory convention.</rdfs:comment>
+        <rdfs:label>Stem diameter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>cm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001885 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001885">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001884"/>
+        <obo:IAO_0000115>Diameter of a tree stem measured over bark at breast height, by convention 1.3 m above the ground, or 1.37 m in the United States, on the uphill side of the tree.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>DBH</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>diameter at breast height</oboInOwl:hasExactSynonym>
+        <rdfs:comment>CHESS: Stem_DBH, DBH_1_CM, DBH_2_CM, DBH_Avg_CM. Allometric equations take this as their input for biomass and carbon stock.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Stem diameter at breast height</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>cm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001886 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001886">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Position of a tree crown in the canopy relative to its neighbours, classed by the light the crown receives, conventionally as dominant, codominant, intermediate, or suppressed.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>canopy position class</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>crown position</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>CHESS: Crown_Class, Canopy_Position. The Kraft crown classes.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Crown class</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001887 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001887">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Sum of the cross-sectional areas of tree stems at breast height per unit ground area.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>basal area</oboInOwl:hasExactSynonym>
+        <rdfs:comment>CHESS: ba. Computed from Stem diameter at breast height.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Stand basal area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m2 ha-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001888 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001888">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Number of stems per unit ground area, counted at or above a stated minimum size.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>tree density</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>CHESS: density, abla_density, pien_density, pico_density, each a per-species stem density. Plant population (BERVO:0000725) counts individuals; a plant with several stems counts once there and once per stem here.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Stem density</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>ha-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001889 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001889">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Leaf area index retrieved from canopy gap fraction under the assumption that foliage is randomly distributed, uncorrected for clumping; the product of the true leaf area index and the clumping index.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Le</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>effective LAI</oboInOwl:hasExactSynonym>
+        <rdfs:comment>CHESS: Le_2200, Le_FV2200, Le_WN. Divide by the Apparent clumping factor (BERVO:8000562) to recover Canopy leaf area index (BERVO:0001879).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Effective leaf area index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000164"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m2 m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001890 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001890">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>One-sided area of all above-ground plant material, foliage and woody parts together, per unit horizontal ground area.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>PAI</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:comment>What an optical canopy analyser measures before woody area is removed; the sum of Canopy leaf area index (BERVO:0001879) and Stem area index (BERVO:8000588).</rdfs:comment>
+        <rdfs:label>Plant area index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m2 m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001891 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001891">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
+        <obo:IAO_0000115>Steady-state index of the tendency of a point on the land surface to accumulate water, the natural logarithm of the specific upslope contributing area divided by the tangent of the local slope.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>CTI</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>TWI</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>compound topographic index</oboInOwl:hasExactSynonym>
+        <rdfs:comment>CHESS: twi. Beven and Kirkby (1979).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Topographic wetness index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>dimensionless</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001892 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001892">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
+        <obo:IAO_0000115>Difference between the elevation of a point and the mean elevation of a surrounding neighbourhood of stated radius, positive on ridges and negative in valleys.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>TPI</oboInOwl:hasExactSynonym>
+        <rdfs:comment>CHESS: tpi. Weiss (2001).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Topographic position index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001893 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001893">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
+        <obo:IAO_0000115>Second derivative of land surface elevation, the rate at which slope changes across the surface, with profile, plan, and total curvature as its directional forms.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>surface curvature</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>terrain curvature</oboInOwl:hasExactSynonym>
+        <rdfs:comment>CHESS: curvature. The sign convention differs between GIS tools, so a dataset should state which sign is convex.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Land surface curvature</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001894 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001894">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
+        <obo:IAO_0000115>Index of the potential direct incident radiation a slope receives, computed from latitude, slope, and folded aspect so that southwest-facing slopes score highest.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>HLI</oboInOwl:hasExactSynonym>
+        <rdfs:comment>CHESS: heat_load. McCune and Keon (2002).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Heat load index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>dimensionless</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001895 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001895">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000685"/>
+        <obo:IAO_0000115>Aspect folded about a stated axis so that slopes facing the warmest direction take the largest value and slopes facing away from it take zero, removing the circularity of compass aspect.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>transformed aspect</oboInOwl:hasExactSynonym>
+        <rdfs:comment>CHESS: folded_aspect_205, folded about the 205 degree axis as |180 - |aspect - 205||. Beers et al. (1966) fold about 45 degrees.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Folded aspect</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000255"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>degree</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001896 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001896">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
+        <obo:IAO_0000115>Amount by which potential evapotranspiration exceeds actual evapotranspiration over a period, the evaporative demand a site could not meet from the water available to it.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>CWD</oboInOwl:hasExactSynonym>
+        <rdfs:comment>CHESS: cwd. Stephenson (1998).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Climatic water deficit</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000114"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001897 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001897">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
+        <obo:IAO_0000115>Depth of precipitation received at a site over a year, averaged across a stated run of years.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>MAP</oboInOwl:hasExactSynonym>
+        <rdfs:comment>CHESS: mean annual precipitation, average seasonal precipitation.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Mean annual precipitation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000259"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001898 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001898">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
+        <obo:IAO_0000115>Rate at which water enters the soil through its surface per unit area, measured as a depth of water per unit time.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>infiltration rate</oboInOwl:hasExactSynonym>
+        <rdfs:comment>CHESS: infiltrations. Approaches Soil vertical saturated hydraulic conductivity (BERVO:0001501) at steady state under ponding.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Soil infiltration rate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mm h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001899 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001899">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000995"/>
+        <obo:IAO_0000115>Mass of carbon held in the living microbial biomass of a soil per unit soil mass, commonly determined by chloroform fumigation and extraction.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>MBC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>microbial biomass C</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>CHESS: microbial biomass carbon.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Soil microbial biomass carbon</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg C kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001900 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001900">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000995"/>
+        <obo:IAO_0000115>Mass of nitrogen held in the living microbial biomass of a soil per unit soil mass, commonly determined by chloroform fumigation and extraction.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>MBN</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>microbial biomass N</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>CHESS: microbial biomass nitrogen.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Soil microbial biomass nitrogen</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg N kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001901 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001901">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Concentration of nitrite ions in soil, the intermediate of nitrification and denitrification, per unit mass of soil.</obo:IAO_0000115>
+        <rdfs:comment>CHESS: nitrite_nitrogen. Sibling of Soil ammonium content (BERVO:0000856) and Soil nitrate content (BERVO:0000857).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Soil nitrite content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000627"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001902 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001902">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
+        <obo:IAO_0000115>Mass of manganese per unit mass of soil, as total or extractable manganese according to the method stated.</obo:IAO_0000115>
+        <rdfs:comment>CHESS: manganese.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Soil manganese content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg Mn kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000608"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001903 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001903">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
+        <obo:IAO_0000115>Mass of zinc per unit mass of soil, as total or extractable zinc according to the method stated.</obo:IAO_0000115>
+        <rdfs:comment>CHESS: zinc.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Soil zinc content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg Zn kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000625"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001904 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001904">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Amount of lime, as calcium carbonate equivalent, required to raise the pH of a unit mass of soil by one unit, a measure of the resistance of the soil to change in pH.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>LBC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>lime buffer capacity</oboInOwl:hasExactSynonym>
+        <rdfs:comment>CHESS: lime buffer capacity.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
+        <rdfs:label>Soil lime buffer capacity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg CaCO3 kg-1 per pH unit</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000261"/>
     </Class>
     
 
