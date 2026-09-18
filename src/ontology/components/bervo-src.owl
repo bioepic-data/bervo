@@ -35236,9 +35236,9 @@
     <!-- https://w3id.org/bervo/BERVO_8000021 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000021">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000717"/>
         <obo:IAO_0000115>A multicellular organism that typically produces its own food through photosynthesis, serving as the primary producer in most terrestrial ecosystems. These organisms are fundamental for understanding carbon cycling, oxygen production, habitat structure, and the foundation of food webs in earth system science and ecological research.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>vegetation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>vegetation</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Plant</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -35356,8 +35356,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000027">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
         <obo:IAO_0000115>The solid form of water that occurs when water freezes below zero degrees Celsius, playing critical roles in hydrological and climatic systems. This phase of water affects surface albedo, seasonal water storage, habitat availability, and serves as a major component of the cryosphere that influences global climate and regional water resources.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/ice"/>
         <oboInOwl:hasExactSynonym>frozen water</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 medium concept &quot;Ice&quot;: Sample collected as frozen water or sensor emplaced to measure properties of ice.</rdfs:comment>
         <rdfs:label>Ice</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -35545,7 +35547,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>Fine particles of mineral material with diameters between 2 and 50 micrometers that are transported by water and wind and deposited as sediment. This particle size class influences soil texture, water retention, nutrient holding capacity, and erosion susceptibility in terrestrial ecosystems and sedimentary environments.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>fine particles</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>sediment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>sediment</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Silt</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -35775,9 +35777,11 @@
     <!-- https://w3id.org/bervo/BERVO_8000050 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000050">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>The mixture of gases that surrounds Earth and forms its atmosphere, consisting primarily of nitrogen, oxygen, carbon dioxide, and trace gases. This gaseous medium facilitates gas exchange processes, affects plant photosynthesis and respiration, influences atmospheric pressure and weather patterns, and serves as the primary reservoir for atmospheric trace gases in earth system science.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/air"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 medium concept &quot;Air&quot;: Specimen collection of ambient air or sensor emplaced to measure properties of ambient air.</rdfs:comment>
         <rdfs:label>Air</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -35810,7 +35814,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000052 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000052">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
         <obo:IAO_0000115>A group of phosphate minerals commonly found in rocks, soils, and biological systems that represent important sources of phosphorus for plants and ecosystems. These minerals control phosphorus availability through weathering processes, influence soil fertility, and serve as long-term reservoirs of phosphorus in terrestrial and marine biogeochemical cycles.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Apatite</rdfs:label>
@@ -35862,7 +35866,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000055 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000055">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>Dead plant material such as leaves, bark, twigs, and other organic debris that has fallen to the ground and forms the surface organic layer. This material provides habitat for decomposer organisms, controls soil moisture and temperature, serves as a source of nutrients through decomposition, and represents a critical component of carbon and nutrient cycling in terrestrial ecosystems.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Litter</rdfs:label>
@@ -35983,15 +35987,16 @@
     <!-- https://w3id.org/bervo/BERVO_8000062 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000062">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>The upper layer of earth in which plants grow, consisting of weathered rock particles, organic matter, water, air, and living organisms. This complex medium supports terrestrial life by providing mechanical support, nutrients, and water to plants while serving as a habitat for countless organisms and a major reservoir for carbon, nitrogen, and other biogeochemical cycles.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00001998"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/soil"/>
         <oboInOwl:hasExactSynonym>dirt</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ground</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>humus</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>loam</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>regolith</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 medium concept &quot;Soil&quot;: Specimen collected from soil or sensor emplaced to measure properties of soil. Soil includes the mixture of minerals, organic matter, gasses, liquids, and organisms that make up the upper layer of earth in which plants grow.</rdfs:comment>
         <rdfs:label>Soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -36392,9 +36397,11 @@
     <!-- https://w3id.org/bervo/BERVO_8000086 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000086">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>A state of matter consisting of particles that move freely and expand to fill available containers, including atmospheric gases and soil air. This phase of matter facilitates gas exchange processes, affects atmospheric composition, controls respiration and photosynthesis, and serves as a medium for volatile chemical transport in environmental systems.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/gas"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 medium concept &quot;Gas&quot;: Gas phase specimen or sensor emplaced to measure properties of a gas.</rdfs:comment>
         <rdfs:label>Gas</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -36478,7 +36485,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000091 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000091">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000717"/>
         <obo:IAO_0000115>The diverse community of microorganisms including bacteria, archaea, fungi, and protists present in a given environment. These organisms drive essential biogeochemical processes, decomposition, nutrient cycling, and symbiotic relationships that are fundamental for ecosystem functioning and environmental quality maintenance.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>microorganisms</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
@@ -36679,12 +36686,14 @@
     <!-- https://w3id.org/bervo/BERVO_8000102 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000102">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
         <obo:IAO_0000115>A transparent, odorless, and tasteless liquid essential for all forms of life and the most abundant compound on Earth&apos;s surface. This molecule serves as the universal solvent, controls climate patterns, supports biological processes, and represents the fundamental medium for biogeochemical reactions and ecosystem functioning.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15377"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/liquidAqueous"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/H2O"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
-        <rdfs:comment>ODM2 speciation concept &quot;H2O&quot;: Expressed as water</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;H2O&quot;: Expressed as water. ODM2 medium concept &quot;Liquid aqueous&quot;: Specimen collected as liquid water or sensor emplaced to measure properties of water in sampled environment.</rdfs:comment>
         <rdfs:label>Water</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -36702,7 +36711,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
         <obo:IAO_0000115>Precipitation in the form of ice crystals that accumulates on land surfaces and serves as a major component of the hydrological cycle. This frozen water form affects surface albedo, provides seasonal water storage, influences plant dormancy patterns, and controls spring flooding and water resource availability in many regions.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000406"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/snow"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 medium concept &quot;Snow&quot;: Observation in, of or sample taken from snow.</rdfs:comment>
         <rdfs:label>Snow</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -37698,10 +37709,12 @@
     <!-- https://w3id.org/bervo/BERVO_8000160 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000160">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>Particles of organic or inorganic matter that settle out of water or air due to gravitational forces, forming deposits in aquatic and terrestrial environments. These materials affect water quality, habitat structure, nutrient cycling, and represent important components of geomorphological and biogeochemical processes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002007"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/sediment"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 medium concept &quot;Sediment&quot;: Specimen collected from material broken down by processes of weathering and erosion and subsequently transported by the action of wind, water, or ice, and/or by the force of gravity acting on the particles. Sensors may also be emplaced to measure sediment properties.</rdfs:comment>
         <rdfs:label>Sediment</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -40299,7 +40312,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The analytical or measurement device employed to collect data, including specifications such as make, model, serial number, and calibration information. Instrument selection critically influences measurement accuracy, precision, and comparability across studies, making detailed documentation essential for data quality assessment and method standardization.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000012"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/equipment"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 medium concept &quot;Equipment&quot;: An instrument, sensor or other piece of human-made equipment upon which a measurement is made, such as datalogger temperature or battery voltage.</rdfs:comment>
         <rdfs:label>Instrument</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -42038,6 +42053,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The physical substrate or substance collected from the environment for analysis such as soil, water, sediment, or air. Environmental material characterization specifies the source compartment of measured variables.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000230"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
         <rdfs:label>Environmental material</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -43646,7 +43662,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>A group of cells with similar structure and function forming a distinct component of an organism. Tissues are organizational units in multicellular organisms.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000482"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/tissue"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 medium concept &quot;Tissue&quot;: Sample of a living organism&apos;s tissue or sensor emplaced to measure property of tissue.</rdfs:comment>
         <rdfs:label>Tissue</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -47959,6 +47977,171 @@
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ODM2 speciation alignment for issue #66</rdfs:comment>
         <rdfs:comment>ODM2 speciation concept &quot;C6HCl5O&quot;: Expressed as pentachlorophenol</rdfs:comment>
         <rdfs:label>Pentachlorophenol</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000716 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000716">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Plant cover of an area taken as a whole, without regard to the taxa that compose it.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/vegetation"/>
+        <oboInOwl:hasExactSynonym>vegetation cover</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), ODM2 medium alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 medium concept &quot;Vegetation&quot;: The plants of an area considered in general or as communities, but not taxonomically.</rdfs:comment>
+        <rdfs:label>Vegetation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000717 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000717">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Individual living entity, unicellular or multicellular, considered as a whole rather than as tissue, population, or community.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/organism"/>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), ODM2 medium alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 medium concept &quot;Organism&quot;: Data collected about a species at organism level.</rdfs:comment>
+        <rdfs:label>Organism</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000718 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000718">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Area of the environment, with its physical and biotic conditions, in which a particular population or species lives.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000739"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/habitat"/>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), ODM2 medium alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 medium concept &quot;Habitat&quot;: A habitat is an ecological or environmental area that is inhabited by a particular species of animal, plant, or other type of organism.</rdfs:comment>
+        <rdfs:label>Habitat</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000719 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000719">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
+        <obo:IAO_0000115>Naturally occurring solid aggregate of one or more minerals or mineraloids.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00001995"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/rock"/>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), ODM2 medium alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 medium concept &quot;Rock&quot;: Specimen collected from a naturally occuring solid aggregate of one or more minerals.</rdfs:comment>
+        <rdfs:label>Rock</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000720 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000720">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+        <obo:IAO_0000115>Naturally occurring inorganic solid of definite chemical composition and ordered crystal structure.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46662"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000256"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/mineral"/>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), ODM2 medium alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 medium concept &quot;Mineral&quot;: Specimen collected as a mineral.</rdfs:comment>
+        <rdfs:label>Mineral</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000721 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000721">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
+        <obo:IAO_0000115>Entire unconsolidated or secondarily recemented cover of weathered and transported material that overlies coherent bedrock, from fractured basement rock and saprolite through soil, sediment, and organic accumulations.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000747"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/regolith"/>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), ODM2 medium alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 medium concept &quot;Regolith&quot;: The entire unconsolidated or secondarily recemented cover that overlies more coherent bedrock, that has been formed by weathering, erosion, transport and/or deposition of the older material. The regolith thus includes fractured and weathered basement rocks, saprolites, soils, organic accumulations, volcanic material, glacial deposits, colluvium, alluvium, evaporitic sediments, aeolian deposits and ground water. Everything from fresh rock to fresh air.</rdfs:comment>
+        <rdfs:label>Regolith</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000722 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000722">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
+        <obo:IAO_0000115>Solid or liquid particles suspended in a fluid such as water or air, collected or measured as the particulate fraction of the mixture.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000060"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/particulate"/>
+        <oboInOwl:hasExactSynonym>particulate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>particulates</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>suspended particulate matter</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), ODM2 medium alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 medium concept &quot;Particulate&quot;: Specimen collected from particulates suspended in a paticulate-fluid mixture. Examples include particulates in water or air.</rdfs:comment>
+        <rdfs:label>Particulate matter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000723 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000723">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
+        <obo:IAO_0000115>Liquid composed of organic compounds rather than water, such as a hydrocarbon or solvent phase.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/liquidOrganic"/>
+        <oboInOwl:hasRelatedSynonym>liquid organic</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), ODM2 medium alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 medium concept &quot;Liquid organic&quot;: Specimen collected as an organic liquid.</rdfs:comment>
+        <rdfs:label>Organic liquid</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
