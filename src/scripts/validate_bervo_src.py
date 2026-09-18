@@ -125,8 +125,9 @@ LABEL_OR_CURIE_COLUMNS = ("Category", "Parents")
 # not a parent -- a term with only this filled in is still an orphan.
 CLASS_EXPRESSION_COLUMNS = ("involves_chemicals",)
 
-# Terms legitimately without a parent: the ontology root and the properties.
-ROOTLESS_IDS = {"BERVO:0000000"} | MNEMONIC_IDS
+# Terms legitimately without a parent: the two roots and the properties. Variable
+# heads the 0xxxxxx block and Concept heads the 8xxxxxx block (issue #64).
+ROOTLESS_IDS = {"BERVO:0000000", "BERVO:8000232"} | MNEMONIC_IDS
 
 # Obsolete terms keep their row and ID but leave the hierarchy, so a label with
 # this prefix is not an orphan either.

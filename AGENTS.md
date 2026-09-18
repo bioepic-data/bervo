@@ -131,7 +131,8 @@ Numeric IDs are 7 digits, allocated in blocks by term kind:
 | `8xxxxxx` | `BERVO:8000000`–`BERVO:8999999` | Concepts (units, qualifiers, attributes, contexts) | ~550 |
 | `9xxxxxx` | `BERVO:9000000`–`BERVO:9999999` | Grouping classes | ~35 |
 
-`BERVO:0000000` ("Variable") is the ontology root.
+The ontology has two roots: `BERVO:0000000` ("Variable") heads the variable block and
+`BERVO:8000232` ("Concept") heads the concept block. Neither has a `Category`.
 
 Nine properties predate this scheme and keep mnemonic local names: `BERVO:has_unit`,
 `BERVO:Qualifier`, `BERVO:Attribute`, `BERVO:measured_in`, `BERVO:measurement_of`,
