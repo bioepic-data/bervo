@@ -31156,17 +31156,17 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001684">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
-        <obo:IAO_0000115>Soil Cl content refers to the concentration or amount of chloride (Cl) present in the soil. It is a parameter that characterizes the level of chloride ions in the soil system. The soil Cl content is an important parameter in earth system modeling as it can influence various processes such as nutrient cycling, plant growth, and soil salinity. Measurement of soil Cl content is typically done through laboratory analysis or remote sensing techniques.</obo:IAO_0000115>
+        <obo:IAO_0000115>The mass of chlorine per unit mass of soil, expressed as the element and determined as chloride, the form in which most soil chlorine occurs. It influences soil salinity, nutrient cycling, and plant growth.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CCL_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025); revised by Claude Opus 5 through Claude Code (Sep 18 2026) for issue #69</rdfs:comment>
         <rdfs:label>Soil chlorine content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>mg Cl kg-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000036"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000602"/>
     </Class>
     
 
