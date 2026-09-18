@@ -60,12 +60,17 @@ are not mapped.
 - Plant (`BERVO:8000021`) and Microbes (`BERVO:8000091`) move under the new
   Organism from Concept. Bacteria stays under Microbes.
 - Mineral sits under Chemical, following CHEBI, and Apatite (`BERVO:8000052`)
-  moves under it from Chemical.
+  moves under it from Chemical. See the last point for its second parent.
 - `COB` joins the validator's list of OBO prefixes ROBOT can expand, for the
   Organism cross-reference.
-- The material media (Soil, Air, Sediment, Rock, Regolith, Particulate matter,
-  Organic liquid) all sit directly under Concept, as Soil and Air did before.
-  BERVO has Environmental material (`BERVO:8000402`, from COMO), which is the
-  same notion as ODM2 medium. Gathering the media under it would be a
-  coherent change, but it re-parents Soil, the most referenced concept in the
-  ontology, and is left for a separate decision.
+- The material media now sit under Environmental material
+  (`BERVO:8000402`), which came from COMO with no children and is the same
+  notion as ODM2 medium. Soil, Air, Gas, Sediment, Litter, Rock, Regolith,
+  Particulate matter, and Organic liquid have it as `Category`. Water and
+  Mineral keep Chemical as `Category` and take Environmental material as a
+  second parent through `Parents`, so Rock and Mineral meet under one class.
+  Environmental material gains `ENVO:00010483` and Mineral gains
+  `ENVO:01000256` (mineral material) beside its CHEBI reference. Snow, Ice,
+  and Surface water inherit through Water. Tissue, Vegetation, Organism,
+  Habitat, and Instrument are media in ODM2 but not materials, and stay where
+  they are.

@@ -35777,7 +35777,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000050 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000050">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>The mixture of gases that surrounds Earth and forms its atmosphere, consisting primarily of nitrogen, oxygen, carbon dioxide, and trace gases. This gaseous medium facilitates gas exchange processes, affects plant photosynthesis and respiration, influences atmospheric pressure and weather patterns, and serves as the primary reservoir for atmospheric trace gases in earth system science.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/air"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
@@ -35866,7 +35866,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000055 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000055">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>Dead plant material such as leaves, bark, twigs, and other organic debris that has fallen to the ground and forms the surface organic layer. This material provides habitat for decomposer organisms, controls soil moisture and temperature, serves as a source of nutrients through decomposition, and represents a critical component of carbon and nutrient cycling in terrestrial ecosystems.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Litter</rdfs:label>
@@ -35987,7 +35987,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000062 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000062">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>The upper layer of earth in which plants grow, consisting of weathered rock particles, organic matter, water, air, and living organisms. This complex medium supports terrestrial life by providing mechanical support, nutrients, and water to plants while serving as a habitat for countless organisms and a major reservoir for carbon, nitrogen, and other biogeochemical cycles.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00001998"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/soil"/>
@@ -36397,7 +36397,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000086 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000086">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>A state of matter consisting of particles that move freely and expand to fill available containers, including atmospheric gases and soil air. This phase of matter facilitates gas exchange processes, affects atmospheric composition, controls respiration and photosynthesis, and serves as a medium for volatile chemical transport in environmental systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/gas"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
@@ -36686,6 +36686,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000102 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000102">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
         <obo:IAO_0000115>A transparent, odorless, and tasteless liquid essential for all forms of life and the most abundant compound on Earth&apos;s surface. This molecule serves as the universal solvent, controls climate patterns, supports biological processes, and represents the fundamental medium for biogeochemical reactions and ecosystem functioning.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15377"/>
@@ -37708,7 +37709,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000160 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000160">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>Particles of organic or inorganic matter that settle out of water or air due to gravitational forces, forming deposits in aquatic and terrestrial environments. These materials affect water quality, habitat structure, nutrient cycling, and represent important components of geomorphological and biogeochemical processes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002007"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/sediment"/>
@@ -42052,6 +42053,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The physical substrate or substance collected from the environment for analysis such as soil, water, sediment, or air. Environmental material characterization specifies the source compartment of measured variables.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000230"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
         <rdfs:label>Environmental material</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -48048,7 +48050,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000719 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000719">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>Naturally occurring solid aggregate of one or more minerals or mineraloids.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00001995"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/rock"/>
@@ -48068,9 +48070,11 @@
     <!-- https://w3id.org/bervo/BERVO_8000720 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000720">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
         <obo:IAO_0000115>Naturally occurring inorganic solid of definite chemical composition and ordered crystal structure.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46662"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000256"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/mineral"/>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), ODM2 medium alignment for issue #66</rdfs:comment>
         <rdfs:comment>ODM2 medium concept &quot;Mineral&quot;: Specimen collected as a mineral.</rdfs:comment>
@@ -48088,7 +48092,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000721 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000721">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>Entire unconsolidated or secondarily recemented cover of weathered and transported material that overlies coherent bedrock, from fractured basement rock and saprolite through soil, sediment, and organic accumulations.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000747"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/regolith"/>
@@ -48108,7 +48112,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000722 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000722">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>Solid or liquid particles suspended in a fluid such as water or air, collected or measured as the particulate fraction of the mixture.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000060"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/particulate"/>
@@ -48131,7 +48135,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000723 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000723">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>Liquid composed of organic compounds rather than water, such as a hydrocarbon or solvent phase.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/liquidOrganic"/>
         <oboInOwl:hasExactSynonym>liquid organic</oboInOwl:hasExactSynonym>
