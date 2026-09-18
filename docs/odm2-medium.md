@@ -57,6 +57,11 @@ are not mapped.
   includes soil rather than naming it, so the synonym is dropped.
 - Where a term carries more than one ODM2 comment, as Water does, each quoted
   definition ends with a period before the next begins.
+- `ENVO:01000060` is labelled "particulate environmental material" in ENVO.
+  It is the same thing as Particulate matter here.
+- `liquid organic` and `sediment` are ODM2's and Silt's names for things
+  rather than English synonyms, so they are related synonyms of Organic
+  liquid and Silt (`BERVO:8000037`), not exact ones.
 - Plant (`BERVO:8000021`) and Microbes (`BERVO:8000091`) move under the new
   Organism from Concept. Bacteria stays under Microbes.
 - Mineral sits under Chemical, following CHEBI, and Apatite (`BERVO:8000052`)

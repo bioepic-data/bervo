@@ -35547,7 +35547,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>Fine particles of mineral material with diameters between 2 and 50 micrometers that are transported by water and wind and deposited as sediment. This particle size class influences soil texture, water retention, nutrient holding capacity, and erosion susceptibility in terrestrial ecosystems and sedimentary environments.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>fine particles</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>sediment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>sediment</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Silt</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -48138,7 +48138,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>Liquid composed of organic compounds rather than water, such as a hydrocarbon or solvent phase.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/medium/liquidOrganic"/>
-        <oboInOwl:hasExactSynonym>liquid organic</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>liquid organic</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), ODM2 medium alignment for issue #66</rdfs:comment>
         <rdfs:comment>ODM2 medium concept &quot;Liquid organic&quot;: Specimen collected as an organic liquid.</rdfs:comment>
         <rdfs:label>Organic liquid</rdfs:label>
