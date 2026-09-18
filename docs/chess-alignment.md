@@ -87,17 +87,17 @@ given BERVO terms.
 | CHESS columns | BERVO term | Parent | Unit |
 | --- | --- | --- | --- |
 | `infiltrations` | Soil infiltration rate (`BERVO:0001898`) | Soil and water variable | `mm h-1` |
-
-Soil infiltration rate is the capacity measured with an infiltrometer under
-an unlimited supply of water. Infiltration into soil (`BERVO:0001821`) is the
-flux that actually enters the soil under the rain or irrigation present, the
-quantity EcoSIM and ATS exchange. They share a dimension and not a meaning.
 | `microbial biomass carbon` | Soil microbial biomass carbon (`BERVO:0001899`) | Microbial biomass chemical element | `mg C kg-1` |
 | `microbial biomass nitrogen` | Soil microbial biomass nitrogen (`BERVO:0001900`) | Microbial biomass chemical element | `mg N kg-1` |
 | `nitrite_nitrogen` | Soil nitrite content (`BERVO:0001901`) | Soil biogeochemistry variable | `mg kg-1` |
 | `manganese` | Soil manganese content (`BERVO:0001902`) | Soil and water variable | `mg Mn kg-1` |
 | `zinc` | Soil zinc content (`BERVO:0001903`) | Soil and water variable | `mg Zn kg-1` |
-| `lime buffer capacity` | Soil lime buffer capacity (`BERVO:0001904`) | Soil biogeochemistry variable | `mg CaCO3 kg-1 per pH unit` |
+| `lime buffer capacity` | Soil lime buffer capacity (`BERVO:0001904`) | Soil biogeochemistry variable | `mg CaCO3 kg-1 pH-1` |
+
+Soil infiltration rate is the capacity measured with an infiltrometer under
+an unlimited supply of water. Infiltration into soil (`BERVO:0001821`) is the
+flux that actually enters the soil under the rain or irrigation present, the
+quantity EcoSIM and ATS exchange. They share a dimension and not a meaning.
 
 ## CHESS variables mapped to existing BERVO terms
 

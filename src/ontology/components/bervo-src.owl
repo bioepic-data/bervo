@@ -35154,7 +35154,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>Rate at which water can enter the soil through its surface under an unlimited supply of water at the surface, a property of the soil measured as a depth of water per unit time with an infiltrometer.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>infiltration capacity</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>infiltration rate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>infiltration rate</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CHESS: infiltrations. A capacity of the soil, distinct from Infiltration into soil (BERVO:0001821), which is the water flux actually entering the soil under the supply present. Falls toward Soil vertical saturated hydraulic conductivity (BERVO:0001501) as the profile wets.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
         <rdfs:label>Soil infiltration rate</rdfs:label>
