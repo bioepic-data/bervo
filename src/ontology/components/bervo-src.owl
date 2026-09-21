@@ -50084,6 +50084,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000800 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000800">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000286"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000587"/>
         <obo:IAO_0000115>Organic matter present in solution, the fraction of organic material that passes a fine filter, comprising dissolved organic carbon, nitrogen, and phosphorus.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>DOM</oboInOwl:hasExactSynonym>
@@ -50102,7 +50103,9 @@
     <!-- https://w3id.org/bervo/BERVO_8000801 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000801">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000286"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000587"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000722"/>
         <obo:IAO_0000115>Organic matter present as solid particles rather than in solution, such as fragments of litter and roots in soil or suspended particles in water.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_04000012"/>
         <oboInOwl:hasExactSynonym>POM</oboInOwl:hasExactSynonym>
