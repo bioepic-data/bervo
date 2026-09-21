@@ -49547,7 +49547,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000770">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
-        <obo:IAO_0000115>Quantity of a substance that an organism, population, or process would take up in a time step if supply did not limit it, as distinct from the uptake realised.</obo:IAO_0000115>
+        <obo:IAO_0000115>Quantity of a substance that an organism, population, or process would take up in a time step if supply did not limit it, as distinct from the uptake realized.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
         <rdfs:comment>In EcoSIM the demand for a nutrient or gas is computed before supply constrains it; uptake is the constrained result.</rdfs:comment>
         <rdfs:label>Demand</rdfs:label>
@@ -49600,7 +49600,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000773">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000771"/>
-        <obo:IAO_0000115>Microbes that fix inorganic carbon and obtain energy from light or from oxidising inorganic compounds, such as nitrifiers.</obo:IAO_0000115>
+        <obo:IAO_0000115>Microbes that fix inorganic carbon and obtain energy from light or from oxidizing inorganic compounds, such as nitrifiers.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>autotrophs</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
         <rdfs:label>Autotrophic microbes</rdfs:label>
@@ -49672,8 +49672,8 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000777">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
-        <obo:IAO_0000115>Microbes that oxidise ammonia to nitrite and nitrite to nitrate, gaining energy from the oxidation.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>ammonia oxidisers</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000115>Microbes that oxidize ammonia to nitrite and nitrite to nitrate, gaining energy from the oxidation.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>ammonia oxidizers</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>nitrifying microbes</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
         <rdfs:label>Nitrifiers</rdfs:label>
@@ -49744,8 +49744,8 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000781">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000771"/>
-        <obo:IAO_0000115>Microbes that oxidise methane as their source of carbon and energy.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>methane oxidisers</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000115>Microbes that oxidize methane as their source of carbon and energy.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>methane oxidizers</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
         <rdfs:label>Methanotrophs</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
