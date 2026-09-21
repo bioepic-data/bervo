@@ -196,8 +196,9 @@ obsolete term.
 classes with no parent, mixed `Class`/`owl:Class` spelling, unresolvable relationship
 labels, annotation cells that reference an obsolete term, a `replaced_by` that points at
 another obsolete term, obsolete rows that still carry a parent, relationships or an
-`involves_chemicals` filler, and `DbXrefs` prefixes ROBOT cannot expand (reported once per
-prefix, not per row).
+`involves_chemicals` filler, an `involves_chemicals` filler with no subclasses (the
+restriction then generalises nothing; reported once per filler), and `DbXrefs` prefixes
+ROBOT cannot expand (reported once per prefix, not per row).
 
 On cross-references specifically, see the "Cross-references to other ontologies" section of
 the `bervo-terms` skill: map concepts rather than variables, verify the target term exists,
