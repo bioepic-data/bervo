@@ -141,6 +141,8 @@ Permafrost (10) have ENVO classes.
 
 ## Variables that should point at the new concepts
 
+Tracked as [issue #83](https://github.com/bioepic-data/bervo/issues/83).
+
 - Rock fraction and the two "Soil volume including macropores and rock" rows
   name Rock and reference nothing.
 - Eleven of the 27 Sediment variables have `measured_ins=NA`.
