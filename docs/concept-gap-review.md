@@ -1,7 +1,7 @@
 # Concept gap review
 
 The ODM2 alignments of September 2026 added 184 concepts. Variables reference
-seven of them. That prompted a review of the 1,622 live variables to find the
+seven of them. That prompted a review of the 1,622 live variables beneath the Variable root to find the
 concepts they name but the ontology lacks, and the concepts it has that they
 cannot reach. This page records the method, what the first pass added, and
 what remains.
@@ -34,7 +34,7 @@ gap. Counts below are labels naming the thing unless they say otherwise.
 | Diazotrophs (`BERVO:8000782`) | Microbial functional group |  | "diazotroph" 3, "nitrogen fixer" 1 |
 | Fungi (`BERVO:8000783`) | Microbes | `NCBITaxon:4751` | 4 |
 | Mycorrhizal fungi (`BERVO:8000784`) | Fungi |  | "myco" and "mycorrhizal" in 6 |
-| Plant functional type (`BERVO:8000785`) | Concept |  | `pft` in 8 labels and 263 EcoSIM names, 15 definitions |
+| Plant functional type (`BERVO:8000785`) | Concept |  | `pft` in 8 labels and 266 EcoSIM names, 15 definitions |
 | Chemical transformation (`BERVO:8000786`) | Process |  | "transformation" in 24 labels |
 | Time step (`BERVO:8000787`) | Time |  | 19 labels |
 | Iteration (`BERVO:8000788`) | Concept |  | 5 labels |
@@ -63,7 +63,24 @@ now carry `Demand`. No other variable was changed.
   metabolic roles under Microbial functional group, and Aerobic heterotrophs,
   Fermenters, and Denitrifiers sit under Heterotrophic microbes, Nitrifiers
   under Autotrophic microbes, and the two kinds of methanogen under
-  Methanogens. The set is the set EcoSIM parameterises.
+  Methanogens. The set is the set EcoSIM parameterizes. Two of them are
+  modes rather than pools in the model, and their `Comment` says so:
+  fermentation is an anaerobic mode of the heterotrophic carbon pool, and
+  the acetotrophic and hydrogenotrophic methanogens are two pathways of one
+  methanogen pool. The terms exist for the parameters that name them. This
+  is as far into microbial metabolism as BERVO means to go.
+- Methanogens are archaea. BERVO has no Archaea term, so the group sits as a
+  metabolic role; if Archaea is added (`NCBITaxon:2157`) it is a second
+  parent. EcoSIM's parameters call the aerobic heterotrophs aerobic
+  bacteria, and the term's `Comment` records that.
+- Latent, Sensible, and Convective heat sit under Heat as kinds of heat, not
+  under Heat flux. The variables that will name them are fluxes, and those
+  carry Heat flux in `attributes` already; the new terms belong in
+  `measurement_ofs`, saying which heat the flux is of.
+- Dissolved organic matter and Particulate organic matter have Chemical pool
+  as `Category` and Organic matter as a second parent, as Soil organic
+  matter does. Particulate organic matter also takes Particulate matter,
+  mirroring ENVO.
 - Plant functional type sits under Concept beside Taxon. It is a way of
   classing plants, not a plant and not vegetation.
 - Iteration sits under Concept rather than under Time. A solver pass is not
@@ -71,8 +88,9 @@ now carry `Demand`. No other variable was changed.
 - Field capacity and Wilting point sit under Water content, which is what
   ENVO says they are. `ENVO:06105303` is labelled "permanent wilting point"
   there; that is an exact synonym here.
-- Chemical transformation carries `transformation` as an exact synonym, since
-  that is the word the 24 variable labels use.
+- Chemical transformation carries `transformation` as a related synonym,
+  since that is the word the 24 variable labels use. It is not exact: the
+  bare word is wider, and Plant transformant uses it in the genetic sense.
 
 ## Remaining gaps
 
