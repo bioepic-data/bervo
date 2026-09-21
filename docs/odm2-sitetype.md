@@ -131,6 +131,17 @@ place, and are left out:
 - Spring, Cave, and Shore follow ENVO under Landform. Outcrop and Sinkhole
   join them; ENVO classes outcrop as a portion of material, which is not a
   distinction BERVO draws.
+- Land surface (`BERVO:8000134`) had no children before and now has Field,
+  Golf course, and Wastewater land application site, each a tract of land.
+  Its definition was a mass noun, the solid portion of the Earth's surface,
+  and a golf course is not that. It is reworded distributively, as an area of
+  that surface from the whole down to a single tract, and the sentence on
+  energy exchange moves to its `Comment`. `terrain` stays as an exact synonym
+  and `ENVO:01001785` (land) stays as the reference; both read as the whole,
+  and the subclass reading is BERVO's own. ENVO does not file `agricultural
+  field` under `land` either; its parent there is `field` (`ENVO:01000352`).
+  Field under Land surface is BERVO's choice, not ENVO's, unlike Landfill
+  under Landform.
 - Atmosphere, Land surface, and Subsurface move from Concept to Environmental
   feature. Each is already used as a `contexts` value (23, 0, and 30 times),
   and the move changes none of those. ENVO makes the atmosphere and the

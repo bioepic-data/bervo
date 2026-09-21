@@ -37746,12 +37746,12 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000134">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000400"/>
-        <obo:IAO_0000115>The solid portion of Earth&apos;s surface not covered by permanent water bodies, including soil, vegetation, and exposed rock surfaces. This interface between terrestrial and atmospheric systems controls energy exchange, water cycling, vegetation growth, and serves as the foundation for terrestrial ecosystem functioning.</obo:IAO_0000115>
+        <obo:IAO_0000115>Area of the solid surface of the Earth not covered by permanent water, comprising its soil, vegetation, and exposed rock, from the whole land surface down to a single tract under one use.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001785"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/sitetype/land"/>
         <oboInOwl:hasExactSynonym>terrain</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
-        <rdfs:comment>ODM2 site type concept &quot;Land&quot;: A location on the surface of the earth that is not normally saturated with water. Land sites are appropriate for sampling vegetation, overland flow of water, or measuring land-surface properties such as temperature. (See also: Wetland).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), ODM2 site type alignment for issue #66 (#81 review); the Sep 26 2025 definition&apos;s second sentence is kept in Comment</rdfs:comment>
+        <rdfs:comment>The land surface is the interface between the terrestrial and atmospheric systems: it controls energy exchange, water cycling, and vegetation growth, and it is the foundation of terrestrial ecosystem functioning. ODM2 site type concept &quot;Land&quot;: A location on the surface of the earth that is not normally saturated with water. Land sites are appropriate for sampling vegetation, overland flow of water, or measuring land-surface properties such as temperature. (See also: Wetland).</rdfs:comment>
         <rdfs:label>Land surface</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
