@@ -49349,7 +49349,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000760 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000760">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000727"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
         <obo:IAO_0000115>Grounds laid out for the game of golf, typically irrigated and treated as a place of water use.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/sitetype/golfCourse"/>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), ODM2 site type alignment for issue #66</rdfs:comment>
@@ -49447,7 +49447,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000765 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000765">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000727"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000725"/>
         <obo:IAO_0000115>Site on the land surface, typically dry, where solid waste is or was aggregated and sometimes covered with a veneer of soil.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000533"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/sitetype/landfill"/>
@@ -49525,7 +49525,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000769 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000769">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000727"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
         <obo:IAO_0000115>Site at which wastewater is disposed of by application to the land surface.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/sitetype/wastewaterLandApplication"/>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), ODM2 site type alignment for issue #66</rdfs:comment>

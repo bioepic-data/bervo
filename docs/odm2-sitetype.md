@@ -92,16 +92,16 @@ context a variable can carry, as Chemical and Environmental material are.
 | Outfall (`BERVO:8000757`) | Human construction | `Outfall` |  |
 | Pavement (`BERVO:8000758`) | Human construction | `Pavement` | `ENVO:01001272` |
 | Animal waste lagoon (`BERVO:8000759`) | Facility | `Animal waste lagoon` |  |
-| Golf course (`BERVO:8000760`) | Facility | `Golf course` |  |
+| Golf course (`BERVO:8000760`) | Land surface | `Golf course` |  |
 | House (`BERVO:8000761`) | Facility | `House` | `ENVO:01000417` |
 | Hydroelectric plant (`BERVO:8000762`) | Power plant | `Hydroelectric plant` |  |
 | Thermoelectric plant (`BERVO:8000763`) | Power plant | `Thermoelectric plant` |  |
 | Laboratory (`BERVO:8000764`) | Facility | `Laboratory or sample-preparation area` | `ENVO:01001406` |
-| Landfill (`BERVO:8000765`) | Facility | `Landfill` | `ENVO:00000533` |
+| Landfill (`BERVO:8000765`) | Landform | `Landfill` | `ENVO:00000533` |
 | Wastewater treatment plant (`BERVO:8000766`) | Facility | `Wastewater-treatment plant` | `ENVO:00002043` |
 | Water supply treatment plant (`BERVO:8000767`) | Facility | `Water-supply treatment plant` |  |
 | Water-use establishment (`BERVO:8000768`) | Facility | `Water-use establishment` |  |
-| Wastewater land application site (`BERVO:8000769`) | Facility | `Wastewater land application` |  |
+| Wastewater land application site (`BERVO:8000769`) | Land surface | `Wastewater land application` |  |
 
 ## Not mapped
 
@@ -162,10 +162,17 @@ place, and are left out:
 - Outfall and Water diversion sit side by side under Human construction. ODM2
   files one under facility sites and the other under surface water sites; they
   are mirror images and are kept together.
-- Wastewater land application site sits under Facility, where ODM2 files
-  Landfill; ODM2 itself files it under land sites.
+- Golf course, Landfill, and Wastewater land application site are areas of
+  land rather than assembled structures, and they follow ENVO rather than
+  ODM2's facility grouping. ENVO files landfill (`ENVO:00000533`) as a
+  depressed landform, so Landfill sits under Landform. ENVO has no golf
+  course class and names golf courses in its `area of developed open space`
+  (`ENVO:01000883`), a land-use zone; that class is wider than a golf course
+  and is not cross-referenced. Golf course and Wastewater land application
+  site sit under Land surface beside Field, as tracts of land under a use.
 - ENVO's `alkaline flat` (`ENVO:00000196`) lists `playa` as a synonym and is
   the reference for Playa.
-- Facility and its children reach further from earth systems modelling than
+- Facility and its children, the plants, the laboratory, the house, and the
+  water-use establishment, reach further from earth systems modelling than
   the rest of BERVO. They are here so that a dataset's ODM2 site type can
   always be expressed; they can be pruned if that turns out not to matter.
