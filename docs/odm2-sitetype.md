@@ -95,7 +95,7 @@ context a variable can carry, as Chemical and Environmental material are.
 | Outfall (`BERVO:8000757`) | Human construction | `Outfall` |  |
 | Pavement (`BERVO:8000758`) | Human construction | `Pavement` | `ENVO:01001272` |
 | Animal waste lagoon (`BERVO:8000759`) | Facility | `Animal waste lagoon` |  |
-| Golf course (`BERVO:8000760`) | Land surface | `Golf course` |  |
+| Golf course (`BERVO:8000760`) | Land surface and Human construction | `Golf course` |  |
 | House (`BERVO:8000761`) | Facility | `House` | `ENVO:01000417` |
 | Hydroelectric plant (`BERVO:8000762`) | Power plant | `Hydroelectric plant` |  |
 | Thermoelectric plant (`BERVO:8000763`) | Power plant | `Thermoelectric plant` |  |
@@ -184,6 +184,9 @@ place, and are left out:
   (`ENVO:01000883`), a land-use zone; that class is wider than a golf course
   and is not cross-referenced. Golf course and Wastewater land application
   site sit under Land surface beside Field, as tracts of land under a use.
+  Golf course also takes Human construction as a second parent, as Canal and
+  Ditch do, since it is engineered land; a land application site is a use of
+  land, not a construction, and takes no second parent.
 - ENVO's `alkaline flat` (`ENVO:00000196`) lists `playa` as a synonym and is
   the reference for Playa.
 - `fumarole` is a related synonym of Volcanic vent, not an exact one. ODM2
