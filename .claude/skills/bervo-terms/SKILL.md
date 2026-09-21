@@ -223,38 +223,41 @@ directly under `Concept`. The validator warns when a filler has no subclasses at
 
 ## Cross-references to other ontologies
 
-The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 351
-cross-references on 342 terms today — about 15% of the ontology.
+The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 710
+cross-references on 537 terms today — about 21% of the ontology.
 
 ### Map concepts, not variables
 
-**338 of the 342 cross-referenced terms are concepts (`8xxxxxx`); only 4 are variables.**
+**533 of the 537 cross-referenced terms are concepts (`8xxxxxx`); only 4 are variables.**
 This is the established convention and it makes sense: a concept like *Nitrous oxide* or
 *Leaf* has a clean equivalent in an existing ontology, whereas a BERVO variable like
 *Cumulative ecosystem heterotrophic respiration* is a model-specific composite that usually
 does not. Do not force a mapping onto a variable to fill the column in.
 
-Most terms carry exactly one cross-reference; nine carry two (typically a domain ontology
-plus a quality). Leave the column blank when no good match exists — a wrong mapping is
+Most terms carry exactly one cross-reference; 169 carry two (typically a domain ontology
+plus an ODM2 concept) and two carry three. Leave the column blank when no good match exists — a wrong mapping is
 worse than none.
 
 ### Which ontology to reach for
 
 | Prefix | Use for | Current count |
 | --- | --- | --- |
-| `CHEBI` | Chemical entities — *Nitrous oxide* → `CHEBI:17045` | 26 |
-| `ENVO` | Environmental materials, features, biomes — *Runoff* → `ENVO:06105211` | 20 |
-| `PO` | Plant anatomy and development — *Leaf* → `PO:0025034` | 10 |
-| `PATO` | Qualities and properties — *Concentration* → `PATO:0000033` | 9 |
+| `CHEBI` | Chemical entities — *Nitrous oxide* → `CHEBI:17045` | 143 |
+| `ENVO` | Environmental materials, features, landforms, biomes — *Runoff* → `ENVO:06105211`, *Stream* → `ENVO:00000023` | 58 |
+| `PO` | Plant anatomy and development — *Leaf* → `PO:0025034` | 11 |
+| `PATO` | Qualities and properties — *Concentration* → `PATO:0000033` | 10 |
 | `GO` | Biological processes — *Biological process* → `GO:0008150` | 1 |
 | `AGRO` | Agronomy — *Irrigation* → `AGRO:00000006` | 1 |
 | `MIXS` | Sequence-metadata standard fields | 4 |
 | `COMO` | Measurement and experiment metadata concepts | 275 |
-| `ODM2` | ODM2 controlled vocabularies, as `ODM2:<scheme>/<id>` — *Nitrite* → `ODM2:speciation/NO2`, *Rock* → `ODM2:medium/rock` | 160 |
+| `ODM2` | ODM2 controlled vocabularies, as `ODM2:<scheme>/<id>` — *Nitrite* → `ODM2:speciation/NO2`, *Rock* → `ODM2:medium/rock`, *Stream* → `ODM2:sitetype/stream` | 206 |
 
-`ODM2` covers the ODM2 speciation and medium vocabularies (see `docs/odm2-speciation.md`
-and `docs/odm2-medium.md`); the same prefix serves its other vocabularies, with the scheme
-name in the local part.
+`ODM2` covers the ODM2 speciation, medium, and site type vocabularies (see
+`docs/odm2-speciation.md`, `docs/odm2-medium.md`, and `docs/odm2-sitetype.md`); the same
+prefix serves its other vocabularies, with the scheme name in the local part. The site types
+map onto the features a site sits on: natural ones under `Environmental feature`
+(`BERVO:8000400`, with `Water body` and `Landform` beneath it) and built ones under
+`Human construction` (`BERVO:8000726`, with `Facility` and `Sewer` beneath it).
 
 `COMO` is the dominant prefix and covers the generic measurement/experiment vocabulary
 (`BERVO:8000298`–`BERVO:8000527` are largely a systematic COMO mapping): *Experimental
