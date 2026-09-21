@@ -42485,9 +42485,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000400">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
-        <obo:IAO_0000115>A physical characteristic or phenomenon of the natural environment such as elevation, water body, or soil type. Environmental features influence ecosystem function and species distributions.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="COMO:0000217"/>
-        <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
+        <obo:IAO_0000115>Material part of the environment with a location and an extent on or in which observations are made, such as a water body, a landform, a glacier, or the atmosphere.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), ODM2 site type alignment for issue #66</rdfs:comment>
+        <rdfs:comment>Formerly defined after COMO:0000217 as a characteristic of the environment, such as elevation or soil type. Redefined as a material part of it when the ODM2 site type features were placed beneath it.</rdfs:comment>
         <rdfs:label>Environmental feature</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
