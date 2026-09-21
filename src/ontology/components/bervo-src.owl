@@ -49696,7 +49696,7 @@
         <obo:IAO_0000115>Anaerobic archaea that produce methane from acetate, from hydrogen and carbon dioxide, or from other simple substrates.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>methanogenic archaea</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
-        <rdfs:comment>In EcoSIM the acetotrophic and hydrogenotrophic kinds are two pathways of one methanogen pool rather than separate state variables. The two child terms exist for the parameters that name them and do not assert separate pools.</rdfs:comment>
+        <rdfs:comment>In EcoSIM the acetotrophic and hydrogenotrophic kinds are two pathways of one methanogen pool rather than separate state variables. The two child terms exist for the parameters that name them and do not assert separate pools. Methanogens are archaea. BERVO has no Archaea term, so the group sits here as a metabolic role; if Archaea is added (NCBITaxon:2157) it is a second parent.</rdfs:comment>
         <rdfs:label>Methanogens</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
