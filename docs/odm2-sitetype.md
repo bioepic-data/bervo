@@ -47,7 +47,7 @@ context a variable can carry, as Chemical and Environmental material are.
 | ODM2 concept | BERVO term | Note |
 | --- | --- | --- |
 | `Atmosphere` | Atmosphere (`BERVO:8000131`) | Moves under Environmental feature; gains `ENVO:01000810` |
-| `Field, Pasture, Orchard, or Nursery` | Field (`BERVO:8000084`) | Stays under Concept; gains `ENVO:00000114`. ODM2's definition is that of a plant nursery and its label is wider than BERVO's Field; see below |
+| `Field, Pasture, Orchard, or Nursery` | Field (`BERVO:8000084`) | Moves under Land surface; gains `ENVO:00000114`; see below |
 | `Lake, Reservoir, Impoundment` | Lake (`BERVO:8000285`) | Lake gains `reservoir` and `impoundment` as related synonyms and moves under Water body |
 | `Land` | Land surface (`BERVO:8000134`) | Moves under Environmental feature; gains `ENVO:01001785` |
 | `Subsurface` | Subsurface (`BERVO:8000053`) | Moves under Environmental feature; gains `ENVO:01000941` |
