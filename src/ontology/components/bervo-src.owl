@@ -49859,7 +49859,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000787">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000238"/>
         <obo:IAO_0000115>Interval of model time over which state variables are advanced once by the model&apos;s equations.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>timestep</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>timestep</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
         <rdfs:label>Time step</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
