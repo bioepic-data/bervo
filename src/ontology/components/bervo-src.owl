@@ -49838,7 +49838,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000786">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000106"/>
         <obo:IAO_0000115>Process by which a substance changes chemical form or state, whether by reaction, sorption, precipitation, dissolution, or biological conversion, tracked as the net change of a pool.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>transformation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>transformation</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
         <rdfs:label>Chemical transformation</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
