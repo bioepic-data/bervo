@@ -643,7 +643,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>EcosimBGCFluxType.txt</rdfs:comment>
         <rdfs:label>Current inorganic phosphate demand in non-band by all microbial,root,myco populations</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000532"/>
         <bervo:BERVO_has_unit>gP d-2 h-1</bervo:BERVO_has_unit>
@@ -664,7 +664,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>EcosimBGCFluxType.txt</rdfs:comment>
         <rdfs:label>Previous time step inorganic phosphate demand in non-band by all microbial,root,myco populations</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000533"/>
         <bervo:BERVO_has_unit>gP d-2 h-1</bervo:BERVO_has_unit>
@@ -685,7 +685,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>EcosimBGCFluxType.txt</rdfs:comment>
         <rdfs:label>Current inorganic phosphate demand in band by all microbial,root,myco populations</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000153"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000532"/>
         <bervo:BERVO_has_unit>gP d-2 h-1</bervo:BERVO_has_unit>
@@ -706,7 +706,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>EcosimBGCFluxType.txt</rdfs:comment>
         <rdfs:label>Previous time step inorganic phosphate demand in band by all microbial,root,myco populations</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000153"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000533"/>
         <bervo:BERVO_has_unit>gP d-2 h-1</bervo:BERVO_has_unit>
@@ -6467,7 +6467,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantDataRateType.txt</rdfs:comment>
         <rdfs:label>Hydrogen phosphate demand in non-band by each root population</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -6486,7 +6486,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantDataRateType.txt</rdfs:comment>
         <rdfs:label>Hydrogen phosphate demand in band by each root population</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -6922,7 +6922,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantDataRateType.txt</rdfs:comment>
         <rdfs:label>Root oxygen demand from respiration</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -18644,7 +18644,7 @@
         <rdfs:comment>Interesting units.  These items below appear to be chemical rates</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Aqueous demand</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000196"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -18701,7 +18701,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Heterotrophic microbial ammonium demand in soil</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -18720,7 +18720,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Heterotrophic microbial nitrate demand in soil</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -18739,7 +18739,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Heterotrophic microbial phosphate demand in soil</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -18758,7 +18758,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Heterotrophic microbial ammonium demand in surface litter</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -18777,7 +18777,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Heterotrophic microbial phosphate demand in surface litter</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -18796,7 +18796,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Heterotrophic microbial nitrate demand in surface litter</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -19069,7 +19069,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Aqueous demand by autotrophic microbes</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000196"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -19088,7 +19088,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial ammonium demand in soil</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -19107,7 +19107,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial nitrate demand in soil</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -19126,7 +19126,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbes dihydrogen phosphate demand in soil</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -19145,7 +19145,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial ammonium demand in surface litter</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -19164,7 +19164,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial dihydrogen phosphate demand in surface litter</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -19183,7 +19183,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial nitrate demand in surface litter</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -19278,7 +19278,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial nitrous oxide demand for reduction</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -19297,7 +19297,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial ammonium demand in band soil</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -19316,7 +19316,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial nitrate demand in band soil</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -19335,7 +19335,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial dihydrogen phosphate demand in band soil</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -19354,7 +19354,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial hydrogen phosphate demand in non-band soil</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -19373,7 +19373,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial hydrogen phosphate demand in band soil</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -19392,7 +19392,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial hydrogen phosphate demand in surface litter</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g d-2 h-1</bervo:BERVO_has_unit>
@@ -22102,7 +22102,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>NitroPars.txt</rdfs:comment>
         <rdfs:label>Minimum ratio of total biological demand for any substrate by any microbial population</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000252"/>
         <bervo:BERVO_has_unit>NONE</bervo:BERVO_has_unit>
@@ -49533,6 +49533,606 @@
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), ODM2 site type alignment for issue #66</rdfs:comment>
         <rdfs:comment>ODM2 site type concept &quot;Wastewater land application&quot;: A site where the disposal of waste water on land occurs. Use &quot;waste-injection well&quot; for underground waste-disposal sites.</rdfs:comment>
         <rdfs:label>Wastewater land application site</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000770 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000770">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Quantity of a substance that an organism, population, or process would take up in a time step if supply did not limit it, as distinct from the uptake realized.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:comment>In EcoSIM the demand for a nutrient or gas is computed before supply constrains it; uptake is the constrained result.</rdfs:comment>
+        <rdfs:label>Demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000771 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000771">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <obo:IAO_0000115>Set of microbes grouped by the metabolic role they play in a model or an ecosystem, such as nitrifiers or methanogens, without regard to taxonomy.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Microbial functional group</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000772 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000772">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000771"/>
+        <obo:IAO_0000115>Microbes that obtain carbon and energy from organic compounds, driving decomposition and heterotrophic respiration.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>heterotrophs</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Heterotrophic microbes</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000773 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000773">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000771"/>
+        <obo:IAO_0000115>Microbes that fix inorganic carbon and obtain energy from light or from oxidizing inorganic compounds, such as nitrifiers.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>autotrophs</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Autotrophic microbes</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000774 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000774">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
+        <obo:IAO_0000115>Heterotrophic microbes that respire with oxygen as the terminal electron acceptor.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>aerobic bacteria</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:comment>The EcoSIM parameters that name this group call it aerobic bacteria.</rdfs:comment>
+        <rdfs:label>Aerobic heterotrophs</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000775 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000775">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
+        <obo:IAO_0000115>Heterotrophic microbes that obtain energy by fermenting organic substrates to products such as acetate and hydrogen in the absence of oxygen.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>fermentative microbes</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:comment>In EcoSIM fermentation is an anaerobic mode of the heterotrophic carbon pool rather than a separate state variable. The term exists for the parameters that name fermenters and does not assert a separate pool.</rdfs:comment>
+        <rdfs:label>Fermenters</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000776 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000776">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
+        <obo:IAO_0000115>Microbes that reduce nitrate through nitrite and nitrogen oxides to dinitrogen when oxygen is scarce.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>denitrifying microbes</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Denitrifiers</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000777 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000777">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
+        <obo:IAO_0000115>Microbes that oxidize ammonia to nitrite and nitrite to nitrate, gaining energy from the oxidation.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>ammonia oxidizers</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>nitrifying microbes</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Nitrifiers</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000778 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000778">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000771"/>
+        <obo:IAO_0000115>Anaerobic archaea that produce methane from acetate, from hydrogen and carbon dioxide, or from other simple substrates.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>methanogenic archaea</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:comment>In EcoSIM the acetotrophic and hydrogenotrophic kinds are two pathways of one methanogen pool rather than separate state variables. The two child terms exist for the parameters that name them and do not assert separate pools. Methanogens are archaea. BERVO has no Archaea term, so the group sits here as a metabolic role; if Archaea is added (NCBITaxon:2157) it is a second parent.</rdfs:comment>
+        <rdfs:label>Methanogens</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000779 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000779">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000778"/>
+        <obo:IAO_0000115>Methanogens that produce methane by splitting acetate.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>acetoclastic methanogens</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Acetotrophic methanogens</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000780 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000780">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000778"/>
+        <obo:IAO_0000115>Methanogens that produce methane by reducing carbon dioxide with hydrogen.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Hydrogenotrophic methanogens</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000781 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000781">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000771"/>
+        <obo:IAO_0000115>Microbes that oxidize methane as their source of carbon and energy.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>methane oxidizers</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Methanotrophs</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000782 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000782">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000771"/>
+        <obo:IAO_0000115>Microbes that fix dinitrogen from the air into ammonia, whether free-living or in symbiosis with plants.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>nitrogen fixers</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>nitrogen-fixing bacteria</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Diazotrophs</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000783 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000783">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <obo:IAO_0000115>Eukaryotic microbes with chitinous cell walls that feed by absorption, including the saprotrophs of litter and soil and the mycorrhizal symbionts of roots.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Fungi</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000784 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000784">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000783"/>
+        <obo:IAO_0000115>Fungi that live in symbiosis with plant roots, trading water and mineral nutrients for plant carbon.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>mycorrhiza</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>mycorrhizae</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Mycorrhizal fungi</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000785 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000785">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Class of plants grouped by shared traits, growth form, and function in a model or an ecosystem, such as C3 grass or deciduous broadleaf tree, without regard to taxonomy.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>PFT</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:comment>EcoSIM resolves many variables per plant functional type; their names carry the suffix _pft.</rdfs:comment>
+        <rdfs:label>Plant functional type</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000786 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000786">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000106"/>
+        <obo:IAO_0000115>Process by which a substance changes chemical form or state, whether by reaction, sorption, precipitation, dissolution, or biological conversion, tracked as the net change of a pool.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>transformation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Chemical transformation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000787 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000787">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000238"/>
+        <obo:IAO_0000115>Interval of model time over which state variables are advanced once by the model&apos;s equations.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>timestep</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Time step</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000788 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000788">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>One pass of a repeated numerical procedure, such as an energy balance solved by successive approximation, within a single time step.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Iteration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000789 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000789">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Potential energy of water per unit volume relative to pure free water at the same temperature, which governs the direction of water movement in soil and plant.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Water potential</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000790 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000790">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000789"/>
+        <obo:IAO_0000115>Component of the water potential of a plant cell due to the hydrostatic pressure of its contents against the cell wall.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>turgor pressure</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>pressure potential</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Turgor potential</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000791 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000791">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000789"/>
+        <obo:IAO_0000115>Component of water potential due to dissolved solutes, always zero or negative.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>solute potential</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Osmotic potential</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000792 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000792">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
+        <obo:IAO_0000115>Heat taken up or released when water changes phase, by evaporation, condensation, freezing, thawing, or sublimation, without a change of temperature.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Latent heat</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000793 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000793">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
+        <obo:IAO_0000115>Heat that changes the temperature of a body or medium when it is transferred, as opposed to latent heat.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Sensible heat</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000794 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000794">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
+        <obo:IAO_0000115>Heat carried by the bulk movement of a fluid, such as water or air moving through soil pores or over a canopy.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>advective heat</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Convective heat</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000795 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000795">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000202"/>
+        <obo:IAO_0000115>Water content of a soil after excess water has drained away by gravity and downward movement has largely ceased.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105302"/>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Field capacity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000796 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000796">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000202"/>
+        <obo:IAO_0000115>Water content of a soil at or below which a plant wilts and does not recover turgor when the air around it is saturated.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105303"/>
+        <oboInOwl:hasExactSynonym>permanent wilting point</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Wilting point</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000797 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000797">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Group of organisms of one kind living in a defined area, whether a plant population in a stand or a microbial population in a soil layer.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Population</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000798 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000798">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Main axes of growth of a plant organ, such as the main root axes from which secondary roots branch.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Primary axes</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000799 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000799">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <obo:IAO_0000115>Water held below the land surface in the saturated zone of soil and rock, beneath the water table.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001004"/>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Groundwater</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000800 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000800">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000286"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000587"/>
+        <obo:IAO_0000115>Organic matter present in solution, the fraction of organic material that passes a fine filter, comprising dissolved organic carbon, nitrogen, and phosphorus.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>DOM</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Dissolved organic matter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000801 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000801">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000286"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000587"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000722"/>
+        <obo:IAO_0000115>Organic matter present as solid particles rather than in solution, such as fragments of litter and roots in soil or suspended particles in water.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_04000012"/>
+        <oboInOwl:hasExactSynonym>POM</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Particulate organic matter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000802 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000802">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
+        <obo:IAO_0000115>Carbon held in particulate organic matter.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_04000013"/>
+        <oboInOwl:hasExactSynonym>POC</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:label>Particulate organic carbon</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>

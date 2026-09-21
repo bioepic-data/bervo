@@ -223,18 +223,18 @@ directly under `Concept`. The validator warns when a filler has no subclasses at
 
 ## Cross-references to other ontologies
 
-The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 710
-cross-references on 537 terms today — about 21% of the ontology.
+The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 717
+cross-references on 543 terms today — about 21% of the ontology.
 
 ### Map concepts, not variables
 
-**533 of the 537 cross-referenced terms are concepts (`8xxxxxx`); only 4 are variables.**
+**539 of the 543 cross-referenced terms are concepts (`8xxxxxx`); only 4 are variables.**
 This is the established convention and it makes sense: a concept like *Nitrous oxide* or
 *Leaf* has a clean equivalent in an existing ontology, whereas a BERVO variable like
 *Cumulative ecosystem heterotrophic respiration* is a model-specific composite that usually
 does not. Do not force a mapping onto a variable to fill the column in.
 
-Most terms carry exactly one cross-reference; 169 carry two (typically a domain ontology
+Most terms carry exactly one cross-reference; 170 carry two (typically a domain ontology
 plus an ODM2 concept) and two carry three. Leave the column blank when no good match exists — a wrong mapping is
 worse than none.
 
@@ -243,13 +243,14 @@ worse than none.
 | Prefix | Use for | Current count |
 | --- | --- | --- |
 | `CHEBI` | Chemical entities — *Nitrous oxide* → `CHEBI:17045` | 143 |
-| `ENVO` | Environmental materials, features, landforms, biomes — *Runoff* → `ENVO:06105211`, *Stream* → `ENVO:00000023` | 59 |
+| `ENVO` | Environmental materials, features, landforms, biomes, soil water states — *Runoff* → `ENVO:06105211`, *Stream* → `ENVO:00000023`, *Field capacity* → `ENVO:06105302` | 64 |
 | `PO` | Plant anatomy and development — *Leaf* → `PO:0025034` | 11 |
 | `PATO` | Qualities and properties — *Concentration* → `PATO:0000033` | 10 |
 | `GO` | Biological processes — *Biological process* → `GO:0008150` | 1 |
 | `AGRO` | Agronomy — *Irrigation* → `AGRO:00000006` | 1 |
 | `MIXS` | Sequence-metadata standard fields | 4 |
 | `COB` | Core Ontology for Biology and Biomedicine — *Organism* → `COB:0000022` | 1 |
+| `NCBITaxon` | Taxa — *Fungi* → `NCBITaxon:4751` | 1 |
 | `COMO` | Measurement and experiment metadata concepts | 275 |
 | `ODM2` | ODM2 controlled vocabularies, as `ODM2:<scheme>/<id>` — *Nitrite* → `ODM2:speciation/NO2`, *Rock* → `ODM2:medium/rock`, *Stream* → `ODM2:sitetype/stream` | 206 |
 
