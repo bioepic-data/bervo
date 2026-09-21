@@ -36821,10 +36821,15 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000084">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
-        <obo:IAO_0000115>An area of open land used for agricultural production or supporting natural vegetation, representing a fundamental landscape unit for ecosystem studies. This spatial unit is important for understanding land use patterns, agricultural productivity, habitat connectivity, and the interface between managed and natural ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Area of open land managed for agricultural use, whether cultivated for crops, grazed by livestock, planted as an orchard, or used as a nursery to raise plants for transplanting or sale.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000114"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/sitetype/fieldPastureOrchardOrNursery"/>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <oboInOwl:hasExactSynonym>agricultural field</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>cropland</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>nursery</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>orchard</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>pasture</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), ODM2 site type alignment for issue #66, after ENVO:00000114 and the ODM2 concept</rdfs:comment>
         <rdfs:comment>ODM2 site type concept &quot;Field, Pasture, Orchard, or Nursery&quot;: A water-using facility characterized by an area where plants are grown for transplanting, for use as stocks for budding and grafting, or for sale. Irrigation water may or may not be applied.</rdfs:comment>
         <rdfs:label>Field</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>

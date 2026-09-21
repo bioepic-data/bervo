@@ -140,10 +140,14 @@ place, and are left out:
   `impoundment` as related synonyms. ENVO keeps reservoir (`ENVO:00000025`) as
   a separate artificial water body; BERVO has no call for that split yet.
 - ODM2's `Field, Pasture, Orchard, or Nursery` maps to Field
-  (`BERVO:8000084`). The ODM2 label covers four land uses and its definition
-  describes only a nursery. Field is the nearest BERVO term and the mapping is
-  recorded as such; if pasture or orchard are ever needed they are separate
-  terms, not synonyms of Field.
+  (`BERVO:8000084`). Field's old definition also covered open land
+  "supporting natural vegetation", which neither ODM2 nor ENVO's
+  `agricultural field` (`ENVO:00000114`) includes. It is narrowed to land
+  managed for agricultural use, whether cropped, grazed, planted as an
+  orchard, or run as a nursery, so that it says what both cross-references
+  say. `agricultural field` is an exact synonym and `pasture`, `orchard`,
+  `nursery`, and `cropland` are related synonyms, recording ODM2's lumping.
+  If a pasture or an orchard ever needs its own term it goes under Field.
 - ODM2's `Tunnel, shaft, or mine` becomes Underground excavation, with
   `tunnel`, `shaft`, and `mine` as related synonyms. ENVO has each of the three
   as a separate class and none for their union, so no ENVO reference is made.
