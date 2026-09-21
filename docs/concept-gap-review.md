@@ -1,0 +1,134 @@
+# Concept gap review
+
+The ODM2 alignments of September 2026 added 184 concepts. Variables reference
+seven of them. That prompted a review of the 1,622 live variables to find the
+concepts they name but the ontology lacks, and the concepts it has that they
+cannot reach. This page records the method, what the first pass added, and
+what remains.
+
+## Method
+
+Every variable label was tokenised and its words, bigrams, and trigrams
+counted, and each was checked against every concept label and synonym. The
+same was done for definitions, weighted lower. A word that recurs across many
+labels and matches nothing on the concept side is a gap. A word that matches
+a concept which the variable's relationship columns do not name is a linking
+gap. Counts below are labels naming the thing unless they say otherwise.
+
+## Added in the first pass
+
+| BERVO term | Parent | Cross-reference | Variables asking for it |
+| --- | --- | --- | --- |
+| Demand (`BERVO:8000770`) | Concept |  | 29 labels; all carried `attributes=Uptake` |
+| Microbial functional group (`BERVO:8000771`) | Microbes |  | "microbial" in 100 labels, "functional group" in 9 |
+| Heterotrophic microbes (`BERVO:8000772`) | Microbial functional group |  | "heterotrophic microbial" in 18 labels |
+| Autotrophic microbes (`BERVO:8000773`) | Microbial functional group |  | "autotrophic microbial" in 19 |
+| Aerobic heterotrophs (`BERVO:8000774`) | Heterotrophic microbes |  | "aerobic bacteria" in 3 |
+| Fermenters (`BERVO:8000775`) | Heterotrophic microbes |  | 4 |
+| Denitrifiers (`BERVO:8000776`) | Heterotrophic microbes |  | 10 |
+| Nitrifiers (`BERVO:8000777`) | Autotrophic microbes |  | 14 |
+| Methanogens (`BERVO:8000778`) | Microbial functional group |  | 6 |
+| Acetotrophic methanogens (`BERVO:8000779`) | Methanogens |  | 2 |
+| Hydrogenotrophic methanogens (`BERVO:8000780`) | Methanogens |  | 3 |
+| Methanotrophs (`BERVO:8000781`) | Microbial functional group |  | 1 |
+| Diazotrophs (`BERVO:8000782`) | Microbial functional group |  | "diazotroph" 3, "nitrogen fixer" 1 |
+| Fungi (`BERVO:8000783`) | Microbes | `NCBITaxon:4751` | 4 |
+| Mycorrhizal fungi (`BERVO:8000784`) | Fungi |  | "myco" and "mycorrhizal" in 6 |
+| Plant functional type (`BERVO:8000785`) | Concept |  | `pft` in 8 labels and 263 EcoSIM names, 15 definitions |
+| Chemical transformation (`BERVO:8000786`) | Process |  | "transformation" in 24 labels |
+| Time step (`BERVO:8000787`) | Time |  | 19 labels |
+| Iteration (`BERVO:8000788`) | Concept |  | 5 labels |
+| Water potential (`BERVO:8000789`) | Physical property |  | 22 labels |
+| Turgor potential (`BERVO:8000790`) | Water potential |  | 4 |
+| Osmotic potential (`BERVO:8000791`) | Water potential |  | 4 |
+| Latent heat (`BERVO:8000792`) | Heat |  | 7 |
+| Sensible heat (`BERVO:8000793`) | Heat |  | 4 |
+| Convective heat (`BERVO:8000794`) | Heat |  | 6 |
+| Field capacity (`BERVO:8000795`) | Water content | `ENVO:06105302` | 8 |
+| Wilting point (`BERVO:8000796`) | Water content | `ENVO:06105303` | 6 |
+| Population (`BERVO:8000797`) | Concept |  | 12 labels |
+| Primary axes (`BERVO:8000798`) | Concept |  | 8; Secondary axes existed |
+| Groundwater (`BERVO:8000799`) | Water | `ENVO:01001004` | 68 definitions |
+| Dissolved organic matter (`BERVO:8000800`) | Chemical pool |  | 7 labels |
+| Particulate organic matter (`BERVO:8000801`) | Chemical pool | `ENVO:04000012` | 1 label; the parallel of DOM |
+| Particulate organic carbon (`BERVO:8000802`) | Organic carbon | `ENVO:04000013` | 1 label; the parallel of DOC |
+
+The 29 variables whose label says "demand" carried `attributes=Uptake`. They
+now carry `Demand`. No other variable was changed.
+
+### Placement notes
+
+- The microbial groups sit under Microbes in two ways. Fungi is a taxon-like
+  group beside Bacteria, with Mycorrhizal fungi beneath it. The rest are
+  metabolic roles under Microbial functional group, and Aerobic heterotrophs,
+  Fermenters, and Denitrifiers sit under Heterotrophic microbes, Nitrifiers
+  under Autotrophic microbes, and the two kinds of methanogen under
+  Methanogens. The set is the set EcoSIM parameterises.
+- Plant functional type sits under Concept beside Taxon. It is a way of
+  classing plants, not a plant and not vegetation.
+- Iteration sits under Concept rather than under Time. A solver pass is not
+  an interval of time.
+- Field capacity and Wilting point sit under Water content, which is what
+  ENVO says they are. `ENVO:06105303` is labelled "permanent wilting point"
+  there; that is an exact synonym here.
+- Chemical transformation carries `transformation` as an exact synonym, since
+  that is the word the 24 variable labels use.
+
+## Remaining gaps
+
+These were found in the same pass and not acted on.
+
+**Processes.** Process has three children and Biological process six. The
+variables name many more, mostly in definitions: Photosynthesis (61
+definitions; only C4 photosynthesis exists and it sits under Concept),
+Decomposition (101), Transpiration (32), Evapotranspiration (24),
+Nitrification (31), Denitrification (29), Deposition (35), Interception (32),
+Infiltration (26), Leaching (21), Dissolution (21), Immobilization (13),
+Volatilization (12), Freeze-thaw (12), Exudation (8), Ebullition, Adsorption,
+Disturbance (18), and Growth respiration and Maintenance respiration under
+Respiration.
+
+**Phenology.** Leafout (12 labels), Senescence (7), Leafoff (5), Hardening
+(5), Dehardening (5). Phenological progress and Growth stage exist and are
+referenced once between them.
+
+**Management.** Land management and Amendment have no children. Fertilizer,
+Harvest, and Irrigation sit directly under Concept. The variables name
+Planting (7), Side-dressing (5), Tillage, Manure, Lime, Crop residue. Crop is
+in 67 definitions with no concept.
+
+**Spatial.** Column (8 labels, 361 `_col` EcoSIM names) and Profile (49
+definitions, 304 `_vr` names) are the two dimensions the EcoSIM set is
+resolved over and neither has a concept. Watershed (22 definitions) and
+Permafrost (10) have ENVO classes.
+
+## Existing concepts that should change
+
+- Non-structural carbohydrate and Non-structural organic compounds live under
+  Chemical pool; 38 labels say "nonstructural" and no synonym bridges the
+  hyphen. Non-structural C3 content sits under Content.
+- Reserve is what the variables call storage (13 labels, 106 definitions).
+- Aqueous is what the variables call dissolved (39 labels).
+- Altitude is what CHESS calls elevation.
+- Surface carries `boundary` as an exact synonym; in 23 labels "boundary"
+  means the model domain edge.
+- Surface, Ground surface, Soil surface, and Land surface sit apart, and Soil
+  surface lists `ground surface` as its own synonym.
+- Canopy could sit under Vegetation; Snowpack under Environmental feature;
+  Rainfall under Precipitation with Snowfall added; Harvest, Fertilizer, and
+  Irrigation under Land management; Water table under Subsurface. Ecosystem,
+  Biome, Landscape, Region, Zone, Grid cell, Habitat, and Community are all
+  loose under Concept.
+- Dead standing tree should carry `standing dead` (4 labels).
+
+## Variables that should point at the new concepts
+
+- Rock fraction and the two "Soil volume including macropores and rock" rows
+  name Rock and reference nothing.
+- Eleven of the 27 Sediment variables have `measured_ins=NA`.
+- Unsaturated water flux should sit in Unsaturated zone.
+- The 17 Land surface variables reference Land surface 7 times.
+- Nothing references Vegetation except Fractional vegetation cover.
+
+Behind this is an older backlog: 128 labels name Carbon and do not reference
+it, 69 Water, 62 Irrigation, 45 Soil.
