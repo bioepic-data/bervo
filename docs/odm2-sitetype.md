@@ -27,10 +27,13 @@ Environmental feature (`BERVO:8000400`), which came from COMO with no children.
 COMO defined it as a characteristic of the environment, such as elevation or
 soil type, and that reading does not hold once a glacier is a subclass of it.
 It is redefined here as a material part of the environment on or in which
-observations are made, and its cross-reference moves from `COMO:0000217` to
-`ENVO:01000813` (astronomical body part), the ENVO class that Water body,
-Landform, and the atmosphere all descend from. The old reading is kept in its
-`Comment`.
+observations are made, and it gains `ENVO:01000813` (astronomical body
+part), the ENVO class that Water body, Landform, and the atmosphere all
+descend from, beside its `COMO:0000217`. The COMO reference stays for
+provenance, as Environmental material keeps `COMO:0000230` beside
+`ENVO:00010483`, and its reading is recorded in the term's `Comment`. The
+ENVO class is far wider than this term; it is the nearest live class ENVO
+has, and `ENVO:00002297` (environmental feature) is obsolete there.
 Two new grouping concepts sit beneath it: Water body (`BERVO:8000724`) for the
 surface water sites, and Landform (`BERVO:8000725`) for springs, caves, and
 the other shapes of the ground. Built features sit under a new Human

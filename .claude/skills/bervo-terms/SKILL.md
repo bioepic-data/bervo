@@ -250,7 +250,7 @@ worse than none.
 | `AGRO` | Agronomy — *Irrigation* → `AGRO:00000006` | 1 |
 | `MIXS` | Sequence-metadata standard fields | 4 |
 | `COB` | Core Ontology for Biology and Biomedicine — *Organism* → `COB:0000022` | 1 |
-| `COMO` | Measurement and experiment metadata concepts | 274 |
+| `COMO` | Measurement and experiment metadata concepts | 275 |
 | `ODM2` | ODM2 controlled vocabularies, as `ODM2:<scheme>/<id>` — *Nitrite* → `ODM2:speciation/NO2`, *Rock* → `ODM2:medium/rock`, *Stream* → `ODM2:sitetype/stream` | 206 |
 
 `ODM2` covers the ODM2 speciation, medium, and site type vocabularies (see
