@@ -49908,8 +49908,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000790">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000789"/>
         <obo:IAO_0000115>Component of the water potential of a plant cell due to the hydrostatic pressure of its contents against the cell wall.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>pressure potential</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>turgor pressure</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>pressure potential</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
         <rdfs:label>Turgor potential</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
