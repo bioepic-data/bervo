@@ -49639,6 +49639,7 @@
         <obo:IAO_0000115>Heterotrophic microbes that obtain energy by fermenting organic substrates to products such as acetate and hydrogen in the absence of oxygen.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>fermentative microbes</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:comment>In EcoSIM fermentation is an anaerobic mode of the heterotrophic carbon pool rather than a separate state variable. The term exists for the parameters that name fermenters and does not assert a separate pool.</rdfs:comment>
         <rdfs:label>Fermenters</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -49694,6 +49695,7 @@
         <obo:IAO_0000115>Anaerobic archaea that produce methane from acetate, from hydrogen and carbon dioxide, or from other simple substrates.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>methanogenic archaea</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:comment>In EcoSIM the acetotrophic and hydrogenotrophic kinds are two pathways of one methanogen pool rather than separate state variables. The two child terms exist for the parameters that name them and do not assert separate pools.</rdfs:comment>
         <rdfs:label>Methanogens</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
