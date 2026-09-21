@@ -172,6 +172,14 @@ place, and are left out:
   site sit under Land surface beside Field, as tracts of land under a use.
 - ENVO's `alkaline flat` (`ENVO:00000196`) lists `playa` as a synonym and is
   the reference for Playa.
+- `fumarole` is a related synonym of Volcanic vent, not an exact one. ODM2
+  says "also known as fumarole", and ENVO's `fumarole` (`ENVO:00000216`) is
+  the reference, but in geological usage a vent is the wider term.
+- Five new labels use "plant" in the industrial sense: Power plant,
+  Hydroelectric plant, Thermoelectric plant, Wastewater treatment plant, and
+  Water supply treatment plant. Plant (`BERVO:8000021`) is the organism. The
+  labels are distinct and the validator is content; a lexical matcher over
+  BERVO labels will need to know the two senses.
 - Facility and its children, the plants, the laboratory, the house, and the
   water-use establishment, reach further from earth systems modelling than
   the rest of BERVO. They are here so that a dataset's ODM2 site type can
