@@ -249,6 +249,7 @@ worse than none.
 | `GO` | Biological processes — *Biological process* → `GO:0008150` | 1 |
 | `AGRO` | Agronomy — *Irrigation* → `AGRO:00000006` | 1 |
 | `MIXS` | Sequence-metadata standard fields | 4 |
+| `COB` | Core Ontology for Biology and Biomedicine — *Organism* → `COB:0000022` | 1 |
 | `COMO` | Measurement and experiment metadata concepts | 274 |
 | `ODM2` | ODM2 controlled vocabularies, as `ODM2:<scheme>/<id>` — *Nitrite* → `ODM2:speciation/NO2`, *Rock* → `ODM2:medium/rock`, *Stream* → `ODM2:sitetype/stream` | 206 |
 
