@@ -199,6 +199,10 @@ def validate(path: Path) -> Report:
     type_styles: dict[str, int] = defaultdict(int)
     # IDs and labels of obsoleted terms: nothing live should point at them.
     obsolete_terms: set[str] = set()
+    # label -> ID, so a parent or filler given either way lands on one term.
+    label_ids: dict[str, str] = {}
+    # Every Category/Parents token on a live row, i.e. every class that has a child.
+    parent_tokens: set[str] = set()
 
     for offset, row in enumerate(data):
         line = FIRST_DATA_ROW + offset
@@ -250,6 +254,13 @@ def validate(path: Path) -> Report:
                 labels[key] = line
             known_labels.add(label)
             folded_labels.setdefault(key, label)
+            if term_id:
+                label_ids[label] = term_id
+        if term_id not in obsolete_terms:
+            for column in LABEL_OR_CURIE_COLUMNS:
+                col = index.get(column)
+                if col is not None and col < len(row):
+                    parent_tokens.update(_split(row[col]))
 
         term_type = cell(row, type_col)
         if not term_type:
@@ -268,6 +279,8 @@ def validate(path: Path) -> Report:
 
     # --- Pass 2: referential integrity, now that every term is known. ---
     xref_prefixes: Counter = Counter()
+    # (column, filler) -> rows carrying it, for the inert-filler check below.
+    fillers: dict[tuple[str, str], list[int]] = defaultdict(list)
 
     for offset, row in enumerate(data):
         line = FIRST_DATA_ROW + offset
@@ -355,6 +368,8 @@ def validate(path: Path) -> Report:
                         f"{term_id}.{column} restriction filler {token!r} is not a class"
                         f"{suggestion}",
                     )
+                elif not obsolete:
+                    fillers[(column, token)].append(line)
 
         parented = False
         for column in LABEL_OR_CURIE_COLUMNS:
@@ -406,6 +421,19 @@ def validate(path: Path) -> Report:
                 )
         if not parented and not obsolete and term_id not in ROOTLESS_IDS:
             report.warn(line, f"{term_id} has no Category and no Parents; it will be an orphan class")
+
+    # A `some X` restriction only says something when X has subclasses; with
+    # none, a reasoner learns nothing from it (issue #56). One warning per
+    # filler, since the same class fills every row that uses the column.
+    parent_ids = {label_ids.get(tok, tok) for tok in parent_tokens}
+    for (column, token), lines in sorted(fillers.items()):
+        if label_ids.get(token, token) not in parent_ids:
+            report.warn(
+                lines[0],
+                f"{column} filler {token!r} has no subclasses, so the restriction on "
+                f"{len(lines)} row(s) generalises nothing; give {token!r} the classes it "
+                f"is meant to cover",
+            )
 
     # One warning per undeclared prefix rather than per row: 275 identical
     # warnings would bury everything else.

@@ -214,6 +214,13 @@ belongs in `measurement_ofs`.
 Leave it blank unless the variable genuinely ranges over multiple chemicals. A variable about
 one named substance should say so in `measurement_ofs` instead.
 
+The restriction only means something because `Chemical` has subclasses: the named
+substances sit under it, directly or via `Element`, `Ion`, `Organic compound`, `Mineral`, or
+`Chemical pool` (issue #56). A new substance goes under `Chemical` or one of those, not
+directly under `Concept`. The validator warns when a filler has no subclasses at all, and
+`src/sparql/variables-involving-chemicals.sparql` lists every variable that reaches
+`Chemical` by either route.
+
 ## Cross-references to other ontologies
 
 The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 351

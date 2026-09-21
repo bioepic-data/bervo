@@ -425,6 +425,47 @@ class TestClassExpressionColumns(ValidatorTestCase):
         ]))
         self.assertEqual(len([e for e in report.errors if "is not a class" in e]), 1)
 
+    def test_filler_without_subclasses_warns_once(self):
+        """`some Chemical` with nothing under Chemical is inert (issue #56)."""
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "Chemical", category="Variable"),
+            row("BERVO:0000001", "Soil carbon", involves_chemicals="Chemical"),
+            row("BERVO:0000002", "Soil nitrogen", involves_chemicals="Chemical"),
+        ]))
+        matching = [w for w in report.warnings if "has no subclasses" in w]
+        self.assertEqual(len(matching), 1, report.warnings)
+        self.assertIn("'Chemical'", matching[0])
+        self.assertIn("2 row(s)", matching[0])
+
+    def test_filler_with_a_subclass_is_not_inert(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "Chemical", category="Variable"),
+            row("BERVO:8000002", "Argon", category="Chemical"),
+            row("BERVO:0000001", "Soil carbon", involves_chemicals="Chemical"),
+        ]))
+        self.assertFalse(any("has no subclasses" in w for w in report.warnings), report.warnings)
+
+    def test_filler_given_as_id_sees_children_given_by_label(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "Chemical", category="Variable"),
+            row("BERVO:8000002", "Argon", category="BERVO:8000001"),
+            row("BERVO:0000001", "Soil carbon", involves_chemicals="Chemical"),
+            row("BERVO:0000002", "Soil nitrogen", involves_chemicals="BERVO:8000001"),
+        ]))
+        self.assertFalse(any("has no subclasses" in w for w in report.warnings), report.warnings)
+
+    def test_obsolete_child_does_not_rescue_an_inert_filler(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "Chemical", category="Variable"),
+            row("BERVO:8000002", "obsolete Argon", category="Chemical", obsolete="true"),
+            row("BERVO:0000001", "Soil carbon", involves_chemicals="Chemical"),
+        ]))
+        self.assertTrue(any("has no subclasses" in w for w in report.warnings), report.warnings)
+
 
 class TestPrefixDeclarations(unittest.TestCase):
     """The resolvable-prefix set must track bervo.Makefile, not duplicate it."""
@@ -504,6 +545,11 @@ class TestRealTemplate(unittest.TestCase):
     def test_repository_template_has_no_errors(self):
         report = validator.validate(REPO_ROOT / "src" / "ontology" / "bervo-src.csv")
         self.assertEqual(report.errors, [], "src/ontology/bervo-src.csv has structural errors")
+
+    def test_repository_restriction_fillers_are_not_inert(self):
+        """Every `involves_chemicals` filler must keep its subclasses (issue #56)."""
+        report = validator.validate(REPO_ROOT / "src" / "ontology" / "bervo-src.csv")
+        self.assertEqual([w for w in report.warnings if "has no subclasses" in w], [])
 
 
 if __name__ == "__main__":

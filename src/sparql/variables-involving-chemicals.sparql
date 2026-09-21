@@ -1,0 +1,34 @@
+# Report: every variable that involves a chemical, and how it says so.
+#
+# Two routes lead here. A generic variable such as "Gaseous diffusivity" carries
+# the restriction `involves_chemicals some Chemical`. A specific one such as
+# "Gaseous argon diffusivity" names its substance in `measurement_of`, an
+# annotation, and only counts because that substance sits under Chemical
+# (BERVO:8000586). Before the chemical concepts were placed under Chemical
+# (issue #56) the second route returned nothing.
+#
+#   robot query -i src/ontology/components/bervo-src.owl \
+#       -q src/sparql/variables-involving-chemicals.sparql out.tsv
+
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix BERVO: <https://w3id.org/bervo/BERVO_>
+
+SELECT DISTINCT ?variable ?label ?chemical ?route
+WHERE {
+  {
+    ?variable rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty BERVO:involves_chemicals ;
+      owl:someValuesFrom ?chemical ] .
+    BIND("involves_chemicals" AS ?route)
+  }
+  UNION
+  {
+    ?variable BERVO:measurement_of ?chemical .
+    BIND("measurement_of" AS ?route)
+  }
+  ?chemical rdfs:subClassOf* BERVO:8000586 .
+  ?variable rdfs:label ?label .
+}
+ORDER BY ?route ?label
