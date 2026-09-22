@@ -12629,6 +12629,7 @@
         <rdfs:comment>LandSurfDataType.txt</rdfs:comment>
         <rdfs:label>Zero plane displacement height</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000076"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
@@ -12771,7 +12772,8 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>degree</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000031"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
     </Class>
     
 
@@ -12790,7 +12792,8 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>degree</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000031"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
     </Class>
     
 
@@ -19512,11 +19515,11 @@
         <rdfs:comment>PlantMgmtDataType.txt</rdfs:comment>
         <rdfs:label>Flag for stand replacing disturbance</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
 
@@ -19531,11 +19534,11 @@
         <rdfs:comment>PlantMgmtDataType.txt</rdfs:comment>
         <rdfs:label>Year of planting</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
 
@@ -19550,11 +19553,12 @@
         <rdfs:comment>PlantMgmtDataType.txt</rdfs:comment>
         <rdfs:label>Year of harvest</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000003"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
 
@@ -19569,11 +19573,11 @@
         <rdfs:comment>PlantMgmtDataType.txt</rdfs:comment>
         <rdfs:label>Day of planting</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
 
@@ -19588,11 +19592,12 @@
         <rdfs:comment>PlantMgmtDataType.txt</rdfs:comment>
         <rdfs:label>Day of harvest</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000003"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
 
@@ -19626,11 +19631,11 @@
         <rdfs:comment>PlantMgmtDataType.txt</rdfs:comment>
         <rdfs:label>Alternate year of planting</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
 
@@ -19645,11 +19650,11 @@
         <rdfs:comment>PlantMgmtDataType.txt</rdfs:comment>
         <rdfs:label>Alternate day of planting</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
 
@@ -19664,11 +19669,12 @@
         <rdfs:comment>PlantMgmtDataType.txt</rdfs:comment>
         <rdfs:label>Alternate year of harvest</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000003"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
 
@@ -19683,11 +19689,12 @@
         <rdfs:comment>PlantMgmtDataType.txt</rdfs:comment>
         <rdfs:label>Alternate day of harvest</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000003"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
 
@@ -23464,7 +23471,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>Mg d-2 t-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
     </Class>
     
@@ -23578,8 +23585,8 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000283"/>
         <bervo:BERVO_has_unit>h-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
-        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
     </Class>
     
 
@@ -23597,7 +23604,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>Mg d-2 h-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
     </Class>
     
@@ -23871,7 +23878,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>Mg d-2 h-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
     </Class>
     
