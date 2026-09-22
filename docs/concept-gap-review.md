@@ -231,9 +231,22 @@ settled.
   label and its definition do not agree with each other, which wants settling
   before anything is linked to it.
 
-The heat kinds were the second slice of #83. The remaining slices are the
-microbial guilds, the `_pft` variables, the water potential terms, field
-capacity and wilting point, time step, transformation, and population.
+The heat kinds were the second slice of #83 and the water potential terms the
+third. The remaining slices are the microbial guilds, the `_pft` variables,
+field capacity and wilting point, time step, transformation, and population.
+
+The water potential slice put the terms in `attributes` rather than
+`measurement_ofs`, because Water potential sits under Physical property and
+every used descendant of Physical property is an `attributes` value: 117 rows
+for Concentration, 75 for Content, 53 for Diffusivity. The heat kinds went in
+`measurement_ofs` because they sit under Heat, which is a form of energy and
+not a property. The column follows the concept's own parent.
+
+Water potential had two components and the variables name four. Matric
+potential (`BERVO:8000805`) and Gravitational potential (`BERVO:8000806`) were
+added beside Turgor and Osmotic, which completes the classical decomposition.
+Root total water potential says so itself: "the sum of osmotic, turgor, and
+matric potentials".
 
 Behind this is an older backlog: 128 labels name Carbon and do not reference
 it, 69 Water, 62 Irrigation, 45 Soil.
