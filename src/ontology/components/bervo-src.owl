@@ -19457,12 +19457,12 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantMgmtDataType.txt</rdfs:comment>
         <rdfs:label>Harvest efficiency</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000003"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NONE</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000296"/>
     </Class>
     
 
@@ -19478,6 +19478,7 @@
         <rdfs:label>Harvest cutting height (+ve) or fractional LAI removal (-ve)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000076"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000003"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>

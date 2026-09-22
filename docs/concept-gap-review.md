@@ -181,7 +181,26 @@ settled.
   rows take it in `contexts`, and the two rows that already named it were moved
   there: Harvest efficiency had it in `measurement_ofs`, Harvest cutting height
   in `measured_ins`. Harvest is an event, not a material, so neither of those
-  columns can hold it.
+  columns can hold it. Harvest efficiency was left with nothing in any relation
+  column by that move, so it took what it actually measures: it is
+  `FracBiomHarvsted`, the fraction of biomass harvested, and it now reads
+  `attributes=Fraction`, `measurement_ofs=Biomass`, `contexts=Harvest`.
+
+  **Plant or Vegetation.** Both are now in use in the `Plant management
+  variable` block and the two concepts say which is which. Plant
+  (`BERVO:8000021`) sits under Organism and is *"a multicellular organism that
+  typically produces its own food through photosynthesis"*. Vegetation
+  (`BERVO:8000716`) is *"plant cover of an area taken as a whole, without
+  regard to the taxa that compose it"*. So a row about organisms or taxa takes
+  Plant, as Number of plant species does, and a row about the stand on a piece
+  of ground takes Vegetation, as the planting and harvest dates do. The later
+  slices of #83 should follow that split rather than re-deriving it.
+
+  One row in the block is left with no relation at all: Match plant functional
+  type from different scenarios (`BERVO:0001059`). It was considered and left.
+  It is scenario bookkeeping rather than a statement about vegetation, and its
+  label and its definition do not agree with each other, which wants settling
+  before anything is linked to it.
 
 The remaining slices of #83 are the microbial guilds, the `_pft` variables, the
 heat kinds, the water potential terms, field capacity and wilting point, time
