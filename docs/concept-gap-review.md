@@ -164,14 +164,24 @@ settled.
   outside the seventeen gained it too, the `Measurement of slope` children
   Azimuth, Sine, and Cosine of slope. Land surface is now named by 14 rows in
   all. The seven of the seventeen left are roughness heights, the wind speed
-  measurement height, and the two boundary layer terms; none of them is about
-  the land surface.
+  measurement height, and the two boundary layer terms; none of those six is
+  about the land surface. Zero plane displacement height is the seventh. It is
+  a height above the ground surface, but what it measures is canopy drag, so it
+  takes `contexts=Canopy|Vegetation` instead.
 - ~~Nothing references Vegetation except Fractional vegetation cover.~~ Done,
-  eleven rows. Zero plane displacement height takes `contexts=Canopy|Vegetation`.
-  The eight planting and harvest date rows and the stand-replacing disturbance
-  flag take `contexts=Vegetation`, and the four harvest rows take Harvest
-  beside it. A date does not measure vegetation, so the column is `contexts`
-  and not `measurement_ofs`; `Date of fire` sets the same precedent.
+  fourteen rows. Zero plane displacement height takes
+  `contexts=Canopy|Vegetation`. Every `Plant management variable` row that is
+  about vegetation takes `contexts=Vegetation`: the eight planting and harvest
+  date rows, the stand-replacing disturbance flag, the species death flag,
+  Type of harvest, and Thinning of plant population. A date does not measure
+  vegetation, so the column is `contexts` and not `measurement_ofs`;
+  `Date of fire` sets the same precedent.
+
+  Harvest (`BERVO:8000003`) is now named in one column only. The five harvest
+  rows take it in `contexts`, and the two rows that already named it were moved
+  there: Harvest efficiency had it in `measurement_ofs`, Harvest cutting height
+  in `measured_ins`. Harvest is an event, not a material, so neither of those
+  columns can hold it.
 
 The remaining slices of #83 are the microbial guilds, the `_pft` variables, the
 heat kinds, the water potential terms, field capacity and wilting point, time
