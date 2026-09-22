@@ -74,9 +74,11 @@ now carry `Demand`. No other variable was changed.
   parent. EcoSIM's parameters call the aerobic heterotrophs aerobic
   bacteria, and the term's `Comment` records that.
 - Latent, Sensible, and Convective heat sit under Heat as kinds of heat, not
-  under Heat flux. The variables that will name them are fluxes, and those
-  carry Heat flux in `attributes` already; the new terms belong in
-  `measurement_ofs`, saying which heat the flux is of.
+  under Heat flux. The variables that name them are fluxes, and those carry
+  Heat flux in `attributes` already; the new terms went in `measurement_ofs`,
+  saying which heat the flux is of. Done: 22 rows, Latent 11, Sensible 5,
+  Convective 6, which took the generic Heat from 62 rows to 50. Five of the 22
+  are fluxes by their units that had no `Heat flux` attribute and now do.
 - Dissolved organic matter and Particulate organic matter have Chemical pool
   as `Category` and Organic matter as a second parent, as Soil organic
   matter does. Particulate organic matter also takes Particulate matter,
@@ -203,9 +205,9 @@ settled.
   label and its definition do not agree with each other, which wants settling
   before anything is linked to it.
 
-The remaining slices of #83 are the microbial guilds, the `_pft` variables, the
-heat kinds, the water potential terms, field capacity and wilting point, time
-step, transformation, and population.
+The heat kinds were the second slice of #83. The remaining slices are the
+microbial guilds, the `_pft` variables, the water potential terms, field
+capacity and wilting point, time step, transformation, and population.
 
 Behind this is an older backlog: 128 labels name Carbon and do not reference
 it, 69 Water, 62 Irrigation, 45 Soil.
