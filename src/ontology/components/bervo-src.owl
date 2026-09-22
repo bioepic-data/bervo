@@ -40046,7 +40046,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000264 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000264">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000106"/>
         <obo:IAO_0000115>The conversion of an inorganic substance into an organic compound through biological or chemical processes, most commonly referring to nitrogen or carbon fixation. This process is fundamental for understanding nutrient cycling, primary productivity, and the transformation of atmospheric gases into biologically available forms in terrestrial and aquatic ecosystems.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Fixation</rdfs:label>
@@ -41506,7 +41506,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000344 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000344">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000558"/>
         <obo:IAO_0000115>The mechanisms and processes through which biological communities develop and stabilize over time, including colonization, competition, facilitation, and stochastic processes. Community assembly processes determine ecosystem structure, functional redundancy, and resilience to environmental disturbances.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000105"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
@@ -42378,8 +42378,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The category of methodology employed to generate data, including sequencing, spectroscopy, cultivation, or measurement techniques. Experimental process classification enables assessment of method-specific biases and comparability.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000204"/>
+        <oboInOwl:hasRelatedSynonym>experimental process</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
-        <rdfs:label>Experimental process</rdfs:label>
+        <rdfs:label>Experimental process type</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
