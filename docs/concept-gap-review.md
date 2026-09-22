@@ -96,8 +96,9 @@ now carry `Demand`. No other variable was changed.
 
 These were found in the same pass and not acted on.
 
-**Processes.** Process has three children and Biological process six. The
-variables name many more, mostly in definitions: Photosynthesis (61
+**Processes.** Process has 24 descendants (#51 folded in Biological process,
+Fixation and Community assembly process, which sat beside it under Concept).
+The variables name many more processes than that, mostly in definitions: Photosynthesis (61
 definitions; only C4 photosynthesis exists and it sits under Concept),
 Decomposition (101), Transpiration (32), Evapotranspiration (24),
 Nitrification (31), Denitrification (29), Deposition (35), Interception (32),
