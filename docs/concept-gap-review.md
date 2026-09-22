@@ -141,14 +141,70 @@ Permafrost (10) have ENVO classes.
 
 ## Variables that should point at the new concepts
 
-Tracked as [issue #83](https://github.com/bioepic-data/bervo/issues/83).
+Tracked as [issue #83](https://github.com/bioepic-data/bervo/issues/83), and
+done in slices. The five bullets below were the first slice; all five are
+settled.
 
-- Rock fraction and the two "Soil volume including macropores and rock" rows
-  name Rock and reference nothing.
-- Eleven of the 27 Sediment variables have `measured_ins=NA`.
-- Unsaturated water flux should sit in Unsaturated zone.
-- The 17 Land surface variables reference Land surface 7 times.
-- Nothing references Vegetation except Fractional vegetation cover.
+- ~~Rock fraction and the two "Soil volume including macropores and rock" rows
+  name Rock and reference nothing.~~ Done. All three name Rock in
+  `measurement_ofs`, and the two volume rows name Macropore beside it.
+- ~~Eleven of the 27 Sediment variables have `measured_ins=NA`.~~ Done, with a
+  split. Seven of the eleven are erosion of a substance carried as sediment
+  (carbon, urea, ammonium, aluminum) and take `measured_ins=Sediment`. Four
+  measure the sediment itself and take `measurement_ofs=Sediment` instead:
+  Erosion rate, Hourly sinking rate, Sediment transport, and Sediment erosion.
+  Hourly sinking rate takes `measured_ins=Water`, since the particles settle
+  through the water column. Three Sediment variables keep `measured_ins=NA`
+  because no material is the medium.
+- ~~Unsaturated water flux should sit in Unsaturated zone.~~ Done.
+- ~~The 17 Land surface variables reference Land surface 7 times.~~ Done, ten
+  of the seventeen, up from six. Four of the seventeen gained it: Altitude of
+  landscape, Altitude of grid cell, Measurement of altitude, and Measurement of
+  slope, each with Altitude or Slope beside it in `measurement_ofs`. Three rows
+  outside the seventeen gained it too, the `Measurement of slope` children
+  Azimuth, Sine, and Cosine of slope. Land surface is now named by 14 rows in
+  all. The seven of the seventeen left are roughness heights, the wind speed
+  measurement height, and the two boundary layer terms; none of those six is
+  about the land surface. Zero plane displacement height is the seventh. It is
+  a height above the ground surface, but what it measures is canopy drag, so it
+  takes `contexts=Canopy|Vegetation` instead.
+- ~~Nothing references Vegetation except Fractional vegetation cover.~~ Done,
+  fourteen rows. Zero plane displacement height takes
+  `contexts=Canopy|Vegetation`. Every `Plant management variable` row that is
+  about vegetation takes `contexts=Vegetation`: the eight planting and harvest
+  date rows, the stand-replacing disturbance flag, the species death flag,
+  Type of harvest, and Thinning of plant population. A date does not measure
+  vegetation, so the column is `contexts` and not `measurement_ofs`;
+  `Date of fire` sets the same precedent.
+
+  Harvest (`BERVO:8000003`) is now named in one column only. The five harvest
+  rows take it in `contexts`, and the two rows that already named it were moved
+  there: Harvest efficiency had it in `measurement_ofs`, Harvest cutting height
+  in `measured_ins`. Harvest is an event, not a material, so neither of those
+  columns can hold it. Harvest efficiency was left with nothing in any relation
+  column by that move, so it took what it actually measures: it is
+  `FracBiomHarvsted`, the fraction of biomass harvested, and it now reads
+  `attributes=Fraction`, `measurement_ofs=Biomass`, `contexts=Harvest`.
+
+  **Plant or Vegetation.** Both are now in use in the `Plant management
+  variable` block and the two concepts say which is which. Plant
+  (`BERVO:8000021`) sits under Organism and is *"a multicellular organism that
+  typically produces its own food through photosynthesis"*. Vegetation
+  (`BERVO:8000716`) is *"plant cover of an area taken as a whole, without
+  regard to the taxa that compose it"*. So a row about organisms or taxa takes
+  Plant, as Number of plant species does, and a row about the stand on a piece
+  of ground takes Vegetation, as the planting and harvest dates do. The later
+  slices of #83 should follow that split rather than re-deriving it.
+
+  One row in the block is left with no relation at all: Match plant functional
+  type from different scenarios (`BERVO:0001059`). It was considered and left.
+  It is scenario bookkeeping rather than a statement about vegetation, and its
+  label and its definition do not agree with each other, which wants settling
+  before anything is linked to it.
+
+The remaining slices of #83 are the microbial guilds, the `_pft` variables, the
+heat kinds, the water potential terms, field capacity and wilting point, time
+step, transformation, and population.
 
 Behind this is an older backlog: 128 labels name Carbon and do not reference
 it, 69 Water, 62 Irrigation, 45 Soil.
