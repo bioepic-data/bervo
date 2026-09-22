@@ -231,9 +231,10 @@ settled.
   label and its definition do not agree with each other, which wants settling
   before anything is linked to it.
 
-The heat kinds were the second slice of #83 and the water potential terms the
-third. The remaining slices are the microbial guilds, the `_pft` variables,
-field capacity and wilting point, time step, transformation, and population.
+The heat kinds were the second slice of #83, the water potential terms the
+third, and field capacity and wilting point the fourth. The remaining slices
+are the microbial guilds, the `_pft` variables, time step, transformation, and
+population.
 
 The water potential slice put the terms in `attributes` rather than
 `measurement_ofs`, because Water potential sits under Physical property and
@@ -252,6 +253,24 @@ potential (`BERVO:8000805`) and Gravitational potential (`BERVO:8000806`) were
 added beside Turgor and Osmotic, which completes the classical decomposition.
 Root total water potential says so itself: "the sum of osmotic, turgor, and
 matric potentials".
+
+Field capacity and Wilting point went in `contexts`, on twelve rows. That is
+an exception to the rule above, and it follows an older one. Both are named
+states of soil water, and a variable is measured *at* them: a water potential
+at field capacity is a water potential. The rows that say "at standard ambient
+temperature" and "dewpoint" already put the reference state in `contexts` and
+the quantity in `attributes`, and Daily dewpoint temperature does so even
+though the variable is the dewpoint itself. The water content rows follow
+Dewpoint. So each term is named in one column only, as Harvest is.
+
+Three field capacity rows carried `attributes=Capacity|Water potential`.
+Capacity was standing in for field capacity, and a water potential is not a
+capacity. Those three now carry `Water potential` alone.
+
+The two automatic irrigation thresholds are fractions of the water held
+between the two points, so they name both. Excess water (`BERVO:0001769`) was
+left out. Its definition says "beyond field capacity" once, and its own
+quantity is mobile water, not a state of the soil.
 
 Behind this is an older backlog: 128 labels name Carbon and do not reference
 it, 69 Water, 62 Irrigation, 45 Soil.
