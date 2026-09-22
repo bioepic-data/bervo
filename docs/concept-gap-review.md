@@ -74,9 +74,37 @@ now carry `Demand`. No other variable was changed.
   parent. EcoSIM's parameters call the aerobic heterotrophs aerobic
   bacteria, and the term's `Comment` records that.
 - Latent, Sensible, and Convective heat sit under Heat as kinds of heat, not
-  under Heat flux. The variables that will name them are fluxes, and those
-  carry Heat flux in `attributes` already; the new terms belong in
-  `measurement_ofs`, saying which heat the flux is of.
+  under Heat flux. The variables that name them are fluxes, and those carry
+  Heat flux in `attributes` already; the new terms went in `measurement_ofs`,
+  saying which heat the flux is of. Done, and the three no longer sit flat.
+
+  They were added as three siblings, which read as alternatives. They are not.
+  Latent and Sensible divide heat by **thermodynamic form**, by what a transfer
+  does to a body. Convective divides it by **transfer mechanism**, by how the
+  energy moves. Heat carried convectively is also sensible heat. Two grouping
+  classes now hold the two axes apart:
+
+  ```
+  Heat (BERVO:8000092)
+    Heat by thermodynamic form (BERVO:9000036)
+      Latent heat, Sensible heat
+    Heat by transfer mechanism (BERVO:9000037)
+      Convective heat, Conductive heat, Radiative heat
+  ```
+
+  Conductive heat (`BERVO:8000803`) and Radiative heat (`BERVO:8000804`) were
+  added with the groupings, because an axis with one member is not an axis and
+  the variables name all three mechanisms. A variable may carry one term from
+  each axis, and six now do, such as Ecosystem sensible heat flux, whose
+  definition says "through conduction and convection".
+
+  Counts: Latent 11, Sensible 5, Convective 11, Conductive 5, Radiative 1. The
+  generic Heat went from 62 rows to 49. Five rows are fluxes by their units
+  that had no `Heat flux` attribute and now do.
+
+  Heat capacity, Heat flux and Heat content remain flat under Heat. They are
+  quantities of heat rather than kinds of it, and sorting that out is a
+  separate question.
 - Dissolved organic matter and Particulate organic matter have Chemical pool
   as `Category` and Organic matter as a second parent, as Soil organic
   matter does. Particulate organic matter also takes Particulate matter,
@@ -203,9 +231,9 @@ settled.
   label and its definition do not agree with each other, which wants settling
   before anything is linked to it.
 
-The remaining slices of #83 are the microbial guilds, the `_pft` variables, the
-heat kinds, the water potential terms, field capacity and wilting point, time
-step, transformation, and population.
+The heat kinds were the second slice of #83. The remaining slices are the
+microbial guilds, the `_pft` variables, the water potential terms, field
+capacity and wilting point, time step, transformation, and population.
 
 Behind this is an older backlog: 128 labels name Carbon and do not reference
 it, 69 Water, 62 Irrigation, 45 Soil.
