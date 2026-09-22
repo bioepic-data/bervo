@@ -237,10 +237,15 @@ field capacity and wilting point, time step, transformation, and population.
 
 The water potential slice put the terms in `attributes` rather than
 `measurement_ofs`, because Water potential sits under Physical property and
-every used descendant of Physical property is an `attributes` value: 117 rows
-for Concentration, 75 for Content, 53 for Diffusivity. The heat kinds went in
-`measurement_ofs` because they sit under Heat, which is a form of energy and
-not a property. The column follows the concept's own parent.
+that is overwhelmingly where the Physical property tree is used. Of its 45
+descendants, 25 are referenced at all, and between them they account for 491
+uses in `attributes` against 4 everywhere else: 117 rows for Concentration, 75
+for Content, 53 for Diffusivity. Three descendants are the exceptions, and all
+four stray uses are in `measurement_ofs`: pH (2 uses, and none in
+`attributes`), Non-structural C3 content (1, likewise none), and Mass (1,
+against 62). The heat kinds went in `measurement_ofs` because they sit under
+Heat, which is a form of energy and not a property. The column follows the
+concept's own parent.
 
 Water potential had two components and the variables name four. Matric
 potential (`BERVO:8000805`) and Gravitational potential (`BERVO:8000806`) were

@@ -50226,7 +50226,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000789"/>
         <obo:IAO_0000115>Component of water potential due to the capillary and adsorptive forces binding water to a solid matrix, always zero or negative.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 22 2026), water potential slice of #83</rdfs:comment>
-        <rdfs:comment>Soil capillary pressure (BERVO:0001872) is a separate quantity and is not annotated with this term. It is the gas-liquid pressure difference at air-water interfaces in soil pores; this potential covers the adsorptive forces binding water to particle surfaces as well. The definition of BERVO:0001872 calls the two equal in magnitude, which overstates the relation and is worth a curator reviewing.</rdfs:comment>
+        <rdfs:comment>Soil capillary pressure (BERVO:0001872) is a separate quantity and is not annotated with this term. It is the gas-liquid pressure difference at air-water interfaces in soil pores; this potential covers the adsorptive forces binding water to particle surfaces as well.</rdfs:comment>
         <rdfs:label>Matric potential</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
