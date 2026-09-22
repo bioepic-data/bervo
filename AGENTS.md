@@ -111,6 +111,30 @@ See the "EcoSIM provenance" section of the `bervo-terms` skill.
 
 `EcoSIM Other Names` is populated on zero rows.
 
+### `has_units`
+
+`has_units` is the one column in that group that holds a **literal** string rather than a
+reference to a term. It takes one of three kinds of value, and the difference between the
+last two is the one people get wrong:
+
+| Value | Means | Use it for |
+| --- | --- | --- |
+| a unit string (`m2 h-1`, `g d-2`, `g g-1`) | the variable has this unit | anything with a dimension |
+| `NONE` | a number with no dimension | fractions, ratios of like quantities, counts, trigonometric values, indices |
+| `NA` | no unit applies, because the variable has no numeric magnitude | categorical variables, flags, identifiers, dates, and the abstract grouping terms in the `0xxxxxx` block |
+
+Concepts (`8xxxxxx`) and grouping classes (`9xxxxxx`) are not variables, so they all take
+`NA`.
+
+`NONE` on a categorical variable is wrong: it claims the value is a dimensionless number
+when it is a label. `NA` on a fraction is wrong for the mirror reason. A `g g-1` mass
+ratio is dimensionless but the ontology writes the unit out, because the two masses are
+of different elements and the string says so; a ratio of like quantities, such as a
+length to a width, takes `NONE`.
+
+The column is a literal, so **the validator has no opinion on any of this**. A wrong unit
+string is not a broken reference and nothing will flag it. Only reading the row finds it.
+
 Conventions:
 
 - Multi-valued cells are separated by `|` with no surrounding spaces.
