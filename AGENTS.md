@@ -225,9 +225,9 @@ restriction then generalises nothing; reported once per filler), and `DbXrefs` p
 ROBOT cannot expand (reported once per prefix, not per row).
 
 On cross-references specifically, see the "Cross-references to other ontologies" section of
-the `bervo-terms` skill: map concepts rather than variables, verify the target term exists,
-and declare any new prefix in `src/ontology/bervo.Makefile` or it is emitted as a broken
-relative IRI.
+the `bervo-terms` skill: map variables as well as concepts wherever a true equivalent
+exists, verify the target term exists, and declare any new prefix in
+`src/ontology/bervo.Makefile` or it is emitted as a broken relative IRI.
 
 The checked-in template is expected to be error-free at all times;
 `tests/test_validate_bervo_src.py` enforces that.
