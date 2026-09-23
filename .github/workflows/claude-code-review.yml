@@ -64,7 +64,7 @@ jobs:
 
       - name: Install tooling
         run: |
-          python -m pip install --upgrade pip pytest
+          python -m pip install --upgrade pip pytest -r src/scripts/requirements.txt
           curl -fsSL https://just.systems/install.sh | bash -s -- --to /usr/local/bin
 
       # Without ROBOT the reviewer cannot run `just build`, so it can only infer
