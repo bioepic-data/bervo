@@ -52,6 +52,7 @@ and pull request.
 Everything is exposed through `just` (see `justfile`); `just --list` shows the full set.
 
 ```bash
+just setup             # install the validator's Python packages (ucumvert), once
 just validate          # structural checks on bervo-src.csv -- run this after every edit
 just fix-template      # normalise row widths in bervo-src.csv, then re-validate
 just test              # validator + Makefile integration tests

@@ -513,8 +513,7 @@ def validate(path: Path) -> Report:
         report.warn(
             None,
             f"ucumvert is not installed, so {UNITS_COLUMN} is checked only against BERVO's "
-            f"own unit rules, not the full UCUM grammar. Install it with "
-            f"'pip install -r src/scripts/requirements.txt'.",
+            f"own unit rules, not the full UCUM grammar. Install it with 'just setup'.",
         )
 
     # One warning per undeclared prefix rather than per row: 275 identical

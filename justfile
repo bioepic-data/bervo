@@ -13,6 +13,10 @@ validator := "src/scripts/validate_bervo_src.py"
 default:
     @just --list
 
+# Install the Python packages the validator uses (ucumvert, for the UCUM check).
+setup:
+    python3 -m pip install -r src/scripts/requirements.txt
+
 # --- Validation -------------------------------------------------------------
 
 # Structural checks on the term template. Run after every edit.
