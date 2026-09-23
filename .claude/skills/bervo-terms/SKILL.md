@@ -244,7 +244,7 @@ directly under `Concept`. The validator warns when a filler has no subclasses at
 
 ## Cross-references to other ontologies
 
-The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 817
+The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 816
 cross-references on 609 terms today — about 22% of the ontology.
 
 ### Map variables as well as concepts
@@ -267,8 +267,8 @@ or hourly, and a model-specific composite such as *Cumulative ecosystem heterotr
 respiration* may have no equivalent at all. A broader external term is not an exact
 equivalent.
 
-Most terms carry exactly one cross-reference; 192 carry two (typically a domain ontology
-plus an ODM2 concept) and eight carry three or more. Leave the column blank when no good match exists — a wrong mapping is
+Most terms carry exactly one cross-reference; 193 carry two (typically a domain ontology
+plus an ODM2 concept) and seven carry three or more. Leave the column blank when no good match exists — a wrong mapping is
 worse than none.
 
 ### Which ontology to reach for
@@ -283,7 +283,7 @@ worse than none.
 | `AGRO` | Agronomy — *Irrigation* → `AGRO:00000006` | 1 |
 | `MIXS` | Sequence-metadata standard fields | 4 |
 | `COB` | Core Ontology for Biology and Biomedicine — *Organism* → `COB:0000022` | 1 |
-| `NCBITaxon` | Taxa — *Fungi* → `NCBITaxon:4751` | 6 |
+| `NCBITaxon` | Taxa — *Fungi* → `NCBITaxon:4751` | 5 |
 | `COMO` | Measurement and experiment metadata concepts | 275 |
 | `ODM2` | ODM2 controlled vocabularies, as `ODM2:<scheme>/<id>` — *Nitrite* → `ODM2:speciation/NO2`, *Rock* → `ODM2:medium/rock`, *Stream* → `ODM2:sitetype/stream`, *Albedo* → `ODM2:variablename/albedo` | 296 |
 
