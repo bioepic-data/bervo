@@ -552,10 +552,6 @@ class TestRealTemplate(unittest.TestCase):
         self.assertEqual([w for w in report.warnings if "has no subclasses" in w], [])
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
 class TestUnits(ValidatorTestCase):
     """``has_units`` holds UCUM (issues #14, #88)."""
 
@@ -591,3 +587,7 @@ class TestUnits(ValidatorTestCase):
     def test_invalid_ucum_is_rejected(self):
         errors = self.unit_errors("Mpa")
         self.assertTrue(any("not valid UCUM" in e for e in errors), errors)
+
+
+if __name__ == "__main__":
+    unittest.main()
