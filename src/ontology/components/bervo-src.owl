@@ -13589,7 +13589,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000725">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The number of individual plants per unit ground area, representing vegetation density and competitive interactions within plant communities. This plant population density influences resource competition, growth rates, and ecosystem productivity in both natural and managed systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The number of individual plants in the grid cell, representing vegetation density and competitive interactions within plant communities. This plant population density influences resource competition, growth rates, and ecosystem productivity in both natural and managed systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PlantPopulation_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
@@ -20704,7 +20704,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001105">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>The count of root axes per unit ground area within a specific soil layer. This parameter quantifies root branching patterns and root system architecture, which directly influences nutrient uptake capacity and soil stabilization.</obo:IAO_0000115>
+        <obo:IAO_0000115>The count of root axes in the grid cell within a specific soil layer. This parameter quantifies root branching patterns and root system architecture, which directly influences nutrient uptake capacity and soil stabilization.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Root2ndXNum_pvr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
@@ -20990,7 +20990,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001120">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>The concentration of gaseous tracer compounds within root tissues per unit ground area. This measurement is used to track gas transport pathways and understand root-soil gas exchange processes in biogeochemical cycling studies.</obo:IAO_0000115>
+        <obo:IAO_0000115>The concentration of gaseous tracer compounds within root tissues in the grid cell. This measurement is used to track gas transport pathways and understand root-soil gas exchange processes in biogeochemical cycling studies.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>trcg_rootml_pvr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
@@ -21009,7 +21009,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001121">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>The amount of dissolved gaseous tracer compounds in root tissues per unit ground area. This parameter helps quantify solute transport through root systems and understand how roots facilitate the movement of dissolved gases in soil-plant systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The amount of dissolved gaseous tracer compounds in root tissues in the grid cell. This parameter helps quantify solute transport through root systems and understand how roots facilitate the movement of dissolved gases in soil-plant systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>trcs_rootml_pvr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
@@ -21117,7 +21117,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001126">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>The amount of carbon contained in protein compounds within a specific root layer per unit ground area. This measurement represents the nitrogen-rich organic carbon pool that is readily available for decomposition and nutrient cycling in soil ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The amount of carbon contained in protein compounds within a specific root layer in the grid cell. This measurement represents the nitrogen-rich organic carbon pool that is readily available for decomposition and nutrient cycling in soil ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RootProteinC_pvr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
@@ -21448,7 +21448,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001144">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>The volumetric rate of water input to the surface litter layer from snowmelt per unit ground area. This flux is important for understanding seasonal hydrology, litter decomposition rates, and nutrient leaching processes in snow-dominated ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The volumetric rate of water input to the surface litter layer from snowmelt in the grid cell. This flux is important for understanding seasonal hydrology, litter decomposition rates, and nutrient leaching processes in snow-dominated ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>WatFlowSno2LitRM_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
@@ -21486,7 +21486,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001146">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>The net rate of thermal energy transfer to the surface litter layer per unit ground area. This parameter is crucial for modeling litter temperature dynamics, decomposition rates, and the thermal buffering effects of organic surface layers in terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The net rate of thermal energy transfer to the surface litter layer in the grid cell. This parameter is crucial for modeling litter temperature dynamics, decomposition rates, and the thermal buffering effects of organic surface layers in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HeatFLoByWat2LitR_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
@@ -21505,7 +21505,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001147">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>The total volume of surface litter per unit ground area, including both solid organic matter and pore spaces. This measurement is essential for calculating litter bulk density, porosity, and the physical capacity for water retention and gas exchange.</obo:IAO_0000115>
+        <obo:IAO_0000115>The total volume of surface litter in the grid cell, including both solid organic matter and pore spaces. This measurement is essential for calculating litter bulk density, porosity, and the physical capacity for water retention and gas exchange.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>VLitR_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
@@ -21543,7 +21543,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001149">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>The maximum volume of water that can be retained by the surface litter layer per unit ground area. This parameter determines the litter&apos;s ability to store precipitation, reduce surface runoff, and provide water for decomposition processes and plant uptake.</obo:IAO_0000115>
+        <obo:IAO_0000115>The maximum volume of water that can be retained by the surface litter layer in the grid cell. This parameter determines the litter&apos;s ability to store precipitation, reduce surface runoff, and provide water for decomposition processes and plant uptake.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>VWatLitRHoldCapcity_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
@@ -21581,7 +21581,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001151">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>The volumetric rate of water release from ice thawing within the surface litter layer per unit ground area. This flux is critical for understanding spring hydrology, freeze-thaw cycles, and their effects on litter decomposition and nutrient release.</obo:IAO_0000115>
+        <obo:IAO_0000115>The volumetric rate of water release from ice thawing within the surface litter layer in the grid cell. This flux is critical for understanding spring hydrology, freeze-thaw cycles, and their effects on litter decomposition and nutrient release.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TLitrIceFlxThaw_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
@@ -21600,7 +21600,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001152">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>The rate of thermal energy release per unit ground area when water freezes within the surface litter layer. This heat flux affects local temperature dynamics and influences the thermal regime of the litter-soil interface during freezing periods.</obo:IAO_0000115>
+        <obo:IAO_0000115>The rate of thermal energy release in the grid cell when water freezes within the surface litter layer. This heat flux affects local temperature dynamics and influences the thermal regime of the litter-soil interface during freezing periods.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TLitrIceHeatFlxFrez_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
@@ -21678,7 +21678,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001156">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>The mass of organic matter per unit ground area associated with different biochemical complexes in surface litter. This parameter tracks the distribution of carbon among various decomposition pools with different turnover rates and chemical compositions.</obo:IAO_0000115>
+        <obo:IAO_0000115>The mass of organic matter in the grid cell associated with different biochemical complexes in surface litter. This parameter tracks the distribution of carbon among various decomposition pools with different turnover rates and chemical compositions.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RC0_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
@@ -21697,7 +21697,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001157">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>The mass of organic matter per unit ground area in surface litter that is associated with autotrophic organisms and their byproducts. This parameter represents the carbon pool derived from photosynthetic organisms and affects nutrient cycling and energy flow in decomposer communities.</obo:IAO_0000115>
+        <obo:IAO_0000115>The mass of organic matter in the grid cell in surface litter that is associated with autotrophic organisms and their byproducts. This parameter represents the carbon pool derived from photosynthetic organisms and affects nutrient cycling and energy flow in decomposer communities.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RC0ff_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
@@ -21716,7 +21716,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001158">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>The total volume of water per unit ground area present in the litter layer at the beginning of a simulation period. This parameter establishes initial hydrological conditions for modeling water dynamics, decomposition processes, and heat transfer in the litter layer.</obo:IAO_0000115>
+        <obo:IAO_0000115>The total volume of water in the grid cell present in the litter layer at the beginning of a simulation period. This parameter establishes initial hydrological conditions for modeling water dynamics, decomposition processes, and heat transfer in the litter layer.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LitWatMassBeg_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
@@ -21736,7 +21736,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001159">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>The total volume of water per unit ground area remaining in the litter layer at the end of a simulation period. This parameter allows calculation of net water flux through the litter layer and assessment of water balance changes over time.</obo:IAO_0000115>
+        <obo:IAO_0000115>The total volume of water in the grid cell remaining in the litter layer at the end of a simulation period. This parameter allows calculation of net water flux through the litter layer and assessment of water balance changes over time.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LitWatMassEnd_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
@@ -21756,7 +21756,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001160">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>The total volumetric rate of precipitation input to the litter layer per unit ground area, including both direct rainfall and throughfall. This flux drives litter hydration, leaching processes, and provides water for microbial decomposition activities.</obo:IAO_0000115>
+        <obo:IAO_0000115>The total volumetric rate of precipitation input to the litter layer in the grid cell, including both direct rainfall and throughfall. This flux drives litter hydration, leaching processes, and provides water for microbial decomposition activities.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Rain2LitR_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
@@ -23608,7 +23608,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001261">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000019"/>
-        <obo:IAO_0000115>The mass flux rate of sediment movement per unit area over time due to water or wind transport. This parameter quantifies the horizontal movement of soil and sediment particles and is fundamental for understanding landscape evolution and material redistribution.</obo:IAO_0000115>
+        <obo:IAO_0000115>The mass flux rate of sediment movement in the grid cell over time due to water or wind transport. This parameter quantifies the horizontal movement of soil and sediment particles and is fundamental for understanding landscape evolution and material redistribution.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SED_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SedimentDataType.txt</rdfs:comment>
@@ -26802,7 +26802,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001446">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000022"/>
-        <obo:IAO_0000115>Total convective heat flux at ground surface refers to the total amount of heat transferred by convection from the air to the ground surface. This parameter is important in meteorology and climate science as it influences local air temperatures, weather patterns, and the overall energy balance of the Earth&apos;s surface. It is usually expressed in watts per square meter (W/m²).</obo:IAO_0000115>
+        <obo:IAO_0000115>Total convective heat flux at ground surface refers to the total amount of heat transferred by convection from the air to the ground surface. This parameter is important in meteorology and climate science as it influences local air temperatures, weather patterns, and the overall energy balance of the Earth&apos;s surface. EcoSIM reports it as a total for the grid cell over a time step.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HeatSensVapAir2Surf_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfSoilDataType.txt</rdfs:comment>
@@ -26822,7 +26822,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001447">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000022"/>
-        <obo:IAO_0000115>Total ground heat flux at ground surface, often expressed in watts per square meter (W/m²), refers to the rate at which heat energy is transferred to the ground surface. It is an important component of the Earth&apos;s surface energy balance and can have significant impacts on climate, weather patterns, and physical processes in the Earth&apos;s surface and subsurface.</obo:IAO_0000115>
+        <obo:IAO_0000115>Total ground heat flux at ground surface refers to the rate at which heat energy is transferred to the ground surface. It is an important component of the Earth&apos;s surface energy balance and can have significant impacts on climate, weather patterns, and physical processes in the Earth&apos;s surface and subsurface. EcoSIM reports it as a total for the grid cell over a time step.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HeatNet2Surf_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfSoilDataType.txt</rdfs:comment>
@@ -26938,7 +26938,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001453">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000022"/>
-        <obo:IAO_0000115>Precipitation flux into soil surface refers to the rate at which water (from rainfall, snow melt, etc.) enters the soil surface per unit area. This parameter is crucial in hydrological studies and modeling, as it impacts soil moisture levels, groundwater recharge, runoff generation and erosion.</obo:IAO_0000115>
+        <obo:IAO_0000115>Precipitation flux into soil surface refers to the rate at which water (from rainfall, snow melt, etc.) enters the soil surface in the grid cell. This parameter is crucial in hydrological studies and modeling, as it impacts soil moisture levels, groundwater recharge, runoff generation and erosion.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Rain2SoilSurf_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfSoilDataType.txt</rdfs:comment>
@@ -34704,7 +34704,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001874">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
-        <obo:IAO_0000115>Amount of snow intercepted and held on the foliage and branches of a plant canopy, expressed as a water volume per unit ground area.</obo:IAO_0000115>
+        <obo:IAO_0000115>Amount of snow intercepted and held on the foliage and branches of a plant canopy, expressed as a water volume in the grid cell.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SnowOnCanopy_pft</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>surface-canopy_snow</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ATS: surface-canopy_snow, one value per plant functional type.</rdfs:comment>
