@@ -184,6 +184,27 @@ apart.
 > `EcoSIM Other Names` is populated on **zero** rows. Leave it alone rather than inventing a
 > use for it.
 
+## Reference conditions go in `contexts`
+
+A condition a value is measured or reported under goes in `contexts`. It does not go in
+`qualifiers`, and it does not go in the label or in `has_units`. `Standard ambient
+temperature` (`BERVO:8000249`) is the main case. It describes the conditions of the
+measurement, not a property of the value.
+
+| Row | `has_units` | `contexts` |
+| --- | --- | --- |
+| `Rate of leaf initiation` | `h-1` | `Standard ambient temperature` |
+| `Rubisco carboxylase activity` | `umol g-1 h-1` | `Standard ambient temperature` |
+
+So write `Rate of leaf initiation`, not `Rate of leaf initiation at 25 oC`, and `umol g-1
+h-1`, not `umol g-1 h-1 at 25 oC`. The definition can still say "at 25 degrees Celsius".
+
+One exception is settled. The eight `… solubility coefficient at standard ambient
+temperature` rows keep the phrase in their labels (issue #99).
+
+Named reference states follow the same rule. `Dewpoint` goes in `contexts`, and so do the
+soil water states `Field capacity` and `Wilting point` (issue #83).
+
 ## Variables that involve a set of chemicals
 
 Some variables apply to *any* chemical rather than a named one — `Gaseous diffusivity`

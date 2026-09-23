@@ -4616,15 +4616,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000228">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies how much seasonal storage C is oxidized to support canopy and root development</obo:IAO_0000115>
+        <obo:IAO_0000115>First-order rate constant for the release of seasonal storage carbon into the nonstructural carbon pools of the shoot and root during leafout, as the fraction of the storage pool released per hour at 25 degrees Celsius. EcoSIM scales it by a canopy temperature function and by a turgor factor, and takes one value for annual plants and another for perennials.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>GVMX</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), from the EcoSIM source (PlantBGCPars.F90, PlantBranchMod.F90) for issue #99</rdfs:comment>
+        <rdfs:comment>EcoSIM declares GVMX in [h]. The code uses it as a fraction per hourly step, so the unit here is h-1.</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
-        <rdfs:label>Specific oxidation rate of nonstructural carbon during leafout at 25 C</rdfs:label>
+        <rdfs:label>Specific oxidation rate of nonstructural carbon during leafout</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000277"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000249"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
@@ -10285,9 +10286,9 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Rubisco carboxylase activity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000127"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000249"/>
-        <bervo:BERVO_has_unit>umol g-1 h-1 at 25 oC</bervo:BERVO_has_unit>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000249"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>umol g-1 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000213"/>
     </Class>
@@ -10304,9 +10305,9 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Rubisco oxygenase activity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000127"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000249"/>
-        <bervo:BERVO_has_unit>umol g-1 h-1 at 25 oC</bervo:BERVO_has_unit>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000249"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>umol g-1 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
@@ -10321,11 +10322,11 @@
         <oboInOwl:hasRelatedSynonym>VmaxPEPCarboxyRef_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:label>Phosphoenolpyruvate carboxylasecarboxylase activity</rdfs:label>
+        <rdfs:label>Phosphoenolpyruvate carboxylase activity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000127"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000249"/>
-        <bervo:BERVO_has_unit>umol g-1 h-1 at 25 oC</bervo:BERVO_has_unit>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000249"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>umol g-1 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000061"/>
     </Class>
@@ -10435,11 +10436,11 @@
         <oboInOwl:hasRelatedSynonym>SpecChloryfilAct_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:label>Cholorophyll activity</rdfs:label>
+        <rdfs:label>Chlorophyll activity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000127"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000249"/>
-        <bervo:BERVO_has_unit>umol g-1 h-1 at 25 oC</bervo:BERVO_has_unit>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000249"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>umol g-1 h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000214"/>
     </Class>
@@ -14612,10 +14613,10 @@
         <oboInOwl:hasRelatedSynonym>RefLeafAppearRate_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
-        <rdfs:label>Rate of leaf initiation at 25 oC</rdfs:label>
+        <rdfs:label>Rate of leaf initiation</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000249"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000249"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
@@ -15110,10 +15111,10 @@
         <oboInOwl:hasRelatedSynonym>RefNodeInitRate_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
-        <rdfs:label>Rate of node initiation at 25 oC</rdfs:label>
+        <rdfs:label>Rate of node initiation</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000249"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000249"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000122"/>
@@ -39783,11 +39784,11 @@
         <obo:IAO_0000115>A standard reference temperature of 25 degrees Celsius commonly used in environmental measurements and laboratory conditions for consistency and comparison purposes. This standardized temperature provides a baseline for chemical reaction rates, biological processes, and physical property measurements in earth and environmental science applications.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>room temperature</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>25 degrees Celsius</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>77 degrees Farenheit</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>77 degrees Fahrenheit</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Standard ambient temperature</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000249"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
