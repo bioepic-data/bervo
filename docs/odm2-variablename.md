@@ -247,7 +247,7 @@ concepts.
 | Alpha-N-acetylglucosaminidase | Enzyme | `alphaNAcetylglucosaminidase` | |
 | Cellobiohydrolase | Enzyme | `cellobiohydrolase` | |
 | Xylosidase | Enzyme | `xylosidase` | |
-| Phytoplankton | Organism | `phytoplankton` | |
+| Phytoplankton | Microbes | `phytoplankton` | |
 | Zooplankton | Organism | `zooplankton` | |
 | Benthos | Organism | `benthos` | |
 | Cryptophytes | Microbes | `cryptophytes` | `NCBITaxon:3027` |
