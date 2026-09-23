@@ -36471,7 +36471,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000061 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000061">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000852"/>
         <obo:IAO_0000115>An enzyme that catalyzes the addition of carbon dioxide to phosphoenolpyruvate, serving as the primary carbon-fixing enzyme in C4 and Crassulacean acid metabolism photosynthesis. This enzyme is crucial for understanding alternative photosynthetic pathways, plant adaptation to environmental stress, and carbon assimilation efficiency in different plant functional types.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Phosphoenolpyruvate carboxylase</rdfs:label>
@@ -36622,7 +36622,9 @@
         <obo:IAO_0000115>The measurement of vertical distance from a reference surface downward, fundamental for characterizing soil profiles, water column structure, and three-dimensional habitat characteristics. This spatial dimension controls light penetration, pressure gradients, temperature profiles, and biogeochemical processes that vary with depth in environmental systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000219"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PATO_0001595"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/depth"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Depth&quot;: The perpendicular measurement downward from a surface</rdfs:comment>
         <rdfs:label>Depth</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -36746,7 +36748,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
         <obo:IAO_0000115>The measurement of vertical extent from base to top, representing the three-dimensional structure of organisms, landforms, and other environmental features. This spatial dimension controls light interception, aerodynamic properties, habitat structure, and competitive interactions in ecological systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000440"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/height"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Height&quot;: Height is measure of vertical distance, either vertical extent or vertical position</rdfs:comment>
         <rdfs:label>Height</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000076"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -36798,7 +36802,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The extent of a two-dimensional surface or region measured in square units, fundamental for quantifying spatial coverage and habitat extent. This geometric property is essential for calculating densities, productivity rates, ecosystem service provision, and scaling processes from local to landscape levels in environmental studies.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000536"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/area"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Area&quot;: Area of a measurement location</rdfs:comment>
         <rdfs:label>Area</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -37145,7 +37151,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The height of an object or point above sea level or a reference ground level, affecting atmospheric pressure, temperature, and ecosystem characteristics. This elevation parameter controls climate gradients, species distributions, vegetation zones, and biogeochemical processes that vary with elevation in mountainous and high-altitude environments.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000220"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/altitude"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Altitude&quot;: Altitude or height (sometimes known as depth) is defined based on the context in which it is used (aviation, geometry, geographical survey, sport, atmospheric pressure, and many more). As a general definition, altitude is a distance measurement, usually in the vertical or &quot;up&quot; direction, between a reference datum and a point or object. The reference datum also often varies according to the context. Although the term altitude is commonly used to mean the height above sea level of a location, in geography the term elevation is often preferred for this usage.</rdfs:comment>
         <rdfs:label>Altitude</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -37180,7 +37188,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The speed and direction of motion of an object or fluid, fundamental for understanding transport processes and dynamics in environmental systems. This vector quantity controls wind patterns, water flow, sediment transport, and pollutant dispersion that influence ecosystem processes and environmental quality.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PATO_0000008"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/velocity"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Velocity&quot;: The velocity of a substance, fluid or object</rdfs:comment>
         <rdfs:label>Velocity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -37772,9 +37782,11 @@
         <obo:IAO_0000115>A measure of the average kinetic energy of particles in a substance, controlling reaction rates, phase transitions, and biological processes in environmental systems. This intensive property affects enzymatic activity, species distributions, ecosystem productivity, and serves as a fundamental driver of climate and weather patterns.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000123"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PATO_0000146"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/temperature"/>
         <oboInOwl:hasExactSynonym>temp</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>warmth</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Temperature&quot;: Temperature</rdfs:comment>
         <rdfs:label>Temperature</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -37849,7 +37861,9 @@
         <obo:IAO_0000115>The amount of matter contained in an object or substance, typically measured in units such as grams or kilograms. This fundamental property affects gravitational forces, inertia, density calculations, and serves as a basis for quantifying material quantities and concentrations in environmental and ecological studies.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000135"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/mass"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Mass&quot;: Mass is a property of a physical body. It is generally a measure of an object&apos;s resistance to changing its state of motion when a force is applied.</rdfs:comment>
         <rdfs:label>Mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -38738,7 +38752,9 @@
         <obo:IAO_0000115>The amount of three-dimensional space occupied by a substance, object, or system, fundamental for calculating densities, concentrations, and spatial relationships. This geometric property is essential for quantifying habitat space, soil pore volume, water storage capacity, and scaling processes from molecular to ecosystem levels in environmental studies.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000360"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PATO_0000918"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/volume"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Volume&quot;: Volume. To quantify discharge or hydrograph volume or some other volume measurement.</rdfs:comment>
         <rdfs:label>Volume</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000190"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -38952,8 +38968,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000202">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <obo:IAO_0000115>The amount of water present in a material such as soil, plant tissue, or atmospheric air, typically expressed as a percentage by mass or volume. This property controls biological activity, physical processes, material properties, and represents a fundamental parameter for understanding ecosystem functioning and environmental conditions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterContent"/>
         <oboInOwl:hasRelatedSynonym>humidity</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Water Content&quot;: Quantity of water contained in a material or organism</rdfs:comment>
         <rdfs:label>Water content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -39512,7 +39530,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
         <obo:IAO_0000115>The ratio of a substance&apos;s mass to its volume, representing a fundamental physical property that affects material behavior and environmental processes. This property controls buoyancy, mixing, stratification, and transport processes in fluids while influencing habitat structure and resource distribution in terrestrial and aquatic ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000305"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/density"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Density&quot;: Density</rdfs:comment>
         <rdfs:label>Density</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -39548,8 +39568,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
         <obo:IAO_0000115>A measure of the amount of light absorbed by a material or substance as electromagnetic radiation passes through it, fundamental for understanding optical properties. This property affects photosynthesis, light penetration in water bodies, remote sensing applications, and represents the inverse of transmittance in optical and environmental measurements.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000133"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/absorbance"/>
         <oboInOwl:hasRelatedSynonym>transmittance</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Absorbance&quot;: The amount of radiation absorbed by a material</rdfs:comment>
         <rdfs:label>Absorbance</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -39987,8 +40009,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
         <obo:IAO_0000115>A one-dimensional measurement that quantifies the extent of an object or distance between two points in space. This property is essential for characterizing structural dimensions in ecosystems, measuring spatial scales, and defining geometric parameters in environmental modeling applications.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000441"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/length"/>
         <oboInOwl:hasRelatedSynonym>span</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Length&quot;: Length is a measure of distance.</rdfs:comment>
         <rdfs:label>Length</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -40007,9 +40031,10 @@
         <obo:IAO_0000115>A logarithmic scale that measures the acidity or alkalinity of aqueous solutions, ranging from 0 to 14 with 7 representing neutrality. This property is critical for characterizing soil chemistry, water quality, nutrient availability, and biological activity in terrestrial and aquatic environmental systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000121"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/pH"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/pH"/>
         <oboInOwl:hasRelatedSynonym>acidity</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
-        <rdfs:comment>ODM2 speciation concept &quot;pH&quot;: Expressed as pH</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;pH&quot;: Expressed as pH. ODM2 variable name concept &quot;pH&quot;: pH is the measure of the acidity or alkalinity of a solution. pH is formally a measure of the activity of dissolved hydrogen ions (H+). Solutions in which the concentration of H+ exceeds that of OH- have a pH value lower than 7.0 and are known as acids.</rdfs:comment>
         <rdfs:label>pH</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -40044,8 +40069,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
         <obo:IAO_0000115>A measure of the reflectivity of a surface, expressed as the fraction of incident electromagnetic radiation that is reflected rather than absorbed. This property controls surface energy balance, influences local and regional climate, affects snow and ice persistence, and varies significantly among different land cover types and surface materials.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000554"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/albedo"/>
         <oboInOwl:hasRelatedSynonym>non-reflected light</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Albedo&quot;: The ratio of reflected to incident light.</rdfs:comment>
         <rdfs:label>Albedo</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -40134,8 +40161,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000270"/>
         <obo:IAO_0000115>A kinetic parameter that defines the substrate concentration at which an enzyme-catalyzed reaction proceeds at half its maximum rate, indicating enzyme-substrate affinity. This constant is fundamental for understanding enzyme kinetics, metabolic regulation, and nutrient uptake processes in biological systems and environmental biogeochemistry.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000542"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/michaelisConstant"/>
         <oboInOwl:hasExactSynonym>Km</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Michaelis constant&quot;: The Michaelis constant is the substrate concentration at which the reaction rate is half of Vmax. Vmax represents the maximum rate achieved by the system, at saturating substrate concentration</rdfs:comment>
         <rdfs:label>Michaelis constant</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000268"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -40469,7 +40498,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000286">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>Material derived from the remains, waste products, or secretions of living organisms that contains carbon-based compounds essential for ecosystem functioning. This material serves as a source of nutrients, energy, and soil structure while controlling decomposition processes, carbon sequestration, and habitat quality in terrestrial and aquatic environments.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/organicMatter"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Organic matter&quot;: The organic matter component of a complex material.</rdfs:comment>
         <rdfs:label>Organic matter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -40618,7 +40649,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>A measure of the cloudiness or haziness of water caused by suspended particles that scatter and absorb light passing through the water column. This optical property is an important indicator of water quality, affecting light penetration for aquatic photosynthesis and serving as a proxy for suspended sediment concentrations in freshwater and marine systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000182"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/turbidity"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Turbidity&quot;: Turbidity</rdfs:comment>
         <rdfs:label>Turbidity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -40652,7 +40685,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000296">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The total quantity or weight of organisms in a given area or volume. It may refer to the mass of a taxonomic group or of all species in a community.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomass"/>
         <rdfs:comment>Definition source - Manual (JHC, Sep 29 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Biomass&quot;: Mass of living biological organisms in a given area or ecosystem at a given time. If this generic term is used, the publisher should specify/qualify the species, class, etc. being measured in the method, qualifier, or other appropriate field.</rdfs:comment>
         <rdfs:label>Biomass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -41596,8 +41631,10 @@
         <obo:IAO_0000115>A measure of a material&apos;s ability to conduct electrical current, primarily determined by dissolved ion concentration and mobility. Conductivity is an important indicator of water quality, salinity, and total dissolved solids in aquatic and terrestrial systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000124"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/EC"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/electricalConductivity"/>
+        <oboInOwl:hasExactSynonym>electrical conductivity</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
-        <rdfs:comment>ODM2 speciation concept &quot;EC&quot;: Expressed as electrical conductivity</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;EC&quot;: Expressed as electrical conductivity. ODM2 variable name concept &quot;Electrical conductivity&quot;: Electrical conductivity</rdfs:comment>
         <rdfs:label>Conductivity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -42447,7 +42484,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000394"/>
         <obo:IAO_0000115>The angular distance north or south of the equator measured in degrees, minutes, and seconds (or decimal degrees). Latitude specifies the north-south coordinate in geographic positioning systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000211"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/latitude"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Latitude&quot;: Latitude as a variable measurement or observation (Spatial reference to be designated in methods). This is distinct from the latitude of a site which is a site attribute.</rdfs:comment>
         <rdfs:label>Latitude</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -42465,7 +42504,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000394"/>
         <obo:IAO_0000115>The angular distance east or west of the Prime Meridian measured in degrees, minutes, and seconds (or decimal degrees). Longitude specifies the east-west coordinate in geographic positioning systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000212"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/longitude"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Longitude&quot;: Longitude as a variable measurement or observation (Spatial reference to be designated in methods). This is distinct from the longitude of a site which is a site attribute.</rdfs:comment>
         <rdfs:label>Longitude</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -43008,7 +43049,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The concentration of dissolved salts in a solution, typically expressed in parts per thousand or practical salinity units. Salinity affects osmotic potential and ion distribution.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000302"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/salinity"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Salinity&quot;: Salinity</rdfs:comment>
         <rdfs:label>Salinity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -43026,7 +43069,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The electrical resistance of a material per unit length and cross-sectional area, quantifying opposition to electron flow. Resistivity characterizes material electrical properties.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000303"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/resistivityElectrical"/>
+        <oboInOwl:hasExactSynonym>electrical resistivity</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Resistivity, electrical&quot;: The electrical resistance of an object is a measure of its opposition to the flow of electric current. The inverse quantity is electrical conductance, and is the ease with which an electric current passes.</rdfs:comment>
         <rdfs:label>Resistivity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -43317,7 +43363,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
         <obo:IAO_0000115>The distance across a circular or spherical object measured through its center. Diameter quantifies size of round structures.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000343"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/diameter"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Diameter&quot;: A diameter of a circle is any straight line segment that passes through the center of the circle and whose endpoints lie on the circle. It can also be defined as the longest chord of the circle. Both definitions are also valid for the diameter of a sphere. In more modern usage, the length of a diameter is also called the diameter. In this sense one speaks of the diameter rather than a diameter (which refers to the line itself), because all diameters of a circle or sphere have the same length, this being twice the radius r.</rdfs:comment>
         <rdfs:label>Diameter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -44294,7 +44342,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
         <obo:IAO_0000115>The fraction of pore space within a solid matrix such as soil or sediment. Porosity affects water flow and gas diffusion.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000531"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/porosity"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Porosity&quot;: Porosity or void fraction is a measure of the void (i.e. &quot;empty&quot;) spaces in a material, and is a fraction of the volume of voids over the total volume, between 0 and 1, or as a percentage between 0 and 100%.</rdfs:comment>
         <rdfs:label>Porosity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -44420,7 +44470,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The pressure exerted by a vapor in equilibrium with its liquid or solid phase at a given temperature. Vapor pressure indicates volatility.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000553"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/vaporPressure"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Vapor pressure&quot;: The pressure of a vapor in equilibrium with its non-vapor phases</rdfs:comment>
         <rdfs:label>Vapor pressure</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000518"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -44583,7 +44635,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>Relative amounts of multiple categories of the same object.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000140"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/abundance"/>
+        <oboInOwl:hasRelatedSynonym>abundance</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Abundance&quot;: The relative representation of a species in a particular ecosystem. If this generic term is used, the publisher should specify/qualify the species, class, etc. being measured in the method, qualifier, or other appropriate field.</rdfs:comment>
         <rdfs:label>Relative abundance</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -44655,8 +44710,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>Distance. Add context indicating reference points, e.g., From and To.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000218"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/distance"/>
         <rdfs:comment>COMO Dec 15 2025</rdfs:comment>
         <rdfs:comment>Distance. Add context indicating reference points, e.g., From and To.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Distance&quot;: Distance measured from a sensor to a target object such as the surface of a water body or snow surface.</rdfs:comment>
         <rdfs:label>Distance</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -49939,7 +49996,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000789">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
         <obo:IAO_0000115>Potential energy of water per unit volume relative to pure free water at the same temperature, which governs the direction of water movement in soil and plant.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterPotential"/>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), concept gap review of the variable terms</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Water potential&quot;: Water potential is the potential energy of water relative to pure free water (e.g. deionized water) in reference conditions. It quantifies the tendency of water to move from one area to another due to osmosis, gravity, mechanical pressure, or matrix effects including surface tension.</rdfs:comment>
         <rdfs:label>Water potential</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -50247,6 +50306,1528 @@
         <obo:IAO_0000115>Component of water potential due to the elevation of water in a gravitational field, relative to a reference height.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 22 2026), water potential slice of #83</rdfs:comment>
         <rdfs:label>Gravitational potential</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000807 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000807">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000518"/>
+        <obo:IAO_0000115>Pressure measured relative to a perfect vacuum, including the pressure of the overlying atmosphere.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/pressureAbsolute"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Pressure, absolute&quot;: Pressure</rdfs:comment>
+        <rdfs:label>Absolute pressure</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000808 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000808">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000518"/>
+        <obo:IAO_0000115>Pressure measured relative to the local atmospheric pressure, equal to absolute pressure minus atmospheric pressure.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/pressureGauge"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Pressure, gauge&quot;: Pressure relative to the local atmospheric or ambient pressure</rdfs:comment>
+        <rdfs:label>Gauge pressure</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000809 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000809">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000518"/>
+        <obo:IAO_0000115>Pressure that must be applied to a solution to stop the net inflow of pure solvent across a semipermeable membrane, equal in magnitude and opposite in sign to the osmotic potential.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/osmoticPressure"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Osmotic pressure&quot;: Osmotic pressure</rdfs:comment>
+        <rdfs:label>Osmotic pressure</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000810 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000810">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
+        <obo:IAO_0000115>Mass of a particulate or porous material divided by the total volume it occupies, including the pore space between particles.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/bulkDensity"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Bulk density&quot;: The mass of many particles of the material divided by the total volume they occupy. The total volume includes particle volume, inter-particle void volume and internal pore volume.</rdfs:comment>
+        <rdfs:label>Bulk density</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000811 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000811">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Length of the closed boundary of a circle or of a cross-section, such as the girth of a tree stem.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PATO_0001648"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/circumference"/>
+        <oboInOwl:hasRelatedSynonym>girth</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Circumference&quot;: In geometry, the circumference (from Latin circumferens, meaning &quot;carrying around&quot;) of a circle is the (linear) distance around it. That is, the circumference would be the length of the circle if it were opened up and straightened out to a line segment. Since a circle is the edge (boundary) of a disk, circumference is a special case of perimeter. The perimeter is the length around any closed figure and is the term used for most figures excepting the circle and some circular-like figures such as ellipses. Informally, &quot;circumference&quot; may also refer to the edge itself rather than to the length of the edge.</rdfs:comment>
+        <rdfs:label>Circumference</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000812 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000812">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Degree to which the outline of a particle or object approaches a circle, reflecting the sharpness of its corners and edges.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/roundness"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Roundness&quot;: Roundness is the measure of how closely the shape of an object approaches that of a mathematically perfect circle. Roundness applies in two dimensions, such as the cross sectional circles along a cylindrical object such as a shaft or a cylindrical roller for a bearing. In geometric dimensioning and tolerancing, control of a cylinder can also include its fidelity to the longitudinal axis, yielding cylindricity. The analogue of roundness in three dimensions (that is, for spheres) is sphericity.</rdfs:comment>
+        <rdfs:label>Roundness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000813 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000813">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Ease with which a fluid, usually water, moves through the pores or fractures of a porous medium under a hydraulic gradient.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/hydraulicConductivity"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Hydraulic conductivity&quot;: Hydraulic conductivity, symbolically represented as K, is a property of vascular plants, soils and rocks, that describes the ease with which a fluid (usually water) can move through pore spaces or fractures. It depends on the intrinsic permeability of the material, the degree of saturation, and on the density and viscosity of the fluid.</rdfs:comment>
+        <rdfs:label>Hydraulic conductivity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000814 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000814">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Distance travelled per unit time by a sound wave propagating through a medium.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/speedOfSound"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Speed of sound&quot;: Speed of sound in the medium sampled</rdfs:comment>
+        <rdfs:label>Speed of sound</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000815 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000815">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Rate of flow of visible light energy, weighted by the sensitivity of the human eye to each wavelength.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PATO_0001296"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/luminousFlux"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Luminous Flux&quot;: A measure of the total amount of visible light present</rdfs:comment>
+        <rdfs:label>Luminous flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000816 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000816">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Strength of the radar echo returned by targets such as precipitation particles, commonly expressed on a logarithmic scale in dBZ.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/reflectivity"/>
+        <oboInOwl:hasRelatedSynonym>reflectivity</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Reflectivity&quot;: dBZ stands for decibel relative to Z. It is a logarithmic dimensionless technical unit used in radar, mostly in weather radar, to compare the equivalent reflectivity factor (Z) of a radar signal reflected off a remote object (in mm6 per m3) to the return of a droplet of rain with a diameter of 1 mm (1 mm6 per m3). It is proportional to the number of drops per unit volume and the sixth power of drops&apos; diameter and is thus used to estimate the rain or snow intensity.</rdfs:comment>
+        <rdfs:label>Radar reflectivity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000817 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000817">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Measure of how an electric field affects, and is affected by, a dielectric medium, relating the electric displacement in the medium to the applied field.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/permittivity"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/permittivityElectrical"/>
+        <oboInOwl:hasExactSynonym>absolute permittivity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>electrical permittivity</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Permittivity&quot;: Permittivity is a physical quantity that describes how an electric field affects, and is affected by a dielectric medium, and is determined by the ability of a material to polarize in response to the field, and thereby reduce the total electric field inside the material. Thus, permittivity relates to a material&apos;s ability to transmit (or &quot;permit&quot;) an electric field. ODM2 variable name concept &quot;Permittivity, electrical&quot;: In electromagnetism, absolute permittivity, often simply called permittivity, usually denoted by the Greek letter ε (epsilon), is the measure of capacitance that is encountered when forming an electric field in a particular medium. More specifically, permittivity describes the amount of charge needed to generate one unit of electric flux in a particular medium. Accordingly, a charge will yield more electric flux in a medium with low permittivity than in a medium with high permittivity. Permittivity is the measure of a material&apos;s ability to store an electric field in the polarization of the medium.</rdfs:comment>
+        <rdfs:label>Permittivity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000818 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000818">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000817"/>
+        <obo:IAO_0000115>Permittivity of a material expressed as a ratio to the permittivity of a vacuum, which in soils varies strongly with water content.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/dielectricConstant"/>
+        <oboInOwl:hasExactSynonym>dielectric constant</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Dielectric constant&quot;: The relative permittivity of a material is its (absolute) permittivity expressed as a ratio relative to the permittivity of vacuum. Permittivity is a material property that affects the Coulomb force between two point charges in the material. Relative permittivity is the factor by which the electric field between the charges is decreased relative to vacuum. Likewise, relative permittivity is the ratio of the capacitance of a capacitor using that material as a dielectric, compared with a similar capacitor that has vacuum as its dielectric. Relative permittivity is also commonly known as dielectric constant, a term deprecated in engineering as well as in chemistry.</rdfs:comment>
+        <rdfs:label>Relative permittivity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000819 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000819">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000818"/>
+        <obo:IAO_0000115>Real part of the complex relative permittivity, related to the energy a material stores under an oscillating electric field.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/realDielectricConstant"/>
+        <oboInOwl:hasExactSynonym>real part of relative permittivity</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Real dielectric constant&quot;: Soil reponse of a reflected standing electromagnetic wave of a particular frequency which is related to the stored energy within the medium. This is the real portion of the complex dielectric constant.</rdfs:comment>
+        <rdfs:label>Real dielectric constant</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000820 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000820">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000818"/>
+        <obo:IAO_0000115>Imaginary part of the complex relative permittivity, related to the energy a material loses under an oscillating electric field through conduction and dielectric relaxation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/imaginaryDielectricConstant"/>
+        <oboInOwl:hasExactSynonym>imaginary part of relative permittivity</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Imaginary dielectric constant&quot;: Soil reponse of a reflected standing electromagnetic wave of a particular frequency which is related to the dissipation (or loss) of energy within the medium. This is the imaginary portion of the complex dielectric constant.</rdfs:comment>
+        <rdfs:label>Imaginary dielectric constant</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000821 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000821">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Rate of flow of electric charge past a point or through a surface.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/electricCurrent"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Electric Current&quot;: A flow of electric charge</rdfs:comment>
+        <rdfs:label>Electric current</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000822 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000822">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Difference in electric potential between two points, the work per unit charge needed to move a charge between them.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/voltage"/>
+        <oboInOwl:hasExactSynonym>electric potential difference</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Voltage&quot;: Voltage or Electrical Potential</rdfs:comment>
+        <rdfs:label>Voltage</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000823 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000823">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Rate at which electric energy is transferred or converted by a circuit.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/electricPower"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Electric Power&quot;: Electric Power</rdfs:comment>
+        <rdfs:label>Electric power</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000824 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000824">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000132"/>
+        <obo:IAO_0000115>Energy delivered or stored by the movement or position of electric charges, the time integral of electric power.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/electricEnergy"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Electric Energy&quot;: Electric Energy</rdfs:comment>
+        <rdfs:label>Electric energy</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000825 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000825">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
+        <obo:IAO_0000115>Difference between the temperatures of a body or medium at two times or under two conditions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/temperatureChange"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Temperature change&quot;: temperature change</rdfs:comment>
+        <rdfs:label>Temperature change</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000826 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000826">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
+        <obo:IAO_0000115>Temperature of a sample or medium at the start of a procedure or process, before heating or other treatment.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/temperatureInitial"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Temperature, initial&quot;: initial temperature before heating</rdfs:comment>
+        <rdfs:label>Initial temperature</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000827 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000827">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000238"/>
+        <obo:IAO_0000115>Duration between a reference event and the time of observation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/timeElapsed"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Time, elapsed&quot;: Time elapsed since an event occurred</rdfs:comment>
+        <rdfs:label>Elapsed time</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000828 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000828">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000368"/>
+        <obo:IAO_0000115>Number of full rotations an object completes per unit time.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/frequencyOfRotation"/>
+        <oboInOwl:hasExactSynonym>frequency of rotation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>rotational speed</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Frequency of Rotation&quot;: Number of rotations within a time period</rdfs:comment>
+        <rdfs:label>Rotation frequency</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000829 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000829">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Quantity held constant within a model or empirical relation that sets its form, such as a coefficient of a stage-discharge rating curve.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/parameter"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Parameter&quot;: Parameter related to a hydrologic process. An example usage would be for a starge-discharge relation parameter.</rdfs:comment>
+        <rdfs:label>Parameter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000830 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000830">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000227"/>
+        <obo:IAO_0000115>Value of the dependent variable of a function where the independent variable equals zero.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/intercept"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Intercept&quot;: The point at which one of the variables in a function equals 0.</rdfs:comment>
+        <rdfs:label>Intercept</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000831 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000831">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000227"/>
+        <obo:IAO_0000115>Change in the dependent variable per unit change in the independent variable of a linear relationship.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/slope"/>
+        <oboInOwl:hasRelatedSynonym>slope</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Slope&quot;: Ratio between two variables in a linear relationship. ODM2 slope is this statistical slope, not the gradient of land, which is Slope (BERVO:8000031).</rdfs:comment>
+        <rdfs:label>Regression slope</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000832 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000832">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Constant added to a measured or modelled value to shift it onto a common reference.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/offset"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Offset&quot;: Constant to be added as an offset to a variable of interest.</rdfs:comment>
+        <rdfs:label>Offset</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000833 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000833">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Value of a variable above or below which an action is taken or a response changes.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/threshold"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Threshold&quot;: A level above or below which an action is performed.</rdfs:comment>
+        <rdfs:label>Threshold</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000834 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000834">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
+        <obo:IAO_0000115>Group of aluminosilicate framework minerals of potassium, sodium, and calcium that together make up most of the Earth&apos;s crust.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48733"/>
+        <oboInOwl:hasRelatedSynonym>feldspars</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Feldspar</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000835 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000835">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000834"/>
+        <obo:IAO_0000115>Feldspar rich in potassium and sodium, forming a solid solution between orthoclase and albite.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/alkaliFeldspar"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Alkali feldspar&quot;: The alkali feldspar group are those feldspar minerals rich in the alkali elements like potassium and sodium. The alkali feldspars include albite, anorthoclase, microcline, orthoclase and sanidine.</rdfs:comment>
+        <rdfs:label>Alkali feldspar</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000836 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000836">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000834"/>
+        <obo:IAO_0000115>Feldspar series forming a solid solution between the sodium endmember albite and the calcium endmember anorthite.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/plagioclase"/>
+        <oboInOwl:hasRelatedSynonym>plagioclase feldspar</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Plagioclase&quot;: Plagioclase is a series of tectosilicate (framework silicate) minerals within the feldspar group. Rather than referring to a particular mineral with a specific chemical composition, plagioclase is a continuous solid solution series, more properly known as the plagioclase feldspar series (from the Ancient Greek for &quot;oblique fracture&quot;, in reference to its two cleavage angles)</rdfs:comment>
+        <rdfs:label>Plagioclase</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000837 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000837">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000836"/>
+        <obo:IAO_0000115>Sodium endmember of the plagioclase series, NaAlSi3O8.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/albite"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Albite&quot;: Albite is a plagioclase feldspar mineral. It is the sodium endmember of the plagioclase solid solution series. As such it represents a plagioclase with less than 10% anorthite content.</rdfs:comment>
+        <rdfs:label>Albite</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000838 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000838">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000835"/>
+        <obo:IAO_0000115>Potassium feldspar, KAlSi3O8, a common rock-forming mineral of granite and other felsic rocks.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/orthoclase"/>
+        <oboInOwl:hasRelatedSynonym>orthoclase feldspar</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Orthoclase&quot;: Orthoclase, or orthoclase feldspar (endmember formula KAlSi3O8), is an important tectosilicate mineral which forms igneous rock. The name is from the Ancient Greek for &quot;straight fracture,&quot; because its two cleavage planes are at right angles to each other. It is a type of potassium feldspar, also known as K-feldspar. The gem known as moonstone (see below) is largely composed of orthoclase.</rdfs:comment>
+        <rdfs:label>Orthoclase</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000839 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000839">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
+        <obo:IAO_0000115>Group of double-chain silicate minerals forming prismatic or needle-like crystals, common in igneous and metamorphic rocks.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/amphibole"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Amphibole&quot;: Amphibole is an important group of inosilicate minerals, forming prism or needlelike crystals, composed of double chain SiO 4 tetrahedra, linked at the vertices and generally containing ions of iron and/or magnesium in their structures.</rdfs:comment>
+        <rdfs:label>Amphibole</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000840 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000840">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
+        <obo:IAO_0000115>Group of hydrated potassium calcium phyllosilicate minerals, usually found as secondary minerals in cavities of basalt.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/apophyllite"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Apophyllite&quot;: The name apophyllite refers to a specific group of phyllosilicates, a class of minerals. Originally, the group name referred to a specific mineral, but was redefined in 1978 to stand for a class of minerals of similar chemical makeup that comprise a solid solution series, and includes the members fluorapophyllite-(K), fluorapophyllite-(Na), hydroxyapophyllite-(K).</rdfs:comment>
+        <rdfs:label>Apophyllite</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000841 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000841">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
+        <obo:IAO_0000115>Aluminum phosphate hydroxide mineral, Al2(PO4)(OH)3.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/augelite"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Augelite&quot;: Augelite is an aluminium phosphate mineral with formula: Al2(PO4)(OH)3. The shade varies from colorless to white, yellow or rose. Its crystal system is monoclinic</rdfs:comment>
+        <rdfs:label>Augelite</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000842 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000842">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
+        <obo:IAO_0000115>Natural zeolite with a microporous framework of silica and alumina tetrahedra and a high cation exchange capacity.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/clinoptilolite"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Clinoptilolite&quot;: Clinoptilolite is a natural zeolite comprising a microporous arrangement of silica and alumina tetrahedra. It has the complex formula: (Na,K,Ca)2-3Al3(Al,Si)2Si13O36·12H2O.</rdfs:comment>
+        <rdfs:label>Clinoptilolite</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000843 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000843">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000630"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
+        <obo:IAO_0000115>High-temperature polymorph of silica, SiO2.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/cristobalite"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Cristobalite&quot;: The mineral cristobalite is a high-temperature polymorph of silica, meaning that it has the same chemical formula as quartz, SiO2, but a distinct crystal structure.</rdfs:comment>
+        <rdfs:label>Cristobalite</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000844 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000844">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
+        <obo:IAO_0000115>Aluminum hydroxide mineral, gamma-Al(OH)3, common in highly weathered tropical soils and in bauxite.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30194"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/gibbsite"/>
+        <oboInOwl:hasRelatedSynonym>hydrargillite</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Gibbsite&quot;: Gibbsite, Al(OH)3, is one of the mineral forms of aluminium hydroxide. It is often designated as γ-Al(OH)3 (but sometimes as α-Al(OH)3.). It is also sometimes called hydrargillite (or hydrargyllite).</rdfs:comment>
+        <rdfs:label>Gibbsite</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000845 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000845">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
+        <obo:IAO_0000115>Iron oxyhydroxide mineral, alpha-FeO(OH), a common product of the weathering of iron-bearing minerals in soils.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/goethite"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Goethite&quot;: Goethite, FeO(OH), is an iron-bearing hydroxide mineral of the diaspore group. It is found in soil and other low-temperature environments.</rdfs:comment>
+        <rdfs:label>Goethite</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000846 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000846">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
+        <obo:IAO_0000115>Aluminosilicate clay mineral of the kaolin group, Al2Si2O5(OH)4, often forming hollow tubular particles.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/halloysite"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Halloysite&quot;: Halloysite is an aluminosilicate clay mineral with the empirical formula Al2Si2O5(OH)4. Its main constituents are aluminium (20.90%), silicon (21.76%) and hydrogen (1.56%).</rdfs:comment>
+        <rdfs:label>Halloysite</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000847 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000847">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
+        <obo:IAO_0000115>Hydrated calcium vanadium oxide mineral.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/melanovanadite"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Melanovanadite&quot;: melanovanadite a mineral Ca2V10O25 that is a complex oxide of calcium and vanadium</rdfs:comment>
+        <rdfs:label>Melanovanadite</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000848 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000848">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
+        <obo:IAO_0000115>Group of sheet silicate minerals with nearly perfect basal cleavage, including muscovite and biotite.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/mica"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Mica&quot;: The mica group of sheet silicate minerals includes several closely related materials having nearly perfect basal cleavage. All are monoclinic, with a tendency towards pseudohexagonal crystals, and are similar in chemical composition.</rdfs:comment>
+        <rdfs:label>Mica</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000849 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000849">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
+        <obo:IAO_0000115>Clay mineral of the kaolin group, Al2Si2O5(OH)4, polymorphous with kaolinite.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/nacrite"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Nacrite&quot;: Nacrite Al2Si2O5(OH)4 is a clay mineral that is polymorphous (or polytypic) with kaolinite. It crystallizes in the monoclinic system. X-ray diffraction analysis is required for positive identification. Nacrite was first described in 1807 for an occurrence in Saxony, Germany. The name is from nacre in reference to the mother of pearl luster of nacrite masses.</rdfs:comment>
+        <rdfs:label>Nacrite</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000850 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000850">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000630"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
+        <obo:IAO_0000115>Crystalline silica, SiO2, the most abundant mineral of continental crust and of sand.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46727"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/quartz"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Quartz&quot;: Quartz is a type of silicate mineral composed of silicon and oxygen atoms.</rdfs:comment>
+        <rdfs:label>Quartz</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000851 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000851">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
+        <obo:IAO_0000115>Hydrous phyllosilicate clay mineral that expands when heated and has a high cation exchange capacity.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/vermiculite"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Vermiculite&quot;: Vermiculite is a hydrous phyllosilicate mineral. It undergoes significant expansion when heated. Exfoliation occurs when the mineral is heated sufficiently, and the effect is routinely produced in commercial furnaces.</rdfs:comment>
+        <rdfs:label>Vermiculite</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000852 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000852">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Protein that catalyzes a specific biochemical reaction.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Enzyme</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000853 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000853">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000852"/>
+        <obo:IAO_0000115>Phosphatase with an acidic pH optimum that hydrolyzes phosphate monoesters, releasing inorganic phosphate from organic matter, EC 3.1.3.2.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/acidPhosphatase"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Acid phosphatase&quot;: Phosphatase enzymes are used by soil microorganisms to access organically bound phosphate nutrients. An assay on the rates of activity of these enzymes may be used to ascertain biological demand for phosphates in the soil. Some plant roots, especially cluster roots, exude carboxylates that perform acid phosphatase activity, helping to mobilise phosphorus in nutrient-deficient soils.</rdfs:comment>
+        <rdfs:label>Acid phosphatase</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000854 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000854">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000852"/>
+        <obo:IAO_0000115>Glycoside hydrolase of EC class 3.2.1 that cleaves glucosidic bonds to release glucose.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/glucosidase"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Glucosidase&quot;: Glucosidases are glycoside hydrolase enzymes categorized under the EC number 3.2.1.</rdfs:comment>
+        <rdfs:label>Glucosidase</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000855 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000855">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000854"/>
+        <obo:IAO_0000115>Glucosidase that hydrolyzes terminal non-reducing beta-D-glucosyl residues, releasing glucose in the last step of cellulose breakdown, EC 3.2.1.21.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/betaGlucosidase"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Beta-glucosidase&quot;: Beta-glucosidase catalyzes the hydrolysis of the glycosidic bonds to terminal non-reducing residues in beta-D-glucosides and oligosaccharides, with release of glucose.</rdfs:comment>
+        <rdfs:label>Beta-glucosidase</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000856 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000856">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000852"/>
+        <obo:IAO_0000115>Glycoside hydrolase that removes terminal non-reducing alpha-linked N-acetyl-D-glucosamine residues, EC 3.2.1.50.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/alphaNAcetylglucosaminidase"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Alpha-N-Acetylglucosaminidase&quot;: An enzyme with system name alpha-N-acetyl-D-glucosaminide N-acetylglucosaminohydrolase. This enzyme catalyses the following chemical reaction: Hydrolysis of terminal non-reducing N-acetyl-D-glucosamine residues in N-acetyl-alpha-D-glucosaminides.</rdfs:comment>
+        <rdfs:label>Alpha-N-acetylglucosaminidase</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000857 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000857">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000852"/>
+        <obo:IAO_0000115>Exocellulase that cleaves cellobiose units from the ends of cellulose chains, EC 3.2.1.91.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/cellobiohydrolase"/>
+        <oboInOwl:hasRelatedSynonym>exocellulase</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Cellobiohydrolase&quot;: Exocellulases or cellobiohydrolases cleave two to four units from the ends of the exposed chains produced by endocellulase, resulting in tetrasaccharides or disaccharides, such as cellobiose. Exocellulases are further classified into type I, that work processively from the reducing end of the cellulose chain, and type II, that work processively from the nonreducing end.</rdfs:comment>
+        <rdfs:label>Cellobiohydrolase</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000858 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000858">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000852"/>
+        <obo:IAO_0000115>Glycoside hydrolase that releases xylose from the non-reducing ends of xylan and xylo-oligosaccharides, EC 3.2.1.37.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/xylosidase"/>
+        <oboInOwl:hasExactSynonym>beta-xylosidase</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Xylosidase&quot;: An enzyme with system name 4-beta-D-xylan xylohydrolase. This enzyme catalyses the following chemical reaction: Hydrolysis of (1-&gt;4)-beta-D-xylans, to remove successive D-xylose residues from the non-reducing termini.</rdfs:comment>
+        <rdfs:label>Xylosidase</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000859 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000859">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000717"/>
+        <obo:IAO_0000115>Photosynthetic microorganisms drifting in the water column of oceans, lakes, and rivers, including microalgae and cyanobacteria.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/phytoplankton"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Phytoplankton&quot;: Measurement of phytoplankton with no differentiation between species</rdfs:comment>
+        <rdfs:label>Phytoplankton</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000860 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000860">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000717"/>
+        <obo:IAO_0000115>Heterotrophic animals and protists that drift in the water column of oceans, lakes, and rivers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/zooplankton"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Zooplankton&quot;: Zooplanktonic organisms, non-specific</rdfs:comment>
+        <rdfs:label>Zooplankton</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000861 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000861">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000717"/>
+        <obo:IAO_0000115>Organisms living on, in, or near the bottom of a water body.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/benthos"/>
+        <oboInOwl:hasRelatedSynonym>benthic organisms</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Benthos&quot;: Benthic species</rdfs:comment>
+        <rdfs:label>Benthos</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000862 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000862">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <obo:IAO_0000115>Class of unicellular flagellate algae, the Cryptophyceae, common in freshwater and coastal phytoplankton.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3027"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/cryptophytes"/>
+        <oboInOwl:hasExactSynonym>Cryptophyceae</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>cryptomonads</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Cryptophytes&quot;: The chlorophyll a concentration contributed by cryptophytes</rdfs:comment>
+        <rdfs:label>Cryptophytes</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000863 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000863">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <obo:IAO_0000115>Unicellular flagellate protists of the Dinophyceae, many photosynthetic and some heterotrophic, prominent in marine phytoplankton and in harmful algal blooms.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2864"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/dinoflagellates"/>
+        <oboInOwl:hasExactSynonym>Dinophyceae</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Dinoflagellates&quot;: The chlorophyll a concentration contributed by Dinoflagellates</rdfs:comment>
+        <rdfs:label>Dinoflagellates</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000864 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000864">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000081"/>
+        <obo:IAO_0000115>Oxygenic photosynthetic bacteria that carry chlorophyll a and phycocyanin, found in water, soil crusts, and symbioses.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1117"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/blue_GreenAlgae_Cyanobacteria_Phycocyanin"/>
+        <oboInOwl:hasExactSynonym>Cyanobacteriota</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>blue-green algae</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Blue-green algae (cyanobacteria), phycocyanin&quot;: Blue-green algae (cyanobacteria) with phycocyanin pigments</rdfs:comment>
+        <rdfs:label>Cyanobacteria</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000865 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000865">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000081"/>
+        <obo:IAO_0000115>Gram-negative, rod-shaped bacteria that ferment lactose with gas and acid production at 35 to 37 degrees Celsius, used as an indicator of the sanitary quality of water.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/coliformTotal"/>
+        <oboInOwl:hasRelatedSynonym>coliforms</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>total coliform</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Coliform, total&quot;: Total Coliform</rdfs:comment>
+        <rdfs:label>Coliform bacteria</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000866 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000866">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000865"/>
+        <obo:IAO_0000115>Coliform bacteria that ferment lactose at 44.5 degrees Celsius, indicating contamination by the feces of warm-blooded animals.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/coliformFecal"/>
+        <oboInOwl:hasRelatedSynonym>thermotolerant coliforms</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Coliform, fecal&quot;: Fecal Coliform</rdfs:comment>
+        <rdfs:label>Fecal coliform bacteria</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000867 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000867">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000866"/>
+        <obo:IAO_0000115>Gram-negative, rod-shaped bacterium of the gut of warm-blooded animals, used as an indicator of fecal contamination of water.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_562"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/e_coli"/>
+        <oboInOwl:hasExactSynonym>E. coli</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;E-coli&quot;: Escherichia coli</rdfs:comment>
+        <rdfs:label>Escherichia coli</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000868 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000868">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000081"/>
+        <obo:IAO_0000115>Genus of Gram-positive cocci of the animal gut, used as an indicator of fecal contamination, especially of marine recreational waters.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1350"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/enterococci"/>
+        <oboInOwl:hasRelatedSynonym>enterococci</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Enterococci&quot;: Enterococcal bacteria</rdfs:comment>
+        <rdfs:label>Enterococcus</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000869 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000869">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000081"/>
+        <obo:IAO_0000115>Gram-positive streptococci of the genera Enterococcus and Streptococcus found in the feces of warm-blooded animals, used as an indicator of fecal contamination.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/streptococciFecal"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Streptococci, fecal&quot;: Fecal Streptococci</rdfs:comment>
+        <rdfs:label>Fecal streptococci</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000870 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000870">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Large clade of eudicot flowering plants that includes the aster, nightshade, morning glory, and mint families.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_71274"/>
+        <oboInOwl:hasExactSynonym>Asteridae</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Asterids</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000871 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000871">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Succulent perennial shrub of tropical and subtropical salt marshes and mangrove margins.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4436"/>
+        <oboInOwl:hasRelatedSynonym>saltwort</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Batis maritima</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000872 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000872">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Succulent shrub of the aster family found in coastal salt marshes of the southeastern United States and the Gulf of Mexico.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_53578"/>
+        <oboInOwl:hasRelatedSynonym>sea oxeye</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Borrichia frutescens</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000873 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000873">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Genus of parasitic twining plants with little or no chlorophyll that draw water and nutrients from their hosts.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4128"/>
+        <oboInOwl:hasRelatedSynonym>dodder</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Cuscuta</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000874 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000874">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Rhizomatous perennial grass of salt marshes and alkaline flats.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_38594"/>
+        <oboInOwl:hasRelatedSynonym>saltgrass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Distichlis spicata</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000875 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000875">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Shrub of the aster family found at the upper edge of coastal salt marshes of eastern North America.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_114189"/>
+        <oboInOwl:hasRelatedSynonym>marsh elder</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Iva frutescens</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000876 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000876">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Perennial herb of coastal salt marshes of eastern North America.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>sea lavender</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>Not found in NCBI Taxonomy, so no taxon cross-reference is given.</rdfs:comment>
+        <rdfs:label>Limonium nashii</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000877 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000877">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Spiny succulent shrub of the nightshade family found in coastal salt marshes of the southeastern United States.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_112868"/>
+        <oboInOwl:hasRelatedSynonym>Carolina desert-thorn</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Lycium carolinianum</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000878 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000878">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Low, mat-forming perennial grass of coastal salt flats and marshes.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_160556"/>
+        <oboInOwl:hasExactSynonym>Monanthochloe littoralis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>shoregrass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Distichlis littoralis</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000879 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000879">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Annual succulent glasswort of coastal salt marshes.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_46105"/>
+        <oboInOwl:hasRelatedSynonym>dwarf saltwort</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Salicornia bigelovii</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000880 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000880">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Perennial succulent glasswort of coastal salt marshes.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_549776"/>
+        <oboInOwl:hasRelatedSynonym>Virginia glasswort</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Salicornia virginica</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000881 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000881">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Perennial cordgrass that dominates the low intertidal zone of Atlantic and Gulf coast salt marshes.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_29706"/>
+        <oboInOwl:hasExactSynonym>Spartina alterniflora</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>smooth cordgrass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Sporobolus alterniflorus</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000882 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000882">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Perennial bunchgrass of coastal prairies and the upper margins of Gulf coast salt marshes.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_180094"/>
+        <oboInOwl:hasExactSynonym>Spartina spartinae</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>gulf cordgrass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Sporobolus spartinus</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000883 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000883">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Annual succulent herb of coastal salt marshes.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_648823"/>
+        <oboInOwl:hasRelatedSynonym>annual seepweed</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Suaeda linearis</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000884 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000884">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Annual succulent herb of coastal salt marshes.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_126913"/>
+        <oboInOwl:hasRelatedSynonym>herbaceous seepweed</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Suaeda maritima</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
