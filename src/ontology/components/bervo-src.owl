@@ -28122,15 +28122,15 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001521">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
-        <obo:IAO_0000115>The amount of thermal energy required to raise the temperature of the solid mineral components of soil by one degree. This parameter depends on soil mineralogy and bulk density, and controls soil temperature dynamics, heat storage capacity, and thermal buffering in terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Heat capacity of the solid mineral and organic fraction of a soil layer per unit ground area, the thermal energy needed to raise the temperature of those solids by one kelvin. It depends on soil texture, rock and organic matter content, and layer thickness.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>VHeatCapacitySoilM_vr</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), from the EcoSIM source (StartsMod.F90, SoilLayerDynMod.F90, SnowPhysMod.F90) for issue #98</rdfs:comment>
         <rdfs:comment>SoilPhysDataType.txt</rdfs:comment>
         <rdfs:label>Soil solid heat capacity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>MPa m-3 K-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>MJ d-2 K-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
     </Class>
