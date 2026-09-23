@@ -247,13 +247,24 @@ directly under `Concept`. The validator warns when a filler has no subclasses at
 The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 717
 cross-references on 543 terms today — about 21% of the ontology.
 
-### Map concepts, not variables
+### Map variables as well as concepts
 
-**539 of the 543 cross-referenced terms are concepts (`8xxxxxx`); only 4 are variables.**
-This is the established convention and it makes sense: a concept like *Nitrous oxide* or
-*Leaf* has a clean equivalent in an existing ontology, whereas a BERVO variable like
-*Cumulative ecosystem heterotrophic respiration* is a model-specific composite that usually
-does not. Do not force a mapping onto a variable to fill the column in.
+**Map any term that has a true equivalent, variable or concept.** When you add a variable,
+look for an equivalent in the vocabularies BERVO aligns with as part of adding it, not as a
+later pass.
+
+Today 539 of the 543 cross-referenced terms are concepts (`8xxxxxx`) and only 4 are
+variables. That records which vocabularies were mapped first: ODM2 speciation, medium and
+site type, COMO, and ChEBI name things and properties, which land on concepts. It is not a
+rule. A vocabulary of observables, such as the ODM2 variable names, maps mostly onto
+variables.
+
+The care a variable needs is in checking that the two are the same quantity: the same
+thing measured, the same property, the same context. A BERVO variable is often narrower
+than a generic observable. EcoSIM variables are per soil layer, per plant functional type,
+or hourly, and a model-specific composite such as *Cumulative ecosystem heterotrophic
+respiration* may have no equivalent at all. A broader external term is not an exact
+equivalent.
 
 Most terms carry exactly one cross-reference; 170 carry two (typically a domain ontology
 plus an ODM2 concept) and two carry three. Leave the column blank when no good match exists — a wrong mapping is
