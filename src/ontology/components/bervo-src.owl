@@ -51305,7 +51305,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000858">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000852"/>
-        <obo:IAO_0000115>Glycoside hydrolase that releases xylose from the non-reducing ends of xylan and xylo-oligosaccharides; the form assayed in soils is usually beta-xylosidase, EC 3.2.1.37.</obo:IAO_0000115>
+        <obo:IAO_0000115>Glycoside hydrolase that releases xylose residues from xylose-containing oligosaccharides and polysaccharides; the form assayed in soils is beta-xylosidase, EC 3.2.1.37, which acts on the non-reducing ends of xylan and xylo-oligosaccharides.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/xylosidase"/>
         <oboInOwl:hasRelatedSynonym>beta-xylosidase</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
