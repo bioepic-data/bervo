@@ -4616,9 +4616,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000228">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies how much seasonal storage C is oxidized to support canopy and root development</obo:IAO_0000115>
+        <obo:IAO_0000115>First-order rate constant for the release of seasonal storage carbon into the nonstructural carbon pools of the shoot and root during leafout, as the fraction of the storage pool released per hour at 25 degrees Celsius. EcoSIM scales it by a canopy temperature function and by a turgor factor, and takes one value for annual plants and another for perennials.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>GVMX</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), from the EcoSIM source (PlantBGCPars.F90, PlantBranchMod.F90) for issue #99</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Specific oxidation rate of nonstructural carbon during leafout</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000277"/>
