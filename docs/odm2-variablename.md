@@ -54,11 +54,11 @@ wrong. See "Points to note".
 | Chemical species | 602 | Not now. Elements and their dissolved, total, and particulate forms, organic compounds, isotopes and isotope ratios, pigments, and distribution coefficients. |
 | Instrument housekeeping | 41 | Not included. See below. |
 | Ecotoxicology biomarkers | 12 | Not included. See below. |
-| Quantities, placeholders, minerals, enzymes, organism groups | 91 | **Slice 1, this page.** |
+| Quantities, placeholders, minerals, enzymes, organism groups | 90 | **Slice 1, this page.** |
 | Meteorology, radiation, comfort indices | 45 | Slice 2, with the land-atmosphere fluxes |
 | Land-atmosphere fluxes | 25 | Slice 2 |
 | Vegetation | 32 | Slice 3, with ecology |
-| Ecology | 7 left | Slice 3 |
+| Ecology | 8 left | Slice 3 |
 | Hydrology and snow | 31 | Slice 4 |
 | Soil and geology | 44 | Slice 5 |
 | Water quality | 63 | Slice 6 |
@@ -114,9 +114,9 @@ The later slices, by ODM2 identifier:
   `throughfall`, `vegetationType`, and 18 coverage terms: 15 for salt marsh
   taxa, such as `spartinaAlternifloraCoverage`, plus `noVegetationCoverage`,
   `transientSpeciesCoverage`, and `wrackCoverage`.
-- **Ecology** (7): `bodyLength`, `chlorophyllFluorescence`, `countAreal`,
-  `fishDetections`, `shannonDiversityIndex`, `shannonEvennessIndex`,
-  `taxaCount`. The other eleven ecology names are organism groups and are in
+- **Ecology** (8): `bodyLength`, `chlorophyllFluorescence`, `countAreal`,
+  `e_coli`, `fishDetections`, `shannonDiversityIndex`, `shannonEvennessIndex`,
+  `taxaCount`. The other ten ecology names are organism groups and are in
   slice 1.
 - **Hydrology** (27): `alluviumDepth`, `baseflow`, `depthUnsaturatedZone`,
   `discharge`, `gageHeight`, `groundwaterDepth`, `heightAboveSeaFloor`,
@@ -188,7 +188,8 @@ The later slices, by ODM2 identifier:
 
 ## Slice 1: new terms
 
-`BERVO:8000807` to `BERVO:8000870`, 64 terms. All are concepts.
+`BERVO:8000807` to `BERVO:8000870` except `BERVO:8000867`, 63 terms. All are
+concepts.
 
 | BERVO term | Parent | ODM2 term | Other cross-reference |
 | --- | --- | --- | --- |
@@ -252,7 +253,6 @@ The later slices, by ODM2 identifier:
 | Cyanobacteria | Bacteria | `blue_GreenAlgae_Cyanobacteria_Phycocyanin` | `NCBITaxon:1117` |
 | Coliform bacteria | Bacteria | `coliformTotal` | |
 | Fecal coliform bacteria | Coliform bacteria | `coliformFecal` | |
-| Escherichia coli | Fecal coliform bacteria | `e_coli` | `NCBITaxon:562` |
 | Enterococcus | Bacteria | `enterococci` | `NCBITaxon:1350` |
 | Fecal streptococci | Bacteria | `streptococciFecal` | |
 | Asterids | Plant | | `NCBITaxon:71274` |
@@ -286,6 +286,9 @@ label or synonyms checked against the term.
   added 14 salt marsh plants (13 species and the genus *Cuscuta*) as
   `BERVO:8000871` to `BERVO:8000884`. They were removed before merge, were
   never released, and `just next-id` may allocate those identifiers again.
+  *Escherichia coli* (`BERVO:8000867`) was removed the same way. Fecal coliform
+  bacteria stays, because that is the group water quality assays report.
+  ODM2's `e_coli` goes to the ecology slice as a variable.
 - **Asterids has no subclasses.** It is the group ODM2's `asteridaeCoverage`
   names, and it is kept as a group, not as the root of a plant taxonomy. NCBI
   labels `NCBITaxon:71274` "asterids" with Asteridae as a synonym, and BERVO

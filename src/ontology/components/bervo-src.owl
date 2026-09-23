@@ -51489,27 +51489,6 @@
     
 
 
-    <!-- https://w3id.org/bervo/BERVO_8000867 -->
-
-    <Class rdf:about="https://w3id.org/bervo/BERVO_8000867">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000866"/>
-        <obo:IAO_0000115>Gram-negative, rod-shaped bacterium of the gut of warm-blooded animals, used as an indicator of fecal contamination of water.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_562"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/e_coli"/>
-        <oboInOwl:hasExactSynonym>E. coli</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;E-coli&quot;: Escherichia coli</rdfs:comment>
-        <rdfs:label>Escherichia coli</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="NA"/>
-    </Class>
-    
-
-
     <!-- https://w3id.org/bervo/BERVO_8000868 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000868">
