@@ -188,8 +188,8 @@ The later slices, by ODM2 identifier:
 
 ## Slice 1: new terms
 
-`BERVO:8000807` to `BERVO:8000869` except `BERVO:8000867`, and `BERVO:8000885`,
-63 terms. All are
+`BERVO:8000807` to `BERVO:8000869` except `BERVO:8000867`, and `BERVO:8000885`
+and `BERVO:8000886`, 64 terms. All are
 concepts.
 
 | BERVO term | Parent | ODM2 term | Other cross-reference |
@@ -202,6 +202,7 @@ concepts.
 | Roundness | Physical property | `roundness` | |
 | Hydraulic conductivity | Conductivity | `hydraulicConductivity` | |
 | Electrical conductivity | Conductivity | `electricalConductivity` | |
+| Power | Physical property | | `PATO:0001024` |
 | Speed of sound | Physical property | `speedOfSound` | |
 | Luminous flux | Physical property | `luminousFlux` | `PATO:0001296` |
 | Radar reflectivity | Physical property | `reflectivity` | |
@@ -211,7 +212,7 @@ concepts.
 | Imaginary dielectric constant | Relative permittivity | `imaginaryDielectricConstant` | |
 | Electric current | Physical property | `electricCurrent` | |
 | Voltage | Physical property | `voltage` | |
-| Electric power | Physical property | `electricPower` | |
+| Electric power | Power | `electricPower` | |
 | Electric energy | Energy | `electricEnergy` | |
 | Temperature change | Temperature | `temperatureChange` | |
 | Initial temperature | Temperature | `temperatureInitial` | |
@@ -363,6 +364,11 @@ label or synonyms checked against the term.
   under it from Concept, and Partial pressure from Physical property, beside
   the three new pressures. Pressure itself moves under Physical property, as
   Conductivity does, so Partial pressure keeps that ancestor.
+- **Power.** Power (`BERVO:8000886`, `PATO:0001024`) is added so that Electric
+  power has the parent its name implies, as Electric energy has Energy. Energy
+  (`BERVO:8000132`) gives up `power` as a related synonym. Electric current and
+  Voltage stay under Physical property; neither is a kind of a broader BERVO
+  quantity.
 - **Threshold and Critical.** Critical (`BERVO:8000005`) carried `threshold` as an
   exact synonym, so two terms answered to the word. Critical is a state near a
   tipping point, and the new Threshold is the operational level at which an

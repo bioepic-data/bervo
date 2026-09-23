@@ -37760,7 +37760,6 @@
         <obo:IAO_0000115>The capacity to do work or cause change in physical, chemical, or biological systems, existing in various forms such as solar, thermal, chemical, and kinetic energy. This fundamental concept drives all environmental processes, ecosystem functioning, and biogeochemical cycles that sustain life and shape earth system dynamics.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>fuel</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>heat</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>power</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>work</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Energy</rdfs:label>
@@ -50630,7 +50629,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000823 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000823">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000886"/>
         <obo:IAO_0000115>Rate at which electric energy is transferred or converted by a circuit.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/electricPower"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
@@ -51536,6 +51535,24 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
         <rdfs:comment>ODM2 speciation concept &quot;EC&quot;: Expressed as electrical conductivity. ODM2 variable name concept &quot;Electrical conductivity&quot;: Electrical conductivity</rdfs:comment>
         <rdfs:label>Electrical conductivity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000886 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000886">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Rate at which energy is transferred, converted, or used, measured in watts.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PATO_0001024"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Power</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
