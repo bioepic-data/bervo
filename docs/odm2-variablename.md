@@ -27,7 +27,7 @@ markers (`[1][2]`) that some definitions carry removed.
 ## Concept or variable
 
 A name that is only a property, a thing, or a group of organisms becomes a
-**concept**: `Albedo`, `Bulk density`, `Albite`, `Phytoplankton`, `E-coli`. In
+**concept**: `Albedo`, `Bulk density`, `Albite`, `Phytoplankton`. In
 ODM2 such a name means "the amount of this", and in BERVO that is what a
 variable's `attributes` or `measurement_ofs` names.
 
