@@ -111,9 +111,9 @@ The later slices, by ODM2 identifier:
 - **Vegetation** (32): `areaBasal`, `biomassAboveGround`, `biomassPhytoplankton`,
   `biomassTotal`, `biomassVegetation`, `canopyClosure`, `canopyHeight`,
   `diameterAtBreastHeight`, `leafAreaIndex`, `leafWetness`, `litterPlant`, `NDVI`,
-  `throughfall`, `vegetationType`, and 18 coverage terms: one per salt marsh taxon
-  added below, plus `noVegetationCoverage`, `transientSpeciesCoverage`, and
-  `wrackCoverage`.
+  `throughfall`, `vegetationType`, and 18 coverage terms: 15 for salt marsh
+  taxa, such as `spartinaAlternifloraCoverage`, plus `noVegetationCoverage`,
+  `transientSpeciesCoverage`, and `wrackCoverage`.
 - **Ecology** (7): `bodyLength`, `chlorophyllFluorescence`, `countAreal`,
   `fishDetections`, `shannonDiversityIndex`, `shannonEvennessIndex`,
   `taxaCount`. The other eleven ecology names are organism groups and are in
@@ -188,7 +188,7 @@ The later slices, by ODM2 identifier:
 
 ## Slice 1: new terms
 
-`BERVO:8000807` to `BERVO:8000884`, 78 terms. All are concepts.
+`BERVO:8000807` to `BERVO:8000870`, 64 terms. All are concepts.
 
 | BERVO term | Parent | ODM2 term | Other cross-reference |
 | --- | --- | --- | --- |
@@ -256,20 +256,6 @@ The later slices, by ODM2 identifier:
 | Enterococcus | Bacteria | `enterococci` | `NCBITaxon:1350` |
 | Fecal streptococci | Bacteria | `streptococciFecal` | |
 | Asterids | Plant | | `NCBITaxon:71274` |
-| Batis maritima | Plant | | `NCBITaxon:4436` |
-| Borrichia frutescens | Plant | | `NCBITaxon:53578` |
-| Cuscuta | Plant | | `NCBITaxon:4128` |
-| Distichlis spicata | Plant | | `NCBITaxon:38594` |
-| Iva frutescens | Plant | | `NCBITaxon:114189` |
-| Limonium nashii | Plant | | |
-| Lycium carolinianum | Plant | | `NCBITaxon:112868` |
-| Distichlis littoralis | Plant | | `NCBITaxon:160556` |
-| Salicornia bigelovii | Plant | | `NCBITaxon:46105` |
-| Salicornia virginica | Plant | | `NCBITaxon:549776` |
-| Sporobolus alterniflorus | Plant | | `NCBITaxon:29706` |
-| Sporobolus spartinus | Plant | | `NCBITaxon:180094` |
-| Suaeda linearis | Plant | | `NCBITaxon:648823` |
-| Suaeda maritima | Plant | | `NCBITaxon:126913` |
 
 Phosphoenolpyruvate carboxylase (`BERVO:8000061`) moves under the new Enzyme
 from Concept.
@@ -292,19 +278,24 @@ label or synonyms checked against the term.
   dissolved` is a misspelling that sits beside `Molybdenum, dissolved`.
   `hosphorusPhosphateFlux` is missing its first letter in the identifier; the
   cross-reference uses the identifier as ODM2 spells it.
-- **Taxa renamed since ODM2 listed them.** The salt marsh plants take the name
-  NCBI Taxonomy now accepts, with the ODM2 name as an exact synonym:
-  Sporobolus alterniflorus (*Spartina alterniflora*), Sporobolus spartinus
-  (*Spartina spartinae*, which ODM2 spells "Spartina spartinea"), and
-  Distichlis littoralis (*Monanthochloe littoralis*). NCBI labels
-  `NCBITaxon:71274` "asterids" with Asteridae as a synonym, and BERVO follows.
-  *Limonium nashii* is not in NCBI Taxonomy and has no taxon cross-reference.
-- **The plant taxa carry no ODM2 cross-reference.** ODM2 names them only in
-  coverage terms such as `spartinaAlternifloraCoverage`, which are variables.
-  Those cross-references go on the coverage variables in slice 3.
-- **The plant taxa sit directly under Plant.** Four of them (Borrichia, Iva,
-  Lycium, Cuscuta) are asterids. They are not placed under Asterids, because
-  BERVO does not attempt a plant taxonomy.
+- **No concepts for single species.** BERVO keeps terms for higher taxonomic
+  groups where the variables need them, such as Asterids, Cryptophytes, and
+  Enterococcus, and not for individual species or small genera. A variable
+  that concerns one species is expected to carry that species as an NCBITaxon
+  identifier in the data, not as a BERVO concept. A first draft of this slice
+  added 14 salt marsh plants (13 species and the genus *Cuscuta*) as
+  `BERVO:8000871` to `BERVO:8000884`. They were removed before merge, were
+  never released, and `just next-id` may allocate those identifiers again.
+- **Asterids has no subclasses.** It is the group ODM2's `asteridaeCoverage`
+  names, and it is kept as a group, not as the root of a plant taxonomy. NCBI
+  labels `NCBITaxon:71274` "asterids" with Asteridae as a synonym, and BERVO
+  follows.
+- **Salt marsh taxa for slice 3.** The coverage terms name taxa that NCBI
+  Taxonomy has renamed since: *Spartina alterniflora* is now *Sporobolus
+  alterniflorus* (`NCBITaxon:29706`), *Spartina spartinae* (which ODM2 spells
+  "Spartina spartinea") is *Sporobolus spartinus* (`NCBITaxon:180094`), and
+  *Monanthochloe littoralis* is *Distichlis littoralis* (`NCBITaxon:160556`).
+  *Limonium nashii* is not in NCBI Taxonomy.
 - **Organism groups that ODM2 measures as quantities.** ODM2 defines
   `cryptophytes` and `dinoflagellates` as the chlorophyll a contributed by each
   group, and `blue_GreenAlgae_Cyanobacteria_Phycocyanin` as cyanobacteria with
