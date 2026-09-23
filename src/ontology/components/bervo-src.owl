@@ -50791,7 +50791,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000227"/>
         <obo:IAO_0000115>Change in the dependent variable per unit change in the independent variable of a linear relationship.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/slope"/>
-        <oboInOwl:hasRelatedSynonym>slope</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Slope&quot;: Ratio between two variables in a linear relationship. ODM2 slope is this statistical slope, not the gradient of land, which is Slope (BERVO:8000031).</rdfs:comment>
         <rdfs:label>Regression slope</rdfs:label>
