@@ -50710,7 +50710,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000827 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000827">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000238"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <obo:IAO_0000115>Duration between a reference event and the time of observation.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/timeElapsed"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>

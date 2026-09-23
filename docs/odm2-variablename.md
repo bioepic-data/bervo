@@ -213,7 +213,7 @@ concepts.
 | Electric energy | Energy | `electricEnergy` | |
 | Temperature change | Temperature | `temperatureChange` | |
 | Initial temperature | Temperature | `temperatureInitial` | |
-| Elapsed time | Time | `timeElapsed` | |
+| Elapsed time | Duration | `timeElapsed` | |
 | Rotation frequency | Frequency | `frequencyOfRotation` | |
 | Parameter | Concept | `parameter` | |
 | Intercept | Coefficient | `intercept` | |
