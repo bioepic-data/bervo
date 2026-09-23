@@ -182,13 +182,13 @@ The later slices, by ODM2 identifier:
 | `volume` | Volume (`BERVO:8000190`) | |
 | `waterContent` | Water content (`BERVO:8000202`) | |
 | `waterPotential` | Water potential (`BERVO:8000789`) | |
-| `electricalConductivity` | Conductivity (`BERVO:8000348`) | gains `electrical conductivity` as an exact synonym; already mapped to `ODM2:speciation/EC` |
 | `resistivityElectrical` | Resistivity (`BERVO:8000428`) | gains `electrical resistivity` as an exact synonym |
 | `abundance` | Relative abundance (`BERVO:8000516`) | gains `abundance` as a related synonym; ODM2 defines it as the relative representation of a species |
 
 ## Slice 1: new terms
 
-`BERVO:8000807` to `BERVO:8000869` except `BERVO:8000867`, 62 terms. All are
+`BERVO:8000807` to `BERVO:8000869` except `BERVO:8000867`, and `BERVO:8000885`,
+63 terms. All are
 concepts.
 
 | BERVO term | Parent | ODM2 term | Other cross-reference |
@@ -199,7 +199,8 @@ concepts.
 | Bulk density | Density | `bulkDensity` | |
 | Circumference | Physical property | `circumference` | `PATO:0001648` |
 | Roundness | Physical property | `roundness` | |
-| Hydraulic conductivity | Physical property | `hydraulicConductivity` | |
+| Hydraulic conductivity | Conductivity | `hydraulicConductivity` | |
+| Electrical conductivity | Conductivity | `electricalConductivity` | |
 | Speed of sound | Physical property | `speedOfSound` | |
 | Luminous flux | Physical property | `luminousFlux` | `PATO:0001296` |
 | Radar reflectivity | Physical property | `reflectivity` | |
@@ -287,9 +288,11 @@ label or synonyms checked against the term.
   identifier in the data, not as a BERVO concept. A first draft of this slice
   added 14 salt marsh plants (13 species and the genus *Cuscuta*) as
   `BERVO:8000871` to `BERVO:8000884`, and the clade Asterids as
-  `BERVO:8000870`. They were removed before merge, were never released, and
-  `just next-id` may allocate those identifiers again (see
-  [issue #103](https://github.com/bioepic-data/bervo/issues/103)). Plant is
+  `BERVO:8000870`. They were removed before merge and were never released.
+  The one term added after that, Electrical conductivity, was given
+  `BERVO:8000885`, so `just next-id` counts on from there and does not hand
+  the removed identifiers out again. Keeping them retired for good is
+  [issue #103](https://github.com/bioepic-data/bervo/issues/103). Plant is
   otherwise a parent of plant organs, and a clade among them read badly.
   *Escherichia coli* (`BERVO:8000867`) was removed the same way. Fecal coliform
   bacteria stays, because that is the group water quality assays report.
@@ -331,6 +334,21 @@ label or synonyms checked against the term.
   temperatures is not a temperature, so the subclass axiom overclaims. It is
   left in place and tracked as
   [issue #102](https://github.com/bioepic-data/bervo/issues/102).
+- **Conductivity is now the general term.** Conductivity (`BERVO:8000348`)
+  was defined as electrical conductivity and carried that as an exact
+  synonym, while Thermal conductivity sat apart under Physical property. It is
+  now the general ability to transmit a flow in proportion to its driving
+  gradient, under Physical property, with Electrical conductivity
+  (`BERVO:8000885`, new), Thermal conductivity (`BERVO:8000589`), and
+  Hydraulic conductivity beneath it. Electrical conductivity takes the two ODM2
+  cross-references, `ODM2:speciation/EC` and
+  `ODM2:variablename/electricalConductivity`, and their comments. Conductivity
+  keeps `COMO:0000124`, whose COMO label could not be checked.
+- **Specific conductivity is Specific conductance.** `BERVO:8000426` is
+  relabelled, redefined as electrical conductivity corrected to a reference
+  temperature, and placed under Electrical conductivity, with `specific
+  conductivity` as a related synonym. ODM2's `specificConductance` maps to it
+  in the water quality slice.
 - **Threshold and Critical.** Critical (`BERVO:8000005`) carried `threshold` as an
   exact synonym, so two terms answered to the word. Critical is a state near a
   tipping point, and the new Threshold is the operational level at which an

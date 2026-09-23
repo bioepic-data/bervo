@@ -41627,14 +41627,10 @@
     <!-- https://w3id.org/bervo/BERVO_8000348 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000348">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
-        <obo:IAO_0000115>A measure of a material&apos;s ability to conduct electrical current, primarily determined by dissolved ion concentration and mobility. Conductivity is an important indicator of water quality, salinity, and total dissolved solids in aquatic and terrestrial systems.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Ability of a material to transmit a flow of electric charge, heat, or fluid in proportion to the gradient that drives it.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000124"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/EC"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/electricalConductivity"/>
-        <oboInOwl:hasExactSynonym>electrical conductivity</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
-        <rdfs:comment>ODM2 speciation concept &quot;EC&quot;: Expressed as electrical conductivity. ODM2 variable name concept &quot;Electrical conductivity&quot;: Electrical conductivity</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
         <rdfs:label>Conductivity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -43028,11 +43024,12 @@
     <!-- https://w3id.org/bervo/BERVO_8000426 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000426">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
-        <obo:IAO_0000115>The ability of a solution to conduct electrical current per unit distance, measured in siemens per meter. Specific conductivity indicates dissolved ion concentration and solution composition.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000885"/>
+        <obo:IAO_0000115>Electrical conductivity of water corrected to a reference temperature, usually 25 degrees Celsius, so that samples measured at different temperatures can be compared; a common proxy for the concentration of dissolved ions.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000301"/>
-        <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
-        <rdfs:label>Specific conductivity</rdfs:label>
+        <oboInOwl:hasRelatedSynonym>specific conductivity</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Specific conductance</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
@@ -45857,7 +45854,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000589 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000589">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000348"/>
         <obo:IAO_0000115>Ability of a material to conduct heat, expressed as the heat flux through it per unit temperature gradient.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
         <rdfs:label>Thermal conductivity</rdfs:label>
@@ -50435,7 +50432,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000813 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000813">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000348"/>
         <obo:IAO_0000115>Ease with which a fluid, usually water, moves through the pores or fractures of a porous medium under a hydraulic gradient.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/hydraulicConductivity"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
@@ -51518,6 +51515,27 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Streptococci, fecal&quot;: Fecal Streptococci</rdfs:comment>
         <rdfs:label>Fecal streptococci</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000885 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000885">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000348"/>
+        <obo:IAO_0000115>Ability of a material to conduct electric current, the ratio of current density to electric field strength, which in water and soil rises with the concentration and mobility of dissolved ions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/speciation/EC"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/electricalConductivity"/>
+        <oboInOwl:hasRelatedSynonym>EC</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 speciation concept &quot;EC&quot;: Expressed as electrical conductivity. ODM2 variable name concept &quot;Electrical conductivity&quot;: Electrical conductivity</rdfs:comment>
+        <rdfs:label>Electrical conductivity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
