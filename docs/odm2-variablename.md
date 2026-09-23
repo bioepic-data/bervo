@@ -259,6 +259,9 @@ concepts.
 
 Phosphoenolpyruvate carboxylase (`BERVO:8000061`) moves under the new Enzyme
 from Concept.
+Coefficient (`BERVO:8000227`) moves under the new Parameter from Concept, so
+Intercept and Regression slope sit under Parameter through it. Coefficient's own
+definition calls coefficients parameters.
 
 Every NCBITaxon, CHEBI, and PATO identifier above was fetched from OLS and its
 label or synonyms checked against the term.
