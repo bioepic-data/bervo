@@ -132,9 +132,10 @@ Concepts (`8xxxxxx`) and grouping classes (`9xxxxxx`) are not variables, so they
 How BERVO writes UCUM:
 
 - **Exponents, joined by `.`**: `umol.m-2.s-1`, not `umol/m2/s`.
-- **A `/` only at the end, and only before an annotation**: `g.h-1/{grid}`. UCUM reads
-  `/` and `.` left to right, so `g/{grid}.h` means grams times hours per grid cell. The
-  validator rejects a `.` after a `/`.
+- **Once a `/` appears, no `.` may follow it** outside parentheses: `g.h-1/{grid}`, and
+  `umol.L-1/(umol.mol-1)` for a ratio of two compound units. UCUM reads `/` and `.` left
+  to right, so `g/{grid}.h` means grams times hours per grid cell. The validator
+  enforces exactly this rule.
 - **EcoSIM's `d-2` is `/{grid}`.** In EcoSIM, `d-2` marks a total for a grid cell, not an
   amount per square metre. In UCUM, `d` is the day, so `g.d-2` is valid UCUM for grams
   per day squared. The validator rejects `d` with any exponent but 1 or -1. `t-1`, per

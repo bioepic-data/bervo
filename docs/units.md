@@ -15,7 +15,7 @@ total for a grid cell. The rules for writing a unit are in the `has_units` secti
 | EcoSIM's `d-2` | A trailing `/{grid}`. In EcoSIM it marks a total for a grid cell, and in UCUM `d` is the day. |
 | A substance inside a unit (`gC`, `m3 H2O`) | A UCUM annotation on the unit it qualifies: `g{C}`, `m3{H2O}`. |
 | `NONE` | UCUM's unity, `1`. `NA` stays for a variable with no numeric magnitude. |
-| Syntax | Exponents joined by `.`, and a `/` only at the end before an annotation. |
+| Syntax | Exponents joined by `.`. Once a `/` appears, no `.` follows it outside parentheses. |
 
 ## What `d-2` means
 
