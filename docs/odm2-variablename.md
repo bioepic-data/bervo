@@ -238,7 +238,7 @@ concepts.
 | Nacrite | Mineral | `nacrite` | |
 | Quartz | Mineral, Silicon dioxide | `quartz` | `CHEBI:46727` |
 | Vermiculite | Mineral | `vermiculite` | |
-| Enzyme | Concept | | |
+| Enzyme | Protein | | |
 | Acid phosphatase | Enzyme | `acidPhosphatase` | |
 | Glucosidase | Enzyme | `glucosidase` | |
 | Beta-glucosidase | Glucosidase | `betaGlucosidase` | |
@@ -317,11 +317,11 @@ label or synonyms checked against the term.
 - **No second parent of Phytoplankton.** Cryptophytes, Dinoflagellates, and
   Cyanobacteria are not given Phytoplankton as a second parent. Not every
   member of those groups is planktonic, and the subclass axiom would claim it.
-- **Enzymes sit under Concept.** An enzyme is a protein, and BERVO's Chemical
-  subtree could hold it. It does not yet, because `involves_chemicals` reasons
-  over that subtree, and whether an enzyme belongs there is a separate
-  question. Enzyme Commission numbers are given in the definitions; `EC` is not
-  a declared prefix.
+- **Enzymes sit under Protein.** Protein (`BERVO:8000333`) sits under Concept,
+  not under Chemical, so nothing enters the subtree `involves_chemicals` reasons
+  over. Whether proteins belong under Chemical is a separate question. Enzyme
+  Commission numbers are given in the definitions; `EC` is not a declared
+  prefix.
 - **Minerals.** Quartz and Cristobalite take Silicon dioxide as a second parent,
   as polymorphs of silica. Feldspar is added as a grouping term, not from ODM2,
   so that alkali feldspar and plagioclase have the parent they share. The other
