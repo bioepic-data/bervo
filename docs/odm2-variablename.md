@@ -283,7 +283,7 @@ label or synonyms checked against the term.
   cross-reference uses the identifier as ODM2 spells it.
 - **No concepts for single species.** BERVO keeps terms for higher taxonomic
   groups where the variables need them, such as Asterids, Cryptophytes, and
-  Enterococcus, and not for individual species or small genera. A variable
+  Enterococcus, and not for individual species. A variable
   that concerns one species is expected to carry that species as an NCBITaxon
   identifier in the data, not as a BERVO concept. A first draft of this slice
   added 14 salt marsh plants (13 species and the genus *Cuscuta*) as
@@ -292,6 +292,13 @@ label or synonyms checked against the term.
   *Escherichia coli* (`BERVO:8000867`) was removed the same way. Fecal coliform
   bacteria stays, because that is the group water quality assays report.
   ODM2's `e_coli` goes to the ecology slice as a variable.
+- **Labels of taxon groups.** A group takes the name its measurements use as
+  the label, and NCBI's scientific name as an exact synonym: Cryptophytes
+  (Cryptophyceae), Dinoflagellates (Dinophyceae), Cyanobacteria
+  (Cyanobacteriota), Asterids (Asteridae). A genus kept as a group, such as
+  Enterococcus, takes the genus name, with the plural in common use
+  (`enterococci`) as a related synonym. Fungi (`BERVO:8000783`) already
+  followed this.
 - **Asterids has no subclasses.** It is the group ODM2's `asteridaeCoverage`
   names, and it is kept as a group, not as the root of a plant taxonomy. NCBI
   labels `NCBITaxon:71274` "asterids" with Asteridae as a synonym, and BERVO
