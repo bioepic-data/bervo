@@ -292,11 +292,18 @@ about the two volumetric water contents is still open.
 These were converted faithfully and are listed so a curator can check the rows. The
 validator cannot see any of them, because each is valid UCUM.
 
-- `m d-2` on 4 row(s) (`BERVO:0000354`, `BERVO:0001101`, `BERVO:0001102`, `BERVO:0001452`): a length per grid cell; the root length rows may mean m, the conductance row m.h-1.
-- `gC d-3 hr-1` on 1 row(s) (`BERVO:0000434`): EcoSIM declares d-3, a per-volume grid measure; still a total per grid cell.
-- `MJ d-2 t-1` on 7 row(s) (`BERVO:0000580`, `BERVO:0000581`, `BERVO:0001146`, `BERVO:0001150`, `BERVO:0001442`, `BERVO:0001446`, `BERVO:0001447`): several rows are water transfers, not energy.
-- `C` on 10 row(s) (`BERVO:0000760`, `BERVO:0000885`, `BERVO:0000926`, `BERVO:0001074`, `BERVO:0001353`, `BERVO:0001354`, `BERVO:0001362`, `BERVO:0001363`, `BERVO:0001435`, `BERVO:0001653`): most of these rows are functions, factors or element masses, not temperatures.
-- `MJ m-3` on 1 row(s) (`BERVO:0001489`): a heat flux in MJ m-3.
+- `m d-2` on 4 rows (`BERVO:0000354`, `BERVO:0001101`, `BERVO:0001102`, `BERVO:0001452`): a length per grid cell; the root length rows may mean m, the conductance row m.h-1.
+- `gC d-3 hr-1` on 1 row (`BERVO:0000434`): EcoSIM declares d-3, a per-volume grid measure; still a total per grid cell.
+- `MJ d-2 t-1` on 7 rows (`BERVO:0000580`, `BERVO:0000581`, `BERVO:0001146`, `BERVO:0001150`, `BERVO:0001442`, `BERVO:0001446`, `BERVO:0001447`): several rows are water transfers, not energy.
+- `C` on 10 rows (`BERVO:0000760`, `BERVO:0000885`, `BERVO:0000926`, `BERVO:0001074`, `BERVO:0001353`, `BERVO:0001354`, `BERVO:0001362`, `BERVO:0001363`, `BERVO:0001435`, `BERVO:0001653`): most of these rows are functions, factors or element masses, not temperatures.
+- `MJ m-3` on 1 row (`BERVO:0001489`): a heat flux in MJ m-3.
+
+## pH as an annotation
+
+`Soil lime buffer capacity` (`BERVO:0001904`) is `mg{CaCO3}.kg-1/{pH}`, with pH as an
+annotation. UCUM has `[pH]`, but it is a special unit, and UCUM does not let a special unit be
+combined with other units in a term. The annotation keeps the meaning in the string without
+breaking that rule.
 
 ## What the validator checks
 
