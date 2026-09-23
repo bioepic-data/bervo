@@ -327,6 +327,10 @@ label or synonyms checked against the term.
   so that alkali feldspar and plagioclase have the parent they share. The other
   minerals sit flat under Mineral. `CHEBI:30194` is labelled
   "gamma-aluminium hydroxide" and carries gibbsite as a synonym.
+- **Temperature change sits under Temperature for now.** A difference of two
+  temperatures is not a temperature, so the subclass axiom overclaims. It is
+  left in place and tracked as
+  [issue #102](https://github.com/bioepic-data/bervo/issues/102).
 - **Threshold and Critical.** Critical (`BERVO:8000005`) carried `threshold` as an
   exact synonym, so two terms answered to the word. Critical is a state near a
   tipping point, and the new Threshold is the operational level at which an
