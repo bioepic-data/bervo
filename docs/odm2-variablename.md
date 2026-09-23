@@ -326,6 +326,13 @@ label or synonyms checked against the term.
   over. Whether proteins belong under Chemical is a separate question. Enzyme
   Commission numbers are given in the definitions; `EC` is not a declared
   prefix.
+- **Two N-acetylglucosaminidases.** Alpha-N-acetylglucosaminidase
+  (`BERVO:8000856`, EC 3.2.1.50) is added here for ODM2's
+  `alphaNAcetylglucosaminidase`. The soil slice's
+  `activityBetaNAcetylGlucosaminidase` is a different enzyme,
+  beta-N-acetylglucosaminidase (EC 3.2.1.52), the one the standard soil NAG
+  assay measures. It must not be mapped onto the alpha term, which
+  `just find "acetylglucosaminidase"` returns.
 - **Minerals.** Quartz and Cristobalite take Silicon dioxide as a second parent,
   as polymorphs of silica. Feldspar is added as a grouping term, not from ODM2,
   so that alkali feldspar and plagioclase have the parent they share. The other
