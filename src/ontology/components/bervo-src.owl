@@ -51528,25 +51528,6 @@
     
 
 
-    <!-- https://w3id.org/bervo/BERVO_8000870 -->
-
-    <Class rdf:about="https://w3id.org/bervo/BERVO_8000870">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
-        <obo:IAO_0000115>Large clade of eudicot flowering plants that includes the aster, nightshade, morning glory, and mint families.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_71274"/>
-        <oboInOwl:hasExactSynonym>Asteridae</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
-        <rdfs:label>Asterids</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="NA"/>
-    </Class>
-    
-
-
     <!-- https://w3id.org/bervo/BERVO_9000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000000">

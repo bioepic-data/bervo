@@ -188,7 +188,7 @@ The later slices, by ODM2 identifier:
 
 ## Slice 1: new terms
 
-`BERVO:8000807` to `BERVO:8000870` except `BERVO:8000867`, 63 terms. All are
+`BERVO:8000807` to `BERVO:8000869` except `BERVO:8000867`, 62 terms. All are
 concepts.
 
 | BERVO term | Parent | ODM2 term | Other cross-reference |
@@ -255,7 +255,6 @@ concepts.
 | Fecal coliform bacteria | Coliform bacteria | `coliformFecal` | |
 | Enterococcus | Bacteria | `enterococci` | `NCBITaxon:1350` |
 | Fecal streptococci | Bacteria | `streptococciFecal` | |
-| Asterids | Plant | | `NCBITaxon:71274` |
 
 Phosphoenolpyruvate carboxylase (`BERVO:8000061`) moves under the new Enzyme
 from Concept.
@@ -282,33 +281,34 @@ label or synonyms checked against the term.
   `hosphorusPhosphateFlux` is missing its first letter in the identifier; the
   cross-reference uses the identifier as ODM2 spells it.
 - **No concepts for single species.** BERVO keeps terms for higher taxonomic
-  groups where the variables need them, such as Asterids, Cryptophytes, and
+  groups where the variables need them, such as Cryptophytes and
   Enterococcus, and not for individual species. A variable
   that concerns one species is expected to carry that species as an NCBITaxon
   identifier in the data, not as a BERVO concept. A first draft of this slice
   added 14 salt marsh plants (13 species and the genus *Cuscuta*) as
-  `BERVO:8000871` to `BERVO:8000884`. They were removed before merge, were
-  never released, and `just next-id` may allocate those identifiers again.
+  `BERVO:8000871` to `BERVO:8000884`, and the clade Asterids as
+  `BERVO:8000870`. They were removed before merge, were never released, and
+  `just next-id` may allocate those identifiers again (see
+  [issue #103](https://github.com/bioepic-data/bervo/issues/103)). Plant is
+  otherwise a parent of plant organs, and a clade among them read badly.
   *Escherichia coli* (`BERVO:8000867`) was removed the same way. Fecal coliform
   bacteria stays, because that is the group water quality assays report.
   ODM2's `e_coli` goes to the ecology slice as a variable.
 - **Labels of taxon groups.** A group takes the name its measurements use as
   the label, and NCBI's scientific name as an exact synonym: Cryptophytes
   (Cryptophyceae), Dinoflagellates (Dinophyceae), Cyanobacteria
-  (Cyanobacteriota), Asterids (Asteridae). A genus kept as a group, such as
+  (Cyanobacteriota). A genus kept as a group, such as
   Enterococcus, takes the genus name, with the plural in common use
   (`enterococci`) as a related synonym. Fungi (`BERVO:8000783`) already
   followed this.
-- **Asterids has no subclasses.** It is the group ODM2's `asteridaeCoverage`
-  names, and it is kept as a group, not as the root of a plant taxonomy. NCBI
-  labels `NCBITaxon:71274` "asterids" with Asteridae as a synonym, and BERVO
-  follows.
 - **Salt marsh taxa for slice 3.** The coverage terms name taxa that NCBI
   Taxonomy has renamed since: *Spartina alterniflora* is now *Sporobolus
   alterniflorus* (`NCBITaxon:29706`), *Spartina spartinae* (which ODM2 spells
   "Spartina spartinea") is *Sporobolus spartinus* (`NCBITaxon:180094`), and
   *Monanthochloe littoralis* is *Distichlis littoralis* (`NCBITaxon:160556`).
-  *Limonium nashii* is not in NCBI Taxonomy.
+  *Limonium nashii* is not in NCBI Taxonomy. `asteridaeCoverage` names a
+  clade, which NCBI labels "asterids" (`NCBITaxon:71274`) with Asteridae as a
+  synonym.
 - **Organism groups that ODM2 measures as quantities.** ODM2 defines
   `cryptophytes` and `dinoflagellates` as the chlorophyll a contributed by each
   group, and `blue_GreenAlgae_Cyanobacteria_Phycocyanin` as cyanobacteria with
