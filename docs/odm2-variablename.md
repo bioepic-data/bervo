@@ -184,7 +184,7 @@ The later slices, by ODM2 identifier:
 | `waterContent` | Water content (`BERVO:8000202`) | |
 | `waterPotential` | Water potential (`BERVO:8000789`) | |
 | `resistivityElectrical` | Resistivity (`BERVO:8000428`) | gains `electrical resistivity` as an exact synonym |
-| `abundance` | Relative abundance (`BERVO:8000516`) | gains `abundance` as a related synonym; ODM2 defines it as the relative representation of a species |
+| `abundance` | Relative abundance (`BERVO:8000516`) | gains `abundance` as a related synonym, which Concentration (`BERVO:8000023`) gives up; ODM2 defines it as the relative representation of a species |
 
 ## Slice 1: new terms
 
