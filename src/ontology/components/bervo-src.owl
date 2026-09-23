@@ -50900,6 +50900,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000837 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000837">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000835"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000836"/>
         <obo:IAO_0000115>Sodium endmember of the plagioclase series, NaAlSi3O8.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/albite"/>

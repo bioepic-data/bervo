@@ -225,7 +225,7 @@ concepts.
 | Feldspar | Mineral | | `CHEBI:48733` |
 | Alkali feldspar | Feldspar | `alkaliFeldspar` | |
 | Plagioclase | Feldspar | `plagioclase` | |
-| Albite | Plagioclase | `albite` | |
+| Albite | Plagioclase, Alkali feldspar | `albite` | |
 | Orthoclase | Alkali feldspar | `orthoclase` | |
 | Amphibole | Mineral | `amphibole` | |
 | Apophyllite | Mineral | `apophyllite` | |
@@ -334,7 +334,8 @@ label or synonyms checked against the term.
   assay measures. It must not be mapped onto the alpha term, which
   `just find "acetylglucosaminidase"` returns.
 - **Minerals.** Quartz and Cristobalite take Silicon dioxide as a second parent,
-  as polymorphs of silica. Feldspar is added as a grouping term, not from ODM2,
+  as polymorphs of silica. Albite takes Alkali feldspar as a second parent beside
+  Plagioclase, since it is the sodium endmember of both series. Feldspar is added as a grouping term, not from ODM2,
   so that alkali feldspar and plagioclase have the parent they share. The other
   minerals sit flat under Mineral. `CHEBI:30194` is labelled
   "gamma-aluminium hydroxide" and carries gibbsite as a synonym.
