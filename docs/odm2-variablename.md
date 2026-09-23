@@ -323,6 +323,10 @@ label or synonyms checked against the term.
   so that alkali feldspar and plagioclase have the parent they share. The other
   minerals sit flat under Mineral. `CHEBI:30194` is labelled
   "gamma-aluminium hydroxide" and carries gibbsite as a synonym.
+- **Threshold and Critical.** Critical (`BERVO:8000005`) carried `threshold` as an
+  exact synonym, so two terms answered to the word. Critical is a state near a
+  tipping point, and the new Threshold is the operational level at which an
+  action is taken. `threshold` is now a related synonym of Critical.
 - **The ODM2 identifier is not kept as a synonym.** The speciation alignment
   kept ODM2's formulas, which people write. These identifiers are camelCase
   database keys that nobody writes.

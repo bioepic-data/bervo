@@ -35432,8 +35432,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000005">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>A state or condition that represents a threshold point where small changes can trigger significant transitions or responses in environmental systems. This concept is fundamental for understanding tipping points, phase transitions, and threshold behaviors in ecological processes, climate dynamics, and biogeochemical cycles.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>threshold</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>vital</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>threshold</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Critical</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
