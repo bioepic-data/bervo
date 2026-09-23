@@ -51285,7 +51285,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000857">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000852"/>
-        <obo:IAO_0000115>Exocellulase that cleaves cellobiose units from the ends of cellulose chains, EC 3.2.1.91.</obo:IAO_0000115>
+        <obo:IAO_0000115>Exocellulase that cleaves cellobiose units from the ends of cellulose chains; the non-reducing-end enzyme is EC 3.2.1.91 and the reducing-end enzyme EC 3.2.1.176.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/cellobiohydrolase"/>
         <oboInOwl:hasRelatedSynonym>exocellulase</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
@@ -51305,9 +51305,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000858">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000852"/>
-        <obo:IAO_0000115>Glycoside hydrolase that releases xylose from the non-reducing ends of xylan and xylo-oligosaccharides, EC 3.2.1.37.</obo:IAO_0000115>
+        <obo:IAO_0000115>Glycoside hydrolase that releases xylose from the non-reducing ends of xylan and xylo-oligosaccharides; the form assayed in soils is usually beta-xylosidase, EC 3.2.1.37.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/xylosidase"/>
-        <oboInOwl:hasExactSynonym>beta-xylosidase</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>beta-xylosidase</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Xylosidase&quot;: An enzyme with system name 4-beta-D-xylan xylohydrolase. This enzyme catalyses the following chemical reaction: Hydrolysis of (1-&gt;4)-beta-D-xylans, to remove successive D-xylose residues from the non-reducing termini.</rdfs:comment>
         <rdfs:label>Xylosidase</rdfs:label>
