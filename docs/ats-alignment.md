@@ -38,18 +38,18 @@ snow fields are `snow-<key>`, and subsurface fields have no prefix.
 | `surface-air_temperature` | Air temperature (`BERVO:0001370`) | | `TairK_col` added |
 | `snow-temperature` | Snow temperature (`BERVO:0001556`) | | |
 | `surface-vapor_pressure_air` | Atmospheric vapor pressure (`BERVO:0001374`) | Pa | Coupling divides by 1000 for `VPK_col` |
-| `surface-wind_speed` | Measured wind speed (`BERVO:0001372`) | m s-1 | Coupling multiplies by 3600 for `WindSpeedAtm_col` |
-| `surface-precipitation_rain` | Rainfall measurement (`BERVO:0001421`) | m s-1 | |
+| `surface-wind_speed` | Measured wind speed (`BERVO:0001372`) | `m.s-1` | Coupling multiplies by 3600 for `WindSpeedAtm_col` |
+| `surface-precipitation_rain` | Rainfall measurement (`BERVO:0001421`) | `m.s-1` | |
 | `surface-precipitation_snow`, `snow-precipitation` | Snowfall measurement (`BERVO:0001422`) | m SWE s-1 | |
-| `surface-precipitation_total` | Precipitation from atmosphere to land surface (`BERVO:0001828`) | m s-1 | Chosen over Total precipitation (`BERVO:0000309`), which is a cumulative volume |
-| `surface-incoming_longwave_radiation` | Sky longwave radiation (`BERVO:0001380`) | W m-2 | |
+| `surface-precipitation_total` | Precipitation from atmosphere to land surface (`BERVO:0001828`) | `m.s-1` | Chosen over Total precipitation (`BERVO:0000309`), which is a cumulative volume |
+| `surface-incoming_longwave_radiation` | Sky longwave radiation (`BERVO:0001380`) | `W.m-2` | |
 | `surface-albedo` | Surface albedo (`BERVO:0001507`) | | |
 | `surface-snow_albedo` | Snowpack albedo (`BERVO:0001554`) | | `SnowAlbedo_col` added; see open questions |
-| `surface-net_radiation` | Total net radiation at ground surface (`BERVO:0001443`) | W m-2 | |
-| `surface-qE_latent_heat` | Total latent heat flux at ground surface (`BERVO:0001444`) | W m-2 | |
-| `surface-qE_sensible_heat` | Total sensible heat flux at ground surface (`BERVO:0001445`) | W m-2 | |
+| `surface-net_radiation` | Total net radiation at ground surface (`BERVO:0001443`) | `W.m-2` | |
+| `surface-qE_latent_heat` | Total latent heat flux at ground surface (`BERVO:0001444`) | `W.m-2` | |
+| `surface-qE_sensible_heat` | Total sensible heat flux at ground surface (`BERVO:0001445`) | `W.m-2` | |
 | `surface-qE_conducted`, `surface-ecosim_source` | Heat flux into ground, computed from surface energy balance model (`BERVO:0001488`) | W m-2, MW m-2 | `ecosim_source` is `HeatFlx2Grnd_col` per area per second |
-| `surface-ecosim_water_source` | Infiltration into soil (`BERVO:0001821`) | m s-1 | `Qinflx2Soil_col` divided by 3600 |
+| `surface-ecosim_water_source` | Infiltration into soil (`BERVO:0001821`) | `m.s-1` | `Qinflx2Soil_col` divided by 3600 |
 | `subsurface_ecosim_water_source` | Current step vertical root water uptake profile (`BERVO:0000392`) | | Sum over PFTs of `RPlantRootH2OUptk_pvr` |
 | `surface-water_table_depth` | Internal water table depth (`BERVO:0001763`) | | |
 | `porosity` | Soil porosity (`BERVO:0001524`) | | `POROS_vr` added |
@@ -66,7 +66,7 @@ snow fields are `snow-<key>`, and subsurface fields have no prefix.
 | `surface-evaporation_canopy` | Total canopy evaporation (`BERVO:0000599`) | | Summed over PFTs |
 | `surface-evapotranspiration` | Total canopy evaporation + transpiration (`BERVO:0000598`) | | |
 | `surface-snow_depth`, `snow-depth` | Snowpack depth (`BERVO:0001572`) | | |
-| `snow-density` | Snowpack density (`BERVO:0001563`) | kg m-3 | |
+| `snow-density` | Snowpack density (`BERVO:0001563`) | `kg.m-3` | |
 | `surface-elevation` | Altitude of grid cell (`BERVO:0000676`) | | |
 | `surface-aspect` | Aspect (`BERVO:0000685`) | | |
 | `surface-slope_magnitude` | Measurement of slope (`BERVO:0000684`) | | ATS value is dimensionless, not degrees |
@@ -91,26 +91,26 @@ Two rows carry a comment without a synonym:
 | Ponded water depth (`BERVO:0001860`) | Soil surface variable | `surface-ponded_depth` | m |
 | Thaw depth (`BERVO:0001861`) | Soil heat variable | `surface-thaw_depth` | m |
 | Active layer mean temperature (`BERVO:0001862`) | Soil heat variable | `surface-active_layer_average_temperature` | K |
-| Surface water unfrozen fraction (`BERVO:0001863`) | Soil surface variable | `surface-unfrozen_fraction` | NONE |
-| Soil liquid water saturation (`BERVO:0001864`) | Soil and water variable | `saturation_liquid` | NONE |
-| Soil ice saturation (`BERVO:0001865`) | Soil and water variable | `saturation_ice` | NONE |
-| Soil gas saturation (`BERVO:0001866`) | Soil and water variable | `saturation_gas` | NONE |
-| Incoming shortwave radiation (`BERVO:0001867`) | Climate force variable | `surface-incoming_shortwave_radiation` | W m-2 |
-| Soil surface resistance to vapor transfer (`BERVO:0001868`) | Soil surface variable | `surface-rsoil`, `surface-soil_resistance` | s m-1 |
+| Surface water unfrozen fraction (`BERVO:0001863`) | Soil surface variable | `surface-unfrozen_fraction` | `1` |
+| Soil liquid water saturation (`BERVO:0001864`) | Soil and water variable | `saturation_liquid` | `1` |
+| Soil ice saturation (`BERVO:0001865`) | Soil and water variable | `saturation_ice` | `1` |
+| Soil gas saturation (`BERVO:0001866`) | Soil and water variable | `saturation_gas` | `1` |
+| Incoming shortwave radiation (`BERVO:0001867`) | Climate force variable | `surface-incoming_shortwave_radiation` | `W.m-2` |
+| Soil surface resistance to vapor transfer (`BERVO:0001868`) | Soil surface variable | `surface-rsoil`, `surface-soil_resistance` | `s.m-1` |
 | Microtopographic relief (`BERVO:0001869`) | Land surface variable | `surface-microtopographic_relief` | m |
-| Soil thermal conductivity (`BERVO:0001870`) | Soil heat variable | `thermal_conductivity` | W m-1 K-1 |
-| Soil relative permeability (`BERVO:0001871`) | Soil and water variable | `relative_permeability` | NONE |
+| Soil thermal conductivity (`BERVO:0001870`) | Soil heat variable | `thermal_conductivity` | `W.m-1.K-1` |
+| Soil relative permeability (`BERVO:0001871`) | Soil and water variable | `relative_permeability` | `1` |
 | Soil capillary pressure (`BERVO:0001872`) | Soil and water variable | `capillary_pressure_gas_liq` | Pa |
 | Snow water equivalent (`BERVO:0001873`) | Snow variable | `snow-water_equivalent` | m |
-| Canopy held snow content (`BERVO:0001874`) | Canopy variable | `surface-canopy_snow` | m3 d-2 |
-| Bare ground evaporation (`BERVO:0001875`) | Soil surface variable | `surface-evaporation_ground` | m3 H2O d-2 h-1 |
-| Surface litter evaporation (`BERVO:0001876`) | Surface litter variable | `surface-evaporation_litter` | m3 H2O d-2 h-1 |
-| Snowpack evaporation (`BERVO:0001877`) | Snow variable | `surface-evaporation_snow` | m3 H2O d-2 h-1 |
-| Snowpack sublimation (`BERVO:0001878`) | Snow variable | `surface-sublimation_snow` | m3 H2O d-2 h-1 |
-| Canopy leaf area index (`BERVO:0001879`) | Plant trait variable | `surface-LAI` | m2 m-2 |
-| Canopy stem area index (`BERVO:0001880`) | Plant trait variable | `surface-SAI` | m2 m-2 |
-| Liquid water molar density (`BERVO:0001881`) | Water variable | `molar_density_liquid` | mol m-3 |
-| Soil particle density (`BERVO:0001882`) | Soil variable | `density_rock` | kg m-3 |
+| Canopy held snow content (`BERVO:0001874`) | Canopy variable | `surface-canopy_snow` | `m3/{grid}` |
+| Bare ground evaporation (`BERVO:0001875`) | Soil surface variable | `surface-evaporation_ground` | `m3{H2O}.h-1/{grid}` |
+| Surface litter evaporation (`BERVO:0001876`) | Surface litter variable | `surface-evaporation_litter` | `m3{H2O}.h-1/{grid}` |
+| Snowpack evaporation (`BERVO:0001877`) | Snow variable | `surface-evaporation_snow` | `m3{H2O}.h-1/{grid}` |
+| Snowpack sublimation (`BERVO:0001878`) | Snow variable | `surface-sublimation_snow` | `m3{H2O}.h-1/{grid}` |
+| Canopy leaf area index (`BERVO:0001879`) | Plant trait variable | `surface-LAI` | `m2.m-2` |
+| Canopy stem area index (`BERVO:0001880`) | Plant trait variable | `surface-SAI` | `m2.m-2` |
+| Liquid water molar density (`BERVO:0001881`) | Water variable | `molar_density_liquid` | `mol.m-3` |
+| Soil particle density (`BERVO:0001882`) | Soil variable | `density_rock` | `kg.m-3` |
 | Stem area index (`BERVO:8000588`) | Concept | | |
 | Thermal conductivity (`BERVO:8000589`) | Physical property | | |
 

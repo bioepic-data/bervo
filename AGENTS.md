@@ -114,26 +114,49 @@ See the "EcoSIM provenance" section of the `bervo-terms` skill.
 ### `has_units`
 
 `has_units` is the one column in that group that holds a **literal** string rather than a
-reference to a term. It takes one of three kinds of value, and the difference between the
-last two is the one people get wrong:
+reference to a term. The string is **UCUM** (<https://ucum.org/ucum>), case-sensitive,
+and nothing else (issues #14, #88). BERVO does not define its own units and does not map
+them to a unit ontology. `docs/units.md` records the conversion and the full mapping.
+
+A cell takes one of three kinds of value:
 
 | Value | Means | Use it for |
 | --- | --- | --- |
-| a unit string (`m2 h-1`, `g d-2`, `g g-1`) | the variable has this unit | anything with a dimension |
-| `NONE` | a number with no dimension | fractions, ratios of like quantities, counts, trigonometric values, indices |
+| a UCUM unit (`m2.h-1`, `g.h-1/{grid}`, `g{N}.g-1{C}`) | the variable has this unit | anything with a dimension |
+| `1` | a number with no dimension (UCUM's unity) | fractions, ratios of like quantities, counts, trigonometric values, indices |
 | `NA` | no unit applies, because the variable has no numeric magnitude | categorical variables, flags, identifiers, dates, and the abstract grouping terms in the `0xxxxxx` block |
 
 Concepts (`8xxxxxx`) and grouping classes (`9xxxxxx`) are not variables, so they all take
-`NA`.
+`NA`. `NONE`, the old spelling of `1`, is an error now.
 
-`NONE` on a categorical variable is wrong: it claims the value is a dimensionless number
-when it is a label. `NA` on a fraction is wrong for the mirror reason. A `g g-1` mass
+How BERVO writes UCUM:
+
+- **Exponents, joined by `.`**: `umol.m-2.s-1`, not `umol/m2/s`.
+- **A `/` only at the end, and only before an annotation**: `g.h-1/{grid}`. UCUM reads
+  `/` and `.` left to right, so `g/{grid}.h` means grams times hours per grid cell. The
+  validator rejects a `.` after a `/`.
+- **EcoSIM's `d-2` is `/{grid}`.** In EcoSIM, `d-2` marks a total for a grid cell, not an
+  amount per square metre. In UCUM, `d` is the day, so `g.d-2` is valid UCUM for grams
+  per day squared. The validator rejects `d` with any exponent but 1 or -1. `t-1`, per
+  time step, is `/{step}`, and `p-1`, per plant, is `/{plant}`.
+- **A substance is an annotation on the unit it qualifies**: `g{C}.m-3`,
+  `m3{H2O}.h-1/{grid}`, `g{N}.g-1{C}`. An annotation follows any exponent: `g-1{C}`,
+  never `g{C}-1`. Annotations are unity to a converter; they carry meaning only for
+  readers.
+- **Atoms that differ from habit**: `Cel` for degrees Celsius, `K-1` for "per degree
+  Celsius" (a Celsius degree cannot take an exponent), `deg` for angles, `har` for
+  hectare, `t` for tonne, `umol.L-1` for micromolar, `[ppm]` for parts per million.
+
+`1` on a categorical variable is wrong: it claims the value is a dimensionless number
+when it is a label. `NA` on a fraction is wrong for the mirror reason. A `g{N}.g-1{C}` mass
 ratio is dimensionless but the ontology writes the unit out, because the two masses are
-of different elements and the string says so; a ratio of like quantities, such as a
-length to a width, takes `NONE`.
+of different elements and the annotations say so; a ratio of like quantities, such as a
+length to a width, takes `1`.
 
-The column is a literal, so **the validator has no opinion on any of this**. A wrong unit
-string is not a broken reference and nothing will flag it. Only reading the row finds it.
+The validator checks the syntax: the full UCUM grammar when `ucumvert` is installed
+(`pip install -r src/scripts/requirements.txt`; CI installs it), and BERVO's own rules
+above in any case. **It cannot check meaning.** `MJ.h-1/{grid}` on a variable that is
+really a water transfer is valid UCUM and still wrong. Only reading the row finds it.
 
 Conventions:
 

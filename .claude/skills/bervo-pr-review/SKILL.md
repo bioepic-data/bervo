@@ -64,7 +64,10 @@ For each added or changed term:
   should read true.
 
 **Relationships**
-- `has_units` holds a literal unit string (or `NONE`) — not a term reference.
+- `has_units` holds a literal UCUM string (`1` for a dimensionless number, `NA` when no
+  unit applies), not a term reference. The validator checks the syntax only; check that
+  the unit fits the quantity, and that an EcoSIM grid-cell total ends in `/{grid}`
+  (see the `has_units` section of AGENTS.md).
 - `attributes`, `measured_ins`, `measurement_ofs`, `qualifiers`, `contexts`, and
   `value_types` must name existing terms. `just validate` warns when they do not, with
   a suggested spelling for case-only typos.
