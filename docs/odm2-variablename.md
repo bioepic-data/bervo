@@ -35,9 +35,10 @@ A name that puts a property on a named thing becomes a **variable**:
 `Canopy height`, `Soil respiration`, `Fish detections`, `Spartina alterniflora
 coverage`.
 
-Either way, the BERVO term carries the ODM2 cross-reference. That departs from
-the habit of mapping concepts and not variables, because ODM2's variable names
-are generic observables rather than model-specific composites.
+Either way, the BERVO term carries the ODM2 cross-reference. BERVO maps
+variables as well as concepts wherever a true equivalent exists; earlier
+alignments landed mostly on concepts only because their vocabularies named
+things and properties.
 
 Some names sit on the line. BERVO already has `Wind speed` and `Relative humidity`
 as concepts and `Incoming shortwave radiation` as a variable, so the meteorology
@@ -197,7 +198,7 @@ concepts.
 | Gauge pressure | Pressure | `pressureGauge` | |
 | Osmotic pressure | Pressure | `osmoticPressure` | |
 | Bulk density | Density | `bulkDensity` | |
-| Circumference | Physical property | `circumference` | `PATO:0001648` |
+| Circumference | Length | `circumference` | `PATO:0001648` |
 | Roundness | Physical property | `roundness` | |
 | Hydraulic conductivity | Conductivity | `hydraulicConductivity` | |
 | Electrical conductivity | Conductivity | `electricalConductivity` | |
