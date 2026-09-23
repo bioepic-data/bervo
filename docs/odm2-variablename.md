@@ -336,8 +336,8 @@ label or synonyms checked against the term.
   left in place and tracked as
   [issue #102](https://github.com/bioepic-data/bervo/issues/102).
 - **Conductivity is now the general term.** Conductivity (`BERVO:8000348`)
-  was defined as electrical conductivity and carried that as an exact
-  synonym, while Thermal conductivity sat apart under Physical property. It is
+  was defined as electrical conductivity, while Thermal conductivity sat apart
+  under Physical property. It is
   now the general ability to transmit a flow in proportion to its driving
   gradient, under Physical property, with Electrical conductivity
   (`BERVO:8000885`, new), Thermal conductivity (`BERVO:8000589`), and
