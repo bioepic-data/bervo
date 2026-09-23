@@ -349,6 +349,11 @@ label or synonyms checked against the term.
   temperature, and placed under Electrical conductivity, with `specific
   conductivity` as a related synonym. ODM2's `specificConductance` maps to it
   in the water quality slice.
+- **Pressure gathers its kinds.** Pressure (`BERVO:8000518`) had no children
+  before this slice. Air pressure, Water pressure, and Vapor pressure move
+  under it from Concept, and Partial pressure from Physical property, beside
+  the three new pressures. Pressure itself moves under Physical property, as
+  Conductivity does, so Partial pressure keeps that ancestor.
 - **Threshold and Critical.** Critical (`BERVO:8000005`) carried `threshold` as an
   exact synonym, so two terms answered to the word. Critical is a state near a
   tipping point, and the new Threshold is the operational level at which an

@@ -37718,7 +37718,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000130 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000130">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000518"/>
         <obo:IAO_0000115>The force applied perpendicular to a surface per unit area, affecting physical processes and system behaviors in atmospheric, aquatic, and terrestrial environments. This physical property controls gas exchange, water movement, atmospheric dynamics, and mechanical stress on organisms and materials.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000314"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PATO_0001025"/>
@@ -43102,7 +43102,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000430 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000430">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000518"/>
         <obo:IAO_0000115>The pressure contributed by a single gas component in a mixture of gases. Partial pressures determine gas solubility and diffusion.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000306"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
@@ -43157,7 +43157,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000433 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000433">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000518"/>
         <obo:IAO_0000115>The force per unit area exerted by water columns, measured in pascals or bars. Water pressure increases with depth and affects aquatic processes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000315"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
@@ -44464,7 +44464,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000507 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000507">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000518"/>
         <obo:IAO_0000115>The pressure exerted by a vapor in equilibrium with its liquid or solid phase at a given temperature. Vapor pressure indicates volatility.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000553"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/vaporPressure"/>
@@ -44668,7 +44668,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000518 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000518">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
         <obo:IAO_0000115>The force per unit area exerted by a gas or liquid on container walls or interfaces. Pressure affects solubility and reaction rates.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000181"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
