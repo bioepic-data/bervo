@@ -27424,15 +27424,15 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001482">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000024"/>
-        <obo:IAO_0000115>The amount of thermal energy required to raise the temperature of a unit volume of soil by one degree. This parameter depends on soil composition, moisture content, and bulk density, and is essential for modeling soil temperature dynamics, freeze-thaw processes, and ground heat storage in terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Heat capacity of a soil layer per unit ground area, the sum of the heat capacities of its solids, liquid water, and ice. It varies with soil composition, moisture, and layer thickness, and governs soil temperature dynamics, freeze-thaw, and ground heat storage.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>VHeatCapacity_vr</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), from the EcoSIM source (StartsMod.F90, SoilLayerDynMod.F90, SnowPhysMod.F90) for issue #98</rdfs:comment>
         <rdfs:comment>SoilHeatDataType.txt</rdfs:comment>
         <rdfs:label>Soil heat capacity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>MJ m-3 K-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>MJ d-2 K-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
     </Class>
@@ -28746,15 +28746,15 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001558">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000027"/>
-        <obo:IAO_0000115>The amount of thermal energy required to raise the temperature of a unit volume of snowpack by one degree. This parameter controls thermal buffering capacity, snowmelt rates, and temperature response to atmospheric warming, affecting seasonal water release and ecosystem thermal dynamics.</obo:IAO_0000115>
+        <obo:IAO_0000115>Heat capacity of a snowpack layer per unit ground area, the sum of the heat capacities of its dry snow, liquid water, and ice. It controls how the layer&apos;s temperature and melt respond to heat fluxes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>VLHeatCapSnow_snvr</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), from the EcoSIM source (StartsMod.F90, SoilLayerDynMod.F90, SnowPhysMod.F90) for issue #98</rdfs:comment>
         <rdfs:comment>SnowDataType.txt</rdfs:comment>
         <rdfs:label>Snowpack heat capacity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000204"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>MJ m-3 K-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>MJ d-2 K-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000204"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
     </Class>
