@@ -57,7 +57,7 @@ BERVO term's `Comment`.
 | `CaCO3` | Calcium carbonate (`BERVO:8000094`) |  |
 | `CH4` | Methane (`BERVO:8000024`) |  |
 | `H2O` | Water (`BERVO:8000102`) |  |
-| `EC` | Conductivity (`BERVO:8000348`) |  |
+| `EC` | Electrical conductivity (`BERVO:8000885`) |  |
 | `pH` | pH (`BERVO:8000261`) |  |
 
 Two of the 145 concepts are not mapped: `Not Applicable` and `Unknown` are
