@@ -643,7 +643,7 @@ variable was not used: its definition is water chemistry.
 | --- | --- | --- |
 | Alluvium (`BERVO:8000900`) | Sediment | `ENVO:01001202` |
 | Reservoir (`BERVO:8000901`) | Water body | `ENVO:00000025` |
-| Well (`BERVO:8000902`) | Human construction | `ENVO:01000002` |
+| Water well (`BERVO:8000902`) | Human construction | `ENVO:01000002` |
 | Sea floor (`BERVO:8000903`) | Environmental feature | `ENVO:00000482` |
 
 26 variables, `BERVO:0001993` to `BERVO:0002018`:
