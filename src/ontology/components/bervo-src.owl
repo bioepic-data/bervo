@@ -36807,7 +36807,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001980 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001980">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
         <obo:IAO_0000115>Light re-emitted by chlorophyll after it absorbs light, used in water as an in situ proxy for chlorophyll concentration.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/chlorophyllFluorescence"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
@@ -36817,7 +36817,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>{RFU}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000214"/>
     </Class>
     

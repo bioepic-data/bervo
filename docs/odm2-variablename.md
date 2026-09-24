@@ -522,7 +522,7 @@ or volume, sits under Physical property beside Density, which is mass per volume
 | Wrack cover (`BERVO:0001976`) | Surface litter variable | `wrackCoverage` | `1` |
 | Phytoplankton biomass (`BERVO:0001978`) | Ecology variable | `biomassPhytoplankton` | `g.m-3` |
 | Body length (`BERVO:0001979`) | Ecology variable | `bodyLength` | `m` |
-| Chlorophyll fluorescence (`BERVO:0001980`) | Ecology variable | `chlorophyllFluorescence` | `{RFU}` |
+| Chlorophyll fluorescence (`BERVO:0001980`) | Water variable | `chlorophyllFluorescence` | `{RFU}` |
 | Organism count per unit area (`BERVO:0001981`) | Ecology variable | `countAreal` | `m-2` |
 | Fish detections (`BERVO:0001983`) | Ecology variable | `fishDetections` | `1` |
 | Shannon diversity index (`BERVO:0001984`) | Ecology variable | `shannonDiversityIndex` | `1` |
