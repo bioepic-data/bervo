@@ -795,7 +795,8 @@ geologic materials, and the deposits over them. Alluvium depth
 | Anti-Stokes Raman scattering (`BERVO:8000915`) | Raman spectroscopy | `scatterAntiStokes` | none |
 | Seismic refraction (`BERVO:8000916`) | Method | `seismicRefraction` | none |
 
-29 variables, `BERVO:0002024` to `BERVO:0002052`.
+33 variables, `BERVO:0002024` to `BERVO:0002056`. The last four, the soil and
+plant tissue C:N ratios, carry no ODM2 name.
 
 | BERVO variable | Parent | ODM2 term | Unit |
 | --- | --- | --- | --- |
@@ -808,8 +809,8 @@ geologic materials, and the deposits over them. Alluvium depth
 | Phenol oxidase activity (`BERVO:0002030`) | Extracellular enzyme activity | `activityPhenolOxidase` | `nmol.g-1.h-1` |
 | Soil microbial biomass (`BERVO:0002031`) | Soil biogeochemistry variable | `biomassMicrobial` | `mg.kg-1` |
 | Soil bacterial DNA mass (`BERVO:0002032`) | Soil biogeochemistry variable | `biomassSoilBacterialDeoxyribonucleicAcid` | `mg.kg-1` |
-| Carbon to nitrogen mass ratio (`BERVO:0002033`) | Soil biogeochemistry variable | `carbonToNitrogenMassRatio` | `g{C}.g-1{N}` |
-| Carbon to nitrogen molar ratio (`BERVO:0002034`) | Soil biogeochemistry variable | `carbonToNitrogenMolarRatio` | `mol{C}.mol-1{N}` |
+| Carbon to nitrogen mass ratio (`BERVO:0002033`) | Variable | `carbonToNitrogenMassRatio` | `g{C}.g-1{N}` |
+| Carbon to nitrogen molar ratio (`BERVO:0002034`) | Variable | `carbonToNitrogenMolarRatio` | `mol{C}.mol-1{N}` |
 | Sodium adsorption ratio (`BERVO:0002035`) | Soil biogeochemistry variable | `sodiumAdsorptionRatio` | `1` |
 | Bulk electrical conductivity (`BERVO:0002036`) | Soil variable | `bulkElectricalConductivity` | `dS.m-1` |
 | Soil depth (`BERVO:0002037`) | Soil variable | `soilDepth` | `m` |
@@ -828,11 +829,18 @@ geologic materials, and the deposits over them. Alluvium depth
 | Borehole log material classification (`BERVO:0002050`) | Geology variable | `boreholeLogMaterialClassification` | `NA` |
 | Natural gamma ray count rate (`BERVO:0002051`) | Geology variable | `gammaCounts` | `{counts}.s-1` |
 | Cosmic-ray neutron count rate (`BERVO:0002052`) | Soil and water variable | `neutronCount` | `{counts}.h-1` |
+| Soil carbon to nitrogen mass ratio (`BERVO:0002053`) | Soil biogeochemistry variable | none | `g{C}.g-1{N}` |
+| Soil carbon to nitrogen molar ratio (`BERVO:0002054`) | Soil biogeochemistry variable | none | `mol{C}.mol-1{N}` |
+| Plant tissue carbon to nitrogen mass ratio (`BERVO:0002055`) | Plant trait variable | none | `g{C}.g-1{N}` |
+| Plant tissue carbon to nitrogen molar ratio (`BERVO:0002056`) | Plant trait variable | none | `mol{C}.mol-1{N}` |
 
 ### Existing terms changed
 
 - **Soil microbial biomass carbon** (`BERVO:0001899`) and **Soil microbial biomass
   nitrogen** (`BERVO:0001900`) take Soil microbial biomass as a second parent.
+- **C:N ratio in remobilizable nonstructural biomass** (`BERVO:0000743`), an
+  EcoSIM plant trait, takes Plant tissue carbon to nitrogen mass ratio as a
+  second parent.
 - **Rock fraction** (`BERVO:0001529`), EcoSIM's volume fraction of rock fragments,
   takes Soil coarse fraction as a second parent.
 - **Alluvium depth** (`BERVO:0002017`) moves from Hydrology variable to Geology
@@ -864,11 +872,13 @@ geologic materials, and the deposits over them. Alluvium depth
   (`BERVO:8000857`) and Xylosidase (`BERVO:8000858`), from slice 1, have no
   activity variable, because ODM2 has no activity name for them. ODM2 lists them
   only as enzymes.
-- **The C:N ratios are generic**, measured in any material, and sit under Soil
-  biogeochemistry variable because soil is where most such data comes from.
-  Their attribute is the existing Carbon to nitrogen ratio concept
-  (`BERVO:8000109`). The mass ratio is `g{C}.g-1{N}`, the molar
-  `mol{C}.mol-1{N}`.
+- **The C:N ratios.** ODM2's two ratios are generic, measured in any material,
+  and sit directly under Variable, since no grouping spans soil and plants. Each
+  has a soil child under Soil biogeochemistry variable and a plant tissue child
+  under Plant trait variable. All six take the existing Carbon to nitrogen ratio
+  concept (`BERVO:8000109`) as their attribute. The mass ratios are
+  `g{C}.g-1{N}`, the molar ratios `mol{C}.mol-1{N}`. EcoSIM's C:N ratio in
+  remobilizable nonstructural biomass sits under the plant tissue mass ratio.
 - **Loss on ignition** sits under Soil organic matter variable, and its
   `measured_ins` is Soil and Sediment. Lake and marine sediment cores are a main
   use of it. The Soil variable tree has no sediment counterpart for organic
