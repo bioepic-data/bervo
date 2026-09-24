@@ -60,7 +60,7 @@ wrong. See "Points to note".
 | Land-atmosphere fluxes | 25 | **Slice 2** |
 | Vegetation | 32 | **Slice 3**, with ecology |
 | Ecology | 8 left | **Slice 3** |
-| Hydrology and snow | 31 | Slice 4 |
+| Hydrology and snow | 31 | **Slice 4** |
 | Soil and geology | 44 | Slice 5 |
 | Water quality | 63 | Slice 6 |
 
@@ -611,6 +611,96 @@ variable. Canopy height is the parent of EcoSIM's Pft canopy height
   definition say percent. That is older than this slice.
 - **Vegetation type is categorical**, `NA` with `value_types=Category`; its
   categories are the question of issue #108.
+
+## Slice 4: hydrology and snow
+
+The 31 names of slice 4 follow the rules of slices 2 and 3: an observable is a
+variable, a name for a thing is a concept, a true equivalent is mapped rather than
+duplicated, and a generic observable becomes the parent of the EcoSIM variables
+that are narrower forms of it.
+
+### Mapped to existing variables
+
+| ODM2 term(s) | BERVO variable |
+| --- | --- |
+| `snowDepth`, `depthSnow` | Snowpack depth (`BERVO:0001572`) |
+| `snowWaterEquivalent` | Snow water equivalent (`BERVO:0001873`) |
+| `volumetricWaterContent` | Volumetric water content (`BERVO:0001743`) |
+| `discharge` | Water current (`BERVO:0001837`) |
+
+ODM2 lists snow depth twice, as `snowDepth` and `depthSnow`; both land on Snowpack
+depth. Water current carries `MIXS:0000203`, the MIxS field for a volumetric
+flow, which is what discharge is. It gains `discharge` as a related synonym and
+Hydrology variable as a second parent beside Water variable.
+
+### New terms
+
+Hydrology variable (`BERVO:9000041`), under Variable, holds observations of the
+quantity, level, and movement of surface water and groundwater, and its use. Water
+variable was not used: its definition is water chemistry.
+
+| BERVO term | Parent | Cross-reference |
+| --- | --- | --- |
+| Alluvium (`BERVO:8000900`) | Sediment | `ENVO:01001202` |
+| Reservoir (`BERVO:8000901`) | Water body | `ENVO:00000025` |
+| Well (`BERVO:8000902`) | Human construction | `ENVO:01000002` |
+| Sea floor (`BERVO:8000903`) | Environmental feature | `ENVO:00000482` |
+
+26 variables, `BERVO:0001993` to `BERVO:0002018`:
+
+| BERVO variable | Parent | ODM2 term | Unit |
+| --- | --- | --- | --- |
+| Streamflow (`BERVO:0001993`) | Water current | `streamflow` | `m3.s-1` |
+| Baseflow (`BERVO:0001994`) | Streamflow | `baseflow` | `m3.s-1` |
+| Water depth (`BERVO:0001995`) | Hydrology variable | `waterDepth` | `m` |
+| Averaged water depth (`BERVO:0001996`) | Water depth | `waterDepthAveraged` | `m` |
+| Water level (`BERVO:0001997`) | Hydrology variable | `waterLevel` | `m` |
+| Gage height (`BERVO:0001998`) | Water level | `gageHeight` | `m` |
+| Tide stage (`BERVO:0001999`) | Water level | `tideStage` | `m` |
+| Wave height (`BERVO:0002000`) | Hydrology variable | `waveHeight` | `m` |
+| Secchi depth (`BERVO:0002001`) | Hydrology variable | `secchiDepth` | `m` |
+| Light attenuation coefficient (`BERVO:0002002`) | Hydrology variable | `lightAttenuationCoefficient` | `m-1` |
+| Sigma-t (`BERVO:0002003`) | Hydrology variable | `sigma_t` | `kg.m-3` |
+| Height above sea floor (`BERVO:0002004`) | Hydrology variable | `heightAboveSeaFloor` | `m` |
+| Water table depth (`BERVO:0002005`) | Hydrology variable | `groundwaterDepth`, `depthUnsaturatedZone` | `m` |
+| Groundwater recharge (`BERVO:0002006`) | Hydrology variable | `rechargeGroundwater` | `mm.d-1` |
+| Reservoir storage (`BERVO:0002007`) | Hydrology variable | `reservoirStorage` | `m3` |
+| Well flow rate (`BERVO:0002008`) | Hydrology variable | `wellFlowRate` | `m3.s-1` |
+| Wellhead pressure (`BERVO:0002009`) | Hydrology variable | `wellheadPressure` | `kPa` |
+| Water use (`BERVO:0002010`) | Hydrology variable | none | `m3.d-1` |
+| Agricultural water use (`BERVO:0002011`) | Water use | `waterUseAgriculture` | `m3.d-1` |
+| Commercial, industrial, and power water use (`BERVO:0002012`) | Water use | `waterUseCommercialIndustrialPower` | `m3.d-1` |
+| Domestic well water use (`BERVO:0002013`) | Water use | `waterUseDomesticWells` | `m3.d-1` |
+| Public supply water use (`BERVO:0002014`) | Water use | `waterUsePublicSupply` | `m3.d-1` |
+| Recreational water use (`BERVO:0002015`) | Water use | `waterUseRecreation` | `m3.d-1` |
+| Gate position (`BERVO:0002016`) | Hydrology variable | `position` | `1` |
+| Alluvium depth (`BERVO:0002017`) | Hydrology variable | `alluviumDepth` | `m` |
+| Snow layer hardness (`BERVO:0002018`) | Snow variable | `snowLayerHardness` | `NA` |
+
+### Points to note for slice 4
+
+- **Hierarchies.** Streamflow sits under Water current, the discharge term, and
+  Baseflow under Streamflow. Gage height and Tide stage sit under Water level,
+  Averaged water depth under Water depth, and the five ODM2 water use names under a
+  new generic Water use, which carries no ODM2 name of its own.
+- **Water table depth is the parent of EcoSIM's water table depths**: Depth of
+  artificial water table (`BERVO:0001760`), Artificial water table depth
+  (`BERVO:0001761`), Depth of artificial water table adjusted for elevation
+  (`BERVO:0001762`), Internal water table depth (`BERVO:0001763`), and External
+  water table depth (`BERVO:0001766`), which already holds the initial and current
+  elevation-corrected forms. ODM2 calls the quantity groundwater depth, an exact
+  synonym here.
+- **Two ODM2 names on Water table depth.** `depthUnsaturatedZone` maps there beside
+  `groundwaterDepth`: the unsaturated zone runs from the land surface down to the
+  water table, so its depth is the same distance.
+- **Gate position** is ODM2's `position`, the setting of a gate or other
+  water-control element, not a spatial position. It is a fraction of fully open;
+  some datasets report a height or a number of turns instead.
+- **Snow layer hardness is categorical**, `NA` with `value_types=Category`: it is
+  recorded on the hand hardness scale, fist to ice. Its categories belong to issue
+  #108.
+- **Units.** Discharge-like flows are `m3.s-1`, water use `m3.d-1`, and groundwater
+  recharge `mm.d-1`, per unit area.
 
 ## Points to note (slice 1)
 
