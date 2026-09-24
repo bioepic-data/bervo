@@ -13075,6 +13075,7 @@
     <!-- https://w3id.org/bervo/BERVO_0000695 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000695">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001967"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>The vertical extent of vegetation canopy for a specific plant functional type, representing the maximum height of photosynthetic and structural tissues. This canopy height determines light competition dynamics, aerodynamic properties, and vertical stratification in ecosystem productivity and energy balance models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CanopyHeight_pft</oboInOwl:hasRelatedSynonym>
@@ -13322,6 +13323,7 @@
     <!-- https://w3id.org/bervo/BERVO_0000708 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000708">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001967"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>The maximum vertical extent of vegetation canopy averaged across a computational grid cell, representing ecosystem structural characteristics. This grid-averaged canopy height influences aerodynamic properties, light interception, and habitat structure in spatially explicit terrestrial ecosystem models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CanopyHeight_col</oboInOwl:hasRelatedSynonym>
@@ -34007,8 +34009,24 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001834">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>The proportion of total land area occupied by a specific plant species or taxonomic group expressed as a percentage. This parameter quantifies relative vegetation dominance, controlling species composition patterns and ecosystem functional diversity in plant community studies.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/asteridaeCoverage"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/batisMaritimaCoverage"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/borrichiaFrutescensCoverage"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/cuscutaSppCoverage"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/distichlisSpicataCoverage"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/ivaFrutescenscoverage"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/limoniumNashiiCoverage"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/lyciumCarolinianumCoverage"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/monanthochloeLittoralisCoverage"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/salicorniaBigeloviiCoverage"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/salicorniaVirginicaCoverage"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/spartinaAlternifloraCoverage"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/spartinaSpartineaCoverage"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/suaedaLinearisCoverage"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/suaedaMaritimaCoverage"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/transientSpeciesCoverage"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_taxa</rdfs:comment>
+        <rdfs:comment>Use with BERVO:involves_taxa. ODM2 variable name concept &quot;Asteridae coverage&quot;: Areal coverage of the plant Asteridae. ODM2 variable name concept &quot;Batis maritima Coverage&quot;: Areal coverage of the plant Batis maritima. ODM2 variable name concept &quot;Borrichia frutescens Coverage&quot;: Areal coverage of the plant Borrichia frutescens. ODM2 variable name concept &quot;Cuscuta spp. coverage&quot;: Areal coverage of the plant Cuscuta spp. ODM2 variable name concept &quot;Distichlis spicata Coverage&quot;: Areal coverage of the plant Distichlis spicata. ODM2 variable name concept &quot;Iva frutescens coverage&quot;: Areal coverage of the plant Iva frutescens. ODM2 variable name concept &quot;Limonium nashii Coverage&quot;: Areal coverage of the plant Limonium nashii. ODM2 variable name concept &quot;Lycium carolinianum Coverage&quot;: Areal coverage of the plant Lycium carolinianum. ODM2 variable name concept &quot;Monanthochloe littoralis Coverage&quot;: Areal coverage of the plant Monanthochloe littoralis. ODM2 variable name concept &quot;Salicornia bigelovii coverage&quot;: Areal coverage of the plant Salicornia bigelovii. ODM2 variable name concept &quot;Salicornia virginica coverage&quot;: Areal coverage of the plant Salicornia virginica. ODM2 variable name concept &quot;Spartina alterniflora coverage&quot;: Areal coverage of the plant Spartina alterniflora. ODM2 variable name concept &quot;Spartina spartinea coverage&quot;: Areal coverage of the plant Spartina spartinea. ODM2 variable name concept &quot;Suaeda linearis coverage&quot;: Areal coverage of the plant Suaeda linearis. ODM2 variable name concept &quot;Suaeda maritima coverage&quot;: Areal coverage of the plant Suaeda maritima. ODM2 variable name concept &quot;Transient species coverage&quot;: Areal coverage of transient species.</rdfs:comment>
         <rdfs:label>Percent area covered by specified plant</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -34829,9 +34847,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001879">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>One-sided green leaf area of a plant canopy per unit horizontal ground area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/leafAreaIndex"/>
         <oboInOwl:hasRelatedSynonym>surface-LAI</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>tlai_day_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>ATS: surface-LAI [m2 m-2]. In the ATS-EcoSIM coupling it is written into EcoSIM tlai_day_pft, the daily leaf area index of the prescribed phenology, divided evenly among the active plant functional types.</rdfs:comment>
+        <rdfs:comment>ATS: surface-LAI [m2 m-2]. In the ATS-EcoSIM coupling it is written into EcoSIM tlai_day_pft, the daily leaf area index of the prescribed phenology, divided evenly among the active plant functional types. ODM2 variable name concept &quot;Leaf area index (LAI)&quot;: Leaf area index (LAI) is a dimensionless quantity that characterizes plant canopies. It is defined as the one-sided green leaf area per unit ground surface area (LAI = leaf area / ground area, m2 / m2) in broadleaf canopies.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Canopy leaf area index</rdfs:label>
@@ -34951,9 +34970,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001885">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001884"/>
         <obo:IAO_0000115>Diameter of a tree stem measured over bark at breast height, by convention 1.3 m above the ground, or 1.37 m in the United States, on the uphill side of the tree.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/diameterAtBreastHeight"/>
         <oboInOwl:hasExactSynonym>DBH</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>diameter at breast height</oboInOwl:hasExactSynonym>
-        <rdfs:comment>CHESS: Stem_DBH, DBH_1_CM, DBH_2_CM, DBH_Avg_CM. Allometric equations take this as their input for biomass and carbon stock.</rdfs:comment>
+        <rdfs:comment>CHESS: Stem_DBH, DBH_1_CM, DBH_2_CM, DBH_Avg_CM. Allometric equations take this as their input for biomass and carbon stock. ODM2 variable name concept &quot;Diameter at breast height (DBH)&quot;: Diameter at breast height, or DBH, is the standard for measuring trees. DBH refers to the tree diameter measured at 4.5 feet above the ground.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
         <rdfs:label>Stem diameter at breast height</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
@@ -34993,8 +35013,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001887">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Sum of the cross-sectional areas of tree stems at breast height per unit ground area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/areaBasal"/>
         <oboInOwl:hasExactSynonym>basal area</oboInOwl:hasExactSynonym>
-        <rdfs:comment>CHESS: ba. Computed from Stem diameter at breast height.</rdfs:comment>
+        <rdfs:comment>CHESS: ba. Computed from Stem diameter at breast height. ODM2 variable name concept &quot;Area, basal&quot;: Basal area is the area of a given section of land that is occupied by the cross-section of tree trunks and stems at the base. The term is used in forest management and forest ecology.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
         <rdfs:label>Stand basal area</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
@@ -36552,6 +36573,397 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0001967 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001967">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Height of the top of a plant canopy above the ground surface.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/canopyHeight"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Canopy height&quot;: Forest canopy density and height are used as variables in a number of environmental applications, such as biomass estimation, vegetation coverage, and biodiversity determination. Canopy density, or canopy cover, is the ratio of vegetation to ground as seen from the air. Canopy height measures how far above the ground the top of the canopy is. Lidar can be used to determine both of these variables.</rdfs:comment>
+        <rdfs:label>Canopy height</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000076"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001968 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001968">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Fraction of the sky hemisphere obscured by vegetation when viewed from a single point beneath the canopy.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/canopyClosure"/>
+        <oboInOwl:hasRelatedSynonym>crown closure</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Canopy closure&quot;: Crown closure is a term used in forestry. Crown closure and crown cover are two slightly different measures of the forest canopy and that determine the amount of light able to penetrate to the forest floor.</rdfs:comment>
+        <rdfs:label>Canopy closure</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001969 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001969">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Index of green vegetation computed from red and near-infrared reflectance as (NIR - red) / (NIR + red), ranging from -1 to 1.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/NDVI"/>
+        <oboInOwl:hasExactSynonym>NDVI</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;NDVI&quot;: Normalized difference vegetation index.</rdfs:comment>
+        <rdfs:label>Normalized difference vegetation index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001970 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001970">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Dry mass of plant material per unit ground area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomassVegetation"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Biomass, vegetation&quot;: Total dry mass of plant material per unit area or volume.</rdfs:comment>
+        <rdfs:label>Vegetation biomass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000296"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001971 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001971">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001970"/>
+        <obo:IAO_0000115>Dry mass of the living plant material above the ground surface, per unit ground area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomassAboveGround"/>
+        <oboInOwl:hasRelatedSynonym>above-ground biomass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Biomass, above-ground&quot;: The biomass is the mass of living biological organisms in a given area or ecosystem at a given time on or above the surface of the ground.</rdfs:comment>
+        <rdfs:label>Aboveground biomass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000296"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001972 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001972">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Wetness of a leaf surface from dew, rain, or fog, as reported by a leaf wetness sensor.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/leafWetness"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Leaf wetness&quot;: The effect of moisture settling on the surface of a leaf as a result of either condensation or rainfall.</rdfs:comment>
+        <rdfs:label>Leaf wetness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001973 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001973">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Categorical class of the vegetation of an area, such as forest, grassland, or salt marsh.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/vegetationType"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Vegetation type&quot;: Vegetation is an assemblage of plant species and the ground cover they provide.</rdfs:comment>
+        <rdfs:label>Vegetation type</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001974 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001974">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001908"/>
+        <obo:IAO_0000115>Depth of the precipitation that passes through gaps in a plant canopy or drips from it to the ground, over a period.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/throughfall"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Throughfall&quot;: In Hydrology, throughfall is the process which describes how wet leaves shed excess water onto the ground surface. These drops have greater erosive power because they are heavier than rain drops. Furthermore, where there is a high canopy, falling drops may reach terminal velocity, about 8 metres (26 ft), thus maximizing the drop&apos;s erosive potential.</rdfs:comment>
+        <rdfs:label>Throughfall</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001975 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001975">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Fraction of a horizontal ground area not covered by the vertical projection of vegetation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/noVegetationCoverage"/>
+        <oboInOwl:hasRelatedSynonym>unvegetated cover</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;No vegetation coverage&quot;: Areal coverage of no vegetation.</rdfs:comment>
+        <rdfs:label>Bare ground cover</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000060"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001976 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001976">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Fraction of a horizontal ground area covered by wrack.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/wrackCoverage"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Wrack coverage&quot;: Areal coverage of dead vegetation.</rdfs:comment>
+        <rdfs:label>Wrack cover</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000898"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001977 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001977">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Mass of all living organisms in an area or volume, per unit ground area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomassTotal"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Biomass, total&quot;: Total biomass.</rdfs:comment>
+        <rdfs:label>Total biomass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000296"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001978 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001978">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Mass of phytoplankton per unit volume of water.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomassPhytoplankton"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Biomass, phytoplankton&quot;: Total mass of phytoplankton, per unit area or volume.</rdfs:comment>
+        <rdfs:label>Phytoplankton biomass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000859"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001979 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001979">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Length of an organism&apos;s body between defined points, such as from snout to tail fork in fish.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/bodyLength"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Body length&quot;: Length of the body of an organism.</rdfs:comment>
+        <rdfs:label>Body length</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000717"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001980 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001980">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Light re-emitted by chlorophyll after it absorbs light, used in water as an in situ proxy for chlorophyll concentration.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/chlorophyllFluorescence"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Chlorophyll fluorescence&quot;: Chlorophyll Fluorescence. Reported in relative fluorescence units, {RFU}, unless a sensor is calibrated to a concentration.</rdfs:comment>
+        <rdfs:label>Chlorophyll fluorescence</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>{RFU}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000214"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001981 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001981">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Number of individuals or objects counted per unit area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/countAreal"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Count, areal&quot;: Counts per area.</rdfs:comment>
+        <rdfs:label>Areal count</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000717"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001982 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001982">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Number of cells or colony-forming units of a specified bacterial taxon per unit volume of water.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/e_coli"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;E-coli&quot;: Escherichia coli. Use with BERVO:involves_taxa. The taxon, such as Escherichia coli (NCBITaxon:562), is recorded with the data.</rdfs:comment>
+        <rdfs:label>Bacterial abundance</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>{CFU}.dL-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000081"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001983 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001983">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Number of fish identified by detection equipment, such as sonar or a tag reader, over a period.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/fishDetections"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Fish detections&quot;: The number of fish identified by the detection equipment.</rdfs:comment>
+        <rdfs:label>Fish detections</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000897"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001984 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001984">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Diversity index computed from the number of taxa in a sample and the proportion of individuals in each.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/shannonDiversityIndex"/>
+        <oboInOwl:hasRelatedSynonym>Shannon-Wiener index</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Shannon diversity index&quot;: A diversity index that is based on the number of taxa, and the proportion of individuals in each taxa relative to the entire community, evaluated as entropy. Also known as Shannon-Weaver diversity index, the Shannon-Wiener index, the Shannon index and the Shannon entropy.</rdfs:comment>
+        <rdfs:label>Shannon diversity index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000403"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001985 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001985">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Shannon diversity index divided by its maximum possible value for the number of taxa present, ranging from 0 to 1.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/shannonEvennessIndex"/>
+        <oboInOwl:hasRelatedSynonym>Pielou evenness index</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Shannon evenness index&quot;: A dimensionless diversity index, calculated as a ratio of the Shannon diversity index over its maximum. Also known as the Shannon Weaver evenness index.</rdfs:comment>
+        <rdfs:label>Shannon evenness index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000403"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001986 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001986">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Number of distinct taxa found in a sample or area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/taxaCount"/>
+        <oboInOwl:hasRelatedSynonym>taxon richness</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Taxa count&quot;: Count of unique taxa. A taxon (plural: taxa) is a group of one (or more) populations of organism(s), which is judged to be a unit.</rdfs:comment>
+        <rdfs:label>Taxa count</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000403"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
@@ -37587,7 +37999,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000055">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>Dead plant material such as leaves, bark, twigs, and other organic debris that has fallen to the ground and forms the surface organic layer. This material provides habitat for decomposer organisms, controls soil moisture and temperature, serves as a source of nutrients through decomposition, and represents a critical component of carbon and nutrient cycling in terrestrial ecosystems.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000628"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/litterPlant"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Litter, plant&quot;: Litterfall, plant litter, leaf litter, tree litter, soil litter, or duff, is dead plant material (such as leaves, bark, needles, twigs, and cladodes) that have fallen to the ground.</rdfs:comment>
         <rdfs:label>Litter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -52966,6 +53381,43 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_8000897 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000897">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000717"/>
+        <obo:IAO_0000115>Aquatic vertebrates with gills and fins, taken as an ecological group rather than a single taxon, since the group is not monophyletic.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>fishes</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:label>Fish</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000898 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000898">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000055"/>
+        <obo:IAO_0000115>Dead plant material, mostly seagrass, algae, and marsh plants, cast up and stranded by tides or waves along a shoreline.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>beach wrack</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>tidal wrack</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:label>Wrack</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_9000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000000">
@@ -53660,6 +54112,23 @@
         <obo:IAO_0000115>Grouping class for observed fluxes of energy, water, carbon, momentum, and other substances between a land or water surface and the atmosphere or water column, or within an ecosystem.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
         <rdfs:label>Surface flux variable</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_9000040 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_9000040">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
+        <obo:IAO_0000115>Grouping class for observed variables that describe biological communities and the organisms in them, such as counts, abundances, diversity indices, and body sizes.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:label>Ecology variable</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
