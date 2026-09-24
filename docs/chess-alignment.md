@@ -38,7 +38,7 @@ terms BERVO added, or amended, so that the mapping resolves. It addresses
 | | Stem diameter (`BERVO:0001884`) | Plant trait variable | `cm`, `m` |
 | `Stem_DBH`, `DBH_1_CM`, `DBH_2_CM`, `DBH_Avg_CM` | Stem diameter at breast height (`BERVO:0001885`) | Stem diameter | `cm` |
 | `Crown_Class`, `Canopy_Position` | Crown class (`BERVO:0001886`) | Plant trait variable | categorical |
-| `ba` | Stand basal area (`BERVO:0001887`) | Plant trait variable | `m2.har-1` |
+| `ba` | Stand basal area (`BERVO:0001887`) | Ecology variable | `m2.har-1` |
 | `density`, `abla_density`, `pien_density`, `pico_density` | Stem count per unit area (`BERVO:0001888`) | Plant trait variable | `har-1`, `m-2` |
 
 Stem diameter is the general form and exists so that a diameter taken at a
