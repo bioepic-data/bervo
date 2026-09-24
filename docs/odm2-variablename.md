@@ -496,7 +496,8 @@ concepts, as `hail` did in slice 2.
 Ecology variable (`BERVO:9000040`), under Variable, holds observations of
 organisms and communities. Fish (`BERVO:8000897`) sits under Organism with no
 taxon cross-reference, since the grouping is not monophyletic. Wrack
-(`BERVO:8000898`), dead plant material cast up by tides, sits under Litter.
+(`BERVO:8000898`), dead plant material cast up by tides, sits under Litter. It
+has no cross-reference: ENVO has no term for wrack or beach-cast material.
 
 24 variables (`0001967`, `0001968`, `0001969`, `0001970`, `0001971`, `0001972`, `0001973`, `0001974`, `0001975`, `0001976`, `0001978`, `0001979`, `0001980`, `0001981`, `0001983`, `0001984`, `0001985`, `0001986`, `0001987`, `0001988`, `0001989`, `0001990`, `0001991`, `0001992`):
 
