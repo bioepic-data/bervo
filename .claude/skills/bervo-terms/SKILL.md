@@ -48,8 +48,9 @@ duplicate and near-duplicate terms are the hardest problem to unwind later.
      from terrestrial surfaces and vegetation."*
    - Bad: *"Net radiation is when radiation is net."*
    - Record provenance in `Definition Source`, e.g. `Definition source - Manual (JHC, Sep 25 2025)`.
-6. **Fill the relationship columns** where they apply — `has_units` (literal unit
-   string, or `NONE`), `attributes`, `measured_ins`, `measurement_ofs`, `qualifiers`,
+6. **Fill the relationship columns** where they apply — `has_units` (a UCUM
+   string such as `g.h-1/{grid}`, or `1` for a dimensionless number; see the
+   `has_units` section of AGENTS.md), `attributes`, `measured_ins`, `measurement_ofs`, `qualifiers`,
    `contexts`, `value_types`. Each of those except `has_units` must name an existing
    term. Use `NA` for "deliberately not applicable" and leave blank for "not yet done".
 7. **Validate and build:**
@@ -194,10 +195,10 @@ measurement, not a property of the value.
 | Row | `has_units` | `contexts` |
 | --- | --- | --- |
 | `Rate of leaf initiation` | `h-1` | `Standard ambient temperature` |
-| `Rubisco carboxylase activity` | `umol g-1 h-1` | `Standard ambient temperature` |
+| `Rubisco carboxylase activity` | `umol.g-1.h-1` | `Standard ambient temperature` |
 
-So write `Rate of leaf initiation`, not `Rate of leaf initiation at 25 oC`, and `umol g-1
-h-1`, not `umol g-1 h-1 at 25 oC`. The definition can still say "at 25 degrees Celsius".
+So write `Rate of leaf initiation`, not `Rate of leaf initiation at 25 oC`, and `umol.g-1.h-1`,
+not `umol g-1 h-1 at 25 oC`. The definition can still say "at 25 degrees Celsius".
 
 One exception is settled. The eight `… solubility coefficient at standard ambient
 temperature` rows keep the phrase in their labels (issue #99).

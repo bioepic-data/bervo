@@ -29,7 +29,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install test dependencies
-        run: python -m pip install --upgrade pip pytest
+        run: python -m pip install --upgrade pip pytest -r src/scripts/requirements.txt
 
       # The Makefile integration tests shell out to `make components/bervo-src.owl`,
       # which needs ROBOT. Without it they fail on every run and the failure looks

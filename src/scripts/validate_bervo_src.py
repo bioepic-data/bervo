@@ -81,8 +81,74 @@ OBSOLETE_COLUMN = "obsolete"
 REPLACED_BY_COLUMN = "replaced_by"
 
 # Declared ``A`` rather than ``AI``: the value is a literal (a unit string such
-# as "g d-2 h-1"), not a reference. Never resolve these against the term list.
+# as "g.h-1/{grid}"), not a reference. Never resolve these against the term list.
 LITERAL_COLUMNS = ("has_units",)
+
+# ``has_units`` holds UCUM (https://ucum.org/ucum), case-sensitive, with
+# exponents joined by "." and a grid-cell total marked by a trailing "/{grid}".
+# "NA" means no unit applies; a dimensionless number is UCUM's "1".
+UNITS_COLUMN = "has_units"
+UNITS_NO_UNIT = "NA"
+# Retired sentinel (issues #14, #88): a dimensionless number is now "1".
+UNITS_RETIRED = {"NONE": "1"}
+# A UCUM atom with an exponent, after annotations are removed: "d-2", "m3".
+UCUM_EXPONENT_ATOM = re.compile(r"^([A-Za-z]+)([+-]?\d+)$")
+
+try:  # Optional: a full UCUM grammar. Without it only the local rules run.
+    from ucumvert import get_ucum_parser as _get_ucum_parser
+except ImportError:  # pragma: no cover - exercised only where it is missing
+    _get_ucum_parser = None
+_UCUM_PARSER = None
+
+
+def ucum_parser():
+    """The ucumvert parser, built once, or None when ucumvert is not installed."""
+    global _UCUM_PARSER
+    if _UCUM_PARSER is None and _get_ucum_parser is not None:
+        _UCUM_PARSER = _get_ucum_parser()
+    return _UCUM_PARSER
+
+
+def unit_problems(token: str) -> list[str]:
+    """Why one ``has_units`` value is not an acceptable UCUM string, if it is not.
+
+    Checks BERVO's own rules first, since they catch strings the grammar accepts
+    but that mean something else, then the UCUM grammar when ucumvert is present.
+    """
+    if token in UNITS_RETIRED:
+        return [f"{token!r} is retired; write {UNITS_RETIRED[token]!r}"]
+    if any(ch.isspace() for ch in token):
+        return [f"{token!r} contains whitespace; UCUM has none, and joins units with '.'"]
+    problems = []
+    bare = re.sub(r"\{[^{}]*\}", "", token)
+    # UCUM reads "/" and "." left to right, so "g/{grid}.h" is g.h per grid.
+    # Keep every division at the end: once a "/" appears, only "/" may follow.
+    depth, seen_slash = 0, False
+    for ch in bare:
+        depth += ch == "("
+        depth -= ch == ")"
+        if depth == 0 and ch == "/":
+            seen_slash = True
+        elif depth == 0 and ch == "." and seen_slash:
+            problems.append(
+                f"{token!r} multiplies after a '/'; UCUM reads left to right, so put "
+                f"exponents first and every '/' at the end"
+            )
+            break
+    for part in re.split(r"[./()]", bare):
+        match = UCUM_EXPONENT_ATOM.match(part)
+        if match and match.group(1) == "d" and abs(int(match.group(2))) != 1:
+            problems.append(
+                f"{token!r} has {part!r}; 'd' is the day in UCUM, and an EcoSIM grid-cell "
+                f"total is written with a trailing '/{{grid}}'"
+            )
+    parser = ucum_parser()
+    if parser is not None:
+        try:
+            parser.parse(token)
+        except Exception:  # lark raises several exception types for bad input
+            problems.append(f"{token!r} is not valid UCUM")
+    return problems
 
 # ``DbXrefs`` is declared ``AI oio:hasDbXref``, so every value is emitted as an
 # IRI. A value ROBOT cannot expand becomes a *relative* IRI, which is silently
@@ -262,6 +328,14 @@ def validate(path: Path) -> Report:
                 if col is not None and col < len(row):
                     parent_tokens.update(_split(row[col]))
 
+        units_col = index.get(UNITS_COLUMN)
+        if units_col is not None:
+            for token in cell(row, units_col).split("|"):
+                if token.strip() in ("", UNITS_NO_UNIT):
+                    continue
+                for problem in unit_problems(token):
+                    report.error(line, f"{term_id}.{UNITS_COLUMN}: {problem}")
+
         term_type = cell(row, type_col)
         if not term_type:
             report.warn(line, f"{term_id} has no Type; ROBOT will default it to owl:Class")
@@ -434,6 +508,13 @@ def validate(path: Path) -> Report:
                 f"{len(lines)} row(s) generalises nothing; give {token!r} the classes it "
                 f"is meant to cover",
             )
+
+    if UNITS_COLUMN in index and ucum_parser() is None:
+        report.warn(
+            None,
+            f"ucumvert is not installed, so {UNITS_COLUMN} is checked only against BERVO's "
+            f"own unit rules, not the full UCUM grammar. Install it with 'just setup'.",
+        )
 
     # One warning per undeclared prefix rather than per row: 275 identical
     # warnings would bury everything else.

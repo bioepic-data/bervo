@@ -163,11 +163,11 @@ class TestReferentialIntegrity(ValidatorTestCase):
     def test_has_units_holds_literals_not_references(self):
         """has_units is declared `A`, not `AI`; unit strings must not be resolved."""
         report = validator.validate(self.write([
-            ROOT, row("BERVO:0000001", "Soil carbon", has_units="g d-2 h-1|NONE"),
+            ROOT, row("BERVO:0000001", "Soil carbon", has_units="g.h-1/{grid}|1"),
         ]))
         self.assertEqual(report.errors, [])
         self.assertFalse(
-            any("g d-2 h-1" in w for w in report.warnings),
+            any("g.h-1/{grid}" in w for w in report.warnings),
             "unit literals must never be reported as unresolved term references",
         )
 
@@ -550,6 +550,44 @@ class TestRealTemplate(unittest.TestCase):
         """Every `involves_chemicals` filler must keep its subclasses (issue #56)."""
         report = validator.validate(REPO_ROOT / "src" / "ontology" / "bervo-src.csv")
         self.assertEqual([w for w in report.warnings if "has no subclasses" in w], [])
+
+
+class TestUnits(ValidatorTestCase):
+    """``has_units`` holds UCUM (issues #14, #88)."""
+
+    def unit_errors(self, units):
+        report = validator.validate(self.write([ROOT, row("BERVO:0000001", "Soil carbon", has_units=units)]))
+        return [e for e in report.errors if "has_units" in e]
+
+    def test_valid_units_pass(self):
+        for units in ("NA", "1", "g.h-1/{grid}", "g{C}.m-3", "MJ/{grid}/{step}", "Cel|K", "s.d-1"):
+            with self.subTest(units=units):
+                self.assertEqual(self.unit_errors(units), [])
+
+    def test_none_is_retired(self):
+        errors = self.unit_errors("NONE")
+        self.assertTrue(any("retired" in e and "'1'" in e for e in errors), errors)
+
+    def test_space_is_rejected(self):
+        self.assertTrue(any("whitespace" in e for e in self.unit_errors("g d-2 h-1")))
+        self.assertTrue(any("whitespace" in e for e in self.unit_errors("g\th-1")))
+
+    def test_day_with_an_exponent_other_than_one_is_rejected(self):
+        # Valid UCUM (grams per day squared), but never what an EcoSIM d-2 means.
+        errors = self.unit_errors("g.d-2")
+        self.assertTrue(any("'d' is the day" in e for e in errors), errors)
+
+    def test_multiplying_after_a_division_is_rejected(self):
+        errors = self.unit_errors("g/{grid}.h")
+        self.assertTrue(any("left to right" in e for e in errors), errors)
+
+    def test_each_value_of_a_multi_valued_cell_is_checked(self):
+        self.assertTrue(self.unit_errors("m.s-1|NONE"))
+
+    @unittest.skipIf(validator.ucum_parser() is None, "ucumvert is not installed")
+    def test_invalid_ucum_is_rejected(self):
+        errors = self.unit_errors("Mpa")
+        self.assertTrue(any("not valid UCUM" in e for e in errors), errors)
 
 
 if __name__ == "__main__":
