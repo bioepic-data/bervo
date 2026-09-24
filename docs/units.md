@@ -36,7 +36,8 @@ written `/{step}`, and `p-1` is per plant, written `/{plant}`.
 ## Mapping
 
 All 235 strings that were in the column, with the number of rows each was on.
-1572 of the 2707 filled cells changed. A note marks a typo fixed on the
+1572 of the 2707 filled cells changed in the conversion, and three more (the `MPa` log
+rows, see Logarithms) after review: 1575 in all. A note marks a typo fixed on the
 way (the row's meaning was clear) or a meaning that looks wrong (converted as written,
 and left for a curator).
 
