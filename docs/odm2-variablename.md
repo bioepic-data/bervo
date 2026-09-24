@@ -41,9 +41,9 @@ alignments landed mostly on concepts only because their vocabularies named
 things and properties.
 
 Some names sit on the line. BERVO already has `Wind speed` and `Relative humidity`
-as concepts and `Incoming shortwave radiation` as a variable, so the meteorology
-and radiation slice settles those against that precedent rather than by this
-rule alone.
+as concepts and `Incoming shortwave radiation` as a variable. Slice 2 settled it:
+an observable with a unit is a variable, and the property it measures is a
+concept. See "Slice 2".
 
 ODM2 names are mapped by identifier, never by label, because some labels are
 wrong. See "Points to note".
@@ -56,8 +56,8 @@ wrong. See "Points to note".
 | Instrument housekeeping | 41 | Not included. See below. |
 | Ecotoxicology biomarkers | 12 | Not included. See below. |
 | Quantities, placeholders, minerals, enzymes, organism groups | 90 | **Slice 1, this page.** |
-| Meteorology, radiation, comfort indices | 45 | Slice 2, with the land-atmosphere fluxes |
-| Land-atmosphere fluxes | 25 | Slice 2 |
+| Meteorology, radiation, comfort indices | 45 | **Slice 2**, with the land-atmosphere fluxes |
+| Land-atmosphere fluxes | 25 | **Slice 2** |
 | Vegetation | 32 | Slice 3, with ecology |
 | Ecology | 8 left | Slice 3 |
 | Hydrology and snow | 31 | Slice 4 |
@@ -268,7 +268,170 @@ definition calls coefficients parameters.
 Every NCBITaxon, CHEBI, and PATO identifier above was fetched from OLS and its
 label or synonyms checked against the term.
 
-## Points to note
+## Slice 2: meteorology, radiation, comfort indices, and fluxes
+
+The 70 names of slice 2 (69 identifiers, since `evapotranspiration` appears twice)
+are observables: quantities a weather station, radiometer, or flux tower reports,
+each with a unit. They enter BERVO as **variables**, whose `attributes`,
+`measured_ins`, `measurement_ofs`, and `contexts` name the concepts that describe
+them, such as Wind speed, Latent heat, or Carbon dioxide. This settles the question
+the "Concept or variable" section left open: a concept is the property, and the
+ODM2 observable is a variable that measures it.
+
+Two decisions follow from that.
+
+- **A variable whose natural label is an existing concept's label names its
+  medium or its form.** Wind direction, Relative humidity, Precipitation,
+  Evaporation, Water flux, and Primary productivity are concepts, so the variables
+  are Near-surface wind direction, Air relative humidity, Precipitation amount,
+  Evaporation flux, Water flux across a surface, and Primary production rate.
+  Evapotranspiration and Transpiration follow Evaporation and become fluxes too,
+  since BERVO's Evapotranspiration is an EcoSIM variable.
+- **Two grouping classes hold the new variables**, apart from EcoSIM's model
+  forcing and outputs: Meteorological variable (`BERVO:9000038`) for weather,
+  radiation, and the comfort indices, and Surface flux variable (`BERVO:9000039`)
+  for the fluxes of energy, water, carbon, momentum, and solutes.
+
+### ODM2 names mapped to existing variables
+
+Where BERVO already had the same quantity, the ODM2 name maps to it. Each of
+these takes Meteorological variable as a second parent beside Climate force
+variable.
+
+| ODM2 term | BERVO variable | Unit |
+| --- | --- | --- |
+| `windSpeed` | Measured wind speed (`BERVO:0001372`) | `m.h-1\|m.s-1` |
+| `waterVaporConcentration` | Atmospheric vapor concentration (`BERVO:0001373`) | `m3.m-3` |
+| `barometricPressure` | Atmospheric pressure (`BERVO:0001375`) | `kPa` |
+| `radiationIncomingLongwave` | Sky longwave radiation (`BERVO:0001380`) | `MJ.h-1\|MJ.m-2.h-1\|W.m-2` |
+| `radiationIncomingShortwave`, `globalRadiation`, `radiationTotalShortwave` | Incoming shortwave radiation (`BERVO:0001867`) | `W.m-2` |
+
+The EcoSIM variables that share a name with an ODM2 observable, such as
+Evapotranspiration (`BERVO:0001809`), Ecosystem respiration (`BERVO:0000018`),
+and Ecosystem latent heat flux (`BERVO:0000002`), are not mapped. Each is a total
+for an EcoSIM grid cell (`…/{grid}`), not a flux per unit area, so it is not the
+same quantity.
+
+### New grouping classes and concepts
+
+| BERVO term | Parent | Cross-reference |
+| --- | --- | --- |
+| Meteorological variable (`BERVO:9000038`) | Variable | |
+| Surface flux variable (`BERVO:9000039`) | Variable | |
+| Gross (`BERVO:8000887`) | Quantitative value |  |
+| Potential (`BERVO:8000888`) | Quantitative value |  |
+| Cloud (`BERVO:8000889`) | Environmental feature | `ENVO:01000760` |
+| Hail (`BERVO:8000890`) | Precipitation | `ENVO:03400011` |
+| Momentum (`BERVO:8000891`) | Physical property | `PATO:0001023` |
+| Ultraviolet radiation (`BERVO:8000892`) | Radiation | `ENVO:21001216` |
+| Ultraviolet A radiation (`BERVO:8000893`) | Ultraviolet radiation |  |
+| Ultraviolet B radiation (`BERVO:8000894`) | Ultraviolet radiation |  |
+| Transpiration (`BERVO:8000895`) | Biological process | `GO:0010148` |
+| Silicic acid (`BERVO:8000896`) | Chemical | `CHEBI:26675` |
+
+Gross and Potential join Net and Total as qualifiers. The others are what the
+new variables measure. The concepts' cross-references were each fetched from OLS
+and checked.
+
+### New variables
+
+`BERVO:0001905` to `BERVO:0001965`, 61 variables. The units are the conventional SI
+ones for each observable; ODM2 records units separately from variable names, so
+a dataset may report another.
+
+| BERVO variable | Grouping | ODM2 term | Unit |
+| --- | --- | --- | --- |
+| Cloud cover (`BERVO:0001905`) | Meteorological | `cloudCover` | `%` |
+| Friction velocity (`BERVO:0001906`) | Meteorological | `frictionVelocity` | `m.s-1` |
+| Hail depth (`BERVO:0001907`) | Meteorological | `hail` | `mm` |
+| Precipitation amount (`BERVO:0001908`) | Meteorological | `precipitation` | `mm` |
+| Rainfall rate (`BERVO:0001909`) | Meteorological | `rainfallRate` | `mm.h-1` |
+| Air relative humidity (`BERVO:0001910`) | Meteorological | `relativeHumidity` | `%` |
+| Sunshine duration (`BERVO:0001911`) | Meteorological | `sunshineDuration` | `h` |
+| Dew point temperature (`BERVO:0001912`) | Meteorological | `temperatureDewPoint` | `Cel` |
+| Vapor pressure deficit (`BERVO:0001913`) | Meteorological | `vaporPressureDeficit` | `kPa` |
+| Visibility (`BERVO:0001914`) | Meteorological | `visibility` | `m` |
+| Water vapor density (`BERVO:0001915`) | Meteorological | `waterVaporDensity` | `g.m-3` |
+| Near-surface wind direction (`BERVO:0001916`) | Meteorological | `windDirection` | `deg` |
+| Wind gust direction (`BERVO:0001917`) | Meteorological | `windGustDirection` | `deg` |
+| Wind gust speed (`BERVO:0001918`) | Meteorological | `windGustSpeed` | `m.s-1` |
+| Wind run (`BERVO:0001919`) | Meteorological | `windRun` | `m` |
+| Weather conditions (`BERVO:0001920`) | Meteorological | `weatherConditions` | `NA` |
+| Heat index (`BERVO:0001921`) | Meteorological | `heatIndex` | `Cel` |
+| Temperature-humidity-sun-wind index (`BERVO:0001922`) | Meteorological | `THSWIndex` | `Cel` |
+| Temperature-humidity-wind index (`BERVO:0001923`) | Meteorological | `THWIndex` | `Cel` |
+| UV index (`BERVO:0001924`) | Meteorological | `ultravioletRadiationIndex` | `1` |
+| Ultraviolet radiation dose (`BERVO:0001925`) | Meteorological | `ultravioletRadiationDose` | `J.m-2` |
+| Wind chill (`BERVO:0001926`) | Meteorological | `windChill` | `Cel` |
+| Photosynthetic photon flux density (`BERVO:0001927`) | Meteorological | `photosyntheticPhotonFluxDensity` | `umol.m-2.s-1` |
+| Incoming radiation (`BERVO:0001928`) | Meteorological | `radiationIncoming`, `radiationTotalIncoming` | `W.m-2` |
+| Incoming photosynthetically active radiation (`BERVO:0001929`) | Meteorological | `radiationIncomingPAR` | `umol.m-2.s-1\|W.m-2` |
+| Incoming ultraviolet A radiation (`BERVO:0001930`) | Meteorological | `radiationIncomingUV_A` | `W.m-2` |
+| Incoming ultraviolet B radiation (`BERVO:0001931`) | Meteorological | `radiationIncomingUV_B` | `W.m-2` |
+| Net radiation (`BERVO:0001932`) | Meteorological | `radiationNet` | `W.m-2` |
+| Net longwave radiation (`BERVO:0001933`) | Meteorological | `radiationNetLongwave` | `W.m-2` |
+| Net photosynthetically active radiation (`BERVO:0001934`) | Meteorological | `radiationNetPAR` | `umol.m-2.s-1\|W.m-2` |
+| Net shortwave radiation (`BERVO:0001935`) | Meteorological | `radiationNetShortwave` | `W.m-2` |
+| Outgoing longwave radiation (`BERVO:0001936`) | Meteorological | `radiationOutgoingLongwave` | `W.m-2` |
+| Outgoing photosynthetically active radiation (`BERVO:0001937`) | Meteorological | `radiationOutgoingPAR` | `umol.m-2.s-1\|W.m-2` |
+| Outgoing shortwave radiation (`BERVO:0001938`) | Meteorological | `radiationOutgoingShortwave` | `W.m-2` |
+| Outgoing radiation (`BERVO:0001939`) | Meteorological | `radiationTotalOutgoing` | `W.m-2` |
+| Momentum flux (`BERVO:0001940`) | Surface flux | `momentumFlux` | `N.m-2` |
+| Wind stress (`BERVO:0001941`) | Surface flux | `windStress` | `N.m-2` |
+| Ammonium flux (`BERVO:0001942`) | Surface flux | `ammoniumFlux` | `mmol.m-2.d-1` |
+| Carbon dioxide flux (`BERVO:0001943`) | Surface flux | `carbonDioxideFlux` | `umol.m-2.s-1` |
+| Carbon dioxide storage flux (`BERVO:0001944`) | Surface flux | `carbonDioxideStorageFlux` | `umol.m-2.s-1` |
+| Effective energy and mass transfer (`BERVO:0001945`) | Surface flux | `effectiveEnergyAndMassTransfer` | `MJ.m-2.a-1` |
+| Evaporation flux (`BERVO:0001946`) | Surface flux | `evaporation` | `mm.h-1` |
+| Evapotranspiration flux (`BERVO:0001947`) | Surface flux | `evapotranspiration` | `mm.h-1` |
+| Potential evapotranspiration (`BERVO:0001948`) | Surface flux | `evapotranspirationPotential` | `mm.d-1` |
+| Transpiration flux (`BERVO:0001949`) | Surface flux | `transpiration` | `mm.h-1` |
+| Water flux across a surface (`BERVO:0001950`) | Surface flux | `waterFlux` | `mm.h-1` |
+| Sap flow (`BERVO:0001951`) | Surface flux | `sapFlow` | `kg.h-1` |
+| Ground heat flux (`BERVO:0001952`) | Surface flux | `groundHeatFlux` | `W.m-2` |
+| Latent heat flux (`BERVO:0001953`) | Surface flux | `latentHeatFlux` | `W.m-2` |
+| Sensible heat flux (`BERVO:0001954`) | Surface flux | `sensibleHeatFlux` | `W.m-2` |
+| Net heat flux (`BERVO:0001955`) | Surface flux | `netHeatFlux` | `W.m-2` |
+| Oxygen flux (`BERVO:0001956`) | Surface flux | `oxygenFlux` | `mmol.m-2.d-1` |
+| Oxygen uptake (`BERVO:0001957`) | Surface flux | `oxygenUptake` | `mmol.m-2.d-1` |
+| Phosphate flux (`BERVO:0001958`) | Surface flux | `hosphorusPhosphateFlux` | `mmol.m-2.d-1` |
+| Silicic acid flux (`BERVO:0001959`) | Surface flux | `silicicAcidFlux` | `mmol.m-2.d-1` |
+| Urea flux (`BERVO:0001960`) | Surface flux | `ureaFlux` | `mmol.m-2.d-1` |
+| Primary production rate (`BERVO:0001961`) | Surface flux | `primaryProductivity` | `g{C}.m-2.d-1` |
+| Gross primary production rate (`BERVO:0001962`) | Surface flux | `primaryProductivityGross` | `g{C}.m-2.d-1` |
+| Ecosystem respiration flux (`BERVO:0001963`) | Surface flux | `respirationEcosystem` | `umol.m-2.s-1` |
+| Net respiration (`BERVO:0001964`) | Surface flux | `respirationNet` | `umol.m-2.s-1` |
+| Soil respiration (`BERVO:0001965`) | Surface flux | `soilRespiration` | `umol.m-2.s-1` |
+
+### Points to note for slice 2
+
+- **Three ODM2 names map to Incoming shortwave radiation.** `globalRadiation` is
+  defined as direct and diffuse solar radiation on a horizontal surface, which is
+  incoming shortwave radiation. `radiationTotalShortwave`, "Total Shortwave
+  Radiation", is read the same way, as the total of direct and diffuse incoming
+  shortwave. If it was meant as incoming plus reflected, it needs its own term.
+- **Two ODM2 names map to Incoming radiation.** `radiationIncoming` and
+  `radiationTotalIncoming` differ only in that the second says "from all
+  frequencies", which is what incoming radiation means.
+- **`hail` becomes Hail depth.** ODM2 defines hail only as a form of
+  precipitation. The depth of hail that falls is the usual observation; a count of
+  hailstones or a flag for occurrence would need its own term.
+- **No Evapotranspiration concept.** The label is taken by an EcoSIM variable, so
+  the evapotranspiration rows name both processes in `contexts`: Evaporation and
+  Transpiration.
+- **No Incoming or Outgoing qualifier.** BERVO has no class for direction, and the
+  labels carry it.
+- **Weather conditions is categorical**, with `has_units=NA` and
+  `value_types=Category`. What its categories are is the question of
+  [issue #108](https://github.com/bioepic-data/bervo/issues/108).
+- **Momentum flux and Wind stress sit with the fluxes**, although the triage
+  listed them under meteorology. Both are a flux of momentum.
+- **Slice 1 is not revisited here.** It mapped some names that are observables
+  under this rule, such as `albedo`, `salinity`, `turbidity`, and `pH`, onto
+  concepts. By slice 2's reading each would be a variable that names the concept.
+  Moving those cross-references is a separate change.
+
+## Points to note (slice 1)
 
 - **ODM2 labels that are wrong.** `satellitesInView` is labelled "Location", and
   `speedOverGround` is labelled with a person's name. Both are instrument terms
