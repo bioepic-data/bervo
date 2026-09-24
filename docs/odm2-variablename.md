@@ -831,8 +831,6 @@ geologic materials, and the deposits over them. Alluvium depth
 
 ### Existing terms changed
 
-- **Erosion rate** (`BERVO:0001254`), EcoSIM's grid-cell total in
-  `Mg/{grid}/{step}`, takes Erosion rate per unit area as a second parent.
 - **Soil microbial biomass carbon** (`BERVO:0001899`) and **Soil microbial biomass
   nitrogen** (`BERVO:0001900`) take Soil microbial biomass as a second parent.
 - **Rock fraction** (`BERVO:0001529`), EcoSIM's volume fraction of rock fragments,
@@ -871,7 +869,9 @@ geologic materials, and the deposits over them. Alluvium depth
   whether it is by mass or by volume. Soil coarse fraction leaves the basis to
   the data, and Rock fraction, the volume form, sits under it.
 - **Erosion rate.** The label Erosion rate belongs to EcoSIM's grid-cell total,
-  so the generic term is Erosion rate per unit area, in `kg.m-2.a-1`.
+  so the generic term is Erosion rate per unit area, in `kg.m-2.a-1`. The two are
+  siblings under Sediment variable. The grid-cell total is mass per time, not
+  mass per area per time, so it is not a kind of the per-area rate.
 - **ODM2 particle size ranges are wrong.** ODM2 gives sand as 0.5 to 2 mm and silt
   as 0.002 to 0.5 mm; the USDA boundary is 0.05 mm. The BERVO concept definitions
   keep the USDA ranges.
