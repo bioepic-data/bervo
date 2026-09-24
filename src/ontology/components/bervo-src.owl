@@ -37280,13 +37280,12 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002005">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
         <obo:IAO_0000115>Vertical distance from the land surface down to the water table at a point.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/depthUnsaturatedZone"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105203"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/groundwaterDepth"/>
         <oboInOwl:hasExactSynonym>groundwater depth</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>depth to water table</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>unsaturated zone depth</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Groundwater Depth&quot;: Groundwater depth is the distance between the water surface and the ground surface at a specific location specified by the site location and offset. ODM2 variable name concept &quot;Depth, unsaturated zone&quot;: Depth of the Unsaturated zone. The vadose zone, also termed the unsaturated zone, is the part of Earth between the land surface and the top of the phreatic zone, the position at which the groundwater (the water in the soil&apos;s pores) is at atmospheric pressure (&quot;vadose&quot; is from the Latin for &quot;shallow&quot;). Hence, the vadose zone extends from the top of the ground surface to the water table. ODM2&apos;s depth of the unsaturated zone maps here too: the unsaturated zone runs from the land surface to the water table, so its depth is this distance.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Groundwater Depth&quot;: Groundwater depth is the distance between the water surface and the ground surface at a specific location specified by the site location and offset.</rdfs:comment>
         <rdfs:label>Water table depth</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -37548,6 +37547,27 @@
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000204"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002019 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002019">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Vertical thickness of the unsaturated zone at a point, from its top to the saturated zone below it.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/depthUnsaturatedZone"/>
+        <oboInOwl:hasRelatedSynonym>unsaturated zone depth</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>vadose zone thickness</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Depth, unsaturated zone&quot;: Depth of the Unsaturated zone. The vadose zone, also termed the unsaturated zone, is the part of Earth between the land surface and the top of the phreatic zone, the position at which the groundwater (the water in the soil&apos;s pores) is at atmospheric pressure (&quot;vadose&quot; is from the Latin for &quot;shallow&quot;). Hence, the vadose zone extends from the top of the ground surface to the water table. It equals Water table depth only where the unsaturated zone runs unbroken from the land surface to the main water table; perched water or a confined aquifer separates the two.</rdfs:comment>
+        <rdfs:label>Unsaturated zone thickness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000746"/>
     </Class>
     
 
