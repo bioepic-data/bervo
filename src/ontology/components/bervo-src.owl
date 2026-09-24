@@ -37399,7 +37399,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002011">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002010"/>
-        <obo:IAO_0000115>Water use for agriculture, mostly irrigation and livestock.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which water is withdrawn for agriculture, mostly for irrigation and livestock.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterUseAgriculture"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Water Use, Agriculture&quot;: Water pumped for Agriculture.</rdfs:comment>
@@ -37418,7 +37418,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002012">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002010"/>
-        <obo:IAO_0000115>Water use by commercial and industrial users and for thermoelectric power generation.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which water is withdrawn by commercial and industrial users and for power generation.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterUseCommercialIndustrialPower"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Water Use, Commercial + Industrial + Power&quot;: Water pumped by commercial, industrial users.</rdfs:comment>
@@ -37437,7 +37437,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002013">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002010"/>
-        <obo:IAO_0000115>Water pumped by residents from their own wells, outside public supply.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which residents pump water from their own wells, outside public supply.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterUseDomesticWells"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Water Use, Domestic wells&quot;: Water pumped by domestic wells; residents and landowners not using public supply. Nonagriculture wells.</rdfs:comment>
@@ -37456,7 +37456,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002014">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002010"/>
-        <obo:IAO_0000115>Water supplied by public utilities.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which public utilities supply water.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterUsePublicSupply"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Water Use, Public Supply&quot;: Water supplied by a public utility.</rdfs:comment>
@@ -37475,7 +37475,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002015">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002010"/>
-        <obo:IAO_0000115>Water use for recreation, such as the watering of golf courses.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which water is used for recreation, such as the watering of golf courses.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterUseRecreation"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Water Use, Recreation&quot;: Recreational water use, for example golf courses.</rdfs:comment>
