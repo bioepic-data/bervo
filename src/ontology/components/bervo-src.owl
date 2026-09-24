@@ -37572,6 +37572,80 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002020 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002020">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002005"/>
+        <obo:IAO_0000115>Vertical distance from the land surface down to a perched water table, a saturated zone held above the main water table by a layer of low permeability.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>perched groundwater depth</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:label>Perched water table depth</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000144"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002021 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002021">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Vertical distance from the land surface down to the potentiometric surface of a confined aquifer, the level to which water rises in a well that taps it.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>piezometric surface depth</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>Negative where the aquifer is artesian and the level lies above the land surface.</rdfs:comment>
+        <rdfs:label>Potentiometric surface depth</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000905"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000799"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002022 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002022">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Elevation of the water table above a stated datum, such as mean sea level.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>groundwater elevation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>The datum is recorded with the data. Unlike Water table depth, it is measured upward from a fixed reference, not downward from the land surface.</rdfs:comment>
+        <rdfs:label>Water table elevation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000076"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000144"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002023 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002023">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Vertical distance from a well&apos;s measuring point, usually the top of its casing, down to the water surface in the well.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>Subtracting the height of the measuring point above the land surface gives Water table depth, or Potentiometric surface depth for a well in a confined aquifer.</rdfs:comment>
+        <rdfs:label>Depth to water below measuring point</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000902"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000799"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
@@ -54111,6 +54185,42 @@
         <oboInOwl:hasRelatedSynonym>ocean floor</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
         <rdfs:label>Sea floor</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000904 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000904">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000053"/>
+        <obo:IAO_0000115>Underground layer of permeable rock or unconsolidated material that holds groundwater and yields it to wells.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00012408"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:label>Aquifer</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000905 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000905">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000904"/>
+        <obo:IAO_0000115>Aquifer bounded above by a layer of low permeability, so that its water is under pressure greater than atmospheric.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>artesian aquifer</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:label>Confined aquifer</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
