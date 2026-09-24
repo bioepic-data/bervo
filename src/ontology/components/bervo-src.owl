@@ -25482,11 +25482,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001372">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
         <obo:IAO_0000115>Wind speed is a fundamental atmospheric quantity. It is the speed at which air is moving horizontally relative to the surface of the earth. Wind speed is measured in various units of speed, such as meters per second or kilometers per hour. It is an essential parameter in understanding atmospheric dynamics, weather forecasting, and in many environmental and engineering applications.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/windSpeed"/>
         <oboInOwl:hasRelatedSynonym>WindSpeedAtm_col</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>surface-wind_speed</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>&quot;Wind speed&quot; is a concept now, so this should be restructured as a variable measuring that attribute.</rdfs:comment>
-        <rdfs:comment>ATS: surface-wind_speed [m s-1]; the ATS-EcoSIM coupling multiplies by 3600 to give EcoSIM WindSpeedAtm_col in m h-1.</rdfs:comment>
+        <rdfs:comment>ATS: surface-wind_speed [m s-1]; the ATS-EcoSIM coupling multiplies by 3600 to give EcoSIM WindSpeedAtm_col in m h-1. ODM2 variable name concept &quot;Wind speed&quot;: Wind speed</rdfs:comment>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>I think wind speed is one term rather than velocity of wind</rdfs:comment>
@@ -25506,10 +25508,14 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001373">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
         <obo:IAO_0000115>The volumetric concentration of water vapor in the atmosphere, expressing the moisture content per unit volume of air. This parameter is essential for calculating relative humidity, vapor pressure deficit, and evapotranspiration rates in ecosystem water balance models.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterVaporConcentration"/>
         <oboInOwl:hasRelatedSynonym>VPA_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>water vapor concentration</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Water vapor concentration&quot;: Water vapor concentration</rdfs:comment>
         <rdfs:label>Atmospheric vapor concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000131"/>
@@ -25547,10 +25553,14 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001375">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
         <obo:IAO_0000115>The pressure exerted by the weight of the atmosphere at a given location, typically measured at ground level. This parameter affects gas densities, boiling points, and is essential for calculating vapor pressure deficit and atmospheric correction factors in ecosystem modeling.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/barometricPressure"/>
         <oboInOwl:hasRelatedSynonym>PBOT_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>barometric pressure</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Barometric pressure&quot;: Barometric pressure</rdfs:comment>
         <rdfs:label>Atmospheric pressure</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000518"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000131"/>
@@ -25624,10 +25634,12 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001380">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
         <obo:IAO_0000115>Sky longwave radiation refers to the part of the electromagnetic spectrum that is radiated from the sky in the form of thermal radiation, or heat. This is a key component of the earth&apos;s energy balance, affecting both climatic and biological processes.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationIncomingLongwave"/>
         <oboInOwl:hasRelatedSynonym>LWRadSky_col</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>surface-incoming_longwave_radiation</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>ATS: surface-incoming_longwave_radiation [W m-2]. EcoSIM SkyLonwRad_col is the per-area form of this variable in MJ m-2 h-1.</rdfs:comment>
+        <rdfs:comment>ATS: surface-incoming_longwave_radiation [W m-2]. EcoSIM SkyLonwRad_col is the per-area form of this variable in MJ m-2 h-1. ODM2 variable name concept &quot;Radiation, incoming longwave&quot;: Incoming Longwave Radiation</rdfs:comment>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Sky longwave radiation</rdfs:label>
@@ -34570,9 +34582,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001867">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
         <obo:IAO_0000115>Downward flux of shortwave solar radiation, direct and diffuse together, incident on the land surface per unit horizontal area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/globalRadiation"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationIncomingShortwave"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationTotalShortwave"/>
         <oboInOwl:hasRelatedSynonym>surface-incoming_shortwave_radiation</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>ATS: surface-incoming_shortwave_radiation [W m-2]. In the ATS-EcoSIM coupling this forcing is converted to MJ m-2 h-1 and written into EcoSIM RadSWGrnd_col, recorded in BERVO as Shortwave radiation incident on ground surface.</rdfs:comment>
+        <rdfs:comment>ATS: surface-incoming_shortwave_radiation [W m-2]. In the ATS-EcoSIM coupling this forcing is converted to MJ m-2 h-1 and written into EcoSIM RadSWGrnd_col, recorded in BERVO as Shortwave radiation incident on ground surface. ODM2 variable name concept &quot;Radiation, incoming shortwave&quot;: Incoming Shortwave Radiation. ODM2 variable name concept &quot;Global Radiation&quot;: Solar radiation, direct and diffuse, received from a solid angle of 2p steradians on a horizontal surface. Source: World Meteorological Organization, Meteoterm. ODM2 variable name concept &quot;Radiation, total shortwave&quot;: Total Shortwave Radiation</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
         <rdfs:label>Incoming shortwave radiation</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -35331,6 +35347,1205 @@
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000094"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001905 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001905">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Fraction of the sky obscured by cloud, as seen from a point on the surface.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/cloudCover"/>
+        <oboInOwl:hasRelatedSynonym>cloud amount</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>cloudiness</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Cloud cover&quot;: Cloud cover (also known as cloudiness, cloudage, or cloud amount) refers to the fraction of the sky obscured by clouds when observed from a particular location.</rdfs:comment>
+        <rdfs:label>Cloud cover</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>%</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000131"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000889"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001906 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001906">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Velocity scale of turbulent momentum transfer near a surface, the square root of the surface shear stress divided by air density.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/frictionVelocity"/>
+        <oboInOwl:hasRelatedSynonym>shear velocity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>u*</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Friction velocity&quot;: Friction velocity</rdfs:comment>
+        <rdfs:label>Friction velocity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000101"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000004"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001907 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001907">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Depth of hail that falls on a horizontal surface over a period.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/hail"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Hail&quot;: Hail is a form of solid precipitation. It is distinct from ice pellets (American English &quot;sleet&quot;), though the two are often confused. It consists of balls or irregular lumps of ice, each of which is called a hailstone.</rdfs:comment>
+        <rdfs:label>Hail depth</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000890"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001908 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001908">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Depth of liquid water equivalent of the precipitation that falls on a horizontal surface over a period.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/precipitation"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Precipitation&quot;: Precipitation such as rainfall. Should not be confused with settling.</rdfs:comment>
+        <rdfs:label>Precipitation amount</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001909 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001909">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Depth of rain that falls on a horizontal surface per unit time, the intensity of rainfall.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/rainfallRate"/>
+        <oboInOwl:hasRelatedSynonym>rainfall intensity</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Rainfall rate&quot;: A measure of the intensity of rainfall, calculated as the depth of water to fall over a given time period if the intensity were to remain constant over that time interval (in/hr, mm/hr, etc)</rdfs:comment>
+        <rdfs:label>Rainfall rate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000503"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mm.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001910 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001910">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Ratio of the partial pressure of water vapor in air to the saturation vapor pressure at the same temperature.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/relativeHumidity"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Relative humidity&quot;: Relative humidity</rdfs:comment>
+        <rdfs:label>Air relative humidity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000437"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>%</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000118"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001911 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001911">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Length of time in a period during which direct solar irradiance exceeds 120 W m-2, the World Meteorological Organization threshold for bright sunshine.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/sunshineDuration"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Sunshine duration&quot;: Sunshine duration</rdfs:comment>
+        <rdfs:label>Sunshine duration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000276"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001912 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001912">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Temperature to which air must be cooled, at constant pressure and water vapor content, to reach saturation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/temperatureDewPoint"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Temperature, dew point&quot;: Dew point temperature</rdfs:comment>
+        <rdfs:label>Dew point temperature</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000554"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001913 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001913">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Difference between the saturation vapor pressure and the actual vapor pressure of air at the same temperature.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/vaporPressureDeficit"/>
+        <oboInOwl:hasExactSynonym>VPD</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Vapor pressure deficit&quot;: The difference between the actual water vapor pressure and the saturation of water vapor pressure at a particular temperature.</rdfs:comment>
+        <rdfs:label>Vapor pressure deficit</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000507"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>kPa</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000118"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001914 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001914">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Greatest distance at which a dark object can be seen and recognized against the horizon sky in daylight.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/visibility"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Visibility&quot;: Visibility</rdfs:comment>
+        <rdfs:label>Visibility</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000520"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000131"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001915 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001915">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Mass of water vapor per unit volume of air.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterVaporDensity"/>
+        <oboInOwl:hasExactSynonym>absolute humidity</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Water vapor density&quot;: Water vapor density</rdfs:comment>
+        <rdfs:label>Water vapor density</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000118"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001916 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001916">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Direction from which the wind blows near the surface, measured clockwise from true north.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/windDirection"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Wind direction&quot;: Wind direction</rdfs:comment>
+        <rdfs:label>Near-surface wind direction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000436"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>deg</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000184"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001917 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001917">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Direction from which the strongest short-lived wind of a period blows, measured clockwise from true north.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/windGustDirection"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Wind gust direction&quot;: Direction of gusts of wind</rdfs:comment>
+        <rdfs:label>Wind gust direction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000436"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>deg</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000184"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001918 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001918">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Highest short-lived wind speed in a period, usually a peak lasting a few seconds.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/windGustSpeed"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Wind gust speed&quot;: Speed of gusts of wind</rdfs:comment>
+        <rdfs:label>Wind gust speed</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000434"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000184"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001919 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001919">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Distance the air travels past a point over a period, the product of the mean wind speed and the length of the period.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/windRun"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Wind Run&quot;: The length of flow of air past a point over a time interval. Windspeed times the interval of time.</rdfs:comment>
+        <rdfs:label>Wind run</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000520"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000184"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001920 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001920">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Categorical record of the state of the weather at an observation time, such as clear, rain, snow, or fog.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/weatherConditions"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Weather conditions&quot;: Weather conditions</rdfs:comment>
+        <rdfs:label>Weather conditions</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000131"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001921 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001921">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Apparent temperature that combines air temperature and relative humidity to express how hot the air feels to people.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/heatIndex"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Heat index&quot;: The combination effect of heat and humidity on the temperature felt by people.</rdfs:comment>
+        <rdfs:label>Heat index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001922 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001922">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Apparent temperature that combines air temperature, humidity, solar radiation, and wind speed to express how hot or cold conditions feel to people.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/THSWIndex"/>
+        <oboInOwl:hasExactSynonym>THSW index</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;THSW Index&quot;: The THSW Index uses temperature, humidity, solar radiation, and wind speed to calculate an apparent temperature.</rdfs:comment>
+        <rdfs:label>Temperature-humidity-sun-wind index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001923 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001923">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Apparent temperature that combines air temperature, humidity, and wind speed to express how hot or cold conditions feel to people.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/THWIndex"/>
+        <oboInOwl:hasExactSynonym>THW index</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;THW Index&quot;: The THW Index uses temperature, humidity, and wind speed to calculate an apparent temperature.</rdfs:comment>
+        <rdfs:label>Temperature-humidity-wind index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001924 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001924">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Dimensionless measure of erythemally weighted solar ultraviolet irradiance at the surface, scaled so that one unit equals 25 mW m-2.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/ultravioletRadiationIndex"/>
+        <oboInOwl:hasExactSynonym>ultraviolet index</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Ultraviolet Radation Index&quot;: The global solar UV index (UVI) was developed as an easy-to-understand measure of biologically effective UV radiation with a view to promote public awareness of the risks of UV radiation exposure and sun protection. In the initial work done on UVI in Canada, a typical midday summer erythemal irradiance of 250 mW.m-2 was found leading to the (arbitrary) definition of one UV index equal to an erythemally weighted irradiance of 25 mW.m-2. This gives a typical range of UVI 0 to 11+.</rdfs:comment>
+        <rdfs:label>UV index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000892"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001925 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001925">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Erythemally weighted ultraviolet radiant exposure accumulated over a period.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/ultravioletRadiationDose"/>
+        <oboInOwl:hasRelatedSynonym>erythemal dose</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Ultraviolet Radiation Dose&quot;: A measure of the ability of ultraviolet radiation, as a function of wavelength, to produce just perceptible erythema in human skin.</rdfs:comment>
+        <rdfs:label>Ultraviolet radiation dose</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>J.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000892"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001926 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001926">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Apparent temperature that combines air temperature and wind speed to express how cold the air feels on exposed skin.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/windChill"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Wind chill&quot;: The effect of wind on the temperature felt on human skin.</rdfs:comment>
+        <rdfs:label>Wind chill</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001927 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001927">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Number of photons in the 400 to 700 nm waveband incident on a surface per unit area and time.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/photosyntheticPhotonFluxDensity"/>
+        <oboInOwl:hasExactSynonym>PPFD</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Photosynthetic photon flux density (PPFD)&quot;: The number of photons per unit time and per unit area in the wavelength band 400 to 700 nm</rdfs:comment>
+        <rdfs:label>Photosynthetic photon flux density</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>umol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000212"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001928 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001928">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Radiant flux density of all wavelengths arriving at a surface from above.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationIncoming"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationTotalIncoming"/>
+        <oboInOwl:hasRelatedSynonym>total incoming radiation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Radiation, incoming&quot;: Incoming radiation. ODM2 variable name concept &quot;Radiation, total incoming&quot;: Total amount of incoming radiation from all frequencies</rdfs:comment>
+        <rdfs:label>Incoming radiation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001929 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001929">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Radiation in the 400 to 700 nm waveband arriving at a surface from above.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationIncomingPAR"/>
+        <oboInOwl:hasExactSynonym>incoming PAR</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Radiation, incoming PAR&quot;: Incoming Photosynthetically-Active Radiation</rdfs:comment>
+        <rdfs:label>Incoming photosynthetically active radiation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>umol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000212"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001930 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001930">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Radiant flux density in the 315 to 400 nm waveband arriving at a surface from above.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationIncomingUV_A"/>
+        <oboInOwl:hasExactSynonym>incoming UV-A radiation</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Radiation, incoming UV-A&quot;: Incoming Ultraviolet A Radiation</rdfs:comment>
+        <rdfs:label>Incoming ultraviolet A radiation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000893"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001931 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001931">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Radiant flux density in the 280 to 315 nm waveband arriving at a surface from above.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationIncomingUV_B"/>
+        <oboInOwl:hasExactSynonym>incoming UV-B radiation</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Radiation, incoming UV-B&quot;: Incoming Ultraviolet B Radiation</rdfs:comment>
+        <rdfs:label>Incoming ultraviolet B radiation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000894"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001932 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001932">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Radiation arriving at a surface minus radiation leaving it, over all wavelengths.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationNet"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Radiation, net&quot;: Net Radiation</rdfs:comment>
+        <rdfs:label>Net radiation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
+        <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001933 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001933">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Incoming minus outgoing longwave radiation at a surface.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationNetLongwave"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Radiation, net longwave&quot;: Net Longwave Radiation</rdfs:comment>
+        <rdfs:label>Net longwave radiation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
+        <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000029"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001934 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001934">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Incoming minus outgoing radiation in the 400 to 700 nm waveband at a surface.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationNetPAR"/>
+        <oboInOwl:hasExactSynonym>net PAR</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Radiation, net PAR&quot;: Net Photosynthetically-Active Radiation</rdfs:comment>
+        <rdfs:label>Net photosynthetically active radiation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
+        <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>umol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000212"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001935 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001935">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Incoming minus outgoing shortwave radiation at a surface.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationNetShortwave"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Radiation, net shortwave&quot;: Net Shortwave radiation</rdfs:comment>
+        <rdfs:label>Net shortwave radiation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
+        <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000115"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001936 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001936">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Longwave radiation emitted and reflected upward by a surface.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationOutgoingLongwave"/>
+        <oboInOwl:hasRelatedSynonym>upwelling longwave radiation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Radiation, outgoing longwave&quot;: Outgoing Longwave Radiation</rdfs:comment>
+        <rdfs:label>Outgoing longwave radiation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000029"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001937 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001937">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Radiation in the 400 to 700 nm waveband reflected upward by a surface.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationOutgoingPAR"/>
+        <oboInOwl:hasExactSynonym>outgoing PAR</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Radiation, outgoing PAR&quot;: Outgoing Photosynthetically-Active Radiation</rdfs:comment>
+        <rdfs:label>Outgoing photosynthetically active radiation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>umol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000212"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001938 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001938">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Shortwave radiation reflected upward by a surface.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationOutgoingShortwave"/>
+        <oboInOwl:hasRelatedSynonym>reflected shortwave radiation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>upwelling shortwave radiation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Radiation, outgoing shortwave&quot;: Outgoing Shortwave Radiation</rdfs:comment>
+        <rdfs:label>Outgoing shortwave radiation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000115"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001939 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001939">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Radiant flux density of all wavelengths leaving a surface upward.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationTotalOutgoing"/>
+        <oboInOwl:hasRelatedSynonym>total outgoing radiation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Radiation, total outgoing&quot;: Total amount of outgoing radiation from all frequencies</rdfs:comment>
+        <rdfs:label>Outgoing radiation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001940 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001940">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Vertical turbulent transfer of horizontal momentum between the atmosphere and a surface, per unit area and time.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/momentumFlux"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Momentum flux&quot;: Momentum flux</rdfs:comment>
+        <rdfs:label>Momentum flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>N.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000891"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001941 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001941">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Tangential force per unit area that moving air exerts on the surface beneath it.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/windStress"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Wind stress&quot;: Drag or trangential force per unit area exerted on a surface by the adjacent layer of moving air</rdfs:comment>
+        <rdfs:label>Wind stress</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>N.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000891"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001942 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001942">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate of transfer of ammonium across a surface, such as the sediment-water interface, per unit area and time.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/ammoniumFlux"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Ammonium flux&quot;: Ammonium (NH4) flux</rdfs:comment>
+        <rdfs:label>Ammonium flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mmol.m-2.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001943 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001943">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Net vertical transfer of carbon dioxide between a surface and the atmosphere, per unit area and time.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/carbonDioxideFlux"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Carbon dioxide flux&quot;: Carbon dioxide (CO2) flux</rdfs:comment>
+        <rdfs:label>Carbon dioxide flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>umol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001944 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001944">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate of change of the carbon dioxide stored in the air column below an eddy covariance sensor, per unit ground area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/carbonDioxideStorageFlux"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Carbon dioxide storage flux&quot;: Carbon dioxide (CO2) storage flux</rdfs:comment>
+        <rdfs:label>Carbon dioxide storage flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>umol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001945 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001945">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Flux of energy into the subsurface carried by effective precipitation and net primary production, which drives weathering and soil formation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/effectiveEnergyAndMassTransfer"/>
+        <oboInOwl:hasExactSynonym>EEMT</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Effective energy and mass transfer (EEMT)&quot;: Effective energy and mass transfer (EEMT) couples energy and mass flux to the subsurface in the form of effective precipitation and net primary production in a common energy unit.</rdfs:comment>
+        <rdfs:label>Effective energy and mass transfer</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>MJ.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000721"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000132"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001946 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001946">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate of water loss to the atmosphere by evaporation from soil, water, and wet surfaces, per unit area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/evaporation"/>
+        <oboInOwl:hasRelatedSynonym>evaporation rate</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Evaporation&quot;: Evaporation</rdfs:comment>
+        <rdfs:label>Evaporation flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000114"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mm.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001947 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001947">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate of water loss to the atmosphere by evaporation and plant transpiration together, per unit area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/evapotranspiration"/>
+        <oboInOwl:hasRelatedSynonym>ET</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>evapotranspiration rate</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Evapotranspiration (ET)&quot;: Evapotranspiration (ET) is the sum of evaporation and plant transpiration from the Earth&apos;s land and ocean surface to the atmosphere.</rdfs:comment>
+        <rdfs:label>Evapotranspiration flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000114"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000895"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mm.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001948 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001948">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Evapotranspiration that would occur from a surface with an unlimited water supply under the prevailing weather, per unit area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/evapotranspirationPotential"/>
+        <oboInOwl:hasRelatedSynonym>PET</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Evapotranspiration, potential&quot;: The amount of water that could be evaporated and transpired if there was sufficient water available.</rdfs:comment>
+        <rdfs:label>Potential evapotranspiration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000114"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000895"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000888"/>
+        <bervo:BERVO_has_unit>mm.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001949 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001949">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate of water loss to the atmosphere through plant stomata, per unit ground area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/transpiration"/>
+        <oboInOwl:hasRelatedSynonym>transpiration rate</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Transpiration&quot;: Transpiration</rdfs:comment>
+        <rdfs:label>Transpiration flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000895"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mm.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001950 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001950">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate of water movement across a surface, per unit area and time.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterFlux"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Water flux&quot;: Water Flux</rdfs:comment>
+        <rdfs:label>Water flux across a surface</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mm.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001951 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001951">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate of water movement through the xylem of a plant stem.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/sapFlow"/>
+        <oboInOwl:hasRelatedSynonym>sap flux</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Sap flow&quot;: Movement of xylem sap in trees.</rdfs:comment>
+        <rdfs:label>Sap flow</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>kg.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001952 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001952">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate of heat transfer by conduction into or out of the soil at the ground surface, per unit area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/groundHeatFlux"/>
+        <oboInOwl:hasRelatedSynonym>soil heat flux</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Ground heat flux&quot;: Ground heat flux</rdfs:comment>
+        <rdfs:label>Ground heat flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000273"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000060"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000803"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001953 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001953">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate of energy transfer from a surface to the atmosphere carried by evaporated water, per unit area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/latentHeatFlux"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Latent heat flux&quot;: Latent Heat Flux</rdfs:comment>
+        <rdfs:label>Latent heat flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000273"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000792"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001954 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001954">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate of heat transfer between a surface and the atmosphere by conduction and convection, per unit area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/sensibleHeatFlux"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Sensible heat flux&quot;: Sensible Heat Flux</rdfs:comment>
+        <rdfs:label>Sensible heat flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000273"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000793"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001955 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001955">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Outgoing minus incoming rate of heat transfer through a surface, per unit area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/netHeatFlux"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Net heat flux&quot;: Outgoing rate of heat energy transfer minus the incoming rate of heat energy transfer through a given area</rdfs:comment>
+        <rdfs:label>Net heat flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000273"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
+        <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001956 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001956">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate of transfer of oxygen across a surface, per unit area and time.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/oxygenFlux"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Oxygen flux&quot;: Oxygen (O2) flux</rdfs:comment>
+        <rdfs:label>Oxygen flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mmol.m-2.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001957 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001957">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate at which oxygen is consumed by biological and chemical processes, per unit area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/oxygenUptake"/>
+        <oboInOwl:hasRelatedSynonym>oxygen consumption</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Oxygen uptake&quot;: Consumption of oxygen by biological and/or chemical processes</rdfs:comment>
+        <rdfs:label>Oxygen uptake</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mmol.m-2.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001958 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001958">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate of transfer of phosphate across a surface, per unit area and time.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/hosphorusPhosphateFlux"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Phosphorus, phosphate flux&quot;: Phosphate (PO4) flux</rdfs:comment>
+        <rdfs:label>Phosphate flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mmol.m-2.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001959 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001959">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate of transfer of silicic acid across a surface, per unit area and time.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/silicicAcidFlux"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Silicic acid flux&quot;: Silicate acid (H4SiO4) flux</rdfs:comment>
+        <rdfs:label>Silicic acid flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mmol.m-2.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000896"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001960 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001960">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate of transfer of urea across a surface, per unit area and time.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/ureaFlux"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Urea flux&quot;: Urea ((NH2)2CO) flux</rdfs:comment>
+        <rdfs:label>Urea flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mmol.m-2.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000165"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001961 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001961">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate at which primary producers fix carbon from carbon dioxide, per unit area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/primaryProductivity"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Primary productivity&quot;: Primary Productivity</rdfs:comment>
+        <rdfs:label>Primary production rate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000546"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>g{C}.m-2.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001962 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001962">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate at which primary producers fix carbon from carbon dioxide, per unit area, including the carbon they later respire.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/primaryProductivityGross"/>
+        <oboInOwl:hasExactSynonym>GPP</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Primary productivity, gross&quot;: Rate at which an ecosystem accumulates energy by fixation of sunlight, including that consumed by the ecosystem.</rdfs:comment>
+        <rdfs:label>Gross primary production rate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000546"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000887"/>
+        <bervo:BERVO_has_unit>g{C}.m-2.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001963 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001963">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate of carbon dioxide release by all the organisms of an ecosystem, per unit area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/respirationEcosystem"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Respiration, ecosystem&quot;: Gross carbon dioxide production by all organisms in an ecosystem. Ecosystem respiration is the sum of all respiration occurring by the living organisms in a specific ecosystem.</rdfs:comment>
+        <rdfs:label>Ecosystem respiration flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000043"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000539"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>umol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001964 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001964">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate of carbon dioxide release by respiration less any concurrent uptake, per unit area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/respirationNet"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Respiration, net&quot;: Net respiration</rdfs:comment>
+        <rdfs:label>Net respiration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000539"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
+        <bervo:BERVO_has_unit>umol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001965 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001965">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Rate of carbon dioxide release from soil by roots and soil organisms, per unit area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/soilRespiration"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Soil respiration&quot;: Soil respiration refers to the production of carbon dioxide when soil organisms respire. This includes respiration of plant roots, the rhizosphere, microbes and fauna.</rdfs:comment>
+        <rdfs:label>Soil respiration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000539"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>umol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
     
 
@@ -51565,6 +52780,188 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_8000887 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000887">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <obo:IAO_0000115>The whole amount of a quantity before any opposing process, such as respiration or loss, is subtracted.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Gross</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000888 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000888">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <obo:IAO_0000115>The amount a quantity would reach if a limiting resource, such as water supply, were not limiting.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Potential</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000889 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000889">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000400"/>
+        <obo:IAO_0000115>Visible mass of liquid water droplets or ice crystals suspended in the atmosphere.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000760"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Cloud</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000890 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000890">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
+        <obo:IAO_0000115>Solid precipitation of balls or lumps of ice, formed in convective storm clouds.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_03400011"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Hail</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000891 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000891">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Product of the mass and the velocity of a body or a parcel of fluid.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PATO_0001023"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Momentum</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000892 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000892">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
+        <obo:IAO_0000115>Electromagnetic radiation with wavelengths between about 10 and 400 nm, shorter than visible light.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_21001216"/>
+        <oboInOwl:hasRelatedSynonym>UV radiation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Ultraviolet radiation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000893 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000893">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000892"/>
+        <obo:IAO_0000115>Ultraviolet radiation with wavelengths from 315 to 400 nm.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>UV-A radiation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>UVA</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Ultraviolet A radiation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000894 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000894">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000892"/>
+        <obo:IAO_0000115>Ultraviolet radiation with wavelengths from 280 to 315 nm.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>UV-B radiation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>UVB</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Ultraviolet B radiation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000895 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000895">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000558"/>
+        <obo:IAO_0000115>Release of water vapor from a plant to the air, mainly through the stomata of its leaves.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/GO_0010148"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Transpiration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000896 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000896">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+        <obo:IAO_0000115>Hydrated form of silica, Si(OH)4, the form in which dissolved silicon occurs in natural waters.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26675"/>
+        <oboInOwl:hasExactSynonym>orthosilicic acid</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Silicic acid</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_9000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000000">
@@ -52225,6 +53622,40 @@
         <obo:IAO_0000115>Grouping of the kinds of heat told apart by how the thermal energy moves, whether by molecular contact through a medium, by the bulk movement of a fluid, or as electromagnetic radiation. This axis cross-cuts Heat by thermodynamic form: every heat flux has both a transfer mechanism and a thermodynamic form, so a term beneath this grouping and a term beneath that one are not alternatives and a variable may name one of each.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 22 2026), review of #90</rdfs:comment>
         <rdfs:label>Heat by transfer mechanism</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_9000038 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_9000038">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
+        <obo:IAO_0000115>Grouping class for observed variables that describe the near-surface atmosphere and the radiation that reaches or leaves a land or water surface, as reported by weather stations, radiometers, and flux towers.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Meteorological variable</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_9000039 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_9000039">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
+        <obo:IAO_0000115>Grouping class for observed fluxes of energy, water, carbon, momentum, and other substances between a land or water surface and the atmosphere or water column, or within an ecosystem.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Surface flux variable</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
