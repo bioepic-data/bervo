@@ -13076,7 +13076,6 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000695">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001967"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>The vertical extent of vegetation canopy for a specific plant functional type, representing the maximum height of photosynthetic and structural tissues. This canopy height determines light competition dynamics, aerodynamic properties, and vertical stratification in ecosystem productivity and energy balance models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CanopyHeight_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
@@ -13324,7 +13323,6 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000708">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001967"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>The maximum vertical extent of vegetation canopy averaged across a computational grid cell, representing ecosystem structural characteristics. This grid-averaged canopy height influences aerodynamic properties, light interception, and habitat structure in spatially explicit terrestrial ecosystem models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CanopyHeight_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
