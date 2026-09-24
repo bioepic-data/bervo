@@ -35018,16 +35018,17 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001888">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Number of stems per unit ground area, counted at or above a stated minimum size.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>stem density</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>tree density</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CHESS: density, abla_density, pien_density, pico_density, each a per-species stem density. Plant population (BERVO:0000725) counts individuals; a plant with several stems counts once there and once per stem here.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
-        <rdfs:label>Stem density</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <rdfs:label>Stem count per unit area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000899"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>har-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_unit>m-2</bervo:BERVO_has_unit>
-        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
     </Class>
