@@ -25633,8 +25633,8 @@
     <!-- https://w3id.org/bervo/BERVO_0001380 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001380">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001928"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
         <obo:IAO_0000115>Sky longwave radiation refers to the part of the electromagnetic spectrum that is radiated from the sky in the form of thermal radiation, or heat. This is a key component of the earth&apos;s energy balance, affecting both climatic and biological processes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationIncomingLongwave"/>
         <oboInOwl:hasRelatedSynonym>LWRadSky_col</oboInOwl:hasRelatedSynonym>
@@ -34581,8 +34581,8 @@
     <!-- https://w3id.org/bervo/BERVO_0001867 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001867">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001928"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
         <obo:IAO_0000115>Downward flux of shortwave solar radiation, direct and diffuse together, incident on the land surface per unit horizontal area.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/globalRadiation"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationIncomingShortwave"/>
@@ -35825,7 +35825,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001929 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001929">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001928"/>
         <obo:IAO_0000115>Radiation in the 400 to 700 nm waveband arriving at a surface from above.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationIncomingPAR"/>
         <oboInOwl:hasExactSynonym>incoming PAR</oboInOwl:hasExactSynonym>
@@ -35846,7 +35846,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001930 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001930">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001928"/>
         <obo:IAO_0000115>Radiant flux density in the 315 to 400 nm waveband arriving at a surface from above.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationIncomingUV_A"/>
         <oboInOwl:hasExactSynonym>incoming UV-A radiation</oboInOwl:hasExactSynonym>
@@ -35866,7 +35866,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001931 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001931">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001928"/>
         <obo:IAO_0000115>Radiant flux density in the 280 to 315 nm waveband arriving at a surface from above.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationIncomingUV_B"/>
         <oboInOwl:hasExactSynonym>incoming UV-B radiation</oboInOwl:hasExactSynonym>
@@ -35905,7 +35905,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001933 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001933">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001932"/>
         <obo:IAO_0000115>Incoming minus outgoing longwave radiation at a surface.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationNetLongwave"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
@@ -35924,7 +35924,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001934 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001934">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001932"/>
         <obo:IAO_0000115>Incoming minus outgoing radiation in the 400 to 700 nm waveband at a surface.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationNetPAR"/>
         <oboInOwl:hasExactSynonym>net PAR</oboInOwl:hasExactSynonym>
@@ -35945,7 +35945,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001935 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001935">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001932"/>
         <obo:IAO_0000115>Incoming minus outgoing shortwave radiation at a surface.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationNetShortwave"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
@@ -35964,7 +35964,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001936 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001936">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001939"/>
         <obo:IAO_0000115>Longwave radiation emitted and reflected upward by a surface.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationOutgoingLongwave"/>
         <oboInOwl:hasRelatedSynonym>upwelling longwave radiation</oboInOwl:hasRelatedSynonym>
@@ -35984,7 +35984,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001937 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001937">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001939"/>
         <obo:IAO_0000115>Radiation in the 400 to 700 nm waveband reflected upward by a surface.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationOutgoingPAR"/>
         <oboInOwl:hasExactSynonym>outgoing PAR</oboInOwl:hasExactSynonym>
@@ -36005,7 +36005,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001938 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001938">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001939"/>
         <obo:IAO_0000115>Shortwave radiation reflected upward by a surface.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/radiationOutgoingShortwave"/>
         <oboInOwl:hasRelatedSynonym>reflected shortwave radiation</oboInOwl:hasRelatedSynonym>
@@ -36186,7 +36186,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001948 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001948">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001947"/>
         <obo:IAO_0000115>Evapotranspiration that would occur from a surface with an unlimited water supply under the prevailing weather, per unit area.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/evapotranspirationPotential"/>
         <oboInOwl:hasRelatedSynonym>PET</oboInOwl:hasRelatedSynonym>
@@ -36458,7 +36458,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001962 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001962">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001961"/>
         <obo:IAO_0000115>Rate at which primary producers fix carbon from carbon dioxide, per unit area, including the carbon they later respire.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/primaryProductivityGross"/>
         <oboInOwl:hasExactSynonym>GPP</oboInOwl:hasExactSynonym>
