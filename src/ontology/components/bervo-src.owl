@@ -37993,7 +37993,7 @@
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/soilTexture"/>
         <oboInOwl:hasExactSynonym>soil texture</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Soil texture&quot;: Soil texture is a classification instrument used both in the field and laboratory to determine soil classes based on their physical texture. Soil texture can be determined using qualitative methods such as texture by feel, and quantitative methods such as the hydrometer method.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Soil texture&quot;: Soil texture is a classification instrument used both in the field and laboratory to determine soil classes based on their physical texture. Soil texture can be determined using qualitative methods such as texture by feel, and quantitative methods such as the hydrometer method. The class is read from the quantities Soil sand content (BERVO:0001526), Soil silt content (BERVO:0001527), and Soil clay content (BERVO:0001528).</rdfs:comment>
         <rdfs:label>Soil texture class</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
