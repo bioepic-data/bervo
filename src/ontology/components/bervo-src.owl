@@ -26748,6 +26748,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001443 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001443">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001932"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000022"/>
         <obo:IAO_0000115>The balance between incoming and outgoing radiation at the ground surface, representing the net radiative energy available. This parameter is fundamental for surface energy balance calculations and determines the energy available for heating, evapotranspiration, and photosynthesis processes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HeatByRad2Surf_col</oboInOwl:hasRelatedSynonym>
