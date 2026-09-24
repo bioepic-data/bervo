@@ -283,7 +283,7 @@ and left for a curator).
 
 A logarithm has no unit, whatever the unit of the value it was taken of. Six `Log …`
 rows carried the unit of that value, `g d-2` or `MPa`, and now take `1`, as `Log soil
-porosity` (`BERVO:0001508`) already did: `BERVO:0001509`, `BERVO:0001510`,
+porosity` (`BERVO:0001508`, `NONE` on main) does after the conversion: `BERVO:0001509`, `BERVO:0001510`,
 `BERVO:0001511`, `BERVO:0001516`, `BERVO:0001517`, `BERVO:0001518`. This settles the
 log rows of [issue #95](https://github.com/bioepic-data/bervo/issues/95). Its question
 about the two volumetric water contents is still open.
