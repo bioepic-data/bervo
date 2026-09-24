@@ -36774,7 +36774,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001979">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
-        <obo:IAO_0000115>Length of an organism&apos;s body between defined points, such as from snout to tail fork in fish.</obo:IAO_0000115>
+        <obo:IAO_0000115>Length of an organism&apos;s body between two defined points, which depend on the kind of organism.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/bodyLength"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Body length&quot;: Length of the body of an organism.</rdfs:comment>
@@ -36782,7 +36782,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000717"/>
     </Class>
@@ -36992,6 +36992,27 @@
         <bervo:BERVO_has_unit>{CFU}.m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001992 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001992">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001979"/>
+        <obo:IAO_0000115>Length of a fish&apos;s body, measured as total length (snout to the tip of the longest caudal fin ray), fork length (snout to the fork of the tail), or standard length (snout to the end of the last vertebra).</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>fork length</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>standard length</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>total length</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>Which of the three measures was taken must be recorded with the data; they are not interchangeable.</rdfs:comment>
+        <rdfs:label>Fish body length</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000897"/>
     </Class>
     
 
