@@ -640,9 +640,12 @@ to Water current.
 Hydrology variable (`BERVO:9000041`), under Variable, holds observations of
 surface water and groundwater, the physical properties of water bodies, and the
 state of the wells and structures that hold or control water. Water variable was
-not used: its definition is water chemistry. Water current and Total
-precipitation (`BERVO:0000309`), which describe water flow rather than chemistry,
-move out of Water variable into it.
+not used: its definition is water chemistry. Water current, which describes water
+flow rather than chemistry, moves out of Water variable into it. Total
+precipitation (`BERVO:0000309`) also leaves Water variable, for Precipitation
+amount (`BERVO:0001908`) under Meteorological variable: it is EcoSIM's grid-cell
+volume form of that quantity, as Water equivalent snowpack is of Snow water
+equivalent.
 
 | BERVO term | Parent | Cross-reference |
 | --- | --- | --- |
