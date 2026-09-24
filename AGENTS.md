@@ -156,7 +156,7 @@ of different elements and the annotations say so; a ratio of like quantities, su
 length to a width, takes `1`.
 
 The validator checks the syntax: the full UCUM grammar when `ucumvert` is installed
-(`pip install -r src/scripts/requirements.txt`; CI installs it), and BERVO's own rules
+(`just setup` installs it; CI does too), and BERVO's own rules
 above in any case. **It cannot check meaning.** `MJ.h-1/{grid}` on a variable that is
 really a water transfer is valid UCUM and still wrong. Only reading the row finds it.
 
