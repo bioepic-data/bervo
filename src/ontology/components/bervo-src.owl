@@ -36819,14 +36819,15 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
         <obo:IAO_0000115>Number of individual organisms counted per unit area.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/countAreal"/>
+        <oboInOwl:hasExactSynonym>areal count</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Count, areal&quot;: Counts per area.</rdfs:comment>
-        <rdfs:label>Areal count</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <rdfs:label>Organism count per unit area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000899"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m-2</bervo:BERVO_has_unit>
-        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000717"/>
     </Class>
