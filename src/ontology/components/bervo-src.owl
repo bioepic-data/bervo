@@ -29044,10 +29044,12 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001572">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000027"/>
         <obo:IAO_0000115>The total vertical thickness of snow cover from ground surface to snow surface. This parameter represents water storage potential, insulation capacity, and habitat modification effects, fundamental for hydrological forecasting, avalanche assessment, and ecosystem impact studies.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/depthSnow"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/snowDepth"/>
         <oboInOwl:hasRelatedSynonym>SnowDepth_col</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>snow-depth</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>surface-snow_depth</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>ATS: surface-snow_depth and snow-depth [m].</rdfs:comment>
+        <rdfs:comment>ATS: surface-snow_depth and snow-depth [m]. ODM2 variable name concept &quot;Snow depth&quot;: Snow depth. ODM2 variable name concept &quot;Depth, snow&quot;: Depth of snow.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SnowDataType.txt</rdfs:comment>
         <rdfs:label>Snowpack depth</rdfs:label>
@@ -32357,9 +32359,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001743">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>The volume of water present in soil expressed as a fraction of the total soil volume, representing the three-dimensional water storage capacity and current moisture status of soil systems. This fundamental parameter controls plant water availability, microbial activity, and biogeochemical processes, and is essential for understanding soil hydrology, irrigation management, and ecosystem water balance in terrestrial environments.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/volumetricWaterContent"/>
         <oboInOwl:hasRelatedSynonym>THETW_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
-        <rdfs:comment>EcoSIM THETW_vr is a volume fraction of bulk soil. The ATS-EcoSIM coupling currently writes ATS saturation_liquid, a fraction of pore volume, into it; see Soil liquid water saturation.</rdfs:comment>
+        <rdfs:comment>EcoSIM THETW_vr is a volume fraction of bulk soil. The ATS-EcoSIM coupling currently writes ATS saturation_liquid, a fraction of pore volume, into it; see Soil liquid water saturation. ODM2 variable name concept &quot;Volumetric water content&quot;: Volume of liquid water relative to bulk volume. Used for example to quantify soil moisture.</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Volumetric water content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
@@ -32648,6 +32651,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001760 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001760">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002005"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>The vertical distance from the soil surface to an artificially maintained groundwater level created by subsurface drainage systems, irrigation, or water management practices. This parameter is important for understanding hydrological modifications in agricultural landscapes and affects root zone hydrology, soil chemistry, and crop productivity in managed water table systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>WtblDepzTile_col</oboInOwl:hasRelatedSynonym>
@@ -32667,6 +32671,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001761 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001761">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002005"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>Artificial water table depth refers to the depth at which the water table is artificially maintained through human intervention, often for purposes such as irrigation, drainage, or preventing land subsidence. This is typically done in areas where natural water table levels are unsuitable for the intended land use.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TileWaterTable_col</oboInOwl:hasRelatedSynonym>
@@ -32686,6 +32691,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001762 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001762">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002005"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>The vertical distance to an artificially maintained groundwater level that has been corrected for local topographic elevation differences, ensuring consistent measurement reference across variable terrain. This elevation-adjusted parameter is essential for regional water table mapping, drainage system design, and understanding groundwater flow patterns in managed agricultural watersheds with controlled water table systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>DTBLD_col</oboInOwl:hasRelatedSynonym>
@@ -32705,6 +32711,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001763 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001763">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002005"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>The depth to groundwater level measured within a specific soil profile or model domain, representing the local saturation boundary that develops from internal hydrological processes. This parameter differs from regional water tables by reflecting local soil moisture dynamics, perched water conditions, and site-specific hydrological controls that affect root zone hydrology and soil biogeochemical processes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>DepzIntWTBL_col</oboInOwl:hasRelatedSynonym>
@@ -32764,6 +32771,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001766 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001766">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002005"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>The vertical distance from the land surface to the natural or unmanaged groundwater level in the surrounding landscape or regional aquifer system. This parameter represents ambient groundwater conditions that influence local hydrology through lateral groundwater flow, capillary fringe effects, and baseflow contributions to surface water bodies in natural and semi-natural environments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NatWtblDepz_col</oboInOwl:hasRelatedSynonym>
@@ -34072,9 +34080,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001837">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
         <obo:IAO_0000115>The volumetric flow rate and directional movement of water masses in aquatic environments. This parameter controls nutrient transport, sediment redistribution, and habitat conditions in rivers, lakes, and marine ecosystems.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/discharge"/>
         <oboInOwl:hasDbXref rdf:resource="https://w3id.org/mixs/0000203"/>
+        <oboInOwl:hasRelatedSynonym>discharge</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Discharge&quot;: Discharge.</rdfs:comment>
         <rdfs:label>Water current</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -34716,8 +34728,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001873">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000027"/>
         <obo:IAO_0000115>Depth of liquid water that would result from melting the entire snowpack over a unit area, combining its ice and liquid water content.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/snowWaterEquivalent"/>
         <oboInOwl:hasRelatedSynonym>snow-water_equivalent</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>ATS: snow-water_equivalent [m]. Generic depth form; Water equivalent snowpack is the EcoSIM volume per grid cell and is a child of this term.</rdfs:comment>
+        <rdfs:comment>ATS: snow-water_equivalent [m]. Generic depth form; Water equivalent snowpack is the EcoSIM volume per grid cell and is a child of this term. ODM2 variable name concept &quot;Snow water equivalent&quot;: The depth of water if a snow cover is completely melted, expressed in units of depth, on a corresponding horizontal surface area.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
         <rdfs:label>Snow water equivalent</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
@@ -37020,6 +37033,520 @@
         <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000897"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001993 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001993">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001837"/>
+        <obo:IAO_0000115>Discharge of water in a stream or river channel past a point.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/streamflow"/>
+        <oboInOwl:hasRelatedSynonym>stream discharge</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Streamflow&quot;: The volume of water flowing past a fixed point. Equivalent to discharge.</rdfs:comment>
+        <rdfs:label>Streamflow</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000730"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001994 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001994">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001993"/>
+        <obo:IAO_0000115>Part of streamflow supplied by groundwater, rather than by recent precipitation or runoff.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/baseflow"/>
+        <oboInOwl:hasRelatedSynonym>base flow</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Baseflow&quot;: The portion of streamflow (discharge) that is supplied by groundwater sources.</rdfs:comment>
+        <rdfs:label>Baseflow</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000730"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000799"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001995 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001995">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Vertical distance from a water surface to the bottom of the water body at a point.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterDepth"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Water depth&quot;: Water depth is the distance between the water surface and the bottom of the water body at a specific location specified by the site location and offset.</rdfs:comment>
+        <rdfs:label>Water depth</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000724"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001996 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001996">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001995"/>
+        <obo:IAO_0000115>Water depth averaged over a channel cross-section or a water body.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterDepthAveraged"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Water depth, averaged&quot;: Water depth averaged over a channel cross-section or water body. Averaging method to be specified in methods. The averaging method is recorded with the data.</rdfs:comment>
+        <rdfs:label>Averaged water depth</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000259"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000724"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001997 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001997">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Elevation of a water surface relative to a stated datum.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterLevel"/>
+        <oboInOwl:hasRelatedSynonym>stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>water surface elevation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Water level&quot;: Water level relative to datum. The datum may be local or global such as NGVD 1929 and should be specified in the method description for associated data values. The datum, local or global such as NGVD 1929, is recorded with the data.</rdfs:comment>
+        <rdfs:label>Water level</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000076"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000724"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001998 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001998">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001997"/>
+        <obo:IAO_0000115>Height of a water surface above the datum of a stream gauge.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/gageHeight"/>
+        <oboInOwl:hasExactSynonym>gauge height</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Gage height&quot;: Water level with regard to an arbitrary gage datum (also see Water depth for comparison).</rdfs:comment>
+        <rdfs:label>Gage height</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000076"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000730"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001999 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001999">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001997"/>
+        <obo:IAO_0000115>Water level of a tidal water body relative to a tidal datum, rising and falling with the tide.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/tideStage"/>
+        <oboInOwl:hasExactSynonym>tidal stage</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Tide stage&quot;: Tidal stage.</rdfs:comment>
+        <rdfs:label>Tide stage</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000076"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000724"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002000 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002000">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Vertical distance between the crest of a surface wave and the adjacent trough.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waveHeight"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Wave height&quot;: The height of a surface wave, measured as the difference in elevation between the wave crest and an adjacent trough.</rdfs:comment>
+        <rdfs:label>Wave height</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000076"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000724"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002001 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002001">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Depth at which a Secchi disk lowered from the surface is no longer visible, a measure of water transparency.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/secchiDepth"/>
+        <oboInOwl:hasRelatedSynonym>Secchi disk depth</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Secchi depth&quot;: Secchi depth.</rdfs:comment>
+        <rdfs:label>Secchi depth</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002002 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002002">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Rate at which light intensity declines with depth in water, the exponent of its exponential decline per unit depth.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/lightAttenuationCoefficient"/>
+        <oboInOwl:hasRelatedSynonym>diffuse attenuation coefficient</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Light attenuation coefficient&quot;: Light attenuation coefficient.</rdfs:comment>
+        <rdfs:label>Light attenuation coefficient</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000227"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002003 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002003">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Density of seawater at its in situ salinity and temperature but at atmospheric pressure, minus 1000 kg m-3.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/sigma_t"/>
+        <oboInOwl:hasRelatedSynonym>sigma t</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Sigma-t&quot;: Density of seawater calculated with in situ salinity and temperature, but pressure equal to zero, rather than the in situ pressure, and 1000 kg/m^3 is subtracted. Defined as (S,T)-1000 kg m-3, where (S,T) is the density of a sample of seawater at temperature T and salinity S, measured in kg m-3, at standard atmospheric pressure.</rdfs:comment>
+        <rdfs:label>Sigma-t</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>kg.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002004 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002004">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Vertical distance from the sea floor up to a point in the water column.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/heightAboveSeaFloor"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;height, above sea floor&quot;: Vertical distance from the sea floor to a point.</rdfs:comment>
+        <rdfs:label>Height above sea floor</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000076"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000903"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002005 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002005">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Vertical distance from the land surface down to the water table at a point.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/depthUnsaturatedZone"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/groundwaterDepth"/>
+        <oboInOwl:hasExactSynonym>groundwater depth</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>depth to water table</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>unsaturated zone depth</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Groundwater Depth&quot;: Groundwater depth is the distance between the water surface and the ground surface at a specific location specified by the site location and offset. ODM2 variable name concept &quot;Depth, unsaturated zone&quot;: Depth of the Unsaturated zone. The vadose zone, also termed the unsaturated zone, is the part of Earth between the land surface and the top of the phreatic zone, the position at which the groundwater (the water in the soil&apos;s pores) is at atmospheric pressure (&quot;vadose&quot; is from the Latin for &quot;shallow&quot;). Hence, the vadose zone extends from the top of the ground surface to the water table. ODM2&apos;s depth of the unsaturated zone maps here too: the unsaturated zone runs from the land surface to the water table, so its depth is this distance.</rdfs:comment>
+        <rdfs:label>Water table depth</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000144"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002006 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002006">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Rate at which water moves down from the unsaturated zone into the saturated zone and adds to groundwater, per unit area.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/rechargeGroundwater"/>
+        <oboInOwl:hasRelatedSynonym>deep drainage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>deep percolation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Recharge, groundwater&quot;: Groundwater recharge or deep drainage or deep percolation is a hydrologic process where water moves downward from surface water to groundwater. Recharge is the primary method through which water enters an aquifer. This process usually occurs in the vadose zone below plant roots and is often expressed as a flux to the water table surface. Recharge occurs both naturally (through the water cycle) and through anthropogenic processes (i.e., &quot;artificial groundwater recharge&quot;), where rainwater and or reclaimed water is routed to the subsurface.</rdfs:comment>
+        <rdfs:label>Groundwater recharge</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mm.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000799"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002007 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002007">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Volume of water held in a reservoir.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/reservoirStorage"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Reservoir storage&quot;: Reservoir water volume.</rdfs:comment>
+        <rdfs:label>Reservoir storage</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000190"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000901"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002008 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002008">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Volumetric rate at which water flows from a well while it is pumped.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/wellFlowRate"/>
+        <oboInOwl:hasRelatedSynonym>pumping rate</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Well flow rate&quot;: Flow rate from well while pumping.</rdfs:comment>
+        <rdfs:label>Well flow rate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000902"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000799"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002009 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002009">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Pressure of the fluid at the head of a well after the well has been shut in for a period.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/wellheadPressure"/>
+        <oboInOwl:hasRelatedSynonym>shut-in pressure</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Wellhead pressure&quot;: The pressure exerted by the fluid at the wellhead or casinghead after the well has been shut off for a period of time, typically 24 hours.</rdfs:comment>
+        <rdfs:label>Wellhead pressure</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000518"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>kPa</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000902"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002010 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002010">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Rate at which water is withdrawn or supplied for human use by a set of users.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>water withdrawal</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:label>Water use</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002011 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002011">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002010"/>
+        <obo:IAO_0000115>Water use for agriculture, mostly irrigation and livestock.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterUseAgriculture"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Water Use, Agriculture&quot;: Water pumped for Agriculture.</rdfs:comment>
+        <rdfs:label>Agricultural water use</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002012 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002012">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002010"/>
+        <obo:IAO_0000115>Water use by commercial and industrial users and for thermoelectric power generation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterUseCommercialIndustrialPower"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Water Use, Commercial + Industrial + Power&quot;: Water pumped by commercial, industrial users.</rdfs:comment>
+        <rdfs:label>Commercial, industrial, and power water use</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002013 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002013">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002010"/>
+        <obo:IAO_0000115>Water pumped by residents from their own wells, outside public supply.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterUseDomesticWells"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Water Use, Domestic wells&quot;: Water pumped by domestic wells; residents and landowners not using public supply. Nonagriculture wells.</rdfs:comment>
+        <rdfs:label>Domestic well water use</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000902"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002014 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002014">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002010"/>
+        <obo:IAO_0000115>Water supplied by public utilities.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterUsePublicSupply"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Water Use, Public Supply&quot;: Water supplied by a public utility.</rdfs:comment>
+        <rdfs:label>Public supply water use</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002015 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002015">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002010"/>
+        <obo:IAO_0000115>Water use for recreation, such as the watering of golf courses.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/waterUseRecreation"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Water Use, Recreation&quot;: Recreational water use, for example golf courses.</rdfs:comment>
+        <rdfs:label>Recreational water use</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002016 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002016">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Opening of a gate or other structure that controls the flow of water, as a fraction of fully open.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/position"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Position&quot;: Position of an element that interacts with water such as reservoir gates. ODM2 names the position of a water-control element such as a reservoir gate. Some datasets report it as a height or a number of turns instead.</rdfs:comment>
+        <rdfs:label>Gate position</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002017 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002017">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Thickness of alluvium above bedrock at a point.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/alluviumDepth"/>
+        <oboInOwl:hasRelatedSynonym>alluvium thickness</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Alluvium depth&quot;: Alluvium is loose, unconsolidated (not cemented together into a solid rock) soil or sediment that has been eroded, reshaped by water in some form, and redeposited in a non-marine setting. Alluvium is typically made up of a variety of materials, including fine particles of silt and clay and larger particles of sand and gravel. When this loose alluvial material is deposited or cemented into a lithological unit, or lithified, it is called an alluvial deposit.</rdfs:comment>
+        <rdfs:label>Alluvium depth</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000900"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002018 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002018">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000027"/>
+        <obo:IAO_0000115>Resistance of a snowpack layer to penetration, usually recorded on the hand hardness scale from fist through four fingers, one finger, pencil, and knife to ice.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/snowLayerHardness"/>
+        <oboInOwl:hasRelatedSynonym>hand hardness</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Snow layer hardness&quot;: Snow layers within the snowpack are a record of the winter’s weather. Like tree rings or strata of rock, layers can be traced to dates and conditions that formed them. One of the most important characteristics of a layer is its hardness. Harder snow is stronger and cohesive, while softer snow is weaker.</rdfs:comment>
+        <rdfs:label>Snow layer hardness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000204"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
 
@@ -53497,6 +54024,82 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_8000900 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000900">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
+        <obo:IAO_0000115>Loose, unconsolidated sediment of clay, silt, sand, and gravel deposited by running water.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001202"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:label>Alluvium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000901 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000901">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000724"/>
+        <obo:IAO_0000115>Body of water held behind a dam or in a basin and used to store water.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000025"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:label>Reservoir</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000902 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000902">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000726"/>
+        <obo:IAO_0000115>Hole drilled or dug into the ground to reach groundwater.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000002"/>
+        <oboInOwl:hasRelatedSynonym>water well</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:label>Well</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000903 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000903">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000400"/>
+        <obo:IAO_0000115>Solid bottom of the sea or ocean.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000482"/>
+        <oboInOwl:hasExactSynonym>sea bed</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>seabed</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>ocean floor</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:label>Sea floor</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_9000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000000">
@@ -54208,6 +54811,23 @@
         <obo:IAO_0000115>Grouping class for observed variables that describe organisms and the communities they form, such as biomass, stand structure, cell and colony densities, counts, diversity indices, body sizes, and vegetation type.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
         <rdfs:label>Ecology variable</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_9000041 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_9000041">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
+        <obo:IAO_0000115>Grouping class for observed variables that describe the quantity, level, and movement of surface water and groundwater, and its use, such as discharge, water level, water table depth, well measurements, and water withdrawals.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
+        <rdfs:label>Hydrology variable</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
