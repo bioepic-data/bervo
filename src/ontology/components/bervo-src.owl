@@ -35401,9 +35401,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001907">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
         <obo:IAO_0000115>Depth of hail that falls on a horizontal surface over a period.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/hail"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Hail&quot;: Hail is a form of solid precipitation. It is distinct from ice pellets (American English &quot;sleet&quot;), though the two are often confused. It consists of balls or irregular lumps of ice, each of which is called a hailstone.</rdfs:comment>
         <rdfs:label>Hail depth</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -36532,6 +36530,24 @@
         <bervo:BERVO_has_unit>umol.m-2.s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001966 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001966">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Largest diameter of the hailstones that fall at a point during a hail event.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>hail size</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:label>Hailstone size</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000890"/>
     </Class>
     
 
@@ -52824,7 +52840,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <obo:IAO_0000115>Solid precipitation of balls or lumps of ice, formed in convective storm clouds.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_03400011"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/hail"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Hail&quot;: Hail is a form of solid precipitation. It is distinct from ice pellets (American English &quot;sleet&quot;), though the two are often confused. It consists of balls or irregular lumps of ice, each of which is called a hailstone.</rdfs:comment>
         <rdfs:label>Hail</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
