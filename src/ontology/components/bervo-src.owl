@@ -35474,9 +35474,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001911">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
-        <obo:IAO_0000115>Length of time in a period during which direct solar irradiance exceeds 120 W m-2, the World Meteorological Organization threshold for bright sunshine.</obo:IAO_0000115>
+        <obo:IAO_0000115>Length of time in a period during which direct normal solar irradiance exceeds 120 W m-2, the threshold the World Meteorological Organization sets for bright sunshine.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/sunshineDuration"/>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66; threshold from the WMO Guide to Instruments and Methods of Observation (WMO-No. 8)</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Sunshine duration&quot;: Sunshine duration</rdfs:comment>
         <rdfs:label>Sunshine duration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
