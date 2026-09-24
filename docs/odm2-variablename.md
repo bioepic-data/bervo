@@ -552,7 +552,14 @@ variable. Canopy height is the parent of EcoSIM's Pft canopy height
   Plant area index** move to Canopy variable, beside Canopy height and closure.
 - **Fractional vegetation cover** moves to Land surface variable, beside its
   complement Bare ground cover, and changes unit from `m2.m-2` to `1`.
-- **Stand basal area** moves to Ecology variable, beside Vegetation biomass.
+- **Stand basal area and Stem count per unit area** move to Ecology variable,
+  beside Vegetation biomass and Organism count per unit area.
+- **Stand-level observables leave the Plant variable branch.** Canopy variable sits
+  under Plant variable, so the canopy indices stay inside it. Ecology variable and
+  Land surface variable do not, so Stand basal area, Stem count per unit area,
+  and Fractional vegetation cover are no longer plant variables. That is
+  deliberate: each describes a stand or a stretch of ground, a community rather
+  than a plant.
 
 ### Points to note for slice 3
 
