@@ -34828,7 +34828,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001879 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001879">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>One-sided green leaf area of a plant canopy per unit horizontal ground area.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/leafAreaIndex"/>
         <oboInOwl:hasRelatedSynonym>surface-LAI</oboInOwl:hasRelatedSynonym>
@@ -34850,7 +34850,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001880 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001880">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>Projected area of the stems and branches of a plant canopy per unit horizontal ground area.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>surface-SAI</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>tsai_day_pft</oboInOwl:hasRelatedSynonym>
@@ -35036,7 +35036,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001889 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001889">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>Leaf area index retrieved from canopy gap fraction under the assumption that foliage is randomly distributed, uncorrected for clumping; the product of the true leaf area index and the clumping index.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Le</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>effective LAI</oboInOwl:hasExactSynonym>
@@ -35057,7 +35057,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001890 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001890">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>One-sided area of all above-ground plant material, foliage and woody parts together, per unit horizontal ground area.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>PAI</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>

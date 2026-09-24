@@ -50,8 +50,8 @@ plants.
 
 | CHESS columns | BERVO term | Parent | Unit |
 | --- | --- | --- | --- |
-| `Le_2200`, `Le_FV2200`, `Le_WN` | Effective leaf area index (`BERVO:0001889`) | Plant trait variable | `m2.m-2` |
-| | Plant area index (`BERVO:0001890`) | Plant trait variable | `m2.m-2` |
+| `Le_2200`, `Le_FV2200`, `Le_WN` | Effective leaf area index (`BERVO:0001889`) | Canopy variable | `m2.m-2` |
+| | Plant area index (`BERVO:0001890`) | Canopy variable | `m2.m-2` |
 
 Plant area index has no CHESS column. It is what an optical canopy analyser
 measures before the woody correction, and the corrected columns are derived
