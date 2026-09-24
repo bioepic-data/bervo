@@ -541,9 +541,9 @@ cell density in soil a second parent of EcoSIM's Microbial density
   a child for water. The cell family names no method, so a modelled density, such
   as EcoSIM's Microbial density, belongs in it as much as a microscope count does;
   the culture method belongs to the colony family alone. Both are per cubic metre, one scale for each family.
-- **Body length is in `m`.** The usual scale depends on the body, and BERVO does
-  not carry two scales of one unit. Fish body length holds the fish standards:
-  total, fork, and standard length.
+- **Body length is in `m`**, one scale for the whole family, so that a fish and a
+  copepod compare directly, whatever scale each is usually reported in. Fish body
+  length holds the fish standards: total, fork, and standard length.
 - **Cover fractions take `1` and `value_types=Fraction`**: Canopy closure, Bare
   ground cover, Wrack cover, and now Fractional vegetation cover
   (`BERVO:0001883`), which was `m2.m-2`. Leaf area index keeps `m2.m-2`, because it
