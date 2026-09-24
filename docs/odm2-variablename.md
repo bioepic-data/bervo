@@ -887,7 +887,13 @@ plant tissue C:N ratios, carry no ODM2 name.
   (mmol/L)^0.5, which UCUM cannot write.
 - **Coarse fraction and Rock fraction.** ODM2's coarse fraction does not say
   whether it is by mass or by volume. Soil coarse fraction leaves the basis to
-  the data, and Rock fraction, the volume form, sits under it.
+  the data, and Rock fraction, the volume form, sits under it. The size cut-off
+  varies by domain as well: 2 mm in soil science, other sieve sizes in
+  engineering classifications. Issue #118 tracks how to model both.
+- **Exchange capacity units.** Soil exchangeable acidity is `cmol.kg-1`, as its
+  sibling Soil cation exchange capacity is. Both are conventionally moles of
+  charge, `ceq.kg-1` in UCUM. Issue #119 tracks the change for every exchange
+  term.
 - **Erosion rate.** The label Erosion rate belongs to EcoSIM's grid-cell total,
   so the generic term is Erosion rate per unit area, in `kg.m-2.a-1`. The two are
   siblings under Sediment variable. The grid-cell total is mass per time, not
