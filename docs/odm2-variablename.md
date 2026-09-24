@@ -563,11 +563,22 @@ variable. Canopy height is the parent of EcoSIM's Pft canopy height
 
 ### Points to note for slice 3
 
-- **A count per area is not a count.** Stem count per unit area and Organism count
-  per unit area take `attributes=Number density` and
-  `value_types=Quantitative value`, and a label that says "per unit area". Plain
-  counts with unit `1`, such as Fish detections and Taxa count, take
-  `attributes=Count` and `value_types=Count`.
+- **A count per area is not a count.** Stem count per unit area, Organism count
+  per unit area, and the microbial cell and colony densities take
+  `attributes=Number density` and `value_types=Quantitative value`, and the first
+  two a label that says "per unit area". A count, per grid cell or dimensionless,
+  such as Fish detections, Taxa count, and Plant population (`BERVO:0000725`, the
+  number of plants in a grid cell), takes `attributes=Count` and
+  `value_types=Count`.
+- **Where Number density sits.** Under Physical property, beside Density, because
+  Density is defined as mass per volume and a number density is not a mass. That
+  leaves Area density (`BERVO:8000267`), mass per unit area, under Density although
+  it is not a mass per volume either; that older placement is not changed here.
+  Count, the other candidate parent, sits under Quantitative value, and a number
+  density is a physical quantity, not a kind of value.
+- **The Stem density relabel was the curator's call.** "Stem density" is the usual
+  forestry term, and it stays as an exact synonym, so a search for it still finds
+  Stem count per unit area.
 - **Two kinds of microbial count.** A count of cells and a count of colonies grown
   in culture measure different things, so each has its own family: Microbial cell
   density, with children for water and soil, and Colony-forming unit density, with
@@ -578,11 +589,12 @@ variable. Canopy height is the parent of EcoSIM's Pft canopy height
   copepod compare directly, whatever scale each is usually reported in. Fish body
   length holds the fish standards: total, fork, and standard length.
 - **Cover fractions take `1` and `value_types=Fraction`**: Canopy closure, Bare
-  ground cover, Wrack cover, and Fractional vegetation cover. Leaf area index keeps
+  ground cover, Wrack cover, Leaf wetness, and Fractional vegetation cover. Leaf area index keeps
   `m2.m-2`, because it is not a fraction and can exceed 1.
-- **Leaf wetness** is a dimensionless index between a dry and a fully wet leaf.
-  Leaf wetness duration, time wet per interval, is a different quantity. Chlorophyll
-  fluorescence is `{RFU}` unless a sensor is calibrated to a concentration.
+- **Leaf wetness** is the fraction of a leaf surface covered by liquid water. A
+  sensor index approximates it; leaf wetness duration, time wet per interval, is a
+  different quantity. Chlorophyll fluorescence is `{RFU}` unless a sensor is
+  calibrated to a concentration.
 - **Biomass rows** name Biomass in `measurement_ofs` and the organism or
   compartment in `measured_ins`, Phytoplankton biomass included.
 - **No Index attribute.** NDVI and the Shannon indices keep `attributes=NA`: the
