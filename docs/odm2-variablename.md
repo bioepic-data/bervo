@@ -701,6 +701,11 @@ variable was not used: its definition is water chemistry.
   #108.
 - **Units.** Discharge-like flows are `m3.s-1`, water use `m3.d-1`, and groundwater
   recharge `mm.d-1`, per unit area.
+- **Parked in Hydrology variable.** Alluvium depth is a sediment thickness, and
+  sits here only until slice 5 (soil and geology) gives it a home. Secchi depth
+  and Light attenuation coefficient, the water optics, are covered by the
+  grouping's definition but may move when slice 6 (water quality) sets up its own
+  grouping.
 
 ## Points to note (slice 1)
 
