@@ -44,8 +44,8 @@ and left for a curator).
 | Was | UCUM | Rows | Note |
 | --- | --- | --- | --- |
 | `NA` | `NA` | 951 |  |
-| `NONE` | `1` | 222 |  |
-| `g d-2` | `g/{grid}` | 174 |  |
+| `NONE` | `1` | 222 | two categorical rows, `BERVO:0000826` and `BERVO:0001740`, became `NA` after review (#108) |
+| `g d-2` | `g/{grid}` | 174 | three `Log …` rows became `1` after review; see Logarithms |
 | `g d-2 h-1` | `g.h-1/{grid}` | 171 |  |
 | `m` | `m` | 87 |  |
 | `g m-3` | `g.m-3` | 66 |  |
@@ -65,7 +65,7 @@ and left for a curator).
 | `gC d-2 h-1` | `g{C}.h-1/{grid}` | 13 |  |
 | `m3 H2O d-2 h-1` | `m3{H2O}.h-1/{grid}` | 13 |  |
 | `m^3 mol^-1` | `m3.mol-1` | 13 |  |
-| `MPa` | `MPa` | 12 |  |
+| `MPa` | `MPa` | 12 | three `Log …` rows became `1` after review; see Logarithms |
 | `gC d-2` | `g{C}/{grid}` | 12 |  |
 | `mol^3 m^-9` | `mol3.m-9` | 12 |  |
 | `umol m-2 s-1` | `umol.m-2.s-1` | 12 |  |
