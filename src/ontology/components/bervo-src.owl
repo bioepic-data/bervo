@@ -36854,7 +36854,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
         <obo:IAO_0000115>Diversity index computed from the number of taxa in a sample and the proportion of individuals in each.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/shannonDiversityIndex"/>
-        <oboInOwl:hasRelatedSynonym>Shannon-Wiener index</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>Shannon entropy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Shannon index</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Shannon-Weaver diversity index</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Shannon-Wiener index</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Shannon diversity index&quot;: A diversity index that is based on the number of taxa, and the proportion of individuals in each taxa relative to the entire community, evaluated as entropy. Also known as Shannon-Weaver diversity index, the Shannon-Wiener index, the Shannon index and the Shannon entropy.</rdfs:comment>
         <rdfs:label>Shannon diversity index</rdfs:label>
@@ -36874,7 +36877,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
         <obo:IAO_0000115>Shannon diversity index divided by its maximum possible value for the number of taxa present, ranging from 0 to 1.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/shannonEvennessIndex"/>
-        <oboInOwl:hasRelatedSynonym>Pielou evenness index</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>Pielou evenness index</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Shannon Weaver evenness index</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Shannon evenness index&quot;: A dimensionless diversity index, calculated as a ratio of the Shannon diversity index over its maximum. Also known as the Shannon Weaver evenness index.</rdfs:comment>
         <rdfs:label>Shannon evenness index</rdfs:label>
