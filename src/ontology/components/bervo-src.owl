@@ -21697,7 +21697,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001157">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>The mass of organic matter in the grid cell in surface litter that is associated with autotrophic organisms and their byproducts. This parameter represents the carbon pool derived from photosynthetic organisms and affects nutrient cycling and energy flow in decomposer communities.</obo:IAO_0000115>
+        <obo:IAO_0000115>The mass of organic matter in surface litter, totalled over the grid cell, that is associated with autotrophic organisms and their byproducts. This parameter represents the carbon pool derived from photosynthetic organisms and affects nutrient cycling and energy flow in decomposer communities.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RC0ff_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
@@ -21716,7 +21716,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001158">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>The total volume of water in the grid cell present in the litter layer at the beginning of a simulation period. This parameter establishes initial hydrological conditions for modeling water dynamics, decomposition processes, and heat transfer in the litter layer.</obo:IAO_0000115>
+        <obo:IAO_0000115>The volume of water present in the litter layer, totalled over the grid cell, at the beginning of a simulation period. This parameter establishes initial hydrological conditions for modeling water dynamics, decomposition processes, and heat transfer in the litter layer.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LitWatMassBeg_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
@@ -21736,7 +21736,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001159">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>The total volume of water in the grid cell remaining in the litter layer at the end of a simulation period. This parameter allows calculation of net water flux through the litter layer and assessment of water balance changes over time.</obo:IAO_0000115>
+        <obo:IAO_0000115>The volume of water remaining in the litter layer, totalled over the grid cell, at the end of a simulation period. This parameter allows calculation of net water flux through the litter layer and assessment of water balance changes over time.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LitWatMassEnd_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
@@ -23608,7 +23608,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001261">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000019"/>
-        <obo:IAO_0000115>The mass flux rate of sediment movement in the grid cell over time due to water or wind transport. This parameter quantifies the horizontal movement of soil and sediment particles and is fundamental for understanding landscape evolution and material redistribution.</obo:IAO_0000115>
+        <obo:IAO_0000115>The mass flux rate of sediment movement in the grid cell due to water or wind transport. This parameter quantifies the horizontal movement of soil and sediment particles and is fundamental for understanding landscape evolution and material redistribution.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SED_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SedimentDataType.txt</rdfs:comment>
