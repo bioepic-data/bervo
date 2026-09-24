@@ -37160,19 +37160,20 @@
     <!-- https://w3id.org/bervo/BERVO_0001999 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001999">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001997"/>
-        <obo:IAO_0000115>Water level of a tidal water body relative to a tidal datum, rising and falling with the tide.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <obo:IAO_0000115>Categorical phase of the tide at an observation time: high, low, flood, or ebb.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/tideStage"/>
         <oboInOwl:hasExactSynonym>tidal stage</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Tide stage&quot;: Tidal stage.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Tide stage&quot;: Tidal stage. A categorical value, not a height; which categories a dataset uses is the question of issue #108.</rdfs:comment>
         <rdfs:label>Tide stage</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000076"/>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000724"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
 
