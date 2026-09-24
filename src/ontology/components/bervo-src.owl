@@ -37910,7 +37910,7 @@
         <oboInOwl:hasRelatedSynonym>ECa</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>apparent electrical conductivity</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Bulk electrical conductivity&quot;: Bulk electrical conductivity of a medium measured using a sensor such as time domain reflectometry (TDR), as a raw sensor response in the measurement of a quantity like soil moisture. Distinct from the electrical conductivity of the pore water or of a soil extract. ODM2 describes it as a raw sensor response used on the way to a quantity such as soil water content.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Bulk electrical conductivity&quot;: Bulk electrical conductivity of a medium measured using a sensor such as time domain reflectometry (TDR), as a raw sensor response in the measurement of a quantity like soil moisture. Distinct from the electrical conductivity of the pore water or of a soil extract, such as Measured electrical conductivity (BERVO:0001703), and from EcoSIM&apos;s Soil electrical conductivity (BERVO:0000916). ODM2 describes it as a raw sensor response used on the way to a quantity such as soil water content.</rdfs:comment>
         <rdfs:label>Bulk electrical conductivity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000885"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
