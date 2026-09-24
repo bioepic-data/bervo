@@ -866,6 +866,10 @@ geologic materials, and the deposits over them. Alluvium depth
   Their attribute is the existing Carbon to nitrogen ratio concept
   (`BERVO:8000109`). The mass ratio is `g{C}.g-1{N}`, the molar
   `mol{C}.mol-1{N}`.
+- **Loss on ignition** sits under Soil organic matter variable, and its
+  `measured_ins` is Soil and Sediment. Lake and marine sediment cores are a main
+  use of it. The Soil variable tree has no sediment counterpart for organic
+  matter, so the parent is narrower than the relationship.
 - **Sodium adsorption ratio** is `1` by convention. Formally it carries
   (mmol/L)^0.5, which UCUM cannot write.
 - **Coarse fraction and Rock fraction.** ODM2's coarse fraction does not say
