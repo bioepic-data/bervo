@@ -37836,50 +37836,6 @@
     
 
 
-    <!-- https://w3id.org/bervo/BERVO_0002033 -->
-
-    <Class rdf:about="https://w3id.org/bervo/BERVO_0002033">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
-        <obo:IAO_0000115>Mass of carbon divided by the mass of nitrogen in a material such as soil, litter, or plant tissue.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/carbonToNitrogenMassRatio"/>
-        <oboInOwl:hasExactSynonym>C:N mass ratio</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Carbon to nitrogen mass ratio&quot;: Carbon to nitrogen (C:N) mass ratio.</rdfs:comment>
-        <rdfs:label>Carbon to nitrogen mass ratio</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000109"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>g{C}.g-1{N}</bervo:BERVO_has_unit>
-        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
-    </Class>
-    
-
-
-    <!-- https://w3id.org/bervo/BERVO_0002034 -->
-
-    <Class rdf:about="https://w3id.org/bervo/BERVO_0002034">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
-        <obo:IAO_0000115>Amount of carbon divided by the amount of nitrogen, in moles, in a material such as soil, litter, or plant tissue.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/carbonToNitrogenMolarRatio"/>
-        <oboInOwl:hasExactSynonym>C:N molar ratio</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Carbon to nitrogen molar ratio&quot;: Carbon to nitrogen (C:N) molar ratio.</rdfs:comment>
-        <rdfs:label>Carbon to nitrogen molar ratio</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000109"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>mol{C}.mol-1{N}</bervo:BERVO_has_unit>
-        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
-    </Class>
-    
-
-
     <!-- https://w3id.org/bervo/BERVO_0002035 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002035">
@@ -38267,13 +38223,12 @@
     <!-- https://w3id.org/bervo/BERVO_0002053 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002053">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002033"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
         <obo:IAO_0000115>Mass of carbon divided by the mass of nitrogen in a soil, usually from total carbon and total nitrogen measured by dry combustion.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>soil C:N mass ratio</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
         <rdfs:label>Soil carbon to nitrogen mass ratio</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000109"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000917"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{C}.g-1{N}</bervo:BERVO_has_unit>
@@ -38288,13 +38243,12 @@
     <!-- https://w3id.org/bervo/BERVO_0002054 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002054">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002034"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
         <obo:IAO_0000115>Amount of carbon divided by the amount of nitrogen, in moles, in a soil.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>soil C:N molar ratio</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
         <rdfs:label>Soil carbon to nitrogen molar ratio</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000109"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000918"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>mol{C}.mol-1{N}</bervo:BERVO_has_unit>
@@ -38309,13 +38263,12 @@
     <!-- https://w3id.org/bervo/BERVO_0002055 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002055">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002033"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of carbon divided by the mass of nitrogen in a plant tissue, such as leaf, stem, or root, or in a whole plant.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>plant C:N mass ratio</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
         <rdfs:label>Plant tissue carbon to nitrogen mass ratio</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000109"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000917"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{C}.g-1{N}</bervo:BERVO_has_unit>
@@ -38330,13 +38283,12 @@
     <!-- https://w3id.org/bervo/BERVO_0002056 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002056">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002034"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Amount of carbon divided by the amount of nitrogen, in moles, in a plant tissue, such as leaf, stem, or root, or in a whole plant.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>plant C:N molar ratio</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
         <rdfs:label>Plant tissue carbon to nitrogen molar ratio</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000109"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000918"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>mol{C}.mol-1{N}</bervo:BERVO_has_unit>
@@ -55148,6 +55100,46 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Seismic refraction&quot;: Seismic refraction is a geophysical principle (see refraction) governed by Snell&apos;s Law. Used in the fields of engineering geology, geotechnical engineering and exploration geophysics, seismic refraction traverses (seismic lines) are performed using a seismograph(s) and/or geophone(s), in an array and an energy source.</rdfs:comment>
         <rdfs:label>Seismic refraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000917 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000917">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000109"/>
+        <obo:IAO_0000115>Carbon to nitrogen ratio in which carbon and nitrogen are each measured as a mass.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/carbonToNitrogenMassRatio"/>
+        <oboInOwl:hasExactSynonym>C:N mass ratio</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Carbon to nitrogen mass ratio&quot;: Carbon to nitrogen (C:N) mass ratio.</rdfs:comment>
+        <rdfs:label>Carbon to nitrogen mass ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000918 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000918">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000109"/>
+        <obo:IAO_0000115>Carbon to nitrogen ratio in which carbon and nitrogen are each measured as an amount of substance, in moles.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/carbonToNitrogenMolarRatio"/>
+        <oboInOwl:hasExactSynonym>C:N molar ratio</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Carbon to nitrogen molar ratio&quot;: Carbon to nitrogen (C:N) molar ratio.</rdfs:comment>
+        <rdfs:label>Carbon to nitrogen molar ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>

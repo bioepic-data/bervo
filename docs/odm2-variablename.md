@@ -794,9 +794,12 @@ geologic materials, and the deposits over them. Alluvium depth
 | Stokes Raman scattering (`BERVO:8000914`) | Raman spectroscopy | `scatterStokes` | none |
 | Anti-Stokes Raman scattering (`BERVO:8000915`) | Raman spectroscopy | `scatterAntiStokes` | none |
 | Seismic refraction (`BERVO:8000916`) | Method | `seismicRefraction` | none |
+| Carbon to nitrogen mass ratio (`BERVO:8000917`) | Carbon to nitrogen ratio | `carbonToNitrogenMassRatio` | none |
+| Carbon to nitrogen molar ratio (`BERVO:8000918`) | Carbon to nitrogen ratio | `carbonToNitrogenMolarRatio` | none |
 
-33 variables, `BERVO:0002024` to `BERVO:0002056`. The last four, the soil and
-plant tissue C:N ratios, carry no ODM2 name.
+31 variables, `BERVO:0002024` to `BERVO:0002056`. The last four, the soil and
+plant tissue C:N ratios, carry no ODM2 name. `BERVO:0002033` and `BERVO:0002034`
+are unused: they held the generic C:N ratios before review made them concepts.
 
 | BERVO variable | Parent | ODM2 term | Unit |
 | --- | --- | --- | --- |
@@ -809,8 +812,6 @@ plant tissue C:N ratios, carry no ODM2 name.
 | Phenol oxidase activity (`BERVO:0002030`) | Extracellular enzyme activity | `activityPhenolOxidase` | `nmol.g-1.h-1` |
 | Soil microbial biomass (`BERVO:0002031`) | Soil biogeochemistry variable | `biomassMicrobial` | `mg.kg-1` |
 | Soil bacterial DNA mass (`BERVO:0002032`) | Soil biogeochemistry variable | `biomassSoilBacterialDeoxyribonucleicAcid` | `mg.kg-1` |
-| Carbon to nitrogen mass ratio (`BERVO:0002033`) | Variable | `carbonToNitrogenMassRatio` | `g{C}.g-1{N}` |
-| Carbon to nitrogen molar ratio (`BERVO:0002034`) | Variable | `carbonToNitrogenMolarRatio` | `mol{C}.mol-1{N}` |
 | Sodium adsorption ratio (`BERVO:0002035`) | Soil biogeochemistry variable | `sodiumAdsorptionRatio` | `1` |
 | Bulk electrical conductivity (`BERVO:0002036`) | Soil variable | `bulkElectricalConductivity` | `dS.m-1` |
 | Soil depth (`BERVO:0002037`) | Soil variable | `soilDepth` | `m` |
@@ -872,13 +873,14 @@ plant tissue C:N ratios, carry no ODM2 name.
   (`BERVO:8000857`) and Xylosidase (`BERVO:8000858`), from slice 1, have no
   activity variable, because ODM2 has no activity name for them. ODM2 lists them
   only as enzymes.
-- **The C:N ratios.** ODM2's two ratios are generic, measured in any material,
-  and sit directly under Variable, since no grouping spans soil and plants. Each
-  has a soil child under Soil biogeochemistry variable and a plant tissue child
-  under Plant trait variable. All six take the existing Carbon to nitrogen ratio
-  concept (`BERVO:8000109`) as their attribute. The mass ratios are
-  `g{C}.g-1{N}`, the molar ratios `mol{C}.mol-1{N}`. EcoSIM's C:N ratio in
-  remobilizable nonstructural biomass sits under the plant tissue mass ratio.
+- **The C:N ratios.** ODM2's two ratios name no material, so they are
+  concepts: Carbon to nitrogen mass ratio and Carbon to nitrogen molar ratio,
+  under the existing Carbon to nitrogen ratio (`BERVO:8000109`). The variables
+  name what is measured: a soil pair under Soil biogeochemistry variable and a
+  plant tissue pair under Plant trait variable. Each takes the matching concept
+  as its attribute. The mass ratios are `g{C}.g-1{N}`, the molar ratios
+  `mol{C}.mol-1{N}`. EcoSIM's C:N ratio in remobilizable nonstructural biomass
+  sits under the plant tissue mass ratio.
 - **Loss on ignition** sits under Soil organic matter variable, and its
   `measured_ins` is Soil and Sediment. Lake and marine sediment cores are a main
   use of it. The Soil variable tree has no sediment counterpart for organic

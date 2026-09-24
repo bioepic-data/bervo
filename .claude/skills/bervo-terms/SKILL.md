@@ -255,7 +255,7 @@ cross-references on 779 terms today — about 27% of the ontology.
 look for an equivalent in the vocabularies BERVO aligns with as part of adding it, not as a
 later pass.
 
-Today 628 of the 779 cross-referenced terms are concepts (`8xxxxxx`) and 151 are
+Today 630 of the 779 cross-referenced terms are concepts (`8xxxxxx`) and 149 are
 variables, most of them from the ODM2 variable names. The concept majority records which
 vocabularies were mapped first: ODM2 speciation, medium and
 site type, COMO, and ChEBI name things and properties, which land on concepts. It is not a
