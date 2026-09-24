@@ -36047,30 +36047,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001940">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
-        <obo:IAO_0000115>Vertical turbulent transfer of horizontal momentum between the atmosphere and a surface, per unit area and time.</obo:IAO_0000115>
+        <obo:IAO_0000115>Vertical turbulent transfer of horizontal momentum between the atmosphere and a surface, per unit area and time, equal to the tangential stress the moving air exerts on the surface.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/momentumFlux"/>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Momentum flux&quot;: Momentum flux</rdfs:comment>
-        <rdfs:label>Momentum flux</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>N.m-2</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000891"/>
-    </Class>
-    
-
-
-    <!-- https://w3id.org/bervo/BERVO_0001941 -->
-
-    <Class rdf:about="https://w3id.org/bervo/BERVO_0001941">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
-        <obo:IAO_0000115>Tangential force per unit area that moving air exerts on the surface beneath it.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/windStress"/>
+        <oboInOwl:hasRelatedSynonym>wind stress</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Wind stress&quot;: Drag or trangential force per unit area exerted on a surface by the adjacent layer of moving air</rdfs:comment>
-        <rdfs:label>Wind stress</rdfs:label>
+        <rdfs:comment>ODM2 variable name concept &quot;Momentum flux&quot;: Momentum flux. ODM2 variable name concept &quot;Wind stress&quot;: Drag or trangential force per unit area exerted on a surface by the adjacent layer of moving air</rdfs:comment>
+        <rdfs:label>Momentum flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
