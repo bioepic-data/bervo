@@ -246,8 +246,8 @@ directly under `Concept`. The validator warns when a filler has no subclasses at
 
 ## Cross-references to other ontologies
 
-The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 1000
-cross-references on 778 terms today — about 27% of the ontology.
+The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 1002
+cross-references on 779 terms today — about 27% of the ontology.
 
 ### Map variables as well as concepts
 
@@ -255,7 +255,7 @@ cross-references on 778 terms today — about 27% of the ontology.
 look for an equivalent in the vocabularies BERVO aligns with as part of adding it, not as a
 later pass.
 
-Today 627 of the 778 cross-referenced terms are concepts (`8xxxxxx`) and 151 are
+Today 628 of the 779 cross-referenced terms are concepts (`8xxxxxx`) and 151 are
 variables, most of them from the ODM2 variable names. The concept majority records which
 vocabularies were mapped first: ODM2 speciation, medium and
 site type, COMO, and ChEBI name things and properties, which land on concepts. It is not a
@@ -270,7 +270,7 @@ or hourly, and a model-specific composite such as *Cumulative ecosystem heterotr
 respiration* may have no equivalent at all. A broader external term is not an exact
 equivalent.
 
-Most terms carry exactly one cross-reference; 206 carry two (typically a domain ontology
+Most terms carry exactly one cross-reference; 207 carry two (typically a domain ontology
 plus an ODM2 concept) and eight carry three or more. Leave the column blank when no good match exists — a wrong mapping is
 worse than none.
 
@@ -286,6 +286,7 @@ worse than none.
 | `AGRO` | Agronomy — *Irrigation* → `AGRO:00000006` | 1 |
 | `MIXS` | Sequence-metadata standard fields | 4 |
 | `COB` | Core Ontology for Biology and Biomedicine — *Organism* → `COB:0000022` | 1 |
+| `CHMO` | Chemical and analytical methods — *Raman spectroscopy* → `CHMO:0000656` | 2 |
 | `NCBITaxon` | Taxa — *Fungi* → `NCBITaxon:4751` | 5 |
 | `COMO` | Measurement and experiment metadata concepts | 275 |
 | `ODM2` | ODM2 controlled vocabularies, as `ODM2:<scheme>/<id>` — *Nitrite* → `ODM2:speciation/NO2`, *Rock* → `ODM2:medium/rock`, *Stream* → `ODM2:sitetype/stream`, *Albedo* → `ODM2:variablename/albedo` | 463 |

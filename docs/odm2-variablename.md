@@ -788,9 +788,9 @@ geologic materials, and the deposits over them. Alluvium depth
 | Deoxyribonucleic acid (`BERVO:8000908`) | Organic compound | none | `CHEBI:16991` |
 | Beta-N-acetylglucosaminidase (`BERVO:8000909`) | Enzyme | none | none |
 | Phenol oxidase (`BERVO:8000910`) | Enzyme | none | none |
-| X-ray diffraction (`BERVO:8000911`) | Method | `diffractionXRay` | none |
+| X-ray diffraction (`BERVO:8000911`) | Method | `diffractionXRay` | `CHMO:0000156` |
 | X-ray fluorescence (`BERVO:8000912`) | Method | `fluorescenceXRay` | none |
-| Raman spectroscopy (`BERVO:8000913`) | Method | none | none |
+| Raman spectroscopy (`BERVO:8000913`) | Method | none | `CHMO:0000656` |
 | Stokes Raman scattering (`BERVO:8000914`) | Raman spectroscopy | `scatterStokes` | none |
 | Anti-Stokes Raman scattering (`BERVO:8000915`) | Raman spectroscopy | `scatterAntiStokes` | none |
 | Seismic refraction (`BERVO:8000916`) | Method | `seismicRefraction` | none |
@@ -843,7 +843,10 @@ geologic materials, and the deposits over them. Alluvium depth
 - **Techniques are concepts.** `diffractionXRay`, `fluorescenceXRay`,
   `scatterStokes`, `scatterAntiStokes`, and `seismicRefraction` name methods, not
   quantities, so they sit under Method (`BERVO:8000303`). Raman spectroscopy is
-  added, with no ODM2 name, as the parent of the two scattering terms.
+  added, with no ODM2 name, as the parent of the two scattering terms. X-ray
+  diffraction and Raman spectroscopy carry CHMO cross-references. CHMO has no
+  exact match for X-ray fluorescence, only the broader X-ray emission
+  spectroscopy, nor for the other three, so they carry none.
 - **Soil horizon is a concept.** ODM2 defines the layer itself. A horizon
   designation, O, A, B, and so on, would be a categorical variable, and none is
   added here.

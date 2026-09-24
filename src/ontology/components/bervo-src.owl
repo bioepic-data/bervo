@@ -54958,6 +54958,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000911">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
         <obo:IAO_0000115>Technique that determines the atomic and molecular structure of a crystalline material from the directions and intensities into which the material diffracts a beam of incident X-rays, used to identify minerals.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000156"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/diffractionXRay"/>
         <oboInOwl:hasExactSynonym>XRD</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>X-ray crystallography</oboInOwl:hasRelatedSynonym>
@@ -54999,6 +55000,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000913">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
         <obo:IAO_0000115>Technique that identifies molecules and minerals from the inelastic scattering of monochromatic light, in which scattered photons gain or lose energy to molecular vibrations.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000656"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
         <rdfs:label>Raman spectroscopy</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
