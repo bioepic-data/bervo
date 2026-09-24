@@ -53443,8 +53443,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000897">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000717"/>
-        <obo:IAO_0000115>Aquatic vertebrates with gills and fins, taken as an ecological group rather than a single taxon, since the group is not monophyletic.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>fishes</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000115>Aquatic vertebrate with gills and fins. The grouping is not monophyletic, so no single taxon corresponds to it.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
         <rdfs:label>Fish</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
