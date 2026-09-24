@@ -246,8 +246,8 @@ directly under `Concept`. The validator warns when a filler has no subclasses at
 
 ## Cross-references to other ontologies
 
-The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 951
-cross-references on 734 terms today — about 26% of the ontology.
+The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 953
+cross-references on 736 terms today — about 26% of the ontology.
 
 ### Map variables as well as concepts
 
@@ -255,7 +255,7 @@ cross-references on 734 terms today — about 26% of the ontology.
 look for an equivalent in the vocabularies BERVO aligns with as part of adding it, not as a
 later pass.
 
-Today 617 of the 734 cross-referenced terms are concepts (`8xxxxxx`) and 117 are
+Today 618 of the 736 cross-referenced terms are concepts (`8xxxxxx`) and 118 are
 variables, most of them from the ODM2 variable names. The concept majority records which
 vocabularies were mapped first: ODM2 speciation, medium and
 site type, COMO, and ChEBI name things and properties, which land on concepts. It is not a
@@ -279,7 +279,7 @@ worse than none.
 | Prefix | Use for | Current count |
 | --- | --- | --- |
 | `CHEBI` | Chemical entities — *Nitrous oxide* → `CHEBI:17045` | 147 |
-| `ENVO` | Environmental materials, features, landforms, biomes, soil water states — *Runoff* → `ENVO:06105211`, *Stream* → `ENVO:00000023`, *Field capacity* → `ENVO:06105302` | 72 |
+| `ENVO` | Environmental materials, features, landforms, biomes, soil water states — *Runoff* → `ENVO:06105211`, *Stream* → `ENVO:00000023`, *Field capacity* → `ENVO:06105302` | 74 |
 | `PO` | Plant anatomy and development — *Leaf* → `PO:0025034` | 11 |
 | `PATO` | Qualities and properties — *Concentration* → `PATO:0000033` | 14 |
 | `GO` | Biological processes — *Biological process* → `GO:0008150` | 2 |
