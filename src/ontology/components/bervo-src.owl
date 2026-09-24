@@ -36750,25 +36750,6 @@
     
 
 
-    <!-- https://w3id.org/bervo/BERVO_0001977 -->
-
-    <Class rdf:about="https://w3id.org/bervo/BERVO_0001977">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
-        <obo:IAO_0000115>Mass of all living organisms in an area or volume, per unit ground area.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomassTotal"/>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Biomass, total&quot;: Total biomass.</rdfs:comment>
-        <rdfs:label>Total biomass</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000296"/>
-    </Class>
-    
-
-
     <!-- https://w3id.org/bervo/BERVO_0001978 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001978">
@@ -42300,8 +42281,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The total quantity or weight of organisms in a given area or volume. It may refer to the mass of a taxonomic group or of all species in a community.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomass"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomassTotal"/>
         <rdfs:comment>Definition source - Manual (JHC, Sep 29 2025)</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Biomass&quot;: Mass of living biological organisms in a given area or ecosystem at a given time. If this generic term is used, the publisher should specify/qualify the species, class, etc. being measured in the method, qualifier, or other appropriate field.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Biomass&quot;: Mass of living biological organisms in a given area or ecosystem at a given time. If this generic term is used, the publisher should specify/qualify the species, class, etc. being measured in the method, qualifier, or other appropriate field. ODM2 variable name concept &quot;Biomass, total&quot;: Total biomass.</rdfs:comment>
         <rdfs:label>Biomass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
