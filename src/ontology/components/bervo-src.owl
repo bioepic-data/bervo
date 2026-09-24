@@ -37004,7 +37004,7 @@
         <oboInOwl:hasRelatedSynonym>standard length</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>total length</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:comment>Which of the three measures was taken must be recorded with the data; they are not interchangeable.</rdfs:comment>
+        <rdfs:comment>The value is one of the three measures, not all three. Which one was taken must be recorded with the data; they are not interchangeable, and the related synonyms name the three measures, not alternative names for one.</rdfs:comment>
         <rdfs:label>Fish body length</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
