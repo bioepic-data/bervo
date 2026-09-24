@@ -575,9 +575,13 @@ variable. Canopy height is the parent of EcoSIM's Pft canopy height
   its label, it is the index of the deepest rooted layer, not a count, and it
   waits on issue #108 with the other layer indices.
 - **Where Number density sits.** Under Physical property, beside Density, because
-  Density is defined as mass per volume and a number density is not a mass. That
-  leaves Area density (`BERVO:8000267`), mass per unit area, under Density although
-  it is not a mass per volume either; that older placement is not changed here.
+  Density is defined as mass per volume and a number density is not a mass. Five
+  older terms use Density for something that is not a mass per volume, and none is
+  changed here: Area density (`BERVO:8000267`), mass per unit area, sits under it;
+  Total root length density (`BERVO:0000408`) and Root length density in soil
+  layers (`BERVO:0001103`), both `m.m-3`, Liquid water molar density
+  (`BERVO:0001881`), `mol.m-3`, and Optical density (`BERVO:8000515`), light
+  attenuation, name it in `attributes`.
   Count, the other candidate parent, sits under Quantitative value, and a number
   density is a physical quantity, not a kind of value.
 - **The Stem density relabel was the curator's call.** "Stem density" is the usual
