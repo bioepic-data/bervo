@@ -36661,7 +36661,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001972">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
-        <obo:IAO_0000115>Wetness of a leaf surface from dew, rain, or fog, as reported by a leaf wetness sensor.</obo:IAO_0000115>
+        <obo:IAO_0000115>Degree to which a leaf surface is covered by liquid water from dew, rain, or fog, as a dimensionless index between dry and fully wet.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/leafWetness"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Leaf wetness&quot;: The effect of moisture settling on the surface of a leaf as a result of either condensation or rainfall.</rdfs:comment>
