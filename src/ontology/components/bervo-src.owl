@@ -21794,6 +21794,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001162 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001162">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001989"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000018"/>
         <obo:IAO_0000115>The number of microbial cells per unit volume of soil or sediment. This parameter determines the spatial distribution of biogeochemical processes and influences the rates of nutrient cycling, organic matter decomposition, and greenhouse gas production in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>BIOS</oboInOwl:hasRelatedSynonym>
@@ -36827,25 +36828,6 @@
     
 
 
-    <!-- https://w3id.org/bervo/BERVO_0001982 -->
-
-    <Class rdf:about="https://w3id.org/bervo/BERVO_0001982">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
-        <obo:IAO_0000115>Number of cells or colony-forming units of a specified bacterial taxon per unit volume of water.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/e_coli"/>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;E-coli&quot;: Escherichia coli. Use with BERVO:involves_taxa. The taxon, such as Escherichia coli (NCBITaxon:562), is recorded with the data.</rdfs:comment>
-        <rdfs:label>Bacterial abundance</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>{CFU}.dL-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000081"/>
-    </Class>
-    
-
-
     <!-- https://w3id.org/bervo/BERVO_0001983 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001983">
@@ -36923,6 +36905,93 @@
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000403"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001987 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001987">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Number of microbial cells per unit volume of a medium, counted directly, for example by microscopy or flow cytometry.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>Use with BERVO:involves_taxa to name the taxon counted.</rdfs:comment>
+        <rdfs:label>Microbial cell density</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>{cells}.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001988 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001988">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001987"/>
+        <obo:IAO_0000115>Number of microbial cells per unit volume of water, counted directly, for example by epifluorescence microscopy or flow cytometry.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:label>Microbial cell density in water</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>{cells}.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001989 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001989">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001987"/>
+        <obo:IAO_0000115>Number of microbial cells per unit volume of soil or sediment, counted directly after extraction.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:label>Microbial cell density in soil</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>{cells}.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001990 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001990">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Number of colony-forming units of culturable microorganisms per unit volume of a medium, from plate or membrane-filter culture.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:comment>Use with BERVO:involves_taxa to name the taxon cultured. A culture count and a direct cell count measure different things and are not interchangeable.</rdfs:comment>
+        <rdfs:label>Colony-forming unit density</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>{CFU}.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0001991 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0001991">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001990"/>
+        <obo:IAO_0000115>Number of colony-forming units of culturable microorganisms per unit volume of water, the usual basis for fecal indicator bacteria such as Escherichia coli.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
+        <rdfs:label>Colony-forming unit density in water</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>{CFU}.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
     </Class>
     
 
