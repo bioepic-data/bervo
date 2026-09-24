@@ -736,6 +736,12 @@ new variables, Water use and the four water table cases, carry no ODM2 name.
   "impoundment" as related synonyms, now that Reservoir is its sibling.
 - **Units.** Discharge-like flows are `m3.s-1`, water use `m3.d-1`, and groundwater
   recharge `mm.d-1`, per unit area.
+- **Water variable is half swept.** It is defined as water chemistry. Water current
+  and Total precipitation left it here, since they are not chemistry. Four more
+  terms under it are not chemistry either, and still sit there: Turbidity of water
+  (`BERVO:0001836`), Liquid water molar density (`BERVO:0001881`), Chlorophyll
+  fluorescence (`BERVO:0001980`), and Water table flag from site file
+  (`BERVO:0000247`). Moving them is a separate change.
 - **Parked in Hydrology variable.** Alluvium depth is a sediment thickness, and
   sits here only until slice 5 (soil and geology) gives it a home. Secchi depth
   and Light attenuation coefficient, the water optics, are covered by the
