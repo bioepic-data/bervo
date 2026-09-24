@@ -31120,10 +31120,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001678">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
-        <obo:IAO_0000115>Soil Fe content refers to the concentration or amount of iron (Fe) present in the soil. It is an important parameter in earth systems modeling, as it influences various soil processes, such as nutrient cycling, organic matter decomposition, and plant growth. The soil Fe content can vary across different soil types and regions, and it is typically measured in units of mass per unit volume (e.g., g/kg or mg/kg). Understanding and accurately representing the soil Fe content is crucial for studying and simulating the interactions between the soil, vegetation, and climate in earth system models.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass of iron per unit mass of soil, expressed as the element. It influences nutrient cycling, organic matter decomposition, and plant growth.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CFE_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025); revised by Claude Opus 5.5 through Claude Code (Sep 24 2026) for issue #74</rdfs:comment>
         <rdfs:label>Soil iron content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -31139,10 +31139,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001679">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
-        <obo:IAO_0000115>Soil Ca content refers to the concentration or amount of calcium (Ca) present in the soil. It is an important parameter in earth system modeling as it influences various soil processes and properties, such as nutrient availability, pH, and cation exchange capacity. Soil Ca content can vary spatially and temporally and is influenced by factors such as parent material, weathering, leaching, and land management practices. It is typically measured in units of mass per unit volume of soil, such as kilograms per hectare or grams per cubic meter.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass of calcium per unit mass of soil, expressed as the element. It influences nutrient availability, soil pH, and cation exchange capacity, and varies with parent material, weathering, leaching, and land management.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CCA_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025); revised by Claude Opus 5.5 through Claude Code (Sep 24 2026) for issue #74</rdfs:comment>
         <rdfs:label>Soil calcium content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -31177,10 +31177,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001681">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
-        <obo:IAO_0000115>Soil Na content refers to the amount of sodium (Na) present in the soil. It is a parameter used in earth systems modeling to quantify the concentration of sodium ions in the soil. This parameter is important as it plays a crucial role in soil fertility, nutrient cycling, and plant growth. The soil Na content is typically expressed in units of mass per unit volume (e.g., grams per kilogram of soil).</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass of sodium per unit mass of soil, expressed as the element. It influences soil fertility, nutrient cycling, and plant growth.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CNA_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025); revised by Claude Opus 5.5 through Claude Code (Sep 24 2026) for issue #74</rdfs:comment>
         <rdfs:label>Soil sodium content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -31329,10 +31329,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001689">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
-        <obo:IAO_0000115>Soil AlPO4 content refers to the concentration or abundance of aluminum phosphate compound (AlPO4) in soil. It is a parameter used in earth systems modeling to quantify the contribution of this compound to soil composition and fertility. AlPO4 is important for nutrient cycling, as it can bind and release elements such as phosphorus in the soil, affecting the availability of nutrients for plants and other organisms. Soil AlPO4 content is typically measured in units of mass per unit volume of soil (e.g., grams per kilogram).</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass of aluminum phosphate (AlPO4) per unit mass of soil, expressed as its phosphorus. It binds and releases phosphorus, and so affects the phosphorus available to plants and other organisms.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CALPO_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025); revised by Claude Opus 5.5 through Claude Code (Sep 24 2026) for issue #74</rdfs:comment>
         <rdfs:label>Soil aluminum phosphate content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
