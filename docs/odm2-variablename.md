@@ -61,7 +61,7 @@ wrong. See "Points to note".
 | Vegetation | 32 | **Slice 3**, with ecology |
 | Ecology | 8 left | **Slice 3** |
 | Hydrology and snow | 31 | **Slice 4** |
-| Soil and geology | 44 | Slice 5 |
+| Soil and geology | 44 | **Slice 5** |
 | Water quality | 63 | Slice 6 |
 
 The two excluded buckets:
@@ -743,10 +743,145 @@ new variables, Water use and the four water table cases, carry no ODM2 name.
   fluorescence (`BERVO:0001980`), and Water table flag from site file
   (`BERVO:0000247`). Moving them is a separate change.
 - **Parked in Hydrology variable.** Alluvium depth is a sediment thickness, and
-  sits here only until slice 5 (soil and geology) gives it a home. Secchi depth
+  sat here until slice 5 moved it to Geology variable. Secchi depth
   and Light attenuation coefficient, the water optics, are covered by the
   grouping's definition but may move when slice 6 (water quality) sets up its own
   grouping.
+
+## Slice 5: soil and geology
+
+The 44 names of slice 5, 29 soil and 15 geology and terrain, follow the rules of
+the earlier slices: an observable is a variable, a name for a thing or a
+technique is a concept, a true equivalent is mapped rather than duplicated, and a
+generic observable becomes the parent of the EcoSIM variables that are narrower
+forms of it. Soil observations go into the existing Soil variable tree.
+
+### Mapped to existing terms
+
+| ODM2 term | BERVO term |
+| --- | --- |
+| `aspect` | Aspect (`BERVO:0000685`) |
+| `curvature` | Land surface curvature (`BERVO:0001893`) |
+| `topographicWetnessIndex` | Topographic wetness index (`BERVO:0001891`) |
+| `cationExchangeCapacity` | Soil cation exchange capacity (`BERVO:0000883`) |
+| `Clay` | Clay (`BERVO:8000209`), a concept |
+| `Sand` | Sand (`BERVO:8000089`), a concept |
+| `Silt` | Silt (`BERVO:8000037`), a concept |
+| `soilOrganicMatter` | Soil organic matter (`BERVO:8000584`), a concept |
+| `geologicUnit` | Geologic zone (`BERVO:8000467`), a concept |
+
+ODM2 defines `Clay`, `Sand`, and `Silt` as USDA particle size classes, and
+`soilOrganicMatter` and `geologicUnit` as the things themselves, so each maps to
+a concept, as `hail` did in slice 2. Geologic zone gains "geologic unit" as a
+related synonym.
+
+### New terms
+
+Geology variable (`BERVO:9000042`), under Variable, holds observations of bedrock,
+geologic materials, and the deposits over them. Alluvium depth
+(`BERVO:0002017`), parked in Hydrology variable by slice 4, moves into it.
+
+| BERVO term | Parent | ODM2 term | Other cross-reference |
+| --- | --- | --- | --- |
+| Bedrock (`BERVO:8000906`) | Rock | none | `ENVO:01000751` |
+| Soil horizon (`BERVO:8000907`) | Soil | `soilHorizon` | `ENVO:03600030` |
+| Deoxyribonucleic acid (`BERVO:8000908`) | Organic compound | none | `CHEBI:16991` |
+| Beta-N-acetylglucosaminidase (`BERVO:8000909`) | Enzyme | none | none |
+| Phenol oxidase (`BERVO:8000910`) | Enzyme | none | none |
+| X-ray diffraction (`BERVO:8000911`) | Method | `diffractionXRay` | none |
+| X-ray fluorescence (`BERVO:8000912`) | Method | `fluorescenceXRay` | none |
+| Raman spectroscopy (`BERVO:8000913`) | Method | none | none |
+| Stokes Raman scattering (`BERVO:8000914`) | Raman spectroscopy | `scatterStokes` | none |
+| Anti-Stokes Raman scattering (`BERVO:8000915`) | Raman spectroscopy | `scatterAntiStokes` | none |
+| Seismic refraction (`BERVO:8000916`) | Method | `seismicRefraction` | none |
+
+29 variables, `BERVO:0002024` to `BERVO:0002052`.
+
+| BERVO variable | Parent | ODM2 term | Unit |
+| --- | --- | --- | --- |
+| Soil exchangeable acidity (`BERVO:0002024`) | Soil biogeochemistry variable | `acidityExchange` | `cmol.kg-1` |
+| Soil base saturation (`BERVO:0002025`) | Soil biogeochemistry variable | `baseSaturation` | `1` |
+| Extracellular enzyme activity (`BERVO:0002026`) | Soil biogeochemistry variable | `extracellularEnzymeActivity` | `nmol.g-1.h-1` |
+| Acid phosphatase activity (`BERVO:0002027`) | Extracellular enzyme activity | `activityAcidPhosphatase` | `nmol.g-1.h-1` |
+| Beta-glucosidase activity (`BERVO:0002028`) | Extracellular enzyme activity | `activityBetaGlucosidase` | `nmol.g-1.h-1` |
+| Beta-N-acetylglucosaminidase activity (`BERVO:0002029`) | Extracellular enzyme activity | `activityBetaNAcetylGlucosaminidase` | `nmol.g-1.h-1` |
+| Phenol oxidase activity (`BERVO:0002030`) | Extracellular enzyme activity | `activityPhenolOxidase` | `nmol.g-1.h-1` |
+| Soil microbial biomass (`BERVO:0002031`) | Soil biogeochemistry variable | `biomassMicrobial` | `mg.kg-1` |
+| Soil bacterial DNA mass (`BERVO:0002032`) | Soil biogeochemistry variable | `biomassSoilBacterialDeoxyribonucleicAcid` | `mg.kg-1` |
+| Carbon to nitrogen mass ratio (`BERVO:0002033`) | Soil biogeochemistry variable | `carbonToNitrogenMassRatio` | `g{C}.g-1{N}` |
+| Carbon to nitrogen molar ratio (`BERVO:0002034`) | Soil biogeochemistry variable | `carbonToNitrogenMolarRatio` | `mol{C}.mol-1{N}` |
+| Sodium adsorption ratio (`BERVO:0002035`) | Soil biogeochemistry variable | `sodiumAdsorptionRatio` | `1` |
+| Bulk electrical conductivity (`BERVO:0002036`) | Soil variable | `bulkElectricalConductivity` | `dS.m-1` |
+| Soil depth (`BERVO:0002037`) | Soil variable | `soilDepth` | `m` |
+| Soil coarse fraction (`BERVO:0002038`) | Soil variable | `soilCoarseFraction` | `1` |
+| Soil aggregate stability (`BERVO:0002039`) | Soil variable | `soilAggregateStability` | `1` |
+| Soil texture class (`BERVO:0002040`) | Soil variable | `soilTexture` | `NA` |
+| Soil classification (`BERVO:0002041`) | Soil variable | `soilClassification` | `NA` |
+| Loss on ignition (`BERVO:0002042`) | Soil organic matter variable | `lossOnIgnition` | `1` |
+| Soil organic matter density fraction (`BERVO:0002043`) | Soil organic matter variable | `soilOrganicMatterDensityFractionation` | `1` |
+| Particle size (`BERVO:0002044`) | Sediment variable | `grainSize` | `m` |
+| Sediment fraction passing sieve (`BERVO:0002045`) | Sediment variable | `sedimentPassingSieve` | `1` |
+| Sediment fraction retained on sieve (`BERVO:0002046`) | Sediment variable | `sedimentRetainedOnSieve` | `1` |
+| Erosion rate per unit area (`BERVO:0002047`) | Sediment variable | `erosionRate` | `kg.m-2.a-1` |
+| Land classification (`BERVO:0002048`) | Land surface variable | `landClassification` | `NA` |
+| Bedrock type (`BERVO:0002049`) | Geology variable | `bedrockType` | `NA` |
+| Borehole log material classification (`BERVO:0002050`) | Geology variable | `boreholeLogMaterialClassification` | `NA` |
+| Natural gamma ray count rate (`BERVO:0002051`) | Geology variable | `gammaCounts` | `{counts}.s-1` |
+| Cosmic-ray neutron count rate (`BERVO:0002052`) | Soil and water variable | `neutronCount` | `{counts}.h-1` |
+
+### Existing terms changed
+
+- **Erosion rate** (`BERVO:0001254`), EcoSIM's grid-cell total in
+  `Mg/{grid}/{step}`, takes Erosion rate per unit area as a second parent.
+- **Soil microbial biomass carbon** (`BERVO:0001899`) and **Soil microbial biomass
+  nitrogen** (`BERVO:0001900`) take Soil microbial biomass as a second parent.
+- **Rock fraction** (`BERVO:0001529`), EcoSIM's volume fraction of rock fragments,
+  takes Soil coarse fraction as a second parent.
+- **Alluvium depth** (`BERVO:0002017`) moves from Hydrology variable to Geology
+  variable.
+
+### Points to note for slice 5
+
+- **Techniques are concepts.** `diffractionXRay`, `fluorescenceXRay`,
+  `scatterStokes`, `scatterAntiStokes`, and `seismicRefraction` name methods, not
+  quantities, so they sit under Method (`BERVO:8000303`). Raman spectroscopy is
+  added, with no ODM2 name, as the parent of the two scattering terms.
+- **Soil horizon is a concept.** ODM2 defines the layer itself. A horizon
+  designation, O, A, B, and so on, would be a categorical variable, and none is
+  added here.
+- **Categorical variables.** Soil texture class, Soil classification, Land
+  classification, Bedrock type, and Borehole log material classification take
+  `NA` with `value_types=Category`. Their categories belong to issue #108.
+  Soil type (`BERVO:8000497`), a COMO concept defined by particle size
+  distribution, is not mapped: it names a kind of soil, not the variable that
+  records one.
+- **Enzyme activities.** The four ODM2 activity names sit under a generic
+  Extracellular enzyme activity, in `nmol.g-1.h-1` per gram of dry soil.
+  Beta-N-acetylglucosaminidase (EC 3.2.1.52) is new and distinct from
+  Alpha-N-acetylglucosaminidase (`BERVO:8000856`, EC 3.2.1.50) from slice 1.
+  Phenol oxidase is new. Neither carries a cross-reference.
+- **The C:N ratios are generic**, measured in any material, and sit under Soil
+  biogeochemistry variable because soil is where most such data comes from.
+  Their attribute is the existing Carbon to nitrogen ratio concept
+  (`BERVO:8000109`). The mass ratio is `g{C}.g-1{N}`, the molar
+  `mol{C}.mol-1{N}`.
+- **Sodium adsorption ratio** is `1` by convention. Formally it carries
+  (mmol/L)^0.5, which UCUM cannot write.
+- **Coarse fraction and Rock fraction.** ODM2's coarse fraction does not say
+  whether it is by mass or by volume. Soil coarse fraction leaves the basis to
+  the data, and Rock fraction, the volume form, sits under it.
+- **Erosion rate.** The label Erosion rate belongs to EcoSIM's grid-cell total,
+  so the generic term is Erosion rate per unit area, in `kg.m-2.a-1`.
+- **ODM2 particle size ranges are wrong.** ODM2 gives sand as 0.5 to 2 mm and silt
+  as 0.002 to 0.5 mm; the USDA boundary is 0.05 mm. The BERVO concept definitions
+  keep the USDA ranges.
+- **Count rates.** The natural gamma count rate is `{counts}.s-1` and the
+  cosmic-ray neutron count rate `{counts}.h-1`, each in the scale its instruments
+  report. The neutron count sits under Soil and water variable, since it is
+  used to estimate soil water content.
+- **Units.** Particle size is `m`, one scale for lengths, as Body length is in
+  slice 3. Soil microbial biomass and Soil bacterial DNA mass are both
+  `mg.kg-1`.
 
 ## Points to note (slice 1)
 
