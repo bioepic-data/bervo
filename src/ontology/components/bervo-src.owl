@@ -24936,14 +24936,15 @@
     <!-- https://w3id.org/bervo/BERVO_0001344 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001344">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001912"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
         <obo:IAO_0000115>The temperature at which air becomes saturated with water vapor and condensation begins, averaged over a 24-hour period. This parameter is crucial for calculating relative humidity, vapor pressure deficit, and atmospheric moisture conditions in ecosystem water balance models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>DWPT</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Daily dewpoint temperature</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000554"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000554"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000282"/>
         <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
@@ -25031,14 +25032,15 @@
     <!-- https://w3id.org/bervo/BERVO_0001349 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001349">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001912"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
         <obo:IAO_0000115>The dewpoint temperature measured at hourly intervals, indicating the moisture content of air throughout the day. This parameter enables detailed modeling of humidity variations, vapor pressure deficit calculations, and plant water stress assessment at sub-daily resolution.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>DWPTH</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Hourly dewpoint temperature</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000554"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000554"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000283"/>
         <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
@@ -35497,9 +35499,9 @@
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/temperatureDewPoint"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Temperature, dew point&quot;: Dew point temperature</rdfs:comment>
-        <rdfs:label>Dew point temperature</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000554"/>
+        <rdfs:label>Dewpoint temperature</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000554"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>

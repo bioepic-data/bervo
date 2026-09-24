@@ -203,8 +203,9 @@ not `umol g-1 h-1 at 25 oC`. The definition can still say "at 25 degrees Celsius
 One exception is settled. The eight `… solubility coefficient at standard ambient
 temperature` rows keep the phrase in their labels (issue #99).
 
-Named reference states follow the same rule. `Dewpoint` goes in `contexts`, and so do the
-soil water states `Field capacity` and `Wilting point` (issue #83).
+Named reference states follow the same rule: the soil water states `Field capacity` and
+`Wilting point` go in `contexts` (issue #83). `Dewpoint` is the exception. A dewpoint
+temperature is the dewpoint itself, so `Dewpoint` goes in `attributes` (PR #110).
 
 ## Variables that involve a set of chemicals
 
