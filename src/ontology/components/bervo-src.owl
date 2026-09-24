@@ -12881,9 +12881,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000685">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
         <obo:IAO_0000115>The compass direction that a land surface faces, expressed in degrees from north, determining solar radiation exposure and microclimate conditions. This topographic aspect affects temperature distribution, moisture patterns, vegetation growth, and ecosystem dynamics through differential solar heating and drying effects.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/aspect"/>
         <oboInOwl:hasRelatedSynonym>ASP_col</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>surface-aspect</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>ATS: surface-aspect.</rdfs:comment>
+        <rdfs:comment>ATS: surface-aspect. ODM2 variable name concept &quot;Aspect&quot;: Aspect identifies the downslope direction of the maximum rate of change in value from each raster DEM cell to its neighbors.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>LandSurfDataType.txt</rdfs:comment>
         <rdfs:label>Aspect</rdfs:label>
@@ -13951,6 +13952,7 @@
     <!-- https://w3id.org/bervo/BERVO_0000743 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000743">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002055"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>The carbon to nitrogen mass ratio in nonstructural plant compounds that can be redistributed within the plant, including sugars, amino acids, and lipids not bound in structural tissues. This carbon to nitrogen ratio in remobilizable nonstructural biomass affects plant resource allocation and stress response capacity.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>rCNNonstRemob_pft</oboInOwl:hasRelatedSynonym>
@@ -16538,8 +16540,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000883">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
         <obo:IAO_0000115>The total amount of exchangeable cations that soil can hold on its surface and exchange with the soil solution, representing soil fertility and nutrient retention capacity. This soil cation exchange capacity affects plant nutrient availability and influences soil chemical buffering and fertilizer efficiency.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/cationExchangeCapacity"/>
         <oboInOwl:hasRelatedSynonym>CEC_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Cation exchange capacity (CEC)&quot;: Cation exchange capacity (CEC) is a measure of the total negative charges within the soil that adsorb plant nutrient cations such as calcium (Ca2+), magnesium (Mg2+) and potassium (K+). As such, the CEC is a property of a soil that describes its capacity to supply nutrient cations to the soil solution for plant uptake.</rdfs:comment>
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
         <rdfs:label>Soil cation exchange capacity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
@@ -28304,6 +28308,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001529 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001529">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002038"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
         <obo:IAO_0000115>The proportion of soil volume occupied by rock fragments, representing the non-soil mineral component. This parameter reduces effective soil volume for water storage and root growth, affects bulk density calculations, and influences soil thermal and hydraulic properties in stony soils.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>ROCK_vr</oboInOwl:hasRelatedSynonym>
@@ -35103,10 +35108,11 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001891">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
         <obo:IAO_0000115>Steady-state index of the tendency of a point on the land surface to accumulate water, the natural logarithm of the specific upslope contributing area divided by the tangent of the local slope.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/topographicWetnessIndex"/>
         <oboInOwl:hasExactSynonym>CTI</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>TWI</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>compound topographic index</oboInOwl:hasExactSynonym>
-        <rdfs:comment>CHESS: twi. Beven and Kirkby (1979).</rdfs:comment>
+        <rdfs:comment>CHESS: twi. Beven and Kirkby (1979). ODM2 variable name concept &quot;Topographic Wetness Index (TWI)&quot;: Topographic wetness index (TWI), also known as the compound topographic index (CTI), is a steady state wetness index. It is commonly used to quantify topographic control on hydrological processes.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
         <rdfs:label>Topographic wetness index</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -35145,9 +35151,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001893">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
         <obo:IAO_0000115>Second derivative of land surface elevation, the rate at which slope changes across the surface, with profile, plan, and total curvature as its directional forms.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/curvature"/>
         <oboInOwl:hasExactSynonym>surface curvature</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>terrain curvature</oboInOwl:hasExactSynonym>
-        <rdfs:comment>CHESS: curvature. The sign convention differs between GIS tools, so a dataset should state which sign is convex.</rdfs:comment>
+        <rdfs:comment>CHESS: curvature. The sign convention differs between GIS tools, so a dataset should state which sign is convex. ODM2 variable name concept &quot;Curvature&quot;: Curvature of a DEM measures the shape or curvature of the slope. A part of a surface can be concave or convex; you can tell that by looking at the curvature value. The curvature is calculated by computing the second derivative of the surface.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
         <rdfs:label>Land surface curvature</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -35266,6 +35273,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001899">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000995"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002031"/>
         <obo:IAO_0000115>Mass of carbon held in the living microbial biomass of a soil per unit soil mass, commonly determined by chloroform fumigation and extraction.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>MBC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>microbial biomass C</oboInOwl:hasRelatedSynonym>
@@ -35287,6 +35295,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001900">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000995"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002031"/>
         <obo:IAO_0000115>Mass of nitrogen held in the living microbial biomass of a soil per unit soil mass, commonly determined by chloroform fumigation and extraction.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>MBN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>microbial biomass N</oboInOwl:hasRelatedSynonym>
@@ -37513,7 +37522,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002017 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002017">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000042"/>
         <obo:IAO_0000115>Thickness of alluvium above bedrock at a point.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/alluviumDepth"/>
         <oboInOwl:hasRelatedSynonym>alluvium thickness</oboInOwl:hasRelatedSynonym>
@@ -37642,6 +37651,651 @@
         <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000902"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000799"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002024 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002024">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Part of the cation exchange capacity of a soil held by exchangeable hydrogen and aluminium ions, commonly extracted with a neutral salt such as potassium chloride.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/acidityExchange"/>
+        <oboInOwl:hasExactSynonym>exchangeable acidity</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Acidity, exchange&quot;: The total amount of the Cation Exchange Capacity (CEC) of a soil that is due to H+ and Al3+ ions. It is a proportion of the total acidity and it is dependent on the type of soil and the percentage of the CEC that is composed of exchangeable bases (Ca2+, Mg2+, K+).</rdfs:comment>
+        <rdfs:label>Soil exchangeable acidity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>cmol.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000039"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000180"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002025 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002025">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Fraction of the cation exchange capacity of a soil occupied by the exchangeable base cations calcium, magnesium, potassium, and sodium.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/baseSaturation"/>
+        <oboInOwl:hasExactSynonym>base saturation</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Base saturation&quot;: Percent base saturation (BS) is the percentage of the Cation Exchange Capacity (CEC) occupied by the basic cations Ca2+, Mg2+ and K+. ODM2 names calcium, magnesium, and potassium. Sodium is usually counted as well, and the set of cations is recorded with the data.</rdfs:comment>
+        <rdfs:label>Soil base saturation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002026 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002026">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Rate at which enzymes secreted into their surroundings by microbes or roots convert a substrate in an assay, per unit mass of dry soil, a measure of the capacity of a soil to break down organic macromolecules.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/extracellularEnzymeActivity"/>
+        <oboInOwl:hasRelatedSynonym>exoenzyme activity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>potential enzyme activity</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Extracellular enzyme activity&quot;: Extracellular enzymes or exoenzymes are synthesized inside the cell and then secreted outside the cell, where their function is to break down complex macromolecules into smaller units to be taken up by the cell for growth and assimilation. Assays commonly supply a fluorogenic or chromogenic substrate at a saturating concentration, so the value is a potential rate. The substrate and the assay temperature and pH are recorded with the data.</rdfs:comment>
+        <rdfs:label>Extracellular enzyme activity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000353"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>nmol.g-1.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000852"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002027 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002027">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002026"/>
+        <obo:IAO_0000115>Extracellular enzyme activity of acid phosphatase, which releases inorganic phosphate from organic phosphate monoesters, per unit mass of dry soil.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/activityAcidPhosphatase"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Activity, acid phosphatase&quot;: Assay for microbial activity using acid phosphatase.</rdfs:comment>
+        <rdfs:label>Acid phosphatase activity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000353"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>nmol.g-1.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000853"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002028 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002028">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002026"/>
+        <obo:IAO_0000115>Extracellular enzyme activity of beta-glucosidase, which releases glucose in the last step of cellulose breakdown, per unit mass of dry soil.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/activityBetaGlucosidase"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Activity, beta-glucosidase&quot;: Assay for microbial activity using beta-glucosidase.</rdfs:comment>
+        <rdfs:label>Beta-glucosidase activity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000353"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>nmol.g-1.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000855"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002029 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002029">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002026"/>
+        <obo:IAO_0000115>Extracellular enzyme activity of beta-N-acetylglucosaminidase, which releases N-acetylglucosamine in the breakdown of chitin and peptidoglycan, per unit mass of dry soil.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/activityBetaNAcetylGlucosaminidase"/>
+        <oboInOwl:hasRelatedSynonym>NAG activity</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Activity, beta-N-acetyl glucosaminidase&quot;: Assay for microbial activity using beta-N-acetyl glucosaminidase.</rdfs:comment>
+        <rdfs:label>Beta-N-acetylglucosaminidase activity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000353"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>nmol.g-1.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000909"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002030 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002030">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002026"/>
+        <obo:IAO_0000115>Extracellular enzyme activity of phenol oxidase, which oxidizes phenolic compounds in the breakdown of lignin, per unit mass of dry soil.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/activityPhenolOxidase"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Activity, phenol oxidase&quot;: Assay for microbial activity using phenol oxidase. Commonly assayed with L-DOPA as the substrate.</rdfs:comment>
+        <rdfs:label>Phenol oxidase activity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000353"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>nmol.g-1.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000910"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002031 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002031">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Mass of the living microbial biomass, bacteria and fungi, in a soil per unit mass of dry soil, the living part of soil organic matter.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomassMicrobial"/>
+        <oboInOwl:hasRelatedSynonym>microbial biomass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Biomass, microbial&quot;: Microbial biomass (bacteria and fungi) is a measure of the mass of the living component of soil organic matter. Often reported as its carbon or nitrogen, which Soil microbial biomass carbon and Soil microbial biomass nitrogen hold.</rdfs:comment>
+        <rdfs:label>Soil microbial biomass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002032 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002032">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Dry mass of bacterial deoxyribonucleic acid per unit mass of dry soil, a measure of bacterial biomass.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomassSoilBacterialDeoxyribonucleicAcid"/>
+        <oboInOwl:hasRelatedSynonym>soil bacterial DNA biomass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Biomass, soil bacterial deoxyribonucleic acid (DNA)&quot;: Total dry mass of soil bacterial deoxyribonucleic acid (DNA) per unit mass of soil.</rdfs:comment>
+        <rdfs:label>Soil bacterial DNA mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000081"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000908"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002035 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002035">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Concentration of sodium ions divided by the square root of half the summed concentrations of calcium and magnesium ions, each in millimoles of charge per litre, in irrigation water or a soil solution extract, an index of the hazard sodium poses to soil structure.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/sodiumAdsorptionRatio"/>
+        <oboInOwl:hasExactSynonym>SAR</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Sodium adsorption ratio&quot;: Sodium adsorption ratio. Formally the ratio carries a unit of (mmol/L)^0.5, which UCUM cannot write. By convention it is reported without a unit.</rdfs:comment>
+        <rdfs:label>Sodium adsorption ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000143"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002036 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002036">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
+        <obo:IAO_0000115>Electrical conductivity of a porous medium as a whole, solids, water, and air together, as read in place by a sensor such as a time domain reflectometry probe.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/bulkElectricalConductivity"/>
+        <oboInOwl:hasRelatedSynonym>ECa</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>apparent electrical conductivity</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Bulk electrical conductivity&quot;: Bulk electrical conductivity of a medium measured using a sensor such as time domain reflectometry (TDR), as a raw sensor response in the measurement of a quantity like soil moisture. Distinct from the electrical conductivity of the pore water or of a soil extract, such as Measured electrical conductivity (BERVO:0001703), and from EcoSIM&apos;s Soil electrical conductivity (BERVO:0000916). ODM2 describes it as a raw sensor response used on the way to a quantity such as soil water content.</rdfs:comment>
+        <rdfs:label>Bulk electrical conductivity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000885"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>dS.m-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002037 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002037">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
+        <obo:IAO_0000115>Vertical distance from the soil surface down to bedrock or another layer that restricts roots, the thickness of the soil profile at a point.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/soilDepth"/>
+        <oboInOwl:hasRelatedSynonym>depth to bedrock</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>soil thickness</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Depth, soil&quot;: Depth of soil.</rdfs:comment>
+        <rdfs:label>Soil depth</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002038 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002038">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
+        <obo:IAO_0000115>Fraction of a soil sample made up of particles larger than 2 mm in diameter, gravel and larger rock fragments.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/soilCoarseFraction"/>
+        <oboInOwl:hasRelatedSynonym>coarse fragment content</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Soil coarse fraction&quot;: Fraction of particles within a soil sample that are greater that 2mm in diameter. The basis, mass or volume, is recorded with the data. Rock fraction is EcoSIM&apos;s volume form.</rdfs:comment>
+        <rdfs:label>Soil coarse fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000719"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002039 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002039">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
+        <obo:IAO_0000115>Fraction of soil aggregates that resist breakdown under a stated disruptive force, such as wet sieving or rapid wetting, a measure of soil structure.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/soilAggregateStability"/>
+        <oboInOwl:hasRelatedSynonym>water-stable aggregates</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Soil aggregate stability&quot;: Soil aggregate stability is a measure of the ability of soil aggregates to resist degradation when exposed to external forces such as water erosion and wind erosion, shrinking and swelling processes, and tillage. Soil aggregate stability is a measure of soil structure and can be impacted by soil management. Some methods report an index instead, such as a mean weight diameter or a slaking score. The method is recorded with the data.</rdfs:comment>
+        <rdfs:label>Soil aggregate stability</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002040 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002040">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
+        <obo:IAO_0000115>Class of a soil by the proportions of sand, silt, and clay in its fine earth, such as loam or silty clay in the USDA texture triangle, determined by feel in the field or from a particle size analysis.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/soilTexture"/>
+        <oboInOwl:hasExactSynonym>soil texture</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Soil texture&quot;: Soil texture is a classification instrument used both in the field and laboratory to determine soil classes based on their physical texture. Soil texture can be determined using qualitative methods such as texture by feel, and quantitative methods such as the hydrometer method. The class is read from the quantities Soil sand content (BERVO:0001526), Soil silt content (BERVO:0001527), and Soil clay content (BERVO:0001528).</rdfs:comment>
+        <rdfs:label>Soil texture class</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002041 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002041">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
+        <obo:IAO_0000115>Class a soil is assigned to in a soil classification system, such as an order of USDA Soil Taxonomy or a reference soil group of the World Reference Base.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/soilClassification"/>
+        <oboInOwl:hasRelatedSynonym>soil taxonomic class</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Soil classification&quot;: For soil resources, experience has shown that a natural system approach to classification, i.e. grouping soils by their intrinsic property (soil morphology), behaviour, or genesis, results in classes that can be interpreted for many diverse uses. Differing concepts of pedogenesis, and differences in the significance of morphological features to various land uses can affect the classification approach. The classification system is recorded with the data.</rdfs:comment>
+        <rdfs:label>Soil classification</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002042 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002042">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000030"/>
+        <obo:IAO_0000115>Fraction of the dry mass of a sample lost on heating at a stated temperature until the mass stops changing, used to estimate organic matter content and, at higher temperatures, carbonate content.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/lossOnIgnition"/>
+        <oboInOwl:hasExactSynonym>LOI</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Loss on ignition&quot;: Loss on ignition is a test used in inorganic analytical chemistry, particularly in the analysis of minerals. It consists of strongly heating (&quot;igniting&quot;) a sample of the material at a specified temperature, allowing volatile substances to escape, until its mass ceases to change.</rdfs:comment>
+        <rdfs:label>Loss on ignition</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000286"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002043 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002043">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000030"/>
+        <obo:IAO_0000115>Fraction of the soil organic matter recovered in one density fraction, light or heavy, when a soil sample is separated in a dense liquid.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/soilOrganicMatterDensityFractionation"/>
+        <oboInOwl:hasRelatedSynonym>SOM density fraction</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Soil organic matter (SOM) density fractionation&quot;: Density fraction of Soil organic matter (SOM) in soil. Soil organic matter (SOM) is the organic matter component of soil, consisting of plant and animal residues at various stages of decomposition, cells and tissues of soil organisms, and substances synthesized by soil organisms. The liquid density, often 1.6 to 1.85 g cm-3, and which fraction is reported are recorded with the data.</rdfs:comment>
+        <rdfs:label>Soil organic matter density fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000584"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002044 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002044">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000019"/>
+        <obo:IAO_0000115>Diameter of an individual grain of sediment or soil, or of a clastic particle in a rock.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/grainSize"/>
+        <oboInOwl:hasRelatedSynonym>grain size</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Grain size&quot;: Grain size (or particle size) is the diameter of individual grains of sediment, or the lithified particles in clastic rocks. The term may also be applied to other granular materials. Often reported in millimetres or micrometres, or on the phi scale.</rdfs:comment>
+        <rdfs:label>Particle size</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002045 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002045">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000019"/>
+        <obo:IAO_0000115>Fraction of the mass of a sediment or soil sample that passes through a sieve of a stated opening in a particle size gradation test.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/sedimentPassingSieve"/>
+        <oboInOwl:hasRelatedSynonym>percent passing</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Sediment, passing sieve&quot;: The amount of sediment passing a sieve in a gradation test. The sieve opening is recorded with the data.</rdfs:comment>
+        <rdfs:label>Sediment fraction passing sieve</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002046 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002046">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000019"/>
+        <obo:IAO_0000115>Fraction of the mass of a sediment or soil sample that a sieve of a stated opening retains in a particle size gradation test.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/sedimentRetainedOnSieve"/>
+        <oboInOwl:hasRelatedSynonym>percent retained</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Sediment, retained on sieve&quot;: The amount of sediment retained on a sieve in a gradation test. The sieve opening is recorded with the data.</rdfs:comment>
+        <rdfs:label>Sediment fraction retained on sieve</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002047 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002047">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000019"/>
+        <obo:IAO_0000115>Mass of soil, rock, or dissolved material removed from a land surface by water, wind, ice, or gravity per unit area per unit time.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/erosionRate"/>
+        <oboInOwl:hasRelatedSynonym>denudation rate</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Erosion rate&quot;: In earth science, erosion is the action of surface processes (such as water flow or wind) that removes soil, rock, or dissolved material from one location on the Earth&apos;s crust, and then transports it to another location (not to be confused with weathering which involves no movement). Some studies report the rate as a lowering of the surface, a length per unit time.</rdfs:comment>
+        <rdfs:label>Erosion rate per unit area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>kg.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000719"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002048 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002048">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
+        <obo:IAO_0000115>Class a unit of land is assigned to in a geographical land classification, a territory within natural boundaries whose components share an origin and a characteristic structure, such as a landscape type.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/landClassification"/>
+        <oboInOwl:hasRelatedSynonym>land unit type</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Land classification&quot;: Geographical land classification- genetically homogeneous territorial unit within natural boundaries with a certain structure and a certain character of interrelationships of considered components.</rdfs:comment>
+        <rdfs:label>Land classification</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002049 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002049">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000042"/>
+        <obo:IAO_0000115>Kind of rock that forms the bedrock at a site, by lithology, such as granite, sandstone, or limestone.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/bedrockType"/>
+        <oboInOwl:hasRelatedSynonym>bedrock lithology</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Bedrock type&quot;: In geology, bedrock is the lithified rock that lies under a loose softer material called regolith at the surface of the Earth or other terrestrial planets.</rdfs:comment>
+        <rdfs:label>Bedrock type</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000906"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002050 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002050">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000042"/>
+        <obo:IAO_0000115>Kind of material a driller encounters over a depth interval while drilling a well, as recorded in the borehole log, such as clay, sand, gravel, or a named rock.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/boreholeLogMaterialClassification"/>
+        <oboInOwl:hasRelatedSynonym>driller&apos;s log lithology</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Borehole log material classification&quot;: Classification of material encountered by a driller at various depths during the drilling of a well and recorded in the borehole log.</rdfs:comment>
+        <rdfs:label>Borehole log material classification</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000719"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000721"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002051 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002051">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000042"/>
+        <obo:IAO_0000115>Rate at which a detector counts gamma rays emitted by naturally radioactive potassium, thorium, and uranium in rock or sediment, used in a borehole or at the surface to tell lithologies apart.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/gammaCounts"/>
+        <oboInOwl:hasRelatedSynonym>gamma log</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>gamma ray log</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Gamma counts&quot;: The radioactivity of rocks has been used for many years to help derive lithologies. Natural occurring radioactive materials (NORM) include the elements uranium, thorium, potassium, radium, and radon, along with the minerals that contain them. There is usually no fundamental connection between different rock types and measured gamma ray intensity, but there exists a strong general correlation between the radioactive isotope content and mineralogy. Logging tools have been developed to read the gamma rays emitted by these elements and interpret lithology from the information collected. Borehole gamma logs are often calibrated to API gamma ray units instead.</rdfs:comment>
+        <rdfs:label>Natural gamma ray count rate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>{counts}.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000719"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002052 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002052">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
+        <obo:IAO_0000115>Rate at which a detector above the ground counts the neutrons that cosmic rays produce and that soil water moderates, used to estimate soil water content over a footprint of several hectares.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/neutronCount"/>
+        <oboInOwl:hasRelatedSynonym>cosmic-ray neutron count</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Neutron Count&quot;: Neutron counts of the naturally occurring cosmic rays.</rdfs:comment>
+        <rdfs:label>Cosmic-ray neutron count rate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>{counts}.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002053 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002053">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Mass of carbon divided by the mass of nitrogen in a soil, usually from total carbon and total nitrogen measured by dry combustion.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>soil C:N mass ratio</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:label>Soil carbon to nitrogen mass ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000917"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>g{C}.g-1{N}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002054 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002054">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Amount of carbon divided by the amount of nitrogen, in moles, in a soil.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>soil C:N molar ratio</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:label>Soil carbon to nitrogen molar ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000918"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mol{C}.mol-1{N}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002055 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002055">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of carbon divided by the mass of nitrogen in a plant tissue, such as leaf, stem, or root, or in a whole plant.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>plant C:N mass ratio</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:label>Plant tissue carbon to nitrogen mass ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000917"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>g{C}.g-1{N}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002056 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002056">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Amount of carbon divided by the amount of nitrogen, in moles, in a plant tissue, such as leaf, stem, or root, or in a whole plant.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>plant C:N molar ratio</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:label>Plant tissue carbon to nitrogen molar ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000918"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mol{C}.mol-1{N}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
     
 
@@ -38356,9 +39010,11 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000037">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>Fine particles of mineral material with diameters between 2 and 50 micrometers that are transported by water and wind and deposited as sediment. This particle size class influences soil texture, water retention, nutrient holding capacity, and erosion susceptibility in terrestrial ecosystems and sedimentary environments.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/Silt"/>
         <oboInOwl:hasExactSynonym>fine particles</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>sediment</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Silt&quot;: USDA particle size distribution category. 0.002 to 0.5 mm diameter fine earth particles.</rdfs:comment>
         <rdfs:label>Silt</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -39283,7 +39939,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>Loose granular material composed of finely divided rock and mineral particles with diameters between 0.05 and 2 millimeters. This soil component affects water infiltration, drainage, aeration, and root penetration while influencing soil texture, structure, and hydraulic properties in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000017"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/Sand"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Sand&quot;: USDA particle size distribution category. 0.5 to 2 mm diameter fine earth particles.</rdfs:comment>
         <rdfs:label>Sand</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -41411,8 +42069,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>Fine-grained soil material composed of mineral particles smaller than 2 micrometers that strongly influences soil properties and ecosystem functioning. This soil component affects water retention, nutrient holding capacity, soil structure, and provides important surfaces for chemical reactions and microbial activity in terrestrial systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002982"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/Clay"/>
         <oboInOwl:hasRelatedSynonym>adobe</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Clay&quot;: USDA particle size distribution category. Less then 0.002 mm diameter fine earth particles.</rdfs:comment>
         <rdfs:label>Clay</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -46054,9 +46714,12 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000467">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
-        <obo:IAO_0000115>A stratigraphic layer or formation characterized by specific geological age, composition, or fossil content. Geologic zones provide temporal and spatial context.</obo:IAO_0000115>
+        <obo:IAO_0000115>Stratigraphic layer or formation characterized by specific geological age, composition, or fossil content. Geologic zones provide temporal and spatial context.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000404"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/geologicUnit"/>
+        <oboInOwl:hasRelatedSynonym>geologic unit</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Geologic unit&quot;: Geologic units consists primarily of identifying physiographic units and determining the rock lithology or coarse stratigraphy of exposed units.</rdfs:comment>
         <rdfs:label>Geologic zone</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -48082,7 +48745,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000286"/>
         <obo:IAO_0000115>The organic fraction of soil, comprising plant and microbial residues at all stages of decomposition together with stabilized humified compounds.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_04000008"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/soilOrganicMatter"/>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Aug 28 2026)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Soil organic matter (SOM)&quot;: Soil organic matter (SOM) is the organic matter component of soil, consisting of plant and animal residues at various stages of decomposition, cells and tissues of soil organisms, and substances synthesized by soil organisms.</rdfs:comment>
         <rdfs:label>Soil organic matter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -54229,6 +54894,262 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_8000906 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000906">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000719"/>
+        <obo:IAO_0000115>Lithified rock that lies under the loose regolith at the land surface.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000751"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:label>Bedrock</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000907 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000907">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <obo:IAO_0000115>Layer of soil parallel to the soil surface whose physical, chemical, and biological properties differ from those of the layers above and below it.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_03600030"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/soilHorizon"/>
+        <oboInOwl:hasRelatedSynonym>soil layer</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Soil horizon&quot;: A soil horizon is a layer parallel to the soil surface, whose physical characteristics differ from the layers above and beneath. Each soil type usually has three or four horizons.</rdfs:comment>
+        <rdfs:label>Soil horizon</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000908 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000908">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Linear polymer of deoxyribonucleotides joined by phosphodiester bonds that carries the genetic information of cells and many viruses.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16991"/>
+        <oboInOwl:hasExactSynonym>DNA</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:label>Deoxyribonucleic acid</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000909 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000909">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000852"/>
+        <obo:IAO_0000115>Glycoside hydrolase that removes terminal non-reducing N-acetyl-beta-D-glucosamine residues, releasing N-acetylglucosamine in the breakdown of chitin and peptidoglycan, EC 3.2.1.52.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>N-acetyl-beta-D-glucosaminidase</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>NAG</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>chitobiase</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:label>Beta-N-acetylglucosaminidase</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000910 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000910">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000852"/>
+        <obo:IAO_0000115>Oxidoreductase that oxidizes phenolic compounds with molecular oxygen, such as laccase, EC 1.10.3.2, and catechol oxidase, EC 1.10.3.1, active in the breakdown of lignin and the formation of humus.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>polyphenol oxidase</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:label>Phenol oxidase</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000911 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000911">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
+        <obo:IAO_0000115>Technique that determines the atomic and molecular structure of a crystalline material from the directions and intensities into which the material diffracts a beam of incident X-rays, used to identify minerals.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000156"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/diffractionXRay"/>
+        <oboInOwl:hasExactSynonym>XRD</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>X-ray crystallography</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Diffraction, X-ray (XRD)&quot;: X-ray crystallography (XRC) is a technique used for determining the atomic and molecular structure of a crystal, in which the crystalline structure causes a beam of incident X-rays to diffract into many specific directions.</rdfs:comment>
+        <rdfs:label>X-ray diffraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000912 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000912">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
+        <obo:IAO_0000115>Technique that determines the elemental composition of a material from the characteristic secondary X-rays the material emits when excited by high-energy X-rays or gamma rays.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/fluorescenceXRay"/>
+        <oboInOwl:hasExactSynonym>XRF</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Fluorescence, X-ray (XRF)&quot;: X-ray fluorescence (XRF) is the emission of characteristic &quot;secondary&quot; (or fluorescent) X-rays from a material that has been excited by bombarding with high-energy X-rays or gamma rays.</rdfs:comment>
+        <rdfs:label>X-ray fluorescence</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000913 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000913">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
+        <obo:IAO_0000115>Technique that identifies molecules and minerals from the inelastic scattering of monochromatic light, in which scattered photons gain or lose energy to molecular vibrations.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000656"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:label>Raman spectroscopy</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000914 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000914">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000913"/>
+        <obo:IAO_0000115>Raman scattering in which the material absorbs energy and the scattered photon has a lower energy, a longer wavelength, than the incident photon.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/scatterStokes"/>
+        <oboInOwl:hasExactSynonym>Stokes scatter</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Scatter, Stokes&quot;: The material absorbs energy and the emitted photon has a lower energy than the incident photon. This outcome is labeled Stokes Raman scattering in honor of George Stokes who showed in 1852 that fluorescence is due to light emission at longer wavelength (now known to correspond to lower energy) than the absorbed incident light.</rdfs:comment>
+        <rdfs:label>Stokes Raman scattering</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000915 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000915">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000913"/>
+        <obo:IAO_0000115>Raman scattering in which the material loses energy and the scattered photon has a higher energy, a shorter wavelength, than the incident photon.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/scatterAntiStokes"/>
+        <oboInOwl:hasExactSynonym>anti-Stokes scatter</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Scatter, anti-stokes&quot;: The material loses energy and the emitted photon has a higher energy than the absorbed photon. This outcome is labeled anti-Stokes Raman scattering.</rdfs:comment>
+        <rdfs:label>Anti-Stokes Raman scattering</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000916 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000916">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
+        <obo:IAO_0000115>Geophysical technique that maps subsurface layers from the travel times of seismic waves refracted along the boundaries between layers of different seismic velocity, recorded by an array of geophones.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/seismicRefraction"/>
+        <oboInOwl:hasRelatedSynonym>seismic refraction survey</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Seismic refraction&quot;: Seismic refraction is a geophysical principle (see refraction) governed by Snell&apos;s Law. Used in the fields of engineering geology, geotechnical engineering and exploration geophysics, seismic refraction traverses (seismic lines) are performed using a seismograph(s) and/or geophone(s), in an array and an energy source.</rdfs:comment>
+        <rdfs:label>Seismic refraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000917 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000917">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000109"/>
+        <obo:IAO_0000115>Carbon to nitrogen ratio in which carbon and nitrogen are each measured as a mass.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/carbonToNitrogenMassRatio"/>
+        <oboInOwl:hasExactSynonym>C:N mass ratio</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Carbon to nitrogen mass ratio&quot;: Carbon to nitrogen (C:N) mass ratio.</rdfs:comment>
+        <rdfs:label>Carbon to nitrogen mass ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000918 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000918">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000109"/>
+        <obo:IAO_0000115>Carbon to nitrogen ratio in which carbon and nitrogen are each measured as an amount of substance, in moles.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/carbonToNitrogenMolarRatio"/>
+        <oboInOwl:hasExactSynonym>C:N molar ratio</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Carbon to nitrogen molar ratio&quot;: Carbon to nitrogen (C:N) molar ratio.</rdfs:comment>
+        <rdfs:label>Carbon to nitrogen molar ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_9000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000000">
@@ -54957,6 +55878,23 @@
         <obo:IAO_0000115>Grouping class for observed variables that describe surface water and groundwater: their quantity, level, movement, and use; the physical properties of water bodies, such as clarity, light attenuation, and density; and the state of the wells and structures that hold or control water.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
         <rdfs:label>Hydrology variable</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_9000042 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_9000042">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
+        <obo:IAO_0000115>Grouping class for observed variables that describe bedrock, geologic materials, and the deposits over them, such as rock type, borehole lithology, natural gamma radiation, and the thickness of alluvium.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:label>Geology variable</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>

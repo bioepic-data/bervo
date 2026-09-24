@@ -160,7 +160,7 @@ CURIE = re.compile(r"^([A-Za-z][A-Za-z0-9_.]*):(\S+)$")
 # prefix map). A CURIE using anything else needs an explicit --add-prefix in
 # src/ontology/bervo.Makefile, or it is emitted as a relative IRI.
 OBO_XREF_PREFIXES = {
-    "AGRO", "BFO", "CHEBI", "CL", "COB", "ENVO", "GO", "IAO", "NCBITaxon", "NCIT",
+    "AGRO", "BFO", "CHEBI", "CHMO", "CL", "COB", "ENVO", "GO", "IAO", "NCBITaxon", "NCIT",
     "OBI", "OM", "PATO", "PO", "RO", "UBERON", "UO",
 }
 
