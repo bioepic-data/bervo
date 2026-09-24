@@ -569,7 +569,11 @@ variable. Canopy height is the parent of EcoSIM's Pft canopy height
   two a label that says "per unit area". A count, per grid cell or dimensionless,
   such as Fish detections, Taxa count, and Plant population (`BERVO:0000725`, the
   number of plants in a grid cell), takes `attributes=Count` and
-  `value_types=Count`.
+  `value_types=Count`. The seven other EcoSIM grid-cell counts took it in the same
+  change: Total plant population, the three grain number rows, and the three root
+  layer axis counts. Maximum root layer number (`BERVO:0000985`) did not. Despite
+  its label, it is the index of the deepest rooted layer, not a count, and it
+  waits on issue #108 with the other layer indices.
 - **Where Number density sits.** Under Physical property, beside Density, because
   Density is defined as mass per volume and a number density is not a mass. That
   leaves Area density (`BERVO:8000267`), mass per unit area, under Density although
