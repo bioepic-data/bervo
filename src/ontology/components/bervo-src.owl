@@ -21794,19 +21794,20 @@
     <!-- https://w3id.org/bervo/BERVO_0001162 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001162">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001989"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001987"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000018"/>
         <obo:IAO_0000115>The number of microbial cells per unit volume of soil or sediment. This parameter determines the spatial distribution of biogeochemical processes and influences the rates of nutrient cycling, organic matter decomposition, and greenhouse gas production in terrestrial ecosystems.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>microbial density</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>BIOS</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>NitroPars.txt</rdfs:comment>
         <rdfs:comment>Vague</rdfs:comment>
-        <rdfs:label>Microbial density</rdfs:label>
+        <rdfs:label>Microbial cell density in soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>{cells}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
     </Class>
     
@@ -36946,23 +36947,6 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>{cells}.m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
-    </Class>
-    
-
-
-    <!-- https://w3id.org/bervo/BERVO_0001989 -->
-
-    <Class rdf:about="https://w3id.org/bervo/BERVO_0001989">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001987"/>
-        <obo:IAO_0000115>Number of microbial cells per unit volume of soil or sediment.</obo:IAO_0000115>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:label>Microbial cell density in soil</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>{cells}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
     </Class>
     
