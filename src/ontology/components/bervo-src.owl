@@ -36815,7 +36815,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001981">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
-        <obo:IAO_0000115>Number of individuals or objects counted per unit area.</obo:IAO_0000115>
+        <obo:IAO_0000115>Number of individual organisms counted per unit area.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/countAreal"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Count, areal&quot;: Counts per area.</rdfs:comment>
