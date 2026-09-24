@@ -569,7 +569,8 @@ class TestUnits(ValidatorTestCase):
         self.assertTrue(any("retired" in e and "'1'" in e for e in errors), errors)
 
     def test_space_is_rejected(self):
-        self.assertTrue(any("space" in e for e in self.unit_errors("g d-2 h-1")))
+        self.assertTrue(any("whitespace" in e for e in self.unit_errors("g d-2 h-1")))
+        self.assertTrue(any("whitespace" in e for e in self.unit_errors("g\th-1")))
 
     def test_day_with_an_exponent_other_than_one_is_rejected(self):
         # Valid UCUM (grams per day squared), but never what an EcoSIM d-2 means.

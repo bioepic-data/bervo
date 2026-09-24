@@ -117,8 +117,8 @@ def unit_problems(token: str) -> list[str]:
     """
     if token in UNITS_RETIRED:
         return [f"{token!r} is retired; write {UNITS_RETIRED[token]!r}"]
-    if token != token.strip() or " " in token:
-        return [f"{token!r} contains a space; UCUM joins units with '.'"]
+    if any(ch.isspace() for ch in token):
+        return [f"{token!r} contains whitespace; UCUM has none, and joins units with '.'"]
     problems = []
     bare = re.sub(r"\{[^{}]*\}", "", token)
     # UCUM reads "/" and "." left to right, so "g/{grid}.h" is g.h per grid.
