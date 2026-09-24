@@ -857,7 +857,10 @@ geologic materials, and the deposits over them. Alluvium depth
   Extracellular enzyme activity, in `nmol.g-1.h-1` per gram of dry soil.
   Beta-N-acetylglucosaminidase (EC 3.2.1.52) is new and distinct from
   Alpha-N-acetylglucosaminidase (`BERVO:8000856`, EC 3.2.1.50) from slice 1.
-  Phenol oxidase is new. Neither carries a cross-reference.
+  Phenol oxidase is new. Neither carries a cross-reference. Cellobiohydrolase
+  (`BERVO:8000857`) and Xylosidase (`BERVO:8000858`), from slice 1, have no
+  activity variable, because ODM2 has no activity name for them. ODM2 lists them
+  only as enzymes.
 - **The C:N ratios are generic**, measured in any material, and sit under Soil
   biogeochemistry variable because soil is where most such data comes from.
   Their attribute is the existing Carbon to nitrogen ratio concept
