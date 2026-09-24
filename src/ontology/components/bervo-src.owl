@@ -37597,7 +37597,7 @@
         <obo:IAO_0000115>Vertical distance from the land surface down to the potentiometric surface of a confined aquifer, the level to which water rises in a well that taps it.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>piezometric surface depth</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
-        <rdfs:comment>Negative where the aquifer is artesian and the level lies above the land surface.</rdfs:comment>
+        <rdfs:comment>Negative for a flowing artesian well, where the level lies above the land surface.</rdfs:comment>
         <rdfs:label>Potentiometric surface depth</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -54218,7 +54218,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000905">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000904"/>
         <obo:IAO_0000115>Aquifer bounded above by a layer of low permeability, so that its water is under pressure greater than atmospheric.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>artesian aquifer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>artesian aquifer</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
         <rdfs:label>Confined aquifer</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
