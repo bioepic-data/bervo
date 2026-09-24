@@ -53462,8 +53462,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000898">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000055"/>
         <obo:IAO_0000115>Dead plant material, mostly seagrass, algae, and marsh plants, cast up and stranded by tides or waves along a shoreline.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>beach wrack</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>tidal wrack</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>beach wrack</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tidal wrack</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
         <rdfs:label>Wrack</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
