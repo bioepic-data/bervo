@@ -36560,7 +36560,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001967 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001967">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>Height of the top of a plant canopy above the ground surface.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/canopyHeight"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
@@ -36579,7 +36579,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001968 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001968">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>Fraction of the sky hemisphere obscured by vegetation when viewed from a single point beneath the canopy.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/canopyClosure"/>
         <oboInOwl:hasRelatedSynonym>crown closure</oboInOwl:hasRelatedSynonym>
@@ -36599,7 +36599,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001969 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001969">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
         <obo:IAO_0000115>Index of green vegetation computed from red and near-infrared reflectance as (NIR - red) / (NIR + red), ranging from -1 to 1.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/NDVI"/>
         <oboInOwl:hasExactSynonym>NDVI</oboInOwl:hasExactSynonym>
@@ -36619,7 +36619,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001970 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001970">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
         <obo:IAO_0000115>Dry mass of plant material per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomassVegetation"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
@@ -36658,7 +36658,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001972 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001972">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
         <obo:IAO_0000115>Wetness of a leaf surface from dew, rain, or fog, as reported by a leaf wetness sensor.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/leafWetness"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
@@ -36677,7 +36677,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001973 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001973">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
         <obo:IAO_0000115>Categorical class of the vegetation of an area, such as forest, grassland, or salt marsh.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/vegetationType"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
@@ -36716,7 +36716,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001975 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001975">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
         <obo:IAO_0000115>Fraction of a horizontal ground area not covered by the vertical projection of vegetation.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/noVegetationCoverage"/>
         <oboInOwl:hasRelatedSynonym>unvegetated cover</oboInOwl:hasRelatedSynonym>
@@ -36736,7 +36736,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001976 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001976">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
         <obo:IAO_0000115>Fraction of a horizontal ground area covered by wrack.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/wrackCoverage"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
