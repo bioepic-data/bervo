@@ -33736,6 +33736,7 @@
         <obo:IAO_0000115>The volumetric flow rate of water leaving a system through outlets, channels, or drainage pathways. This parameter quantifies water outflow from watersheds, soil systems, or model domains, essential for understanding water balance and downstream flow contributions in hydrological modeling.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>QDischar_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM grid-cell total, in m3.h-1/{grid}. Water current (BERVO:0001837) is the generic volumetric flow, and carries ODM2&apos;s discharge.</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Water discharge</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
