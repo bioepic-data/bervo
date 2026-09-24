@@ -58,8 +58,8 @@ wrong. See "Points to note".
 | Quantities, placeholders, minerals, enzymes, organism groups | 90 | **Slice 1, this page.** |
 | Meteorology, radiation, comfort indices | 45 | **Slice 2**, with the land-atmosphere fluxes |
 | Land-atmosphere fluxes | 25 | **Slice 2** |
-| Vegetation | 32 | Slice 3, with ecology |
-| Ecology | 8 left | Slice 3 |
+| Vegetation | 32 | **Slice 3**, with ecology |
+| Ecology | 8 left | **Slice 3** |
 | Hydrology and snow | 31 | Slice 4 |
 | Soil and geology | 44 | Slice 5 |
 | Water quality | 63 | Slice 6 |
@@ -457,6 +457,161 @@ a dataset may report another.
   concepts. By slice 2's reading each would be a variable that names the concept.
   Moving those cross-references is a separate change.
 
+## Slice 3: vegetation and ecology
+
+The 40 names of slice 3 follow slice 2: an observable is a variable, and a name
+for a thing is a concept. A variable has to be an observation *of* something or
+*somewhere*, so a bare quantity such as biomass is a concept.
+
+### Deliberately unmapped: the per-taxon names
+
+17 ODM2 names fix a taxon: a coverage for each of 15 salt marsh taxa, one for
+transient species, and `e_coli`, a count of one species. BERVO keeps no concepts
+or variables for single species, and its variables are generic, with the taxon
+recorded alongside the data through `BERVO:involves_taxa` or an NCBITaxon
+identifier. No BERVO term is equivalent to a name that fixes a taxon, so these are
+left unmapped. This is a difference between the two vocabularies, not a gap to
+fill: `asteridaeCoverage`, `batisMaritimaCoverage`, `borrichiaFrutescensCoverage`, `cuscutaSppCoverage`, `distichlisSpicataCoverage`, `ivaFrutescenscoverage`, `limoniumNashiiCoverage`, `lyciumCarolinianumCoverage`, `monanthochloeLittoralisCoverage`, `salicorniaBigeloviiCoverage`, `salicorniaVirginicaCoverage`, `spartinaAlternifloraCoverage`, `spartinaSpartineaCoverage`, `suaedaLinearisCoverage`, `suaedaMaritimaCoverage`, `transientSpeciesCoverage`, `e_coli`.
+
+The other four ODM2 indicator-organism names, `coliformTotal`, `coliformFecal`,
+`enterococci`, and `streptococciFecal`, did get concepts in slice 1. They name
+groups that water quality assays report, not single species, which is the line
+`e_coli` falls on the other side of.
+
+A dataset of these observations would use Percent area covered by specified plant
+(`BERVO:0001834`) or Area covered by specified plant (`BERVO:0001833`) for the
+coverages, and Colony-forming unit density in water for *E. coli*, each with the
+taxon attached.
+
+### Mapped to existing terms
+
+| ODM2 term(s) | BERVO term |
+| --- | --- |
+| `areaBasal` | Stand basal area (`BERVO:0001887`) |
+| `diameterAtBreastHeight` | Stem diameter at breast height (`BERVO:0001885`) |
+| `leafAreaIndex` | Canopy leaf area index (`BERVO:0001879`) |
+| `litterPlant` | Litter (`BERVO:8000055`), a concept, which also gains `ENVO:01000628` "plant litter" |
+| `biomassTotal` | Biomass (`BERVO:8000296`), a concept, beside `biomass` from slice 1 |
+
+`litterPlant` and `biomassTotal` name a thing or a bare quantity, so they map to
+concepts, as `hail` did in slice 2.
+
+### New terms
+
+Ecology variable (`BERVO:9000040`), under Variable, holds observations of
+organisms and communities. Fish (`BERVO:8000897`) sits under Organism with no
+taxon cross-reference, since the grouping is not monophyletic. Wrack
+(`BERVO:8000898`), dead plant material cast up by tides, sits under Litter. It
+has no cross-reference: ENVO has no term for wrack or beach-cast material. Number
+density (`BERVO:8000899`), a count of discrete objects or organisms per unit area
+or volume, sits under Physical property beside Density, which is mass per volume.
+
+23 variables (`0001967`, `0001968`, `0001969`, `0001970`, `0001971`, `0001972`, `0001973`, `0001974`, `0001975`, `0001976`, `0001978`, `0001979`, `0001980`, `0001981`, `0001983`, `0001984`, `0001985`, `0001986`, `0001987`, `0001988`, `0001990`, `0001991`, `0001992`):
+
+| BERVO variable | Parent | ODM2 term | Unit |
+| --- | --- | --- | --- |
+| Canopy height (`BERVO:0001967`) | Canopy variable | `canopyHeight` | `m` |
+| Canopy closure (`BERVO:0001968`) | Canopy variable | `canopyClosure` | `1` |
+| Normalized difference vegetation index (`BERVO:0001969`) | Land surface variable | `NDVI` | `1` |
+| Vegetation biomass (`BERVO:0001970`) | Ecology variable | `biomassVegetation` | `g.m-2` |
+| Aboveground biomass (`BERVO:0001971`) | Vegetation biomass | `biomassAboveGround` | `g.m-2` |
+| Leaf wetness (`BERVO:0001972`) | Meteorological variable | `leafWetness` | `1` |
+| Vegetation type (`BERVO:0001973`) | Ecology variable | `vegetationType` | `NA` |
+| Throughfall (`BERVO:0001974`) | Precipitation amount | `throughfall` | `mm` |
+| Unvegetated cover (`BERVO:0001975`) | Land surface variable | `noVegetationCoverage` | `1` |
+| Wrack cover (`BERVO:0001976`) | Surface litter variable | `wrackCoverage` | `1` |
+| Phytoplankton biomass (`BERVO:0001978`) | Ecology variable | `biomassPhytoplankton` | `g.m-3` |
+| Body length (`BERVO:0001979`) | Ecology variable | `bodyLength` | `m` |
+| Chlorophyll fluorescence (`BERVO:0001980`) | Water variable | `chlorophyllFluorescence` | `{RFU}` |
+| Organism count per unit area (`BERVO:0001981`) | Ecology variable | `countAreal` | `m-2` |
+| Fish detections (`BERVO:0001983`) | Ecology variable | `fishDetections` | `1` |
+| Shannon diversity index (`BERVO:0001984`) | Ecology variable | `shannonDiversityIndex` | `1` |
+| Shannon evenness index (`BERVO:0001985`) | Ecology variable | `shannonEvennessIndex` | `1` |
+| Taxa count (`BERVO:0001986`) | Ecology variable | `taxaCount` | `1` |
+| Microbial cell density (`BERVO:0001987`) | Ecology variable | none | `{cells}.m-3` |
+| Microbial cell density in water (`BERVO:0001988`) | Microbial cell density | none | `{cells}.m-3` |
+| Colony-forming unit density (`BERVO:0001990`) | Ecology variable | none | `{CFU}.m-3` |
+| Colony-forming unit density in water (`BERVO:0001991`) | Colony-forming unit density | none | `{CFU}.m-3` |
+| Fish body length (`BERVO:0001992`) | Body length | none | `m` |
+
+None of the new variables is a plant trait, so none sits under Plant trait
+variable. Canopy height is the parent of EcoSIM's Pft canopy height
+(`BERVO:0000695`) and Canopy height over grid (`BERVO:0000708`).
+
+### Existing terms changed
+
+- **Microbial density (`BERVO:0001162`) is now Microbial cell density in soil**,
+  with "microbial density" as an exact synonym. It is defined for soil or sediment,
+  so it is the soil member of the Microbial cell density family, not the generic
+  term. It takes `measured_ins=Soil`, keeps its EcoSIM provenance (`BIOS`), and keeps
+  Microbial parameters as its `Category`.
+- **Stem density (`BERVO:0001888`) is now Stem count per unit area**, with "stem
+  density" as an exact synonym, since the old label could as well mean the density
+  of stem wood.
+- **Canopy leaf area index, Canopy stem area index, Effective leaf area index, and
+  Plant area index** move to Canopy variable, beside Canopy height and closure.
+- **Fractional vegetation cover** moves to Land surface variable, beside its
+  complement Unvegetated cover, and changes unit from `m2.m-2` to `1`.
+- **Stand basal area and Stem count per unit area** move to Ecology variable,
+  beside Vegetation biomass and Organism count per unit area.
+- **Stand-level observables leave the Plant variable branch.** Canopy variable sits
+  under Plant variable, so the canopy indices stay inside it. Ecology variable and
+  Land surface variable do not, so Stand basal area, Stem count per unit area,
+  and Fractional vegetation cover are no longer plant variables. That is
+  deliberate: each describes a stand or a stretch of ground, a community rather
+  than a plant.
+
+### Points to note for slice 3
+
+- **A count per area is not a count.** Stem count per unit area, Organism count
+  per unit area, and the microbial cell and colony densities take
+  `attributes=Number density` and `value_types=Quantitative value`, and the first
+  two a label that says "per unit area". A count, per grid cell or dimensionless,
+  such as Fish detections, Taxa count, and Plant population (`BERVO:0000725`, the
+  number of plants in a grid cell), takes `attributes=Count` and
+  `value_types=Count`. The seven other EcoSIM grid-cell counts took it in the same
+  change: Total plant population, the three grain number rows, and the three root
+  layer axis counts. Maximum root layer number (`BERVO:0000985`) did not. Despite
+  its label, it is the index of the deepest rooted layer, not a count, and it
+  waits on issue #108 with the other layer indices.
+- **Where Number density sits.** Under Physical property, beside Density, because
+  Density is defined as mass per volume and a number density is not a mass. Five
+  older terms use Density for something that is not a mass per volume, and none is
+  changed here: Area density (`BERVO:8000267`), mass per unit area, sits under it;
+  Total root length density (`BERVO:0000408`) and Root length density in soil
+  layers (`BERVO:0001103`), both `m.m-3`, Liquid water molar density
+  (`BERVO:0001881`), `mol.m-3`, and Optical density (`BERVO:8000515`), light
+  attenuation, name it in `attributes`.
+  Count, the other candidate parent, sits under Quantitative value, and a number
+  density is a physical quantity, not a kind of value.
+- **The Stem density relabel was the curator's call.** "Stem density" is the usual
+  forestry term, and it stays as an exact synonym, so a search for it still finds
+  Stem count per unit area.
+- **Two kinds of microbial count.** A count of cells and a count of colonies grown
+  in culture measure different things, so each has its own family: Microbial cell
+  density, with children for water and soil, and Colony-forming unit density, with
+  a child for water. The cell family names no method, so a modelled density, such
+  as EcoSIM's, belongs in it as much as a microscope count does. Both families take
+  Number density and are per cubic metre, one scale for each family.
+- **Body length is in `m`**, one scale for the whole family, so that a fish and a
+  copepod compare directly, whatever scale each is usually reported in. Fish body
+  length holds the fish standards: total, fork, and standard length.
+- **Cover fractions take `1` and `value_types=Fraction`**: Canopy closure,
+  Unvegetated cover, Wrack cover, Leaf wetness, and Fractional vegetation cover. Leaf area index keeps
+  `m2.m-2`, because it is not a fraction and can exceed 1.
+- **Leaf wetness** is the fraction of a leaf surface covered by liquid water. A
+  sensor index approximates it; leaf wetness duration, time wet per interval, is a
+  different quantity. Chlorophyll fluorescence is `{RFU}` unless a sensor is
+  calibrated to a concentration.
+- **Biomass rows** name Biomass in `measurement_ofs` and the organism or
+  compartment in `measured_ins`, Phytoplankton biomass included.
+- **No Index attribute.** NDVI and the Shannon indices keep `attributes=NA`: the
+  only Index concept (`BERVO:8000488`) is a position identifier.
+- **Percent area covered by specified plant has unit `1`**, while its label and
+  definition say percent. That is older than this slice.
+- **Vegetation type is categorical**, `NA` with `value_types=Category`; its
+  categories are the question of issue #108.
+
 ## Points to note (slice 1)
 
 - **ODM2 labels that are wrong.** `satellitesInView` is labelled "Location", and
@@ -495,7 +650,7 @@ a dataset may report another.
   Enterococcus, takes the genus name, with the plural in common use
   (`enterococci`) as a related synonym. Fungi (`BERVO:8000783`) already
   followed this.
-- **Salt marsh taxa for slice 3.** The coverage terms name taxa that NCBI
+- **Salt marsh taxa.** The coverage terms, left unmapped in slice 3, name taxa that NCBI
   Taxonomy has renamed since: *Spartina alterniflora* is now *Sporobolus
   alterniflorus* (`NCBITaxon:29706`), *Spartina spartinae* (which ODM2 spells
   "Spartina spartinea") is *Sporobolus spartinus* (`NCBITaxon:180094`), and

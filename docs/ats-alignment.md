@@ -107,8 +107,8 @@ Two rows carry a comment without a synonym:
 | Surface litter evaporation (`BERVO:0001876`) | Surface litter variable | `surface-evaporation_litter` | `m3{H2O}.h-1/{grid}` |
 | Snowpack evaporation (`BERVO:0001877`) | Snow variable | `surface-evaporation_snow` | `m3{H2O}.h-1/{grid}` |
 | Snowpack sublimation (`BERVO:0001878`) | Snow variable | `surface-sublimation_snow` | `m3{H2O}.h-1/{grid}` |
-| Canopy leaf area index (`BERVO:0001879`) | Plant trait variable | `surface-LAI` | `m2.m-2` |
-| Canopy stem area index (`BERVO:0001880`) | Plant trait variable | `surface-SAI` | `m2.m-2` |
+| Canopy leaf area index (`BERVO:0001879`) | Canopy variable | `surface-LAI` | `m2.m-2` |
+| Canopy stem area index (`BERVO:0001880`) | Canopy variable | `surface-SAI` | `m2.m-2` |
 | Liquid water molar density (`BERVO:0001881`) | Water variable | `molar_density_liquid` | `mol.m-3` |
 | Soil particle density (`BERVO:0001882`) | Soil variable | `density_rock` | `kg.m-3` |
 | Stem area index (`BERVO:8000588`) | Concept | | |

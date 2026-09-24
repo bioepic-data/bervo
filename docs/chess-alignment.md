@@ -34,15 +34,15 @@ terms BERVO added, or amended, so that the mapping resolves. It addresses
 
 | CHESS columns | BERVO term | Parent | Unit |
 | --- | --- | --- | --- |
-| `Vegetation_Cover`, `Cover_Percent`, `FractionalCover` | Fractional vegetation cover (`BERVO:0001883`) | Plant trait variable | `m2.m-2` |
+| `Vegetation_Cover`, `Cover_Percent`, `FractionalCover` | Fractional vegetation cover (`BERVO:0001883`) | Land surface variable | `1` |
 | | Stem diameter (`BERVO:0001884`) | Plant trait variable | `cm`, `m` |
 | `Stem_DBH`, `DBH_1_CM`, `DBH_2_CM`, `DBH_Avg_CM` | Stem diameter at breast height (`BERVO:0001885`) | Stem diameter | `cm` |
 | `Crown_Class`, `Canopy_Position` | Crown class (`BERVO:0001886`) | Plant trait variable | categorical |
-| `ba` | Stand basal area (`BERVO:0001887`) | Plant trait variable | `m2.har-1` |
-| `density`, `abla_density`, `pien_density`, `pico_density` | Stem density (`BERVO:0001888`) | Plant trait variable | `har-1`, `m-2` |
+| `ba` | Stand basal area (`BERVO:0001887`) | Ecology variable | `m2.har-1` |
+| `density`, `abla_density`, `pien_density`, `pico_density` | Stem count per unit area (`BERVO:0001888`) | Ecology variable | `har-1`, `m-2` |
 
 Stem diameter is the general form and exists so that a diameter taken at a
-different height has a home. Stem density counts stems; Plant population
+different height has a home. Stem count per unit area counts stems; Plant population
 (`BERVO:0000725`) counts individuals, and the two differ for multi-stemmed
 plants.
 
@@ -50,8 +50,8 @@ plants.
 
 | CHESS columns | BERVO term | Parent | Unit |
 | --- | --- | --- | --- |
-| `Le_2200`, `Le_FV2200`, `Le_WN` | Effective leaf area index (`BERVO:0001889`) | Plant trait variable | `m2.m-2` |
-| | Plant area index (`BERVO:0001890`) | Plant trait variable | `m2.m-2` |
+| `Le_2200`, `Le_FV2200`, `Le_WN` | Effective leaf area index (`BERVO:0001889`) | Canopy variable | `m2.m-2` |
+| | Plant area index (`BERVO:0001890`) | Canopy variable | `m2.m-2` |
 
 Plant area index has no CHESS column. It is what an optical canopy analyser
 measures before the woody correction, and the corrected columns are derived
