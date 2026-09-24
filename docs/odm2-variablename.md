@@ -60,7 +60,7 @@ wrong. See "Points to note".
 | Land-atmosphere fluxes | 25 | **Slice 2** |
 | Vegetation | 32 | **Slice 3**, with ecology |
 | Ecology | 8 left | **Slice 3** |
-| Hydrology and snow | 31 | Slice 4 |
+| Hydrology and snow | 31 | **Slice 4** |
 | Soil and geology | 44 | Slice 5 |
 | Water quality | 63 | Slice 6 |
 
@@ -611,6 +611,142 @@ variable. Canopy height is the parent of EcoSIM's Pft canopy height
   definition say percent. That is older than this slice.
 - **Vegetation type is categorical**, `NA` with `value_types=Category`; its
   categories are the question of issue #108.
+
+## Slice 4: hydrology and snow
+
+The 31 names of slice 4 follow the rules of slices 2 and 3: an observable is a
+variable, a name for a thing is a concept, a true equivalent is mapped rather than
+duplicated, and a generic observable becomes the parent of the EcoSIM variables
+that are narrower forms of it.
+
+### Mapped to existing variables
+
+| ODM2 term(s) | BERVO variable |
+| --- | --- |
+| `snowDepth`, `depthSnow` | Snowpack depth (`BERVO:0001572`) |
+| `snowWaterEquivalent` | Snow water equivalent (`BERVO:0001873`) |
+| `volumetricWaterContent` | Volumetric water content (`BERVO:0001743`) |
+| `discharge` | Water current (`BERVO:0001837`) |
+
+ODM2 lists snow depth twice, as `snowDepth` and `depthSnow`; both land on Snowpack
+depth. Water current carries `MIXS:0000203`, the MIxS field for a volumetric
+flow, which is what discharge is. It gains `discharge` as a related synonym and
+moves from Water variable to Hydrology variable. EcoSIM's Water discharge
+(`BERVO:0001819`) is a grid-cell total, `m3.h-1/{grid}`, and its comment now points
+to Water current.
+
+### New terms
+
+Hydrology variable (`BERVO:9000041`), under Variable, holds observations of
+surface water and groundwater, the physical properties of water bodies, and the
+state of the wells and structures that hold or control water. Water variable was
+not used: its definition is water chemistry. Water current, which describes water
+flow rather than chemistry, moves out of Water variable into it. Total
+precipitation (`BERVO:0000309`) also leaves Water variable, for Precipitation
+amount (`BERVO:0001908`) under Meteorological variable: it is EcoSIM's grid-cell
+volume form of that quantity, as Water equivalent snowpack is of Snow water
+equivalent.
+
+| BERVO term | Parent | Cross-reference |
+| --- | --- | --- |
+| Alluvium (`BERVO:8000900`) | Sediment | `ENVO:01001202` |
+| Reservoir (`BERVO:8000901`) | Water body | `ENVO:00000025` |
+| Water well (`BERVO:8000902`) | Human construction | `ENVO:01000002` |
+| Sea floor (`BERVO:8000903`) | Environmental feature | `ENVO:00000482` |
+| Aquifer (`BERVO:8000904`) | Subsurface | `ENVO:00012408` |
+| Confined aquifer (`BERVO:8000905`) | Aquifer | none |
+
+31 variables, `BERVO:0001993` to `BERVO:0002023`. That this equals the 31 ODM2 names
+is a coincidence: five of the names map to existing variables, and five of the
+new variables, Water use and the four water table cases, carry no ODM2 name.
+
+| BERVO variable | Parent | ODM2 term | Unit |
+| --- | --- | --- | --- |
+| Streamflow (`BERVO:0001993`) | Water current | `streamflow` | `m3.s-1` |
+| Baseflow (`BERVO:0001994`) | Streamflow | `baseflow` | `m3.s-1` |
+| Water depth (`BERVO:0001995`) | Hydrology variable | `waterDepth` | `m` |
+| Averaged water depth (`BERVO:0001996`) | Water depth | `waterDepthAveraged` | `m` |
+| Water level (`BERVO:0001997`) | Hydrology variable | `waterLevel` | `m` |
+| Gage height (`BERVO:0001998`) | Water level | `gageHeight` | `m` |
+| Tide stage (`BERVO:0001999`) | Hydrology variable | `tideStage` | `NA` |
+| Wave height (`BERVO:0002000`) | Hydrology variable | `waveHeight` | `m` |
+| Secchi depth (`BERVO:0002001`) | Hydrology variable | `secchiDepth` | `m` |
+| Light attenuation coefficient (`BERVO:0002002`) | Hydrology variable | `lightAttenuationCoefficient` | `m-1` |
+| Sigma-t (`BERVO:0002003`) | Hydrology variable | `sigma_t` | `kg.m-3` |
+| Height above sea floor (`BERVO:0002004`) | Hydrology variable | `heightAboveSeaFloor` | `m` |
+| Water table depth (`BERVO:0002005`) | Hydrology variable | `groundwaterDepth` | `m` |
+| Groundwater recharge (`BERVO:0002006`) | Hydrology variable | `rechargeGroundwater` | `mm.d-1` |
+| Reservoir storage (`BERVO:0002007`) | Hydrology variable | `reservoirStorage` | `m3` |
+| Well flow rate (`BERVO:0002008`) | Hydrology variable | `wellFlowRate` | `m3.s-1` |
+| Wellhead pressure (`BERVO:0002009`) | Hydrology variable | `wellheadPressure` | `kPa` |
+| Water use (`BERVO:0002010`) | Hydrology variable | none | `m3.d-1` |
+| Agricultural water use (`BERVO:0002011`) | Water use | `waterUseAgriculture` | `m3.d-1` |
+| Commercial, industrial, and power water use (`BERVO:0002012`) | Water use | `waterUseCommercialIndustrialPower` | `m3.d-1` |
+| Domestic well water use (`BERVO:0002013`) | Water use | `waterUseDomesticWells` | `m3.d-1` |
+| Public supply water use (`BERVO:0002014`) | Water use | `waterUsePublicSupply` | `m3.d-1` |
+| Recreational water use (`BERVO:0002015`) | Water use | `waterUseRecreation` | `m3.d-1` |
+| Gate position (`BERVO:0002016`) | Hydrology variable | `position` | `1` |
+| Alluvium depth (`BERVO:0002017`) | Hydrology variable | `alluviumDepth` | `m` |
+| Snow layer hardness (`BERVO:0002018`) | Snow variable | `snowLayerHardness` | `NA` |
+| Unsaturated zone thickness (`BERVO:0002019`) | Hydrology variable | `depthUnsaturatedZone` | `m` |
+| Perched water table depth (`BERVO:0002020`) | Water table depth | none | `m` |
+| Potentiometric surface depth (`BERVO:0002021`) | Hydrology variable | none | `m` |
+| Water table elevation (`BERVO:0002022`) | Water level | none | `m` |
+| Depth to water below measuring point (`BERVO:0002023`) | Hydrology variable | none | `m` |
+
+### Points to note for slice 4
+
+- **Hierarchies.** Streamflow sits under Water current, the discharge term, and
+  Baseflow under Streamflow. Gage height and Water table elevation sit under Water
+  level, Averaged water depth under Water depth, and the five ODM2 water use names
+  under a new generic Water use, which carries no ODM2 name of its own.
+- **Water table depth** (`BERVO:0002005`, `ENVO:06105203`) is the depth from the
+  land surface down to the main water table. It is the parent of EcoSIM's water
+  table depths: Depth of artificial water table (`BERVO:0001760`), Artificial
+  water table depth (`BERVO:0001761`), Depth of artificial water table adjusted for
+  elevation (`BERVO:0001762`), Internal water table depth (`BERVO:0001763`), and
+  External water table depth (`BERVO:0001766`), which already holds the initial and
+  current elevation-corrected forms. ODM2 calls the quantity groundwater depth, an
+  exact synonym here.
+- **Where the water table depth does not apply.** The depth of the unsaturated zone
+  equals the water table depth only where the unsaturated zone runs unbroken from
+  the land surface to the main water table, so ODM2's `depthUnsaturatedZone` has its
+  own Unsaturated zone thickness. Four more terms cover the other cases: Perched
+  water table depth, for a saturated zone held above the main water table;
+  Potentiometric surface depth, for a confined aquifer, where water in a well rises
+  to a potentiometric surface rather than a water table; Water table elevation,
+  measured up from a datum rather than down from the land surface; and Depth to
+  water below measuring point, measured from a well's casing top. Aquifer and
+  Confined aquifer are added as concepts for them, and the Unsaturated zone concept
+  (`BERVO:8000746`) now lies above a zone of saturation, usually the main water
+  table, rather than always reaching it.
+- **Tide stage is categorical**: the phase of the tide, high, low, flood, or ebb,
+  with `NA` and `value_types=Category`. ODM2 defines it only as "Tidal stage". A
+  phase is not an elevation, so it sits under Hydrology variable, not Water level.
+  Its categories belong to issue #108, as Snow layer hardness's do.
+- **Gate position** is ODM2's `position`, the setting of a gate or other
+  water-control element, not a spatial position. It is a fraction of fully open;
+  some datasets report a height or a number of turns instead.
+- **Snow layer hardness is categorical**, `NA` with `value_types=Category`: it is
+  recorded on the hand hardness scale, fist to ice.
+- **Water use rates.** Each water use variable is a rate, `m3.d-1`. The commercial
+  one includes power generation because ODM2's name for it does: "Water Use,
+  Commercial + Industrial + Power".
+- **Reservoir and Lake.** Lake (`BERVO:8000285`) no longer carries "reservoir" or
+  "impoundment" as related synonyms, now that Reservoir is its sibling.
+- **Units.** Discharge-like flows are `m3.s-1`, water use `m3.d-1`, and groundwater
+  recharge `mm.d-1`, per unit area.
+- **Water variable is half swept.** It is defined as water chemistry. Water current
+  and Total precipitation left it here, since they are not chemistry. Four more
+  terms under it are not chemistry either, and still sit there: Turbidity of water
+  (`BERVO:0001836`), Liquid water molar density (`BERVO:0001881`), Chlorophyll
+  fluorescence (`BERVO:0001980`), and Water table flag from site file
+  (`BERVO:0000247`). Moving them is a separate change.
+- **Parked in Hydrology variable.** Alluvium depth is a sediment thickness, and
+  sits here only until slice 5 (soil and geology) gives it a home. Secchi depth
+  and Light attenuation coefficient, the water optics, are covered by the
+  grouping's definition but may move when slice 6 (water quality) sets up its own
+  grouping.
 
 ## Points to note (slice 1)
 
