@@ -877,8 +877,10 @@ geologic materials, and the deposits over them. Alluvium depth
   keep the USDA ranges.
 - **Count rates.** The natural gamma count rate is `{counts}.s-1` and the
   cosmic-ray neutron count rate `{counts}.h-1`, each in the scale its instruments
-  report. The neutron count sits under Soil and water variable, since it is
-  used to estimate soil water content.
+  report. Both take the attributes Count and Rate. Each detector count rate is
+  placed by what it is used to infer: the gamma count rate tells lithologies
+  apart, so it sits under Geology variable, and the neutron count rate estimates
+  soil water content, so it sits under Soil and water variable.
 - **Units.** Particle size is `m`, one scale for lengths, as Body length is in
   slice 3. Soil microbial biomass and Soil bacterial DNA mass are both
   `mg.kg-1`.

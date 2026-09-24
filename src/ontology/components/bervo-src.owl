@@ -38228,6 +38228,7 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Gamma counts&quot;: The radioactivity of rocks has been used for many years to help derive lithologies. Natural occurring radioactive materials (NORM) include the elements uranium, thorium, potassium, radium, and radon, along with the minerals that contain them. There is usually no fundamental connection between different rock types and measured gamma ray intensity, but there exists a strong general correlation between the radioactive isotope content and mineralogy. Logging tools have been developed to read the gamma rays emitted by these elements and interpret lithology from the information collected. Borehole gamma logs are often calibrated to API gamma ray units instead.</rdfs:comment>
         <rdfs:label>Natural gamma ray count rate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
@@ -38250,6 +38251,7 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Neutron Count&quot;: Neutron counts of the naturally occurring cosmic rays.</rdfs:comment>
         <rdfs:label>Cosmic-ray neutron count rate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
