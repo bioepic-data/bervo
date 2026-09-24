@@ -58,8 +58,8 @@ wrong. See "Points to note".
 | Quantities, placeholders, minerals, enzymes, organism groups | 90 | **Slice 1, this page.** |
 | Meteorology, radiation, comfort indices | 45 | **Slice 2**, with the land-atmosphere fluxes |
 | Land-atmosphere fluxes | 25 | **Slice 2** |
-| Vegetation | 32 | Slice 3, with ecology |
-| Ecology | 8 left | Slice 3 |
+| Vegetation | 32 | **Slice 3**, with ecology |
+| Ecology | 8 left | **Slice 3** |
 | Hydrology and snow | 31 | Slice 4 |
 | Soil and geology | 44 | Slice 5 |
 | Water quality | 63 | Slice 6 |
@@ -456,6 +456,89 @@ a dataset may report another.
   under this rule, such as `albedo`, `salinity`, `turbidity`, and `pH`, onto
   concepts. By slice 2's reading each would be a variable that names the concept.
   Moving those cross-references is a separate change.
+
+## Slice 3: vegetation and ecology
+
+The 40 names of slice 3 follow slice 2: an observable is a variable, and a name
+for a thing is a concept. Two decisions are new.
+
+- **Per-taxon names map to generic variables.** ODM2 has a coverage name for each
+  of 15 salt marsh taxa, one for transient species, and `e_coli`, a count of one
+  species. BERVO keeps no concepts for single species (slice 1). Its variables
+  are generic, and the taxon travels with the data, through
+  `BERVO:involves_taxa` or an NCBITaxon identifier. So the 16 coverage names all
+  cross-reference Percent area covered by specified plant (`BERVO:0001834`), whose
+  comment already said "Use with BERVO:involves_taxa", and `e_coli` goes on the new
+  Bacterial abundance. **Each of these ODM2 names is narrower than the BERVO term
+  it lands on**, because it fixes the taxon.
+- **Groupings.** Vegetation structure sits under the existing Plant trait variable,
+  beside Stand basal area and Fractional vegetation cover. Community and organism
+  observations sit under a new Ecology variable (`BERVO:9000040`).
+
+### Mapped to existing terms
+
+| ODM2 term(s) | BERVO term |
+| --- | --- |
+| `areaBasal` | Stand basal area (`BERVO:0001887`) |
+| `diameterAtBreastHeight` | Stem diameter at breast height (`BERVO:0001885`) |
+| `leafAreaIndex` | Canopy leaf area index (`BERVO:0001879`) |
+| `asteridaeCoverage`, `batisMaritimaCoverage`, `borrichiaFrutescensCoverage`, `cuscutaSppCoverage`, `distichlisSpicataCoverage`, `ivaFrutescenscoverage`, `limoniumNashiiCoverage`, `lyciumCarolinianumCoverage`, `monanthochloeLittoralisCoverage`, `salicorniaBigeloviiCoverage`, `salicorniaVirginicaCoverage`, `spartinaAlternifloraCoverage`, `spartinaSpartineaCoverage`, `suaedaLinearisCoverage`, `suaedaMaritimaCoverage`, `transientSpeciesCoverage` | Percent area covered by specified plant (`BERVO:0001834`) |
+| `litterPlant` | Litter (`BERVO:8000055`), a concept, which also gains `ENVO:01000628` "plant litter" |
+
+`litterPlant` names only a thing, dead plant material, so it maps to the concept,
+as `hail` did in slice 2.
+
+### New terms
+
+Ecology variable (`BERVO:9000040`), under Variable. Fish (`BERVO:8000897`), under
+Organism as an ecological group with no taxon cross-reference, since fish are not
+monophyletic. Wrack (`BERVO:8000898`), dead plant material cast up by tides,
+under Litter. And 20 variables, `BERVO:0001967` to `BERVO:0001986`:
+
+| BERVO variable | Parent | ODM2 term | Unit |
+| --- | --- | --- | --- |
+| Canopy height (`BERVO:0001967`) | Plant trait variable | `canopyHeight` | `m` |
+| Canopy closure (`BERVO:0001968`) | Plant trait variable | `canopyClosure` | `1` |
+| Normalized difference vegetation index (`BERVO:0001969`) | Plant trait variable | `NDVI` | `1` |
+| Vegetation biomass (`BERVO:0001970`) | Plant trait variable | `biomassVegetation` | `g.m-2` |
+| Aboveground biomass (`BERVO:0001971`) | Vegetation biomass | `biomassAboveGround` | `g.m-2` |
+| Leaf wetness (`BERVO:0001972`) | Plant trait variable | `leafWetness` | `1` |
+| Vegetation type (`BERVO:0001973`) | Plant trait variable | `vegetationType` | `NA` |
+| Throughfall (`BERVO:0001974`) | Precipitation amount | `throughfall` | `mm` |
+| Bare ground cover (`BERVO:0001975`) | Plant trait variable | `noVegetationCoverage` | `1` |
+| Wrack cover (`BERVO:0001976`) | Plant trait variable | `wrackCoverage` | `1` |
+| Total biomass (`BERVO:0001977`) | Ecology variable | `biomassTotal` | `g.m-2` |
+| Phytoplankton biomass (`BERVO:0001978`) | Ecology variable | `biomassPhytoplankton` | `g.m-3` |
+| Body length (`BERVO:0001979`) | Ecology variable | `bodyLength` | `mm` |
+| Chlorophyll fluorescence (`BERVO:0001980`) | Ecology variable | `chlorophyllFluorescence` | `{RFU}` |
+| Areal count (`BERVO:0001981`) | Ecology variable | `countAreal` | `m-2` |
+| Bacterial abundance (`BERVO:0001982`) | Ecology variable | `e_coli` | `{CFU}.dL-1` |
+| Fish detections (`BERVO:0001983`) | Ecology variable | `fishDetections` | `1` |
+| Shannon diversity index (`BERVO:0001984`) | Ecology variable | `shannonDiversityIndex` | `1` |
+| Shannon evenness index (`BERVO:0001985`) | Ecology variable | `shannonEvennessIndex` | `1` |
+| Taxa count (`BERVO:0001986`) | Ecology variable | `taxaCount` | `1` |
+
+Canopy height is also the parent of Pft canopy height (`BERVO:0000695`) and
+Canopy height over grid (`BERVO:0000708`), the two EcoSIM forms of it.
+
+### Points to note for slice 3
+
+- **The salt marsh taxa** named in the coverage terms were renamed in NCBI
+  Taxonomy (see "Salt marsh taxa" under slice 1). Nothing in BERVO records the
+  taxon, so the renaming matters only to a dataset that attaches one.
+- **Percent area covered by specified plant has unit `1`** and a label and
+  definition that say percent. The unit follows AGENTS.md; the label is older than
+  this slice and is not changed here.
+- **Units a sensor defines.** Chlorophyll fluorescence is `{RFU}`, relative
+  fluorescence units, unless a sensor is calibrated to a concentration. Leaf
+  wetness is `1`, since sensors report it on their own scales. Bacterial abundance
+  is `{CFU}.dL-1`, colony-forming units per 100 mL, the usual basis for water
+  quality.
+- **Throughfall sits under Precipitation amount**, as the part of the precipitation
+  that reaches the ground beneath a canopy, and Aboveground biomass under
+  Vegetation biomass.
+- **Vegetation type is categorical**, `NA` with `value_types=Category`, like
+  Weather conditions; its categories are the question of issue #108.
 
 ## Points to note (slice 1)
 
