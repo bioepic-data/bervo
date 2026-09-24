@@ -36835,7 +36835,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001983">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
-        <obo:IAO_0000115>Number of fish identified by detection equipment, such as sonar or a tag reader, over a period.</obo:IAO_0000115>
+        <obo:IAO_0000115>Number of fish identified by detection equipment, such as sonar or a tag reader.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/fishDetections"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Fish detections&quot;: The number of fish identified by the detection equipment.</rdfs:comment>
