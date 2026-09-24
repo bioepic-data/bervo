@@ -40,7 +40,7 @@ snow fields are `snow-<key>`, and subsurface fields have no prefix.
 | `surface-vapor_pressure_air` | Atmospheric vapor pressure (`BERVO:0001374`) | Pa | Coupling divides by 1000 for `VPK_col` |
 | `surface-wind_speed` | Measured wind speed (`BERVO:0001372`) | `m.s-1` | Coupling multiplies by 3600 for `WindSpeedAtm_col` |
 | `surface-precipitation_rain` | Rainfall measurement (`BERVO:0001421`) | `m.s-1` | |
-| `surface-precipitation_snow`, `snow-precipitation` | Snowfall measurement (`BERVO:0001422`) | m SWE s-1 | |
+| `surface-precipitation_snow`, `snow-precipitation` | Snowfall measurement (`BERVO:0001422`) | `m{SWE}.s-1` | |
 | `surface-precipitation_total` | Precipitation from atmosphere to land surface (`BERVO:0001828`) | `m.s-1` | Chosen over Total precipitation (`BERVO:0000309`), which is a cumulative volume |
 | `surface-incoming_longwave_radiation` | Sky longwave radiation (`BERVO:0001380`) | `W.m-2` | |
 | `surface-albedo` | Surface albedo (`BERVO:0001507`) | | |
@@ -48,13 +48,13 @@ snow fields are `snow-<key>`, and subsurface fields have no prefix.
 | `surface-net_radiation` | Total net radiation at ground surface (`BERVO:0001443`) | `W.m-2` | |
 | `surface-qE_latent_heat` | Total latent heat flux at ground surface (`BERVO:0001444`) | `W.m-2` | |
 | `surface-qE_sensible_heat` | Total sensible heat flux at ground surface (`BERVO:0001445`) | `W.m-2` | |
-| `surface-qE_conducted`, `surface-ecosim_source` | Heat flux into ground, computed from surface energy balance model (`BERVO:0001488`) | W m-2, MW m-2 | `ecosim_source` is `HeatFlx2Grnd_col` per area per second |
+| `surface-qE_conducted`, `surface-ecosim_source` | Heat flux into ground, computed from surface energy balance model (`BERVO:0001488`) | `W.m-2`, `MW.m-2` | `ecosim_source` is `HeatFlx2Grnd_col` per area per second |
 | `surface-ecosim_water_source` | Infiltration into soil (`BERVO:0001821`) | `m.s-1` | `Qinflx2Soil_col` divided by 3600 |
 | `subsurface_ecosim_water_source` | Current step vertical root water uptake profile (`BERVO:0000392`) | | Sum over PFTs of `RPlantRootH2OUptk_pvr` |
 | `surface-water_table_depth` | Internal water table depth (`BERVO:0001763`) | | |
 | `porosity` | Soil porosity (`BERVO:0001524`) | | `POROS_vr` added |
 | `bulk_density` | Soil bulk density (`BERVO:0001535`) | | Computed from `density_rock` and `porosity` |
-| `hydraulic_conductivity` | Hydraulic conductivity at different moisture levels (`BERVO:0001771`) | | Unit corrected from `NONE` to `m MPa-1 h-1`, EcoSIM's declared unit |
+| `hydraulic_conductivity` | Hydraulic conductivity at different moisture levels (`BERVO:0001771`) | | Unit corrected from `NONE` to EcoSIM's declared unit, now written `m.MPa-1.h-1` |
 | `matric_pressure` | Soil micropore matric water potential (`BERVO:0001750`) | Pa | `PSISM1_vr` added; fed from ATS capillary pressure |
 | `field_capacity` | Water potentials at field capacity (`BERVO:0001503`) | | EcoSIM PK input parameter |
 | `wilting_point` | Water potentials at wilting point (`BERVO:0001504`) | | EcoSIM PK input parameter |
