@@ -684,7 +684,7 @@ definition is water chemistry.
 | Unsaturated zone thickness (`BERVO:0002019`) | Hydrology variable | `depthUnsaturatedZone` | `m` |
 | Perched water table depth (`BERVO:0002020`) | Water table depth | none | `m` |
 | Potentiometric surface depth (`BERVO:0002021`) | Hydrology variable | none | `m` |
-| Water table elevation (`BERVO:0002022`) | Hydrology variable | none | `m` |
+| Water table elevation (`BERVO:0002022`) | Water level | none | `m` |
 | Depth to water below measuring point (`BERVO:0002023`) | Hydrology variable | none | `m` |
 
 ### Points to note for slice 4

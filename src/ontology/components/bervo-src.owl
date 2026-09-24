@@ -37131,7 +37131,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000724"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
     </Class>
     
@@ -37612,7 +37612,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002022 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002022">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001997"/>
         <obo:IAO_0000115>Elevation of the water table above a stated datum, such as mean sea level.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>groundwater elevation</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
