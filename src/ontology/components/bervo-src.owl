@@ -34009,24 +34009,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001834">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>The proportion of total land area occupied by a specific plant species or taxonomic group expressed as a percentage. This parameter quantifies relative vegetation dominance, controlling species composition patterns and ecosystem functional diversity in plant community studies.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/asteridaeCoverage"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/batisMaritimaCoverage"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/borrichiaFrutescensCoverage"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/cuscutaSppCoverage"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/distichlisSpicataCoverage"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/ivaFrutescenscoverage"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/limoniumNashiiCoverage"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/lyciumCarolinianumCoverage"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/monanthochloeLittoralisCoverage"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/salicorniaBigeloviiCoverage"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/salicorniaVirginicaCoverage"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/spartinaAlternifloraCoverage"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/spartinaSpartineaCoverage"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/suaedaLinearisCoverage"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/suaedaMaritimaCoverage"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/transientSpeciesCoverage"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_taxa. ODM2 variable name concept &quot;Asteridae coverage&quot;: Areal coverage of the plant Asteridae. ODM2 variable name concept &quot;Batis maritima Coverage&quot;: Areal coverage of the plant Batis maritima. ODM2 variable name concept &quot;Borrichia frutescens Coverage&quot;: Areal coverage of the plant Borrichia frutescens. ODM2 variable name concept &quot;Cuscuta spp. coverage&quot;: Areal coverage of the plant Cuscuta spp. ODM2 variable name concept &quot;Distichlis spicata Coverage&quot;: Areal coverage of the plant Distichlis spicata. ODM2 variable name concept &quot;Iva frutescens coverage&quot;: Areal coverage of the plant Iva frutescens. ODM2 variable name concept &quot;Limonium nashii Coverage&quot;: Areal coverage of the plant Limonium nashii. ODM2 variable name concept &quot;Lycium carolinianum Coverage&quot;: Areal coverage of the plant Lycium carolinianum. ODM2 variable name concept &quot;Monanthochloe littoralis Coverage&quot;: Areal coverage of the plant Monanthochloe littoralis. ODM2 variable name concept &quot;Salicornia bigelovii coverage&quot;: Areal coverage of the plant Salicornia bigelovii. ODM2 variable name concept &quot;Salicornia virginica coverage&quot;: Areal coverage of the plant Salicornia virginica. ODM2 variable name concept &quot;Spartina alterniflora coverage&quot;: Areal coverage of the plant Spartina alterniflora. ODM2 variable name concept &quot;Spartina spartinea coverage&quot;: Areal coverage of the plant Spartina spartinea. ODM2 variable name concept &quot;Suaeda linearis coverage&quot;: Areal coverage of the plant Suaeda linearis. ODM2 variable name concept &quot;Suaeda maritima coverage&quot;: Areal coverage of the plant Suaeda maritima. ODM2 variable name concept &quot;Transient species coverage&quot;: Areal coverage of transient species.</rdfs:comment>
+        <rdfs:comment>Use with BERVO:involves_taxa</rdfs:comment>
         <rdfs:label>Percent area covered by specified plant</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
