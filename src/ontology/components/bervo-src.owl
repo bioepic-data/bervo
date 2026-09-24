@@ -37497,7 +37497,7 @@
         <obo:IAO_0000115>Position of a gate or other structure that controls the flow of water, as a fraction of fully open.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/position"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Position&quot;: Position of an element that interacts with water such as reservoir gates. ODM2 names the position of a water-control element such as a reservoir gate. Some datasets report it as a height or a number of turns instead.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Position&quot;: Position of an element that interacts with water such as reservoir gates. Some datasets report it as a height or a number of turns instead.</rdfs:comment>
         <rdfs:label>Gate position</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
