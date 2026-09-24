@@ -518,7 +518,7 @@ or volume, sits under Physical property beside Density, which is mass per volume
 | Leaf wetness (`BERVO:0001972`) | Meteorological variable | `leafWetness` | `1` |
 | Vegetation type (`BERVO:0001973`) | Ecology variable | `vegetationType` | `NA` |
 | Throughfall (`BERVO:0001974`) | Precipitation amount | `throughfall` | `mm` |
-| Bare ground cover (`BERVO:0001975`) | Land surface variable | `noVegetationCoverage` | `1` |
+| Unvegetated cover (`BERVO:0001975`) | Land surface variable | `noVegetationCoverage` | `1` |
 | Wrack cover (`BERVO:0001976`) | Surface litter variable | `wrackCoverage` | `1` |
 | Phytoplankton biomass (`BERVO:0001978`) | Ecology variable | `biomassPhytoplankton` | `g.m-3` |
 | Body length (`BERVO:0001979`) | Ecology variable | `bodyLength` | `m` |
@@ -551,7 +551,7 @@ variable. Canopy height is the parent of EcoSIM's Pft canopy height
 - **Canopy leaf area index, Canopy stem area index, Effective leaf area index, and
   Plant area index** move to Canopy variable, beside Canopy height and closure.
 - **Fractional vegetation cover** moves to Land surface variable, beside its
-  complement Bare ground cover, and changes unit from `m2.m-2` to `1`.
+  complement Unvegetated cover, and changes unit from `m2.m-2` to `1`.
 - **Stand basal area and Stem count per unit area** move to Ecology variable,
   beside Vegetation biomass and Organism count per unit area.
 - **Stand-level observables leave the Plant variable branch.** Canopy variable sits
@@ -588,8 +588,8 @@ variable. Canopy height is the parent of EcoSIM's Pft canopy height
 - **Body length is in `m`**, one scale for the whole family, so that a fish and a
   copepod compare directly, whatever scale each is usually reported in. Fish body
   length holds the fish standards: total, fork, and standard length.
-- **Cover fractions take `1` and `value_types=Fraction`**: Canopy closure, Bare
-  ground cover, Wrack cover, Leaf wetness, and Fractional vegetation cover. Leaf area index keeps
+- **Cover fractions take `1` and `value_types=Fraction`**: Canopy closure,
+  Unvegetated cover, Wrack cover, Leaf wetness, and Fractional vegetation cover. Leaf area index keeps
   `m2.m-2`, because it is not a fraction and can exceed 1.
 - **Leaf wetness** is the fraction of a leaf surface covered by liquid water. A
   sensor index approximates it; leaf wetness duration, time wet per interval, is a

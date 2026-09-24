@@ -34917,7 +34917,7 @@
         <oboInOwl:hasExactSynonym>FVC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>vegetation cover fraction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>fractional cover</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>CHESS: Vegetation_Cover, Cover_Percent, FractionalCover. Percent area covered by specified plant (BERVO:0001834) is the per-taxon form. Bare ground cover (BERVO:0001975) is its complement: the two sum to 1.</rdfs:comment>
+        <rdfs:comment>CHESS: Vegetation_Cover, Cover_Percent, FractionalCover. Percent area covered by specified plant (BERVO:0001834) is the per-taxon form. Unvegetated cover (BERVO:0001975) is its complement: the two sum to 1.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
         <rdfs:label>Fractional vegetation cover</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
@@ -36724,10 +36724,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
         <obo:IAO_0000115>Fraction of a horizontal ground area not covered by the vertical projection of vegetation.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/noVegetationCoverage"/>
-        <oboInOwl:hasRelatedSynonym>unvegetated cover</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>bare ground cover</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;No vegetation coverage&quot;: Areal coverage of no vegetation. It is the complement of Fractional vegetation cover (BERVO:0001883): the two sum to 1.</rdfs:comment>
-        <rdfs:label>Bare ground cover</rdfs:label>
+        <rdfs:label>Unvegetated cover</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
