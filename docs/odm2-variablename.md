@@ -535,10 +535,12 @@ cell density in soil a second parent of EcoSIM's Microbial density
 
 ### Points to note for slice 3
 
-- **Two kinds of microbial count.** A direct count of cells and a count of colonies
-  grown in culture measure different things, so each has its own family: Microbial
-  cell density, with children for water and soil, and Colony-forming unit density,
-  with a child for water. Both are per cubic metre, one scale for each family.
+- **Two kinds of microbial count.** A count of cells and a count of colonies grown
+  in culture measure different things, so each has its own family: Microbial cell
+  density, with children for water and soil, and Colony-forming unit density, with
+  a child for water. The cell family names no method, so a modelled density, such
+  as EcoSIM's Microbial density, belongs in it as much as a microscope count does;
+  the culture method belongs to the colony family alone. Both are per cubic metre, one scale for each family.
 - **Body length is in `m`.** The usual scale depends on the body, and BERVO does
   not carry two scales of one unit. Fish body length holds the fish standards:
   total, fork, and standard length.

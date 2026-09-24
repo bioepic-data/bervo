@@ -36920,7 +36920,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001987">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
-        <obo:IAO_0000115>Number of microbial cells per unit volume of a medium, counted directly, for example by microscopy or flow cytometry.</obo:IAO_0000115>
+        <obo:IAO_0000115>Number of microbial cells per unit volume of a medium.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
         <rdfs:comment>Use with BERVO:involves_taxa to name the taxon counted.</rdfs:comment>
         <rdfs:label>Microbial cell density</rdfs:label>
@@ -36938,7 +36938,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001988">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001987"/>
-        <obo:IAO_0000115>Number of microbial cells per unit volume of water, counted directly, for example by epifluorescence microscopy or flow cytometry.</obo:IAO_0000115>
+        <obo:IAO_0000115>Number of microbial cells per unit volume of water.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
         <rdfs:label>Microbial cell density in water</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
@@ -36955,7 +36955,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001989">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001987"/>
-        <obo:IAO_0000115>Number of microbial cells per unit volume of soil or sediment, counted directly after extraction.</obo:IAO_0000115>
+        <obo:IAO_0000115>Number of microbial cells per unit volume of soil or sediment.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
         <rdfs:label>Microbial cell density in soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
