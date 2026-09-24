@@ -36798,7 +36798,7 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Chlorophyll fluorescence&quot;: Chlorophyll Fluorescence. Reported in relative fluorescence units, {RFU}, unless a sensor is calibrated to a concentration.</rdfs:comment>
         <rdfs:label>Chlorophyll fluorescence</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000505"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>{RFU}</bervo:BERVO_has_unit>
