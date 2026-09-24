@@ -34,7 +34,7 @@ terms BERVO added, or amended, so that the mapping resolves. It addresses
 
 | CHESS columns | BERVO term | Parent | Unit |
 | --- | --- | --- | --- |
-| `Vegetation_Cover`, `Cover_Percent`, `FractionalCover` | Fractional vegetation cover (`BERVO:0001883`) | Plant trait variable | `m2.m-2` |
+| `Vegetation_Cover`, `Cover_Percent`, `FractionalCover` | Fractional vegetation cover (`BERVO:0001883`) | Plant trait variable | `1` |
 | | Stem diameter (`BERVO:0001884`) | Plant trait variable | `cm`, `m` |
 | `Stem_DBH`, `DBH_1_CM`, `DBH_2_CM`, `DBH_Avg_CM` | Stem diameter at breast height (`BERVO:0001885`) | Stem diameter | `cm` |
 | `Crown_Class`, `Canopy_Position` | Crown class (`BERVO:0001886`) | Plant trait variable | categorical |
