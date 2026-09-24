@@ -651,7 +651,10 @@ definition is water chemistry.
 | Aquifer (`BERVO:8000904`) | Subsurface | `ENVO:00012408` |
 | Confined aquifer (`BERVO:8000905`) | Aquifer | none |
 
-31 variables, `BERVO:0001993` to `BERVO:0002023`:
+31 variables, `BERVO:0001993` to `BERVO:0002023`. That this equals the 31 ODM2 names
+is a coincidence: five of the names map to existing variables, and five of the
+new variables, Water use and the four water table cases, carry no ODM2 name.
+
 
 | BERVO variable | Parent | ODM2 term | Unit |
 | --- | --- | --- | --- |
