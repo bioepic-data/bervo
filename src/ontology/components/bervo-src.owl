@@ -36246,8 +36246,8 @@
     <!-- https://w3id.org/bervo/BERVO_0001951 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001951">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
-        <obo:IAO_0000115>Rate of water movement through the xylem of a plant stem.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000006"/>
+        <obo:IAO_0000115>Rate of water movement through the xylem of a plant stem, for one plant.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/sapFlow"/>
         <oboInOwl:hasRelatedSynonym>sap flux</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
@@ -36256,7 +36256,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>kg.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>kg.h-1/{plant}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
     </Class>
