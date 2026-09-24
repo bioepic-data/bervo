@@ -54205,7 +54205,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000040">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
-        <obo:IAO_0000115>Grouping class for observed variables that describe organisms and the communities they form, such as biomass, cell and colony densities, counts, diversity indices, body sizes, pigment fluorescence, and vegetation type.</obo:IAO_0000115>
+        <obo:IAO_0000115>Grouping class for observed variables that describe organisms and the communities they form, such as biomass, stand structure, cell and colony densities, counts, diversity indices, body sizes, and vegetation type.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
         <rdfs:label>Ecology variable</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
