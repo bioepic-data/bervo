@@ -203,8 +203,9 @@ not `umol g-1 h-1 at 25 oC`. The definition can still say "at 25 degrees Celsius
 One exception is settled. The eight `… solubility coefficient at standard ambient
 temperature` rows keep the phrase in their labels (issue #99).
 
-Named reference states follow the same rule. `Dewpoint` goes in `contexts`, and so do the
-soil water states `Field capacity` and `Wilting point` (issue #83).
+Named reference states follow the same rule: the soil water states `Field capacity` and
+`Wilting point` go in `contexts` (issue #83). `Dewpoint` is the exception. A dewpoint
+temperature is the dewpoint itself, so `Dewpoint` goes in `attributes` (PR #110).
 
 ## Variables that involve a set of chemicals
 
@@ -245,8 +246,8 @@ directly under `Concept`. The validator warns when a filler has no subclasses at
 
 ## Cross-references to other ontologies
 
-The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 817
-cross-references on 610 terms today — about 22% of the ontology.
+The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 892
+cross-references on 680 terms today — about 25% of the ontology.
 
 ### Map variables as well as concepts
 
@@ -254,8 +255,9 @@ cross-references on 610 terms today — about 22% of the ontology.
 look for an equivalent in the vocabularies BERVO aligns with as part of adding it, not as a
 later pass.
 
-Today 606 of the 610 cross-referenced terms are concepts (`8xxxxxx`) and only 4 are
-variables. That records which vocabularies were mapped first: ODM2 speciation, medium and
+Today 612 of the 680 cross-referenced terms are concepts (`8xxxxxx`) and 68 are
+variables, most of them from the ODM2 variable names. The concept majority records which
+vocabularies were mapped first: ODM2 speciation, medium and
 site type, COMO, and ChEBI name things and properties, which land on concepts. It is not a
 rule. A vocabulary of observables, such as the ODM2 variable names
 (`docs/odm2-variablename.md`), maps mostly onto variables, and a BERVO variable that matches
@@ -268,25 +270,25 @@ or hourly, and a model-specific composite such as *Cumulative ecosystem heterotr
 respiration* may have no equivalent at all. A broader external term is not an exact
 equivalent.
 
-Most terms carry exactly one cross-reference; 193 carry two (typically a domain ontology
-plus an ODM2 concept) and seven carry three or more. Leave the column blank when no good match exists — a wrong mapping is
+Most terms carry exactly one cross-reference; 196 carry two (typically a domain ontology
+plus an ODM2 concept) and eight carry three or more. Leave the column blank when no good match exists — a wrong mapping is
 worse than none.
 
 ### Which ontology to reach for
 
 | Prefix | Use for | Current count |
 | --- | --- | --- |
-| `CHEBI` | Chemical entities — *Nitrous oxide* → `CHEBI:17045` | 146 |
-| `ENVO` | Environmental materials, features, landforms, biomes, soil water states — *Runoff* → `ENVO:06105211`, *Stream* → `ENVO:00000023`, *Field capacity* → `ENVO:06105302` | 64 |
+| `CHEBI` | Chemical entities — *Nitrous oxide* → `CHEBI:17045` | 147 |
+| `ENVO` | Environmental materials, features, landforms, biomes, soil water states — *Runoff* → `ENVO:06105211`, *Stream* → `ENVO:00000023`, *Field capacity* → `ENVO:06105302` | 67 |
 | `PO` | Plant anatomy and development — *Leaf* → `PO:0025034` | 11 |
-| `PATO` | Qualities and properties — *Concentration* → `PATO:0000033` | 13 |
-| `GO` | Biological processes — *Biological process* → `GO:0008150` | 1 |
+| `PATO` | Qualities and properties — *Concentration* → `PATO:0000033` | 14 |
+| `GO` | Biological processes — *Biological process* → `GO:0008150` | 2 |
 | `AGRO` | Agronomy — *Irrigation* → `AGRO:00000006` | 1 |
 | `MIXS` | Sequence-metadata standard fields | 4 |
 | `COB` | Core Ontology for Biology and Biomedicine — *Organism* → `COB:0000022` | 1 |
 | `NCBITaxon` | Taxa — *Fungi* → `NCBITaxon:4751` | 5 |
 | `COMO` | Measurement and experiment metadata concepts | 275 |
-| `ODM2` | ODM2 controlled vocabularies, as `ODM2:<scheme>/<id>` — *Nitrite* → `ODM2:speciation/NO2`, *Rock* → `ODM2:medium/rock`, *Stream* → `ODM2:sitetype/stream`, *Albedo* → `ODM2:variablename/albedo` | 296 |
+| `ODM2` | ODM2 controlled vocabularies, as `ODM2:<scheme>/<id>` — *Nitrite* → `ODM2:speciation/NO2`, *Rock* → `ODM2:medium/rock`, *Stream* → `ODM2:sitetype/stream`, *Albedo* → `ODM2:variablename/albedo` | 365 |
 
 `ODM2` covers the ODM2 speciation, medium, site type, and variable name vocabularies (see
 `docs/odm2-speciation.md`, `docs/odm2-medium.md`, `docs/odm2-sitetype.md`, and
