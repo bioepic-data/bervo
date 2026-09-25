@@ -10505,10 +10505,11 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001847"/>
         <obo:IAO_0000115>Carbon mass ratio of mesophyll chlorophyll to total leaf protein in C3 plants, an EcoSIM plant trait parameter.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LeafC3ChlorofilConc_pft</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>leaf C3 chlorophyll content</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), from the EcoSIM source</rdfs:comment>
         <rdfs:comment>EcoSIM renamed LeafC3ChlorofilConc_pft to LeafC3Chl2Protein_pft in September 2025 (commit 45e85e6). The current source holds it as LeafProtein2Chl_pft, read from the trait file&apos;s CHL, &apos;carbon mass ratio of mesophyll chlorophyll to total leaf protein [gC Chl /(gC protein)]&apos;.</rdfs:comment>
-        <rdfs:label>Leaf C3 chlorophyll content</rdfs:label>
+        <rdfs:label>Leaf C3 chlorophyll to protein carbon ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
@@ -10525,10 +10526,11 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001847"/>
         <obo:IAO_0000115>Carbon mass ratio of chlorophyll to total leaf protein in C4 plants, an EcoSIM plant trait parameter.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LeafC4ChlorofilConc_pft</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>leaf C4 chlorophyll content</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), from the EcoSIM source</rdfs:comment>
         <rdfs:comment>EcoSIM renamed LeafC4ChlorofilConc_pft to LeafC4Chl2Protein_pft in September 2025 (commit 45e85e6).</rdfs:comment>
-        <rdfs:label>Leaf C4 chlorophyll content</rdfs:label>
+        <rdfs:label>Leaf C4 chlorophyll to protein carbon ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
@@ -34338,8 +34340,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001847">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>Carbon mass ratio of chlorophyll to total leaf protein.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>leaf chlorophyll content</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), release preparation</rdfs:comment>
-        <rdfs:label>Leaf chlorophyll content</rdfs:label>
+        <rdfs:label>Leaf chlorophyll to protein carbon ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
