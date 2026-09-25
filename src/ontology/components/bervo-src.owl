@@ -38300,6 +38300,206 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002057 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002057">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Capacity of water to neutralize strong acid, measured by titration with a strong acid to an endpoint of about pH 4.5, and arising in most natural waters from bicarbonate, carbonate, and hydroxide.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/alkalinity"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/alkalinityTotal"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Alkalinity&quot;: Alkalinity is the capacity of water to resist changes in pH that would make the water more acidic. It should not be confused with basicity which is an absolute measurement on the pH scale. Alkalinity is the strength of a buffer solution composed of weak acids and their conjugate bases. It is measured by titrating the solution with a monoprotic acid such as HCl until its pH changes abruptly, or it reaches a known endpoint where that happens. Alkalinity is expressed in units of meq/L (milliequivalents per liter), which corresponds to the amount of monoprotic acid added as a titrant in millimoles per liter. ODM2 variable name concept &quot;Alkalinity, total&quot;: Total Alkalinity. Measured on a filtered sample. The same titration on an unfiltered sample gives Acid neutralizing capacity (BERVO:0002062). The property it measures is Total alkalinity (BERVO:8000634). Often reported as calcium carbonate, mg{CaCO3}.L-1.</rdfs:comment>
+        <rdfs:label>Water alkalinity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000634"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000098"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000141"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002058 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002058">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002057"/>
+        <obo:IAO_0000115>Part of the alkalinity of water contributed by bicarbonate ions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/alkalinityBicarbonate"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Alkalinity, bicarbonate&quot;: Bicarbonate Alkalinity</rdfs:comment>
+        <rdfs:label>Bicarbonate alkalinity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000141"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002059 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002059">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002057"/>
+        <obo:IAO_0000115>Part of the alkalinity of water contributed by carbonate ions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/alkalinityCarbonate"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Alkalinity, carbonate&quot;: Carbonate Alkalinity. This is the carbonate part in the titration speciation of water analysis. In marine carbonate chemistry, carbonate alkalinity means bicarbonate plus twice carbonate, which is Carbonate plus bicarbonate alkalinity (BERVO:0002060) here.</rdfs:comment>
+        <rdfs:label>Carbonate alkalinity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000098"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002060 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002060">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002057"/>
+        <obo:IAO_0000115>Part of the alkalinity of water contributed by carbonate and bicarbonate ions together, the alkalinity less its hydroxide part.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/alkalinityCarbonatePlusBicarbonate"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Alkalinity, carbonate plus bicarbonate&quot;: Alkalinity, carbonate plus bicarbonate</rdfs:comment>
+        <rdfs:label>Carbonate plus bicarbonate alkalinity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000098"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000141"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002061 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002061">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002057"/>
+        <obo:IAO_0000115>Part of the alkalinity of water contributed by hydroxide ions, present where the pH is above about 10.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/alkalinityHydroxide"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Alkalinity, hydroxide&quot;: Hydroxide Alkalinity</rdfs:comment>
+        <rdfs:label>Hydroxide alkalinity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002062 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002062">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Capacity of an unfiltered water sample, dissolved and particulate matter together, to neutralize strong acid, measured by the same titration as alkalinity.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/acidNeutralizingCapacity"/>
+        <oboInOwl:hasRelatedSynonym>ANC</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Acid neutralizing capacity&quot;: Acid neutralizing capacity. Equal to Water alkalinity (BERVO:0002057) where the water carries no particles that react with acid.</rdfs:comment>
+        <rdfs:label>Acid neutralizing capacity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000634"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002063 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002063">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Capacity of water to neutralize strong base, measured by titration with a strong base to an endpoint of about pH 8.3, and arising from dissolved carbon dioxide, strong mineral acids, and hydrolyzing metal ions such as iron and aluminum.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/acidityTotalAcidity"/>
+        <oboInOwl:hasExactSynonym>total acidity</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Acidity, total acidity&quot;: Total acidity</rdfs:comment>
+        <rdfs:label>Water acidity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002064 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002064">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002063"/>
+        <obo:IAO_0000115>Part of the acidity of water contributed by dissolved carbon dioxide and carbonic acid, titrated between the mineral acidity endpoint and the endpoint of about pH 8.3.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/acidityCO2Acidity"/>
+        <oboInOwl:hasExactSynonym>CO2 acidity</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Acidity, CO2 acidity&quot;: CO2 acidity</rdfs:comment>
+        <rdfs:label>Carbon dioxide acidity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002065 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002065">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002063"/>
+        <obo:IAO_0000115>Part of the acidity of water contributed by strong mineral acids, titrated with a strong base to the methyl orange endpoint, between about pH 3.7 and 4.5, and present only in water whose pH is below that endpoint, such as acid mine drainage.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/acidityMineralAcidity"/>
+        <oboInOwl:hasRelatedSynonym>methyl orange acidity</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Acidity, mineral acidity&quot;: Mineral Acidity</rdfs:comment>
+        <rdfs:label>Mineral acidity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000039"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002066 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002066">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002063"/>
+        <obo:IAO_0000115>Acidity of water measured after the sample is boiled with hydrogen peroxide, which oxidizes ferrous iron and manganese so that the acidity their hydrolysis releases is counted, used chiefly for mine drainage.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/acidityHot"/>
+        <oboInOwl:hasExactSynonym>hot peroxide acidity</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Acidity, hot&quot;: Hot Acidity</rdfs:comment>
+        <rdfs:label>Hot acidity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000182"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000608"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
