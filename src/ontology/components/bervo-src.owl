@@ -39379,8 +39379,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
         <obo:IAO_0000115>Concentration of dissolved oxygen in water as a fraction of the concentration at equilibrium with the atmosphere at the water&apos;s temperature, salinity, and pressure, above 1 when the water is supersaturated.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/oxygenDissolvedPercentOfSaturation"/>
-        <oboInOwl:hasExactSynonym>dissolved oxygen percent saturation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>DO saturation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>dissolved oxygen percent saturation</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Oxygen, dissolved percent of saturation&quot;: Dissolved oxygen, percent saturation. Usually reported in percent.</rdfs:comment>
         <rdfs:label>Dissolved oxygen saturation</rdfs:label>
