@@ -62,7 +62,7 @@ wrong. See "Points to note".
 | Ecology | 8 left | **Slice 3** |
 | Hydrology and snow | 31 | **Slice 4** |
 | Soil and geology | 44 | **Slice 5** |
-| Water quality | 63 | Slice 6 |
+| Water quality | 63 | **Slice 6** |
 
 The two excluded buckets:
 
@@ -912,6 +912,209 @@ are unused: they held the generic C:N ratios before review made them concepts.
 - **Units.** Particle size is `m`, one scale for lengths, as Body length is in
   slice 3. Soil microbial biomass and Soil bacterial DNA mass are both
   `mg.kg-1`.
+
+## Slice 6: water quality
+
+The 63 names of slice 6 are the analyses of a water quality laboratory and the
+readings of a water quality sonde. They follow the rules of the earlier slices:
+an observable is a variable, a name for a thing is a concept, a true equivalent
+is mapped rather than duplicated, and a generic observable becomes the parent of
+the narrower ones. Where a generic parent has no ODM2 name, BERVO adds it, as
+slice 4 added Water use.
+
+### Mapped to existing terms
+
+| ODM2 term | BERVO term |
+| --- | --- |
+| `specificConductance` | Specific conductance (`BERVO:8000426`), a concept |
+| `reductionPotential` | Redox potential (`BERVO:8000349`), a concept |
+
+Both are bare property names, like `pH`, `salinity`, `turbidity`, and
+`electricalConductivity`, which slice 1 mapped onto their concepts. Slice 1
+recorded that `specificConductance` would land on Specific conductance, and it
+does. Redox potential gains "oxidation-reduction potential" as an exact synonym,
+and "ORP" and "reduction potential" as related synonyms. If the separate change
+that slice 2 describes moves the bare property names onto variables, these two
+move with them.
+
+### New terms
+
+Water quality variable (`BERVO:9000043`), under Variable, holds observations of
+the quality of water for its uses and for aquatic life. Water variable was not
+used, for the reason slice 4 gave: its definition is water chemistry, and BOD,
+solids, color, and odor are not chemistry.
+
+| BERVO term | Parent | ODM2 term | Other cross-reference |
+| --- | --- | --- | --- |
+| Aragonite (`BERVO:8000919`) | Mineral, Calcium carbonate | none | `CHEBI:52239` |
+| Colored dissolved organic matter (`BERVO:8000920`) | Dissolved organic matter | `coloredDissolvedOrganicMatter` | none |
+
+63 variables, `BERVO:0002057` to `BERVO:0002119`. That this equals the 63 ODM2
+names is a coincidence again: four names map to terms that already existed or
+share a variable, one names a concept, and five of the new variables carry no
+ODM2 name.
+
+| BERVO variable | Parent | ODM2 term | Unit |
+| --- | --- | --- | --- |
+| Water alkalinity (`BERVO:0002057`) | Water quality variable | `alkalinity`, `alkalinityTotal` | `meq.L-1` |
+| Bicarbonate alkalinity (`BERVO:0002058`) | Water alkalinity | `alkalinityBicarbonate` | `meq.L-1` |
+| Carbonate alkalinity (`BERVO:0002059`) | Water alkalinity | `alkalinityCarbonate` | `meq.L-1` |
+| Carbonate plus bicarbonate alkalinity (`BERVO:0002060`) | Water alkalinity | `alkalinityCarbonatePlusBicarbonate` | `meq.L-1` |
+| Hydroxide alkalinity (`BERVO:0002061`) | Water alkalinity | `alkalinityHydroxide` | `meq.L-1` |
+| Acid neutralizing capacity (`BERVO:0002062`) | Water quality variable | `acidNeutralizingCapacity` | `meq.L-1` |
+| Water acidity (`BERVO:0002063`) | Water quality variable | `acidityTotalAcidity` | `meq.L-1` |
+| Carbon dioxide acidity (`BERVO:0002064`) | Water acidity | `acidityCO2Acidity` | `meq.L-1` |
+| Mineral acidity (`BERVO:0002065`) | Water acidity | `acidityMineralAcidity` | `meq.L-1` |
+| Hot acidity (`BERVO:0002066`) | Water acidity | `acidityHot` | `meq.L-1` |
+| Biochemical oxygen demand (`BERVO:0002067`) | Water quality variable | none | `mg{O2}.L-1` |
+| Carbonaceous biochemical oxygen demand (`BERVO:0002068`) | Biochemical oxygen demand | none | `mg{O2}.L-1` |
+| Nitrogenous biochemical oxygen demand (`BERVO:0002069`) | Biochemical oxygen demand | none | `mg{O2}.L-1` |
+| 1-day biochemical oxygen demand (`BERVO:0002070`) | Biochemical oxygen demand | `BOD1` | `mg{O2}.L-1` |
+| 5-day biochemical oxygen demand (`BERVO:0002071`) | Biochemical oxygen demand | `BOD5` | `mg{O2}.L-1` |
+| 20-day biochemical oxygen demand (`BERVO:0002072`) | Biochemical oxygen demand | `BOD20` | `mg{O2}.L-1` |
+| Ultimate biochemical oxygen demand (`BERVO:0002073`) | Biochemical oxygen demand | `BODu` | `mg{O2}.L-1` |
+| 2-day carbonaceous biochemical oxygen demand (`BERVO:0002074`) | Carbonaceous biochemical oxygen demand | `BOD2Carbonaceous` | `mg{O2}.L-1` |
+| 3-day carbonaceous biochemical oxygen demand (`BERVO:0002075`) | Carbonaceous biochemical oxygen demand | `BOD3Carbonaceous` | `mg{O2}.L-1` |
+| 4-day carbonaceous biochemical oxygen demand (`BERVO:0002076`) | Carbonaceous biochemical oxygen demand | `BOD4Carbonaceous` | `mg{O2}.L-1` |
+| 5-day carbonaceous biochemical oxygen demand (`BERVO:0002077`) | Carbonaceous biochemical oxygen demand | `BOD5Carbonaceous` | `mg{O2}.L-1` |
+| 6-day carbonaceous biochemical oxygen demand (`BERVO:0002078`) | Carbonaceous biochemical oxygen demand | `BOD6Carbonaceous` | `mg{O2}.L-1` |
+| 7-day carbonaceous biochemical oxygen demand (`BERVO:0002079`) | Carbonaceous biochemical oxygen demand | `BOD7Carbonaceous` | `mg{O2}.L-1` |
+| 20-day carbonaceous biochemical oxygen demand (`BERVO:0002080`) | Carbonaceous biochemical oxygen demand | `BOD20Carbonaceous` | `mg{O2}.L-1` |
+| Ultimate carbonaceous biochemical oxygen demand (`BERVO:0002081`) | Carbonaceous biochemical oxygen demand | `BODuCarbonaceous` | `mg{O2}.L-1` |
+| 5-day nitrogenous biochemical oxygen demand (`BERVO:0002082`) | Nitrogenous biochemical oxygen demand | `BOD5Nitrogenous` | `mg{O2}.L-1` |
+| 20-day nitrogenous biochemical oxygen demand (`BERVO:0002083`) | Nitrogenous biochemical oxygen demand | `BOD20Nitrogenous` | `mg{O2}.L-1` |
+| Ultimate nitrogenous biochemical oxygen demand (`BERVO:0002084`) | Nitrogenous biochemical oxygen demand | `BODuNitrogenous` | `mg{O2}.L-1` |
+| Chemical oxygen demand (`BERVO:0002085`) | Water quality variable | `COD` | `mg{O2}.L-1` |
+| Water hardness (`BERVO:0002086`) | Water quality variable | `hardnessTotal` | `mg{CaCO3}.L-1` |
+| Calcium hardness (`BERVO:0002087`) | Water hardness | `hardnessCalcium` | `mg{CaCO3}.L-1` |
+| Magnesium hardness (`BERVO:0002088`) | Water hardness | `hardnessMagnesium` | `mg{CaCO3}.L-1` |
+| Carbonate hardness (`BERVO:0002089`) | Water hardness | `hardnessCarbonate` | `mg{CaCO3}.L-1` |
+| Non-carbonate hardness (`BERVO:0002090`) | Water hardness | `hardnessNonCarbonate` | `mg{CaCO3}.L-1` |
+| Total solids (`BERVO:0002091`) | Water quality variable | `solidsTotal` | `mg.L-1` |
+| Total dissolved solids (`BERVO:0002092`) | Total solids | `solidsTotalDissolved` | `mg.L-1` |
+| Total suspended solids (`BERVO:0002093`) | Total solids | `solidsTotalSuspended` | `mg.L-1` |
+| Total fixed solids (`BERVO:0002094`) | Total solids | `solidsTotalFixed` | `mg.L-1` |
+| Total volatile solids (`BERVO:0002095`) | Total solids | `solidsTotalVolatile` | `mg.L-1` |
+| Fixed dissolved solids (`BERVO:0002096`) | Total dissolved solids, Total fixed solids | `solidsRixedDissolved` | `mg.L-1` |
+| Volatile dissolved solids (`BERVO:0002097`) | Total dissolved solids, Total volatile solids | `solidsVolatileDissolved` | `mg.L-1` |
+| Fixed suspended solids (`BERVO:0002098`) | Total suspended solids, Total fixed solids | `solidsFixedSuspended` | `mg.L-1` |
+| Volatile suspended solids (`BERVO:0002099`) | Total suspended solids, Total volatile solids | `solidsVolatileSuspended` | `mg.L-1` |
+| Water color (`BERVO:0002100`) | Water quality variable | `color` | `{PCU}` |
+| Threshold odor number (`BERVO:0002101`) | Water quality variable | `odor` | `1` |
+| Oil and grease (`BERVO:0002102`) | Water quality variable | `oilAndGrease` | `mg.L-1` |
+| Ultraviolet absorbance (`BERVO:0002103`) | Water quality variable | `absorbanceUltraviolet` | `m-1` |
+| Specific ultraviolet absorbance (`BERVO:0002104`) | Water quality variable | none | `L.mg-1.m-1` |
+| Specific ultraviolet absorbance at 254 nm (`BERVO:0002105`) | Specific ultraviolet absorbance | `SUVA254` | `L.mg-1.m-1` |
+| Specific ultraviolet absorbance at 280 nm (`BERVO:0002106`) | Specific ultraviolet absorbance | `SUVA280` | `L.mg-1.m-1` |
+| Dissolved organic matter fluorescence (`BERVO:0002107`) | Water quality variable | `fluorescenceDissolvedOrganicMatter`, `fluorescenceDissolvedOrganicCarbon` | `{QSU}` |
+| Fluorescence index (`BERVO:0002108`) | Water quality variable | `fluorescenceIndex` | `1` |
+| Humification index (`BERVO:0002109`) | Water quality variable | `humificationIndex` | `1` |
+| Dissolved oxygen saturation (`BERVO:0002110`) | Water quality variable | `oxygenDissolvedPercentOfSaturation` | `1` |
+| Langelier saturation index (`BERVO:0002111`) | Water quality variable | `LSI` | `1` |
+| Aragonite saturation state (`BERVO:0002112`) | Water quality variable | `omegaAragonite` | `1` |
+| Carlson trophic state index (`BERVO:0002113`) | Water quality variable | none | `1` |
+| Secchi depth trophic state index (`BERVO:0002114`) | Carlson trophic state index | `TSI` | `1` |
+| Particle number density in water (`BERVO:0002115`) | Water quality variable | `particleCounts` | `{particles}.m-3` |
+| Gross alpha activity (`BERVO:0002116`) | Water quality variable | `grossAlphaRadionuclides` | `Bq.L-1` |
+| Gross beta activity (`BERVO:0002117`) | Water quality variable | `grossBetaRadionuclides` | `Bq.L-1` |
+| Suspended sediment concentration (`BERVO:0002118`) | Sediment variable | `sedimentSuspended` | `mg.L-1` |
+| Suspended sediment load (`BERVO:0002119`) | Sediment variable | `loadSuspended` | `t.d-1` |
+
+### Existing terms changed
+
+- **Redox potential** (`BERVO:8000349`) and **Specific conductance**
+  (`BERVO:8000426`) take the ODM2 cross-references, the ODM2 comments, and, on
+  Redox potential, the synonyms above.
+
+### Points to note for slice 6
+
+- **Total alkalinity is the property.** Total alkalinity (`BERVO:8000634`) came
+  in as a concept with the speciation alignment. By slice 2's rule it is the
+  property, and the observable that measures it names its medium: Water
+  alkalinity, whose `attributes` is Total alkalinity. ODM2's `alkalinity` and
+  `alkalinityTotal` both land on Water alkalinity, as `radiationIncoming` and
+  `radiationTotalIncoming` both land on Incoming radiation. Water acidity and
+  Water hardness are named the same way, for symmetry and because "hardness" alone
+  also names a property of minerals and of snow.
+- **Alkalinity and acid neutralizing capacity.** Alkalinity is titrated on a
+  filtered sample and acid neutralizing capacity on an unfiltered one. They are
+  siblings, and the second also takes Total alkalinity as its attribute.
+- **Carbonate alkalinity has two meanings.** Here it is the carbonate part of
+  the titration speciation of water analysis, beside the bicarbonate and
+  hydroxide parts. In marine carbonate chemistry, carbonate alkalinity means
+  bicarbonate plus twice carbonate, which in equivalents is Carbonate plus
+  bicarbonate alkalinity. The term's comment says so.
+- **The parts nest under the whole.** The four alkalinity parts sit under Water
+  alkalinity, the three acidity parts under Water acidity, and the four hardness
+  parts under Water hardness. This follows slice 4, where Baseflow sits under
+  Streamflow. Carbonate and non-carbonate hardness split the total by anion.
+  Calcium and magnesium hardness split it by cation.
+- **BOD nests twice.** Biochemical oxygen demand, with no ODM2 name, holds the
+  total BOD names and two new generics, Carbonaceous and Nitrogenous biochemical
+  oxygen demand, which hold the carbonaceous and nitrogenous names. A 5-day
+  carbonaceous BOD is not a kind of 5-day BOD, so no term takes an incubation
+  period as its parent. Incubation is at 20 degrees Celsius, which the
+  definitions say. Standard ambient temperature is 25 degrees Celsius, so it is
+  not in `contexts`.
+- **Solids form a lattice.** Total solids splits into dissolved and suspended,
+  and also into fixed and volatile. Each of the four fixed, volatile, dissolved,
+  and suspended combinations takes both of its parents. ODM2's
+  `solidsRixedDissolved` misspells fixed. The cross-reference uses the identifier
+  as ODM2 spells it, as `hosphorusPhosphateFlux` does.
+- **Suspended sediment is not total suspended solids.** Suspended sediment
+  concentration is measured on the whole sample, and total suspended solids on a
+  subsample, which can understate the sand. The two comments point to each other.
+  Suspended sediment concentration and Suspended sediment load sit under Sediment
+  variable, beside the slice 5 sediment terms, since they are observations of
+  sediment transport.
+- **Suspended load is a rate.** ODM2 defines `loadSuspended` as the sediment
+  itself. As an observable it is the mass passing a stream section per unit time,
+  in `t.d-1`, as streamgaging agencies report it.
+- **Colored dissolved organic matter is a concept.** ODM2 defines
+  `coloredDissolvedOrganicMatter` as a concentration of a material, as slice 1's
+  organism groups were defined by a measurement. The ODM2 name goes on the
+  material, and the variables that measure it name it: Ultraviolet absorbance
+  and Dissolved organic matter fluorescence take it in `measurement_ofs`. OLS
+  has no ENVO or ChEBI term for it.
+- **Two ODM2 fluorescence names are one quantity.** `fluorescenceDissolvedOrganicMatter`
+  and `fluorescenceDissolvedOrganicCarbon` both land on Dissolved organic matter
+  fluorescence. The molecules that fluoresce are the organic matter, and a
+  fluorescence reading does not isolate their carbon. A reading calibrated to a
+  DOC concentration, in `mg.L-1`, would be a different quantity and would need
+  its own term.
+- **Humification index.** ODM2 defines humification, not the index. The term is
+  the fluorescence index of Zsolnay and others (1999), in the form most datasets
+  report. The comment names the Ohno (2002) form, which divides by the sum of the
+  two regions.
+- **Trophic state.** ODM2's `TSI` is Carlson's index from Secchi depth. It is
+  Secchi depth trophic state index, under a generic Carlson trophic state index
+  with no ODM2 name, since Carlson also gave forms from chlorophyll a and total
+  phosphorus.
+- **Odor is the threshold odor number.** ODM2 names only "Odor". The variable is
+  the quantity odor is reported as, a dilution ratio, `1`. A dataset that
+  records odor as a description would need a categorical variable, which issue
+  #108 would cover.
+- **Aragonite** is added under Mineral with Calcium carbonate as a second
+  parent, as Quartz takes Silicon dioxide.
+- **Units.** Alkalinity, acidity, and acid neutralizing capacity are `meq.L-1`,
+  the unit ODM2's alkalinity definition gives. Hardness is `mg{CaCO3}.L-1`, the
+  usual expression for it. Many datasets report alkalinity as calcium carbonate
+  too, and the alkalinity comment says so. Oxygen demand is `mg{O2}.L-1`. Color
+  is `{PCU}`, platinum-cobalt units. DOM fluorescence is `{QSU}`, quinine sulfate
+  units; some sensors report `{RFU}`. Ultraviolet absorbance is per meter,
+  `m-1`, and often reported per centimeter. SUVA is `L.mg-1.m-1`. Gross alpha and
+  beta activity are `Bq.L-1`, often reported in `pCi.L-1`. Dissolved oxygen
+  saturation is `1`, a ratio that exceeds 1 in supersaturated water, and is
+  usually reported in percent.
+- **Secchi depth and Light attenuation coefficient stay in Hydrology variable.**
+  Slice 4 said they might move here. Hydrology variable's definition names water
+  clarity and light attenuation, so they stay.
+- **Not moved.** Turbidity of water (`BERVO:0001836`) and Measured electrical
+  conductivity (`BERVO:0001703`) still sit under Water variable. The first is a
+  water quality observable. The second is EcoSIM's, with `measured_ins` of Soil.
+  Moving them is the separate change slice 4 described.
+- **Dissolved oxygen concentration is not here.** ODM2's `oxygenDissolved` is a
+  chemical species name and waits with the other 602.
 
 ## Points to note (slice 1)
 
