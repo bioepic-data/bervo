@@ -43823,10 +43823,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000236">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
-        <obo:IAO_0000115>A measure of the amount of light absorbed by a material or substance as electromagnetic radiation passes through it, fundamental for understanding optical properties. This property affects photosynthesis, light penetration in water bodies, remote sensing applications, and represents the inverse of transmittance in optical and environmental measurements.</obo:IAO_0000115>
+        <obo:IAO_0000115>A measure of the amount of light absorbed by a material or substance as electromagnetic radiation passes through it, fundamental for understanding optical properties. This property affects photosynthesis, light penetration in water bodies, and remote sensing applications, and equals the negative decadic logarithm of transmittance in optical and environmental measurements.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000133"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/absorbance"/>
-        <oboInOwl:hasRelatedSynonym>transmittance</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Absorbance&quot;: The amount of radiation absorbed by a material</rdfs:comment>
         <rdfs:label>Absorbance</rdfs:label>
