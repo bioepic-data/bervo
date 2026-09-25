@@ -55150,6 +55150,48 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_8000919 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000919">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000094"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
+        <obo:IAO_0000115>Orthorhombic polymorph of calcium carbonate, more soluble than calcite, deposited in the shells and skeletons of corals, pteropods, and many mollusks.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52239"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:label>Aragonite</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000920 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000920">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000800"/>
+        <obo:IAO_0000115>Fraction of dissolved organic matter that absorbs ultraviolet and visible light, chiefly humic and fulvic substances, which gives natural water a yellow to brown color.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/coloredDissolvedOrganicMatter"/>
+        <oboInOwl:hasExactSynonym>CDOM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>chromophoric dissolved organic matter</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>gelbstoff</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>yellow substance</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Colored dissolved organic matter&quot;: The concentration of colored dissolved organic matter (humic substances). ODM2 defines the concentration. BERVO keeps the material, which Ultraviolet absorbance (BERVO:0002103) and Dissolved organic matter fluorescence (BERVO:0002107) measure.</rdfs:comment>
+        <rdfs:label>Colored dissolved organic matter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_9000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000000">
@@ -55895,6 +55937,23 @@
         <obo:IAO_0000115>Grouping class for observed variables that describe bedrock, geologic materials, and the deposits over them, such as rock type, borehole lithology, natural gamma radiation, and the thickness of alluvium.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
         <rdfs:label>Geology variable</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_9000043 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_9000043">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
+        <obo:IAO_0000115>Grouping class for observed variables that describe the quality of water for its uses and for aquatic life: its capacity to neutralize acid or base, oxygen demand, hardness, solids, optical and sensory properties, mineral saturation state, trophic state, and gross radioactivity.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:label>Water quality variable</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
