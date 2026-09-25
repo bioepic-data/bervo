@@ -34348,7 +34348,7 @@
         <obo:IAO_0000115>Fraction of total leaf protein carbon that is protein bound to chlorophyll in the light-harvesting complexes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LeafProtein2Chl_pft</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>leaf chlorophyll content</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), release preparation</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), from the EcoSIM source</rdfs:comment>
         <rdfs:comment>EcoSIM holds this as LeafProtein2Chl_pft, read unchanged from the trait file&apos;s CHL and described as &apos;Fraction of total leaf protein as chlorophyll-bound for light-harvesting [-]&apos;. StomatesMod.F90 multiplies leaf protein carbon by it and divides by 3.5 to get chlorophyll carbon, so the chlorophyll itself is about one part in 3.5 of this fraction. The same variable serves C3 and C4 plants.</rdfs:comment>
         <rdfs:label>Leaf chlorophyll-bound protein fraction</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
