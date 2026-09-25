@@ -40393,6 +40393,7 @@
         <obo:IAO_0000115>The proportion of protein content relative to carbohydrate content in biological material, indicating the nutritional quality and biochemical composition of organic matter. This ratio is important for understanding food web dynamics, decomposition rates, nutrient cycling, and the energetic value of biological resources in ecological systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>P:C ratio</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>P:C here means protein to carbohydrate, as in nutritional ecology. In biogeochemical stoichiometry P:C means phosphorus to carbon, which is Phosphorus to carbon ratio (BERVO:8000211).</rdfs:comment>
         <rdfs:label>Protein to carbohydrate ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -43471,6 +43472,7 @@
         <oboInOwl:hasExactSynonym>P:C</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>P:C ratio</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>P:C here means phosphorus to carbon, as in biogeochemical stoichiometry. In nutritional ecology P:C often means protein to carbohydrate, which is Protein to carbohydrate ratio (BERVO:8000038).</rdfs:comment>
         <rdfs:label>Phosphorus to carbon ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
