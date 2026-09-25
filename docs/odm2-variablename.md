@@ -522,7 +522,7 @@ or volume, sits under Physical property beside Density, which is mass per volume
 | Wrack cover (`BERVO:0001976`) | Surface litter variable | `wrackCoverage` | `1` |
 | Phytoplankton biomass (`BERVO:0001978`) | Ecology variable | `biomassPhytoplankton` | `g.m-3` |
 | Body length (`BERVO:0001979`) | Ecology variable | `bodyLength` | `m` |
-| Chlorophyll fluorescence (`BERVO:0001980`) | Water variable | `chlorophyllFluorescence` | `{RFU}` |
+| Chlorophyll fluorescence (`BERVO:0001980`) | Water quality variable | `chlorophyllFluorescence` | `{RFU}` |
 | Organism count per unit area (`BERVO:0001981`) | Ecology variable | `countAreal` | `m-2` |
 | Fish detections (`BERVO:0001983`) | Ecology variable | `fishDetections` | `1` |
 | Shannon diversity index (`BERVO:0001984`) | Ecology variable | `shannonDiversityIndex` | `1` |
@@ -738,10 +738,11 @@ new variables, Water use and the four water table cases, carry no ODM2 name.
   recharge `mm.d-1`, per unit area.
 - **Water variable is half swept.** It is defined as water chemistry. Water current
   and Total precipitation left it here, since they are not chemistry. Four more
-  terms under it are not chemistry either, and still sit there: Turbidity of water
-  (`BERVO:0001836`), Liquid water molar density (`BERVO:0001881`), Chlorophyll
-  fluorescence (`BERVO:0001980`), and Water table flag from site file
-  (`BERVO:0000247`). Moving them is a separate change.
+  terms under it were not chemistry either. Slice 6 moved two of them, Turbidity
+  of water (`BERVO:0001836`) and Chlorophyll fluorescence (`BERVO:0001980`), to
+  Water quality variable. Liquid water molar density (`BERVO:0001881`) and Water
+  table flag from site file (`BERVO:0000247`) still sit there, and moving them is
+  a separate change.
 - **Parked in Hydrology variable.** Alluvium depth is a sediment thickness, and
   sat here until slice 5 moved it to Geology variable. Secchi depth
   and Light attenuation coefficient, the water optics, are covered by the
@@ -1115,10 +1116,12 @@ ODM2 name.
 - **Secchi depth and Light attenuation coefficient stay in Hydrology variable.**
   Slice 4 said they might move here. Hydrology variable's definition names water
   clarity and light attenuation, so they stay.
-- **Not moved.** Turbidity of water (`BERVO:0001836`) and Measured electrical
-  conductivity (`BERVO:0001703`) still sit under Water variable. The first is a
-  water quality observable. The second is EcoSIM's, with `measured_ins` of Soil.
-  Moving them is the separate change slice 4 described.
+- **Turbidity and chlorophyll fluorescence move here.** Turbidity of water
+  (`BERVO:0001836`) and Chlorophyll fluorescence (`BERVO:0001980`) leave Water
+  variable for Water quality variable. Neither is chemistry, and chlorophyll
+  fluorescence now sits beside Dissolved organic matter fluorescence, which has
+  the same shape. Measured electrical conductivity (`BERVO:0001703`) stays: it is
+  EcoSIM's, with `measured_ins` of Soil.
 - **Dissolved oxygen concentration is not here.** ODM2's `oxygenDissolved` is a
   chemical species name and waits with the other 602.
 

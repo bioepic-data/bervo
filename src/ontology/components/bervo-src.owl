@@ -34067,7 +34067,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001836 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001836">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
         <obo:IAO_0000115>The optical property of water indicating the degree of light scattering by suspended particles and dissolved substances. This parameter controls light penetration, aquatic productivity, and water quality assessment in freshwater and marine ecosystem studies.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="https://w3id.org/mixs/0000191"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
@@ -36829,7 +36829,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001980 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001980">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
         <obo:IAO_0000115>Light re-emitted by chlorophyll after it absorbs light, used in water as an in situ proxy for chlorophyll concentration.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/chlorophyllFluorescence"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
