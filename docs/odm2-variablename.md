@@ -686,7 +686,7 @@ new variables, Water use and the four water table cases, carry no ODM2 name.
 | Public supply water use (`BERVO:0002014`) | Water use | `waterUsePublicSupply` | `m3.d-1` |
 | Recreational water use (`BERVO:0002015`) | Water use | `waterUseRecreation` | `m3.d-1` |
 | Gate position (`BERVO:0002016`) | Hydrology variable | `position` | `1` |
-| Alluvium depth (`BERVO:0002017`) | Hydrology variable | `alluviumDepth` | `m` |
+| Alluvium depth (`BERVO:0002017`) | Geology variable | `alluviumDepth` | `m` |
 | Snow layer hardness (`BERVO:0002018`) | Snow variable | `snowLayerHardness` | `NA` |
 | Unsaturated zone thickness (`BERVO:0002019`) | Hydrology variable | `depthUnsaturatedZone` | `m` |
 | Perched water table depth (`BERVO:0002020`) | Water table depth | none | `m` |
