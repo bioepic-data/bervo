@@ -34067,12 +34067,12 @@
     <!-- https://w3id.org/bervo/BERVO_0001836 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001836">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
         <obo:IAO_0000115>The optical property of water indicating the degree of light scattering by suspended particles and dissolved substances. This parameter controls light penetration, aquatic productivity, and water quality assessment in freshwater and marine ecosystem studies.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="https://w3id.org/mixs/0000191"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Turbidity of water</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000294"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>{NTU}</bervo:BERVO_has_unit>
@@ -36829,7 +36829,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001980 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001980">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
         <obo:IAO_0000115>Light re-emitted by chlorophyll after it absorbs light, used in water as an in situ proxy for chlorophyll concentration.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/chlorophyllFluorescence"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
@@ -38296,6 +38296,1289 @@
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002057 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002057">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Capacity of water to neutralize strong acid, measured by titration with a strong acid to an endpoint of about pH 4.5, and arising in most natural waters from bicarbonate, carbonate, and hydroxide.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/alkalinity"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/alkalinityTotal"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Alkalinity&quot;: Alkalinity is the capacity of water to resist changes in pH that would make the water more acidic. It should not be confused with basicity which is an absolute measurement on the pH scale. Alkalinity is the strength of a buffer solution composed of weak acids and their conjugate bases. It is measured by titrating the solution with a monoprotic acid such as HCl until its pH changes abruptly, or it reaches a known endpoint where that happens. Alkalinity is expressed in units of meq/L (milliequivalents per liter), which corresponds to the amount of monoprotic acid added as a titrant in millimoles per liter. ODM2 variable name concept &quot;Alkalinity, total&quot;: Total Alkalinity. Measured on a filtered sample. The same titration on an unfiltered sample gives Acid neutralizing capacity (BERVO:0002062). The property it measures is Total alkalinity (BERVO:8000634). Often reported as calcium carbonate, mg{CaCO3}.L-1.</rdfs:comment>
+        <rdfs:label>Water alkalinity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000098"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000141"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002058 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002058">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002057"/>
+        <obo:IAO_0000115>Part of the alkalinity of water contributed by bicarbonate ions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/alkalinityBicarbonate"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Alkalinity, bicarbonate&quot;: Bicarbonate Alkalinity</rdfs:comment>
+        <rdfs:label>Bicarbonate alkalinity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000141"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002059 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002059">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002057"/>
+        <obo:IAO_0000115>Part of the alkalinity of water contributed by carbonate ions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/alkalinityCarbonate"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Alkalinity, carbonate&quot;: Carbonate Alkalinity. This is the carbonate part in the titration speciation of water analysis. In marine carbonate chemistry, carbonate alkalinity means bicarbonate plus twice carbonate, which is Carbonate plus bicarbonate alkalinity (BERVO:0002060) here.</rdfs:comment>
+        <rdfs:label>Carbonate alkalinity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000098"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002060 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002060">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002057"/>
+        <obo:IAO_0000115>Part of the alkalinity of water contributed by carbonate and bicarbonate ions together, the alkalinity less its hydroxide part.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/alkalinityCarbonatePlusBicarbonate"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Alkalinity, carbonate plus bicarbonate&quot;: Alkalinity, carbonate plus bicarbonate</rdfs:comment>
+        <rdfs:label>Carbonate plus bicarbonate alkalinity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000098"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000141"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002061 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002061">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002057"/>
+        <obo:IAO_0000115>Part of the alkalinity of water contributed by hydroxide ions, present where the pH is above about 10.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/alkalinityHydroxide"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Alkalinity, hydroxide&quot;: Hydroxide Alkalinity</rdfs:comment>
+        <rdfs:label>Hydroxide alkalinity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002062 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002062">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Capacity of an unfiltered water sample, dissolved and particulate matter together, to neutralize strong acid, measured by the same titration as alkalinity.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/acidNeutralizingCapacity"/>
+        <oboInOwl:hasRelatedSynonym>ANC</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Acid neutralizing capacity&quot;: Acid neutralizing capacity. Equal to Water alkalinity (BERVO:0002057) where the water carries no particles that react with acid.</rdfs:comment>
+        <rdfs:label>Acid neutralizing capacity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002063 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002063">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Capacity of water to neutralize strong base, measured by titration with a strong base to an endpoint of about pH 8.3, and arising from dissolved carbon dioxide, strong mineral acids, and hydrolyzing metal ions such as iron and aluminum.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/acidityTotalAcidity"/>
+        <oboInOwl:hasExactSynonym>total acidity</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Acidity, total acidity&quot;: Total acidity</rdfs:comment>
+        <rdfs:label>Water acidity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002064 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002064">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002063"/>
+        <obo:IAO_0000115>Part of the acidity of water contributed by dissolved carbon dioxide and carbonic acid, titrated between the mineral acidity endpoint and the endpoint of about pH 8.3.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/acidityCO2Acidity"/>
+        <oboInOwl:hasExactSynonym>CO2 acidity</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Acidity, CO2 acidity&quot;: CO2 acidity</rdfs:comment>
+        <rdfs:label>Carbon dioxide acidity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002065 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002065">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002063"/>
+        <obo:IAO_0000115>Part of the acidity of water contributed by strong mineral acids, titrated with a strong base to the methyl orange endpoint, between about pH 3.7 and 4.5, and present only in water whose pH is below that endpoint, such as acid mine drainage.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/acidityMineralAcidity"/>
+        <oboInOwl:hasRelatedSynonym>methyl orange acidity</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Acidity, mineral acidity&quot;: Mineral Acidity</rdfs:comment>
+        <rdfs:label>Mineral acidity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000039"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002066 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002066">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002063"/>
+        <obo:IAO_0000115>Acidity of water measured after the sample is boiled with hydrogen peroxide, which oxidizes ferrous iron and manganese so that the acidity their hydrolysis releases is counted, used chiefly for mine drainage.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/acidityHot"/>
+        <oboInOwl:hasExactSynonym>hot peroxide acidity</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Acidity, hot&quot;: Hot Acidity</rdfs:comment>
+        <rdfs:label>Hot acidity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000182"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000608"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002067 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002067">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Mass of dissolved oxygen consumed per unit volume of water by microorganisms oxidizing its organic matter, and its reduced nitrogen unless nitrification is inhibited, during incubation in the dark at 20 degrees Celsius for a stated number of days.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>BOD</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>biological oxygen demand</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>No ODM2 name. Parent of the ODM2 BOD names, which differ in the incubation period and in which oxidation they count.</rdfs:comment>
+        <rdfs:label>Biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002068 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002068">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002067"/>
+        <obo:IAO_0000115>Biochemical oxygen demand measured with nitrification inhibited, the oxygen consumed in oxidizing organic carbon alone.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>CBOD</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>No ODM2 name. Parent of the ODM2 carbonaceous BOD names.</rdfs:comment>
+        <rdfs:label>Carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002069 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002069">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002067"/>
+        <obo:IAO_0000115>Part of the biochemical oxygen demand consumed by nitrification, the microbial oxidation of ammonium and nitrite, usually taken as the total demand less the carbonaceous demand.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>NBOD</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>No ODM2 name. Parent of the ODM2 nitrogenous BOD names.</rdfs:comment>
+        <rdfs:label>Nitrogenous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002070 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002070">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002067"/>
+        <obo:IAO_0000115>Biochemical oxygen demand over an incubation of 1 day.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD1"/>
+        <oboInOwl:hasExactSynonym>BOD1</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD1&quot;: 1-day Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>1-day biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002071 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002071">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002067"/>
+        <obo:IAO_0000115>Biochemical oxygen demand over an incubation of 5 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD5"/>
+        <oboInOwl:hasExactSynonym>BOD5</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD5&quot;: 5-day Biochemical Oxygen Demand. The standard period.</rdfs:comment>
+        <rdfs:label>5-day biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002072 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002072">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002067"/>
+        <obo:IAO_0000115>Biochemical oxygen demand over an incubation of 20 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD20"/>
+        <oboInOwl:hasExactSynonym>BOD20</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD20&quot;: 20-day Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>20-day biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002073 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002073">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002067"/>
+        <obo:IAO_0000115>Biochemical oxygen demand once oxidation is complete, measured with a long incubation or estimated by fitting the course of oxygen consumption over time.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BODu"/>
+        <oboInOwl:hasExactSynonym>BODu</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>UBOD</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BODu&quot;: Ultimate Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>Ultimate biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002074 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002074">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002068"/>
+        <obo:IAO_0000115>Carbonaceous biochemical oxygen demand over an incubation of 2 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD2Carbonaceous"/>
+        <oboInOwl:hasExactSynonym>CBOD2</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD2, carbonaceous&quot;: 2-day Carbonaceous Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>2-day carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002075 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002075">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002068"/>
+        <obo:IAO_0000115>Carbonaceous biochemical oxygen demand over an incubation of 3 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD3Carbonaceous"/>
+        <oboInOwl:hasExactSynonym>CBOD3</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD3, carbonaceous&quot;: 3-day Carbonaceous Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>3-day carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002076 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002076">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002068"/>
+        <obo:IAO_0000115>Carbonaceous biochemical oxygen demand over an incubation of 4 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD4Carbonaceous"/>
+        <oboInOwl:hasExactSynonym>CBOD4</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD4, carbonaceous&quot;: 4-day Carbonaceous Biological Oxygen Demand</rdfs:comment>
+        <rdfs:label>4-day carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002077 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002077">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002068"/>
+        <obo:IAO_0000115>Carbonaceous biochemical oxygen demand over an incubation of 5 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD5Carbonaceous"/>
+        <oboInOwl:hasExactSynonym>CBOD5</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD5, carbonaceous&quot;: 5-day Carbonaceous Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>5-day carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002078 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002078">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002068"/>
+        <obo:IAO_0000115>Carbonaceous biochemical oxygen demand over an incubation of 6 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD6Carbonaceous"/>
+        <oboInOwl:hasExactSynonym>CBOD6</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD6, carbonaceous&quot;: 6-day Carbonaceous Biological Oxygen Demand</rdfs:comment>
+        <rdfs:label>6-day carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002079 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002079">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002068"/>
+        <obo:IAO_0000115>Carbonaceous biochemical oxygen demand over an incubation of 7 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD7Carbonaceous"/>
+        <oboInOwl:hasExactSynonym>CBOD7</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD7, carbonaceous&quot;: 7-day Carbonaceous Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>7-day carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002080 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002080">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002068"/>
+        <obo:IAO_0000115>Carbonaceous biochemical oxygen demand over an incubation of 20 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD20Carbonaceous"/>
+        <oboInOwl:hasExactSynonym>CBOD20</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD20, carbonaceous&quot;: 20-day Carbonaceous Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>20-day carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002081 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002081">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002068"/>
+        <obo:IAO_0000115>Carbonaceous biochemical oxygen demand once the oxidation of organic carbon is complete.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BODuCarbonaceous"/>
+        <oboInOwl:hasExactSynonym>CBODu</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BODu, carbonaceous&quot;: Carbonaceous Ultimate Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>Ultimate carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002082 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002082">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002069"/>
+        <obo:IAO_0000115>Nitrogenous biochemical oxygen demand over an incubation of 5 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD5Nitrogenous"/>
+        <oboInOwl:hasExactSynonym>NBOD5</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD5, nitrogenous&quot;: 5-day Nitrogenous Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>5-day nitrogenous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002083 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002083">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002069"/>
+        <obo:IAO_0000115>Nitrogenous biochemical oxygen demand over an incubation of 20 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD20Nitrogenous"/>
+        <oboInOwl:hasExactSynonym>NBOD20</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD20, nitrogenous&quot;: 20-day Nitrogenous Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>20-day nitrogenous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002084 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002084">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002069"/>
+        <obo:IAO_0000115>Nitrogenous biochemical oxygen demand once nitrification is complete.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BODuNitrogenous"/>
+        <oboInOwl:hasExactSynonym>NBODu</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BODu, nitrogenous&quot;: Nitrogenous Ultimate Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>Ultimate nitrogenous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002085 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002085">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Mass of oxygen equivalent to the organic and oxidizable inorganic matter in a water sample, found by oxidizing it with a strong chemical oxidant, usually hot acid dichromate.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/COD"/>
+        <oboInOwl:hasExactSynonym>COD</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;COD&quot;: Chemical oxygen demand</rdfs:comment>
+        <rdfs:label>Chemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002086 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002086">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Concentration of polyvalent metal cations in water, chiefly calcium and magnesium, expressed as the equivalent mass of calcium carbonate.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/hardnessTotal"/>
+        <oboInOwl:hasExactSynonym>total hardness</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Hardness, total&quot;: Total hardness</rdfs:comment>
+        <rdfs:label>Water hardness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{CaCO3}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000108"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000207"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002087 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002087">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002086"/>
+        <obo:IAO_0000115>Part of the hardness of water contributed by calcium, expressed as calcium carbonate.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/hardnessCalcium"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Hardness, Calcium&quot;: Hardness of calcium</rdfs:comment>
+        <rdfs:label>Calcium hardness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{CaCO3}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000108"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002088 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002088">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002086"/>
+        <obo:IAO_0000115>Part of the hardness of water contributed by magnesium, expressed as calcium carbonate.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/hardnessMagnesium"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Hardness, Magnesium&quot;: Hardness of magnesium</rdfs:comment>
+        <rdfs:label>Magnesium hardness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{CaCO3}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000207"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002089 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002089">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002086"/>
+        <obo:IAO_0000115>Part of the hardness of water equivalent to its carbonate and bicarbonate alkalinity, which boiling removes by precipitating calcium carbonate, and equal to the total hardness where the alkalinity exceeds it.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/hardnessCarbonate"/>
+        <oboInOwl:hasExactSynonym>temporary hardness</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Hardness, carbonate&quot;: Carbonate hardness also known as temporary hardness</rdfs:comment>
+        <rdfs:label>Carbonate hardness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{CaCO3}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000108"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000207"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002090 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002090">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002086"/>
+        <obo:IAO_0000115>Part of the hardness of water in excess of its carbonate hardness, balanced by anions such as sulfate and chloride, which boiling does not remove.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/hardnessNonCarbonate"/>
+        <oboInOwl:hasExactSynonym>permanent hardness</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Hardness, non-carbonate&quot;: Non-carbonate hardness</rdfs:comment>
+        <rdfs:label>Non-carbonate hardness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{CaCO3}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000108"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000207"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002091 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002091">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Mass concentration of the residue left when a water sample is evaporated and dried at 103 to 105 degrees Celsius, dissolved and suspended solids together.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/solidsTotal"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Solids, total&quot;: Total Solids</rdfs:comment>
+        <rdfs:label>Total solids</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002092 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002092">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002091"/>
+        <obo:IAO_0000115>Mass concentration of the solids in the part of a water sample that passes a glass fiber filter of nominal pore size 2 micrometers or less, found by evaporating the filtrate and drying the residue at 180 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/solidsTotalDissolved"/>
+        <oboInOwl:hasExactSynonym>TDS</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Solids, total dissolved&quot;: Total Dissolved Solids</rdfs:comment>
+        <rdfs:label>Total dissolved solids</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000125"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002093 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002093">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002091"/>
+        <obo:IAO_0000115>Mass concentration of the solids that a glass fiber filter of nominal pore size 2 micrometers or less retains from a water sample, dried at 103 to 105 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/solidsTotalSuspended"/>
+        <oboInOwl:hasExactSynonym>TSS</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Solids, total suspended&quot;: Total Suspended Solids. Distinct from Suspended sediment concentration (BERVO:0002118), which is measured on the whole sample.</rdfs:comment>
+        <rdfs:label>Total suspended solids</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000722"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002094 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002094">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002091"/>
+        <obo:IAO_0000115>Mass concentration of the total solids that remain after ignition at 550 degrees Celsius, mostly mineral matter.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/solidsTotalFixed"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Solids, total fixed&quot;: Total Fixed Solids</rdfs:comment>
+        <rdfs:label>Total fixed solids</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002095 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002095">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002091"/>
+        <obo:IAO_0000115>Mass concentration of the total solids lost on ignition at 550 degrees Celsius, an approximate measure of their organic matter.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/solidsTotalVolatile"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Solids, total volatile&quot;: Total Volatile Solids</rdfs:comment>
+        <rdfs:label>Total volatile solids</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000286"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002096 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002096">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002092"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002094"/>
+        <obo:IAO_0000115>Mass concentration of the dissolved solids that remain after ignition at 550 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/solidsRixedDissolved"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Solids, fixed dissolved&quot;: Fixed Dissolved Solids. ODM2&apos;s identifier misspells fixed as rixed; the cross-reference uses it as ODM2 spells it.</rdfs:comment>
+        <rdfs:label>Fixed dissolved solids</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000125"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002097 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002097">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002092"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002095"/>
+        <obo:IAO_0000115>Mass concentration of the dissolved solids lost on ignition at 550 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/solidsVolatileDissolved"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Solids, volatile dissolved&quot;: Volatile Dissolved Solids</rdfs:comment>
+        <rdfs:label>Volatile dissolved solids</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000125"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000286"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002098 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002098">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002093"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002094"/>
+        <obo:IAO_0000115>Mass concentration of the suspended solids that remain after ignition at 550 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/solidsFixedSuspended"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Solids, fixed suspended&quot;: Fixed Suspended Solids</rdfs:comment>
+        <rdfs:label>Fixed suspended solids</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000722"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002099 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002099">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002093"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002095"/>
+        <obo:IAO_0000115>Mass concentration of the suspended solids lost on ignition at 550 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/solidsVolatileSuspended"/>
+        <oboInOwl:hasExactSynonym>VSS</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Solids, volatile suspended&quot;: Volatile Suspended Solids</rdfs:comment>
+        <rdfs:label>Volatile suspended solids</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000286"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000722"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002100 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002100">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Color of water, found by comparison with platinum-cobalt standards and reported in color units, one unit being the color of 1 mg of platinum per liter.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/color"/>
+        <oboInOwl:hasRelatedSynonym>apparent color</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>true color</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Color&quot;: Color in quantified in color units. True color is measured after turbidity is removed, and apparent color without.</rdfs:comment>
+        <rdfs:label>Water color</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>{PCU}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002101 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002101">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Odor of water, reported as the ratio by which a sample must be diluted with odor-free water for its odor to be just detectable.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/odor"/>
+        <oboInOwl:hasExactSynonym>TON</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>odor</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Odor&quot;: Odor</rdfs:comment>
+        <rdfs:label>Threshold odor number</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002102 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002102">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Mass concentration of the substances that a solvent, usually n-hexane, extracts from an acidified water sample and that remain when the solvent is evaporated, chiefly fats, oils, waxes, and petroleum hydrocarbons.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/oilAndGrease"/>
+        <oboInOwl:hasExactSynonym>hexane extractable material</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>FOG</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>HEM</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Oil and grease&quot;: Oil and grease</rdfs:comment>
+        <rdfs:label>Oil and grease</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002103 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002103">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Decadic absorption coefficient of a filtered water sample for ultraviolet light at a stated wavelength, its absorbance divided by the optical path length.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/absorbanceUltraviolet"/>
+        <oboInOwl:hasRelatedSynonym>ultraviolet absorbance</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Absorbance, ultraviolet&quot;: Absorbance of ultraviolet light at a specified wavelength, typically at 254 or 280 nm for water samples. Not normalized to DOC concentration like variables such as SUVA280. Often reported per centimeter of path length, cm-1.</rdfs:comment>
+        <rdfs:label>Ultraviolet absorption coefficient</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000921"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000920"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002104 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002104">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Ultraviolet absorption coefficient of a filtered water sample at a stated wavelength divided by its dissolved organic carbon concentration, an index of the aromatic content of its dissolved organic matter.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>SUVA</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>No ODM2 name. Parent of the ODM2 SUVA names.</rdfs:comment>
+        <rdfs:label>Specific ultraviolet absorbance</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000921"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>L.mg-1.m-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000097"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002105 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002105">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002104"/>
+        <obo:IAO_0000115>Specific ultraviolet absorbance at a wavelength of 254 nm.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/SUVA254"/>
+        <oboInOwl:hasExactSynonym>SUVA254</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;SUVA254&quot;: Specific ultraviolet absorbance at 254 nm. Determined by absorbance normalized to DOC concentration.</rdfs:comment>
+        <rdfs:label>Specific ultraviolet absorbance at 254 nm</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000921"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>L.mg-1.m-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000097"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002106 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002106">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002104"/>
+        <obo:IAO_0000115>Specific ultraviolet absorbance at a wavelength of 280 nm.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/SUVA280"/>
+        <oboInOwl:hasExactSynonym>SUVA280</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;SUVA280&quot;: Specific ultraviolet absorbance at 280 nm. Determined by absorbance normalized to dissolved organic carbon (DOC) concentration.</rdfs:comment>
+        <rdfs:label>Specific ultraviolet absorbance at 280 nm</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000921"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>L.mg-1.m-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000097"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002107 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002107">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Fluorescence of the dissolved organic matter in a water sample, usually excited near 365 nm and read near 480 nm, reported relative to a quinine sulfate standard.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/fluorescenceDissolvedOrganicCarbon"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/fluorescenceDissolvedOrganicMatter"/>
+        <oboInOwl:hasExactSynonym>fDOM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>CDOM fluorescence</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Fluorescence, dissolved organic matter (DOM)&quot;: Fluorescence of dissolved organic matter (DOM). ODM2 variable name concept &quot;Fluorescence, dissolved organic carbon (DOC)&quot;: Fluorescence of dissolved organic carbon (DOC). DOC is an element specific fraction of dissolved organic matter (DOM). The two ODM2 names are one quantity here. The molecules that fluoresce are the dissolved organic matter, and a fluorescence reading does not isolate their carbon. Some sensors report relative fluorescence units, {RFU}. A reading calibrated to a dissolved organic carbon concentration, in mg.L-1, is an estimate of that concentration and needs its own term.</rdfs:comment>
+        <rdfs:label>Dissolved organic matter fluorescence</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000505"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>{QSU}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000920"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002108 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002108">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Ratio of the fluorescence emission of dissolved organic matter at 470 nm to that at 520 nm, at an excitation wavelength of 370 nm, higher where the organic matter comes from microbes and lower where it comes from land plants.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/fluorescenceIndex"/>
+        <oboInOwl:hasExactSynonym>FI</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Fluorescence index&quot;: Fluorescence index for measuring fluorescent dissolved organic matter (FDOM). Ratio of emission intensity at 470nm to intensity at 520nm at excitation 370nm.</rdfs:comment>
+        <rdfs:label>Fluorescence index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000505"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000920"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002109 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002109">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Ratio of the fluorescence emission of dissolved organic matter between 435 and 480 nm to that between 300 and 345 nm, at an excitation wavelength of 254 nm, higher where the organic matter is more humified.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/humificationIndex"/>
+        <oboInOwl:hasExactSynonym>HIX</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Humification index&quot;: Humification index. Hummification is the processes by which organic matter decomposes to form humus. In humus the initial structures or shapes can no longer be recognized. See also humus. ODM2 defines humification, not the index. This is the index of Zsolnay and others (1999). Ohno (2002) divides by the sum of the two regions instead, which keeps the value between 0 and 1.</rdfs:comment>
+        <rdfs:label>Humification index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000505"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000920"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002110 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002110">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Concentration of dissolved oxygen in water as a fraction of the concentration at equilibrium with the atmosphere at the water&apos;s temperature, salinity, and pressure, above 1 when the water is supersaturated.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/oxygenDissolvedPercentOfSaturation"/>
+        <oboInOwl:hasRelatedSynonym>DO saturation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>dissolved oxygen percent saturation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Oxygen, dissolved percent of saturation&quot;: Dissolved oxygen, percent saturation. Usually reported in percent.</rdfs:comment>
+        <rdfs:label>Dissolved oxygen saturation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000429"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002111 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002111">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Difference between the pH of water and the pH at which it would be saturated with calcium carbonate at its temperature, calcium concentration, and alkalinity, positive where the water tends to deposit calcium carbonate and negative where it tends to dissolve it.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/LSI"/>
+        <oboInOwl:hasExactSynonym>LSI</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;LSI&quot;: Langelier Saturation Index is an indicator of the degree of saturation of water with respect to calcium carbonate</rdfs:comment>
+        <rdfs:label>Langelier saturation index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000429"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000094"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002112 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002112">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Product of the calcium and carbonate ion concentrations in water divided by the stoichiometric solubility product of aragonite at the same temperature, salinity, and pressure, above 1 where the water is supersaturated and below 1 where it is undersaturated.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/omegaAragonite"/>
+        <oboInOwl:hasRelatedSynonym>omega aragonite</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Aragonite saturation state&quot;: A measure of the thermodynamic tendency for the mineral calcium carbonate to form or to dissolve. The symbol Ω (omega) is often used as shorthand for &quot;calcium carbonate saturation state&quot;. By convention, Ω is usually expressed with respect to aragonite, one of the two most abundant forms of calcium carbonate in the ocean. An aragonite saturation state (Ωar) greater than 1.0 indicates supersaturation, while values less than 1.0 indicate undersaturation with instability favoring dissolution.</rdfs:comment>
+        <rdfs:label>Aragonite saturation state</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000429"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000919"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002113 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002113">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Index of the trophic state of a lake on a scale of about 0 to 100, computed from Secchi depth, chlorophyll a concentration, or total phosphorus concentration, in which each rise of 10 marks a halving of Secchi depth.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>TSI</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>No ODM2 name. Parent of Secchi depth trophic state index, which ODM2 names. Carlson (1977) gave matching forms from chlorophyll a and total phosphorus.</rdfs:comment>
+        <rdfs:label>Carlson trophic state index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000724"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002114 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002114">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002113"/>
+        <obo:IAO_0000115>Carlson trophic state index computed from Secchi depth, 60 less 14.41 times the natural logarithm of the Secchi depth in meters.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/TSI"/>
+        <oboInOwl:hasExactSynonym>TSI(SD)</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;TSI&quot;: Carlson Trophic State Index is a measurement of eutrophication based on Secchi depth</rdfs:comment>
+        <rdfs:label>Secchi depth trophic state index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000724"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002115 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002115">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Number of insoluble particles per unit volume of a liquid such as rainwater or surface water, usually counted in size classes by an optical or electrical counter.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/particleCounts"/>
+        <oboInOwl:hasRelatedSynonym>particle count</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Particle counts&quot;: Count of insoluble particles in a liquid like rainwater</rdfs:comment>
+        <rdfs:label>Particle number density in water</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000899"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>{particles}.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000722"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002116 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002116">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Radioactivity of the alpha-emitting radionuclides in a water sample per unit volume, measured together without identifying the nuclides.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/grossAlphaRadionuclides"/>
+        <oboInOwl:hasExactSynonym>gross alpha</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>gross alpha radionuclides</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Gross alpha radionuclides&quot;: Gross Alpha Radionuclides. Often reported in picocuries per liter, pCi.L-1.</rdfs:comment>
+        <rdfs:label>Gross alpha activity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>Bq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002117 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002117">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Radioactivity of the beta-emitting radionuclides in a water sample per unit volume, measured together without identifying the nuclides.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/grossBetaRadionuclides"/>
+        <oboInOwl:hasExactSynonym>gross beta</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>gross beta radionuclides</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Gross beta radionuclides&quot;: Gross Beta Radionuclides. Often reported in picocuries per liter, pCi.L-1.</rdfs:comment>
+        <rdfs:label>Gross beta activity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>Bq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002118 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002118">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000019"/>
+        <obo:IAO_0000115>Mass of sediment carried in suspension per unit volume of the water and sediment mixture, measured on the whole sample collected.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/sedimentSuspended"/>
+        <oboInOwl:hasExactSynonym>SSC</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Sediment, suspended&quot;: Suspended Sediment. Distinct from Total suspended solids (BERVO:0002093), which is measured on a subsample and can understate the sand in it.</rdfs:comment>
+        <rdfs:label>Suspended sediment concentration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002119 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002119">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000019"/>
+        <obo:IAO_0000115>Mass of sediment carried in suspension past a cross-section of a stream per unit time.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/loadSuspended"/>
+        <oboInOwl:hasExactSynonym>suspended sediment discharge</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>suspended load</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Load, suspended&quot;: The suspended load of a flow of fluid, such as a river, is the portion of its sediment uplifted by the fluid&apos;s flow in the process of sediment transportation. It is kept suspended by the fluid&apos;s turbulence. The suspended load generally consists of smaller particles, like clay, silt, and fine sands. ODM2 defines the sediment itself. As an observable it is the rate at which that sediment passes a section, as streamgaging agencies report it.</rdfs:comment>
+        <rdfs:label>Suspended sediment load</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>t.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000730"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
     </Class>
     
 
@@ -42540,10 +43823,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000236">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
-        <obo:IAO_0000115>A measure of the amount of light absorbed by a material or substance as electromagnetic radiation passes through it, fundamental for understanding optical properties. This property affects photosynthesis, light penetration in water bodies, remote sensing applications, and represents the inverse of transmittance in optical and environmental measurements.</obo:IAO_0000115>
+        <obo:IAO_0000115>A measure of the amount of light absorbed by a material or substance as electromagnetic radiation passes through it, fundamental for understanding optical properties. This property affects photosynthesis, light penetration in water bodies, and remote sensing applications, and equals the negative decadic logarithm of transmittance in optical and environmental measurements.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000133"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/absorbance"/>
-        <oboInOwl:hasRelatedSynonym>transmittance</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Absorbance&quot;: The amount of radiation absorbed by a material</rdfs:comment>
         <rdfs:label>Absorbance</rdfs:label>
@@ -44621,7 +45903,12 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The electron activity or oxidation-reduction potential of a solution, measured in millivolts, indicating the tendency of substances to be oxidized or reduced. Redox potential controls the solubility and bioavailability of elements and drives major biogeochemical transformations in environmental systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000125"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/reductionPotential"/>
+        <oboInOwl:hasExactSynonym>oxidation-reduction potential</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>ORP</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>reduction potential</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Reduction potential&quot;: Oxidation-reduction potential</rdfs:comment>
         <rdfs:label>Redox potential</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -46000,8 +47287,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000885"/>
         <obo:IAO_0000115>Electrical conductivity of water corrected to a reference temperature, usually 25 degrees Celsius, so that samples measured at different temperatures can be compared; a common proxy for the concentration of dissolved ions.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000301"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/specificConductance"/>
         <oboInOwl:hasRelatedSynonym>specific conductivity</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Specific conductance&quot;: Specific conductance</rdfs:comment>
         <rdfs:label>Specific conductance</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -55150,6 +56439,66 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_8000919 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000919">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000094"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
+        <obo:IAO_0000115>Orthorhombic polymorph of calcium carbonate, more soluble than calcite, deposited in the shells and skeletons of corals, pteropods, and many mollusks.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52239"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:label>Aragonite</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000920 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000920">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000800"/>
+        <obo:IAO_0000115>Fraction of dissolved organic matter that absorbs ultraviolet and visible light, chiefly humic and fulvic substances, which gives natural water a yellow to brown color.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/coloredDissolvedOrganicMatter"/>
+        <oboInOwl:hasExactSynonym>CDOM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>chromophoric dissolved organic matter</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>gelbstoff</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>yellow substance</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Colored dissolved organic matter&quot;: The concentration of colored dissolved organic matter (humic substances). ODM2 defines the concentration. BERVO keeps the material, which Ultraviolet absorption coefficient (BERVO:0002103), Dissolved organic matter fluorescence (BERVO:0002107), Fluorescence index (BERVO:0002108), and Humification index (BERVO:0002109) measure.</rdfs:comment>
+        <rdfs:label>Colored dissolved organic matter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000921 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000921">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Absorbance of a medium per unit optical path length, the rate at which the medium absorbs radiation of a given wavelength along a path through it, in decadic or Napierian form.</obo:IAO_0000115>
+        <rdfs:comment>Absorbance (BERVO:8000236) has no dimension. The absorption coefficient is that absorbance divided by the path length, in m-1.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:label>Absorption coefficient</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_9000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000000">
@@ -55895,6 +57244,23 @@
         <obo:IAO_0000115>Grouping class for observed variables that describe bedrock, geologic materials, and the deposits over them, such as rock type, borehole lithology, natural gamma radiation, and the thickness of alluvium.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
         <rdfs:label>Geology variable</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_9000043 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_9000043">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
+        <obo:IAO_0000115>Grouping class for observed variables that describe the quality of water for its uses and for aquatic life: its capacity to neutralize acid or base, oxygen demand, hardness, solids, optical and sensory properties, mineral saturation state, trophic state, and gross radioactivity.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:label>Water quality variable</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
