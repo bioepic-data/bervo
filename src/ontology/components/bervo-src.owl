@@ -34335,6 +34335,8 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001847">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <obo:IAO_0000115>Mass of chlorophyll per unit mass of leaf tissue, the parent of the C3 and C4 leaf chlorophyll contents.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), release preparation</rdfs:comment>
         <rdfs:label>Leaf chlorophyll content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
