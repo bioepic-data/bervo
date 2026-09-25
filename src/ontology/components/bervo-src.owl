@@ -685,7 +685,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000022">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000000"/>
-        <obo:IAO_0000115>EcoSIM output: This refers to the vertically resolved inorganic P demand to support plant roots and microbial uptake from soil bands. Soil bands are defined according to fertilizer application in the form of sidedressing</obo:IAO_0000115>
+        <obo:IAO_0000115>EcoSIM output: This refers to the vertically resolved inorganic P demand to support plant roots and microbial uptake from soil bands. Soil bands are defined according to fertilizer application in the form of sidedressing.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>REcoH1PO4DmndBand_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>EcosimBGCFluxType.txt</rdfs:comment>
@@ -706,7 +706,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000023">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000000"/>
-        <obo:IAO_0000115>EcoSIM output: This refers to the previous time step vertically resolved inorganic P demand to support plant roots and microbial uptake from soil bands. Soil bands are defined according to fertilizer application in the form of sidedressing</obo:IAO_0000115>
+        <obo:IAO_0000115>EcoSIM output: This refers to the previous time step vertically resolved inorganic P demand to support plant roots and microbial uptake from soil bands. Soil bands are defined according to fertilizer application in the form of sidedressing.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RH1PO4EcoDmndBandPrev_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>EcosimBGCFluxType.txt</rdfs:comment>
@@ -2974,7 +2974,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000142">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The maximum Ca(2+) concentration in the soil. It is EcoSIM specific</obo:IAO_0000115>
+        <obo:IAO_0000115>The maximum Ca(2+) concentration in the soil. It is EcoSIM specific.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CCAMX</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>I like this decomposition</rdfs:comment>
@@ -3072,7 +3072,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000147">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>It refers to the rate parameter in the first order kinetics based release of H2PO4 after fertilization</obo:IAO_0000115>
+        <obo:IAO_0000115>It refers to the rate parameter in the first order kinetics based release of H2PO4 after fertilization.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SPPO4</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -3111,7 +3111,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000149">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>It is an allometric parameter for leaf that when carbon is allocated for leaf growth, it should not be less than this minimum fraction</obo:IAO_0000115>
+        <obo:IAO_0000115>It is an allometric parameter for leaf that when carbon is allocated for leaf growth, it should not be less than this minimum fraction.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PART1X</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -3132,7 +3132,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000150">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>It is an allometric parameter for petiole that when carbon is allocated for petiole growth, it should not be less than this minimum fraction</obo:IAO_0000115>
+        <obo:IAO_0000115>It is an allometric parameter for petiole that when carbon is allocated for petiole growth, it should not be less than this minimum fraction.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PART2X</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -3308,7 +3308,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000159">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Rate parameter that is used to compute the gradient nonstructural biomass transfer between mycorrhizae and roots</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate parameter that is used to compute the gradient nonstructural biomass transfer between mycorrhizae and roots.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FMYC</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -3790,7 +3790,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000184">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Stalk volume per g carbon biomass</obo:IAO_0000115>
+        <obo:IAO_0000115>Stalk volume per g carbon biomass.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SpecStalkVolume</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -3809,7 +3809,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000185">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>It is a model-specific scaling parameter for computing biomass allocation to canopy foliage</obo:IAO_0000115>
+        <obo:IAO_0000115>It is a model-specific scaling parameter for computing biomass allocation to canopy foliage.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FRTX</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -3886,7 +3886,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000189">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>An exponent parameter to compute leaf area expansion in the model</obo:IAO_0000115>
+        <obo:IAO_0000115>An exponent parameter to compute leaf area expansion in the model.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SLA2</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -3906,7 +3906,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000190">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>An exponent parameter to compute petiole length expansion in the model</obo:IAO_0000115>
+        <obo:IAO_0000115>An exponent parameter to compute petiole length expansion in the model.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SSL2</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -3926,7 +3926,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000191">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>An exponent parameter to compute stalk volume expansion in the model</obo:IAO_0000115>
+        <obo:IAO_0000115>An exponent parameter to compute stalk volume expansion in the model.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SNL2</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4143,7 +4143,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000203">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000034"/>
-        <obo:IAO_0000115>Half saturation parameter for modeling bacterial use of nonstructural nitrogen using the Michaelis-Menten kinetics</obo:IAO_0000115>
+        <obo:IAO_0000115>Half saturation parameter for modeling bacterial use of nonstructural nitrogen using the Michaelis-Menten kinetics.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CZKM</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4162,7 +4162,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000204">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000034"/>
-        <obo:IAO_0000115>Half saturation parameter for modeling bacterial use of nonstructural phosphorus using the Michaelis-Menten kinetics</obo:IAO_0000115>
+        <obo:IAO_0000115>Half saturation parameter for modeling bacterial use of nonstructural phosphorus using the Michaelis-Menten kinetics.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CPKM</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4181,7 +4181,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000205">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Minimum fraction of root C can be recycled during root death</obo:IAO_0000115>
+        <obo:IAO_0000115>Minimum fraction of root C can be recycled during root death.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCZR</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4201,7 +4201,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000206">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Maximum fraction of root C can be recycled during root death</obo:IAO_0000115>
+        <obo:IAO_0000115>Maximum fraction of root C can be recycled during root death.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCYR</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4221,7 +4221,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000207">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Maximum fraction of root nitrogen can be recycled during root death</obo:IAO_0000115>
+        <obo:IAO_0000115>Maximum fraction of root nitrogen can be recycled during root death.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCXR</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4241,7 +4241,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000208">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Maximum fraction of root phosphorus can be recycled during root death</obo:IAO_0000115>
+        <obo:IAO_0000115>Maximum fraction of root phosphorus can be recycled during root death.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCQR</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4261,7 +4261,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000209">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Minimum fraction of nodule bacteria C can be recycled during root death</obo:IAO_0000115>
+        <obo:IAO_0000115>Minimum fraction of nodule bacteria C can be recycled during root death.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCZN</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4281,7 +4281,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000210">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Maximum fraction of nodule bacteria C can be recycled during root death</obo:IAO_0000115>
+        <obo:IAO_0000115>Maximum fraction of nodule bacteria C can be recycled during root death.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCYN</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4301,7 +4301,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000211">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Maximum fraction of nodule bacteria nitrogen can be recycled during root death</obo:IAO_0000115>
+        <obo:IAO_0000115>Maximum fraction of nodule bacteria nitrogen can be recycled during root death.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCXN</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4321,7 +4321,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000212">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Maximum fraction of nodule bacteria phosphorus can be recycled during root death</obo:IAO_0000115>
+        <obo:IAO_0000115>Maximum fraction of nodule bacteria phosphorus can be recycled during root death.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCQN</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4341,7 +4341,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000213">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Number of hours need to accumulate to trigger litterfall after leaf maturity</obo:IAO_0000115>
+        <obo:IAO_0000115>Number of hours need to accumulate to trigger litterfall after leaf maturity.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HoursReq4LiterfalAftMature</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4360,7 +4360,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000214">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Rate parameter to compute the gradient driven exchange of carbon, nitrogen, and phosphorus between seasonal storage and nonstructural pools</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate parameter to compute the gradient driven exchange of carbon, nitrogen, and phosphorus between seasonal storage and nonstructural pools.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FRSV</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4381,7 +4381,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000215">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Rate parameter to compute the gradient driven carbon exchange between stalk and leaf reserve pools</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate parameter to compute the gradient driven carbon exchange between stalk and leaf reserve pools.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FXFY</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4400,7 +4400,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000216">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Rate parameter to compute the gradient driven nitrogen and phosphorus exchange between stalk and leaf reserve pools</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate parameter to compute the gradient driven nitrogen and phosphorus exchange between stalk and leaf reserve pools.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FXFZ</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4419,7 +4419,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000217">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Rate parameter for gradient-driven exchange of nonstructural carbon, nitrogen, and phosphorus between shoot and seasonal storage pools</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate parameter for gradient-driven exchange of nonstructural carbon, nitrogen, and phosphorus between shoot and seasonal storage pools.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RateK4ShootSeaStoreNonstEXfer</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4440,7 +4440,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000218">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Rate parameter for gradient driven exchange of nonstructural carbon, nitrogen, and phosphorus between root and seasonal storage pools</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate parameter for gradient driven exchange of nonstructural carbon, nitrogen, and phosphorus between root and seasonal storage pools.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RateK4RootSeaStorNonstEXfer</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4461,7 +4461,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000219">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Fraction of mobilized seasonal storage allocated to roots upon leaf out</obo:IAO_0000115>
+        <obo:IAO_0000115>Fraction of mobilized seasonal storage allocated to roots upon leaf out.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FXRT</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4480,7 +4480,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000220">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Fraction of mobilized seasonal storage allocated to shoots upon leaf out</obo:IAO_0000115>
+        <obo:IAO_0000115>Fraction of mobilized seasonal storage allocated to shoots upon leaf out.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FXSH</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4499,7 +4499,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000221">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Rate constant for modeling nonstructural C,N and P exchange between hosting plants and nodule bacteria</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate constant for modeling nonstructural C,N and P exchange between hosting plants and nodule bacteria.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FXRN</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4520,7 +4520,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000222">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the maximum fraction of nitrogen can be recycled upon senescence of plant canopy organs</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameters specifies the maximum fraction of nitrogen can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCX</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4540,7 +4540,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000223">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the maximum fraction of phosphorus can be recycled upon senescence of plant canopy organs</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameters specifies the maximum fraction of phosphorus can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCQ</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4560,7 +4560,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000224">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the minimum fraction of carbon can be recycled upon senescence of plant canopy organs</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameters specifies the minimum fraction of carbon can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCZ</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4580,7 +4580,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000225">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the maximum fraction of carbon can be recycled upon senescence of plant canopy organs</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameters specifies the maximum fraction of carbon can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCY</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4600,7 +4600,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000226">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the number of hours required for plant to initiate senescence after maturity</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameters specifies the number of hours required for plant to initiate senescence after maturity.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Hours4SenesAftMature</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4619,7 +4619,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000227">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the number of hours required for plant to initiate storage carbon remobilization after leafout</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameters specifies the number of hours required for plant to initiate storage carbon remobilization after leafout.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HourReq2InitSStor4LeafOut</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4658,7 +4658,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000229">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameter scales the relative sink strength for non-structural carbon and nutrient for growing primary and secondary roots</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameter scales the relative sink strength for non-structural carbon and nutrient for growing primary and secondary roots.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RTSK</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -11129,7 +11129,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000598">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
-        <obo:IAO_0000115>This variables indicates the total water-air exchange due to evaporation from canopy held water and transpirtion of water that plant take up from the soil. It is an important component of the ecosystem water cycling</obo:IAO_0000115>
+        <obo:IAO_0000115>This variables indicates the total water-air exchange due to evaporation from canopy held water and transpirtion of water that plant take up from the soil. It is an important component of the ecosystem water cycling.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>QVegET_col</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>surface-evapotranspiration</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ATS: surface-evapotranspiration.</rdfs:comment>
@@ -16938,7 +16938,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000900">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
-        <obo:IAO_0000115>The cumulative transport rate of dissolved organic nitrogen across terrestrial surface boundaries, including runoff and surface flow pathways of nitrogen-containing organic compounds. This total surface dissolved organic nitrogen flux affects nitrogen cycling between terrestrial and aquatic ecosystems and influences eutrophication potential in receiving waters.Class</obo:IAO_0000115>
+        <obo:IAO_0000115>The cumulative transport rate of dissolved organic nitrogen across terrestrial surface boundaries, including runoff and surface flow pathways of nitrogen-containing organic compounds. This total surface dissolved organic nitrogen flux affects nitrogen cycling between terrestrial and aquatic ecosystems and influences eutrophication potential in receiving waters.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HydroSufDONFlx_CumYr_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
@@ -20447,7 +20447,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001086">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>The minimum concentration of nitrate (NO3) required in root zone for root ammonium (NH4) uptake</obo:IAO_0000115>
+        <obo:IAO_0000115>The minimum concentration of nitrate (NO3) required in root zone for root ammonium (NH4) uptake.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CminNO3Root_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
@@ -21434,7 +21434,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001139">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>It is the mass density of surface litter, which is a function of plant chemical composition. This variable plays an important role in the water and heat exchange with respect to atmosphere and soil, and is also important for the carbon and nutrient cycling</obo:IAO_0000115>
+        <obo:IAO_0000115>It is the mass density of surface litter, which is a function of plant chemical composition. This variable plays an important role in the water and heat exchange with respect to atmosphere and soil, and is also important for the carbon and nutrient cycling.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>BulkDensLitR</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
@@ -23561,7 +23561,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001254">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000019"/>
-        <obo:IAO_0000115>The speed at which erosion is occurring</obo:IAO_0000115>
+        <obo:IAO_0000115>The speed at which erosion is occurring.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TSED_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SedimentDataType.txt</rdfs:comment>
@@ -23580,7 +23580,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001255">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000019"/>
-        <obo:IAO_0000115>The removal of soil particles from the land surface by rainfall, runoff and erosion,</obo:IAO_0000115>
+        <obo:IAO_0000115>The removal of soil particles from the land surface by rainfall, runoff and erosion.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SoilDetachability4Erosion1</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SedimentDataType.txt</rdfs:comment>
@@ -25005,7 +25005,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001343">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
-        <obo:IAO_0000115>The natural movement of air at the Earth&apos;s surface</obo:IAO_0000115>
+        <obo:IAO_0000115>The natural movement of air at the Earth&apos;s surface.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>WIND</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
