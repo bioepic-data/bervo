@@ -82,3 +82,9 @@ __pycache__/
 .pytest_cache/
 .venv/
 .venv-docs/
+
+# The release artefacts at the repository root are committed at each
+# release, although the ODK-managed rules above ignore them.
+!/bervo.owl
+!/bervo.obo
+!/bervo.json

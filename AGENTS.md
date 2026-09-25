@@ -104,10 +104,10 @@ Columns that carry ontology semantics:
 | `replaced_by` | `AI IAO:0100001` | The ID of the term that supersedes an obsoleted one. Must name an existing term. |
 
 Remaining columns are provenance and curation bookkeeping. Two of them matter more than
-that sounds: **`EcoSIM Variable Name` and `File Name` are populated on 1,749 of 2,352 terms
-(74%)**, recording the model parameter and source file a term came from. `just find`
+that sounds: **`EcoSIM Variable Name` and `File Name` are populated on 1,756 of 2,958 terms
+(59%)**, recording the model parameter and source file a term came from. `just find`
 searches both, so a request phrased in model terms (`just find "Eco_NetRad_col"`) resolves
-directly, and a term's EcoSIM source file predicts its `Category` for 32 of the 33 files.
+directly, and a term's EcoSIM source file predicts its `Category` for 33 of the 35 files.
 See the "EcoSIM provenance" section of the `bervo-terms` skill.
 
 `EcoSIM Other Names` is populated on zero rows.
@@ -176,9 +176,9 @@ Numeric IDs are 7 digits, allocated in blocks by term kind:
 
 | Block | Range | Kind | Approx. count |
 | --- | --- | --- | --- |
-| `0xxxxxx` | `BERVO:0000000`–`BERVO:0999999` | Variables (the core parameter terms) | ~1,760 |
-| `8xxxxxx` | `BERVO:8000000`–`BERVO:8999999` | Concepts (units, qualifiers, attributes, contexts) | ~550 |
-| `9xxxxxx` | `BERVO:9000000`–`BERVO:9999999` | Grouping classes | ~35 |
+| `0xxxxxx` | `BERVO:0000000`–`BERVO:0999999` | Variables (the core parameter terms) | ~2,010 |
+| `8xxxxxx` | `BERVO:8000000`–`BERVO:8999999` | Concepts (units, qualifiers, attributes, contexts) | ~895 |
+| `9xxxxxx` | `BERVO:9000000`–`BERVO:9999999` | Grouping classes | ~42 |
 
 The ontology has two roots, `BERVO:0000000` ("Variable") and `BERVO:8000232` ("Concept").
 Neither has a `Category`. A term's ID block does not decide which root it descends from:
