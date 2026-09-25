@@ -1029,10 +1029,12 @@ ODM2 name.
 
 ### Points to note for slice 6
 
-- **Total alkalinity is the property.** Total alkalinity (`BERVO:8000634`) came
-  in as a concept with the speciation alignment. By slice 2's rule it is the
-  property, and the observable that measures it names its medium: Water
-  alkalinity. ODM2's `alkalinity` and
+- **Water alkalinity names its medium.** Total alkalinity (`BERVO:8000634`)
+  came in as a concept with the speciation alignment, and it holds the label a
+  generic alkalinity observable would take. By slice 2's rule, the variable names
+  its medium instead: Water alkalinity. Total alkalinity keeps its
+  `ODM2:speciation/TA` cross-reference, and no variable uses it as an attribute.
+  See "The attribute is Concentration" below. ODM2's `alkalinity` and
   `alkalinityTotal` both land on Water alkalinity, as `radiationIncoming` and
   `radiationTotalIncoming` both land on Incoming radiation. Water acidity and
   Water hardness are named the same way, for symmetry and because "hardness" alone
