@@ -40387,7 +40387,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000038">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <obo:IAO_0000115>The proportion of protein content relative to carbohydrate content in biological material, indicating the nutritional quality and biochemical composition of organic matter. This ratio is important for understanding food web dynamics, decomposition rates, nutrient cycling, and the energetic value of biological resources in ecological systems.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>P:C ratio</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>P:C ratio</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Protein to carbohydrate ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -41869,9 +41869,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <obo:IAO_0000115>A reproductive unit of a flowering plant that contains an embryo and stored nutrients capable of developing into a new plant under appropriate conditions. This structure is fundamental for understanding plant reproduction, population dynamics, genetic diversity, and ecosystem regeneration processes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0009010"/>
-        <oboInOwl:hasExactSynonym>germ</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>kernel</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>pip</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>germ</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>kernel</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Seed</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
