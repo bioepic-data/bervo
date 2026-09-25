@@ -39539,6 +39539,47 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002118 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002118">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000019"/>
+        <obo:IAO_0000115>Mass of sediment carried in suspension per unit volume of the water and sediment mixture, measured on the whole sample collected.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/sedimentSuspended"/>
+        <oboInOwl:hasExactSynonym>SSC</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Sediment, suspended&quot;: Suspended Sediment. Distinct from Total suspended solids (BERVO:0002093), which is measured on a subsample and can understate the sand in it.</rdfs:comment>
+        <rdfs:label>Suspended sediment concentration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002119 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002119">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000019"/>
+        <obo:IAO_0000115>Mass of sediment carried in suspension past a cross-section of a stream per unit time.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/loadSuspended"/>
+        <oboInOwl:hasExactSynonym>suspended sediment discharge</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>suspended load</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Load, suspended&quot;: The suspended load of a flow of fluid, such as a river, is the portion of its sediment uplifted by the fluid&apos;s flow in the process of sediment transportation. It is kept suspended by the fluid&apos;s turbulence. The suspended load generally consists of smaller particles, like clay, silt, and fine sands. ODM2 defines the sediment itself. As an observable it is the rate at which that sediment passes a section, as streamgaging agencies report it.</rdfs:comment>
+        <rdfs:label>Suspended sediment load</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>t.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000730"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
