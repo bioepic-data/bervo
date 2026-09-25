@@ -949,6 +949,7 @@ solids, color, and odor are not chemistry.
 | --- | --- | --- | --- |
 | Aragonite (`BERVO:8000919`) | Mineral, Calcium carbonate | none | `CHEBI:52239` |
 | Colored dissolved organic matter (`BERVO:8000920`) | Dissolved organic matter | `coloredDissolvedOrganicMatter` | none |
+| Absorption coefficient (`BERVO:8000921`) | Physical property | none | none |
 
 63 variables, `BERVO:0002057` to `BERVO:0002119`. That this equals the 63 ODM2
 names is a coincidence again: four names map to terms that already existed or
@@ -1098,6 +1099,12 @@ ODM2 name.
   generic in wavelength, so it carries no wavelength-specific synonym such as
   UV254. SUVA keeps its name: it is the name every dataset uses, and its unit,
   `L.mg-1.m-1`, is that coefficient divided by a concentration.
+- **Absorption coefficient is a concept.** Absorbance (`BERVO:8000236`) has no
+  dimension, so it is the wrong attribute for a quantity in `m-1`. Absorption
+  coefficient (`BERVO:8000921`), under Physical property beside Absorbance, is
+  added for it. Ultraviolet absorption coefficient takes it as its attribute,
+  and the three SUVA rows take it with Ratio. OLS has no matching term in PATO,
+  CHMO, or ENVO, so it carries no cross-reference.
 - **Humification index.** ODM2 defines humification, not the index. The term is
   the fluorescence index of Zsolnay and others (1999), in the form most datasets
   report. The comment names the Ohno (2002) form, which divides by the sum of the

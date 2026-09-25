@@ -39235,7 +39235,7 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Absorbance, ultraviolet&quot;: Absorbance of ultraviolet light at a specified wavelength, typically at 254 or 280 nm for water samples. Not normalized to DOC concentration like variables such as SUVA280. Often reported per centimeter of path length, cm-1.</rdfs:comment>
         <rdfs:label>Ultraviolet absorption coefficient</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000236"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000921"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m-1</bervo:BERVO_has_unit>
@@ -39254,8 +39254,8 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
         <rdfs:comment>No ODM2 name. Parent of the ODM2 SUVA names.</rdfs:comment>
         <rdfs:label>Specific ultraviolet absorbance</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000236"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000921"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>L.mg-1.m-1</bervo:BERVO_has_unit>
@@ -39275,8 +39275,8 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;SUVA254&quot;: Specific ultraviolet absorbance at 254 nm. Determined by absorbance normalized to DOC concentration.</rdfs:comment>
         <rdfs:label>Specific ultraviolet absorbance at 254 nm</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000236"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000921"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>L.mg-1.m-1</bervo:BERVO_has_unit>
@@ -39296,8 +39296,8 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;SUVA280&quot;: Specific ultraviolet absorbance at 280 nm. Determined by absorbance normalized to dissolved organic carbon (DOC) concentration.</rdfs:comment>
         <rdfs:label>Specific ultraviolet absorbance at 280 nm</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000236"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000921"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>L.mg-1.m-1</bervo:BERVO_has_unit>
@@ -56469,6 +56469,24 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Colored dissolved organic matter&quot;: The concentration of colored dissolved organic matter (humic substances). ODM2 defines the concentration. BERVO keeps the material, which Ultraviolet absorption coefficient (BERVO:0002103) and Dissolved organic matter fluorescence (BERVO:0002107) measure.</rdfs:comment>
         <rdfs:label>Colored dissolved organic matter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000921 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000921">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Absorbance of a medium per unit optical path length, the rate at which the medium absorbs radiation of a given wavelength along a path through it, in decadic or Napierian form.</obo:IAO_0000115>
+        <rdfs:comment>Absorbance (BERVO:8000236) has no dimension. The absorption coefficient is that absorbance divided by the path length, in m-1.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:label>Absorption coefficient</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
