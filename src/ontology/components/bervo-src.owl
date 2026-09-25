@@ -56579,7 +56579,7 @@
         <obo:IAO_0000115>Carbon held in dissolved acetate, the organic acid that fermentation produces and that acetotrophic methanogens and aerobic bacteria consume.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>acetate-C</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), carbon measurement_ofs review for PR #123</rdfs:comment>
-        <rdfs:comment>EcoSIM keeps acetate as a pool of its own, apart from the rest of the dissolved organic carbon, so this term is a sibling of Dissolved organic carbon (BERVO:8000097), not a kind of it.</rdfs:comment>
+        <rdfs:comment>EcoSIM keeps acetate as a pool of its own, apart from the rest of the dissolved organic carbon, so this term is a sibling of Dissolved organic carbon (BERVO:8000097), not a kind of it. It is the carbon in acetate, not the acetate ion itself, which is Acetate (BERVO:8000205).</rdfs:comment>
         <rdfs:label>Acetate carbon</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
