@@ -4520,7 +4520,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000222">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the maximum fraction of nitrogen can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameter specifies the maximum fraction of nitrogen can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCX</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4540,7 +4540,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000223">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the maximum fraction of phosphorus can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameter specifies the maximum fraction of phosphorus can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCQ</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4560,7 +4560,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000224">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the minimum fraction of carbon can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameter specifies the minimum fraction of carbon can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCZ</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4580,7 +4580,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000225">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the maximum fraction of carbon can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameter specifies the maximum fraction of carbon can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCY</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4600,7 +4600,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000226">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the number of hours required for plant to initiate senescence after maturity.</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameter specifies the number of hours required for plant to initiate senescence after maturity.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Hours4SenesAftMature</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4619,7 +4619,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000227">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the number of hours required for plant to initiate storage carbon remobilization after leafout.</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameter specifies the number of hours required for plant to initiate storage carbon remobilization after leafout.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HourReq2InitSStor4LeafOut</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -11131,7 +11131,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000598">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
-        <obo:IAO_0000115>This variables indicates the total water-air exchange due to evaporation from canopy held water and transpirtion of water that plant take up from the soil. It is an important component of the ecosystem water cycling.</obo:IAO_0000115>
+        <obo:IAO_0000115>This variable indicates the total water-air exchange due to evaporation from canopy held water and transpiration of water that plant take up from the soil. It is an important component of the ecosystem water cycling.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>QVegET_col</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>surface-evapotranspiration</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ATS: surface-evapotranspiration.</rdfs:comment>
@@ -11492,7 +11492,7 @@
                 <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
             </Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>This vector variable summarizes mass of total chemical elements that are associated with the structural components of aboveground plant organs. It excludes nonstrucutral storage of chemical elements, and is a measure of aboveground plant biomass.</obo:IAO_0000115>
+        <obo:IAO_0000115>This vector variable summarizes mass of total chemical elements that are associated with the structural components of aboveground plant organs. It excludes nonstructural storage of chemical elements, and is a measure of aboveground plant biomass.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>ShootStrutElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
