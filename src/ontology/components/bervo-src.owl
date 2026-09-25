@@ -39160,6 +39160,385 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002100 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002100">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Color of water, found by comparison with platinum-cobalt standards and reported in color units, one unit being the color of 1 mg of platinum per liter.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/color"/>
+        <oboInOwl:hasRelatedSynonym>apparent color</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>true color</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Color&quot;: Color in quantified in color units. True color is measured after turbidity is removed, and apparent color without.</rdfs:comment>
+        <rdfs:label>Water color</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>{PCU}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002101 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002101">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Odor of water, reported as the ratio by which a sample must be diluted with odor-free water for its odor to be just detectable.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/odor"/>
+        <oboInOwl:hasExactSynonym>TON</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>odor</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Odor&quot;: Odor</rdfs:comment>
+        <rdfs:label>Threshold odor number</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002102 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002102">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Mass concentration of the substances that a solvent, usually n-hexane, extracts from an acidified water sample and that remain when the solvent is evaporated, chiefly fats, oils, waxes, and petroleum hydrocarbons.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/oilAndGrease"/>
+        <oboInOwl:hasExactSynonym>hexane extractable material</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>FOG</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>HEM</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Oil and grease&quot;: Oil and grease</rdfs:comment>
+        <rdfs:label>Oil and grease</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002103 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002103">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Decadic absorbance of ultraviolet light at a stated wavelength, usually 254 or 280 nm, by a filtered water sample, per unit optical path length.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/absorbanceUltraviolet"/>
+        <oboInOwl:hasRelatedSynonym>UV254</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Absorbance, ultraviolet&quot;: Absorbance of ultraviolet light at a specified wavelength, typically at 254 or 280 nm for water samples. Not normalized to DOC concentration like variables such as SUVA280. Often reported per centimeter of path length, cm-1.</rdfs:comment>
+        <rdfs:label>Ultraviolet absorbance</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000236"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000920"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002104 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002104">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Ultraviolet absorbance of a filtered water sample at a stated wavelength divided by its dissolved organic carbon concentration, an index of the aromatic content of its dissolved organic matter.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>SUVA</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>No ODM2 name. Parent of the ODM2 SUVA names.</rdfs:comment>
+        <rdfs:label>Specific ultraviolet absorbance</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000236"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>L.mg-1.m-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000097"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002105 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002105">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002104"/>
+        <obo:IAO_0000115>Specific ultraviolet absorbance at a wavelength of 254 nm.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/SUVA254"/>
+        <oboInOwl:hasExactSynonym>SUVA254</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;SUVA254&quot;: Specific ultraviolet absorbance at 254 nm. Determined by absorbance normalized to DOC concentration.</rdfs:comment>
+        <rdfs:label>Specific ultraviolet absorbance at 254 nm</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000236"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>L.mg-1.m-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000097"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002106 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002106">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002104"/>
+        <obo:IAO_0000115>Specific ultraviolet absorbance at a wavelength of 280 nm.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/SUVA280"/>
+        <oboInOwl:hasExactSynonym>SUVA280</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;SUVA280&quot;: Specific ultraviolet absorbance at 280 nm. Determined by absorbance normalized to dissolved organic carbon (DOC) concentration.</rdfs:comment>
+        <rdfs:label>Specific ultraviolet absorbance at 280 nm</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000236"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>L.mg-1.m-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000097"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002107 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002107">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Fluorescence of the dissolved organic matter in a water sample, usually excited near 365 nm and read near 480 nm, reported relative to a quinine sulfate standard.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/fluorescenceDissolvedOrganicCarbon"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/fluorescenceDissolvedOrganicMatter"/>
+        <oboInOwl:hasExactSynonym>fDOM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>CDOM fluorescence</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Fluorescence, dissolved organic matter (DOM)&quot;: Fluorescence of dissolved organic matter (DOM). ODM2 variable name concept &quot;Fluorescence, dissolved organic carbon (DOC)&quot;: Fluorescence of dissolved organic carbon (DOC). DOC is an element specific fraction of dissolved organic matter (DOM). The two ODM2 names are one quantity here. The molecules that fluoresce are the dissolved organic matter, and a fluorescence reading does not isolate their carbon. Some sensors report relative fluorescence units, {RFU}. A reading calibrated to a dissolved organic carbon concentration, in mg.L-1, is an estimate of that concentration and needs its own term.</rdfs:comment>
+        <rdfs:label>Dissolved organic matter fluorescence</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000505"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>{QSU}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000920"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002108 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002108">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Ratio of the fluorescence emission of dissolved organic matter at 470 nm to that at 520 nm, at an excitation wavelength of 370 nm, higher where the organic matter comes from microbes and lower where it comes from land plants.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/fluorescenceIndex"/>
+        <oboInOwl:hasExactSynonym>FI</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Fluorescence index&quot;: Fluorescence index for measuring fluorescent dissolved organic matter (FDOM). Ratio of emission intensity at 470nm to intensity at 520nm at excitation 370nm.</rdfs:comment>
+        <rdfs:label>Fluorescence index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000505"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000800"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002109 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002109">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Ratio of the fluorescence emission of dissolved organic matter between 435 and 480 nm to that between 300 and 345 nm, at an excitation wavelength of 254 nm, higher where the organic matter is more humified.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/humificationIndex"/>
+        <oboInOwl:hasExactSynonym>HIX</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Humification index&quot;: Humification index. Hummification is the processes by which organic matter decomposes to form humus. In humus the initial structures or shapes can no longer be recognized. See also humus. ODM2 defines humification, not the index. This is the index of Zsolnay and others (1999). Ohno (2002) divides by the sum of the two regions instead, which keeps the value between 0 and 1.</rdfs:comment>
+        <rdfs:label>Humification index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000505"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000800"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002110 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002110">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Concentration of dissolved oxygen in water as a fraction of the concentration at equilibrium with the atmosphere at the water&apos;s temperature, salinity, and pressure, above 1 when the water is supersaturated.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/oxygenDissolvedPercentOfSaturation"/>
+        <oboInOwl:hasExactSynonym>dissolved oxygen percent saturation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>DO saturation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Oxygen, dissolved percent of saturation&quot;: Dissolved oxygen, percent saturation. Usually reported in percent.</rdfs:comment>
+        <rdfs:label>Dissolved oxygen saturation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000429"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002111 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002111">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Difference between the pH of water and the pH at which it would be saturated with calcium carbonate at its temperature, calcium concentration, and alkalinity, positive where the water tends to deposit calcium carbonate and negative where it tends to dissolve it.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/LSI"/>
+        <oboInOwl:hasExactSynonym>LSI</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;LSI&quot;: Langelier Saturation Index is an indicator of the degree of saturation of water with respect to calcium carbonate</rdfs:comment>
+        <rdfs:label>Langelier saturation index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000429"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000094"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002112 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002112">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Product of the calcium and carbonate ion concentrations in water divided by the stoichiometric solubility product of aragonite at the same temperature, salinity, and pressure, above 1 where the water is supersaturated and below 1 where it is undersaturated.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/omegaAragonite"/>
+        <oboInOwl:hasRelatedSynonym>omega aragonite</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Aragonite saturation state&quot;: A measure of the thermodynamic tendency for the mineral calcium carbonate to form or to dissolve. The symbol Ω (omega) is often used as shorthand for &quot;calcium carbonate saturation state&quot;. By convention, Ω is usually expressed with respect to aragonite, one of the two most abundant forms of calcium carbonate in the ocean. An aragonite saturation state (Ωar) greater than 1.0 indicates supersaturation, while values less than 1.0 indicate undersaturation with instability favoring dissolution.</rdfs:comment>
+        <rdfs:label>Aragonite saturation state</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000429"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000919"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002113 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002113">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Index of the trophic state of a lake on a scale of about 0 to 100, computed from Secchi depth, chlorophyll a concentration, or total phosphorus concentration, in which each rise of 10 marks a halving of Secchi depth.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>TSI</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>No ODM2 name. Parent of Secchi depth trophic state index, which ODM2 names. Carlson (1977) gave matching forms from chlorophyll a and total phosphorus.</rdfs:comment>
+        <rdfs:label>Carlson trophic state index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000724"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002114 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002114">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002113"/>
+        <obo:IAO_0000115>Carlson trophic state index computed from Secchi depth, 60 less 14.41 times the natural logarithm of the Secchi depth in meters.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/TSI"/>
+        <oboInOwl:hasExactSynonym>TSI(SD)</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;TSI&quot;: Carlson Trophic State Index is a measurement of eutrophication based on Secchi depth</rdfs:comment>
+        <rdfs:label>Secchi depth trophic state index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000724"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002115 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002115">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Number of insoluble particles per unit volume of a liquid such as rainwater or surface water, usually counted in size classes by an optical or electrical counter.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/particleCounts"/>
+        <oboInOwl:hasRelatedSynonym>particle count</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Particle counts&quot;: Count of insoluble particles in a liquid like rainwater</rdfs:comment>
+        <rdfs:label>Particle number density in water</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000899"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>{particles}.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000722"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002116 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002116">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Radioactivity of the alpha-emitting radionuclides in a water sample per unit volume, measured together without identifying the nuclides.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/grossAlphaRadionuclides"/>
+        <oboInOwl:hasExactSynonym>gross alpha</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>gross alpha radionuclides</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Gross alpha radionuclides&quot;: Gross Alpha Radionuclides. Often reported in picocuries per liter, pCi.L-1.</rdfs:comment>
+        <rdfs:label>Gross alpha activity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>Bq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002117 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002117">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Radioactivity of the beta-emitting radionuclides in a water sample per unit volume, measured together without identifying the nuclides.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/grossBetaRadionuclides"/>
+        <oboInOwl:hasExactSynonym>gross beta</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>gross beta radionuclides</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Gross beta radionuclides&quot;: Gross Beta Radionuclides. Often reported in picocuries per liter, pCi.L-1.</rdfs:comment>
+        <rdfs:label>Gross beta activity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>Bq.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
