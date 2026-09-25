@@ -10509,7 +10509,7 @@
         <oboInOwl:hasRelatedSynonym>leaf C3 chlorophyll content</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), from the EcoSIM source</rdfs:comment>
-        <rdfs:comment>EcoSIM renamed LeafC3ChlorofilConc_pft to LeafC3Chl2Protein_pft in September 2025 (commit 45e85e6). The current source holds it as LeafProtein2Chl_pft, read from the trait file&apos;s CHL, &apos;carbon mass ratio of mesophyll chlorophyll to total leaf protein [gC Chl /(gC protein)]&apos;. That identifier reads as protein to chlorophyll, the inverse of its own description. BERVO follows the description and the earlier Chl2Protein name, and takes the identifier to be misnamed.</rdfs:comment>
+        <rdfs:comment>EcoSIM renamed LeafC3ChlorofilConc_pft to LeafC3Chl2Protein_pft in September 2025 (commit 45e85e6), and now holds the value as LeafProtein2Chl_pft. In C3 plants all of the chlorophyll-bound protein is in the mesophyll. See Leaf chlorophyll-bound protein fraction (BERVO:0001847).</rdfs:comment>
         <rdfs:label>Leaf C3 chlorophyll-bound protein fraction</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -10533,7 +10533,7 @@
         <oboInOwl:hasRelatedSynonym>leaf C4 chlorophyll content</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), from the EcoSIM source</rdfs:comment>
-        <rdfs:comment>EcoSIM renamed LeafC4ChlorofilConc_pft to LeafC4Chl2Protein_pft in September 2025 (commit 45e85e6).</rdfs:comment>
+        <rdfs:comment>EcoSIM renamed LeafC4ChlorofilConc_pft to LeafC4Chl2Protein_pft in September 2025 (commit 45e85e6), and now holds the value as LeafProtein2Chl_pft. In C4 plants EcoSIM splits the chlorophyll-bound protein between mesophyll and bundle sheath by fMesophyllChlProtein_pft. See Leaf chlorophyll-bound protein fraction (BERVO:0001847).</rdfs:comment>
         <rdfs:label>Leaf C4 chlorophyll-bound protein fraction</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -34349,6 +34349,7 @@
         <oboInOwl:hasRelatedSynonym>LeafProtein2Chl_pft</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>leaf chlorophyll content</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), release preparation</rdfs:comment>
+        <rdfs:comment>EcoSIM holds this as LeafProtein2Chl_pft, read unchanged from the trait file&apos;s CHL and described as &apos;Fraction of total leaf protein as chlorophyll-bound for light-harvesting [-]&apos;. StomatesMod.F90 multiplies leaf protein carbon by it and divides by 3.5 to get chlorophyll carbon, so the chlorophyll itself is about one part in 3.5 of this fraction. The same variable serves C3 and C4 plants.</rdfs:comment>
         <rdfs:label>Leaf chlorophyll-bound protein fraction</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
