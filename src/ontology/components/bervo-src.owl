@@ -30715,7 +30715,7 @@
         <rdfs:comment>SOMDataType.txt</rdfs:comment>
         <rdfs:label>Microbial residue chemical element</rdfs:label>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
     </Class>
