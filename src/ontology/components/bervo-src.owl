@@ -13942,7 +13942,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000739">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001856"/>
-        <obo:IAO_0000115>The phosphorous to carbon mass ratio in a plant husk. This quantity reflects the nutrient status of the plant and has important implications for the return of these elements to the soil when the plant dies and decomposes.</obo:IAO_0000115>
+        <obo:IAO_0000115>The phosphorus to carbon mass ratio in a plant husk. This quantity reflects the nutrient status of the plant and has important implications for the return of these elements to the soil when the plant dies and decomposes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>rPCHusk_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
@@ -19041,7 +19041,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001012">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
-        <obo:IAO_0000115>Heterotrophic substrate-unlimited dihydrogen phosphate mineralization-immobilization in band soil represents the net balance between phosphate release and uptake by heterotrophic microorganisms when not limited by carbon substrate availability. This parameter quantifies phosphorous cycling dynamics in fertilizer-banded areas and is essential for understanding phosphorous availability, microbial competition, and nutrient management in agricultural ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Heterotrophic substrate-unlimited dihydrogen phosphate mineralization-immobilization in band soil represents the net balance between phosphate release and uptake by heterotrophic microorganisms when not limited by carbon substrate availability. This parameter quantifies phosphorus cycling dynamics in fertilizer-banded areas and is essential for understanding phosphorus availability, microbial competition, and nutrient management in agricultural ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RH2PO4DmndBandHeter_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
@@ -19060,7 +19060,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001013">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
-        <obo:IAO_0000115>Heterotrophic substrate-unlimited hydrogen phosphate immobilization in non-band soil represents the uptake of hydrogen phosphate by heterotrophic microorganisms when not limited by carbon substrate availability. This parameter quantifies microbial phosphorous demand in non-fertilized soil areas and is important for understanding phosphorous competition between plants and microbes in natural terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Heterotrophic substrate-unlimited hydrogen phosphate immobilization in non-band soil represents the uptake of hydrogen phosphate by heterotrophic microorganisms when not limited by carbon substrate availability. This parameter quantifies microbial phosphorus demand in non-fertilized soil areas and is important for understanding phosphorus competition between plants and microbes in natural terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RH1PO4DmndSoilHeter_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
@@ -19079,7 +19079,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001014">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
-        <obo:IAO_0000115>Heterotrophic substrate-unlimited hydrogen phosphate mineralization-immobilization in band soil represents the net balance between hydrogen phosphate release and uptake by heterotrophic microorganisms when not limited by carbon substrates. This parameter quantifies phosphorous cycling dynamics in fertilizer-banded areas and affects phosphorous availability for plant uptake and overall nutrient management in agricultural systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Heterotrophic substrate-unlimited hydrogen phosphate mineralization-immobilization in band soil represents the net balance between hydrogen phosphate release and uptake by heterotrophic microorganisms when not limited by carbon substrates. This parameter quantifies phosphorus cycling dynamics in fertilizer-banded areas and affects phosphorus availability for plant uptake and overall nutrient management in agricultural systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RH1PO4DmndBandHeter_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
@@ -19098,7 +19098,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001015">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
-        <obo:IAO_0000115>Heterotrophic substrate-unlimited hydrogen phosphate immobilization in surface litter represents the uptake of hydrogen phosphate by heterotrophic microorganisms during litter decomposition when not limited by carbon substrates. This parameter quantifies phosphorous demand during organic matter decomposition and is crucial for understanding nutrient cycling and phosphorous availability in surface organic layers of terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Heterotrophic substrate-unlimited hydrogen phosphate immobilization in surface litter represents the uptake of hydrogen phosphate by heterotrophic microorganisms during litter decomposition when not limited by carbon substrates. This parameter quantifies phosphorus demand during organic matter decomposition and is crucial for understanding nutrient cycling and phosphorus availability in surface organic layers of terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RH1PO4DmndLitrHeter_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
@@ -19219,7 +19219,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001021">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
-        <obo:IAO_0000115>Autotrophic microbes dihydrogen phosphate demand in soil represents the rate at which autotrophic microorganisms require dihydrogen phosphate for growth and metabolic processes including nitrification. This parameter quantifies phosphorous requirements of nitrifying bacteria and other chemosynthetic microbes and is important for understanding nutrient limitations and competition for phosphorous in terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Autotrophic microbes dihydrogen phosphate demand in soil represents the rate at which autotrophic microorganisms require dihydrogen phosphate for growth and metabolic processes including nitrification. This parameter quantifies phosphorus requirements of nitrifying bacteria and other chemosynthetic microbes and is important for understanding nutrient limitations and competition for phosphorus in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RH2PO4UptkSoilAutor_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
@@ -19257,7 +19257,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001023">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
-        <obo:IAO_0000115>Autotrophic microbial dihydrogen phosphate demand in surface litter represents the rate at which nitrifying bacteria require dihydrogen phosphate for growth and metabolic processes during litter decomposition. This parameter quantifies phosphorous requirements of autotrophic microbes in organic surface layers and is crucial for understanding nutrient cycling and microbial competition in the litter-soil interface.</obo:IAO_0000115>
+        <obo:IAO_0000115>Autotrophic microbial dihydrogen phosphate demand in surface litter represents the rate at which nitrifying bacteria require dihydrogen phosphate for growth and metabolic processes during litter decomposition. This parameter quantifies phosphorus requirements of autotrophic microbes in organic surface layers and is crucial for understanding nutrient cycling and microbial competition in the litter-soil interface.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RH2PO4UptkLitrAutor_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
@@ -19428,7 +19428,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001032">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
-        <obo:IAO_0000115>Autotrophic microbial dihydrogen phosphate demand in band soil represents the rate at which nitrifying bacteria require dihydrogen phosphate for growth and metabolic processes in fertilizer-banded areas. This parameter quantifies enhanced phosphorous utilization by autotrophic microbes in nutrient-rich zones and is crucial for understanding nutrient competition and microbial activity in agricultural systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Autotrophic microbial dihydrogen phosphate demand in band soil represents the rate at which nitrifying bacteria require dihydrogen phosphate for growth and metabolic processes in fertilizer-banded areas. This parameter quantifies enhanced phosphorus utilization by autotrophic microbes in nutrient-rich zones and is crucial for understanding nutrient competition and microbial activity in agricultural systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RH2PO4UptkBandAutor_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
@@ -19447,7 +19447,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001033">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
-        <obo:IAO_0000115>Autotrophic microbial hydrogen phosphate demand in non-band soil represents the rate at which nitrifying bacteria require hydrogen phosphate for growth and metabolic processes in non-fertilized soil areas. This parameter quantifies phosphorous requirements of autotrophic microbes in natural soil conditions and is important for understanding nutrient limitations and microbial ecology in terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Autotrophic microbial hydrogen phosphate demand in non-band soil represents the rate at which nitrifying bacteria require hydrogen phosphate for growth and metabolic processes in non-fertilized soil areas. This parameter quantifies phosphorus requirements of autotrophic microbes in natural soil conditions and is important for understanding nutrient limitations and microbial ecology in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RH1PO4UptkSoilAutor_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
@@ -19466,7 +19466,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001034">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
-        <obo:IAO_0000115>Autotrophic microbial hydrogen phosphate demand in band soil represents the rate at which nitrifying bacteria require hydrogen phosphate for growth and metabolic processes in fertilizer-banded areas. This parameter quantifies enhanced phosphorous utilization by autotrophic microbes in nutrient-rich zones and is crucial for understanding nutrient cycling and microbial competition in agricultural systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Autotrophic microbial hydrogen phosphate demand in band soil represents the rate at which nitrifying bacteria require hydrogen phosphate for growth and metabolic processes in fertilizer-banded areas. This parameter quantifies enhanced phosphorus utilization by autotrophic microbes in nutrient-rich zones and is crucial for understanding nutrient cycling and microbial competition in agricultural systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RH1PO4UptkBandAutor_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
@@ -19485,7 +19485,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001035">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
-        <obo:IAO_0000115>Autotrophic microbial hydrogen phosphate demand in surface litter represents the rate at which nitrifying bacteria require hydrogen phosphate for growth and metabolic processes during litter decomposition. This parameter quantifies phosphorous requirements of autotrophic microbes in organic surface layers and is important for understanding nutrient cycling and microbial succession in the litter-soil interface of terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Autotrophic microbial hydrogen phosphate demand in surface litter represents the rate at which nitrifying bacteria require hydrogen phosphate for growth and metabolic processes during litter decomposition. This parameter quantifies phosphorus requirements of autotrophic microbes in organic surface layers and is important for understanding nutrient cycling and microbial succession in the litter-soil interface of terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RH1PO4UptkLitrAutor_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
@@ -20255,7 +20255,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001076">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>Root phosphorous to carbon ratio quantifies the mass ratio of phosphorous to carbon in root tissue, reflecting the phosphorous content and metabolic demands of root systems. This stoichiometric relationship affects decomposition dynamics, phosphorous cycling, and nutrient availability when root litter enters soil organic matter pools in biogeochemical models.</obo:IAO_0000115>
+        <obo:IAO_0000115>Root phosphorus to carbon ratio quantifies the mass ratio of phosphorus to carbon in root tissue, reflecting the phosphorus content and metabolic demands of root systems. This stoichiometric relationship affects decomposition dynamics, phosphorus cycling, and nutrient availability when root litter enters soil organic matter pools in biogeochemical models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RootrPC_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
@@ -20466,7 +20466,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001087">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>Maximum root phosphate uptake rate defines the highest rate at which plant roots can absorb phosphate from soil solution under saturated conditions. This parameter establishes the upper limit of plant phosphorous acquisition and is critical for understanding phosphorous limitation effects on plant growth and ecosystem productivity in biogeochemical models.</obo:IAO_0000115>
+        <obo:IAO_0000115>Maximum root phosphate uptake rate defines the highest rate at which plant roots can absorb phosphate from soil solution under saturated conditions. This parameter establishes the upper limit of plant phosphorus acquisition and is critical for understanding phosphorus limitation effects on plant growth and ecosystem productivity in biogeochemical models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>VmaxPO4Root_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
@@ -20630,7 +20630,7 @@
                 <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
             </Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Root nodule chemical element quantifies the elemental composition of specialized root structures that house nitrogen-fixing bacteria in leguminous plants. These nodules contain essential elements like iron, molybdenum, and phosphorous that support nitrogen fixation processes, making them critical components for understanding biological nitrogen cycling in terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Root nodule chemical element quantifies the elemental composition of specialized root structures that house nitrogen-fixing bacteria in leguminous plants. These nodules contain essential elements like iron, molybdenum, and phosphorus that support nitrogen fixation processes, making them critical components for understanding biological nitrogen cycling in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RootNodulElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
@@ -32301,7 +32301,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001736">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
-        <obo:IAO_0000115>The term &apos;total precipitated P containing transformation non-band&apos; refers to the amount of phosphorous (P) that is transformed and then deposited onto the Earth&apos;s surface in forms other than bands within a specified time period. This parameter is a component of earth system models and is used to quantify and simulate the cycling and distribution of phosphorous in terrestrial and aquatic ecosystems. It provides valuable information for understanding nutrient dynamics and their impact on ecosystem health and functioning.</obo:IAO_0000115>
+        <obo:IAO_0000115>The term &apos;total precipitated P containing transformation non-band&apos; refers to the amount of phosphorus (P) that is transformed and then deposited onto the Earth&apos;s surface in forms other than bands within a specified time period. This parameter is a component of earth system models and is used to quantify and simulate the cycling and distribution of phosphorus in terrestrial and aquatic ecosystems. It provides valuable information for understanding nutrient dynamics and their impact on ecosystem health and functioning.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>trcp_RChem_soil_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
