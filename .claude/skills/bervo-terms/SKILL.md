@@ -126,11 +126,13 @@ have guessed from the code identifier.
 
 ### The source file usually tells you the category
 
-There are 35 distinct EcoSIM source files: 33 data type files (`.txt`) and two Fortran
-sources (`.F90`). **33 of the 35 map to one dominant BERVO `Category`**. This is the
-strongest placement heuristic available.
+There are 35 distinct EcoSIM source files, most of them data type files (`.txt`) and two of
+them Fortran sources (`.F90`). **All but two map to one dominant BERVO `Category`**. The
+two exceptions are `EcoSimSumDataType.txt` and `SurfPhysData.F90`. The other Fortran
+source, `HydroThermData.F90`, maps cleanly. This is the strongest placement heuristic
+available.
 
-Shares run from 60% to 100% across those 33; the other two files are exceptions (see below). The
+Shares run from 60% to 100% across the 33 that map (see below for the two that do not). The
 seven files below are simply the **largest by term count**; their shares are typical
 rather than exceptional — the median across all 35 files is 90%, and the mean of
 these seven is 89%. A file's absence from this table says nothing about how strong its prior
