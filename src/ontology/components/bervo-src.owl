@@ -354,7 +354,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000264"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000043"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
