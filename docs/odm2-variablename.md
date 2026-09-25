@@ -1031,14 +1031,20 @@ ODM2 name.
 - **Total alkalinity is the property.** Total alkalinity (`BERVO:8000634`) came
   in as a concept with the speciation alignment. By slice 2's rule it is the
   property, and the observable that measures it names its medium: Water
-  alkalinity, whose `attributes` is Total alkalinity. ODM2's `alkalinity` and
+  alkalinity. ODM2's `alkalinity` and
   `alkalinityTotal` both land on Water alkalinity, as `radiationIncoming` and
   `radiationTotalIncoming` both land on Incoming radiation. Water acidity and
   Water hardness are named the same way, for symmetry and because "hardness" alone
   also names a property of minerals and of snow.
 - **Alkalinity and acid neutralizing capacity.** Alkalinity is titrated on a
   filtered sample and acid neutralizing capacity on an unfiltered one. They are
-  siblings, and the second also takes Total alkalinity as its attribute.
+  siblings.
+- **The attribute is Concentration.** Every alkalinity, acidity, hardness, and
+  oxygen demand variable takes Concentration in `attributes`. Total alkalinity
+  does not fit the alkalinity parts, and one attribute across the family is
+  better than one that changes between a parent and its children. Capacity
+  (`BERVO:8000544`) and Demand (`BERVO:8000770`) were considered for acidity and
+  oxygen demand and not used, for the same reason.
 - **Carbonate alkalinity has two meanings.** Here it is the carbonate part of
   the titration speciation of water analysis, beside the bicarbonate and
   hydroxide parts. In marine carbonate chemistry, carbonate alkalinity means

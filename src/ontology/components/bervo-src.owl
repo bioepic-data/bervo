@@ -38310,7 +38310,7 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Alkalinity&quot;: Alkalinity is the capacity of water to resist changes in pH that would make the water more acidic. It should not be confused with basicity which is an absolute measurement on the pH scale. Alkalinity is the strength of a buffer solution composed of weak acids and their conjugate bases. It is measured by titrating the solution with a monoprotic acid such as HCl until its pH changes abruptly, or it reaches a known endpoint where that happens. Alkalinity is expressed in units of meq/L (milliequivalents per liter), which corresponds to the amount of monoprotic acid added as a titrant in millimoles per liter. ODM2 variable name concept &quot;Alkalinity, total&quot;: Total Alkalinity. Measured on a filtered sample. The same titration on an unfiltered sample gives Acid neutralizing capacity (BERVO:0002062). The property it measures is Total alkalinity (BERVO:8000634). Often reported as calcium carbonate, mg{CaCO3}.L-1.</rdfs:comment>
         <rdfs:label>Water alkalinity</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000634"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
@@ -38409,7 +38409,7 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Acid neutralizing capacity&quot;: Acid neutralizing capacity. Equal to Water alkalinity (BERVO:0002057) where the water carries no particles that react with acid.</rdfs:comment>
         <rdfs:label>Acid neutralizing capacity</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000634"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>meq.L-1</bervo:BERVO_has_unit>
