@@ -10508,7 +10508,7 @@
         <oboInOwl:hasRelatedSynonym>leaf C3 chlorophyll content</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), from the EcoSIM source</rdfs:comment>
-        <rdfs:comment>EcoSIM renamed LeafC3ChlorofilConc_pft to LeafC3Chl2Protein_pft in September 2025 (commit 45e85e6). The current source holds it as LeafProtein2Chl_pft, read from the trait file&apos;s CHL, &apos;carbon mass ratio of mesophyll chlorophyll to total leaf protein [gC Chl /(gC protein)]&apos;.</rdfs:comment>
+        <rdfs:comment>EcoSIM renamed LeafC3ChlorofilConc_pft to LeafC3Chl2Protein_pft in September 2025 (commit 45e85e6). The current source holds it as LeafProtein2Chl_pft, read from the trait file&apos;s CHL, &apos;carbon mass ratio of mesophyll chlorophyll to total leaf protein [gC Chl /(gC protein)]&apos;. That identifier reads as protein to chlorophyll, the inverse of its own description. BERVO follows the description and the earlier Chl2Protein name, and takes the identifier to be misnamed.</rdfs:comment>
         <rdfs:label>Leaf C3 chlorophyll to protein carbon ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
