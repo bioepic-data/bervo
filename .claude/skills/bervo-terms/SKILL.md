@@ -101,7 +101,7 @@ exist. Fix only the ones your change touches.
 ## EcoSIM provenance
 
 BERVO began as a catalogue of EcoSIM model parameters, and that origin is still the single
-biggest thing about the term set: **1,749 of 2,352 terms (74%) carry an
+biggest thing about the term set: **1,756 of 2,958 terms (59%) carry an
 `EcoSIM Variable Name` and a `File Name`** naming the EcoSIM source file they came from.
 
 These two columns are provenance, not logical content — `EcoSIM Variable Name` emits
@@ -126,13 +126,13 @@ have guessed from the code identifier.
 
 ### The source file usually tells you the category
 
-There are 33 distinct EcoSIM source files, and **32 of them map to one dominant BERVO
+There are 35 distinct EcoSIM source files, and **33 of them map to one dominant BERVO
 `Category`**. This is the strongest placement heuristic available.
 
-Shares run from 60% to 100% across those 32, with one outlier at 19% (see below). The
+Shares run from 60% to 100% across those 33, with two exceptions (see below). The
 seven files below are simply the **largest by term count**; their shares are typical
-rather than exceptional — the median across all 33 files is 90%, and so is the mean of
-these seven. A file's absence from this table says nothing about how strong its prior
+rather than exceptional — the median across all 35 files is 90%, and the mean of
+these seven is 89%. A file's absence from this table says nothing about how strong its prior
 is: `SoilPhysDataType.txt` (100%), `MicrobialDataType.txt` (98%) and `SOMDataType.txt`
 (97%) are all stronger than most of what is shown. The weaker end — `NitroPars.txt` and
 `FlagDataType.txt` at 60%, `ChemTracerParsMod.txt` 62%, `AqueChemDatatype.txt` 66% —
@@ -142,11 +142,11 @@ needs a judgement call. Check your own file rather than reading across from thes
 | --- | --- | --- |
 | `SoluteParMod.txt` | Constants for specific chemical reactions | 100% |
 | `SoilBGCDataType.txt` | Soil biogeochemistry variable | 98% |
-| `SoilWaterDataType.txt` | Soil and water variable | 96% |
-| `CanopyDataType.txt` | Canopy variable | 90% |
-| `ClimForcDataType.txt` | Climate force variable | 83% |
+| `SoilWaterDataType.txt` | Soil and water variable | 97% |
+| `CanopyDataType.txt` | Canopy variable | 91% |
+| `ClimForcDataType.txt` | Climate force variable | 81% |
 | `PlantDataRateType.txt` | Plant rate variable | 81% |
-| `PlantTraitDataType.txt` | Plant trait variable | 79% |
+| `PlantTraitDataType.txt` | Plant trait variable | 77% |
 
 When adding a term from a known EcoSIM file, check what its file's neighbours use:
 
@@ -154,9 +154,10 @@ When adding a term from a known EcoSIM file, check what its file's neighbours us
 just find "SoilBGCDataType.txt"
 ```
 
-**The one exception is `EcoSimSumDataType.txt`**: its 32 terms spread across 10 categories
+**The main exception is `EcoSimSumDataType.txt`**: its 32 terms spread across 11 categories
 with a top share of 19%, because it is a summary/aggregation file with no natural home. The
-heuristic tells you nothing there.
+heuristic tells you nothing there. `SurfPhysData.F90` is the other: it has only two terms,
+in two categories.
 
 Treat this as a strong prior, not a rule — the minority cases are real, and the category
 should still be the most specific correct parent.
@@ -168,9 +169,9 @@ so confirm against the definition rather than assuming:
 
 | Suffix | Count | Reading |
 | --- | --- | --- |
-| `_col` | 361 | Column-level, i.e. aggregated over the whole ecosystem column |
+| `_col` | 365 | Column-level, i.e. aggregated over the whole ecosystem column |
 | `_vr` | 304 | Vertically resolved, i.e. per soil layer. Only ~19% say so explicitly — confirm |
-| `_pft` | 263 | Per plant functional type |
+| `_pft` | 266 | Per plant functional type |
 | `_brch` | 70 | Per branch (64% of definitions mention a branch) |
 | `_2D`, `_2DH` | 43 | Two-dimensional / horizontal |
 
