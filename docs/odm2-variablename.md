@@ -1084,7 +1084,10 @@ ODM2 name.
   `coloredDissolvedOrganicMatter` as a concentration of a material, as slice 1's
   organism groups were defined by a measurement. The ODM2 name goes on the
   material, and the variables that measure it name it: Ultraviolet absorption
-  coefficient and Dissolved organic matter fluorescence take it in `measurement_ofs`. OLS
+  coefficient, Dissolved organic matter fluorescence, Fluorescence index, and
+  Humification index take it in `measurement_ofs`. The molecules that absorb and
+  fluoresce are that fraction of the dissolved organic matter. SUVA names
+  Dissolved organic carbon, the concentration it divides by. OLS
   has no ENVO or ChEBI term for it.
 - **Two ODM2 fluorescence names are one quantity.** `fluorescenceDissolvedOrganicMatter`
   and `fluorescenceDissolvedOrganicCarbon` both land on Dissolved organic matter

@@ -39349,7 +39349,7 @@
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000800"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000920"/>
     </Class>
     
 
@@ -39371,7 +39371,7 @@
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000800"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000920"/>
     </Class>
     
 
@@ -56470,7 +56470,7 @@
         <oboInOwl:hasRelatedSynonym>gelbstoff</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>yellow substance</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Colored dissolved organic matter&quot;: The concentration of colored dissolved organic matter (humic substances). ODM2 defines the concentration. BERVO keeps the material, which Ultraviolet absorption coefficient (BERVO:0002103) and Dissolved organic matter fluorescence (BERVO:0002107) measure.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Colored dissolved organic matter&quot;: The concentration of colored dissolved organic matter (humic substances). ODM2 defines the concentration. BERVO keeps the material, which Ultraviolet absorption coefficient (BERVO:0002103), Dissolved organic matter fluorescence (BERVO:0002107), Fluorescence index (BERVO:0002108), and Humification index (BERVO:0002109) measure.</rdfs:comment>
         <rdfs:label>Colored dissolved organic matter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
