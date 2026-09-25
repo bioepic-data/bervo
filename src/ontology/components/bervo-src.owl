@@ -3111,7 +3111,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000149">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>It is an allometric parameter for leaf that when carbon is allocated for leave growth, it should not be less than this minimu fraction</obo:IAO_0000115>
+        <obo:IAO_0000115>It is an allometric parameter for leaf that when carbon is allocated for leaf growth, it should not be less than this minimum fraction</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PART1X</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -3132,7 +3132,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000150">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>It is an allometric parameter for petiole that when carbon is allocated for petiole growth, it should not be less than this minimu fraction</obo:IAO_0000115>
+        <obo:IAO_0000115>It is an allometric parameter for petiole that when carbon is allocated for petiole growth, it should not be less than this minimum fraction</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PART2X</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -3926,7 +3926,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000191">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>An exponent parameter to compute stalk volume expasion in the model</obo:IAO_0000115>
+        <obo:IAO_0000115>An exponent parameter to compute stalk volume expansion in the model</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SNL2</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4102,7 +4102,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000200">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>A model-specifc parameter to compute carbon, nitrogen and phosphorus exchange between nodule bacteria and their hosting plants.</obo:IAO_0000115>
+        <obo:IAO_0000115>A model-specific parameter to compute carbon, nitrogen and phosphorus exchange between nodule bacteria and their hosting plants.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CCNGR</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4123,7 +4123,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000202">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Initial noduble carbon biomass C at the time of infection of the hosting plant. The infection is applied when noduble biomass of the hosting plant is zero.</obo:IAO_0000115>
+        <obo:IAO_0000115>Initial nodule carbon biomass C at the time of infection of the hosting plant. The infection is applied when nodule biomass of the hosting plant is zero.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NodulBiomCAtInfection</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4181,7 +4181,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000205">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Minimum fraction of root C can be recyled during root death</obo:IAO_0000115>
+        <obo:IAO_0000115>Minimum fraction of root C can be recycled during root death</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCZR</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4201,7 +4201,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000206">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Maximum fraction of root C can be recyled during root death</obo:IAO_0000115>
+        <obo:IAO_0000115>Maximum fraction of root C can be recycled during root death</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCYR</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4221,7 +4221,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000207">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Maximum fraction of root nitrogen can be recyled during root death</obo:IAO_0000115>
+        <obo:IAO_0000115>Maximum fraction of root nitrogen can be recycled during root death</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCXR</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4241,7 +4241,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000208">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Maximum fraction of root phosphorus can be recyled during root death</obo:IAO_0000115>
+        <obo:IAO_0000115>Maximum fraction of root phosphorus can be recycled during root death</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCQR</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4261,7 +4261,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000209">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Minimum fraction of nodule bacteria C can be recyled during root death</obo:IAO_0000115>
+        <obo:IAO_0000115>Minimum fraction of nodule bacteria C can be recycled during root death</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCZN</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4281,7 +4281,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000210">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Maximum fraction of nodule bacteria C can be recyled during root death</obo:IAO_0000115>
+        <obo:IAO_0000115>Maximum fraction of nodule bacteria C can be recycled during root death</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCYN</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4301,7 +4301,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000211">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Maximum fraction of nodule bacteria nitrogen can be recyled during root death</obo:IAO_0000115>
+        <obo:IAO_0000115>Maximum fraction of nodule bacteria nitrogen can be recycled during root death</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCXN</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4321,7 +4321,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000212">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Maximum fraction of nodule bacteria phosphorus can be recyled during root death</obo:IAO_0000115>
+        <obo:IAO_0000115>Maximum fraction of nodule bacteria phosphorus can be recycled during root death</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCQN</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -11490,7 +11490,7 @@
                 <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
             </Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>This vector varaible summarizes mass of total chemical elements that are associated with the structural components of aboveground plant organs. It excludes nonstrucutral storage of chemical elements, and is a measure of aboveground plant biomass.</obo:IAO_0000115>
+        <obo:IAO_0000115>This vector variable summarizes mass of total chemical elements that are associated with the structural components of aboveground plant organs. It excludes nonstrucutral storage of chemical elements, and is a measure of aboveground plant biomass.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>ShootStrutElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
@@ -21352,7 +21352,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001135">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>This variable tracks the chemical elements in the primary structure of roots o rmycorrizhae in each axis. It indicates the biomass size of primary roots or the primary strcuture of mycorrhizae.</obo:IAO_0000115>
+        <obo:IAO_0000115>This variable tracks the chemical elements in the primary structure of roots or mycorrhizae in each axis. It indicates the biomass size of primary roots or the primary structure of mycorrhizae.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RootMyco1stElm_raxs</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
@@ -21415,7 +21415,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001138">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>This variable indiates how permiable the roots at a give soil layer are to the gas exchange with respect to the soil. It is a function of gas species, root porosity and root biomass. It plays an important role in root-soil gas exchange, for O2, N2, H2, Ar, CO2, CH4 and NH3.</obo:IAO_0000115>
+        <obo:IAO_0000115>This variable indicates how permeable the roots at a given soil layer are to the gas exchange with respect to the soil. It is a function of gas species, root porosity and root biomass. It plays an important role in root-soil gas exchange, for O2, N2, H2, Ar, CO2, CH4 and NH3.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RootGasConductance_pvr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
@@ -21434,7 +21434,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001139">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>It is the mass density of surface litter, which is a function of plant chemical comopsition. This variable plays an important role in the water and heat exchange with respect to atmosphere and soil, and is also important for the carbon and nutrient cycling</obo:IAO_0000115>
+        <obo:IAO_0000115>It is the mass density of surface litter, which is a function of plant chemical composition. This variable plays an important role in the water and heat exchange with respect to atmosphere and soil, and is also important for the carbon and nutrient cycling</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>BulkDensLitR</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
