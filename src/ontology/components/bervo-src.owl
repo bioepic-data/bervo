@@ -39229,12 +39229,12 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002103">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
-        <obo:IAO_0000115>Decadic absorbance of ultraviolet light at a stated wavelength, usually 254 or 280 nm, by a filtered water sample, per unit optical path length.</obo:IAO_0000115>
+        <obo:IAO_0000115>Decadic absorption coefficient of a filtered water sample for ultraviolet light at a stated wavelength, its absorbance divided by the optical path length.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/absorbanceUltraviolet"/>
-        <oboInOwl:hasRelatedSynonym>UV254</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ultraviolet absorbance</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Absorbance, ultraviolet&quot;: Absorbance of ultraviolet light at a specified wavelength, typically at 254 or 280 nm for water samples. Not normalized to DOC concentration like variables such as SUVA280. Often reported per centimeter of path length, cm-1.</rdfs:comment>
-        <rdfs:label>Ultraviolet absorbance</rdfs:label>
+        <rdfs:label>Ultraviolet absorption coefficient</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000236"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
@@ -39249,7 +39249,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002104">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
-        <obo:IAO_0000115>Ultraviolet absorbance of a filtered water sample at a stated wavelength divided by its dissolved organic carbon concentration, an index of the aromatic content of its dissolved organic matter.</obo:IAO_0000115>
+        <obo:IAO_0000115>Ultraviolet absorption coefficient of a filtered water sample at a stated wavelength divided by its dissolved organic carbon concentration, an index of the aromatic content of its dissolved organic matter.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>SUVA</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
         <rdfs:comment>No ODM2 name. Parent of the ODM2 SUVA names.</rdfs:comment>
@@ -56467,7 +56467,7 @@
         <oboInOwl:hasRelatedSynonym>gelbstoff</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>yellow substance</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Colored dissolved organic matter&quot;: The concentration of colored dissolved organic matter (humic substances). ODM2 defines the concentration. BERVO keeps the material, which Ultraviolet absorbance (BERVO:0002103) and Dissolved organic matter fluorescence (BERVO:0002107) measure.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Colored dissolved organic matter&quot;: The concentration of colored dissolved organic matter (humic substances). ODM2 defines the concentration. BERVO keeps the material, which Ultraviolet absorption coefficient (BERVO:0002103) and Dissolved organic matter fluorescence (BERVO:0002107) measure.</rdfs:comment>
         <rdfs:label>Colored dissolved organic matter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>

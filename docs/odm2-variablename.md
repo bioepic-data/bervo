@@ -1003,7 +1003,7 @@ ODM2 name.
 | Water color (`BERVO:0002100`) | Water quality variable | `color` | `{PCU}` |
 | Threshold odor number (`BERVO:0002101`) | Water quality variable | `odor` | `1` |
 | Oil and grease (`BERVO:0002102`) | Water quality variable | `oilAndGrease` | `mg.L-1` |
-| Ultraviolet absorbance (`BERVO:0002103`) | Water quality variable | `absorbanceUltraviolet` | `m-1` |
+| Ultraviolet absorption coefficient (`BERVO:0002103`) | Water quality variable | `absorbanceUltraviolet` | `m-1` |
 | Specific ultraviolet absorbance (`BERVO:0002104`) | Water quality variable | none | `L.mg-1.m-1` |
 | Specific ultraviolet absorbance at 254 nm (`BERVO:0002105`) | Specific ultraviolet absorbance | `SUVA254` | `L.mg-1.m-1` |
 | Specific ultraviolet absorbance at 280 nm (`BERVO:0002106`) | Specific ultraviolet absorbance | `SUVA280` | `L.mg-1.m-1` |
@@ -1080,8 +1080,8 @@ ODM2 name.
 - **Colored dissolved organic matter is a concept.** ODM2 defines
   `coloredDissolvedOrganicMatter` as a concentration of a material, as slice 1's
   organism groups were defined by a measurement. The ODM2 name goes on the
-  material, and the variables that measure it name it: Ultraviolet absorbance
-  and Dissolved organic matter fluorescence take it in `measurement_ofs`. OLS
+  material, and the variables that measure it name it: Ultraviolet absorption
+  coefficient and Dissolved organic matter fluorescence take it in `measurement_ofs`. OLS
   has no ENVO or ChEBI term for it.
 - **Two ODM2 fluorescence names are one quantity.** `fluorescenceDissolvedOrganicMatter`
   and `fluorescenceDissolvedOrganicCarbon` both land on Dissolved organic matter
@@ -1089,6 +1089,13 @@ ODM2 name.
   fluorescence reading does not isolate their carbon. A reading calibrated to a
   DOC concentration, in `mg.L-1`, would be a different quantity and would need
   its own term.
+- **Ultraviolet absorption coefficient.** ODM2 calls `absorbanceUltraviolet` an
+  absorbance, which has no dimension. The observable reported for water is the
+  absorbance divided by the optical path length, in `m-1`, so the label names
+  the coefficient and "ultraviolet absorbance" is a related synonym. The term is
+  generic in wavelength, so it carries no wavelength-specific synonym such as
+  UV254. SUVA keeps its name: it is the name every dataset uses, and its unit,
+  `L.mg-1.m-1`, is that coefficient divided by a concentration.
 - **Humification index.** ODM2 defines humification, not the index. The term is
   the fluorescence index of Zsolnay and others (1999), in the form most datasets
   report. The comment names the Ohno (2002) form, which divides by the sum of the
@@ -1108,8 +1115,8 @@ ODM2 name.
   usual expression for it. Many datasets report alkalinity as calcium carbonate
   too, and the alkalinity comment says so. Oxygen demand is `mg{O2}.L-1`. Color
   is `{PCU}`, platinum-cobalt units. DOM fluorescence is `{QSU}`, quinine sulfate
-  units; some sensors report `{RFU}`. Ultraviolet absorbance is per meter,
-  `m-1`, and often reported per centimeter. SUVA is `L.mg-1.m-1`. Gross alpha and
+  units; some sensors report `{RFU}`. The ultraviolet absorption coefficient is
+  per meter, `m-1`, and often reported per centimeter. SUVA is `L.mg-1.m-1`. Gross alpha and
   beta activity are `Bq.L-1`, often reported in `pCi.L-1`. Dissolved oxygen
   saturation is `1`, a ratio that exceeds 1 in supersaturated water, and is
   usually reported in percent.
