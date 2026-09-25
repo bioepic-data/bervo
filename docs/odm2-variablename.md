@@ -1129,8 +1129,10 @@ ODM2 name.
   (`BERVO:0001836`) and Chlorophyll fluorescence (`BERVO:0001980`) leave Water
   variable for Water quality variable. Neither is chemistry, and chlorophyll
   fluorescence now sits beside Dissolved organic matter fluorescence, which has
-  the same shape. Measured electrical conductivity (`BERVO:0001703`) stays: it is
-  EcoSIM's, with `measured_ins` of Soil.
+  the same shape. Turbidity of water now takes the Turbidity concept
+  (`BERVO:8000294`) as its attribute, as its new siblings name theirs. Measured
+  electrical conductivity (`BERVO:0001703`) stays: it is EcoSIM's, with
+  `measured_ins` of Soil.
 - **Dissolved oxygen concentration is not here.** ODM2's `oxygenDissolved` is a
   chemical species name and waits with the other 602.
 
