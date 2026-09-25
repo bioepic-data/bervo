@@ -38500,6 +38500,385 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002067 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002067">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Mass of dissolved oxygen consumed per unit volume of water by microorganisms oxidizing its organic matter, and its reduced nitrogen unless nitrification is inhibited, during incubation in the dark at 20 degrees Celsius for a stated number of days.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>BOD</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>biological oxygen demand</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>No ODM2 name. Parent of the ODM2 BOD names, which differ in the incubation period and in which oxidation they count.</rdfs:comment>
+        <rdfs:label>Biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002068 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002068">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002067"/>
+        <obo:IAO_0000115>Biochemical oxygen demand measured with nitrification inhibited, the oxygen consumed in oxidizing organic carbon alone.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>CBOD</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>No ODM2 name. Parent of the ODM2 carbonaceous BOD names.</rdfs:comment>
+        <rdfs:label>Carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002069 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002069">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002067"/>
+        <obo:IAO_0000115>Part of the biochemical oxygen demand consumed by nitrification, the microbial oxidation of ammonium and nitrite, usually taken as the total demand less the carbonaceous demand.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>NBOD</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>No ODM2 name. Parent of the ODM2 nitrogenous BOD names.</rdfs:comment>
+        <rdfs:label>Nitrogenous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002070 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002070">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002067"/>
+        <obo:IAO_0000115>Biochemical oxygen demand over an incubation of 1 day.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD1"/>
+        <oboInOwl:hasExactSynonym>BOD1</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD1&quot;: 1-day Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>1-day biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002071 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002071">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002067"/>
+        <obo:IAO_0000115>Biochemical oxygen demand over an incubation of 5 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD5"/>
+        <oboInOwl:hasExactSynonym>BOD5</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD5&quot;: 5-day Biochemical Oxygen Demand. The standard period.</rdfs:comment>
+        <rdfs:label>5-day biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002072 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002072">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002067"/>
+        <obo:IAO_0000115>Biochemical oxygen demand over an incubation of 20 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD20"/>
+        <oboInOwl:hasExactSynonym>BOD20</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD20&quot;: 20-day Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>20-day biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002073 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002073">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002067"/>
+        <obo:IAO_0000115>Biochemical oxygen demand once oxidation is complete, measured with a long incubation or estimated by fitting the course of oxygen consumption over time.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BODu"/>
+        <oboInOwl:hasExactSynonym>BODu</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>UBOD</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BODu&quot;: Ultimate Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>Ultimate biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002074 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002074">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002068"/>
+        <obo:IAO_0000115>Carbonaceous biochemical oxygen demand over an incubation of 2 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD2Carbonaceous"/>
+        <oboInOwl:hasExactSynonym>CBOD2</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD2, carbonaceous&quot;: 2-day Carbonaceous Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>2-day carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002075 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002075">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002068"/>
+        <obo:IAO_0000115>Carbonaceous biochemical oxygen demand over an incubation of 3 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD3Carbonaceous"/>
+        <oboInOwl:hasExactSynonym>CBOD3</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD3, carbonaceous&quot;: 3-day Carbonaceous Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>3-day carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002076 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002076">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002068"/>
+        <obo:IAO_0000115>Carbonaceous biochemical oxygen demand over an incubation of 4 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD4Carbonaceous"/>
+        <oboInOwl:hasExactSynonym>CBOD4</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD4, carbonaceous&quot;: 4-day Carbonaceous Biological Oxygen Demand</rdfs:comment>
+        <rdfs:label>4-day carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002077 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002077">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002068"/>
+        <obo:IAO_0000115>Carbonaceous biochemical oxygen demand over an incubation of 5 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD5Carbonaceous"/>
+        <oboInOwl:hasExactSynonym>CBOD5</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD5, carbonaceous&quot;: 5-day Carbonaceous Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>5-day carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002078 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002078">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002068"/>
+        <obo:IAO_0000115>Carbonaceous biochemical oxygen demand over an incubation of 6 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD6Carbonaceous"/>
+        <oboInOwl:hasExactSynonym>CBOD6</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD6, carbonaceous&quot;: 6-day Carbonaceous Biological Oxygen Demand</rdfs:comment>
+        <rdfs:label>6-day carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002079 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002079">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002068"/>
+        <obo:IAO_0000115>Carbonaceous biochemical oxygen demand over an incubation of 7 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD7Carbonaceous"/>
+        <oboInOwl:hasExactSynonym>CBOD7</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD7, carbonaceous&quot;: 7-day Carbonaceous Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>7-day carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002080 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002080">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002068"/>
+        <obo:IAO_0000115>Carbonaceous biochemical oxygen demand over an incubation of 20 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD20Carbonaceous"/>
+        <oboInOwl:hasExactSynonym>CBOD20</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD20, carbonaceous&quot;: 20-day Carbonaceous Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>20-day carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002081 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002081">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002068"/>
+        <obo:IAO_0000115>Carbonaceous biochemical oxygen demand once the oxidation of organic carbon is complete.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BODuCarbonaceous"/>
+        <oboInOwl:hasExactSynonym>CBODu</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BODu, carbonaceous&quot;: Carbonaceous Ultimate Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>Ultimate carbonaceous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002082 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002082">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002069"/>
+        <obo:IAO_0000115>Nitrogenous biochemical oxygen demand over an incubation of 5 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD5Nitrogenous"/>
+        <oboInOwl:hasExactSynonym>NBOD5</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD5, nitrogenous&quot;: 5-day Nitrogenous Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>5-day nitrogenous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002083 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002083">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002069"/>
+        <obo:IAO_0000115>Nitrogenous biochemical oxygen demand over an incubation of 20 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BOD20Nitrogenous"/>
+        <oboInOwl:hasExactSynonym>NBOD20</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BOD20, nitrogenous&quot;: 20-day Nitrogenous Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>20-day nitrogenous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002084 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002084">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002069"/>
+        <obo:IAO_0000115>Nitrogenous biochemical oxygen demand once nitrification is complete.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/BODuNitrogenous"/>
+        <oboInOwl:hasExactSynonym>NBODu</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;BODu, nitrogenous&quot;: Nitrogenous Ultimate Biochemical Oxygen Demand</rdfs:comment>
+        <rdfs:label>Ultimate nitrogenous biochemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002085 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002085">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Mass of oxygen equivalent to the organic and oxidizable inorganic matter in a water sample, found by oxidizing it with a strong chemical oxidant, usually hot acid dichromate.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/COD"/>
+        <oboInOwl:hasExactSynonym>COD</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;COD&quot;: Chemical oxygen demand</rdfs:comment>
+        <rdfs:label>Chemical oxygen demand</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>mg{O2}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
