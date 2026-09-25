@@ -23400,7 +23400,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000922"/>
     </Class>
     
 
@@ -56561,6 +56561,25 @@
         <rdfs:comment>Absorbance (BERVO:8000236) has no dimension. The absorption coefficient is that absorbance divided by the path length, in m-1.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
         <rdfs:label>Absorption coefficient</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000922 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000922">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
+        <obo:IAO_0000115>Carbon held in dissolved acetate, the organic acid that fermentation produces and that acetotrophic methanogens and aerobic bacteria consume.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>acetate-C</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), carbon measurement_ofs review for PR #123</rdfs:comment>
+        <rdfs:comment>EcoSIM keeps acetate as a pool of its own, apart from the rest of the dissolved organic carbon, so this term is a sibling of Dissolved organic carbon (BERVO:8000097), not a kind of it.</rdfs:comment>
+        <rdfs:label>Acetate carbon</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
