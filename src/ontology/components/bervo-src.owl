@@ -4360,7 +4360,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000214">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Rate parameter to compute the gradient driven carbon and nutrient exchange between seasonal storage and nonstructural pools</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate parameter to compute the gradient driven exchange of carbon, nitrogen, and phosphorus between seasonal storage and nonstructural pools</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FRSV</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4419,7 +4419,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000217">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Rate parameter for gradient-driven nonstructural carbon and nutrient exchange between shoot and seasonal storage pools</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate parameter for gradient-driven exchange of nonstructural carbon, nitrogen, and phosphorus between shoot and seasonal storage pools</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RateK4ShootSeaStoreNonstEXfer</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4440,7 +4440,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000218">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Rate parameter for gradient driven nonstructural carbon and nutrient exchange between root and seasonal storage pools</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate parameter for gradient driven exchange of nonstructural carbon, nitrogen, and phosphorus between root and seasonal storage pools</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RateK4RootSeaStorNonstEXfer</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
