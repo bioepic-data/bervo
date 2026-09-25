@@ -44621,7 +44621,12 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The electron activity or oxidation-reduction potential of a solution, measured in millivolts, indicating the tendency of substances to be oxidized or reduced. Redox potential controls the solubility and bioavailability of elements and drives major biogeochemical transformations in environmental systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000125"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/reductionPotential"/>
+        <oboInOwl:hasExactSynonym>oxidation-reduction potential</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>ORP</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>reduction potential</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Reduction potential&quot;: Oxidation-reduction potential</rdfs:comment>
         <rdfs:label>Redox potential</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -46000,8 +46005,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000885"/>
         <obo:IAO_0000115>Electrical conductivity of water corrected to a reference temperature, usually 25 degrees Celsius, so that samples measured at different temperatures can be compared; a common proxy for the concentration of dissolved ions.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="COMO:0000301"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/specificConductance"/>
         <oboInOwl:hasRelatedSynonym>specific conductivity</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 23 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Specific conductance&quot;: Specific conductance</rdfs:comment>
         <rdfs:label>Specific conductance</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
