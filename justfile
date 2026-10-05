@@ -92,7 +92,7 @@ find query:
     rows = list(csv.reader(open("{{template}}", encoding="utf-8")))
     header, data = rows[0], rows[2:]
     cols = {n: i for i, n in enumerate(header)}
-    # EcoSIM provenance is searched too: 74% of terms carry a model variable
+    # EcoSIM provenance is searched too: 59% of terms carry a model variable
     # name, and a request phrased in model terms should resolve directly.
     watch = [cols[n] for n in ("ID", "Label (description)", "Definition",
                                "Exact Synonyms", "Related Synonyms",

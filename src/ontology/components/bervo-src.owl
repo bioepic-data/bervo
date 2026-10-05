@@ -4520,7 +4520,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000222">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the maximum fraction of nitrogen can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameter specifies the maximum fraction of nitrogen that can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCX</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4540,7 +4540,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000223">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the maximum fraction of phosphorus can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameter specifies the maximum fraction of phosphorus that can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCQ</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4560,7 +4560,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000224">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the minimum fraction of carbon can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameter specifies the minimum fraction of carbon that can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCZ</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4580,7 +4580,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000225">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the maximum fraction of carbon can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameter specifies the maximum fraction of carbon that can be recycled upon senescence of plant canopy organs.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCCY</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4600,7 +4600,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000226">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the number of hours required for plant to initiate senescence after maturity.</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameter specifies the number of hours required for a plant to initiate senescence after maturity.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Hours4SenesAftMature</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -4619,7 +4619,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000227">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameters specifies the number of hours required for plant to initiate storage carbon remobilization after leafout.</obo:IAO_0000115>
+        <obo:IAO_0000115>This parameter specifies the number of hours required for a plant to initiate storage carbon remobilization after leafout.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HourReq2InitSStor4LeafOut</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -10503,17 +10503,22 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000565">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001847"/>
-        <obo:IAO_0000115>The concentration or amount of chlorophyll present in the leaves of C3 plants. Chlorophyll is the primary pigment responsible for capturing light energy during photosynthesis. This parameter is important in Earth system modeling as it influences the rate of photosynthesis and hence the productivity and carbon uptake of C3 plants. It can be used to estimate plant health, growth, and overall ecosystem functioning. Leaf C3 chlorophyll content is typically measured in units of mass (e.g., milligrams or grams) per unit leaf area (e.g., square meter).</obo:IAO_0000115>
+        <obo:IAO_0000115>Fraction of total leaf protein carbon that is protein bound to chlorophyll in the light-harvesting complexes, in C3 plants.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>LeafC3Chl2Protein_pft</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>LeafC3ChlorofilConc_pft</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>leaf C3 chlorophyll content</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:label>Leaf C3 chlorophyll content</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), from the EcoSIM source</rdfs:comment>
+        <rdfs:comment>EcoSIM renamed LeafC3ChlorofilConc_pft to LeafC3Chl2Protein_pft in September 2025 (commit 45e85e6), and now holds the value as LeafProtein2Chl_pft. In C3 plants all of the chlorophyll-bound protein is in the mesophyll. See Leaf chlorophyll-bound protein fraction (BERVO:0001847).</rdfs:comment>
+        <rdfs:label>Leaf C3 chlorophyll-bound protein fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C_protein}.g-1{C_protein}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000214"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000333"/>
     </Class>
     
 
@@ -10522,17 +10527,22 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000566">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001847"/>
-        <obo:IAO_0000115>The amount of chlorophyll present in the leaves of plants that utilize the C4 photosynthetic pathway. The C4 pathway is a biochemical process that some plants have evolved to optimize carbon fixation in environments with high temperature and low CO2 levels. The chlorophyll content in C4 leaves contributes to their ability to capture and convert sunlight into chemical energy through photosynthesis. Measurement of leaf C4 chlorophyll content is important in earth systems modeling as it helps in estimating plant productivity and the overall carbon cycle in C4 dominated ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Fraction of total leaf protein carbon that is protein bound to chlorophyll in the light-harvesting complexes, in C4 plants.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>LeafC4Chl2Protein_pft</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>LeafC4ChlorofilConc_pft</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>leaf C4 chlorophyll content</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:label>Leaf C4 chlorophyll content</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), from the EcoSIM source</rdfs:comment>
+        <rdfs:comment>EcoSIM renamed LeafC4ChlorofilConc_pft to LeafC4Chl2Protein_pft in September 2025 (commit 45e85e6), and now holds the value as LeafProtein2Chl_pft. In C4 plants EcoSIM splits the chlorophyll-bound protein between mesophyll and bundle sheath by fMesophyllChlProtein_pft. See Leaf chlorophyll-bound protein fraction (BERVO:0001847).</rdfs:comment>
+        <rdfs:label>Leaf C4 chlorophyll-bound protein fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C_protein}.g-1{C_protein}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000214"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000333"/>
     </Class>
     
 
@@ -11129,7 +11139,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000598">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
-        <obo:IAO_0000115>This variables indicates the total water-air exchange due to evaporation from canopy held water and transpirtion of water that plant take up from the soil. It is an important component of the ecosystem water cycling.</obo:IAO_0000115>
+        <obo:IAO_0000115>This variable indicates the total water-air exchange due to evaporation from canopy held water and transpiration of water that plant take up from the soil. It is an important component of the ecosystem water cycling.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>QVegET_col</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>surface-evapotranspiration</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ATS: surface-evapotranspiration.</rdfs:comment>
@@ -11490,7 +11500,7 @@
                 <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
             </Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>This vector variable summarizes mass of total chemical elements that are associated with the structural components of aboveground plant organs. It excludes nonstrucutral storage of chemical elements, and is a measure of aboveground plant biomass.</obo:IAO_0000115>
+        <obo:IAO_0000115>This vector variable summarizes mass of total chemical elements that are associated with the structural components of aboveground plant organs. It excludes nonstructural storage of chemical elements, and is a measure of aboveground plant biomass.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>ShootStrutElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
@@ -34335,15 +34345,20 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001847">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
-        <obo:IAO_0000115>Mass of chlorophyll per unit mass of leaf tissue, the parent of the C3 and C4 leaf chlorophyll contents.</obo:IAO_0000115>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), release preparation</rdfs:comment>
-        <rdfs:label>Leaf chlorophyll content</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <obo:IAO_0000115>Fraction of total leaf protein carbon that is protein bound to chlorophyll in the light-harvesting complexes.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>LeafProtein2Chl_pft</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>leaf chlorophyll content</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), from the EcoSIM source</rdfs:comment>
+        <rdfs:comment>EcoSIM holds this as LeafProtein2Chl_pft, read unchanged from the trait file&apos;s CHL and described as &apos;Fraction of total leaf protein as chlorophyll-bound for light-harvesting [-]&apos;. StomatesMod.F90 multiplies leaf protein carbon by it and divides by 3.5 to get chlorophyll carbon, so the chlorophyll itself is about one part in 3.5 of this fraction. The same variable serves C3 and C4 plants.</rdfs:comment>
+        <rdfs:label>Leaf chlorophyll-bound protein fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C_protein}.g-1{C_protein}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000214"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000333"/>
     </Class>
     
 
@@ -40391,6 +40406,7 @@
         <obo:IAO_0000115>The proportion of protein content relative to carbohydrate content in biological material, indicating the nutritional quality and biochemical composition of organic matter. This ratio is important for understanding food web dynamics, decomposition rates, nutrient cycling, and the energetic value of biological resources in ecological systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>P:C ratio</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>P:C here means protein to carbohydrate, as in nutritional ecology. In biogeochemical stoichiometry P:C means phosphorus to carbon, which is Phosphorus to carbon ratio (BERVO:8000211).</rdfs:comment>
         <rdfs:label>Protein to carbohydrate ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -41871,9 +41887,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <obo:IAO_0000115>A reproductive unit of a flowering plant that contains an embryo and stored nutrients capable of developing into a new plant under appropriate conditions. This structure is fundamental for understanding plant reproduction, population dynamics, genetic diversity, and ecosystem regeneration processes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0009010"/>
-        <oboInOwl:hasExactSynonym>pip</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>germ</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>kernel</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>pip</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Seed</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -43469,6 +43485,7 @@
         <oboInOwl:hasExactSynonym>P:C</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>P:C ratio</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>P:C here means phosphorus to carbon, as in biogeochemical stoichiometry. In nutritional ecology P:C often means protein to carbohydrate, which is Protein to carbohydrate ratio (BERVO:8000038).</rdfs:comment>
         <rdfs:label>Phosphorus to carbon ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
