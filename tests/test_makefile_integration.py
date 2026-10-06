@@ -3,10 +3,21 @@ import subprocess
 import tempfile
 import unittest
 import json
+import re
 from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+
+
+def robot_version() -> tuple[int, ...]:
+    """The installed ROBOT's version, or () if ROBOT is not on PATH."""
+    try:
+        out = subprocess.run(["robot", "--version"], text=True, capture_output=True).stdout
+    except FileNotFoundError:
+        return ()
+    match = re.search(r"(\d+)\.(\d+)\.(\d+)", out)
+    return tuple(int(part) for part in match.groups()) if match else ()
 
 
 class MakefileIntegrationTest(unittest.TestCase):
@@ -113,6 +124,36 @@ class MakefileIntegrationTest(unittest.TestCase):
         self.assertIn("xref: CHEBI:17045", lines)
         owl.unlink()
         obo.unlink()
+
+    @unittest.skipUnless(
+        robot_version() >= (1, 9, 8),
+        "the release chain needs ROBOT 1.9.8 (the ODK image); CI runs it in qc.yml",
+    )
+    def test_obo_release_writes_bervo_ids_with_obo_prefix(self) -> None:
+        # Issue #137: the OBO release wrote every ID as bervo:BERVO_0000001.
+        for name in ("bervo.owl", "bervo-full.owl", "bervo.obo"):
+            (self.ontology_dir / name).unlink(missing_ok=True)
+
+        self.run_make("bervo.obo", "IMP=false", "PAT=false", "MIR=false")
+
+        obo = self.ontology_dir / "bervo.obo"
+        text = obo.read_text(encoding="utf-8")
+        lines = set(text.splitlines())
+        for expected in (
+            "idspace: BERVO https://w3id.org/bervo/BERVO_ ",
+            "id: BERVO:0000001",
+            "id: BERVO:involves_chemicals",
+            # Issue #131, end to end.
+            "xref: http://vocabulary.odm2.org/variablename/sigma_t",
+        ):
+            self.assertTrue(expected in lines, f"bervo.obo has no line {expected!r}")
+        self.assertTrue(
+            any(line.startswith("property_value: BERVO:has_unit ") for line in lines),
+            "bervo.obo has no BERVO:has_unit property values",
+        )
+        self.assertFalse("bervo:BERVO_" in text, "bervo.obo still contains bervo:BERVO_")
+        for name in ("bervo.owl", "bervo-full.owl", "bervo.obo"):
+            (self.ontology_dir / name).unlink(missing_ok=True)
 
     def test_legacy_sheet_export_alias_matches_template(self) -> None:
         template = self.ontology_dir / "bervo-src.csv"
