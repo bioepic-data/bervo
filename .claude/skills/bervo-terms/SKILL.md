@@ -329,9 +329,12 @@ silently meaningless:
 <!-- ENVO: correct, absolute -->
 <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105211"/>
 
-<!-- COMO: no prefix declaration, so this is a broken relative IRI -->
-<oboInOwl:hasDbXref rdf:resource="COMO:0000129"/>
+<!-- An undeclared prefix: a broken relative IRI -->
+<oboInOwl:hasDbXref rdf:resource="NOTREAL:0000129"/>
 ```
+
+All 275 `COMO` values were emitted this way until issue #129 declared
+`COMO: http://purl.obolibrary.org/obo/COMO_`.
 
 `just validate` reports this as one grouped warning per undeclared prefix. **Do not add a
 cross-reference using a new prefix without also declaring it** with `--add-prefix` in the

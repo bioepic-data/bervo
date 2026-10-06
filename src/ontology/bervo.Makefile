@@ -23,6 +23,7 @@ $(BERVO_COMPONENT): $(BERVO_TEMPLATE) bervo-annotations.ttl bervo.Makefile | $(C
 	  --add-prefix 'oio: http://www.geneontology.org/formats/oboInOwl#' \
 	  --add-prefix 'MIXS: https://w3id.org/mixs/' \
 	  --add-prefix 'ODM2: http://vocabulary.odm2.org/' \
+	  --add-prefix 'COMO: http://purl.obolibrary.org/obo/COMO_' \
 	  -t $< \
 	  annotate --annotation-file bervo-annotations.ttl \
 	  -o $@

@@ -316,11 +316,11 @@ class TestCrossReferences(ValidatorTestCase):
 
     def test_undeclared_prefix_warns_once_not_per_row(self):
         rows = [ROOT] + [
-            row(f"BERVO:000000{i}", f"Term {i}", DbXrefs="COMO:0000129")
+            row(f"BERVO:000000{i}", f"Term {i}", DbXrefs="NOTREAL:0000129")
             for i in range(1, 6)
         ]
         report = validator.validate(self.write(rows))
-        hits = [w for w in report.warnings if "COMO" in w]
+        hits = [w for w in report.warnings if "NOTREAL" in w]
         self.assertEqual(len(hits), 1, f"expected one grouped warning, got {hits}")
         self.assertIn("5 DbXrefs value(s)", hits[0])
 
