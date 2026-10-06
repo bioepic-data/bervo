@@ -39679,6 +39679,366 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002120 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002120">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Area of land surface burned by fire over a given period.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>burnt area</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>area burned</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Burned area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002121 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002121">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Fraction of a given land area, such as a grid cell or region, burned by fire over a given period.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>fraction burned</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Burned area fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002122 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002122">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Total area burned by a single fire.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>fire area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Fire size</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002123 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002123">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Mass of fuel available to burn per unit ground area.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>fuel loading</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Fuel load</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>kg.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000933"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002124 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002124">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Mass of fuel burned per unit ground area during a fire.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>fuel consumed</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:comment>Fuel burned by a fire, not fuel used by engines or vehicles. Distinct from the EcoSIM fire emission and flux variables, which track the gases released rather than the mass of fuel burned.</rdfs:comment>
+        <rdfs:label>Fuel consumption</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>kg.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000933"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002125 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002125">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Mass of water held in fuel per unit mass of dry fuel.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>fuel moisture</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Fuel moisture content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>g{H2O}.g-1{fuel}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000933"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002126 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002126">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Fraction of the canopy fuel present before a fire that the fire consumes.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>canopy consumption</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Canopy fuel consumption fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000934"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002127 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002127">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Mass of a chemical species emitted per unit mass of dry fuel burned in a fire.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>emission factor</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Fire emission factor</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000538"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>g.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000939"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002128 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002128">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002127"/>
+        <obo:IAO_0000115>Mass of fine particulate matter (PM2.5) emitted per unit mass of dry fuel burned in a fire.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>PM2.5 emission factor</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Fire fine particulate matter emission factor</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000538"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>g.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000943"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002129 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002129">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Mass of fine particulate matter (PM2.5) emitted by fire over a given area and period.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>PM2.5 emission from fire</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>A total over a defined study area and period, as regional fire emission inventories report it (e.g. Kiely et al. 2024, doi:10.1021/acs.est.3c06421), not a grid-cell total. The unit is therefore g, not the g/{grid} of the EcoSIM fire emission variables, deliberately.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Fire fine particulate matter emission</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000538"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>g</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000943"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002130 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002130">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Mass of carbon monoxide emitted by fire over a given area and period.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>CO emission from fire</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>A total over a defined study area and period, as regional fire emission inventories report it (e.g. Kiely et al. 2024, doi:10.1021/acs.est.3c06421), not a grid-cell total. The unit is therefore g, not the g/{grid} of the EcoSIM fire emission variables, deliberately.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Fire carbon monoxide emission</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000538"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>g</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000944"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002131 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002131">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Mass concentration of fine particulate matter (PM2.5) in air attributable to fire emissions, taken as the difference between the concentrations with and without fire.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>fire PM2.5</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>smoke PM2.5</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Fire-derived fine particulate matter concentration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>ug.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000943"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002132 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002132">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Height above ground of the top of the smoke plume from a fire.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>plume height</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>plume injection height</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Smoke plume top height</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000076"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000131"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000939"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002133 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002133">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Categorical class of a fire by its origin and control, such as wildfire or prescribed fire.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Fire type</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002134 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002134">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Categorical record of whether a site or area has burned, such as burned or unburned.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire history terms for issue #134</rdfs:comment>
+        <rdfs:comment>Used, for example, to separate burned sites from unburned reference sites, as in NGEE Arctic post-fire soil respiration data, doi:10.15485/3377026 (column bstatus).</rdfs:comment>
+        <rdfs:label>Burn status</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002135 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002135">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Time elapsed since the most recent fire at a site.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>time since last fire</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>fire age</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Can be derived from the observation date and Date of fire (BERVO:0001835), which NGEE Arctic post-fire soil respiration data, doi:10.15485/3377026 records as column yburned.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire history terms for issue #134</rdfs:comment>
+        <rdfs:label>Time since fire</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>a</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002136 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002136">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Number of fires that have burned a given site or area over a given record period.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>burn count</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>fire count</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>times burned</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire history terms for issue #134</rdfs:comment>
+        <rdfs:comment>Repeated burning distinguishes sites in, for example, NGEE Arctic post-fire soil respiration data, doi:10.15485/3377026, where sites had burned three and four times.</rdfs:comment>
+        <rdfs:label>Number of fires</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002137 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002137">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Mean time between successive fires at a site or in an area, computed from the fires recorded over a given record period.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>fire interval</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>mean fire return interval</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire history terms for issue #134</rdfs:comment>
+        <rdfs:comment>The empirical interval, from a fire record such as fire scars or fire perimeters, not a modelled or expected interval for a fire regime. Over the same record period it is close to the reciprocal of Number of fires (BERVO:0002136) per unit time.</rdfs:comment>
+        <rdfs:label>Fire return interval</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>a</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
@@ -40716,6 +41076,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000055">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000933"/>
         <obo:IAO_0000115>Dead plant material such as leaves, bark, twigs, and other organic debris that has fallen to the ground and forms the surface organic layer. This material provides habitat for decomposer organisms, controls soil moisture and temperature, serves as a source of nutrients through decomposition, and represents a critical component of carbon and nutrient cycling in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000628"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/litterPlant"/>
@@ -42112,7 +42473,6 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000132">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>The capacity to do work or cause change in physical, chemical, or biological systems, existing in various forms such as solar, thermal, chemical, and kinetic energy. This fundamental concept drives all environmental processes, ecosystem functioning, and biogeochemical cycles that sustain life and shape earth system dynamics.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>fuel</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>heat</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>work</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
@@ -42811,13 +43171,12 @@
     <!-- https://w3id.org/bervo/BERVO_8000172 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000172">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
-        <obo:IAO_0000115>A rapid exothermic chemical reaction involving combustion that produces heat, light, and various combustion products including carbon dioxide and water vapor. This disturbance process shapes ecosystem structure, nutrient cycling, species composition, and represents a major driver of landscape dynamics and vegetation patterns in fire-prone environments.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000923"/>
+        <obo:IAO_0000115>Combustion that sustains itself and spreads through available fuel, producing flames, heat, light, and smoke. As an environmental disturbance, fire shapes ecosystem structure, nutrient cycling, species composition, and vegetation patterns.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000786"/>
-        <oboInOwl:hasExactSynonym>combustion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabs.lter-europe.net/EnvThes/20379"/>
         <oboInOwl:hasRelatedSynonym>burn</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>wildfire</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), rewritten to distinguish Fire from Combustion in the PR #141 review</rdfs:comment>
         <rdfs:label>Fire</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
@@ -56609,6 +56968,436 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), carbon measurement_ofs review for PR #123</rdfs:comment>
         <rdfs:comment>EcoSIM keeps acetate as a pool of its own, apart from the rest of the dissolved organic carbon, so this term is a sibling of Dissolved organic carbon (BERVO:8000097), not a kind of it. It is the carbon in acetate, not the acetate ion itself, which is Acetate (BERVO:8000205).</rdfs:comment>
         <rdfs:label>Acetate carbon</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000923 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000923">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000106"/>
+        <obo:IAO_0000115>Rapid exothermic oxidation of a material that releases heat together with combustion products such as gases, particles, and solid residues.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000839"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabs.lter-europe.net/EnvThes/21280"/>
+        <oboInOwl:hasRelatedSynonym>burning</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Combustion</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000924 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000924">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <obo:IAO_0000115>Fire that is unplanned and uncontrolled and burns vegetation, whether on wild or rural land.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000787"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabs.lter-europe.net/EnvThes/20382"/>
+        <oboInOwl:hasRelatedSynonym>wildland fire</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:comment>In US agency usage (NWCG), wildland fire covers both wildfire and prescribed fire, so it is a related synonym here, although ENVO lists it as exact.</rdfs:comment>
+        <rdfs:label>Wildfire</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000925 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000925">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <obo:IAO_0000115>Fire that is planned, set deliberately, and kept under human control to meet land management objectives such as reducing fuel load.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000122"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabs.lter-europe.net/EnvThes/20261"/>
+        <oboInOwl:hasExactSynonym>controlled burn</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>planned burn</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>prescribed burn</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Prescribed fire</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000926 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000926">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000925"/>
+        <obo:IAO_0000115>Prescribed fire in which cut vegetation and debris are gathered into piles and burned.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>pile burn</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Pile burning</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000927 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000927">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000925"/>
+        <obo:IAO_0000115>Prescribed fire set across a defined area so that it spreads through the fuels in place.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>broadcast burn</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Broadcast burning</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000928 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000928">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <obo:IAO_0000115>Fire that burns through the crowns of trees and shrubs, consuming live and dead canopy fuel.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabs.lter-europe.net/EnvThes/20380"/>
+        <oboInOwl:hasExactSynonym>crowning fire</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Crown fire</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000929 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000929">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <obo:IAO_0000115>Fire that burns surface fuels such as litter, fallen wood, herbaceous plants, and low shrubs without spreading into the canopy.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Surface fire</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000930 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000930">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+        <obo:IAO_0000115>Fire that burns organic material below the surface litter, such as duff, peat, and roots, usually by smoldering.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Ground fire</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000931 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000931">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000923"/>
+        <obo:IAO_0000115>Phase of combustion in which volatile gases released from heated fuel burn in a visible flame.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>flaming</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Flaming combustion</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000932 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000932">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000923"/>
+        <obo:IAO_0000115>Slow, flameless phase of combustion in which oxygen reacts directly at the surface of solid fuel, typical of duff, peat, and large woody fuel.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>smoldering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>smouldering combustion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>residual smoldering combustion</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Smoldering combustion</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000933 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000933">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
+        <obo:IAO_0000115>Combustible material consumed by a fire, chiefly living or dead vegetation and other organic matter in a landscape, as distinct from fuels burned to produce energy such as coal, oil, or gas.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>fire fuel</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>wildland fuel</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Fuel</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000934 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000934">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000933"/>
+        <obo:IAO_0000115>Fuel held in the crowns of trees, including foliage, branches, and dead material suspended in the canopy.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Canopy fuel</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000935 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000935">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000933"/>
+        <obo:IAO_0000115>Fuel in the live and dead stems and foliage of shrubs.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Shrub fuel</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000936 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000936">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000933"/>
+        <obo:IAO_0000115>Fuel in grasses, forbs, and other non-woody plants.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>nonwoody fuel</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Herbaceous fuel</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000937 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000937">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000933"/>
+        <obo:IAO_0000115>Fuel in dead wood on or near the ground, such as fallen branches, logs, and stumps.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>dead woody fuel</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>downed woody material</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Woody fuel</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000938 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000938">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000286"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000933"/>
+        <obo:IAO_0000115>Partly decomposed organic material lying beneath the litter layer and above the mineral soil.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Duff</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000939 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000939">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
+        <obo:IAO_0000115>Airborne mixture of gases and fine solid and liquid particles released by combustion.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000838"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Smoke</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000940 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000940">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
+        <obo:IAO_0000115>Solid, mostly mineral residue left after organic material has burned.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000090"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Ash</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000941 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000941">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
+        <obo:IAO_0000115>Porous, carbon-rich solid residue formed when wood or other organic material is heated with little or no oxygen.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000560"/>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabs.lter-europe.net/EnvThes/21905"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Charcoal</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000942 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000942">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000722"/>
+        <obo:IAO_0000115>Fine, carbon-rich particles formed by the incomplete combustion of organic material.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000021"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Soot</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000943 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000943">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000722"/>
+        <obo:IAO_0000115>Particulate matter made up of particles 2.5 micrometres or less in aerodynamic diameter.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000415"/>
+        <oboInOwl:hasExactSynonym>PM2.5</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>fine respirable suspended particulate matter</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:label>Fine particulate matter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000944 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000944">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+        <obo:IAO_0000115>Colourless, odourless, toxic gas of one carbon and one oxygen atom, produced mainly by the incomplete combustion of carbon-bearing material.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17245"/>
+        <oboInOwl:hasRelatedSynonym>CO</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:comment>The formula CO is a related rather than an exact synonym, unlike CO2 on Carbon dioxide, because case-insensitive lexical matching conflates it with Co, an exact synonym of Cobalt (ROBOT report rule duplicate_exact_synonym).</rdfs:comment>
+        <rdfs:label>Carbon monoxide</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000945 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000945">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Degree to which a fire changes an ecosystem, usually judged by vegetation mortality, loss of organic matter, and soil heating.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>burn severity</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
+        <rdfs:comment>EnvThes fire severity index (http://vocabs.lter-europe.net/EnvThes/22120) is an index of this quality, not the quality itself, so it is not mapped.</rdfs:comment>
+        <rdfs:label>Fire severity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>

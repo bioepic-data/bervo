@@ -16,6 +16,7 @@ total for a grid cell. The rules for writing a unit are in the `has_units` secti
 | A substance inside a unit (`gC`, `m3 H2O`) | A UCUM annotation on the unit it qualifies: `g{C}`, `m3{H2O}`. |
 | `NONE` | UCUM's unity, `1`. `NA` stays for a variable with no numeric magnitude. |
 | Syntax | Exponents joined by `.`. Once a `/` appears, no `.` follows it outside parentheses. |
+| A duration in years | `a`, UCUM's Julian year of 365.25 days. Not `yr`, which is not UCUM, and not `365.d`. First used on `Time since fire` and `Fire return interval` (issue [#134](https://github.com/bioepic-data/bervo/issues/134)). |
 
 ## What `d-2` means
 

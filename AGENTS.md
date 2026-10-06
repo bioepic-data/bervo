@@ -147,7 +147,8 @@ How BERVO writes UCUM:
   readers.
 - **Atoms that differ from habit**: `Cel` for degrees Celsius, `K-1` for "per degree
   Celsius" (a Celsius degree cannot take an exponent), `deg` for angles, `har` for
-  hectare, `t` for tonne, `umol.L-1` for micromolar, `[ppm]` for parts per million.
+  hectare, `t` for tonne, `a` for year, `umol.L-1` for micromolar, `[ppm]` for parts
+  per million.
 
 `1` on a categorical variable is wrong: it claims the value is a dimensionless number
 when it is a label. `NA` on a fraction is wrong for the mirror reason. A `g{N}.g-1{C}` mass
