@@ -24,6 +24,7 @@ $(BERVO_COMPONENT): $(BERVO_TEMPLATE) bervo-annotations.ttl bervo.Makefile | $(C
 	  --add-prefix 'MIXS: https://w3id.org/mixs/' \
 	  --add-prefix 'ODM2: http://vocabulary.odm2.org/' \
 	  --add-prefix 'COMO: http://purl.obolibrary.org/obo/COMO_' \
+	  --add-prefix 'ENVTHES: http://vocabs.lter-europe.net/EnvThes/' \
 	  -t $< \
 	  annotate --annotation-file bervo-annotations.ttl \
 	  -o $@
