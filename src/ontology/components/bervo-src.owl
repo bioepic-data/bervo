@@ -23675,7 +23675,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.cm-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000030"/>
     </Class>
     
@@ -23790,7 +23790,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000292"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
     </Class>
     
@@ -23810,7 +23810,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000153"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
     </Class>
     
@@ -23850,7 +23850,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000066"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
     
@@ -23910,7 +23910,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000291"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000165"/>
     </Class>
     
@@ -23930,7 +23930,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000178"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
     
@@ -23940,6 +23940,12 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001273">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000019"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Total adsorbed sediment erosion non-band refers to the amount of sediment that is eroded and transported by water, wind, or ice without forming distinct bands or channels. This parameter accounts for the erosion of sediment particles that have been adsorbed onto the surfaces of other particles or are not part of a well-defined sediment transport pathway. It quantifies the total volume or mass of sediment eroded from a given area or system, which includes both the suspended sediments and the sediments that are in contact with the bed or substrate.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>trcx_Eros_2D</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
@@ -23950,7 +23956,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
     </Class>
     
 
@@ -42877,12 +42883,13 @@
     <!-- https://w3id.org/bervo/BERVO_8000178 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000178">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>A zone or area where soil erosion processes are particularly active or concentrated due to topographic, climatic, or management factors. These areas represent hotspots of sediment production, landscape change, and environmental degradation that affect soil resources, water quality, and ecosystem functioning.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
-        <rdfs:label>Erosion band</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000020"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
+        <rdfs:label>obsolete Erosion band</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
@@ -44941,15 +44948,16 @@
     <!-- https://w3id.org/bervo/BERVO_8000291 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000291">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <obo:IAO_0000115>A localized zone or layer within the soil profile that has distinct properties, composition, or management treatments different from the surrounding soil matrix. This concept is important for precision agriculture, nutrient management, and understanding spatial heterogeneity in soil physical, chemical, and biological properties.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
-        <rdfs:label>Soil band</rdfs:label>
+        <rdfs:label>obsolete Soil band</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -44958,15 +44966,16 @@
     <!-- https://w3id.org/bervo/BERVO_8000292 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000292">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <obo:IAO_0000115>The bulk soil matrix that exists outside of specific treated or modified zones, representing the background soil conditions in agricultural or managed systems. This concept provides a reference state for comparing the effects of localized treatments such as fertilizer bands, tillage zones, or root-influenced areas.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
-        <rdfs:label>Soil non-band</rdfs:label>
+        <rdfs:label>obsolete Soil non-band</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
