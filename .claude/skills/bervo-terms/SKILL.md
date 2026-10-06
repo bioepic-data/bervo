@@ -329,14 +329,29 @@ silently meaningless:
 <!-- ENVO: correct, absolute -->
 <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105211"/>
 
-<!-- COMO: no prefix declaration, so this is a broken relative IRI -->
-<oboInOwl:hasDbXref rdf:resource="COMO:0000129"/>
+<!-- An undeclared prefix: a broken relative IRI -->
+<oboInOwl:hasDbXref rdf:resource="NOTREAL:0000129"/>
 ```
+
+All 275 `COMO` values were emitted this way until issue #129 declared
+`COMO: http://purl.obolibrary.org/obo/COMO_`.
 
 `just validate` reports this as one grouped warning per undeclared prefix. **Do not add a
 cross-reference using a new prefix without also declaring it** with `--add-prefix` in the
-`robot template` call in `src/ontology/bervo.Makefile`, alongside the existing `BERVO:` and
-`oio:` declarations.
+`robot template` call in `src/ontology/bervo.Makefile`, alongside the existing `BERVO:`,
+`oio:`, `MIXS:`, `ODM2:` and `COMO:` declarations.
+
+Map a new prefix to the vocabulary's own namespace, as `MIXS: https://w3id.org/mixs/` and
+`ODM2: http://vocabulary.odm2.org/` do. Use `http://purl.obolibrary.org/obo/PREFIX_` only for
+an ontology actually registered with the OBO Foundry; minting under that namespace for
+anything else makes the resource look like an OBO ontology, and its IRIs will repoint if
+someone else later registers the prefix there.
+
+`COMO: http://purl.obolibrary.org/obo/COMO_` is the one exception (issue #129). COMO, CORAL's
+Context and Measurement Ontology, is not an OBO Foundry ontology, but its source `.obo` declares
+no `idspace`, so the standard OBO-to-OWL conversion mints exactly that IRI, and BioPortal
+lists that root. The IRIs are absolute but do not dereference: the PURL server falls through
+to its default redirect rather than a term page. Do not copy this pattern for a new prefix.
 
 A `DbXrefs` value that is not CURIE-shaped at all (a bare word such as `Class`) is a hard
 error — it usually means a value landed in the wrong column.

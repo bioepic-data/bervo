@@ -316,11 +316,11 @@ class TestCrossReferences(ValidatorTestCase):
 
     def test_undeclared_prefix_warns_once_not_per_row(self):
         rows = [ROOT] + [
-            row(f"BERVO:000000{i}", f"Term {i}", DbXrefs="COMO:0000129")
+            row(f"BERVO:000000{i}", f"Term {i}", DbXrefs="NOTREAL:0000129")
             for i in range(1, 6)
         ]
         report = validator.validate(self.write(rows))
-        hits = [w for w in report.warnings if "COMO" in w]
+        hits = [w for w in report.warnings if "NOTREAL" in w]
         self.assertEqual(len(hits), 1, f"expected one grouped warning, got {hits}")
         self.assertIn("5 DbXrefs value(s)", hits[0])
 
@@ -336,17 +336,22 @@ class TestCrossReferences(ValidatorTestCase):
         self.assertEqual(len([w for w in report.warnings if "ALSOFAKE" in w]), 1)
 
     def test_prefix_declared_in_the_makefile_does_not_warn(self):
-        """Regression: MIXS was declared in bervo.Makefile, so it must resolve."""
+        """Regression: every prefix declared in bervo.Makefile must resolve.
+
+        Covers MIXS, which once warned despite its declaration, and COMO (#129).
+        """
         declared = sorted(validator.declared_prefixes() - {"BERVO", "oio"})
         if not declared:
             self.skipTest("no extra --add-prefix declarations to exercise")
-        report = validator.validate(self.write([
-            ROOT, row("BERVO:0000001", "A", DbXrefs=f"{declared[0]}:0000642"),
-        ]))
-        self.assertFalse(
-            any(declared[0] in w for w in report.warnings),
-            f"{declared[0]} is declared in bervo.Makefile but still warned",
-        )
+        for prefix in declared:
+            with self.subTest(prefix=prefix):
+                report = validator.validate(self.write([
+                    ROOT, row("BERVO:0000001", "A", DbXrefs=f"{prefix}:0000642"),
+                ]))
+                self.assertFalse(
+                    any(prefix in w for w in report.warnings),
+                    f"{prefix} is declared in bervo.Makefile but still warned",
+                )
 
     def test_na_xref_is_ignored(self):
         report = validator.validate(self.write([
