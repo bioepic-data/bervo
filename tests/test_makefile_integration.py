@@ -3,10 +3,34 @@ import subprocess
 import tempfile
 import unittest
 import json
+import re
 from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+
+
+def robot_version() -> tuple[int, ...]:
+    """The installed ROBOT's version, or () if it cannot be read."""
+    try:
+        proc = subprocess.run(["robot", "--version"], text=True, capture_output=True)
+    except FileNotFoundError:
+        return ()
+    match = re.search(r"(\d+)\.(\d+)\.(\d+)", proc.stdout + proc.stderr)
+    return tuple(int(part) for part in match.groups()) if match else ()
+
+
+def release_chain_overrides() -> list[str]:
+    """Make variables that let the ODK release chain run on ROBOT before 1.9.8.
+
+    `--clean-obo` (OBO_FORMAT_OPTIONS) and `reduce --include-subproperties`
+    (REDUCE_OPTIONS) are new in 1.9.8; template-qc.yml pins 1.9.7, the ODK image
+    has 1.9.8. Neither option affects prefixes or cross-references. A version
+    that cannot be read gets the overrides, which work on either.
+    """
+    if robot_version() >= (1, 9, 8):
+        return []
+    return ["OBO_FORMAT_OPTIONS=", "REDUCE_OPTIONS="]
 
 
 class MakefileIntegrationTest(unittest.TestCase):
@@ -86,6 +110,8 @@ class MakefileIntegrationTest(unittest.TestCase):
         )
         owl = self.ontology_dir / "bervo.owl"
         obo = self.ontology_dir / "bervo.obo"
+        for path in (owl, obo):
+            self.addCleanup(path.unlink, missing_ok=True)
         owl.write_text(
             f"""<?xml version="1.0"?>
 <rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -111,8 +137,34 @@ class MakefileIntegrationTest(unittest.TestCase):
         for v in odm2:
             self.assertIn(f"xref: http://vocabulary.odm2.org/{v}", lines)
         self.assertIn("xref: CHEBI:17045", lines)
-        owl.unlink()
-        obo.unlink()
+
+    def test_obo_release_writes_bervo_ids_with_obo_prefix(self) -> None:
+        # Issue #137: the OBO release wrote every ID as bervo:BERVO_0000001.
+        # Builds the real release chain from bervo-edit.owl and the component.
+        built = [self.ontology_dir / name for name in ("bervo.owl", "bervo-full.owl", "bervo.obo")]
+        for path in built:
+            path.unlink(missing_ok=True)
+            self.addCleanup(path.unlink, missing_ok=True)
+
+        self.run_make("bervo.obo", "IMP=false", "PAT=false", "MIR=false", *release_chain_overrides())
+
+        # The OBO writer ends idspace lines with a space; compare stripped lines.
+        lines = [line.rstrip() for line in (self.ontology_dir / "bervo.obo").read_text(encoding="utf-8").splitlines()]
+        line_set = set(lines)
+        # assertIn would print all ~40,000 lines on a miss, so name the line instead.
+        for expected in (
+            "idspace: BERVO https://w3id.org/bervo/BERVO_",
+            "id: BERVO:0000001",
+            "id: BERVO:involves_chemicals",
+            # Issue #131, end to end.
+            "xref: http://vocabulary.odm2.org/variablename/sigma_t",
+        ):
+            self.assertTrue(expected in line_set, f"bervo.obo has no line {expected!r}")
+        self.assertTrue(
+            any(line.startswith("property_value: BERVO:has_unit ") for line in lines),
+            "bervo.obo has no BERVO:has_unit property values",
+        )
+        self.assertEqual([line for line in lines if "bervo:BERVO_" in line][:5], [])
 
     def test_legacy_sheet_export_alias_matches_template(self) -> None:
         template = self.ontology_dir / "bervo-src.csv"
