@@ -47,6 +47,30 @@ export-google-sheet: $(GOOGLE_SHEET_EXPORT)
 bervo_for_sheet.csv: $(BERVO_TEMPLATE)
 	cp $< $@
 
+# OBO release files: write non-OBO cross-references as strings (issue #131).
+# The OWLAPI OBO writer reads the last path segment of a hasDbXref IRI as an
+# OBO identifier when it looks like PREFIX_ID (one underscore, or several with
+# an all-digit last part) and writes only that fragment, so
+# http://vocabulary.odm2.org/variablename/sigma_t became "xref: sigma:t".
+# A string is written as it is. OBO Library IRIs stay IRIs, so CHEBI and the
+# rest still contract to CURIEs. The rewrite is done on the RDF/XML text
+# rather than with `robot query --update`, because a query drops the
+# document's namespace declarations and changes every ID in the OBO output.
+# The grep stops the build if ROBOT ever serialises a cross-reference in a
+# shape the substitution does not match. The .owl and .json files keep IRIs.
+OBO_NON_OBO_XREF_IRI = hasDbXref rdf:resource="(?!http://purl\.obolibrary\.org/obo/)
+define obo_with_string_xrefs
+	perl -pe 's{<oboInOwl:$(OBO_NON_OBO_XREF_IRI)([^"]*)"/>}{<oboInOwl:hasDbXref>$$1</oboInOwl:hasDbXref>}g' $< > $(TMPDIR)/$@.xrefs.owl
+	! grep -qP '$(OBO_NON_OBO_XREF_IRI)' $(TMPDIR)/$@.xrefs.owl
+	$(ROBOT) convert --input $(TMPDIR)/$@.xrefs.owl --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@
+endef
+
+$(ONT).obo: $(ONT).owl | $(TMPDIR)
+	$(obo_with_string_xrefs)
+
+$(ONT)-full.obo: $(ONT)-full.owl | $(TMPDIR)
+	$(obo_with_string_xrefs)
+
 $(BROWSER_DATA): $(BERVO_TEMPLATE) ../scripts/generate_browser_data.py
 	python3 ../scripts/generate_browser_data.py
 
