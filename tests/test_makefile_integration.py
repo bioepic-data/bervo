@@ -67,6 +67,53 @@ class MakefileIntegrationTest(unittest.TestCase):
         self.assertIn("bioportal_term_url", payload["entries"][0])
         self.assertIn("conceptid=https%3A%2F%2Fw3id.org%2Fbervo%2FBERVO_0000000", payload["entries"][0]["bioportal_term_url"])
 
+    def test_obo_release_keeps_underscored_odm2_xrefs_whole(self) -> None:
+        # Issue #131: the OBO writer split these at an underscore. The
+        # Cyanobacteria value was never split and must stay whole too.
+        odm2 = [
+            "variablename/radiationIncomingUV_A",
+            "variablename/radiationIncomingUV_B",
+            "variablename/sigma_t",
+            "speciation/C10H6_CH3_2",
+            "speciation/C10H5_CH3_3",
+            "speciation/C10H4_CH3_4",
+            "speciation/C6H4_CH3_2",
+            "variablename/blue_GreenAlgae_Cyanobacteria_Phycocyanin",
+        ]
+        xrefs = "\n".join(
+            f'        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/{v}"/>'
+            for v in odm2
+        )
+        owl = self.ontology_dir / "bervo.owl"
+        obo = self.ontology_dir / "bervo.obo"
+        owl.write_text(
+            f"""<?xml version="1.0"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bervo.owl"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    <owl:Class rdf:about="https://w3id.org/bervo/BERVO_0000001">
+{xrefs}
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17045"/>
+    </owl:Class>
+</rdf:RDF>
+""",
+            encoding="utf-8",
+        )
+        obo.unlink(missing_ok=True)
+
+        # -o: use the fixture as is rather than rebuilding it from bervo-full.owl.
+        # OBO_FORMAT_OPTIONS is cleared because --clean-obo needs ROBOT 1.9.8.
+        self.run_make("-o", "bervo.owl", "bervo.obo", "OBO_FORMAT_OPTIONS=")
+
+        lines = set(obo.read_text(encoding="utf-8").splitlines())
+        for v in odm2:
+            self.assertIn(f"xref: http://vocabulary.odm2.org/{v}", lines)
+        self.assertIn("xref: CHEBI:17045", lines)
+        owl.unlink()
+        obo.unlink()
+
     def test_legacy_sheet_export_alias_matches_template(self) -> None:
         template = self.ontology_dir / "bervo-src.csv"
         legacy_export = self.ontology_dir / "bervo_for_sheet.csv"
