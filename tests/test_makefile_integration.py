@@ -140,7 +140,8 @@ class MakefileIntegrationTest(unittest.TestCase):
 
     def test_obo_release_writes_bervo_ids_with_obo_prefix(self) -> None:
         # Issue #137: the OBO release wrote every ID as bervo:BERVO_0000001.
-        # Builds the real release chain from bervo-edit.owl and the component.
+        # Builds the real release chain from bervo-edit.owl and the component,
+        # so it also checks the #131 and #129 xref fixes end to end.
         built = [self.ontology_dir / name for name in ("bervo.owl", "bervo-full.owl", "bervo.obo")]
         for path in built:
             path.unlink(missing_ok=True)
@@ -165,6 +166,16 @@ class MakefileIntegrationTest(unittest.TestCase):
             "bervo.obo has no BERVO:has_unit property values",
         )
         self.assertEqual([line for line in lines if "bervo:BERVO_" in line][:5], [])
+
+        # Issue #129: COMO xrefs are absolute IRIs in the OWL release and
+        # contract back to CURIEs in the OBO release.
+        self.assertTrue("xref: COMO:0000129" in line_set, "bervo.obo has no line 'xref: COMO:0000129'")
+        owl = (self.ontology_dir / "bervo.owl").read_text(encoding="utf-8")
+        self.assertTrue(
+            'rdf:resource="http://purl.obolibrary.org/obo/COMO_0000129"' in owl,
+            "bervo.owl has no absolute IRI for COMO:0000129",
+        )
+        self.assertEqual(re.findall(r'rdf:resource="COMO:[^"]*"', owl)[:5], [])
 
     def test_legacy_sheet_export_alias_matches_template(self) -> None:
         template = self.ontology_dir / "bervo-src.csv"
