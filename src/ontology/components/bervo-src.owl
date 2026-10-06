@@ -39953,6 +39953,88 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002134 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002134">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Categorical record of whether a site or area has burned, such as burned or unburned.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire history terms for issue #134</rdfs:comment>
+        <rdfs:comment>Used, for example, to separate burned sites from unburned reference sites, as in NGEE Arctic post-fire soil respiration data, doi:10.15485/3377026 (column bstatus).</rdfs:comment>
+        <rdfs:label>Burn status</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002135 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002135">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Time elapsed since the most recent fire at a site.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>time since last fire</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>fire age</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Can be derived from Date of fire (BERVO:0001835) and the observation date, as in NGEE Arctic post-fire soil respiration data, doi:10.15485/3377026 (column yburned).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire history terms for issue #134</rdfs:comment>
+        <rdfs:label>Time since fire</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>a</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002136 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002136">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Number of times a site has burned over a given record period.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>burn count</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>fire count</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>times burned</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire history terms for issue #134</rdfs:comment>
+        <rdfs:comment>Repeated burning distinguishes sites in, for example, NGEE Arctic post-fire soil respiration data, doi:10.15485/3377026, where sites had burned three and four times.</rdfs:comment>
+        <rdfs:label>Number of fires</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000368"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002137 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002137">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
+        <obo:IAO_0000115>Mean time between successive fires at a site or in an area over a given record period.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>fire interval</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>mean fire return interval</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire history terms for issue #134</rdfs:comment>
+        <rdfs:label>Fire return interval</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>a</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
