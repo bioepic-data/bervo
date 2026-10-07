@@ -58409,11 +58409,11 @@
     <!-- https://w3id.org/bervo/BERVO_8000976 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000976">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000717"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>Organism, or virus, able to cause disease in a host.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>human pathogen</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>infectious agent</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>A role, not a taxon: pair with BERVO:involves_taxa to name the organism.</rdfs:comment>
+        <rdfs:comment>A role, not a taxon, and it includes viruses, so it sits under Concept rather than Organism (BERVO:8000717). Pair with BERVO:involves_taxa to name the organism or virus.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
         <rdfs:label>Pathogen</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
