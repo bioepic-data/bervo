@@ -40238,6 +40238,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002147 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002147">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000044"/>
         <obo:IAO_0000115>Negative logarithm of the hydrogen ion activity of wastewater, measured on a sample at the time of collection.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>sewage pH</oboInOwl:hasRelatedSynonym>
@@ -40258,6 +40259,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002148 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002148">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000044"/>
         <obo:IAO_0000115>Temperature of wastewater at the point and time of sampling.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>sewage temperature</oboInOwl:hasRelatedSynonym>
