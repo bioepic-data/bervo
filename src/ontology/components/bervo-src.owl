@@ -58236,7 +58236,6 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000967">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
         <obo:IAO_0000115>Sampling method that combines several portions of a material, taken over a period or at several points, into one sample representing the average over that period or area.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>composite sample</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
         <rdfs:label>Composite sampling</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -58293,7 +58292,6 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000970">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
         <obo:IAO_0000115>Sampling method in which a single portion of material is collected at one place and time.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>grab sample</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>point sampling</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>spot sampling</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
