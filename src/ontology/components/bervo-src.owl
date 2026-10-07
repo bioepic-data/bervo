@@ -57834,7 +57834,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000947 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000947">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000045"/>
         <obo:IAO_0000115>Wastewater that carries human excreta, feces and urine, together with the other domestic and municipal wastes discharged with it.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002018"/>
         <oboInOwl:hasRelatedSynonym>domestic wastewater</oboInOwl:hasRelatedSynonym>
@@ -57856,7 +57856,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000948 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000948">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000045"/>
         <obo:IAO_0000115>Wastewater produced by industrial or commercial processes, carrying chemical contaminants other than those of human excreta.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000964"/>
         <oboInOwl:hasRelatedSynonym>industrial effluent</oboInOwl:hasRelatedSynonym>
@@ -57875,7 +57875,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000949 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000949">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000046"/>
         <obo:IAO_0000115>Untreated wastewater as it enters a wastewater treatment plant or one of its treatment stages.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>wastewater influent</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>influent</oboInOwl:hasRelatedSynonym>
@@ -57897,7 +57897,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000950 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000950">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000046"/>
         <obo:IAO_0000115>Wastewater that has passed through one or more treatment stages and is discharged to the environment or reused.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105268"/>
         <oboInOwl:hasExactSynonym>wastewater effluent</oboInOwl:hasExactSynonym>
@@ -59248,6 +59248,42 @@
         <obo:IAO_0000115>Grouping class for variables that describe wastewater systems and the wastewater in them: flow and load, the population and area served, treatment plant operation such as retention times and removal efficiencies, and the condition and origin of wastewater samples.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
         <rdfs:label>Wastewater variable</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_9000045 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_9000045">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+        <obo:IAO_0000115>Grouping class for kinds of wastewater distinguished by where they come from, such as human excreta or industrial processes.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>One of two independent axes under Wastewater; see Wastewater by treatment stage (BERVO:9000046). The axes overlap, since influent wastewater is usually sewage, so their children must not be declared disjoint.</rdfs:comment>
+        <rdfs:label>Wastewater by origin</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_9000046 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_9000046">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+        <obo:IAO_0000115>Grouping class for kinds of wastewater distinguished by how far along treatment they are, from untreated influent to treated effluent.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>One of two independent axes under Wastewater; see Wastewater by origin (BERVO:9000045). The axes overlap, since influent wastewater is usually sewage, so their children must not be declared disjoint.</rdfs:comment>
+        <rdfs:label>Wastewater by treatment stage</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
