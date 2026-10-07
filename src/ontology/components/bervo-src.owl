@@ -40039,6 +40039,403 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002138 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002138">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000044"/>
+        <obo:IAO_0000115>Volume of wastewater flowing past a point in a sewer, or into or out of a treatment plant, per unit time.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>influent flow rate</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>plant flow</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>sewage flow</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>wastewater discharge</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Wastewater flow rate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>m3.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000729"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000766"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002139 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002139">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000044"/>
+        <obo:IAO_0000115>Number of people whose wastewater drains to a given sewer network, sewershed, or treatment plant.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>catchment population</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>connected population</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>sewershed population</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>Used to normalize wastewater loads to per-person values. Distinct from Population equivalent (BERVO:0002140), which is derived from the load itself.</rdfs:comment>
+        <rdfs:label>Population served</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000960"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000797"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002140 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002140">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000044"/>
+        <obo:IAO_0000115>Size of the organic load reaching a treatment plant expressed as the number of people who would produce it at a standard per-person load, in the EU 60 g of 5-day biochemical oxygen demand per day.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>PE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>p.e.</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>The EU standard is set by Council Directive 91/271/EEC, Article 2(6).</rdfs:comment>
+        <rdfs:label>Population equivalent</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000766"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002141 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002141">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000044"/>
+        <obo:IAO_0000115>Amount of a constituent carried by wastewater past a point per unit time, the product of its concentration and the wastewater flow rate.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>daily load</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>mass load</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>The constituent may be a chemical or a genetic marker counted in copies, so involves_chemicals is left empty.</rdfs:comment>
+        <rdfs:label>Wastewater load</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>g.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>{copies}.d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002142 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002142">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002141"/>
+        <obo:IAO_0000115>Wastewater load divided by the population served, the amount of a constituent contributed per person per day.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>per capita load</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>population-normalized load</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Population-normalized wastewater load</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>g.d-1/{person}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>{copies}.d-1/{person}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002143 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002143">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000044"/>
+        <obo:IAO_0000115>Mean time wastewater spends in a reactor or treatment unit, the volume of the unit divided by the flow rate through it.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>HRT</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>hydraulic residence time</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Hydraulic retention time</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000766"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002144 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002144">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000044"/>
+        <obo:IAO_0000115>Mean time solids, chiefly microbial biomass, spend in a biological treatment system, the mass of solids held divided by the mass removed per unit time.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="https://w3id.org/mixs/0000669"/>
+        <oboInOwl:hasExactSynonym>SRT</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>solids retention time</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>mean cell residence time</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>sludge age</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Sludge retention time</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>d</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000766"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000952"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002145 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002145">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000044"/>
+        <obo:IAO_0000115>Fraction of the wastewater received by a treatment plant that comes from industrial sources.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="https://w3id.org/mixs/0000662"/>
+        <oboInOwl:hasRelatedSynonym>industrial effluent percent</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>MIxS records this as a percentage (indust_eff_percent). BERVO writes fractions as the dimensionless 1.</rdfs:comment>
+        <rdfs:label>Industrial wastewater fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000766"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000948"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002146 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002146">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000044"/>
+        <obo:IAO_0000115>Fraction of the volatile solids entering an anaerobic digester that are destroyed in it.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="https://w3id.org/mixs/0000657"/>
+        <oboInOwl:hasRelatedSynonym>efficiency percent</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>volatile solids reduction</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>MIxS records this as a percentage (efficiency_percent). BERVO writes fractions as the dimensionless 1.</rdfs:comment>
+        <rdfs:label>Volatile solids removal efficiency</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000766"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000952"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002147 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002147">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000044"/>
+        <obo:IAO_0000115>Negative logarithm of the hydrogen ion activity of wastewater, measured on a sample at the time of collection.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>sewage pH</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>Recorded for each sample in the Global Sewage Project, BioProject PRJEB13831 (Hendriksen et al. 2019, Nat Commun 10:1124, doi:10.1038/s41467-019-08853-3).</rdfs:comment>
+        <rdfs:label>Wastewater pH</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000261"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002148 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002148">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000044"/>
+        <obo:IAO_0000115>Temperature of wastewater at the point and time of sampling.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>sewage temperature</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>Recorded for each sample in the Global Sewage Project, BioProject PRJEB13831 (Hendriksen et al. 2019, Nat Commun 10:1124, doi:10.1038/s41467-019-08853-3).</rdfs:comment>
+        <rdfs:label>Wastewater temperature</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002149 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002149">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000044"/>
+        <obo:IAO_0000115>Categorical record of the origin of a wastewater, such as domestic sewage, industrial wastewater, or stormwater.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="https://w3id.org/mixs/0000353"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Wastewater type</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002150 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002150">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000044"/>
+        <obo:IAO_0000115>Categorical record of the kind of wastewater a treatment plant is built to treat, such as municipal or industrial.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="https://w3id.org/mixs/0000215"/>
+        <oboInOwl:hasRelatedSynonym>sewage type</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>The MIxS field sewage_type (MIXS:0000215) is defined this way. In practice it also records the kind of sampling point, as in the NMDC rendering of the Global Sewage Project, BioProject PRJEB13831 (open sewer line, manhole, river). Wastewater sampling point type (BERVO:0002151) covers that use.</rdfs:comment>
+        <rdfs:label>Wastewater treatment plant type</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000766"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002151 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002151">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000044"/>
+        <obo:IAO_0000115>Categorical record of the kind of place in a sewer system where a wastewater sample was taken, such as a treatment plant inlet, an open or covered sewer line, a manhole, or a receiving river.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Wastewater sampling point type</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000960"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000977"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002152 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002152">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Number of copies of a target gene or genetic marker per unit volume or mass of a sample, usually measured by quantitative or digital PCR.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>gene copies per liter</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>gene copy number concentration</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Common in wastewater-based surveillance for the genetic markers of pathogens, such as SARS-CoV-2 RNA, and for antimicrobial resistance genes.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Gene copy concentration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>{copies}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>{copies}.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000331"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002153 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002153">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Abundance of antimicrobial resistance genes in a metagenome, as the number of sequenced fragments matched to them normalized for gene length and sequencing depth.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>ARG abundance</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>resistance gene abundance</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>FPKM is fragments per kilobase of reference gene per million fragments sequenced. The Global Sewage Project, BioProject PRJEB13831 summed it over the genes of each drug class (Hendriksen et al. 2019, Nat Commun 10:1124, doi:10.1038/s41467-019-08853-3).</rdfs:comment>
+        <rdfs:label>Antimicrobial resistance gene abundance</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000516"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>{FPKM}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000974"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002154 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002154">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Diversity index equal to one minus the probability that two individuals drawn at random from a community belong to the same taxon, ranging from 0 to 1.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Gini-Simpson index</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Simpson index</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>The 1 - D form, as used by Hendriksen et al. 2019, Nat Commun 10:1124, doi:10.1038/s41467-019-08853-3. Distinct from Simpson&apos;s dominance D and the inverse Simpson index 1/D.</rdfs:comment>
+        <rdfs:label>Simpson diversity index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000403"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002155 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002155">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Estimate of the total number of taxa in a community, including those not observed, from the observed taxa count and the numbers of taxa observed exactly once and exactly twice.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Chao1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Chao1 index</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Chao1 richness</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Compare Taxa count (BERVO:0001986), the observed number.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Chao1 richness estimator</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000403"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002156 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002156">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Dissimilarity between the compositions of two communities, the sum of the absolute differences in taxon abundance divided by the sum of all abundances in both, ranging from 0 for identical communities to 1 for communities sharing no taxa.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Bray-Curtis distance</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Bray-Curtis index</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>&quot;Distance&quot; is related, not exact: Bray-Curtis is not a metric.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Bray-Curtis dissimilarity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000403"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
@@ -53551,8 +53948,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000729">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000726"/>
-        <obo:IAO_0000115>Underground conduit constructed to convey storm drainage, wastewater, or both to a treatment plant, water body, or disposal site.</obo:IAO_0000115>
-        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), ODM2 site type alignment for issue #66</rdfs:comment>
+        <obo:IAO_0000115>Conduit, usually underground or covered, constructed to convey storm drainage, wastewater, or both to a treatment plant, water body, or disposal site.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 21 2026), ODM2 site type alignment for issue #66; broadened by Claude Opus 5.5 through Claude Code (Oct 7 2026) for issue #143</rdfs:comment>
+        <rdfs:comment>ODM2 defines a sewer as underground. The definition was broadened to admit Open sewer (BERVO:8000958), for issue #143.</rdfs:comment>
         <rdfs:label>Sewer</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
@@ -57408,6 +57806,646 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_8000946 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000946">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
+        <obo:IAO_0000115>Water whose quality has been degraded by domestic, commercial, or industrial use, or by runoff from built surfaces, and that is collected for treatment or disposal.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002001"/>
+        <oboInOwl:hasExactSynonym>waste water</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>used water</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Wastewater</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000947 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000947">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+        <obo:IAO_0000115>Wastewater that carries human excreta, feces and urine, together with the other domestic and municipal wastes discharged with it.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002018"/>
+        <oboInOwl:hasRelatedSynonym>domestic wastewater</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>municipal wastewater</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>sanitary sewage</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>The env_medium of every biosample in the Global Sewage Project, BioProject PRJEB13831.</rdfs:comment>
+        <rdfs:label>Sewage</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000948 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000948">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+        <obo:IAO_0000115>Wastewater produced by industrial or commercial processes, carrying chemical contaminants other than those of human excreta.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000964"/>
+        <oboInOwl:hasRelatedSynonym>industrial effluent</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Industrial wastewater</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000949 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000949">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+        <obo:IAO_0000115>Untreated wastewater as it enters a wastewater treatment plant or one of its treatment stages.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>wastewater influent</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>influent</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>raw sewage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>raw wastewater</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>The Global Sewage Project, BioProject PRJEB13831 sampled sewage in the main sewer lines before the treatment plant inlet (Hendriksen et al. 2019, Nat Commun 10:1124, doi:10.1038/s41467-019-08853-3).</rdfs:comment>
+        <rdfs:label>Influent wastewater</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000950 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000950">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
+        <obo:IAO_0000115>Wastewater that has passed through one or more treatment stages and is discharged to the environment or reused.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105268"/>
+        <oboInOwl:hasExactSynonym>wastewater effluent</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>effluent</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>reclaimed water</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>ENVO places treated wastewater under liquid water rather than waste water. BERVO keeps it under Wastewater, as the outflow of the same treatment stream as Influent wastewater (BERVO:8000949).</rdfs:comment>
+        <rdfs:label>Treated wastewater</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000951 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000951">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
+        <obo:IAO_0000115>Water from rain or snowmelt that runs off land and built surfaces and is collected by storm sewers or combined sewers.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001267"/>
+        <oboInOwl:hasRelatedSynonym>storm water</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>stormwater runoff</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Stormwater</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000952 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000952">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
+        <obo:IAO_0000115>Semisolid residue separated from wastewater during treatment, or left by industrial processes.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002044"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Sludge</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000953 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000953">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000952"/>
+        <obo:IAO_0000115>Sludge settled out of wastewater during primary treatment, before biological treatment.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002057"/>
+        <oboInOwl:hasRelatedSynonym>raw primary sludge</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Primary sludge</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000954 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000954">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000952"/>
+        <obo:IAO_0000115>Aerated suspension of microbial flocs and the solids they hold, kept in secondary treatment to degrade the organic matter in wastewater.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002046"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Activated sludge</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000955 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000955">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000952"/>
+        <obo:IAO_0000115>Sludge produced by biological secondary treatment, chiefly surplus microbial biomass wasted from an activated sludge or other biological process.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002058"/>
+        <oboInOwl:hasRelatedSynonym>biological sludge</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>waste activated sludge</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Secondary sludge</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000956 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000956">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000952"/>
+        <obo:IAO_0000115>Sludge in or discharged from an anaerobic digester, stabilized by anaerobic microbial degradation of its organic matter.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00003965"/>
+        <oboInOwl:hasRelatedSynonym>digestate</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>digested sludge</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Anaerobic digester sludge</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000957 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000957">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
+        <obo:IAO_0000115>Material composed mainly of feces, the waste expelled from an animal&apos;s digestive tract.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002003"/>
+        <oboInOwl:hasRelatedSynonym>faeces</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>feces</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>stool</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Fecal material</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000958 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000958">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000729"/>
+        <obo:IAO_0000115>Sewer that conveys wastewater in an uncovered channel at the ground surface rather than in a closed pipe.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>open drain</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>open sewer line</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Common where cities lack closed sewer networks. Eleven biosamples in the Global Sewage Project, BioProject PRJEB13831 came from open sewer lines.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Open sewer</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000959 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000959">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000726"/>
+        <obo:IAO_0000115>Covered vertical shaft that gives access from the ground surface to a sewer or other underground utility for inspection, maintenance, and sampling.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>access chamber</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>maintenance hole</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Manhole</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000960 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000960">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000400"/>
+        <obo:IAO_0000115>Area of land, with the buildings and population in it, whose wastewater drains to a given point in a sewer network, such as a treatment plant inlet or a sampling manhole.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>sewage catchment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sewer catchment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>sewer catchment area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>The unit of population that wastewater-based surveillance describes. ENVO has no equivalent class.</rdfs:comment>
+        <rdfs:label>Sewershed</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000961 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000961">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000399"/>
+        <obo:IAO_0000115>Biome of densely settled, urbanized land, shaped by buildings, paved surfaces, and the infrastructure that supplies and drains them.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000249"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>The env_broad_scale of every biosample in the Global Sewage Project, BioProject PRJEB13831.</rdfs:comment>
+        <rdfs:label>Urban biome</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000962 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000962">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000106"/>
+        <obo:IAO_0000115>Process of removing contaminants from wastewater so that it can be returned to the environment or reused, usually in a sequence of physical, biological, and chemical stages.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105300"/>
+        <oboInOwl:hasExactSynonym>wastewater treatment process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>sewage treatment</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Wastewater treatment</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000963 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000963">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000962"/>
+        <obo:IAO_0000115>First stage of wastewater treatment, removing coarse solids, grit, and floating material from raw wastewater by screening and settling.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>pre-treatment</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>preliminary treatment</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>Recorded in MIxS by the pre_treatment field (MIXS:0000348).</rdfs:comment>
+        <rdfs:label>Preliminary wastewater treatment</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000964 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000964">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000962"/>
+        <obo:IAO_0000115>Stage of wastewater treatment that settles suspended solids and floating material out of wastewater, producing primary sludge and a more uniform liquid for biological treatment.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>primary treatment</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>Recorded in MIxS by the primary_treatment field (MIXS:0000349).</rdfs:comment>
+        <rdfs:label>Primary wastewater treatment</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000965 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000965">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000962"/>
+        <obo:IAO_0000115>Stage of wastewater treatment in which microorganisms degrade the dissolved and suspended organic matter in wastewater, as in an activated sludge process, trickling filter, or lagoon.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>biological wastewater treatment</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>secondary treatment</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>Recorded in MIxS by the secondary_treatment field (MIXS:0000351).</rdfs:comment>
+        <rdfs:label>Secondary wastewater treatment</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000966 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000966">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000962"/>
+        <obo:IAO_0000115>Stage of wastewater treatment after secondary treatment that further improves effluent quality before discharge or reuse, such as by nutrient removal, filtration, or disinfection.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>advanced wastewater treatment</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>tertiary treatment</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>Recorded in MIxS by the tertiary_treatment field (MIXS:0000352).</rdfs:comment>
+        <rdfs:label>Tertiary wastewater treatment</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000967 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000967">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
+        <obo:IAO_0000115>Sampling method that combines several portions of a material, taken over a period or at several points, into one sample representing the average over that period or area.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>composite sample</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Composite sampling</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000968 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000968">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000967"/>
+        <obo:IAO_0000115>Composite sampling of a flowing liquid in which each portion is taken, or sized, in proportion to the volume that has flowed past the sampling point.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>flow-proportional sampling</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>flow-weighted composite sampling</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>The preferred method in the Global Sewage Project, BioProject PRJEB13831, over 24 hours (Hendriksen et al. 2019, Nat Commun 10:1124, doi:10.1038/s41467-019-08853-3).</rdfs:comment>
+        <rdfs:label>Flow-proportional composite sampling</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000969 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000969">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000967"/>
+        <obo:IAO_0000115>Composite sampling of a flowing liquid in which portions of equal size are taken at equal time intervals.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>time-proportional sampling</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>time-weighted composite sampling</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Time-proportional composite sampling</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000970 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000970">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
+        <obo:IAO_0000115>Sampling method in which a single portion of material is collected at one place and time.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>grab sample</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>point sampling</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>spot sampling</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>The fallback method in the Global Sewage Project, BioProject PRJEB13831, as three grab samples at least 5 minutes apart (Hendriksen et al. 2019, Nat Commun 10:1124, doi:10.1038/s41467-019-08853-3).</rdfs:comment>
+        <rdfs:label>Grab sampling</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000971 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000971">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
+        <obo:IAO_0000115>Monitoring of the health of the population of a sewershed by measuring pathogens, antimicrobial resistance genes, chemicals, or other markers of human origin in its wastewater.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>wastewater surveillance</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>WBE</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>environmental surveillance</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>sewage surveillance</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>wastewater-based epidemiology</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Wastewater-based surveillance</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000972 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000972">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+        <obo:IAO_0000115>Substance that kills or slows the growth of microorganisms such as bacteria, fungi, viruses, or protozoa.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33281"/>
+        <oboInOwl:hasRelatedSynonym>antibiotic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>antimicrobial</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>&quot;Antibiotic&quot; is related, not exact: it usually means an antibacterial agent.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Antimicrobial agent</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000973 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000973">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Ability of a microorganism to survive or grow in the presence of an antimicrobial agent at a concentration that inhibits or kills susceptible strains of the same kind.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>AMR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>antibiotic resistance</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>drug resistance</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Antimicrobial resistance</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000974 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000974">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000331"/>
+        <obo:IAO_0000115>Gene whose product confers antimicrobial resistance on a microorganism, whether carried on its chromosome or on a mobile genetic element such as a plasmid.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>ARG</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>antibiotic resistance gene</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>resistance gene</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>In metagenomes, usually identified by matching sequences to a reference database such as ResFinder or CARD. The Global Sewage Project, BioProject PRJEB13831 used ResFinder (Hendriksen et al. 2019, Nat Commun 10:1124, doi:10.1038/s41467-019-08853-3).</rdfs:comment>
+        <rdfs:label>Antimicrobial resistance gene</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000975 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000975">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Collection of all antimicrobial resistance genes, and their precursors, in a microbial community or environment.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>antibiotic resistome</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>antimicrobial resistome</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Resistome</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000976 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000976">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000717"/>
+        <obo:IAO_0000115>Organism, or virus, able to cause disease in a host.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>human pathogen</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>infectious agent</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>A role, not a taxon: pair with BERVO:involves_taxa to name the organism.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Pathogen</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000977 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000977">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000394"/>
+        <obo:IAO_0000115>Place at which a sample is taken, such as a point in a sewer network, a treatment plant inlet, or a station in a water body.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>sampling location</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>sampling site</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>Distinct from Environmental sample location (BERVO:8000514), which is the location of the sample itself as recorded with it.</rdfs:comment>
+        <rdfs:label>Sampling point</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_9000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000000">
@@ -58116,7 +59154,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000040">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
-        <obo:IAO_0000115>Grouping class for observed variables that describe organisms and the communities they form, such as biomass, stand structure, cell and colony densities, counts, diversity indices, body sizes, and vegetation type.</obo:IAO_0000115>
+        <obo:IAO_0000115>Grouping class for observed variables that describe organisms and the communities they form, such as biomass, stand structure, cell and colony densities, the abundance of the genes they carry, counts, diversity indices, body sizes, and vegetation type.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
         <rdfs:label>Ecology variable</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
@@ -58170,6 +59208,23 @@
         <obo:IAO_0000115>Grouping class for observed variables that describe the quality of water for its uses and for aquatic life: its capacity to neutralize acid or base, oxygen demand, hardness, solids, optical and sensory properties, mineral saturation state, trophic state, and gross radioactivity.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
         <rdfs:label>Water quality variable</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_9000044 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_9000044">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
+        <obo:IAO_0000115>Grouping class for variables that describe wastewater systems and the wastewater in them: flow and load, the population and area served, treatment plant operation such as retention times and removal efficiencies, and the condition and origin of wastewater samples.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:label>Wastewater variable</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
