@@ -40342,7 +40342,7 @@
         <obo:IAO_0000115>Number of copies of a target gene or genetic marker per unit volume or mass of a sample, usually measured by quantitative or digital PCR.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>gene copies per liter</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>gene copy number concentration</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Common in wastewater-based surveillance for the genetic markers of pathogens, such as SARS-CoV-2 RNA, and for antimicrobial resistance genes. Written per litre, as qPCR and digital PCR results are reported, where Microbial cell density and Colony-forming unit density use m-3.</rdfs:comment>
+        <rdfs:comment>Common in wastewater-based surveillance for the genetic markers of pathogens, such as SARS-CoV-2 RNA, and for antimicrobial resistance genes. Written per litre, as qPCR and digital PCR results are reported, where Microbial cell density and Colony-forming unit density use m-3. {copies} counts gene copies, not the detector events of {counts} on the radiation count rates.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
         <rdfs:label>Gene copy concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
