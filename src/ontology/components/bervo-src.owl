@@ -40230,7 +40230,7 @@
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000766"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000952"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000978"/>
     </Class>
     
 
@@ -58439,6 +58439,26 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
         <rdfs:comment>Distinct from Environmental sample location (BERVO:8000514), which is the location of the sample itself as recorded with it.</rdfs:comment>
         <rdfs:label>Sampling point</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000978 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000978">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000286"/>
+        <obo:IAO_0000115>Portion of the solids in a water, wastewater, or sludge sample that is lost on ignition at 550 degrees Celsius, taken as a measure of their organic matter.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>VS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>loss on ignition</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
+        <rdfs:comment>The material measured by Total volatile solids (BERVO:0002095) and its dissolved and suspended fractions.</rdfs:comment>
+        <rdfs:label>Volatile solids</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
