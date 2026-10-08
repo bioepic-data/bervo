@@ -251,7 +251,11 @@ fermenters 4, methanotrophs 4, fungi 3, aerobic heterotrophs 3 (EcoSIM's
 `Root|Mycorrhizal fungi` because it is an exchange between the two. 21 of the
 109 are the `NitroPars.txt` oxidation rates, half-saturation constants, and
 growth efficiencies, which name their guild in the label, or, on the carbon
-dioxide and methane half-saturation constants, in the definition.
+dioxide and methane half-saturation constants, in the definition. The five
+heterotrophic nitrate, nitrite and nitrous oxide uptake rows
+(`BERVO:0001005`-`BERVO:0001009`) had Microbes alone, where their band and
+non-band neighbours had Soil beside it; all ten now read
+`Soil|Heterotrophic microbes`.
 
 Left out on purpose: the plant autotrophic respiration rows, which are plant
 metabolism and not autotrophic microbes; the Gibbs free energy yields of the
