@@ -322,7 +322,7 @@ left out. Its definition says "beyond field capacity" once, and its own
 quantity is mobile water, not a state of the soil.
 
 A sweep for concepts that a variable's label names and its own columns do not
-filled 57 cells beside the slices. The concepts were mostly added for the ODM2
+filled 60 cells beside the slices. The concepts were mostly added for the ODM2
 alignment and the concept gap review, and few rows used them:
 
 - `attributes`: Hydraulic conductivity on five rows, replacing Uptake on the
@@ -331,7 +331,11 @@ alignment and the concept gap review, and few rows used them:
   rows.
 - `measurement_ofs`: Dissolved organic matter on seven rows, in place of the
   generic Organic matter on four of them.
-- `measured_ins`: Petiole on the two petiole growth parameters.
+- `measured_ins`: Petiole on the two petiole growth parameters, and on Petiole
+  length:mass during growth, which had it the wrong way round: Growth in
+  `measured_ins` and Petiole in `measurement_ofs`. It now reads as its sibling
+  Internode length:mass during growth does, `measured_ins=Petiole` and
+  `contexts=Growth`, so Petiole sits in one column on all three rows.
 - `qualifiers`: Cumulative on the 14 rows whose label begins "Cumulative" and
   that accumulate over time, beside the Total or Net they had, and on Pft
   cumulative nodule infection and Pft cumulative phosphorus uptake, the two
