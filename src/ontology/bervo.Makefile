@@ -101,8 +101,10 @@ remove-old-input:
 #                          `view index` also imports paperqa, an optional
 #                          extra; curategpt-index fails without it.
 #   generate-definitions   needs the OAK llm extension (pip install llm)
-# The index and definition targets call an LLM API, so they need an API key
-# (OPENAI_API_KEY for the defaults below) and cost money to run.
+# curategpt-index-ontology and generate-definitions call a paid API by
+# default, so they need a key (OPENAI_API_KEY) and cost money to run.
+# curategpt-index, like the old root target, passes no model and so uses
+# curategpt's local embedding model.
 #
 # The inputs are the released files at the repository root, so the results
 # reflect the last release rather than unreleased edits to bervo-src.csv.
@@ -112,6 +114,9 @@ CURATEGPT_OBO ?= ../../$(ONT).obo
 CURATEGPT_DIR = $(TMPDIR)/curategpt
 CURATEGPT_DB = $(CURATEGPT_DIR)/$(ONT).db
 CURATEGPT_PREFIXES = $(CURATEGPT_DIR)/prefixes.csv
+# Embedding model for curategpt-index-ontology. Set it empty to use curategpt's
+# local default, which needs no API key: make curategpt-index-ontology CURATEGPT_MODEL=
+CURATEGPT_MODEL ?= openai:
 # OAK sends every selected term to the model, including terms that already
 # have a definition (oaklib's LLMImplementation.generate_definitions does not
 # check). Nearly every BERVO term has one, so name the terms you want, e.g.
@@ -149,7 +154,7 @@ curategpt-index: $(CURATEGPT_OBO)
 	curategpt view index -V oboformat -c $(ONT) --source-locator $<
 
 curategpt-index-ontology: $(CURATEGPT_DB)
-	curategpt ontology index -c ont_$(ONT) -m openai: sqlite:$<
+	curategpt ontology index -c ont_$(ONT) $(if $(CURATEGPT_MODEL),-m $(CURATEGPT_MODEL)) sqlite:$<
 
 # Writes suggested definitions as KGCL; it does not edit bervo-src.csv.
 # Depends on this makefile so that editing DEFINITION_STYLE_HINTS or
