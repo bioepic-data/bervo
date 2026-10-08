@@ -1,3 +1,7 @@
+# NOTE: this Makefile does not run; it includes a bervo.Makefile that does not
+# exist at the repository root (issue #145). The build is src/ontology/Makefile,
+# and the curategpt and OAK LLM targets now live in src/ontology/bervo.Makefile.
+
 OBO = http://purl.obolibrary.org/obo
 CORE = src/ontology/bervo-core.obo
 MAIN = src/ontology/bervo.obo
