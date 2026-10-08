@@ -322,13 +322,14 @@ left out. Its definition says "beyond field capacity" once, and its own
 quantity is mobile water, not a state of the soil.
 
 A sweep for concepts that a variable's label names and its own columns do not
-filled 61 cells beside the slices. The concepts were mostly added for the ODM2
+filled 62 cells beside the slices. The concepts were mostly added for the ODM2
 alignment and the concept gap review, and few rows used them:
 
-- `attributes`: Hydraulic conductivity on five rows, replacing Uptake on the
-  root water uptake one; Electrical conductivity on Measured electrical
-  conductivity; Bulk density in place of Density on the three bulk density
-  rows.
+- `attributes`: Hydraulic conductivity on five rows. On the root water uptake
+  one it replaced Uptake, which moved to `contexts`, since the label names
+  the uptake the conductivity serves. Electrical conductivity on Measured
+  electrical conductivity; Bulk density in place of Density on the three bulk
+  density rows.
 - `measurement_ofs`: Dissolved organic matter on seven rows, in place of the
   generic Organic matter on four of them; Dissolved organic carbon in place of
   Organic carbon on Dissolved organic carbon concentration, the same move one
