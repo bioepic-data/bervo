@@ -245,7 +245,14 @@ already use: Fixation on 13 variables, Mineralization on 6, Erosion on 23.
 rows names itself in its own `attributes`.) Each of
 the 24 is the net rate of change of a pool by reaction, sorption,
 precipitation, or dissolution, which is what the concept's definition says,
-and the substance stays in `measurement_ofs`.
+and the substance stays in `measurement_ofs`. Three rows in the set, and the
+two microbial gas rows, had none there and now do: Nutrient on the band
+nutrient row, Ion on the boundary ion row,
+Iron dihydroxide on Total iron hydroxide adsorption, since FeO2H2 is the
+dihydroxide, and Gas on the two microbial gas rows. (The iron and aluminum
+hydroxide concepts want a look of their own: Iron hydroxide carries the
+synonym Fe(OH)3, which is the trihydroxide's formula, Aluminum dihydroxide
+carries Al(OH)3, and the AlO2H2 row names Aluminum hydroxide.)
 
 Total iron adsorption and Total iron hydroxide adsorption (`BERVO:0001730`,
 `BERVO:0001731`) take it too, though their labels say adsorption. They are
