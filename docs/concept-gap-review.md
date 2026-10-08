@@ -321,8 +321,8 @@ between the two points, so they name both. Excess water (`BERVO:0001769`) was
 left out. Its definition says "beyond field capacity" once, and its own
 quantity is mobile water, not a state of the soil.
 
-A sweep for concepts that a variable's label names and its own columns do not
-filled 62 cells beside the slices. The concepts were mostly added for the ODM2
+A sweep for concepts that a variable's label names but its own columns do not
+reference filled 62 cells beside the earlier slices. The concepts were mostly added for the ODM2
 alignment and the concept gap review, and few rows used them:
 
 - `attributes`: Hydraulic conductivity on five rows. On the root water uptake
