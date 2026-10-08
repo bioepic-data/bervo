@@ -354,6 +354,8 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000264"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000043"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000887"/>
         <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
@@ -374,6 +376,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000539"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000043"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
         <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
@@ -395,6 +398,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000043"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
         <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
@@ -415,10 +419,11 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000539"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000043"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
         <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -439,7 +444,7 @@
         <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
     
@@ -460,7 +465,7 @@
         <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
     
@@ -481,7 +486,8 @@
         <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000778"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000781"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000024"/>
     </Class>
     
@@ -631,6 +637,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000548"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000043"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
         <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
@@ -3142,7 +3149,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000252"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000580"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
     </Class>
@@ -3317,7 +3324,8 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>h-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000784"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
@@ -3916,7 +3924,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000580"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -4036,6 +4044,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{N}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000782"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -4054,7 +4063,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.g-1.h-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000782"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -4092,7 +4101,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>h-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000782"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -5672,6 +5681,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000541"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000039"/>
@@ -6310,6 +6320,7 @@
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000555"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000078"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
@@ -6411,6 +6422,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000782"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
     
@@ -6430,6 +6442,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000782"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
     
@@ -6581,6 +6594,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000264"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000887"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
@@ -6600,6 +6614,8 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000264"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000887"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
@@ -6643,6 +6659,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000782"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
     
@@ -6660,6 +6677,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000539"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
@@ -7202,6 +7220,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000782"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
     
@@ -7470,6 +7489,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
@@ -7509,7 +7529,7 @@
         <rdfs:label>Current step vertical root water uptake profile</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000532"/>
         <bervo:BERVO_has_unit>m3{H2O}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
@@ -8073,7 +8093,7 @@
         <rdfs:label>Current time step root autotrophic respiration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000539"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000532"/>
         <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
@@ -14781,11 +14801,11 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Petiole length:mass during growth</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m.g-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000580"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000580"/>
+        <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
 
@@ -15277,6 +15297,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000789"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000252"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000282"/>
         <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
@@ -15970,6 +15991,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
@@ -15988,6 +16010,7 @@
         <rdfs:label>Net aqueous CH4 flux from previous time step</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000196"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
@@ -16007,6 +16030,7 @@
         <rdfs:label>Net aqueous flux from previous time step</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000196"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
@@ -16205,7 +16229,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000800"/>
     </Class>
     
 
@@ -16841,6 +16865,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000541"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
@@ -17296,12 +17321,12 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
         <rdfs:label>Microbial gases transformation</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
-        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000086"/>
     </Class>
     
 
@@ -17315,12 +17340,12 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
         <rdfs:label>Total microbial gases transformation</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
-        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000086"/>
     </Class>
     
 
@@ -17378,7 +17403,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000286"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000800"/>
     </Class>
     
 
@@ -17397,6 +17422,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000097"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000922"/>
     </Class>
@@ -17474,7 +17500,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000286"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000800"/>
     </Class>
     
 
@@ -17531,6 +17557,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
     </Class>
     
@@ -17909,6 +17936,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000086"/>
@@ -18083,6 +18111,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000780"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000024"/>
     </Class>
     
@@ -18102,6 +18131,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000779"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000024"/>
     </Class>
     
@@ -18121,6 +18151,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000781"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000024"/>
     </Class>
     
@@ -18140,6 +18171,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000775"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
     </Class>
     
@@ -18159,6 +18191,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
     </Class>
     
@@ -18178,6 +18211,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000776"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000017"/>
     </Class>
     
@@ -18197,6 +18231,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000017"/>
     </Class>
     
@@ -18235,6 +18270,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000776"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000017"/>
     </Class>
     
@@ -18254,7 +18290,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000286"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000800"/>
     </Class>
     
 
@@ -18292,7 +18328,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000286"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000800"/>
     </Class>
     
 
@@ -18736,7 +18772,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000296"/>
     </Class>
     
@@ -18756,7 +18792,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000196"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -18814,6 +18850,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
     </Class>
     
@@ -18833,6 +18870,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
     
@@ -18852,6 +18890,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
     
@@ -18870,7 +18909,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
     </Class>
     
@@ -18889,7 +18928,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
     
@@ -18908,7 +18947,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
     
@@ -18927,7 +18966,8 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
     
@@ -18946,7 +18986,8 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000123"/>
     </Class>
     
@@ -18965,7 +19006,8 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
     
@@ -18984,7 +19026,8 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000123"/>
     </Class>
     
@@ -19003,7 +19046,8 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000017"/>
     </Class>
     
@@ -19023,6 +19067,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
     </Class>
     
@@ -19042,6 +19087,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
     
@@ -19061,6 +19107,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
     
@@ -19080,6 +19127,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
     
@@ -19099,6 +19147,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
     
@@ -19118,7 +19167,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
     
@@ -19137,7 +19186,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -19162,7 +19211,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000296"/>
     </Class>
     
@@ -19181,7 +19230,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000196"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
     </Class>
     
@@ -19201,6 +19250,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
     </Class>
     
@@ -19220,6 +19270,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
     
@@ -19239,6 +19290,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
     
@@ -19257,7 +19309,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
     </Class>
     
@@ -19276,7 +19328,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
     
@@ -19295,7 +19347,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
     
@@ -19315,6 +19367,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
     </Class>
     
@@ -19334,6 +19387,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000123"/>
     </Class>
     
@@ -19353,6 +19407,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
     </Class>
     
@@ -19372,6 +19427,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000123"/>
     </Class>
     
@@ -19390,7 +19446,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000017"/>
     </Class>
     
@@ -19410,6 +19466,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
     </Class>
     
@@ -19429,6 +19486,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
     
@@ -19448,6 +19506,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
     
@@ -19467,6 +19526,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
     
@@ -19486,6 +19546,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
     
@@ -19504,7 +19565,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
     
@@ -19523,7 +19584,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000296"/>
     </Class>
     
@@ -21449,7 +21510,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
         <rdfs:label>Surface litter bulk density</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000810"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>Mg.m-3</bervo:BERVO_has_unit>
@@ -22093,7 +22154,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{H}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000778"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -22286,7 +22347,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{C}.g-1{C}.h-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000783"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -22305,7 +22366,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{C}.g-1{C}.h-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000779"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -22324,7 +22385,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.g-1{C}.h-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
     </Class>
     
@@ -22343,7 +22404,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.g-1{C}.h-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -22362,7 +22423,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.g-1{C}.h-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000781"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -22381,7 +22442,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.g-1{C}.h-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000780"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -22400,7 +22461,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{C}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000097"/>
     </Class>
     
@@ -22421,7 +22482,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{C}.m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000775"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -22440,7 +22501,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{C}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000779"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -22459,7 +22520,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{C}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
     
@@ -22478,7 +22539,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{C}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000781"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000024"/>
     </Class>
     
@@ -22497,7 +22558,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{N}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
     </Class>
     
@@ -22516,7 +22577,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{N}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -22535,7 +22596,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{N}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000776"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
     
@@ -22554,7 +22615,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{N}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000776"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -22573,7 +22634,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{N}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000776"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000017"/>
     </Class>
     
@@ -22763,7 +22824,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{N}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000782"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
     
@@ -22782,7 +22843,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{H}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000780"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000039"/>
     </Class>
     
@@ -22801,7 +22862,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
     
@@ -22820,7 +22881,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
     
@@ -22839,7 +22900,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000781"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
     
@@ -22858,7 +22919,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000776"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -22877,7 +22938,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000776"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -22896,7 +22957,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000776"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -22934,7 +22995,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{N}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -22953,7 +23014,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{N}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000776"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
     
@@ -22972,7 +23033,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{N}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
     </Class>
     
@@ -22991,7 +23052,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{O}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -23010,7 +23071,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>kJ.g-1{C}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000774"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -23029,7 +23090,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>kJ.g-1{C}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000776"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -23048,7 +23109,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>kJ.g-1{C}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000783"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -23067,7 +23128,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>kJ.g-1{C}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000775"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -23086,7 +23147,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>kJ.g-1{C}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000778"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -23105,7 +23166,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>kJ.g-1{C}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000782"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -23257,7 +23318,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000782"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -23276,7 +23337,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000782"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -23295,7 +23356,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000774"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000097"/>
     </Class>
     
@@ -23314,7 +23375,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000775"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -23333,7 +23394,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000783"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -23352,7 +23413,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000776"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -23371,7 +23432,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000782"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -23390,7 +23451,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000776"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -23409,7 +23470,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000774"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000922"/>
     </Class>
     
@@ -24587,7 +24648,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{O}.m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -24779,6 +24840,7 @@
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000283"/>
         <bervo:BERVO_has_unit>MJ.m-2.h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
@@ -24952,6 +25014,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000282"/>
         <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
@@ -24971,6 +25034,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000252"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000282"/>
         <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
@@ -25575,6 +25639,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000259"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000279"/>
         <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
         <bervo:BERVO_has_unit>K</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
@@ -25772,6 +25837,7 @@
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000282"/>
         <bervo:BERVO_has_unit>MJ.d-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000179"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
@@ -25791,6 +25857,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000518"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000282"/>
         <bervo:BERVO_has_unit>kPa</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000118"/>
@@ -25810,6 +25877,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000518"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000252"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000282"/>
         <bervo:BERVO_has_unit>kPa</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000118"/>
@@ -25829,6 +25897,7 @@
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000282"/>
         <bervo:BERVO_has_unit>m.d-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
@@ -26533,6 +26602,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
         <bervo:BERVO_has_unit>MJ/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
@@ -27182,7 +27252,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000252"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
         <bervo:BERVO_has_unit>g{N}.g-1{C}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000225"/>
     </Class>
     
@@ -27202,7 +27272,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000252"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
         <bervo:BERVO_has_unit>g{P}.g-1{C}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000211"/>
     </Class>
     
@@ -27222,7 +27292,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000252"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
         <bervo:BERVO_has_unit>g{N}.g-1{C}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000225"/>
     </Class>
     
@@ -27242,7 +27312,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000252"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
         <bervo:BERVO_has_unit>g{P}.g-1{C}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000211"/>
     </Class>
     
@@ -27303,7 +27373,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>h-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="NA"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>
     
@@ -27418,6 +27488,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
     </Class>
     
@@ -27437,6 +27508,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
     </Class>
     
@@ -27897,7 +27969,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilPhysDataType.txt</rdfs:comment>
         <rdfs:label>Soil vertical saturated hydraulic conductivity</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000813"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>mm.h-1</bervo:BERVO_has_unit>
@@ -27916,7 +27988,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilPhysDataType.txt</rdfs:comment>
         <rdfs:label>Soil horizontal saturated hydraulic conductivity</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000813"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>mm.h-1</bervo:BERVO_has_unit>
@@ -28422,7 +28494,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilPropertyDataType.txt</rdfs:comment>
         <rdfs:label>Initial bulk density</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000810"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000265"/>
         <bervo:BERVO_has_unit>Mg.m-3</bervo:BERVO_has_unit>
@@ -28519,7 +28591,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilPropertyDataType.txt</rdfs:comment>
         <rdfs:label>Soil bulk density</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000810"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>Mg.m-3</bervo:BERVO_has_unit>
@@ -30685,7 +30757,7 @@
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
     </Class>
     
@@ -30752,7 +30824,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000800"/>
     </Class>
     
 
@@ -30771,7 +30843,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000800"/>
     </Class>
     
 
@@ -31083,7 +31155,7 @@
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000097"/>
     </Class>
     
 
@@ -31692,7 +31764,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>This may be more of a concept.</rdfs:comment>
         <rdfs:label>Measured electrical conductivity</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000885"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>dS.m-1</bervo:BERVO_has_unit>
@@ -31885,7 +31957,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total solute ammonium transformation non-band</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000125"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -31904,7 +31976,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total solute ammonia transformation non-band</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -31923,12 +31995,12 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Total solute nutrient transformation band</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000068"/>
     </Class>
     
 
@@ -31942,7 +32014,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total salt solute transformation non-band</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -31961,7 +32033,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total solute bicarbonate transformation</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000125"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -31980,7 +32052,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total solute carbon dioxide transformation</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000125"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -31999,7 +32071,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total solute water transformation</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -32018,7 +32090,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total solute iron trihydroxide transformation</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000125"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -32037,7 +32109,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total adsorbed hydrogen transformation</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -32056,7 +32128,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total adsorbed aluminum transformation</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -32075,7 +32147,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total adsorbed calcium transformation</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -32094,7 +32166,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total adsorbed magnesium transformation</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -32113,7 +32185,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total adsorbed sodium transformation</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -32132,7 +32204,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total adsorbed potassium transformation</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -32151,7 +32223,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total adsorbed carboxyl groups transformation</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -32170,7 +32242,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total adsorbed aluminum hydroxide transformation</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -32189,7 +32261,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total solute potassium sulfate transformation</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -32203,15 +32275,15 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001730">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
-        <obo:IAO_0000115>The total amount of dissolved iron that becomes bound to soil particles, mineral surfaces, or organic matter through sorption processes in terrestrial or aquatic systems. This parameter is important for understanding iron bioavailability, redox chemistry, and the role of iron in controlling phosphorus cycling and trace metal mobility in environmental systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which dissolved iron is adsorbed onto soil surfaces in a soil layer, per grid cell and hour, as computed by the geochemical solver.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TRChem_Fe_sorbed_soil_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 8 2026), from EcoSIM AqueChemDatatype.F90 and GeochemAPI.F90 for issue #83</rdfs:comment>
         <rdfs:label>Total iron adsorption</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>mol.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000182"/>
     </Class>
@@ -32222,17 +32294,17 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001731">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
-        <obo:IAO_0000115>The total amount of iron hydroxide (FeOH2) that becomes adsorbed to solid surfaces in soil or aquatic systems, representing an important iron mineral phase. This parameter controls iron bioavailability and affects the sorption of phosphorus and other trace elements, playing a crucial role in biogeochemical cycling and water chemistry in iron-rich environments.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which iron dihydroxide, Fe(OH)2, is adsorbed onto soil surfaces in a soil layer, per grid cell and hour, as computed by the geochemical solver; the amount adsorbed is removed from the dissolved pool.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TRChem_FeO2H2_sorbed_soil_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 8 2026), from EcoSIM AqueChemDatatype.F90 and GeochemAPI.F90 for issue #83</rdfs:comment>
         <rdfs:label>Total iron hydroxide adsorption</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>mol.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000219"/>
     </Class>
     
 
@@ -32246,7 +32318,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total adsorbed hydroxide transformation non-band</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -32265,7 +32337,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Total solute carbon dioxide transformation boundary</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -32284,12 +32356,12 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Total solute ion transformation boundary</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
-        <bervo:BERVO_measurement_of rdf:resource="NA"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000112"/>
     </Class>
     
 
@@ -32303,9 +32375,10 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Total gaseous ammonia transformation</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
@@ -32322,7 +32395,7 @@
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total precipitated phosphorus containing transformation non-band</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -32344,6 +32417,7 @@
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
@@ -32854,7 +32928,7 @@
         <rdfs:label>Current external water table depth, elevation corrected (&gt;0 lower than soil surface)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
-        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000532"/>
         <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000144"/>
@@ -32970,7 +33044,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Hydraulic conductivity at different moisture levels</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000813"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m.MPa-1.h-1</bervo:BERVO_has_unit>
@@ -32989,7 +33063,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Macropore hydraulic conductivity</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000813"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m.MPa-1.h-1</bervo:BERVO_has_unit>
@@ -33008,8 +33082,8 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Soil micropore hydraulic conductivity for root water uptake</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000813"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>m.MPa-1.h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000012"/>
@@ -33700,6 +33774,7 @@
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000000"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
         <bervo:BERVO_has_unit>m3/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000000"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
@@ -33954,6 +34029,7 @@
         <bervo:BERVO_Attribute rdf:resource="NA"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
         <bervo:BERVO_has_unit>m3/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
@@ -35336,6 +35412,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000259"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000279"/>
         <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
@@ -39087,7 +39164,7 @@
         <rdfs:label>Total solids</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
@@ -39107,7 +39184,7 @@
         <rdfs:label>Total dissolved solids</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000125"/>
@@ -39127,7 +39204,7 @@
         <rdfs:label>Total suspended solids</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000722"/>
@@ -39146,7 +39223,7 @@
         <rdfs:label>Total fixed solids</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
@@ -39165,7 +39242,7 @@
         <rdfs:label>Total volatile solids</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
-        <bervo:BERVO_Qualifier rdf:resource="NA"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mg.L-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000978"/>

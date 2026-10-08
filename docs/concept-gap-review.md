@@ -167,6 +167,12 @@ Permafrost (10) have ENVO classes.
   Biome, Landscape, Region, Zone, Grid cell, Habitat, and Community are all
   loose under Concept.
 - Dead standing tree should carry `standing dead` (4 labels).
+- Chemical transformation sits under Process beside concepts its definition
+  covers: Hydrolysis and Release are chemical transformations, and so, in the
+  chemical sense, is Fixation. A query for variables whose quantity is a
+  chemical transformation finds the transformation rows and misses the 13
+  Fixation variables. Erosion and Uptake, which the variables use as
+  processes in `attributes`, sit under Concept rather than Process.
 
 ## Variables that should point at the new concepts
 
@@ -232,9 +238,106 @@ settled.
   before anything is linked to it.
 
 The heat kinds were the second slice of #83, the water potential terms the
-third, and field capacity and wilting point the fourth. The remaining slices
-are the microbial guilds, the `_pft` variables, time step, transformation, and
-population.
+third, field capacity and wilting point the fourth, the microbial guilds the
+fifth, and chemical transformation the sixth. The remaining slices are the
+`_pft` variables, time step, and population.
+
+The chemical transformation slice put Chemical transformation in `attributes`
+on 22 of the 24 rows whose label says "transformation", all of which had `NA`
+there, and on the two iron adsorption rows below.
+That is the column the other processes named as the quantity of a variable
+already use: Fixation on 13 variables, Mineralization on 6, Erosion on 23.
+(Counting every row gives 14, 7, and 24, because each of the three concept
+rows names itself in its own `attributes`.) Each of
+the 24 is the net rate of change of a pool by reaction, sorption,
+precipitation, or dissolution, which is what the concept's definition says,
+and the substance stays in `measurement_ofs` on all but one. Three rows in
+the set, and the two microbial gas rows, had none there and now do: Nutrient
+on the band nutrient row, Ion on the boundary ion row, Iron dihydroxide on
+Total iron hydroxide adsorption, since FeO2H2 is the dihydroxide, and Gas on
+the two microbial gas rows. (The iron and aluminum
+hydroxide concepts want a look of their own: Iron hydroxide carries the
+synonym Fe(OH)3, which is the trihydroxide's formula, Aluminum dihydroxide
+carries Al(OH)3, and the AlO2H2 row names Aluminum hydroxide.)
+
+Total iron adsorption and Total iron hydroxide adsorption (`BERVO:0001730`,
+`BERVO:0001731`) take it too, though their labels say adsorption. They are
+`TRChem_Fe_sorbed_soil_vr` and `TRChem_FeO2H2_sorbed_soil_vr`, in the same
+run as the ten adsorbed transformation rows, and the EcoSIM source treats them
+as rates: they are set beside `TRChem_AlO2H2_sorbed_soil_vr`, which is declared
+`[mol d-2 h-1]`, reset each hour with it, and the FeO2H2 one is subtracted
+from the dissolved pool as the AlO2H2 one is. Their unit was `mol.m-2` and
+their definitions spoke of a total amount; both now say a rate, in
+`mol.h-1/{grid}` like their siblings.
+
+The other two transformation rows, Microbial gases transformation and Total
+microbial gases transformation (`BERVO:0000919`, `BERVO:0000920`), take Uptake
+instead. Their labels follow EcoSIM's own comment on `trcs_RMicbUptake_vr`,
+"microbial gases transformation", but the code fills it with net microbial
+uptake of each gas (`RCO2NetUptkMicb`, `RCH4UptkAutor`, `RH2NetUptkMicb` in
+MicBGCAPI.F90), and the transport code takes a positive value as a sink.
+The labels may want to say uptake too; that is left to a change of its own.
+
+The one left without a substance is Total adsorbed hydroxide transformation
+non-band (`BERVO:0001732`), because its label is not what its EcoSIM variable
+holds. `trcx_TRSoilChem_vr` is the whole array of adsorbed-species rates the
+geochemical solver returns (GeochemAPI.F90): ammonium, the surface hydroxyl
+and protonated hydroxyl groups, hydrogen phosphate, and dihydrogen phosphate,
+each in both the non-band and the fertilizer band soil. Hydroxide is one
+member and "non-band" is half of it. The definition is further off: it calls
+the variable a cumulative amount, though the unit is a rate, and it reads
+"band" as an oceanic region rather than a fertilizer band. The row wants a
+new label and definition together, settled with someone who knows the
+solver, and until then naming Hydroxide would only make the mistake firmer.
+
+The microbial guild slice named a guild in `measured_ins` on 115 rows, the
+column where 102 rows already named Microbes, 90 of them variables. 66 still
+do. Where a row named Microbes, the
+guild replaced it (36 rows), since every guild sits beneath Microbes. Where a
+row named another medium, such as Soil, the guild went beside it (37 rows), as
+Soil|Microbes already did for heterotrophic respiration. The other 42 rows had
+`NA`. The rows came from labels and definitions that name the guild or its
+process: heterotrophic 32, autotrophic 20, nitrifiers 15 (the ammonia and
+nitrite oxidation rows among them), denitrifiers 12, methanogens 9 (six of
+them on the hydrogenotrophic and acetotrophic terms), diazotrophs 12 (the
+nodule nitrogen fixers among them, since Diazotrophs covers symbionts),
+fermenters 4, methanotrophs 5, fungi 3, aerobic heterotrophs 3 (EcoSIM's
+"aerobic bacteria"), and mycorrhizal fungi 1, which takes
+`Root|Mycorrhizal fungi` because it is an exchange between the two. 21 of the
+115 are the `NitroPars.txt` oxidation rates, half-saturation constants, and
+growth efficiencies, which name their guild in the label, or, on the carbon
+dioxide and methane half-saturation constants, in the definition. The five
+heterotrophic nitrate, nitrite and nitrous oxide uptake rows
+(`BERVO:0001005`-`BERVO:0001009`) had Microbes alone, where their band and
+non-band neighbours had Soil beside it; all ten now read
+`Soil|Heterotrophic microbes`. The plant nitrogen fixation rows follow the same
+rule, medium and guild together: Root nitrogen fixation, its vertical profile,
+Total root nitrogen fixation, Total plant nitrogen fixation, and Nitrogen
+fixation yield from carbon oxidation keep Root or Plant and take Diazotrophs
+beside it, since the bacteria in the nodules do the fixing.
+
+Left out on purpose: the plant autotrophic respiration rows, which are plant
+metabolism and not autotrophic microbes; the Gibbs free energy yields of the
+redox reactions, which are properties of the reactions; Surface litter organic matter in the autotrophic complex
+(`BERVO:0001157`), whose definition is about photosynthetic organisms; and
+Minimum ratio of branch or mycorrhizae to root (`BERVO:0000157`), whose label
+names a branch and whose definition does not.
+
+Heterotrophic respiration as methane (`BERVO:0000011`) names two guilds,
+`Soil|Methanogens|Methanotrophs`. Its label says heterotrophic, but in EcoSIM
+`ECO_HR_CH4_vr` is set from `RCH4UptkAutor` (RedistMod.F90), which
+MicBGCFGMod.F90 computes as microbial methane production netted against
+methanotroph oxidation: "complete net microbial CH4-C uptake; negative values
+represent production". Neither guild sits under Heterotrophic microbes, and
+the variable is not production alone. It is the one row counted under both guilds
+above.
+
+Naming an organism group in `measured_ins` follows the precedent the rows
+already set, but the ontology is not uniform on it. Microbial cell density
+and Colony-forming unit density (`BERVO:0001987`, `BERVO:0001990`) put
+Microbes in `measurement_ofs` and point at `BERVO:involves_taxa`, an object
+property with no template column. If that property gets a column, the guild
+rows here and the rows still naming Microbes are the set to move.
 
 The water potential slice put the terms in `attributes` rather than
 `measurement_ofs`, because Water potential sits under Physical property and
@@ -272,5 +375,58 @@ between the two points, so they name both. Excess water (`BERVO:0001769`) was
 left out. Its definition says "beyond field capacity" once, and its own
 quantity is mobile water, not a state of the soil.
 
+A sweep for concepts that a variable's label names but its own columns do not
+reference filled 62 cells beside the earlier slices. The concepts were mostly added for the ODM2
+alignment and the concept gap review, and few rows used them:
+
+- `attributes`: Hydraulic conductivity on five rows. On the root water uptake
+  one it replaced Uptake, which moved to `contexts`, since the label names
+  the uptake the conductivity serves. Electrical conductivity on Measured
+  electrical conductivity; Bulk density in place of Density on the three bulk
+  density rows.
+- `measurement_ofs`: Dissolved organic matter on seven rows, in place of the
+  generic Organic matter on four of them; Dissolved organic carbon in place of
+  Organic carbon on Dissolved organic carbon concentration, the same move one
+  level down.
+- `measured_ins`: Petiole on the two petiole growth parameters, and on Petiole
+  length:mass during growth, which had it the wrong way round: Growth in
+  `measured_ins` and Petiole in `measurement_ofs`. It now reads as its sibling
+  Internode length:mass during growth does, `measured_ins=Petiole` and
+  `contexts=Growth`, so Petiole sits in one column on all three rows.
+- `qualifiers`: Cumulative on 14 of the 15 rows whose label begins
+  "Cumulative", the 14 that accumulate over time, beside the Total or Net
+  they had, and on Pft cumulative nodule infection and Pft cumulative
+  phosphorus uptake, the two siblings of Pft cumulative nitrogen uptake, which
+  already carried it; Gross on the three gross primary productivity and gross
+  carbon dioxide fixation rows;
+  Daily on seven, Yearly on the two mean annual rows, Current on three, Hourly
+  on one, Gaseous on two, Aqueous on two; Total on the five "Total … solids"
+  rows.
+
+Left out: Cumulative depth to bottom of snowpack layer (`BERVO:0001570`), a
+sum down through layers rather than over time. Gross alpha activity and Gross
+beta activity (`BERVO:0002116`, `BERVO:0002117`), where gross means the
+nuclides are not told apart, which is not what Gross means here. Soil
+electrical conductivity (`BERVO:0000916`), whose unit `mol/{grid}` is not a
+conductivity. Here the label is what is wrong: EcoSIM declares `UION_col` as
+"total soil ion content, [mol d-2]", which agrees with the row's unit, its
+`attributes=Content`, and its `measurement_ofs=Ion`. The fix is a relabel to
+a soil ion content, with the conductivity label dropped, and that belongs to a
+change of its own. The two thermal conductivity
+rows (`BERVO:0001486`, `BERVO:0001487`), which are the numerator and the
+denominator of a formula rather than conductivities. The two parameters to
+calculate an hourly air temperature and vapor pressure from the daily value
+(`BERVO:0001321`, `BERVO:0001327`), which keep Hourly alone: the daily value is
+their input, and the quantity they set is hourly. The nine root primary
+axes rows: Secondary axes is named in `contexts` on one row and in
+`measurement_ofs` on another, so the column for Primary axes is not settled.
+
 Behind this is an older backlog: 128 labels name Carbon and do not reference
 it, 69 Water, 62 Irrigation, 45 Soil.
+
+A sweep keyed on the EcoSIM name would reach rows the label sweeps cannot.
+44 variables have `_CumYr` in their EcoSIM name, a total accumulated from the
+start of the year. 34 of them lack Cumulative and none carries Yearly. Their
+labels mostly say "Total" (24 of the 44), such as Total canopy ammonia flux
+(`NH3Emis_CumYr_pft`), and the twelve fire emission rows (`*byFire_CumYr_*`)
+carry no time qualifier at all.
