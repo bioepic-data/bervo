@@ -32275,15 +32275,15 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001730">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
-        <obo:IAO_0000115>The total amount of dissolved iron that becomes bound to soil particles, mineral surfaces, or organic matter through sorption processes in terrestrial or aquatic systems. This parameter is important for understanding iron bioavailability, redox chemistry, and the role of iron in controlling phosphorus cycling and trace metal mobility in environmental systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which dissolved iron is adsorbed onto soil surfaces in a soil layer, per grid cell and hour, as computed by the geochemical solver.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TRChem_Fe_sorbed_soil_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 8 2026), from EcoSIM AqueChemDatatype.F90 and GeochemAPI.F90 for issue #83</rdfs:comment>
         <rdfs:label>Total iron adsorption</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>mol.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000182"/>
     </Class>
@@ -32294,15 +32294,15 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001731">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
-        <obo:IAO_0000115>The total amount of iron hydroxide (FeOH2) that becomes adsorbed to solid surfaces in soil or aquatic systems, representing an important iron mineral phase. This parameter controls iron bioavailability and affects the sorption of phosphorus and other trace elements, playing a crucial role in biogeochemical cycling and water chemistry in iron-rich environments.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which iron dihydroxide, Fe(OH)2, is adsorbed onto soil surfaces in a soil layer, per grid cell and hour, as computed by the geochemical solver; the amount adsorbed is removed from the dissolved pool.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TRChem_FeO2H2_sorbed_soil_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 8 2026), from EcoSIM AqueChemDatatype.F90 and GeochemAPI.F90 for issue #83</rdfs:comment>
         <rdfs:label>Total iron hydroxide adsorption</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="NA"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="NA"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>mol.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="NA"/>
         <bervo:BERVO_measurement_of rdf:resource="NA"/>
     </Class>

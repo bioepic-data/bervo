@@ -246,6 +246,16 @@ the 24 is the net rate of change of a pool by reaction, sorption,
 precipitation, or dissolution, which is what the concept's definition says,
 and the substance stays in `measurement_ofs`.
 
+Total iron adsorption and Total iron hydroxide adsorption (`BERVO:0001730`,
+`BERVO:0001731`) take it too, though their labels say adsorption. They are
+`TRChem_Fe_sorbed_soil_vr` and `TRChem_FeO2H2_sorbed_soil_vr`, in the same
+run as the ten adsorbed transformation rows, and the EcoSIM source treats them
+as rates: they are set beside `TRChem_AlO2H2_sorbed_soil_vr`, which is declared
+`[mol d-2 h-1]`, reset each hour with it, and the FeO2H2 one is subtracted
+from the dissolved pool as the AlO2H2 one is. Their unit was `mol.m-2` and
+their definitions spoke of a total amount; both now say a rate, in
+`mol.h-1/{grid}` like their siblings.
+
 The microbial guild slice named a guild in `measured_ins` on 115 rows, the
 column where 102 rows already named Microbes, 90 of them variables. 66 still
 do. Where a row named Microbes, the
