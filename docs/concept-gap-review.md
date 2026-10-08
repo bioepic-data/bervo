@@ -339,12 +339,12 @@ alignment and the concept gap review, and few rows used them:
   `measured_ins` and Petiole in `measurement_ofs`. It now reads as its sibling
   Internode length:mass during growth does, `measured_ins=Petiole` and
   `contexts=Growth`, so Petiole sits in one column on all three rows.
-- `qualifiers`: Cumulative on the 14 rows whose label begins "Cumulative" and
-  that accumulate over time, beside the Total or Net they had, and on Pft
-  cumulative nodule infection and Pft cumulative phosphorus uptake, the two
-  siblings of Pft cumulative nitrogen uptake, which already carried it; Gross
-  on the
-  three gross primary productivity and gross carbon dioxide fixation rows;
+- `qualifiers`: Cumulative on 14 of the 15 rows whose label begins
+  "Cumulative", the 14 that accumulate over time, beside the Total or Net
+  they had, and on Pft cumulative nodule infection and Pft cumulative
+  phosphorus uptake, the two siblings of Pft cumulative nitrogen uptake, which
+  already carried it; Gross on the three gross primary productivity and gross
+  carbon dioxide fixation rows;
   Daily on seven, Yearly on the two mean annual rows, Current on three, Hourly
   on one, Gaseous on two, Aqueous on two; Total on the five "Total … solids"
   rows.
