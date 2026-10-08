@@ -321,5 +321,34 @@ between the two points, so they name both. Excess water (`BERVO:0001769`) was
 left out. Its definition says "beyond field capacity" once, and its own
 quantity is mobile water, not a state of the soil.
 
+A sweep for concepts that a variable's label names and its own columns do not
+filled 55 cells beside the slices. The concepts were mostly added for the ODM2
+alignment and the concept gap review, and few rows used them:
+
+- `attributes`: Hydraulic conductivity on five rows, replacing Uptake on the
+  root water uptake one; Electrical conductivity on Measured electrical
+  conductivity; Bulk density in place of Density on the three bulk density
+  rows.
+- `measurement_ofs`: Dissolved organic matter on seven rows, in place of the
+  generic Organic matter on four of them.
+- `measured_ins`: Petiole on the two petiole growth parameters.
+- `qualifiers`: Cumulative on the 14 rows whose label begins "Cumulative" and
+  that accumulate over time, beside the Total or Net they had; Gross on the
+  three gross primary productivity and gross carbon dioxide fixation rows;
+  Daily on seven, Yearly on the two mean annual rows, Current on three, Hourly
+  on one, Gaseous on two, Aqueous on two; Total on the five "Total … solids"
+  rows.
+
+Left out: Cumulative depth to bottom of snowpack layer (`BERVO:0001570`), a
+sum down through layers rather than over time. Gross alpha activity and Gross
+beta activity (`BERVO:0002116`, `BERVO:0002117`), where gross means the
+nuclides are not told apart, which is not what Gross means here. Soil
+electrical conductivity (`BERVO:0000916`), whose unit `mol/{grid}` is not a
+conductivity; the unit wants settling first. The two thermal conductivity
+rows (`BERVO:0001486`, `BERVO:0001487`), which are the numerator and the
+denominator of a formula rather than conductivities. The nine root primary
+axes rows: Secondary axes is named in `contexts` on one row and in
+`measurement_ofs` on another, so the column for Primary axes is not settled.
+
 Behind this is an older backlog: 128 labels name Carbon and do not reference
 it, 69 Water, 62 Irrigation, 45 Soil.
