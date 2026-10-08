@@ -112,6 +112,11 @@ CURATEGPT_OBO ?= ../../$(ONT).obo
 CURATEGPT_DIR = $(TMPDIR)/curategpt
 CURATEGPT_DB = $(CURATEGPT_DIR)/$(ONT).db
 CURATEGPT_PREFIXES = $(CURATEGPT_DIR)/prefixes.csv
+# OAK sends every selected term to the model, including terms that already
+# have a definition (oaklib's LLMImplementation.generate_definitions does not
+# check). Nearly every BERVO term has one, so name the terms you want, e.g.
+#   make generate-definitions DEFINITION_TERMS="BERVO:0001234 BERVO:0005678"
+DEFINITION_TERMS ?= .all
 DEFINITION_STYLE_HINTS = Write definitions as if they come from an ontology of parameters for earth systems modeling.
 
 .PHONY: curategpt-db curategpt-index curategpt-index-ontology generate-definitions
@@ -147,6 +152,6 @@ curategpt-index-ontology: $(CURATEGPT_DB)
 
 # Writes suggested definitions as KGCL; it does not edit bervo-src.csv.
 $(CURATEGPT_DIR)/definitions.kgcl.json: $(CURATEGPT_DB)
-	runoak --stacktrace -v -i llm:sqlite:$< generate-definitions .all -O json -o $@ --style-hints "$(DEFINITION_STYLE_HINTS)"
+	runoak --stacktrace -v -i llm:sqlite:$< generate-definitions $(DEFINITION_TERMS) -O json -o $@ --style-hints "$(DEFINITION_STYLE_HINTS)"
 
 generate-definitions: $(CURATEGPT_DIR)/definitions.kgcl.json
