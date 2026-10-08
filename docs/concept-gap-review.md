@@ -232,9 +232,34 @@ settled.
   before anything is linked to it.
 
 The heat kinds were the second slice of #83, the water potential terms the
-third, and field capacity and wilting point the fourth. The remaining slices
-are the microbial guilds, the `_pft` variables, time step, transformation, and
-population.
+third, field capacity and wilting point the fourth, and the microbial guilds
+the fifth. The remaining slices are the `_pft` variables, time step,
+transformation, and population.
+
+The microbial guild slice named a guild in `measured_ins` on 88 rows, the
+column where 90 rows already named Microbes. Where a row named Microbes, the
+guild replaced it (33 rows), since every guild sits beneath Microbes. Where a
+row named another medium, such as Soil, the guild went beside it (32 rows), as
+Soil|Microbes already did for heterotrophic respiration. The other 23 rows had
+`NA`. The rows came from labels and definitions that name the guild or its
+process: heterotrophic 30, autotrophic 19, nitrifiers 9 (the ammonia and
+nitrite oxidation rows among them), denitrifiers 9, diazotrophs 6 (the
+nodule nitrogen fixers among them, since Diazotrophs covers symbionts),
+fermenters 3, aerobic heterotrophs 3 (EcoSIM's "aerobic bacteria"),
+methanogens 4 (two of them on the hydrogenotrophic and acetotrophic
+terms), methanotrophs 2, fungi 2, and
+mycorrhizal fungi 1, which takes `Root|Mycorrhizal fungi` because it is an
+exchange between the two.
+
+Left out on purpose: the plant autotrophic respiration rows, which are plant
+metabolism and not autotrophic microbes; the Gibbs free energy yields of the
+redox reactions, which are properties of the reactions; Heterotrophic
+respiration as methane (`BERVO:0000011`), whose label says heterotrophic while
+its methane comes from methanogens, which do not sit under Heterotrophic
+microbes; Surface litter organic matter in the autotrophic complex
+(`BERVO:0001157`), whose definition is about photosynthetic organisms; and
+Minimum ratio of branch or mycorrhizae to root (`BERVO:0000157`), whose label
+names a branch and whose definition does not.
 
 The water potential slice put the terms in `attributes` rather than
 `measurement_ofs`, because Water potential sits under Physical property and
