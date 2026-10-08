@@ -362,3 +362,10 @@ axes rows: Secondary axes is named in `contexts` on one row and in
 
 Behind this is an older backlog: 128 labels name Carbon and do not reference
 it, 69 Water, 62 Irrigation, 45 Soil.
+
+A sweep keyed on the EcoSIM name would reach rows the label sweeps cannot.
+44 variables have `_CumYr` in their EcoSIM name, a total accumulated from the
+start of the year. 34 of them lack Cumulative and none carries Yearly. Their
+labels mostly say "Total" (24 of the 44), such as Total canopy ammonia flux
+(`NH3Emis_CumYr_pft`), and the twelve fire emission rows (`*byFire_CumYr_*`)
+carry no time qualifier at all.
