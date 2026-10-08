@@ -108,6 +108,12 @@ remove-old-input:
 #
 # The inputs are the released files at the repository root, so the results
 # reflect the last release rather than unreleased edits to bervo-src.csv.
+#
+# Old root Makefile target    Target here
+#   %.db: %.owl                 curategpt-db
+#   index-ontology              curategpt-index           (curategpt view index)
+#   index-ontology-dragon       curategpt-index-ontology  (curategpt ontology index)
+#   tmp/defs.kgcl.json          generate-definitions
 
 CURATEGPT_OWL ?= ../../$(ONT).owl
 CURATEGPT_OBO ?= ../../$(ONT).obo
