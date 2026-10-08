@@ -237,7 +237,8 @@ fifth, and chemical transformation the sixth. The remaining slices are the
 `_pft` variables, time step, and population.
 
 The chemical transformation slice put Chemical transformation in `attributes`
-on the 24 rows whose label says "transformation", all of which had `NA` there.
+on 22 of the 24 rows whose label says "transformation", all of which had `NA`
+there, and on the two iron adsorption rows below.
 That is the column the other processes named as the quantity of a variable
 already use: Fixation on 13 variables, Mineralization on 6, Erosion on 23.
 (Counting every row gives 14, 7, and 24, because each of the three concept
@@ -255,6 +256,14 @@ as rates: they are set beside `TRChem_AlO2H2_sorbed_soil_vr`, which is declared
 from the dissolved pool as the AlO2H2 one is. Their unit was `mol.m-2` and
 their definitions spoke of a total amount; both now say a rate, in
 `mol.h-1/{grid}` like their siblings.
+
+The other two transformation rows, Microbial gases transformation and Total
+microbial gases transformation (`BERVO:0000919`, `BERVO:0000920`), take Uptake
+instead. Their labels follow EcoSIM's own comment on `trcs_RMicbUptake_vr`,
+"microbial gases transformation", but the code fills it with net microbial
+uptake of each gas (`RCO2NetUptkMicb`, `RCH4UptkAutor`, `RH2NetUptkMicb` in
+MicBGCAPI.F90), and the transport code takes a positive value as a sink.
+The labels may want to say uptake too; that is left to a change of its own.
 
 The microbial guild slice named a guild in `measured_ins` on 115 rows, the
 column where 102 rows already named Microbes, 90 of them variables. 66 still
