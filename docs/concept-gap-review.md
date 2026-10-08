@@ -239,7 +239,9 @@ fifth, and chemical transformation the sixth. The remaining slices are the
 The chemical transformation slice put Chemical transformation in `attributes`
 on the 24 rows whose label says "transformation", all of which had `NA` there.
 That is the column the other processes named as the quantity of a variable
-already use: Fixation on 13 rows, Mineralization on 6, Erosion on 23. Each of
+already use: Fixation on 13 variables, Mineralization on 6, Erosion on 23.
+(Counting every row gives 14, 7, and 24, because each of the three concept
+rows names itself in its own `attributes`.) Each of
 the 24 is the net rate of change of a pool by reaction, sorption,
 precipitation, or dissolution, which is what the concept's definition says,
 and the substance stays in `measurement_ofs`.
