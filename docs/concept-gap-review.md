@@ -277,6 +277,13 @@ represent production". Neither guild sits under Heterotrophic microbes, and
 the variable is not production alone. It is the one row counted under both guilds
 above.
 
+Naming an organism group in `measured_ins` follows the precedent the rows
+already set, but the ontology is not uniform on it. Microbial cell density
+and Colony-forming unit density (`BERVO:0001987`, `BERVO:0001990`) put
+Microbes in `measurement_ofs` and point at `BERVO:involves_taxa`, an object
+property with no template column. If that property gets a column, the guild
+rows here and the rows still naming Microbes are the set to move.
+
 The water potential slice put the terms in `attributes` rather than
 `measurement_ofs`, because Water potential sits under Physical property and
 that is overwhelmingly where the Physical property tree is used. Of its 45
