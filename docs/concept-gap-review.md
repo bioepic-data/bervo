@@ -232,9 +232,17 @@ settled.
   before anything is linked to it.
 
 The heat kinds were the second slice of #83, the water potential terms the
-third, field capacity and wilting point the fourth, and the microbial guilds
-the fifth. The remaining slices are the `_pft` variables, time step,
-transformation, and population.
+third, field capacity and wilting point the fourth, the microbial guilds the
+fifth, and chemical transformation the sixth. The remaining slices are the
+`_pft` variables, time step, and population.
+
+The chemical transformation slice put Chemical transformation in `attributes`
+on the 24 rows whose label says "transformation", all of which had `NA` there.
+That is the column the other processes named as the quantity of a variable
+already use: Fixation on 13 rows, Mineralization on 6, Erosion on 23. Each of
+the 24 is the net rate of change of a pool by reaction, sorption,
+precipitation, or dissolution, which is what the concept's definition says,
+and the substance stays in `measurement_ofs`.
 
 The microbial guild slice named a guild in `measured_ins` on 115 rows, the
 column where 102 rows already named Microbes, 90 of them variables. 66 still
