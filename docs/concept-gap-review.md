@@ -245,11 +245,11 @@ already use: Fixation on 13 variables, Mineralization on 6, Erosion on 23.
 rows names itself in its own `attributes`.) Each of
 the 24 is the net rate of change of a pool by reaction, sorption,
 precipitation, or dissolution, which is what the concept's definition says,
-and the substance stays in `measurement_ofs`. Three rows in the set, and the
-two microbial gas rows, had none there and now do: Nutrient on the band
-nutrient row, Ion on the boundary ion row,
-Iron dihydroxide on Total iron hydroxide adsorption, since FeO2H2 is the
-dihydroxide, and Gas on the two microbial gas rows. (The iron and aluminum
+and the substance stays in `measurement_ofs` on all but one. Three rows in
+the set, and the two microbial gas rows, had none there and now do: Nutrient
+on the band nutrient row, Ion on the boundary ion row, Iron dihydroxide on
+Total iron hydroxide adsorption, since FeO2H2 is the dihydroxide, and Gas on
+the two microbial gas rows. (The iron and aluminum
 hydroxide concepts want a look of their own: Iron hydroxide carries the
 synonym Fe(OH)3, which is the trihydroxide's formula, Aluminum dihydroxide
 carries Al(OH)3, and the AlO2H2 row names Aluminum hydroxide.)
@@ -271,6 +271,18 @@ instead. Their labels follow EcoSIM's own comment on `trcs_RMicbUptake_vr`,
 uptake of each gas (`RCO2NetUptkMicb`, `RCH4UptkAutor`, `RH2NetUptkMicb` in
 MicBGCAPI.F90), and the transport code takes a positive value as a sink.
 The labels may want to say uptake too; that is left to a change of its own.
+
+The one left without a substance is Total adsorbed hydroxide transformation
+non-band (`BERVO:0001732`), because its label is not what its EcoSIM variable
+holds. `trcx_TRSoilChem_vr` is the whole array of adsorbed-species rates the
+geochemical solver returns (GeochemAPI.F90): ammonium, the surface hydroxyl
+and protonated hydroxyl groups, hydrogen phosphate, and dihydrogen phosphate,
+each in both the non-band and the fertilizer band soil. Hydroxide is one
+member and "non-band" is half of it. The definition is further off: it calls
+the variable a cumulative amount, though the unit is a rate, and it reads
+"band" as an oceanic region rather than a fertilizer band. The row wants a
+new label and definition together, settled with someone who knows the
+solver, and until then naming Hydroxide would only make the mistake firmer.
 
 The microbial guild slice named a guild in `measured_ins` on 115 rows, the
 column where 102 rows already named Microbes, 90 of them variables. 66 still
