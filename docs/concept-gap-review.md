@@ -167,6 +167,12 @@ Permafrost (10) have ENVO classes.
   Biome, Landscape, Region, Zone, Grid cell, Habitat, and Community are all
   loose under Concept.
 - Dead standing tree should carry `standing dead` (4 labels).
+- Chemical transformation sits under Process beside concepts its definition
+  covers: Hydrolysis and Release are chemical transformations, and so, in the
+  chemical sense, is Fixation. A query for variables whose quantity is a
+  chemical transformation finds the transformation rows and misses the 13
+  Fixation variables. Erosion and Uptake, which the variables use as
+  processes in `attributes`, sit under Concept rather than Process.
 
 ## Variables that should point at the new concepts
 
