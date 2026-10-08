@@ -237,7 +237,8 @@ the fifth. The remaining slices are the `_pft` variables, time step,
 transformation, and population.
 
 The microbial guild slice named a guild in `measured_ins` on 115 rows, the
-column where 90 rows already named Microbes. Where a row named Microbes, the
+column where 102 rows already named Microbes, 90 of them variables. 66 still
+do. Where a row named Microbes, the
 guild replaced it (36 rows), since every guild sits beneath Microbes. Where a
 row named another medium, such as Soil, the guild went beside it (37 rows), as
 Soil|Microbes already did for heterotrophic respiration. The other 42 rows had
