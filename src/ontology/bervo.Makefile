@@ -121,10 +121,13 @@ $(CURATEGPT_DIR):
 
 # semsql has no prefix for the w3id.org BERVO base, so without this it stores
 # every term as a full IRI and BERVO: CURIEs find nothing. -P replaces the
-# default prefixes rather than adding to them, hence the copy.
+# default prefixes rather than adding to them, hence the copy. Written to a
+# temporary file first: a partial prefixes.csv would otherwise look up to date
+# and quietly produce that full-IRI database.
 $(CURATEGPT_PREFIXES): | $(CURATEGPT_DIR)
-	cat "$$(python3 -c 'import pathlib, semsql; print(pathlib.Path(semsql.__path__[0], "builder", "prefixes", "prefixes.csv"))')" > $@
-	echo 'BERVO,https://w3id.org/bervo/BERVO_' >> $@
+	cat "$$(python3 -c 'import pathlib, semsql; print(pathlib.Path(semsql.__path__[0], "builder", "prefixes", "prefixes.csv"))')" > $@.tmp
+	echo 'BERVO,https://w3id.org/bervo/BERVO_' >> $@.tmp
+	mv $@.tmp $@
 
 # semsql builds <name>.db from <name>.owl in the same directory.
 $(CURATEGPT_DB): $(CURATEGPT_OWL) $(CURATEGPT_PREFIXES) | $(CURATEGPT_DIR)
