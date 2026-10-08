@@ -360,7 +360,10 @@ conductivity. Here the label is what is wrong: EcoSIM declares `UION_col` as
 a soil ion content, with the conductivity label dropped, and that belongs to a
 change of its own. The two thermal conductivity
 rows (`BERVO:0001486`, `BERVO:0001487`), which are the numerator and the
-denominator of a formula rather than conductivities. The nine root primary
+denominator of a formula rather than conductivities. The two parameters to
+calculate an hourly air temperature and vapor pressure from the daily value
+(`BERVO:0001321`, `BERVO:0001327`), which keep Hourly alone: the daily value is
+their input, and the quantity they set is hourly. The nine root primary
 axes rows: Secondary axes is named in `contexts` on one row and in
 `measurement_ofs` on another, so the column for Primary axes is not settled.
 
