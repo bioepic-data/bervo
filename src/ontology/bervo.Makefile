@@ -147,8 +147,10 @@ $(CURATEGPT_PREFIXES): bervo.Makefile | $(CURATEGPT_DIR)
 	mv $@.tmp $@
 
 # semsql builds <name>.db from <name>.owl in the same directory.
-$(CURATEGPT_DB): $(CURATEGPT_OWL) $(CURATEGPT_PREFIXES) | $(CURATEGPT_DIR)
-	cp $< $(CURATEGPT_DIR)/$(ONT).owl
+$(CURATEGPT_DIR)/$(ONT).owl: $(CURATEGPT_OWL) | $(CURATEGPT_DIR)
+	cp $< $@
+
+$(CURATEGPT_DB): $(CURATEGPT_DIR)/$(ONT).owl $(CURATEGPT_PREFIXES)
 	rm -f $@
 	semsql make -P $(CURATEGPT_PREFIXES) $@
 
