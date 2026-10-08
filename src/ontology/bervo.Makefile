@@ -128,8 +128,9 @@ $(CURATEGPT_DIR):
 # every term as a full IRI and BERVO: CURIEs find nothing. -P replaces the
 # default prefixes rather than adding to them, hence the copy. Written to a
 # temporary file first: a partial prefixes.csv would otherwise look up to date
-# and quietly produce that full-IRI database.
-$(CURATEGPT_PREFIXES): | $(CURATEGPT_DIR)
+# and quietly produce that full-IRI database. Depends on this makefile because
+# the BERVO line is set here.
+$(CURATEGPT_PREFIXES): bervo.Makefile | $(CURATEGPT_DIR)
 	cat "$$(python3 -c 'import pathlib, semsql; print(pathlib.Path(semsql.__path__[0], "builder", "prefixes", "prefixes.csv"))')" > $@.tmp
 	echo 'BERVO,https://w3id.org/bervo/BERVO_' >> $@.tmp
 	mv $@.tmp $@
@@ -151,7 +152,10 @@ curategpt-index-ontology: $(CURATEGPT_DB)
 	curategpt ontology index -c ont_$(ONT) -m openai: sqlite:$<
 
 # Writes suggested definitions as KGCL; it does not edit bervo-src.csv.
-$(CURATEGPT_DIR)/definitions.kgcl.json: $(CURATEGPT_DB)
+# Depends on this makefile so that editing DEFINITION_STYLE_HINTS or
+# DEFINITION_TERMS here reruns it. A value given on the command line does not
+# change any file, so add -B (or delete the output) when you pass one.
+$(CURATEGPT_DIR)/definitions.kgcl.json: $(CURATEGPT_DB) bervo.Makefile
 	runoak --stacktrace -v -i llm:sqlite:$< generate-definitions $(DEFINITION_TERMS) -O json -o $@ --style-hints "$(DEFINITION_STYLE_HINTS)"
 
 generate-definitions: $(CURATEGPT_DIR)/definitions.kgcl.json
