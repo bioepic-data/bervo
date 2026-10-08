@@ -354,7 +354,11 @@ sum down through layers rather than over time. Gross alpha activity and Gross
 beta activity (`BERVO:0002116`, `BERVO:0002117`), where gross means the
 nuclides are not told apart, which is not what Gross means here. Soil
 electrical conductivity (`BERVO:0000916`), whose unit `mol/{grid}` is not a
-conductivity; the unit wants settling first. The two thermal conductivity
+conductivity. Here the label is what is wrong: EcoSIM declares `UION_col` as
+"total soil ion content, [mol d-2]", which agrees with the row's unit, its
+`attributes=Content`, and its `measurement_ofs=Ion`. The fix is a relabel to
+a soil ion content, with the conductivity label dropped, and that belongs to a
+change of its own. The two thermal conductivity
 rows (`BERVO:0001486`, `BERVO:0001487`), which are the numerator and the
 denominator of a formula rather than conductivities. The nine root primary
 axes rows: Secondary axes is named in `contexts` on one row and in
