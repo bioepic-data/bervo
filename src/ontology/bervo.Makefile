@@ -83,3 +83,92 @@ integration_test:
 
 remove-old-input:
 	rm -f $(BERVO_COMPONENT) $(GOOGLE_SHEET_SNAPSHOT) $(GOOGLE_SHEET_EXPORT) bervo_for_sheet.csv
+
+# ----------------------------------------
+# curategpt and OAK LLM utilities
+# ----------------------------------------
+# Optional curation aids, not part of the build or the release (issue #145;
+# moved here from the old repository-root Makefile). They index the released
+# ontology for curategpt and draft definitions with OAK.
+#
+# Where each target runs:
+#   curategpt-db           needs semsql, rdftab and relation-graph, which the
+#                          ODK image has: sh run.sh make curategpt-db
+#   curategpt-index*       needs curategpt, which the ODK image lacks: install
+#                          it locally and run outside Docker, after building
+#                          the database. curategpt 0.2.4 does not declare
+#                          psutil, so: pip install curategpt psutil. Its
+#                          `view index` also imports paperqa, an optional
+#                          extra; curategpt-index fails without it.
+#   generate-definitions   needs the OAK llm extension (pip install llm)
+# curategpt-index-ontology and generate-definitions call a paid API by
+# default, so they need a key (OPENAI_API_KEY) and cost money to run.
+# curategpt-index, like the old root target, passes no model and so uses
+# curategpt's local embedding model.
+#
+# The inputs are the released files at the repository root, so the results
+# reflect the last release rather than unreleased edits to bervo-src.csv.
+#
+# Old root Makefile target    Target here
+#   %.db: %.owl                 curategpt-db
+#   index-ontology              curategpt-index           (curategpt view index)
+#   index-ontology-dragon       curategpt-index-ontology  (curategpt ontology index)
+#   tmp/defs.kgcl.json          generate-definitions
+
+CURATEGPT_OWL ?= ../../$(ONT).owl
+CURATEGPT_OBO ?= ../../$(ONT).obo
+CURATEGPT_DIR = $(TMPDIR)/curategpt
+CURATEGPT_DB = $(CURATEGPT_DIR)/$(ONT).db
+CURATEGPT_PREFIXES = $(CURATEGPT_DIR)/prefixes.csv
+# Embedding model for curategpt-index-ontology. Set it empty to use curategpt's
+# local default, which needs no API key: make curategpt-index-ontology CURATEGPT_MODEL=
+CURATEGPT_MODEL ?= openai:
+# OAK sends every selected term to the model, including terms that already
+# have a definition (oaklib's LLMImplementation.generate_definitions does not
+# check). Nearly every BERVO term has one, so name the terms you want, e.g.
+#   make generate-definitions DEFINITION_TERMS="BERVO:0001234 BERVO:0005678"
+DEFINITION_TERMS ?= .all
+DEFINITION_STYLE_HINTS = Write definitions as if they come from an ontology of parameters for earth systems modeling.
+
+.PHONY: curategpt-db curategpt-index curategpt-index-ontology generate-definitions
+
+$(CURATEGPT_DIR):
+	mkdir -p $@
+
+# semsql has no prefix for the w3id.org BERVO base, so without this it stores
+# every term as a full IRI and BERVO: CURIEs find nothing. -P replaces the
+# default prefixes rather than adding to them, hence the copy. Written to a
+# temporary file first: a partial prefixes.csv would otherwise look up to date
+# and quietly produce that full-IRI database. Depends on this makefile because
+# the BERVO line is set here.
+$(CURATEGPT_PREFIXES): bervo.Makefile | $(CURATEGPT_DIR)
+	cat "$$(python3 -c 'import pathlib, semsql; print(pathlib.Path(semsql.__path__[0], "builder", "prefixes", "prefixes.csv"))')" > $@.tmp
+	echo 'BERVO,https://w3id.org/bervo/BERVO_' >> $@.tmp
+	mv $@.tmp $@
+
+# semsql builds <name>.db from <name>.owl in the same directory.
+$(CURATEGPT_DIR)/$(ONT).owl: $(CURATEGPT_OWL) | $(CURATEGPT_DIR)
+	cp $< $@
+
+$(CURATEGPT_DB): $(CURATEGPT_DIR)/$(ONT).owl $(CURATEGPT_PREFIXES)
+	rm -f $@
+	semsql make -P $(CURATEGPT_PREFIXES) $@
+
+curategpt-db: $(CURATEGPT_DB)
+
+# Collection names match the ones the old root Makefile used, so existing
+# local curategpt databases keep working.
+curategpt-index: $(CURATEGPT_OBO)
+	curategpt view index -V oboformat -c $(ONT) --source-locator $<
+
+curategpt-index-ontology: $(CURATEGPT_DB)
+	curategpt ontology index -c ont_$(ONT) $(if $(CURATEGPT_MODEL),-m $(CURATEGPT_MODEL)) sqlite:$<
+
+# Writes suggested definitions as KGCL; it does not edit bervo-src.csv.
+# Depends on this makefile so that editing DEFINITION_STYLE_HINTS or
+# DEFINITION_TERMS here reruns it. A value given on the command line does not
+# change any file, so add -B (or delete the output) when you pass one.
+$(CURATEGPT_DIR)/definitions.kgcl.json: $(CURATEGPT_DB) bervo.Makefile
+	runoak --stacktrace -v -i llm:sqlite:$< generate-definitions $(DEFINITION_TERMS) -O json -o $@ --style-hints "$(DEFINITION_STYLE_HINTS)"
+
+generate-definitions: $(CURATEGPT_DIR)/definitions.kgcl.json
