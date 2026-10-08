@@ -236,26 +236,30 @@ third, field capacity and wilting point the fourth, and the microbial guilds
 the fifth. The remaining slices are the `_pft` variables, time step,
 transformation, and population.
 
-The microbial guild slice named a guild in `measured_ins` on 110 rows, the
+The microbial guild slice named a guild in `measured_ins` on 115 rows, the
 column where 90 rows already named Microbes. Where a row named Microbes, the
 guild replaced it (36 rows), since every guild sits beneath Microbes. Where a
-row named another medium, such as Soil, the guild went beside it (32 rows), as
+row named another medium, such as Soil, the guild went beside it (37 rows), as
 Soil|Microbes already did for heterotrophic respiration. The other 42 rows had
 `NA`. The rows came from labels and definitions that name the guild or its
 process: heterotrophic 32, autotrophic 20, nitrifiers 15 (the ammonia and
 nitrite oxidation rows among them), denitrifiers 12, methanogens 9 (six of
-them on the hydrogenotrophic and acetotrophic terms), diazotrophs 7 (the
+them on the hydrogenotrophic and acetotrophic terms), diazotrophs 12 (the
 nodule nitrogen fixers among them, since Diazotrophs covers symbionts),
 fermenters 4, methanotrophs 5, fungi 3, aerobic heterotrophs 3 (EcoSIM's
 "aerobic bacteria"), and mycorrhizal fungi 1, which takes
 `Root|Mycorrhizal fungi` because it is an exchange between the two. 21 of the
-110 are the `NitroPars.txt` oxidation rates, half-saturation constants, and
+115 are the `NitroPars.txt` oxidation rates, half-saturation constants, and
 growth efficiencies, which name their guild in the label, or, on the carbon
 dioxide and methane half-saturation constants, in the definition. The five
 heterotrophic nitrate, nitrite and nitrous oxide uptake rows
 (`BERVO:0001005`-`BERVO:0001009`) had Microbes alone, where their band and
 non-band neighbours had Soil beside it; all ten now read
-`Soil|Heterotrophic microbes`.
+`Soil|Heterotrophic microbes`. The plant nitrogen fixation rows follow the same
+rule, medium and guild together: Root nitrogen fixation, its vertical profile,
+Total root nitrogen fixation, Total plant nitrogen fixation, and Nitrogen
+fixation yield from carbon oxidation keep Root or Plant and take Diazotrophs
+beside it, since the bacteria in the nodules do the fixing.
 
 Left out on purpose: the plant autotrophic respiration rows, which are plant
 metabolism and not autotrophic microbes; the Gibbs free energy yields of the
