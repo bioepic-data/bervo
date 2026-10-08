@@ -236,20 +236,20 @@ third, field capacity and wilting point the fourth, and the microbial guilds
 the fifth. The remaining slices are the `_pft` variables, time step,
 transformation, and population.
 
-The microbial guild slice named a guild in `measured_ins` on 109 rows, the
+The microbial guild slice named a guild in `measured_ins` on 110 rows, the
 column where 90 rows already named Microbes. Where a row named Microbes, the
-guild replaced it (35 rows), since every guild sits beneath Microbes. Where a
+guild replaced it (36 rows), since every guild sits beneath Microbes. Where a
 row named another medium, such as Soil, the guild went beside it (32 rows), as
 Soil|Microbes already did for heterotrophic respiration. The other 42 rows had
 `NA`. The rows came from labels and definitions that name the guild or its
 process: heterotrophic 32, autotrophic 20, nitrifiers 15 (the ammonia and
-nitrite oxidation rows among them), denitrifiers 12, methanogens 8 (six of
+nitrite oxidation rows among them), denitrifiers 12, methanogens 9 (six of
 them on the hydrogenotrophic and acetotrophic terms), diazotrophs 7 (the
 nodule nitrogen fixers among them, since Diazotrophs covers symbionts),
-fermenters 4, methanotrophs 4, fungi 3, aerobic heterotrophs 3 (EcoSIM's
+fermenters 4, methanotrophs 5, fungi 3, aerobic heterotrophs 3 (EcoSIM's
 "aerobic bacteria"), and mycorrhizal fungi 1, which takes
 `Root|Mycorrhizal fungi` because it is an exchange between the two. 21 of the
-109 are the `NitroPars.txt` oxidation rates, half-saturation constants, and
+110 are the `NitroPars.txt` oxidation rates, half-saturation constants, and
 growth efficiencies, which name their guild in the label, or, on the carbon
 dioxide and methane half-saturation constants, in the definition. The five
 heterotrophic nitrate, nitrite and nitrous oxide uptake rows
@@ -259,13 +259,19 @@ non-band neighbours had Soil beside it; all ten now read
 
 Left out on purpose: the plant autotrophic respiration rows, which are plant
 metabolism and not autotrophic microbes; the Gibbs free energy yields of the
-redox reactions, which are properties of the reactions; Heterotrophic
-respiration as methane (`BERVO:0000011`), whose label says heterotrophic while
-its methane comes from methanogens, which do not sit under Heterotrophic
-microbes; Surface litter organic matter in the autotrophic complex
+redox reactions, which are properties of the reactions; Surface litter organic matter in the autotrophic complex
 (`BERVO:0001157`), whose definition is about photosynthetic organisms; and
 Minimum ratio of branch or mycorrhizae to root (`BERVO:0000157`), whose label
 names a branch and whose definition does not.
+
+Heterotrophic respiration as methane (`BERVO:0000011`) names two guilds,
+`Soil|Methanogens|Methanotrophs`. Its label says heterotrophic, but in EcoSIM
+`ECO_HR_CH4_vr` is set from `RCH4UptkAutor` (RedistMod.F90), which
+MicBGCFGMod.F90 computes as microbial methane production netted against
+methanotroph oxidation: "complete net microbial CH4-C uptake; negative values
+represent production". Neither guild sits under Heterotrophic microbes, and
+the variable is not production alone. It is the one row counted under both guilds
+above.
 
 The water potential slice put the terms in `attributes` rather than
 `measurement_ofs`, because Water potential sits under Physical property and
