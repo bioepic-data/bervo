@@ -278,9 +278,7 @@ class MakefileIntegrationTest(unittest.TestCase):
         )
         # Covers the COMO case above and every other unresolved IRI, in the
         # files people download rather than only the component.
-        for name in ("bervo.owl", "bervo-full.owl"):
-            self.assertEqual(unresolved_iris(self.ontology_dir / name), {}, name)
-
+        #
         # No BERVO term is an individual. bervo-edit.owl once declared 1,630
         # NamedIndividuals: uncurated residue of an old import, which put that
         # many phantom individuals into every release (#164 review). Punning a
@@ -289,9 +287,11 @@ class MakefileIntegrationTest(unittest.TestCase):
         # fine. If BERVO ever models a term as an individual on purpose, this is
         # a hygiene check to narrow or drop, not a correctness one.
         for name in ("bervo.owl", "bervo-full.owl"):
-            text = (self.ontology_dir / name).read_text(encoding="utf-8")
+            path = self.ontology_dir / name
+            self.assertEqual(unresolved_iris(path), {}, name)
             individuals = re.findall(
-                r'<owl:NamedIndividual rdf:about="https://w3id\.org/bervo/[^"]*"', text
+                r'<owl:NamedIndividual rdf:about="https://w3id\.org/bervo/[^"]*"',
+                path.read_text(encoding="utf-8"),
             )
             self.assertEqual(individuals[:5], [], name)
 
