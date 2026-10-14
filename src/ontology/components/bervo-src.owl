@@ -2719,15 +2719,18 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000157">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>The minimum fraction of mycorrhizal fungal biomass carbon that can be transferred in association with root carbon during carbon exchange processes. This parameter constrains the coupling between plant and mycorrhizal carbon economies and affects the modeling of plant-fungal symbiotic relationships in terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Lower bound on the carbon mass of a shoot branch or of the mycorrhizae, relative to that of the root, used to weight the concentration gradient that drives the transfer of nonstructural carbon, nitrogen and phosphorus between them. In the exchange between root and mycorrhizae it sets a floor on the mycorrhizal weight; in the exchange between each branch and each root layer it keeps either weight from falling below this fraction of the other, so the transfer does not stop when one partner is small.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FSNK</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Minimum ratio of branch or mycorrhizae to root for calculating carbon transfer</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000252"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000145"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000784"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -16682,16 +16685,22 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000996">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
-        <obo:IAO_0000115>The rate of oxygen consumption by heterotrophic microorganisms for aerobic metabolism and respiration processes. This parameter quantifies microbial oxygen demand and is crucial for understanding soil aeration requirements, microbial activity patterns, and the balance between aerobic and anaerobic processes in terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which aerobic heterotrophic microbes would take up dissolved oxygen to oxidise dissolved organic carbon and acetate, before the oxygen supply limits it, resolved by functional guild and organic matter complex in the surface litter and each soil layer.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Aqueous demand</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>RO2DmndHetert</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym>RO2DmndHetert_vr</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>EcoSIM stores this as RO2DmndHetert_vr in MicrobialDataType; RO2DmndHetert is its working copy inside the microbial model. EcoSIM sets it to zero for the anaerobic heterotrophic guilds (acetogenic fermenters, acetogenic nitrogen fixers and acetotrophic methanogens), and sums it with the demand of roots and other microbes into Total root + microbial oxygen uptake (BERVO:0000409).</rdfs:comment>
         <rdfs:comment>Interesting units.  These items below appear to be chemical rates</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
-        <rdfs:label>Aqueous demand</rdfs:label>
+        <rdfs:label>Aqueous oxygen demand by heterotrophic microbes</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000196"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000096"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
     </Class>
     
 
@@ -17090,16 +17099,21 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001018">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
-        <obo:IAO_0000115>Aqueous demand by autotrophic microbes represents the rate of oxygen consumption by autotrophic microorganisms for metabolic processes including nitrification and chemosynthesis. This parameter quantifies the oxygen requirements of nitrifying bacteria and other chemosynthetic microbes and is important for understanding soil aeration needs and the balance between aerobic processes in terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which autotrophic microbes would take up dissolved oxygen for gross respiration and for oxidising their substrate (ammonium, nitrite or methane), before the oxygen supply limits it, resolved by functional guild in the surface litter and each soil layer.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Aqueous demand by autotrophic microbes</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>RO2DmndAutort_vr</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym>RO2MetaDmndAutor_vr</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>EcoSIM renamed RO2DmndAutort_vr to RO2MetaDmndAutor_vr in October 2025 (commit 64e2e2a), declared as aqueous O2 demand by metabolism of autotrophic microbes. Of EcoSIM&apos;s six autotrophic groups, only the ammonia oxidisers, nitrite oxidisers and aerobic methane oxidisers have a demand. It is zero for the hydrogenotrophic methanogens, which set it to zero, and for the two anaerobic methane oxidisers (ANME-2d and NC10), which leave it at its reset value of zero.</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
-        <rdfs:label>Aqueous demand by autotrophic microbes</rdfs:label>
+        <rdfs:label>Aqueous oxygen demand by autotrophic microbes</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000196"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000096"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
     </Class>
     
 
@@ -17797,12 +17811,17 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001059">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000015"/>
-        <obo:IAO_0000115>The active state of a given plant function group for grazing.</obo:IAO_0000115>
+        <obo:IAO_0000115>Number identifying the landscape grazing section to which a plant functional type in a grid cell belongs. When the plant functional type is grazed or browsed, its shoot carbon is averaged over every grid cell where it carries the same section number, so the population is grazed alike across the section.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LSG_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Manual (JHC, Sep 25 2025)</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym>Match plant functional type from different scenarios</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>Earlier definition (Manual, JHC, Sep 25 2025), replaced in issue #160 after the EcoSIM source showed LSG_pft to be a landscape grazing section number: The active state of a given plant function group for grazing.</rdfs:comment>
         <rdfs:comment>PlantMgmtDataType.txt</rdfs:comment>
-        <rdfs:label>Match plant functional type from different scenarios</rdfs:label>
+        <rdfs:label>Landscape grazing section number of a plant functional type</rdfs:label>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000229"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
     </Class>
     
 
@@ -19406,13 +19425,19 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001157">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>The mass of organic matter in surface litter, totalled over the grid cell, that is associated with autotrophic organisms and their byproducts. This parameter represents the carbon pool derived from photosynthetic organisms and affects nutrient cycling and energy flow in decomposer communities.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass of carbon in the living biomass of the autotrophic microbes in the surface litter layer, totalled over the grid cell. EcoSIM keeps these microbes, the ammonia and nitrite oxidisers, the aerobic and anaerobic methane oxidisers and the hydrogenotrophic methanogens, as one autotrophic complex, apart from the heterotrophic microbes it tracks for each litter complex.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RC0ff_col</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym>Surface litter organic matter in the autotrophic complex</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
-        <rdfs:label>Surface litter organic matter in the autotrophic complex</rdfs:label>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <rdfs:comment>The related synonym Surface litter organic matter in the autotrophic complex is this term&apos;s former label, taken from EcoSIM&apos;s declaration of RC0ff_col. It is kept for search, but it is inaccurate. sumSurfOMCK fills RC0ff_col with live autotrophic biomass carbon only; microbial residue, dissolved, sorbed and solid organic matter are counted with the heterotrophic complexes.</rdfs:comment>
+        <rdfs:label>Surface litter autotrophic microbial biomass carbon</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000096"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000296"/>
     </Class>
     
 

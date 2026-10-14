@@ -231,11 +231,15 @@ settled.
   of ground takes Vegetation, as the planting and harvest dates do. The later
   slices of #83 should follow that split rather than re-deriving it.
 
-  One row in the block is left with no relation at all: Match plant functional
-  type from different scenarios (`BERVO:0001059`). It was considered and left.
-  It is scenario bookkeeping rather than a statement about vegetation, and its
-  label and its definition do not agree with each other, which wants settling
-  before anything is linked to it.
+  One row in the block was left with no relation at all: Match plant functional
+  type from different scenarios (`BERVO:0001059`). Its label and its definition
+  did not agree with each other, which wanted settling before anything was
+  linked to it. Issue #160 settled it from the EcoSIM source. `LSG_pft` is the
+  landscape grazing section number, which groups the same plant functional
+  type across grid cells so they are grazed alike, not scenario bookkeeping.
+  The row is now Landscape grazing section number of a plant functional type,
+  with Landscape in `contexts`, Plant functional type in `measurement_ofs` and
+  Category in `value_types`.
 
 The heat kinds were the second slice of #83, the water potential terms the
 third, field capacity and wilting point the fourth, the microbial guilds the
@@ -321,7 +325,10 @@ metabolism and not autotrophic microbes; the Gibbs free energy yields of the
 redox reactions, which are properties of the reactions; Surface litter organic matter in the autotrophic complex
 (`BERVO:0001157`), whose definition is about photosynthetic organisms; and
 Minimum ratio of branch or mycorrhizae to root (`BERVO:0000157`), whose label
-names a branch and whose definition does not.
+names a branch and whose definition does not. Issue #160 settled both from the EcoSIM
+source: `BERVO:0001157` is the carbon of the autotrophic microbes in surface litter
+and is now Surface litter autotrophic microbial biomass carbon, and the label of
+`BERVO:0000157` was right, so its definition was widened to cover branches.
 
 Heterotrophic respiration as methane (`BERVO:0000011`) names two guilds,
 `Soil|Methanogens|Methanotrophs`. Its label says heterotrophic, but in EcoSIM
