@@ -28586,7 +28586,7 @@
         <oboInOwl:hasRelatedSynonym>TRChem_AlO2H2_sorbed_soil_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
-        <rdfs:label>Total adsorbed aluminum hydroxide transformation</rdfs:label>
+        <rdfs:label>Total aluminum dihydroxide adsorption</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -28637,7 +28637,7 @@
         <oboInOwl:hasRelatedSynonym>TRChem_FeO2H2_sorbed_soil_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 8 2026), from EcoSIM AqueChemDatatype.F90 and GeochemAPI.F90 for issue #83</rdfs:comment>
-        <rdfs:label>Total iron hydroxide adsorption</rdfs:label>
+        <rdfs:label>Total iron dihydroxide adsorption</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
