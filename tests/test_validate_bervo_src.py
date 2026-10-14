@@ -460,6 +460,17 @@ class TestClassExpressionColumns(ValidatorTestCase):
             any("cannot be 'NA'" in e for e in report.errors), report.errors
         )
 
+    def test_na_filler_on_obsolete_row_is_only_an_error(self):
+        """A placeholder is not a relationship, as in the term-reference columns."""
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:0000001", "obsolete Old var", category="", obsolete="true",
+                      involves_chemicals="NA"),
+        ]))
+        self.assertTrue(any("cannot be 'NA'" in e for e in report.errors), report.errors)
+        self.assertFalse(
+            any("still carries relationships" in w for w in report.warnings), report.warnings
+        )
+
     def test_split_fillers_are_checked_individually(self):
         report = validator.validate(self.write([
             ROOT,

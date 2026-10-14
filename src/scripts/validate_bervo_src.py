@@ -441,16 +441,17 @@ def validate(path: Path) -> Report:
             if col is None or col >= len(row):
                 continue
             for token in _tokens(row[col]):
-                # The one column that emits a logical axiom: an obsolete row that
-                # keeps it still constrains inference, so it counts as a relationship.
-                relationships.append(column)
                 if _is_placeholder(token):
                     report.error(
                         line,
                         f"{term_id}.{column} is a restriction filler and cannot be "
                         f"{token!r}; leave it empty instead",
                     )
-                elif token in obsolete_terms:
+                    continue
+                # The one column that emits a logical axiom: an obsolete row that
+                # keeps it still constrains inference, so it counts as a relationship.
+                relationships.append(column)
+                if token in obsolete_terms:
                     report.error(
                         line,
                         f"{term_id}.{column} restriction filler {token!r} is an obsolete term",
