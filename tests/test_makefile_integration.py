@@ -37,26 +37,33 @@ def release_chain_overrides() -> list[str]:
 
 RDF_NS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 IRI_ATTRIBUTES = tuple(f"{{{RDF_NS}}}{name}" for name in ("about", "resource", "datatype"))
+# The only schemes the build emits. Checked on the component and the releases.
+ALLOWED_SCHEMES = frozenset({"http", "https"})
 
 
-def relative_iris(path: Path) -> dict[str, int]:
-    """IRI attributes in an RDF/XML file that are not absolute, with counts.
+def unresolved_iris(path: Path) -> dict[str, int]:
+    """IRI attributes in an RDF/XML file that are relative or use a scheme the
+    build never emits, with counts.
+
+    A bare `NA` (#44) or `Class` (#41) has no scheme at all. An unexpanded CURIE
+    (`COMO:0000129`, #43) parses as scheme `como`, so a test for "has a scheme"
+    alone does not see it.
 
     Reads the attribute text as written. An RDF parser would resolve each value
     against the file's xml:base, so `rdf:resource="NA"` would come back as
-    http://www.w3.org/2002/07/NA and look valid (#44).
+    http://www.w3.org/2002/07/NA and look valid.
     """
     found: dict[str, int] = {}
     for _, element in ET.iterparse(path):
         for attribute in IRI_ATTRIBUTES:
             value = element.get(attribute)
-            if value is not None and not urlsplit(value).scheme:
+            if value is not None and urlsplit(value).scheme not in ALLOWED_SCHEMES:
                 found[value] = found.get(value, 0) + 1
     return found
 
 
-class RelativeIriCheckTest(unittest.TestCase):
-    def test_bare_values_are_reported_and_absolute_iris_are_not(self) -> None:
+class UnresolvedIriCheckTest(unittest.TestCase):
+    def test_bare_values_and_curies_are_reported_and_iris_are_not(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "sample.owl"
             path.write_text(
@@ -67,6 +74,7 @@ class RelativeIriCheckTest(unittest.TestCase):
     <bervo:BERVO_Qualifier rdf:resource="NA"/>
     <bervo:BERVO_Context rdf:resource="NA"/>
     <bervo:xref rdf:resource="Class"/>
+    <bervo:xref rdf:resource="COMO:0000129"/>
     <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
     <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
   </rdf:Description>
@@ -74,7 +82,7 @@ class RelativeIriCheckTest(unittest.TestCase):
 ''',
                 encoding="utf-8",
             )
-            self.assertEqual(relative_iris(path), {"NA": 2, "Class": 1})
+            self.assertEqual(unresolved_iris(path), {"NA": 2, "Class": 1, "COMO:0000129": 1})
 
 
 class MakefileIntegrationTest(unittest.TestCase):
@@ -111,19 +119,19 @@ class MakefileIntegrationTest(unittest.TestCase):
         self.assertTrue(component.exists(), "make should regenerate bervo-src.owl")
         self.assertGreater(component.stat().st_size, 0, "generated component should not be empty")
 
-    def test_component_has_no_relative_iris(self) -> None:
-        """Every IRI ROBOT emits must be absolute.
+    def test_component_has_no_unresolved_iris(self) -> None:
+        """Every IRI ROBOT emits must be an http(s) IRI.
 
-        A bare value in an IRI-valued column (`NA`, #44), a value in the wrong
-        column (`Class`, #41) or an undeclared CURIE prefix (#43) all come out as
-        relative IRIs, which the validator can catch only one known case at a time.
+        A bare value in an IRI-valued column (`NA`, #44) or a value in the wrong
+        column (`Class`, #41) comes out as a relative IRI, and an undeclared CURIE
+        prefix (#43) as a CURIE; the validator can catch only one known case at a time.
         """
         component = self.ontology_dir / "components" / "bervo-src.owl"
         component.unlink(missing_ok=True)
 
         self.run_make("components/bervo-src.owl")
 
-        self.assertEqual(relative_iris(component), {})
+        self.assertEqual(unresolved_iris(component), {})
 
     def test_export_google_sheet_copies_repo_tracked_template(self) -> None:
         template = self.ontology_dir / "bervo-src.csv"
