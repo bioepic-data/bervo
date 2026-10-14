@@ -605,8 +605,9 @@ variable. Canopy height is the parent of EcoSIM's Pft canopy height
   calibrated to a concentration.
 - **Biomass rows** name Biomass in `measurement_ofs` and the organism or
   compartment in `measured_ins`, Phytoplankton biomass included.
-- **No Index attribute.** NDVI and the Shannon indices keep `attributes=NA`: the
-  only Index concept (`BERVO:8000488`) is a position identifier.
+- **No Index attribute.** NDVI and the Shannon indices leave `attributes` empty
+  (they held `NA` until issue #127): the only Index concept (`BERVO:8000488`) is a
+  position identifier.
 - **Percent area covered by specified plant has unit `1`**, while its label and
   definition say percent. That is older than this slice.
 - **Vegetation type is categorical**, `NA` with `value_types=Category`; its
