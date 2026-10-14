@@ -28533,10 +28533,11 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001720">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
-        <obo:IAO_0000115>Total solute FeOH3 transformation refers to the total changes or conversions that the iron trihydroxide (FeOH3) solute undergoes in a given system. These transformations can include processes such as precipitation, dissolution, oxidation, reduction, sorption, desorption, or biological uptake and release. The parameter &apos;TRFE3&apos; is valuable in earth systems and geochemical modeling as it influences nutrient cycling, soil formation, and the mobility and bioavailability of nutrients and contaminants.</obo:IAO_0000115>
+        <obo:IAO_0000115>Net rate at which dissolved iron(III) trihydroxide, Fe(OH)3(aq), is produced in a soil layer by the equilibrium reactions of the geochemical solver, with solid Fe(OH)3, with Fe(OH)2(+) and Fe(OH)4(-), and with iron phosphate, per grid cell and hour.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TRChem_FeO3H3_soil_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>At EcoSIM c5e0ae6 this array is allocated but never written. The solver computes the quantity as TRChem_FeO3H3_soil (SaltChemEquilibriaMod.F90) and passes it to the model through trcSalt_RGeoChem_flx_vr (BERVO:0001716).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:label>Total solute iron(III) trihydroxide transformation</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000125"/>
@@ -35978,6 +35979,26 @@
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002158 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002158">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
+        <obo:IAO_0000115>Net rate at which dissolved aluminum trihydroxide, Al(OH)3(aq), is produced in a soil layer by the equilibrium reactions of the geochemical solver, with solid Al(OH)3, with Al(OH)2(+) and Al(OH)4(-), and with aluminum phosphate, per grid cell and hour.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>TRChem_AlO3H3_soil</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>SoluteChemDataType.F90</rdfs:comment>
+        <rdfs:comment>Unlike its iron twin BERVO:0001720, this quantity has no per-layer array in EcoSIM AqueChemDatatype. The solver computes it as TRChem_AlO3H3_soil (SaltChemEquilibriaMod.F90) and passes it to the model through trcSalt_RGeoChem_flx_vr (BERVO:0001716).</rdfs:comment>
+        <rdfs:label>Total solute aluminum trihydroxide transformation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000125"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000222"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000194"/>
     </Class>
     
 
