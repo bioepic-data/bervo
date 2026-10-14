@@ -4,7 +4,9 @@ import tempfile
 import unittest
 import json
 import re
+import xml.etree.ElementTree as ET
 from pathlib import Path
+from urllib.parse import urlsplit
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -31,6 +33,48 @@ def release_chain_overrides() -> list[str]:
     if robot_version() >= (1, 9, 8):
         return []
     return ["OBO_FORMAT_OPTIONS=", "REDUCE_OPTIONS="]
+
+
+RDF_NS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+IRI_ATTRIBUTES = tuple(f"{{{RDF_NS}}}{name}" for name in ("about", "resource", "datatype"))
+
+
+def relative_iris(path: Path) -> dict[str, int]:
+    """IRI attributes in an RDF/XML file that are not absolute, with counts.
+
+    Reads the attribute text as written. An RDF parser would resolve each value
+    against the file's xml:base, so `rdf:resource="NA"` would come back as
+    http://www.w3.org/2002/07/NA and look valid (#44).
+    """
+    found: dict[str, int] = {}
+    for _, element in ET.iterparse(path):
+        for attribute in IRI_ATTRIBUTES:
+            value = element.get(attribute)
+            if value is not None and not urlsplit(value).scheme:
+                found[value] = found.get(value, 0) + 1
+    return found
+
+
+class RelativeIriCheckTest(unittest.TestCase):
+    def test_bare_values_are_reported_and_absolute_iris_are_not(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "sample.owl"
+            path.write_text(
+                f'''<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="{RDF_NS}" xml:base="http://www.w3.org/2002/07/owl"
+         xmlns:bervo="https://w3id.org/bervo/">
+  <rdf:Description rdf:about="https://w3id.org/bervo/BERVO_0000001">
+    <bervo:BERVO_Qualifier rdf:resource="NA"/>
+    <bervo:BERVO_Context rdf:resource="NA"/>
+    <bervo:xref rdf:resource="Class"/>
+    <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
+    <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+  </rdf:Description>
+</rdf:RDF>
+''',
+                encoding="utf-8",
+            )
+            self.assertEqual(relative_iris(path), {"NA": 2, "Class": 1})
 
 
 class MakefileIntegrationTest(unittest.TestCase):
@@ -66,6 +110,20 @@ class MakefileIntegrationTest(unittest.TestCase):
 
         self.assertTrue(component.exists(), "make should regenerate bervo-src.owl")
         self.assertGreater(component.stat().st_size, 0, "generated component should not be empty")
+
+    def test_component_has_no_relative_iris(self) -> None:
+        """Every IRI ROBOT emits must be absolute.
+
+        A bare value in an IRI-valued column (`NA`, #44), a value in the wrong
+        column (`Class`, #41) or an undeclared CURIE prefix (#43) all come out as
+        relative IRIs, which the validator can catch only one known case at a time.
+        """
+        component = self.ontology_dir / "components" / "bervo-src.owl"
+        component.unlink(missing_ok=True)
+
+        self.run_make("components/bervo-src.owl")
+
+        self.assertEqual(relative_iris(component), {})
 
     def test_export_google_sheet_copies_repo_tracked_template(self) -> None:
         template = self.ontology_dir / "bervo-src.csv"

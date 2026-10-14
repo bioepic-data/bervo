@@ -262,7 +262,11 @@ exists, verify the target term exists, and declare any new prefix in
 `src/ontology/bervo.Makefile` or it is emitted as a broken relative IRI.
 
 The checked-in template is expected to be error-free at all times;
-`tests/test_validate_bervo_src.py` enforces that.
+`tests/test_validate_bervo_src.py` enforces that. Behind the validator,
+`tests/test_makefile_integration.py` builds the component and fails if any IRI in it
+is relative. That catches every route to a broken IRI (a bare `NA`, a value in the
+wrong column, an undeclared prefix), including ones the validator does not know about
+(issues #41, #43, #44).
 
 ## Working with the ontology from the command line
 
