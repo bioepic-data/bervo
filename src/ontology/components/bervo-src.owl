@@ -7799,9 +7799,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000475">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>Concentration of the aluminum monohydroxide ion, Al(OH)(2+), in water applied by surface irrigation, as a daily value.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of the aluminum monohydroxide ion, Al(OH)(2+), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CAL1Q</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
         <rdfs:label>Surface irrigation aluminum monohydroxide concentration</rdfs:label>
@@ -7821,6 +7822,7 @@
         <obo:IAO_0000115>The concentration of dissolved aluminum dihydroxide in water used for surface irrigation systems applied to agricultural soils. This aluminum compound forms through hydrolysis reactions and affects water chemistry, soil aluminum dynamics, and potential plant aluminum toxicity in irrigated agricultural systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CAL2Q</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
         <rdfs:label>Surface irrigation aluminum dihydroxide concentration</rdfs:label>
@@ -7840,6 +7842,7 @@
         <obo:IAO_0000115>The concentration of dissolved aluminum trihydroxide in water used for surface irrigation systems applied to agricultural soils. This aluminum hydroxide compound affects water pH, soil chemistry, and aluminum bioavailability, and is important for assessing potential aluminum toxicity impacts on crops in irrigated agricultural systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CAL3Q</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
         <rdfs:label>Surface irrigation aluminum trihydroxide concentration</rdfs:label>
@@ -7859,6 +7862,7 @@
         <obo:IAO_0000115>The concentration of dissolved aluminum tetrahydroxide in water used for surface irrigation systems applied to agricultural soils. This highly hydrated aluminum compound affects water alkalinity, soil aluminum chemistry, and plant aluminum stress, and is relevant for managing aluminum toxicity in irrigated agricultural systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CAL4Q</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
         <rdfs:label>Surface irrigation aluminum tetrahydroxide concentration</rdfs:label>
@@ -7894,9 +7898,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000480">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>Concentration of the iron monohydroxide ion, Fe(OH)(2+), in water applied by surface irrigation, as a daily value.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of the iron monohydroxide ion, Fe(OH)(2+), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CFE1Q</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
         <rdfs:label>Surface irrigation iron monohydroxide concentration</rdfs:label>
@@ -7913,9 +7918,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000481">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>Concentration of the iron dihydroxide ion, Fe(OH)2(+), in water applied by surface irrigation, as a daily value.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of the iron dihydroxide ion, Fe(OH)2(+), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CFE2Q</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
         <rdfs:label>Surface irrigation iron dihydroxide concentration</rdfs:label>
@@ -7932,9 +7938,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000482">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>Concentration of dissolved iron trihydroxide, Fe(OH)3(aq), in water applied by surface irrigation, as a daily value.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of dissolved iron trihydroxide, Fe(OH)3(aq), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CFE3Q</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
         <rdfs:label>Surface irrigation iron trihydroxide concentration</rdfs:label>
@@ -7951,9 +7958,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000483">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>Concentration of the iron tetrahydroxide ion, Fe(OH)4(-), in water applied by surface irrigation, as a daily value.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of the iron tetrahydroxide ion, Fe(OH)4(-), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CFE4Q</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
         <rdfs:label>Surface irrigation iron tetrahydroxide concentration</rdfs:label>
