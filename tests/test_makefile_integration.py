@@ -42,9 +42,11 @@ IRI_ATTRIBUTES = tuple(f"{{{RDF_NS}}}{name}" for name in ("about", "resource", "
 ALLOWED_SCHEMES = frozenset({"http", "https"})
 # The component's xml:base. Once ROBOT has loaded the component, as in a release,
 # a relative IRI has already been resolved against it: rdf:resource="NA" is
-# written out as http://www.w3.org/2002/07/NA. Nothing real lives there but owl#.
+# written out as http://www.w3.org/2002/07/NA. Nothing real lives there but the
+# OWL vocabulary itself: the owl# namespace and the bare OWL ontology IRI.
 XML_BASE_DIR = "http://www.w3.org/2002/07/"
 OWL_NS = "http://www.w3.org/2002/07/owl#"
+OWL_ONTOLOGY_IRI = "http://www.w3.org/2002/07/owl"
 
 
 def unresolved_iris(path: Path) -> Counter[str]:
@@ -68,7 +70,9 @@ def unresolved_iris(path: Path) -> Counter[str]:
             if value is None:
                 continue
             if urlsplit(value).scheme not in ALLOWED_SCHEMES or (
-                value.startswith(XML_BASE_DIR) and not value.startswith(OWL_NS)
+                value.startswith(XML_BASE_DIR)
+                and not value.startswith(OWL_NS)
+                and value != OWL_ONTOLOGY_IRI
             ):
                 found[value] += 1
     return found
@@ -90,6 +94,7 @@ class UnresolvedIriCheckTest(unittest.TestCase):
     <bervo:BERVO_Measured_in rdf:resource="http://www.w3.org/2002/07/Water%20flux"/>
     <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <bervo:conformsTo rdf:resource="http://www.w3.org/2002/07/owl"/>
     <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
   </rdf:Description>
 </rdf:RDF>
