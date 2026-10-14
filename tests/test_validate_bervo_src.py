@@ -323,6 +323,16 @@ class TestReferentialIntegrity(ValidatorTestCase):
         self.assertEqual(report.errors, [])
         self.assertTrue(any("live successor" in w for w in report.warnings), report.warnings)
 
+    def test_replaced_by_rejects_na(self):
+        """No successor is an empty cell, not NA (#127)."""
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:8000001", "obsolete Old concept", category="",
+                      obsolete="true", replaced_by="NA"),
+        ]))
+        self.assertTrue(
+            any("replaced_by cannot be 'NA'" in e for e in report.errors), report.errors
+        )
+
     def test_replaced_by_must_name_an_existing_term(self):
         report = validator.validate(self.write([
             ROOT, row("BERVO:8000001", "obsolete Old concept", category="",
