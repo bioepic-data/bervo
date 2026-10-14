@@ -36933,6 +36933,7 @@
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_135985"/>
         <oboInOwl:hasExactSynonym>Fe(OH)3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>iron(III) hydroxide</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Covers both the dissolved species, Fe(OH)3(aq), and the solid, Fe(OH)3(s); the variable that names this term says which. The equilibrium between the two forms is BERVO:0000089.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:label>Iron trihydroxide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -38525,6 +38526,7 @@
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33130"/>
         <oboInOwl:hasExactSynonym>Al(OH)3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>aluminum(III) hydroxide</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Covers both the dissolved species, Al(OH)3(aq), and the solid, Al(OH)3(s); the variable that names this term says which. The equilibrium between the two forms is BERVO:0000081.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:label>Aluminum trihydroxide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
