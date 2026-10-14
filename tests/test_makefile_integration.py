@@ -80,7 +80,11 @@ def unresolved_iris(path: Path) -> Counter[str]:
             value = element.get(attribute)
             if value is None:
                 continue
-            if urlsplit(value).scheme not in ALLOWED_SCHEMES or (
+            try:
+                scheme = urlsplit(value).scheme
+            except ValueError:  # e.g. "//bad[": report the value, not a traceback
+                scheme = None
+            if scheme not in ALLOWED_SCHEMES or (
                 value.startswith(XML_BASE_DIR)
                 and not value.startswith(OWL_NS)
                 and value != OWL_ONTOLOGY_IRI
@@ -106,6 +110,7 @@ class UnresolvedIriCheckTest(unittest.TestCase):
     <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <bervo:conformsTo rdf:resource="http://www.w3.org/2002/07/owl"/>
+    <bervo:xref rdf:resource="//bad["/>
     <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
   </rdf:Description>
 </rdf:RDF>
@@ -119,6 +124,7 @@ class UnresolvedIriCheckTest(unittest.TestCase):
                     "Class": 1,
                     "COMO:0000129": 1,
                     "http://www.w3.org/2002/07/Water%20flux": 1,
+                    "//bad[": 1,
                 },
             )
 
