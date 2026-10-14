@@ -321,7 +321,10 @@ metabolism and not autotrophic microbes; the Gibbs free energy yields of the
 redox reactions, which are properties of the reactions; Surface litter organic matter in the autotrophic complex
 (`BERVO:0001157`), whose definition is about photosynthetic organisms; and
 Minimum ratio of branch or mycorrhizae to root (`BERVO:0000157`), whose label
-names a branch and whose definition does not.
+names a branch and whose definition does not. Issue #160 settled both from the EcoSIM
+source: `BERVO:0001157` is the carbon of the autotrophic microbes in surface litter
+and is now Surface litter autotrophic microbial biomass carbon, and the label of
+`BERVO:0000157` was right, so its definition was widened to cover branches.
 
 Heterotrophic respiration as methane (`BERVO:0000011`) names two guilds,
 `Soil|Methanogens|Methanotrophs`. Its label says heterotrophic, but in EcoSIM
