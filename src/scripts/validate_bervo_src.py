@@ -59,7 +59,8 @@ VALID_TYPES = {"Class", "owl:Class", "owl:AnnotationProperty", "owl:ObjectProper
 
 # Placeholder spellings of an empty cell. Rejected in the term-reference and
 # restriction columns, where each value becomes an IRI; skipped elsewhere.
-NULL_TOKENS = {"", "NA", "N/A", "none", "None"}
+# Compared casefolded, so "NONE" and "na" are caught too.
+NULL_TOKENS = {"", "na", "n/a", "none"}
 
 # Columns declared ``AI`` in the ROBOT type row: each value is resolved to an
 # IRI, so it must name an existing term -- either as a CURIE or as a label.
@@ -224,9 +225,13 @@ def _locate(row: int | None, msg: str) -> str:
     return f"row {row}: {msg}" if row is not None else msg
 
 
+def _is_placeholder(token: str) -> bool:
+    return token.casefold() in NULL_TOKENS
+
+
 def _split(value: str) -> list[str]:
     """Split a ROBOT ``SPLIT=|`` cell into meaningful tokens."""
-    return [tok.strip() for tok in value.split("|") if tok.strip() not in NULL_TOKENS]
+    return [tok.strip() for tok in value.split("|") if not _is_placeholder(tok.strip())]
 
 
 def read_template(path: Path) -> tuple[list[str], list[str], list[list[str]]]:
@@ -370,7 +375,7 @@ def validate(path: Path) -> Report:
             for token in (t.strip() for t in row[col].split("|")):
                 if not token:
                     continue
-                if token in NULL_TOKENS:
+                if _is_placeholder(token):
                     # Each value becomes an IRI, so `NA` is emitted as a broken
                     # relative IRI (#44). It was a bulk default, not a curator's
                     # decision, and was removed in #127; an empty cell says the same.
@@ -433,7 +438,7 @@ def validate(path: Path) -> Report:
                 # The one column that emits a logical axiom: an obsolete row that
                 # keeps it still constrains inference, so it counts as a relationship.
                 relationships.append(column)
-                if token in NULL_TOKENS:
+                if _is_placeholder(token):
                     report.error(
                         line,
                         f"{term_id}.{column} is a restriction filler and cannot be "

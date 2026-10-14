@@ -136,6 +136,16 @@ class TestReferentialIntegrity(ValidatorTestCase):
             )
         self.assertEqual(len(report.errors), 3, report.errors)
 
+    def test_placeholder_check_ignores_case(self):
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:0000001", "Soil carbon", contexts="NONE", attributes="na"),
+        ]))
+        for column, token in (("contexts", "NONE"), ("attributes", "na")):
+            self.assertTrue(
+                any(f"{column} cannot be {token!r}" in e for e in report.errors), report.errors
+            )
+        self.assertFalse(any("not a term label" in w for w in report.warnings), report.warnings)
+
     def test_category_may_reference_a_label(self):
         report = validator.validate(self.write([
             ROOT, row("BERVO:0000001", "Soil carbon", category="Variable"),
