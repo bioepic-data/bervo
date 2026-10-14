@@ -19425,7 +19425,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001157">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
-        <obo:IAO_0000115>Mass of carbon in the living biomass of the autotrophic microbes in the surface litter layer, totalled over the grid cell. EcoSIM keeps these microbes, including the ammonia and nitrite oxidisers and the methane oxidisers, as one autotrophic complex, apart from the heterotrophic microbes it tracks for each litter complex.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass of carbon in the living biomass of the autotrophic microbes in the surface litter layer, totalled over the grid cell. EcoSIM keeps these microbes, the ammonia and nitrite oxidisers, the aerobic and anaerobic methane oxidisers and the hydrogenotrophic methanogens, as one autotrophic complex, apart from the heterotrophic microbes it tracks for each litter complex.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RC0ff_col</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Surface litter organic matter in the autotrophic complex</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source (Oct 14 2026)</rdfs:comment>
