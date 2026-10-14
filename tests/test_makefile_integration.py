@@ -62,7 +62,7 @@ def unresolved_iris(path: Path) -> Counter[str]:
     XML_BASE_DIR outside the OWL namespace is reported too.
     """
     found: Counter[str] = Counter()
-    for _, element in ET.iterparse(path):
+    for element in ET.parse(path).iter():
         for attribute in IRI_ATTRIBUTES:
             value = element.get(attribute)
             if value is None:
