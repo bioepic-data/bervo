@@ -52,7 +52,8 @@ duplicate and near-duplicate terms are the hardest problem to unwind later.
    string such as `g.h-1/{grid}`, or `1` for a dimensionless number; see the
    `has_units` section of AGENTS.md), `attributes`, `measured_ins`, `measurement_ofs`, `qualifiers`,
    `contexts`, `value_types`. Each of those except `has_units` must name an existing
-   term. Use `NA` for "deliberately not applicable" and leave blank for "not yet done".
+   term. Leave a cell empty when no value applies; `NA` is an error in all of them
+   except `has_units`, where it means "no unit applies" (issue #127).
 7. **Validate and build:**
 
    ```bash
@@ -67,10 +68,10 @@ duplicate and near-duplicate terms are the hardest problem to unwind later.
   run `just validate` and fix the references it flags.
 - Never change an **ID**. If a term is wrong, obsolete it rather than repurposing it.
 - To obsolete: prefix the label with `obsolete `, set `obsolete` to `true`, clear
-  `Category` and `Parents` so the term leaves the hierarchy, set the row's own
+  `Category` and `Parents` so the term leaves the hierarchy, empty the row's own
   relationship cells (`qualifiers`, `attributes`, `measured_ins`, `measurement_ofs`,
-  `contexts`, `value_types`) to `NA`, and leave `involves_chemicals` **empty**, since `NA`
-  is an error in that column. Put the successor's ID in `replaced_by` where one exists. Move any `DbXrefs` and useful synonyms to the successor, and re-point every
+  `contexts`, `value_types`, `involves_chemicals`), and put the successor's ID in
+  `replaced_by` where one exists. Move any `DbXrefs` and useful synonyms to the successor, and re-point every
   relationship cell on other rows that named the old label. Keep the row and its
   definition; never delete it and never reuse the ID.
 - The validator enforces this: the label prefix and the `obsolete` flag must agree
@@ -235,9 +236,9 @@ existential restriction rather than an annotation, so its value must name a clas
 (`BERVO:8000586`) is the general filler. Do not put a literal or a bare adjective there —
 `just validate` reports an unresolvable filler as a hard error.
 
-**`NA` is an error here**, unlike every neighbouring column. In an `AI` column `NA` degrades
-to a harmless relative IRI (issue #44); in a restriction it would end up inside a subclass
-axiom. Leave the cell empty when the variable does not range over chemicals.
+**`NA` is an error here**, as in the term-reference columns beside it; in a restriction it
+would end up inside a subclass axiom. Leave the cell empty when the variable does not range
+over chemicals.
 
 **The variable ranging over many chemicals is what earns the column; the filler is still one
 class.** All 50 uses today are the single generic `Chemical` — do not enumerate the
@@ -363,21 +364,20 @@ to its default redirect rather than a term page. Do not copy this pattern for a 
 A `DbXrefs` value that is not CURIE-shaped at all (a bare word such as `Class`) is a hard
 error — it usually means a value landed in the wrong column.
 
-### The same trap applies to `NA`
+### The same trap applied to `NA`
 
 `qualifiers`, `attributes`, `measured_ins`, `measurement_ofs`, `contexts`, and `value_types`
-are all `AI` columns too. The `NA` sentinel in them is emitted as a relative IRI exactly like
-an undeclared prefix:
+are all `AI` columns too. `NA` in them was emitted as a relative IRI exactly like an
+undeclared prefix:
 
 ```xml
 <bervo:BERVO_Qualifier rdf:resource="NA"/>
 ```
 
-There are ~6,900 of these today (tracked in issue #44). The validator stays silent on them
-because `NA` carries a real curatorial meaning in the CSV — "deliberately not applicable", as
-opposed to an empty cell meaning "not yet curated". Follow the existing convention when
-editing rows; do not start converting `NA` to empty, or vice versa, as a side effect of
-another change.
+The template once held 9,453 of these (issue #44). They were removed in issue #127: most
+were a bulk default (`src/ontology/measured_ins_changes_log.txt` records 1,507 `measured_ins`
+cells moved from empty to `NA` in one pass), so they did not record a curator's decision.
+The validator now rejects `NA` in these columns. Leave a cell empty when no value applies.
 
 ## What not to do
 

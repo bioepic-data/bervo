@@ -57,7 +57,8 @@ ID_BLOCKS = {
 
 VALID_TYPES = {"Class", "owl:Class", "owl:AnnotationProperty", "owl:ObjectProperty"}
 
-# Placeholders that mean "deliberately empty" rather than "unfilled".
+# Placeholder spellings of an empty cell. Rejected in the term-reference and
+# restriction columns, where each value becomes an IRI; skipped elsewhere.
 NULL_TOKENS = {"", "NA", "N/A", "none", "None"}
 
 # Columns declared ``AI`` in the ROBOT type row: each value is resolved to an
@@ -366,7 +367,18 @@ def validate(path: Path) -> Report:
             col = index.get(column)
             if col is None or col >= len(row):
                 continue
-            for token in _split(row[col]):
+            for token in (t.strip() for t in row[col].split("|")):
+                if not token:
+                    continue
+                if token in NULL_TOKENS:
+                    # Each value becomes an IRI, so `NA` is emitted as a broken
+                    # relative IRI (#44). It was a bulk default, not a curator's
+                    # decision, and was removed in #127; an empty cell says the same.
+                    report.error(
+                        line,
+                        f"{term_id}.{column} cannot be {token!r}; leave it empty instead",
+                    )
+                    continue
                 if column != REPLACED_BY_COLUMN:
                     relationships.append(column)
                 if token in obsolete_terms:
@@ -413,10 +425,8 @@ def validate(path: Path) -> Report:
             col = index.get(column)
             if col is None or col >= len(row):
                 continue
-            # Deliberately not _split(): that drops NULL_TOKENS, and `NA` is the
-            # house convention in every neighbouring AI column. In an AI column it
-            # degrades to a harmless relative IRI (#44); here it would land inside
-            # a subclass axiom, so it has to be rejected rather than skipped.
+            # Deliberately not _split(): that drops NULL_TOKENS, which here would
+            # land inside a subclass axiom, so they are rejected rather than skipped.
             for token in (t.strip() for t in row[col].split("|")):
                 if not token:
                     continue
@@ -479,19 +489,11 @@ def validate(path: Path) -> Report:
             if obsolete and parented:
                 report.warn(line, f"{term_id} is obsolete but still has a Category or Parents")
             if obsolete and relationships:
-                # NA is the house sentinel in the annotation columns, but the
-                # restriction column rejects it, so the remedy differs per column.
-                annotation_cols = sorted({c for c in relationships if c not in CLASS_EXPRESSION_COLUMNS})
-                restriction_cols = sorted({c for c in relationships if c in CLASS_EXPRESSION_COLUMNS})
-                remedies = []
-                if annotation_cols:
-                    remedies.append(f"set {', '.join(annotation_cols)} to NA")
-                if restriction_cols:
-                    remedies.append(f"leave {', '.join(restriction_cols)} empty")
+                columns = ", ".join(sorted(set(relationships)))
                 report.warn(
                     line,
                     f"{term_id} is obsolete but still carries relationships "
-                    f"({', '.join(sorted(set(relationships)))}); {' and '.join(remedies)}",
+                    f"({columns}); leave {columns} empty",
                 )
         if not parented and not obsolete and term_id not in ROOTLESS_IDS:
             report.warn(line, f"{term_id} has no Category and no Parents; it will be an orphan class")

@@ -116,11 +116,25 @@ class TestReferentialIntegrity(ValidatorTestCase):
         ]))
         self.assertEqual(report.errors, [])
 
-    def test_na_placeholders_are_ignored(self):
+    def test_empty_relationship_cells_pass(self):
         report = validator.validate(self.write([
-            ROOT, row("BERVO:0000001", "Soil carbon", attributes="NA", qualifiers="N/A"),
+            ROOT, row("BERVO:0000001", "Soil carbon", attributes="", qualifiers=""),
         ]))
         self.assertEqual(report.errors, [])
+
+    def test_na_placeholders_are_rejected_in_term_reference_columns(self):
+        """Each value becomes an IRI, so NA would be emitted as a relative IRI (#44, #127)."""
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "Concentration", category="Variable"),
+            row("BERVO:0000001", "Soil carbon", attributes="NA",
+                qualifiers="N/A", contexts="Concentration|NA"),
+        ]))
+        for column, token in (("attributes", "NA"), ("qualifiers", "N/A"), ("contexts", "NA")):
+            self.assertTrue(
+                any(f"{column} cannot be {token!r}" in e for e in report.errors), report.errors
+            )
+        self.assertEqual(len(report.errors), 3, report.errors)
 
     def test_category_may_reference_a_label(self):
         report = validator.validate(self.write([
@@ -265,8 +279,7 @@ class TestReferentialIntegrity(ValidatorTestCase):
             report.warnings,
         )
 
-    def test_obsolete_relationship_warning_names_the_remedy_per_column(self):
-        """NA is right for annotation columns and wrong for the restriction column."""
+    def test_obsolete_relationship_warning_names_every_column(self):
         report = validator.validate(self.write([
             ROOT,
             row("BERVO:8000002", "Chemical", category="Variable"),
@@ -276,7 +289,7 @@ class TestReferentialIntegrity(ValidatorTestCase):
         self.assertEqual(report.errors, [])
         matching = [w for w in report.warnings if "still carries relationships" in w]
         self.assertEqual(len(matching), 1, report.warnings)
-        self.assertIn("set contexts to NA and leave involves_chemicals empty", matching[0])
+        self.assertIn("leave contexts, involves_chemicals empty", matching[0])
 
     def test_replaced_by_chain_into_obsolete_term_warns_distinctly(self):
         report = validator.validate(self.write([
@@ -414,7 +427,6 @@ class TestClassExpressionColumns(ValidatorTestCase):
 
 
     def test_na_is_rejected_in_a_restriction_filler(self):
-        """NA is the house convention in AI columns; in a C column it is an axiom."""
         report = validator.validate(self.write([
             ROOT, row("BERVO:0000001", "Soil carbon", involves_chemicals="NA"),
         ]))

@@ -189,8 +189,8 @@ settled.
   measure the sediment itself and take `measurement_ofs=Sediment` instead:
   Erosion rate, Hourly sinking rate, Sediment transport, and Sediment erosion.
   Hourly sinking rate takes `measured_ins=Water`, since the particles settle
-  through the water column. Three Sediment variables keep `measured_ins=NA`
-  because no material is the medium.
+  through the water column. Three Sediment variables leave `measured_ins` empty
+  because no material is the medium (they held `NA` until issue #127).
 - ~~Unsaturated water flux should sit in Unsaturated zone.~~ Done.
 - ~~The 17 Land surface variables reference Land surface 7 times.~~ Done, ten
   of the seventeen, up from six. Four of the seventeen gained it: Altitude of
