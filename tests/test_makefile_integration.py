@@ -39,6 +39,11 @@ RDF_NS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 IRI_ATTRIBUTES = tuple(f"{{{RDF_NS}}}{name}" for name in ("about", "resource", "datatype"))
 # The only schemes the build emits. Checked on the component and the releases.
 ALLOWED_SCHEMES = frozenset({"http", "https"})
+# The component's xml:base. Once ROBOT has loaded the component, as in a release,
+# a relative IRI has already been resolved against it: rdf:resource="NA" is
+# written out as http://www.w3.org/2002/07/NA. Nothing real lives there but owl#.
+XML_BASE_DIR = "http://www.w3.org/2002/07/"
+OWL_NS = "http://www.w3.org/2002/07/owl#"
 
 
 def unresolved_iris(path: Path) -> dict[str, int]:
@@ -51,13 +56,19 @@ def unresolved_iris(path: Path) -> dict[str, int]:
 
     Reads the attribute text as written. An RDF parser would resolve each value
     against the file's xml:base, so `rdf:resource="NA"` would come back as
-    http://www.w3.org/2002/07/NA and look valid.
+    http://www.w3.org/2002/07/NA and look valid. In a release, built from the
+    loaded component, that resolution has already happened, so an IRI under
+    XML_BASE_DIR outside the OWL namespace is reported too.
     """
     found: dict[str, int] = {}
     for _, element in ET.iterparse(path):
         for attribute in IRI_ATTRIBUTES:
             value = element.get(attribute)
-            if value is not None and urlsplit(value).scheme not in ALLOWED_SCHEMES:
+            if value is None:
+                continue
+            if urlsplit(value).scheme not in ALLOWED_SCHEMES or (
+                value.startswith(XML_BASE_DIR) and not value.startswith(OWL_NS)
+            ):
                 found[value] = found.get(value, 0) + 1
     return found
 
@@ -75,14 +86,16 @@ class UnresolvedIriCheckTest(unittest.TestCase):
     <bervo:BERVO_Context rdf:resource="NA"/>
     <bervo:xref rdf:resource="Class"/>
     <bervo:xref rdf:resource="COMO:0000129"/>
+    <bervo:BERVO_Measured_in rdf:resource="http://www.w3.org/2002/07/Water%20flux"/>
     <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
   </rdf:Description>
 </rdf:RDF>
 ''',
                 encoding="utf-8",
             )
-            self.assertEqual(unresolved_iris(path), {"NA": 2, "Class": 1, "COMO:0000129": 1})
+            self.assertEqual(unresolved_iris(path), {"NA": 2, "Class": 1, "COMO:0000129": 1, "http://www.w3.org/2002/07/Water%20flux": 1})
 
 
 class MakefileIntegrationTest(unittest.TestCase):
@@ -241,7 +254,10 @@ class MakefileIntegrationTest(unittest.TestCase):
             'rdf:resource="http://purl.obolibrary.org/obo/COMO_0000129"' in owl,
             "bervo.owl has no absolute IRI for COMO:0000129",
         )
-        self.assertEqual(re.findall(r'rdf:resource="COMO:[^"]*"', owl)[:5], [])
+        # Covers the COMO case above and every other unresolved IRI, in the
+        # files people download rather than only the component.
+        for name in ("bervo.owl", "bervo-full.owl"):
+            self.assertEqual(unresolved_iris(self.ontology_dir / name), {}, name)
 
     def test_legacy_sheet_export_alias_matches_template(self) -> None:
         template = self.ontology_dir / "bervo-src.csv"
