@@ -7819,9 +7819,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000476">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>The concentration of dissolved aluminum dihydroxide in water used for surface irrigation systems applied to agricultural soils. This aluminum compound forms through hydrolysis reactions and affects water chemistry, soil aluminum dynamics, and potential plant aluminum toxicity in irrigated agricultural systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of the aluminum dihydroxide ion, Al(OH)2(+), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CAL2Q</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
@@ -7839,9 +7839,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000477">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>The concentration of dissolved aluminum trihydroxide in water used for surface irrigation systems applied to agricultural soils. This aluminum hydroxide compound affects water pH, soil chemistry, and aluminum bioavailability, and is important for assessing potential aluminum toxicity impacts on crops in irrigated agricultural systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of dissolved aluminum trihydroxide, Al(OH)3(aq), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CAL3Q</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
@@ -7859,9 +7859,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000478">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>The concentration of dissolved aluminum tetrahydroxide in water used for surface irrigation systems applied to agricultural soils. This highly hydrated aluminum compound affects water alkalinity, soil aluminum chemistry, and plant aluminum stress, and is relevant for managing aluminum toxicity in irrigated agricultural systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of the aluminum tetrahydroxide ion, Al(OH)4(-), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CAL4Q</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
