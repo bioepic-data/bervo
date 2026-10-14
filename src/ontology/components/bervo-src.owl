@@ -47647,6 +47647,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000844 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000844">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000194"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
         <obo:IAO_0000115>Aluminum hydroxide mineral, gamma-Al(OH)3, common in highly weathered tropical soils and in bauxite.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30194"/>
