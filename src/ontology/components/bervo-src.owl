@@ -27854,11 +27854,11 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001685">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
-        <obo:IAO_0000115>The term &apos;soil AlOH3 content&apos; refers to the quantity or concentration of aluminum hydroxide (AlOH3) present in the soil. Aluminum hydroxide is a naturally occurring compound in soils and is important for understanding soil properties and processes such as soil pH, nutrient availability, and cation exchange capacity. The soil AlOH3 content parameter provides information about the amount of aluminum hydroxide in the soil, which can influence various biogeochemical processes and ecosystem dynamics, particularly in acidic soils.</obo:IAO_0000115>
+        <obo:IAO_0000115>Content of precipitated aluminum trihydroxide, Al(OH)3(s), in a soil layer, as mass of aluminum per mass of soil; an input that sets the initial amount of the precipitate.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CALOH_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:label>Soil aluminum hydroxide content</rdfs:label>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:label>Soil aluminum trihydroxide content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>mg{Al}.kg-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
@@ -27871,10 +27871,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001686">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
-        <obo:IAO_0000115>Soil FeOH3 content refers to the concentration of iron (III) hydroxide (FeOH3) in the soil. It represents the amount of this mineral present in the soil system, which can affect various biogeochemical processes such as nutrient cycling, organic matter decomposition, and metal sorption. The soil FeOH3 content is an important parameter in earth systems modeling as it influences the availability and mobility of elements and nutrients in the soil, ultimately affecting ecosystem functioning and productivity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Content of precipitated iron(III) trihydroxide, Fe(OH)3(s), in a soil layer, as mass of iron per mass of soil; an input that sets the initial amount of the precipitate.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CFEOH_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:label>Soil iron(III) trihydroxide content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>mg{Fe}.kg-1</bervo:BERVO_has_unit>
