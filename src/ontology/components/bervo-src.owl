@@ -714,7 +714,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000026">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the dissolution of aluminum hydroxide solid into aluminum and hydroxide ions in aqueous solution. This reaction controls aluminum solubility and bioavailability in soils and is critical for modeling aluminum toxicity, soil pH buffering, and chemical weathering processes in terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the dissolution of solid aluminum trihydroxide into aluminum and hydroxide ions in aqueous solution. This reaction controls aluminum solubility and bioavailability in soils and is critical for modeling aluminum toxicity, soil pH buffering, and chemical weathering processes in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SPALO</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -964,7 +964,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000042">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the dissociation of aluminum hydroxide complex ions to form free aluminum and hydroxide ions in aqueous solution. This reaction controls aluminum speciation and toxicity in acidic soils and waters and is fundamental for modeling aluminum mobility, plant aluminum stress, and chemical weathering processes in terrestrial environments.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the dissociation of aluminum monohydroxide complex ions to form free aluminum and hydroxide ions in aqueous solution. This reaction controls aluminum speciation and toxicity in acidic soils and waters and is fundamental for modeling aluminum mobility, plant aluminum stress, and chemical weathering processes in terrestrial environments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>DPAL1</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -1504,7 +1504,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000076">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the acid dissolution of solid aluminum hydroxide to form free aluminum ions and water in aqueous solution. This reaction controls aluminum hydroxide mineral stability and aluminum release in acidic conditions and is essential for modeling aluminum toxicity, soil acidification, and aluminum mobility in acid-affected terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the acid dissolution of solid aluminum trihydroxide to form free aluminum ions and water in aqueous solution. This reaction controls aluminum hydroxide mineral stability and aluminum release in acidic conditions and is essential for modeling aluminum toxicity, soil acidification, and aluminum mobility in acid-affected terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SHALO</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -1523,7 +1523,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000077">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the incongruent dissolution of solid aluminum hydroxide to form aluminum monohydroxide complex ions and hydroxide ions. This reaction controls aluminum hydroxide mineral dissolution in neutral to alkaline conditions and affects aluminum speciation and mobility in well-buffered terrestrial and aquatic systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the incongruent dissolution of solid aluminum trihydroxide to form aluminum monohydroxide complex ions and hydroxide ions. This reaction controls aluminum hydroxide mineral dissolution in neutral to alkaline conditions and affects aluminum speciation and mobility in well-buffered terrestrial and aquatic systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SYAL1</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -1541,7 +1541,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000078">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the partial acid dissolution of solid aluminum hydroxide to form free aluminum ions, hydroxide ions, and water. This reaction represents an intermediate dissolution pathway under moderately acidic conditions and is important for modeling aluminum release and mobility in soils experiencing gradual acidification processes.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the partial acid dissolution of solid aluminum trihydroxide to form free aluminum ions, hydroxide ions, and water. This reaction represents an intermediate dissolution pathway under moderately acidic conditions and is important for modeling aluminum release and mobility in soils experiencing gradual acidification processes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SHAL1</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -1561,7 +1561,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000079">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the congruent dissolution of solid aluminum hydroxide to form aluminum dihydroxide complex ions and hydroxide ions. This reaction controls aluminum hydroxide mineral solubility in near-neutral conditions and affects aluminum speciation and bioavailability in moderately acidic to neutral terrestrial and aquatic environments.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the congruent dissolution of solid aluminum trihydroxide to form aluminum dihydroxide complex ions and hydroxide ions. This reaction controls aluminum hydroxide mineral solubility in near-neutral conditions and affects aluminum speciation and bioavailability in moderately acidic to neutral terrestrial and aquatic environments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SYAL2</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -1579,7 +1579,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000080">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the proton-promoted dissolution of solid aluminum hydroxide to form aluminum dihydroxide complex ions and water. This reaction controls aluminum hydroxide dissolution under mildly acidic conditions and is fundamental for modeling aluminum mobilization and transport in soils undergoing moderate acidification.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the proton-promoted dissolution of solid aluminum trihydroxide to form aluminum dihydroxide complex ions and water. This reaction controls aluminum hydroxide dissolution under mildly acidic conditions and is fundamental for modeling aluminum mobilization and transport in soils undergoing moderate acidification.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SHAL2</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -1598,7 +1598,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000081">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the dissolution of solid aluminum hydroxide to form dissolved aluminum trihydroxide species without change in coordination. This reaction controls the solubility of aluminum hydroxide minerals in neutral conditions and affects aluminum transport and biogeochemical cycling in pH-buffered terrestrial and aquatic systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the dissolution of solid aluminum trihydroxide to form dissolved aluminum trihydroxide species without change in coordination. This reaction controls the solubility of aluminum hydroxide minerals in neutral conditions and affects aluminum transport and biogeochemical cycling in pH-buffered terrestrial and aquatic systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SPAL3</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -1614,7 +1614,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000082">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the reaction of solid aluminum hydroxide with hydroxide ions to form aluminum tetrahydroxide complex ions. This reaction controls aluminum hydroxide dissolution under strongly alkaline conditions and affects aluminum speciation and mobility in highly basic terrestrial and aquatic systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the reaction of solid aluminum trihydroxide with hydroxide ions to form aluminum tetrahydroxide complex ions. This reaction controls aluminum hydroxide dissolution under strongly alkaline conditions and affects aluminum speciation and mobility in highly basic terrestrial and aquatic systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SYAL4</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -1632,7 +1632,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000083">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the hydrolytic dissolution of solid aluminum hydroxide to form aluminum tetrahydroxide complex ions and protons. This reaction represents aluminum hydroxide dissolution through water coordination under alkaline conditions and is important for modeling aluminum behavior in high pH environments.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the hydrolytic dissolution of solid aluminum trihydroxide to form aluminum tetrahydroxide complex ions and protons. This reaction represents aluminum hydroxide dissolution through water coordination under alkaline conditions and is important for modeling aluminum behavior in high pH environments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SHAL4</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -1651,7 +1651,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000084">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the complete acid dissolution of solid iron hydroxide to form free ferric iron ions and water. This reaction represents the primary dissolution pathway under acidic conditions and is critical for modeling iron mobilization, bioavailability, and redox chemistry in acid-impacted soils and surface waters.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the complete acid dissolution of solid iron(III) trihydroxide to form free ferric iron ions and water. This reaction represents the primary dissolution pathway under acidic conditions and is critical for modeling iron mobilization, bioavailability, and redox chemistry in acid-impacted soils and surface waters.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SHFEO</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -1670,7 +1670,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000085">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the incongruent dissolution of solid iron hydroxide to form iron monohydroxide complex ions and hydroxide ions. This reaction controls iron hydroxide mineral dissolution in neutral to alkaline conditions and affects iron speciation and mobility in well-buffered terrestrial and aquatic systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the incongruent dissolution of solid iron(III) trihydroxide to form iron(III) monohydroxide complex ions and hydroxide ions. This reaction controls iron hydroxide mineral dissolution in neutral to alkaline conditions and affects iron speciation and mobility in well-buffered terrestrial and aquatic systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SYFE1</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -1688,7 +1688,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000086">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the partial acid dissolution of solid iron hydroxide to form free ferric iron ions, hydroxide ions, and water. This reaction represents an intermediate dissolution pathway under moderately acidic conditions and is important for modeling iron release and mobility in soils undergoing gradual acidification processes.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the partial acid dissolution of solid iron(III) trihydroxide to form free ferric iron ions, hydroxide ions, and water. This reaction represents an intermediate dissolution pathway under moderately acidic conditions and is important for modeling iron release and mobility in soils undergoing gradual acidification processes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SHFE1</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -1708,7 +1708,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000087">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the congruent dissolution of solid iron hydroxide to form iron dihydroxide complex ions and hydroxide ions. This reaction controls iron hydroxide mineral solubility in near-neutral conditions and affects iron speciation and bioavailability in moderately acidic to neutral terrestrial and aquatic environments.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the congruent dissolution of solid iron(III) trihydroxide to form iron(III) dihydroxide complex ions and hydroxide ions. This reaction controls iron hydroxide mineral solubility in near-neutral conditions and affects iron speciation and bioavailability in moderately acidic to neutral terrestrial and aquatic environments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SYFE2</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -1726,7 +1726,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000088">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the proton-promoted dissolution of solid iron hydroxide to form iron dihydroxide complex ions and water. This reaction controls iron hydroxide dissolution under mildly acidic conditions and is important for modeling iron mobilization and transport in soils and sediments experiencing moderate acidification.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the proton-promoted dissolution of solid iron(III) trihydroxide to form iron(III) dihydroxide complex ions and water. This reaction controls iron hydroxide dissolution under mildly acidic conditions and is important for modeling iron mobilization and transport in soils and sediments experiencing moderate acidification.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SHFE2</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -1745,7 +1745,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000089">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the dissolution of solid iron hydroxide to form dissolved iron trihydroxide species without change in coordination. This reaction controls the solubility of iron hydroxide minerals in neutral conditions and affects iron transport and biogeochemical cycling in pH-buffered terrestrial and aquatic systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the dissolution of solid iron(III) trihydroxide to form dissolved iron(III) trihydroxide species without change in coordination. This reaction controls the solubility of iron hydroxide minerals in neutral conditions and affects iron transport and biogeochemical cycling in pH-buffered terrestrial and aquatic systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SPFE3</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -1761,7 +1761,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000090">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the reaction of solid iron hydroxide with hydroxide ions to form iron tetrahydroxide complex ions. This reaction controls iron hydroxide dissolution under strongly alkaline conditions and affects iron speciation and mobility in highly basic terrestrial and aquatic systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the reaction of solid iron(III) trihydroxide with hydroxide ions to form iron(III) tetrahydroxide complex ions. This reaction controls iron hydroxide dissolution under strongly alkaline conditions and affects iron speciation and mobility in highly basic terrestrial and aquatic systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SYFE4</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -1779,7 +1779,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000091">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the hydrolytic dissolution of solid iron hydroxide to form iron tetrahydroxide complex ions and protons. This reaction represents iron hydroxide dissolution through water coordination under alkaline conditions and is important for modeling iron behavior in high pH environments.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the hydrolytic dissolution of solid iron(III) trihydroxide to form iron(III) tetrahydroxide complex ions and protons. This reaction represents iron hydroxide dissolution through water coordination under alkaline conditions and is important for modeling iron behavior in high pH environments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SHFE4</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
