@@ -131,19 +131,10 @@ class MakefileIntegrationTest(unittest.TestCase):
 
         self.assertTrue(component.exists(), "make should regenerate bervo-src.owl")
         self.assertGreater(component.stat().st_size, 0, "generated component should not be empty")
-
-    def test_component_has_no_unresolved_iris(self) -> None:
-        """Every IRI ROBOT emits must be an http(s) IRI.
-
-        A bare value in an IRI-valued column (`NA`, #44) or a value in the wrong
-        column (`Class`, #41) comes out as a relative IRI, and an undeclared CURIE
-        prefix (#43) as a CURIE; the validator can catch only one known case at a time.
-        """
-        component = self.ontology_dir / "components" / "bervo-src.owl"
-        component.unlink(missing_ok=True)
-
-        self.run_make("components/bervo-src.owl")
-
+        # Every IRI ROBOT emits must be an http(s) IRI. A bare value in an
+        # IRI-valued column (`NA`, #44) or a value in the wrong column (`Class`,
+        # #41) comes out as a relative IRI, and an undeclared CURIE prefix (#43)
+        # as a CURIE; the validator can catch only one known case at a time.
         self.assertEqual(unresolved_iris(component), {})
 
     def test_export_google_sheet_copies_repo_tracked_template(self) -> None:
