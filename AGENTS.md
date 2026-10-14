@@ -164,8 +164,13 @@ really a water transfer is valid UCUM and still wrong. Only reading the row find
 Conventions:
 
 - Multi-valued cells are separated by `|` with no surrounding spaces.
-- `NA` means "deliberately not applicable"; an empty cell means "not yet filled in".
-  Both are ignored by the validator, but they mean different things to curators.
+- In the term-reference columns (`qualifiers`, `attributes`, `measured_ins`,
+  `measurement_ofs`, `contexts`, `value_types`, `replaced_by`) and in
+  `involves_chemicals`, leave a cell **empty** when no value applies. `NA` there is an
+  error: ROBOT turns each value into an IRI, so `NA` became a broken relative IRI, and
+  most of the old `NA`s were a bulk default rather than a curator's decision (issue
+  #127). An empty cell does not record whether anyone has reviewed the row.
+  `has_units` is the exception: there `NA` is a real value, "no unit applies".
 - Every row must have exactly as many fields as the header. Rows appended from a
   spreadsheet export often pick up trailing commas — `just fix-template` trims them.
 - The file uses **CRLF** line endings. Preserve them; a whole-file re-encoding turns a
@@ -238,7 +243,8 @@ subtly broken ontology from a broken template, so run the validator first.
 **Errors** (fail CI): ragged rows, duplicate IDs, duplicate labels (case-insensitive),
 malformed IDs, missing labels, unrecognised `Type`, references to terms that do not exist,
 `Category`/`Parents` values that resolve to neither an ID nor a label, `DbXrefs` values
-that are not CURIE-shaped, an `obsolete ` label prefix that disagrees with the `obsolete`
+that are not CURIE-shaped, `NA` (or `N/A`, `none`, in any capitalisation) in a term-reference column,
+`involves_chemicals`, `Category`, `Parents` or `DbXrefs`, an `obsolete ` label prefix that disagrees with the `obsolete`
 flag, and a live term whose `Category`, `Parents` or `involves_chemicals` names an
 obsolete term.
 

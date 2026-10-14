@@ -116,11 +116,47 @@ class TestReferentialIntegrity(ValidatorTestCase):
         ]))
         self.assertEqual(report.errors, [])
 
-    def test_na_placeholders_are_ignored(self):
+    def test_empty_relationship_cells_pass(self):
         report = validator.validate(self.write([
-            ROOT, row("BERVO:0000001", "Soil carbon", attributes="NA", qualifiers="N/A"),
+            ROOT, row("BERVO:0000001", "Soil carbon", attributes="", qualifiers=""),
         ]))
         self.assertEqual(report.errors, [])
+
+    def test_na_placeholders_are_rejected_in_term_reference_columns(self):
+        """Each value becomes an IRI, so NA would be emitted as a relative IRI (#44, #127)."""
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "Concentration", category="Variable"),
+            row("BERVO:0000001", "Soil carbon", attributes="NA",
+                qualifiers="N/A", contexts="Concentration|NA"),
+        ]))
+        for column, token in (("attributes", "NA"), ("qualifiers", "N/A"), ("contexts", "NA")):
+            self.assertTrue(
+                any(f"{column} cannot be {token!r}" in e for e in report.errors), report.errors
+            )
+        self.assertEqual(len(report.errors), 3, report.errors)
+
+    def test_na_placeholders_are_rejected_in_parent_and_xref_columns(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:0000001", "Soil carbon", category="NA", Parents="Variable|N/A",
+                DbXrefs="none"),
+        ]))
+        for column, token in (("Category", "NA"), ("Parents", "N/A"), ("DbXrefs", "none")):
+            self.assertTrue(
+                any(f"{column} cannot be {token!r}" in e for e in report.errors), report.errors
+            )
+        self.assertEqual(len(report.errors), 3, report.errors)
+
+    def test_placeholder_check_ignores_case(self):
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:0000001", "Soil carbon", contexts="NONE", attributes="na"),
+        ]))
+        for column, token in (("contexts", "NONE"), ("attributes", "na")):
+            self.assertTrue(
+                any(f"{column} cannot be {token!r}" in e for e in report.errors), report.errors
+            )
+        self.assertFalse(any("not a term label" in w for w in report.warnings), report.warnings)
 
     def test_category_may_reference_a_label(self):
         report = validator.validate(self.write([
@@ -265,8 +301,7 @@ class TestReferentialIntegrity(ValidatorTestCase):
             report.warnings,
         )
 
-    def test_obsolete_relationship_warning_names_the_remedy_per_column(self):
-        """NA is right for annotation columns and wrong for the restriction column."""
+    def test_obsolete_relationship_warning_names_every_column(self):
         report = validator.validate(self.write([
             ROOT,
             row("BERVO:8000002", "Chemical", category="Variable"),
@@ -276,7 +311,7 @@ class TestReferentialIntegrity(ValidatorTestCase):
         self.assertEqual(report.errors, [])
         matching = [w for w in report.warnings if "still carries relationships" in w]
         self.assertEqual(len(matching), 1, report.warnings)
-        self.assertIn("set contexts to NA and leave involves_chemicals empty", matching[0])
+        self.assertIn("leave contexts, involves_chemicals empty", matching[0])
 
     def test_replaced_by_chain_into_obsolete_term_warns_distinctly(self):
         report = validator.validate(self.write([
@@ -287,6 +322,16 @@ class TestReferentialIntegrity(ValidatorTestCase):
         ]))
         self.assertEqual(report.errors, [])
         self.assertTrue(any("live successor" in w for w in report.warnings), report.warnings)
+
+    def test_replaced_by_rejects_na(self):
+        """No successor is an empty cell, not NA (#127)."""
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:8000001", "obsolete Old concept", category="",
+                      obsolete="true", replaced_by="NA"),
+        ]))
+        self.assertTrue(
+            any("replaced_by cannot be 'NA'" in e for e in report.errors), report.errors
+        )
 
     def test_replaced_by_must_name_an_existing_term(self):
         report = validator.validate(self.write([
@@ -353,12 +398,6 @@ class TestCrossReferences(ValidatorTestCase):
                     f"{prefix} is declared in bervo.Makefile but still warned",
                 )
 
-    def test_na_xref_is_ignored(self):
-        report = validator.validate(self.write([
-            ROOT, row("BERVO:0000001", "Soil carbon", DbXrefs="NA"),
-        ]))
-        self.assertEqual(report.errors, [])
-
     def test_absolute_iri_xref_is_not_treated_as_a_curie(self):
         """An http(s) value is already resolved; 'http' is not a prefix."""
         report = validator.validate(self.write([
@@ -414,12 +453,22 @@ class TestClassExpressionColumns(ValidatorTestCase):
 
 
     def test_na_is_rejected_in_a_restriction_filler(self):
-        """NA is the house convention in AI columns; in a C column it is an axiom."""
         report = validator.validate(self.write([
             ROOT, row("BERVO:0000001", "Soil carbon", involves_chemicals="NA"),
         ]))
         self.assertTrue(
             any("cannot be 'NA'" in e for e in report.errors), report.errors
+        )
+
+    def test_na_filler_on_obsolete_row_is_only_an_error(self):
+        """A placeholder is not a relationship, as in the term-reference columns."""
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:0000001", "obsolete Old var", category="", obsolete="true",
+                      involves_chemicals="NA"),
+        ]))
+        self.assertTrue(any("cannot be 'NA'" in e for e in report.errors), report.errors)
+        self.assertFalse(
+            any("still carries relationships" in w for w in report.warnings), report.warnings
         )
 
     def test_split_fillers_are_checked_individually(self):

@@ -1,5 +1,9 @@
 # BERVO Qualifiers Completion Summary
 
+> **Superseded in part (October 14, 2026, issue #127):** every `NA` this pass assigned
+> was removed. Leave a cell empty when no value applies; the validator now rejects `NA`
+> in this column. The coverage figures below describe the file as it was then.
+
 **Date:** January 8, 2026  
 **Task:** Fill missing qualifiers in Column 14 (qualifiers) of bervo-src.csv  
 **Status:** ✅ COMPLETE (100% coverage)

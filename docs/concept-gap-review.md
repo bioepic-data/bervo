@@ -189,8 +189,8 @@ settled.
   measure the sediment itself and take `measurement_ofs=Sediment` instead:
   Erosion rate, Hourly sinking rate, Sediment transport, and Sediment erosion.
   Hourly sinking rate takes `measured_ins=Water`, since the particles settle
-  through the water column. Three Sediment variables keep `measured_ins=NA`
-  because no material is the medium.
+  through the water column. Three Sediment variables leave `measured_ins` empty
+  because no material is the medium (they held `NA` until issue #127).
 - ~~Unsaturated water flux should sit in Unsaturated zone.~~ Done.
 - ~~The 17 Land surface variables reference Land surface 7 times.~~ Done, ten
   of the seventeen, up from six. Four of the seventeen gained it: Altitude of
@@ -244,7 +244,7 @@ fifth, and chemical transformation the sixth. The remaining slices are the
 
 The chemical transformation slice put Chemical transformation in `attributes`
 on 22 of the 24 rows whose label says "transformation", all of which had `NA`
-there, and on the two iron adsorption rows below.
+there (as these columns did until issue #127), and on the two iron adsorption rows below.
 That is the column the other processes named as the quantity of a variable
 already use: Fixation on 13 variables, Mineralization on 6, Erosion on 23.
 (Counting every row gives 14, 7, and 24, because each of the three concept
@@ -296,7 +296,7 @@ do. Where a row named Microbes, the
 guild replaced it (36 rows), since every guild sits beneath Microbes. Where a
 row named another medium, such as Soil, the guild went beside it (37 rows), as
 Soil|Microbes already did for heterotrophic respiration. The other 42 rows had
-`NA`. The rows came from labels and definitions that name the guild or its
+`NA`, which issue #127 later emptied. The rows came from labels and definitions that name the guild or its
 process: heterotrophic 32, autotrophic 20, nitrifiers 15 (the ammonia and
 nitrite oxidation rows among them), denitrifiers 12, methanogens 9 (six of
 them on the hydrogenotrophic and acetotrophic terms), diazotrophs 12 (the

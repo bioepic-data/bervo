@@ -71,8 +71,9 @@ For each added or changed term:
 - `attributes`, `measured_ins`, `measurement_ofs`, `qualifiers`, `contexts`, and
   `value_types` must name existing terms. `just validate` warns when they do not, with
   a suggested spelling for case-only typos.
-- Blank means "not yet curated", `NA` means "not applicable". Silently converting one to
-  the other loses information.
+- A relationship cell with no value is left empty; `NA` there is a validator error
+  (issue #127). An empty cell does not say whether the row was reviewed, so a PR that
+  fills one on purpose, or deliberately leaves one empty, should say so.
 
 ## 4. Report
 

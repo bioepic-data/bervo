@@ -68,7 +68,7 @@ def clean(value: str) -> str:
 
 def split_pipe_field(value: str) -> list[str]:
     value = clean(value)
-    if not value or value in {"NA", "NONE"}:
+    if not value:
         return []
     return [item.strip() for item in value.split("|") if item.strip()]
 

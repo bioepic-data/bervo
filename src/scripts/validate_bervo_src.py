@@ -57,8 +57,10 @@ ID_BLOCKS = {
 
 VALID_TYPES = {"Class", "owl:Class", "owl:AnnotationProperty", "owl:ObjectProperty"}
 
-# Placeholders that mean "deliberately empty" rather than "unfilled".
-NULL_TOKENS = {"", "NA", "N/A", "none", "None"}
+# Placeholder spellings of an empty cell. Rejected in the term-reference and
+# restriction columns, where each value becomes an IRI; skipped elsewhere.
+# Compared casefolded, so "NONE" and "na" are caught too.
+NULL_TOKENS = {"", "na", "n/a", "none"}
 
 # Columns declared ``AI`` in the ROBOT type row: each value is resolved to an
 # IRI, so it must name an existing term -- either as a CURIE or as a label.
@@ -223,9 +225,18 @@ def _locate(row: int | None, msg: str) -> str:
     return f"row {row}: {msg}" if row is not None else msg
 
 
+def _is_placeholder(token: str) -> bool:
+    return token.casefold() in NULL_TOKENS
+
+
+def _tokens(value: str) -> list[str]:
+    """Split a ROBOT ``SPLIT=|`` cell into non-empty tokens, placeholders included."""
+    return [tok.strip() for tok in value.split("|") if tok.strip()]
+
+
 def _split(value: str) -> list[str]:
-    """Split a ROBOT ``SPLIT=|`` cell into meaningful tokens."""
-    return [tok.strip() for tok in value.split("|") if tok.strip() not in NULL_TOKENS]
+    """Split a ROBOT ``SPLIT=|`` cell into meaningful tokens, dropping placeholders."""
+    return [tok.strip() for tok in value.split("|") if not _is_placeholder(tok.strip())]
 
 
 def read_template(path: Path) -> tuple[list[str], list[str], list[list[str]]]:
@@ -366,7 +377,17 @@ def validate(path: Path) -> Report:
             col = index.get(column)
             if col is None or col >= len(row):
                 continue
-            for token in _split(row[col]):
+            for token in _tokens(row[col]):
+                # Placeholders are rejected in every IRI-valued column, never skipped.
+                if _is_placeholder(token):
+                    # Each value becomes an IRI, so `NA` is emitted as a broken
+                    # relative IRI (#44). It was a bulk default, not a curator's
+                    # decision, and was removed in #127; an empty cell says the same.
+                    report.error(
+                        line,
+                        f"{term_id}.{column} cannot be {token!r}; leave it empty instead",
+                    )
+                    continue
                 if column != REPLACED_BY_COLUMN:
                     relationships.append(column)
                 if token in obsolete_terms:
@@ -396,7 +417,13 @@ def validate(path: Path) -> Report:
 
         col = index.get(XREF_COLUMN)
         if col is not None and col < len(row):
-            for token in _split(row[col]):
+            for token in _tokens(row[col]):
+                if _is_placeholder(token):
+                    report.error(
+                        line,
+                        f"{term_id}.{XREF_COLUMN} cannot be {token!r}; leave it empty instead",
+                    )
+                    continue
                 if token.startswith(("http://", "https://")):
                     continue  # already an absolute IRI; nothing to expand
                 match = CURIE.match(token)
@@ -413,23 +440,18 @@ def validate(path: Path) -> Report:
             col = index.get(column)
             if col is None or col >= len(row):
                 continue
-            # Deliberately not _split(): that drops NULL_TOKENS, and `NA` is the
-            # house convention in every neighbouring AI column. In an AI column it
-            # degrades to a harmless relative IRI (#44); here it would land inside
-            # a subclass axiom, so it has to be rejected rather than skipped.
-            for token in (t.strip() for t in row[col].split("|")):
-                if not token:
-                    continue
-                # The one column that emits a logical axiom: an obsolete row that
-                # keeps it still constrains inference, so it counts as a relationship.
-                relationships.append(column)
-                if token in NULL_TOKENS:
+            for token in _tokens(row[col]):
+                if _is_placeholder(token):
                     report.error(
                         line,
                         f"{term_id}.{column} is a restriction filler and cannot be "
                         f"{token!r}; leave it empty instead",
                     )
-                elif token in obsolete_terms:
+                    continue
+                # The one column that emits a logical axiom: an obsolete row that
+                # keeps it still constrains inference, so it counts as a relationship.
+                relationships.append(column)
+                if token in obsolete_terms:
                     report.error(
                         line,
                         f"{term_id}.{column} restriction filler {token!r} is an obsolete term",
@@ -450,7 +472,14 @@ def validate(path: Path) -> Report:
             col = index.get(column)
             if col is None or col >= len(row):
                 continue
-            for token in _split(row[col]):
+            for token in _tokens(row[col]):
+                if _is_placeholder(token):
+                    # SC %: a placeholder would be emitted as a superclass.
+                    report.error(
+                        line,
+                        f"{term_id}.{column} cannot be {token!r}; leave it empty instead",
+                    )
+                    continue
                 parented = True
                 if token in obsolete_terms:
                     # A live class under a deprecated parent inherits from a corpse.
@@ -479,19 +508,11 @@ def validate(path: Path) -> Report:
             if obsolete and parented:
                 report.warn(line, f"{term_id} is obsolete but still has a Category or Parents")
             if obsolete and relationships:
-                # NA is the house sentinel in the annotation columns, but the
-                # restriction column rejects it, so the remedy differs per column.
-                annotation_cols = sorted({c for c in relationships if c not in CLASS_EXPRESSION_COLUMNS})
-                restriction_cols = sorted({c for c in relationships if c in CLASS_EXPRESSION_COLUMNS})
-                remedies = []
-                if annotation_cols:
-                    remedies.append(f"set {', '.join(annotation_cols)} to NA")
-                if restriction_cols:
-                    remedies.append(f"leave {', '.join(restriction_cols)} empty")
+                columns = ", ".join(sorted(set(relationships)))
                 report.warn(
                     line,
                     f"{term_id} is obsolete but still carries relationships "
-                    f"({', '.join(sorted(set(relationships)))}); {' and '.join(remedies)}",
+                    f"({columns}); leave {columns} empty",
                 )
         if not parented and not obsolete and term_id not in ROOTLESS_IDS:
             report.warn(line, f"{term_id} has no Category and no Parents; it will be an orphan class")
