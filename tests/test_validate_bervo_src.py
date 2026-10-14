@@ -136,6 +136,18 @@ class TestReferentialIntegrity(ValidatorTestCase):
             )
         self.assertEqual(len(report.errors), 3, report.errors)
 
+    def test_na_placeholders_are_rejected_in_parent_and_xref_columns(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:0000001", "Soil carbon", category="NA", Parents="Variable|N/A",
+                DbXrefs="none"),
+        ]))
+        for column, token in (("Category", "NA"), ("Parents", "N/A"), ("DbXrefs", "none")):
+            self.assertTrue(
+                any(f"{column} cannot be {token!r}" in e for e in report.errors), report.errors
+            )
+        self.assertEqual(len(report.errors), 3, report.errors)
+
     def test_placeholder_check_ignores_case(self):
         report = validator.validate(self.write([
             ROOT, row("BERVO:0000001", "Soil carbon", contexts="NONE", attributes="na"),
@@ -375,12 +387,6 @@ class TestCrossReferences(ValidatorTestCase):
                     any(prefix in w for w in report.warnings),
                     f"{prefix} is declared in bervo.Makefile but still warned",
                 )
-
-    def test_na_xref_is_ignored(self):
-        report = validator.validate(self.write([
-            ROOT, row("BERVO:0000001", "Soil carbon", DbXrefs="NA"),
-        ]))
-        self.assertEqual(report.errors, [])
 
     def test_absolute_iri_xref_is_not_treated_as_a_curie(self):
         """An http(s) value is already resolved; 'http' is not a prefix."""

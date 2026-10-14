@@ -229,8 +229,13 @@ def _is_placeholder(token: str) -> bool:
     return token.casefold() in NULL_TOKENS
 
 
+def _tokens(value: str) -> list[str]:
+    """Split a ROBOT ``SPLIT=|`` cell into non-empty tokens, placeholders included."""
+    return [tok.strip() for tok in value.split("|") if tok.strip()]
+
+
 def _split(value: str) -> list[str]:
-    """Split a ROBOT ``SPLIT=|`` cell into meaningful tokens."""
+    """Split a ROBOT ``SPLIT=|`` cell into meaningful tokens, dropping placeholders."""
     return [tok.strip() for tok in value.split("|") if not _is_placeholder(tok.strip())]
 
 
@@ -372,9 +377,8 @@ def validate(path: Path) -> Report:
             col = index.get(column)
             if col is None or col >= len(row):
                 continue
-            for token in (t.strip() for t in row[col].split("|")):
-                if not token:
-                    continue
+            for token in _tokens(row[col]):
+                # Placeholders are rejected in every IRI-valued column, never skipped.
                 if _is_placeholder(token):
                     # Each value becomes an IRI, so `NA` is emitted as a broken
                     # relative IRI (#44). It was a bulk default, not a curator's
@@ -413,7 +417,13 @@ def validate(path: Path) -> Report:
 
         col = index.get(XREF_COLUMN)
         if col is not None and col < len(row):
-            for token in _split(row[col]):
+            for token in _tokens(row[col]):
+                if _is_placeholder(token):
+                    report.error(
+                        line,
+                        f"{term_id}.{XREF_COLUMN} cannot be {token!r}; leave it empty instead",
+                    )
+                    continue
                 if token.startswith(("http://", "https://")):
                     continue  # already an absolute IRI; nothing to expand
                 match = CURIE.match(token)
@@ -430,11 +440,7 @@ def validate(path: Path) -> Report:
             col = index.get(column)
             if col is None or col >= len(row):
                 continue
-            # Deliberately not _split(): that drops NULL_TOKENS, which here would
-            # land inside a subclass axiom, so they are rejected rather than skipped.
-            for token in (t.strip() for t in row[col].split("|")):
-                if not token:
-                    continue
+            for token in _tokens(row[col]):
                 # The one column that emits a logical axiom: an obsolete row that
                 # keeps it still constrains inference, so it counts as a relationship.
                 relationships.append(column)
@@ -465,7 +471,14 @@ def validate(path: Path) -> Report:
             col = index.get(column)
             if col is None or col >= len(row):
                 continue
-            for token in _split(row[col]):
+            for token in _tokens(row[col]):
+                if _is_placeholder(token):
+                    # SC %: a placeholder would be emitted as a superclass.
+                    report.error(
+                        line,
+                        f"{term_id}.{column} cannot be {token!r}; leave it empty instead",
+                    )
+                    continue
                 parented = True
                 if token in obsolete_terms:
                     # A live class under a deprecated parent inherits from a corpse.

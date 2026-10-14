@@ -243,8 +243,8 @@ subtly broken ontology from a broken template, so run the validator first.
 **Errors** (fail CI): ragged rows, duplicate IDs, duplicate labels (case-insensitive),
 malformed IDs, missing labels, unrecognised `Type`, references to terms that do not exist,
 `Category`/`Parents` values that resolve to neither an ID nor a label, `DbXrefs` values
-that are not CURIE-shaped, `NA` (or `N/A`, `none`) in a term-reference column or
-`involves_chemicals`, an `obsolete ` label prefix that disagrees with the `obsolete`
+that are not CURIE-shaped, `NA` (or `N/A`, `none`, in any capitalisation) in a term-reference column,
+`involves_chemicals`, `Category`, `Parents` or `DbXrefs`, an `obsolete ` label prefix that disagrees with the `obsolete`
 flag, and a live term whose `Category`, `Parents` or `involves_chemicals` names an
 obsolete term.
 
