@@ -211,6 +211,13 @@ Named reference states follow the same rule: the soil water states `Field capaci
 `Wilting point` go in `contexts` (issue #83). `Dewpoint` is the exception. A dewpoint
 temperature is the dewpoint itself, so `Dewpoint` goes in `attributes` (PR #110).
 
+A root variable's axis order goes in `contexts` too: `Primary axes` (`BERVO:8000798`) or
+`Secondary axes` (`BERVO:8000163`), alongside `Root` or `Root layer` in `measured_ins`
+(issue #161). This holds even when the axes are what is counted, as on `Root primary axis
+number`. Where `measurement_ofs` is filled, it keeps the material: `Root` on `Root layer
+element primary axes`, `Organic carbon` on `Root carbon primary axes`. A secondary row
+carries the same `measured_ins` and `measurement_ofs` as its primary counterpart.
+
 ## Variables that involve a set of chemicals
 
 Some variables apply to *any* chemical rather than a named one — `Gaseous diffusivity`
