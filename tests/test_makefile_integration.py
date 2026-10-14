@@ -274,9 +274,15 @@ class MakefileIntegrationTest(unittest.TestCase):
         # NamedIndividuals: uncurated residue of an old import, which put that
         # many phantom individuals into every release (#164 review). Punning a
         # class as an individual is legal OWL 2 DL; these carried no information.
+        # Only BERVO IRIs are checked, so an import that brings individuals is
+        # fine. If BERVO ever models a term as an individual on purpose, this is
+        # a hygiene check to narrow or drop, not a correctness one.
         for name in ("bervo.owl", "bervo-full.owl"):
             text = (self.ontology_dir / name).read_text(encoding="utf-8")
-            self.assertEqual(text.count("owl:NamedIndividual"), 0, name)
+            individuals = re.findall(
+                r'<owl:NamedIndividual rdf:about="https://w3id\.org/bervo/[^"]*"', text
+            )
+            self.assertEqual(individuals[:5], [], name)
 
     def test_legacy_sheet_export_alias_matches_template(self) -> None:
         template = self.ontology_dir / "bervo-src.csv"
