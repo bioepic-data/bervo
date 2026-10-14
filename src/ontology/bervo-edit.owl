@@ -9,7 +9,7 @@ Prefix(bervo:=<https://w3id.org/bervo/>)
 # Not a duplicate of bervo: above. The OBO release takes its ID prefixes from
 # these declarations and uses the longest that matches, so this one makes IDs
 # read BERVO:0000001 rather than bervo:BERVO_0000001 (issue #137). Guarded by
-# test_obo_release_writes_bervo_ids_with_obo_prefix.
+# test_release_chain_output in tests/test_makefile_integration.py.
 Prefix(BERVO:=<https://w3id.org/bervo/BERVO_>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
 

@@ -239,10 +239,11 @@ class MakefileIntegrationTest(unittest.TestCase):
             self.assertIn(f"xref: http://vocabulary.odm2.org/{v}", lines)
         self.assertIn("xref: CHEBI:17045", lines)
 
-    def test_obo_release_writes_bervo_ids_with_obo_prefix(self) -> None:
-        # Issue #137: the OBO release wrote every ID as bervo:BERVO_0000001.
-        # Builds the real release chain from bervo-edit.owl and the component,
-        # so it also checks the #131 and #129 xref fixes end to end.
+    def test_release_chain_output(self) -> None:
+        # Builds the real release chain once from bervo-edit.owl and the
+        # component and checks its output: OBO IDs written as BERVO: (#137), the
+        # #131 and #129 xref fixes end to end, no unresolved IRIs (#41, #43,
+        # #44), and no BERVO term declared as an individual.
         built = [self.ontology_dir / name for name in ("bervo.owl", "bervo-full.owl", "bervo.obo")]
         for path in built:
             path.unlink(missing_ok=True)
