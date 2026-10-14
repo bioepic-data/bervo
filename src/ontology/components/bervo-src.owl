@@ -36923,6 +36923,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000074">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000016"/>
         <obo:IAO_0000115>Compound of one iron(III) ion and three hydroxide groups, Fe(OH)3, occurring both as the uncharged aqueous species in the stepwise hydrolysis of ferric iron and as the solid precipitate whose dissolution controls ferric iron solubility in soil.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_135985"/>
         <oboInOwl:hasExactSynonym>Fe(OH)3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>iron(III) hydroxide</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
@@ -38514,6 +38515,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000194">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000203"/>
         <obo:IAO_0000115>Compound of one aluminum(III) ion and three hydroxide groups, Al(OH)3, occurring both as the uncharged aqueous species in the stepwise hydrolysis of aluminum and as the solid whose dissolution controls aluminum solubility in soil.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33130"/>
         <oboInOwl:hasExactSynonym>Al(OH)3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>aluminum(III) hydroxide</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
@@ -38640,6 +38642,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000203">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
         <obo:IAO_0000115>Any compound or complex ion of aluminum and hydroxide groups, including the aqueous hydrolysis species of aluminum(III) and solid aluminum hydroxide minerals in soils and sediments.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33626"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:label>Aluminum hydroxide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
