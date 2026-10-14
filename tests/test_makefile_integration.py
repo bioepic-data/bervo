@@ -270,8 +270,10 @@ class MakefileIntegrationTest(unittest.TestCase):
         for name in ("bervo.owl", "bervo-full.owl"):
             self.assertEqual(unresolved_iris(self.ontology_dir / name), {}, name)
 
-        # Every BERVO term is a class. bervo-edit.owl once also declared 1,579 of
-        # them as individuals, which punned them and left OWL 2 DL (#164 review).
+        # No BERVO term is an individual. bervo-edit.owl once declared 1,630
+        # NamedIndividuals: uncurated residue of an old import, which put that
+        # many phantom individuals into every release (#164 review). Punning a
+        # class as an individual is legal OWL 2 DL; these carried no information.
         for name in ("bervo.owl", "bervo-full.owl"):
             text = (self.ontology_dir / name).read_text(encoding="utf-8")
             self.assertEqual(text.count("owl:NamedIndividual"), 0, name)
