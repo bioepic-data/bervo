@@ -4,6 +4,7 @@ import tempfile
 import unittest
 import json
 import re
+from collections import Counter
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -46,7 +47,7 @@ XML_BASE_DIR = "http://www.w3.org/2002/07/"
 OWL_NS = "http://www.w3.org/2002/07/owl#"
 
 
-def unresolved_iris(path: Path) -> dict[str, int]:
+def unresolved_iris(path: Path) -> Counter[str]:
     """IRI attributes in an RDF/XML file that are relative or use a scheme the
     build never emits, with counts.
 
@@ -60,7 +61,7 @@ def unresolved_iris(path: Path) -> dict[str, int]:
     loaded component, that resolution has already happened, so an IRI under
     XML_BASE_DIR outside the OWL namespace is reported too.
     """
-    found: dict[str, int] = {}
+    found: Counter[str] = Counter()
     for _, element in ET.iterparse(path):
         for attribute in IRI_ATTRIBUTES:
             value = element.get(attribute)
@@ -69,7 +70,7 @@ def unresolved_iris(path: Path) -> dict[str, int]:
             if urlsplit(value).scheme not in ALLOWED_SCHEMES or (
                 value.startswith(XML_BASE_DIR) and not value.startswith(OWL_NS)
             ):
-                found[value] = found.get(value, 0) + 1
+                found[value] += 1
     return found
 
 
