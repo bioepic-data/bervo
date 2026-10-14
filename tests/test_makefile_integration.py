@@ -107,7 +107,15 @@ class UnresolvedIriCheckTest(unittest.TestCase):
 ''',
                 encoding="utf-8",
             )
-            self.assertEqual(unresolved_iris(path), {"NA": 2, "Class": 1, "COMO:0000129": 1, "http://www.w3.org/2002/07/Water%20flux": 1})
+            self.assertEqual(
+                unresolved_iris(path),
+                {
+                    "NA": 2,
+                    "Class": 1,
+                    "COMO:0000129": 1,
+                    "http://www.w3.org/2002/07/Water%20flux": 1,
+                },
+            )
 
 
 class MakefileIntegrationTest(unittest.TestCase):
