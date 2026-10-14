@@ -16685,10 +16685,11 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000996">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
-        <obo:IAO_0000115>Rate at which aerobic heterotrophic microbes would take up dissolved oxygen to oxidise dissolved organic carbon and acetate, before the oxygen supply limits it, resolved by functional guild and organic matter complex in the surface litter and each soil layer. It is zero for fermenters and methanogens, and is summed with the demand of roots and other microbes into the total oxygen uptake.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which aerobic heterotrophic microbes would take up dissolved oxygen to oxidise dissolved organic carbon and acetate, before the oxygen supply limits it, resolved by functional guild and organic matter complex in the surface litter and each soil layer.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Aqueous demand</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>RO2DmndHetert</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>EcoSIM sets it to zero for the anaerobic heterotrophic guilds (acetogenic fermenters, acetogenic nitrogen fixers and acetotrophic methanogens), and sums it with the demand of roots and other microbes into Total root + microbial oxygen uptake (BERVO:0000409).</rdfs:comment>
         <rdfs:comment>Interesting units.  These items below appear to be chemical rates</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Aqueous oxygen demand by heterotrophic microbes</rdfs:label>
