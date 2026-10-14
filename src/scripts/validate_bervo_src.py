@@ -153,14 +153,15 @@ def unit_problems(token: str) -> list[str]:
     return problems
 
 # ``DbXrefs`` is declared ``AI oio:hasDbXref``, so every value is emitted as an
-# IRI. A value ROBOT cannot expand becomes a *relative* IRI, which is silently
-# meaningless -- so the shape of these values matters.
+# IRI. A value that is not a CURIE becomes a *relative* IRI, and a CURIE ROBOT
+# cannot expand stays an unexpanded CURIE. Both are silently meaningless -- so the
+# shape of these values matters.
 XREF_COLUMN = "DbXrefs"
 CURIE = re.compile(r"^([A-Za-z][A-Za-z0-9_.]*):(\S+)$")
 
 # Prefixes ROBOT expands to an absolute IRI without extra configuration (the OBO
 # prefix map). A CURIE using anything else needs an explicit --add-prefix in
-# src/ontology/bervo.Makefile, or it is emitted as a relative IRI.
+# src/ontology/bervo.Makefile, or it is emitted as an unexpanded CURIE.
 OBO_XREF_PREFIXES = {
     "AGRO", "BFO", "CHEBI", "CHMO", "CL", "COB", "ENVO", "GO", "IAO", "NCBITaxon", "NCIT",
     "OBI", "OM", "PATO", "PO", "RO", "UBERON", "UO",
@@ -545,7 +546,7 @@ def validate(path: Path) -> Report:
             report.warn(
                 None,
                 f"{count} {XREF_COLUMN} value(s) use the prefix {prefix!r}, which ROBOT "
-                f"cannot expand; they are emitted as relative IRIs. Declare it with "
+                f"cannot expand; they are emitted as unexpanded CURIEs. Declare it with "
                 f"--add-prefix in src/ontology/bervo.Makefile.",
             )
 

@@ -4,7 +4,10 @@ import tempfile
 import unittest
 import json
 import re
+from collections import Counter
+import xml.etree.ElementTree as ET
 from pathlib import Path
+from urllib.parse import urlsplit
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -31,6 +34,99 @@ def release_chain_overrides() -> list[str]:
     if robot_version() >= (1, 9, 8):
         return []
     return ["OBO_FORMAT_OPTIONS=", "REDUCE_OPTIONS="]
+
+
+RDF_NS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+IRI_ATTRIBUTES = tuple(f"{{{RDF_NS}}}{name}" for name in ("about", "resource", "datatype"))
+# The only schemes the build emits. Checked on the component and the releases.
+# Widen this if the build legitimately starts emitting another scheme (a urn: or
+# doi: xref, say); a value reported with such a scheme is not by itself an error.
+ALLOWED_SCHEMES = frozenset({"http", "https"})
+# The component's xml:base. Once ROBOT has loaded the component, as in a release,
+# a relative IRI has already been resolved against it: rdf:resource="NA" is
+# written out as http://www.w3.org/2002/07/NA. Nothing real lives there but the
+# OWL vocabulary itself: the owl# namespace and the bare OWL ontology IRI.
+XML_BASE_DIR = "http://www.w3.org/2002/07/"
+OWL_NS = "http://www.w3.org/2002/07/owl#"
+OWL_ONTOLOGY_IRI = "http://www.w3.org/2002/07/owl"
+
+
+def unresolved_iris(path: Path) -> Counter[str]:
+    """IRI attributes in an RDF/XML file that are relative or use a scheme the
+    build never emits, with counts.
+
+    A bare `NA` (#44) or `Class` (#41) has no scheme at all. An unexpanded CURIE
+    (`COMO:0000129`, #43) parses as scheme `como`, so a test for "has a scheme"
+    alone does not see it.
+
+    Reads the attribute text as written. An RDF parser would resolve each value
+    against the file's xml:base, so `rdf:resource="NA"` would come back as
+    http://www.w3.org/2002/07/NA and look valid. In a release, built from the
+    loaded component, that resolution has already happened, so an IRI under
+    XML_BASE_DIR outside the OWL namespace is reported too.
+
+    XML_BASE_DIR is the component's base specifically. The release itself is
+    written with xml:base http://purl.obolibrary.org/obo/bervo.owl, so a relative
+    IRI typed by hand into bervo-edit.owl resolves under
+    http://purl.obolibrary.org/obo/ and is not caught here.
+
+    RDF/XML only. The OBO and JSON releases are covered because the Makefile
+    converts them from the checked files (bervo.obo and bervo.json from
+    bervo.owl, the -full ones from bervo-full.owl), not because they are read here.
+    """
+    found: Counter[str] = Counter()
+    for element in ET.parse(path).iter():
+        for attribute in IRI_ATTRIBUTES:
+            value = element.get(attribute)
+            if value is None:
+                continue
+            try:
+                scheme = urlsplit(value).scheme
+            except ValueError:  # e.g. "//bad[": report the value, not a traceback
+                scheme = None
+            if scheme not in ALLOWED_SCHEMES or (
+                value.startswith(XML_BASE_DIR)
+                and not value.startswith(OWL_NS)
+                and value != OWL_ONTOLOGY_IRI
+            ):
+                found[value] += 1
+    return found
+
+
+class UnresolvedIriCheckTest(unittest.TestCase):
+    def test_bare_values_and_curies_are_reported_and_iris_are_not(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "sample.owl"
+            path.write_text(
+                f'''<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="{RDF_NS}" xml:base="http://www.w3.org/2002/07/owl"
+         xmlns:bervo="https://w3id.org/bervo/">
+  <rdf:Description rdf:about="https://w3id.org/bervo/BERVO_0000001">
+    <bervo:BERVO_Qualifier rdf:resource="NA"/>
+    <bervo:BERVO_Context rdf:resource="NA"/>
+    <bervo:xref rdf:resource="Class"/>
+    <bervo:xref rdf:resource="COMO:0000129"/>
+    <bervo:BERVO_Measured_in rdf:resource="http://www.w3.org/2002/07/Water%20flux"/>
+    <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <bervo:conformsTo rdf:resource="http://www.w3.org/2002/07/owl"/>
+    <bervo:xref rdf:resource="//bad["/>
+    <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+  </rdf:Description>
+</rdf:RDF>
+''',
+                encoding="utf-8",
+            )
+            self.assertEqual(
+                unresolved_iris(path),
+                {
+                    "NA": 2,
+                    "Class": 1,
+                    "COMO:0000129": 1,
+                    "http://www.w3.org/2002/07/Water%20flux": 1,
+                    "//bad[": 1,
+                },
+            )
 
 
 class MakefileIntegrationTest(unittest.TestCase):
@@ -66,6 +162,11 @@ class MakefileIntegrationTest(unittest.TestCase):
 
         self.assertTrue(component.exists(), "make should regenerate bervo-src.owl")
         self.assertGreater(component.stat().st_size, 0, "generated component should not be empty")
+        # Every IRI ROBOT emits must be an http(s) IRI. A bare value in an
+        # IRI-valued column (`NA`, #44) or a value in the wrong column (`Class`,
+        # #41) comes out as a relative IRI, and an undeclared CURIE prefix (#43)
+        # as a CURIE; the validator can catch only one known case at a time.
+        self.assertEqual(unresolved_iris(component), {})
 
     def test_export_google_sheet_copies_repo_tracked_template(self) -> None:
         template = self.ontology_dir / "bervo-src.csv"
@@ -138,10 +239,11 @@ class MakefileIntegrationTest(unittest.TestCase):
             self.assertIn(f"xref: http://vocabulary.odm2.org/{v}", lines)
         self.assertIn("xref: CHEBI:17045", lines)
 
-    def test_obo_release_writes_bervo_ids_with_obo_prefix(self) -> None:
-        # Issue #137: the OBO release wrote every ID as bervo:BERVO_0000001.
-        # Builds the real release chain from bervo-edit.owl and the component,
-        # so it also checks the #131 and #129 xref fixes end to end.
+    def test_release_chain_output(self) -> None:
+        # Builds the real release chain once from bervo-edit.owl and the
+        # component and checks its output: OBO IDs written as BERVO: (#137), the
+        # #131 and #129 xref fixes end to end, no unresolved IRIs (#41, #43,
+        # #44), and no BERVO term declared as an individual.
         built = [self.ontology_dir / name for name in ("bervo.owl", "bervo-full.owl", "bervo.obo")]
         for path in built:
             path.unlink(missing_ok=True)
@@ -175,7 +277,24 @@ class MakefileIntegrationTest(unittest.TestCase):
             'rdf:resource="http://purl.obolibrary.org/obo/COMO_0000129"' in owl,
             "bervo.owl has no absolute IRI for COMO:0000129",
         )
-        self.assertEqual(re.findall(r'rdf:resource="COMO:[^"]*"', owl)[:5], [])
+        # Covers the COMO case above and every other unresolved IRI, in the
+        # files people download rather than only the component.
+        #
+        # No BERVO term is an individual. bervo-edit.owl once declared 1,630
+        # NamedIndividuals: uncurated residue of an old import, which put that
+        # many phantom individuals into every release (#164 review). Punning a
+        # class as an individual is legal OWL 2 DL; these carried no information.
+        # Only BERVO IRIs are checked, so an import that brings individuals is
+        # fine. If BERVO ever models a term as an individual on purpose, this is
+        # a hygiene check to narrow or drop, not a correctness one.
+        for name in ("bervo.owl", "bervo-full.owl"):
+            path = self.ontology_dir / name
+            self.assertEqual(unresolved_iris(path), {}, name)
+            individuals = re.findall(
+                r'<owl:NamedIndividual rdf:about="https://w3id\.org/bervo/[^"]*"',
+                path.read_text(encoding="utf-8"),
+            )
+            self.assertEqual(individuals[:5], [], name)
 
     def test_legacy_sheet_export_alias_matches_template(self) -> None:
         template = self.ontology_dir / "bervo-src.csv"

@@ -342,7 +342,7 @@ class TestReferentialIntegrity(ValidatorTestCase):
 
 
 class TestCrossReferences(ValidatorTestCase):
-    """DbXrefs is `AI`, so a value ROBOT cannot expand becomes a relative IRI."""
+    """DbXrefs is `AI`, so a value ROBOT cannot expand becomes a broken IRI."""
 
     def test_non_curie_xref_is_an_error(self):
         report = validator.validate(self.write([

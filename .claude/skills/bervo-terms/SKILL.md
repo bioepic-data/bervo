@@ -330,14 +330,15 @@ runoak -i ols:envo info ENVO:06105211
 
 `DbXrefs` is declared `AI oio:hasDbXref` — the value is emitted as an **IRI**, not a string.
 ROBOT expands OBO-registered prefixes (`CHEBI`, `ENVO`, `PO`, `PATO`, `GO`, `AGRO`, …) to
-absolute IRIs automatically. Anything else is emitted as a *relative* IRI, which is
+absolute IRIs automatically. Anything else is emitted as an **unexpanded CURIE**. That is
+technically an IRI whose scheme is the prefix (`notreal:`), and nothing resolves it, so it is
 silently meaningless:
 
 ```xml
 <!-- ENVO: correct, absolute -->
 <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105211"/>
 
-<!-- An undeclared prefix: a broken relative IRI -->
+<!-- An undeclared prefix: an unexpanded CURIE -->
 <oboInOwl:hasDbXref rdf:resource="NOTREAL:0000129"/>
 ```
 
@@ -367,8 +368,8 @@ error — it usually means a value landed in the wrong column.
 ### The same trap applied to `NA`
 
 `qualifiers`, `attributes`, `measured_ins`, `measurement_ofs`, `contexts`, and `value_types`
-are all `AI` columns too. `NA` in them was emitted as a relative IRI exactly like an
-undeclared prefix:
+are all `AI` columns too. `NA` in them was emitted as a relative IRI, a different
+malformation from an undeclared prefix but just as meaningless:
 
 ```xml
 <bervo:BERVO_Qualifier rdf:resource="NA"/>
