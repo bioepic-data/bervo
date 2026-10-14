@@ -19427,7 +19427,7 @@
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
         <rdfs:label>Surface litter autotrophic microbial biomass carbon</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000096"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
