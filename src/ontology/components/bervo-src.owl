@@ -16688,8 +16688,9 @@
         <obo:IAO_0000115>Rate at which aerobic heterotrophic microbes would take up dissolved oxygen to oxidise dissolved organic carbon and acetate, before the oxygen supply limits it, resolved by functional guild and organic matter complex in the surface litter and each soil layer.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Aqueous demand</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>RO2DmndHetert</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>RO2DmndHetert_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source (Oct 14 2026)</rdfs:comment>
-        <rdfs:comment>EcoSIM sets it to zero for the anaerobic heterotrophic guilds (acetogenic fermenters, acetogenic nitrogen fixers and acetotrophic methanogens), and sums it with the demand of roots and other microbes into Total root + microbial oxygen uptake (BERVO:0000409).</rdfs:comment>
+        <rdfs:comment>EcoSIM stores this as RO2DmndHetert_vr in MicrobialDataType; RO2DmndHetert is its working copy inside the microbial model. EcoSIM sets it to zero for the anaerobic heterotrophic guilds (acetogenic fermenters, acetogenic nitrogen fixers and acetotrophic methanogens), and sums it with the demand of roots and other microbes into Total root + microbial oxygen uptake (BERVO:0000409).</rdfs:comment>
         <rdfs:comment>Interesting units.  These items below appear to be chemical rates</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Aqueous oxygen demand by heterotrophic microbes</rdfs:label>
@@ -17101,7 +17102,9 @@
         <obo:IAO_0000115>Rate at which autotrophic microbes would take up dissolved oxygen for gross respiration and for oxidising their substrate (ammonium, nitrite or methane), before the oxygen supply limits it, resolved by functional guild in the surface litter and each soil layer.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Aqueous demand by autotrophic microbes</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>RO2DmndAutort_vr</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>RO2MetaDmndAutor_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>EcoSIM renamed RO2DmndAutort_vr to RO2MetaDmndAutor_vr in October 2025 (commit 64e2e2a), declared as aqueous O2 demand by metabolism of autotrophic microbes.</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Aqueous oxygen demand by autotrophic microbes</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
