@@ -39,6 +39,8 @@ def release_chain_overrides() -> list[str]:
 RDF_NS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 IRI_ATTRIBUTES = tuple(f"{{{RDF_NS}}}{name}" for name in ("about", "resource", "datatype"))
 # The only schemes the build emits. Checked on the component and the releases.
+# Widen this if the build legitimately starts emitting another scheme (a urn: or
+# doi: xref, say); a value reported with such a scheme is not by itself an error.
 ALLOWED_SCHEMES = frozenset({"http", "https"})
 # The component's xml:base. Once ROBOT has loaded the component, as in a release,
 # a relative IRI has already been resolved against it: rdf:resource="NA" is
