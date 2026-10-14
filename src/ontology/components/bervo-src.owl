@@ -20854,13 +20854,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001105">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>The count of root axes in the grid cell within a specific soil layer. This parameter quantifies root branching patterns and root system architecture, which directly influences nutrient uptake capacity and soil stabilization.</obo:IAO_0000115>
+        <obo:IAO_0000115>Number of secondary root axes in a soil layer per grid cell, summed over all primary axes of a plant functional type. Differs from Root layer number secondary axes, which is resolved by primary axis.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Root2ndXNum_pvr</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 14 2026)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Root layer number axes</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
-        <bervo:BERVO_Context rdf:resource="NA"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000163"/>
         <bervo:BERVO_Qualifier rdf:resource="NA"/>
         <bervo:BERVO_has_unit>/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
