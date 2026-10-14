@@ -19430,6 +19430,7 @@
         <oboInOwl:hasRelatedSynonym>Surface litter organic matter in the autotrophic complex</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source (Oct 14 2026)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
+        <rdfs:comment>The related synonym Surface litter organic matter in the autotrophic complex is this term&apos;s former label, taken from EcoSIM&apos;s declaration of RC0ff_col. It is kept for search, but it is inaccurate. sumSurfOMCK fills RC0ff_col with live autotrophic biomass carbon only; microbial residue, dissolved, sorbed and solid organic matter are counted with the heterotrophic complexes.</rdfs:comment>
         <rdfs:label>Surface litter autotrophic microbial biomass carbon</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
