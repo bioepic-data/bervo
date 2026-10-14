@@ -65,6 +65,11 @@ def unresolved_iris(path: Path) -> Counter[str]:
     loaded component, that resolution has already happened, so an IRI under
     XML_BASE_DIR outside the OWL namespace is reported too.
 
+    XML_BASE_DIR is the component's base specifically. The release itself is
+    written with xml:base http://purl.obolibrary.org/obo/bervo.owl, so a relative
+    IRI typed by hand into bervo-edit.owl resolves under
+    http://purl.obolibrary.org/obo/ and is not caught here.
+
     RDF/XML only. The OBO and JSON releases are covered because the Makefile
     converts them from the checked files (bervo.obo and bervo.json from
     bervo.owl, the -full ones from bervo-full.owl), not because they are read here.
