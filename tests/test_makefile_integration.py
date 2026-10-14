@@ -62,6 +62,10 @@ def unresolved_iris(path: Path) -> Counter[str]:
     http://www.w3.org/2002/07/NA and look valid. In a release, built from the
     loaded component, that resolution has already happened, so an IRI under
     XML_BASE_DIR outside the OWL namespace is reported too.
+
+    RDF/XML only. The OBO and JSON releases are covered because the Makefile
+    converts them from the checked files (bervo.obo and bervo.json from
+    bervo.owl, the -full ones from bervo-full.owl), not because they are read here.
     """
     found: Counter[str] = Counter()
     for element in ET.parse(path).iter():
