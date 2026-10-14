@@ -722,6 +722,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_has_unit>mol3.m-9</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000222"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000180"/>
     </Class>
@@ -739,6 +740,7 @@
         <rdfs:label>Equilibrium constant for FeOH3(s)=Fe(3+)+3OH(-)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>mol3.m-9</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000222"/>
     </Class>
     
 
@@ -28451,6 +28453,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000125"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000222"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000074"/>
     </Class>
     
@@ -28590,6 +28593,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000119"/>
     </Class>
     
@@ -28641,6 +28645,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000219"/>
     </Class>
     
