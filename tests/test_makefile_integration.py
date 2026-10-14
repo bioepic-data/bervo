@@ -251,6 +251,12 @@ class MakefileIntegrationTest(unittest.TestCase):
         for name in ("bervo.owl", "bervo-full.owl"):
             self.assertEqual(unresolved_iris(self.ontology_dir / name), {}, name)
 
+        # Every BERVO term is a class. bervo-edit.owl once also declared 1,579 of
+        # them as individuals, which punned them and left OWL 2 DL (#164 review).
+        for name in ("bervo.owl", "bervo-full.owl"):
+            text = (self.ontology_dir / name).read_text(encoding="utf-8")
+            self.assertEqual(text.count("owl:NamedIndividual"), 0, name)
+
     def test_legacy_sheet_export_alias_matches_template(self) -> None:
         template = self.ontology_dir / "bervo-src.csv"
         legacy_export = self.ontology_dir / "bervo_for_sheet.csv"
