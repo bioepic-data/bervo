@@ -7904,13 +7904,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000480">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>Concentration of the iron monohydroxide ion, Fe(OH)(2+), in water applied by surface irrigation.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of the iron(III) monohydroxide ion, Fe(OH)(2+), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CFE1Q</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
-        <rdfs:label>Surface irrigation iron monohydroxide concentration</rdfs:label>
+        <rdfs:label>Surface irrigation iron(III) monohydroxide concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000135"/>
         <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
@@ -7924,13 +7924,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000481">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>Concentration of the iron dihydroxide ion, Fe(OH)2(+), in water applied by surface irrigation.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of the iron(III) dihydroxide ion, Fe(OH)2(+), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CFE2Q</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
-        <rdfs:label>Surface irrigation iron dihydroxide concentration</rdfs:label>
+        <rdfs:label>Surface irrigation iron(III) dihydroxide concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000135"/>
         <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
@@ -7944,13 +7944,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000482">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>Concentration of dissolved iron trihydroxide, Fe(OH)3(aq), in water applied by surface irrigation.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of dissolved iron(III) trihydroxide, Fe(OH)3(aq), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CFE3Q</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
-        <rdfs:label>Surface irrigation iron trihydroxide concentration</rdfs:label>
+        <rdfs:label>Surface irrigation iron(III) trihydroxide concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000135"/>
         <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
@@ -7964,13 +7964,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000483">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>Concentration of the iron tetrahydroxide ion, Fe(OH)4(-), in water applied by surface irrigation.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of the iron(III) tetrahydroxide ion, Fe(OH)4(-), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CFE4Q</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
-        <rdfs:label>Surface irrigation iron tetrahydroxide concentration</rdfs:label>
+        <rdfs:label>Surface irrigation iron(III) tetrahydroxide concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000135"/>
         <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
@@ -27875,7 +27875,7 @@
         <oboInOwl:hasRelatedSynonym>CFEOH_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:label>Soil iron trihydroxide content</rdfs:label>
+        <rdfs:label>Soil iron(III) trihydroxide content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>mg{Fe}.kg-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
@@ -28453,7 +28453,7 @@
         <oboInOwl:hasRelatedSynonym>TRChem_FeO3H3_soil_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:label>Total solute iron trihydroxide transformation</rdfs:label>
+        <rdfs:label>Total solute iron(III) trihydroxide transformation</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000125"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
@@ -28642,11 +28642,11 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001731">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
-        <obo:IAO_0000115>Rate at which iron dihydroxide, Fe(OH)2(+), is adsorbed onto soil surfaces in a soil layer, per grid cell and hour, as computed by the geochemical solver; the amount adsorbed is removed from the dissolved pool.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which iron(III) dihydroxide, Fe(OH)2(+), is adsorbed onto soil surfaces in a soil layer, per grid cell and hour, as computed by the geochemical solver; the amount adsorbed is removed from the dissolved pool.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TRChem_FeO2H2_sorbed_soil_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 8 2026), from EcoSIM AqueChemDatatype.F90 and GeochemAPI.F90 for issue #83</rdfs:comment>
-        <rdfs:label>Total iron dihydroxide adsorption</rdfs:label>
+        <rdfs:label>Total iron(III) dihydroxide adsorption</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
@@ -36942,11 +36942,12 @@
         <obo:IAO_0000115>Compound of one iron(III) ion and three hydroxide groups, Fe(OH)3, occurring both as the uncharged aqueous species in the stepwise hydrolysis of ferric iron and as the solid precipitate whose dissolution controls ferric iron solubility in soil.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_135985"/>
         <oboInOwl:hasExactSynonym>Fe(OH)3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Iron trihydroxide</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ferric hydroxide</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>iron(III) hydroxide</oboInOwl:hasExactSynonym>
         <rdfs:comment>Covers both the dissolved species, Fe(OH)3(aq), and the solid, Fe(OH)3(s); the variable that names this term says which. The equilibrium between the two forms is BERVO:0000089.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
-        <rdfs:label>Iron trihydroxide</rdfs:label>
+        <rdfs:label>Iron(III) trihydroxide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
@@ -37430,8 +37431,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000016"/>
         <obo:IAO_0000115>Hydrolysis species of iron(III) in which four hydroxide groups are bound to a single iron(III) ion, giving a net charge of 1-; the anionic species that ends the stepwise hydrolysis of ferric iron and dominates it under alkaline conditions.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Fe(OH)4(-)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Iron tetrahydroxide</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
-        <rdfs:label>Iron tetrahydroxide</rdfs:label>
+        <rdfs:label>Iron(III) tetrahydroxide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
@@ -38882,8 +38884,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000016"/>
         <obo:IAO_0000115>Hydrolysis species of iron(III) in which two hydroxide groups are bound to a single iron(III) ion, giving a net charge of 1+; the second species in the stepwise hydrolysis of ferric iron in soil solution. Distinct from iron(II) hydroxide, Fe(OH)2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Fe(OH)2(+)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Iron dihydroxide</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
-        <rdfs:label>Iron dihydroxide</rdfs:label>
+        <rdfs:label>Iron(III) dihydroxide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
@@ -49375,8 +49378,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000016"/>
         <obo:IAO_0000115>Hydrolysis species of iron(III) in which one hydroxide group is bound to a single iron(III) ion, giving a net charge of 2+; the first species in the stepwise hydrolysis of ferric iron in soil solution.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Fe(OH)(2+)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Iron monohydroxide</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
-        <rdfs:label>Iron monohydroxide</rdfs:label>
+        <rdfs:label>Iron(III) monohydroxide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
