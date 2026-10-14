@@ -714,7 +714,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000026">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the dissolution of aluminum hydroxide solid into aluminum and hydroxide ions in aqueous solution. This reaction controls aluminum solubility and bioavailability in soils and is critical for modeling aluminum toxicity, soil pH buffering, and chemical weathering processes in terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the dissolution of solid aluminum trihydroxide into aluminum and hydroxide ions in aqueous solution. This reaction controls aluminum solubility and bioavailability in soils and is critical for modeling aluminum toxicity, soil pH buffering, and chemical weathering processes in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SPALO</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
@@ -722,9 +722,10 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_has_unit>mol3.m-9</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000203"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000222"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000180"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000194"/>
     </Class>
     
 
@@ -739,7 +740,12 @@
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for FeOH3(s)=Fe(3+)+3OH(-)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_has_unit>mol3.m-9</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000222"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000074"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000182"/>
     </Class>
     
 
@@ -958,13 +964,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000042">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the dissociation of aluminum hydroxide complex ions to form free aluminum and hydroxide ions in aqueous solution. This reaction controls aluminum speciation and toxicity in acidic soils and waters and is fundamental for modeling aluminum mobility, plant aluminum stress, and chemical weathering processes in terrestrial environments.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the dissociation of aluminum monohydroxide complex ions to form free aluminum and hydroxide ions in aqueous solution. This reaction controls aluminum speciation and toxicity in acidic soils and waters and is fundamental for modeling aluminum mobility, plant aluminum stress, and chemical weathering processes in terrestrial environments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>DPAL1</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for AlOH(2+)=Al(3+)+OH(-)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>mol.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000180"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000980"/>
     </Class>
     
 
@@ -980,6 +989,9 @@
         <rdfs:label>Equilibrium constant for Al(OH)2(+)=AlOH(2+)+OH(-)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>mol.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000119"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000980"/>
     </Class>
     
 
@@ -995,6 +1007,9 @@
         <rdfs:label>Equilibrium constant for Al(OH)3(aq)=Al(OH)2(+)+OH(-)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>mol.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000119"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000194"/>
     </Class>
     
 
@@ -1010,6 +1025,9 @@
         <rdfs:label>Equilibrium constant for Al(OH)4(-)=Al(OH)3(aq)+OH(-)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>mol.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000154"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000194"/>
     </Class>
     
 
@@ -1040,6 +1058,9 @@
         <rdfs:label>Equilibrium constant for Fe(OH)(2+)=Fe(3+)+OH(-)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>mol.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000182"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000979"/>
     </Class>
     
 
@@ -1055,6 +1076,9 @@
         <rdfs:label>Equilibrium constant for Fe(OH)2(+)=FeOH(2+)+OH(-)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>mol.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000219"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000979"/>
     </Class>
     
 
@@ -1070,6 +1094,9 @@
         <rdfs:label>Equilibrium constant for Fe(OH)3(aq)=Fe(OH)2(+)+OH(-)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>mol.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000074"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000219"/>
     </Class>
     
 
@@ -1085,6 +1112,9 @@
         <rdfs:label>Equilibrium constant for Fe(OH)4(-)=Fe(OH)3(aq)+OH(-)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>mol.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000074"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000110"/>
     </Class>
     
 
@@ -1430,6 +1460,9 @@
         <rdfs:label>Equilibrium constant for X-COO-Al(OH)2+H(+)=Al(OH)2(+)+X-COOH</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>mol.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000039"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000119"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000581"/>
     </Class>
     
 
@@ -1445,6 +1478,9 @@
         <rdfs:label>Equilibrium constant for X-COO-Fe(OH)2+H(+)=Fe(OH)2(+)+X-COOH</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>mol.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000039"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000219"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000581"/>
     </Class>
     
 
@@ -1468,13 +1504,17 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000076">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the acid dissolution of solid aluminum hydroxide to form free aluminum ions and water in aqueous solution. This reaction controls aluminum hydroxide mineral stability and aluminum release in acidic conditions and is essential for modeling aluminum toxicity, soil acidification, and aluminum mobility in acid-affected terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the acid dissolution of solid aluminum trihydroxide to form free aluminum ions and water in aqueous solution. This reaction controls aluminum hydroxide mineral stability and aluminum release in acidic conditions and is essential for modeling aluminum toxicity, soil acidification, and aluminum mobility in acid-affected terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SHALO</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for Al(OH)3(s)+3H(+) =Al(3+)+3H2O</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>m6.mol-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000039"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000180"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000194"/>
     </Class>
     
 
@@ -1483,13 +1523,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000077">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the incongruent dissolution of solid aluminum hydroxide to form aluminum monohydroxide complex ions and hydroxide ions. This reaction controls aluminum hydroxide mineral dissolution in neutral to alkaline conditions and affects aluminum speciation and mobility in well-buffered terrestrial and aquatic systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the incongruent dissolution of solid aluminum trihydroxide to form aluminum monohydroxide complex ions and hydroxide ions. This reaction controls aluminum hydroxide mineral dissolution in neutral to alkaline conditions and affects aluminum speciation and mobility in well-buffered terrestrial and aquatic systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SYAL1</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for Al(OH)3(s) = Al(OH)(2+)+2OH(-)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>mol2.m-6</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000194"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000980"/>
     </Class>
     
 
@@ -1498,13 +1541,18 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000078">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the partial acid dissolution of solid aluminum hydroxide to form free aluminum ions, hydroxide ions, and water. This reaction represents an intermediate dissolution pathway under moderately acidic conditions and is important for modeling aluminum release and mobility in soils experiencing gradual acidification processes.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the partial acid dissolution of solid aluminum trihydroxide to form free aluminum ions, hydroxide ions, and water. This reaction represents an intermediate dissolution pathway under moderately acidic conditions and is important for modeling aluminum release and mobility in soils experiencing gradual acidification processes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SHAL1</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for Al(OH)3(s) + 2H(+)=Al(3+)+OH(-)+H2O</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>m3.mol-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000039"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000180"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000194"/>
     </Class>
     
 
@@ -1513,13 +1561,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000079">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the congruent dissolution of solid aluminum hydroxide to form aluminum dihydroxide complex ions and hydroxide ions. This reaction controls aluminum hydroxide mineral solubility in near-neutral conditions and affects aluminum speciation and bioavailability in moderately acidic to neutral terrestrial and aquatic environments.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the congruent dissolution of solid aluminum trihydroxide to form aluminum dihydroxide complex ions and hydroxide ions. This reaction controls aluminum hydroxide mineral solubility in near-neutral conditions and affects aluminum speciation and bioavailability in moderately acidic to neutral terrestrial and aquatic environments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SYAL2</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for Al(OH)3(s) = Al(OH)2(+)+OH(-)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>mol.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000119"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000194"/>
     </Class>
     
 
@@ -1528,13 +1579,17 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000080">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the proton-promoted dissolution of solid aluminum hydroxide to form aluminum dihydroxide complex ions and water. This reaction controls aluminum hydroxide dissolution under mildly acidic conditions and is fundamental for modeling aluminum mobilization and transport in soils undergoing moderate acidification.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the proton-promoted dissolution of solid aluminum trihydroxide to form aluminum dihydroxide complex ions and water. This reaction controls aluminum hydroxide dissolution under mildly acidic conditions and is fundamental for modeling aluminum mobilization and transport in soils undergoing moderate acidification.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SHAL2</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for Al(OH)3(s)+H(+) = Al(OH)2(+) + H2O</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>m3.mol-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000039"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000119"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000194"/>
     </Class>
     
 
@@ -1543,13 +1598,14 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000081">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the dissolution of solid aluminum hydroxide to form dissolved aluminum trihydroxide species without change in coordination. This reaction controls the solubility of aluminum hydroxide minerals in neutral conditions and affects aluminum transport and biogeochemical cycling in pH-buffered terrestrial and aquatic systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the dissolution of solid aluminum trihydroxide to form dissolved aluminum trihydroxide species without change in coordination. This reaction controls the solubility of aluminum hydroxide minerals in neutral conditions and affects aluminum transport and biogeochemical cycling in pH-buffered terrestrial and aquatic systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SPAL3</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for Al(OH)3(s) = Al(OH)3(aq)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000194"/>
     </Class>
     
 
@@ -1558,13 +1614,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000082">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the reaction of solid aluminum hydroxide with hydroxide ions to form aluminum tetrahydroxide complex ions. This reaction controls aluminum hydroxide dissolution under strongly alkaline conditions and affects aluminum speciation and mobility in highly basic terrestrial and aquatic systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the reaction of solid aluminum trihydroxide with hydroxide ions to form aluminum tetrahydroxide complex ions. This reaction controls aluminum hydroxide dissolution under strongly alkaline conditions and affects aluminum speciation and mobility in highly basic terrestrial and aquatic systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SYAL4</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for Al(OH)3(s)+OH(-) = Al(OH)4(-)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>m3.mol-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000154"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000194"/>
     </Class>
     
 
@@ -1573,13 +1632,17 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000083">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the hydrolytic dissolution of solid aluminum hydroxide to form aluminum tetrahydroxide complex ions and protons. This reaction represents aluminum hydroxide dissolution through water coordination under alkaline conditions and is important for modeling aluminum behavior in high pH environments.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the hydrolytic dissolution of solid aluminum trihydroxide to form aluminum tetrahydroxide complex ions and protons. This reaction represents aluminum hydroxide dissolution through water coordination under alkaline conditions and is important for modeling aluminum behavior in high pH environments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SHAL4</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for Al(OH)3(s)+H2O = Al(OH)4(-)+H(+)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>mol.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000039"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000154"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000194"/>
     </Class>
     
 
@@ -1588,13 +1651,17 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000084">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the complete acid dissolution of solid iron hydroxide to form free ferric iron ions and water. This reaction represents the primary dissolution pathway under acidic conditions and is critical for modeling iron mobilization, bioavailability, and redox chemistry in acid-impacted soils and surface waters.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the complete acid dissolution of solid iron(III) trihydroxide to form free ferric iron ions and water. This reaction represents the primary dissolution pathway under acidic conditions and is critical for modeling iron mobilization, bioavailability, and redox chemistry in acid-impacted soils and surface waters.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SHFEO</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for Fe(OH)3(s)+3H(+) = Fe(3+)+3H2O</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>m6.mol-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000039"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000074"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000182"/>
     </Class>
     
 
@@ -1603,13 +1670,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000085">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the incongruent dissolution of solid iron hydroxide to form iron monohydroxide complex ions and hydroxide ions. This reaction controls iron hydroxide mineral dissolution in neutral to alkaline conditions and affects iron speciation and mobility in well-buffered terrestrial and aquatic systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the incongruent dissolution of solid iron(III) trihydroxide to form iron(III) monohydroxide complex ions and hydroxide ions. This reaction controls iron hydroxide mineral dissolution in neutral to alkaline conditions and affects iron speciation and mobility in well-buffered terrestrial and aquatic systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SYFE1</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for Fe(OH)3(s) = Fe(OH)(2+)+2OH(-)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>mol2.m-6</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000074"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000979"/>
     </Class>
     
 
@@ -1618,13 +1688,18 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000086">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the partial acid dissolution of solid iron hydroxide to form free ferric iron ions, hydroxide ions, and water. This reaction represents an intermediate dissolution pathway under moderately acidic conditions and is important for modeling iron release and mobility in soils undergoing gradual acidification processes.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the partial acid dissolution of solid iron(III) trihydroxide to form free ferric iron ions, hydroxide ions, and water. This reaction represents an intermediate dissolution pathway under moderately acidic conditions and is important for modeling iron release and mobility in soils undergoing gradual acidification processes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SHFE1</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for Fe(OH)3(s) + 2H(+)=Fe(3+)+OH(-)+H2O</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>m3.mol-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000039"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000074"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000182"/>
     </Class>
     
 
@@ -1633,13 +1708,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000087">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the congruent dissolution of solid iron hydroxide to form iron dihydroxide complex ions and hydroxide ions. This reaction controls iron hydroxide mineral solubility in near-neutral conditions and affects iron speciation and bioavailability in moderately acidic to neutral terrestrial and aquatic environments.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the congruent dissolution of solid iron(III) trihydroxide to form iron(III) dihydroxide complex ions and hydroxide ions. This reaction controls iron hydroxide mineral solubility in near-neutral conditions and affects iron speciation and bioavailability in moderately acidic to neutral terrestrial and aquatic environments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SYFE2</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for Fe(OH)3(s) = Fe(OH)2(+)+OH(-)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>mol.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000074"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000219"/>
     </Class>
     
 
@@ -1648,13 +1726,17 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000088">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the proton-promoted dissolution of solid iron hydroxide to form iron dihydroxide complex ions and water. This reaction controls iron hydroxide dissolution under mildly acidic conditions and is important for modeling iron mobilization and transport in soils and sediments experiencing moderate acidification.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the proton-promoted dissolution of solid iron(III) trihydroxide to form iron(III) dihydroxide complex ions and water. This reaction controls iron hydroxide dissolution under mildly acidic conditions and is important for modeling iron mobilization and transport in soils and sediments experiencing moderate acidification.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SHFE2</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for Fe(OH)3(s)+H(+) = Fe(OH)2(+) + H2O</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>m3.mol-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000039"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000074"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000219"/>
     </Class>
     
 
@@ -1663,13 +1745,14 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000089">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the dissolution of solid iron hydroxide to form dissolved iron trihydroxide species without change in coordination. This reaction controls the solubility of iron hydroxide minerals in neutral conditions and affects iron transport and biogeochemical cycling in pH-buffered terrestrial and aquatic systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the dissolution of solid iron(III) trihydroxide to form dissolved iron(III) trihydroxide species without change in coordination. This reaction controls the solubility of iron hydroxide minerals in neutral conditions and affects iron transport and biogeochemical cycling in pH-buffered terrestrial and aquatic systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SPFE3</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for Fe(OH)3(s) = Fe(OH)3(aq)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000074"/>
     </Class>
     
 
@@ -1678,13 +1761,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000090">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the reaction of solid iron hydroxide with hydroxide ions to form iron tetrahydroxide complex ions. This reaction controls iron hydroxide dissolution under strongly alkaline conditions and affects iron speciation and mobility in highly basic terrestrial and aquatic systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the reaction of solid iron(III) trihydroxide with hydroxide ions to form iron(III) tetrahydroxide complex ions. This reaction controls iron hydroxide dissolution under strongly alkaline conditions and affects iron speciation and mobility in highly basic terrestrial and aquatic systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SYFE4</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for Fe(OH)3(s)+OH(-) = Fe(OH)4(-)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>m3.mol-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000035"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000074"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000110"/>
     </Class>
     
 
@@ -1693,13 +1779,17 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000091">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000033"/>
-        <obo:IAO_0000115>The equilibrium constant for the hydrolytic dissolution of solid iron hydroxide to form iron tetrahydroxide complex ions and protons. This reaction represents iron hydroxide dissolution through water coordination under alkaline conditions and is important for modeling iron behavior in high pH environments.</obo:IAO_0000115>
+        <obo:IAO_0000115>The equilibrium constant for the hydrolytic dissolution of solid iron(III) trihydroxide to form iron(III) tetrahydroxide complex ions and protons. This reaction represents iron hydroxide dissolution through water coordination under alkaline conditions and is important for modeling iron behavior in high pH environments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SHFE4</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoluteParMod.txt</rdfs:comment>
         <rdfs:label>Equilibrium constant for Fe(OH)3(s)+H2O = Fe(OH)4(-)+H(+)</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000271"/>
         <bervo:BERVO_has_unit>mol.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000039"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000074"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000110"/>
     </Class>
     
 
@@ -7799,17 +7889,18 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000475">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>The concentration of dissolved aluminum hydroxide in water used for surface irrigation systems applied to agricultural soils. This aluminum compound affects water pH, soil aluminum toxicity, and plant growth, and is important for assessing potential aluminum stress impacts in irrigated agricultural systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of the aluminum monohydroxide ion, Al(OH)(2+), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CAL1Q</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
-        <rdfs:label>Surface irrigation aluminum hydroxide concentration</rdfs:label>
+        <rdfs:label>Surface irrigation aluminum monohydroxide concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000135"/>
         <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000203"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000980"/>
     </Class>
     
 
@@ -7818,9 +7909,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000476">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>The concentration of dissolved aluminum dihydroxide in water used for surface irrigation systems applied to agricultural soils. This aluminum compound forms through hydrolysis reactions and affects water chemistry, soil aluminum dynamics, and potential plant aluminum toxicity in irrigated agricultural systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of the aluminum dihydroxide ion, Al(OH)2(+), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CAL2Q</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
         <rdfs:label>Surface irrigation aluminum dihydroxide concentration</rdfs:label>
@@ -7837,9 +7929,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000477">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>The concentration of dissolved aluminum trihydroxide in water used for surface irrigation systems applied to agricultural soils. This aluminum hydroxide compound affects water pH, soil chemistry, and aluminum bioavailability, and is important for assessing potential aluminum toxicity impacts on crops in irrigated agricultural systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of dissolved aluminum trihydroxide, Al(OH)3(aq), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CAL3Q</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
         <rdfs:label>Surface irrigation aluminum trihydroxide concentration</rdfs:label>
@@ -7856,9 +7949,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000478">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>The concentration of dissolved aluminum tetrahydroxide in water used for surface irrigation systems applied to agricultural soils. This highly hydrated aluminum compound affects water alkalinity, soil aluminum chemistry, and plant aluminum stress, and is relevant for managing aluminum toxicity in irrigated agricultural systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of the aluminum tetrahydroxide ion, Al(OH)4(-), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CAL4Q</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
         <rdfs:label>Surface irrigation aluminum tetrahydroxide concentration</rdfs:label>
@@ -7894,17 +7988,18 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000480">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>The concentration of ferric hydroxide (FeOH) in surface water used for irrigation purposes. Ferric hydroxide is a common form of iron oxide that precipitates out of water under certain environmental conditions. This parameter is important in earth systems modeling as it influences the availability of iron (Fe) in the soil, which plays a crucial role in plant growth and nutrient uptake. The concentration of FeOH in surface irrigation water can vary depending on factors such as soil characteristics, water quality, and agricultural practices. Monitoring and modeling this parameter can help assess the potential impacts of surface irrigation on soil health and agricultural productivity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of the iron(III) monohydroxide ion, Fe(OH)(2+), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CFE1Q</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
-        <rdfs:label>Surface irrigation ferric hydroxide concentration</rdfs:label>
+        <rdfs:label>Surface irrigation iron(III) monohydroxide concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000135"/>
         <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000016"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000979"/>
     </Class>
     
 
@@ -7913,12 +8008,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000481">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>The concentration of ferrous hydroxide (FeOH2) in water used for surface irrigation. It represents the amount of dissolved ferrous hydroxide present in the irrigation water, which can have implications for plant nutrient uptake, soil fertility, and water quality. The FeOH2 concentration can impact the availability of iron as a micronutrient for crops and influence various chemical reactions occurring in soil and water systems. Monitoring and understanding this parameter is important for accurate modeling of agricultural systems and their interactions with the environment.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of the iron(III) dihydroxide ion, Fe(OH)2(+), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CFE2Q</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
-        <rdfs:label>Surface irrigation ferrous hydroxide concentration</rdfs:label>
+        <rdfs:label>Surface irrigation iron(III) dihydroxide concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000135"/>
         <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
@@ -7932,12 +8028,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000482">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>The concentration of FeOH3 (iron oxyhydroxide) in the water used for surface irrigation. This parameter is relevant for Earth system modeling as it influences the availability of iron in the soil and its subsequent impact on plant growth and nutrient cycling. The concentration of FeOH3 can vary depending on factors such as soil properties, water quality, and agricultural practices.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of dissolved iron(III) trihydroxide, Fe(OH)3(aq), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CFE3Q</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
-        <rdfs:label>Surface irrigation iron oxyhydroxide concentration</rdfs:label>
+        <rdfs:label>Surface irrigation iron(III) trihydroxide concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000135"/>
         <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
@@ -7951,12 +8048,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000483">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>The concentration of iron hydroxide (FeOH4) in the water used for surface irrigation. It represents the amount of FeOH4 suspended in the water and is measured in units of mass per unit volume (e.g., milligrams per liter). FeOH4 concentration is an important parameter in earth systems modeling as it can affect the chemical composition and nutrient availability of the irrigation water, as well as the potential impacts on soil quality and ecosystem health.</obo:IAO_0000115>
+        <obo:IAO_0000115>Concentration of the iron(III) tetrahydroxide ion, Fe(OH)4(-), in water applied by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CFE4Q</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>EcoSIM stores one value for each day of the year.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
-        <rdfs:label>Surface irrigation iron hydroxide concentration</rdfs:label>
+        <rdfs:label>Surface irrigation iron(III) tetrahydroxide concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000135"/>
         <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
@@ -27840,11 +27938,11 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001685">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
-        <obo:IAO_0000115>The term &apos;soil AlOH3 content&apos; refers to the quantity or concentration of aluminum hydroxide (AlOH3) present in the soil. Aluminum hydroxide is a naturally occurring compound in soils and is important for understanding soil properties and processes such as soil pH, nutrient availability, and cation exchange capacity. The soil AlOH3 content parameter provides information about the amount of aluminum hydroxide in the soil, which can influence various biogeochemical processes and ecosystem dynamics, particularly in acidic soils.</obo:IAO_0000115>
+        <obo:IAO_0000115>Content of precipitated aluminum trihydroxide, Al(OH)3(s), in a soil layer, as mass of aluminum per mass of soil; an input that sets the initial amount of the precipitate.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CALOH_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:label>Soil aluminum hydroxide content</rdfs:label>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:label>Soil aluminum trihydroxide content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>mg{Al}.kg-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
@@ -27857,11 +27955,11 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001686">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
-        <obo:IAO_0000115>Soil FeOH3 content refers to the concentration of iron (III) hydroxide (FeOH3) in the soil. It represents the amount of this mineral present in the soil system, which can affect various biogeochemical processes such as nutrient cycling, organic matter decomposition, and metal sorption. The soil FeOH3 content is an important parameter in earth systems modeling as it influences the availability and mobility of elements and nutrients in the soil, ultimately affecting ecosystem functioning and productivity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Content of precipitated iron(III) trihydroxide, Fe(OH)3(s), in a soil layer, as mass of iron per mass of soil; an input that sets the initial amount of the precipitate.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CFEOH_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:label>Soil iron trihydroxide content</rdfs:label>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:label>Soil iron(III) trihydroxide content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>mg{Fe}.kg-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
@@ -28435,15 +28533,17 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001720">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
-        <obo:IAO_0000115>Total solute FeOH3 transformation refers to the total changes or conversions that the iron trihydroxide (FeOH3) solute undergoes in a given system. These transformations can include processes such as precipitation, dissolution, oxidation, reduction, sorption, desorption, or biological uptake and release. The parameter &apos;TRFE3&apos; is valuable in earth systems and geochemical modeling as it influences nutrient cycling, soil formation, and the mobility and bioavailability of nutrients and contaminants.</obo:IAO_0000115>
+        <obo:IAO_0000115>Net rate at which dissolved iron(III) trihydroxide, Fe(OH)3(aq), is produced in a soil layer by the equilibrium reactions of the geochemical solver, with solid Fe(OH)3, with Fe(OH)2(+) and Fe(OH)4(-), and with iron phosphate, per grid cell and hour.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TRChem_FeO3H3_soil_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:label>Total solute iron trihydroxide transformation</rdfs:label>
+        <rdfs:comment>At EcoSIM c5e0ae6 this array is allocated but never written. The solver computes the quantity as TRChem_FeO3H3_soil (SaltChemEquilibriaMod.F90) and passes it to the model through trcSalt_RGeoChem_flx_vr (BERVO:0001716).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:label>Total solute iron(III) trihydroxide transformation</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000125"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000222"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000074"/>
     </Class>
     
@@ -28575,15 +28675,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001728">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
-        <obo:IAO_0000115>Total adsorbed AlOH2 transformation refers to the total change in the quantity of adsorbed AlOH2 (Aluminum Hydroxide) in a certain period of time. This transformation can occur as a result of various biogeochemical processes such as adsorption, desorption, chemical reactions, and biological activity. The transformation rate of adsorbed AlOH2 is an important parameter in environmental and earth system modeling as it influences water quality, soil fertility, and nutrient availability.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which aluminum dihydroxide, Al(OH)2(+), is adsorbed onto soil surfaces in a soil layer, per grid cell and hour, as computed by the geochemical solver; the amount adsorbed is removed from the dissolved pool.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TRChem_AlO2H2_sorbed_soil_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:label>Total adsorbed aluminum hydroxide transformation</rdfs:label>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:label>Total aluminum dihydroxide adsorption</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000203"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000119"/>
     </Class>
     
 
@@ -28626,14 +28727,15 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001731">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
-        <obo:IAO_0000115>Rate at which iron dihydroxide, Fe(OH)2, is adsorbed onto soil surfaces in a soil layer, per grid cell and hour, as computed by the geochemical solver; the amount adsorbed is removed from the dissolved pool.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which iron(III) dihydroxide, Fe(OH)2(+), is adsorbed onto soil surfaces in a soil layer, per grid cell and hour, as computed by the geochemical solver; the amount adsorbed is removed from the dissolved pool.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TRChem_FeO2H2_sorbed_soil_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 8 2026), from EcoSIM AqueChemDatatype.F90 and GeochemAPI.F90 for issue #83</rdfs:comment>
-        <rdfs:label>Total iron hydroxide adsorption</rdfs:label>
+        <rdfs:label>Total iron(III) dihydroxide adsorption</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000219"/>
     </Class>
     
@@ -35881,6 +35983,26 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002158 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002158">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
+        <obo:IAO_0000115>Net rate at which dissolved aluminum trihydroxide, Al(OH)3(aq), is produced in a soil layer by the equilibrium reactions of the geochemical solver, with solid Al(OH)3, with Al(OH)2(+) and Al(OH)4(-), and with aluminum phosphate, per grid cell and hour.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>TRChem_AlO3H3_soil</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>SoluteChemDataType.F90</rdfs:comment>
+        <rdfs:comment>Unlike its iron twin BERVO:0001720, this quantity has no per-layer array in EcoSIM AqueChemDatatype. The solver computes it as TRChem_AlO3H3_soil (SaltChemEquilibriaMod.F90) and passes it to the model through trcSalt_RGeoChem_flx_vr (BERVO:0001716).</rdfs:comment>
+        <rdfs:label>Total solute aluminum trihydroxide transformation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000786"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000125"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000222"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000194"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
@@ -36116,9 +36238,8 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000016">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
-        <obo:IAO_0000115>A chemical compound formed when iron ions combine with hydroxide ions, commonly occurring as precipitates in soils and sediments. This compound affects iron bioavailability, soil color development, phosphorus sorption, and redox chemistry in terrestrial and aquatic environmental systems.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Fe(OH)3</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <obo:IAO_0000115>Any compound or complex ion of iron and hydroxide groups, including the aqueous hydrolysis species of iron(III) and solid iron hydroxide precipitates in soils and sediments.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:label>Iron hydroxide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -36922,10 +37043,16 @@
     <!-- https://w3id.org/bervo/BERVO_8000074 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000074">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
-        <obo:IAO_0000115>A chemical compound consisting of iron and three hydroxide groups that forms as a precipitate in soils and sediments under oxidizing conditions. This mineral phase affects iron bioavailability, soil color, phosphorus sorption, and redox chemistry in terrestrial and aquatic environmental systems.</obo:IAO_0000115>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
-        <rdfs:label>Iron trihydroxide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000016"/>
+        <obo:IAO_0000115>Compound of one iron(III) ion and three hydroxide groups, Fe(OH)3, occurring both as the uncharged aqueous species in the stepwise hydrolysis of ferric iron and as the solid precipitate whose dissolution controls ferric iron solubility in soil.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_135985"/>
+        <oboInOwl:hasExactSynonym>Fe(OH)3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Iron trihydroxide</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ferric hydroxide</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>iron(III) hydroxide</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Covers both the dissolved species, Fe(OH)3(aq), and the solid, Fe(OH)3(s); the variable that names this term says which. The equilibrium between the two forms is BERVO:0000089.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:label>Iron(III) trihydroxide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
@@ -37406,11 +37533,12 @@
     <!-- https://w3id.org/bervo/BERVO_8000110 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000110">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
-        <obo:IAO_0000115>A chemical compound consisting of iron and four hydroxide groups that forms under specific geochemical conditions in soils and sediments. This mineral phase affects iron mobility, redox chemistry, and the biogeochemical cycling of iron and associated elements in terrestrial and aquatic environmental systems.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>iron(II) hydroxide</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
-        <rdfs:label>Iron tetrahydroxide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000016"/>
+        <obo:IAO_0000115>Hydrolysis species of iron(III) in which four hydroxide groups are bound to a single iron(III) ion, giving a net charge of 1-; the anionic species that ends the stepwise hydrolysis of ferric iron and dominates it under alkaline conditions.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Fe(OH)4(-)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Iron tetrahydroxide</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:label>Iron(III) tetrahydroxide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
@@ -37528,10 +37656,10 @@
     <!-- https://w3id.org/bervo/BERVO_8000119 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000119">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
-        <obo:IAO_0000115>A chemical compound consisting of aluminum and two hydroxide groups that occurs in acidic soils and affects aluminum availability and toxicity. This mineral form influences soil chemistry, plant aluminum stress, and the biogeochemical cycling of aluminum in terrestrial ecosystems.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Al(OH)3</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000203"/>
+        <obo:IAO_0000115>Hydrolysis species of aluminum(III) in which two hydroxide groups are bound to a single aluminum(III) ion, giving a net charge of 1+; the second species in the stepwise hydrolysis of aluminum in soil solution.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Al(OH)2(+)</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:label>Aluminum dihydroxide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -38010,9 +38138,10 @@
     <!-- https://w3id.org/bervo/BERVO_8000154 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000154">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
-        <obo:IAO_0000115>A chemical compound consisting of aluminum and four hydroxide groups that forms under specific geochemical conditions in soils and sediments. This mineral phase affects aluminum chemistry, soil acidity, and the mobility and toxicity of aluminum in terrestrial and aquatic environmental systems.</obo:IAO_0000115>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000203"/>
+        <obo:IAO_0000115>Hydrolysis species of aluminum(III) in which four hydroxide groups are bound to a single aluminum(III) ion, giving a net charge of 1-; the anionic species that ends the stepwise hydrolysis of aluminum and dominates it under alkaline conditions.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Al(OH)4(-)</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:label>Aluminum tetrahydroxide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -38510,9 +38639,13 @@
     <!-- https://w3id.org/bervo/BERVO_8000194 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000194">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
-        <obo:IAO_0000115>A chemical compound consisting of aluminum and three hydroxide groups that forms in soils and affects aluminum chemistry and availability. This mineral phase influences soil acidity, aluminum toxicity, and the mobility of aluminum in terrestrial and aquatic systems where pH and redox conditions control its formation and dissolution.</obo:IAO_0000115>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000203"/>
+        <obo:IAO_0000115>Compound of one aluminum(III) ion and three hydroxide groups, Al(OH)3, occurring both as the uncharged aqueous species in the stepwise hydrolysis of aluminum and as the solid whose dissolution controls aluminum solubility in soil.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33130"/>
+        <oboInOwl:hasExactSynonym>Al(OH)3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>aluminum(III) hydroxide</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Covers both the dissolved species, Al(OH)3(aq), and the solid, Al(OH)3(s); the variable that names this term says which. The equilibrium between the two forms is BERVO:0000081.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:label>Aluminum trihydroxide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -38635,8 +38768,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000203">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
-        <obo:IAO_0000115>A chemical compound consisting of aluminum and hydroxide ions that forms in soils and affects aluminum chemistry and plant nutrition. This compound influences soil pH, aluminum availability, and plant aluminum toxicity while serving as both a product of mineral weathering and a control on aluminum mobility in environmental systems.</obo:IAO_0000115>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <obo:IAO_0000115>Any compound or complex ion of aluminum and hydroxide groups, including the aqueous hydrolysis species of aluminum(III) and solid aluminum hydroxide minerals in soils and sediments.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33626"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:label>Aluminum hydroxide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -38852,10 +38986,12 @@
     <!-- https://w3id.org/bervo/BERVO_8000219 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000219">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
-        <obo:IAO_0000115>A chemical compound consisting of iron and two hydroxide groups that forms under specific redox and pH conditions in soils and aquatic systems. This mineral phase affects iron bioavailability, soil chemistry, and represents an intermediate oxidation state that influences iron cycling and plant nutrition.</obo:IAO_0000115>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
-        <rdfs:label>Iron dihydroxide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000016"/>
+        <obo:IAO_0000115>Hydrolysis species of iron(III) in which two hydroxide groups are bound to a single iron(III) ion, giving a net charge of 1+; the second species in the stepwise hydrolysis of ferric iron in soil solution. Distinct from iron(II) hydroxide, Fe(OH)2.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Fe(OH)2(+)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Iron dihydroxide</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:label>Iron(III) dihydroxide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
@@ -47632,6 +47768,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000844 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000844">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000194"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
         <obo:IAO_0000115>Aluminum hydroxide mineral, gamma-Al(OH)3, common in highly weathered tropical soils and in bauxite.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30194"/>
@@ -49335,6 +49472,35 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
         <rdfs:comment>The material measured by Total volatile solids (BERVO:0002095) and its dissolved and suspended fractions.</rdfs:comment>
         <rdfs:label>Volatile solids</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000979 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000979">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000016"/>
+        <obo:IAO_0000115>Hydrolysis species of iron(III) in which one hydroxide group is bound to a single iron(III) ion, giving a net charge of 2+; the first species in the stepwise hydrolysis of ferric iron in soil solution.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Fe(OH)(2+)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>FeOH(2+)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Iron monohydroxide</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:label>Iron(III) monohydroxide</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000980 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000980">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000203"/>
+        <obo:IAO_0000115>Hydrolysis species of aluminum(III) in which one hydroxide group is bound to a single aluminum(III) ion, giving a net charge of 2+; the first species in the stepwise hydrolysis of aluminum in soil solution.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Al(OH)(2+)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>AlOH(2+)</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
+        <rdfs:label>Aluminum monohydroxide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
