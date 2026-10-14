@@ -17815,6 +17815,7 @@
         <oboInOwl:hasRelatedSynonym>LSG_pft</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Match plant functional type from different scenarios</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source (Oct 14 2026)</rdfs:comment>
+        <rdfs:comment>Earlier definition (Manual, JHC, Sep 25 2025), replaced in issue #160 after the EcoSIM source showed LSG_pft to be a landscape grazing section number: The active state of a given plant function group for grazing.</rdfs:comment>
         <rdfs:comment>PlantMgmtDataType.txt</rdfs:comment>
         <rdfs:label>Landscape grazing section number of a plant functional type</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000229"/>
