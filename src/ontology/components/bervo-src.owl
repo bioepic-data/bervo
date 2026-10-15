@@ -36859,6 +36859,61 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002205 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002205">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Net vertical transfer of methane between a surface and the atmosphere, per unit area and time.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>CH4 flux</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>No ODM2 name.</rdfs:comment>
+        <rdfs:label>Methane flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
+        <bervo:BERVO_has_unit>nmol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000024"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002206 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002206">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Net vertical transfer of nitrous oxide between a surface and the atmosphere, per unit area and time.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>N2O flux</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>No ODM2 name.</rdfs:comment>
+        <rdfs:label>Nitrous oxide flux</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
+        <bervo:BERVO_has_unit>nmol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000017"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002207 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002207">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Relative difference between the carbon-13 to carbon-12 ratio of methane in a sample and that of the Vienna Pee Dee Belemnite standard, which distinguishes methane from acetoclastic and hydrogenotrophic methanogenesis and shows how much has been oxidized.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/delta_13COfCH4"/>
+        <oboInOwl:hasExactSynonym>d13C-CH4</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>delta 13C of methane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;delta-13C of CH4&quot;: Isotope 13C of methane</rdfs:comment>
+        <rdfs:label>Methane delta carbon-13</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000466"/>
+        <bervo:BERVO_has_unit>[ppth]</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000086"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000024"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001063"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_0002213 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002213">
@@ -51546,6 +51601,22 @@
         <oboInOwl:hasRelatedSynonym>hydrogen sulfide</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
         <rdfs:label>Dissolved sulfide</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001063 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001063">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000468"/>
+        <obo:IAO_0000115>Stable isotope of carbon with six protons and seven neutrons, 13C, whose abundance relative to carbon-12 is reported as delta 13C.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36928"/>
+        <oboInOwl:hasExactSynonym>13C</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>delta 13C</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 speciation has no carbon-13 entry. The ODM2 variable names carry it instead, as carbon_13StableIsotopeRatioDelta and the delta_13COf... names.</rdfs:comment>
+        <rdfs:label>Carbon-13</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
