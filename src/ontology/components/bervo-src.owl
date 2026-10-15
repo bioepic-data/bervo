@@ -31290,7 +31290,7 @@
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/diameterAtBreastHeight"/>
         <oboInOwl:hasExactSynonym>DBH</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>diameter at breast height</oboInOwl:hasExactSynonym>
-        <rdfs:comment>CHESS: Stem_DBH, DBH_1_CM, DBH_2_CM, DBH_Avg_CM. Allometric equations take this as their input for biomass and carbon stock. ODM2 variable name concept &quot;Diameter at breast height (DBH)&quot;: Diameter at breast height, or DBH, is the standard for measuring trees. DBH refers to the tree diameter measured at 4.5 feet above the ground.</rdfs:comment>
+        <rdfs:comment>CHESS: Stem_DBH, DBH_1_CM, DBH_2_CM, DBH_Avg_CM. Allometric equations take this as their input for biomass and carbon stock. ODM2 variable name concept &quot;Diameter at breast height (DBH)&quot;: Diameter at breast height, or DBH, is the standard for measuring trees. DBH refers to the tree diameter measured at 4.5 feet above the ground. AmeriFlux FP-Standard base name: DBH. AmeriFlux records it continuously with dendrometers.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
         <rdfs:label>Stem diameter at breast height</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
@@ -32799,8 +32799,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
         <obo:IAO_0000115>Fraction of a leaf surface covered by liquid water from dew, rain, or fog.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/leafWetness"/>
+        <oboInOwl:hasRelatedSynonym>LEAF_WET</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Leaf wetness&quot;: The effect of moisture settling on the surface of a leaf as a result of either condensation or rainfall.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Leaf wetness&quot;: The effect of moisture settling on the surface of a leaf as a result of either condensation or rainfall. AmeriFlux FP-Standard base name: LEAF_WET. AmeriFlux reports it in percent.</rdfs:comment>
         <rdfs:label>Leaf wetness</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -38711,6 +38712,190 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002312 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002312">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Temperature of a body of water or of water at a measurement point in it.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>TW</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux FP-Standard base name: TW.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
+        <rdfs:label>Water temperature</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
+        <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002313 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002313">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Ability of water to conduct an electric current, which rises with the concentration of dissolved ions.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>COND_WATER</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux FP-Standard base name: COND_WATER. AmeriFlux does not say whether values are compensated to 25 degrees Celsius; compensated values are Specific conductance (BERVO:8000426).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
+        <rdfs:label>Water electrical conductivity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000885"/>
+        <bervo:BERVO_has_unit>uS.cm-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002314 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002314">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Amount of oxygen dissolved per unit volume of water.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>DO</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux FP-Standard base name: DO. Distinct from Dissolved oxygen saturation (BERVO:0002110), a fraction of the saturation value.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
+        <rdfs:label>Dissolved oxygen concentration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_has_unit>umol.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000124"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002315 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002315">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Mole fraction of methane in a gas phase brought to equilibrium with a water sample, a measure of the methane dissolved in the water expressed as the equivalent atmospheric mole fraction.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>PCH4</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux FP-Standard base name: PCH4. AmeriFlux describes it only as dissolved methane in water; the unit, mol per mol, shows it is an equilibrium mole fraction rather than a concentration. Distinct from Dissolved methane concentration (BERVO:0002202), the amount per unit volume of water.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
+        <rdfs:label>Dissolved methane equilibrium mole fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001078"/>
+        <bervo:BERVO_has_unit>nmol.mol-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000024"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002316 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002316">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Mole fraction of carbon dioxide in a gas phase brought to equilibrium with a water sample, a measure of the carbon dioxide dissolved in the water expressed as the equivalent atmospheric mole fraction.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>PCO2</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux FP-Standard base name: PCO2. AmeriFlux describes it only as dissolved carbon dioxide in water; the unit, mol per mol, shows it is an equilibrium mole fraction rather than a concentration.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
+        <rdfs:label>Dissolved carbon dioxide equilibrium mole fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001078"/>
+        <bervo:BERVO_has_unit>umol.mol-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002317 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002317">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Mole fraction of nitrous oxide in a gas phase brought to equilibrium with a water sample, a measure of the nitrous oxide dissolved in the water expressed as the equivalent atmospheric mole fraction.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>PN2O</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux FP-Standard base name: PN2O. AmeriFlux describes it only as dissolved nitrous oxide in water; the unit, mol per mol, shows it is an equilibrium mole fraction rather than a concentration.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
+        <rdfs:label>Dissolved nitrous oxide equilibrium mole fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001078"/>
+        <bervo:BERVO_has_unit>nmol.mol-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000017"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002318 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002318">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001927"/>
+        <obo:IAO_0000115>Photon flux in the 400 to 700 nm waveband arriving from above at a point beneath a water surface, per unit area and time.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>PPFD_UW_IN</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux FP-Standard base name: PPFD_UW_IN.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
+        <rdfs:label>Underwater incoming photosynthetic photon flux density</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_has_unit>umol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000212"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002319 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002319">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000006"/>
+        <obo:IAO_0000115>Rate of water movement through the conducting xylem of a stem, per unit cross-sectional area of sapwood.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SAP_FLOW</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SAP_FLOW. AmeriFlux does not state the area its unit refers to; sap flux density is conventionally per unit sapwood area. Distinct from Sap flow (BERVO:0001951), the whole-plant rate.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
+        <rdfs:label>Sap flux density</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_has_unit>mmol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002320 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002320">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000035"/>
+        <obo:IAO_0000115>Temperature difference between a heated and an unheated probe inserted in the sapwood of a stem, the raw signal from which thermal dissipation sensors derive sap flux density.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SAP_DT</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SAP_DT. AmeriFlux reports it in degrees Celsius; as a difference it is the same in kelvin.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
+        <rdfs:label>Sap flow probe temperature difference</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000361"/>
+        <bervo:BERVO_has_unit>K</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002321 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002321">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000035"/>
+        <obo:IAO_0000115>Temperature of the trunk of a tree, at its surface or within its wood.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>T_BOLE</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>stem temperature</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux FP-Standard base name: T_BOLE.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
+        <rdfs:label>Bole temperature</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
+        <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002322 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002322">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001859"/>
+        <obo:IAO_0000115>Surface temperature of a canopy, and of any ground visible through it, derived from the longwave radiation measured by an infrared radiometer looking down on it.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>T_CANOPY</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux FP-Standard base name: T_CANOPY. AmeriFlux defines it as the temperature of the canopy and/or the surface underneath the sensor, so a value can include the ground where the canopy is open.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
+        <rdfs:label>Radiometric canopy surface temperature</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
@@ -41969,6 +42154,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000238"/>
         <obo:IAO_0000115>A representation of a specific moment in time that combines date and time components to provide precise temporal reference for environmental measurements and observations. This temporal specification includes day, month, year, hours, minutes, and potentially seconds, enabling precise timing of processes, events, and data collection in environmental and ecological studies.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/COMO_0000180"/>
+        <rdfs:comment>AmeriFlux records the start and end of each averaging period as TIMESTAMP_START and TIMESTAMP_END, in local standard time as YYYYMMDDHHMM.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>DateTime</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -42227,6 +42413,7 @@
         <obo:IAO_0000115>A statistical measure that represents the central tendency of a dataset calculated as the sum of all values divided by the number of observations. This concept is fundamental for summarizing environmental data, characterizing average conditions, and providing representative values for ecosystem parameters in earth and environmental science research.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/COMO_0000147"/>
         <oboInOwl:hasExactSynonym>average</oboInOwl:hasExactSynonym>
+        <rdfs:comment>AmeriFlux marks an average across replicate sensors by replacing the replicate index with A in the positional qualifier (_H_V_A).</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Mean</rdfs:label>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000259"/>
@@ -43644,6 +43831,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <obo:IAO_0000115>A measure of data dispersion quantifying how individual values deviate from the mean, expressed in the same units as the original data. Standard deviation is essential for assessing measurement variability and comparing precision across different datasets and methods.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/COMO_0000149"/>
+        <rdfs:comment>AmeriFlux variable-name qualifier: _SD, the spatial standard deviation across replicate sensors; AmeriFlux&apos;s _SIGMA variables are standard deviations over time within an averaging period, and map here too.</rdfs:comment>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
         <rdfs:label>Standard deviation</rdfs:label>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000362"/>
@@ -46248,6 +46436,7 @@
         <obo:IAO_0000115>A controlled categorical code assigned to an observation or dataset to indicate a quality-control condition, processing decision, or measurement anomaly relevant to interpretation.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>QC flag</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>quality flag</oboInOwl:hasExactSynonym>
+        <rdfs:comment>AmeriFlux variable-name qualifier: _QC.</rdfs:comment>
         <rdfs:comment>Definition source - Manual (JMC, May 11 2026)</rdfs:comment>
         <rdfs:label>Quality control flag</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -53699,6 +53888,47 @@
         <oboInOwl:hasRelatedSynonym>PRI target band</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Photochemical reflectance index target band</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001086 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001086">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <obo:IAO_0000115>Qualifier for a value in a time series that was estimated, for a period with no valid measurement, from other data by a gap-filling method.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>gapfilled</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux variable-name qualifier: _F.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
+        <rdfs:label>Gap-filled</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001087 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001087">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000242"/>
+        <obo:IAO_0000115>Qualifier for a value that the team operating a measurement site quality-checked or gap-filled independently of a network&apos;s central processing.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux variable-name qualifier: _PI.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
+        <rdfs:label>Processed by site team</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001088 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001088">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <obo:IAO_0000115>Number of observations or sensors that contribute to a statistic.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>number of samples</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux variable-name qualifier: _N, the number of replicate sensors averaged into a value.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
+        <rdfs:label>Sample size</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
