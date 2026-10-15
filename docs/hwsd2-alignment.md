@@ -152,6 +152,12 @@ it has one, and each texture class its `TEXTURE_USDA` code, so HWSD2 data can be
 read onto the classes directly. Durisol is the one group without a code: HWSD2
 does not use it.
 
+These codes were checked against `D_WRB2.csv`, `D_WRB4.csv`, and
+`D_TEXTURE_USDA.csv` at `b2a58f5`. All 31 `WRB2` codes and all 13
+`TEXTURE_USDA` codes match the class they are on. No `WRB2` or `WRB4` code is a
+Durisol. The four `WRB2` codes on no BERVO class, `GG`, `IS`, `ND`, and `WR`, are
+glaciers, islands, no data, and open water.
+
 Label choices:
 
 - **WRB and USDA share two names.** Histosol and Vertisol are both WRB reference
