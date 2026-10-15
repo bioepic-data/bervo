@@ -15891,6 +15891,7 @@
         <obo:IAO_0000115>Rate at which nitrite would be consumed by abiotic chemical decomposition, chemodenitrification, if the nitrite supply did not limit it, in soil outside fertilizer bands; the reaction yields nitrous oxide and nitrate.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RNO2DmndSoilChemo_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), nitrite correction for issue #79</rdfs:comment>
+        <rdfs:comment>EcoSIM&apos;s ChemoDenitrification (MicBGCFGMod.F90, c5e0ae6) splits the nitrite it consumes 80% to nitrate (RNO3Prod*Chemo), 10% to nitrous oxide (RN2OProd*Chemo, see Chemo nitrous oxide production, BERVO:0000968), and 10% to dissolved organic nitrogen (RNO2ReduxChemo).</rdfs:comment>
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
         <rdfs:label>Total chemodenitrification nitrite uptake non-band unconstrained by NO2</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
@@ -15910,6 +15911,7 @@
         <obo:IAO_0000115>Rate at which nitrite would be consumed by abiotic chemical decomposition, chemodenitrification, if the nitrite supply did not limit it, in fertilizer bands in soil; the reaction yields nitrous oxide and nitrate.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RNO2DmndBandChemo_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), nitrite correction for issue #79</rdfs:comment>
+        <rdfs:comment>EcoSIM&apos;s ChemoDenitrification (MicBGCFGMod.F90, c5e0ae6) splits the nitrite it consumes 80% to nitrate (RNO3Prod*Chemo), 10% to nitrous oxide (RN2OProd*Chemo, see Chemo nitrous oxide production, BERVO:0000968), and 10% to dissolved organic nitrogen (RNO2ReduxChemo).</rdfs:comment>
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
         <rdfs:label>Total chemodenitrification nitrite uptake band unconstrained by NO2</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
