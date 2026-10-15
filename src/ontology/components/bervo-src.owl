@@ -10626,11 +10626,11 @@
                 <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
             </Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Mass of each nonstructural chemical element (carbon, nitrogen or phosphorus) in the canopy of a plant functional type per unit mass of canopy leaf and sheath carbon, bounded between 0 and 1. The sum over the three elements sets the osmotic potential of the canopy, and through it the canopy turgor.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass of a nonstructural chemical element in the canopy of a plant functional type per unit mass of canopy leaf and sheath carbon.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CanopyNonstElmConc_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), from the EcoSIM source, issue #109</rdfs:comment>
-        <rdfs:comment>EcoSIM computes CanopyNonstElmConc_pft in PlantPhenolMod.F90 as CanopyNonstElms_pft divided by CanopyLeafSheathC_pft, so the value is a mass ratio; the [g d-2] in its declaration is wrong (issue #109).</rdfs:comment>
+        <rdfs:comment>EcoSIM computes CanopyNonstElmConc_pft in PlantPhenolMod.F90 as CanopyNonstElms_pft divided by CanopyLeafSheathC_pft, for carbon, nitrogen and phosphorus, and bounds it between 0 and 1; the [g d-2] in its declaration is wrong (issue #109). UptakesMod.F90 sums the three to set canopy osmotic and turgor pressure.</rdfs:comment>
         <rdfs:label>Canopy nonstructural chemical element concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
@@ -11210,11 +11210,11 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000660">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
-        <obo:IAO_0000115>Mass of nonstructural carbon in the canopy nodules of a plant functional type per unit mass of canopy leaf and sheath carbon, bounded between 0 and 1.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass of nonstructural carbon in the canopy nodules of a plant functional type per unit mass of canopy leaf and sheath carbon.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NoduleNonstructCconc_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), from the EcoSIM source, issue #109</rdfs:comment>
-        <rdfs:comment>EcoSIM, where the variable is now named CanopyNoduleNonstCConc_pft, computes it in PlantPhenolMod.F90 as the nodule nonstructural carbon in CanopyNodulNonstElms_pft divided by CanopyLeafSheathC_pft, and annotates it [gC (gC)-1]; the [g d-2] in its declaration is wrong (issue #109).</rdfs:comment>
+        <rdfs:comment>EcoSIM, where the variable is now named CanopyNoduleNonstCConc_pft, computes it in PlantPhenolMod.F90 as the nodule nonstructural carbon in CanopyNodulNonstElms_pft divided by CanopyLeafSheathC_pft, bounds it between 0 and 1, and annotates it [gC (gC)-1]; the [g d-2] in its declaration is wrong (issue #109).</rdfs:comment>
         <rdfs:label>Nodule nonstructural carbon concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000555"/>
