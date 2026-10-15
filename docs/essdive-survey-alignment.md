@@ -177,7 +177,7 @@ variable names as a family, with the concepts they need.
 | Delta carbon-13 (`BERVO:0002214`) | Stable isotope variable | Vienna Pee Dee Belemnite | `carbon_13StableIsotopeRatioDelta` |
 | Delta deuterium (`BERVO:0002215`) | Stable isotope variable | Vienna Standard Mean Ocean Water | `hydrogen_2_StableIsotopeRatioDelta` |
 | Delta nitrogen-15 (`BERVO:0002216`) | Stable isotope variable | Atmospheric nitrogen standard | `nitrogen_15_StableIsotopeRatioDelta` |
-| Delta oxygen-18 (`BERVO:0002217`) | Stable isotope variable | Vienna Standard Mean Ocean Water, Vienna Pee Dee Belemnite | `oxygen_18_StableIsotopeRatioDelta` |
+| Delta oxygen-18 (`BERVO:0002217`) | Stable isotope variable | none; see below | `oxygen_18_StableIsotopeRatioDelta` |
 | Methane delta carbon-13 (`BERVO:0002207`) | Delta carbon-13 | Vienna Pee Dee Belemnite | `delta_13COfCH4` |
 | Carbon dioxide delta carbon-13 (`BERVO:0002218`) | Delta carbon-13 | Vienna Pee Dee Belemnite | `delta_13COfCO2` |
 | Dissolved inorganic carbon delta carbon-13 (`BERVO:0002219`) | Delta carbon-13 | Vienna Pee Dee Belemnite | `delta_13COfDIC` |
@@ -206,8 +206,11 @@ New concepts:
 
 - **The reference standard goes in `contexts`.** It is the condition the value
   is reported under, like Standard ambient temperature on a rate. Delta
-  oxygen-18 names both standards, because carbonates and carbon dioxide are
-  reported against Vienna Pee Dee Belemnite.
+  oxygen-18 names none: it is reported against Vienna Standard Mean Ocean Water
+  for water and against Vienna Pee Dee Belemnite for carbonates and carbon
+  dioxide, and two values in `contexts` would read as both applying at once. Its
+  definition says which applies when, and Water delta oxygen-18 names its one
+  standard.
 - **Not added:** ODM2's `carbon_14` and `tritium_3H_DeltaTOfH2O`. Both isotopes
   are radioactive and are reported as activities, ages, or tritium units, not as
   a stable isotope delta, so they belong to a different family.
