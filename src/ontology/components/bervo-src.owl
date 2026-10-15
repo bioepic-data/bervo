@@ -28206,7 +28206,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001700">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
-        <obo:IAO_0000115>The molar amount of dissolved salts in the micropore water of a soil layer in the grid cell.</obo:IAO_0000115>
+        <obo:IAO_0000115>The molar amount of dissolved salts in the micropore water of a soil layer in the grid cell. Held for each salt species, it is the store from which the salinity and electrical conductivity of the soil solution follow.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>trcSalt_solml_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), from the EcoSIM source, issue #109</rdfs:comment>
