@@ -37093,6 +37093,169 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002218 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002218">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002214"/>
+        <obo:IAO_0000115>Isotope delta of carbon-13 in carbon dioxide against Vienna Pee Dee Belemnite, used to separate plant, soil, and fossil fuel sources of carbon dioxide.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/delta_13COfCO2"/>
+        <oboInOwl:hasExactSynonym>d13C-CO2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>delta 13C of carbon dioxide</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;delta-13C of CO2&quot;: Isotope 13C of carbon dioxide</rdfs:comment>
+        <rdfs:label>Carbon dioxide delta carbon-13</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001069"/>
+        <bervo:BERVO_has_unit>[ppth]</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000086"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001063"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002219 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002219">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002214"/>
+        <obo:IAO_0000115>Isotope delta of carbon-13 in dissolved inorganic carbon against Vienna Pee Dee Belemnite, which records the balance of carbonate mineral weathering, respiration, and gas exchange with the atmosphere.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/delta_13COfDIC"/>
+        <oboInOwl:hasExactSynonym>d13C-DIC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>delta 13C of DIC</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;delta-13C of DIC&quot;: Isotope 13C of dissolved inorganic carbon (DIC)</rdfs:comment>
+        <rdfs:label>Dissolved inorganic carbon delta carbon-13</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001069"/>
+        <bervo:BERVO_has_unit>[ppth]</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000008"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001063"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002220 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002220">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002214"/>
+        <obo:IAO_0000115>Isotope delta of carbon-13 in ethane against Vienna Pee Dee Belemnite, used with the values for methane, propane, and butane to tell thermogenic from microbial natural gas.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/delta_13COfC2H6"/>
+        <oboInOwl:hasExactSynonym>delta 13C of ethane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;delta-13C of C2H6&quot;: Isotope 13C of ethane</rdfs:comment>
+        <rdfs:label>Ethane delta carbon-13</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001069"/>
+        <bervo:BERVO_has_unit>[ppth]</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000086"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000676"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001063"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002221 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002221">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002214"/>
+        <obo:IAO_0000115>Isotope delta of carbon-13 in propane against Vienna Pee Dee Belemnite, used with the values for the other light alkanes to trace the origin and alteration of natural gas.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/delta_13COfC3H8"/>
+        <oboInOwl:hasExactSynonym>delta 13C of propane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;delta-13C of C3H8&quot;: Isotope 13C of propane</rdfs:comment>
+        <rdfs:label>Propane delta carbon-13</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001069"/>
+        <bervo:BERVO_has_unit>[ppth]</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000086"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001063"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001072"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002222 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002222">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002214"/>
+        <obo:IAO_0000115>Isotope delta of carbon-13 in butane against Vienna Pee Dee Belemnite, used with the values for the other light alkanes to trace the origin and alteration of natural gas.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/delta_13COfC4H10"/>
+        <oboInOwl:hasExactSynonym>delta 13C of butane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;delta-13C of C4H10&quot;: Isotope 13C of butane</rdfs:comment>
+        <rdfs:label>Butane delta carbon-13</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001069"/>
+        <bervo:BERVO_has_unit>[ppth]</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000086"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001063"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001073"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002223 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002223">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002217"/>
+        <obo:IAO_0000115>Isotope delta of oxygen-18 in water against Vienna Standard Mean Ocean Water, which traces the source of water and its history of evaporation and condensation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/delta_18OOfH2O"/>
+        <oboInOwl:hasExactSynonym>d18O-H2O</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>delta 18O of water</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;delta-18O of H2O&quot;: Isotope 18O of water</rdfs:comment>
+        <rdfs:label>Water delta oxygen-18</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001070"/>
+        <bervo:BERVO_has_unit>[ppth]</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000633"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002224 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002224">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002215"/>
+        <obo:IAO_0000115>Isotope delta of deuterium in water against Vienna Standard Mean Ocean Water, used with water delta oxygen-18 to trace the source of water and its evaporation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/delta_DOfH2O"/>
+        <oboInOwl:hasExactSynonym>dD-H2O</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>delta 2H of water</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;delta-D of H2O&quot;: hydrogen isotopes of water</rdfs:comment>
+        <rdfs:label>Water delta deuterium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001070"/>
+        <bervo:BERVO_has_unit>[ppth]</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000631"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002225 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002225">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002215"/>
+        <obo:IAO_0000115>Isotope delta of deuterium in methane against Vienna Standard Mean Ocean Water, which with methane delta carbon-13 distinguishes methanogenic pathways and thermogenic sources.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/delta_DOfCH4"/>
+        <oboInOwl:hasExactSynonym>dD-CH4</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>delta 2H of methane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;delta-D of CH4&quot;: hydrogen isotopes of methane</rdfs:comment>
+        <rdfs:label>Methane delta deuterium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001070"/>
+        <bervo:BERVO_has_unit>[ppth]</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000086"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000024"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000631"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
@@ -51895,6 +52058,33 @@
         <oboInOwl:hasExactSynonym>AIR-N2</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
         <rdfs:label>Atmospheric nitrogen standard</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001072 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001072">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Alkane of three carbon atoms, C3H8.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32879"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Propane</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001073 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001073">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000592"/>
+        <obo:IAO_0000115>Straight-chain alkane of four carbon atoms, C4H10.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37808"/>
+        <oboInOwl:hasExactSynonym>n-butane</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Butane</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
