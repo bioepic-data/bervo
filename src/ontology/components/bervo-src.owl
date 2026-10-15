@@ -51622,6 +51622,53 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_8001064 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001064">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
+        <obo:IAO_0000115>Spectroscopy that measures the X-ray absorption coefficient of a sample within about 40 eV of an element&apos;s absorption edge, as a function of incident X-ray energy, to determine the oxidation state and bonding environment of that element.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000305"/>
+        <oboInOwl:hasExactSynonym>NEXAFS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>XANES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>near-edge X-ray absorption fine structure spectroscopy</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>XANES and NEXAFS name the same measurement. NEXAFS is the usual name for soft X-ray work on light elements, such as at the carbon K-edge, and XANES for hard X-ray work on metals, such as at the iron and manganese K-edges.</rdfs:comment>
+        <rdfs:label>X-ray absorption near edge structure spectroscopy</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001065 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001065">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
+        <obo:IAO_0000115>Technique that measures neutrons scattered elastically through small angles by a sample, to determine the size, shape, and arrangement of structures from about one to a few hundred nanometres across.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000184"/>
+        <oboInOwl:hasExactSynonym>SANS</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>Sensitive to hydrogen, so used to detect organic matter accumulating on mineral surfaces.</rdfs:comment>
+        <rdfs:label>Small-angle neutron scattering</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001066 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001066">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
+        <obo:IAO_0000115>Infrared spectroscopy in which a sample is exposed to broadband infrared radiation and its absorption spectrum is recovered from the resulting interferogram by a Fourier transform, used to identify functional groups.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000636"/>
+        <oboInOwl:hasExactSynonym>FT-IR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>FTIR</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Fourier transform infrared spectroscopy</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_9000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000000">
