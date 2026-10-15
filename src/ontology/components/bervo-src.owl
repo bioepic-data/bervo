@@ -4954,6 +4954,7 @@
         <oboInOwl:hasRelatedSynonym>TION</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>EcoSimSumDataType.txt</rdfs:comment>
+        <rdfs:comment>The total over the modelled domain of Soil column ion content (BERVO:0000916), the per-grid-cell value. EcoSIM resets TION each hour and adds to it the ion content of every grid cell&apos;s soil column, in RedistMod.F90, and of every snowpack, in SnowTransportMod.F90 (issue #109).</rdfs:comment>
         <rdfs:label>Total soil ion content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
