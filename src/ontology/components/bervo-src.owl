@@ -10947,17 +10947,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000647">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
-        <obo:IAO_0000115>Mass of nonstructural carbon in a branch per unit mass of the branch&apos;s leaf and sheath carbon.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass of a nonstructural chemical element in a branch per unit mass of the branch&apos;s leaf and sheath carbon.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LeafPetoNonstElmConc_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), from the EcoSIM source, issue #109</rdfs:comment>
-        <rdfs:comment>EcoSIM computes LeafPetoNonstElmConc_brch in PlantPhenolMod.F90 as CanopyNonstElms_brch divided by CanopyLeafSheathC_brch, so the value is a mass ratio; the [g d-2] in its declaration is wrong (issue #109). The EcoSIM array holds nitrogen and phosphorus ratios as well as carbon, and StomatesMod.F90 reads all three.</rdfs:comment>
-        <rdfs:label>Branch nonstructural carbon concentration</rdfs:label>
+        <rdfs:comment>EcoSIM computes LeafPetoNonstElmConc_brch in PlantPhenolMod.F90 as CanopyNonstElms_brch divided by CanopyLeafSheathC_brch, for carbon, nitrogen and phosphorus, so the value is a mass ratio; the [g d-2] in its declaration is wrong (issue #109). StomatesMod.F90 reads all three. The branch counterpart of Canopy nonstructural chemical element concentration (BERVO:0000632).</rdfs:comment>
+        <rdfs:label>Branch nonstructural chemical element concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000145"/>
-        <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000145"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
 
