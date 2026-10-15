@@ -4047,9 +4047,11 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000235">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000003"/>
         <obo:IAO_0000115>The Köppen climate zone refers to a region defined by the Köppen climate classification system.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>KOPPEN</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>KoppenClimZone_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>FlagDataType.txt</rdfs:comment>
+        <rdfs:comment>HWSD2: KOPPEN, the main Köppen-Geiger group only: A tropical, B arid, C temperate, D cold, E polar.</rdfs:comment>
         <rdfs:comment>it does provide context</rdfs:comment>
         <rdfs:label>Köppen climate zone</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -14848,9 +14850,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
         <obo:IAO_0000115>The total amount of exchangeable cations that soil can hold on its surface and exchange with the soil solution, representing soil fertility and nutrient retention capacity. This soil cation exchange capacity affects plant nutrient availability and influences soil chemical buffering and fertilizer efficiency.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/cationExchangeCapacity"/>
+        <oboInOwl:hasRelatedSynonym>CEC_SOIL</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>CEC_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Cation exchange capacity (CEC)&quot;: Cation exchange capacity (CEC) is a measure of the total negative charges within the soil that adsorb plant nutrient cations such as calcium (Ca2+), magnesium (Mg2+) and potassium (K+). As such, the CEC is a property of a soil that describes its capacity to supply nutrient cations to the soil solution for plant uptake.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Cation exchange capacity (CEC)&quot;: Cation exchange capacity (CEC) is a measure of the total negative charges within the soil that adsorb plant nutrient cations such as calcium (Ca2+), magnesium (Mg2+) and potassium (K+). As such, the CEC is a property of a soil that describes its capacity to supply nutrient cations to the soil solution for plant uptake. HWSD2: CEC_SOIL [cmolc/kg].</rdfs:comment>
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
         <rdfs:label>Soil cation exchange capacity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
@@ -16443,11 +16446,14 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000974">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000013"/>
         <obo:IAO_0000115>The vertical distance from the soil surface to the bottom boundary of a specific soil layer within a grid cell. This parameter defines the lower extent of soil layers and is essential for modeling three-dimensional soil processes, calculating layer-specific properties, and determining the spatial distribution of biogeochemical processes in terrestrial ecosystem models.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>BOTDEP</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>CumDepz2LayBottom_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GridDataType.txt</rdfs:comment>
+        <rdfs:comment>HWSD2: BOTDEP [cm].</rdfs:comment>
         <rdfs:label>Depth to bottom of soil layer</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_has_unit>cm</bervo:BERVO_has_unit>
         <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
     </Class>
@@ -25207,7 +25213,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
         <obo:IAO_0000115>The mass of organic carbon per unit mass of soil, representing the soil carbon stock and fertility. This parameter affects soil structure, water retention, nutrient cycling, and is fundamental for modeling carbon sequestration, decomposition processes, and soil quality in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CORGCI_vr</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ORG_CARBON</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>HWSD2: ORG_CARBON [% weight].</rdfs:comment>
         <rdfs:comment>SoilPropertyDataType.txt</rdfs:comment>
         <rdfs:label>Soil organic carbon content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
@@ -25261,6 +25269,7 @@
         <obo:IAO_0000115>The mass of sand-sized particles per unit mass of soil, representing the coarse mineral fraction in soil texture. This parameter affects soil drainage, aeration, water infiltration rates, and is essential for determining hydraulic conductivity and soil physical behavior in hydrological models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CSAND_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>HWSD2: SAND [% weight], 0.05 to 2 mm in the fine earth.</rdfs:comment>
         <rdfs:comment>SoilPropertyDataType.txt</rdfs:comment>
         <rdfs:label>Soil sand content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
@@ -25278,6 +25287,7 @@
         <obo:IAO_0000115>The mass of silt-sized particles per unit mass of soil, representing the intermediate mineral fraction in soil texture. This parameter influences water retention capacity, nutrient holding capacity, and contributes to soil structure formation and erodibility characteristics in agricultural and natural systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CSILT_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>HWSD2: SILT [% weight], 0.002 to 0.05 mm in the fine earth.</rdfs:comment>
         <rdfs:comment>SoilPropertyDataType.txt</rdfs:comment>
         <rdfs:label>Soil silt content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
@@ -25295,6 +25305,7 @@
         <obo:IAO_0000115>The mass of clay-sized particles per unit mass of soil, representing the fine mineral fraction with high surface area. This parameter controls water retention, nutrient adsorption, soil plasticity, and swelling behavior, making it crucial for modeling soil hydraulic properties and chemical reactivity.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CCLAY_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>HWSD2: CLAY [% weight], less than 0.002 mm in the fine earth.</rdfs:comment>
         <rdfs:comment>SoilPropertyDataType.txt</rdfs:comment>
         <rdfs:label>Soil clay content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
@@ -25412,12 +25423,13 @@
         <obo:IAO_0000115>The mass of dry soil per unit volume including pore spaces, representing soil compaction and structure. This parameter affects porosity, water storage capacity, root penetration resistance, and is fundamental for converting between mass-based and volume-based soil property measurements.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SoilBulkDensity_vr</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>bulk_density</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>ATS: bulk_density, computed in the ATS-EcoSIM coupling from density_rock and porosity.</rdfs:comment>
+        <rdfs:comment>ATS: bulk_density, computed in the ATS-EcoSIM coupling from density_rock and porosity. HWSD2: BULK [g/cm3] in HWSD2_LAYERS and BULK_DENSITY in HWSD2_SMU.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilPropertyDataType.txt</rdfs:comment>
         <rdfs:label>Soil bulk density</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000810"/>
         <bervo:BERVO_has_unit>Mg.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g.cm-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
     </Class>
@@ -33596,8 +33608,9 @@
         <obo:IAO_0000115>Fraction of the cation exchange capacity of a soil occupied by the exchangeable base cations calcium, magnesium, potassium, and sodium.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/baseSaturation"/>
         <oboInOwl:hasExactSynonym>base saturation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>BSAT</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Base saturation&quot;: Percent base saturation (BS) is the percentage of the Cation Exchange Capacity (CEC) occupied by the basic cations Ca2+, Mg2+ and K+. ODM2 names calcium, magnesium, and potassium. Sodium is usually counted as well, and the set of cations is recorded with the data.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Base saturation&quot;: Percent base saturation (BS) is the percentage of the Cation Exchange Capacity (CEC) occupied by the basic cations Ca2+, Mg2+ and K+. ODM2 names calcium, magnesium, and potassium. Sodium is usually counted as well, and the set of cations is recorded with the data. HWSD2: BSAT [% of CEC_SOIL].</rdfs:comment>
         <rdfs:label>Soil base saturation</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -33798,7 +33811,7 @@
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/soilCoarseFraction"/>
         <oboInOwl:hasRelatedSynonym>coarse fragment content</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Soil coarse fraction&quot;: Fraction of particles within a soil sample that are greater that 2mm in diameter. The basis, mass or volume, is recorded with the data. Rock fraction is EcoSIM&apos;s volume form.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Soil coarse fraction&quot;: Fraction of particles within a soil sample that are greater that 2mm in diameter. The basis, mass or volume, is recorded with the data. Rock fraction is EcoSIM&apos;s volume form. HWSD2: COARSE [% volume].</rdfs:comment>
         <rdfs:label>Soil coarse fraction</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -33854,7 +33867,7 @@
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/soilClassification"/>
         <oboInOwl:hasRelatedSynonym>soil taxonomic class</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Soil classification&quot;: For soil resources, experience has shown that a natural system approach to classification, i.e. grouping soils by their intrinsic property (soil morphology), behaviour, or genesis, results in classes that can be interpreted for many diverse uses. Differing concepts of pedogenesis, and differences in the significance of morphological features to various land uses can affect the classification approach. The classification system is recorded with the data.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Soil classification&quot;: For soil resources, experience has shown that a natural system approach to classification, i.e. grouping soils by their intrinsic property (soil morphology), behaviour, or genesis, results in classes that can be interpreted for many diverse uses. Differing concepts of pedogenesis, and differences in the significance of morphological features to various land uses can affect the classification approach. The classification system is recorded with the data. HWSD2: NSC_MU_SOURCE1 and NSC_MU_SOURCE2 hold a class from a national soil classification.</rdfs:comment>
         <rdfs:label>Soil classification</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
@@ -34074,7 +34087,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
         <obo:IAO_0000115>Mass of carbon divided by the mass of nitrogen in a soil, usually from total carbon and total nitrogen measured by dry combustion.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>soil C:N mass ratio</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>CN_RATIO</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>HWSD2: CN_RATIO, unitless. HWSD2 does not state the basis; a soil C:N ratio is conventionally by mass.</rdfs:comment>
         <rdfs:label>Soil carbon to nitrogen mass ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000917"/>
         <bervo:BERVO_has_unit>g{C}.g-1{N}</bervo:BERVO_has_unit>
@@ -35999,6 +36014,484 @@
         <bervo:BERVO_has_unit>mol.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000222"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000194"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002159 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002159">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Mass of nitrogen in all forms, organic and inorganic, per unit mass of dry soil, usually measured by dry combustion or Kjeldahl digestion.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>TOTAL_N</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: TOTAL_N [g/kg]. Distinct from Total soil nitrogen (BERVO:0000324), which is EcoSIM&apos;s nitrogen gas in soil air.</rdfs:comment>
+        <rdfs:label>Soil total nitrogen content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_has_unit>g.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002160 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002160">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000882"/>
+        <obo:IAO_0000115>pH of a suspension of soil in water, as distinct from one in a salt solution such as calcium chloride or potassium chloride.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>soil pH (H2O)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>PH_WATER</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: PH_WATER [-log(H+)]. The soil to water ratio, commonly 1:1 or 1:2.5, is recorded with the data.</rdfs:comment>
+        <rdfs:label>Soil pH in water</rdfs:label>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000261"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002161 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002161">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Cation exchange capacity of the clay fraction of a soil per unit mass of clay, commonly estimated from the soil cation exchange capacity by removing the part attributed to organic matter and dividing by the clay content.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>CEC of clay</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>CEC_CLAY</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: CEC_CLAY [cmolc/kg]. The mass is of clay, not of soil. See Soil cation exchange capacity (BERVO:0000883).</rdfs:comment>
+        <rdfs:label>Soil clay fraction cation exchange capacity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
+        <bervo:BERVO_has_unit>cmol.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000209"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002162 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002162">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Cation exchange capacity of a soil at its own pH, the sum of its exchangeable base cations and its exchangeable acidity.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>ECEC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>effective cation exchange capacity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>CEC_EFF</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: CEC_EFF [cmolc/kg]. Soil cation exchange capacity (BERVO:0000883) is usually measured at a buffered pH of 7 or 8.2, and is larger than this in acid soils.</rdfs:comment>
+        <rdfs:label>Soil effective cation exchange capacity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
+        <bervo:BERVO_has_unit>cmol.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002163 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002163">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Sum of the exchangeable calcium, magnesium, potassium, and sodium held by a soil, per unit mass of dry soil.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>total exchangeable bases</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>TEB</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: TEB [cmolc/kg].</rdfs:comment>
+        <rdfs:label>Soil total exchangeable bases</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_has_unit>cmol.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000108"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000143"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000198"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000207"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002164 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002164">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Fraction of the effective cation exchange capacity of a soil occupied by exchangeable aluminum.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>aluminium saturation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>aluminum saturation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>ALUM_SAT</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: ALUM_SAT [% of ECEC].</rdfs:comment>
+        <rdfs:label>Soil aluminum saturation</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000180"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002165 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002165">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Fraction of the cation exchange capacity of a soil occupied by exchangeable sodium, the usual measure of soil sodicity.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>exchangeable sodium percentage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>ESP</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: ESP [%]. Usually reported as a percentage, with 15 percent the common threshold for a sodic soil.</rdfs:comment>
+        <rdfs:label>Soil exchangeable sodium fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000143"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002166 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002166">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Carbonate content of a soil expressed as the mass of calcium carbonate that would neutralize the same amount of acid, per unit mass of dry soil, so that magnesium and other carbonates are counted as calcium carbonate.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>calcium carbonate equivalent</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>TCARBON_EQ</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: TCARBON_EQ [% weight]. Distinct from Soil calcium carbonate content (BERVO:0001687), EcoSIM&apos;s calcite expressed as calcium.</rdfs:comment>
+        <rdfs:label>Soil calcium carbonate equivalent</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>g.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000094"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002167 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002167">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Mass of gypsum, calcium sulfate dihydrate, per unit mass of dry soil.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: GYPSUM [% weight].</rdfs:comment>
+        <rdfs:label>Soil gypsum content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>g.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000981"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002168 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002168">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Electrical conductivity of the solution extracted from a saturated soil paste, the standard laboratory measure of soil salinity.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>ECe</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>electrical conductivity of the saturation extract</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>ELEC_COND</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: ELEC_COND [dS/m]. HWSD v1.2 named the same field T_ECE and S_ECE. Distinct from Bulk electrical conductivity (BERVO:0002036), read in place by a sensor, and from Measured electrical conductivity (BERVO:0001703), EcoSIM&apos;s input.</rdfs:comment>
+        <rdfs:label>Soil saturation extract electrical conductivity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000885"/>
+        <bervo:BERVO_has_unit>dS.m-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002169 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002169">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
+        <obo:IAO_0000115>Bulk density of a soil estimated from its texture and organic matter content with a pedotransfer function, rather than measured.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>REF_BULK</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>REF_BULK_DENSITY</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: REF_BULK [g/cm3] in HWSD2_LAYERS and REF_BULK_DENSITY in HWSD2_SMU. See Soil bulk density (BERVO:0001535).</rdfs:comment>
+        <rdfs:label>Soil reference bulk density</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000810"/>
+        <bervo:BERVO_has_unit>Mg.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g.cm-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002170 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002170">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
+        <obo:IAO_0000115>Depth of water a soil can hold between field capacity and the permanent wilting point, per unit depth of soil.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>available water capacity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>AWC</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: AWC [mm/m] in HWSD2_SMU, in classes of 150, 125, 100, 75, 50, 15, and 0 mm/m.</rdfs:comment>
+        <rdfs:label>Soil available water capacity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000795"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000796"/>
+        <bervo:BERVO_has_unit>mm.m-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002171 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002171">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
+        <obo:IAO_0000115>Depth of water a soil can hold between field capacity and the permanent wilting point, summed over its rootable depth.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>AWC</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: AWC [mm] in HWSD2_LAYERS, a profile total held on layer D1 only, one value per soil component. See Soil available water capacity and Rootable soil depth.</rdfs:comment>
+        <rdfs:label>Root zone available water capacity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000795"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000796"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002172 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002172">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
+        <obo:IAO_0000115>Class of a soil by how quickly and completely water is removed from it under natural conditions, judged from the frequency and duration of its saturation, from excessively drained to very poorly drained.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>drainage class</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after FAO (2006) Guidelines for Soil Description, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: DRAINAGE, seven classes: E excessively drained, SE somewhat excessively drained, W well drained, MW moderately well drained, I imperfectly drained, P poorly drained, VP very poorly drained.</rdfs:comment>
+        <rdfs:label>Soil drainage class</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002173 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002173">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
+        <obo:IAO_0000115>Depth from the soil surface to which plant roots can grow before an obstacle, such as bedrock, a cemented or dense layer, or a permanently saturated layer, stops them.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>depth to obstacle to roots</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>effective soil depth</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>ROOTS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ROOT_DEPTH</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: ROOT_DEPTH, in classes: deep (more than 100 cm), moderately deep (less than 100 cm), shallow (less than 50 cm), and very shallow (less than 10 cm). Also ROOTS, the depth of an obstacle to roots from the European Soil Database, in ranges of cm.</rdfs:comment>
+        <rdfs:label>Rootable soil depth</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_has_unit>cm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002174 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002174">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
+        <obo:IAO_0000115>Depth from the soil surface to the top of a layer through which water cannot pass at a significant rate.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>impermeable layer depth</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>IL</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: IL, from the European Soil Database, in ranges: more than 150, 80 to 150, 40 to 80, and less than 40 cm.</rdfs:comment>
+        <rdfs:label>Depth to impermeable layer</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_has_unit>cm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002175 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002175">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
+        <obo:IAO_0000115>Class of a soil by the depth and annual duration of its waterlogging, as defined in the European Soil Database.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>soil water regime</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>SWR</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: SWR, four classes: slightly wet, moderately wet, wet, and very wet.</rdfs:comment>
+        <rdfs:label>Soil water regime class</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002176 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002176">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
+        <obo:IAO_0000115>Subdivision of a soil unit by a feature that matters for land use or management but is not used to classify the soil, such as stoniness, shallow hard rock, a cemented layer, salinity, or flooding.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>PHASE1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>PHASE2</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: PHASE1 and PHASE2, a primary and a secondary phase from a list of 30, such as stony, lithic, petrocalcic, saline, and fragipan.</rdfs:comment>
+        <rdfs:label>Soil phase</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002177 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002177">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
+        <obo:IAO_0000115>Vertical distance from the soil surface to the upper boundary of a soil layer.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>TOPDEP</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: TOPDEP [cm]. See Depth to bottom of soil layer (BERVO:0000974).</rdfs:comment>
+        <rdfs:label>Depth to top of soil layer</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_has_unit>cm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002178 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002178">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
+        <obo:IAO_0000115>Fraction of the area of a soil mapping unit covered by one of the soils it contains.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: SHARE [%], with SEQUENCE ordering the components. The shares in one mapping unit sum to 100 percent.</rdfs:comment>
+        <rdfs:label>Soil mapping unit component share</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002179 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002179">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002041"/>
+        <obo:IAO_0000115>Class a soil is assigned to in the World Reference Base for Soil Resources, from a reference soil group alone to a group with principal and supplementary qualifiers.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>World Reference Base soil classification</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>WRB2</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>WRB4</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>WRB_PHASES</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 holds the reference soil group (values under WRB reference soil group, BERVO:8000982), WRB4 a group with one qualifier, and WRB_PHASES a group with qualifiers and phases, all from WRB 2022. WRB2 also has codes for glaciers, open water, and areas with no data.</rdfs:comment>
+        <rdfs:label>WRB soil classification</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002180 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002180">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002041"/>
+        <obo:IAO_0000115>Class a soil is assigned to in the Revised Legend of the FAO-UNESCO Soil Map of the World, at the level of a major soil grouping or a soil unit.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>FAO 1990 soil classification</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>FAO90</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: FAO90, with 193 major soil groupings and soil units. The legend was published in 1988 and is usually called FAO-90.</rdfs:comment>
+        <rdfs:label>FAO-90 soil classification</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002181 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002181">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002041"/>
+        <obo:IAO_0000115>Class a soil is assigned to in USDA Soil Taxonomy, at the level of order, suborder, great group, subgroup, family, or series.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>USDA soil taxonomy class</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Survey Staff (2022) Keys to Soil Taxonomy, 13th edition; issue #120</rdfs:comment>
+        <rdfs:comment>Not in HWSD2. Requested in issue #120. Orders are under USDA soil order (BERVO:8001015).</rdfs:comment>
+        <rdfs:label>USDA Soil Taxonomy classification</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002182 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002182">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002041"/>
+        <obo:IAO_0000115>Group a soil is assigned to in the Unified Soil Classification System, an engineering classification by grain size distribution and, for fine-grained soil, by liquid limit and plasticity index.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Unified Soil Classification System classification</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>USCS group</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
+        <rdfs:comment>Not in HWSD2. Requested in issue #120. Groups are under USCS soil group (BERVO:8001043).</rdfs:comment>
+        <rdfs:label>USCS soil classification</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002183 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002183">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002040"/>
+        <obo:IAO_0000115>Soil texture class assigned with the USDA texture triangle from the mass fractions of sand (0.05 to 2 mm), silt (0.002 to 0.05 mm), and clay (less than 0.002 mm) in the fine earth.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>USDA texture class</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>TEXTURE_USDA</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Science Division Staff (2017) Soil Survey Manual, USDA Handbook 18; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: TEXTURE_USDA, with 13 codes: the 12 USDA classes, with clay split into heavy clay and light clay. Values are under USDA soil texture class (BERVO:8001028).</rdfs:comment>
+        <rdfs:label>USDA soil texture classification</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002184 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002184">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002040"/>
+        <obo:IAO_0000115>Soil texture class in one of five broad groups used in the SOTER database and the FAO-UNESCO Soil Map of the World, coarse, medium, medium fine, fine, and very fine, defined by clay and sand content.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>TEXTURE_SOTER</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: TEXTURE_SOTER, codes C coarse, M medium, Z medium fine, F fine, V very fine.</rdfs:comment>
+        <rdfs:label>SOTER soil texture classification</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
     </Class>
     
 
@@ -49501,6 +49994,1116 @@
         <oboInOwl:hasExactSynonym>AlOH(2+)</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code, from EcoSIM source at commit c5e0ae6 (Oct 14 2026)</rdfs:comment>
         <rdfs:label>Aluminum monohydroxide</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000981 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000981">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000720"/>
+        <obo:IAO_0000115>Mineral of calcium sulfate dihydrate, CaSO4·2H2O, that accumulates in soils of dry regions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48838"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
+        <rdfs:label>Gypsum</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000982 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000982">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <obo:IAO_0000115>Soil class at the highest level of the World Reference Base for Soil Resources, defined by diagnostic horizons, properties, and materials that reflect the main soil-forming processes. WRB 2022 recognizes 32.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>reference soil group</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>RSG</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:label>WRB reference soil group</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000983 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000983">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with a clay-enriched argic subsoil horizon of low-activity clay and low base saturation, typical of strongly weathered land in the humid tropics and subtropics.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002234"/>
+        <oboInOwl:hasExactSynonym>Acrisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code AC.</rdfs:comment>
+        <rdfs:label>Acrisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000984 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000984">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with a clay-enriched argic subsoil horizon of high-activity clay and low base saturation, with a large share of exchangeable aluminum.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002231"/>
+        <oboInOwl:hasExactSynonym>Alisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code AL.</rdfs:comment>
+        <rdfs:label>Alisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000985 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000985">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil developed in volcanic ash or other volcanic material, dominated by short-range-order minerals such as allophane or by aluminum-humus complexes, which give it a low bulk density and a high phosphate retention.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002232"/>
+        <oboInOwl:hasExactSynonym>Andosols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code AN.</rdfs:comment>
+        <rdfs:label>Andosol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000986 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000986">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil profoundly modified by long-continued human activity, such as cultivation with additions of organic material, deposition of irrigation sediment, or wet cultivation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002230"/>
+        <oboInOwl:hasExactSynonym>Anthrosols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code AT.</rdfs:comment>
+        <rdfs:label>Anthrosol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000987 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000987">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil that is sandy to a depth of at least 100 cm and has little horizon development.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002229"/>
+        <oboInOwl:hasExactSynonym>Arenosols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code AR.</rdfs:comment>
+        <rdfs:label>Arenosol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000988 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000988">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with a substantial accumulation of secondary calcium carbonate, common in dry regions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002239"/>
+        <oboInOwl:hasExactSynonym>Calcisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code CL.</rdfs:comment>
+        <rdfs:label>Calcisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000989 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000989">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with incipient horizon differentiation in the subsoil, a cambic horizon, shown by structure formation, colour change, or removal of carbonates.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002235"/>
+        <oboInOwl:hasExactSynonym>Cambisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code CM.</rdfs:comment>
+        <rdfs:label>Cambisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000990 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000990">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with a thick, very dark, humus-rich chernic surface horizon and secondary carbonates in the subsoil, typical of steppe grassland.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002237"/>
+        <oboInOwl:hasExactSynonym>Chernozems</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code CH.</rdfs:comment>
+        <rdfs:label>Chernozem</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000991 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000991">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with permafrost within 100 cm of the surface, often showing cryoturbation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002236"/>
+        <oboInOwl:hasExactSynonym>Cryosols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code CR.</rdfs:comment>
+        <rdfs:label>Cryosol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000992 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000992">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with a layer of secondary silica accumulation, a duric or petroduric horizon, within 100 cm of the surface, found in arid and semi-arid regions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002238"/>
+        <oboInOwl:hasExactSynonym>Durisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>Not among the HWSD2 WRB2 codes.</rdfs:comment>
+        <rdfs:label>Durisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000993 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000993">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Deeply and intensely weathered soil with a ferralic subsoil horizon dominated by kaolinite and iron and aluminum oxides, with a very low cation exchange capacity, typical of the humid tropics.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002246"/>
+        <oboInOwl:hasExactSynonym>Ferralsols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code FR.</rdfs:comment>
+        <rdfs:label>Ferralsol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000994 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000994">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil developed in recent fluvial, lacustrine, or marine deposits that shows the stratification of the deposits rather than horizon development.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002273"/>
+        <oboInOwl:hasExactSynonym>Fluvisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code FL.</rdfs:comment>
+        <rdfs:label>Fluvisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000995 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000995">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil saturated by groundwater long enough to develop reducing conditions and gleyic colour patterns near the surface.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002244"/>
+        <oboInOwl:hasExactSynonym>Gleysols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code GL.</rdfs:comment>
+        <rdfs:label>Gleysol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000996 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000996">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with a substantial accumulation of secondary gypsum, found in dry regions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002245"/>
+        <oboInOwl:hasExactSynonym>Gypsisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code GY.</rdfs:comment>
+        <rdfs:label>Gypsisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000997 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000997">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil formed in organic material, such as peat, to a considerable depth.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002243"/>
+        <oboInOwl:hasExactSynonym>Histosols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code HS.</rdfs:comment>
+        <rdfs:label>Histosol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000998 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000998">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with a dark, humus-rich mollic surface horizon, thinner and less dark than that of a Chernozem, and secondary carbonates in the subsoil, typical of dry steppe.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002240"/>
+        <oboInOwl:hasExactSynonym>Kastanozems</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code KS.</rdfs:comment>
+        <rdfs:label>Kastanozem</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8000999 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8000999">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil that is very shallow over hard rock or is extremely gravelly or stony.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002241"/>
+        <oboInOwl:hasExactSynonym>Leptosols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code LP.</rdfs:comment>
+        <rdfs:label>Leptosol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001000 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001000">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with a clay-enriched argic subsoil horizon of low-activity clay and high base saturation, typical of seasonally dry tropical and subtropical regions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002242"/>
+        <oboInOwl:hasExactSynonym>Lixisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code LX.</rdfs:comment>
+        <rdfs:label>Lixisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001001 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001001">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with a clay-enriched argic subsoil horizon of high-activity clay and high base saturation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002248"/>
+        <oboInOwl:hasExactSynonym>Luvisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code LV.</rdfs:comment>
+        <rdfs:label>Luvisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001002 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001002">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Deep, well-drained, red tropical soil with a clay-rich nitic subsoil horizon of strong, nut-shaped structure with shiny aggregate faces.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002247"/>
+        <oboInOwl:hasExactSynonym>Nitisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code NT.</rdfs:comment>
+        <rdfs:label>Nitisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001003 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001003">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with a dark, humus-rich mollic surface horizon and high base saturation, leached of secondary carbonates to a greater depth than a Chernozem or Kastanozem, typical of moist steppe and prairie.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002249"/>
+        <oboInOwl:hasExactSynonym>Phaeozems</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code PH.</rdfs:comment>
+        <rdfs:label>Phaeozem</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001004 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001004">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with a light-coloured, seasonally waterlogged surface horizon over an abrupt textural change to a dense, slowly permeable subsoil.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002251"/>
+        <oboInOwl:hasExactSynonym>Planosols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code PL.</rdfs:comment>
+        <rdfs:label>Planosol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001005 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001005">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with a substantial accumulation of iron oxides as plinthite, which hardens irreversibly on repeated drying, or as petroplinthite or pisoliths.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002250"/>
+        <oboInOwl:hasExactSynonym>Plinthosols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code PT.</rdfs:comment>
+        <rdfs:label>Plinthosol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001006 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001006">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Acid soil with a bleached, ash-grey eluvial horizon over a spodic horizon in which humus with aluminum and iron has accumulated.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002257"/>
+        <oboInOwl:hasExactSynonym>Podzols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code PZ.</rdfs:comment>
+        <rdfs:label>Podzol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001007 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001007">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Weakly developed mineral soil in unconsolidated material that does not qualify for any other reference soil group.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002256"/>
+        <oboInOwl:hasExactSynonym>Regosols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code RG.</rdfs:comment>
+        <rdfs:label>Regosol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001008 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001008">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with a clay-enriched argic subsoil horizon into which tongues of bleached, coarser-textured material interfinger, forming a retic pattern.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Retisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code RT.</rdfs:comment>
+        <rdfs:label>Retisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001009 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001009">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with a high concentration of soluble salts at some time of the year, forming a salic horizon.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002252"/>
+        <oboInOwl:hasExactSynonym>Solonchaks</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code SC.</rdfs:comment>
+        <rdfs:label>Solonchak</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001010 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001010">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with a dense, strongly structured, clay-enriched natric subsoil horizon with a high proportion of exchangeable sodium.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002255"/>
+        <oboInOwl:hasExactSynonym>Solonetz</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code SN.</rdfs:comment>
+        <rdfs:label>Solonetz</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001011 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001011">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with a perched water table above a slowly permeable layer, which causes temporary saturation and stagnic colour patterns of reducing conditions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002274"/>
+        <oboInOwl:hasExactSynonym>Stagnosols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code ST.</rdfs:comment>
+        <rdfs:label>Stagnosol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001012 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001012">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil whose properties and development are dominated by its technical origin, containing a significant amount of artefacts or sealed by technic hard material.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002275"/>
+        <oboInOwl:hasExactSynonym>Technosols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code TC.</rdfs:comment>
+        <rdfs:label>Technosol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001013 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001013">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Soil with a dark, humus-rich umbric surface horizon of low base saturation, typical of cool, humid regions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002253"/>
+        <oboInOwl:hasExactSynonym>Umbrisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code UM.</rdfs:comment>
+        <rdfs:label>Umbrisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001014 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001014">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000982"/>
+        <obo:IAO_0000115>Clay-rich soil that shrinks and swells with changes in water content, forming deep, wide cracks when dry and slickensides in the subsoil.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002254"/>
+        <oboInOwl:hasExactSynonym>Vertisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 code VR.</rdfs:comment>
+        <rdfs:label>Vertisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001015 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001015">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <obo:IAO_0000115>Soil class at the highest of the six levels of USDA Soil Taxonomy, defined by diagnostic horizons and properties that reflect the dominant soil-forming processes. Soil Taxonomy recognizes 12.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>soil order</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Survey Staff (2022) Keys to Soil Taxonomy, 13th edition; issue #120</rdfs:comment>
+        <rdfs:label>USDA soil order</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001016 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001016">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001015"/>
+        <obo:IAO_0000115>Soil with a clay-enriched argillic, kandic, or natric subsoil horizon and moderate to high base saturation, typical of humid temperate forest.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Alfisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Survey Staff (2022) Keys to Soil Taxonomy, 13th edition; issue #120</rdfs:comment>
+        <rdfs:label>Alfisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001017 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001017">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001015"/>
+        <obo:IAO_0000115>Soil with andic properties, dominated by short-range-order minerals or aluminum-humus complexes, usually formed in volcanic ash.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Andisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Survey Staff (2022) Keys to Soil Taxonomy, 13th edition; issue #120</rdfs:comment>
+        <rdfs:label>Andisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001018 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001018">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001015"/>
+        <obo:IAO_0000115>Soil of dry regions with an aridic moisture regime and a diagnostic subsurface horizon, such as an accumulation of carbonates, gypsum, or salts.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Aridisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Survey Staff (2022) Keys to Soil Taxonomy, 13th edition; issue #120</rdfs:comment>
+        <rdfs:label>Aridisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001019 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001019">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001015"/>
+        <obo:IAO_0000115>Soil with little or no evidence of pedogenic horizon development.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Entisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Survey Staff (2022) Keys to Soil Taxonomy, 13th edition; issue #120</rdfs:comment>
+        <rdfs:label>Entisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001020 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001020">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001015"/>
+        <obo:IAO_0000115>Soil with permafrost within 100 cm of the surface, or with gelic materials within 100 cm and permafrost within 200 cm.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Gelisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Survey Staff (2022) Keys to Soil Taxonomy, 13th edition; issue #120</rdfs:comment>
+        <rdfs:label>Gelisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001021 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001021">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001015"/>
+        <obo:IAO_0000115>Soil formed mostly in organic soil materials, such as peat, muck, or mucky peat.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Histosols</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Survey Staff (2022) Keys to Soil Taxonomy, 13th edition; issue #120</rdfs:comment>
+        <rdfs:comment>USDA Soil Taxonomy order Histosols. Distinct from the WRB reference soil group Histosol (BERVO:8000997).</rdfs:comment>
+        <rdfs:label>Histosol (USDA)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001022 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001022">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001015"/>
+        <obo:IAO_0000115>Soil with weakly developed subsurface horizons, such as a cambic horizon, that show alteration but not the accumulation that defines other orders.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Inceptisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Survey Staff (2022) Keys to Soil Taxonomy, 13th edition; issue #120</rdfs:comment>
+        <rdfs:label>Inceptisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001023 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001023">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001015"/>
+        <obo:IAO_0000115>Soil with a thick, dark, humus-rich mollic surface horizon and high base saturation, typical of grassland.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Mollisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Survey Staff (2022) Keys to Soil Taxonomy, 13th edition; issue #120</rdfs:comment>
+        <rdfs:label>Mollisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001024 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001024">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001015"/>
+        <obo:IAO_0000115>Intensely weathered soil with an oxic or kandic subsoil horizon dominated by kaolinite and iron and aluminum oxides, with a very low cation exchange capacity, typical of the humid tropics.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Oxisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Survey Staff (2022) Keys to Soil Taxonomy, 13th edition; issue #120</rdfs:comment>
+        <rdfs:label>Oxisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001025 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001025">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001015"/>
+        <obo:IAO_0000115>Acid soil with a spodic subsurface horizon in which humus with aluminum and iron has accumulated, typically beneath a bleached albic horizon.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Spodosols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Survey Staff (2022) Keys to Soil Taxonomy, 13th edition; issue #120</rdfs:comment>
+        <rdfs:label>Spodosol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001026 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001026">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001015"/>
+        <obo:IAO_0000115>Strongly leached soil with a clay-enriched argillic or kandic subsoil horizon and low base saturation, typical of humid warm-temperate and tropical regions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001397"/>
+        <oboInOwl:hasExactSynonym>Ultisols</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Survey Staff (2022) Keys to Soil Taxonomy, 13th edition; issue #120</rdfs:comment>
+        <rdfs:label>Ultisol</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001027 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001027">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001015"/>
+        <obo:IAO_0000115>Clay-rich soil that shrinks and swells with changes in water content, forming wide cracks that open and close periodically and slickensides or wedge-shaped aggregates in the subsoil.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Vertisols</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Survey Staff (2022) Keys to Soil Taxonomy, 13th edition; issue #120</rdfs:comment>
+        <rdfs:comment>USDA Soil Taxonomy order Vertisols. Distinct from the WRB reference soil group Vertisol (BERVO:8001014).</rdfs:comment>
+        <rdfs:label>Vertisol (USDA)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001028 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001028">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <obo:IAO_0000115>Soil defined by the range of sand, silt, and clay in its fine earth that places it in one area of the USDA texture triangle. There are 12 such classes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>soil textural class</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Science Division Staff (2017) Soil Survey Manual, USDA Handbook 18; issue #120</rdfs:comment>
+        <rdfs:label>USDA soil texture class</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001029 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001029">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001028"/>
+        <obo:IAO_0000115>Soil whose fine earth is at least 85 percent sand by mass, with the silt percentage plus 1.5 times the clay percentage below 15.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>sand</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Science Division Staff (2017) Soil Survey Manual, USDA Handbook 18; issue #120</rdfs:comment>
+        <rdfs:comment>USDA texture class sand, labelled to keep it apart from the particle-size fraction Sand. HWSD2: TEXTURE_USDA code 13.</rdfs:comment>
+        <rdfs:label>Sand texture class</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001030 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001030">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001028"/>
+        <obo:IAO_0000115>Soil whose fine earth is 70 to 91 percent sand by mass, with the silt percentage plus 1.5 times the clay percentage at least 15 and the silt percentage plus twice the clay percentage below 30.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105272"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Science Division Staff (2017) Soil Survey Manual, USDA Handbook 18; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: TEXTURE_USDA code 12.</rdfs:comment>
+        <rdfs:label>Loamy sand</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001031 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001031">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001028"/>
+        <obo:IAO_0000115>Soil whose fine earth is either 7 to 20 percent clay and more than 52 percent sand by mass, or less than 7 percent clay and less than 50 percent silt, with the silt percentage plus twice the clay percentage at least 30.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105274"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Science Division Staff (2017) Soil Survey Manual, USDA Handbook 18; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: TEXTURE_USDA code 11.</rdfs:comment>
+        <rdfs:label>Sandy loam</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001032 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001032">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001028"/>
+        <obo:IAO_0000115>Soil whose fine earth is 7 to 27 percent clay, 28 to 50 percent silt, and no more than 52 percent sand by mass.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002258"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Science Division Staff (2017) Soil Survey Manual, USDA Handbook 18; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: TEXTURE_USDA code 9.</rdfs:comment>
+        <rdfs:label>Loam</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001033 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001033">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001028"/>
+        <obo:IAO_0000115>Soil whose fine earth is either at least 50 percent silt and 12 to 27 percent clay by mass, or 50 to 80 percent silt and less than 12 percent clay.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105275"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Science Division Staff (2017) Soil Survey Manual, USDA Handbook 18; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: TEXTURE_USDA code 7.</rdfs:comment>
+        <rdfs:label>Silt loam</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001034 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001034">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001028"/>
+        <obo:IAO_0000115>Soil whose fine earth is at least 80 percent silt and less than 12 percent clay by mass.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>silt</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Science Division Staff (2017) Soil Survey Manual, USDA Handbook 18; issue #120</rdfs:comment>
+        <rdfs:comment>USDA texture class silt, labelled to keep it apart from the particle-size fraction Silt. HWSD2: TEXTURE_USDA code 6.</rdfs:comment>
+        <rdfs:label>Silt texture class</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001035 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001035">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001028"/>
+        <obo:IAO_0000115>Soil whose fine earth is 20 to 35 percent clay, less than 28 percent silt, and more than 45 percent sand by mass.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105276"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Science Division Staff (2017) Soil Survey Manual, USDA Handbook 18; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: TEXTURE_USDA code 10.</rdfs:comment>
+        <rdfs:label>Sandy clay loam</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001036 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001036">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001028"/>
+        <obo:IAO_0000115>Soil whose fine earth is 27 to 40 percent clay and more than 20 but no more than 45 percent sand by mass.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105277"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Science Division Staff (2017) Soil Survey Manual, USDA Handbook 18; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: TEXTURE_USDA code 5.</rdfs:comment>
+        <rdfs:label>Clay loam</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001037 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001037">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001028"/>
+        <obo:IAO_0000115>Soil whose fine earth is 27 to 40 percent clay and no more than 20 percent sand by mass.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105278"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Science Division Staff (2017) Soil Survey Manual, USDA Handbook 18; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: TEXTURE_USDA code 4.</rdfs:comment>
+        <rdfs:label>Silty clay loam</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001038 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001038">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001028"/>
+        <obo:IAO_0000115>Soil whose fine earth is at least 35 percent clay and at least 45 percent sand by mass.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105279"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Science Division Staff (2017) Soil Survey Manual, USDA Handbook 18; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: TEXTURE_USDA code 8.</rdfs:comment>
+        <rdfs:label>Sandy clay</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001039 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001039">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001028"/>
+        <obo:IAO_0000115>Soil whose fine earth is at least 40 percent clay and at least 40 percent silt by mass.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105280"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Science Division Staff (2017) Soil Survey Manual, USDA Handbook 18; issue #120</rdfs:comment>
+        <rdfs:comment>HWSD2: TEXTURE_USDA code 2.</rdfs:comment>
+        <rdfs:label>Silty clay</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001040 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001040">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001028"/>
+        <obo:IAO_0000115>Soil whose fine earth is at least 40 percent clay, no more than 45 percent sand, and less than 40 percent silt by mass.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>clay</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Science Division Staff (2017) Soil Survey Manual, USDA Handbook 18; issue #120</rdfs:comment>
+        <rdfs:comment>USDA texture class clay, labelled to keep it apart from the particle-size fraction Clay. HWSD2: TEXTURE_USDA splits this class into heavy clay (code 1) and light clay (code 3).</rdfs:comment>
+        <rdfs:label>Clay texture class</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001041 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001041">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001040"/>
+        <obo:IAO_0000115>Soil of the clay texture class whose fine earth is more than 60 percent clay by mass.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>heavy clay</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after FAO (2006) Guidelines for Soil Description, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>FAO subdivision of the USDA clay class. HWSD2: TEXTURE_USDA code 1, Clay (heavy).</rdfs:comment>
+        <rdfs:label>Heavy clay texture class</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001042 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001042">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001040"/>
+        <obo:IAO_0000115>Soil of the clay texture class whose fine earth is no more than 60 percent clay by mass.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>light clay</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after FAO (2006) Guidelines for Soil Description, 4th edition; issue #120</rdfs:comment>
+        <rdfs:comment>FAO subdivision of the USDA clay class. HWSD2: TEXTURE_USDA code 3, Clay (light).</rdfs:comment>
+        <rdfs:label>Light clay texture class</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001043 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001043">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <obo:IAO_0000115>Soil defined by the group it falls in under the Unified Soil Classification System, an engineering classification by grain size distribution and, for fine-grained soil, by liquid limit and plasticity index. Each group has a two-letter symbol.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Unified Soil Classification System group</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
+        <rdfs:label>USCS soil group</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001044 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001044">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001043"/>
+        <obo:IAO_0000115>Coarse-grained soil, more than half retained on a 0.075 mm sieve, in which gravel, coarser than 4.75 mm, makes up most of the coarse fraction, with less than 5 percent fines and a coefficient of uniformity of at least 4 and a coefficient of curvature of 1 to 3.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>GW</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
+        <rdfs:comment>USCS group symbol GW.</rdfs:comment>
+        <rdfs:label>Well-graded gravel</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001045 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001045">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001043"/>
+        <obo:IAO_0000115>Coarse-grained soil, more than half retained on a 0.075 mm sieve, in which gravel, coarser than 4.75 mm, makes up most of the coarse fraction, with less than 5 percent fines and a grain size distribution that fails the gradation criteria of a well-graded gravel.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>GP</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
+        <rdfs:comment>USCS group symbol GP.</rdfs:comment>
+        <rdfs:label>Poorly graded gravel</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001046 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001046">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001043"/>
+        <obo:IAO_0000115>Coarse-grained soil, more than half retained on a 0.075 mm sieve, in which gravel, coarser than 4.75 mm, makes up most of the coarse fraction, with more than 12 percent fines that classify as silt.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>GM</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
+        <rdfs:comment>USCS group symbol GM.</rdfs:comment>
+        <rdfs:label>Silty gravel</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001047 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001047">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001043"/>
+        <obo:IAO_0000115>Coarse-grained soil, more than half retained on a 0.075 mm sieve, in which gravel, coarser than 4.75 mm, makes up most of the coarse fraction, with more than 12 percent fines that classify as clay.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>GC</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
+        <rdfs:comment>USCS group symbol GC.</rdfs:comment>
+        <rdfs:label>Clayey gravel</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001048 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001048">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001043"/>
+        <obo:IAO_0000115>Coarse-grained soil, more than half retained on a 0.075 mm sieve, in which sand, 0.075 to 4.75 mm, makes up most of the coarse fraction, with less than 5 percent fines and a coefficient of uniformity of at least 6 and a coefficient of curvature of 1 to 3.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SW</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
+        <rdfs:comment>USCS group symbol SW.</rdfs:comment>
+        <rdfs:label>Well-graded sand</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001049 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001049">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001043"/>
+        <obo:IAO_0000115>Coarse-grained soil, more than half retained on a 0.075 mm sieve, in which sand, 0.075 to 4.75 mm, makes up most of the coarse fraction, with less than 5 percent fines and a grain size distribution that fails the gradation criteria of a well-graded sand.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SP</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
+        <rdfs:comment>USCS group symbol SP.</rdfs:comment>
+        <rdfs:label>Poorly graded sand</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001050 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001050">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001043"/>
+        <obo:IAO_0000115>Coarse-grained soil, more than half retained on a 0.075 mm sieve, in which sand, 0.075 to 4.75 mm, makes up most of the coarse fraction, with more than 12 percent fines that classify as silt.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SM</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
+        <rdfs:comment>USCS group symbol SM.</rdfs:comment>
+        <rdfs:label>Silty sand</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001051 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001051">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001043"/>
+        <obo:IAO_0000115>Coarse-grained soil, more than half retained on a 0.075 mm sieve, in which sand, 0.075 to 4.75 mm, makes up most of the coarse fraction, with more than 12 percent fines that classify as clay.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SC</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
+        <rdfs:comment>USCS group symbol SC.</rdfs:comment>
+        <rdfs:label>Clayey sand</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001052 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001052">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001043"/>
+        <obo:IAO_0000115>Fine-grained soil, at least half passing a 0.075 mm sieve, inorganic, with a liquid limit below 50 and a plasticity index below 4 or plotting below the A-line of the plasticity chart.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>ML</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
+        <rdfs:comment>USCS group symbol ML.</rdfs:comment>
+        <rdfs:label>Low-plasticity silt</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001053 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001053">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001043"/>
+        <obo:IAO_0000115>Fine-grained soil, at least half passing a 0.075 mm sieve, inorganic, with a liquid limit below 50 and a plasticity index above 7, plotting on or above the A-line of the plasticity chart.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>CL</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
+        <rdfs:comment>USCS group symbol CL.</rdfs:comment>
+        <rdfs:label>Lean clay</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001054 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001054">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001043"/>
+        <obo:IAO_0000115>Fine-grained soil, at least half passing a 0.075 mm sieve, organic silt or clay with a liquid limit below 50.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>OL</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
+        <rdfs:comment>USCS group symbol OL.</rdfs:comment>
+        <rdfs:label>Low-plasticity organic soil</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001055 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001055">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001043"/>
+        <obo:IAO_0000115>Fine-grained soil, at least half passing a 0.075 mm sieve, inorganic, with a liquid limit of 50 or more, plotting below the A-line of the plasticity chart.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>MH</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
+        <rdfs:comment>USCS group symbol MH.</rdfs:comment>
+        <rdfs:label>Elastic silt</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001056 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001056">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001043"/>
+        <obo:IAO_0000115>Fine-grained soil, at least half passing a 0.075 mm sieve, inorganic, with a liquid limit of 50 or more, plotting on or above the A-line of the plasticity chart.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>CH</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
+        <rdfs:comment>USCS group symbol CH.</rdfs:comment>
+        <rdfs:label>Fat clay</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001057 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001057">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001043"/>
+        <obo:IAO_0000115>Fine-grained soil, at least half passing a 0.075 mm sieve, organic silt or clay with a liquid limit of 50 or more.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>OH</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
+        <rdfs:comment>USCS group symbol OH.</rdfs:comment>
+        <rdfs:label>High-plasticity organic soil</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001058 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001058">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001043"/>
+        <obo:IAO_0000115>Soil made up primarily of organic matter, dark in colour and with an organic odour, such as peat.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>PT</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
+        <rdfs:comment>USCS group symbol PT.</rdfs:comment>
+        <rdfs:label>Highly organic soil</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
