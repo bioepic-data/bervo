@@ -52001,7 +52001,7 @@
         <oboInOwl:hasExactSynonym>isotope delta value</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>per mil value</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
-        <rdfs:comment>IUPAC symbol delta (δ). A positive value means the sample is richer in the heavier isotope than the standard.</rdfs:comment>
+        <rdfs:comment>IUPAC symbol delta (δ). A positive value means the sample is richer in the heavier isotope than the standard. Distinct from Isotope ratio (BERVO:8000466), the ratio of two isotopes itself, from which a delta is calculated against a standard.</rdfs:comment>
         <rdfs:label>Isotope delta</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
