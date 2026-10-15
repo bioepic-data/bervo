@@ -15888,17 +15888,17 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000942">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
-        <obo:IAO_0000115>The total rate of nitrous oxide consumption through chemical denitrification processes in non-banded soil areas when not limited by nitrous oxide availability. This parameter quantifies abiotic chemical reduction of nitrous oxide to nitrogen gas, which represents an important pathway for nitrous oxide removal from soil systems and influences greenhouse gas emissions from terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which nitrite would be consumed by abiotic chemical decomposition, chemodenitrification, if the nitrite supply did not limit it, in soil outside fertilizer bands; the reaction yields nitrous oxide and nitrate.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RNO2DmndSoilChemo_vr</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), nitrite correction for issue #79</rdfs:comment>
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
-        <rdfs:label>Total chemodenitrification nitrous oxide uptake non-band unconstrained by N2O</rdfs:label>
+        <rdfs:label>Total chemodenitrification nitrite uptake non-band unconstrained by NO2</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000017"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000627"/>
     </Class>
     
 
@@ -15907,17 +15907,17 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000943">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
-        <obo:IAO_0000115>The total rate of nitrous oxide consumption through chemical denitrification processes in banded fertilizer zones when not limited by nitrous oxide availability. This parameter quantifies abiotic chemical reduction of nitrous oxide to nitrogen gas in nutrient-rich bands, which affects local nitrogen cycling dynamics and contributes to nitrous oxide removal in fertilized soil systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which nitrite would be consumed by abiotic chemical decomposition, chemodenitrification, if the nitrite supply did not limit it, in fertilizer bands in soil; the reaction yields nitrous oxide and nitrate.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RNO2DmndBandChemo_vr</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), nitrite correction for issue #79</rdfs:comment>
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
-        <rdfs:label>Total chemodenitrification nitrous oxide uptake band unconstrained by N2O</rdfs:label>
+        <rdfs:label>Total chemodenitrification nitrite uptake band unconstrained by NO2</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000017"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000627"/>
     </Class>
     
 
