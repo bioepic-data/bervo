@@ -36595,6 +36595,38 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002190 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002190">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000024"/>
+        <obo:IAO_0000115>Temperature of the ground at the permafrost table, the upper surface of the permafrost beneath the active layer.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>top of permafrost temperature</oboInOwl:hasExactSynonym>
+        <rdfs:comment>A single reading, as from a probe, not the mean annual temperature at the top of permafrost (TTOP) used in permafrost models.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Temperature at the top of permafrost</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
+        <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001060"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002191 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002191">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
+        <obo:IAO_0000115>Whether permafrost is found within a stated depth of the ground surface, usually the reach of a frost or thaw probe.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Near-surface permafrost presence</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000358"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000357"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001060"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
@@ -51202,6 +51234,19 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification System); issue #120</rdfs:comment>
         <rdfs:comment>USCS group symbol PT.</rdfs:comment>
         <rdfs:label>Highly organic soil</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001060 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001060">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
+        <obo:IAO_0000115>Ground material, mostly soil, sediment, or rock with any ice and organic material it holds, that stays at or below the freezing point of water for two or more consecutive years.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000134"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Permafrost</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
