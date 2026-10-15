@@ -36064,7 +36064,7 @@
         <rdfs:comment>HWSD2: CEC_CLAY [cmolc/kg]. The mass is of clay, not of soil. See Soil cation exchange capacity (BERVO:0000883).</rdfs:comment>
         <rdfs:label>Soil clay fraction cation exchange capacity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
-        <bervo:BERVO_has_unit>cmol.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>cmol.kg-1{clay}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000209"/>
     </Class>
