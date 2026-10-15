@@ -111,8 +111,8 @@ these rules:
 | `bix …` | Biological index (`BERVO:0002203`) | Water quality variable | `1` | |
 | `sr …` | Spectral slope ratio (`BERVO:0002204`) | Water quality variable | `1` | |
 | `fresh …` | Freshness index (`BERVO:0002213`) | Water quality variable | `1` | |
-| `fch4 dry` | Methane flux (`BERVO:0002205`) | Surface flux variable | `nmol.m-2.s-1` | |
-| `fn2o dry` | Nitrous oxide flux (`BERVO:0002206`) | Surface flux variable | `nmol.m-2.s-1` | |
+| `fch4 dry` | Methane flux (`BERVO:0002205`) | Surface flux variable | `nmol.m-2.s-1`, `umol.m-2.s-1` | |
+| `fn2o dry` | Nitrous oxide flux (`BERVO:0002206`) | Surface flux variable | `nmol.m-2.s-1`, `umol.m-2.s-1` | |
 | `delta 13ch4` | Methane delta carbon-13 (`BERVO:0002207`) | Soil biogeochemistry variable | `[ppth]` | `delta_13COfCH4` |
 | `initial area`, `final area`, `raw growth` | Fungal mat area (`BERVO:0002208`) | Ecology variable | `cm2` | |
 | `relative growth rate weekly` | Fungal mat relative growth rate (`BERVO:0002209`) | Ecology variable | `d-1` | |
