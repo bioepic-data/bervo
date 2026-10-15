@@ -18,6 +18,11 @@ manganese-carbon model output, and the Utqiagvik phenology camera imagery. The
 one name from the tundra land surface modelling archive,
 `196.19585    64.862976     1     1`, is a data row read as a header.
 
+The counts below are per dataset, so a name used by two datasets counts in
+both. They sum to 192, or 193 with the tundra name. Four names appear in two
+datasets each, `treatment`, `depth`, `site`, and `date`, which leaves the 189
+unique names in `variable_names.tsv`.
+
 | Dataset | Names | Topic |
 | --- | --- | --- |
 | [doi:10.15485/2395957](https://doi.org/10.15485/2395957) | 5 | Active layer and permafrost temperature, Teller 47, Alaska |
