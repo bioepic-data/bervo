@@ -143,7 +143,7 @@ Cross-references in the last column are ODM2 variable names, written in full as
   flux, biological index, or spectral slope ratio.
 - **Molar units for solutes.** Both porewater datasets report solutes in `uM` or
   `mM`, so BERVO uses `umol.L-1`. The ODM2 nitrogen names are "as nitrogen",
-  which a molar unit makes no different. Carbon is the exception: dissolved
+  which a molar unit makes no difference to. Carbon is the exception: dissolved
   carbon is conventionally reported by mass, in `mg{C}.L-1`.
 - **Pore water is not cross-referenced to ENVO.** ENVO's interstitial water
   (`ENVO:03600009`) is defined for rocks and sediments, and BERVO's term also
