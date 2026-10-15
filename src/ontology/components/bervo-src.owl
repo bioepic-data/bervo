@@ -15442,7 +15442,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000916">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
-        <obo:IAO_0000115>Amount of dissolved ions in the soil water of the soil column of a grid cell, summed over the surface litter layer and the soil layers, with each dissolved salt species counted by the number of ions it dissociates into.</obo:IAO_0000115>
+        <obo:IAO_0000115>Amount of ions in the soil column of a grid cell, summed over the surface litter layer and the soil layers, counting dissolved salts in micropore and macropore water, fertilizer nitrogen, exchangeable ions and precipitated salts, each species by the number of ions it yields.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>UION_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), from the EcoSIM source, issue #109</rdfs:comment>
         <rdfs:comment>EcoSIM declares UION_col as &quot;total soil ion content, [mol d-2]&quot; resets it each hour in Hour1Mod.F90, and sums it over the layers in RedistMod.F90. Formerly labelled Soil electrical conductivity, which its unit never matched (issue #109). The total over the modelled domain is Total soil ion content (BERVO:0000296).</rdfs:comment>
