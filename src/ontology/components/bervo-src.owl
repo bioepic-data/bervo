@@ -36900,7 +36900,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002207 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002207">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002214"/>
         <obo:IAO_0000115>Relative difference between the carbon-13 to carbon-12 ratio of methane in a sample and that of the Vienna Pee Dee Belemnite standard, which distinguishes methane from acetoclastic and hydrogenotrophic methanogenesis and shows how much has been oxidized.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/delta_13COfCH4"/>
         <oboInOwl:hasExactSynonym>d13C-CH4</oboInOwl:hasExactSynonym>
@@ -36908,9 +36908,9 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;delta-13C of CH4&quot;: Isotope 13C of methane</rdfs:comment>
         <rdfs:label>Methane delta carbon-13</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000466"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001069"/>
         <bervo:BERVO_has_unit>[ppth]</bervo:BERVO_has_unit>
-        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000086"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000024"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001063"/>
@@ -37011,6 +37011,84 @@
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000920"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002214 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002214">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000047"/>
+        <obo:IAO_0000115>Isotope delta of carbon-13 relative to carbon-12 in a sample, against Vienna Pee Dee Belemnite.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/carbon_13StableIsotopeRatioDelta"/>
+        <oboInOwl:hasExactSynonym>d13C</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>delta 13C</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Carbon-13, stable isotope ratio delta&quot;: Difference in the 13C:12C ratio between the sample and standard (del C 13)</rdfs:comment>
+        <rdfs:label>Delta carbon-13</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001069"/>
+        <bervo:BERVO_has_unit>[ppth]</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001063"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002215 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002215">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000047"/>
+        <obo:IAO_0000115>Isotope delta of deuterium relative to protium in a sample, against Vienna Standard Mean Ocean Water.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/hydrogen_2_StableIsotopeRatioDelta"/>
+        <oboInOwl:hasExactSynonym>dD</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>delta 2H</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>delta D</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Hydrogen-2, stable isotope ratio delta&quot;: Difference in the 2H:1H ratio between the sample and standard</rdfs:comment>
+        <rdfs:label>Delta deuterium</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001070"/>
+        <bervo:BERVO_has_unit>[ppth]</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000631"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002216 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002216">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000047"/>
+        <obo:IAO_0000115>Isotope delta of nitrogen-15 relative to nitrogen-14 in a sample, against atmospheric nitrogen.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/nitrogen_15_StableIsotopeRatioDelta"/>
+        <oboInOwl:hasExactSynonym>d15N</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>delta 15N</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Nitrogen-15, stable isotope ratio delta&quot;: Difference in the 15N:14N ratio between the sample and standard (del N 15)</rdfs:comment>
+        <rdfs:label>Delta nitrogen-15</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001071"/>
+        <bervo:BERVO_has_unit>[ppth]</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000632"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002217 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002217">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000047"/>
+        <obo:IAO_0000115>Isotope delta of oxygen-18 relative to oxygen-16 in a sample, against Vienna Standard Mean Ocean Water, or against Vienna Pee Dee Belemnite for carbonates and carbon dioxide.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/oxygen_18_StableIsotopeRatioDelta"/>
+        <oboInOwl:hasExactSynonym>d18O</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>delta 18O</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Oxygen-18, stable isotope ratio delta&quot;: Difference in the 18O:16O ratio between the sample and standard</rdfs:comment>
+        <rdfs:label>Delta oxygen-18</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001069"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001070"/>
+        <bervo:BERVO_has_unit>[ppth]</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000633"/>
     </Class>
     
 
@@ -52438,6 +52516,18 @@
         <obo:IAO_0000115>Grouping class for kinds of wastewater distinguished by how far along treatment they are, from untreated influent to treated effluent. This axis cross-cuts Wastewater by origin: every wastewater has both an origin and a treatment stage, so a term beneath this grouping and a term beneath that one are not alternatives, and they must not be declared disjoint.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
         <rdfs:label>Wastewater by treatment stage</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_9000047 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_9000047">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
+        <obo:IAO_0000115>Grouping class for variables that report the stable isotope composition of a material as an isotope delta against a reference standard.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Stable isotope variable</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
 </rdf:RDF>
