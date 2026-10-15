@@ -113,7 +113,7 @@ these rules:
 | `fresh …` | Freshness index (`BERVO:0002213`) | Water quality variable | `1` | |
 | `fch4 dry` | Methane flux (`BERVO:0002205`) | Surface flux variable | `nmol.m-2.s-1`, `umol.m-2.s-1` | |
 | `fn2o dry` | Nitrous oxide flux (`BERVO:0002206`) | Surface flux variable | `nmol.m-2.s-1`, `umol.m-2.s-1` | |
-| `delta 13ch4` | Methane delta carbon-13 (`BERVO:0002207`) | Soil biogeochemistry variable | `[ppth]` | `delta_13COfCH4` |
+| `delta 13ch4` | Methane delta carbon-13 (`BERVO:0002207`) | Delta carbon-13 | `[ppth]` | `delta_13COfCH4` |
 | `initial area`, `final area`, `raw growth` | Fungal mat area (`BERVO:0002208`) | Ecology variable | `cm2` | |
 | `relative growth rate weekly` | Fungal mat relative growth rate (`BERVO:0002209`) | Ecology variable | `d-1` | |
 | `colonization status` | Litter colonization status (`BERVO:0002210`) | Ecology variable | `NA` | |
@@ -156,11 +156,56 @@ Cross-references in the last column are ODM2 variable names, written in full as
   between 420 and 435 nm. The mesocosm dataset reports them in separate columns.
 - **`raw growth` is a change in Fungal mat area,** final minus initial, so it
   maps to the area variable.
-- **Methane delta carbon-13 sits under Soil biogeochemistry variable,** because
-  here it is measured on gas leaving soil. BERVO has no grouping for isotope
-  variables, and if more are added, one would be a better parent.
 - **Leaf mass per area is not cross-referenced** to specific leaf area
   (`TO:0000562`), which is its reciprocal.
+
+## Stable isotope variables
+
+`delta 13ch4` was BERVO's first isotope delta variable, so it came without a
+parent. Rather than place one variable under an ill-fitting grouping, the
+review of this alignment added the stable isotope deltas from the ODM2
+variable names as a family, with the concepts they need.
+
+| BERVO term | Parent | Reference standard (`contexts`) | ODM2 variable name |
+| --- | --- | --- | --- |
+| Stable isotope variable (`BERVO:9000047`) | Variable | | |
+| Delta carbon-13 (`BERVO:0002214`) | Stable isotope variable | Vienna Pee Dee Belemnite | `carbon_13StableIsotopeRatioDelta` |
+| Delta deuterium (`BERVO:0002215`) | Stable isotope variable | Vienna Standard Mean Ocean Water | `hydrogen_2_StableIsotopeRatioDelta` |
+| Delta nitrogen-15 (`BERVO:0002216`) | Stable isotope variable | Atmospheric nitrogen standard | `nitrogen_15_StableIsotopeRatioDelta` |
+| Delta oxygen-18 (`BERVO:0002217`) | Stable isotope variable | Vienna Standard Mean Ocean Water, Vienna Pee Dee Belemnite | `oxygen_18_StableIsotopeRatioDelta` |
+| Methane delta carbon-13 (`BERVO:0002207`) | Delta carbon-13 | Vienna Pee Dee Belemnite | `delta_13COfCH4` |
+| Carbon dioxide delta carbon-13 (`BERVO:0002218`) | Delta carbon-13 | Vienna Pee Dee Belemnite | `delta_13COfCO2` |
+| Dissolved inorganic carbon delta carbon-13 (`BERVO:0002219`) | Delta carbon-13 | Vienna Pee Dee Belemnite | `delta_13COfDIC` |
+| Ethane delta carbon-13 (`BERVO:0002220`) | Delta carbon-13 | Vienna Pee Dee Belemnite | `delta_13COfC2H6` |
+| Propane delta carbon-13 (`BERVO:0002221`) | Delta carbon-13 | Vienna Pee Dee Belemnite | `delta_13COfC3H8` |
+| Butane delta carbon-13 (`BERVO:0002222`) | Delta carbon-13 | Vienna Pee Dee Belemnite | `delta_13COfC4H10` |
+| Water delta oxygen-18 (`BERVO:0002223`) | Delta oxygen-18 | Vienna Standard Mean Ocean Water | `delta_18OOfH2O` |
+| Water delta deuterium (`BERVO:0002224`) | Delta deuterium | Vienna Standard Mean Ocean Water | `delta_DOfH2O` |
+| Methane delta deuterium (`BERVO:0002225`) | Delta deuterium | Vienna Standard Mean Ocean Water | `delta_DOfCH4` |
+
+All take `[ppth]`, UCUM's parts per thousand (per mil), and Isotope delta in
+`attributes`. `measurement_ofs` names the isotope, and the substance where there
+is one.
+
+New concepts:
+
+| BERVO term | Parent | Cross-reference |
+| --- | --- | --- |
+| Isotope delta (`BERVO:8001067`) | Relative value | |
+| Isotope reference standard (`BERVO:8001068`) | Concept | |
+| Vienna Pee Dee Belemnite (`BERVO:8001069`) | Isotope reference standard | |
+| Vienna Standard Mean Ocean Water (`BERVO:8001070`) | Isotope reference standard | |
+| Atmospheric nitrogen standard (`BERVO:8001071`) | Isotope reference standard | |
+| Propane (`BERVO:8001072`) | Alkane | `CHEBI:32879` |
+| Butane (`BERVO:8001073`) | Alkane | `CHEBI:37808` |
+
+- **The reference standard goes in `contexts`.** It is the condition the value
+  is reported under, like Standard ambient temperature on a rate. Delta
+  oxygen-18 names both standards, because carbonates and carbon dioxide are
+  reported against Vienna Pee Dee Belemnite.
+- **Not added:** ODM2's `carbon_14` and `tritium_3H_DeltaTOfH2O`. Both isotopes
+  are radioactive and are reported as activities, ages, or tritium units, not as
+  a stable isotope delta, so they belong to a different family.
 
 ## Survey names left unmapped
 
