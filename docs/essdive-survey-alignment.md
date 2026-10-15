@@ -95,7 +95,7 @@ these rules:
 | `n area` | Leaf nitrogen content per unit area (`BERVO:0002187`) | Plant trait variable | `g{N}.m-2` | |
 | `c mass` | Leaf carbon content per unit dry mass (`BERVO:0002188`) | Plant trait variable | `mg{C}.g-1{dry_mass}` | |
 | `n mass` | Leaf nitrogen content per unit dry mass (`BERVO:0002189`) | Plant trait variable | `mg{N}.g-1{dry_mass}` | |
-| `pftemp` | Temperature at the top of permafrost (`BERVO:0002190`) | Soil heat variable | `Cel` | |
+| `pftemp` | Temperature at the top of permafrost (`BERVO:0002190`) | Soil heat variable | `Cel`, `K` | |
 | `pf` | Near-surface permafrost presence (`BERVO:0002191`) | Soil variable | `NA` | |
 | `dic …` | Dissolved inorganic carbon concentration (`BERVO:0002192`) | Water quality variable | `mg{C}.L-1` | `carbonDissolvedInorganic` |
 | `fe`, `fe …` | Dissolved ferrous iron concentration (`BERVO:0002193`) | Water quality variable | `umol.L-1` | |
