@@ -50722,7 +50722,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001031">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001028"/>
-        <obo:IAO_0000115>Soil whose fine earth is either 7 to 20 percent clay and more than 52 percent sand by mass, or less than 7 percent clay and less than 50 percent silt, with the silt percentage plus twice the clay percentage at least 30.</obo:IAO_0000115>
+        <obo:IAO_0000115>Soil whose fine earth either has at most 20 percent clay, at least 52 percent sand, and a silt percentage plus twice the clay percentage above 30, or has less than 7 percent clay, less than 50 percent silt, and 43 to 52 percent sand, all by mass.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_06105274"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Science Division Staff (2017) Soil Survey Manual, USDA Handbook 18; issue #120</rdfs:comment>
         <rdfs:comment>HWSD2: TEXTURE_USDA code 11.</rdfs:comment>
