@@ -419,7 +419,7 @@ conductivity. Here the label is what is wrong: EcoSIM declares `UION_col` as
 "total soil ion content, [mol d-2]", which agrees with the row's unit, its
 `attributes=Content`, and its `measurement_ofs=Ion`. The fix is a relabel to
 a soil ion content, with the conductivity label dropped, and that belongs to a
-change of its own. The two thermal conductivity
+change of its own. Issue #109 made it: the row is now Soil column ion content. The two thermal conductivity
 rows (`BERVO:0001486`, `BERVO:0001487`), which are the numerator and the
 denominator of a formula rather than conductivities. The two parameters to
 calculate an hourly air temperature and vapor pressure from the daily value

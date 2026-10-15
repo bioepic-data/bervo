@@ -15441,11 +15441,12 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000916">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
-        <obo:IAO_0000115>The ability of soil to conduct electrical current, which is primarily determined by the concentration and mobility of ions in the soil solution. This parameter provides information about soil salinity, nutrient availability, and water content, with higher electrical conductivity typically indicating higher concentrations of dissolved salts and nutrients, making it a useful indicator for soil fertility assessment and agricultural management.</obo:IAO_0000115>
+        <obo:IAO_0000115>Amount of dissolved ions in the soil water of the soil column of a grid cell, summed over the surface litter layer and the soil layers, with each dissolved salt species counted by the number of ions it dissociates into.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>UION_col</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), from the EcoSIM source, issue #109</rdfs:comment>
+        <rdfs:comment>EcoSIM declares UION_col as &quot;total soil ion content, [mol d-2]&quot; resets it each hour in Hour1Mod.F90, and sums it over the layers in RedistMod.F90. Formerly labelled Soil electrical conductivity, which its unit never matched (issue #109). The total over the modelled domain is Total soil ion content (BERVO:0000296).</rdfs:comment>
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
-        <rdfs:label>Soil electrical conductivity</rdfs:label>
+        <rdfs:label>Soil column ion content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>mol/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
@@ -33780,7 +33781,7 @@
         <oboInOwl:hasRelatedSynonym>ECa</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>apparent electrical conductivity</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Bulk electrical conductivity&quot;: Bulk electrical conductivity of a medium measured using a sensor such as time domain reflectometry (TDR), as a raw sensor response in the measurement of a quantity like soil moisture. Distinct from the electrical conductivity of the pore water or of a soil extract, such as Measured electrical conductivity (BERVO:0001703), and from EcoSIM&apos;s Soil electrical conductivity (BERVO:0000916). ODM2 describes it as a raw sensor response used on the way to a quantity such as soil water content.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Bulk electrical conductivity&quot;: Bulk electrical conductivity of a medium measured using a sensor such as time domain reflectometry (TDR), as a raw sensor response in the measurement of a quantity like soil moisture. Distinct from the electrical conductivity of the pore water or of a soil extract, such as Measured electrical conductivity (BERVO:0001703). ODM2 describes it as a raw sensor response used on the way to a quantity such as soil water content.</rdfs:comment>
         <rdfs:label>Bulk electrical conductivity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000885"/>
         <bervo:BERVO_has_unit>dS.m-1</bervo:BERVO_has_unit>
