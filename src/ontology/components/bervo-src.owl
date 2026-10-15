@@ -28209,7 +28209,8 @@
         <obo:IAO_0000115>The molar amount of dissolved salts in the micropore water of a soil layer in the grid cell.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>trcSalt_solml_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), from the EcoSIM source, issue #109</rdfs:comment>
+        <rdfs:comment>EcoSIM declares trcSalt_solml_vr as &quot;soil aqueous salt content micropre, [mol d-2]&quot;. RedistMod.F90 divides it by the micropore water volume VLWatMicP_vr to compute the electrical conductivity of the soil solution, so the stored value is an amount, not a concentration (issue #109).</rdfs:comment>
         <rdfs:label>Soil aqueous salt content micropore</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000196"/>
