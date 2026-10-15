@@ -38896,6 +38896,72 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002323 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002323">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001928"/>
+        <obo:IAO_0000115>Shortwave radiation that would arrive on a horizontal surface at the top of the atmosphere above a site, computed from the solar geometry for the time and location.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SW_IN_POT</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>extraterrestrial radiation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>top-of-atmosphere radiation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET variable: SW_IN_POT.</rdfs:comment>
+        <rdfs:label>Potential incoming shortwave radiation</rdfs:label>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000888"/>
+        <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000276"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002324 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002324">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Friction velocity below which turbulent mixing at a flux site is judged too weak for eddy covariance fluxes measured at night to represent the exchange with the surface.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>u* threshold</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ustar threshold</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET does not report the threshold itself; its constant and variable forms (_CUT, _VUT) and the percentile used (_USTAR50) qualify the NEE, GPP and RECO variables.</rdfs:comment>
+        <rdfs:label>Friction velocity threshold</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000833"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000004"/>
+        <bervo:BERVO_has_unit>m.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002325 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002325">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <obo:IAO_0000115>Ratio of the available energy, net radiation less the ground heat flux, to the sum of the measured sensible and latent heat fluxes, by which those fluxes are scaled to close the surface energy balance.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>EBC correction factor</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET reports the number of values used to compute it (EBC_CF_N) and the method used (EBC_CF_METHOD), and applies it in H_CORR and LE_CORR.</rdfs:comment>
+        <rdfs:label>Energy balance closure correction factor</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002326 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002326">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000003"/>
+        <obo:IAO_0000115>Categorical code marking whether an averaging period falls in the nighttime, judged by whether the potential incoming shortwave radiation is zero.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET variable: NIGHT. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term.</rdfs:comment>
+        <rdfs:label>Nighttime flag</rdfs:label>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001104"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
@@ -42154,7 +42220,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000238"/>
         <obo:IAO_0000115>A representation of a specific moment in time that combines date and time components to provide precise temporal reference for environmental measurements and observations. This temporal specification includes day, month, year, hours, minutes, and potentially seconds, enabling precise timing of processes, events, and data collection in environmental and ecological studies.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/COMO_0000180"/>
-        <rdfs:comment>AmeriFlux records the start and end of each averaging period as TIMESTAMP_START and TIMESTAMP_END, in local standard time as YYYYMMDDHHMM.</rdfs:comment>
+        <rdfs:comment>AmeriFlux records the start and end of each averaging period as TIMESTAMP_START and TIMESTAMP_END, and a single time as TIMESTAMP, in local standard time as YYYYMMDDHHMM.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>DateTime</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -53929,6 +53995,220 @@
         <rdfs:comment>AmeriFlux variable-name qualifier: _N, the number of replicate sensors averaged into a value.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
         <rdfs:label>Sample size</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001089 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001089">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
+        <obo:IAO_0000115>Method for estimating the values of a time series for periods without a valid measurement.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:label>Gap-filling method</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001090 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001090">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001089"/>
+        <obo:IAO_0000115>Gap-filling method that replaces a missing flux or meteorological value with the mean of values measured under similar meteorological conditions within a moving time window, widening the window until enough similar values are found (Reichstein et al., 2005).</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>MDS</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _MDS.</rdfs:comment>
+        <rdfs:label>Marginal distribution sampling</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001091 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001091">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
+        <obo:IAO_0000115>Method that estimates a variable at a measurement site from the corresponding atmospheric reanalysis variable, by linear regression of the reanalysis values against the site&apos;s own measurements.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>ERA downscaling</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _ERA, for values downscaled from the ERA reanalysis.</rdfs:comment>
+        <rdfs:label>Reanalysis downscaling</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001092 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001092">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
+        <obo:IAO_0000115>Method for separating the net ecosystem exchange of carbon dioxide into gross primary production and ecosystem respiration.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>NEE partitioning</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:label>Flux partitioning method</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001093 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001093">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001092"/>
+        <obo:IAO_0000115>Flux partitioning method that fits a temperature response of ecosystem respiration to nighttime net ecosystem exchange, extrapolates it to the daytime, and takes gross primary production as the difference from net ecosystem exchange (Reichstein et al., 2005).</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>nighttime partitioning</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _NT.</rdfs:comment>
+        <rdfs:label>Nighttime flux partitioning</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001094 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001094">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001092"/>
+        <obo:IAO_0000115>Flux partitioning method that fits a light response curve with a temperature-dependent respiration term to daytime net ecosystem exchange, estimating gross primary production and ecosystem respiration together (Lasslop et al., 2010).</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>daytime partitioning</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _DT.</rdfs:comment>
+        <rdfs:label>Daytime flux partitioning</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001095 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001095">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001092"/>
+        <obo:IAO_0000115>Flux partitioning method that estimates ecosystem respiration from the net ecosystem exchange measured in the hours just after sunset, before nighttime stable conditions suppress turbulence (van Gorsel et al., 2009).</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>sundown respiration method</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _SR.</rdfs:comment>
+        <rdfs:label>Sundown respiration partitioning</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001096 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001096">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000303"/>
+        <obo:IAO_0000115>Method that scales the sensible and latent heat fluxes by a common factor so that their sum matches the available energy, net radiation less the ground heat flux, keeping their ratio unchanged.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _CORR.</rdfs:comment>
+        <rdfs:label>Energy balance closure correction</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001097 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001097">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000833"/>
+        <obo:IAO_0000115>Friction velocity threshold applied unchanged to every year of a flux record, below which fluxes measured at night are discarded as unrepresentative.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _CUT.</rdfs:comment>
+        <rdfs:label>Constant friction velocity threshold</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001098 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001098">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000833"/>
+        <obo:IAO_0000115>Friction velocity threshold estimated separately for each year of a flux record, below which fluxes measured at night are discarded as unrepresentative.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _VUT.</rdfs:comment>
+        <rdfs:label>Variable friction velocity threshold</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001099 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001099">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000454"/>
+        <obo:IAO_0000115>Uncertainty of a value from random measurement error, estimated from the spread of measurements made under similar conditions close in time.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _RANDUNC.</rdfs:comment>
+        <rdfs:label>Random uncertainty</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001100 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001100">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000454"/>
+        <obo:IAO_0000115>Uncertainty of a value combining its random uncertainty with the uncertainty from the choice of friction velocity threshold.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _JOINTUNC.</rdfs:comment>
+        <rdfs:label>Joint uncertainty</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001101 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001101">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <obo:IAO_0000115>Value below which a stated percentage of the values of a distribution fall.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>quantile</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffixes: _XX (05, 16, 25, 50, 75, 84, 95) and _25, _75.</rdfs:comment>
+        <rdfs:label>Percentile</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001102 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001102">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <obo:IAO_0000115>Member of an ensemble of estimates chosen to represent it because it agrees best with the other members, judged by model efficiency.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _REF, chosen among the 40 estimates made with different friction velocity thresholds.</rdfs:comment>
+        <rdfs:label>Reference ensemble member</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001103 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001103">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000238"/>
+        <obo:IAO_0000115>Part of a day when the sun is above the horizon; in flux data processing, the periods when potential incoming shortwave radiation is above zero.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _DAY.</rdfs:comment>
+        <rdfs:label>Daytime</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001104 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001104">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000238"/>
+        <obo:IAO_0000115>Part of a day when the sun is below the horizon; in flux data processing, the periods when potential incoming shortwave radiation is zero.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>night</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _NIGHT.</rdfs:comment>
+        <rdfs:label>Nighttime</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
