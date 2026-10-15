@@ -36512,9 +36512,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Dry mass of a leaf divided by its one-sided area, a measure of leaf construction cost and thickness.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>LMA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>SLW</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>leaf mass area</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym>SLW</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>specific leaf weight</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>specific leaf weight</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
         <rdfs:comment>The reciprocal of specific leaf area (TO:0000562), and so not cross-referenced to it. Leaf area:mass during growth (BERVO:0000783) is the EcoSIM specific leaf area.</rdfs:comment>
         <rdfs:label>Leaf mass per area</rdfs:label>
