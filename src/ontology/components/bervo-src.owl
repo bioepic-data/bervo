@@ -52054,8 +52054,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001071">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001068"/>
         <obo:IAO_0000115>Nitrogen gas of the atmosphere, whose uniform nitrogen-15 to nitrogen-14 ratio defines the zero of the delta scale for nitrogen-15.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>AIR</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>AIR-N2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>AIR</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
         <rdfs:label>Atmospheric nitrogen standard</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
