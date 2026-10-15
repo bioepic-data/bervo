@@ -38967,11 +38967,11 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000123">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
         <obo:IAO_0000115>A chemical compound consisting of one nitrogen and two oxygen atoms that serves as an air pollutant and component of atmospheric nitrogen cycling. This reactive gas affects air quality, acid rain formation, ozone chemistry, and represents both a product and precursor of various nitrogen transformation processes.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33101"/>
         <oboInOwl:hasExactSynonym>NO2</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Nitrogen dioxide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000123"/>
     </Class>
     
 
