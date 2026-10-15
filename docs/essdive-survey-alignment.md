@@ -79,7 +79,7 @@ these rules:
 | --- | --- | --- | --- |
 | Pore water (`BERVO:8001059`) | Environmental material | none; see below | Both porewater datasets |
 | Permafrost (`BERVO:8001060`) | Environmental material | `ENVO:00000134` | Teller 47 |
-| Iron(2+) (`BERVO:8001061`) | Ion | `CHEBI:29033` | `fe` |
+| Iron(II) (`BERVO:8001061`) | Ion | `CHEBI:29033` | `fe` |
 | Dissolved sulfide (`BERVO:8001062`) | Chemical pool | none | `hs`, `sulfide …` |
 | Carbon-13 (`BERVO:8001063`) | Isotope | `CHEBI:36928` | `delta 13ch4` |
 | X-ray absorption near edge structure spectroscopy (`BERVO:8001064`) | Method | `CHMO:0000305` | Walker Branch |
