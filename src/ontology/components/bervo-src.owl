@@ -36506,6 +36506,95 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002185 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002185">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Dry mass of a leaf divided by its one-sided area, a measure of leaf construction cost and thickness.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>LMA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>leaf mass area</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>SLW</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>specific leaf weight</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>The reciprocal of specific leaf area (TO:0000562), and so not cross-referenced to it. Leaf area:mass during growth (BERVO:0000783) is the EcoSIM specific leaf area.</rdfs:comment>
+        <rdfs:label>Leaf mass per area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002186 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002186">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of carbon in a leaf per unit of its one-sided area.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Carea</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>area-based leaf carbon content</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Leaf carbon content per unit area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>g{C}.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002187 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002187">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of nitrogen in a leaf per unit of its one-sided area.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Narea</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>area-based leaf nitrogen content</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Leaf nitrogen content per unit area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>g{N}.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002188 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002188">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of carbon in a leaf per unit of its dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Cmass</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mass-based leaf carbon content</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Leaf carbon content per unit dry mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{C}.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002189 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002189">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of nitrogen in a leaf per unit of its dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Nmass</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mass-based leaf nitrogen content</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Leaf nitrogen content per unit dry mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{N}.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
