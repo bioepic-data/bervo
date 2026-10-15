@@ -36914,6 +36914,83 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002208 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002208">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Area of forest floor covered by a single mat of fungal hyphae binding leaf litter together.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Fungal mat area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_has_unit>cm2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000055"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000783"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002209 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002209">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Change in the area of a fungal mat over a period, divided by its area at the start and by the length of the period.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>The TRACE fungal mat dataset reports it as percent per week.</rdfs:comment>
+        <rdfs:label>Fungal mat relative growth rate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000337"/>
+        <bervo:BERVO_has_unit>d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000055"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000783"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002210 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002210">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Whether a piece of leaf litter has been colonized by litter-mat-forming fungi.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Litter colonization status</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000358"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000357"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000055"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000783"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002211 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002211">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Time from placing a piece of fresh leaf litter in contact with a fungal mat to its colonization by the fungus.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Time to litter colonization</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_has_unit>d</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000055"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000783"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002212 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002212">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Count of days within a stated period on which precipitation stays below a stated threshold, commonly 1 or 2 mm.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Number of dry days</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_0002213 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002213">
