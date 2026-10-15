@@ -39011,6 +39011,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000003">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
         <obo:IAO_0000115>The process of gathering mature crops or plant parts for human use, representing the culmination of agricultural production cycles. This activity is essential for understanding agricultural productivity, biomass removal from ecosystems, and the timing of nutrient cycling disruptions in managed terrestrial systems.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>crop harvest</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
@@ -39952,6 +39953,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000070">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001256"/>
         <obo:IAO_0000115>The artificial application of water to agricultural land to supplement natural precipitation and ensure adequate moisture for crop growth. This water management practice affects soil moisture, nutrient transport, crop productivity, and represents a major component of agricultural water use and landscape modification in many regions.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000006"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
@@ -41327,6 +41329,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000172">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000923"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001227"/>
         <obo:IAO_0000115>Combustion that sustains itself and spreads through available fuel, producing flames, heat, light, and smoke. As an environmental disturbance, fire shapes ecosystem structure, nutrient cycling, species composition, and vegetation patterns.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000786"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabs.lter-europe.net/EnvThes/20379"/>
@@ -41972,6 +41975,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000221">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001176"/>
         <obo:IAO_0000115>A tree that has died but remains upright in the forest canopy, providing important habitat structure and contributing to ecosystem functioning. These standing dead trees serve as wildlife habitat, affect forest structure, influence fire behavior, and represent important components of forest carbon storage and nutrient cycling.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>snag</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
@@ -54209,6 +54213,2562 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
         <rdfs:comment>FLUXNET FULLSET suffix: _NIGHT. Flux processing counts as nighttime the periods when the potential incoming shortwave radiation is zero.</rdfs:comment>
         <rdfs:label>Nighttime</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001105 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001105">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+        <obo:IAO_0000115>Class of the land cover classification of the International Geosphere-Biosphere Programme, which divides the land surface into 17 classes of vegetation, land use and unvegetated cover.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:comment>Values of the AmeriFlux BADM variable IGBP.</rdfs:comment>
+        <rdfs:label>IGBP land cover class</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001106 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001106">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
+        <obo:IAO_0000115>IGBP land cover class of land dominated by woody vegetation with more than 60 percent cover and taller than 2 m, of needleleaf trees that stay green all year so that the canopy is never without green foliage.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>ENF</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM IGBP value: ENF.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Evergreen needleleaf forest (IGBP)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001107 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001107">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
+        <obo:IAO_0000115>IGBP land cover class of land dominated by woody vegetation with more than 60 percent cover and taller than 2 m, of broadleaf trees and shrubs that stay green all year so that the canopy is never without green foliage.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>EBF</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM IGBP value: EBF.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Evergreen broadleaf forest (IGBP)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001108 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001108">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
+        <obo:IAO_0000115>IGBP land cover class of land dominated by woody vegetation with more than 60 percent cover and taller than 2 m, of needleleaf trees with an annual cycle of leaf-on and leaf-off periods.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>DNF</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM IGBP value: DNF.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Deciduous needleleaf forest (IGBP)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001109 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001109">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
+        <obo:IAO_0000115>IGBP land cover class of land dominated by woody vegetation with more than 60 percent cover and taller than 2 m, of broadleaf trees with an annual cycle of leaf-on and leaf-off periods.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>DBF</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM IGBP value: DBF.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Deciduous broadleaf forest (IGBP)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001110 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001110">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
+        <obo:IAO_0000115>IGBP land cover class of land dominated by woody vegetation with more than 60 percent cover and taller than 2 m, of interspersed mixtures or mosaics of the four other forest classes, none covering more than 60 percent of the landscape.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>MF</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM IGBP value: MF.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Mixed forest (IGBP)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001111 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001111">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
+        <obo:IAO_0000115>IGBP land cover class of land with woody vegetation shorter than 2 m and more than 60 percent shrub canopy cover, evergreen or deciduous.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>CSH</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM IGBP value: CSH.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Closed shrubland (IGBP)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001112 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001112">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
+        <obo:IAO_0000115>IGBP land cover class of land with woody vegetation shorter than 2 m and 10 to 60 percent shrub canopy cover, evergreen or deciduous.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>OSH</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM IGBP value: OSH.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Open shrubland (IGBP)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001113 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001113">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
+        <obo:IAO_0000115>IGBP land cover class of land with herbaceous and other understory vegetation under a forest canopy taller than 2 m covering 30 to 60 percent.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>WSA</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM IGBP value: WSA.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Woody savanna (IGBP)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001114 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001114">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
+        <obo:IAO_0000115>IGBP land cover class of land with herbaceous and other understory vegetation under a forest canopy taller than 2 m covering 10 to 30 percent.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SAV</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM IGBP value: SAV.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Savanna (IGBP)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001115 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001115">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
+        <obo:IAO_0000115>IGBP land cover class of land with herbaceous cover and less than 10 percent tree and shrub cover.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>GRA</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM IGBP value: GRA. The AmeriFlux description of GRA also carries a sentence about permanent wetlands, which belongs to WET.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Grassland (IGBP)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001116 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001116">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
+        <obo:IAO_0000115>IGBP land cover class of extensive land with a permanent mixture of water and herbaceous or woody vegetation, in salt, brackish or fresh water.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>WET</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM IGBP value: WET.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Permanent wetland (IGBP)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001117 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001117">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
+        <obo:IAO_0000115>IGBP land cover class of land covered by temporary crops followed by harvest and a period of bare soil, in single or multiple cropping systems.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>CRO</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM IGBP value: CRO. Perennial woody crops are classed as the matching forest or shrubland class.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Cropland (IGBP)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001118 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001118">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
+        <obo:IAO_0000115>IGBP land cover class of land covered by buildings and other human-made structures.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>URB</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM IGBP value: URB.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Urban and built-up land (IGBP)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001119 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001119">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
+        <obo:IAO_0000115>IGBP land cover class of land with a mosaic of cropland, forest, shrubland and grassland in which no one component covers more than 60 percent of the landscape.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>CVM</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM IGBP value: CVM.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Cropland and natural vegetation mosaic (IGBP)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001120 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001120">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
+        <obo:IAO_0000115>IGBP land cover class of land under snow or ice cover for most of the year.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM IGBP value: SNO. The code SNO is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Snow and ice (IGBP)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001121 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001121">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
+        <obo:IAO_0000115>IGBP land cover class of land of exposed soil, sand or rock with less than 10 percent vegetation cover at any time of year.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>BSV</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM IGBP value: BSV.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Barren or sparsely vegetated land (IGBP)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001122 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001122">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
+        <obo:IAO_0000115>IGBP land cover class of oceans, seas, lakes, reservoirs and rivers, fresh or salt.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>WAT</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM IGBP value: WAT.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Water body (IGBP)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001123 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001123">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Weather of a place or region averaged or otherwise summarised over a period long enough to characterise it, conventionally 30 years.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001082"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001124 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001124">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001123"/>
+        <obo:IAO_0000115>Class of the Köppen climate classification, which assigns a climate to one of five main groups and to subtypes by thresholds of monthly and annual temperature and precipitation.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Koppen climate class</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Köppen-Geiger climate class</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:comment>Values of the AmeriFlux BADM variable CLIMATE_KOEPPEN. Definitions follow the thresholds of Peel, Finlayson and McMahon (2007).</rdfs:comment>
+        <rdfs:label>Köppen climate class</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001125 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001125">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the coldest month averaging at least 18 degrees Celsius and every month having at least 60 mm of precipitation.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Af</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Af.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Tropical rainforest climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001126 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001126">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the coldest month averaging at least 18 degrees Celsius and a driest month with less than 60 mm but at least 100 mm minus one twenty-fifth of the annual precipitation.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Am</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Am.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Tropical monsoon climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001127 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001127">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the coldest month averaging at least 18 degrees Celsius and a dry season, the driest month having less than 60 mm and less than 100 mm minus one twenty-fifth of the annual precipitation.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Aw</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Aw.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Tropical savanna climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001128 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001128">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with annual precipitation below a dryness threshold set by mean annual temperature and the seasonal distribution of precipitation, but above half of it, and a mean annual temperature of at least 18 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>BSh</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Bsh. AmeriFlux writes the code as Bsh and describes BSh and BWh as having very cold winters and BSk and BWk warm ones, the reverse of the Köppen subtypes, where h marks the hot and k the cold climates; this term follows Köppen.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Hot semi-arid climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001129 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001129">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with annual precipitation below a dryness threshold set by mean annual temperature and the seasonal distribution of precipitation, but above half of it, and a mean annual temperature below 18 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>BSk</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Bsk. AmeriFlux writes the code as Bsk and describes BSh and BWh as having very cold winters and BSk and BWk warm ones, the reverse of the Köppen subtypes, where h marks the hot and k the cold climates; this term follows Köppen.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Cold semi-arid climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001130 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001130">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with annual precipitation below half of a dryness threshold set by mean annual temperature and the seasonal distribution of precipitation, and a mean annual temperature of at least 18 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>BWh</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Bwh. AmeriFlux writes the code as Bwh and describes BSh and BWh as having very cold winters and BSk and BWk warm ones, the reverse of the Köppen subtypes, where h marks the hot and k the cold climates; this term follows Köppen.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Hot desert climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001131 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001131">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with annual precipitation below half of a dryness threshold set by mean annual temperature and the seasonal distribution of precipitation, and a mean annual temperature below 18 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>BWk</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Bwk. AmeriFlux writes the code as Bwk and describes BSh and BWh as having very cold winters and BSk and BWk warm ones, the reverse of the Köppen subtypes, where h marks the hot and k the cold climates; this term follows Köppen.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Cold desert climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001132 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001132">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging between 0 and 18 degrees Celsius, precipitation in all seasons, without the dry summer or dry winter of the s and w subtypes, and the warmest month averaging at least 22 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Cfa</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Cfa.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Humid subtropical climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001133 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001133">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging between 0 and 18 degrees Celsius, precipitation in all seasons, without the dry summer or dry winter of the s and w subtypes, and the warmest month averaging below 22 degrees Celsius and at least four months averaging 10 degrees Celsius or more.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Cfb</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Cfb.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Temperate oceanic climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001134 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001134">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging between 0 and 18 degrees Celsius, precipitation in all seasons, without the dry summer or dry winter of the s and w subtypes, and one to three months averaging 10 degrees Celsius or more and the coldest month above -38 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Cfc</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Cfc.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Subpolar oceanic climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001135 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001135">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging between 0 and 18 degrees Celsius, a dry summer, the driest summer month having less than 40 mm of precipitation and less than a third of the wettest winter month, and the warmest month averaging at least 22 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Csa</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Csa.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Hot-summer Mediterranean climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001136 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001136">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging between 0 and 18 degrees Celsius, a dry summer, the driest summer month having less than 40 mm of precipitation and less than a third of the wettest winter month, and the warmest month averaging below 22 degrees Celsius and at least four months averaging 10 degrees Celsius or more.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Csb</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Csb.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Warm-summer Mediterranean climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001137 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001137">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging between 0 and 18 degrees Celsius, a dry winter, the driest winter month having less than a tenth of the precipitation of the wettest summer month, and the warmest month averaging at least 22 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Cwa</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Cwa.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Monsoon-influenced humid subtropical climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001138 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001138">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging between 0 and 18 degrees Celsius, a dry winter, the driest winter month having less than a tenth of the precipitation of the wettest summer month, and the warmest month averaging below 22 degrees Celsius and at least four months averaging 10 degrees Celsius or more.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Cwb</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Cwb.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Subtropical highland climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001139 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001139">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging between 0 and 18 degrees Celsius, a dry winter, the driest winter month having less than a tenth of the precipitation of the wettest summer month, and one to three months averaging 10 degrees Celsius or more and the coldest month above -38 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Cwc</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Cwc.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Cold subtropical highland climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001140 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001140">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, precipitation in all seasons, without the dry summer or dry winter of the s and w subtypes, and the warmest month averaging at least 22 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Dfa</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dfa.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Hot-summer humid continental climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001141 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001141">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, precipitation in all seasons, without the dry summer or dry winter of the s and w subtypes, and the warmest month averaging below 22 degrees Celsius and at least four months averaging 10 degrees Celsius or more.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Dfb</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dfb.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Warm-summer humid continental climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001142 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001142">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, precipitation in all seasons, without the dry summer or dry winter of the s and w subtypes, and one to three months averaging 10 degrees Celsius or more and the coldest month above -38 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Dfc</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dfc.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Subarctic climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001143 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001143">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, precipitation in all seasons, without the dry summer or dry winter of the s and w subtypes, and one to three months averaging 10 degrees Celsius or more and the coldest month at or below -38 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Dfd</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dfd.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Extremely cold subarctic climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001144 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001144">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, a dry summer, the driest summer month having less than 40 mm of precipitation and less than a third of the wettest winter month, and the warmest month averaging at least 22 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Dsa</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dsa.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Mediterranean-influenced hot-summer humid continental climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001145 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001145">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, a dry summer, the driest summer month having less than 40 mm of precipitation and less than a third of the wettest winter month, and the warmest month averaging below 22 degrees Celsius and at least four months averaging 10 degrees Celsius or more.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Dsb</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dsb.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Mediterranean-influenced warm-summer humid continental climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001146 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001146">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, a dry summer, the driest summer month having less than 40 mm of precipitation and less than a third of the wettest winter month, and one to three months averaging 10 degrees Celsius or more and the coldest month above -38 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Dsc</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dsc.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Mediterranean-influenced subarctic climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001147 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001147">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, a dry summer, the driest summer month having less than 40 mm of precipitation and less than a third of the wettest winter month, and one to three months averaging 10 degrees Celsius or more and the coldest month at or below -38 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Dsd</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dsd.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Mediterranean-influenced extremely cold subarctic climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001148 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001148">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, a dry winter, the driest winter month having less than a tenth of the precipitation of the wettest summer month, and the warmest month averaging at least 22 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Dwa</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dwa.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Monsoon-influenced hot-summer humid continental climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001149 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001149">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, a dry winter, the driest winter month having less than a tenth of the precipitation of the wettest summer month, and the warmest month averaging below 22 degrees Celsius and at least four months averaging 10 degrees Celsius or more.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Dwb</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dwb.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Monsoon-influenced warm-summer humid continental climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001150 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001150">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, a dry winter, the driest winter month having less than a tenth of the precipitation of the wettest summer month, and one to three months averaging 10 degrees Celsius or more and the coldest month above -38 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Dwc</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dwc.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Monsoon-influenced subarctic climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001151 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001151">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, a dry winter, the driest winter month having less than a tenth of the precipitation of the wettest summer month, and one to three months averaging 10 degrees Celsius or more and the coldest month at or below -38 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Dwd</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dwd.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Monsoon-influenced extremely cold subarctic climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001152 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001152">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging 0 degrees Celsius or below.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>EF</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: EF.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Ice cap climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001153 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001153">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 0 degrees Celsius but below 10 degrees Celsius.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000140"/>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: ET. The code ET is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Tundra climate</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001154 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001154">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
+        <obo:IAO_0000115>Plant functional type of woody perennial plants with one main stem that grow to a height of several metres or more.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: Tree.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Tree</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001155 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001155">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001154"/>
+        <obo:IAO_0000115>Plant functional type of trees that shed their entire canopy seasonally, commonly to avoid drought or cold.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: Deciduous Tree.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Deciduous tree</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001156 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001156">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001154"/>
+        <obo:IAO_0000115>Plant functional type of trees that keep part of their canopy throughout the year rather than shedding it all seasonally.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: Evergreen Tree.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Evergreen tree</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001157 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001157">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
+        <obo:IAO_0000115>Plant functional type of woody perennial plants, usually with several stems from the base, that stay shorter than trees.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: Shrub.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Shrub</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001158 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001158">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
+        <obo:IAO_0000115>Plant functional type of grasses, sedges, rushes and other grass-like monocots of the order Poales.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: Grass / Graminoid.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Graminoid</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001159 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001159">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001158"/>
+        <obo:IAO_0000115>Plant functional type of plants of the grass family, Poaceae.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: Grass.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Grass</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001160 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001160">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001159"/>
+        <obo:IAO_0000115>Plant functional type of grasses that fix carbon by the C3 photosynthetic pathway alone.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: C3 Grass.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>C3 grass</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001161 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001161">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001159"/>
+        <obo:IAO_0000115>Plant functional type of grasses with the C4 photosynthetic pathway, which concentrates carbon dioxide around Rubisco in bundle sheath cells.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: C4 Grass.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>C4 grass</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001162 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001162">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
+        <obo:IAO_0000115>Plant functional type of plants grown and harvested by people for food, fibre, fuel or forage.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: Crop.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Crop</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001163 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001163">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001162"/>
+        <obo:IAO_0000115>Plant functional type of crops without persistent woody stems, such as cereals and vegetables.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: Herbaceous Crop.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Herbaceous crop</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001164 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001164">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001162"/>
+        <obo:IAO_0000115>Plant functional type of perennial crops with woody stems, such as orchard trees and vines.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: Woody Crop.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Woody crop</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001165 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001165">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
+        <obo:IAO_0000115>Plant functional type of herbaceous flowering plants other than graminoids.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: Herb / Forb.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Forb</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001166 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001166">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001165"/>
+        <obo:IAO_0000115>Plant functional type of forbs that complete their life cycle within one year.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: Annual Herb / Forb.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Annual forb</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001167 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001167">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001165"/>
+        <obo:IAO_0000115>Plant functional type of forbs that live for more than two years.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: Perennial Herb / Forb.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Perennial forb</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001168 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001168">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
+        <obo:IAO_0000115>Plant functional type of plants with aerenchyma, air-filled tissue that carries gases between shoots and roots, typical of wetland plants.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: Aerenchymatous Plants.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Aerenchymatous plant</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001169 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001169">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
+        <obo:IAO_0000115>Plant functional type of climbing plants rooted in the ground that use other plants for support.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>vine</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: Liana / vine.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Liana</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001170 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001170">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
+        <obo:IAO_0000115>Plant functional type of plants with fleshy water-storing tissues, such as cacti and euphorbs, many with crassulacean acid metabolism.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: Succulant. AmeriFlux spells the value Succulant.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Succulent</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001171 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001171">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
+        <obo:IAO_0000115>Plant functional type of plants without xylem and phloem, such as mosses, liverworts and hornworts.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: Non-vascular. AmeriFlux&apos;s description also names lichens, which are not plants but are reported in this class.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Non-vascular plant</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001172 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001172">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+        <obo:IAO_0000115>Ground surface without plant cover, such as bare soil, rock or sand.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>bare ground</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM VEGTYPE value: No vegetation. The VEGTYPE value Water maps to Water body (BERVO:8000724) and Understory to Understory.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Unvegetated surface</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001173 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001173">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <obo:IAO_0000115>Uppermost layer of vegetation in a stand, whose crowns form the main canopy.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>overstorey</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM LAI_CANOPY_TYPE value: Overstory. The LAI_CANOPY_TYPE value Understory maps to Understory, and Total to Total.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Overstory</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001174 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001174">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <obo:IAO_0000115>Plant material that is living, including material in a dormant or senescent state.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEG_STATUS and BIOMASS_STATUS value: Alive.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Live vegetation</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001175 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001175">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <obo:IAO_0000115>Plant material that is dead, whether still standing or fallen.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM VEG_STATUS value: Dead.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Dead vegetation</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001176 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001176">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001175"/>
+        <obo:IAO_0000115>Dead plant material that remains standing or attached to a plant, such as snags and dead foliage still on the stem.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM BIOMASS_STATUS value: Dead Standing.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Standing dead vegetation</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001177 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001177">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <obo:IAO_0000115>Live and dead plant material still attached to standing plants, excluding litter and debris that has fallen or become detached.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM BIOMASS_STATUS value: Mixed Standing. The BIOMASS_STATUS value All, all vegetation alive or dead, standing or fallen, needs no concept.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Standing vegetation</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001178 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001178">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <obo:IAO_0000115>Plant material that is green and holds chlorophyll.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM BIOMASS_GREENNESS value: Green.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Green plant material</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001179 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001179">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <obo:IAO_0000115>Plant material that is no longer green, being senesced or dormant.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM BIOMASS_GREENNESS value: Non-green. The BIOMASS_GREENNESS value Mixed, partly green and partly not, needs no concept.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Non-green plant material</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001180 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001180">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>All parts of plants above the ground surface.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>aboveground biomass component</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM BIOMASS_ORGAN value: Total aboveground.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Aboveground plant material</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001181 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001181">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>All parts of plants below the ground surface.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM BIOMASS_ORGAN value: Total belowground.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Belowground plant material</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001182 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001182">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Lignified secondary xylem and associated tissues of the stems, branches and roots of woody plants.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM BIOMASS_ORGAN values: Wood, Wood aboveground. BIOMASS_ORGAN Wood aboveground is Wood together with Aboveground plant material.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Wood</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001183 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001183">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
+        <obo:IAO_0000115>Woody material more than 10 cm in diameter, such as tree trunks.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM BIOMASS_ORGAN value: Coarse Wood.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Coarse wood</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001184 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001184">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
+        <obo:IAO_0000115>Woody material from 2 to 10 cm in diameter, such as small stems and branches.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM BIOMASS_ORGAN value: Fine Wood.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Fine wood</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001185 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001185">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <obo:IAO_0000115>Root more than 2 mm in diameter.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM BIOMASS_ORGAN value: Coarse Roots.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Coarse root</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001186 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001186">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <obo:IAO_0000115>Root up to 2 mm in diameter, the part of a root system most active in water and nutrient uptake.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM BIOMASS_ORGAN value: Fine Roots. AmeriFlux&apos;s description reads roots &gt; 2 mm diameter and rhizoids, which repeats the coarse-root threshold; fine roots are conventionally those up to 2 mm.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Fine root</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001187 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001187">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Underground plant organ that stores reserves, such as a tuber, rhizome, bulb or corm.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM BIOMASS_ORGAN value: Belowground storage.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Belowground storage organ</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001188 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001188">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Reproductive shoot of a flowering plant that bears stamens or carpels, before the fruit matures.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM BIOMASS_ORGAN value: Flowers. AmeriFlux includes inflorescences.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Flower</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001189 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001189">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Plant structure that encloses or supports seeds, such as a fruit or cone.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM BIOMASS_ORGAN value: Reproductive bodies. BIOMASS_ORGAN Foliage maps to Leaf, Seeds to Seed, Stems to Stem, Roots to Root and Total to Total.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Reproductive structure</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001190 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001190">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Stage in the life of a plant from germination to maturity, defined by age or size.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:comment>Values of the AmeriFlux BADM list LIFESTAGE.</rdfs:comment>
+        <rdfs:label>Plant life stage</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001191 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001191">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001190"/>
+        <obo:IAO_0000115>Plant life stage of a tree less than one year old.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM LIFESTAGE value: Germinant.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Germinant</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001192 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001192">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001190"/>
+        <obo:IAO_0000115>Plant life stage of a young plant grown from a germinated seed; for a tree, one shorter than breast height or less than 1 cm in diameter at breast height.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0008037"/>
+        <rdfs:comment>AmeriFlux BADM LIFESTAGE value: Seedling.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Seedling</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001193 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001193">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001190"/>
+        <obo:IAO_0000115>Plant life stage of a young tree 1 to 5 cm in diameter at breast height.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM LIFESTAGE value: Sapling.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Sapling</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001194 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001194">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001190"/>
+        <obo:IAO_0000115>Plant life stage of an adult individual; for a tree, one more than 5 cm in diameter at breast height.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM LIFESTAGE value: Mature.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Mature plant</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001195 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001195">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000011"/>
+        <obo:IAO_0000115>Phenological event in which buds open as new leaves or shoots emerge.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>budburst</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM PHEN_EVENT value: BudBreak.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Bud break</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001196 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001196">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000011"/>
+        <obo:IAO_0000115>Phenological event in which the cotyledons of a germinating seedling emerge above the soil.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM PHEN_EVENT value: Cotyledons.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Cotyledon emergence</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001197 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001197">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000011"/>
+        <obo:IAO_0000115>Phenological event in which the flowers of a plant open.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>anthesis</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM PHEN_EVENT value: Flowering.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Flowering</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001198 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001198">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000011"/>
+        <obo:IAO_0000115>Phenological event in which leaves age, lose chlorophyll and remobilise nutrients before they are shed.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/GO_0010150"/>
+        <rdfs:comment>AmeriFlux BADM PHEN_EVENT value: Leaf senescence.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Leaf senescence</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001199 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001199">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000011"/>
+        <obo:IAO_0000115>Phenological event in which leaves reach their full size.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM PHEN_EVENT value: Maximum leaf expansion.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Maximum leaf expansion</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001200 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001200">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000011"/>
+        <obo:IAO_0000115>Phenological event in which a deciduous canopy has shed all of its leaves.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM PHEN_EVENT value: Total leaf-off.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Leaf-off</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001201 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001201">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Direction on the horizon named by one of the 16 points of the compass, at intervals of 22.5 degrees clockwise from north.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:comment>Values of the AmeriFlux BADM lists ASPECT and DIR.</rdfs:comment>
+        <rdfs:label>Compass point</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001202 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001202">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
+        <obo:IAO_0000115>Compass point at 0 degrees clockwise from north.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: N. The code N is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>North</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001203 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001203">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
+        <obo:IAO_0000115>Compass point at 22.5 degrees clockwise from north.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>NNE</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: NNE.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>North-northeast</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001204 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001204">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
+        <obo:IAO_0000115>Compass point at 45 degrees clockwise from north.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>NE</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: NE.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Northeast</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001205 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001205">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
+        <obo:IAO_0000115>Compass point at 67.5 degrees clockwise from north.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>ENE</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: ENE.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>East-northeast</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001206 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001206">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
+        <obo:IAO_0000115>Compass point at 90 degrees clockwise from north.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>E</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: E.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>East</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001207 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001207">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
+        <obo:IAO_0000115>Compass point at 112.5 degrees clockwise from north.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>ESE</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: ESE.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>East-southeast</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001208 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001208">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
+        <obo:IAO_0000115>Compass point at 135 degrees clockwise from north.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: SE. The code SE is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Southeast</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001209 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001209">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
+        <obo:IAO_0000115>Compass point at 157.5 degrees clockwise from north.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SSE</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: SSE.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>South-southeast</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001210 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001210">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
+        <obo:IAO_0000115>Compass point at 180 degrees clockwise from north.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: S. The code S is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>South</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001211 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001211">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
+        <obo:IAO_0000115>Compass point at 202.5 degrees clockwise from north.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SSW</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: SSW.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>South-southwest</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001212 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001212">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
+        <obo:IAO_0000115>Compass point at 225 degrees clockwise from north.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: SW. The code SW is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Southwest</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001213 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001213">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
+        <obo:IAO_0000115>Compass point at 247.5 degrees clockwise from north.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>WSW</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: WSW.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>West-southwest</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001214 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001214">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
+        <obo:IAO_0000115>Compass point at 270 degrees clockwise from north.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>W</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: W.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>West</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001215 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001215">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
+        <obo:IAO_0000115>Compass point at 292.5 degrees clockwise from north.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>WNW</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: WNW.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>West-northwest</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001216 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001216">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
+        <obo:IAO_0000115>Compass point at 315 degrees clockwise from north.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>NW</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: NW.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Northwest</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001217 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001217">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
+        <obo:IAO_0000115>Compass point at 337.5 degrees clockwise from north.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>NNW</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: NNW.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>North-northwest</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001218 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001218">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+        <obo:IAO_0000115>Class of the shape or slope of the land surface at a site.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:comment>Values of the AmeriFlux BADM list TERRAIN.</rdfs:comment>
+        <rdfs:label>Terrain class</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001219 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001219">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001218"/>
+        <obo:IAO_0000115>Terrain class with no significant slope or relief.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM TERRAIN value: Flat. The ASPECT value FLAT, a site with no particular exposure, maps here too.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Flat terrain</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001220 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001220">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001218"/>
+        <obo:IAO_0000115>Terrain class of land that rises and falls in gentle swells.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM TERRAIN value: Undulated/Variable.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Undulating terrain</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001221 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001221">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000725"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001218"/>
+        <obo:IAO_0000115>Elongated low area of land between hills or mountains, with slopes on either side.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000100"/>
+        <rdfs:comment>AmeriFlux BADM TERRAIN value: Valley.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Valley</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001222 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001222">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000725"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001218"/>
+        <obo:IAO_0000115>Highest part of a hill.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM TERRAIN value: Hilltop.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Hilltop</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001223 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001223">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001218"/>
+        <obo:IAO_0000115>Terrain class of land sloping at less than 2 percent.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM TERRAIN value: Gentle slope (&lt;2 %).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Gentle slope</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001224 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001224">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001218"/>
+        <obo:IAO_0000115>Terrain class of land sloping at 2 to 5 percent.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM TERRAIN value: Medium Slope (&gt;2 %, &lt;5%).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Medium slope</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001225 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001225">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001218"/>
+        <obo:IAO_0000115>Terrain class of land sloping at 5 to 10 percent.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM TERRAIN value: Significant Slope (&gt;5%, &lt;10%).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Significant slope</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001226 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001226">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001218"/>
+        <obo:IAO_0000115>Terrain class of land sloping at more than 10 percent.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM TERRAIN value: Strong Slope (&gt;10%).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Strong slope</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001227 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001227">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000106"/>
+        <obo:IAO_0000115>Discrete event that disrupts the structure of an ecosystem, community or population and changes the availability of resources or the physical environment.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:comment>Values of the AmeriFlux BADM list DIST_MGMT, with the DM_ lists below them, sit under Disturbance and Land management.</rdfs:comment>
+        <rdfs:label>Disturbance</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001228 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001228">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001227"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001229"/>
+        <obo:IAO_0000115>Prolonged deficiency of water, hydrological or climatic.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DIST_MGMT and DM_EXT_WEATHER value: Drought.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Drought</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001229 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001229">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001227"/>
+        <obo:IAO_0000115>Weather event of unusual severity, such as a storm, flood, drought, heatwave or freeze.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Extreme weather event</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001230 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001230">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001227"/>
+        <obo:IAO_0000115>Disturbance by an unusually hot or cold period, such as a heatwave or freeze.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DIST_MGMT value: Temperature extreme.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Temperature extreme</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001231 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001231">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001227"/>
+        <obo:IAO_0000115>Disturbance by a major storm or by unusually high winds or precipitation, such as a hurricane, tornado, blizzard or hail.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DIST_MGMT value: Storm or wind.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Storm or wind event</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001232 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001232">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001227"/>
+        <obo:IAO_0000115>Disturbance by drainage or by persistent or chronic flooding, excluding storm events and irrigation.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DIST_MGMT value: Hydrologic event.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Hydrologic event</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001233 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001233">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001227"/>
+        <obo:IAO_0000115>Damage to plants or soil from pests, insects, pathogens, blight or other disease.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DIST_MGMT value: Pests and disease. The DM_INS_PATH value Pathogen maps to Pathogen (BERVO:8000976).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Pests and disease</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001234 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001234">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001227"/>
+        <obo:IAO_0000115>Change in the land use or land cover of a site, such as invasion or woody or urban encroachment.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DIST_MGMT value: Land cover change.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Land cover change</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001235 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001235">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000530"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001227"/>
+        <obo:IAO_0000115>Feeding on vegetation by mammals, managed or wild, by grazing or browsing.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DIST_MGMT value: Grazing.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Grazing</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001236 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001236">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001229"/>
+        <obo:IAO_0000115>Overflow of water onto land that is normally dry.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_EXT_WEATHER value: Flood.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Flood</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001237 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001237">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001229"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001230"/>
+        <obo:IAO_0000115>Period of temperatures below freezing that damages vegetation.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_EXT_WEATHER value: Freeze.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Freeze</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001238 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001238">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001229"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001230"/>
+        <obo:IAO_0000115>Period of unusually high temperatures lasting several days or more.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_EXT_WEATHER value: Heatwave.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Heatwave</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001239 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001239">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001229"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001231"/>
+        <obo:IAO_0000115>Atmospheric disturbance with strong winds, often with heavy precipitation.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_EXT_WEATHER value: Storm.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Storm</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001240 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001240">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001239"/>
+        <obo:IAO_0000115>Tropical cyclone with sustained winds of at least 33 m s-1.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_EXT_WEATHER value: Hurricane.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Hurricane</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001241 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001241">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001239"/>
+        <obo:IAO_0000115>Violently rotating column of air in contact with the ground, extending from a thunderstorm.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_EXT_WEATHER value: Tornado.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Tornado</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001242 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001242">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001233"/>
+        <obo:IAO_0000115>Damage to vegetation from feeding or boring by insects.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_INS_PATH value: Insect.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Insect infestation</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001243 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001243">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001233"/>
+        <obo:IAO_0000115>Damage to vegetation from infection or other disease.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_INS_PATH value: Disease.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Plant disease</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001244 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001244">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001234"/>
+        <obo:IAO_0000115>Increase in the cover of trees and shrubs in grassland or other open vegetation.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_ENCROACH value: Woody encroachment.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Woody encroachment</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001245 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001245">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001234"/>
+        <obo:IAO_0000115>Spread of a species outside its native range into a site, where it establishes and changes the vegetation.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_ENCROACH value: Invasive species.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Biological invasion</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001246 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001246">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001234"/>
+        <obo:IAO_0000115>Spread of buildings and other built structures onto a site or its surroundings.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_ENCROACH value: Urban encroachment.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Urban encroachment</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001247 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001247">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001235"/>
+        <obo:IAO_0000115>Grazing by cattle.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_GRAZE value: Cattle.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Cattle grazing</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001248 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001248">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001235"/>
+        <obo:IAO_0000115>Grazing by goats.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_GRAZE value: Goat.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Goat grazing</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001249 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001249">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001235"/>
+        <obo:IAO_0000115>Grazing by sheep.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_GRAZE value: Sheep.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Sheep grazing</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001250 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001250">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000929"/>
+        <obo:IAO_0000115>Fire that burns surface fuels beneath a forest canopy without killing most of the overstory trees.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_FIRE values: Accidental human induced underburn, Nature induced underburn. Accidental and natural underburns are Underburn together with Accidental human-caused fire or Naturally caused fire.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Underburn</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001251 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001251">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000924"/>
+        <obo:IAO_0000115>Unplanned fire started by people by accident.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_FIRE value: Accidental human induced burn.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Accidental human-caused fire</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001252 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001252">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000924"/>
+        <obo:IAO_0000115>Unplanned fire started by a natural cause such as lightning.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_FIRE value: Nature induced burn.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Naturally caused fire</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001253 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001253">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000925"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001250"/>
+        <obo:IAO_0000115>Prescribed fire that burns surface fuels beneath a forest canopy.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_FIRE value: Prescribed human induced underburn. The DM_FIRE value Prescribed human induced burn maps to Prescribed fire (BERVO:8000925).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Prescribed underburn</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001254 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001254">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000530"/>
+        <obo:IAO_0000115>Management of cropland or pasture, such as cultivation, harvest, irrigation, pesticide application, planting or liming.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DIST_MGMT value: Agriculture. The DM_AGRICULTURE value Harvest maps to Harvest (BERVO:8000003).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Agricultural management</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001255 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001255">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000530"/>
+        <obo:IAO_0000115>Management of forest, such as logging, plantation planting or herbicide application.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DIST_MGMT value: Forestry.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Forest management</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001256 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001256">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000530"/>
+        <obo:IAO_0000115>Management of the water at a site by irrigation, drainage or deliberate flooding.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:comment>The DM_WATER value Irrigation maps to Irrigation (BERVO:8000070).</rdfs:comment>
+        <rdfs:label>Water management</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001257 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001257">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
+        <obo:IAO_0000115>Management of the crop residue left on a field after harvest, by removal, burning, mulching or incorporation.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_AGRICULTURE value: Crop residue management.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Crop residue management</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001258 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001258">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
+        <obo:IAO_0000115>Mechanical working of soil to prepare a seedbed, control weeds or incorporate residue.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Tillage</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001259 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001259">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001258"/>
+        <obo:IAO_0000115>Tillage that inverts and loosens the whole plough layer, leaving little crop residue on the surface.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_TILL value: Conventional.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Conventional tillage</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001260 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001260">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001258"/>
+        <obo:IAO_0000115>Tillage in which crops are planted on ridges rebuilt each season, leaving the soil between them undisturbed.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_TILL value: Ridge till.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Ridge tillage</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001261 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001261">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001258"/>
+        <obo:IAO_0000115>Shallow disturbance of the soil surface or forest floor to expose mineral soil for seeding or planting.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_TILL value: Scarification.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Scarification</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001262 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001262">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001258"/>
+        <obo:IAO_0000115>Tillage of narrow strips where seed is to be planted, leaving the soil and residue between strips undisturbed.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_TILL value: Stripe till.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Strip tillage</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001263 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001263">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001258"/>
+        <obo:IAO_0000115>Tillage that leaves at least 30 percent of the soil surface covered by crop residue after planting.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_TILL value: Conservation.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Conservation tillage</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001264 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001264">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
+        <obo:IAO_0000115>Application of fertilizer to soil or plants to supply nutrients.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Fertilization</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001265 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001265">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001264"/>
+        <obo:IAO_0000115>Application of inorganic fertilizer or lime.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Mineral fertilization</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001266 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001266">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001265"/>
+        <obo:IAO_0000115>Application of inorganic fertilizer that supplies nitrogen.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_FERT_M value: N.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Nitrogen fertilization</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001267 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001267">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001265"/>
+        <obo:IAO_0000115>Application of inorganic fertilizer that supplies phosphorus.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_FERT_M value: P.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Phosphorus fertilization</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001268 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001268">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001265"/>
+        <obo:IAO_0000115>Application of inorganic fertilizer that supplies potassium.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_FERT_M value: K.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Potassium fertilization</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001269 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001269">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001265"/>
+        <obo:IAO_0000115>Application of ground limestone or another calcium or magnesium compound to raise soil pH.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_FERT_M value: Lime.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Liming</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001270 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001270">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001264"/>
+        <obo:IAO_0000115>Application of manure, compost or another organic material to supply nutrients.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Organic fertilization</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001271 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001271">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001270"/>
+        <obo:IAO_0000115>Application of animal manure as a liquid or slurry.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_FERT_O value: Liquid manure.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Liquid manure application</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001272 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001272">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001270"/>
+        <obo:IAO_0000115>Application of animal manure as a solid.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_FERT_O value: Solid manure.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Solid manure application</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001273 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001273">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001270"/>
+        <obo:IAO_0000115>Application of compost, decomposed organic material.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_FERT_O value: Compost.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Compost application</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001274 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001274">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001270"/>
+        <obo:IAO_0000115>Application of manure from poultry.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_FERT_O value: Poultry.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Poultry manure application</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001275 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001275">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001255"/>
+        <obo:IAO_0000115>Application of a substance that kills or controls pests, weeds or pathogens.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Pesticide application</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001276 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001276">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001275"/>
+        <obo:IAO_0000115>Application of a substance that kills bacteria.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_PESTICIDE value: Bactericide.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Bactericide application</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001277 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001277">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001275"/>
+        <obo:IAO_0000115>Application of a substance that kills or inhibits fungi.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_PESTICIDE value: Fungicide.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Fungicide application</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001278 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001278">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001275"/>
+        <obo:IAO_0000115>Application of a substance that kills or controls unwanted plants.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_PESTICIDE value: Herbicide.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Herbicide application</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001279 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001279">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001275"/>
+        <obo:IAO_0000115>Application of a substance that kills or controls insects.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_PESTICIDE value: Insecticide.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Insecticide application</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001280 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001280">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001255"/>
+        <obo:IAO_0000115>Setting live plants into the ground.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Planting</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001281 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001281">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001280"/>
+        <obo:IAO_0000115>Planting of live trees.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_PLANTING value: Planting live trees.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Tree planting</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001282 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001282">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001280"/>
+        <obo:IAO_0000115>Planting of live shrubs.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_PLANTING value: Planting live shrubs.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Shrub planting</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001283 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001283">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001280"/>
+        <obo:IAO_0000115>Planting of live crop plants.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_PLANTING value: Planting live crops.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Crop planting</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001284 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001284">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001280"/>
+        <obo:IAO_0000115>Planting of live grasses.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_PLANTING value: Planting live grasses.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Grass planting</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001285 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001285">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001255"/>
+        <obo:IAO_0000115>Placing seeds in or on the ground.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Sowing</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001286 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001286">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001285"/>
+        <obo:IAO_0000115>Sowing of tree seeds.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_PLANTING value: Sowing tree seeds.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Tree seed sowing</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001287 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001287">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001285"/>
+        <obo:IAO_0000115>Sowing of shrub seeds.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_PLANTING value: Sowing shrub trees. AmeriFlux writes the value as Sowing shrub trees.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Shrub seed sowing</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001288 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001288">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001285"/>
+        <obo:IAO_0000115>Sowing of crop seeds.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_PLANTING value: Sowing crop seeds.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Crop seed sowing</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001289 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001289">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001285"/>
+        <obo:IAO_0000115>Sowing of grass seeds.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_PLANTING value: Sowing grass seeds.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Grass seed sowing</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001290 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001290">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001255"/>
+        <obo:IAO_0000115>Felling and removal of all or nearly all the trees from an area of forest.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_FORESTRY value: Clearcutting.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Clearcutting</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001291 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001291">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001255"/>
+        <obo:IAO_0000115>Removal of fallen trees, branches and other woody debris from a forest floor.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_FORESTRY value: Fallen wood removal.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Fallen wood removal</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001292 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001292">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001255"/>
+        <obo:IAO_0000115>Removal of some trees from a stand, or of branches from trees, to change growth or stand structure.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_FORESTRY value: Thinning/pruning.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Thinning or pruning</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001293 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001293">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001256"/>
+        <obo:IAO_0000115>Removal of excess water from soil by ditches, tile drains or other constructed means.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_WATER value: Drainage.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Artificial drainage</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001294 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001294">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001256"/>
+        <obo:IAO_0000115>Deliberate flooding of land, as in rice paddies or wetland management.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_WATER value: Human induced flooding.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Human-induced flooding</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001295 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001295">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000243"/>
+        <obo:IAO_0000115>Qualifier for a site where no disturbance or management has occurred in the period described.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DIST_MGMT and DM_GENERAL value: Undisturbed.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Undisturbed</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
