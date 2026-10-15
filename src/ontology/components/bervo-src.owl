@@ -27768,9 +27768,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001673">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000030"/>
-        <obo:IAO_0000115>Total soil NH4 + NH3 content refers to the total amount of ammonium ions (NH4+) and ammonia (NH3) present in the soil. This is a significant measure in studies related to soil fertility, biogeochemical cycling of nitrogen, and environmental pollution.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass of nitrogen in the ammonium and ammonia of a soil profile, including its surface litter layer, counting dissolved ammonium and ammonia and exchangeable ammonium.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>tNH4_col</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), nitrite correction for issue #79</rdfs:comment>
         <rdfs:comment>SOMDataType.txt</rdfs:comment>
         <rdfs:label>Total soil ammonium and ammonia content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
@@ -27787,9 +27787,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001674">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000030"/>
-        <obo:IAO_0000115>Total soil NO3 + NO2 content refers to the sum of the amounts of nitrate (NO3) and nitrite (NO2), which are forms of inorganic nitrogen, in the soil. This measurement is vital for understanding the nitrogen cycle and assessing soil fertility as both NO3 and NO2 are key nutrients for plant growth. Moreover, high levels of these compounds can indicate soil acidification and potential contaminants in groundwater.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass of nitrogen in the nitrate and nitrite dissolved in a soil profile, including its surface litter layer.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>tNO3_col</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), nitrite correction for issue #79</rdfs:comment>
         <rdfs:comment>SOMDataType.txt</rdfs:comment>
         <rdfs:label>Total soil nitrate and nitrite content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
