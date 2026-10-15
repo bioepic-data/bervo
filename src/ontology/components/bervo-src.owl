@@ -27770,7 +27770,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001673">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000030"/>
-        <obo:IAO_0000115>Mass of nitrogen in the ammonium and ammonia of a soil profile, including its surface litter layer, counting dissolved ammonium and ammonia and exchangeable ammonium.</obo:IAO_0000115>
+        <obo:IAO_0000115>Mass of nitrogen in the ammonium and ammonia of a soil profile, including its surface litter layer, counting dissolved ammonium, dissolved ammonia, and exchangeable ammonium.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>tNH4_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), nitrite correction for issue #79</rdfs:comment>
         <rdfs:comment>SOMDataType.txt</rdfs:comment>
