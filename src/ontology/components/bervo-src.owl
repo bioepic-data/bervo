@@ -36846,8 +36846,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002204">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
         <obo:IAO_0000115>Ratio of the spectral slope of the ultraviolet absorption coefficient of dissolved organic matter between 275 and 295 nm to that between 350 and 400 nm, which varies inversely with the average molecular weight of the organic matter.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>SR</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>S_R</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>SR</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
         <rdfs:comment>Helms et al. (2008), Limnology and Oceanography 53:955-969.</rdfs:comment>
         <rdfs:label>Spectral slope ratio</rdfs:label>
