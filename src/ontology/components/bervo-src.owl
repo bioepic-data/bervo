@@ -10810,7 +10810,7 @@
                 <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
             </Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The elemental composition and concentration of chemical elements within the protective sheath tissues of plant branches, representing the mineral nutrient content of these structural components. This parameter is important for understanding nutrient allocation patterns in woody plants, tissue quality for decomposition processes, and the role of sheath tissues in nutrient storage and translocation within tree and shrub canopies.</obo:IAO_0000115>
+        <obo:IAO_0000115>The amount of each chemical element in the structural sheath tissues of a plant branch in the grid cell, representing the mineral nutrient content of these structural components. This parameter is important for understanding nutrient allocation patterns in woody plants, tissue quality for decomposition processes, and the role of sheath tissues in nutrient storage and translocation within tree and shrub canopies.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PetoleStrutElms_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
@@ -10833,7 +10833,7 @@
                 <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
             </Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The elemental composition and concentration of chemical elements within the structural stalk or stem tissues of plant branches, indicating the mineral nutrient content of woody support structures. This measurement is crucial for understanding how plants allocate nutrients to structural components, affects wood quality and decomposition rates, and influences carbon and nutrient cycling in forest ecosystems where woody biomass represents a major nutrient pool.</obo:IAO_0000115>
+        <obo:IAO_0000115>The amount of each chemical element in the structural stalk tissues of a plant branch in the grid cell, indicating the mineral nutrient content of woody support structures. This measurement is crucial for understanding how plants allocate nutrients to structural components, affects wood quality and decomposition rates, and influences carbon and nutrient cycling in forest ecosystems where woody biomass represents a major nutrient pool.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>StalkStrutElms_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
@@ -18450,7 +18450,7 @@
                 <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
             </Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Non-structural chemical element in roots represents the concentration of mobile nutrients and metabolites that are not incorporated into structural components like cellulose or lignin. These elements include soluble sugars, amino acids, and mineral nutrients that can be readily mobilized for growth, maintenance, or transport to other plant organs in vegetation dynamics models.</obo:IAO_0000115>
+        <obo:IAO_0000115>The amount of each chemical element held in nonstructural form in the roots and mycorrhizae of a plant functional type in the grid cell, as mobile nutrients and metabolites that are not incorporated into structural components like cellulose or lignin. These elements include soluble sugars, amino acids, and mineral nutrients that can be readily mobilized for growth, maintenance, or transport to other plant organs in vegetation dynamics models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RootMycoNonstElms_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
@@ -26337,7 +26337,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001591">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000027"/>
-        <obo:IAO_0000115>The mass concentration of dissolved gaseous compounds within snowpack layers, representing atmospheric deposition and retention. This parameter tracks volatile organic compounds and greenhouse gases in snow, affecting atmospheric chemistry and biogeochemical cycling in snow-covered ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The mass of dissolved gaseous compounds in a snowpack layer in the grid cell, representing atmospheric deposition and retention. This parameter tracks volatile organic compounds and greenhouse gases in snow, affecting atmospheric chemistry and biogeochemical cycling in snow-covered ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>trcg_solsml_snvr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SnowDataType.txt</rdfs:comment>
@@ -26352,7 +26352,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001592">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000027"/>
-        <obo:IAO_0000115>The mass concentration of dissolved nutrient compounds within snowpack layers, representing atmospheric deposition and biological uptake. This parameter tracks nitrogen, phosphorus, and other essential nutrients in snow, affecting nutrient cycling and ecosystem productivity following snowmelt.</obo:IAO_0000115>
+        <obo:IAO_0000115>The mass of dissolved nutrient compounds in a snowpack layer in the grid cell, representing atmospheric deposition and biological uptake. This parameter tracks nitrogen, phosphorus, and other essential nutrients in snow, affecting nutrient cycling and ecosystem productivity following snowmelt.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>trcn_solsml_snvr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SnowDataType.txt</rdfs:comment>
@@ -26367,7 +26367,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001593">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000027"/>
-        <obo:IAO_0000115>The molar concentration of dissolved salt compounds within snowpack layers, representing road salt deposition and natural salinity. This parameter affects snowpack density, melting point depression, and water quality during snowmelt, particularly important in urban and coastal environments.</obo:IAO_0000115>
+        <obo:IAO_0000115>The molar amount of dissolved salt compounds in a snowpack layer in the grid cell, representing road salt deposition and natural salinity. This parameter affects snowpack density, melting point depression, and water quality during snowmelt, particularly important in urban and coastal environments.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>trcSalt_ml_snvr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SnowDataType.txt</rdfs:comment>
@@ -26864,7 +26864,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001622">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000028"/>
-        <obo:IAO_0000115>The molar concentration of nitrogen fertilizer distributed throughout soil layers via broadcast application methods. This parameter represents nutrient availability from uniform surface spreading, affecting crop nitrogen uptake and potential nitrate leaching in agricultural systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The molar amount of nitrogen fertilizer in a soil layer in the grid cell from broadcast application. This parameter represents nutrient availability from uniform surface spreading, affecting crop nitrogen uptake and potential nitrate leaching in agricultural systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FertN_mole_soil_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>FertilizerDataType.txt</rdfs:comment>
@@ -26880,7 +26880,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001623">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000028"/>
-        <obo:IAO_0000115>The molar concentration of nitrogen fertilizer applied in concentrated bands adjacent to crop rows through side-dressing techniques. This parameter represents localized nutrient placement for targeted root uptake, improving fertilizer use efficiency and reducing environmental losses.</obo:IAO_0000115>
+        <obo:IAO_0000115>The molar amount of nitrogen fertilizer in a soil layer in the grid cell, applied in concentrated bands adjacent to crop rows through side-dressing techniques. This parameter represents localized nutrient placement for targeted root uptake, improving fertilizer use efficiency and reducing environmental losses.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FertN_mole_Band_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>FertilizerDataType.txt</rdfs:comment>
@@ -28205,7 +28205,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001700">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
-        <obo:IAO_0000115>Soil aqueous salt content microre is a parameter that refers to the concentration of dissolved salts in the soil water. It represents the amount of salts present in the water content of the soil.</obo:IAO_0000115>
+        <obo:IAO_0000115>The molar amount of dissolved salts in the micropore water of a soil layer in the grid cell.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>trcSalt_solml_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
@@ -28223,7 +28223,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001701">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000031"/>
-        <obo:IAO_0000115>The molar concentration of chemical tracers bound to soil exchange sites that can be readily displaced by other ions in soil solution. This parameter represents reversibly sorbed tracers controlling ion exchange processes and chemical mobility in soil-water systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The molar amount of chemical tracers bound to soil exchange sites in a soil layer in the grid cell that can be readily displaced by other ions in soil solution. This parameter represents reversibly sorbed tracers controlling ion exchange processes and chemical mobility in soil-water systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>trcx_solml_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
@@ -28303,12 +28303,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001706">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
-        <obo:IAO_0000115>The mass concentration of dissolved salt tracers present within soil macropore water phases. This parameter quantifies salt storage in large pore spaces and preferential flow pathways, controlling rapid salt transport and ecosystem salinity patterns during precipitation events.</obo:IAO_0000115>
+        <obo:IAO_0000115>The molar amount of dissolved salt tracers in the macropore water of a soil layer in the grid cell. This parameter quantifies salt storage in large pore spaces and preferential flow pathways, controlling rapid salt transport and ecosystem salinity patterns during precipitation events.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>trcSalt_soHml_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM declares trcSalt_soHml_vr in [g /d2], but its transport copy trcSalt_soHml2_vr is declared [mol d-2], its macropore flux trcSalt_Flo2MacP_vr is [mol d-2 h-1], and RedistMod.F90 adds it to the molar trcSalt_solml_vr, so the amount is in moles (issue #109).</rdfs:comment>
         <rdfs:label>Salt tracer in macropores</rdfs:label>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>mol/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000046"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000199"/>
     </Class>
