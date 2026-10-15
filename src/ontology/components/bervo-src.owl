@@ -52323,7 +52323,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000043">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
-        <obo:IAO_0000115>Grouping class for observed variables that describe the quality of water for its uses and for aquatic life: its capacity to neutralize acid or base, oxygen demand, hardness, solids, optical and sensory properties, mineral saturation state, trophic state, and gross radioactivity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Grouping class for observed variables that describe the quality of water for its uses and for aquatic life: its capacity to neutralize acid or base, oxygen demand, hardness, solids, the concentrations of dissolved solutes and gases, optical and sensory properties, mineral saturation state, trophic state, and gross radioactivity.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
         <rdfs:label>Water quality variable</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
