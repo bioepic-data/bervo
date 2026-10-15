@@ -102,7 +102,7 @@ exist. Fix only the ones your change touches.
 ## EcoSIM provenance
 
 BERVO began as a catalogue of EcoSIM model parameters, and that origin is still the single
-biggest thing about the term set: **1,756 of 2,958 terms (59%) carry an
+biggest thing about the term set: **1,757 of 3,162 terms (56%) carry an
 `EcoSIM Variable Name` and a `File Name`** naming the EcoSIM source file they came from.
 
 These two columns are provenance, not logical content — `EcoSIM Variable Name` emits
@@ -258,8 +258,8 @@ directly under `Concept`. The validator warns when a filler has no subclasses at
 
 ## Cross-references to other ontologies
 
-The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 1066
-cross-references on 839 terms today — about 28% of the ontology.
+The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 1,145
+cross-references on 913 terms today — about 29% of the ontology.
 
 ### Map variables as well as concepts
 
@@ -267,7 +267,7 @@ cross-references on 839 terms today — about 28% of the ontology.
 look for an equivalent in the vocabularies BERVO aligns with as part of adding it, not as a
 later pass.
 
-Today 632 of the 839 cross-referenced terms are concepts (`8xxxxxx`) and 207 are
+Today 701 of the 913 cross-referenced terms are concepts (`8xxxxxx`) and 212 are
 variables, most of them from the ODM2 variable names. The concept majority records which
 vocabularies were mapped first: ODM2 speciation, medium and
 site type, COMO, and ChEBI name things and properties, which land on concepts. It is not a
@@ -282,7 +282,7 @@ or hourly, and a model-specific composite such as *Cumulative ecosystem heterotr
 respiration* may have no equivalent at all. A broader external term is not an exact
 equivalent.
 
-Most terms carry exactly one cross-reference; 211 carry two (typically a domain ontology
+Most terms carry exactly one cross-reference; 216 carry two (typically a domain ontology
 plus an ODM2 concept) and eight carry three or more. Leave the column blank when no good match exists — a wrong mapping is
 worse than none.
 
@@ -290,16 +290,17 @@ worse than none.
 
 | Prefix | Use for | Current count |
 | --- | --- | --- |
-| `CHEBI` | Chemical entities — *Nitrous oxide* → `CHEBI:17045` | 149 |
-| `ENVO` | Environmental materials, features, landforms, biomes, soil water states — *Runoff* → `ENVO:06105211`, *Stream* → `ENVO:00000023`, *Field capacity* → `ENVO:06105302` | 76 |
+| `CHEBI` | Chemical entities — *Nitrous oxide* → `CHEBI:17045` | 155 |
+| `ENVO` | Environmental materials, features, landforms, biomes, soil water states, soil types and texture classes — *Runoff* → `ENVO:06105211`, *Stream* → `ENVO:00000023`, *Field capacity* → `ENVO:06105302` | 138 |
 | `PO` | Plant anatomy and development — *Leaf* → `PO:0025034` | 11 |
 | `PATO` | Qualities and properties — *Concentration* → `PATO:0000033` | 14 |
 | `GO` | Biological processes — *Biological process* → `GO:0008150` | 2 |
 | `AGRO` | Agronomy — *Irrigation* → `AGRO:00000006` | 1 |
-| `MIXS` | Sequence-metadata standard fields | 4 |
+| `MIXS` | Sequence-metadata standard fields | 9 |
 | `COB` | Core Ontology for Biology and Biomedicine — *Organism* → `COB:0000022` | 1 |
 | `CHMO` | Chemical and analytical methods — *Raman spectroscopy* → `CHMO:0000656` | 2 |
 | `NCBITaxon` | Taxa — *Fungi* → `NCBITaxon:4751` | 5 |
+| `ENVTHES` | EnvThes, the LTER-Europe environmental thesaurus — *Crown fire* → `ENVTHES:20380` | 6 |
 | `COMO` | Measurement and experiment metadata concepts | 275 |
 | `ODM2` | ODM2 controlled vocabularies, as `ODM2:<scheme>/<id>` — *Nitrite* → `ODM2:speciation/NO2`, *Rock* → `ODM2:medium/rock`, *Stream* → `ODM2:sitetype/stream`, *Albedo* → `ODM2:variablename/albedo` | 526 |
 
