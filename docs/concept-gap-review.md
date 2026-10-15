@@ -413,13 +413,14 @@ alignment and the concept gap review, and few rows used them:
 Left out: Cumulative depth to bottom of snowpack layer (`BERVO:0001570`), a
 sum down through layers rather than over time. Gross alpha activity and Gross
 beta activity (`BERVO:0002116`, `BERVO:0002117`), where gross means the
-nuclides are not told apart, which is not what Gross means here. Soil
-electrical conductivity (`BERVO:0000916`), whose unit `mol/{grid}` is not a
-conductivity. Here the label is what is wrong: EcoSIM declares `UION_col` as
-"total soil ion content, [mol d-2]", which agrees with the row's unit, its
-`attributes=Content`, and its `measurement_ofs=Ion`. The fix is a relabel to
-a soil ion content, with the conductivity label dropped, and that belongs to a
-change of its own. The two thermal conductivity
+nuclides are not told apart, which is not what Gross means here. The row
+then labelled Soil electrical conductivity (`BERVO:0000916`), whose unit
+`mol/{grid}` is not a conductivity. Here the label is what is wrong: EcoSIM
+declares `UION_col` as "total soil ion content, [mol d-2]", which agrees
+with the row's unit, its `attributes=Content`, and its `measurement_ofs=Ion`.
+The fix is a relabel to a soil ion content, with the conductivity label
+dropped, and that belongs to a change of its own. Issue #109 made it: the
+row is now Soil column ion content. The two thermal conductivity
 rows (`BERVO:0001486`, `BERVO:0001487`), which are the numerator and the
 denominator of a formula rather than conductivities. The two parameters to
 calculate an hourly air temperature and vapor pressure from the daily value
