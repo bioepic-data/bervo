@@ -147,9 +147,10 @@ a grouping concept under `Soil` whose children are the classes.
 Below the reference soil group and the order, the WRB qualifiers (191 `WRB4`
 units and 556 `WRB_PHASES` units in HWSD2), the FAO-90 units, and the lower
 levels of Soil Taxonomy are recorded as values of the classification variables,
-not as BERVO classes. Each WRB group's `Comment` gives its HWSD2 `WRB2` code, and
-each texture class its `TEXTURE_USDA` code, so HWSD2 data can be read onto the
-classes directly.
+not as BERVO classes. Each WRB group's `Comment` gives its HWSD2 `WRB2` code where
+it has one, and each texture class its `TEXTURE_USDA` code, so HWSD2 data can be
+read onto the classes directly. Durisol is the one group without a code: HWSD2
+does not use it.
 
 Label choices:
 
