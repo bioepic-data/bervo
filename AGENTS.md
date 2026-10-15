@@ -186,6 +186,12 @@ Numeric IDs are 7 digits, allocated in blocks by term kind:
 | `8xxxxxx` | `BERVO:8000000`–`BERVO:8999999` | Concepts (units, qualifiers, attributes, contexts) | ~895 |
 | `9xxxxxx` | `BERVO:9000000`–`BERVO:9999999` | Grouping classes | ~42 |
 
+A grouping of concepts takes an `8xxxxxx` ID, like the concepts it groups: `Mineral`
+(`BERVO:8000720`), `Ratio` (`BERVO:8000245`), and the soil classification groupings
+`WRB reference soil group` (`BERVO:8000982`) and `USDA soil order` (`BERVO:8001015`).
+The `9xxxxxx` block holds groupings of variables, such as `Soil variable`, plus
+`Constant`. Settled in PR #168.
+
 The ontology has two roots, `BERVO:0000000` ("Variable") and `BERVO:8000232` ("Concept").
 Neither has a `Category`. A term's ID block does not decide which root it descends from:
 the ~212 constants under `Constant` (`BERVO:9000020`) carry `0xxxxxx` IDs and sit under
