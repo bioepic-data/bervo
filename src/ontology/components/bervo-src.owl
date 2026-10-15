@@ -6972,9 +6972,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000415">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000432"/>
-        <obo:IAO_0000115>The combined nitrogen dioxide uptake by plant roots and soil microorganisms from non-fertilized soil areas to support metabolic processes. This nitrogen compound uptake represents plant-microbial competition for oxidized nitrogen forms and is important for modeling nitrogen transformation pathways in terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Combined rate of nitrite uptake by plant roots and soil microbes from soil outside fertilizer bands, where they compete for it as they do for ammonium and nitrate.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RNO2EcoUptkSoil_vr</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), nitrite correction for issue #79</rdfs:comment>
         <rdfs:comment>PlantDataRateType.txt</rdfs:comment>
         <rdfs:label>Total root + microbial nitrite uptake non-band</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
@@ -7072,9 +7072,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000425">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000432"/>
-        <obo:IAO_0000115>The combined nitrogen dioxide uptake by plant roots and soil microorganisms from fertilizer band zones to support metabolic processes. This enhanced nitrogen compound uptake represents plant-microbial competition for oxidized nitrogen forms in fertilized areas and is important for modeling nitrogen transformation in agricultural systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Combined rate of nitrite uptake by plant roots and soil microbes from fertilizer bands in soil, where they compete for it as they do for ammonium and nitrate.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RNO2EcoUptkBand_vr</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), nitrite correction for issue #79</rdfs:comment>
         <rdfs:comment>PlantDataRateType.txt</rdfs:comment>
         <rdfs:label>Total root + microbial nitrite uptake band</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
@@ -16983,9 +16983,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001006">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
-        <obo:IAO_0000115>Total heterotrophic microbial nitrogen dioxide uptake non-band unconstrained by nitrogen dioxide represents the maximum rate of nitrogen dioxide consumption by heterotrophic microorganisms in non-banded soil when nitrogen dioxide availability is not limiting. This parameter quantifies microbial capacity for nitrogen dioxide reduction during denitrification processes and is important for understanding nitrogen cycling and nitrous oxide production in terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which heterotrophic microbes would take up nitrite for reduction in denitrification if the nitrite supply did not limit them, in soil outside fertilizer bands.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RNO2DmndReduxSoilHeter_vr</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), nitrite correction for issue #79</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Total heterotrophic microbial nitrite uptake non-band unconstrained by NO2</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
@@ -17023,9 +17023,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001008">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
-        <obo:IAO_0000115>Total heterotrophic microbial nitrogen dioxide uptake in band soil unconstrained by nitrogen dioxide represents the maximum rate of nitrogen dioxide consumption by heterotrophic microorganisms in fertilizer-banded soil when nitrogen dioxide availability is not limiting. This parameter quantifies enhanced denitrification capacity in nutrient-rich zones and is important for understanding nitrogen cycling dynamics and nitrous oxide production in fertilized agricultural soils.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate at which heterotrophic microbes would take up nitrite for reduction in denitrification if the nitrite supply did not limit them, in fertilizer bands in soil.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RNO2DmndReduxBandHeter_vr</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), nitrite correction for issue #79</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Total heterotrophic microbial nitrite uptake in band soil unconstrained by NO2</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
@@ -17358,9 +17358,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001026">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
-        <obo:IAO_0000115>Autotrophic nitrogen dioxide oxidation in non-band soil represents the rate at which nitrite-oxidizing bacteria convert nitrite to nitrate in non-fertilized soil areas. This parameter quantifies the second step of nitrification and is essential for understanding complete nitrogen oxidation, nitrate production, and energy generation by chemosynthetic microorganisms in terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate of oxidation of nitrite to nitrate by autotrophic nitrite-oxidizing bacteria, the second step of nitrification, in soil outside fertilizer bands.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RNO2OxidAutor_vr</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), nitrite correction for issue #79</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic nitrite oxidation in non-band soil</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
@@ -17394,9 +17394,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001028">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000014"/>
-        <obo:IAO_0000115>Autotrophic nitrogen dioxide oxidation in band soil represents the rate at which nitrite-oxidizing bacteria convert nitrite to nitrate in fertilizer-banded soil areas. This parameter quantifies enhanced nitrate production in nutrient-rich zones and is important for understanding fertilizer transformation, nitrogen availability, and localized biogeochemical processes in agricultural systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Rate of oxidation of nitrite to nitrate by autotrophic nitrite-oxidizing bacteria, the second step of nitrification, in fertilizer bands in soil.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RNO2OxidAutorBand_vr</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), nitrite correction for issue #79</rdfs:comment>
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic nitrite oxidation in band soil</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
