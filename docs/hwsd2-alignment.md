@@ -144,6 +144,14 @@ a grouping concept under `Soil` whose children are the classes.
 | SOTER texture | SOTER soil texture classification (`BERVO:0002184`) | None; five classes in the comment | |
 | Unified Soil Classification System (ASTM D2487) | USCS soil classification (`BERVO:0002182`) | 15 groups under USCS soil group (`BERVO:8001043`) | None in ENVO |
 
+A USDA order is cross-referenced only to an ENVO class labelled with that order.
+That is why Ultisol (`ENVO:01001397`) has one and the other orders do not. ENVO's
+cryosol (`ENVO:00002236`) carries *gelisol* as an exact synonym, and its ferralsol
+(`ENVO:00002246`) carries *oxisol*. Both classes are labelled and defined by the
+WRB group, and the WRB group and the USDA order draw their boundaries
+differently. So Gelisol and Oxisol stay unmapped, rather than being asserted
+equivalent to a WRB class.
+
 Below the reference soil group and the order, the WRB qualifiers (191 `WRB4`
 units and 556 `WRB_PHASES` units in HWSD2), the FAO-90 units, and the lower
 levels of Soil Taxonomy are recorded as values of the classification variables,
