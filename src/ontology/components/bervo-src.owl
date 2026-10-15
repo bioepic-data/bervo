@@ -54191,9 +54191,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001103">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000238"/>
-        <obo:IAO_0000115>Part of a day when the sun is above the horizon; in flux data processing, the periods when potential incoming shortwave radiation is above zero.</obo:IAO_0000115>
+        <obo:IAO_0000115>Part of a day when the sun is above the horizon.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
-        <rdfs:comment>FLUXNET FULLSET suffix: _DAY.</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _DAY. Flux processing counts as daytime the periods when the potential incoming shortwave radiation is above zero.</rdfs:comment>
         <rdfs:label>Daytime</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -54204,10 +54204,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001104">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000238"/>
-        <obo:IAO_0000115>Part of a day when the sun is below the horizon; in flux data processing, the periods when potential incoming shortwave radiation is zero.</obo:IAO_0000115>
+        <obo:IAO_0000115>Part of a day when the sun is below the horizon.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>night</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
-        <rdfs:comment>FLUXNET FULLSET suffix: _NIGHT.</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _NIGHT. Flux processing counts as nighttime the periods when the potential incoming shortwave radiation is zero.</rdfs:comment>
         <rdfs:label>Nighttime</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>

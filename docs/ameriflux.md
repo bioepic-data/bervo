@@ -251,8 +251,8 @@ term plus a qualifier (decision 3).
 | `BERVO:8001100` Joint uncertainty | Error range | FLUXNET FULLSET suffix: _JOINTUNC. |
 | `BERVO:8001101` Percentile | Quantitative value | FLUXNET FULLSET suffixes: _XX (05, 16, 25, 50, 75, 84, 95) and _25, _75. |
 | `BERVO:8001102` Reference ensemble member | Quantitative value | FLUXNET FULLSET suffix: _REF, chosen among the 40 estimates made with different friction velocity thresholds. |
-| `BERVO:8001103` Daytime | Time | FLUXNET FULLSET suffix: _DAY. |
-| `BERVO:8001104` Nighttime | Time | FLUXNET FULLSET suffix: _NIGHT. |
+| `BERVO:8001103` Daytime | Time | FLUXNET FULLSET suffix: _DAY. Flux processing counts as daytime the periods when the potential incoming shortwave radiation is above zero. |
+| `BERVO:8001104` Nighttime | Time | FLUXNET FULLSET suffix: _NIGHT. Flux processing counts as nighttime the periods when the potential incoming shortwave radiation is zero. |
 | `BERVO:0002323` Potential incoming shortwave radiation | Incoming radiation | FLUXNET FULLSET variable: SW_IN_POT. |
 | `BERVO:0002324` Friction velocity threshold | Meteorological variable | FLUXNET FULLSET does not report the threshold itself; its constant and variable forms (_CUT, _VUT) and the percentile used (_USTAR50) qualify the NEE, GPP and RECO variables. |
 | `BERVO:0002325` Energy balance closure correction factor | Surface flux variable | FLUXNET FULLSET reports the number of values used to compute it (EBC_CF_N) and the method used (EBC_CF_METHOD), and applies it in H_CORR and LE_CORR. |
