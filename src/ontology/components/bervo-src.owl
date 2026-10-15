@@ -4045,6 +4045,7 @@
     <!-- https://w3id.org/bervo/BERVO_0000235 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000235">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002334"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000003"/>
         <obo:IAO_0000115>The Köppen climate zone refers to a region defined by the Köppen climate classification system.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>KOPPEN</oboInOwl:hasRelatedSynonym>
@@ -11611,8 +11612,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
         <obo:IAO_0000115>The vertical distance of a land surface point above a reference datum such as mean sea level, representing elevation in meters or feet across terrestrial landscapes. This parameter is fundamental for understanding atmospheric pressure variations, temperature gradients, precipitation patterns, and biodiversity distributions along elevational gradients in mountain and highland ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>ALTZ_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>LOCATION_ELEV</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>elevation</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>CHESS: Elevation, Elevation_m, Topographical_Elevation.</rdfs:comment>
+        <rdfs:comment>CHESS: Elevation, Elevation_m, Topographical_Elevation. AmeriFlux BADM variable name: LOCATION_ELEV.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:comment>How does this differ from the concept term?</rdfs:comment>
         <rdfs:comment>LandSurfDataType.txt</rdfs:comment>
@@ -14390,6 +14392,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
         <obo:IAO_0000115>The concentration of ammonium ions in soil, representing plant-available nitrogen and the oxidized form of organic nitrogen mineralization. This soil ammonium content affects plant nutrition and influences nitrification processes and soil nitrogen cycling dynamics.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CNH4_vr</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SOIL_CHEM_NH4</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: SOIL_CHEM_NH4.</rdfs:comment>
         <rdfs:comment>Changed &quot;content&quot; to &quot;concentration&quot; since units are mg/kg</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
@@ -14408,6 +14412,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
         <obo:IAO_0000115>The concentration of nitrate ions in soil, representing the oxidized form of plant-available nitrogen from nitrification and fertilizer inputs. This soil nitrate content affects plant nutrition and influences groundwater contamination potential and denitrification processes.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CNO3_vr</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SOIL_CHEM_NO3</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: SOIL_CHEM_NO3.</rdfs:comment>
         <rdfs:comment>Changed &quot;content&quot; to &quot;concentration&quot; since units are mg/kg</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
@@ -16723,6 +16729,7 @@
     <!-- https://w3id.org/bervo/BERVO_0000991 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000991">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002327"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000013"/>
         <obo:IAO_0000115>The angular distance north or south of the Earth&apos;s equator expressed in degrees, specifying the geographic location of a grid cell. This parameter is fundamental for determining solar radiation patterns, climate conditions, day length, and seasonal variations that drive ecosystem processes in Earth system models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>ALAT_col</oboInOwl:hasRelatedSynonym>
@@ -23526,6 +23533,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001370"/>
         <obo:IAO_0000115>The mean annual air temperature refers to the average temperature of the atmosphere over a year, calculated by summing the daily temperatures and dividing by the number of days. It is an essential parameter for Earth systems modeling and provides important information about the climate conditions of a region. The mean annual air temperature is influenced by various factors, including solar radiation, land surface characteristics, and atmospheric conditions. It is used in various Earth systems models to understand and predict the behavior of the climate system, such as temperature variations, weather patterns, and climate change.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>ATCA_col</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>MAT</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: MAT.</rdfs:comment>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Mean annual air temperature</rdfs:label>
@@ -25241,8 +25250,9 @@
         <obo:IAO_0000115>The mass of organic carbon per unit mass of soil, representing the soil carbon stock and fertility. This parameter affects soil structure, water retention, nutrient cycling, and is fundamental for modeling carbon sequestration, decomposition processes, and soil quality in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CORGCI_vr</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>ORG_CARBON</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SOIL_CHEM_C_ORG</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>HWSD2: ORG_CARBON [% weight].</rdfs:comment>
+        <rdfs:comment>HWSD2: ORG_CARBON [% weight]. AmeriFlux BADM variable name: SOIL_CHEM_C_ORG.</rdfs:comment>
         <rdfs:comment>SoilPropertyDataType.txt</rdfs:comment>
         <rdfs:label>Soil organic carbon content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
@@ -25295,8 +25305,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
         <obo:IAO_0000115>The mass of sand-sized particles per unit mass of soil, representing the coarse mineral fraction in soil texture. This parameter affects soil drainage, aeration, water infiltration rates, and is essential for determining hydraulic conductivity and soil physical behavior in hydrological models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CSAND_vr</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SOIL_TEX_SAND</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>HWSD2: SAND [% weight], 0.05 to 2 mm in the fine earth.</rdfs:comment>
+        <rdfs:comment>HWSD2: SAND [% weight], 0.05 to 2 mm in the fine earth. AmeriFlux BADM variable name: SOIL_TEX_SAND.</rdfs:comment>
         <rdfs:comment>SoilPropertyDataType.txt</rdfs:comment>
         <rdfs:label>Soil sand content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
@@ -25313,8 +25324,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
         <obo:IAO_0000115>The mass of silt-sized particles per unit mass of soil, representing the intermediate mineral fraction in soil texture. This parameter influences water retention capacity, nutrient holding capacity, and contributes to soil structure formation and erodibility characteristics in agricultural and natural systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CSILT_vr</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SOIL_TEX_SILT</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>HWSD2: SILT [% weight], 0.002 to 0.05 mm in the fine earth.</rdfs:comment>
+        <rdfs:comment>HWSD2: SILT [% weight], 0.002 to 0.05 mm in the fine earth. AmeriFlux BADM variable name: SOIL_TEX_SILT.</rdfs:comment>
         <rdfs:comment>SoilPropertyDataType.txt</rdfs:comment>
         <rdfs:label>Soil silt content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
@@ -25331,8 +25343,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
         <obo:IAO_0000115>The mass of clay-sized particles per unit mass of soil, representing the fine mineral fraction with high surface area. This parameter controls water retention, nutrient adsorption, soil plasticity, and swelling behavior, making it crucial for modeling soil hydraulic properties and chemical reactivity.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CCLAY_vr</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SOIL_TEX_CLAY</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>HWSD2: CLAY [% weight], less than 0.002 mm in the fine earth.</rdfs:comment>
+        <rdfs:comment>HWSD2: CLAY [% weight], less than 0.002 mm in the fine earth. AmeriFlux BADM variable name: SOIL_TEX_CLAY.</rdfs:comment>
         <rdfs:comment>SoilPropertyDataType.txt</rdfs:comment>
         <rdfs:label>Soil clay content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
@@ -25448,9 +25461,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001535">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
         <obo:IAO_0000115>The mass of dry soil per unit volume including pore spaces, representing soil compaction and structure. This parameter affects porosity, water storage capacity, root penetration resistance, and is fundamental for converting between mass-based and volume-based soil property measurements.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SOIL_CHEM_BD</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>SoilBulkDensity_vr</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>bulk_density</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>ATS: bulk_density, computed in the ATS-EcoSIM coupling from density_rock and porosity. HWSD2: BULK [g/cm3] in HWSD2_LAYERS and BULK_DENSITY in HWSD2_SMU.</rdfs:comment>
+        <rdfs:comment>ATS: bulk_density, computed in the ATS-EcoSIM coupling from density_rock and porosity. HWSD2: BULK [g/cm3] in HWSD2_LAYERS and BULK_DENSITY in HWSD2_SMU. AmeriFlux BADM variable name: SOIL_CHEM_BD.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SoilPropertyDataType.txt</rdfs:comment>
         <rdfs:label>Soil bulk density</rdfs:label>
@@ -27931,6 +27945,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>Soil K content refers to the concentration or amount of potassium (K) present in the soil. It is a parameter in earth systems modeling that represents the availability of potassium to plants and the overall fertility of the soil. The soil K content is influenced by factors such as weathering of parent materials, deposition of potassium from atmospheric sources, and agricultural practices such as fertilizer application.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CKA_vr</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SOIL_CHEM_K</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: SOIL_CHEM_K.</rdfs:comment>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Soil potassium content</rdfs:label>
@@ -28984,7 +29000,7 @@
         <oboInOwl:hasRelatedSynonym>SWC</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>THETW_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
-        <rdfs:comment>EcoSIM THETW_vr is a volume fraction of bulk soil. The ATS-EcoSIM coupling currently writes ATS saturation_liquid, a fraction of pore volume, into it; see Soil liquid water saturation. ODM2 variable name concept &quot;Volumetric water content&quot;: Volume of liquid water relative to bulk volume. Used for example to quantify soil moisture. AmeriFlux FP-Standard base name: SWC. AmeriFlux reports it in percent.</rdfs:comment>
+        <rdfs:comment>EcoSIM THETW_vr is a volume fraction of bulk soil. The ATS-EcoSIM coupling currently writes ATS saturation_liquid, a fraction of pore volume, into it; see Soil liquid water saturation. ODM2 variable name concept &quot;Volumetric water content&quot;: Volume of liquid water relative to bulk volume. Used for example to quantify soil moisture. AmeriFlux FP-Standard base name: SWC. AmeriFlux reports it in percent. BADM reports this quantity under a stated condition as SOIL_TEX_WILT, SOIL_TEX_FIELD_CAP and SOIL_TEX_SAT, which are this term with Wilting point, Field capacity or Saturation in contexts, and as PFCURVE_SWC, a point on a water retention curve paired with PFCURVE_MP on Soil water potential. These codes are not synonyms because each is the quantity under a condition.</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Volumetric water content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
@@ -30456,8 +30472,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001834">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>The proportion of total land area occupied by a specific plant species or taxonomic group expressed as a percentage. This parameter quantifies relative vegetation dominance, controlling species composition patterns and ecosystem functional diversity in plant community studies.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SPP_O_PERC</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SPP_U_PERC</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Use with BERVO:involves_taxa</rdfs:comment>
+        <rdfs:comment>Use with BERVO:involves_taxa. AmeriFlux BADM variable names: SPP_O_PERC, SPP_U_PERC. AmeriFlux reports the cover of a species or vegetation type in the overstory and understory separately; the layer goes in contexts.</rdfs:comment>
         <rdfs:label>Percent area covered by specified plant</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -31176,9 +31194,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>One-sided green leaf area of a plant canopy per unit horizontal ground area.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/leafAreaIndex"/>
+        <oboInOwl:hasRelatedSynonym>LAI</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>surface-LAI</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>tlai_day_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>ATS: surface-LAI [m2 m-2]. In the ATS-EcoSIM coupling it is written into EcoSIM tlai_day_pft, the daily leaf area index of the prescribed phenology, divided evenly among the active plant functional types. ODM2 variable name concept &quot;Leaf area index (LAI)&quot;: Leaf area index (LAI) is a dimensionless quantity that characterizes plant canopies. It is defined as the one-sided green leaf area per unit ground surface area (LAI = leaf area / ground area, m2 / m2) in broadleaf canopies.</rdfs:comment>
+        <rdfs:comment>ATS: surface-LAI [m2 m-2]. In the ATS-EcoSIM coupling it is written into EcoSIM tlai_day_pft, the daily leaf area index of the prescribed phenology, divided evenly among the active plant functional types. ODM2 variable name concept &quot;Leaf area index (LAI)&quot;: Leaf area index (LAI) is a dimensionless quantity that characterizes plant canopies. It is defined as the one-sided green leaf area per unit ground surface area (LAI = leaf area / ground area, m2 / m2) in broadleaf canopies. AmeriFlux BADM variable name: LAI. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: LAI_TOT, LAI_O_DEC, LAI_O_EVG, LAI_U. AmeriFlux&apos;s LAI_CANOPY_TYPE (Total, Overstory, Understory) and the leaf habit go in contexts. LAI_TYPE PAI is Plant area index (BERVO:0001890) and GAI is Green area index.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Canopy leaf area index</rdfs:label>
@@ -31290,7 +31309,7 @@
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/diameterAtBreastHeight"/>
         <oboInOwl:hasExactSynonym>DBH</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>diameter at breast height</oboInOwl:hasExactSynonym>
-        <rdfs:comment>CHESS: Stem_DBH, DBH_1_CM, DBH_2_CM, DBH_Avg_CM. Allometric equations take this as their input for biomass and carbon stock. ODM2 variable name concept &quot;Diameter at breast height (DBH)&quot;: Diameter at breast height, or DBH, is the standard for measuring trees. DBH refers to the tree diameter measured at 4.5 feet above the ground. AmeriFlux FP-Standard base name: DBH. AmeriFlux records it continuously with dendrometers.</rdfs:comment>
+        <rdfs:comment>CHESS: Stem_DBH, DBH_1_CM, DBH_2_CM, DBH_Avg_CM. Allometric equations take this as their input for biomass and carbon stock. ODM2 variable name concept &quot;Diameter at breast height (DBH)&quot;: Diameter at breast height, or DBH, is the standard for measuring trees. DBH refers to the tree diameter measured at 4.5 feet above the ground. AmeriFlux FP-Standard base name: DBH. AmeriFlux records it continuously with dendrometers. AmeriFlux BADM variable name: DBH. The BADM DBH group reports it per species and date.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
         <rdfs:label>Stem diameter at breast height</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
@@ -31328,7 +31347,8 @@
         <obo:IAO_0000115>Sum of the cross-sectional areas of tree stems at breast height per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/areaBasal"/>
         <oboInOwl:hasExactSynonym>basal area</oboInOwl:hasExactSynonym>
-        <rdfs:comment>CHESS: ba. Computed from Stem diameter at breast height. ODM2 variable name concept &quot;Area, basal&quot;: Basal area is the area of a given section of land that is occupied by the cross-section of tree trunks and stems at the base. The term is used in forest management and forest ecology.</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym>BASAL_AREA</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>CHESS: ba. Computed from Stem diameter at breast height. ODM2 variable name concept &quot;Area, basal&quot;: Basal area is the area of a given section of land that is occupied by the cross-section of tree trunks and stems at the base. The term is used in forest management and forest ecology. AmeriFlux BADM variable name: BASAL_AREA.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
         <rdfs:label>Stand basal area</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
@@ -31345,8 +31365,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
         <obo:IAO_0000115>Number of stems per unit ground area, counted at or above a stated minimum size.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>stem density</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>TREES_NUM</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>tree density</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>CHESS: density, abla_density, pien_density, pico_density, each a per-species stem density. Plant population (BERVO:0000725) counts individuals; a plant with several stems counts once there and once per stem here.</rdfs:comment>
+        <rdfs:comment>CHESS: density, abla_density, pien_density, pico_density, each a per-species stem density. Plant population (BERVO:0000725) counts individuals; a plant with several stems counts once there and once per stem here. AmeriFlux BADM variable name: TREES_NUM. AmeriFlux counts trees per hectare above a stated minimum diameter at breast height, and LIFESTAGE separates seedlings, saplings and mature trees.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
         <rdfs:label>Stem count per unit area</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000899"/>
@@ -31512,7 +31533,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
         <obo:IAO_0000115>Depth of precipitation received at a site over a year, averaged across a stated run of years.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>MAP</oboInOwl:hasExactSynonym>
-        <rdfs:comment>CHESS: mean annual precipitation.</rdfs:comment>
+        <rdfs:comment>CHESS: mean annual precipitation. AmeriFlux BADM variable name: MAP.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
         <rdfs:label>Mean annual precipitation</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
@@ -32714,8 +32735,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>Height of the top of a plant canopy above the ground surface.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/canopyHeight"/>
+        <oboInOwl:hasRelatedSynonym>HEIGHTC</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Canopy height&quot;: Forest canopy density and height are used as variables in a number of environmental applications, such as biomass estimation, vegetation coverage, and biodiversity determination. Canopy density, or canopy cover, is the ratio of vegetation to ground as seen from the air. Canopy height measures how far above the ground the top of the canopy is. Lidar can be used to determine both of these variables.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Canopy height&quot;: Forest canopy density and height are used as variables in a number of environmental applications, such as biomass estimation, vegetation coverage, and biodiversity determination. Canopy density, or canopy cover, is the ratio of vegetation to ground as seen from the air. Canopy height measures how far above the ground the top of the canopy is. Lidar can be used to determine both of these variables. AmeriFlux BADM variable name: HEIGHTC. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: HEIGHTC_U. Understory canopy height is this term with Understory in contexts.</rdfs:comment>
         <rdfs:label>Canopy height</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000076"/>
         <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
@@ -32765,7 +32787,7 @@
         <obo:IAO_0000115>Dry mass of plant material per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomassVegetation"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Biomass, vegetation&quot;: Total dry mass of plant material per unit area or volume.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Biomass, vegetation&quot;: Total dry mass of plant material per unit area or volume. AmeriFlux BADM variable name: BIOMASS. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: ROOT_BIOMASS_TOT, ROOT_BIOMASS_FINE, ROOT_BIOMASS_CRS, SNAG_MASS. The current BADM standard reports one BIOMASS value with BIOMASS_ORGAN, BIOMASS_STATUS and BIOMASS_VEGTYPE, which map to the plant organ, vegetation status and plant functional type concepts.</rdfs:comment>
         <rdfs:label>Vegetation biomass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
@@ -32783,7 +32805,7 @@
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomassAboveGround"/>
         <oboInOwl:hasRelatedSynonym>above-ground biomass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Biomass, above-ground&quot;: The biomass is the mass of living biological organisms in a given area or ecosystem at a given time on or above the surface of the ground.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Biomass, above-ground&quot;: The biomass is the mass of living biological organisms in a given area or ecosystem at a given time on or above the surface of the ground. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: AG_BIOMASS_TREE, AG_BIOMASS_SHRUB, AG_BIOMASS_GRASS, AG_BIOMASS_CROP, AG_BIOMASS_OTHER. The vegetation type goes in contexts.</rdfs:comment>
         <rdfs:label>Aboveground biomass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
@@ -33324,7 +33346,7 @@
         <oboInOwl:hasRelatedSynonym>WTD</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>depth to water table</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 4</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Groundwater Depth&quot;: Groundwater depth is the distance between the water surface and the ground surface at a specific location specified by the site location and offset. AmeriFlux FP-Standard base name: WTD. AmeriFlux measures from the soil surface and counts positive above it, so its values have the opposite sign to this term&apos;s depth below the surface.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Groundwater Depth&quot;: Groundwater depth is the distance between the water surface and the ground surface at a specific location specified by the site location and offset. AmeriFlux FP-Standard base name: WTD. AmeriFlux measures from the soil surface and counts positive above it, so its values have the opposite sign to this term&apos;s depth below the surface. AmeriFlux BADM variable name: WTD. The BADM WTD group reports non-continuous water table depths.</rdfs:comment>
         <rdfs:label>Water table depth</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
         <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
@@ -33841,10 +33863,11 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
         <obo:IAO_0000115>Vertical distance from the soil surface down to bedrock or another layer that restricts roots, the thickness of the soil profile at a point.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/soilDepth"/>
+        <oboInOwl:hasRelatedSynonym>SOIL_DEPTH</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>depth to bedrock</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>soil thickness</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Depth, soil&quot;: Depth of soil.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Depth, soil&quot;: Depth of soil. AmeriFlux BADM variable name: SOIL_DEPTH.</rdfs:comment>
         <rdfs:label>Soil depth</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
         <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
@@ -33859,9 +33882,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
         <obo:IAO_0000115>Fraction of a soil sample made up of particles larger than 2 mm in diameter, gravel and larger rock fragments.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/soilCoarseFraction"/>
+        <oboInOwl:hasRelatedSynonym>SOIL_TEX_ROCK</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>coarse fragment content</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Soil coarse fraction&quot;: Fraction of particles within a soil sample that are greater that 2mm in diameter. The basis, mass or volume, is recorded with the data. Rock fraction is EcoSIM&apos;s volume form. HWSD2: COARSE [% volume].</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Soil coarse fraction&quot;: Fraction of particles within a soil sample that are greater that 2mm in diameter. The basis, mass or volume, is recorded with the data. Rock fraction is EcoSIM&apos;s volume form. HWSD2: COARSE [% volume]. AmeriFlux BADM variable name: SOIL_TEX_ROCK.</rdfs:comment>
         <rdfs:label>Soil coarse fraction</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -33915,9 +33939,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
         <obo:IAO_0000115>Class a soil is assigned to in a soil classification system, such as an order of USDA Soil Taxonomy or a reference soil group of the World Reference Base.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/soilClassification"/>
+        <oboInOwl:hasRelatedSynonym>SOIL_CLASSIFICATION</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>soil taxonomic class</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Soil classification&quot;: For soil resources, experience has shown that a natural system approach to classification, i.e. grouping soils by their intrinsic property (soil morphology), behaviour, or genesis, results in classes that can be interpreted for many diverse uses. Differing concepts of pedogenesis, and differences in the significance of morphological features to various land uses can affect the classification approach. The classification system is recorded with the data. HWSD2: NSC_MU_SOURCE1 and NSC_MU_SOURCE2 hold a class from a national soil classification.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Soil classification&quot;: For soil resources, experience has shown that a natural system approach to classification, i.e. grouping soils by their intrinsic property (soil morphology), behaviour, or genesis, results in classes that can be interpreted for many diverse uses. Differing concepts of pedogenesis, and differences in the significance of morphological features to various land uses can affect the classification approach. The classification system is recorded with the data. HWSD2: NSC_MU_SOURCE1 and NSC_MU_SOURCE2 hold a class from a national soil classification. AmeriFlux BADM variable name: SOIL_CLASSIFICATION.</rdfs:comment>
         <rdfs:label>Soil classification</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
@@ -34138,8 +34163,9 @@
         <obo:IAO_0000115>Mass of carbon divided by the mass of nitrogen in a soil, usually from total carbon and total nitrogen measured by dry combustion.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>soil C:N mass ratio</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>CN_RATIO</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SOIL_CHEM_CN_RATIO</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
-        <rdfs:comment>HWSD2: CN_RATIO, unitless. HWSD2 does not state the basis; a soil C:N ratio is conventionally by mass.</rdfs:comment>
+        <rdfs:comment>HWSD2: CN_RATIO, unitless. HWSD2 does not state the basis; a soil C:N ratio is conventionally by mass. AmeriFlux BADM variable name: SOIL_CHEM_CN_RATIO.</rdfs:comment>
         <rdfs:label>Soil carbon to nitrogen mass ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000917"/>
         <bervo:BERVO_has_unit>g{C}.g-1{N}</bervo:BERVO_has_unit>
@@ -34176,6 +34202,7 @@
         <obo:IAO_0000115>Mass of carbon divided by the mass of nitrogen in a plant tissue, such as leaf, stem, or root, or in a whole plant.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>plant C:N mass ratio</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_CN_RATIO, AG_LIT_CN_RATIO, ROOT_CN_RATIO. Organ and status go in contexts.</rdfs:comment>
         <rdfs:label>Plant tissue carbon to nitrogen mass ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000917"/>
         <bervo:BERVO_has_unit>g{C}.g-1{N}</bervo:BERVO_has_unit>
@@ -35597,6 +35624,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002133">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
         <obo:IAO_0000115>Categorical class of a fire by its origin and control, such as wildfire or prescribed fire.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>DM_FIRE</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: DM_FIRE. Values are the Fire concepts, including Underburn and Prescribed underburn.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 6 2026), fire terms for issue #134</rdfs:comment>
         <rdfs:label>Fire type</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -36073,9 +36102,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002159">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
         <obo:IAO_0000115>Mass of nitrogen in all forms, organic and inorganic, per unit mass of dry soil, usually measured by dry combustion or Kjeldahl digestion.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SOIL_CHEM_N_TOT</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>TOTAL_N</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
-        <rdfs:comment>HWSD2: TOTAL_N [g/kg]. Distinct from Total soil nitrogen (BERVO:0000324), which is EcoSIM&apos;s nitrogen gas in soil air.</rdfs:comment>
+        <rdfs:comment>HWSD2: TOTAL_N [g/kg]. Distinct from Total soil nitrogen (BERVO:0000324), which is EcoSIM&apos;s nitrogen gas in soil air. AmeriFlux BADM variable name: SOIL_CHEM_N_TOT.</rdfs:comment>
         <rdfs:label>Soil total nitrogen content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
@@ -36093,8 +36123,9 @@
         <obo:IAO_0000115>pH of a suspension of soil in water, as distinct from one in a salt solution such as calcium chloride or potassium chloride.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>soil pH (H2O)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>PH_WATER</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SOIL_CHEM_PH_H2O</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
-        <rdfs:comment>HWSD2: PH_WATER [-log(H+)]. The soil to water ratio, commonly 1:1 or 1:2.5, is recorded with the data.</rdfs:comment>
+        <rdfs:comment>HWSD2: PH_WATER [-log(H+)]. The soil to water ratio, commonly 1:1 or 1:2.5, is recorded with the data. AmeriFlux BADM variable name: SOIL_CHEM_PH_H2O.</rdfs:comment>
         <rdfs:label>Soil pH in water</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
@@ -36280,8 +36311,9 @@
         <obo:IAO_0000115>Depth of water a soil can hold between field capacity and the permanent wilting point, per unit depth of soil.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>available water capacity</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>AWC</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SOIL_TEX_WATER_HOLD_CAP</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), HWSD2 alignment for issue #120</rdfs:comment>
-        <rdfs:comment>HWSD2: AWC [mm/m] in HWSD2_SMU, in classes of 150, 125, 100, 75, 50, 15, and 0 mm/m.</rdfs:comment>
+        <rdfs:comment>HWSD2: AWC [mm/m] in HWSD2_SMU, in classes of 150, 125, 100, 75, 50, 15, and 0 mm/m. AmeriFlux BADM variable name: SOIL_TEX_WATER_HOLD_CAP.</rdfs:comment>
         <rdfs:label>Soil available water capacity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000795"/>
@@ -36444,11 +36476,12 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002041"/>
         <obo:IAO_0000115>Class a soil is assigned to in the World Reference Base for Soil Resources, from a reference soil group alone to a group with principal and supplementary qualifiers.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>World Reference Base soil classification</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>SOIL_WRB_GROUP</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>WRB2</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>WRB4</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>WRB_PHASES</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after IUSS Working Group WRB (2022) World Reference Base for Soil Resources, 4th edition; issue #120</rdfs:comment>
-        <rdfs:comment>HWSD2: WRB2 holds the reference soil group (values under WRB reference soil group, BERVO:8000982), WRB4 a group with one qualifier, and WRB_PHASES a group with qualifiers and phases, all from WRB 2022. WRB2 also has codes for glaciers, open water, and areas with no data.</rdfs:comment>
+        <rdfs:comment>HWSD2: WRB2 holds the reference soil group (values under WRB reference soil group, BERVO:8000982), WRB4 a group with one qualifier, and WRB_PHASES a group with qualifiers and phases, all from WRB 2022. WRB2 also has codes for glaciers, open water, and areas with no data. AmeriFlux BADM variable name: SOIL_WRB_GROUP.</rdfs:comment>
         <rdfs:label>WRB soil classification</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
@@ -36482,8 +36515,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002041"/>
         <obo:IAO_0000115>Class a soil is assigned to in USDA Soil Taxonomy, at the level of order, suborder, great group, subgroup, family, or series.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>USDA soil taxonomy class</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>SOIL_ORDER</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SOIL_SERIES</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), after Soil Survey Staff (2022) Keys to Soil Taxonomy, 13th edition; issue #120</rdfs:comment>
-        <rdfs:comment>Not in HWSD2. Requested in issue #120. Orders are under USDA soil order (BERVO:8001015).</rdfs:comment>
+        <rdfs:comment>Not in HWSD2. Requested in issue #120. Orders are under USDA soil order (BERVO:8001015). AmeriFlux BADM variable names: SOIL_ORDER, SOIL_SERIES. SOIL_ORDER values map to the USDA soil order concepts.</rdfs:comment>
         <rdfs:label>USDA Soil Taxonomy classification</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
@@ -36556,7 +36591,7 @@
         <oboInOwl:hasExactSynonym>leaf mass area</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>specific leaf weight</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
-        <rdfs:comment>The reciprocal of specific leaf area (TO:0000562), and so not cross-referenced to it. Leaf area:mass during growth (BERVO:0000783) is the EcoSIM specific leaf area.</rdfs:comment>
+        <rdfs:comment>The reciprocal of specific leaf area (TO:0000562), and so not cross-referenced to it. Leaf area:mass during growth (BERVO:0000783) is the EcoSIM specific leaf area. AmeriFlux BADM variable name: LMA.</rdfs:comment>
         <rdfs:label>Leaf mass per area</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
@@ -38166,8 +38201,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002277">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>Potential energy of water in soil relative to pure free water at the same elevation and pressure, per unit volume, mostly from matric and osmotic effects.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>PFCURVE_MP</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>SWP</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: SWP.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SWP. AmeriFlux BADM variable name: PFCURVE_MP. PFCURVE_MP is the matric potential of a point on a water retention curve, paired with PFCURVE_SWC.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Soil water potential</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000789"/>
@@ -38958,6 +38994,634 @@
         <rdfs:label>Nighttime flag</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001104"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002327 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002327">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
+        <obo:IAO_0000115>Angular distance of a measurement site north or south of the equator.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>LOCATION_LAT</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: LOCATION_LAT. AmeriFlux reports it in decimal degrees on the WGS84 datum. The EcoSIM grid-cell Latitude measurement (BERVO:0000991) sits beneath this term as an additional parent.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Site latitude</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000255"/>
+        <bervo:BERVO_has_unit>deg</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000395"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002328 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002328">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
+        <obo:IAO_0000115>Angular distance of a measurement site east or west of the prime meridian.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>LOCATION_LONG</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: LOCATION_LONG. AmeriFlux reports it in decimal degrees on the WGS84 datum.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Site longitude</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000255"/>
+        <bervo:BERVO_has_unit>deg</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000396"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002329 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002329">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
+        <obo:IAO_0000115>Categorical direction, as a compass point, that the sloping land surface of a site faces, or flat where it faces none.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM variable name: ASPECT. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term. Values are the Compass point concepts and Flat terrain. Distinct from Aspect (BERVO:0000685), in degrees.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Aspect class</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002330 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002330">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
+        <obo:IAO_0000115>Categorical class of the slope or relief of the land surface at a site.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM variable name: TERRAIN. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term. Values are the Terrain class concepts.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Terrain type</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002331 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002331">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Compass point from which the wind blows most often at a site.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>WIND_DIRECTION</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: WIND_DIRECTION. Values are the Compass point concepts.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Prevailing wind direction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000436"/>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000184"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002332 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002332">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
+        <obo:IAO_0000115>Distance upwind from a measurement site, in the prevailing wind direction, over which the ecosystem stays the same.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SURFACE_HOMOGENEITY</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: SURFACE_HOMOGENEITY.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Surface homogeneity distance</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000520"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000134"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002333 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002333">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000027"/>
+        <obo:IAO_0000115>Number of days in a year on which the ground at a site is covered by snow.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SITE_SNOW_COVER_DAYS</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: SITE_SNOW_COVER_DAYS.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Annual snow cover duration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_has_unit>d</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000103"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002334 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002334">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
+        <obo:IAO_0000115>Class of the Köppen climate classification that the long-term climate of a site falls in.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>CLIMATE_KOEPPEN</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: CLIMATE_KOEPPEN. Values are the Köppen climate class concepts. The EcoSIM Köppen climate zone flag (BERVO:0000235) sits beneath this term as an additional parent.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Köppen climate classification</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001123"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002335 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002335">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001973"/>
+        <obo:IAO_0000115>Class of the IGBP land cover classification that the land cover of a site falls in.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>IGBP</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: IGBP. Values are the IGBP land cover class concepts.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>IGBP land cover type</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002336 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002336">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Time since the establishment of the standing live trees of a stand, usually that of its dominant cohort.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SA</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: SA. AmeriFlux reports the maximum tree age as SA_MAX; BERVO expresses it with the Maximum qualifier on this term.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Stand age</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_has_unit>a</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002337 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002337">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <obo:IAO_0000115>One-sided area of the green, photosynthetically active parts of plants, leaves and green stems together, per unit horizontal ground area.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>GAI</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux reports it under LAI with LAI_TYPE GAI.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Green area index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_has_unit>m2.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001178"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002338 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002338">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
+        <obo:IAO_0000115>Dry mass, or carbon mass, of plant material that has fallen or become detached from plants, per unit ground area.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>LITTER_DEBRIS</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: LITTER_DEBRIS. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: AG_LIT_BIOMASS, STUMP_MASS, WD_BIOMASS_CRS, WD_BIOMASS_FINE. Fine litter, fine and coarse woody debris, and stumps are told apart by organ in contexts.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Litter and debris mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001175"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002339 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002339">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of carbon per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_C, AG_LIT_C, ROOT_C. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue carbon content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>g{C}.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002340 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002340">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of nitrogen per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_N, AG_LIT_N, ROOT_N. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue nitrogen content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>g{N}.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002341 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002341">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001961"/>
+        <obo:IAO_0000115>Rate of production of new aboveground plant mass, net of autotrophic respiration, per unit ground area, usually summed over a year.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>ANPP</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: AG_PROD_TREE, AG_PROD_SHRUB, AG_PROD_CROP, AG_PROD_OTHER. The vegetation type goes in contexts.</rdfs:comment>
+        <rdfs:label>Aboveground net primary production</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000546"/>
+        <bervo:BERVO_has_unit>g.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001180"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002342 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002342">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001961"/>
+        <obo:IAO_0000115>Rate of production of new root and other belowground plant mass, net of autotrophic respiration, per unit ground area, usually summed over a year.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>BNPP</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: ROOT_PROD_TOT, ROOT_PROD_FINE, ROOT_PROD_CRS. Fine and coarse roots go in contexts.</rdfs:comment>
+        <rdfs:label>Belowground net primary production</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000546"/>
+        <bervo:BERVO_has_unit>g.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001181"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002343 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002343">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
+        <obo:IAO_0000115>Mass of plant material falling to the ground per unit ground area and time, usually summed over a year.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: AG_LIT_PROD_TOT.</rdfs:comment>
+        <rdfs:label>Litterfall rate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_has_unit>g.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001175"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002344 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002344">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000030"/>
+        <obo:IAO_0000115>Mass of dead root and other belowground plant material added to the soil per unit ground area and time.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BG_LIT_PROD.</rdfs:comment>
+        <rdfs:label>Belowground litter production</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_has_unit>g.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001181"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002345 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002345">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
+        <obo:IAO_0000115>Mass of dead wood falling to the ground per unit ground area and time.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: WD_PROD_CRS, WD_PROD_FINE. Fine and coarse woody debris go in contexts.</rdfs:comment>
+        <rdfs:label>Woody debris production</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_has_unit>g.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002346 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002346">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Increase in the diameter of a tree stem at breast height over a stated period.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: STEM_INCR. STEM_INCR_DIAM and STEM_INCR_NUM record the sampled trees.</rdfs:comment>
+        <rdfs:label>Stem diameter increment</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
+        <bervo:BERVO_has_unit>cm</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002347 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002347">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000000"/>
+        <obo:IAO_0000115>Net accumulation of organic carbon in an ecosystem per unit ground area and time, gross primary production less ecosystem respiration, usually summed over a year.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>NEP</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: NEP. Estimated biometrically or from eddy covariance fluxes. Close in magnitude and opposite in sign to Net ecosystem exchange (BERVO:0002258) summed over the same period, where carbon leaves the ecosystem only as carbon dioxide.</rdfs:comment>
+        <rdfs:label>Net ecosystem production</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000043"/>
+        <bervo:BERVO_has_unit>g{C}.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002348 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002348">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000000"/>
+        <obo:IAO_0000115>Mass of nitrogen deposited from the atmosphere onto a surface per unit area and time.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:comment>General term for the BADM N_DEP_ variables.</rdfs:comment>
+        <rdfs:label>Nitrogen deposition</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_has_unit>g{N}.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002349 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002349">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002348"/>
+        <obo:IAO_0000115>Mass of nitrogen deposited in precipitation, fog or cloud water per unit area and time.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>N_DEP_WET</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: N_DEP_WET.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Wet nitrogen deposition</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_has_unit>g{N}.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002350 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002350">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002348"/>
+        <obo:IAO_0000115>Mass of nitrogen deposited as gases and particles, outside precipitation, per unit area and time.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>N_DEP_DRY</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: N_DEP_DRY.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Dry nitrogen deposition</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_has_unit>g{N}.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002351 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002351">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Depth below the soil surface of the active roots of a plant community, reported as a statistic such as the mean or maximum.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM variable name: ROOT_DEPTH. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term. Distinct from Rootable soil depth (BERVO:0002173), the depth roots could reach before an obstacle.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Rooting depth</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_has_unit>cm</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002352 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002352">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000035"/>
+        <obo:IAO_0000115>Date on which a phenological event, such as bud break or leaf senescence, occurs at a site.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>PHEN_EVENT_DATE</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: PHEN_EVENT_DATE. PHEN_EVENT_TYPE names the event, one of the Phenological progress concepts; PHEN_EVENT_STATUS (Start, Peak, End) goes in qualifiers.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Phenological event date</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000011"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002353 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002353">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000882"/>
+        <obo:IAO_0000115>pH of a suspension of soil in a salt solution, such as calcium chloride or potassium chloride, which displaces exchangeable hydrogen and aluminium ions.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SOIL_CHEM_PH_SALT</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: SOIL_CHEM_PH_SALT. Distinct from Soil pH in water (BERVO:0002160).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Soil pH in salt solution</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000261"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002354 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002354">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Mass of phosphorus in all forms, organic and inorganic, per unit mass of dry soil.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SOIL_CHEM_P</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: SOIL_CHEM_P.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Soil total phosphorus content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
+        <bervo:BERVO_has_unit>g{P}.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002355 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002355">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
+        <obo:IAO_0000115>Thickness of the organic horizon at the top of a soil profile, measured from the top of the litter layer.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>O horizon thickness</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SOIL_DEPTH_ORG</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: SOIL_DEPTH_ORG.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Organic horizon thickness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
+        <bervo:BERVO_has_unit>cm</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002356 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002356">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000030"/>
+        <obo:IAO_0000115>Mass of organic carbon in the soil per unit ground area, summed over a stated depth interval.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SOIL_STOCK_C_ORG</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: SOIL_STOCK_C_ORG. SOIL_STOCK_PROFILE_MIN and SOIL_STOCK_PROFILE_MAX record the depth interval.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Soil organic carbon stock</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>g{C}.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002357 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002357">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Mass of nitrogen in all forms in the soil per unit ground area, summed over a stated depth interval.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SOIL_STOCK_N_TOT</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: SOIL_STOCK_N_TOT. SOIL_STOCK_PROFILE_MIN and SOIL_STOCK_PROFILE_MAX record the depth interval.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Soil total nitrogen stock</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>g{N}.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002358 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002358">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Mass of ammonium in the soil per unit ground area, summed over a stated depth interval.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SOIL_STOCK_NH4</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: SOIL_STOCK_NH4. SOIL_STOCK_PROFILE_MIN and SOIL_STOCK_PROFILE_MAX record the depth interval.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Soil ammonium stock</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>g{NH4}.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002359 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002359">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Mass of nitrate in the soil per unit ground area, summed over a stated depth interval.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SOIL_STOCK_NO3</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: SOIL_STOCK_NO3. SOIL_STOCK_PROFILE_MIN and SOIL_STOCK_PROFILE_MAX record the depth interval.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Soil nitrate stock</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>g{NO3}.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002360 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002360">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Mass of potassium in the soil per unit ground area, summed over a stated depth interval.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SOIL_STOCK_K</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: SOIL_STOCK_K. SOIL_STOCK_PROFILE_MIN and SOIL_STOCK_PROFILE_MAX record the depth interval.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Soil potassium stock</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>g{K}.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000198"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002361 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002361">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
+        <obo:IAO_0000115>Mass of phosphorus in the soil per unit ground area, summed over a stated depth interval.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>SOIL_STOCK_P</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: SOIL_STOCK_P. SOIL_STOCK_PROFILE_MIN and SOIL_STOCK_PROFILE_MAX record the depth interval.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Soil phosphorus stock</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>g{P}.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002362 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002362">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Class of the disturbance or management that most affects a measurement site during its years of measurement.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>DOM_DIST_MGMT</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: DOM_DIST_MGMT. Values are the Disturbance and Land management concepts named by the BADM list DIST_MGMT.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Dominant disturbance or management type</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001227"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002363 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002363">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Class of a disturbance or management event at a measurement site, such as a fire, a harvest, a fertilizer application or a storm.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>DM_AGRICULTURE</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>DM_ENCROACH</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>DM_EXT_WEATHER</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>DM_FERT_M</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>DM_FERT_O</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>DM_FORESTRY</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>DM_GENERAL</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>DM_GRAZE</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>DM_INS_PATH</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>DM_PESTICIDE</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>DM_PLANTING</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>DM_TILL</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>DM_WATER</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable names: DM_AGRICULTURE, DM_ENCROACH, DM_EXT_WEATHER, DM_FERT_M, DM_FERT_O, DM_FORESTRY, DM_GENERAL, DM_GRAZE, DM_INS_PATH, DM_PESTICIDE, DM_PLANTING, DM_TILL, DM_WATER. Values are the Disturbance and Land management concepts under each list. DM_FIRE maps to Fire type (BERVO:0002133).</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Disturbance or management event type</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001227"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002364 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002364">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Fraction of the flux footprint area of a site affected by a disturbance or management event.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>DM_SURF</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: DM_SURF. AmeriFlux reports it in percent.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <rdfs:label>Disturbed footprint fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001227"/>
     </Class>
     
 
@@ -46491,6 +47155,8 @@
         <obo:IAO_0000115>A dimensionless index describing the apparent non-random spatial aggregation of foliage inferred from canopy optical measurements, commonly calculated as the ratio of effective leaf area index to clumping-corrected or true leaf area index. Values below 1 indicate more clumped foliage relative to a random distribution.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>ACF</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>apparent clumping index</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>LAI_CLUMP</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM variable name: LAI_CLUMP.</rdfs:comment>
         <rdfs:comment>Definition source - Manual (JMC, May 4 2026)</rdfs:comment>
         <rdfs:label>Apparent clumping factor</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000117"/>

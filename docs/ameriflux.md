@@ -503,5 +503,489 @@ variable names; they are not counted. The same names serve every time resolution
 
 ## BADM site metadata
 
-*Pending: slice 5 of issue #178 adds the BADM quantities, disturbance and management
-terms, and the BADM value lists.*
+BADM (Biological, Ancillary, Disturbance and Metadata) records what a site is like: its
+vegetation, soils, climate, disturbance history and management. The fields come from the
+BADM standard (<https://ameriflux.lbl.gov/data/badm/badm-standards/>) and the legacy
+field list above. Each field was sorted into one of five classes:
+
+| Class | Fields (legacy list) | In BERVO |
+| --- | --- | --- |
+| Quantities and site properties | 83 | yes |
+| Disturbance and management | 16 | yes |
+| Measurement metadata: dates, method, statistic, organ, species, depth range, comment | 267 | no |
+| Administrative: DOIs, team members, addresses, acknowledgement, funding | 54 | no |
+| Instrument settings (`INST_*`, `INSTPAIR_*`) | 33 | no |
+
+Measurement metadata, administrative fields and instrument settings describe a dataset
+rather than a quantity, so they have no terms. Where a metadata field names a layer, organ
+or status of a quantity, that becomes `contexts` or `qualifiers` on the general term,
+following decision 6.
+
+### Variables
+
+A *legacy* code is a field of the older BADM list that the current standard folds into one
+general field. It maps to the general term, with the variant in `contexts` or `qualifiers`.
+
+| BADM variable | BERVO term | Note |
+| --- | --- | --- |
+| `AG_BIOMASS_CROP` | `BERVO:0001971` Aboveground biomass | legacy, variant in contexts or qualifiers |
+| `AG_BIOMASS_GRASS` | `BERVO:0001971` Aboveground biomass | legacy, variant in contexts or qualifiers |
+| `AG_BIOMASS_OTHER` | `BERVO:0001971` Aboveground biomass | legacy, variant in contexts or qualifiers |
+| `AG_BIOMASS_SHRUB` | `BERVO:0001971` Aboveground biomass | legacy, variant in contexts or qualifiers |
+| `AG_BIOMASS_TREE` | `BERVO:0001971` Aboveground biomass | legacy, variant in contexts or qualifiers |
+| `AG_LIT_BIOMASS` | `BERVO:0002338` Litter and debris mass | legacy, variant in contexts or qualifiers |
+| `AG_LIT_C` | `BERVO:0002339` Plant tissue carbon content | legacy, variant in contexts or qualifiers |
+| `AG_LIT_CN_RATIO` | `BERVO:0002055` Plant tissue carbon to nitrogen mass ratio | legacy, variant in contexts or qualifiers |
+| `AG_LIT_N` | `BERVO:0002340` Plant tissue nitrogen content | legacy, variant in contexts or qualifiers |
+| `AG_LIT_PROD_TOT` | `BERVO:0002343` Litterfall rate | legacy, variant in contexts or qualifiers |
+| `AG_PROD_CROP` | `BERVO:0002341` Aboveground net primary production | legacy, variant in contexts or qualifiers |
+| `AG_PROD_OTHER` | `BERVO:0002341` Aboveground net primary production | legacy, variant in contexts or qualifiers |
+| `AG_PROD_SHRUB` | `BERVO:0002341` Aboveground net primary production | legacy, variant in contexts or qualifiers |
+| `AG_PROD_TREE` | `BERVO:0002341` Aboveground net primary production | legacy, variant in contexts or qualifiers |
+| `ASPECT` | `BERVO:0002329` Aspect class | current standard |
+| `BASAL_AREA` | `BERVO:0001887` Stand basal area | current standard |
+| `BG_LIT_PROD` | `BERVO:0002344` Belowground litter production | legacy, variant in contexts or qualifiers |
+| `BIOMASS` | `BERVO:0001970` Vegetation biomass | current standard |
+| `BIOMASS_C` | `BERVO:0002339` Plant tissue carbon content | legacy, variant in contexts or qualifiers |
+| `BIOMASS_CN_RATIO` | `BERVO:0002055` Plant tissue carbon to nitrogen mass ratio | legacy, variant in contexts or qualifiers |
+| `BIOMASS_N` | `BERVO:0002340` Plant tissue nitrogen content | legacy, variant in contexts or qualifiers |
+| `CLIMATE_KOEPPEN` | `BERVO:0002334` Köppen climate classification | current standard |
+| `DBH` | `BERVO:0001885` Stem diameter at breast height | current standard |
+| `DM_AGRICULTURE` | `BERVO:0002363` Disturbance or management event type | current standard |
+| `DM_ENCROACH` | `BERVO:0002363` Disturbance or management event type | current standard |
+| `DM_EXT_WEATHER` | `BERVO:0002363` Disturbance or management event type | current standard |
+| `DM_FERT_M` | `BERVO:0002363` Disturbance or management event type | current standard |
+| `DM_FERT_O` | `BERVO:0002363` Disturbance or management event type | current standard |
+| `DM_FIRE` | `BERVO:0002133` Fire type | current standard |
+| `DM_FORESTRY` | `BERVO:0002363` Disturbance or management event type | current standard |
+| `DM_GENERAL` | `BERVO:0002363` Disturbance or management event type | current standard |
+| `DM_GRAZE` | `BERVO:0002363` Disturbance or management event type | current standard |
+| `DM_INS_PATH` | `BERVO:0002363` Disturbance or management event type | current standard |
+| `DM_PESTICIDE` | `BERVO:0002363` Disturbance or management event type | current standard |
+| `DM_PLANTING` | `BERVO:0002363` Disturbance or management event type | current standard |
+| `DM_SURF` | `BERVO:0002364` Disturbed footprint fraction | current standard |
+| `DM_TILL` | `BERVO:0002363` Disturbance or management event type | current standard |
+| `DM_WATER` | `BERVO:0002363` Disturbance or management event type | current standard |
+| `DOM_DIST_MGMT` | `BERVO:0002362` Dominant disturbance or management type | current standard |
+| `HEIGHTC` | `BERVO:0001967` Canopy height | current standard |
+| `HEIGHTC_U` | `BERVO:0001967` Canopy height | legacy, variant in contexts or qualifiers |
+| `IGBP` | `BERVO:0002335` IGBP land cover type | current standard |
+| `LAI` | `BERVO:0001879` Canopy leaf area index | current standard |
+| `LAI_CLUMP` | `BERVO:8000562` Apparent clumping factor | current standard |
+| `LAI_O_DEC` | `BERVO:0001879` Canopy leaf area index | legacy, variant in contexts or qualifiers |
+| `LAI_O_EVG` | `BERVO:0001879` Canopy leaf area index | legacy, variant in contexts or qualifiers |
+| `LAI_TOT` | `BERVO:0001879` Canopy leaf area index | legacy, variant in contexts or qualifiers |
+| `LAI_U` | `BERVO:0001879` Canopy leaf area index | legacy, variant in contexts or qualifiers |
+| `LITTER_DEBRIS` | `BERVO:0002338` Litter and debris mass | current standard |
+| `LMA` | `BERVO:0002185` Leaf mass per area | current standard |
+| `LOCATION_ELEV` | `BERVO:0000683` Measurement of altitude | current standard |
+| `LOCATION_LAT` | `BERVO:0002327` Site latitude | current standard |
+| `LOCATION_LONG` | `BERVO:0002328` Site longitude | current standard |
+| `MAP` | `BERVO:0001897` Mean annual precipitation | current standard |
+| `MAT` | `BERVO:0001417` Mean annual air temperature | current standard |
+| `NEP` | `BERVO:0002347` Net ecosystem production | legacy, variant in contexts or qualifiers |
+| `N_DEP_DRY` | `BERVO:0002350` Dry nitrogen deposition | current standard |
+| `N_DEP_WET` | `BERVO:0002349` Wet nitrogen deposition | current standard |
+| `PFCURVE_MP` | `BERVO:0002277` Soil water potential | current standard |
+| `PHEN_EVENT_DATE` | `BERVO:0002352` Phenological event date | current standard |
+| `ROOT_BIOMASS_CRS` | `BERVO:0001970` Vegetation biomass | legacy, variant in contexts or qualifiers |
+| `ROOT_BIOMASS_FINE` | `BERVO:0001970` Vegetation biomass | legacy, variant in contexts or qualifiers |
+| `ROOT_BIOMASS_TOT` | `BERVO:0001970` Vegetation biomass | legacy, variant in contexts or qualifiers |
+| `ROOT_C` | `BERVO:0002339` Plant tissue carbon content | legacy, variant in contexts or qualifiers |
+| `ROOT_CN_RATIO` | `BERVO:0002055` Plant tissue carbon to nitrogen mass ratio | legacy, variant in contexts or qualifiers |
+| `ROOT_DEPTH` | `BERVO:0002351` Rooting depth | current standard |
+| `ROOT_N` | `BERVO:0002340` Plant tissue nitrogen content | legacy, variant in contexts or qualifiers |
+| `ROOT_PROD_CRS` | `BERVO:0002342` Belowground net primary production | legacy, variant in contexts or qualifiers |
+| `ROOT_PROD_FINE` | `BERVO:0002342` Belowground net primary production | legacy, variant in contexts or qualifiers |
+| `ROOT_PROD_TOT` | `BERVO:0002342` Belowground net primary production | legacy, variant in contexts or qualifiers |
+| `SA` | `BERVO:0002336` Stand age | current standard |
+| `SITE_SNOW_COVER_DAYS` | `BERVO:0002333` Annual snow cover duration | current standard |
+| `SNAG_MASS` | `BERVO:0001970` Vegetation biomass | legacy, variant in contexts or qualifiers |
+| `SOIL_CHEM_BD` | `BERVO:0001535` Soil bulk density | current standard |
+| `SOIL_CHEM_CN_RATIO` | `BERVO:0002053` Soil carbon to nitrogen mass ratio | current standard |
+| `SOIL_CHEM_C_ORG` | `BERVO:0001523` Soil organic carbon content | current standard |
+| `SOIL_CHEM_K` | `BERVO:0001682` Soil potassium content | current standard |
+| `SOIL_CHEM_NH4` | `BERVO:0000856` Soil ammonium content | current standard |
+| `SOIL_CHEM_NO3` | `BERVO:0000857` Soil nitrate content | current standard |
+| `SOIL_CHEM_N_TOT` | `BERVO:0002159` Soil total nitrogen content | current standard |
+| `SOIL_CHEM_P` | `BERVO:0002354` Soil total phosphorus content | current standard |
+| `SOIL_CHEM_PH_H2O` | `BERVO:0002160` Soil pH in water | current standard |
+| `SOIL_CHEM_PH_SALT` | `BERVO:0002353` Soil pH in salt solution | current standard |
+| `SOIL_CLASSIFICATION` | `BERVO:0002041` Soil classification | current standard |
+| `SOIL_DEPTH` | `BERVO:0002037` Soil depth | current standard |
+| `SOIL_DEPTH_ORG` | `BERVO:0002355` Organic horizon thickness | current standard |
+| `SOIL_ORDER` | `BERVO:0002181` USDA Soil Taxonomy classification | current standard |
+| `SOIL_SERIES` | `BERVO:0002181` USDA Soil Taxonomy classification | current standard |
+| `SOIL_STOCK_C_ORG` | `BERVO:0002356` Soil organic carbon stock | current standard |
+| `SOIL_STOCK_K` | `BERVO:0002360` Soil potassium stock | current standard |
+| `SOIL_STOCK_NH4` | `BERVO:0002358` Soil ammonium stock | current standard |
+| `SOIL_STOCK_NO3` | `BERVO:0002359` Soil nitrate stock | current standard |
+| `SOIL_STOCK_N_TOT` | `BERVO:0002357` Soil total nitrogen stock | current standard |
+| `SOIL_STOCK_P` | `BERVO:0002361` Soil phosphorus stock | current standard |
+| `SOIL_TEX_CLAY` | `BERVO:0001528` Soil clay content | current standard |
+| `SOIL_TEX_ROCK` | `BERVO:0002038` Soil coarse fraction | current standard |
+| `SOIL_TEX_SAND` | `BERVO:0001526` Soil sand content | current standard |
+| `SOIL_TEX_SILT` | `BERVO:0001527` Soil silt content | current standard |
+| `SOIL_TEX_WATER_HOLD_CAP` | `BERVO:0002170` Soil available water capacity | current standard |
+| `SOIL_WRB_GROUP` | `BERVO:0002179` WRB soil classification | current standard |
+| `SPP_O_PERC` | `BERVO:0001834` Percent area covered by specified plant | current standard |
+| `SPP_U_PERC` | `BERVO:0001834` Percent area covered by specified plant | current standard |
+| `STEM_INCR` | `BERVO:0002346` Stem diameter increment | legacy, variant in contexts or qualifiers |
+| `STUMP_MASS` | `BERVO:0002338` Litter and debris mass | legacy, variant in contexts or qualifiers |
+| `SURFACE_HOMOGENEITY` | `BERVO:0002332` Surface homogeneity distance | current standard |
+| `TERRAIN` | `BERVO:0002330` Terrain type | current standard |
+| `TREES_NUM` | `BERVO:0001888` Stem count per unit area | current standard |
+| `WD_BIOMASS_CRS` | `BERVO:0002338` Litter and debris mass | legacy, variant in contexts or qualifiers |
+| `WD_BIOMASS_FINE` | `BERVO:0002338` Litter and debris mass | legacy, variant in contexts or qualifiers |
+| `WD_PROD_CRS` | `BERVO:0002345` Woody debris production | legacy, variant in contexts or qualifiers |
+| `WD_PROD_FINE` | `BERVO:0002345` Woody debris production | legacy, variant in contexts or qualifiers |
+| `WIND_DIRECTION` | `BERVO:0002331` Prevailing wind direction | current standard |
+| `WTD` | `BERVO:0002005` Water table depth | current standard |
+
+### Value lists
+
+Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
+
+#### ASPECT
+
+| BADM value | BERVO concept |
+| --- | --- |
+| E | `BERVO:8001206` East |
+| ENE | `BERVO:8001205` East-northeast |
+| ESE | `BERVO:8001207` East-southeast |
+| N | `BERVO:8001202` North |
+| NE | `BERVO:8001204` Northeast |
+| NNE | `BERVO:8001203` North-northeast |
+| NNW | `BERVO:8001217` North-northwest |
+| NW | `BERVO:8001216` Northwest |
+| S | `BERVO:8001210` South |
+| SE | `BERVO:8001208` Southeast |
+| SSE | `BERVO:8001209` South-southeast |
+| SSW | `BERVO:8001211` South-southwest |
+| SW | `BERVO:8001212` Southwest |
+| W | `BERVO:8001214` West |
+| WNW | `BERVO:8001215` West-northwest |
+| WSW | `BERVO:8001213` West-southwest |
+
+#### BIOMASS_GREENNESS
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Green | `BERVO:8001178` Green plant material |
+| Non-green | `BERVO:8001179` Non-green plant material |
+
+#### BIOMASS_ORGAN
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Belowground storage | `BERVO:8001187` Belowground storage organ |
+| Coarse Roots | `BERVO:8001185` Coarse root |
+| Coarse Wood | `BERVO:8001183` Coarse wood |
+| Fine Roots | `BERVO:8001186` Fine root |
+| Fine Wood | `BERVO:8001184` Fine wood |
+| Flowers | `BERVO:8001188` Flower |
+| Reproductive bodies | `BERVO:8001189` Reproductive structure |
+| Total aboveground | `BERVO:8001180` Aboveground plant material |
+| Total belowground | `BERVO:8001181` Belowground plant material |
+| Wood, Wood aboveground | `BERVO:8001182` Wood |
+
+#### BIOMASS_STATUS
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Alive | `BERVO:8001174` Live vegetation |
+| Dead Standing | `BERVO:8001176` Standing dead vegetation |
+| Mixed Standing | `BERVO:8001177` Standing vegetation |
+
+#### CLIMATE_KOEPPEN
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Af | `BERVO:8001125` Tropical rainforest climate |
+| Am | `BERVO:8001126` Tropical monsoon climate |
+| Aw | `BERVO:8001127` Tropical savanna climate |
+| Bsh | `BERVO:8001128` Hot semi-arid climate |
+| Bsk | `BERVO:8001129` Cold semi-arid climate |
+| Bwh | `BERVO:8001130` Hot desert climate |
+| Bwk | `BERVO:8001131` Cold desert climate |
+| Cfa | `BERVO:8001132` Humid subtropical climate |
+| Cfb | `BERVO:8001133` Temperate oceanic climate |
+| Cfc | `BERVO:8001134` Subpolar oceanic climate |
+| Csa | `BERVO:8001135` Hot-summer Mediterranean climate |
+| Csb | `BERVO:8001136` Warm-summer Mediterranean climate |
+| Cwa | `BERVO:8001137` Monsoon-influenced humid subtropical climate |
+| Cwb | `BERVO:8001138` Subtropical highland climate |
+| Cwc | `BERVO:8001139` Cold subtropical highland climate |
+| Dfa | `BERVO:8001140` Hot-summer humid continental climate |
+| Dfb | `BERVO:8001141` Warm-summer humid continental climate |
+| Dfc | `BERVO:8001142` Subarctic climate |
+| Dfd | `BERVO:8001143` Extremely cold subarctic climate |
+| Dsa | `BERVO:8001144` Mediterranean-influenced hot-summer humid continental climate |
+| Dsb | `BERVO:8001145` Mediterranean-influenced warm-summer humid continental climate |
+| Dsc | `BERVO:8001146` Mediterranean-influenced subarctic climate |
+| Dsd | `BERVO:8001147` Mediterranean-influenced extremely cold subarctic climate |
+| Dwa | `BERVO:8001148` Monsoon-influenced hot-summer humid continental climate |
+| Dwb | `BERVO:8001149` Monsoon-influenced warm-summer humid continental climate |
+| Dwc | `BERVO:8001150` Monsoon-influenced subarctic climate |
+| Dwd | `BERVO:8001151` Monsoon-influenced extremely cold subarctic climate |
+| EF | `BERVO:8001152` Ice cap climate |
+| ET | `BERVO:8001153` Tundra climate |
+
+#### DIR
+
+| BADM value | BERVO concept |
+| --- | --- |
+| E | `BERVO:8001206` East |
+| ENE | `BERVO:8001205` East-northeast |
+| ESE | `BERVO:8001207` East-southeast |
+| N | `BERVO:8001202` North |
+| NE | `BERVO:8001204` Northeast |
+| NNE | `BERVO:8001203` North-northeast |
+| NNW | `BERVO:8001217` North-northwest |
+| NW | `BERVO:8001216` Northwest |
+| S | `BERVO:8001210` South |
+| SE | `BERVO:8001208` Southeast |
+| SSE | `BERVO:8001209` South-southeast |
+| SSW | `BERVO:8001211` South-southwest |
+| SW | `BERVO:8001212` Southwest |
+| W | `BERVO:8001214` West |
+| WNW | `BERVO:8001215` West-northwest |
+| WSW | `BERVO:8001213` West-southwest |
+
+#### DIST_MGMT
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Agriculture | `BERVO:8001254` Agricultural management |
+| Drought | `BERVO:8001228` Drought |
+| Forestry | `BERVO:8001255` Forest management |
+| Grazing | `BERVO:8001235` Grazing |
+| Hydrologic event | `BERVO:8001232` Hydrologic event |
+| Land cover change | `BERVO:8001234` Land cover change |
+| Pests and disease | `BERVO:8001233` Pests and disease |
+| Storm or wind | `BERVO:8001231` Storm or wind event |
+| Temperature extreme | `BERVO:8001230` Temperature extreme |
+| Undisturbed | `BERVO:8001295` Undisturbed |
+
+#### DM_AGRICULTURE
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Crop residue management | `BERVO:8001257` Crop residue management |
+
+#### DM_ENCROACH
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Invasive species | `BERVO:8001245` Biological invasion |
+| Urban encroachment | `BERVO:8001246` Urban encroachment |
+| Woody encroachment | `BERVO:8001244` Woody encroachment |
+
+#### DM_EXT_WEATHER
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Drought | `BERVO:8001228` Drought |
+| Flood | `BERVO:8001236` Flood |
+| Freeze | `BERVO:8001237` Freeze |
+| Heatwave | `BERVO:8001238` Heatwave |
+| Hurricane | `BERVO:8001240` Hurricane |
+| Storm | `BERVO:8001239` Storm |
+| Tornado | `BERVO:8001241` Tornado |
+
+#### DM_FERT_M
+
+| BADM value | BERVO concept |
+| --- | --- |
+| K | `BERVO:8001268` Potassium fertilization |
+| Lime | `BERVO:8001269` Liming |
+| N | `BERVO:8001266` Nitrogen fertilization |
+| P | `BERVO:8001267` Phosphorus fertilization |
+
+#### DM_FERT_O
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Compost | `BERVO:8001273` Compost application |
+| Liquid manure | `BERVO:8001271` Liquid manure application |
+| Poultry | `BERVO:8001274` Poultry manure application |
+| Solid manure | `BERVO:8001272` Solid manure application |
+
+#### DM_FIRE
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Accidental human induced burn | `BERVO:8001251` Accidental human-caused fire |
+| Accidental human induced underburn, Nature induced underburn | `BERVO:8001250` Underburn |
+| Nature induced burn | `BERVO:8001252` Naturally caused fire |
+| Prescribed human induced underburn | `BERVO:8001253` Prescribed underburn |
+
+#### DM_FORESTRY
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Clearcutting | `BERVO:8001290` Clearcutting |
+| Fallen wood removal | `BERVO:8001291` Fallen wood removal |
+| Thinning/pruning | `BERVO:8001292` Thinning or pruning |
+
+#### DM_GENERAL
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Undisturbed | `BERVO:8001295` Undisturbed |
+
+#### DM_GRAZE
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Cattle | `BERVO:8001247` Cattle grazing |
+| Goat | `BERVO:8001248` Goat grazing |
+| Sheep | `BERVO:8001249` Sheep grazing |
+
+#### DM_INS_PATH
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Disease | `BERVO:8001243` Plant disease |
+| Insect | `BERVO:8001242` Insect infestation |
+
+#### DM_PESTICIDE
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Bactericide | `BERVO:8001276` Bactericide application |
+| Fungicide | `BERVO:8001277` Fungicide application |
+| Herbicide | `BERVO:8001278` Herbicide application |
+| Insecticide | `BERVO:8001279` Insecticide application |
+
+#### DM_PLANTING
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Planting live crops | `BERVO:8001283` Crop planting |
+| Planting live grasses | `BERVO:8001284` Grass planting |
+| Planting live shrubs | `BERVO:8001282` Shrub planting |
+| Planting live trees | `BERVO:8001281` Tree planting |
+| Sowing crop seeds | `BERVO:8001288` Crop seed sowing |
+| Sowing grass seeds | `BERVO:8001289` Grass seed sowing |
+| Sowing shrub trees | `BERVO:8001287` Shrub seed sowing |
+| Sowing tree seeds | `BERVO:8001286` Tree seed sowing |
+
+#### DM_TILL
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Conservation | `BERVO:8001263` Conservation tillage |
+| Conventional | `BERVO:8001259` Conventional tillage |
+| Ridge till | `BERVO:8001260` Ridge tillage |
+| Scarification | `BERVO:8001261` Scarification |
+| Stripe till | `BERVO:8001262` Strip tillage |
+
+#### DM_WATER
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Drainage | `BERVO:8001293` Artificial drainage |
+| Human induced flooding | `BERVO:8001294` Human-induced flooding |
+
+#### IGBP
+
+| BADM value | BERVO concept |
+| --- | --- |
+| BSV | `BERVO:8001121` Barren or sparsely vegetated land (IGBP) |
+| CRO | `BERVO:8001117` Cropland (IGBP) |
+| CSH | `BERVO:8001111` Closed shrubland (IGBP) |
+| CVM | `BERVO:8001119` Cropland and natural vegetation mosaic (IGBP) |
+| DBF | `BERVO:8001109` Deciduous broadleaf forest (IGBP) |
+| DNF | `BERVO:8001108` Deciduous needleleaf forest (IGBP) |
+| EBF | `BERVO:8001107` Evergreen broadleaf forest (IGBP) |
+| ENF | `BERVO:8001106` Evergreen needleleaf forest (IGBP) |
+| GRA | `BERVO:8001115` Grassland (IGBP) |
+| MF | `BERVO:8001110` Mixed forest (IGBP) |
+| OSH | `BERVO:8001112` Open shrubland (IGBP) |
+| SAV | `BERVO:8001114` Savanna (IGBP) |
+| SNO | `BERVO:8001120` Snow and ice (IGBP) |
+| URB | `BERVO:8001118` Urban and built-up land (IGBP) |
+| WAT | `BERVO:8001122` Water body (IGBP) |
+| WET | `BERVO:8001116` Permanent wetland (IGBP) |
+| WSA | `BERVO:8001113` Woody savanna (IGBP) |
+
+#### LAI_CANOPY_TYPE
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Overstory | `BERVO:8001173` Overstory |
+
+#### LIFESTAGE
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Germinant | `BERVO:8001191` Germinant |
+| Mature | `BERVO:8001194` Mature plant |
+| Sapling | `BERVO:8001193` Sapling |
+| Seedling | `BERVO:8001192` Seedling |
+
+#### PHEN_EVENT
+
+| BADM value | BERVO concept |
+| --- | --- |
+| BudBreak | `BERVO:8001195` Bud break |
+| Cotyledons | `BERVO:8001196` Cotyledon emergence |
+| Flowering | `BERVO:8001197` Flowering |
+| Leaf senescence | `BERVO:8001198` Leaf senescence |
+| Maximum leaf expansion | `BERVO:8001199` Maximum leaf expansion |
+| Total leaf-off | `BERVO:8001200` Leaf-off |
+
+#### TERRAIN
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Flat | `BERVO:8001219` Flat terrain |
+| Gentle slope (<2 %) | `BERVO:8001223` Gentle slope |
+| Hilltop | `BERVO:8001222` Hilltop |
+| Medium Slope (>2 %, <5%) | `BERVO:8001224` Medium slope |
+| Significant Slope (>5%, <10%) | `BERVO:8001225` Significant slope |
+| Strong Slope (>10%) | `BERVO:8001226` Strong slope |
+| Undulated/Variable | `BERVO:8001220` Undulating terrain |
+| Valley | `BERVO:8001221` Valley |
+
+#### VEGTYPE
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Aerenchymatous Plants | `BERVO:8001168` Aerenchymatous plant |
+| Annual Herb / Forb | `BERVO:8001166` Annual forb |
+| C3 Grass | `BERVO:8001160` C3 grass |
+| C4 Grass | `BERVO:8001161` C4 grass |
+| Crop | `BERVO:8001162` Crop |
+| Deciduous Tree | `BERVO:8001155` Deciduous tree |
+| Evergreen Tree | `BERVO:8001156` Evergreen tree |
+| Grass | `BERVO:8001159` Grass |
+| Grass / Graminoid | `BERVO:8001158` Graminoid |
+| Herb / Forb | `BERVO:8001165` Forb |
+| Herbaceous Crop | `BERVO:8001163` Herbaceous crop |
+| Liana / vine | `BERVO:8001169` Liana |
+| No vegetation | `BERVO:8001172` Unvegetated surface |
+| Non-vascular | `BERVO:8001171` Non-vascular plant |
+| Perennial Herb / Forb | `BERVO:8001167` Perennial forb |
+| Shrub | `BERVO:8001157` Shrub |
+| Succulant | `BERVO:8001170` Succulent |
+| Tree | `BERVO:8001154` Tree |
+| Woody Crop | `BERVO:8001164` Woody crop |
+
+#### VEG_STATUS
+
+| BADM value | BERVO concept |
+| --- | --- |
+| Alive | `BERVO:8001174` Live vegetation |
+| Dead | `BERVO:8001175` Dead vegetation |
+
+### Values that map to existing concepts
+
+| List | BADM value | BERVO concept |
+| --- | --- | --- |
+| DM_AGRICULTURE | Harvest | `BERVO:8000003` Harvest |
+| DM_FIRE | Prescribed human induced burn | `BERVO:8000925` Prescribed fire |
+| DM_INS_PATH | Pathogen | `BERVO:8000976` Pathogen |
+| DM_WATER | Irrigation | `BERVO:8000070` Irrigation |
+| VEGTYPE | Water | `BERVO:8000724` Water body |
