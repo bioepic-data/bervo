@@ -51751,6 +51751,77 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_8001067 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001067">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000248"/>
+        <obo:IAO_0000115>Relative difference between the ratio of a heavier to a lighter stable isotope of an element in a sample and the same ratio in a reference standard, usually reported in parts per thousand.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>delta value</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>isotope delta value</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>per mil value</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>IUPAC symbol delta (δ). A positive value means the sample is richer in the heavier isotope than the standard.</rdfs:comment>
+        <rdfs:label>Isotope delta</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001068 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001068">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <obo:IAO_0000115>Reference material or natural reservoir whose isotope ratio defines the zero of an isotope delta scale.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Isotope reference standard</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001069 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001069">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001068"/>
+        <obo:IAO_0000115>Isotope reference standard that defines the zero of the delta scale for carbon-13, and for oxygen-18 in carbonates and carbon dioxide, realized through calcite reference materials distributed by the International Atomic Energy Agency, since the original Pee Dee Belemnite fossil is exhausted.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>V-PDB</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>VPDB</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Vienna Pee Dee Belemnite</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001070 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001070">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001068"/>
+        <obo:IAO_0000115>Isotope reference standard of water, distributed by the International Atomic Energy Agency, that defines the zero of the delta scales for oxygen-18 and deuterium.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>VSMOW</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>VSMOW2</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>The original VSMOW is exhausted; VSMOW2 replaces it with the same isotope composition.</rdfs:comment>
+        <rdfs:label>Vienna Standard Mean Ocean Water</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001071 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001071">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001068"/>
+        <obo:IAO_0000115>Nitrogen gas of the atmosphere, whose uniform nitrogen-15 to nitrogen-14 ratio defines the zero of the delta scale for nitrogen-15.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>AIR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>AIR-N2</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Atmospheric nitrogen standard</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_9000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000000">
