@@ -36627,6 +36627,199 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002192 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002192">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Mass of carbon in dissolved inorganic forms, carbon dioxide, bicarbonate, and carbonate, per unit volume of water.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/carbonDissolvedInorganic"/>
+        <oboInOwl:hasExactSynonym>DIC concentration</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Carbon, dissolved inorganic&quot;: Dissolved Inorganic Carbon Dissolved organic carbon concentration (BERVO:0001670) is its organic counterpart in soil water.</rdfs:comment>
+        <rdfs:label>Dissolved inorganic carbon concentration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_has_unit>mg{C}.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000008"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002193 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002193">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Amount of ferrous iron, Fe(II), dissolved per unit volume of water.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>dissolved Fe(II) concentration</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name ironFerrous (Iron, ferrous) does not say dissolved, so it is not cross-referenced as an equivalent.</rdfs:comment>
+        <rdfs:label>Dissolved ferrous iron concentration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_has_unit>umol.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001061"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002194 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002194">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Amount of manganese dissolved per unit volume of water, in natural waters mostly as manganese(II).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/manganeseDissolved"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Manganese, dissolved&quot;: Dissolved Manganese (Mn)</rdfs:comment>
+        <rdfs:label>Dissolved manganese concentration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_has_unit>umol.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000608"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002195 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002195">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Amount of dissolved sulfide, the sum of hydrogen sulfide, bisulfide, and sulfide ion, per unit volume of water.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/sulfideDissolved"/>
+        <oboInOwl:hasRelatedSynonym>hydrogen sulfide concentration</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Sulfide, dissolved&quot;: Dissolved Sulfide</rdfs:comment>
+        <rdfs:label>Dissolved sulfide concentration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_has_unit>umol.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001062"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002196 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002196">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Amount of sulfate ion dissolved per unit volume of water.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/sulfateDissolved"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Sulfate, dissolved&quot;: Dissolved Sulfate (SO4)</rdfs:comment>
+        <rdfs:label>Dissolved sulfate concentration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_has_unit>umol.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000228"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002197 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002197">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Amount of chloride ion dissolved per unit volume of water, a conservative tracer of seawater and road salt.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/chlorideDissolved"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Chloride, dissolved&quot;: Dissolved Chloride (Cl-)</rdfs:comment>
+        <rdfs:label>Dissolved chloride concentration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_has_unit>umol.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000036"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002198 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002198">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Amount of ammonium ion dissolved per unit volume of water, excluding un-ionized ammonia.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name nitrogen_NH4 does not say dissolved, and nitrogenDissolved_Free_Ionized_Ammonia_NH3_NH4 is ammonia and ammonium together, so neither is cross-referenced as an equivalent.</rdfs:comment>
+        <rdfs:label>Dissolved ammonium concentration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_has_unit>umol.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002199 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002199">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Amount of un-ionized ammonia, NH3, dissolved per unit volume of water, usually calculated from total ammonia, pH, and temperature.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>free ammonia concentration</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name nitrogen_NH3 does not say dissolved, so it is not cross-referenced as an equivalent.</rdfs:comment>
+        <rdfs:label>Dissolved ammonia concentration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_has_unit>umol.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002200 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002200">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Combined amount of nitrate and nitrite dissolved per unit volume of water, as reported where one analysis measures both.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/nitrogenDissolvedNitrite_NO2_Nitrate_NO3"/>
+        <oboInOwl:hasExactSynonym>NOx concentration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nitrate + nitrite concentration</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Nitrogen, dissolved nitrite (NO2) + nitrate (NO3)&quot;: Dissolved nitrite (NO2) + nitrate (NO3) nitrogen ODM2 expresses it as nitrogen; a molar unit is the same either way.</rdfs:comment>
+        <rdfs:label>Dissolved nitrate plus nitrite concentration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_has_unit>umol.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000627"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002201 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002201">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Amount of orthophosphate dissolved per unit volume of water, measured as soluble reactive phosphorus in a filtered sample.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/phosphorusOrthophosphateDissolved"/>
+        <oboInOwl:hasExactSynonym>SRP</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>soluble reactive phosphorus</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Phosphorus, orthophosphate dissolved&quot;: Dissolved orthophosphate phosphorus</rdfs:comment>
+        <rdfs:label>Dissolved orthophosphate concentration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_has_unit>umol.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002202 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002202">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Amount of methane dissolved per unit volume of water.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/methaneDissolved"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Methane, dissolved&quot;: Dissolved Methane (CH4)</rdfs:comment>
+        <rdfs:label>Dissolved methane concentration</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
+        <bervo:BERVO_has_unit>umol.L-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000024"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
@@ -51239,6 +51432,22 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_8001059 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001059">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
+        <obo:IAO_0000115>Liquid water held in the pore spaces of soil, sediment, or rock, together with the solutes dissolved in it.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>interstitial water</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>porewater</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>soil solution</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>ENVO interstitial water (ENVO:03600009) is defined for rocks and sediments only, so it is not cross-referenced as an equivalent of this broader term.</rdfs:comment>
+        <rdfs:label>Pore water</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8001060 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001060">
@@ -51247,6 +51456,37 @@
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000134"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
         <rdfs:label>Permafrost</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001061 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001061">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000112"/>
+        <obo:IAO_0000115>Divalent cation of iron, the reduced form of iron, which stays dissolved in water under anoxic conditions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_29033"/>
+        <oboInOwl:hasExactSynonym>Fe(II)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Fe2+</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ferrous iron</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Iron(2+)</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001062 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001062">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000587"/>
+        <obo:IAO_0000115>Sum of hydrogen sulfide, bisulfide, and sulfide ion dissolved in water, forms of reduced inorganic sulfur whose proportions shift with pH.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>total dissolved sulfide</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>H2S</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>hydrogen sulfide</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:label>Dissolved sulfide</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
