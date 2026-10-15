@@ -10812,9 +10812,11 @@
             </Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The amount of each chemical element in the structural sheath tissues of a plant branch in the grid cell, representing the mineral nutrient content of these structural components. This parameter is important for understanding nutrient allocation patterns in woody plants, tissue quality for decomposition processes, and the role of sheath tissues in nutrient storage and translocation within tree and shrub canopies.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>PetolShethStrutElms_brch</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>PetoleStrutElms_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM now names this variable PetolShethStrutElms_brch, declared &quot;branch sheath chemical element, [g d-2]&quot; in CanopyDataType.F90 (issue #109).</rdfs:comment>
         <rdfs:comment>Vector?</rdfs:comment>
         <rdfs:label>Branch sheath chemical element</rdfs:label>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
@@ -11210,6 +11212,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000660">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>Mass of nonstructural carbon in the canopy nodules of a plant functional type per unit mass of canopy leaf and sheath carbon.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>CanopyNoduleNonstCConc_pft</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>NoduleNonstructCconc_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), from the EcoSIM source, issue #109</rdfs:comment>
