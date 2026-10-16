@@ -38859,6 +38859,7 @@
         <rdfs:comment>AmeriFlux FP-Standard base name: SAP_DT. AmeriFlux reports it in degrees Celsius; as a difference it is the same in kelvin.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
         <rdfs:label>Sap flow probe temperature difference</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000361"/>
         <bervo:BERVO_has_unit>K</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
