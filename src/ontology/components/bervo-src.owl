@@ -38020,7 +38020,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002268">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
-        <obo:IAO_0000115>Height above the surface at which buoyant production of turbulence equals its production by wind shear, a length scale of atmospheric surface-layer stability.</obo:IAO_0000115>
+        <obo:IAO_0000115>Length scale of atmospheric surface-layer stability whose magnitude is the height above the surface at which buoyant production of turbulence equals its production by wind shear, negative in unstable and positive in stable surface layers.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>MO_LENGTH</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Obukhov length</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux FP-Standard base name: MO_LENGTH.</rdfs:comment>
