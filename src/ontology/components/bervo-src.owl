@@ -31199,7 +31199,7 @@
         <oboInOwl:hasRelatedSynonym>LAI</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>surface-LAI</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>tlai_day_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>ATS: surface-LAI [m2 m-2]. In the ATS-EcoSIM coupling it is written into EcoSIM tlai_day_pft, the daily leaf area index of the prescribed phenology, divided evenly among the active plant functional types. ODM2 variable name concept &quot;Leaf area index (LAI)&quot;: Leaf area index (LAI) is a dimensionless quantity that characterizes plant canopies. It is defined as the one-sided green leaf area per unit ground surface area (LAI = leaf area / ground area, m2 / m2) in broadleaf canopies. AmeriFlux BADM variable name: LAI. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: LAI_TOT, LAI_O_DEC, LAI_O_EVG, LAI_U. AmeriFlux&apos;s LAI_CANOPY_TYPE (Total, Overstory, Understory) and the leaf habit go in contexts. LAI_TYPE PAI is Plant area index (BERVO:0001890) and GAI is Green area index.</rdfs:comment>
+        <rdfs:comment>ATS: surface-LAI [m2 m-2]. In the ATS-EcoSIM coupling it is written into EcoSIM tlai_day_pft, the daily leaf area index of the prescribed phenology, divided evenly among the active plant functional types. ODM2 variable name concept &quot;Leaf area index (LAI)&quot;: Leaf area index (LAI) is a dimensionless quantity that characterizes plant canopies. It is defined as the one-sided green leaf area per unit ground surface area (LAI = leaf area / ground area, m2 / m2) in broadleaf canopies. AmeriFlux BADM variable name: LAI. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: LAI_TOT, LAI_O_DEC, LAI_O_EVG, LAI_U. AmeriFlux&apos;s LAI_CANOPY_TYPE (Total, Overstory, Understory) and the leaf habit go in contexts. LAI_TYPE PAI is Plant area index (BERVO:0001890) and GAI is Green area index. AmeriFlux BADM LAI_TYPE value: LAI.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 17 2026), ATS alignment for issue #36</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Canopy leaf area index</rdfs:label>
@@ -31408,7 +31408,7 @@
         <obo:IAO_0000115>One-sided area of all above-ground plant material, foliage and woody parts together, per unit horizontal ground area.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>PAI</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
-        <rdfs:comment>What an optical canopy analyser measures before woody area is removed; the sum of Canopy leaf area index (BERVO:0001879) and Canopy stem area index (BERVO:0001880). No CHESS column reports it; it is here because it is what the instrument measures before the woody correction.</rdfs:comment>
+        <rdfs:comment>What an optical canopy analyser measures before woody area is removed; the sum of Canopy leaf area index (BERVO:0001879) and Canopy stem area index (BERVO:0001880). No CHESS column reports it; it is here because it is what the instrument measures before the woody correction. AmeriFlux BADM LAI_TYPE value: PAI.</rdfs:comment>
         <rdfs:label>Plant area index</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
@@ -39168,7 +39168,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
         <obo:IAO_0000115>One-sided area of the green, photosynthetically active parts of plants, leaves and green stems together, per unit horizontal ground area.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>GAI</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux reports it under LAI with LAI_TYPE GAI.</rdfs:comment>
+        <rdfs:comment>AmeriFlux reports it under LAI with LAI_TYPE GAI. AmeriFlux BADM LAI_TYPE value: GAI.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Green area index</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
