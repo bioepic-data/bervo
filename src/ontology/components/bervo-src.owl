@@ -37821,10 +37821,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002258">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001943"/>
-        <obo:IAO_0000115>Net transfer of carbon dioxide between an ecosystem and the atmosphere per unit ground area and time, the balance of uptake by photosynthesis and release by respiration and other sources, measured as the turbulent flux at sensor height plus the change in storage below it.</obo:IAO_0000115>
+        <obo:IAO_0000115>Net transfer of carbon dioxide between an ecosystem and the atmosphere per unit ground area and time, the balance of uptake by photosynthesis and release by respiration and other sources.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NEE</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>net ecosystem exchange of carbon dioxide</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: NEE. Distinct from Net ecosystem carbon dioxide exchange (BERVO:0000326), which is EcoSIM&apos;s grid-cell total in g.h-1/{grid} and sits beneath this term as an additional parent. Flux networks report NEE positive when carbon dioxide moves to the atmosphere.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: NEE. Flux towers measure it as the turbulent flux at sensor height, Carbon dioxide turbulent flux (BERVO:0002239), plus the change in storage below it, Carbon dioxide storage flux (BERVO:0001944). Distinct from Net ecosystem carbon dioxide exchange (BERVO:0000326), which is EcoSIM&apos;s grid-cell total in g.h-1/{grid} and sits beneath this term as an additional parent. Flux networks report NEE positive when carbon dioxide moves to the atmosphere.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Net ecosystem exchange</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
