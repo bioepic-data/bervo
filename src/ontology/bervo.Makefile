@@ -26,6 +26,7 @@ $(BERVO_COMPONENT): $(BERVO_TEMPLATE) bervo-annotations.ttl bervo.Makefile | $(C
 	  --add-prefix 'COMO: http://purl.obolibrary.org/obo/COMO_' \
 	  --add-prefix 'ENVTHES: http://vocabs.lter-europe.net/EnvThes/' \
 	  --add-prefix 'STATO: http://purl.obolibrary.org/obo/STATO_' \
+	  --add-prefix 'NCIT: http://purl.obolibrary.org/obo/NCIT_' \
 	  -t $< \
 	  annotate --annotation-file bervo-annotations.ttl \
 	  -o $@
