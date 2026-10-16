@@ -53919,6 +53919,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001087">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000242"/>
         <obo:IAO_0000115>Qualifier for a value that the team operating a measurement site quality-checked or gap-filled independently of a network&apos;s central processing.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>provided by PI</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux variable-name qualifier: _PI. Placed under Value rather than Quantitative value because it records who processed a value, which applies whether or not the value is numeric.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
         <rdfs:label>Processed by site team</rdfs:label>
