@@ -39014,7 +39014,6 @@
     <!-- https://w3id.org/bervo/BERVO_8000003 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000003">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
         <obo:IAO_0000115>The process of gathering mature crops or plant parts for human use, representing the culmination of agricultural production cycles. This activity is essential for understanding agricultural productivity, biomass removal from ecosystems, and the timing of nutrient cycling disruptions in managed terrestrial systems.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>crop harvest</oboInOwl:hasExactSynonym>
@@ -39956,7 +39955,6 @@
     <!-- https://w3id.org/bervo/BERVO_8000070 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000070">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001256"/>
         <obo:IAO_0000115>The artificial application of water to agricultural land to supplement natural precipitation and ensure adequate moisture for crop growth. This water management practice affects soil moisture, nutrient transport, crop productivity, and represents a major component of agricultural water use and landscape modification in many regions.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000006"/>
@@ -41978,7 +41976,6 @@
     <!-- https://w3id.org/bervo/BERVO_8000221 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000221">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001176"/>
         <obo:IAO_0000115>A tree that has died but remains upright in the forest canopy, providing important habitat structure and contributing to ecosystem functioning. These standing dead trees serve as wildlife habitat, affect forest structure, influence fire behavior, and represent important components of forest carbon storage and nutrient cycling.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>snag</oboInOwl:hasExactSynonym>
@@ -55899,7 +55896,6 @@
     <!-- https://w3id.org/bervo/BERVO_8001228 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001228">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001227"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001229"/>
         <obo:IAO_0000115>Prolonged deficiency of water, hydrological or climatic.</obo:IAO_0000115>
         <rdfs:comment>AmeriFlux BADM DIST_MGMT and DM_EXT_WEATHER value: Drought.</rdfs:comment>
