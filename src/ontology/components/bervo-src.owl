@@ -54041,7 +54041,7 @@
         <obo:IAO_0000115>Method that estimates a variable at a measurement site from the corresponding atmospheric reanalysis variable, by linear regression of the reanalysis values against the site&apos;s own measurements.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>ERA downscaling</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
-        <rdfs:comment>FLUXNET FULLSET suffix: _ERA, for values downscaled from the ERA reanalysis.</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _ERA, for values downscaled from the ERA reanalysis. Placed under Method rather than Gap-filling method because downscaling is not in itself gap-filling: FLUXNET uses the downscaled series to fill gaps in the _F variables, but the _ERA variables are the downscaled values themselves.</rdfs:comment>
         <rdfs:label>Reanalysis downscaling</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
