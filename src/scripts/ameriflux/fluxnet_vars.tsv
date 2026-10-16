@@ -1,0 +1,236 @@
+section	name	units	description
+TIMEKEEPING	TIMESTAMP	YYYYMMDDHHMM	ISO timestamp – short format
+TIMEKEEPING	TIMESTAMP_START	YYYYMMDDHHMM	ISO timestamp start of averaging period – short format
+TIMEKEEPING	TIMESTAMP_END	YYYYMMDDHHMM	ISO timestamp end of averaging period – short format
+MICROMETEOROLOGICAL	TA_F_MDS	deg C	Air temperature, gapfilled using MDS method
+MICROMETEOROLOGICAL	TA_F_MDS_QC	nondimensional	Quality flag for TA_F_MDS
+MICROMETEOROLOGICAL	TA_F_MDS_NIGHT	deg C	Average nighttime TA_F_MDS
+MICROMETEOROLOGICAL	TA_F_MDS_NIGHT_SD	deg C	Standard deviation for TA_F_MDS_NIGHT
+MICROMETEOROLOGICAL	TA_F_MDS_NIGHT_QC	nondimensional	Quality flag for TA_F_MDS_NIGHT
+MICROMETEOROLOGICAL	TA_F_MDS_DAY	deg C	Average daytime TA_F_MDS
+MICROMETEOROLOGICAL	TA_F_MDS_DAY_SD	deg C	Standard deviation for TA_F_MDS_DAY
+MICROMETEOROLOGICAL	TA_F_MDS_DAY_QC	nondimensional	Quality flag for TA_F_MDS_DAY
+MICROMETEOROLOGICAL	TA_ERA	deg C	Air temperature, downscaled from ERA, linearly regressed using measured only site data
+MICROMETEOROLOGICAL	TA_ERA_NIGHT	deg C	Average nighttime TA_ERA
+MICROMETEOROLOGICAL	TA_ERA_NIGHT_SD	deg C	Standard deviation for TA_ERA_NIGHT
+MICROMETEOROLOGICAL	TA_ERA_DAY	deg C	Average daytime TA_ERA
+MICROMETEOROLOGICAL	TA_ERA_DAY_SD	deg C	Standard deviation for TA_ERA_DAY
+MICROMETEOROLOGICAL	TA_F	deg C	Air temperature, consolidated from TA_F_MDS and TA_ERA
+MICROMETEOROLOGICAL	TA_F_QC	nondimensional	Quality flag for TA_F
+MICROMETEOROLOGICAL	TA_F_NIGHT	deg C	Average nighttime TA_F
+MICROMETEOROLOGICAL	TA_F_NIGHT_SD	deg C	Standard deviation for TA_F_NIGHT
+MICROMETEOROLOGICAL	TA_F_NIGHT_QC	nondimensional	Quality flag for TA_F_NIGHT
+MICROMETEOROLOGICAL	TA_F_DAY	deg C	Average daytime TA_F
+MICROMETEOROLOGICAL	TA_F_DAY_SD	deg C	Standard deviation for TA_F_DAY
+MICROMETEOROLOGICAL	TA_F_DAY_QC	nondimensional	Quality flag for TA_F_DAY
+MICROMETEOROLOGICAL	SW_IN_POT	W m-2	Shortwave radiation, incoming, potential (top of atmosphere)
+MICROMETEOROLOGICAL	SW_IN_F_MDS	W m-2	Shortwave radiation, incoming, gapfilled using MDS (negative values set to zero, e.g., negative values from instrumentation noise)
+MICROMETEOROLOGICAL	SW_IN_F_MDS_QC	nondimensional	Quality flag for SW_IN_F_MDS
+MICROMETEOROLOGICAL	SW_IN_ERA	W m-2	Shortwave radiation, incoming, downscaled from ERA, linearly regressed using measured only site data (negative values set to zero)
+MICROMETEOROLOGICAL	SW_IN_F	W m-2	Shortwave radiation, incoming consolidated from SW_IN_F_MDS and SW_IN_ERA (negative values set to zero)
+MICROMETEOROLOGICAL	SW_IN_F_QC	nondimensional	Quality flag for SW_IN_F
+MICROMETEOROLOGICAL	LW_IN_F_MDS	W m-2	Longwave radiation, incoming, gapfilled using MDS
+MICROMETEOROLOGICAL	LW_IN_F_MDS_QC	nondimensional	Quality flag for LW_IN_F_MDS
+MICROMETEOROLOGICAL	LW_IN_ERA	W m-2	Longwave radiation, incoming, downscaled from ERA, linearly regressed using measured only site data
+MICROMETEOROLOGICAL	LW_IN_F	W m-2	Longwave radiation, incoming, consolidated from LW_IN_F_MDS and LW_IN_ERA
+MICROMETEOROLOGICAL	LW_IN_F_QC	nondimensional	Quality flag for LW_IN_F
+MICROMETEOROLOGICAL	LW_IN_JSB	W m-2	Longwave radiation, incoming, calculated from TA_F_MDS, SW_IN_F_MDS, VPD_F_MDS and SW_IN_POT using the JSBACH algorithm (Sonke Zaehle)
+MICROMETEOROLOGICAL	LW_IN_JSB_QC	nondimensional	Quality flag for LW_IN_JSB
+MICROMETEOROLOGICAL	LW_IN_JSB_ERA	W m-2	Longwave radiation, incoming, downscaled from ERA, linearly regressed using site level LW_IN_JSB calculated from measured only drivers
+MICROMETEOROLOGICAL	LW_IN_JSB_F	W m-2	Longwave radiation, incoming, consolidated from LW_IN_JSB and LW_IN_JSB_ERA
+MICROMETEOROLOGICAL	LW_IN_JSB_F_QC	nondimensional	Quality flag for LW_IN_JSB_F
+MICROMETEOROLOGICAL	VPD_F_MDS	hPa	Vapor Pressure Deficit, gapfilled using MDS
+MICROMETEOROLOGICAL	VPD_F_MDS_QC	nondimensional	Quality flag for VPD_F_MDS
+MICROMETEOROLOGICAL	VPD_ERA	hPa	Vapor Pressure Deficit, downscaled from ERA, linearly regressed using measured only site data
+MICROMETEOROLOGICAL	VPD_F	hPa	Vapor Pressure Deficit consolidated from VPD_F_MDS and VPD_ERA
+MICROMETEOROLOGICAL	VPD_F_QC	nondimensional	Quality flag for VPD_F
+MICROMETEOROLOGICAL	PA	kPa	Atmospheric pressure
+MICROMETEOROLOGICAL	PA_ERA	kPa	Atmospheric pressure, downscaled from ERA, linearly regressed using measured only site data
+MICROMETEOROLOGICAL	PA_F	kPa	Atmospheric pressure consolidated from PA and PA_ERA
+MICROMETEOROLOGICAL	PA_F_QC	nondimensional	Quality flag for PA_F
+MICROMETEOROLOGICAL	P	mm	Precipitation
+MICROMETEOROLOGICAL	P_ERA	mm	Precipitation, downscaled from ERA, linearly regressed using measured only site data
+MICROMETEOROLOGICAL	WW-MM YY	mm d-1 mm y-1	average from daily data (mm per day) sum from daily data (mm per year)
+MICROMETEOROLOGICAL	P_F	mm	Precipitation consolidated from P and P_ERA
+MICROMETEOROLOGICAL	WW-MM YY	mm d-1 mm y-1	average from daily data (mm per day) sum from daily data (mm per year)
+MICROMETEOROLOGICAL	P_F_QC	nondimensional	Quality flag for P_F
+MICROMETEOROLOGICAL	WS	m s-1	Wind speed
+MICROMETEOROLOGICAL	WS_ERA	m s-1	Wind speed, downscaled from ERA, linearly regressed using measured only site data
+MICROMETEOROLOGICAL	WS_F	m s-1	Wind speed, consolidated from WS and WS_ERA
+MICROMETEOROLOGICAL	WS_F_QC	nondimensional	Quality flag of WS_F
+MICROMETEOROLOGICAL	WD	Decimal degrees	Wind direction
+MICROMETEOROLOGICAL	RH	%	Relative humidity, range 0-100
+MICROMETEOROLOGICAL	USTAR	m s-1	Friction velocity
+MICROMETEOROLOGICAL	USTAR_QC	nondimensional	Quality flag of USTAR
+MICROMETEOROLOGICAL	NETRAD	W m-2	Net radiation
+MICROMETEOROLOGICAL	NETRAD_QC	nondimensional	Quality flag of NETRAD
+MICROMETEOROLOGICAL	PPFD_IN	µmolPhoton m-2 s-1	Photosynthetic photon flux density, incoming
+MICROMETEOROLOGICAL	PPFD_IN_QC	nondimensional	Quality flag of PPFD_IN
+MICROMETEOROLOGICAL	PPFD_DIF	µmolPhoton m-2 s-1	Photosynthetic photon flux density, diffuse incoming
+MICROMETEOROLOGICAL	PPFD_DIF_QC	nondimensional	Quality flag of PPFD_DIF
+MICROMETEOROLOGICAL	PPFD_OUT	µmolPhoton m-2 s-1	Photosynthetic photon flux density, outgoing
+MICROMETEOROLOGICAL	PPFD_OUT_QC	nondimensional	Quality flag of PPFD_OUT
+MICROMETEOROLOGICAL	SW_DIF	W m-2	Shortwave radiation, diffuse incoming
+MICROMETEOROLOGICAL	SW_DIF_QC	nondimensional	Quality flag of SW_DIF
+MICROMETEOROLOGICAL	SW_OUT	W m-2	Shortwave radiation, outgoing
+MICROMETEOROLOGICAL	SW_OUT_QC	nondimensional	Quality flag of SW_OUT
+MICROMETEOROLOGICAL	LW_OUT	W m-2	Longwave radiation, outgoing
+MICROMETEOROLOGICAL	LW_OUT_QC	nondimensional	Quality flag of LW_OUT
+MICROMETEOROLOGICAL	CO2_F_MDS	umolCO2 mol-1	CO2 mole fraction, gapfilled with MDS
+MICROMETEOROLOGICAL	CO2_F_MDS_QC	nondimensional	Quality flag for CO2_F_MDS
+MICROMETEOROLOGICAL	TS_F_MDS_#	deg C	Soil temperature, gapfilled with MDS (numeric index “#” increases with the depth, 1 is shallowest)
+MICROMETEOROLOGICAL	TS_F_MDS_#_QC	nondimensional	Quality flag for TS_F_MDS_#
+MICROMETEOROLOGICAL	SWC_F_MDS_#	%	Soil water content, gapfilled with MDS (numeric index “#” increases with the depth, 1 is shallowest)
+MICROMETEOROLOGICAL	SWC_F_MDS_#_QC	nondimensional	Quality flag for SWC_F_MDS_#
+ENERGY PROCESSING	G_F_MDS	W m-2	Soil heat flux
+ENERGY PROCESSING	G_F_MDS_QC	nondimensional	Quality flag of G_F_MDS
+ENERGY PROCESSING	LE_F_MDS	W m-2	Latent heat flux, gapfilled using MDS method
+ENERGY PROCESSING	LE_F_MDS_QC	nondimensional	Quality flag for LE_F_MDS, LE_CORR, LE_CORR25, and LE_CORR75.
+ENERGY PROCESSING	LE_CORR	W m-2	Latent heat flux, corrected LE_F_MDS by energy balance closure correction factor
+ENERGY PROCESSING	LE_CORR_25	W m-2	Latent heat flux, corrected LE_F_MDS by energy balance closure correction factor, 25th percentile
+ENERGY PROCESSING	LE_CORR_75	W m-2	Latent heat flux, corrected LE_F_MDS by energy balance closure correction factor, 75th percentile
+ENERGY PROCESSING	LE_RANDUNC	W m-2	Random uncertainty of LE, from measured only data
+ENERGY PROCESSING	LE_RANDUNC_METHOD	nondimensional	Method used to estimate the random uncertainty of LE
+ENERGY PROCESSING	LE_RANDUNC_N	nondimensional	Number of half-hour data points used to estimate the random uncertainty of LE
+ENERGY PROCESSING	LE_CORR_JOINTUNC	W m-2	Joint uncertainty estimation for LE
+ENERGY PROCESSING	H_F_MDS	W m-2	Sensible heat flux, gapfilled using MDS method
+ENERGY PROCESSING	H_F_MDS_QC	nondimensional	Quality flag for H_F_MDS, H_CORR, H_CORR25, and H_CORR75.
+ENERGY PROCESSING	H_CORR	W m-2	Sensible heat flux, corrected H_F_MDS by energy balance closure correction factor
+ENERGY PROCESSING	H_CORR_25	W m-2	Sensible heat flux, corrected H_F_MDS by energy balance closure correction factor, 25th percentile
+ENERGY PROCESSING	H_CORR_75	W m-2	Sensible heat flux, corrected H_F_MDS by energy balance closure correction factor, 75th percentile
+ENERGY PROCESSING	H_RANDUNC	W m-2	Random uncertainty of H, from measured only data
+ENERGY PROCESSING	H_RANDUNC_METHOD	nondimensional	Method used to estimate the random uncertainty of H
+ENERGY PROCESSING	H_RANDUNC_N	nondimensional	Number of half-hour data points used to estimate the random uncertainty of H
+ENERGY PROCESSING	H_CORR_JOINTUNC	W m-2	Joint uncertainty estimation for H
+ENERGY PROCESSING	EBC_CF_N	nondimensional	Number of data points used to calculate energy closure balance correction factor. Driver data points within sliding window (ECB_CF Method 1) or number of ECB_CF data points (for ECB_CF Methods 2 and 3)
+ENERGY PROCESSING	WW–YY	nondimensional	fraction between 0-1, indicating percentages of half-hours used with respect to theoretical maximum number of half hours
+ENERGY PROCESSING	EBC_CF_METHOD	nondimensional	Method used to calculate the energy balance closure correction factor
+NET ECOSYSTEM EXCHANGE	NIGHT	nondimensional	Flag indicating nighttime interval based on SW_IN_POT
+NET ECOSYSTEM EXCHANGE	NIGHT_D	nondimensional	Number of half hours classified as nighttime in the period, i.e., when SW_IN_POT is 0
+NET ECOSYSTEM EXCHANGE	DAY_D	nondimensional	Number of half hours classified as daytime in the period, i.e., when SW_IN_POT is greater than 0
+NET ECOSYSTEM EXCHANGE	NIGHT_RANDUNC_N	nondimensional	Number of half hours classified as nighttime and used to calculate the aggregated random uncertainty
+NET ECOSYSTEM EXCHANGE	DAY_RANDUNC_N	nondimensional	Number of half hours classified as daytime and used to calculate the aggregated random uncertainty
+NET ECOSYSTEM EXCHANGE	NEE_CUT_REF	umolCO2 m-2 s-1	Net Ecosystem Exchange, using Constant Ustar Threshold (CUT) across years, reference selected on the basis of the model efficiency (MEF). The MEF analysis is repeated for each time aggregation
+NET ECOSYSTEM EXCHANGE	NEE_VUT_REF	umolCO2 m-2 s-1	Net Ecosystem Exchange, using Variable Ustar Threshold (VUT) for each year, reference selected on the basis of the model efficiency (MEF). The MEF analysis is repeated for each time aggregation
+NET ECOSYSTEM EXCHANGE	NEE_CUT_REF_QC	nondimensional	Quality flag for NEE_CUT_REF
+NET ECOSYSTEM EXCHANGE	NEE_VUT_REF_QC	nondimensional	Quality flag for NEE_VUT_REF
+NET ECOSYSTEM EXCHANGE	NEE_CUT_REF_RANDUNC	umolCO2 m-2 s-1	Random uncertainty for NEE_CUT_REF, from measured only data
+NET ECOSYSTEM EXCHANGE	NEE_VUT_REF_RANDUNC	umolCO2 m-2 s-1	Random uncertainty for NEE_VUT_REF, from measured only data
+NET ECOSYSTEM EXCHANGE	NEE_CUT_REF_RANDUNC_METHOD	nondimensional	Method used to estimate the random uncertainty of NEE_CUT_REF
+NET ECOSYSTEM EXCHANGE	NEE_VUT_REF_RANDUNC_METHOD	nondimensional	Method used to estimate the random uncertainty of NEE_VUT_REF
+NET ECOSYSTEM EXCHANGE	NEE_CUT_REF_RANDUNC_N	nondimensional	Number of data points used to estimate the random uncertainty of NEE_CUT_REF
+NET ECOSYSTEM EXCHANGE	NEE_VUT_REF_RANDUNC_N	nondimensional	Number of data points used to estimate the random uncertainty of NEE_VUT_REF
+NET ECOSYSTEM EXCHANGE	NEE_CUT_REF_JOINTUNC	umolCO2 m-2 s-1	Joint uncertainty estimation for NEE_CUT_REF, including random uncertainty and USTAR filtering uncertainty
+NET ECOSYSTEM EXCHANGE	NEE_VUT_REF_JOINTUNC	umolCO2 m-2 s-1	Joint uncertainty estimation for NEE_VUT_REF, including random uncertainty and USTAR filtering uncertainty
+NET ECOSYSTEM EXCHANGE	NEE_CUT_USTAR50	umolCO2 m-2 s-1	Net Ecosystem Exchange, using Constant Ustar Threshold (CUT) across years, from 50 percentile of USTAR threshold
+NET ECOSYSTEM EXCHANGE	NEE_VUT_USTAR50	umolCO2 m-2 s-1	Net Ecosystem Exchange, using Variable Ustar Threshold (VUT) for each year, from 50 percentile of USTAR threshold
+NET ECOSYSTEM EXCHANGE	NEE_CUT_USTAR50_QC	nondimensional	Quality flag for NEE_CUT_USTAR50
+NET ECOSYSTEM EXCHANGE	NEE_VUT_USTAR50_QC	nondimensional	Quality flag for NEE_VUT_USTAR50
+NET ECOSYSTEM EXCHANGE	NEE_CUT_USTAR50_RANDUNC	umolCO2 m-2 s-1	Random uncertainty for NEE_CUT_USTAR50, from measured only data
+NET ECOSYSTEM EXCHANGE	NEE_VUT_USTAR50_RANDUNC	umolCO2 m-2 s-1	Random uncertainty for NEE_VUT_USTAR50, from measured only data
+NET ECOSYSTEM EXCHANGE	NEE_CUT_USTAR50_RANDUNC_METHOD	nondimensional	Method used to estimate the random uncertainty of NEE_CUT_USTAR50
+NET ECOSYSTEM EXCHANGE	NEE_VUT_USTAR50_RANDUNC_METHOD	nondimensional	Method used to estimate the random uncertainty of NEE_VUT_USTAR50
+NET ECOSYSTEM EXCHANGE	NEE_CUT_USTAR50_RANDUNC_N	nondimensional	Number of half-hour data points used to estimate the random uncertainty of NEE_CUT_USTAR50
+NET ECOSYSTEM EXCHANGE	NEE_VUT_USTAR50_RANDUNC_N	nondimensional	Number of half-hour data points used to estimate the random uncertainty of NEE_VUT_USTAR50
+NET ECOSYSTEM EXCHANGE	NEE_CUT_USTAR50_JOINTUNC	umolCO2 m-2 s-1	Joint uncertainty estimation for NEE_CUT_USTAR50, including random uncertainty and USTAR filtering uncertainty
+NET ECOSYSTEM EXCHANGE	NEE_VUT_USTAR50_JOINTUNC	umolCO2 m-2 s-1	Joint uncertainty estimation for NEE_VUT_USTAR50, including random uncertainty and USTAR filtering uncertainty
+NET ECOSYSTEM EXCHANGE	NEE_CUT_MEAN	umolCO2 m-2 s-1	Net Ecosystem Exchange, using Constant Ustar Threshold (CUT) across years, average from 40 NEE_CUT_XX versions
+NET ECOSYSTEM EXCHANGE	NEE_VUT_MEAN	umolCO2 m-2 s-1	Net Ecosystem Exchange, using Variable Ustar Threshold (VUT) for each year, average from 40 NEE_VUT_XX versions
+NET ECOSYSTEM EXCHANGE	NEE_CUT_MEAN_QC	nondimensional	Quality flag for NEE_CUT_MEAN, fraction between 0-1 indicating percentage of good quality data
+NET ECOSYSTEM EXCHANGE	NEE_VUT_MEAN_QC	nondimensional	Quality flag for NEE_VUT_MEAN, fraction between 0-1 indicating percentage of good quality data
+NET ECOSYSTEM EXCHANGE	NEE_CUT_SE	umolCO2 m-2 s-1	Standard Error for NEE_CUT, calculated as SD(NEE_CUT_XX) / SQRT(40)
+NET ECOSYSTEM EXCHANGE	NEE_VUT_SE	umolCO2 m-2 s-1	Standard Error for NEE_VUT, calculated as SD(NEE_VUT_XX) / SQRT(40)
+NET ECOSYSTEM EXCHANGE	NEE_CUT_XX	umolCO2 m-2 s-1	NEE CUT percentiles (approx. percentile indicated by XX, see doc.) calculated from the 40 estimates aggregated at the different time resolutions — XX = 05, 16, 25, 50, 75, 84, 95
+NET ECOSYSTEM EXCHANGE	NEE_VUT_XX	umolCO2 m-2 s-1	NEE VUT percentiles (approx. percentile indicated by XX, see doc.) calculated from the 40 estimates aggregated at the different time resolutions — XX = 05, 16, 25, 50, 75, 84, 95
+NET ECOSYSTEM EXCHANGE	NEE_CUT_XX_QC	nondimensional	Quality flag for NEE_CUT_XX — XX = 05, 16, 25, 50, 75, 84, 95
+NET ECOSYSTEM EXCHANGE	NEE_VUT_XX_QC	nondimensional	Quality flag for NEE_VUT_XX — XX = 05, 16, 25, 50, 75, 84, 95
+NET ECOSYSTEM EXCHANGE	NEE_CUT_REF_NIGHT	umolCO2 m-2 s-1	Average nighttime NEE, from NEE_CUT_REF
+NET ECOSYSTEM EXCHANGE	NEE_VUT_REF_NIGHT	umolCO2 m-2 s-1	Average nighttime NEE, from NEE_VUT_REF
+NET ECOSYSTEM EXCHANGE	NEE_CUT_REF_NIGHT_SD	umolCO2 m-2 s-1	Standard Deviation of the nighttime NEE, from the NEE_CUT_REF
+NET ECOSYSTEM EXCHANGE	NEE_VUT_REF_NIGHT_SD	umolCO2 m-2 s-1	Standard Deviation of the nighttime NEE, from the NEE_VUT_REF
+NET ECOSYSTEM EXCHANGE	NEE_CUT_REF_NIGHT_QC	nondimensional	Quality flag for NEE_CUT_REF_NIGHT
+NET ECOSYSTEM EXCHANGE	NEE_VUT_REF_NIGHT_QC	nondimensional	Quality flag for NEE_VUT_REF_NIGHT
+NET ECOSYSTEM EXCHANGE	NEE_CUT_REF_NIGHT_RANDUNC	umolCO2 m-2 s-1	Random uncertainty of NEE_CUT_REF_NIGHT, from the random uncertainty of the single nighttime half-hours
+NET ECOSYSTEM EXCHANGE	NEE_VUT_REF_NIGHT_RANDUNC	umolCO2 m-2 s-1	Random uncertainty of NEE_VUT_REF_NIGHT, from the random uncertainty of the single nighttime half-hours
+NET ECOSYSTEM EXCHANGE	NEE_CUT_REF_NIGHT_JOINTUNC	umolCO2 m-2 s-1	Joint uncertainty estimation for NEE_CUT_REF_NIGHT, including random uncertainty and USTAR filtering uncertainty
+NET ECOSYSTEM EXCHANGE	NEE_VUT_REF_NIGHT_JOINTUNC	umolCO2 m-2 s-1	Joint uncertainty estimation for NEE_VUT_REF_NIGHT, including random uncertainty and USTAR filtering uncertainty
+NET ECOSYSTEM EXCHANGE	NEE_CUT_REF_DAY	umolCO2 m-2 s-1	Average daytime NEE, from NEE_CUT_REF
+NET ECOSYSTEM EXCHANGE	NEE_VUT_REF_DAY	umolCO2 m-2 s-1	Average daytime NEE, from NEE_VUT_REF
+NET ECOSYSTEM EXCHANGE	NEE_CUT_REF_DAY_SD	umolCO2 m-2 s-1	Standard Deviation of the daytime NEE, from the NEE_CUT_REF
+NET ECOSYSTEM EXCHANGE	NEE_VUT_REF_DAY_SD	umolCO2 m-2 s-1	Standard Deviation of the daytime NEE, from the NEE_VUT_REF
+NET ECOSYSTEM EXCHANGE	NEE_CUT_REF_DAY_QC	nondimensional	Quality flag for NEE_CUT_REF_DAY
+NET ECOSYSTEM EXCHANGE	NEE_VUT_REF_DAY_QC	nondimensional	Quality flag for NEE_VUT_REF_DAY
+NET ECOSYSTEM EXCHANGE	NEE_CUT_REF_DAY_RANDUNC	umolCO2 m-2 s-1	Random uncertainty of NEE_CUT_REF_DAY, from the random uncertainty of the single daytime half-hours
+NET ECOSYSTEM EXCHANGE	NEE_VUT_REF_DAY_RANDUNC	umolCO2 m-2 s-1	Random uncertainty of NEE_VUT_REF_DAY, from the random uncertainty of the single daytime half-hours
+NET ECOSYSTEM EXCHANGE	NEE_CUT_REF_DAY_JOINTUNC	umolCO2 m-2 s-1	Joint uncertainty estimation for NEE_CUT_REF_DAY, including random uncertainty and USTAR filtering uncertainty
+NET ECOSYSTEM EXCHANGE	NEE_VUT_REF_DAY_JOINTUNC	umolCO2 m-2 s-1	Joint uncertainty estimation for NEE_VUT_REF_DAY, including random uncertainty and USTAR filtering uncertainty
+NET ECOSYSTEM EXCHANGE	NEE_CUT_USTAR50_NIGHT	umolCO2 m-2 s-1	Average nighttime NEE, from NEE_CUT_USTAR50
+NET ECOSYSTEM EXCHANGE	NEE_VUT_USTAR50_NIGHT	umolCO2 m-2 s-1	Average nighttime NEE, from NEE_VUT_USTAR50
+NET ECOSYSTEM EXCHANGE	NEE_CUT_USTAR50_NIGHT_SD	umolCO2 m-2 s-1	Standard Deviation of the nighttime NEE, from the NEE_CUT_USTAR50
+NET ECOSYSTEM EXCHANGE	NEE_VUT_USTAR50_NIGHT_SD	umolCO2 m-2 s-1	Standard Deviation of the nighttime NEE, from the NEE_VUT_USTAR50
+NET ECOSYSTEM EXCHANGE	NEE_CUT_USTAR50_NIGHT_QC	nondimensional	Quality flag for NEE_CUT_USTAR50_NIGHT
+NET ECOSYSTEM EXCHANGE	NEE_VUT_USTAR50_NIGHT_QC	nondimensional	Quality flag for NEE_VUT_USTAR50_NIGHT
+NET ECOSYSTEM EXCHANGE	NEE_CUT_USTAR50_NIGHT_RANDUNC	umolCO2 m-2 s-1	Random uncertainty of NEE_CUT_USTAR50_NIGHT, from the random uncertainty of the single nighttime half-hours
+NET ECOSYSTEM EXCHANGE	NEE_VUT_USTAR50_NIGHT_RANDUNC	umolCO2 m-2 s-1	Random uncertainty of NEE_VUT_USTAR50_NIGHT, from the random uncertainty of the single nighttime half-hours
+NET ECOSYSTEM EXCHANGE	NEE_CUT_USTAR50_NIGHT_JOINTUNC	umolCO2 m-2 s-1	Joint uncertainty estimation for NEE_CUT_USTAR50_NIGHT, including random uncertainty and USTAR filtering uncertainty
+NET ECOSYSTEM EXCHANGE	NEE_VUT_USTAR50_NIGHT_JOINTUNC	umolCO2 m-2 s-1	Joint uncertainty estimation for NEE_VUT_USTAR50_NIGHT, including random uncertainty and USTAR filtering uncertainty
+NET ECOSYSTEM EXCHANGE	NEE_CUT_USTAR50_DAY	umolCO2 m-2 s-1	Average daytime NEE, from NEE_CUT_USTAR50
+NET ECOSYSTEM EXCHANGE	NEE_VUT_USTAR50_DAY	umolCO2 m-2 s-1	Average daytime NEE, from NEE_VUT_USTAR50
+NET ECOSYSTEM EXCHANGE	NEE_CUT_USTAR50_DAY_SD	umolCO2 m-2 s-1	Standard Deviation of the daytime NEE, from the NEE_CUT_USTAR50
+NET ECOSYSTEM EXCHANGE	NEE_VUT_USTAR50_DAY_SD	umolCO2 m-2 s-1	Standard Deviation of the daytime NEE, from the NEE_VUT_USTAR50
+NET ECOSYSTEM EXCHANGE	NEE_CUT_USTAR50_DAY_QC	nondimensional	Quality flag for NEE_CUT_USTAR50_DAY
+NET ECOSYSTEM EXCHANGE	NEE_VUT_USTAR50_DAY_QC	nondimensional	Quality flag for NEE_VUT_USTAR50_DAY
+NET ECOSYSTEM EXCHANGE	NEE_CUT_USTAR50_DAY_RANDUNC	umolCO2 m-2 s-1	Random uncertainty of NEE_CUT_USTAR50_DAY, from the random uncertainty of the single daytime half-hours
+NET ECOSYSTEM EXCHANGE	NEE_VUT_USTAR50_DAY_RANDUNC	umolCO2 m-2 s-1	Random uncertainty of NEE_VUT_USTAR50_DAY, from the random uncertainty of the single daytime half-hours
+NET ECOSYSTEM EXCHANGE	NEE_CUT_USTAR50_DAY_JOINTUNC	umolCO2 m-2 s-1	Joint uncertainty estimation for NEE_CUT_USTAR50_DAY, including random uncertainty and USTAR filtering uncertainty
+NET ECOSYSTEM EXCHANGE	NEE_VUT_USTAR50_DAY_JOINTUNC	umolCO2 m-2 s-1	Joint uncertainty estimation for NEE_VUT_USTAR50_DAY, including random uncertainty and USTAR filtering uncertainty
+NET ECOSYSTEM EXCHANGE	NEE_CUT_XX_NIGHT	umolCO2 m-2 s-1	NEE CUT nighttime percentiles (approx. percentile indicated by XX, see doc.) calculated from the 40 estimates aggregated at the different time resolutions — XX = 05, 16, 25, 50, 75, 84, 95
+NET ECOSYSTEM EXCHANGE	NEE_VUT_XX_NIGHT	umolCO2 m-2 s-1	NEE VUT nighttime percentiles (approx. percentile indicated by XX, see doc.) calculated from the 40 estimates aggregated at the different time resolutions — XX = 05, 16, 25, 50, 75, 84, 95
+NET ECOSYSTEM EXCHANGE	NEE_CUT_XX_NIGHT_QC	nondimensional	Quality flag for NEE_CUT_XX_NIGHT — XX = 05, 16, 25, 50, 75, 84, 95
+NET ECOSYSTEM EXCHANGE	NEE_VUT_XX_NIGHT_QC	nondimensional	Quality flag for NEE_VUT_XX_NIGHT — XX = 05, 16, 25, 50, 75, 84, 95
+NET ECOSYSTEM EXCHANGE	NEE_CUT_XX_DAY	umolCO2 m-2 s-1	NEE CUT daytime percentiles (approx. percentile indicated by XX, see doc.) calculated from the 40 estimates aggregated at the different time resolutions — XX = 05, 16, 25, 50, 75, 84, 95
+NET ECOSYSTEM EXCHANGE	NEE_VUT_XX_DAY	umolCO2 m-2 s-1	NEE VUT daytime percentiles (approx. percentile indicated by XX, see doc.) calculated from the 40 estimates aggregated at the different time resolutions — XX = 05, 16, 25, 50, 75, 84, 95
+NET ECOSYSTEM EXCHANGE	NEE_CUT_XX_DAY_QC	nondimensional	Quality flag for NEE_CUT_XX_DAY — XX = 05, 16, 25, 50, 75, 84, 95
+NET ECOSYSTEM EXCHANGE	NEE_VUT_XX_DAY_QC	nondimensional	Quality flag for NEE_VUT_XX_DAY — XX = 05, 16, 25, 50, 75, 84, 95
+NIGHTTIME	RECO_NT_VUT_REF	umolCO2 m-2 s-1	Ecosystem Respiration, from Nighttime partitioning method, reference selected from RECO versions using model efficiency (MEF). The MEF analysis is repeated for each time aggregation
+NIGHTTIME	RECO_NT_VUT_USTAR50	umolCO2 m-2 s-1	Ecosystem Respiration, from Nighttime partitioning method, based on NEE_VUT_USTAR50
+NIGHTTIME	RECO_NT_VUT_MEAN	umolCO2 m-2 s-1	Ecosystem Respiration, from Nighttime partitioning method, average from RECO versions, each from corresponding NEE_VUT_XX version
+NIGHTTIME	RECO_NT_VUT_SE	umolCO2 m-2 s-1	Standard Error for Ecosystem Respiration, calculated as (SD(RECO_NT_VUT_XX) / SQRT(40))
+NIGHTTIME	RECO_NT_VUT_XX	umolCO2 m-2 s-1	Ecosystem Respiration, from Nighttime partitioning method (with XX = 05, 16, 25, 50, 75, 84, 95)
+NIGHTTIME	RECO_NT_CUT_REF	umolCO2 m-2 s-1	Ecosystem Respiration, from Nighttime partitioning method, reference selected from RECO versions using model efficiency (MEF). The MEF analysis is repeated for each time aggregation
+NIGHTTIME	RECO_NT_CUT_USTAR50	umolCO2 m-2 s-1	Ecosystem Respiration, from Nighttime partitioning method, based on NEE_CUT_USTAR50
+NIGHTTIME	RECO_NT_CUT_MEAN	umolCO2 m-2 s-1	Ecosystem Respiration, from Nighttime partitioning method, average from RECO versions, each from corresponding NEE_CUT_XX version
+NIGHTTIME	RECO_NT_CUT_SE	umolCO2 m-2 s-1	Standard Error for Ecosystem Respiration, calculated as (SD(RECO_NT_CUT_XX) / SQRT(40))
+NIGHTTIME	RECO_NT_CUT_XX	umolCO2 m-2 s-1	Ecosystem Respiration, from Nighttime partitioning method (with XX = 05, 16, 25, 50, 75, 84, 95)
+NIGHTTIME	GPP_NT_VUT_REF	umolCO2 m-2 s-1	Gross Primary Production, from Nighttime partitioning method, reference selected from GPP versions using model efficiency (MEF). The MEF analysis is repeated for each time aggregation
+NIGHTTIME	GPP_NT_VUT_USTAR50	umolCO2 m-2 s-1	Gross Primary Production, from Nighttime partitioning method, based on NEE_VUT_USTAR50
+NIGHTTIME	GPP_NT_VUT_MEAN	umolCO2 m-2 s-1	Gross Primary Production, from Nighttime partitioning method, average from GPP versions, each from corresponding NEE_VUT_XX version
+NIGHTTIME	GPP_NT_VUT_SE	umolCO2 m-2 s-1	Standard Error for Gross Primary Production, calculated as (SD(GPP_NT_VUT_XX) / SQRT(40))
+NIGHTTIME	GPP_NT_VUT_XX	umolCO2 m-2 s-1	Gross Primary Production, from Nighttime partitioning method (with XX = 05, 16, 25, 50, 75, 84, 95)
+NIGHTTIME	GPP_NT_CUT_REF	umolCO2 m-2 s-1	Gross Primary Production, from Nighttime partitioning method, reference selected from GPP versions using model efficiency (MEF). The MEF analysis is repeated for each time aggregation
+NIGHTTIME	GPP_NT_CUT_USTAR50	umolCO2 m-2 s-1	Gross Primary Production, from Nighttime partitioning method, based on NEE_CUT_USTAR50
+NIGHTTIME	GPP_NT_CUT_MEAN	umolCO2 m-2 s-1	Gross Primary Production, from Nighttime partitioning method, average from GPP versions, each from corresponding NEE_CUT_XX version
+NIGHTTIME	GPP_NT_CUT_SE	umolCO2 m-2 s-1	Standard Error for Gross Primary Production, calculated as (SD(GPP_NT_CUT_XX) / SQRT(40))
+NIGHTTIME	GPP_NT_CUT_XX	umolCO2 m-2 s-1	Gross Primary Production, from Nighttime partitioning method (with XX = 05, 16, 25, 50, 75, 84, 95)
+DAYTIME	RECO_DT_VUT_REF	umolCO2 m-2 s-1	Ecosystem Respiration, from Daytime partitioning method, reference selected from RECO versions using model efficiency (MEF). The MEF analysis is repeated for each time aggregation
+DAYTIME	RECO_DT_VUT_USTAR50	umolCO2 m-2 s-1	Ecosystem Respiration, from Daytime partitioning method, based on NEE_VUT_USTAR50
+DAYTIME	RECO_DT_VUT_MEAN	umolCO2 m-2 s-1	Ecosystem Respiration, from Daytime partitioning method, average from RECO versions, each from corresponding NEE_VUT_XX version
+DAYTIME	RECO_DT_VUT_SE	umolCO2 m-2 s-1	Standard Error for Ecosystem Respiration, calculated as (SD(RECO_DT_VUT_XX) / SQRT(40))
+DAYTIME	RECO_DT_VUT_XX	umolCO2 m-2 s-1	Ecosystem Respiration, from Daytime partitioning method (with XX = 05, 16, 25, 50, 75, 84, 95)
+DAYTIME	RECO_DT_CUT_REF	umolCO2 m-2 s-1	Ecosystem Respiration, from Daytime partitioning method, reference selected from RECO versions using model efficiency (MEF). The MEF analysis is repeated for each time aggregation
+DAYTIME	RECO_DT_CUT_USTAR50	umolCO2 m-2 s-1	Ecosystem Respiration, from Daytime partitioning method, based on NEE_CUT_USTAR50
+DAYTIME	RECO_DT_CUT_MEAN	umolCO2 m-2 s-1	Ecosystem Respiration, from Daytime partitioning method, average from RECO versions, each from corresponding NEE_CUT_XX version
+DAYTIME	RECO_DT_CUT_SE	umolCO2 m-2 s-1	Standard Error for Ecosystem Respiration, calculated as (SD(RECO_DT_CUT_XX) / SQRT(40))
+DAYTIME	RECO_DT_CUT_XX	umolCO2 m-2 s-1	Ecosystem Respiration, from Daytime partitioning method (with XX = 05, 16, 25, 50, 75, 84, 95)
+DAYTIME	GPP_DT_VUT_REF	umolCO2 m-2 s-1	Gross Primary Production, from Daytime partitioning method, reference selected from GPP versions using model efficiency (MEF). The MEF analysis is repeated for each time aggregation
+DAYTIME	GPP_DT_VUT_USTAR50	umolCO2 m-2 s-1	Gross Primary Production, from Daytime partitioning method, based on NEE_VUT_USTAR50
+DAYTIME	GPP_DT_VUT_MEAN	umolCO2 m-2 s-1	Gross Primary Production, from Daytime partitioning method, average from GPP versions, each from corresponding NEE_VUT_XX version
+DAYTIME	GPP_DT_VUT_SE	umolCO2 m-2 s-1	Standard Error for Gross Primary Production, calculated as (SD(GPP_DT_VUT_XX) / SQRT(40))
+DAYTIME	GPP_DT_VUT_XX	umolCO2 m-2 s-1	Gross Primary Production, from Daytime partitioning method (with XX = 05, 16, 25, 50, 75, 84, 95)
+DAYTIME	GPP_DT_CUT_REF	umolCO2 m-2 s-1	Gross Primary Production, from Daytime partitioning method, reference selected from GPP versions using model efficiency (MEF). The MEF analysis is repeated for each time aggregation
+DAYTIME	GPP_DT_CUT_USTAR50	umolCO2 m-2 s-1	Gross Primary Production, from Daytime partitioning method, based on NEE_CUT_USTAR50
+DAYTIME	GPP_DT_CUT_MEAN	umolCO2 m-2 s-1	Gross Primary Production, from Daytime partitioning method, average from GPP versions, each from corresponding NEE_CUT_XX version
+DAYTIME	GPP_DT_CUT_SE	umolCO2 m-2 s-1	Standard Error for Gross Primary Production, calculated as (SD(GPP_DT_CUT_XX) / SQRT(40))
+DAYTIME	GPP_DT_CUT_XX	umolCO2 m-2 s-1	Gross Primary Production, from Daytime partitioning method (with XX = 05, 16, 25, 50, 75, 84, 95)
+SUNDOWN	RECO_SR	umolCO2 m-2 s-1	Ecosystem Respiration, from Sundown Respiration partitioning method
+SUNDOWN	RECO_SR_N	nondimensional	Fraction between 0-1, indicating the percentage of data avaiable in the averaging period to parametrize the respiration model
