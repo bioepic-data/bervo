@@ -56316,7 +56316,7 @@
     <!-- https://w3id.org/bervo/BERVO_8001260 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001260">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001258"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001263"/>
         <obo:IAO_0000115>Tillage in which crops are planted on ridges rebuilt each season, leaving the soil between them undisturbed.</obo:IAO_0000115>
         <rdfs:comment>AmeriFlux BADM DM_TILL value: Ridge till.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
@@ -56342,7 +56342,7 @@
     <!-- https://w3id.org/bervo/BERVO_8001262 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001262">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001258"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001263"/>
         <obo:IAO_0000115>Tillage of narrow strips where seed is to be planted, leaving the soil and residue between strips undisturbed.</obo:IAO_0000115>
         <rdfs:comment>AmeriFlux BADM DM_TILL value: Stripe till.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
@@ -56357,7 +56357,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001263">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001258"/>
         <obo:IAO_0000115>Tillage that leaves at least 30 percent of the soil surface covered by crop residue after planting.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux BADM DM_TILL value: Conservation.</rdfs:comment>
+        <rdfs:comment>AmeriFlux BADM DM_TILL value: Conservation. Ridge tillage and Strip tillage sit beneath it, as in the USDA NRCS usage; AmeriFlux lists all four DM_TILL values side by side.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Conservation tillage</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
