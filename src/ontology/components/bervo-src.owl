@@ -39270,8 +39270,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002343">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
         <obo:IAO_0000115>Mass of plant material falling to the ground per unit ground area and time, usually summed over a year.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>AG_LIT_PROD_TOT</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: AG_LIT_PROD_TOT.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variable name: AG_LIT_PROD_TOT.</rdfs:comment>
         <rdfs:label>Litterfall rate</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
         <bervo:BERVO_has_unit>g.m-2.a-1</bervo:BERVO_has_unit>
@@ -39286,8 +39287,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002344">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000030"/>
         <obo:IAO_0000115>Mass of dead root and other belowground plant material added to the soil per unit ground area and time.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>BG_LIT_PROD</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BG_LIT_PROD.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variable name: BG_LIT_PROD.</rdfs:comment>
         <rdfs:label>Belowground litter production</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
         <bervo:BERVO_has_unit>g.m-2.a-1</bervo:BERVO_has_unit>
@@ -39319,8 +39321,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002346">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Increase in the diameter of a tree stem at breast height over a stated period.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>STEM_INCR</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: STEM_INCR. STEM_INCR_DIAM and STEM_INCR_NUM record the sampled trees.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variable name: STEM_INCR. STEM_INCR_DIAM and STEM_INCR_NUM record the sampled trees.</rdfs:comment>
         <rdfs:label>Stem diameter increment</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
         <bervo:BERVO_has_unit>cm</bervo:BERVO_has_unit>
@@ -39336,7 +39339,7 @@
         <obo:IAO_0000115>Net accumulation of organic carbon in an ecosystem per unit ground area and time, gross primary production less ecosystem respiration, usually summed over a year.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NEP</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: NEP. Estimated biometrically or from eddy covariance fluxes. Close in magnitude and opposite in sign to Net ecosystem exchange (BERVO:0002258) summed over the same period, where carbon leaves the ecosystem only as carbon dioxide.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variable name: NEP. Estimated biometrically or from eddy covariance fluxes. Close in magnitude and opposite in sign to Net ecosystem exchange (BERVO:0002258) summed over the same period, where carbon leaves the ecosystem only as carbon dioxide.</rdfs:comment>
         <rdfs:label>Net ecosystem production</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000043"/>
