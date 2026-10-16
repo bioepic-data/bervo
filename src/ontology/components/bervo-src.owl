@@ -56530,8 +56530,8 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001224">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001218"/>
-        <obo:IAO_0000115>Terrain class of land sloping at 2 to 5 percent.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux BADM TERRAIN value: Medium Slope (&gt;2 %, &lt;5%).</rdfs:comment>
+        <obo:IAO_0000115>Terrain class of land sloping at 2 percent and up to 5 percent.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM TERRAIN value: Medium Slope (&gt;2 %, &lt;5%). AmeriFlux&apos;s strict bounds leave 2 and 5 percent in no class; BERVO closes them so the four slope classes have no gaps or overlaps.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Medium slope</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -56544,7 +56544,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001225">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001218"/>
         <obo:IAO_0000115>Terrain class of land sloping at more than 5 and up to 10 percent.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux BADM TERRAIN value: Significant Slope (&gt;5%, &lt;10%).</rdfs:comment>
+        <rdfs:comment>AmeriFlux BADM TERRAIN value: Significant Slope (&gt;5%, &lt;10%). AmeriFlux&apos;s strict bounds leave 5 and 10 percent in no class; BERVO closes the upper one so the four slope classes have no gaps or overlaps.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Significant slope</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
