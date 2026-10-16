@@ -55229,9 +55229,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001178">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
         <obo:IAO_0000115>Plant material that is green and holds chlorophyll.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>green plant material</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux BADM BIOMASS_GREENNESS value: Green.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:label>Green plant material</rdfs:label>
+        <rdfs:label>Green vegetation</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
@@ -55242,9 +55243,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001179">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
         <obo:IAO_0000115>Plant material that is no longer green, being senesced or dormant.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>non-green plant material</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux BADM BIOMASS_GREENNESS value: Non-green. The BIOMASS_GREENNESS value Mixed, partly green and partly not, needs no concept.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:label>Non-green plant material</rdfs:label>
+        <rdfs:label>Non-green vegetation</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
