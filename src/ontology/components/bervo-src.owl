@@ -54358,8 +54358,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000049">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
-        <obo:IAO_0000115>Grouping class for dimensionless combinations of reflectances or radiances in two or more spectral bands, used to estimate the amount, structure or physiological state of vegetation.</obo:IAO_0000115>
+        <obo:IAO_0000115>Grouping class for quantities derived from reflectances or radiances in two or more spectral bands, most of them dimensionless combinations of the bands, used to estimate the amount, structure or physiological state of vegetation.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
+        <rdfs:comment>Red edge position (BERVO:0002309), a wavelength derived from the shape of the reflectance spectrum across the red edge, is the one member with a unit.</rdfs:comment>
         <rdfs:label>Spectral vegetation index</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
