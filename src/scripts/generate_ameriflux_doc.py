@@ -267,10 +267,11 @@ def badm_section():
         w(f"| `{code}` | `{tid}` {label} | {how} |")
     w("")
     w("### Value lists\n")
-    w("Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).\n")
+    w("Every BADM controlled vocabulary is a set of BERVO concepts (decision 7), except LAI_TYPE,")
+    w("whose values name the area index measured and so map to variables.\n")
     for lst in sorted(values):
         w(f"#### {lst}\n")
-        w("| BADM value | BERVO concept |")
+        w("| BADM value | BERVO term |")
         w("| --- | --- |")
         for v, tid, label in sorted(values[lst]):
             w(f"| {v} | `{tid}` {label} |")
