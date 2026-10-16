@@ -38932,7 +38932,6 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000833"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000004"/>
         <bervo:BERVO_has_unit>m.s-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
     </Class>
     
 
@@ -38961,7 +38960,6 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
         <rdfs:comment>FLUXNET FULLSET variable: NIGHT. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term.</rdfs:comment>
         <rdfs:label>Nighttime flag</rdfs:label>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001104"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
