@@ -149,7 +149,7 @@ for r in fl:
         if t in NOTES:
             notes.append(NOTES[t])
     if prefix in ("NIGHT_D", "DAY_D"):
-        quals = ["Count", "Nighttime" if prefix == "NIGHT_D" else "Daytime"]
+        quals = ["Sample size", "Nighttime" if prefix == "NIGHT_D" else "Daytime"]
         notes.append("number of half-hours in the period")
     if prefix in ("NIGHT_RANDUNC", "DAY_RANDUNC"):
         quals = ["Nighttime" if prefix.startswith("NIGHT") else "Daytime", "Random uncertainty", "Sample size"]
