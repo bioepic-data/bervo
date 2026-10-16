@@ -58111,7 +58111,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000048">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
-        <obo:IAO_0000115>Grouping class for observed amounts of gases and other constituents in the atmosphere, such as the mole fractions of trace gases measured at a site.</obo:IAO_0000115>
+        <obo:IAO_0000115>Grouping class for the amounts of gases and other constituents in the atmosphere, whether measured at a site or prescribed as a model forcing.</obo:IAO_0000115>
         <rdfs:comment>Atmospheric gas concentration (BERVO:0001391), the parent of the EcoSIM forcing concentrations, sits here as an additional parent and keeps Climate force variable as its Category.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Atmospheric composition variable</rdfs:label>
