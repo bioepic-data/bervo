@@ -39516,7 +39516,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
         <obo:IAO_0000115>Mass of ammonium in the soil per unit ground area, summed over a stated depth interval.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SOIL_STOCK_NH4</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux BADM variable name: SOIL_STOCK_NH4. SOIL_STOCK_PROFILE_MIN and SOIL_STOCK_PROFILE_MAX record the depth interval.</rdfs:comment>
+        <rdfs:comment>AmeriFlux BADM variable name: SOIL_STOCK_NH4. SOIL_STOCK_PROFILE_MIN and SOIL_STOCK_PROFILE_MAX record the depth interval. BADM gives the unit as g NH4 m-2, the mass of the ion rather than of its nitrogen.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Soil ammonium stock</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
@@ -39533,7 +39533,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000012"/>
         <obo:IAO_0000115>Mass of nitrate in the soil per unit ground area, summed over a stated depth interval.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SOIL_STOCK_NO3</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux BADM variable name: SOIL_STOCK_NO3. SOIL_STOCK_PROFILE_MIN and SOIL_STOCK_PROFILE_MAX record the depth interval.</rdfs:comment>
+        <rdfs:comment>AmeriFlux BADM variable name: SOIL_STOCK_NO3. SOIL_STOCK_PROFILE_MIN and SOIL_STOCK_PROFILE_MAX record the depth interval. BADM gives the unit as g NO3 m-2, the mass of the ion rather than of its nitrogen.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Soil nitrate stock</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
