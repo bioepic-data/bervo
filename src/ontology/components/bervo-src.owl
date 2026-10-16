@@ -38927,7 +38927,7 @@
         <oboInOwl:hasRelatedSynonym>u* threshold</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>ustar threshold</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
-        <rdfs:comment>FLUXNET FULLSET does not report the threshold itself; its constant and variable forms (_CUT, _VUT) and the percentile used (_USTAR50) qualify the NEE, GPP and RECO variables.</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET does not report the threshold itself; its constant and variable forms (_CUT, _VUT) and the percentile used (_USTAR50) qualify the NEE, GPP and RECO variables. How it was chosen is recorded by the concepts Constant friction velocity threshold (BERVO:8001097) and Variable friction velocity threshold (BERVO:8001098).</rdfs:comment>
         <rdfs:label>Friction velocity threshold</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000833"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000004"/>
@@ -54122,7 +54122,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000833"/>
         <obo:IAO_0000115>Friction velocity threshold applied unchanged to every year of a flux record, below which fluxes measured at night are discarded as unrepresentative.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
-        <rdfs:comment>FLUXNET FULLSET suffix: _CUT.</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _CUT. The threshold itself is the variable Friction velocity threshold (BERVO:0002324); this concept names how it was chosen.</rdfs:comment>
         <rdfs:label>Constant friction velocity threshold</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -54135,7 +54135,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000833"/>
         <obo:IAO_0000115>Friction velocity threshold estimated separately for each year of a flux record, below which fluxes measured at night are discarded as unrepresentative.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
-        <rdfs:comment>FLUXNET FULLSET suffix: _VUT.</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _VUT. The threshold itself is the variable Friction velocity threshold (BERVO:0002324); this concept names how it was chosen.</rdfs:comment>
         <rdfs:label>Variable friction velocity threshold</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
