@@ -54438,7 +54438,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001120">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001105"/>
         <obo:IAO_0000115>IGBP land cover class of land under snow or ice cover for most of the year.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux BADM IGBP value: SNO. The code SNO is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term.</rdfs:comment>
+        <rdfs:comment>AmeriFlux BADM IGBP value: SNO. The code SNO is not recorded as a synonym because it is a synonym of Nitric oxide storage flux (BERVO:0002250).</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Snow and ice (IGBP)</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -54902,7 +54902,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
         <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 0 degrees Celsius but below 10 degrees Celsius.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000140"/>
-        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: ET. The code ET is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term.</rdfs:comment>
+        <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: ET. The code ET is not recorded as a synonym because it is a synonym of Evapotranspiration flux (BERVO:0001947).</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Tundra climate</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -55550,7 +55550,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001202">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
         <obo:IAO_0000115>Compass point at 0 degrees clockwise from north.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: N. The code N is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term.</rdfs:comment>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: N. The code N is not recorded as a synonym because it is the symbol of Nitrogen (BERVO:8000167).</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>North</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -55633,7 +55633,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001208">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
         <obo:IAO_0000115>Compass point at 135 degrees clockwise from north.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: SE. The code SE is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term.</rdfs:comment>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: SE. The code SE is not recorded as a synonym because it is the symbol of Selenium (BERVO:8000616).</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Southeast</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -55660,7 +55660,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001210">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
         <obo:IAO_0000115>Compass point at 180 degrees clockwise from north.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: S. The code S is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term.</rdfs:comment>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: S. The code S is not recorded as a synonym because it is the symbol of Sulfur (BERVO:8000614).</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>South</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -55687,7 +55687,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001212">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001201"/>
         <obo:IAO_0000115>Compass point at 225 degrees clockwise from north.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: SW. The code SW is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term.</rdfs:comment>
+        <rdfs:comment>AmeriFlux BADM ASPECT and DIR value: SW. The code SW is not recorded as a synonym because it is the soil classification symbol of Well-graded sand (BERVO:8001048).</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Southwest</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
