@@ -39326,7 +39326,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002347 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002347">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000000"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Net accumulation of organic carbon in an ecosystem per unit ground area and time, gross primary production less ecosystem respiration, usually summed over a year.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NEP</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
@@ -39343,7 +39343,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002348 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002348">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000000"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Mass of nitrogen deposited from the atmosphere onto a surface per unit area and time.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:comment>General term for the BADM N_DEP_ variables.</rdfs:comment>
