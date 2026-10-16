@@ -38104,7 +38104,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002273">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001908"/>
-        <obo:IAO_0000115>Depth of liquid precipitation collected over a period, per unit horizontal area.</obo:IAO_0000115>
+        <obo:IAO_0000115>Depth of liquid precipitation collected over a period.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>P_RAIN</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux FP-Standard base name: P_RAIN. Distinct from Rainfall measurement (BERVO:0001421), the rainfall forcing of EcoSIM and ATS as a volume per grid cell per hour or a depth per second, and from Rainfall rate (BERVO:0001909), the depth per unit time; this term is the depth accumulated over a reporting period.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
@@ -38136,7 +38136,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002275">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001908"/>
-        <obo:IAO_0000115>Depth of precipitation, per unit ground area, that is intercepted by a canopy and drains to the ground along branches and stems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Depth of precipitation that is intercepted by a canopy and drains to the ground along branches and stems.</obo:IAO_0000115>
         <rdfs:comment>AmeriFlux FP-Standard base name: STEMFLOW.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Stemflow</rdfs:label>
@@ -38152,7 +38152,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002276">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
-        <obo:IAO_0000115>Depth of water, per unit area, that leaves an area over the land surface or through the soil in a period rather than infiltrating or evaporating.</obo:IAO_0000115>
+        <obo:IAO_0000115>Depth of water that leaves an area over the land surface or through the soil in a period rather than infiltrating or evaporating.</obo:IAO_0000115>
         <rdfs:comment>AmeriFlux FP-Standard base name: RUNOFF. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term. AmeriFlux does not say whether surface runoff or total runoff is meant. Distinct from Total surface runoff (BERVO:0000316) and Soil surface runoff water (BERVO:0001816), EcoSIM volumes per grid cell; this term is a depth over a reporting period.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Runoff depth</rdfs:label>
