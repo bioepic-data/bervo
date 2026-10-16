@@ -887,7 +887,7 @@ whose values name the area index measured and so map to variables.
 | Conventional | `BERVO:8001259` Conventional tillage |
 | Ridge till | `BERVO:8001260` Ridge tillage |
 | Scarification | `BERVO:8001261` Scarification |
-| Stripe till, which BERVO labels Strip tillage | `BERVO:8001262` Strip tillage |
+| Stripe till | `BERVO:8001262` Strip tillage |
 
 #### DM_WATER
 
