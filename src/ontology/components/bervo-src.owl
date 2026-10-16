@@ -54480,6 +54480,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>Weather of a place or region averaged or otherwise summarised over a period long enough to characterise it, conventionally 30 years.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001082"/>
+        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Climate</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -55915,6 +55916,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001229">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001227"/>
         <obo:IAO_0000115>Weather event of unusual severity, such as a storm, flood, drought, heatwave or freeze.</obo:IAO_0000115>
+        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Extreme weather event</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -56298,6 +56300,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001258">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
         <obo:IAO_0000115>Mechanical working of soil to prepare a seedbed, control weeds or incorporate residue.</obo:IAO_0000115>
+        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Tillage</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -56375,6 +56378,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001264">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
         <obo:IAO_0000115>Application of fertilizer to soil or plants to supply nutrients.</obo:IAO_0000115>
+        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Fertilization</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -56387,6 +56391,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001265">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001264"/>
         <obo:IAO_0000115>Application of inorganic fertilizer or lime.</obo:IAO_0000115>
+        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Mineral fertilization</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -56451,6 +56456,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001270">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001264"/>
         <obo:IAO_0000115>Application of manure, compost or another organic material to supply nutrients.</obo:IAO_0000115>
+        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Organic fertilization</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -56516,6 +56522,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001255"/>
         <obo:IAO_0000115>Application of a substance that kills or controls pests, weeds or pathogens.</obo:IAO_0000115>
+        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Pesticide application</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -56581,6 +56588,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001255"/>
         <obo:IAO_0000115>Setting live plants into the ground.</obo:IAO_0000115>
+        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Planting</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -56646,6 +56654,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001255"/>
         <obo:IAO_0000115>Placing seeds in or on the ground.</obo:IAO_0000115>
+        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Sowing</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
