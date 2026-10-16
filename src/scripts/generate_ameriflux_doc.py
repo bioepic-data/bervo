@@ -1,6 +1,6 @@
 """Generate docs/ameriflux-alignment.md from bervo-src.csv and the AmeriFlux variable lists.
 
-Run from the repository root, or with `just ameriflux-doc`:
+Run with `just ameriflux-doc`, or from any directory:
 
     python3 src/scripts/generate_ameriflux_doc.py
 
@@ -23,9 +23,10 @@ import pathlib
 import re
 import sys
 
-S = pathlib.Path(__file__).parent / "ameriflux"
-OUT = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else "docs/ameriflux-alignment.md")
-rows = list(csv.reader(open("src/ontology/bervo-src.csv", newline="", encoding="utf-8")))
+REPO_ROOT = pathlib.Path(__file__).resolve().parents[2]
+S = REPO_ROOT / "src" / "scripts" / "ameriflux"
+OUT = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else REPO_ROOT / "docs" / "ameriflux-alignment.md"
+rows = list(csv.reader(open(REPO_ROOT / "src" / "ontology" / "bervo-src.csv", newline="", encoding="utf-8")))
 H = {c: i for i, c in enumerate(rows[0])}
 TERMS = [r for r in rows[2:] if r[H["obsolete"]] != "true"]
 BY_LABEL = {r[1]: r for r in TERMS}
