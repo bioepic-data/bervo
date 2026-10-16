@@ -43095,6 +43095,7 @@
         <obo:IAO_0000115>The sum or complete amount of a quantity representing the aggregate value of all components within a defined system or measurement period. This comprehensive measure is fundamental for mass balance calculations, ecosystem budgets, and quantifying cumulative effects in environmental and ecological studies.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>tot</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>cumulative</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM LAI_CANOPY_TYPE value: Total.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Total</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -54563,7 +54564,7 @@
         <obo:IAO_0000115>Layer of vegetation that grows beneath the main canopy of a stand without reaching it, and the space it occupies.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000335"/>
         <oboInOwl:hasRelatedSynonym>understorey</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Broader than its cross-reference ENVO:01000335, which is the vegetation layer only; this term also covers the space beneath the canopy, because it is used in contexts for measurements made there.</rdfs:comment>
+        <rdfs:comment>Broader than its cross-reference ENVO:01000335, which is the vegetation layer only; this term also covers the space beneath the canopy, because it is used in contexts for measurements made there. AmeriFlux BADM LAI_CANOPY_TYPE value: Understory.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Understory</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -55846,7 +55847,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
         <obo:IAO_0000115>Uppermost layer of vegetation in a stand, whose crowns form the main canopy.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>overstorey</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux BADM LAI_CANOPY_TYPE value: Overstory. The LAI_CANOPY_TYPE value Understory maps to Understory, and Total to Total.</rdfs:comment>
+        <rdfs:comment>AmeriFlux BADM LAI_CANOPY_TYPE value: Overstory.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Overstory</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
