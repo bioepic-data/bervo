@@ -53625,6 +53625,7 @@
         <obo:IAO_0000115>Layer of vegetation that grows beneath the main canopy of a stand without reaching it, and the space it occupies.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000335"/>
         <oboInOwl:hasRelatedSynonym>understorey</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Broader than its cross-reference ENVO:01000335, which is the vegetation layer only; this term also covers the space beneath the canopy, because it is used in contexts for measurements made there.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Understory</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
