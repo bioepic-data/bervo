@@ -54174,7 +54174,7 @@
         <obo:IAO_0000115>Value below which a stated percentage of the values of a distribution fall.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>quantile</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
-        <rdfs:comment>FLUXNET FULLSET suffixes: _XX (05, 16, 25, 50, 75, 84, 95) and _25, _75.</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffixes: _XX, a placeholder for the 05, 16, 25, 50, 75, 84 and 95 percentiles of the ensemble of estimates made with different friction velocity thresholds, and the bare _25 and _75 of the H_CORR and LE_CORR variables, which FLUXNET describes as their 25th and 75th percentiles.</rdfs:comment>
         <rdfs:label>Percentile</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
