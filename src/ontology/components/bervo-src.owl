@@ -39467,7 +39467,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002355">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000026"/>
         <obo:IAO_0000115>Thickness of the organic horizon at the top of a soil profile, measured from the top of the litter layer.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>O horizon thickness</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>O horizon thickness</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>SOIL_DEPTH_ORG</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux BADM variable name: SOIL_DEPTH_ORG.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
