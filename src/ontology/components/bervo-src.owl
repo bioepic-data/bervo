@@ -54885,6 +54885,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001152">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
         <obo:IAO_0000115>Köppen climate class with the warmest month averaging 0 degrees Celsius or below.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000354"/>
         <oboInOwl:hasRelatedSynonym>EF</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: EF.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
