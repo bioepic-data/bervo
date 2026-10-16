@@ -56688,9 +56688,8 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001236">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001229"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001232"/>
-        <obo:IAO_0000115>Overflow of water onto land that is normally dry.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux BADM DM_EXT_WEATHER value: Flood.</rdfs:comment>
+        <obo:IAO_0000115>Extreme weather event in which water overflows onto land that is normally dry, after heavy precipitation, rapid snowmelt or a storm.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_EXT_WEATHER value: Flood. Narrowed to the weather-driven sense of the DM_EXT_WEATHER list it comes from. Chronic flooding is Hydrologic event (BERVO:8001232), and deliberate flooding is Human-induced flooding (BERVO:8001294).</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Flood</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
