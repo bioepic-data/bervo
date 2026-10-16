@@ -38597,9 +38597,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002304">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
-        <obo:IAO_0000115>Spectral vegetation index from reflectances in the green and red-edge regions, sensitive to the carotenoid content of leaves (Gitelson et al., 2002).</obo:IAO_0000115>
+        <obo:IAO_0000115>Spectral vegetation index from the reciprocals of the reflectances near 510 nm and near 550 or 700 nm, sensitive to the carotenoid content of leaves.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>MCRI</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: MCRI.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: MCRI. AmeriFlux cites Gitelson et al. (2002), Photochemistry and Photobiology 75:272-281, who define CRI550 from 510 and 550 nm and CRI700 from 510 and 700 nm. A modified form multiplies either by near-infrared reflectance (Gitelson et al., 2006, Geophysical Research Letters 33:L11402). AmeriFlux does not say which form its MCRI is, so this term covers them all.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Carotenoid reflectance index</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
