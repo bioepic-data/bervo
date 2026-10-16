@@ -37450,8 +37450,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002232">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000048"/>
         <obo:IAO_0000115>Amount of water vapor per amount of moist air, water vapor included, in the air at a measurement point.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>H2O</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: H2O. AmeriFlux reports the mole fraction in wet air under the bare chemical code and the dry-air mole fraction under the _MIXING_RATIO code. AmeriFlux reports the standard deviation within an averaging period as H2O_SIGMA; BERVO expresses it with the Standard deviation qualifier rather than a separate term.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: H2O. The code is not recorded as a synonym because it is the chemical formula of water, which belongs on the chemical rather than on a variable. AmeriFlux reports the mole fraction in wet air under the bare chemical code and the dry-air mole fraction under the _MIXING_RATIO code. AmeriFlux reports the standard deviation within an averaging period as H2O_SIGMA; BERVO expresses it with the Standard deviation qualifier rather than a separate term.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Water vapor mole fraction in wet air</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001078"/>
