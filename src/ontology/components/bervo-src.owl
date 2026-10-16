@@ -56352,7 +56352,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001262">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001263"/>
         <obo:IAO_0000115>Tillage of narrow strips where seed is to be planted, leaving the soil and residue between strips undisturbed.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux BADM DM_TILL value: Stripe till.</rdfs:comment>
+        <rdfs:comment>AmeriFlux BADM DM_TILL value: Stripe till. AmeriFlux writes the value as Stripe till.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Strip tillage</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
