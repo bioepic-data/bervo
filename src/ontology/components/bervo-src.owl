@@ -54896,7 +54896,7 @@
         <obo:IAO_0000115>Part of a day when the sun is below the horizon.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>night</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
-        <rdfs:comment>FLUXNET FULLSET suffix: _NIGHT. Flux processing counts as nighttime the periods when the potential incoming shortwave radiation is zero.</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _NIGHT. Flux processing counts as nighttime the periods when the potential incoming shortwave radiation is zero. No cross-reference: no OBO class for night was found in NCIT or ENVO, though Daytime has NCIT:C64928.</rdfs:comment>
         <rdfs:label>Nighttime</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
