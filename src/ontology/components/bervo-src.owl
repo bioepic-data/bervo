@@ -24500,7 +24500,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001477">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000024"/>
-        <obo:IAO_0000115>The thermal state of soil at specified depths, measured in absolute temperature units. This parameter controls reaction rates, microbial activity, root growth, and nutrient cycling processes, making it fundamental for modeling all temperature-dependent biological and chemical processes in terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The thermal state of soil at specified depths. This parameter controls reaction rates, microbial activity, root growth, and nutrient cycling processes, making it fundamental for modeling all temperature-dependent biological and chemical processes in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TKS_vr</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>TKSoil1_vr</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>TS</oboInOwl:hasRelatedSynonym>
@@ -32461,9 +32461,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000006"/>
         <obo:IAO_0000115>Rate of water movement through the xylem of a plant stem, for one plant.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/sapFlow"/>
-        <oboInOwl:hasRelatedSynonym>sap flux</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Sap flow&quot;: Movement of xylem sap in trees.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Sap flow&quot;: Movement of xylem sap in trees. Sap flux is not a synonym here: in the literature it names the per-area quantity, Sap flux density (BERVO:0002319).</rdfs:comment>
         <rdfs:label>Sap flow</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_has_unit>kg.h-1/{plant}</bervo:BERVO_has_unit>
@@ -32481,7 +32480,7 @@
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/groundHeatFlux"/>
         <oboInOwl:hasRelatedSynonym>soil heat flux</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Ground heat flux&quot;: Ground heat flux</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Ground heat flux&quot;: Ground heat flux. This is the flux at the ground surface. The flux measured at the depth of a soil heat flux plate, AmeriFlux G, is Soil heat flux at measurement depth (BERVO:0002257); the two differ by Soil heat storage flux (BERVO:0002256).</rdfs:comment>
         <rdfs:label>Ground heat flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000273"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000060"/>
@@ -32771,7 +32770,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001969">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
-        <obo:IAO_0000115>Index of green vegetation computed from red and near-infrared reflectance as (NIR - red) / (NIR + red), ranging from -1 to 1.</obo:IAO_0000115>
+        <obo:IAO_0000115>Spectral vegetation index equal to the difference between near-infrared and red reflectance divided by their sum, (NIR - red) / (NIR + red), ranging from -1 to 1 and rising with the amount of green vegetation.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/NDVI"/>
         <oboInOwl:hasExactSynonym>NDVI</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
@@ -37450,8 +37449,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002232">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000048"/>
         <obo:IAO_0000115>Amount of water vapor per amount of moist air, water vapor included, in the air at a measurement point.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>H2O</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: H2O. AmeriFlux reports the mole fraction in wet air under the bare chemical code and the dry-air mole fraction under the _MIXING_RATIO code. AmeriFlux reports the standard deviation within an averaging period as H2O_SIGMA; BERVO expresses it with the Standard deviation qualifier rather than a separate term.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: H2O. The code is not recorded as a synonym because it is the chemical formula of water, which belongs on the chemical rather than on a variable. AmeriFlux reports the mole fraction in wet air under the bare chemical code and the dry-air mole fraction under the _MIXING_RATIO code. AmeriFlux reports the standard deviation within an averaging period as H2O_SIGMA; BERVO expresses it with the Standard deviation qualifier rather than a separate term.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Water vapor mole fraction in wet air</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001078"/>
@@ -38876,6 +38874,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000006"/>
         <obo:IAO_0000115>Rate of water movement through the conducting xylem of a stem, per unit cross-sectional area of sapwood.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SAP_FLOW</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>sap flux</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux FP-Standard base name: SAP_FLOW. AmeriFlux does not state the area its unit refers to; sap flux density is conventionally per unit sapwood area. Distinct from Sap flow (BERVO:0001951), the whole-plant rate. If AmeriFlux turns out to mean per unit ground area, SAP_FLOW is a different quantity and needs its own term; the definition should not be widened to cover it.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
         <rdfs:label>Sap flux density</rdfs:label>
@@ -38947,7 +38946,7 @@
         <oboInOwl:hasRelatedSynonym>extraterrestrial radiation</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>top-of-atmosphere radiation</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
-        <rdfs:comment>FLUXNET FULLSET variable: SW_IN_POT.</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET variable: SW_IN_POT. Placed under Incoming radiation, not Incoming shortwave radiation, because it is computed for the top of the atmosphere rather than measured at the land surface; Incoming radiation is the nearest parent that does not place it at the land surface.</rdfs:comment>
         <rdfs:label>Potential incoming shortwave radiation</rdfs:label>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000888"/>
         <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
@@ -39176,6 +39175,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_has_unit>m2.m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001178"/>
     </Class>
     
@@ -39358,7 +39358,7 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:comment>General term for the BADM N_DEP_ variables.</rdfs:comment>
         <rdfs:label>Nitrogen deposition</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
         <bervo:BERVO_has_unit>g{N}.m-2.a-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
@@ -39374,7 +39374,7 @@
         <rdfs:comment>AmeriFlux BADM variable name: N_DEP_WET.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Wet nitrogen deposition</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
         <bervo:BERVO_has_unit>g{N}.m-2.a-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
@@ -39390,7 +39390,7 @@
         <rdfs:comment>AmeriFlux BADM variable name: N_DEP_DRY.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Dry nitrogen deposition</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
         <bervo:BERVO_has_unit>g{N}.m-2.a-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
@@ -43095,6 +43095,7 @@
         <obo:IAO_0000115>The sum or complete amount of a quantity representing the aggregate value of all components within a defined system or measurement period. This comprehensive measure is fundamental for mass balance calculations, ecosystem budgets, and quantifying cumulative effects in environmental and ecological studies.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>tot</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>cumulative</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux BADM LAI_CANOPY_TYPE value: Total.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Total</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -47191,6 +47192,7 @@
         <rdfs:comment>Definition source - Manual (JMC, May 11 2026)</rdfs:comment>
         <rdfs:label>Quality control flag</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
     </Class>
     
 
@@ -54562,7 +54564,7 @@
         <obo:IAO_0000115>Layer of vegetation that grows beneath the main canopy of a stand without reaching it, and the space it occupies.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000335"/>
         <oboInOwl:hasRelatedSynonym>understorey</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Broader than its cross-reference ENVO:01000335, which is the vegetation layer only; this term also covers the space beneath the canopy, because it is used in contexts for measurements made there.</rdfs:comment>
+        <rdfs:comment>Broader than its cross-reference ENVO:01000335, which is the vegetation layer only; this term also covers the space beneath the canopy, because it is used in contexts for measurements made there. AmeriFlux BADM LAI_CANOPY_TYPE value: Understory.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Understory</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -54897,7 +54899,7 @@
         <obo:IAO_0000115>Part of a day when the sun is below the horizon.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>night</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
-        <rdfs:comment>FLUXNET FULLSET suffix: _NIGHT. Flux processing counts as nighttime the periods when the potential incoming shortwave radiation is zero.</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _NIGHT. Flux processing counts as nighttime the periods when the potential incoming shortwave radiation is zero. No cross-reference: no OBO class for night was found in NCIT or ENVO, though Daytime has NCIT:C64928.</rdfs:comment>
         <rdfs:label>Nighttime</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -55160,7 +55162,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>Weather of a place or region averaged or otherwise summarised over a period long enough to characterise it, conventionally 30 years.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001082"/>
-        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
+        <rdfs:comment>BERVO grouping above Köppen climate class, whose concepts are the values of the BADM list CLIMATE_KOEPPEN; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Climate</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -55845,7 +55847,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
         <obo:IAO_0000115>Uppermost layer of vegetation in a stand, whose crowns form the main canopy.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>overstorey</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux BADM LAI_CANOPY_TYPE value: Overstory. The LAI_CANOPY_TYPE value Understory maps to Understory, and Total to Total.</rdfs:comment>
+        <rdfs:comment>AmeriFlux BADM LAI_CANOPY_TYPE value: Overstory.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Overstory</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -56530,8 +56532,8 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001224">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001218"/>
-        <obo:IAO_0000115>Terrain class of land sloping at 2 to 5 percent.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux BADM TERRAIN value: Medium Slope (&gt;2 %, &lt;5%).</rdfs:comment>
+        <obo:IAO_0000115>Terrain class of land sloping at 2 percent and up to 5 percent.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM TERRAIN value: Medium Slope (&gt;2 %, &lt;5%). AmeriFlux&apos;s strict bounds leave 2 and 5 percent in no class; BERVO closes them so the four slope classes have no gaps or overlaps.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Medium slope</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -56544,7 +56546,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001225">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001218"/>
         <obo:IAO_0000115>Terrain class of land sloping at more than 5 and up to 10 percent.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux BADM TERRAIN value: Significant Slope (&gt;5%, &lt;10%).</rdfs:comment>
+        <rdfs:comment>AmeriFlux BADM TERRAIN value: Significant Slope (&gt;5%, &lt;10%). AmeriFlux&apos;s strict bounds leave 10 percent in no class; BERVO closes the upper bound so the four slope classes have no gaps or overlaps. 5 percent falls in Medium slope (BERVO:8001224).</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Significant slope</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -56596,7 +56598,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001229">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001227"/>
         <obo:IAO_0000115>Weather event of unusual severity, such as a storm, flood, drought, heatwave or freeze.</obo:IAO_0000115>
-        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
+        <rdfs:comment>BERVO grouping for the values of the BADM list DM_EXT_WEATHER; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Extreme weather event</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -56688,9 +56690,8 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001236">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001229"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001232"/>
-        <obo:IAO_0000115>Overflow of water onto land that is normally dry.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux BADM DM_EXT_WEATHER value: Flood.</rdfs:comment>
+        <obo:IAO_0000115>Extreme weather event in which water overflows onto land that is normally dry, after heavy precipitation, rapid snowmelt or a storm.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM DM_EXT_WEATHER value: Flood. Narrowed to the weather-driven sense of the DM_EXT_WEATHER list it comes from. Chronic flooding is Hydrologic event (BERVO:8001232), and deliberate flooding is Human-induced flooding (BERVO:8001294).</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Flood</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -56980,7 +56981,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001258">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
         <obo:IAO_0000115>Mechanical working of soil to prepare a seedbed, control weeds or incorporate residue.</obo:IAO_0000115>
-        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
+        <rdfs:comment>BERVO grouping for the values of the BADM list DM_TILL; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Tillage</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -57032,7 +57033,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001262">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001263"/>
         <obo:IAO_0000115>Tillage of narrow strips where seed is to be planted, leaving the soil and residue between strips undisturbed.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux BADM DM_TILL value: Stripe till. AmeriFlux writes the value as Stripe till.</rdfs:comment>
+        <rdfs:comment>AmeriFlux BADM DM_TILL value: Stripe till.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Strip tillage</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -57058,7 +57059,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001264">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
         <obo:IAO_0000115>Application of fertilizer to soil or plants to supply nutrients.</obo:IAO_0000115>
-        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
+        <rdfs:comment>BERVO grouping for Mineral fertilization and Organic fertilization, the BADM lists DM_FERT_M and DM_FERT_O; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Fertilization</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -57071,7 +57072,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001265">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001264"/>
         <obo:IAO_0000115>Application of inorganic fertilizer or lime.</obo:IAO_0000115>
-        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
+        <rdfs:comment>BERVO grouping for the values of the BADM list DM_FERT_M; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Mineral fertilization</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -57136,7 +57137,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001270">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001264"/>
         <obo:IAO_0000115>Application of manure, compost or another organic material to supply nutrients.</obo:IAO_0000115>
-        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
+        <rdfs:comment>BERVO grouping for the values of the BADM list DM_FERT_O; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Organic fertilization</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -57202,7 +57203,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001255"/>
         <obo:IAO_0000115>Application of a substance that kills or controls pests, weeds or pathogens.</obo:IAO_0000115>
-        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
+        <rdfs:comment>BERVO grouping for the values of the BADM list DM_PESTICIDE; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Pesticide application</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -57268,7 +57269,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001255"/>
         <obo:IAO_0000115>Setting live plants into the ground.</obo:IAO_0000115>
-        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
+        <rdfs:comment>BERVO grouping for the planting values of the BADM list DM_PLANTING; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Planting</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -57334,7 +57335,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001254"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001255"/>
         <obo:IAO_0000115>Placing seeds in or on the ground.</obo:IAO_0000115>
-        <rdfs:comment>BERVO grouping that organises the AmeriFlux BADM values beneath it; no BADM value maps to it directly.</rdfs:comment>
+        <rdfs:comment>BERVO grouping for the sowing values of the BADM list DM_PLANTING; no BADM value maps to it directly.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Sowing</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -58112,7 +58113,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000048">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
-        <obo:IAO_0000115>Grouping class for observed amounts of gases and other constituents in the atmosphere, such as the mole fractions of trace gases measured at a site.</obo:IAO_0000115>
+        <obo:IAO_0000115>Grouping class for the amounts of gases and other constituents in the atmosphere, whether measured at a site or prescribed as a model forcing.</obo:IAO_0000115>
         <rdfs:comment>Atmospheric gas concentration (BERVO:0001391), the parent of the EcoSIM forcing concentrations, sits here as an additional parent and keeps Climate force variable as its Category.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Atmospheric composition variable</rdfs:label>

@@ -8,6 +8,7 @@ paths:
   - "src/ontology/bervo.obo"
   - "src/ontology/bervo.json"
   - "docs/assets/data/**"
+  - "docs/ameriflux-alignment.md"
   - "site/**"
 ---
 
@@ -28,6 +29,7 @@ Regenerate rather than edit:
 | --- | --- |
 | `src/ontology/components/bervo-src.owl` | `just build` |
 | `docs/assets/data/bervo-browser.json` | `just browser-data` |
+| `docs/ameriflux-alignment.md` | `just ameriflux-doc` (edit `src/scripts/ameriflux/page_template.md` or the term's `Comment`) |
 | `site/` | `just docs` |
 | release artefacts (`bervo*.owl/obo/json`) | ODK release pipeline only |
 

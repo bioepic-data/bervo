@@ -1,6 +1,6 @@
 """Generate docs/ameriflux-alignment.md from bervo-src.csv and the AmeriFlux variable lists.
 
-Run from the repository root, or with `just ameriflux-doc`:
+Run with `just ameriflux-doc`, or from any directory:
 
     python3 src/scripts/generate_ameriflux_doc.py
 
@@ -23,9 +23,10 @@ import pathlib
 import re
 import sys
 
-S = pathlib.Path(__file__).parent / "ameriflux"
-OUT = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else "docs/ameriflux-alignment.md")
-rows = list(csv.reader(open("src/ontology/bervo-src.csv", newline="", encoding="utf-8")))
+REPO_ROOT = pathlib.Path(__file__).resolve().parents[2]
+S = REPO_ROOT / "src" / "scripts" / "ameriflux"
+OUT = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else REPO_ROOT / "docs" / "ameriflux-alignment.md"
+rows = list(csv.reader(open(REPO_ROOT / "src" / "ontology" / "bervo-src.csv", newline="", encoding="utf-8")))
 H = {c: i for i, c in enumerate(rows[0])}
 TERMS = [r for r in rows[2:] if r[H["obsolete"]] != "true"]
 BY_LABEL = {r[1]: r for r in TERMS}
@@ -54,14 +55,11 @@ for r in TERMS:
     if "AmeriFlux" not in c:
         continue
     for code in fp_codes - set(primary):
-        if re.search(rf"(?<![A-Z0-9_]){re.escape(code)}(?![A-Z0-9_])", c):
+        if re.search(rf"(?<![A-Za-z0-9_]){re.escape(code)}(?![A-Za-z0-9_])", c):
             noted.setdefault(code, []).append(r)
 missing = sorted(fp_codes - set(primary) - set(noted))
 if missing:
     problems.append(f"FP base names with no BERVO term: {missing}")
-
-STAT = {"_SIGMA": "Standard deviation", "WS_MAX": "Maximum"}
-
 
 def how_noted(code):
     if code.endswith("_SIGMA"):
@@ -91,7 +89,7 @@ n_fp = len(fp_codes) - len(missing)
 # ---------------------------------------------------------------- FLUXNET FULLSET
 fl = list(csv.DictReader(open(S / "fluxnet_vars.tsv", encoding="utf-8"), delimiter="\t"))
 artefacts = [r for r in fl if not re.fullmatch(r"[A-Z0-9_#]+", r["name"])]
-fl = [r for r in fl if r not in artefacts]
+fl = [r for r in fl if re.fullmatch(r"[A-Z0-9_#]+", r["name"])]
 
 BASE = [  # longest prefix first
     ("TIMESTAMP_START", "DateTime"), ("TIMESTAMP_END", "DateTime"), ("TIMESTAMP", "DateTime"),
@@ -148,7 +146,7 @@ for r in fl:
         if t in NOTES:
             notes.append(NOTES[t])
     if prefix in ("NIGHT_D", "DAY_D"):
-        quals = ["Count", "Nighttime" if prefix == "NIGHT_D" else "Daytime"]
+        quals = ["Sample size", "Nighttime" if prefix == "NIGHT_D" else "Daytime"]
         notes.append("number of half-hours in the period")
     if prefix in ("NIGHT_RANDUNC", "DAY_RANDUNC"):
         quals = ["Nighttime" if prefix.startswith("NIGHT") else "Daytime", "Random uncertainty", "Sample size"]
@@ -225,7 +223,11 @@ def badm_section():
             for lst in m.group(1).split(" and "):
                 values[lst.strip()].append((m.group(2).strip(), r[0], r[1]))
         for m in re.finditer(r"The ([A-Z_]+) values? (.+?) maps? to (.+?) \((BERVO:\d+)\)", c):
-            mapped.append((m.group(1), m.group(2), m.group(4), by_id[m.group(4)][1]))
+            target = by_id.get(m.group(4))
+            if target is None:
+                problems.append(f"{r[0]}: {m.group(4)} in a value mapping is not a live BERVO term")
+                continue
+            mapped.append((m.group(1), m.group(2), m.group(4), target[1]))
     with open(S / "badm_classified.tsv", encoding="utf-8") as f:
         cls = collections.Counter(line.split("\t")[1].strip() for line in f.read().splitlines()[1:])
 
@@ -265,10 +267,11 @@ def badm_section():
         w(f"| `{code}` | `{tid}` {label} | {how} |")
     w("")
     w("### Value lists\n")
-    w("Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).\n")
+    w("Every BADM controlled vocabulary is a set of BERVO concepts (decision 7), except LAI_TYPE,")
+    w("whose values name the area index measured and so map to variables.\n")
     for lst in sorted(values):
         w(f"#### {lst}\n")
-        w("| BADM value | BERVO concept |")
+        w("| BADM value | BERVO term |")
         w("| --- | --- |")
         for v, tid, label in sorted(values[lst]):
             w(f"| {v} | `{tid}` {label} |")
