@@ -30817,7 +30817,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001859 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001859">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000022"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
         <obo:IAO_0000115>Temperature of the interface between the land surface and the overlying air, the radiating and conducting surface itself rather than the air above it or the soil beneath it.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>surface-temperature</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ATS: surface-temperature [K], the surface skin temperature used by the surface energy balance.</rdfs:comment>
