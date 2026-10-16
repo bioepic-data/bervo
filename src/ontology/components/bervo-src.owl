@@ -38585,7 +38585,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
         <obo:IAO_0000115>Spectral vegetation index from near-infrared, red and blue reflectances that corrects for soil background and atmospheric scattering and saturates less than the normalized difference vegetation index over dense canopies.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>EVI</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: EVI.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: EVI. As formulated by Huete et al. (2002), Remote Sensing of Environment 83:195-213.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Enhanced vegetation index</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -38613,9 +38613,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002305">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
-        <obo:IAO_0000115>Spectral vegetation index from reflectances in three bands across the red edge, defined for the MERIS sensor and sensitive to canopy chlorophyll content (Dash and Curran, 2004).</obo:IAO_0000115>
+        <obo:IAO_0000115>Spectral vegetation index from reflectances in three bands across the red edge, defined for the MERIS sensor and sensitive to canopy chlorophyll content.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>MTCI</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: MTCI.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: MTCI. Defined by Dash and Curran (2004), International Journal of Remote Sensing 25:5403-5413.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>MERIS terrestrial chlorophyll index</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -38628,9 +38628,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002306">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
-        <obo:IAO_0000115>Spectral vegetation index equal to the product of the normalized difference vegetation index and the near-infrared reflectance, the share of near-infrared reflectance attributable to vegetation (Badgley et al., 2017).</obo:IAO_0000115>
+        <obo:IAO_0000115>Spectral vegetation index equal to the product of the normalized difference vegetation index and the near-infrared reflectance, the share of near-infrared reflectance attributable to vegetation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NIRV</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: NIRV. AmeriFlux lists NIRV in W m-2 sr-1 nm-1, the unit of the radiance-based variant (the normalized difference vegetation index times near-infrared radiance). The index as Badgley et al. (2017) define it, and as this term defines it, is dimensionless. Check a site&apos;s units before mapping its NIRV here.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: NIRV. Defined by Badgley et al. (2017), Science Advances 3:e1602244. AmeriFlux lists NIRV in W m-2 sr-1 nm-1, the unit of the radiance-based variant (the normalized difference vegetation index times near-infrared radiance). The index as Badgley et al. (2017) define it, and as this term defines it, is dimensionless. Check a site&apos;s units before mapping its NIRV here.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Near-infrared reflectance of vegetation</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -38645,7 +38645,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
         <obo:IAO_0000115>Spectral vegetation index from reflectances near 531 nm and 570 nm, sensitive to the xanthophyll cycle and so to the light-use efficiency of photosynthesis.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PRI</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: PRI.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: PRI. Defined by Gamon et al. (1992), Remote Sensing of Environment 41:35-44.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Photochemical reflectance index</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -38660,7 +38660,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
         <obo:IAO_0000115>Spectral vegetation index from the ratio of near-infrared to red-edge reflectance, minus one, sensitive to canopy chlorophyll content.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>REDCI</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: REDCI.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: REDCI. Defined by Gitelson et al. (2003), Journal of Plant Physiology 160:271-282.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Red edge chlorophyll index</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -38673,9 +38673,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002309">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
-        <obo:IAO_0000115>Wavelength of the steepest rise in vegetation reflectance between the red and near-infrared regions, which shifts toward longer wavelengths as chlorophyll content increases (Dash and Curran, 2004).</obo:IAO_0000115>
+        <obo:IAO_0000115>Wavelength of the steepest rise in vegetation reflectance between the red and near-infrared regions, which shifts toward longer wavelengths as chlorophyll content increases.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>REP</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: REP.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: REP. AmeriFlux cites Dash and Curran (2004), International Journal of Remote Sensing 25:5403-5413, who used it; the red edge position was introduced by Horler et al. (1983), International Journal of Remote Sensing 4:273-288.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Red edge position</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000319"/>
@@ -38691,7 +38691,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
         <obo:IAO_0000115>Spectral vegetation index equal to the ratio of near-infrared to red reflectance.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>simple ratio</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: SR. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SR. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term. Defined by Jordan (1969), Ecology 50:663-666.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Simple ratio vegetation index</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -38706,7 +38706,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
         <obo:IAO_0000115>Spectral vegetation index from reflectances at 550, 670 and 700 nm that measures the depth of chlorophyll absorption at 670 nm relative to the green and red-edge reflectance.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TCARI</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: TCARI.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: TCARI. Defined by Haboudane et al. (2002), Remote Sensing of Environment 81:416-426.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Transformed chlorophyll absorption in reflectance index</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
