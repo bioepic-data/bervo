@@ -56741,6 +56741,7 @@
     <!-- https://w3id.org/bervo/BERVO_8001293 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001293">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000026"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001232"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001256"/>
         <obo:IAO_0000115>Removal of excess water from soil by ditches, tile drains or other constructed means.</obo:IAO_0000115>
