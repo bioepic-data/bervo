@@ -39186,11 +39186,12 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000017"/>
         <obo:IAO_0000115>Dry mass, or carbon mass, of plant material that has fallen or become detached from plants, per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LITTER_DEBRIS</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux BADM variable name: LITTER_DEBRIS. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: AG_LIT_BIOMASS, STUMP_MASS, WD_BIOMASS_CRS, WD_BIOMASS_FINE. Fine litter, fine and coarse woody debris, and stumps are told apart by organ in contexts. Stumps, the rooted remains of trees cut or broken off, are counted here as woody debris, as forest inventories of coarse woody debris usually count them; snags, still standing, are Vegetation biomass (BERVO:0001970). The legacy BADM list gives no definition of STUMP_MASS to settle this.</rdfs:comment>
+        <rdfs:comment>AmeriFlux BADM variable name: LITTER_DEBRIS. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: AG_LIT_BIOMASS, STUMP_MASS, WD_BIOMASS_CRS, WD_BIOMASS_FINE. Fine litter, fine and coarse woody debris, and stumps are told apart by organ in contexts. Stumps, the rooted remains of trees cut or broken off, are counted here as woody debris, as forest inventories of coarse woody debris usually count them; snags, still standing, are Vegetation biomass (BERVO:0001970). The legacy BADM list gives no definition of STUMP_MASS to settle this. BADM reports it in kg of dry mass or g of carbon per square metre.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Litter and debris mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001175"/>
     </Class>
     
