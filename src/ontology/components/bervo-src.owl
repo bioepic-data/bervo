@@ -54172,6 +54172,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001101">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <obo:IAO_0000115>Value below which a stated percentage of the values of a distribution fall.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/STATO_0000293"/>
         <oboInOwl:hasRelatedSynonym>quantile</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
         <rdfs:comment>FLUXNET FULLSET suffixes: _XX, a placeholder for the 05, 16, 25, 50, 75, 84 and 95 percentiles of the ensemble of estimates made with different friction velocity thresholds, and the bare _25 and _75 of the H_CORR and LE_CORR variables, which FLUXNET describes as their 25th and 75th percentiles.</rdfs:comment>
@@ -54199,6 +54200,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001103">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000238"/>
         <obo:IAO_0000115>Part of a day when the sun is above the horizon.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64928"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
         <rdfs:comment>FLUXNET FULLSET suffix: _DAY. Flux processing counts as daytime the periods when the potential incoming shortwave radiation is above zero.</rdfs:comment>
         <rdfs:label>Daytime</rdfs:label>
