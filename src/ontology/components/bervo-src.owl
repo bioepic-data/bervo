@@ -32771,7 +32771,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001969">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
-        <obo:IAO_0000115>Index of green vegetation computed from red and near-infrared reflectance as (NIR - red) / (NIR + red), ranging from -1 to 1.</obo:IAO_0000115>
+        <obo:IAO_0000115>Spectral vegetation index equal to the difference between near-infrared and red reflectance divided by their sum, (NIR - red) / (NIR + red), ranging from -1 to 1 and rising with the amount of green vegetation.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/NDVI"/>
         <oboInOwl:hasExactSynonym>NDVI</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
