@@ -223,7 +223,11 @@ def badm_section():
             for lst in m.group(1).split(" and "):
                 values[lst.strip()].append((m.group(2).strip(), r[0], r[1]))
         for m in re.finditer(r"The ([A-Z_]+) values? (.+?) maps? to (.+?) \((BERVO:\d+)\)", c):
-            mapped.append((m.group(1), m.group(2), m.group(4), by_id[m.group(4)][1]))
+            target = by_id.get(m.group(4))
+            if target is None:
+                problems.append(f"{r[0]}: {m.group(4)} in a value mapping is not a live BERVO term")
+                continue
+            mapped.append((m.group(1), m.group(2), m.group(4), target[1]))
     with open(S / "badm_classified.tsv", encoding="utf-8") as f:
         cls = collections.Counter(line.split("\t")[1].strip() for line in f.read().splitlines()[1:])
 
