@@ -56462,7 +56462,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001219">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001218"/>
         <obo:IAO_0000115>Terrain class with no significant slope or relief.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux BADM TERRAIN value: Flat. The ASPECT value FLAT, a site with no particular exposure, maps here too.</rdfs:comment>
+        <rdfs:comment>AmeriFlux BADM TERRAIN value: Flat. AmeriFlux BADM ASPECT value: FLAT. As an aspect it marks a site that faces no particular direction.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Flat terrain</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
