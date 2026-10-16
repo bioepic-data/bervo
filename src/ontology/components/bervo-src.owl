@@ -38940,11 +38940,11 @@
     <!-- https://w3id.org/bervo/BERVO_0002325 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002325">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
         <obo:IAO_0000115>Ratio of the available energy, net radiation less the ground heat flux, to the sum of the measured sensible and latent heat fluxes, by which those fluxes are scaled to close the surface energy balance.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>EBC correction factor</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
-        <rdfs:comment>FLUXNET FULLSET reports the number of values used to compute it (EBC_CF_N) and the method used (EBC_CF_METHOD), and applies it in H_CORR and LE_CORR.</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET reports the number of values used to compute it (EBC_CF_N) and the method used (EBC_CF_METHOD), and applies it in H_CORR and LE_CORR. Placed under Land surface variable, the grouping for properties that control the exchange of energy and water at the surface, because it is a ratio rather than a flux.</rdfs:comment>
         <rdfs:label>Energy balance closure correction factor</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
