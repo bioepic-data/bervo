@@ -38076,7 +38076,7 @@
         <obo:IAO_0000115>Component of the wind velocity horizontal and perpendicular to the mean wind direction, after rotation of the anemometer coordinate system into the mean wind.</obo:IAO_0000115>
         <rdfs:comment>AmeriFlux reports only its standard deviation within an averaging period, as V_SIGMA; BERVO expresses that with the Standard deviation qualifier on this term rather than a separate term.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
-        <rdfs:label>Crosswind wind velocity</rdfs:label>
+        <rdfs:label>Crosswind velocity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000101"/>
         <bervo:BERVO_has_unit>m.s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
