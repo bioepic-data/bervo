@@ -9,9 +9,12 @@ Inputs, in src/scripts/ameriflux/:
 - fp_var.tsv: the AmeriFlux FP-Standard base names, from https://amfcdn.lbl.gov/api/v1/fp_var
 - fluxnet_vars.tsv: the FLUXNET FULLSET variables, from
   https://fluxnet.org/data/fluxnet2015-dataset/fullset-data-product/
+- badm_classified.tsv: each field of the BADM legacy list, sorted into the five classes the
+  page counts, from
+  https://raw.githubusercontent.com/chuhousen/amerifluxr/master/data-summary/AMF_AA-Net_BIF_LEGACY_VARIABLE-AVAILABILITY_LATEST.csv
 - page_template.md: the hand-written text of the page, with {{PLACEHOLDERS}} for the tables
 
-The tables are built from the AmeriFlux notes in the Comment column of bervo-src.csv.
+The tables are built from the AmeriFlux and BADM notes in the Comment column of bervo-src.csv.
 Coverage problems, such as a base name no term records, are printed and make the script
 exit non-zero, after the page has been written.
 """
@@ -196,6 +199,92 @@ q_lines = ["| Qualifier | BERVO term | Note |", "| --- | --- | --- |"]
 for q, l, n in QUAL:
     q_lines.append(f"| `{q}` | {ref(l) if l else '—'} | {n} |")
 
+# ---------------------------------------------------------------- BADM site metadata
+
+
+def badm_section():
+    """The BADM section, from the BADM notes in Comment and the field classes in badm_classified.tsv."""
+    import collections
+    by_id = {r[0]: r for r in TERMS}
+    variables = []  # (code, id, label, how)
+    values = collections.defaultdict(list)  # list name -> [(value, id, label)]
+    mapped = []  # (list name, value, id, label)
+    end = r"(.+?)\.(?=\s|$)"
+    for r in TERMS:
+        c = r[H["Comment"]]
+        for m in re.finditer(r"AmeriFlux BADM variable names?: " + end, c):
+            for code in m.group(1).split(", "):
+                variables.append((code.strip(), r[0], r[1], "current standard"))
+        for m in re.finditer(r"Legacy BADM variable names?: " + end, c):
+            for code in m.group(1).split(", "):
+                variables.append((code.strip(), r[0], r[1], "legacy"))
+        for m in re.finditer(r"Legacy BADM variables mapped here, with the variant in contexts or qualifiers: " + end, c):
+            for code in m.group(1).split(", "):
+                variables.append((code.strip(), r[0], r[1], "legacy, variant in contexts or qualifiers"))
+        for m in re.finditer(r"AmeriFlux BADM ([A-Z_ ]+?(?: and [A-Z_]+)?) values?: " + end, c):
+            for lst in m.group(1).split(" and "):
+                values[lst.strip()].append((m.group(2).strip(), r[0], r[1]))
+        for m in re.finditer(r"The ([A-Z_]+) values? (.+?) maps? to (.+?) \((BERVO:\d+)\)", c):
+            mapped.append((m.group(1), m.group(2), m.group(4), by_id[m.group(4)][1]))
+    with open(S / "badm_classified.tsv", encoding="utf-8") as f:
+        cls = collections.Counter(line.split("\t")[1].strip() for line in f.read().splitlines()[1:])
+
+    out = []
+    w = out.append
+    w("## BADM site metadata\n")
+    w("BADM (Biological, Ancillary, Disturbance and Metadata) records what a site is like: its")
+    w("vegetation, soils, climate, disturbance history and management. The fields come from the")
+    w("BADM standard (<https://ameriflux.lbl.gov/data/badm/badm-standards/>) and the legacy")
+    w("field list above. Each field of the legacy list was sorted into one of five classes:\n")
+    w("| Class | Fields (legacy list) | In BERVO |")
+    w("| --- | --- | --- |")
+    names = {"a_quantity": "Quantities and site properties", "e_disturbance": "Disturbance and management",
+             "b_metadata": "Measurement metadata: dates, method, statistic, organ, species, depth range, comment",
+             "c_admin": "Administrative: DOIs, team members, addresses, acknowledgement, funding",
+             "d_instrument": "Instrument settings (`INST_*`, `INSTPAIR_*`)"}
+    for k in ("a_quantity", "e_disturbance", "b_metadata", "c_admin", "d_instrument"):
+        w(f"| {names[k]} | {cls.get(k, 0)} | {'yes' if k in ('a_quantity', 'e_disturbance') else 'no'} |")
+    w("")
+    w("Measurement metadata, administrative fields and instrument settings describe a dataset")
+    w("rather than a quantity, so they have no terms. Where a metadata field names a layer, organ")
+    w("or status of a quantity, that becomes `contexts` or `qualifiers` on the general term,")
+    w("following decision 6.\n")
+    w("### Variables\n")
+    w("The class counts above are of the legacy list. The table below also has the fields of the")
+    w("current standard that the legacy list lacks, so it has more rows than the two in-scope")
+    w("classes. A *legacy* code is a field of the older list only. Where the current standard")
+    w("folds several legacy fields into one general field, they map to the general term with the")
+    w("variant in `contexts` or `qualifiers`.\n")
+    w("| BADM variable | BERVO term | Note |")
+    w("| --- | --- | --- |")
+    seen = set()
+    for code, tid, label, how in sorted(variables):
+        if (code, tid) in seen:
+            continue
+        seen.add((code, tid))
+        w(f"| `{code}` | `{tid}` {label} | {how} |")
+    w("")
+    w("### Value lists\n")
+    w("Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).\n")
+    for lst in sorted(values):
+        w(f"#### {lst}\n")
+        w("| BADM value | BERVO concept |")
+        w("| --- | --- |")
+        for v, tid, label in sorted(values[lst]):
+            w(f"| {v} | `{tid}` {label} |")
+        w("")
+    if mapped:
+        w("### Values that map to existing concepts\n")
+        w("| List | BADM value | BERVO concept |")
+        w("| --- | --- | --- |")
+        for lst, v, tid, label in sorted(set(mapped)):
+            w(f"| {lst} | {v} | `{tid}` {label} |")
+        w("")
+    print(f"BADM variables {len(seen)}, value lists {len(values)}, "
+          f"values {sum(len(v) for v in values.values())}, mapped to existing {len(set(mapped))}", file=sys.stderr)
+    return "\n".join(out)
+
+
 TEXT = (S / "page_template.md").read_text(encoding="utf-8")
 out = (TEXT.replace("{{FP_TABLE}}", "\n".join(fp_lines))
        .replace("{{FP_COVERED}}", f"{n_fp} of {len(fp_codes)}")
@@ -203,7 +292,8 @@ out = (TEXT.replace("{{FP_TABLE}}", "\n".join(fp_lines))
        .replace("{{CONCEPT_TABLE}}", "\n".join(c_lines))
        .replace("{{FLUXNET_TABLE}}", "\n".join(fl_lines))
        .replace("{{FL_COVERED}}", f"{n_fl} of {len(fl)}")
-       .replace("{{ARTEFACTS}}", str(len(artefacts))))
+       .replace("{{ARTEFACTS}}", str(len(artefacts)))
+       .replace("{{BADM_SECTION}}", badm_section()))
 OUT.write_text(out, encoding="utf-8")
 for p in problems:
     print("PROBLEM:", p, file=sys.stderr)

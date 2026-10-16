@@ -94,7 +94,4 @@ variable names; they are not counted. The same names serve every time resolution
 
 {{FLUXNET_TABLE}}
 
-## BADM site metadata
-
-*Pending: slice 5 of issue #178 adds the BADM quantities, disturbance and management
-terms, and the BADM value lists.*
+{{BADM_SECTION}}
