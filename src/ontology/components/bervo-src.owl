@@ -54023,10 +54023,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001090">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001089"/>
-        <obo:IAO_0000115>Gap-filling method that replaces a missing flux or meteorological value with the mean of values measured under similar meteorological conditions within a moving time window, widening the window until enough similar values are found (Reichstein et al., 2005).</obo:IAO_0000115>
+        <obo:IAO_0000115>Gap-filling method that replaces a missing flux or meteorological value with the mean of values measured under similar meteorological conditions within a moving time window, widening the window until enough similar values are found.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>MDS</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
-        <rdfs:comment>FLUXNET FULLSET suffix: _MDS.</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _MDS. Described by Reichstein et al. (2005), Global Change Biology 11:1424-1439.</rdfs:comment>
         <rdfs:label>Marginal distribution sampling</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -54064,10 +54064,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001093">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001092"/>
-        <obo:IAO_0000115>Flux partitioning method that fits a temperature response of ecosystem respiration to nighttime net ecosystem exchange, extrapolates it to the daytime, and takes gross primary production as the difference from net ecosystem exchange (Reichstein et al., 2005).</obo:IAO_0000115>
+        <obo:IAO_0000115>Flux partitioning method that fits a temperature response of ecosystem respiration to nighttime net ecosystem exchange, extrapolates it to the daytime, and takes gross primary production as the difference from net ecosystem exchange.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>nighttime partitioning</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
-        <rdfs:comment>FLUXNET FULLSET suffix: _NT.</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _NT. Described by Reichstein et al. (2005), Global Change Biology 11:1424-1439.</rdfs:comment>
         <rdfs:label>Nighttime flux partitioning</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -54078,10 +54078,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001094">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001092"/>
-        <obo:IAO_0000115>Flux partitioning method that fits a light response curve with a temperature-dependent respiration term to daytime net ecosystem exchange, estimating gross primary production and ecosystem respiration together (Lasslop et al., 2010).</obo:IAO_0000115>
+        <obo:IAO_0000115>Flux partitioning method that fits a light response curve with a temperature-dependent respiration term to daytime net ecosystem exchange, estimating gross primary production and ecosystem respiration together.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>daytime partitioning</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
-        <rdfs:comment>FLUXNET FULLSET suffix: _DT.</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _DT. Described by Lasslop et al. (2010), Global Change Biology 16:187-208.</rdfs:comment>
         <rdfs:label>Daytime flux partitioning</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -54092,10 +54092,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001095">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001092"/>
-        <obo:IAO_0000115>Flux partitioning method that estimates ecosystem respiration from the net ecosystem exchange measured in the hours just after sunset, before nighttime stable conditions suppress turbulence (van Gorsel et al., 2009).</obo:IAO_0000115>
+        <obo:IAO_0000115>Flux partitioning method that estimates ecosystem respiration from the net ecosystem exchange measured in the hours just after sunset, before nighttime stable conditions suppress turbulence.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>sundown respiration method</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
-        <rdfs:comment>FLUXNET FULLSET suffix: _SR.</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET suffix: _SR. Described by van Gorsel et al. (2009), Agricultural and Forest Meteorology 149:1919-1930.</rdfs:comment>
         <rdfs:label>Sundown respiration partitioning</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
