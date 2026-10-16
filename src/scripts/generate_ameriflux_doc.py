@@ -54,7 +54,7 @@ for r in TERMS:
     if "AmeriFlux" not in c:
         continue
     for code in fp_codes - set(primary):
-        if re.search(rf"(?<![A-Z0-9_]){re.escape(code)}(?![A-Z0-9_])", c):
+        if re.search(rf"(?<![A-Za-z0-9_]){re.escape(code)}(?![A-Za-z0-9_])", c):
             noted.setdefault(code, []).append(r)
 missing = sorted(fp_codes - set(primary) - set(noted))
 if missing:
