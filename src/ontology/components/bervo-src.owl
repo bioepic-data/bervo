@@ -37722,7 +37722,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002252">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Rate of change of the ozone stored in the air column below an eddy covariance sensor, per unit ground area.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux FP-Standard base name: SO3. The code is not recorded as a synonym because it reads as the formula of sulfur trioxide.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SO3. The code is not recorded as a synonym because it reads as the chemical formula of sulfur trioxide. BERVO has no sulfur trioxide term, so this is not a collision with a BERVO label; the code is kept out to avoid misleading a reader.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Ozone storage flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
