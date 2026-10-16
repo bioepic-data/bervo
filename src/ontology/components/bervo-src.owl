@@ -24500,7 +24500,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001477">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000024"/>
-        <obo:IAO_0000115>The thermal state of soil at specified depths, measured in absolute temperature units. This parameter controls reaction rates, microbial activity, root growth, and nutrient cycling processes, making it fundamental for modeling all temperature-dependent biological and chemical processes in terrestrial ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>The thermal state of soil at specified depths, measured in degrees Celsius or Kelvin. This parameter controls reaction rates, microbial activity, root growth, and nutrient cycling processes, making it fundamental for modeling all temperature-dependent biological and chemical processes in terrestrial ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TKS_vr</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>TKSoil1_vr</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>TS</oboInOwl:hasRelatedSynonym>
