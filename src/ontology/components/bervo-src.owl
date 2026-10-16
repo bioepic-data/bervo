@@ -52846,6 +52846,7 @@
         <oboInOwl:hasRelatedSynonym>amount fraction</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>mixing ratio</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
+        <rdfs:comment>Mixing ratio is a related synonym because flux networks, AmeriFlux among them, use it for a mole fraction in dry air. In meteorology a mixing ratio is usually a mass ratio of a constituent to dry air, which is not a mole fraction.</rdfs:comment>
         <rdfs:label>Mole fraction</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
