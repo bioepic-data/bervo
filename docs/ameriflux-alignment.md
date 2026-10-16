@@ -105,7 +105,7 @@ term plus a qualifier (decision 3).
 | GASES | `FNO` | Nitric oxide (NO) turbulent flux (no storage correction) | nmolNO m-2 s-1 | `BERVO:0002242` Nitric oxide turbulent flux | synonym |
 | GASES | `FNO2` | Nitrogen dioxide (NO2) turbulent flux (no storage correction) | nmolNO2 m-2 s-1 | `BERVO:0002243` Nitrogen dioxide turbulent flux | synonym |
 | GASES | `FO3` | Ozone (O3) turbulent flux (no storage correction) | nmolO3 m-2 s-1 | `BERVO:0002244` Ozone turbulent flux | synonym |
-| GASES | `H2O` | Water (H2O) vapor in mole fraction of wet air | mmolH2O mol-1 | `BERVO:0002232` Water vapor mole fraction in wet air | synonym |
+| GASES | `H2O` | Water (H2O) vapor in mole fraction of wet air | mmolH2O mol-1 | `BERVO:0002232` Water vapor mole fraction in wet air | `Comment` only |
 | GASES | `H2O_MIXING_RATIO` | Water (H2O) vapor in mole fraction of dry air | mmolH2O mol-1 | `BERVO:0002233` Water vapor mole fraction in dry air | synonym |
 | GASES | `H2O_SIGMA` | Standard deviation of water vapor mole fraction | mmolH2O mol-1 | `BERVO:0002232` Water vapor mole fraction in wet air | base term + `Standard deviation` qualifier |
 | GASES | `N2O` | Nitrous Oxide (N2O) mole fraction in wet air | nmolN2O mol-1 | `BERVO:0002230` Nitrous oxide mole fraction in wet air | `Comment` only |
@@ -255,8 +255,8 @@ term plus a qualifier (decision 3).
 | `BERVO:8001101` Percentile | Quantitative value | FLUXNET FULLSET suffixes: _XX, a placeholder for the 05, 16, 25, 50, 75, 84 and 95 percentiles of the ensemble of estimates made with different friction velocity thresholds, and the bare _25 and _75 of the H_CORR and LE_CORR variables, which FLUXNET describes as their 25th and 75th percentiles. |
 | `BERVO:8001102` Reference ensemble member | Quantitative value | FLUXNET FULLSET suffix: _REF, chosen among the 40 estimates made with different friction velocity thresholds. |
 | `BERVO:8001103` Daytime | Time | FLUXNET FULLSET suffix: _DAY. Flux processing counts as daytime the periods when the potential incoming shortwave radiation is above zero. |
-| `BERVO:8001104` Nighttime | Time | FLUXNET FULLSET suffix: _NIGHT. Flux processing counts as nighttime the periods when the potential incoming shortwave radiation is zero. |
-| `BERVO:0002323` Potential incoming shortwave radiation | Incoming radiation | FLUXNET FULLSET variable: SW_IN_POT. |
+| `BERVO:8001104` Nighttime | Time | FLUXNET FULLSET suffix: _NIGHT. Flux processing counts as nighttime the periods when the potential incoming shortwave radiation is zero. No cross-reference: no OBO class for night was found in NCIT or ENVO, though Daytime has NCIT:C64928. |
+| `BERVO:0002323` Potential incoming shortwave radiation | Incoming radiation | FLUXNET FULLSET variable: SW_IN_POT. Placed under Incoming radiation, not Incoming shortwave radiation, because it is computed for the top of the atmosphere rather than measured at the land surface; Incoming radiation is the nearest parent that does not place it at the land surface. |
 | `BERVO:0002324` Friction velocity threshold | Meteorological variable | FLUXNET FULLSET does not report the threshold itself; its constant and variable forms (_CUT, _VUT) and the percentile used (_USTAR50) qualify the NEE, GPP and RECO variables. How it was chosen is recorded by the concepts Constant friction velocity threshold (BERVO:8001097) and Variable friction velocity threshold (BERVO:8001098). |
 | `BERVO:0002325` Energy balance closure correction factor | Land surface variable | FLUXNET FULLSET reports the number of values used to compute it (EBC_CF_N) and the method used (EBC_CF_METHOD), and applies it in H_CORR and LE_CORR. Placed under Land surface variable, the grouping for properties that control the exchange of energy and water at the surface, because it is a ratio rather than a flux. |
 | `BERVO:0002326` Nighttime flag | Flag data type | FLUXNET FULLSET variable: NIGHT. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term. |
@@ -375,8 +375,8 @@ variable names; they are not counted. The same names serve every time resolution
 | Energy Processing | `EBC_CF_N` | nondimensional | `BERVO:0002325` Energy balance closure correction factor | Sample size | number of values used to compute the factor |
 | Energy Processing | `EBC_CF_METHOD` | nondimensional | `BERVO:0002325` Energy balance closure correction factor | Method |  |
 | Net Ecosystem Exchange | `NIGHT` | nondimensional | `BERVO:0002326` Nighttime flag |  |  |
-| Net Ecosystem Exchange | `NIGHT_D` | nondimensional | none | Count, Nighttime | number of half-hours in the period |
-| Net Ecosystem Exchange | `DAY_D` | nondimensional | none | Count, Daytime | number of half-hours in the period |
+| Net Ecosystem Exchange | `NIGHT_D` | nondimensional | none | Sample size, Nighttime | number of half-hours in the period |
+| Net Ecosystem Exchange | `DAY_D` | nondimensional | none | Sample size, Daytime | number of half-hours in the period |
 | Net Ecosystem Exchange | `NIGHT_RANDUNC_N` | nondimensional | `BERVO:0002258` Net ecosystem exchange | Nighttime, Random uncertainty, Sample size |  |
 | Net Ecosystem Exchange | `DAY_RANDUNC_N` | nondimensional | `BERVO:0002258` Net ecosystem exchange | Daytime, Random uncertainty, Sample size |  |
 | Net Ecosystem Exchange | `NEE_CUT_REF` | umolCO2 m-2 s-1 | `BERVO:0002258` Net ecosystem exchange | Constant friction velocity threshold, Reference ensemble member |  |
@@ -650,11 +650,12 @@ variant in `contexts` or `qualifiers`.
 
 ### Value lists
 
-Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
+Every BADM controlled vocabulary is a set of BERVO concepts (decision 7), except LAI_TYPE,
+whose values name the area index measured and so map to variables.
 
 #### ASPECT
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | E | `BERVO:8001206` East |
 | ENE | `BERVO:8001205` East-northeast |
@@ -676,14 +677,14 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### BIOMASS_GREENNESS
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Green | `BERVO:8001178` Green vegetation |
 | Non-green | `BERVO:8001179` Non-green vegetation |
 
 #### BIOMASS_ORGAN
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Belowground storage | `BERVO:8001187` Belowground storage organ |
 | Coarse Roots | `BERVO:8001185` Coarse root |
@@ -698,7 +699,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### BIOMASS_STATUS
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Alive | `BERVO:8001174` Live vegetation |
 | Dead Standing | `BERVO:8001176` Standing dead vegetation |
@@ -706,7 +707,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### CLIMATE_KOEPPEN
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Af | `BERVO:8001125` Tropical rainforest climate |
 | Am | `BERVO:8001126` Tropical monsoon climate |
@@ -740,7 +741,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### DIR
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | E | `BERVO:8001206` East |
 | ENE | `BERVO:8001205` East-northeast |
@@ -761,7 +762,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### DIST_MGMT
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Agriculture | `BERVO:8001254` Agricultural management |
 | Drought | `BERVO:8001228` Drought |
@@ -776,13 +777,13 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### DM_AGRICULTURE
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Crop residue management | `BERVO:8001257` Crop residue management |
 
 #### DM_ENCROACH
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Invasive species | `BERVO:8001245` Biological invasion |
 | Urban encroachment | `BERVO:8001246` Urban encroachment |
@@ -790,7 +791,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### DM_EXT_WEATHER
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Drought | `BERVO:8001228` Drought |
 | Flood | `BERVO:8001236` Flood |
@@ -802,7 +803,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### DM_FERT_M
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | K | `BERVO:8001268` Potassium fertilization |
 | Lime | `BERVO:8001269` Liming |
@@ -811,7 +812,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### DM_FERT_O
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Compost | `BERVO:8001273` Compost application |
 | Liquid manure | `BERVO:8001271` Liquid manure application |
@@ -820,7 +821,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### DM_FIRE
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Accidental human induced burn | `BERVO:8001251` Accidental human-caused fire |
 | Accidental human induced underburn, Nature induced underburn | `BERVO:8001250` Underburn |
@@ -829,7 +830,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### DM_FORESTRY
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Clearcutting | `BERVO:8001290` Clearcutting |
 | Fallen wood removal | `BERVO:8001291` Fallen wood removal |
@@ -837,13 +838,13 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### DM_GENERAL
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Undisturbed | `BERVO:8001295` Undisturbed |
 
 #### DM_GRAZE
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Cattle | `BERVO:8001247` Cattle grazing |
 | Goat | `BERVO:8001248` Goat grazing |
@@ -851,14 +852,14 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### DM_INS_PATH
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Disease | `BERVO:8001243` Plant disease |
 | Insect | `BERVO:8001242` Insect infestation |
 
 #### DM_PESTICIDE
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Bactericide | `BERVO:8001276` Bactericide application |
 | Fungicide | `BERVO:8001277` Fungicide application |
@@ -867,7 +868,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### DM_PLANTING
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Planting live crops | `BERVO:8001283` Crop planting |
 | Planting live grasses | `BERVO:8001284` Grass planting |
@@ -880,24 +881,24 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### DM_TILL
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Conservation | `BERVO:8001263` Conservation tillage |
 | Conventional | `BERVO:8001259` Conventional tillage |
 | Ridge till | `BERVO:8001260` Ridge tillage |
 | Scarification | `BERVO:8001261` Scarification |
-| Stripe till | `BERVO:8001262` Strip tillage |
+| Stripe till, which BERVO labels Strip tillage | `BERVO:8001262` Strip tillage |
 
 #### DM_WATER
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Drainage | `BERVO:8001293` Artificial drainage |
 | Human induced flooding | `BERVO:8001294` Human-induced flooding |
 
 #### IGBP
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | BSV | `BERVO:8001121` Barren or sparsely vegetated land (IGBP) |
 | CRO | `BERVO:8001117` Cropland (IGBP) |
@@ -919,13 +920,15 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### LAI_CANOPY_TYPE
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Overstory | `BERVO:8001173` Overstory |
+| Total | `BERVO:8000254` Total |
+| Understory | `BERVO:8001079` Understory |
 
 #### LAI_TYPE
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | GAI | `BERVO:0002337` Green area index |
 | LAI | `BERVO:0001879` Canopy leaf area index |
@@ -933,7 +936,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### LIFESTAGE
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Germinant | `BERVO:8001191` Germinant |
 | Mature | `BERVO:8001194` Mature plant |
@@ -942,7 +945,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### PHEN_EVENT
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | BudBreak | `BERVO:8001195` Bud break |
 | Cotyledons | `BERVO:8001196` Cotyledon emergence |
@@ -953,7 +956,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### TERRAIN
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Flat | `BERVO:8001219` Flat terrain |
 | Gentle slope (<2 %) | `BERVO:8001223` Gentle slope |
@@ -966,7 +969,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### VEGTYPE
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Aerenchymatous Plants | `BERVO:8001168` Aerenchymatous plant |
 | Annual Herb / Forb | `BERVO:8001166` Annual forb |
@@ -990,7 +993,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 #### VEG_STATUS
 
-| BADM value | BERVO concept |
+| BADM value | BERVO term |
 | --- | --- |
 | Alive | `BERVO:8001174` Live vegetation |
 | Dead | `BERVO:8001175` Dead vegetation |
