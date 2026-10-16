@@ -54633,7 +54633,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001134">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
-        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging between 0 and 18 degrees Celsius, precipitation in all seasons, without the dry summer or dry winter of the s and w subtypes, and one to three months averaging 10 degrees Celsius or more and the coldest month above -38 degrees Celsius.</obo:IAO_0000115>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging between 0 and 18 degrees Celsius, precipitation in all seasons, without the dry summer or dry winter of the s and w subtypes, and one to three months averaging 10 degrees Celsius or more.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Cfc</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Cfc.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
@@ -54703,7 +54703,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001139">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
-        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging between 0 and 18 degrees Celsius, a dry winter, the driest winter month having less than a tenth of the precipitation of the wettest summer month, and one to three months averaging 10 degrees Celsius or more and the coldest month above -38 degrees Celsius.</obo:IAO_0000115>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging between 0 and 18 degrees Celsius, a dry winter, the driest winter month having less than a tenth of the precipitation of the wettest summer month, and one to three months averaging 10 degrees Celsius or more.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Cwc</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Cwc.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
@@ -54745,7 +54745,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001142">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
-        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, precipitation in all seasons, without the dry summer or dry winter of the s and w subtypes, and one to three months averaging 10 degrees Celsius or more and the coldest month above -38 degrees Celsius.</obo:IAO_0000115>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, precipitation in all seasons, without the dry summer or dry winter of the s and w subtypes, and one to three months averaging 10 degrees Celsius or more and the coldest month at or above -38 degrees Celsius.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Dfc</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dfc.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
@@ -54759,7 +54759,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001143">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
-        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, precipitation in all seasons, without the dry summer or dry winter of the s and w subtypes, and one to three months averaging 10 degrees Celsius or more and the coldest month at or below -38 degrees Celsius.</obo:IAO_0000115>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, precipitation in all seasons, without the dry summer or dry winter of the s and w subtypes, and one to three months averaging 10 degrees Celsius or more and the coldest month below -38 degrees Celsius.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Dfd</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dfd.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
@@ -54801,7 +54801,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001146">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
-        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, a dry summer, the driest summer month having less than 40 mm of precipitation and less than a third of the wettest winter month, and one to three months averaging 10 degrees Celsius or more and the coldest month above -38 degrees Celsius.</obo:IAO_0000115>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, a dry summer, the driest summer month having less than 40 mm of precipitation and less than a third of the wettest winter month, and one to three months averaging 10 degrees Celsius or more and the coldest month at or above -38 degrees Celsius.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Dsc</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dsc.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
@@ -54815,7 +54815,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001147">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
-        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, a dry summer, the driest summer month having less than 40 mm of precipitation and less than a third of the wettest winter month, and one to three months averaging 10 degrees Celsius or more and the coldest month at or below -38 degrees Celsius.</obo:IAO_0000115>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, a dry summer, the driest summer month having less than 40 mm of precipitation and less than a third of the wettest winter month, and one to three months averaging 10 degrees Celsius or more and the coldest month below -38 degrees Celsius.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Dsd</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dsd.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
@@ -54857,7 +54857,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001150">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
-        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, a dry winter, the driest winter month having less than a tenth of the precipitation of the wettest summer month, and one to three months averaging 10 degrees Celsius or more and the coldest month above -38 degrees Celsius.</obo:IAO_0000115>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, a dry winter, the driest winter month having less than a tenth of the precipitation of the wettest summer month, and one to three months averaging 10 degrees Celsius or more and the coldest month at or above -38 degrees Celsius.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Dwc</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dwc.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
@@ -54871,7 +54871,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001151">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001124"/>
-        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, a dry winter, the driest winter month having less than a tenth of the precipitation of the wettest summer month, and one to three months averaging 10 degrees Celsius or more and the coldest month at or below -38 degrees Celsius.</obo:IAO_0000115>
+        <obo:IAO_0000115>Köppen climate class with the warmest month averaging above 10 degrees Celsius and coldest month averaging 0 degrees Celsius or below, a dry winter, the driest winter month having less than a tenth of the precipitation of the wettest summer month, and one to three months averaging 10 degrees Celsius or more and the coldest month below -38 degrees Celsius.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Dwd</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux BADM CLIMATE_KOEPPEN value: Dwd.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
