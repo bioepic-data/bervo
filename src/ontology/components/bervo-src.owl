@@ -55966,9 +55966,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001233">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001227"/>
         <obo:IAO_0000115>Damage to plants or soil from pests, insects, pathogens, blight or other disease.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>pests and disease</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux BADM DIST_MGMT value: Pests and disease. The DM_INS_PATH value Pathogen maps to Plant disease (BERVO:8001243), the disturbance a pathogen causes; the organism or virus itself is Pathogen (BERVO:8000976).</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:label>Pests and disease</rdfs:label>
+        <rdfs:label>Pest or disease disturbance</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
