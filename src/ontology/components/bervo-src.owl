@@ -23117,6 +23117,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001391">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000048"/>
         <obo:IAO_0000115>The mass or molar concentration of gaseous constituents in the atmosphere, quantifying the abundance of trace gases or major atmospheric components. This parameter is fundamental for air quality assessment, atmospheric chemistry modeling, and understanding gas exchange processes between ecosystems and the atmosphere.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>AtmGasCgperm3_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
@@ -53491,8 +53492,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000048">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
         <obo:IAO_0000115>Grouping class for observed amounts of gases and other constituents in the atmosphere, such as the mole fractions of trace gases measured at a site.</obo:IAO_0000115>
+        <rdfs:comment>Atmospheric gas concentration (BERVO:0001391), the parent of the EcoSIM forcing concentrations, sits here as an additional parent and keeps Climate force variable as its Category.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
-        <rdfs:comment>The EcoSIM forcing terms under Atmospheric gas concentration (BERVO:0001391) are not placed here; they sit under Climate force variable.</rdfs:comment>
         <rdfs:label>Atmospheric composition variable</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
