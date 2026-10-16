@@ -53933,7 +53933,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <obo:IAO_0000115>Number of observations or sensors that contribute to a statistic.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>number of samples</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux variable-name qualifier: _N, the number of replicate sensors averaged into a value.</rdfs:comment>
+        <rdfs:comment>AmeriFlux variable-name qualifier: _N, the number of replicate sensors, or of layers in an aggregation layer index, aggregated into a value.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
         <rdfs:label>Sample size</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
