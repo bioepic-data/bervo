@@ -23123,6 +23123,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001391">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000048"/>
         <obo:IAO_0000115>The mass or molar concentration of gaseous constituents in the atmosphere, quantifying the abundance of trace gases or major atmospheric components. This parameter is fundamental for air quality assessment, atmospheric chemistry modeling, and understanding gas exchange processes between ecosystems and the atmosphere.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>AtmGasCgperm3_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
@@ -32631,7 +32632,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000546"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000887"/>
         <bervo:BERVO_has_unit>g{C}.m-2.d-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_has_unit>umol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>umol{CO2}.m-2.s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -37552,7 +37553,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Vertical turbulent transfer of methane through a horizontal plane at the height of an eddy covariance sensor, per unit area and time, without a correction for the change in methane stored in the air below the sensor.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FCH4</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: FCH4. Adding the matching storage flux gives the exchange at the surface.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: FCH4. Adding Methane storage flux (BERVO:0002248) gives Methane flux (BERVO:0002205), the exchange at the surface.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Methane turbulent flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
@@ -37569,7 +37570,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Vertical turbulent transfer of nitrous oxide through a horizontal plane at the height of an eddy covariance sensor, per unit area and time, without a correction for the change in nitrous oxide stored in the air below the sensor.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FN2O</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: FN2O. Adding the matching storage flux gives the exchange at the surface.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: FN2O. Adding Nitrous oxide storage flux (BERVO:0002249) gives Nitrous oxide flux (BERVO:0002206), the exchange at the surface.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Nitrous oxide turbulent flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
@@ -37637,7 +37638,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Vertical turbulent transfer of water vapor through a horizontal plane at the height of an eddy covariance sensor, per unit area and time, without a correction for the change in water vapor stored in the air below the sensor.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FH2O</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: FH2O. Adding the matching storage flux gives the exchange at the surface.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: FH2O. AmeriFlux has no storage flux for water vapor in molar units; the storage term appears in energy units as Latent heat storage flux (BERVO:0002254).</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Water vapor turbulent flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
@@ -37653,7 +37654,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002246">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Vertical turbulent transfer of sensible heat through a horizontal plane at the height of an eddy covariance sensor, per unit area and time, without a correction for the change in heat stored in the air below the sensor.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux FP-Standard base name: H. The code is not recorded as a synonym because it is also the symbol or synonym of another BERVO term. Adding the matching storage flux gives the exchange at the surface.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: H. The code is not recorded as a synonym because it is also the symbol or synonym of another BERVO term. Adding Sensible heat storage flux (BERVO:0002253) gives Sensible heat flux (BERVO:0001954), the exchange at the surface.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Sensible heat turbulent flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000273"/>
@@ -37669,7 +37670,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002247">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Vertical turbulent transfer of latent heat through a horizontal plane at the height of an eddy covariance sensor, per unit area and time, without a correction for the change in water vapor stored in the air below the sensor.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux FP-Standard base name: LE. The code is not recorded as a synonym because it is also the symbol or synonym of another BERVO term. Adding the matching storage flux gives the exchange at the surface.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: LE. The code is not recorded as a synonym because it is also the symbol or synonym of another BERVO term. Adding Latent heat storage flux (BERVO:0002254) gives Latent heat flux (BERVO:0001953), the exchange at the surface.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Latent heat turbulent flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000273"/>
@@ -37686,7 +37687,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Rate of change of the methane stored in the air column below an eddy covariance sensor, per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SCH4</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: SCH4.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SCH4. Adding it to Methane turbulent flux (BERVO:0002240) gives Methane flux (BERVO:0002205), the exchange at the surface.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Methane storage flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
@@ -37703,7 +37704,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Rate of change of the nitrous oxide stored in the air column below an eddy covariance sensor, per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SN2O</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: SN2O.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SN2O. Adding it to Nitrous oxide turbulent flux (BERVO:0002241) gives Nitrous oxide flux (BERVO:0002206), the exchange at the surface.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Nitrous oxide storage flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
@@ -37753,7 +37754,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002252">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Rate of change of the ozone stored in the air column below an eddy covariance sensor, per unit ground area.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux FP-Standard base name: SO3. The code is not recorded as a synonym because it reads as the formula of sulfur trioxide.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SO3. The code is not recorded as a synonym because it reads as the chemical formula of sulfur trioxide. BERVO has no sulfur trioxide term, so this is not a collision with a BERVO label; the code is kept out to avoid misleading a reader.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Ozone storage flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
@@ -37770,7 +37771,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Rate of change of the sensible heat stored in the air column below an eddy covariance sensor, per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SH</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: SH.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SH. Adding it to Sensible heat turbulent flux (BERVO:0002246) gives Sensible heat flux (BERVO:0001954), the exchange at the surface.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Sensible heat storage flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000273"/>
@@ -37787,7 +37788,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Rate of change of the latent heat, held as water vapor, stored in the air column below an eddy covariance sensor, per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SLE</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: SLE.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SLE. Adding it to Latent heat turbulent flux (BERVO:0002247) gives Latent heat flux (BERVO:0001953), the exchange at the surface.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Latent heat storage flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000273"/>
@@ -37809,7 +37810,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000273"/>
         <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000296"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000793"/>
     </Class>
     
 
@@ -37826,7 +37827,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000273"/>
         <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000793"/>
     </Class>
     
 
@@ -37852,10 +37853,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002258">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001943"/>
-        <obo:IAO_0000115>Net transfer of carbon dioxide between an ecosystem and the atmosphere per unit ground area and time, the balance of uptake by photosynthesis and release by respiration and other sources, measured as the turbulent flux at sensor height plus the change in storage below it.</obo:IAO_0000115>
+        <obo:IAO_0000115>Net transfer of carbon dioxide between an ecosystem and the atmosphere per unit ground area and time, the balance of uptake by photosynthesis and release by respiration and other sources.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NEE</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>net ecosystem exchange of carbon dioxide</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: NEE. Distinct from Net ecosystem carbon dioxide exchange (BERVO:0000326), which is EcoSIM&apos;s grid-cell total in g.h-1/{grid} and sits beneath this term as an additional parent. Flux networks report NEE positive when carbon dioxide moves to the atmosphere.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: NEE. Flux towers measure it as the turbulent flux at sensor height, Carbon dioxide turbulent flux (BERVO:0002239), plus the change in storage below it, Carbon dioxide storage flux (BERVO:0001944). Distinct from Net ecosystem carbon dioxide exchange (BERVO:0000326), which is EcoSIM&apos;s grid-cell total in g.h-1/{grid} and sits beneath this term as an additional parent. Flux networks report NEE positive when carbon dioxide moves to the atmosphere.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Net ecosystem exchange</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
@@ -37952,6 +37953,7 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Flux footprint wind direction flag</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
     </Class>
     
 
@@ -37975,6 +37977,7 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Steady state and integral turbulence characteristics test flag</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
     </Class>
     
 
@@ -53608,6 +53611,7 @@
         <oboInOwl:hasRelatedSynonym>amount fraction</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>mixing ratio</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
+        <rdfs:comment>Mixing ratio is a related synonym because flux networks, AmeriFlux among them, use it for a mole fraction in dry air. In meteorology a mixing ratio is usually a mass ratio of a constituent to dry air, which is not a mole fraction.</rdfs:comment>
         <rdfs:label>Mole fraction</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -54342,8 +54346,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000048">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
         <obo:IAO_0000115>Grouping class for observed amounts of gases and other constituents in the atmosphere, such as the mole fractions of trace gases measured at a site.</obo:IAO_0000115>
+        <rdfs:comment>Atmospheric gas concentration (BERVO:0001391), the parent of the EcoSIM forcing concentrations, sits here as an additional parent and keeps Climate force variable as its Category.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
-        <rdfs:comment>The EcoSIM forcing terms under Atmospheric gas concentration (BERVO:0001391) are not placed here; they sit under Climate force variable.</rdfs:comment>
         <rdfs:label>Atmospheric composition variable</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
