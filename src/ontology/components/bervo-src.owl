@@ -53906,7 +53906,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <obo:IAO_0000115>Qualifier for a value in a time series that was estimated, for a period with no valid measurement, from other data by a gap-filling method.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>gapfilled</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux variable-name qualifier: _F.</rdfs:comment>
+        <rdfs:comment>AmeriFlux variable-name qualifier: _F. Placed under Quantitative value because a gap-filled value is always a number estimated in place of a measurement; Observed (BERVO:8000483) is its complement.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
         <rdfs:label>Gap-filled</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -53919,7 +53919,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001087">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000242"/>
         <obo:IAO_0000115>Qualifier for a value that the team operating a measurement site quality-checked or gap-filled independently of a network&apos;s central processing.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux variable-name qualifier: _PI.</rdfs:comment>
+        <rdfs:comment>AmeriFlux variable-name qualifier: _PI. Placed under Value rather than Quantitative value because it records who processed a value, which applies whether or not the value is numeric.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
         <rdfs:label>Processed by site team</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
