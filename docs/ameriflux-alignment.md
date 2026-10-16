@@ -509,7 +509,7 @@ variable names; they are not counted. The same names serve every time resolution
 BADM (Biological, Ancillary, Disturbance and Metadata) records what a site is like: its
 vegetation, soils, climate, disturbance history and management. The fields come from the
 BADM standard (<https://ameriflux.lbl.gov/data/badm/badm-standards/>) and the legacy
-field list above. Each field was sorted into one of five classes:
+field list above. Each field of the legacy list was sorted into one of five classes:
 
 | Class | Fields (legacy list) | In BERVO |
 | --- | --- | --- |
@@ -526,8 +526,11 @@ following decision 6.
 
 ### Variables
 
-A *legacy* code is a field of the older BADM list that the current standard folds into one
-general field. It maps to the general term, with the variant in `contexts` or `qualifiers`.
+The class counts above are of the legacy list. The table below also has the fields of the
+current standard that the legacy list lacks, so it has more rows than the two in-scope
+classes. A *legacy* code is a field of the older list only. Where the current standard
+folds several legacy fields into one general field, they map to the general term with the
+variant in `contexts` or `qualifiers`.
 
 | BADM variable | BERVO term | Note |
 | --- | --- | --- |
@@ -540,14 +543,14 @@ general field. It maps to the general term, with the variant in `contexts` or `q
 | `AG_LIT_C` | `BERVO:0002339` Plant tissue carbon content | legacy, variant in contexts or qualifiers |
 | `AG_LIT_CN_RATIO` | `BERVO:0002055` Plant tissue carbon to nitrogen mass ratio | legacy, variant in contexts or qualifiers |
 | `AG_LIT_N` | `BERVO:0002340` Plant tissue nitrogen content | legacy, variant in contexts or qualifiers |
-| `AG_LIT_PROD_TOT` | `BERVO:0002343` Litterfall rate | legacy, variant in contexts or qualifiers |
+| `AG_LIT_PROD_TOT` | `BERVO:0002343` Litterfall rate | legacy |
 | `AG_PROD_CROP` | `BERVO:0002341` Aboveground net primary production | legacy, variant in contexts or qualifiers |
 | `AG_PROD_OTHER` | `BERVO:0002341` Aboveground net primary production | legacy, variant in contexts or qualifiers |
 | `AG_PROD_SHRUB` | `BERVO:0002341` Aboveground net primary production | legacy, variant in contexts or qualifiers |
 | `AG_PROD_TREE` | `BERVO:0002341` Aboveground net primary production | legacy, variant in contexts or qualifiers |
 | `ASPECT` | `BERVO:0002329` Aspect class | current standard |
 | `BASAL_AREA` | `BERVO:0001887` Stand basal area | current standard |
-| `BG_LIT_PROD` | `BERVO:0002344` Belowground litter production | legacy, variant in contexts or qualifiers |
+| `BG_LIT_PROD` | `BERVO:0002344` Belowground litter production | legacy |
 | `BIOMASS` | `BERVO:0001970` Vegetation biomass | current standard |
 | `BIOMASS_C` | `BERVO:0002339` Plant tissue carbon content | legacy, variant in contexts or qualifiers |
 | `BIOMASS_CN_RATIO` | `BERVO:0002055` Plant tissue carbon to nitrogen mass ratio | legacy, variant in contexts or qualifiers |
@@ -586,7 +589,7 @@ general field. It maps to the general term, with the variant in `contexts` or `q
 | `LOCATION_LONG` | `BERVO:0002328` Site longitude | current standard |
 | `MAP` | `BERVO:0001897` Mean annual precipitation | current standard |
 | `MAT` | `BERVO:0001417` Mean annual air temperature | current standard |
-| `NEP` | `BERVO:0002347` Net ecosystem production | legacy, variant in contexts or qualifiers |
+| `NEP` | `BERVO:0002347` Net ecosystem production | legacy |
 | `N_DEP_DRY` | `BERVO:0002350` Dry nitrogen deposition | current standard |
 | `N_DEP_WET` | `BERVO:0002349` Wet nitrogen deposition | current standard |
 | `PFCURVE_MP` | `BERVO:0002277` Soil water potential | current standard |
@@ -633,7 +636,7 @@ general field. It maps to the general term, with the variant in `contexts` or `q
 | `SOIL_WRB_GROUP` | `BERVO:0002179` WRB soil classification | current standard |
 | `SPP_O_PERC` | `BERVO:0001834` Percent area covered by specified plant | current standard |
 | `SPP_U_PERC` | `BERVO:0001834` Percent area covered by specified plant | current standard |
-| `STEM_INCR` | `BERVO:0002346` Stem diameter increment | legacy, variant in contexts or qualifiers |
+| `STEM_INCR` | `BERVO:0002346` Stem diameter increment | legacy |
 | `STUMP_MASS` | `BERVO:0002338` Litter and debris mass | legacy, variant in contexts or qualifiers |
 | `SURFACE_HOMOGENEITY` | `BERVO:0002332` Surface homogeneity distance | current standard |
 | `TERRAIN` | `BERVO:0002330` Terrain type | current standard |
@@ -656,6 +659,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 | E | `BERVO:8001206` East |
 | ENE | `BERVO:8001205` East-northeast |
 | ESE | `BERVO:8001207` East-southeast |
+| FLAT | `BERVO:8001219` Flat terrain |
 | N | `BERVO:8001202` North |
 | NE | `BERVO:8001204` Northeast |
 | NNE | `BERVO:8001203` North-northeast |
@@ -674,8 +678,8 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 
 | BADM value | BERVO concept |
 | --- | --- |
-| Green | `BERVO:8001178` Green plant material |
-| Non-green | `BERVO:8001179` Non-green plant material |
+| Green | `BERVO:8001178` Green vegetation |
+| Non-green | `BERVO:8001179` Non-green vegetation |
 
 #### BIOMASS_ORGAN
 
@@ -765,7 +769,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 | Grazing | `BERVO:8001235` Grazing |
 | Hydrologic event | `BERVO:8001232` Hydrologic event |
 | Land cover change | `BERVO:8001234` Land cover change |
-| Pests and disease | `BERVO:8001233` Pests and disease |
+| Pests and disease | `BERVO:8001233` Pest or disease disturbance |
 | Storm or wind | `BERVO:8001231` Storm or wind event |
 | Temperature extreme | `BERVO:8001230` Temperature extreme |
 | Undisturbed | `BERVO:8001295` Undisturbed |
@@ -919,6 +923,14 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 | --- | --- |
 | Overstory | `BERVO:8001173` Overstory |
 
+#### LAI_TYPE
+
+| BADM value | BERVO concept |
+| --- | --- |
+| GAI | `BERVO:0002337` Green area index |
+| LAI | `BERVO:0001879` Canopy leaf area index |
+| PAI | `BERVO:0001890` Plant area index |
+
 #### LIFESTAGE
 
 | BADM value | BERVO concept |
@@ -989,6 +1001,7 @@ Every BADM controlled vocabulary is a set of BERVO concepts (decision 7).
 | --- | --- | --- |
 | DM_AGRICULTURE | Harvest | `BERVO:8000003` Harvest |
 | DM_FIRE | Prescribed human induced burn | `BERVO:8000925` Prescribed fire |
-| DM_INS_PATH | Pathogen | `BERVO:8000976` Pathogen |
+| DM_INS_PATH | Pathogen | `BERVO:8001243` Plant disease |
 | DM_WATER | Irrigation | `BERVO:8000070` Irrigation |
 | VEGTYPE | Water | `BERVO:8000724` Water body |
+
