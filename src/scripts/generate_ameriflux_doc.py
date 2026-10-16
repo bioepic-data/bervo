@@ -89,7 +89,7 @@ n_fp = len(fp_codes) - len(missing)
 # ---------------------------------------------------------------- FLUXNET FULLSET
 fl = list(csv.DictReader(open(S / "fluxnet_vars.tsv", encoding="utf-8"), delimiter="\t"))
 artefacts = [r for r in fl if not re.fullmatch(r"[A-Z0-9_#]+", r["name"])]
-fl = [r for r in fl if r not in artefacts]
+fl = [r for r in fl if re.fullmatch(r"[A-Z0-9_#]+", r["name"])]
 
 BASE = [  # longest prefix first
     ("TIMESTAMP_START", "DateTime"), ("TIMESTAMP_END", "DateTime"), ("TIMESTAMP", "DateTime"),
