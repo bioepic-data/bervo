@@ -53,6 +53,10 @@ build-docker:
 browser-data:
     cd {{ontology_dir}} && make browser_data
 
+# Regenerate docs/ameriflux-alignment.md from the AmeriFlux notes in the template.
+ameriflux-doc:
+    python3 src/scripts/generate_ameriflux_doc.py
+
 # Full ODK QC suite. Slow, and needs the odkfull Docker image.
 qc:
     cd {{ontology_dir}} && sh run.sh make test IMP=false PAT=false MIR=false

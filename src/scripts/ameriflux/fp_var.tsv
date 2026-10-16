@@ -1,0 +1,146 @@
+Name	Type	Units	Description
+COND_WATER	AQUATIC	µS cm-1	Conductivity (i.e., electrical conductivity) of water
+DO	AQUATIC	µmol L-1	Dissolved oxygen in water
+PCH4	AQUATIC	nmolCH4 mol-1	Dissolved methane (CH4) in water
+PCO2	AQUATIC	µmolCO2 mol-1	Dissolved carbon dioxide (CO2) in water
+PN2O	AQUATIC	nmolN2O mol-1	Dissolved nitrous oxide (N2O) in water
+PPFD_UW_IN	AQUATIC	µmolPhotons m-2 s-1	Photosynthetic photon flux density, underwater, incoming
+TW	AQUATIC	deg C	Water temperature
+DBH	BIOLOGICAL	cm	Diameter of tree measured at breast height (1.3m) with continuous dendrometers
+LEAF_WET	BIOLOGICAL	%	Leaf wetness, range 0-100
+SAP_DT	BIOLOGICAL	deg C	Difference of probes temperature for sapflow measurements
+SAP_FLOW	BIOLOGICAL	mmolH2O m-2 s-1	Sap flow
+T_BOLE	BIOLOGICAL	deg C	Bole temperature
+T_CANOPY	BIOLOGICAL	deg C	Temperature of the canopy and/or surface underneath the sensor
+FETCH_70	FOOTPRINT	m	Distance at which cross-wind integrated footprint cumulative probability is 70%
+FETCH_80	FOOTPRINT	m	Distance at which cross-wind integrated footprint cumulative probability is 80%
+FETCH_90	FOOTPRINT	m	Distance at which cross-wind integrated footprint cumulative probability is 90%
+FETCH_FILTER	FOOTPRINT	nondimensional	Footprint quality flag (i.e., 0, 1): 0 and 1 indicate data measured when wind coming from direction that should be discarded and kept, respectively
+FETCH_MAX	FOOTPRINT	m	Distance at which footprint contribution is maximum
+CH4	GASES	nmolCH4 mol-1	Methane (CH4) mole fraction in wet air
+CH4_MIXING_RATIO	GASES	nmolCH4 mol-1	Methane (CH4) in mole fraction of dry air
+CO	GASES	nmolCO mol-1	Carbon Monoxide (CO) mole fraction in wet air
+CO2	GASES	µmolCO2 mol-1	Carbon Dioxide (CO2) mole fraction in wet air
+CO2_MIXING_RATIO	GASES	µmolCO2 mol-1	Carbon Dioxide (CO2) in mole fraction of dry air
+CO2_SIGMA	GASES	µmolCO2 mol-1	Standard deviation of carbon dioxide mole fraction in wet air
+CO2C13	GASES	‰ (permil)	Stable isotopic composition of CO2 - C13 (i.e., d13C of CO2)
+FC	GASES	µmolCO2 m-2 s-1	Carbon Dioxide (CO2) turbulent flux (no storage correction)
+FCH4	GASES	nmolCH4 m-2 s-1	Methane (CH4) turbulent flux (no storage correction)
+FN2O	GASES	nmolN2O m-2 s-1	Nitrous oxide (N2O) turbulent flux (no storage correction)
+FNO	GASES	nmolNO m-2 s-1	Nitric oxide (NO) turbulent flux (no storage correction)
+FNO2	GASES	nmolNO2 m-2 s-1	Nitrogen dioxide (NO2) turbulent flux (no storage correction)
+FO3	GASES	nmolO3 m-2 s-1	Ozone (O3) turbulent flux (no storage correction)
+H2O	GASES	mmolH2O mol-1	Water (H2O) vapor in mole fraction of wet air
+H2O_MIXING_RATIO	GASES	mmolH2O mol-1	Water (H2O) vapor in mole fraction of dry air
+H2O_SIGMA	GASES	mmolH2O mol-1	Standard deviation of water vapor mole fraction
+N2O	GASES	nmolN2O mol-1	Nitrous Oxide (N2O) mole fraction in wet air
+N2O_MIXING_RATIO	GASES	nmolN2O mol-1	Nitrous Oxide (N2O) in mole fraction of dry air
+NO	GASES	nmolNO mol-1	Nitric oxide (NO) mole fraction in wet air
+NO2	GASES	nmolNO2 mol-1	Nitrogen dioxide (NO2) mole fraction in wet air
+O3	GASES	nmolO3 mol-1	Ozone (O3) mole fraction in wet air
+SC	GASES	µmolCO2 m-2 s-1	Carbon Dioxide (CO2) storage flux
+SCH4	GASES	nmolCH4 m-2 s-1	Methane (CH4) storage flux
+SN2O	GASES	nmolN2O m-2 s-1	Nitrous oxide (N2O) storage flux
+SNO	GASES	nmolNO m-2 s-1	Nitric oxide (NO) storage flux
+SNO2	GASES	nmolNO2 m-2 s-1	Nitrogen dioxide (NO2) storage flux
+SO2	GASES	nmolSO2 mol-1	Sulfur Dioxide (SO2) mole fraction in wet air
+SO3	GASES	nmolO3 m-2 s-1	Ozone (O3) storage flux
+FH2O	HEAT	mmolH2O m-2 s-1	Water vapor (H2O) turbulent flux (no storage correction)
+G	HEAT	W m-2	Soil heat flux
+H	HEAT	W m-2	Sensible heat turbulent flux (no storage correction)
+LE	HEAT	W m-2	Latent heat turbulent flux (no storage correction)
+SB	HEAT	W m-2	Heat storage flux in biomass
+SG	HEAT	W m-2	Heat storage flux in the soil above the soil heat fluxes measurement
+SH	HEAT	W m-2	Sensible heat (H) storage flux
+SLE	HEAT	W m-2	Latent heat (LE) storage flux
+PA	MET_ATM	kPa	Atmospheric pressure
+PBLH	MET_ATM	m	Planetary boundary layer height
+RH	MET_ATM	%	Relative humidity, range 0-100
+T_SONIC	MET_ATM	deg C	Sonic temperature
+T_SONIC_SIGMA	MET_ATM	deg C	Standard deviation of sonic temperature
+TA	MET_ATM	deg C	Air temperature
+VPD	MET_ATM	hPa	Vapor Pressure Deficit
+D_SNOW	MET_PRECIP	cm	Snow depth
+P	MET_PRECIP	mm	Precipitation
+P_RAIN	MET_PRECIP	mm	Rainfall
+P_SNOW	MET_PRECIP	mm	Snowfall
+RUNOFF	MET_PRECIP	mm	Run off
+STEMFLOW	MET_PRECIP	mm	Excess precipitation that drains from outlying branches and leaves and is channeled through the stems to the ground
+THROUGHFALL	MET_PRECIP	mm	Excess precipitation that passes directly through a canopy or drips from wet leaves to the ground
+ALB	MET_RAD	%	Albedo, range 0-100
+APAR	MET_RAD	µmolPhoton m-2 s-1	Absorbed PAR
+EVI	MET_RAD	nondimensional	Enhanced Vegetation Index
+FAPAR	MET_RAD	%	Fraction of absorbed PAR, range 0-100
+FIPAR	MET_RAD	%	Fraction of intercepted PAR, range 0-100
+LW_BC_IN	MET_RAD	W m-2	Longwave radiation, below canopy incoming
+LW_BC_OUT	MET_RAD	W m-2	Longwave radiation, below canopy outgoing
+LW_IN	MET_RAD	W m-2	Longwave radiation, incoming
+LW_OUT	MET_RAD	W m-2	Longwave radiation, outgoing
+MCRI	MET_RAD	nondimensional	Carotenoid Reflectance Index (Gitelson et al., 2002)
+MTCI	MET_RAD	nondimensional	Meris Terrestrial Chlorophyll Index (Dash and Curran, 2004)
+NDVI	MET_RAD	nondimensional	Normalized Difference Vegetation Index
+NETRAD	MET_RAD	W m-2	Net radiation
+NIRV	MET_RAD	W m-2 sr-1 nm-1	Near Infrared Vegetation Index (Badgley et al., 2017)
+PPFD_BC_IN	MET_RAD	µmolPhoton m-2 s-1	Photosynthetic photon flux density, below canopy incoming
+PPFD_BC_OUT	MET_RAD	µmolPhoton m-2 s-1	Photosynthetic photon flux density, below canopy outgoing
+PPFD_DIF	MET_RAD	µmolPhoton m-2 s-1	Photosynthetic photon flux density, diffuse incoming
+PPFD_DIR	MET_RAD	µmolPhoton m-2 s-1	Photosynthetic photon flux density, direct incoming
+PPFD_IN	MET_RAD	µmolPhoton m-2 s-1	Photosynthetic photon flux density, incoming
+PPFD_OUT	MET_RAD	µmolPhoton m-2 s-1	Photosynthetic photon flux density, outgoing
+PRI	MET_RAD	nondimensional	Photochemical Reflectance Index
+R_UVA	MET_RAD	W m-2	UVA radiation, incoming
+R_UVB	MET_RAD	W m-2	UVB radiation, incoming
+REDCI	MET_RAD	nondimensional	Red Edge Chlorophyll Index
+REP	MET_RAD	nm	Red Edge Position (Dash and Curran, 2004)
+SPEC_NIR_IN	MET_RAD	W m-2 nm-1	Radiation (near infra-red band), incoming (hemispherical)
+SPEC_NIR_OUT	MET_RAD	W m-2 sr-1 nm-1	Radiation (near infra-red band), outgoing
+SPEC_NIR_REFL	MET_RAD	nondimensional	Reflectance (near infra-red band)
+SPEC_PRI_REF_IN	MET_RAD	W m-2 nm-1	Radiation for PRI reference band (e.g., 570 nm), incoming (hemispherical)
+SPEC_PRI_REF_OUT	MET_RAD	W m-2 sr-1 nm-1	Radiation for PRI reference band (e.g., 570 nm), outgoing
+SPEC_PRI_REF_REFL	MET_RAD	nondimensional	Reflectance for PRI reference band (e.g., 570 nm)
+SPEC_PRI_TGT_IN	MET_RAD	W m-2 nm-1	Radiation for PRI target band (e.g., 531 nm), incoming (hemispherical)
+SPEC_PRI_TGT_OUT	MET_RAD	W m-2 sr-1 nm-1	Radiation for PRI target band (e.g., 531 nm), outgoing
+SPEC_PRI_TGT_REFL	MET_RAD	nondimensional	Reflectance for PRI target band (e.g., 531 nm)
+SPEC_RED_IN	MET_RAD	W m-2 nm-1	Radiation (red band), incoming (hemispherical)
+SPEC_RED_OUT	MET_RAD	W m-2 sr-1 nm-1	Radiation (red band), outgoing
+SPEC_RED_REFL	MET_RAD	nondimensional	Reflectance (red band)
+SR	MET_RAD	nondimensional	Simple Ratio
+SW_BC_IN	MET_RAD	W m-2	Shortwave radiation, below canopy incoming
+SW_BC_OUT	MET_RAD	W m-2	Shortwave radiation, below canopy outgoing
+SW_DIF	MET_RAD	W m-2	Shortwave radiation, diffuse incoming
+SW_DIR	MET_RAD	W m-2	Shortwave radiation, direct incoming
+SW_IN	MET_RAD	W m-2	Shortwave radiation, incoming
+SW_OUT	MET_RAD	W m-2	Shortwave radiation, outgoing
+TCARI	MET_RAD	nondimensional	Transformed Chlorophyll Absorption in Reflectance Index
+SECA	MET_SOIL	dS m-1	Soil apparent Electrical Conductivity
+SWC	MET_SOIL	%	Soil water content (volumetric), range 0-100
+SWP	MET_SOIL	kPa	Soil water potential
+TS	MET_SOIL	deg C	Soil temperature
+TSN	MET_SOIL	deg C	Snow temperature
+WTD	MET_SOIL	m	Water table depth
+MO_LENGTH	MET_WIND	m	Monin-Obukhov length
+TAU	MET_WIND	kg m-1 s-2	Momentum flux
+U_SIGMA	MET_WIND	m s-1	Standard deviation of velocity fluctuations (towards main-wind direction after coordinates rotation)
+USTAR	MET_WIND	m s-1	Friction velocity
+V_SIGMA	MET_WIND	m s-1	Standard deviation of lateral velocity fluctuations (cross main-wind direction after coordinates rotation)
+W_SIGMA	MET_WIND	m s-1	Standard deviation of vertical velocity fluctuations
+WD	MET_WIND	Decimal degrees	Wind direction
+WD_SIGMA	MET_WIND	decimal degree	Standard deviation of wind direction (Yamartino, 1984)
+WS	MET_WIND	m s-1	Wind speed
+WS_MAX	MET_WIND	m s-1	maximum WS in the averaging period
+ZL	MET_WIND	nondimensional	Monin-Obukhov Stability parameter
+GPP	PRODUCTS	µmolCO2 m-2 s-1	Gross Primary Productivity
+NEE	PRODUCTS	µmolCO2 m-2 s-1	Net Ecosystem Exchange
+RECO	PRODUCTS	µmolCO2 m-2 s-1	Ecosystem Respiration
+FC_SSITC_TEST	QC_FLAG	nondimensional	Results of the quality flagging for FC according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)
+FCH4_SSITC_TEST	QC_FLAG	nondimensional	Results of the quality flagging for FCH4 according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)
+FN2O_SSITC_TEST	QC_FLAG	nondimensional	Results of the quality flagging for FN2O according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)
+FNO_SSITC_TEST	QC_FLAG	nondimensional	Results of the quality flagging for FNO according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)
+FNO2_SSITC_TEST	QC_FLAG	nondimensional	Results of the quality flagging for FNO2 according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)
+FO3_SSITC_TEST	QC_FLAG	nondimensional	Results of the quality flagging for FO3 according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)
+H_SSITC_TEST	QC_FLAG	nondimensional	Results of the quality flagging for H according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)
+LE_SSITC_TEST	QC_FLAG	nondimensional	Results of the quality flagging for LE according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)
+TAU_SSITC_TEST	QC_FLAG	nondimensional	Results of the quality flagging for TAU according to Foken et al 2004, based on a combination of Steady State and Integral Turbulence Characteristics tests by Foken and Wichura (1996) (i.e., 0, 1, 2)
+TIMESTAMP	TIMEKEEPING	YYYYMMDDHHMM	ISO timestamp – short format
+TIMESTAMP_END	TIMEKEEPING	YYYYMMDDHHMM	ISO timestamp end of averaging period - short format (12-digit integer)
+TIMESTAMP_START	TIMEKEEPING	YYYYMMDDHHMM	ISO timestamp start of averaging period - short format (12-digit integer)
