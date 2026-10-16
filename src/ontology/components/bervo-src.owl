@@ -55863,7 +55863,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001225">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001218"/>
-        <obo:IAO_0000115>Terrain class of land sloping at 5 to 10 percent.</obo:IAO_0000115>
+        <obo:IAO_0000115>Terrain class of land sloping at more than 5 and up to 10 percent.</obo:IAO_0000115>
         <rdfs:comment>AmeriFlux BADM TERRAIN value: Significant Slope (&gt;5%, &lt;10%).</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
         <rdfs:label>Significant slope</rdfs:label>
