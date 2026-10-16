@@ -61,9 +61,6 @@ missing = sorted(fp_codes - set(primary) - set(noted))
 if missing:
     problems.append(f"FP base names with no BERVO term: {missing}")
 
-STAT = {"_SIGMA": "Standard deviation", "WS_MAX": "Maximum"}
-
-
 def how_noted(code):
     if code.endswith("_SIGMA"):
         return "base term + `Standard deviation` qualifier"
