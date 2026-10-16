@@ -39006,7 +39006,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002327">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
-        <obo:IAO_0000115>Angular distance of a measurement site north or south of the equator.</obo:IAO_0000115>
+        <obo:IAO_0000115>Angular distance of a location, such as a measurement site, north or south of the equator.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LOCATION_LAT</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux BADM variable name: LOCATION_LAT. AmeriFlux reports it in decimal degrees on the WGS84 datum. The EcoSIM grid-cell Latitude measurement (BERVO:0000991) sits beneath this term as an additional parent.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
@@ -39022,7 +39022,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002328">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
-        <obo:IAO_0000115>Angular distance of a measurement site east or west of the prime meridian.</obo:IAO_0000115>
+        <obo:IAO_0000115>Angular distance of a location, such as a measurement site, east or west of the prime meridian.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LOCATION_LONG</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux BADM variable name: LOCATION_LONG. AmeriFlux reports it in decimal degrees on the WGS84 datum.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
