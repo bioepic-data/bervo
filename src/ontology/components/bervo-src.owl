@@ -38946,7 +38946,7 @@
         <oboInOwl:hasRelatedSynonym>extraterrestrial radiation</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>top-of-atmosphere radiation</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 4</rdfs:comment>
-        <rdfs:comment>FLUXNET FULLSET variable: SW_IN_POT.</rdfs:comment>
+        <rdfs:comment>FLUXNET FULLSET variable: SW_IN_POT. Placed under Incoming radiation, not Incoming shortwave radiation, because it is computed for the top of the atmosphere rather than measured at the land surface; Incoming radiation is the nearest parent that does not place it at the land surface.</rdfs:comment>
         <rdfs:label>Potential incoming shortwave radiation</rdfs:label>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000888"/>
         <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
