@@ -23123,6 +23123,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001391">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000048"/>
         <obo:IAO_0000115>The mass or molar concentration of gaseous constituents in the atmosphere, quantifying the abundance of trace gases or major atmospheric components. This parameter is fundamental for air quality assessment, atmospheric chemistry modeling, and understanding gas exchange processes between ecosystems and the atmosphere.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>AtmGasCgperm3_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
@@ -24499,6 +24500,7 @@
         <rdfs:comment>SoilHeatDataType.txt</rdfs:comment>
         <rdfs:label>Soil temperature</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
+        <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
         <bervo:BERVO_has_unit>K</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
@@ -30815,7 +30817,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001859 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001859">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000022"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
         <obo:IAO_0000115>Temperature of the interface between the land surface and the overlying air, the radiating and conducting surface itself rather than the air above it or the soil beneath it.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>surface-temperature</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ATS: surface-temperature [K], the surface skin temperature used by the surface energy balance.</rdfs:comment>
@@ -32631,7 +32633,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000546"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000887"/>
         <bervo:BERVO_has_unit>g{C}.m-2.d-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_has_unit>umol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>umol{CO2}.m-2.s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -32835,7 +32837,7 @@
         <obo:IAO_0000115>Depth of the precipitation that passes through gaps in a plant canopy or drips from it to the ground, over a period.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/throughfall"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Throughfall&quot;: In Hydrology, throughfall is the process which describes how wet leaves shed excess water onto the ground surface. These drops have greater erosive power because they are heavier than rain drops. Furthermore, where there is a high canopy, falling drops may reach terminal velocity, about 8 metres (26 ft), thus maximizing the drop&apos;s erosive potential. AmeriFlux FP-Standard base name: THROUGHFALL.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Throughfall&quot;: In Hydrology, throughfall is the process which describes how wet leaves shed excess water onto the ground surface. These drops have greater erosive power because they are heavier than rain drops. Furthermore, where there is a high canopy, falling drops may reach terminal velocity, about 8 metres (26 ft), thus maximizing the drop&apos;s erosive potential. AmeriFlux FP-Standard base name: THROUGHFALL. The code is not recorded as a synonym because it differs from the label only in case.</rdfs:comment>
         <rdfs:label>Throughfall</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
@@ -37553,7 +37555,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Vertical turbulent transfer of methane through a horizontal plane at the height of an eddy covariance sensor, per unit area and time, without a correction for the change in methane stored in the air below the sensor.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FCH4</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: FCH4. Adding the matching storage flux gives the exchange at the surface.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: FCH4. Adding Methane storage flux (BERVO:0002248) gives Methane flux (BERVO:0002205), the exchange at the surface.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Methane turbulent flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
@@ -37570,7 +37572,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Vertical turbulent transfer of nitrous oxide through a horizontal plane at the height of an eddy covariance sensor, per unit area and time, without a correction for the change in nitrous oxide stored in the air below the sensor.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FN2O</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: FN2O. Adding the matching storage flux gives the exchange at the surface.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: FN2O. Adding Nitrous oxide storage flux (BERVO:0002249) gives Nitrous oxide flux (BERVO:0002206), the exchange at the surface.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Nitrous oxide turbulent flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
@@ -37638,7 +37640,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Vertical turbulent transfer of water vapor through a horizontal plane at the height of an eddy covariance sensor, per unit area and time, without a correction for the change in water vapor stored in the air below the sensor.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FH2O</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: FH2O. Adding the matching storage flux gives the exchange at the surface.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: FH2O. AmeriFlux has no storage flux for water vapor in molar units; the storage term appears in energy units as Latent heat storage flux (BERVO:0002254).</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Water vapor turbulent flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000550"/>
@@ -37654,7 +37656,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002246">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Vertical turbulent transfer of sensible heat through a horizontal plane at the height of an eddy covariance sensor, per unit area and time, without a correction for the change in heat stored in the air below the sensor.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux FP-Standard base name: H. The code is not recorded as a synonym because it is also the symbol or synonym of another BERVO term. Adding the matching storage flux gives the exchange at the surface.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: H. The code is not recorded as a synonym because it is also the symbol or synonym of another BERVO term. Adding Sensible heat storage flux (BERVO:0002253) gives Sensible heat flux (BERVO:0001954), the exchange at the surface.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Sensible heat turbulent flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000273"/>
@@ -37670,7 +37672,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002247">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Vertical turbulent transfer of latent heat through a horizontal plane at the height of an eddy covariance sensor, per unit area and time, without a correction for the change in water vapor stored in the air below the sensor.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux FP-Standard base name: LE. The code is not recorded as a synonym because it is also the symbol or synonym of another BERVO term. Adding the matching storage flux gives the exchange at the surface.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: LE. The code is not recorded as a synonym because it is also the symbol or synonym of another BERVO term. Adding Latent heat storage flux (BERVO:0002254) gives Latent heat flux (BERVO:0001953), the exchange at the surface.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Latent heat turbulent flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000273"/>
@@ -37687,7 +37689,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Rate of change of the methane stored in the air column below an eddy covariance sensor, per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SCH4</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: SCH4.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SCH4. Adding it to Methane turbulent flux (BERVO:0002240) gives Methane flux (BERVO:0002205), the exchange at the surface.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Methane storage flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
@@ -37704,7 +37706,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Rate of change of the nitrous oxide stored in the air column below an eddy covariance sensor, per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SN2O</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: SN2O.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SN2O. Adding it to Nitrous oxide turbulent flux (BERVO:0002241) gives Nitrous oxide flux (BERVO:0002206), the exchange at the surface.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Nitrous oxide storage flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
@@ -37754,7 +37756,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002252">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Rate of change of the ozone stored in the air column below an eddy covariance sensor, per unit ground area.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux FP-Standard base name: SO3. The code is not recorded as a synonym because it reads as the formula of sulfur trioxide.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SO3. The code is not recorded as a synonym because it reads as the chemical formula of sulfur trioxide. BERVO has no sulfur trioxide term, so this is not a collision with a BERVO label; the code is kept out to avoid misleading a reader.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Ozone storage flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
@@ -37771,7 +37773,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Rate of change of the sensible heat stored in the air column below an eddy covariance sensor, per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SH</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: SH.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SH. Adding it to Sensible heat turbulent flux (BERVO:0002246) gives Sensible heat flux (BERVO:0001954), the exchange at the surface.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Sensible heat storage flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000273"/>
@@ -37788,7 +37790,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000039"/>
         <obo:IAO_0000115>Rate of change of the latent heat, held as water vapor, stored in the air column below an eddy covariance sensor, per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SLE</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: SLE.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SLE. Adding it to Latent heat turbulent flux (BERVO:0002247) gives Latent heat flux (BERVO:0001953), the exchange at the surface.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Latent heat storage flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000273"/>
@@ -37810,7 +37812,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000273"/>
         <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000296"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000793"/>
     </Class>
     
 
@@ -37827,7 +37829,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000273"/>
         <bervo:BERVO_has_unit>W.m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000793"/>
     </Class>
     
 
@@ -37853,10 +37855,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002258">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001943"/>
-        <obo:IAO_0000115>Net transfer of carbon dioxide between an ecosystem and the atmosphere per unit ground area and time, the balance of uptake by photosynthesis and release by respiration and other sources, measured as the turbulent flux at sensor height plus the change in storage below it.</obo:IAO_0000115>
+        <obo:IAO_0000115>Net transfer of carbon dioxide between an ecosystem and the atmosphere per unit ground area and time, the balance of uptake by photosynthesis and release by respiration and other sources.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NEE</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>net ecosystem exchange of carbon dioxide</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: NEE. Distinct from Net ecosystem carbon dioxide exchange (BERVO:0000326), which is EcoSIM&apos;s grid-cell total in g.h-1/{grid} and sits beneath this term as an additional parent. Flux networks report NEE positive when carbon dioxide moves to the atmosphere.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: NEE. Flux towers measure it as the turbulent flux at sensor height, Carbon dioxide turbulent flux (BERVO:0002239), plus the change in storage below it, Carbon dioxide storage flux (BERVO:0001944). Distinct from Net ecosystem carbon dioxide exchange (BERVO:0000326), which is EcoSIM&apos;s grid-cell total in g.h-1/{grid} and sits beneath this term as an additional parent. Flux networks report NEE positive when carbon dioxide moves to the atmosphere.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Net ecosystem exchange</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000040"/>
@@ -37953,6 +37955,7 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Flux footprint wind direction flag</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
     </Class>
     
 
@@ -37976,6 +37979,7 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
         <rdfs:label>Steady state and integral turbulence characteristics test flag</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
     </Class>
     
 
@@ -38017,7 +38021,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002268">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000038"/>
-        <obo:IAO_0000115>Height above the surface at which buoyant production of turbulence equals its production by wind shear, a length scale of atmospheric surface-layer stability.</obo:IAO_0000115>
+        <obo:IAO_0000115>Length scale of atmospheric surface-layer stability whose magnitude is the height above the surface at which buoyant production of turbulence equals its production by wind shear, negative in unstable and positive in stable surface layers.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>MO_LENGTH</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Obukhov length</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux FP-Standard base name: MO_LENGTH.</rdfs:comment>
@@ -38073,7 +38077,7 @@
         <obo:IAO_0000115>Component of the wind velocity horizontal and perpendicular to the mean wind direction, after rotation of the anemometer coordinate system into the mean wind.</obo:IAO_0000115>
         <rdfs:comment>AmeriFlux reports only its standard deviation within an averaging period, as V_SIGMA; BERVO expresses that with the Standard deviation qualifier on this term rather than a separate term.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
-        <rdfs:label>Crosswind wind velocity</rdfs:label>
+        <rdfs:label>Crosswind velocity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000101"/>
         <bervo:BERVO_has_unit>m.s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
@@ -38102,9 +38106,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002273">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001908"/>
-        <obo:IAO_0000115>Depth of liquid precipitation collected over a period, per unit horizontal area.</obo:IAO_0000115>
+        <obo:IAO_0000115>Depth of liquid precipitation collected over a period.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>P_RAIN</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: P_RAIN.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: P_RAIN. Distinct from Rainfall measurement (BERVO:0001421), the rainfall forcing of EcoSIM and ATS as a volume per grid cell per hour or a depth per second, and from Rainfall rate (BERVO:0001909), the depth per unit time; this term is the depth accumulated over a reporting period.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Rainfall amount</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
@@ -38118,9 +38122,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002274">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001908"/>
-        <obo:IAO_0000115>Depth of solid precipitation falling over a period, usually expressed as the depth of liquid water it yields.</obo:IAO_0000115>
+        <obo:IAO_0000115>Depth of liquid water equivalent of the solid precipitation falling over a period.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>P_SNOW</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: P_SNOW.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: P_SNOW. AmeriFlux gives it in mm without saying whether snow depth or water equivalent is meant; it is taken here as water equivalent, as its parent Precipitation amount is, because AmeriFlux reports snow depth separately as D_SNOW (Snowpack depth, BERVO:0001572). Distinct from Snowfall measurement (BERVO:0001422), the snowfall forcing of EcoSIM and ATS as a rate; this term is the water equivalent accumulated over a reporting period.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Snowfall amount</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
@@ -38134,7 +38138,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002275">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001908"/>
-        <obo:IAO_0000115>Depth of precipitation, per unit ground area, that is intercepted by a canopy and drains to the ground along branches and stems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Depth of precipitation that is intercepted by a canopy and drains to the ground along branches and stems.</obo:IAO_0000115>
         <rdfs:comment>AmeriFlux FP-Standard base name: STEMFLOW.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Stemflow</rdfs:label>
@@ -38150,8 +38154,8 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002276">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000041"/>
-        <obo:IAO_0000115>Depth of water, per unit area, that leaves an area over the land surface or through the soil in a period rather than infiltrating or evaporating.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux FP-Standard base name: RUNOFF. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term. AmeriFlux does not say whether surface runoff or total runoff is meant.</rdfs:comment>
+        <obo:IAO_0000115>Depth of water that leaves an area over the land surface or through the soil in a period rather than infiltrating or evaporating.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux FP-Standard base name: RUNOFF. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term. AmeriFlux does not say whether surface runoff or total runoff is meant. Distinct from Total surface runoff (BERVO:0000316) and Soil surface runoff water (BERVO:0001816), EcoSIM volumes per grid cell; this term is a depth over a reporting period.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Runoff depth</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
@@ -38254,10 +38258,10 @@
     <!-- https://w3id.org/bervo/BERVO_0002282 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002282">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001928"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001867"/>
         <obo:IAO_0000115>Shortwave radiation arriving from above at a point beneath a canopy, the part of the incoming solar radiation transmitted through or scattered by the canopy.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SW_BC_IN</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: SW_BC_IN.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SW_BC_IN. Distinct from Shortwave radiation incident on ground surface (BERVO:0000576), the EcoSIM grid-cell energy input in MJ.h-1; this term is the flux density a radiometer measures below the canopy.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Below-canopy incoming shortwave radiation</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001079"/>
@@ -38582,7 +38586,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
         <obo:IAO_0000115>Spectral vegetation index from near-infrared, red and blue reflectances that corrects for soil background and atmospheric scattering and saturates less than the normalized difference vegetation index over dense canopies.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>EVI</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: EVI.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: EVI. As formulated by Huete et al. (2002), Remote Sensing of Environment 83:195-213.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Enhanced vegetation index</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -38595,9 +38599,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002304">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
-        <obo:IAO_0000115>Spectral vegetation index from reflectances in the green and red-edge regions, sensitive to the carotenoid content of leaves (Gitelson et al., 2002).</obo:IAO_0000115>
+        <obo:IAO_0000115>Spectral vegetation index from the reciprocals of the reflectances near 510 nm and near 550 or 700 nm, sensitive to the carotenoid content of leaves.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>MCRI</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: MCRI.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: MCRI. AmeriFlux cites Gitelson et al. (2002), Photochemistry and Photobiology 75:272-281, who define CRI550 from 510 and 550 nm and CRI700 from 510 and 700 nm. A modified form multiplies either by near-infrared reflectance (Gitelson et al., 2006, Geophysical Research Letters 33:L11402). AmeriFlux does not say which form its MCRI is, so this term covers them all.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Carotenoid reflectance index</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -38610,9 +38614,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002305">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
-        <obo:IAO_0000115>Spectral vegetation index from reflectances in three bands across the red edge, defined for the MERIS sensor and sensitive to canopy chlorophyll content (Dash and Curran, 2004).</obo:IAO_0000115>
+        <obo:IAO_0000115>Spectral vegetation index from reflectances in three bands across the red edge, defined for the MERIS sensor and sensitive to canopy chlorophyll content.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>MTCI</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: MTCI.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: MTCI. Defined by Dash and Curran (2004), International Journal of Remote Sensing 25:5403-5413.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>MERIS terrestrial chlorophyll index</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -38625,9 +38629,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002306">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
-        <obo:IAO_0000115>Spectral vegetation index equal to the product of the normalized difference vegetation index and the near-infrared reflectance, the share of near-infrared reflectance attributable to vegetation (Badgley et al., 2017).</obo:IAO_0000115>
+        <obo:IAO_0000115>Spectral vegetation index equal to the product of the normalized difference vegetation index and the near-infrared reflectance, the share of near-infrared reflectance attributable to vegetation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NIRV</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: NIRV. AmeriFlux lists NIRV in W m-2 sr-1 nm-1, the unit of the radiance-based variant (the normalized difference vegetation index times near-infrared radiance). The index as Badgley et al. (2017) define it, and as this term defines it, is dimensionless. Check a site&apos;s units before mapping its NIRV here.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: NIRV. Defined by Badgley et al. (2017), Science Advances 3:e1602244. AmeriFlux lists NIRV in W m-2 sr-1 nm-1, the unit of the radiance-based variant (the normalized difference vegetation index times near-infrared radiance). The index as Badgley et al. (2017) define it, and as this term defines it, is dimensionless. Check a site&apos;s units before mapping its NIRV here.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Near-infrared reflectance of vegetation</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -38642,7 +38646,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
         <obo:IAO_0000115>Spectral vegetation index from reflectances near 531 nm and 570 nm, sensitive to the xanthophyll cycle and so to the light-use efficiency of photosynthesis.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PRI</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: PRI.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: PRI. Defined by Gamon et al. (1992), Remote Sensing of Environment 41:35-44.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Photochemical reflectance index</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -38657,7 +38661,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
         <obo:IAO_0000115>Spectral vegetation index from the ratio of near-infrared to red-edge reflectance, minus one, sensitive to canopy chlorophyll content.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>REDCI</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: REDCI.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: REDCI. Defined by Gitelson et al. (2003), Journal of Plant Physiology 160:271-282.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Red edge chlorophyll index</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -38670,9 +38674,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002309">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
-        <obo:IAO_0000115>Wavelength of the steepest rise in vegetation reflectance between the red and near-infrared regions, which shifts toward longer wavelengths as chlorophyll content increases (Dash and Curran, 2004).</obo:IAO_0000115>
+        <obo:IAO_0000115>Wavelength of the steepest rise in vegetation reflectance between the red and near-infrared regions, which shifts toward longer wavelengths as chlorophyll content increases.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>REP</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: REP.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: REP. AmeriFlux cites Dash and Curran (2004), International Journal of Remote Sensing 25:5403-5413, who used it; the red edge position was introduced by Horler et al. (1983), International Journal of Remote Sensing 4:273-288.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Red edge position</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000319"/>
@@ -38688,7 +38692,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
         <obo:IAO_0000115>Spectral vegetation index equal to the ratio of near-infrared to red reflectance.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>simple ratio</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: SR. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SR. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term. Defined by Jordan (1969), Ecology 50:663-666.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Simple ratio vegetation index</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -38703,7 +38707,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000049"/>
         <obo:IAO_0000115>Spectral vegetation index from reflectances at 550, 670 and 700 nm that measures the depth of chlorophyll absorption at 670 nm relative to the green and red-edge reflectance.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>TCARI</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: TCARI.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: TCARI. Defined by Haboudane et al. (2002), Remote Sensing of Environment 81:416-426.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Transformed chlorophyll absorption in reflectance index</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -38835,11 +38839,11 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000006"/>
         <obo:IAO_0000115>Rate of water movement through the conducting xylem of a stem, per unit cross-sectional area of sapwood.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SAP_FLOW</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: SAP_FLOW. AmeriFlux does not state the area its unit refers to; sap flux density is conventionally per unit sapwood area. Distinct from Sap flow (BERVO:0001951), the whole-plant rate.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: SAP_FLOW. AmeriFlux does not state the area its unit refers to; sap flux density is conventionally per unit sapwood area. Distinct from Sap flow (BERVO:0001951), the whole-plant rate. If AmeriFlux turns out to mean per unit ground area, SAP_FLOW is a different quantity and needs its own term; the definition should not be widened to cover it.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
         <rdfs:label>Sap flux density</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
-        <bervo:BERVO_has_unit>mmol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>mmol{H2O}.m-2.s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
     </Class>
@@ -38855,6 +38859,7 @@
         <rdfs:comment>AmeriFlux FP-Standard base name: SAP_DT. AmeriFlux reports it in degrees Celsius; as a difference it is the same in kelvin.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
         <rdfs:label>Sap flow probe temperature difference</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000361"/>
         <bervo:BERVO_has_unit>K</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
@@ -42536,7 +42541,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000263 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000263">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001080"/>
         <obo:IAO_0000115>A measure of the reflectivity of a surface, expressed as the fraction of incident electromagnetic radiation that is reflected rather than absorbed. This property controls surface energy balance, influences local and regional climate, affects snow and ice persistence, and varies significantly among different land cover types and surface materials.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/COMO_0000554"/>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/albedo"/>
@@ -53863,6 +53868,7 @@
         <oboInOwl:hasRelatedSynonym>amount fraction</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>mixing ratio</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
+        <rdfs:comment>Mixing ratio is a related synonym because flux networks, AmeriFlux among them, use it for a mole fraction in dry air. In meteorology a mixing ratio is usually a mass ratio of a constituent to dry air, which is not a mole fraction.</rdfs:comment>
         <rdfs:label>Mole fraction</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -53876,6 +53882,7 @@
         <obo:IAO_0000115>Layer of vegetation that grows beneath the main canopy of a stand without reaching it, and the space it occupies.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000335"/>
         <oboInOwl:hasRelatedSynonym>understorey</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Broader than its cross-reference ENVO:01000335, which is the vegetation layer only; this term also covers the space beneath the canopy, because it is used in contexts for measurements made there.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Understory</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -53965,7 +53972,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <obo:IAO_0000115>Qualifier for a value in a time series that was estimated, for a period with no valid measurement, from other data by a gap-filling method.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>gapfilled</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux variable-name qualifier: _F.</rdfs:comment>
+        <rdfs:comment>AmeriFlux variable-name qualifier: _F. Placed under Quantitative value because a gap-filled value is always a number estimated in place of a measurement; Observed (BERVO:8000483) is its complement.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
         <rdfs:label>Gap-filled</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -53978,7 +53985,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001087">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000242"/>
         <obo:IAO_0000115>Qualifier for a value that the team operating a measurement site quality-checked or gap-filled independently of a network&apos;s central processing.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux variable-name qualifier: _PI.</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym>provided by PI</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>AmeriFlux variable-name qualifier: _PI. Placed under Value rather than Quantitative value because it records who processed a value, which applies whether or not the value is numeric.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
         <rdfs:label>Processed by site team</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -53992,7 +54000,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <obo:IAO_0000115>Number of observations or sensors that contribute to a statistic.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>number of samples</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux variable-name qualifier: _N, the number of replicate sensors averaged into a value.</rdfs:comment>
+        <rdfs:comment>AmeriFlux variable-name qualifier: _N, the number of replicate sensors, or of layers in an aggregation layer index, aggregated into a value.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 3</rdfs:comment>
         <rdfs:label>Sample size</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -54852,8 +54860,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000048">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
         <obo:IAO_0000115>Grouping class for observed amounts of gases and other constituents in the atmosphere, such as the mole fractions of trace gases measured at a site.</obo:IAO_0000115>
+        <rdfs:comment>Atmospheric gas concentration (BERVO:0001391), the parent of the EcoSIM forcing concentrations, sits here as an additional parent and keeps Climate force variable as its Category.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 1</rdfs:comment>
-        <rdfs:comment>The EcoSIM forcing terms under Atmospheric gas concentration (BERVO:0001391) are not placed here; they sit under Climate force variable.</rdfs:comment>
         <rdfs:label>Atmospheric composition variable</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -54864,8 +54872,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000049">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000009"/>
-        <obo:IAO_0000115>Grouping class for dimensionless combinations of reflectances or radiances in two or more spectral bands, used to estimate the amount, structure or physiological state of vegetation.</obo:IAO_0000115>
+        <obo:IAO_0000115>Grouping class for quantities derived from reflectances or radiances in two or more spectral bands, most of them dimensionless combinations of the bands, used to estimate the amount, structure or physiological state of vegetation.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
+        <rdfs:comment>Red edge position (BERVO:0002309), a wavelength derived from the shape of the reflectance spectrum across the red edge, is the one member with a unit.</rdfs:comment>
         <rdfs:label>Spectral vegetation index</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
