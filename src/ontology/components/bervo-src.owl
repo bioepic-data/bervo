@@ -38120,9 +38120,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002274">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001908"/>
-        <obo:IAO_0000115>Depth of solid precipitation falling over a period, usually expressed as the depth of liquid water it yields.</obo:IAO_0000115>
+        <obo:IAO_0000115>Depth of liquid water equivalent of the solid precipitation falling over a period.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>P_SNOW</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>AmeriFlux FP-Standard base name: P_SNOW. Distinct from Snowfall measurement (BERVO:0001422), the snowfall forcing of EcoSIM and ATS as a rate; this term is the water equivalent accumulated over a reporting period.</rdfs:comment>
+        <rdfs:comment>AmeriFlux FP-Standard base name: P_SNOW. AmeriFlux gives it in mm without saying whether snow depth or water equivalent is meant; it is taken here as water equivalent, as its parent Precipitation amount is, because AmeriFlux reports snow depth separately as D_SNOW (Snowpack depth, BERVO:0001572). Distinct from Snowfall measurement (BERVO:0001422), the snowfall forcing of EcoSIM and ATS as a rate; this term is the water equivalent accumulated over a reporting period.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
         <rdfs:label>Snowfall amount</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
