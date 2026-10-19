@@ -17868,9 +17868,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001055">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
-        <obo:IAO_0000115>Total N2O flux from fire refers to the total amount of nitrous oxide (N2O) that is released into the atmosphere as a result of burning processes. Fires, including forest and grassland fires, can produce N2O as a byproduct of combustion. This parameter is significant in Earth system modeling as N2O is a potent greenhouse gas that can contribute to global warming and climate change.</obo:IAO_0000115>
+        <obo:IAO_0000115>Cumulative mass of nitrous oxide released to the atmosphere by the combustion of organic matter during fire.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>N2ObyFire_CumYr_col</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 19 2026), PR #199 review</rdfs:comment>
+        <rdfs:comment>EcoSIM declares N2ObyFire_CumYr_col but its soil fire routine adds zero to it, so the total stays at zero in the EcoSIM source as of October 2026.</rdfs:comment>
         <rdfs:comment>PlantMgmtDataType.txt</rdfs:comment>
         <rdfs:label>Total nitrous oxide flux from fire</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
