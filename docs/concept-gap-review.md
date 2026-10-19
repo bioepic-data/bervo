@@ -260,10 +260,11 @@ suffix. One, `QdewCanopy_CumYr_pft`, is allocated over `JZ` but indexed by
 
 The two left out are Canopy leaf area index and Canopy stem area index
 (`BERVO:0001879`, `BERVO:0001880`). They came in with the ATS alignment as
-the general quantities, and carry the AmeriFlux and ODM2 leaf area index
-mappings; their EcoSIM names record only where the coupling writes ATS's
-value, split evenly among the plant functional types. A per-type context
-would narrow them below what they are mapped to.
+the general quantities, and their EcoSIM names record only where the
+coupling writes ATS's column value, split evenly among the plant functional
+types. A per-type context would narrow them below what they are. The leaf
+area index row also carries the AmeriFlux and ODM2 leaf area index
+mappings; the stem area index row has no mapping beyond ATS.
 
 Two things turned up on the way and were not changed. 69 of the 266
 `EcoSIM Variable Name` values are no longer in the EcoSIM source, and two
