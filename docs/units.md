@@ -17,6 +17,7 @@ total for a grid cell. The rules for writing a unit are in the `has_units` secti
 | `NONE` | UCUM's unity, `1`. `NA` stays for a variable with no numeric magnitude. |
 | Syntax | Exponents joined by `.`. Once a `/` appears, no `.` follows it outside parentheses. |
 | A duration in years | `a`, UCUM's Julian year of 365.25 days. Not `yr`, which is not UCUM, and not `365.d`. First used on `Time since fire` and `Fire return interval` (issue [#134](https://github.com/bioepic-data/bervo/issues/134)). |
+| An exchange capacity | Moles of charge, UCUM's `eq`: `ceq.kg-1` for cmol(+)/kg. Not `cmol`, which is an amount of substance. See Charge equivalents (issue [#119](https://github.com/bioepic-data/bervo/issues/119)). |
 
 ## What `d-2` means
 
@@ -139,7 +140,7 @@ and left for a curator).
 | `MJ/m3/K` | `MJ.m-3.K-1` | 2 |  |
 | `MPa h m-2` | `MPa.h.m-2` | 2 |  |
 | `Pa` | `Pa` | 2 |  |
-| `cmol kg-1` | `cmol.kg-1` | 2 |  |
+| `cmol kg-1` | `cmol.kg-1` | 2 | both became `ceq.kg-1` (#119) |
 | `degrees from horizontal` | `deg` | 2 |  |
 | `g` | `g` | 2 |  |
 | `g   g-1C h-1` | `g.g-1{C}.h-1` | 2 |  |
@@ -306,6 +307,35 @@ validator cannot see any of them, because each is valid UCUM.
 annotation. UCUM has `[pH]`, but it is a special unit, and UCUM does not let a special unit be
 combined with other units in a term. The annotation keeps the meaning in the string without
 breaking that rule.
+
+## Charge equivalents
+
+Exchange capacities are reported in centimoles of **charge** per kilogram, cmol(+)/kg,
+the same number as meq/100 g. UCUM writes a mole of charge as `eq`, so the unit is
+`ceq.kg-1`. `cmol.kg-1` is an amount of substance, and for a divalent ion such as Ca2+ one
+mole is two moles of charge, so the two readings differ by the ion's valence (issue
+[#119](https://github.com/bioepic-data/bervo/issues/119)).
+
+These rows take `ceq.kg-1`: `Soil cation exchange capacity` (`BERVO:0000883`), `Soil anion
+exchange capacity` (`BERVO:0000884`), `Soil exchangeable acidity` (`BERVO:0002024`), `Soil
+effective cation exchange capacity` (`BERVO:0002162`) and `Soil total exchangeable bases`
+(`BERVO:0002163`). `Soil clay fraction cation exchange capacity` (`BERVO:0002161`) takes
+`ceq.kg-1{clay}`.
+
+These keep their units:
+
+- `Cation exchange capacity of soil organic carbon` (`BERVO:0000141`) was already in charge,
+  `eq.g-1{C}`.
+- The alkalinity and acidity rows of water (`BERVO:0002057` to `BERVO:0002066`) were already
+  in charge, `meq.L-1`.
+- `Exchangeable tracers` (`BERVO:0001701`) stays `mol/{grid}`. EcoSIM holds each exchangeable
+  ion as an amount of the ion, dividing a divalent cation's share of the exchange capacity
+  by 2 and a trivalent one's by 3. Only the array's two capacity entries are in charge, as
+  the row's Comment says.
+
+EcoSIM declares `CEC_vr` and `AEC_vr` as `cmol kg-1`, but reads them in meq/100 g and
+multiplies by 10, so it holds mmol of charge per kg. The generic terms take the
+conventional scale. The rows' Comments record the difference.
 
 ## What the validator checks
 

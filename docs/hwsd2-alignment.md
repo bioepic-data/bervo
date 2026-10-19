@@ -68,9 +68,9 @@ would never resolve. Once it resolves, the field names on this page can become
 | --- | --- | --- | --- |
 | `TOTAL_N` | g/kg | Soil total nitrogen content (`BERVO:0002159`) | `g.kg-1` |
 | `PH_WATER` | -log(H+) | Soil pH in water (`BERVO:0002160`), under Soil pH | `1` |
-| `CEC_CLAY` | cmolc/kg | Soil clay fraction cation exchange capacity (`BERVO:0002161`) | `cmol.kg-1{clay}` |
-| `CEC_EFF` | cmolc/kg | Soil effective cation exchange capacity (`BERVO:0002162`) | `cmol.kg-1` |
-| `TEB` | cmolc/kg | Soil total exchangeable bases (`BERVO:0002163`) | `cmol.kg-1` |
+| `CEC_CLAY` | cmolc/kg | Soil clay fraction cation exchange capacity (`BERVO:0002161`) | `ceq.kg-1{clay}` |
+| `CEC_EFF` | cmolc/kg | Soil effective cation exchange capacity (`BERVO:0002162`) | `ceq.kg-1` |
+| `TEB` | cmolc/kg | Soil total exchangeable bases (`BERVO:0002163`) | `ceq.kg-1` |
 | `ALUM_SAT` | % of ECEC | Soil aluminum saturation (`BERVO:0002164`) | `1` |
 | `ESP` | % | Soil exchangeable sodium fraction (`BERVO:0002165`) | `1` |
 | `TCARBON_EQ` | % weight | Soil calcium carbonate equivalent (`BERVO:0002166`) | `g.kg-1` |
