@@ -59,7 +59,7 @@ snow fields are `snow-<key>`, and subsurface fields have no prefix.
 | `field_capacity` | Water potentials at field capacity (`BERVO:0001503`) | | EcoSIM PK input parameter |
 | `wilting_point` | Water potentials at wilting point (`BERVO:0001504`) | | EcoSIM PK input parameter |
 | `surface-canopy_surface_water` | Canopy held water content (`BERVO:0000579`) | | |
-| `surface-canopy_longwave_radiation` | Longwave radiation emitted by canopy (`BERVO:0000577`) | | |
+| `surface-canopy_longwave_radiation` | Longwave radiation emitted by canopy in previous time step (`BERVO:0000577`) | | |
 | `surface-canopy_latent_heat` | Canopy latent heat flux (`BERVO:0000582`) | | Column total via `Air_Heat_Latent_store_col` |
 | `surface-canopy_sensible_heat` | Air to canopy sensible heat flux (`BERVO:0000583`) | | Column total via `Air_Heat_Sens_store_col` |
 | `surface-transpiration` | Canopy transpiration (`BERVO:0000591`) | | Summed over PFTs |
