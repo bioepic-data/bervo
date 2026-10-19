@@ -30849,7 +30849,6 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>ODM2 variable name concept &quot;Discharge&quot;: Discharge.</rdfs:comment>
         <rdfs:label>Water current</rdfs:label>
-        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000532"/>
         <bervo:BERVO_has_unit>m3.s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
     </Class>
@@ -44009,7 +44008,6 @@
         <obo:IAO_0000115>The continuous directional movement of a fluid such as water or air driven by pressure gradients, temperature differences, or density variations within environmental systems. These movements control mass transport, energy distribution, and mixing processes that influence ecosystem structure, nutrient cycling, and pollutant dispersal in atmospheric, hydrologic, and oceanographic environments.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Fluid current</rdfs:label>
-        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000532"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
