@@ -330,7 +330,10 @@ EcoSIM declares the initial and seeding populations in plants per grid cell
 a count of plants, so they are densities, and their `m-2` stands. Their
 Comments say so. The field they are multiplied into, `PlantPopuLive_pft`, is Plant
 population; its `EcoSIM Variable Name` was the stale `PlantPopulation_pft`,
-one of the 71 above, and now gives the current name.
+one of the 71 above, and now gives the current name. Thinning of plant population also took Fraction in
+`attributes`: EcoSIM's `THIN_pft` is the "fraction of population removed"
+(`PlantDisturbByGrazingMod.F90`), as Harvest efficiency is a fraction with
+Fraction there.
 
 The chemical transformation slice put Chemical transformation in `attributes`
 on 22 of the 24 rows whose label says "transformation", all of which had `NA`
