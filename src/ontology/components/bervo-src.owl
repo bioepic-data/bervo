@@ -17888,9 +17888,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001056">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
-        <obo:IAO_0000115>Total PO4 flux from fire refers to the quantity of phosphate, an essential plant nutrient, that is expelled into the environment as a result of combustion processes. Fire events cause the release of nutrients, including phosphate, which are usually bound in plant biomass and soil organic matter. These nutrients can then be transported through smoke, ash, or post-fire run-off. Understanding the flux of these nutrients helps in assessing the impacts of fires on nutrient cycling and ecosystem productivity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Cumulative mass of phosphate released from organic matter by combustion during fire.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PO4byFire_CumYr_col</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 19 2026), PR #199 review</rdfs:comment>
+        <rdfs:comment>EcoSIM adds the mass of phosphorus burned to PO4byFire_CumYr_col, so the value is in grams of phosphorus rather than grams of phosphate, and it is negative for release.</rdfs:comment>
         <rdfs:comment>PlantMgmtDataType.txt</rdfs:comment>
         <rdfs:label>Total phosphate flux from fire</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
