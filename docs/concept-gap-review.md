@@ -328,7 +328,9 @@ themselves; they measure a demand, and already name Root or Microbes in
 EcoSIM declares the initial and seeding populations in plants per grid cell
 (`[plants d-2]`), but the code multiplies them by the grid cell's area to get
 a count of plants, so they are densities, and their `m-2` stands. Their
-Comments say so.
+Comments say so. The field they are multiplied into, `PlantPopuLive_pft`, is Plant
+population; its `EcoSIM Variable Name` was the stale `PlantPopulation_pft`,
+one of the 71 above, and now gives the current name.
 
 The chemical transformation slice put Chemical transformation in `attributes`
 on 22 of the 24 rows whose label says "transformation", all of which had `NA`
