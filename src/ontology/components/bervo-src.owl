@@ -17828,11 +17828,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001053">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000005"/>
-        <obo:IAO_0000115>Total O2 flux from fire refers to the total amount of oxygen that is released or absorbed during a fire. This measure includes the oxygen used for combustion as well as the oxygen produced during the burning process. It is a critical component in understanding the impact of fire on the atmosphere and the role it plays in the earth&apos;s carbon cycle.</obo:IAO_0000115>
+        <obo:IAO_0000115>Cumulative mass of oxygen consumed from the atmosphere by the combustion of organic matter during fire, the oxidant drawn down as carbon is burned to carbon dioxide.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>O2byFire_CumYr_col</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym>Total flux from fire</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 19 2026), issue #142</rdfs:comment>
+        <rdfs:comment>EcoSIM accumulates O2byFire_CumYr_col over a year and resets it annually. It adds 2.667 g of oxygen per g of carbon burned to carbon dioxide (the mass ratio 32/12), so a positive value is oxygen taken up, while the carbon dioxide, methane, ammonia, nitrous oxide and phosphate fire totals are negative for release. Only the burning of soil organic matter is added to it; oxygen consumed by burning plants is recorded per plant in Plant oxygen uptake from fire (BERVO:0000360).</rdfs:comment>
         <rdfs:comment>PlantMgmtDataType.txt</rdfs:comment>
-        <rdfs:label>Total flux from fire</rdfs:label>
+        <rdfs:label>Total oxygen flux from fire</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
