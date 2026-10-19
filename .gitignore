@@ -88,3 +88,6 @@ __pycache__/
 !/bervo.owl
 !/bervo.obo
 !/bervo.json
+
+# Output of src/ontology/utils/comprehensive_units_fixer.py, a one-off; not a build input
+src/ontology/bervo-src-with-units.csv
