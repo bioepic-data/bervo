@@ -9736,6 +9736,7 @@
         <obo:IAO_0000115>Thermal infrared radiation emitted by a plant canopy over the preceding time step, carried into the current step as the canopy&apos;s contribution to the longwave radiation reaching the ground.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LWRadCanGPrev_col</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Longwave radiation emitted by canopy</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>surface-canopy_longwave_radiation</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ATS: surface-canopy_longwave_radiation. EcoSIM copies LWRadCanG_col, the current step&apos;s total canopy longwave emission (Total canopy longwave emission, BERVO:0000603), into LWRadCanGPrev_col at the start of each hour (Hour1Mod.F90); SurfPhysMod.F90 uses it for the longwave radiation reaching the ground, and the ATS coupling reads it (a_LWCan in ATSEcoSIMAdvanceMod.F90). Formerly labelled Longwave radiation emitted by canopy.</rdfs:comment>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 19 2026), issue #83 time step slice</rdfs:comment>
