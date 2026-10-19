@@ -9733,7 +9733,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000577">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
-        <obo:IAO_0000115>Thermal infrared radiation emitted by a plant canopy over the preceding time step, carried into the current step as the canopy&apos;s contribution to the longwave radiation reaching the ground.</obo:IAO_0000115>
+        <obo:IAO_0000115>Thermal infrared radiation emitted by a plant canopy over the preceding time step.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LWRadCanGPrev_col</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Longwave radiation emitted by canopy</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>surface-canopy_longwave_radiation</oboInOwl:hasRelatedSynonym>
