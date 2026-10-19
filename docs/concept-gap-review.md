@@ -243,8 +243,37 @@ settled.
 
 The heat kinds were the second slice of #83, the water potential terms the
 third, field capacity and wilting point the fourth, the microbial guilds the
-fifth, and chemical transformation the sixth. The remaining slices are the
-`_pft` variables, time step, and population.
+fifth, chemical transformation the sixth, and the `_pft` variables the
+seventh. The remaining slices are time step and population.
+
+The `_pft` slice put Plant functional type in `contexts` on 264 of the 266
+rows whose EcoSIM name ends `_pft`, beside what the column already held on
+143 of them. `contexts` is where a condition of the value goes, and a value
+given for one plant functional type is such a condition, as Landscape is on
+the landscape grazing section row. Every one of the 266 is resolved per
+plant functional type in the EcoSIM source: 194 are allocated over `JP` or
+`JP1`, and the rest are either filled from a per-type trait table
+(`CanopyPARalbedo_tab`, allocated over `npfts`, is copied into
+`RadPARLeafAlbedo_pft`) or renamed since BERVO recorded them, keeping the
+suffix. One, `QdewCanopy_CumYr_pft`, is allocated over `JZ` but indexed by
+`NZ`, the plant functional type, everywhere it is used.
+
+The two left out are Canopy leaf area index and Canopy stem area index
+(`BERVO:0001879`, `BERVO:0001880`). They came in with the ATS alignment as
+the general quantities, and carry the AmeriFlux and ODM2 leaf area index
+mappings; their EcoSIM names record only where the coupling writes ATS's
+value, split evenly among the plant functional types. A per-type context
+would narrow them below what they are mapped to.
+
+Two things turned up on the way and were not changed. 69 of the 266
+`EcoSIM Variable Name` values are no longer in the EcoSIM source. Most have
+a close match under a new name (`LeafSWabsorpty_pft` against
+`LeafSWabsorptivity_pft`); some do not map one to one (`CanopyHeight_pft` is
+gone, and the source has `CanopyHeightLive_pft` and `CanopyHeightDead_pft`).
+`just find` on a current name misses all of them. And
+the `_brch` (70) and `_pvr` (41) variables are also resolved per plant
+functional type, per branch or per root layer within it; whether they take
+the context too is a question for the slice that settles them.
 
 The chemical transformation slice put Chemical transformation in `attributes`
 on 22 of the 24 rows whose label says "transformation", all of which had `NA`
