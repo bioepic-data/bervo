@@ -30129,12 +30129,13 @@
         <obo:IAO_0000115>The volumetric reduction in soil air space between successive model iterations, where positive values indicate air volume shrinkage. This parameter tracks dynamic changes in soil aeration during wetting and drying cycles, essential for understanding soil gas exchange and root respiration in environmental models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>ReductVLsoiAirPM_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM declares ReductVLsoiAirPM_vr in g d-2 h-1, but sets it as the difference of two soil air volumes, VLsoiAirPM_vr at iterations M and M+1, each declared m3 d-2 (WatsubMod.F90), so it is a volume.</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Change in soil air volume for layer from last to current iteration, &gt;0, shrink</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000190"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000788"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000532"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>m3/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
     </Class>
     
