@@ -266,11 +266,13 @@ value, split evenly among the plant functional types. A per-type context
 would narrow them below what they are mapped to.
 
 Two things turned up on the way and were not changed. 69 of the 266
-`EcoSIM Variable Name` values are no longer in the EcoSIM source. Most have
+`EcoSIM Variable Name` values are no longer in the EcoSIM source, and two
+more survive only as a history field name (`Root1stDepz_pft`) or in a
+commented-out line (`NodulStrutElms_pft`). Most have
 a close match under a new name (`LeafSWabsorpty_pft` against
 `LeafSWabsorptivity_pft`); some do not map one to one (`CanopyHeight_pft` is
 gone, and the source has `CanopyHeightLive_pft` and `CanopyHeightDead_pft`).
-`just find` on a current name misses all of them. And
+`just find` on a current name misses all 71. And
 the `_brch` (70) and `_pvr` (41) variables are also resolved per plant
 functional type, per branch or per root layer within it; whether they take
 the context too is a question for the slice that settles them.
