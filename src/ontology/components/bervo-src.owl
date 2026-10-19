@@ -9735,13 +9735,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000577">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
-        <obo:IAO_0000115>The thermal infrared radiation emitted by plant canopy structures due to their temperature, representing outgoing longwave energy flux. This canopy-emitted longwave radiation is a critical component of surface energy balance, influencing atmospheric heating and land-atmosphere energy exchange in climate models.</obo:IAO_0000115>
+        <obo:IAO_0000115>Thermal infrared radiation emitted by a plant canopy over the preceding time step, carried into the current step as the canopy&apos;s contribution to the longwave radiation reaching the ground.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LWRadCanGPrev_col</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>surface-canopy_longwave_radiation</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>ATS: surface-canopy_longwave_radiation.</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym>Longwave radiation emitted by canopy</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>ATS: surface-canopy_longwave_radiation. EcoSIM copies LWRadCanG_col, the current step&apos;s total canopy longwave emission (Total canopy longwave emission, BERVO:0000603), into LWRadCanGPrev_col at the start of each hour (Hour1Mod.F90); SurfPhysMod.F90 uses it for the longwave radiation reaching the ground, and the ATS coupling reads it (a_LWCan in ATSEcoSIMAdvanceMod.F90). Formerly labelled Longwave radiation emitted by canopy.</rdfs:comment>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:label>Longwave radiation emitted by canopy</rdfs:label>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 19 2026), issue #83 time step slice</rdfs:comment>
+        <rdfs:label>Longwave radiation emitted by canopy in previous time step</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000538"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
