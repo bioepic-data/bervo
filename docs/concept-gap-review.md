@@ -244,7 +244,9 @@ settled.
 The heat kinds were the second slice of #83, the water potential terms the
 third, field capacity and wilting point the fourth, the microbial guilds the
 fifth, chemical transformation the sixth, the `_pft` variables the
-seventh, and population the eighth. The remaining slice is time step.
+seventh, population the eighth, and time step the ninth. That finishes the
+slices this page named; the older backlog below, labels that name a concept
+their row does not reference, is what remains.
 
 The `_pft` slice put Plant functional type in `contexts` on 264 of the 266
 rows whose EcoSIM name ends `_pft`, beside what the column already held on
@@ -300,6 +302,33 @@ EcoSIM declares the initial and seeding populations in plants per grid cell
 (`[plants d-2]`), but the code multiplies them by the grid cell's area to get
 a count of plants, so they are densities, and their `m-2` stands. Their
 Comments say so.
+
+The time step slice put Time step in `contexts` on 28 rows and Iteration on
+4. Both concepts say where in the model's clock a value holds, which is a
+condition of the value, as Plant functional type is; which step it is
+(Previous, Current) stays in `qualifiers`. The 28 are the 19 rows whose
+labels say "time step", the "Current" partners of two of them (the
+inorganic phosphate demand rows `BERVO:0000020` and `BERVO:0000022`), the
+current and previous step root water uptake profiles (`BERVO:0000392`,
+`BERVO:0000393`), and five rows whose EcoSIM names mark a step boundary
+though their labels do not: the canopy water and litter water values
+before and at the mass balance check (`BERVO:0000594`, `BERVO:0000595`,
+`BERVO:0001158`, `BERVO:0001159`), which `BalancesMod.F90` carries from one
+step's end to the next step's beginning beside the snow and soil water
+ones, and Longwave radiation emitted by canopy (`BERVO:0000577`), which is
+`LWRadCanGPrev_col`, last hour's emission, and also took Previous.
+
+Iteration went on the four rows that hold a value within a solver pass:
+Canopy temperature during canopy energy iteration (`BERVO:0000611`), the
+snow redistribution flag, the soil air volume change between iterations,
+and Surface runoff in iteration M. Canopy temperature after energy
+iteration (`BERVO:0000608`) does not take it. In `UptakesMod.F90` the
+during-iteration temperature `TKCanopy_pft` is the one the loop updates,
+and `TKC_pft` takes its value once the loop has converged, so it is the
+canopy temperature of the time step.
+
+The Initial rows (`t0` in EcoSIM) are values at the start of the
+simulation, not of a time step, and are left alone.
 
 The chemical transformation slice put Chemical transformation in `attributes`
 on 22 of the 24 rows whose label says "transformation", all of which had `NA`

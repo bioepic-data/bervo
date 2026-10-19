@@ -599,6 +599,7 @@
         <rdfs:label>Current inorganic phosphate demand in non-band by all microbial,root,myco populations</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000532"/>
         <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
@@ -620,6 +621,7 @@
         <rdfs:label>Previous time step inorganic phosphate demand in non-band by all microbial,root,myco populations</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000533"/>
         <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
@@ -641,6 +643,7 @@
         <rdfs:label>Current inorganic phosphate demand in band by all microbial,root,myco populations</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000153"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000532"/>
         <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
@@ -662,6 +665,7 @@
         <rdfs:label>Previous time step inorganic phosphate demand in band by all microbial,root,myco populations</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000153"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000533"/>
         <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
@@ -6710,6 +6714,7 @@
         <rdfs:comment>PlantDataRateType.txt</rdfs:comment>
         <rdfs:label>Current step vertical root water uptake profile</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000532"/>
         <bervo:BERVO_has_unit>m3{H2O}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
@@ -6727,6 +6732,7 @@
         <rdfs:comment>PlantDataRateType.txt</rdfs:comment>
         <rdfs:label>Previous step vertical root water uptake profile</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000533"/>
         <bervo:BERVO_has_unit>m3{H2O}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
@@ -7240,6 +7246,7 @@
         <rdfs:comment>PlantDataRateType.txt</rdfs:comment>
         <rdfs:label>Current time step root autotrophic respiration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000539"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000532"/>
         <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
@@ -7257,6 +7264,7 @@
         <rdfs:comment>PlantDataRateType.txt</rdfs:comment>
         <rdfs:label>Previous time step root autotrophic respiration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000539"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000533"/>
         <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
@@ -9736,6 +9744,8 @@
         <rdfs:label>Longwave radiation emitted by canopy</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000538"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000533"/>
         <bervo:BERVO_has_unit>MJ.h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000029"/>
@@ -9887,6 +9897,7 @@
         <rdfs:label>Canopy heat storage from previous time step</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000533"/>
         <bervo:BERVO_has_unit>MJ/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
@@ -10034,6 +10045,7 @@
         <rdfs:label>Canopy water before mass balance check</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_has_unit>m3/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
@@ -10052,6 +10064,7 @@
         <rdfs:label>Canopy water at mass balance check</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_has_unit>m3/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
@@ -10331,6 +10344,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000788"/>
         <bervo:BERVO_has_unit>K</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
     </Class>
@@ -14491,6 +14505,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Net gaseous flux from previous time step</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
@@ -14508,6 +14523,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Net aqueous CH4 flux from previous time step</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000196"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
@@ -14525,6 +14541,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Net aqueous flux from previous time step</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000196"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
@@ -14959,6 +14976,7 @@
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
         <rdfs:label>Column integrated volatile tracer mass in soil at the end of time step</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
     </Class>
@@ -14975,6 +14993,7 @@
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
         <rdfs:label>Column integrated volatile tracer mass in soil at the beginning of time step</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
     </Class>
@@ -15008,6 +15027,7 @@
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
         <rdfs:label>Column integrated volatile tracer mass at the beginning of time step</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
     </Class>
@@ -15057,6 +15077,7 @@
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
         <rdfs:label>Column integrated volatile tracer mass in roots at the beginning of time step</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
     </Class>
@@ -19854,6 +19875,7 @@
         <rdfs:label>Total initial water mass in litter layer</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000096"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000265"/>
         <bervo:BERVO_has_unit>m3{H2O}/{grid}</bervo:BERVO_has_unit>
@@ -19874,6 +19896,7 @@
         <rdfs:label>Total final water mass in litter layer</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000096"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000266"/>
         <bervo:BERVO_has_unit>m3{H2O}/{grid}</bervo:BERVO_has_unit>
@@ -26708,6 +26731,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SnowDataType.txt</rdfs:comment>
         <rdfs:label>Total snow-held energy at the beginning of the time step</rdfs:label>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>MJ/{grid}</bervo:BERVO_has_unit>
     </Class>
@@ -26723,6 +26747,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SnowDataType.txt</rdfs:comment>
         <rdfs:label>Total snow-held energy at the end of the time step</rdfs:label>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>MJ/{grid}</bervo:BERVO_has_unit>
     </Class>
@@ -26739,6 +26764,7 @@
         <rdfs:comment>SnowDataType.txt</rdfs:comment>
         <rdfs:label>Snow mass water eqv at the beginning of the time step</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_has_unit>m3{H2O}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000103"/>
     </Class>
@@ -26755,6 +26781,7 @@
         <rdfs:comment>SnowDataType.txt</rdfs:comment>
         <rdfs:label>Snow mass water eqv at the end of the time step</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_has_unit>m3{H2O}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000103"/>
     </Class>
@@ -26980,6 +27007,7 @@
         <rdfs:comment>SnowDataType.txt</rdfs:comment>
         <rdfs:label>Total mass of volatile tracer in snow at previous time step</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000103"/>
@@ -27122,6 +27150,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SnowDataType.txt</rdfs:comment>
         <rdfs:label>Flag for snow redistribution in intermediate iterations</rdfs:label>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000788"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000103"/>
     </Class>
@@ -30118,6 +30147,7 @@
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Change in soil air volume for layer from last to current iteration, &gt;0, shrink</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000190"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000788"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000532"/>
         <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
@@ -30530,6 +30560,7 @@
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Surface runoff in iteration M</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000000"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000788"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
     </Class>
@@ -30564,6 +30595,7 @@
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Soil water mass at the beginning of time step</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_has_unit>kg.m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
@@ -30581,6 +30613,7 @@
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Soil water mass at the end of time step</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000787"/>
         <bervo:BERVO_has_unit>kg.m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
