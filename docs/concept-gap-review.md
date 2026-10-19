@@ -250,13 +250,14 @@ The `_pft` slice put Plant functional type in `contexts` on 264 of the 266
 rows whose EcoSIM name ends `_pft`, beside what the column already held on
 143 of them. `contexts` is where a condition of the value goes, and a value
 given for one plant functional type is such a condition, as Landscape is on
-the landscape grazing section row. Every one of the 266 is resolved per
-plant functional type in the EcoSIM source: 194 are allocated over `JP` or
-`JP1`, and the rest are either filled from a per-type trait table
-(`CanopyPARalbedo_tab`, allocated over `npfts`, is copied into
-`RadPARLeafAlbedo_pft`) or renamed since BERVO recorded them, keeping the
-suffix. One, `QdewCanopy_CumYr_pft`, is allocated over `JZ` but indexed by
-`NZ`, the plant functional type, everywhere it is used.
+the landscape grazing section row. In the EcoSIM source, 194 of the 266 are
+allocated over `JP` or `JP1`, and one more, `QdewCanopy_CumYr_pft`, is
+allocated over `JZ` but indexed by `NZ`, the plant functional type,
+everywhere it is used. The other 71 are names no longer in the source (see
+below). For them the reading rests on the `_pft` suffix and on comparing
+names, not on reading the code: their closest current names are `_pft`
+arrays or per-type trait tables such as `CanopyPARalbedo_tab`, allocated
+over `npfts` and copied into `RadPARLeafAlbedo_pft`.
 
 The two left out are Canopy leaf area index and Canopy stem area index
 (`BERVO:0001879`, `BERVO:0001880`). They came in with the ATS alignment as
