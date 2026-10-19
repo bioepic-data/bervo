@@ -301,7 +301,10 @@ Grain growth, Grain number, Strain change effect and Strain change type.
 Precipitation is removed from all 19, and nothing replaces it. Four of the
 variables (`0000153`, `0000180`, `0000821`, `0000823`) now name no grain
 or seed concept in any column, which is left for the slice that settles the
-grain rows.
+grain rows. The same kind of match put the qualifier Current on Number of
+concurrently growing nodes (`BERVO:0000812`) and Initial on Branch
+phenological flag for leafout initialization (`BERVO:0000795`); both are
+removed.
 
 The chemical transformation slice put Chemical transformation in `attributes`
 on 22 of the 24 rows whose label says "transformation", all of which had `NA`
