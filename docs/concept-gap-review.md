@@ -291,6 +291,18 @@ in leaves and in grain "relative to max values from PFT file"
 (`BERVO:0000179`, `BERVO:0000180`) are `ZPLFM` and `ZPGRM`, single
 constants (0.33 and 0.75) applied to each type's maximum.
 
+Checking the `contexts` cells for this slice turned up an older error: 19
+rows had Precipitation in `contexts` because their labels contain "rain"
+inside another word, "grain" or "strain". They were the fifteen grain and
+seed variables (`BERVO:0000153`, `0000180`, `0000626`, `0000646`,
+`0000661`, `0000722`, `0000723`, `0000724`, `0000734`, `0000768`,
+`0000817`, `0000818`, `0000819`, `0000821`, `0000823`) and the concepts
+Grain growth, Grain number, Strain change effect and Strain change type.
+Precipitation is removed from all 19, and nothing replaces it. Four of the
+variables (`0000153`, `0000180`, `0000821`, `0000823`) now name no grain
+or seed concept in any column, which is left for the slice that settles the
+grain rows.
+
 The chemical transformation slice put Chemical transformation in `attributes`
 on 22 of the 24 rows whose label says "transformation", all of which had `NA`
 there (as these columns did until issue #127), and on the two iron adsorption rows below.

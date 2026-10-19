@@ -2751,7 +2751,6 @@
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Number of hours with no grain filling required for physilogical maturity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
     
@@ -3193,7 +3192,6 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Minimum N:C,P:C in grain relative to max values from PFT file</rdfs:label>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000252"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000211"/>
@@ -10618,7 +10616,6 @@
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Canopy grain chemical element</rdfs:label>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
@@ -11054,7 +11051,6 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>Vector?</rdfs:comment>
         <rdfs:label>Branch grain chemical element</rdfs:label>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000145"/>
@@ -11354,7 +11350,6 @@
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Maximum grain carbon during grain fill</rdfs:label>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
         <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000136"/>
@@ -12372,7 +12367,6 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Branch grain number</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_has_unit>/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000145"/>
@@ -12391,7 +12385,6 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Branch potential grain number</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_has_unit>/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000145"/>
@@ -12410,7 +12403,6 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Canopy grain number</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
@@ -12591,7 +12583,6 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Grain nitrogen to carbon ratio</rdfs:label>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
@@ -13165,7 +13156,6 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Grain growth yield</rdfs:label>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
@@ -13933,7 +13923,6 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Maximum grain node number per branch</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -13952,7 +13941,6 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Maximum grain number per node</rdfs:label>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -13972,7 +13960,6 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Maximum grain size</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
         <bervo:BERVO_has_unit>g</bervo:BERVO_has_unit>
@@ -14008,7 +13995,6 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Grain size at seeding</rdfs:label>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>g</bervo:BERVO_has_unit>
     </Class>
@@ -14043,7 +14029,6 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Flag to detect physiological maturity from grain fill</rdfs:label>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000158"/>
     </Class>
@@ -41014,7 +40999,6 @@
         <obo:IAO_0000115>The process of seed development and enlargement in cereal crops following pollination and fertilization. This reproductive phase determines final grain size, yield potential, and harvest quality, representing a critical period for understanding crop productivity and agricultural ecosystem functioning.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Grain growth</rdfs:label>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
@@ -41112,7 +41096,6 @@
         <obo:IAO_0000115>The count of seeds or kernels produced by an individual plant, representing a key component of agricultural yield and reproductive success. This quantitative measure is essential for understanding crop productivity, plant fitness, and the allocation of resources to reproductive structures in agricultural and natural plant populations.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Grain number</rdfs:label>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
@@ -44579,7 +44562,6 @@
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/COMO_0000092"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
         <rdfs:label>Strain change effect</rdfs:label>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
@@ -45383,7 +45365,6 @@
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/COMO_0000227"/>
         <rdfs:comment>Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)</rdfs:comment>
         <rdfs:label>Strain change type</rdfs:label>
-        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
