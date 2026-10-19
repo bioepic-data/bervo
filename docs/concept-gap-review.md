@@ -253,7 +253,11 @@ given for one plant functional type is such a condition, as Landscape is on
 the landscape grazing section row. In the EcoSIM source, 194 of the 266 are
 allocated over `JP` or `JP1`, and one more, `QdewCanopy_CumYr_pft`, is
 allocated over `JZ` but indexed by `NZ`, the plant functional type,
-everywhere it is used. The other 71 are names no longer in the source (see
+everywhere it is used. A few are physical quantities that could look like
+they are only stored per type, but are not: `AirConc_pft` is computed from
+each type's own canopy temperature, `Km4RubiscoCarboxy_pft` from each
+type's leaf oxygen, and `XKCO2_pft`, `XKO2_pft` and `Km4PEPCarboxy_pft` are
+read from the per-type trait file. The other 71 are names no longer in the source (see
 below). For them the reading rests on the `_pft` suffix and on comparing
 names, not on reading the code: their closest current names are `_pft`
 arrays or per-type trait tables such as `CanopyPARalbedo_tab`, allocated
