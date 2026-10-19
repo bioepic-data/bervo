@@ -247,7 +247,8 @@ settled.
 The heat kinds were the second slice of #83, the water potential terms the
 third, field capacity and wilting point the fourth, the microbial guilds the
 fifth, chemical transformation the sixth, and the `_pft` variables the
-seventh. The remaining slices are time step and population.
+seventh. The remaining slices are time step, population, and the other
+per-type suffixes named at the end of the `_pft` paragraphs below.
 
 The `_pft` slice put Plant functional type in `contexts` on 264 of the 266
 rows whose EcoSIM name ends `_pft`, beside what the column already held on
@@ -282,9 +283,13 @@ a close match under a new name (`LeafSWabsorpty_pft` against
 `LeafSWabsorptivity_pft`); some do not map one to one (`CanopyHeight_pft` is
 gone, and the source has `CanopyHeightLive_pft` and `CanopyHeightDead_pft`).
 `just find` on a current name misses all 71. And
-the `_brch` (70) and `_pvr` (41) variables are also resolved per plant
-functional type, per branch or per root layer within it; whether they take
-the context too is a question for the slice that settles them.
+the `_brch` (70), `_pvr` (41) and `_node` (13) variables are also resolved
+per plant functional type, per branch, per root layer or per node within
+it; whether they take the context too is a question for the slice that
+settles them. Two rows read as per type but are not: the minimum N:C and P:C
+in leaves and in grain "relative to max values from PFT file"
+(`BERVO:0000179`, `BERVO:0000180`) are `ZPLFM` and `ZPGRM`, single
+constants (0.33 and 0.75) applied to each type's maximum.
 
 The chemical transformation slice put Chemical transformation in `attributes`
 on 22 of the 24 rows whose label says "transformation", all of which had `NA`
