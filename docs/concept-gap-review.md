@@ -349,7 +349,8 @@ though their labels do not: the canopy water and litter water values
 before and at the mass balance check (`BERVO:0000594`, `BERVO:0000595`,
 `BERVO:0001158`, `BERVO:0001159`), which `BalancesMod.F90` carries from one
 step's end to the next step's beginning beside the snow and soil water
-ones, and Longwave radiation emitted by canopy (`BERVO:0000577`), which is
+ones, and Longwave radiation emitted by canopy in previous time step
+(`BERVO:0000577`, relabelled in this slice), which is
 `LWRadCanGPrev_col`, last hour's emission, and also took Previous.
 
 Iteration went on the four rows that hold a value within a solver pass:
