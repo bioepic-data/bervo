@@ -30542,11 +30542,12 @@
         <obo:IAO_0000115>The volumetric flow rate of surface runoff calculated during the M-th iteration of numerical solution procedures in two-dimensional horizontal domains. This parameter represents intermediate runoff calculations during iterative model solution processes, important for convergence analysis and numerical stability in hydrological modeling.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>QflxSurfRunoffM_2DH</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM declares no unit for QflxSurfRunoffM_2DH. It is set from WatFlx2LitRByRunoff_2DH (SurfLitterPhysMod.F90) and divided by SurfRunoffPotentM_col, declared [m3 d-2 t-1], to give a fraction (TranspNoSaltSlowMod.F90), so the unit here is taken to be the same.</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Surface runoff in iteration M</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000000"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000788"/>
-        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>m3/{grid}/{step}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
     </Class>
     
