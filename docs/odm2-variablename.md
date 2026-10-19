@@ -805,7 +805,7 @@ are unused: they held the generic C:N ratios before review made them concepts.
 
 | BERVO variable | Parent | ODM2 term | Unit |
 | --- | --- | --- | --- |
-| Soil exchangeable acidity (`BERVO:0002024`) | Soil biogeochemistry variable | `acidityExchange` | `cmol.kg-1` |
+| Soil exchangeable acidity (`BERVO:0002024`) | Soil biogeochemistry variable | `acidityExchange` | `ceq.kg-1` |
 | Soil base saturation (`BERVO:0002025`) | Soil biogeochemistry variable | `baseSaturation` | `1` |
 | Extracellular enzyme activity (`BERVO:0002026`) | Soil biogeochemistry variable | `extracellularEnzymeActivity` | `nmol.g-1.h-1` |
 | Acid phosphatase activity (`BERVO:0002027`) | Extracellular enzyme activity | `activityAcidPhosphatase` | `nmol.g-1.h-1` |
@@ -894,10 +894,10 @@ are unused: they held the generic C:N ratios before review made them concepts.
   the data, and Rock fraction, the volume form, sits under it. The size cut-off
   varies by domain as well: 2 mm in soil science, other sieve sizes in
   engineering classifications. Issue #118 tracks how to model both.
-- **Exchange capacity units.** Soil exchangeable acidity is `cmol.kg-1`, as its
-  sibling Soil cation exchange capacity is. Both are conventionally moles of
-  charge, `ceq.kg-1` in UCUM. Issue #119 tracks the change for every exchange
-  term.
+- **Exchange capacity units.** Soil exchangeable acidity was `cmol.kg-1`, as its
+  sibling Soil cation exchange capacity was. Both are moles of charge, and issue
+  #119 moved every exchange capacity to `ceq.kg-1`; see Charge equivalents in
+  [Units](units.md).
 - **Erosion rate.** The label Erosion rate belongs to EcoSIM's grid-cell total,
   so the generic term is Erosion rate per unit area, in `kg.m-2.a-1`. The two are
   siblings under Sediment variable. The grid-cell total is mass per time, not

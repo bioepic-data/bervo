@@ -14871,11 +14871,11 @@
         <oboInOwl:hasRelatedSynonym>CEC_SOIL</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>CEC_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Cation exchange capacity (CEC)&quot;: Cation exchange capacity (CEC) is a measure of the total negative charges within the soil that adsorb plant nutrient cations such as calcium (Ca2+), magnesium (Mg2+) and potassium (K+). As such, the CEC is a property of a soil that describes its capacity to supply nutrient cations to the soil solution for plant uptake. HWSD2: CEC_SOIL [cmolc/kg].</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Cation exchange capacity (CEC)&quot;: Cation exchange capacity (CEC) is a measure of the total negative charges within the soil that adsorb plant nutrient cations such as calcium (Ca2+), magnesium (Mg2+) and potassium (K+). As such, the CEC is a property of a soil that describes its capacity to supply nutrient cations to the soil solution for plant uptake. HWSD2: CEC_SOIL [cmolc/kg]. EcoSIM reads CEC_vr in meq per 100 g and multiplies it by 10 while declaring cmol kg-1, so the value it holds is in mmol of charge per kg, which is mol of charge per Mg of soil.</rdfs:comment>
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
         <rdfs:label>Soil cation exchange capacity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
-        <bervo:BERVO_has_unit>cmol.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>ceq.kg-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
     </Class>
@@ -14889,10 +14889,11 @@
         <obo:IAO_0000115>The total amount of exchangeable anions that soil can hold on its surface and exchange with the soil solution, representing soil capacity to retain negatively charged ions. This soil anion exchange capacity affects phosphate and sulfate retention and influences nutrient cycling in acidic and highly weathered soils.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>AEC_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM reads AEC_vr in meq per 100 g and multiplies it by 10 while declaring cmol kg-1, so the value it holds is in mmol of charge per kg, which is mol of charge per Mg of soil.</rdfs:comment>
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
         <rdfs:label>Soil anion exchange capacity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
-        <bervo:BERVO_has_unit>cmol.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>ceq.kg-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
     </Class>
@@ -28277,6 +28278,7 @@
         <oboInOwl:hasRelatedSynonym>trcx_solml_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AqueChemDatatype.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM holds each exchangeable ion as an amount of the ion, dividing a divalent cation&apos;s share of the exchange capacity by 2 and a trivalent one&apos;s by 3, so the unit is mol. The cation and anion exchange capacity entries of the same array (XCEC, XAEC) are the exception: they are moles of charge.</rdfs:comment>
         <rdfs:label>Exchangeable tracers</rdfs:label>
         <bervo:BERVO_has_unit>mol/{grid}</bervo:BERVO_has_unit>
     </Class>
@@ -33670,7 +33672,7 @@
         <rdfs:comment>ODM2 variable name concept &quot;Acidity, exchange&quot;: The total amount of the Cation Exchange Capacity (CEC) of a soil that is due to H+ and Al3+ ions. It is a proportion of the total acidity and it is dependent on the type of soil and the percentage of the CEC that is composed of exchangeable bases (Ca2+, Mg2+, K+).</rdfs:comment>
         <rdfs:label>Soil exchangeable acidity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
-        <bervo:BERVO_has_unit>cmol.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>ceq.kg-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000039"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000180"/>
@@ -36151,7 +36153,7 @@
         <rdfs:comment>HWSD2: CEC_CLAY [cmolc/kg]. The mass is of clay, not of soil. See Soil cation exchange capacity (BERVO:0000883).</rdfs:comment>
         <rdfs:label>Soil clay fraction cation exchange capacity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
-        <bervo:BERVO_has_unit>cmol.kg-1{clay}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>ceq.kg-1{clay}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000209"/>
     </Class>
@@ -36170,7 +36172,7 @@
         <rdfs:comment>HWSD2: CEC_EFF [cmolc/kg]. Soil cation exchange capacity (BERVO:0000883) is usually measured at a buffered pH of 7 or 8.2, and is larger than this in acid soils.</rdfs:comment>
         <rdfs:label>Soil effective cation exchange capacity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
-        <bervo:BERVO_has_unit>cmol.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>ceq.kg-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
     </Class>
@@ -36189,7 +36191,7 @@
         <rdfs:label>Soil total exchangeable bases</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>cmol.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>ceq.kg-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000108"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000143"/>
