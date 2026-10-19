@@ -239,33 +239,43 @@ settled.
   type across grid cells so they are grazed alike, not scenario bookkeeping.
   The row is now Landscape grazing section number of a plant functional type,
   with Landscape in `contexts`, Plant functional type in `measurement_ofs` and
-  Category in `value_types`.
+  Category in `value_types`. The `_pft` slice later added Plant functional
+  type to its `contexts` as well, as on every `_pft` row, so the per-type
+  resolution holds without a gap across all of them; it is the one row that
+  names the concept in two columns.
 
 The heat kinds were the second slice of #83, the water potential terms the
 third, field capacity and wilting point the fourth, the microbial guilds the
 fifth, chemical transformation the sixth, the `_pft` variables the
-seventh, population the eighth, and time step the ninth. That finishes the
-slices this page named; the older backlog below, labels that name a concept
-their row does not reference, is what remains.
+seventh, population the eighth, and time step the ninth. What remains is
+the other per-type suffixes named at the end of the `_pft` paragraphs below,
+and the older backlog, labels that name a concept their row does not
+reference.
 
 The `_pft` slice put Plant functional type in `contexts` on 264 of the 266
 rows whose EcoSIM name ends `_pft`, beside what the column already held on
 143 of them. `contexts` is where a condition of the value goes, and a value
 given for one plant functional type is such a condition, as Landscape is on
-the landscape grazing section row. Every one of the 266 is resolved per
-plant functional type in the EcoSIM source: 194 are allocated over `JP` or
-`JP1`, and the rest are either filled from a per-type trait table
-(`CanopyPARalbedo_tab`, allocated over `npfts`, is copied into
-`RadPARLeafAlbedo_pft`) or renamed since BERVO recorded them, keeping the
-suffix. One, `QdewCanopy_CumYr_pft`, is allocated over `JZ` but indexed by
-`NZ`, the plant functional type, everywhere it is used.
+the landscape grazing section row. In the EcoSIM source, 194 of the 266 are
+allocated over `JP` or `JP1`, and one more, `QdewCanopy_CumYr_pft`, is
+allocated over `JZ` but indexed by `NZ`, the plant functional type,
+everywhere it is used. A few are physical quantities that could look like
+they are only stored per type, but are not: `AirConc_pft` is computed from
+each type's own canopy temperature, `Km4RubiscoCarboxy_pft` from each
+type's leaf oxygen, and `XKCO2_pft`, `XKO2_pft` and `Km4PEPCarboxy_pft` are
+read from the per-type trait file. The other 71 are names no longer in the source (see
+below). For them the reading rests on the `_pft` suffix and on comparing
+names, not on reading the code: their closest current names are `_pft`
+arrays or per-type trait tables such as `CanopyPARalbedo_tab`, allocated
+over `npfts` and copied into `RadPARLeafAlbedo_pft`.
 
 The two left out are Canopy leaf area index and Canopy stem area index
 (`BERVO:0001879`, `BERVO:0001880`). They came in with the ATS alignment as
-the general quantities, and carry the AmeriFlux and ODM2 leaf area index
-mappings; their EcoSIM names record only where the coupling writes ATS's
-value, split evenly among the plant functional types. A per-type context
-would narrow them below what they are mapped to.
+the general quantities, and their EcoSIM names record only where the
+coupling writes ATS's column value, split evenly among the plant functional
+types. A per-type context would narrow them below what they are. The leaf
+area index row also carries the AmeriFlux and ODM2 leaf area index
+mappings; the stem area index row has no mapping beyond ATS.
 
 Two things turned up on the way and were not changed. 69 of the 266
 `EcoSIM Variable Name` values are no longer in the EcoSIM source, and two
@@ -275,9 +285,28 @@ a close match under a new name (`LeafSWabsorpty_pft` against
 `LeafSWabsorptivity_pft`); some do not map one to one (`CanopyHeight_pft` is
 gone, and the source has `CanopyHeightLive_pft` and `CanopyHeightDead_pft`).
 `just find` on a current name misses all 71. And
-the `_brch` (70) and `_pvr` (41) variables are also resolved per plant
-functional type, per branch or per root layer within it; whether they take
-the context too is a question for the slice that settles them.
+the `_brch` (70), `_pvr` (41) and `_node` (13) variables are also resolved
+per plant functional type, per branch, per root layer or per node within
+it; whether they take the context too is a question for the slice that
+settles them. Two rows read as per type but are not: the minimum N:C and P:C
+in leaves and in grain "relative to max values from PFT file"
+(`BERVO:0000179`, `BERVO:0000180`) are `ZPLFM` and `ZPGRM`, single
+constants (0.33 and 0.75) applied to each type's maximum.
+
+Checking the `contexts` cells for this slice turned up an older error: 19
+rows had Precipitation in `contexts` because their labels contain "rain"
+inside another word, "grain" or "strain". They were the fifteen grain and
+seed variables (`BERVO:0000153`, `0000180`, `0000626`, `0000646`,
+`0000661`, `0000722`, `0000723`, `0000724`, `0000734`, `0000768`,
+`0000817`, `0000818`, `0000819`, `0000821`, `0000823`) and the concepts
+Grain growth, Grain number, Strain change effect and Strain change type.
+Precipitation is removed from all 19, and nothing replaces it. Four of the
+variables (`0000153`, `0000180`, `0000821`, `0000823`) now name no grain
+or seed concept in any column, which is left for the slice that settles the
+grain rows. The same kind of match put the qualifier Current on Number of
+concurrently growing nodes (`BERVO:0000812`) and Initial on Branch
+phenological flag for leafout initialization (`BERVO:0000795`); both are
+removed.
 
 The population slice named Population in `measurement_ofs` on four rows,
 beside Plant on the three that had it, following the wastewater rows that
@@ -301,7 +330,12 @@ themselves; they measure a demand, and already name Root or Microbes in
 EcoSIM declares the initial and seeding populations in plants per grid cell
 (`[plants d-2]`), but the code multiplies them by the grid cell's area to get
 a count of plants, so they are densities, and their `m-2` stands. Their
-Comments say so.
+Comments say so. The field they are multiplied into, `PlantPopuLive_pft`, is Plant
+population; its `EcoSIM Variable Name` was the stale `PlantPopulation_pft`,
+one of the 71 above, and now gives the current name. Thinning of plant population also took Fraction in
+`attributes`: EcoSIM's `THIN_pft` is the "fraction of population removed"
+(`PlantDisturbByGrazingMod.F90`), as Harvest efficiency is a fraction with
+Fraction there.
 
 The time step slice put Time step in `contexts` on 28 rows and Iteration on
 4. Both concepts say where in the model's clock a value holds, which is a
