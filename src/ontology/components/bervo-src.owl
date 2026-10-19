@@ -30024,6 +30024,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001805">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
         <obo:IAO_0000115>The component of soil water potential arising from gravitational forces acting on soil water at different elevations. This parameter quantifies the effect of gravity on water movement and energy status in soil profiles, essential for understanding vertical water flow and hydraulic gradients in environmental models.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Gravimetric soil water potential</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>PSIGrav_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>One of the three components EcoSIM sums into Elevation adjusted total soil micropore total water potential (BERVO:0001751), with the matric and osmotic components. It lies outside Soil water potential (BERVO:0002277), which is defined at the same elevation. Formerly labelled Gravimetric soil water potential.</rdfs:comment>
