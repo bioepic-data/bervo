@@ -239,7 +239,10 @@ settled.
   type across grid cells so they are grazed alike, not scenario bookkeeping.
   The row is now Landscape grazing section number of a plant functional type,
   with Landscape in `contexts`, Plant functional type in `measurement_ofs` and
-  Category in `value_types`.
+  Category in `value_types`. The `_pft` slice later added Plant functional
+  type to its `contexts` as well, as on every `_pft` row, so the per-type
+  resolution holds without a gap across all of them; it is the one row that
+  names the concept in two columns.
 
 The heat kinds were the second slice of #83, the water potential terms the
 third, field capacity and wilting point the fourth, the microbial guilds the
