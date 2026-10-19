@@ -243,8 +243,8 @@ settled.
 
 The heat kinds were the second slice of #83, the water potential terms the
 third, field capacity and wilting point the fourth, the microbial guilds the
-fifth, chemical transformation the sixth, and the `_pft` variables the
-seventh. The remaining slices are time step and population.
+fifth, chemical transformation the sixth, the `_pft` variables the
+seventh, and population the eighth. The remaining slice is time step.
 
 The `_pft` slice put Plant functional type in `contexts` on 264 of the 266
 rows whose EcoSIM name ends `_pft`, beside what the column already held on
@@ -276,6 +276,30 @@ gone, and the source has `CanopyHeightLive_pft` and `CanopyHeightDead_pft`).
 the `_brch` (70) and `_pvr` (41) variables are also resolved per plant
 functional type, per branch or per root layer within it; whether they take
 the context too is a question for the slice that settles them.
+
+The population slice named Population in `measurement_ofs` on four rows,
+beside Plant on the three that had it, following the wastewater rows that
+already measure a Population: Plant population (`BERVO:0000725`), Initial
+plant population (`BERVO:0000752`), Plant population at seeding
+(`BERVO:0000757`), and Thinning of plant population (`BERVO:0001037`), whose
+column was empty. Each is about the plants of one plant functional type, a
+population in the concept's sense, "organisms of one kind". The two density
+rows also took Number density in `attributes` and Quantitative value in
+`value_types`, which they lacked, as Stem count per unit area has.
+
+Total plant population (`BERVO:0000756`) is left out, because it sums every
+plant functional type in the grid cell, more than one kind. So are the
+microbial cell density rows, since Microbes spans guilds, and the generic
+Stem count and Organism count per unit area. The seven rows whose labels
+speak of demand "by all microbial, root, myco populations", "by each root
+population" or "by any microbial population" use the word for the organisms
+themselves; they measure a demand, and already name Root or Microbes in
+`measured_ins`.
+
+EcoSIM declares the initial and seeding populations in plants per grid cell
+(`[plants d-2]`), but the code multiplies them by the grid cell's area to get
+a count of plants, so they are densities, and their `m-2` stands. Their
+Comments say so.
 
 The chemical transformation slice put Chemical transformation in `attributes`
 on 22 of the 24 rows whose label says "transformation", all of which had `NA`

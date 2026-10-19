@@ -12434,6 +12434,7 @@
         <bervo:BERVO_has_unit>/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000797"/>
     </Class>
     
 
@@ -12915,12 +12916,16 @@
         <obo:IAO_0000115>The number of individual plants per unit area at the beginning of a growing season or establishment period, representing planting density or natural recruitment density. This initial plant population affects resource competition, canopy development, and final biomass production in agricultural and natural ecosystems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PPI_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM declares PPI_pft in plants d-2, a grid cell total, but multiplies it by the grid cell&apos;s area (PlantPopuLive_pft = PPI_pft*AREA3 in InitPlantMod.F90) to get the number of plants, so the value is per square metre.</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Initial plant population</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000899"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000265"/>
         <bervo:BERVO_has_unit>m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000797"/>
     </Class>
     
 
@@ -12984,12 +12989,16 @@
         <obo:IAO_0000115>The number of seeds planted or sown per unit area at the time of seeding, representing the initial potential plant density for crop establishment. This plant population at seeding determines stand establishment success and influences final plant density and yield potential.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PPatSeeding_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM declares PPatSeeding_pft in plants d-2, a grid cell total, but multiplies it by the grid cell&apos;s area (PlantPopuLive_pft = PPatSeeding_pft*AREA3 in InitPlantMod.F90) to get the number of plants, so the value is per square metre.</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Plant population at seeding</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000899"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000797"/>
     </Class>
     
 
@@ -17788,6 +17797,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000797"/>
     </Class>
     
 
