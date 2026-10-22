@@ -58543,7 +58543,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001175"/>
         <obo:IAO_0000115>Dead wood above a stated minimum diameter, standing, lying on the ground or in the soil, such as snags, stumps, fallen trunks and branches, and dead coarse roots.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>The minimum diameter differs between protocols, commonly 7.5 or 10 cm. Dead coarse roots are included, as TRY includes them. Coarse wood (BERVO:8001183) is the size class, for live or dead wood. ENVO has no coarse woody debris term. Usually abbreviated CWD, which is not a synonym here because BERVO uses it for Climatic water deficit (BERVO:0001896).</rdfs:comment>
+        <rdfs:comment>The minimum diameter differs between protocols, commonly 7.5 or 10 cm. Dead coarse roots are included, as TRY includes them. Standing dead wood such as snags and stumps is Standing dead vegetation (BERVO:8001176) as well; the two classes overlap there. Coarse wood (BERVO:8001183) is the size class, for live or dead wood. ENVO has no coarse woody debris term. Usually abbreviated CWD, which is not a synonym here because BERVO uses it for Climatic water deficit (BERVO:0001896).</rdfs:comment>
         <rdfs:label>Coarse woody debris</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
