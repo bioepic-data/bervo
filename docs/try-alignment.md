@@ -12,9 +12,11 @@ first slice was the map itself. The second added terms for the traits used by th
 [plant-functional-traits](https://github.com/bioepic-data/plant-functional-traits)
 schema. The third added the leaf economics and photosynthesis traits: leaf phosphorus,
 N:P ratios, photosynthetic and dark respiration rates, Vcmax, Jmax, stomatal conductance,
-leaf lifespan, thickness, tissue density, dry mass and phenology. Still to come are the
-value lists of the categorical traits (woodiness, growth form, leaf type, leaf phenology),
-the organ concepts the `broader` rows wait on, and terms for the gaps listed here.
+leaf lifespan, thickness, tissue density, dry mass and phenology. The fourth added the
+organ and status concepts the `broader` rows named but BERVO lacked, such as twig, bark,
+coarse woody debris and senescent vegetation. Still to come are the value lists of the
+categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms for the
+gaps listed here.
 
 ## Sources
 
@@ -58,10 +60,11 @@ contents per unit of soil mass and root microbial biomass were excluded from the
 neither is the content of a plant tissue. Every `match` and `related` row was assigned
 by hand.
 
-A `broader` row can only be recorded in full once BERVO has a concept for its organ or
-status. Some have none yet, such as twig, bark, cone, fruit, heartwood, sapwood, coarse
-woody debris, absorptive and transport fine roots, and senescent. Those rows say so in
-`note`, and the concepts are part of the slice that adds terms for that organ.
+A `broader` row is recorded with a concept for its organ or status in `contexts`. Where
+the trait name says which, the row's `note` names the concept, such as *Twig goes in
+contexts.* Some TRY organs map to a BERVO concept with another name: a *belowground plant
+organ* is `Belowground plant material`, a *reproductive organ* is `Reproductive
+structure`, and *senescent* leaves take `Senescent vegetation`.
 
 ## When an EcoSIM term is a match
 

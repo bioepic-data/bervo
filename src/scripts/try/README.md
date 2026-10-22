@@ -23,9 +23,22 @@ and the groups. A `match` or `broader` row is also recorded on the BERVO term, i
 | `broader` | `TRY traits mapped here, with the organ or status in contexts: 80, 406.` |
 
 The generator fails when the two disagree, in either direction, and when the map names a
-term that does not exist or is obsolete, misses or repeats a TRY trait, or has a note saying
-BERVO lacks a concept that it now has. When a slice adds such a concept, take its pattern
-out of `NEEDS` in the builder.
+term that does not exist or is obsolete, or misses or repeats a TRY trait. It also checks the
+notes. A clause about contexts must be the fixed sentence `Twig goes in contexts.` or
+`Bark and Branch go in contexts.`, and each concept it names must be a BERVO label; put any
+gloss in a sentence of its own. A note that says BERVO has no concept yet must not name one
+it has. `CONTEXTS` in the builder gives the concepts for each form of trait name.
+
+Litter traits take `Dead vegetation` (`BERVO:8001175`) in contexts, not `Litter`
+(`BERVO:8000055`). `Litter` is an environmental material, fallen material forming the
+surface organic layer, so it does not hold fine-root litter in the soil, and it sits outside
+the `Vegetation` concepts the organ is paired with. Use `Dead vegetation` for all litter, as
+decided on #214.
+
+The concepts a note names are the set that applies, not an intersection or a union: `Coarse
+woody debris and Coarse root` describes dead coarse roots, and `Twig and Branch` describes
+a trait measured on twigs and branches. `contexts` is an annotation, so it asserts no more
+than that; read the trait name for which is meant.
 
 When a slice adds a term for a TRY trait, add the trait to `MAPPED` in the script, put the
 sentence on the term, run `just try-doc`, and commit the map and the page with the change.
