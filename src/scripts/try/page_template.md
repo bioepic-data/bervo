@@ -56,6 +56,16 @@ status. Some have none yet, such as twig, bark, cone, fruit, heartwood, sapwood,
 woody debris, absorptive and transport fine roots, and senescent. Those rows say so in
 `note`, and the concepts are part of the slice that adds terms for that organ.
 
+## When an EcoSIM term is a match
+
+Many BERVO plant terms are EcoSIM parameters with `Plant functional type` in `contexts`.
+Such a term is a `match` when it is the same quantity, as `Seed length` and `Root
+porosity` are. A value for a plant functional type is the trait's value for that type, as
+a TRY species mean is the trait's value for a species, and BERVO keeps one term per
+quantity whoever reports it. An EcoSIM variable resolved over something else, such as a
+branch, a node or a grid cell, measures a different thing and is `related`: `Leaf number`
+counts the leaves on a branch, not on a plant, and `Leaf area` is a grid-cell total.
+
 ## How the alignment is recorded on a term
 
 - A `match` term records the ID in its `Comment` as `TRY trait ID: 14.`, or
