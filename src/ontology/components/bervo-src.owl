@@ -40180,9 +40180,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002375">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>Diameter of a root, measured perpendicular to its axis.</obo:IAO_0000115>
+        <obo:IAO_0000115>Distance across a root segment, measured perpendicular to the long axis of the root.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 83. TRY traits mapped here, with the organ or status in contexts: 896, 1526, 2038, 2294. Root diameter primary axes (BERVO:0001070) and Root diameter secondary axes (BERVO:0001071) are the EcoSIM values for each root axis order.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 83. Usually reported as the mean of a sample of roots of one order or diameter class. TRY traits mapped here, with the organ or status in contexts: 896, 1526, 2038, 2294. Root diameter primary axes (BERVO:0001070) and Root diameter secondary axes (BERVO:0001071) are the EcoSIM values for each root axis order.</rdfs:comment>
         <rdfs:label>Root diameter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
         <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
