@@ -74,27 +74,27 @@ disagree. `tests/test_try_alignment.py` runs it.
 
 ## Summary
 
-114 TRY traits map to a BERVO term. 2495 are gaps and 52 are
+125 TRY traits map to a BERVO term. 2484 are gaps and 52 are
 species attributes.
 
 | Group | `match` | `broader` | `related` | `gap` | `species_attribute` | Total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Crown and canopy |  |  |  | 21 |  | 21 |
-| Fine root |  | 9 |  | 394 |  | 403 |
+| Fine root |  | 9 | 2 | 392 |  | 403 |
 | Flower and reproduction |  | 2 |  | 124 |  | 126 |
-| Leaf | 5 | 7 | 9 | 396 | 1 | 418 |
+| Leaf | 5 | 7 | 16 | 389 | 1 | 418 |
 | Litter and woody debris |  | 27 |  | 172 |  | 199 |
 | Moss and fern |  |  |  | 21 |  | 21 |
 | Photosynthesis and gas exchange |  |  | 1 | 112 |  | 113 |
 | Plot and stand | 1 |  |  | 8 |  | 9 |
-| Root | 1 | 11 | 1 | 395 |  | 408 |
+| Root | 1 | 11 | 3 | 393 |  | 408 |
 | Seed, fruit and dispersal | 3 | 2 |  | 108 |  | 113 |
 | Species ecology and distribution |  |  |  | 3 | 48 | 51 |
 | Species genetics and phylogeny |  |  |  | 13 | 3 | 16 |
 | Stem, wood and bark | 1 | 13 | 1 | 308 |  | 323 |
 | Twig, branch, shoot and bud |  | 11 |  | 160 |  | 171 |
 | Whole plant | 1 | 3 | 5 | 260 |  | 269 |
-| **Total** | **12** | **85** | **17** | **2495** | **52** | **2661** |
+| **Total** | **12** | **85** | **28** | **2484** | **52** | **2661** |
 
 ## Matches
 
@@ -131,12 +131,23 @@ species attributes.
 | 6 | Root rooting depth | `BERVO:0002351` Rooting depth | BERVO Rooting depth is for a plant community; TRY records it per plant or species. |
 | 18 | Plant height | `BERVO:0001967` Canopy height | BERVO has canopy height, not the height of an individual plant. |
 | 22 | Photosynthesis pathway | `BERVO:0000835` Plant photosynthetic type (C3 or C4) | The BERVO term distinguishes only C3 and C4; TRY includes CAM and intermediates. |
+| 83 | Root diameter | `BERVO:0001070` Root diameter primary axes | BERVO has root diameter only for each EcoSIM root axis order (BERVO:0001070, BERVO:0001071), per plant functional type. |
 | 197 | Plant functional type (PFT) | `BERVO:8000785` Plant functional type | BERVO has Plant functional type as a concept, not a variable whose value is a PFT. |
 | 437 | Plant number of leaves | `BERVO:0000773` Leaf number | The BERVO term comes from a per-branch EcoSIM variable. |
 | 504 | Leaf Rubisco content per leaf area | `BERVO:0000562` Leaf rubisco content | The BERVO term is per unit leaf mass, not per leaf area. |
+| 614 | Fine root length per fine root dry mass (specific fine root length, SRL) | `BERVO:0001114` Specific root length primary axes | BERVO has specific root length only for each EcoSIM root axis order (BERVO:0001114, BERVO:0001115), per plant functional type. |
+| 896 | Fine root diameter | `BERVO:0001070` Root diameter primary axes | BERVO has root diameter only for each EcoSIM root axis order (BERVO:0001070, BERVO:0001071), per plant functional type. |
+| 1080 | Root length per root dry mass (specific root length, SRL) | `BERVO:0001114` Specific root length primary axes | BERVO has specific root length only for each EcoSIM root axis order (BERVO:0001114, BERVO:0001115), per plant functional type. |
 | 3086 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA) petiole, rhachis and midrib excluded | `BERVO:0000783` Leaf area:mass during growth | The BERVO term is the EcoSIM specific leaf area of new growth; Leaf mass per area (BERVO:0002185) is the reciprocal of SLA. |
 | 3106 | Plant height vegetative | `BERVO:0001967` Canopy height | BERVO has canopy height, not the height of an individual plant. |
 | 3107 | Plant height generative | `BERVO:0001967` Canopy height | BERVO has canopy height, not the height of an individual plant. |
+| 3108 | Leaf area (in case of compound leaves: leaf, petiole excluded) | `BERVO:0000716` Leaf area | BERVO Leaf area is the EcoSIM leaf area at a node, per grid cell, and holds the label, so a term for the area of one leaf needs a different one. |
+| 3109 | Leaf area (in case of compound leaves: leaflet, petiole excluded) | `BERVO:0000716` Leaf area | BERVO Leaf area is the EcoSIM leaf area at a node, per grid cell, and holds the label, so a term for the area of one leaf needs a different one. |
+| 3110 | Leaf area (in case of compound leaves: leaf, petiole included) | `BERVO:0000716` Leaf area | BERVO Leaf area is the EcoSIM leaf area at a node, per grid cell, and holds the label, so a term for the area of one leaf needs a different one. |
+| 3111 | Leaf area (in case of compound leaves: leaflet, petiole included) | `BERVO:0000716` Leaf area | BERVO Leaf area is the EcoSIM leaf area at a node, per grid cell, and holds the label, so a term for the area of one leaf needs a different one. |
+| 3112 | Leaf area (in case of compound leaves: leaf, undefined if petiole in- or excluded) | `BERVO:0000716` Leaf area | BERVO Leaf area is the EcoSIM leaf area at a node, per grid cell, and holds the label, so a term for the area of one leaf needs a different one. |
+| 3113 | Leaf area (in case of compound leaves: leaflet, undefined if petiole is in- or excluded) | `BERVO:0000716` Leaf area | BERVO Leaf area is the EcoSIM leaf area at a node, per grid cell, and holds the label, so a term for the area of one leaf needs a different one. |
+| 3114 | Leaf area (in case of compound leaves undefined if leaf or leaflet, undefined if petiole is in- or e | `BERVO:0000716` Leaf area | BERVO Leaf area is the EcoSIM leaf area at a node, per grid cell, and holds the label, so a term for the area of one leaf needs a different one. |
 | 3115 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole excluded | `BERVO:0000783` Leaf area:mass during growth | The BERVO term is the EcoSIM specific leaf area of new growth; Leaf mass per area (BERVO:0002185) is the reciprocal of SLA. |
 | 3116 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole included | `BERVO:0000783` Leaf area:mass during growth | The BERVO term is the EcoSIM specific leaf area of new growth; Leaf mass per area (BERVO:0002185) is the reciprocal of SLA. |
 | 3117 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): undefined if petiole is in- or exclu | `BERVO:0000783` Leaf area:mass during growth | The BERVO term is the EcoSIM specific leaf area of new growth; Leaf mass per area (BERVO:0002185) is the reciprocal of SLA. |
@@ -162,21 +173,21 @@ BERVO already has `Leaf mass per area` (`BERVO:0002185`).
 | `growth_form` | 42 Plant growth form | `gap` |  |
 | `growth_form` | 3400 Plant growth form simple consolidated | `gap` |  |
 | `growth_form` | 3401 Plant growth form detailed consolidated | `gap` |  |
-| `leaf_area` | 3108 Leaf area (in case of compound leaves: leaf, petiole excluded) | `gap` |  |
-| `leaf_area` | 3109 Leaf area (in case of compound leaves: leaflet, petiole excluded) | `gap` |  |
-| `leaf_area` | 3110 Leaf area (in case of compound leaves: leaf, petiole included) | `gap` |  |
-| `leaf_area` | 3111 Leaf area (in case of compound leaves: leaflet, petiole included) | `gap` |  |
-| `leaf_area` | 3112 Leaf area (in case of compound leaves: leaf, undefined if petiole in- or excluded) | `gap` |  |
-| `leaf_area` | 3113 Leaf area (in case of compound leaves: leaflet, undefined if petiole is in- or excluded) | `gap` |  |
-| `leaf_area` | 3114 Leaf area (in case of compound leaves undefined if leaf or leaflet, undefined if petiole is in- or e | `gap` |  |
+| `leaf_area` | 3108 Leaf area (in case of compound leaves: leaf, petiole excluded) | `related` | `BERVO:0000716` Leaf area |
+| `leaf_area` | 3109 Leaf area (in case of compound leaves: leaflet, petiole excluded) | `related` | `BERVO:0000716` Leaf area |
+| `leaf_area` | 3110 Leaf area (in case of compound leaves: leaf, petiole included) | `related` | `BERVO:0000716` Leaf area |
+| `leaf_area` | 3111 Leaf area (in case of compound leaves: leaflet, petiole included) | `related` | `BERVO:0000716` Leaf area |
+| `leaf_area` | 3112 Leaf area (in case of compound leaves: leaf, undefined if petiole in- or excluded) | `related` | `BERVO:0000716` Leaf area |
+| `leaf_area` | 3113 Leaf area (in case of compound leaves: leaflet, undefined if petiole is in- or excluded) | `related` | `BERVO:0000716` Leaf area |
+| `leaf_area` | 3114 Leaf area (in case of compound leaves undefined if leaf or leaflet, undefined if petiole is in- or e | `related` | `BERVO:0000716` Leaf area |
 | `leaf_dry_matter_content` | 47 Leaf dry mass per leaf fresh mass (leaf dry matter content, LDMC) | `gap` |  |
 | `leaf_nitrogen_content` | 14 Leaf nitrogen (N) content per leaf dry mass | `match` | `BERVO:0002189` Leaf nitrogen content per unit dry mass |
 | `leaf_type` | 43 Leaf type | `gap` |  |
 | `plant_height` | 18 Plant height | `related` | `BERVO:0001967` Canopy height |
 | `plant_height` | 3106 Plant height vegetative | `related` | `BERVO:0001967` Canopy height |
 | `plant_height` | 3107 Plant height generative | `related` | `BERVO:0001967` Canopy height |
-| `root_diameter` | 83 Root diameter | `gap` |  |
-| `root_diameter` | 896 Fine root diameter | `gap` |  |
+| `root_diameter` | 83 Root diameter | `related` | `BERVO:0001070` Root diameter primary axes |
+| `root_diameter` | 896 Fine root diameter | `related` | `BERVO:0001070` Root diameter primary axes |
 | `root_nitrogen_content` | 80 Root nitrogen (N) content per root dry mass | `broader` | `BERVO:0002340` Plant tissue nitrogen content |
 | `root_nitrogen_content` | 475 Fine root nitrogen (N) content per fine root dry mass | `broader` | `BERVO:0002340` Plant tissue nitrogen content |
 | `root_tissue_density` | 82 Root tissue density (root dry mass per root volume) | `gap` |  |
@@ -184,8 +195,8 @@ BERVO already has `Leaf mass per area` (`BERVO:0002185`).
 | `specific_leaf_area` | 3115 Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole excluded | `related` | `BERVO:0000783` Leaf area:mass during growth |
 | `specific_leaf_area` | 3116 Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole included | `related` | `BERVO:0000783` Leaf area:mass during growth |
 | `specific_leaf_area` | 3117 Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): undefined if petiole is in- or exclu | `related` | `BERVO:0000783` Leaf area:mass during growth |
-| `specific_root_length` | 614 Fine root length per fine root dry mass (specific fine root length, SRL) | `gap` |  |
-| `specific_root_length` | 1080 Root length per root dry mass (specific root length, SRL) | `gap` |  |
+| `specific_root_length` | 614 Fine root length per fine root dry mass (specific fine root length, SRL) | `related` | `BERVO:0001114` Specific root length primary axes |
+| `specific_root_length` | 1080 Root length per root dry mass (specific root length, SRL) | `related` | `BERVO:0001114` Specific root length primary axes |
 | `stem_specific_density` | 4 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density | `gap` |  |
 | `stem_specific_density` | 3764 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: stem | `gap` |  |
 | `woodiness` | 38 Plant woodiness | `gap` |  |

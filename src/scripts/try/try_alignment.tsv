@@ -74,7 +74,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 80	Root nitrogen (N) content per root dry mass	Root	broader	BERVO:0002340	root_nitrogen_content	The organ or status goes in contexts.
 81	Root nitrogen (N) isotope signature (delta 15N)	Root	gap			
 82	Root tissue density (root dry mass per root volume)	Root	gap		root_tissue_density	
-83	Root diameter	Root	gap		root_diameter	
+83	Root diameter	Root	related	BERVO:0001070	root_diameter	BERVO has root diameter only for each EcoSIM root axis order (BERVO:0001070, BERVO:0001071), per plant functional type.
 84	Root carbon (C) content per root dry mass	Root	broader	BERVO:0002339		The organ or status goes in contexts.
 85	Leaf soluble components content per leaf dry mass	Leaf	gap			
 86	Root soluble components content per root dry mass	Root	gap			
@@ -494,7 +494,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 610	Seed spread rate	Seed, fruit and dispersal	gap			
 611	Seedling vigor	Seed, fruit and dispersal	gap			
 613	Plant vegetative reproduction: spread rate	Whole plant	gap			
-614	Fine root length per fine root dry mass (specific fine root length, SRL)	Fine root	gap		specific_root_length	
+614	Fine root length per fine root dry mass (specific fine root length, SRL)	Fine root	related	BERVO:0001114	specific_root_length	BERVO has specific root length only for each EcoSIM root axis order (BERVO:0001114, BERVO:0001115), per plant functional type.
 615	Leaf pH	Leaf	gap			
 616	Stem phosphorus (P) content per stem dry mass	Stem, wood and bark	gap			
 617	Bark carbon (C) content per bark dry mass	Stem, wood and bark	broader	BERVO:0002339		The organ or status goes in contexts. BERVO has no Bark concept yet.
@@ -726,7 +726,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 892	Dispersal unit appendages	Seed, fruit and dispersal	gap			
 893	Dispersal unit exposure	Seed, fruit and dispersal	gap			
 894	Dispersal unit surface structure	Seed, fruit and dispersal	gap			
-896	Fine root diameter	Fine root	gap		root_diameter	
+896	Fine root diameter	Fine root	related	BERVO:0001070	root_diameter	BERVO has root diameter only for each EcoSIM root axis order (BERVO:0001070, BERVO:0001071), per plant functional type.
 897	Litter (fine root) calcium (Ca) content per fine root litter dry mass	Litter and woody debris	gap			
 898	Litter (fine root) carbon (C) content per fine root litter dry mass	Litter and woody debris	broader	BERVO:0002339		The organ or status goes in contexts.
 899	Litter (fine root) carbon/nitrogen (C/N) ratio	Litter and woody debris	broader	BERVO:0002055		The organ or status goes in contexts.
@@ -901,7 +901,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1077	Root iron (Fe) content per root dry mass	Root	gap			
 1078	Root lead (Pb) content per root dry mass	Root	gap			
 1079	Root length	Root	gap			
-1080	Root length per root dry mass (specific root length, SRL)	Root	gap		specific_root_length	
+1080	Root length per root dry mass (specific root length, SRL)	Root	related	BERVO:0001114	specific_root_length	BERVO has specific root length only for each EcoSIM root axis order (BERVO:0001114, BERVO:0001115), per plant functional type.
 1081	Root magnesium (Mg) content per root dry mass	Root	gap			
 1082	Root mercury (Hg) content per root dry mass	Root	gap			
 1083	Root molybdenum (Mo) content per root dry mass	Root	gap			
@@ -1881,13 +1881,13 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3105	Bud burst phenology (leaf-buds)	Twig, branch, shoot and bud	gap			
 3106	Plant height vegetative	Whole plant	related	BERVO:0001967	plant_height	BERVO has canopy height, not the height of an individual plant.
 3107	Plant height generative	Whole plant	related	BERVO:0001967	plant_height	BERVO has canopy height, not the height of an individual plant.
-3108	Leaf area (in case of compound leaves: leaf, petiole excluded)	Leaf	gap		leaf_area	
-3109	Leaf area (in case of compound leaves: leaflet, petiole excluded)	Leaf	gap		leaf_area	
-3110	Leaf area (in case of compound leaves: leaf, petiole included)	Leaf	gap		leaf_area	
-3111	Leaf area (in case of compound leaves: leaflet, petiole included)	Leaf	gap		leaf_area	
-3112	Leaf area (in case of compound leaves: leaf, undefined if petiole in- or excluded)	Leaf	gap		leaf_area	
-3113	Leaf area (in case of compound leaves: leaflet, undefined if petiole is in- or excluded)	Leaf	gap		leaf_area	
-3114	Leaf area (in case of compound leaves undefined if leaf or leaflet, undefined if petiole is in- or e	Leaf	gap		leaf_area	
+3108	Leaf area (in case of compound leaves: leaf, petiole excluded)	Leaf	related	BERVO:0000716	leaf_area	BERVO Leaf area is the EcoSIM leaf area at a node, per grid cell, and holds the label, so a term for the area of one leaf needs a different one.
+3109	Leaf area (in case of compound leaves: leaflet, petiole excluded)	Leaf	related	BERVO:0000716	leaf_area	BERVO Leaf area is the EcoSIM leaf area at a node, per grid cell, and holds the label, so a term for the area of one leaf needs a different one.
+3110	Leaf area (in case of compound leaves: leaf, petiole included)	Leaf	related	BERVO:0000716	leaf_area	BERVO Leaf area is the EcoSIM leaf area at a node, per grid cell, and holds the label, so a term for the area of one leaf needs a different one.
+3111	Leaf area (in case of compound leaves: leaflet, petiole included)	Leaf	related	BERVO:0000716	leaf_area	BERVO Leaf area is the EcoSIM leaf area at a node, per grid cell, and holds the label, so a term for the area of one leaf needs a different one.
+3112	Leaf area (in case of compound leaves: leaf, undefined if petiole in- or excluded)	Leaf	related	BERVO:0000716	leaf_area	BERVO Leaf area is the EcoSIM leaf area at a node, per grid cell, and holds the label, so a term for the area of one leaf needs a different one.
+3113	Leaf area (in case of compound leaves: leaflet, undefined if petiole is in- or excluded)	Leaf	related	BERVO:0000716	leaf_area	BERVO Leaf area is the EcoSIM leaf area at a node, per grid cell, and holds the label, so a term for the area of one leaf needs a different one.
+3114	Leaf area (in case of compound leaves undefined if leaf or leaflet, undefined if petiole is in- or e	Leaf	related	BERVO:0000716	leaf_area	BERVO Leaf area is the EcoSIM leaf area at a node, per grid cell, and holds the label, so a term for the area of one leaf needs a different one.
 3115	Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole excluded	Leaf	related	BERVO:0000783	specific_leaf_area	The BERVO term is the EcoSIM specific leaf area of new growth; Leaf mass per area (BERVO:0002185) is the reciprocal of SLA.
 3116	Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole included	Leaf	related	BERVO:0000783	specific_leaf_area	The BERVO term is the EcoSIM specific leaf area of new growth; Leaf mass per area (BERVO:0002185) is the reciprocal of SLA.
 3117	Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): undefined if petiole is in- or exclu	Leaf	related	BERVO:0000783	specific_leaf_area	The BERVO term is the EcoSIM specific leaf area of new growth; Leaf mass per area (BERVO:0002185) is the reciprocal of SLA.
