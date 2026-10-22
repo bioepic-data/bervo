@@ -24,7 +24,7 @@ import sys
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[2]
 S = REPO_ROOT / "src" / "scripts" / "try"
 OUT = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else REPO_ROOT / "docs" / "try-alignment.md"
-rows = list(csv.reader(open(REPO_ROOT / "src" / "ontology" / "bervo-src.csv", newline="", encoding="utf-8")))
+rows = list(csv.reader(open(REPO_ROOT / "src" / "ontology" / "bervo-src.csv", newline="", encoding="utf-8-sig")))
 H = {c: i for i, c in enumerate(rows[0])}
 TERMS = {r[0]: r for r in rows[2:]}
 STATUSES = ["match", "broader", "related", "gap", "species_attribute"]
@@ -84,7 +84,8 @@ def term(b):
 
 
 def cell(s):
-    return s.replace("|", "\\|")
+    """Escape a TRY name for a Markdown table cell, so it renders as written."""
+    return re.sub(r"([\\|*_<`\[\]])", r"\\\1", s)
 
 
 # ------------------------------------------------------------- tables
