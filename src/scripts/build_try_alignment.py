@@ -56,14 +56,15 @@ BROADER = [
 ]
 # Look like tissue contents but are not: amounts per unit soil, microbial biomass, fractions...
 EXCLUDE = r"soil dry mass|microbial|fungal|bacterial|labile|structural|soluble|TNC|non-structural|cellulose|lignin|isotope|versus| vs |per leaf nitrogen|cell wall|organic|ground area|per plant$|fraction"
-# Organs and statuses a broader row names that have no BERVO concept yet (checked 2026-10-22).
-# Mixed litter ("Litter (other than leaf: twigs, bark...)") is Dead vegetation and needs none.
-NEEDS = [
+# The concept a broader row's organ or status takes in contexts, where the name says which.
+# A row whose organ is not listed gets the general ORGAN note. Mixed litter ("Litter (other
+# than leaf: twigs, bark...)") is Dead vegetation, so the bark pattern must not catch it.
+CONTEXTS = [
     (r"absorptive", "Absorptive fine root"), (r"\(transport\)", "Transport fine root"),
     (r"^Coarse woody debris", "Coarse woody debris"), (r"heartwood", "Heartwood"), (r"sapwood", "Sapwood"),
     (r"^Twig|Litter twig", "Twig"), (r"[Bb]ark", "Bark"), (r"[Cc]one", "Cone"), (r"^Trap", "Trap"),
-    (r"^Fruit", "Fruit"), (r"^Reproductive organ", "Reproductive organ"),
-    (r"^Belowground", "Belowground plant organ"), (r"senescent", "Senescent"),
+    (r"^Fruit", "Fruit"), (r"^Reproductive organ", "Reproductive structure"),
+    (r"^Belowground", "Belowground plant material"), (r"senescent", "Senescent vegetation"),
 ]
 
 COTYLEDON = "Cotyledon goes in contexts."
@@ -73,8 +74,8 @@ WHOLE_PLANT = "Whole plant; the term covers whole plant material."
 ORGAN = "The organ or status goes in contexts."
 
 
-def missing(concept):
-    return f"{ORGAN} BERVO has no {concept} concept yet."
+def ctx(concept):
+    return f"{concept} goes in contexts."
 
 
 # (status, BERVO term, TRY trait IDs, note), grouped by term.
@@ -82,10 +83,10 @@ MAPPED = [
     # Leaf carbon and nitrogen (ESS-DIVE leaf terms, #171)
     ("match", "BERVO:0002188", "13", ""),
     ("broader", "BERVO:0002188", "674", COTYLEDON),
-    ("broader", "BERVO:0002188", "3955", "Senescent leaves; the status goes in contexts. BERVO has no Senescent concept yet."),
+    ("broader", "BERVO:0002188", "3955", "Senescent leaves; " + ctx("Senescent vegetation")),
     ("match", "BERVO:0002189", "14", ""),
     ("broader", "BERVO:0002189", "667", COTYLEDON),
-    ("broader", "BERVO:0002189", "3954", "Senescent leaves; the status goes in contexts. BERVO has no Senescent concept yet."),
+    ("broader", "BERVO:0002189", "3954", "Senescent leaves; " + ctx("Senescent vegetation")),
     ("match", "BERVO:0002187", "50", ""),
     ("match", "BERVO:0002186", "570", ""),
     ("match", "BERVO:0002185", "2950", "Reconstructed from fossil leaves; the quantity is the same."),
@@ -131,26 +132,26 @@ MAPPED = [
     ("broader", "BERVO:0002370", "3055", COTYLEDON),
     ("match", "BERVO:0002371", "4 3764", ""),
     ("broader", "BERVO:0002371", "3473 3877", "Branch goes in contexts."),
-    ("broader", "BERVO:0002371", "1204 3736", missing("Twig")),
-    ("broader", "BERVO:0002371", "3452", missing("Heartwood")),
-    ("broader", "BERVO:0002371", "3472", missing("Sapwood")),
+    ("broader", "BERVO:0002371", "1204 3736", ctx("Twig")),
+    ("broader", "BERVO:0002371", "3452", ctx("Heartwood")),
+    ("broader", "BERVO:0002371", "3472", ctx("Sapwood")),
     ("match", "BERVO:0002372", "26", ""),
     ("match", "BERVO:0002373", "233", ""),
     ("match", "BERVO:0002374", "1080", ""),
     ("broader", "BERVO:0002374", "614", "Fine root goes in contexts."),
     ("broader", "BERVO:0002374", "1550", "Coarse root goes in contexts."),
-    ("broader", "BERVO:0002374", "2062", missing("Absorptive fine root")),
-    ("broader", "BERVO:0002374", "2318", missing("Transport fine root")),
+    ("broader", "BERVO:0002374", "2062", ctx("Absorptive fine root")),
+    ("broader", "BERVO:0002374", "2318", ctx("Transport fine root")),
     ("match", "BERVO:0002375", "83", ""),
     ("broader", "BERVO:0002375", "896", "Fine root goes in contexts."),
     ("broader", "BERVO:0002375", "1526", "Coarse root goes in contexts."),
-    ("broader", "BERVO:0002375", "2038", missing("Absorptive fine root")),
-    ("broader", "BERVO:0002375", "2294", missing("Transport fine root")),
+    ("broader", "BERVO:0002375", "2038", ctx("Absorptive fine root")),
+    ("broader", "BERVO:0002375", "2294", ctx("Transport fine root")),
     ("match", "BERVO:0002376", "82 116", ""),
     ("broader", "BERVO:0002376", "1781", "Fine root goes in contexts."),
     ("broader", "BERVO:0002376", "1525", "Coarse root goes in contexts."),
-    ("broader", "BERVO:0002376", "2037", missing("Absorptive fine root")),
-    ("broader", "BERVO:0002376", "2293", missing("Transport fine root")),
+    ("broader", "BERVO:0002376", "2037", ctx("Absorptive fine root")),
+    ("broader", "BERVO:0002376", "2293", ctx("Transport fine root")),
     ("match", "BERVO:0002377", "38", ""),
     ("match", "BERVO:0002378", "42 3400 3401", "TRY variants differ in their value lists."),
     ("match", "BERVO:0002379", "43", ""),
@@ -233,7 +234,7 @@ with open(OUT, "w", newline="", encoding="utf-8") as f:
             status = "species_attribute"
         elif term := broader_term(name):
             status = "broader"
-            need = None if name.startswith("Litter (other") else next((c for pat, c in NEEDS if re.search(pat, name)), None)
-            note = missing(need) if need else ORGAN
+            concept = None if name.startswith("Litter (other") else next((c for pat, c in CONTEXTS if re.search(pat, name)), None)
+            note = ctx(concept) if concept else ORGAN
         w.writerow([tid, name, group, status, term, slot_of.get(tid, ""), note])
 print(f"wrote {OUT}", file=sys.stderr)

@@ -354,7 +354,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 429	Stomata conductance: vapor pressure deficit at initial reduction	Photosynthesis and gas exchange	gap			
 430	Stomata conductance: vapor pressure deficit at final reduction	Photosynthesis and gas exchange	gap			
 431	Litter labile compound content per litter dry mass	Litter and woody debris	gap			
-432	Coarse woody debris (CWD): carbon/nitrogen (C/N) ratio	Litter and woody debris	broader	BERVO:0002055		The organ or status goes in contexts. BERVO has no Coarse woody debris concept yet.
+432	Coarse woody debris (CWD): carbon/nitrogen (C/N) ratio	Litter and woody debris	broader	BERVO:0002055		Coarse woody debris goes in contexts.
 435	Plant carbon (C) allocation to root, stem, leaves	Whole plant	gap			
 436	Crown (canopy) rainfall (water) interception	Crown and canopy	gap			
 437	Plant number of leaves	Whole plant	related	BERVO:0000773		The BERVO term comes from a per-branch EcoSIM variable.
@@ -497,9 +497,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 614	Fine root length per fine root dry mass (specific fine root length, SRL)	Fine root	broader	BERVO:0002374	specific_root_length	Fine root goes in contexts.
 615	Leaf pH	Leaf	gap			
 616	Stem phosphorus (P) content per stem dry mass	Stem, wood and bark	broader	BERVO:0002380		The organ or status goes in contexts.
-617	Bark carbon (C) content per bark dry mass	Stem, wood and bark	broader	BERVO:0002339		The organ or status goes in contexts. BERVO has no Bark concept yet.
-618	Bark nitrogen (N) content per bark dry mass	Stem, wood and bark	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Bark concept yet.
-619	Bark phosphorus (P) content per bark dry mass	Stem, wood and bark	broader	BERVO:0002380		The organ or status goes in contexts. BERVO has no Bark concept yet.
+617	Bark carbon (C) content per bark dry mass	Stem, wood and bark	broader	BERVO:0002339		Bark goes in contexts.
+618	Bark nitrogen (N) content per bark dry mass	Stem, wood and bark	broader	BERVO:0002340		Bark goes in contexts.
+619	Bark phosphorus (P) content per bark dry mass	Stem, wood and bark	broader	BERVO:0002380		Bark goes in contexts.
 620	Coarse root phosphorus (P) content per coarse root dry mass	Root	broader	BERVO:0002380		The organ or status goes in contexts.
 621	Plant relationship of stem mass, height and diameter	Whole plant	gap			
 623	Stem calcium (Ca) content per stem dry mass	Stem, wood and bark	gap			
@@ -558,17 +558,17 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 679	Plant palatability	Whole plant	gap			
 681	Plant secondary compounds	Whole plant	gap			
 683	Root phosphorus (P) content per root dry mass	Root	broader	BERVO:0002380		The organ or status goes in contexts.
-684	Reproductive organ nitrogen (N) content per reproductive structures dry mass	Flower and reproduction	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Reproductive organ concept yet.
-685	Reproductive organ phosphorus (P) content per reproductive structures dry mass	Flower and reproduction	broader	BERVO:0002380		The organ or status goes in contexts. BERVO has no Reproductive organ concept yet.
+684	Reproductive organ nitrogen (N) content per reproductive structures dry mass	Flower and reproduction	broader	BERVO:0002340		Reproductive structure goes in contexts.
+685	Reproductive organ phosphorus (P) content per reproductive structures dry mass	Flower and reproduction	broader	BERVO:0002380		Reproductive structure goes in contexts.
 686	Stem nitrogen/phosphorus (N/P) ratio	Stem, wood and bark	broader	BERVO:0002381		The organ or status goes in contexts.
 687	Root nitrogen/phosphorus (N/P) ratio	Root	broader	BERVO:0002381		The organ or status goes in contexts.
-688	Reproductive organ nitrogen/phosphorus (N/P) ratio	Flower and reproduction	broader	BERVO:0002381		The organ or status goes in contexts. BERVO has no Reproductive organ concept yet.
+688	Reproductive organ nitrogen/phosphorus (N/P) ratio	Flower and reproduction	broader	BERVO:0002381		Reproductive structure goes in contexts.
 689	Twig dry mass per twig fresh mass (twig dry matter content, TDMC)	Twig, branch, shoot and bud	gap			
-690	Twig nitrogen (N) content per twig dry mass	Twig, branch, shoot and bud	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Twig concept yet.
-691	Twig carbon content per twig dry mass	Twig, branch, shoot and bud	broader	BERVO:0002339		The organ or status goes in contexts. BERVO has no Twig concept yet.
+690	Twig nitrogen (N) content per twig dry mass	Twig, branch, shoot and bud	broader	BERVO:0002340		Twig goes in contexts.
+691	Twig carbon content per twig dry mass	Twig, branch, shoot and bud	broader	BERVO:0002339		Twig goes in contexts.
 692	Twig lignin content per twig dry mass	Twig, branch, shoot and bud	gap			
 693	Twig pH	Twig, branch, shoot and bud	gap			
-694	Twig carbon/nitrogen (C/N) ratio	Twig, branch, shoot and bud	broader	BERVO:0002055		The organ or status goes in contexts. BERVO has no Twig concept yet.
+694	Twig carbon/nitrogen (C/N) ratio	Twig, branch, shoot and bud	broader	BERVO:0002055		Twig goes in contexts.
 695	Fine root dry mass per fine root fresh mass (fine root dry matter content; RDMC)	Fine root	gap			
 698	Fine root phosphorus (P) content per fine root dry mass	Fine root	broader	BERVO:0002380		The organ or status goes in contexts.
 699	Fine root pH	Fine root	gap			
@@ -668,9 +668,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 825	Species occurrence range: climate type	Species ecology and distribution	species_attribute			
 826	Species occurrence range: altitude of origin	Species ecology and distribution	species_attribute			
 827	Species occurrence range: origin zonal	Species ecology and distribution	species_attribute			
-828	Twig phosporus (P) content per twig dry mass	Twig, branch, shoot and bud	broader	BERVO:0002380		The organ or status goes in contexts. BERVO has no Twig concept yet.
+828	Twig phosporus (P) content per twig dry mass	Twig, branch, shoot and bud	broader	BERVO:0002380		Twig goes in contexts.
 829	Bark carbon (C) isotope signature (delta 13C)	Stem, wood and bark	gap			
-830	Bark carbon/nitrogen (C/N) ratio	Stem, wood and bark	broader	BERVO:0002055		The organ or status goes in contexts. BERVO has no Bark concept yet.
+830	Bark carbon/nitrogen (C/N) ratio	Stem, wood and bark	broader	BERVO:0002055		Bark goes in contexts.
 831	Bark crystals	Stem, wood and bark	gap			
 832	Bark nitrogen (N) isotope signature (delta 15N)	Stem, wood and bark	gap			
 833	Bark persistence (deciduous, persistent)	Stem, wood and bark	gap			
@@ -681,8 +681,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 838	Bark surface structure, texture, age	Stem, wood and bark	gap			
 839	Bark thickness per stem diameter	Stem, wood and bark	gap			
 840	Coarse woody debris (CWD) branch: calcium (Ca) content per branch CWD dry mass	Litter and woody debris	gap			
-841	Coarse woody debris (CWD) branch: carbon (C) content per branch CWD dry mass	Litter and woody debris	broader	BERVO:0002339		The organ or status goes in contexts. BERVO has no Coarse woody debris concept yet.
-842	Coarse woody debris (CWD) branch: carbon/nitrogen (C/N) ratio	Litter and woody debris	broader	BERVO:0002055		The organ or status goes in contexts. BERVO has no Coarse woody debris concept yet.
+841	Coarse woody debris (CWD) branch: carbon (C) content per branch CWD dry mass	Litter and woody debris	broader	BERVO:0002339		Coarse woody debris goes in contexts.
+842	Coarse woody debris (CWD) branch: carbon/nitrogen (C/N) ratio	Litter and woody debris	broader	BERVO:0002055		Coarse woody debris goes in contexts.
 843	Coarse woody debris (CWD) branch: cellulose content per branch CWD dry mass	Litter and woody debris	gap			
 844	Coarse woody debris (CWD) branch: copper (Cu) content per branch CWD dry mass	Litter and woody debris	gap			
 845	Coarse woody debris (CWD) branch: decomposition rate	Litter and woody debris	gap			
@@ -694,8 +694,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 851	Coarse woody debris (CWD) branch: lignin/nitrogen (lignin/N) ratio	Litter and woody debris	gap			
 852	Coarse woody debris (CWD) branch: magnesium (Mg) content per branch CWD dry mass	Litter and woody debris	gap			
 853	Coarse woody debris (CWD) branch: manganese (Mn) content per branch CWD dry mass	Litter and woody debris	gap			
-854	Coarse woody debris (CWD) branch: nitrogen (N) content per branch CWD dry mass	Litter and woody debris	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Coarse woody debris concept yet.
-855	Coarse woody debris (CWD) branch: phosphorus (P) content per branch CWD dry mass	Litter and woody debris	broader	BERVO:0002380		The organ or status goes in contexts. BERVO has no Coarse woody debris concept yet.
+854	Coarse woody debris (CWD) branch: nitrogen (N) content per branch CWD dry mass	Litter and woody debris	broader	BERVO:0002340		Coarse woody debris goes in contexts.
+855	Coarse woody debris (CWD) branch: phosphorus (P) content per branch CWD dry mass	Litter and woody debris	broader	BERVO:0002380		Coarse woody debris goes in contexts.
 856	Coarse woody debris (CWD) branch: potassium (K) content per branch CWD dry mass	Litter and woody debris	gap			
 857	Coarse woody debris (CWD) branch: rot type	Litter and woody debris	gap			
 858	Coarse woody debris (CWD) branch: sodium (Na) content per branch CWD dry mass	Litter and woody debris	gap			
@@ -707,18 +707,18 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 864	Branch potassium (K) content per branch dry mass	Twig, branch, shoot and bud	gap			
 865	Budbank seasonality	Twig, branch, shoot and bud	gap			
 867	Coarse woody debris (CWD): calcium (Ca) content per CWD dry mass	Litter and woody debris	gap			
-868	Coarse woody debris (CWD): carbon (C) content per CWD dry mass	Litter and woody debris	broader	BERVO:0002339		The organ or status goes in contexts. BERVO has no Coarse woody debris concept yet.
+868	Coarse woody debris (CWD): carbon (C) content per CWD dry mass	Litter and woody debris	broader	BERVO:0002339		Coarse woody debris goes in contexts.
 869	Coarse woody debris (CWD): decomposition rate	Litter and woody debris	gap			
 871	Coarse woody debris (CWD): density	Litter and woody debris	gap			
 874	Coarse woody debris (CWD): magnesium (Mg) content per CWD dry mass	Litter and woody debris	gap			
 875	Coarse woody debris (CWD): manganese (Mn) content per CWD dry mass	Litter and woody debris	gap			
-876	Coarse woody debris (CWD): nitrogen (N) content per CWD dry mass	Litter and woody debris	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Coarse woody debris concept yet.
-878	Coarse woody debris (CWD): phosphorus (P) content per CWD dry mass	Litter and woody debris	broader	BERVO:0002380		The organ or status goes in contexts. BERVO has no Coarse woody debris concept yet.
+876	Coarse woody debris (CWD): nitrogen (N) content per CWD dry mass	Litter and woody debris	broader	BERVO:0002340		Coarse woody debris goes in contexts.
+878	Coarse woody debris (CWD): phosphorus (P) content per CWD dry mass	Litter and woody debris	broader	BERVO:0002380		Coarse woody debris goes in contexts.
 879	Coarse woody debris (CWD): potassium (K) content per CWD dry mass	Litter and woody debris	gap			
 882	Coarse woody debris (CWD): sodium (Na) content per CWD dry mass	Litter and woody debris	gap			
 885	Cone (strobilus) diameter	Flower and reproduction	gap			
 886	Cone (strobilus) length	Flower and reproduction	gap			
-887	Litter (cone, strobilus) nitrogen (N) content per dry mass	Litter and woody debris	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Cone concept yet.
+887	Litter (cone, strobilus) nitrogen (N) content per dry mass	Litter and woody debris	broader	BERVO:0002340		Cone goes in contexts.
 888	Cone (strobilus) dry mass	Flower and reproduction	gap			
 889	Crown (canopy) base height (ground to base)	Crown and canopy	gap			
 890	Dispersal frequency	Seed, fruit and dispersal	gap			
@@ -879,8 +879,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1055	Root carbon/nitrogen (C/N) ratio	Root	broader	BERVO:0002055		The organ or status goes in contexts.
 1056	Root chromium (Cr) content per root dry mass	Root	gap			
 1057	Coarse woody debris (CWD) root: calcium (Ca) content per coarse root CWD dry mass	Litter and woody debris	gap			
-1058	Coarse woody debris (CWD) root: carbon (C) content per coarse root CWD dry mass	Litter and woody debris	broader	BERVO:0002339		The organ or status goes in contexts. BERVO has no Coarse woody debris concept yet.
-1059	Coarse woody debris (CWD) root: carbon/nitrogen (C/N) ratio	Litter and woody debris	broader	BERVO:0002055		The organ or status goes in contexts. BERVO has no Coarse woody debris concept yet.
+1058	Coarse woody debris (CWD) root: carbon (C) content per coarse root CWD dry mass	Litter and woody debris	broader	BERVO:0002339		Coarse woody debris goes in contexts.
+1059	Coarse woody debris (CWD) root: carbon/nitrogen (C/N) ratio	Litter and woody debris	broader	BERVO:0002055		Coarse woody debris goes in contexts.
 1060	Coarse woody debris (CWD) root: cellulose content per coarse root CWD dry mass	Litter and woody debris	gap			
 1061	Coarse woody debris (CWD) root: decomposition rate	Litter and woody debris	gap			
 1062	Coarse woody debris (CWD) root: decomposition rate constant	Litter and woody debris	gap			
@@ -889,7 +889,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1065	Coarse woody debris (CWD) root: lignin/nitrogen (lignin/N) ratio	Litter and woody debris	gap			
 1066	Coarse woody debris (CWD) root: magnesium (Mg) content per coarse root CWD dry mass	Litter and woody debris	gap			
 1067	Coarse woody debris (CWD) root: manganese (Mn) content per coarse root CWD dry mass	Litter and woody debris	gap			
-1068	Coarse woody debris (CWD) root: phosphorus (P) content per coarse root CWD dry mass	Litter and woody debris	broader	BERVO:0002380		The organ or status goes in contexts. BERVO has no Coarse woody debris concept yet.
+1068	Coarse woody debris (CWD) root: phosphorus (P) content per coarse root CWD dry mass	Litter and woody debris	broader	BERVO:0002380		Coarse woody debris goes in contexts.
 1069	Coarse woody debris (CWD) root: potassium (K) content per coarse root CWD dry mass	Litter and woody debris	gap			
 1070	Coarse woody debris (CWD) root: rot type	Litter and woody debris	gap			
 1071	Coarse woody debris (CWD) root: sodium (Na) content per coarse root CWD dry mass	Litter and woody debris	gap			
@@ -975,7 +975,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1151	Coarse woody debris (CWD) stem: bark fraction	Litter and woody debris	gap			
 1152	Coarse woody debris (CWD) stem: calcium (Ca) content per stem CWD	Litter and woody debris	gap			
 1153	Coarse woody debris (CWD) stem: carbon (C) content per stem CWD	Litter and woody debris	gap			
-1154	Coarse woody debris (CWD) stem: carbon/nitrogen (C/N) ratio	Litter and woody debris	broader	BERVO:0002055		The organ or status goes in contexts. BERVO has no Coarse woody debris concept yet.
+1154	Coarse woody debris (CWD) stem: carbon/nitrogen (C/N) ratio	Litter and woody debris	broader	BERVO:0002055		Coarse woody debris goes in contexts.
 1155	Coarse woody debris (CWD) stem: carboxyls content per stem CWD	Litter and woody debris	gap			
 1156	Coarse woody debris (CWD) stem: cellulose content per stem CWD	Litter and woody debris	gap			
 1157	Coarse woody debris (CWD) stem: decomposition rate	Litter and woody debris	gap			
@@ -1016,12 +1016,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1196	Wood xylem torus diameter per outer pit apertuer diameter	Stem, wood and bark	gap			
 1197	Wood xylem torus thickness	Stem, wood and bark	gap			
 1198	Wood total interconduit pit (membrane) surface area	Stem, wood and bark	gap			
-1199	Litter twig nitrogen (N) content per twig dry mass	Litter and woody debris	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Twig concept yet.
+1199	Litter twig nitrogen (N) content per twig dry mass	Litter and woody debris	broader	BERVO:0002340		Twig goes in contexts.
 1200	Twig diameter	Twig, branch, shoot and bud	gap			
 1201	Twig dry mass	Twig, branch, shoot and bud	gap			
 1202	Twig length	Twig, branch, shoot and bud	gap			
 1203	Twig number of leaves per twig	Twig, branch, shoot and bud	gap			
-1204	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: twigs and branches	Stem, wood and bark	broader	BERVO:0002371		The organ or status goes in contexts. BERVO has no Twig concept yet.
+1204	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: twigs and branches	Stem, wood and bark	broader	BERVO:0002371		Twig goes in contexts.
 1205	Wood vessels surrounded by tracheids (vasicentric tracheids)	Stem, wood and bark	gap			
 1206	Plant vegetative reproduction: pattern forming	Whole plant	gap			
 1207	Plant vegetative reproduction: spread distance	Whole plant	gap			
@@ -1073,7 +1073,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1259	Coarse woody debris (CWD) stem: zinc (Zn) content per stem CWD	Litter and woody debris	gap			
 1260	Wood carbon/nitrogen (C/N) ratio	Stem, wood and bark	broader	BERVO:0002055		The organ or status goes in contexts.
 1261	Stem circumference	Stem, wood and bark	gap			
-1262	Coarse woody debris (CWD) root: nitrogen (N) content per coarse root CWD dry mass	Litter and woody debris	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Coarse woody debris concept yet.
+1262	Coarse woody debris (CWD) root: nitrogen (N) content per coarse root CWD dry mass	Litter and woody debris	broader	BERVO:0002340		Coarse woody debris goes in contexts.
 1263	Dispersal unit floating capacity	Seed, fruit and dispersal	gap			
 1264	Leaf petiole specific length (petiole length per petiole dry mass)	Leaf	gap			
 1265	Stomata conductance per leaf area: nighttime	Photosynthesis and gas exchange	gap			
@@ -1462,30 +1462,30 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2030	Fine root necromass to biomass ratio	Fine root	gap			
 2031	Fine root debris decomposition rate constant	Fine root	gap			
 2034	Fine root (absorptive)/shoot ratio	Fine root	gap			
-2035	Fine root (absorptive) nitrogen (N) content per absorptive fine root dry mass	Fine root	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Absorptive fine root concept yet.
+2035	Fine root (absorptive) nitrogen (N) content per absorptive fine root dry mass	Fine root	broader	BERVO:0002340		Absorptive fine root goes in contexts.
 2036	Fine root (absorptive) nitrogen (N) isotope signature (delta 15N)	Fine root	gap			
-2037	Fine root (absorptive) tissue density (absorptive fine root dry mass per absorptive fine root volume	Fine root	broader	BERVO:0002376		The organ or status goes in contexts. BERVO has no Absorptive fine root concept yet.
-2038	Fine root (absorptive) diameter	Fine root	broader	BERVO:0002375		The organ or status goes in contexts. BERVO has no Absorptive fine root concept yet.
-2039	Fine root (absorptive) carbon (C) content per absorptive fine root dry mass	Fine root	broader	BERVO:0002339		The organ or status goes in contexts. BERVO has no Absorptive fine root concept yet.
+2037	Fine root (absorptive) tissue density (absorptive fine root dry mass per absorptive fine root volume	Fine root	broader	BERVO:0002376		Absorptive fine root goes in contexts.
+2038	Fine root (absorptive) diameter	Fine root	broader	BERVO:0002375		Absorptive fine root goes in contexts.
+2039	Fine root (absorptive) carbon (C) content per absorptive fine root dry mass	Fine root	broader	BERVO:0002339		Absorptive fine root goes in contexts.
 2040	Fine root (absorptive) lignin content per absorptive fine root dry mass	Fine root	gap			
 2042	Fine root (absorptive) porosity (volume of root air space)	Fine root	gap			
 2043	Plant biomass and allometry: Fine root (absorptive) dry mass per plant	Whole plant	gap			
 2044	Fine root (absorptive) vessel diameter	Fine root	gap			
 2047	Fine root (absorptive) respiration rate per absorptive fine root dry mass	Fine root	gap			
 2048	Fine root (absorptive) total non-structural carbon (TNC) content per absorptive fine root dry mass	Fine root	gap			
-2049	Fine root (absorptive) phosphorus (P) content per absorptive fine root dry mass	Fine root	broader	BERVO:0002380		The organ or status goes in contexts. BERVO has no Absorptive fine root concept yet.
+2049	Fine root (absorptive) phosphorus (P) content per absorptive fine root dry mass	Fine root	broader	BERVO:0002380		Absorptive fine root goes in contexts.
 2050	Fine root (absorptive) dry mass per absorptive fine root fresh mass (absorptive fine root dry matter	Fine root	gap			
 2051	Fine root (absorptive) dry mass per ground area	Fine root	gap			
 2053	Fine root (absorptive) aluminium (Al) content per absorptive fine root dry mass	Fine root	gap			
 2054	Fine root (absorptive) arsenic (As) content per absorptive fine root dry mass	Fine root	gap			
 2055	Fine root (absorptive) cadmium (Cd) content per absorptive fine root dry mass	Fine root	gap			
 2056	Fine root (absorptive) calcium (Ca) content per absorptive fine root dry mass	Fine root	gap			
-2057	Fine root (absorptive) carbon/nitrogen (C/N) ratio	Fine root	broader	BERVO:0002055		The organ or status goes in contexts. BERVO has no Absorptive fine root concept yet.
+2057	Fine root (absorptive) carbon/nitrogen (C/N) ratio	Fine root	broader	BERVO:0002055		Absorptive fine root goes in contexts.
 2058	Fine root (absorptive) chromium (Cr) content per absorptive fine root dry mass	Fine root	gap			
 2059	Fine root (absorptive) copper (Cu) content per absorptive fine root dry mass	Fine root	gap			
 2060	Fine root (absorptive) iron (Fe) content per absorptive fine root dry mass	Fine root	gap			
 2061	Fine root (absorptive) lead (Pb) content per absorptive fine root dry mass	Fine root	gap			
-2062	Fine root (absorptive) length per absorptive fine root dry mass (specific absorptive fine root lengt	Fine root	broader	BERVO:0002374		The organ or status goes in contexts. BERVO has no Absorptive fine root concept yet.
+2062	Fine root (absorptive) length per absorptive fine root dry mass (specific absorptive fine root lengt	Fine root	broader	BERVO:0002374		Absorptive fine root goes in contexts.
 2063	Fine root (absorptive) magnesium (Mg) content per absorptive fine root dry mass	Fine root	gap			
 2064	Fine root (absorptive) nickel (Ni) content per absorptive fine root dry mass	Fine root	gap			
 2065	Fine root (absorptive) persistence (lifespan, longevity)	Fine root	gap			
@@ -1577,25 +1577,25 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2283	Fine root (absorptive) length per minirhizotron screen area	Fine root	gap			
 2287	Fine root (absorptive) debris decomposition rate constant	Fine root	gap			
 2288	Fine root (absorptive) lignin phenol vegetation index	Fine root	gap			
-2291	Fine root (transport) nitrogen (N) content per transport fine root dry mass	Fine root	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Transport fine root concept yet.
+2291	Fine root (transport) nitrogen (N) content per transport fine root dry mass	Fine root	broader	BERVO:0002340		Transport fine root goes in contexts.
 2292	Fine root (transport) nitrogen (N) isotope signature (delta 15N)	Fine root	gap			
-2293	Fine root (transport) tissue density (transport fine root dry mass per transport fine root volume)	Fine root	broader	BERVO:0002376		The organ or status goes in contexts. BERVO has no Transport fine root concept yet.
-2294	Fine root (transport) diameter	Fine root	broader	BERVO:0002375		The organ or status goes in contexts. BERVO has no Transport fine root concept yet.
-2295	Fine root (transport) carbon (C) content per transport fine root dry mass	Fine root	broader	BERVO:0002339		The organ or status goes in contexts. BERVO has no Transport fine root concept yet.
+2293	Fine root (transport) tissue density (transport fine root dry mass per transport fine root volume)	Fine root	broader	BERVO:0002376		Transport fine root goes in contexts.
+2294	Fine root (transport) diameter	Fine root	broader	BERVO:0002375		Transport fine root goes in contexts.
+2295	Fine root (transport) carbon (C) content per transport fine root dry mass	Fine root	broader	BERVO:0002339		Transport fine root goes in contexts.
 2299	Plant biomass and allometry: Fine root (transport) dry mass per plant	Whole plant	gap			
 2300	Fine root (transport) vessel diameter	Fine root	gap			
 2303	Fine root (transport) respiration rate per transport fine root dry mass	Fine root	gap			
 2304	Fine root (transport) total non-structural carbon (TNC) content per transport fine root dry mass	Fine root	gap			
-2305	Fine root (transport) phosphorus (P) content per transport fine root dry mass	Fine root	broader	BERVO:0002380		The organ or status goes in contexts. BERVO has no Transport fine root concept yet.
+2305	Fine root (transport) phosphorus (P) content per transport fine root dry mass	Fine root	broader	BERVO:0002380		Transport fine root goes in contexts.
 2307	Fine root (transport) dry mass per ground area	Fine root	gap			
 2310	Fine root (transport) arsenic (As) content per transport fine root dry mass	Fine root	gap			
 2311	Fine root (transport) cadmium (Cd) content per transport fine root dry mass	Fine root	gap			
 2312	Fine root (transport) calcium (Ca) content per transport fine root dry mass	Fine root	gap			
-2313	Fine root (transport) carbon/nitrogen (C/N) ratio	Fine root	broader	BERVO:0002055		The organ or status goes in contexts. BERVO has no Transport fine root concept yet.
+2313	Fine root (transport) carbon/nitrogen (C/N) ratio	Fine root	broader	BERVO:0002055		Transport fine root goes in contexts.
 2314	Fine root (transport) chromium (Cr) content per transport fine root dry mass	Fine root	gap			
 2315	Fine root (transport) copper (Cu) content per transport fine root dry mass	Fine root	gap			
 2317	Fine root (transport) lead (Pb) content per transport fine root dry mass	Fine root	gap			
-2318	Fine root (transport) length per transport fine root dry mass (specific transport fine root length,	Fine root	broader	BERVO:0002374		The organ or status goes in contexts. BERVO has no Transport fine root concept yet.
+2318	Fine root (transport) length per transport fine root dry mass (specific transport fine root length,	Fine root	broader	BERVO:0002374		Transport fine root goes in contexts.
 2320	Fine root (transport) nickel (Ni) content per transport fine root dry mass	Fine root	gap			
 2321	Fine root (transport) persistence (lifespan, longevity)	Fine root	gap			
 2322	Fine root (transport) potassium (K) content per transport fine root dry mass	Fine root	gap			
@@ -1637,21 +1637,21 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2543	Fine root (transport) debris decomposition rate constant	Fine root	gap			
 2545	Belowground plant organ rooting depth	Root	gap			
 2546	Belowground plant organ/shoot ratio	Root	gap			
-2547	Belowground plant organ nitrogen (N) content per belowground plant organ dry mass	Root	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Belowground plant organ concept yet.
+2547	Belowground plant organ nitrogen (N) content per belowground plant organ dry mass	Root	broader	BERVO:0002340		Belowground plant material goes in contexts.
 2549	Belowground plant organ tissue density (belowground plant organ dry mass per belowground plant organ	Root	gap			
 2550	Belowground plant organ diameter	Root	gap			
-2551	Belowground plant organ carbon (C) content per belowground plant organ dry mass	Root	broader	BERVO:0002339		The organ or status goes in contexts. BERVO has no Belowground plant organ concept yet.
+2551	Belowground plant organ carbon (C) content per belowground plant organ dry mass	Root	broader	BERVO:0002339		Belowground plant material goes in contexts.
 2552	Belowground plant organ lignin content per belowground plant organ dry mass	Root	gap			
 2553	Belowground plant organ cellulose content per belowground plant organ dry mass	Root	gap			
 2555	Plant biomass and allometry: Belowground plant organ dry mass per plant	Whole plant	gap			
 2557	Belowground plant organ nitrogen (N) uptake rate	Root	gap			
 2559	Belowground plant organ respiration rate per belowground plant organ dry mass	Root	gap			
-2561	Belowground plant organ phosphorus (P) content per belowground plant organ dry mass	Root	broader	BERVO:0002380		The organ or status goes in contexts. BERVO has no Belowground plant organ concept yet.
+2561	Belowground plant organ phosphorus (P) content per belowground plant organ dry mass	Root	broader	BERVO:0002380		Belowground plant material goes in contexts.
 2562	Belowground plant organ dry mass per belowground plant organ fresh mass (belowground plant organ dry	Root	gap			
 2563	Belowground plant organ dry mass per ground area	Root	gap			
 2564	Belowground plant organ morphological adaptations: aerenchyma	Root	gap			
 2568	Belowground plant organ calcium (Ca) content per belowground plant organ dry mass	Root	gap			
-2569	Belowground plant organ carbon/nitrogen (C/N) ratio	Root	broader	BERVO:0002055		The organ or status goes in contexts. BERVO has no Belowground plant organ concept yet.
+2569	Belowground plant organ carbon/nitrogen (C/N) ratio	Root	broader	BERVO:0002055		Belowground plant material goes in contexts.
 2572	Belowground plant organ iron (Fe) content per belowground plant organ dry mass	Root	gap			
 2574	Belowground plant organ length per belowground plant organ dry mass (specific belowground plant orga	Root	gap			
 2575	Belowground plant organ magnesium (Mg) content per belowground plant organ dry mass	Root	gap			
@@ -1770,8 +1770,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2984	Cone (strobilus) potassium (K) content per cone dry mass	Flower and reproduction	gap			
 2985	Cone (strobilus) magnesium (Mg) content per cone dry mass	Flower and reproduction	gap			
 2986	Cone (strobilus) manganese (Mn) content per cone dry mass	Flower and reproduction	gap			
-2987	Cone (strobilus) nitrogen (N) content per cone dry mass	Flower and reproduction	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Cone concept yet.
-2988	Cone (strobilus) phosphorus (P) content per cone dry mass	Flower and reproduction	broader	BERVO:0002380		The organ or status goes in contexts. BERVO has no Cone concept yet.
+2987	Cone (strobilus) nitrogen (N) content per cone dry mass	Flower and reproduction	broader	BERVO:0002340		Cone goes in contexts.
+2988	Cone (strobilus) phosphorus (P) content per cone dry mass	Flower and reproduction	broader	BERVO:0002380		Cone goes in contexts.
 2989	Cone (strobilus) sulfur (S) content per cone dry mass	Flower and reproduction	gap			
 2990	Cone (strobilus) zinc (Zn) content per cone dry mass	Flower and reproduction	gap			
 2991	Flower presence	Flower and reproduction	gap			
@@ -1988,8 +1988,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3365	Photosynthesis A/Ci curve: stomata conductance per leaf area	Photosynthesis and gas exchange	gap			
 3366	Photosynthesis A/Ci curve: intercellular CO2 concentration	Photosynthesis and gas exchange	gap			
 3367	Photosynthesis A/Ci curve: transpiration rate per leaf area	Photosynthesis and gas exchange	gap			
-3368	Wood (sapwood) carbon (C) content per dry mass	Stem, wood and bark	broader	BERVO:0002339		The organ or status goes in contexts. BERVO has no Sapwood concept yet.
-3369	Wood (heartwood) carbon (C) content per heartwood dry mass	Stem, wood and bark	broader	BERVO:0002339		The organ or status goes in contexts. BERVO has no Heartwood concept yet.
+3368	Wood (sapwood) carbon (C) content per dry mass	Stem, wood and bark	broader	BERVO:0002339		Sapwood goes in contexts.
+3369	Wood (heartwood) carbon (C) content per heartwood dry mass	Stem, wood and bark	broader	BERVO:0002339		Heartwood goes in contexts.
 3370	Mycorrhiza status and microbial interactions	Root	gap			
 3371	Plant species use for bioremediation	Whole plant	gap			
 3372	Seed nitrogen (N) content per seed	Seed, fruit and dispersal	gap			
@@ -2070,9 +2070,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3449	Plant biomass and allometry: Coarse root dry mass per plant	Whole plant	gap			
 3450	Plant biomass and allometry: Root dry mass per plant	Whole plant	gap			
 3451	Plant biomass and allometry: Plant dry mass	Whole plant	gap			
-3452	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: heartwood	Stem, wood and bark	broader	BERVO:0002371		The organ or status goes in contexts. BERVO has no Heartwood concept yet.
+3452	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: heartwood	Stem, wood and bark	broader	BERVO:0002371		Heartwood goes in contexts.
 3453	Wood (sapwood) nitrogen content per dry mass	Stem, wood and bark	gap			
-3455	Wood (heartwood) nitrogen (N) content per heartwood dry mass	Stem, wood and bark	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Heartwood concept yet.
+3455	Wood (heartwood) nitrogen (N) content per heartwood dry mass	Stem, wood and bark	broader	BERVO:0002340		Heartwood goes in contexts.
 3456	Leaf dry mass per branch	Leaf	gap			
 3457	Plant biomass and allometry: Litter (leaf) dry mass (dead leaves) per plant	Whole plant	gap			
 3459	Plant belowground relative growth rate	Whole plant	gap			
@@ -2085,7 +2085,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3467	Leaf sheath area per sheath dry mass (sheath SLA)	Leaf	gap			
 3468	Leaf water & osmotic potential: leaf water potential at turgor loss point	Leaf	gap			
 3471	Crown (canopy) form	Crown and canopy	gap			
-3472	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: sapwood	Stem, wood and bark	broader	BERVO:0002371		The organ or status goes in contexts. BERVO has no Sapwood concept yet.
+3472	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: sapwood	Stem, wood and bark	broader	BERVO:0002371		Sapwood goes in contexts.
 3473	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: branch	Stem, wood and bark	broader	BERVO:0002371		Branch goes in contexts.
 3474	Leaf chlorophyll content per leaf dry mass (Chl a)	Leaf	gap			
 3475	Leaf chlorophyll content per leaf dry mass (Chl b)	Leaf	gap			
@@ -2308,8 +2308,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3704	Branch wood nitrogen (N) content per dry mass	Twig, branch, shoot and bud	broader	BERVO:0002340		The organ or status goes in contexts.
 3707	Branch wood carbon isotope ratio (delta 13C)	Twig, branch, shoot and bud	gap			
 3708	Branch wood nitrogen isotope ratio (delta 15N)	Twig, branch, shoot and bud	gap			
-3709	Branch bark carbon (C) content per dry mass	Twig, branch, shoot and bud	broader	BERVO:0002339		The organ or status goes in contexts. BERVO has no Bark concept yet.
-3710	Branch bark nitrogen (N) content per dry mass	Twig, branch, shoot and bud	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Bark concept yet.
+3709	Branch bark carbon (C) content per dry mass	Twig, branch, shoot and bud	broader	BERVO:0002339		Bark goes in contexts.
+3710	Branch bark nitrogen (N) content per dry mass	Twig, branch, shoot and bud	broader	BERVO:0002340		Bark goes in contexts.
 3711	Branch bark carbon/nitogen (C/N) ratio	Twig, branch, shoot and bud	gap			
 3712	Branch bark carbon isotope ratio (delta 13C)	Twig, branch, shoot and bud	gap			
 3713	Branch bark nitrogen isotope ratio (delta 15N)	Twig, branch, shoot and bud	gap			
@@ -2335,7 +2335,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3733	Twig wood total non-structural carbohydrate concentration	Twig, branch, shoot and bud	gap			
 3734	Twig total bark density	Twig, branch, shoot and bud	gap			
 3735	Twig inner bark density	Twig, branch, shoot and bud	gap			
-3736	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: twig	Stem, wood and bark	broader	BERVO:0002371		The organ or status goes in contexts. BERVO has no Twig concept yet.
+3736	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: twig	Stem, wood and bark	broader	BERVO:0002371		Twig goes in contexts.
 3737	Twig relative total bark thickness	Twig, branch, shoot and bud	gap			
 3738	Twig relative inner bark thickness	Twig, branch, shoot and bud	gap			
 3739	Coarse root total bark thickness	Root	gap			
@@ -2391,8 +2391,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3789	Inflorescence dry mass	Flower and reproduction	gap			
 3790	Bark carbon (C) content per dry mass (alive bark)	Stem, wood and bark	gap			
 3791	Bark nitrogen (N) content per dry mass (alive bark)	Stem, wood and bark	gap			
-3792	Bark: dead bark carbon (C) content per dry mass	Stem, wood and bark	broader	BERVO:0002339		The organ or status goes in contexts. BERVO has no Bark concept yet.
-3793	Bark: dead bark nitrogen (N) content per dry mass	Stem, wood and bark	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Bark concept yet.
+3792	Bark: dead bark carbon (C) content per dry mass	Stem, wood and bark	broader	BERVO:0002339		Bark goes in contexts.
+3793	Bark: dead bark nitrogen (N) content per dry mass	Stem, wood and bark	broader	BERVO:0002340		Bark goes in contexts.
 3794	Stem hydraulic conductivity	Stem, wood and bark	gap			
 3795	Stem vessel lumen area	Stem, wood and bark	gap			
 3796	Stem sap flow rate	Stem, wood and bark	gap			
@@ -2511,9 +2511,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3919	Primary vs secondary growth	Whole plant	gap			
 3920	Species conduit types: torus present / absent	Whole plant	gap			
 3921	Stomatal closure type: R / P	Photosynthesis and gas exchange	gap			
-3922	Trap nitrogen (N) content per trap dry mass	Leaf	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Trap concept yet.
-3923	Trap carbon (C) content per trap dry mass	Leaf	broader	BERVO:0002339		The organ or status goes in contexts. BERVO has no Trap concept yet.
-3924	Trap phosphorus (P) content per trap dry mass	Leaf	broader	BERVO:0002380		The organ or status goes in contexts. BERVO has no Trap concept yet.
+3922	Trap nitrogen (N) content per trap dry mass	Leaf	broader	BERVO:0002340		Trap goes in contexts.
+3923	Trap carbon (C) content per trap dry mass	Leaf	broader	BERVO:0002339		Trap goes in contexts.
+3924	Trap phosphorus (P) content per trap dry mass	Leaf	broader	BERVO:0002380		Trap goes in contexts.
 3925	Trap potassium (K) content per trap dry mass	Leaf	gap			
 3926	Trap dry mass	Leaf	gap			
 3927	Trap SLA	Leaf	gap			
@@ -2535,12 +2535,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3951	Snag decomposition rate	Litter and woody debris	gap			
 3952	Plant biomass and allometry: fruit dry mass per plant	Whole plant	gap			
 3953	Plant biomass and allometry: fruit fresh mass per plant	Whole plant	gap			
-3954	Leaf nitrogen (N) content per dry mass (senescent leaves)	Leaf	broader	BERVO:0002189		Senescent leaves; the status goes in contexts. BERVO has no Senescent concept yet.
-3955	Leaf carbon (C) content per dry mass (senescent leaves)	Leaf	broader	BERVO:0002188		Senescent leaves; the status goes in contexts. BERVO has no Senescent concept yet.
+3954	Leaf nitrogen (N) content per dry mass (senescent leaves)	Leaf	broader	BERVO:0002189		Senescent leaves; Senescent vegetation goes in contexts.
+3955	Leaf carbon (C) content per dry mass (senescent leaves)	Leaf	broader	BERVO:0002188		Senescent leaves; Senescent vegetation goes in contexts.
 3956	Stem nitrogen (N) content per dry mass (senescent stem)	Stem, wood and bark	gap			
 3957	Stem carbon (C) content per dry mass (senescent stem)	Stem, wood and bark	gap			
-3958	Fruit (harvest organ) nitrogen (N) content per dry mass	Seed, fruit and dispersal	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Fruit concept yet.
-3959	Fruit (harvest organ) carbon (C) content per dry mass	Seed, fruit and dispersal	broader	BERVO:0002339		The organ or status goes in contexts. BERVO has no Fruit concept yet.
+3958	Fruit (harvest organ) nitrogen (N) content per dry mass	Seed, fruit and dispersal	broader	BERVO:0002340		Fruit goes in contexts.
+3959	Fruit (harvest organ) carbon (C) content per dry mass	Seed, fruit and dispersal	broader	BERVO:0002339		Fruit goes in contexts.
 3960	Plant biomass and allometry: leaf dry mass per shoot dry mass; leaf weight ratio, LWR aboveground	Whole plant	gap			
 3961	Plant biomass and allometry: stem dry mass per shoot dry mass; Stem mass fraction aboveground	Whole plant	gap			
 3962	Plant biomass and allometry: fruit (harvest organ) dry mass per shoot dry mass; Fruit mass fraction	Whole plant	gap			
