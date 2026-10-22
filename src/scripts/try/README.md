@@ -1,0 +1,27 @@
+# TRY inputs for the alignment page
+
+Read by `src/scripts/generate_try_doc.py` (`just try-doc`) to build `docs/try-alignment.md`
+(issue #27).
+
+| File | Source | Fetched | Notes |
+| --- | --- | --- | --- |
+| `try_traits.csv` | The attachment to issue #27, <https://github.com/user-attachments/files/24945866/try_traits.csv> | 2026-10-22 | The TRY trait list: `trait_id`, `trait_name`. Byte-identical to `data/try_traits.csv` in `bioepic-data/plant-functional-traits` at `d083f09`. Keep it verbatim. |
+| `try_alignment.tsv` | Made for #27, not a download | — | The curated map, one row per TRY trait: `trait_id`, `trait_name`, `group`, `status`, `bervo_id`, `pft_slot`, `note`. The page explains each column and status. |
+| `page_template.md` | Written for #27 | — | The page's prose, with `{{PLACEHOLDERS}}` for the generated tables. Edit this, not the page. |
+
+## Keeping the map and the template in step
+
+The map is authoritative for every status. A `match` or `broader` row is also recorded on
+the BERVO term, in a fixed `Comment` sentence that ends at the IDs:
+
+| Status | Sentence on the term |
+| --- | --- |
+| `match` | `TRY trait ID: 14.` or `TRY trait IDs: 3108, 3109.` |
+| `broader` | `TRY traits mapped here, with the organ or status in contexts: 80, 406.` |
+
+The generator fails when the two disagree, in either direction, and when the map names a
+term that does not exist or is obsolete, or misses or repeats a TRY trait.
+
+When a slice adds a term for a TRY trait, change that row's `status` to `match` and fill
+`bervo_id`, put the sentence on the term, run `just try-doc`, and commit the page with the
+change. `related` and `gap` rows are recorded in the map only.
