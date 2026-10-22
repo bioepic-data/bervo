@@ -23,7 +23,9 @@ and the groups. A `match` or `broader` row is also recorded on the BERVO term, i
 | `broader` | `TRY traits mapped here, with the organ or status in contexts: 80, 406.` |
 
 The generator fails when the two disagree, in either direction, and when the map names a
-term that does not exist or is obsolete, or misses or repeats a TRY trait.
+term that does not exist or is obsolete, misses or repeats a TRY trait, or has a note saying
+BERVO lacks a concept that it now has. When a slice adds such a concept, take its pattern
+out of `NEEDS` in the builder.
 
 When a slice adds a term for a TRY trait, add the trait to `MAPPED` in the script, put the
 sentence on the term, run `just try-doc`, and commit the map and the page with the change.
