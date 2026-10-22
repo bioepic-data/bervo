@@ -40291,6 +40291,7 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY traits mapped here, with the organ or status in contexts: 56, 686, 687, 688, 3011, 3516. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
         <rdfs:label>Plant tissue nitrogen to phosphorus mass ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001298"/>
         <bervo:BERVO_has_unit>g{N}.g-1{P}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
@@ -58439,6 +58440,32 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>The Plant Ontology has no diaspore term. It gives diaspore as a broad synonym of six terms, seed (PO:0009010), fruit (PO:0009001), shoot axis tuber (PO:0004543), plant spore (PO:0025017), corm (PO:0025355) and bulb (PO:0025356), each narrower than this concept, so none is cross-referenced.</rdfs:comment>
         <rdfs:label>Diaspore</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001297 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001297">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <obo:IAO_0000115>Amount of nitrogen relative to the amount of phosphorus in a material, a measure of which of the two elements is in shorter supply.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>N:P ratio</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Nitrogen to phosphorus ratio</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001298 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001298">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001297"/>
+        <obo:IAO_0000115>Nitrogen to phosphorus ratio in which nitrogen and phosphorus are each measured as a mass.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>N:P mass ratio</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Nitrogen to phosphorus mass ratio</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
