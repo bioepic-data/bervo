@@ -7,10 +7,12 @@
 Institute for Biogeochemistry. It defines traits by name and number, such as trait 14,
 *Leaf nitrogen (N) content per leaf dry mass*. This page maps the {{N_TRAITS}} TRY traits
 to BERVO. The work is tracked in
-[issue #27](https://github.com/bioepic-data/bervo/issues/27) and is done in slices. This
-first slice is the map itself. Terms for the traits used by the
+[issue #27](https://github.com/bioepic-data/bervo/issues/27) and is done in slices. The
+first slice was the map itself. The second added terms for the traits used by the
 [plant-functional-traits](https://github.com/bioepic-data/plant-functional-traits)
-schema come next, and further slices follow from the gaps listed here.
+schema. Still to come are the value lists of its categorical traits (woodiness, growth
+form, leaf type), the organ concepts the `broader` rows wait on, and terms for the gaps
+listed here.
 
 ## Sources
 
