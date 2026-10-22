@@ -33,6 +33,7 @@ Never hand-edit these — your changes will be silently overwritten on the next 
 | `src/ontology/bervo.owl`/`.obo`/`.json` (transient, produced during a release) | ODK release pipeline |
 | `docs/assets/data/bervo-browser.json` | `src/scripts/generate_browser_data.py` |
 | `docs/ameriflux-alignment.md` | `src/scripts/generate_ameriflux_doc.py` (`just ameriflux-doc`), from `bervo-src.csv` and `src/scripts/ameriflux/` |
+| `src/scripts/try/try_alignment.tsv` | `src/scripts/build_try_alignment.py` (`just try-doc`), from `src/scripts/try/try_traits.csv` |
 | `docs/try-alignment.md` | `src/scripts/generate_try_doc.py` (`just try-doc`), from `src/scripts/try/try_alignment.tsv` and `bervo-src.csv` |
 | `site/` | `mkdocs build` |
 
@@ -47,10 +48,11 @@ Files that **are** hand-edited:
   `docs/try-alignment.md`. The AmeriFlux page's prose lives in
   `src/scripts/ameriflux/page_template.md`, and its tables come from the AmeriFlux notes in
   the `Comment` column; `tests/test_ameriflux_doc.py` fails if it is stale.
-- `src/scripts/try/try_alignment.tsv` — the TRY trait map (issue #27). The TRY page is built
-  from it and from its prose in `src/scripts/try/page_template.md`;
-  `tests/test_try_alignment.py` fails if the page is stale or the map and the `TRY trait`
-  sentences in `Comment` disagree.
+- `src/scripts/build_try_alignment.py` — the TRY trait map's rules and hand-curated rows
+  (issue #27); it writes `src/scripts/try/try_alignment.tsv`. The TRY page is built from
+  that and from its prose in `src/scripts/try/page_template.md`;
+  `tests/test_try_alignment.py` fails if the map or the page is stale, or if the map and
+  the `TRY trait` sentences in `Comment` disagree.
 
 The Google Sheet linked from the README is a **collaboration artefact only**. It is not
 authoritative and must not be used as a build input. Propose changes here, via a branch
