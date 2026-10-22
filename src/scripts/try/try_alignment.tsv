@@ -2134,13 +2134,13 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3518	Stem carbon/phosporus (C/P) ratio	Stem, wood and bark	gap			
 3519	Litter carbon/phosporus (C/P) ratio	Litter and woody debris	gap			
 3520	Litter decomposition: fraction of mass remaining	Litter and woody debris	gap			
-3521	Litter decomposition: carbon (C) content per litter dry mass	Litter and woody debris	broader	BERVO:0002339		The organ or status goes in contexts.
-3522	Litter decomposition: nitrogen (N) content per litter dry mass	Litter and woody debris	broader	BERVO:0002340		The organ or status goes in contexts.
+3521	Litter decomposition: carbon (C) content per litter dry mass	Litter and woody debris	related	BERVO:0002339		From litter decomposition studies, where the value may be taken at a stated time after the start; check the TRY data release before mapping it to the static tissue term.
+3522	Litter decomposition: nitrogen (N) content per litter dry mass	Litter and woody debris	related	BERVO:0002340		From litter decomposition studies, where the value may be taken at a stated time after the start; check the TRY data release before mapping it to the static tissue term.
 3523	Litter decomposition: phosphorus (P) content per litter dry mass	Litter and woody debris	gap			
 3524	Litter decomposition: fraction of carbon (C) remaining	Litter and woody debris	gap			
 3525	Litter decomposition: fraction of nitrogen (N) remaining	Litter and woody debris	gap			
 3526	Litter decomposition: fraction of phosphorus (P) remaining	Litter and woody debris	gap			
-3527	Litter decomposition: carbon/nitrogen (C/N) ratio	Litter and woody debris	broader	BERVO:0002055		The organ or status goes in contexts.
+3527	Litter decomposition: carbon/nitrogen (C/N) ratio	Litter and woody debris	related	BERVO:0002055		From litter decomposition studies, where the value may be taken at a stated time after the start; check the TRY data release before mapping it to the static tissue term.
 3528	Litter decomposition: carbon/phosphorus (C/P) ratio	Litter and woody debris	gap			
 3529	Litter decomposition: nitrogen/phosphorus (N/P) ratio	Litter and woody debris	gap			
 3530	Leaf carbon/potassium (C/K) ratio	Leaf	gap			

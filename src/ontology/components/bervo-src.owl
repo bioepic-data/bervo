@@ -34523,7 +34523,7 @@
         <oboInOwl:hasExactSynonym>plant C:N mass ratio</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Plant carbon/nitrogen (C/N) ratio</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_CN_RATIO, AG_LIT_CN_RATIO, ROOT_CN_RATIO. Organ and status go in contexts. TRY trait ID: 1021. TRY traits mapped here, with the organ or status in contexts: 146, 150, 165, 166, 167, 409, 432, 694, 830, 842, 899, 945, 1055, 1059, 1154, 1260, 1545, 2057, 2313, 2569, 2884, 3527.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_CN_RATIO, AG_LIT_CN_RATIO, ROOT_CN_RATIO. Organ and status go in contexts. TRY trait ID: 1021. TRY traits mapped here, with the organ or status in contexts: 146, 150, 165, 166, 167, 409, 432, 694, 830, 842, 899, 945, 1055, 1059, 1154, 1260, 1545, 2057, 2313, 2569, 2884.</rdfs:comment>
         <rdfs:label>Plant tissue carbon to nitrogen mass ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000917"/>
         <bervo:BERVO_has_unit>g{C}.g-1{N}</bervo:BERVO_has_unit>
@@ -39533,7 +39533,7 @@
         <obo:IAO_0000115>Mass of carbon per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Plant carbon (C) content per plant dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_C, AG_LIT_C, ROOT_C. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 3027. TRY traits mapped here, with the organ or status in contexts: 72, 84, 407, 447, 456, 471, 617, 691, 775, 841, 868, 898, 944, 1058, 1527, 2039, 2295, 2551, 2883, 3368, 3369, 3521, 3709, 3792, 3923, 3959.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_C, AG_LIT_C, ROOT_C. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 3027. TRY traits mapped here, with the organ or status in contexts: 72, 84, 407, 447, 456, 471, 617, 691, 775, 841, 868, 898, 944, 1058, 1527, 2039, 2295, 2551, 2883, 3368, 3369, 3709, 3792, 3923, 3959.</rdfs:comment>
         <rdfs:label>Plant tissue carbon content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{C}.kg-1</bervo:BERVO_has_unit>
@@ -39550,7 +39550,7 @@
         <obo:IAO_0000115>Mass of nitrogen per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Plant nitrogen (N) content per plant dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_N, AG_LIT_N, ROOT_N. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 668. TRY traits mapped here, with the organ or status in contexts: 70, 80, 339, 406, 450, 459, 475, 618, 684, 690, 854, 876, 887, 908, 954, 1199, 1229, 1262, 2035, 2291, 2547, 2882, 2987, 3455, 3522, 3704, 3710, 3793, 3922, 3958.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_N, AG_LIT_N, ROOT_N. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 668. TRY traits mapped here, with the organ or status in contexts: 70, 80, 339, 406, 450, 459, 475, 618, 684, 690, 854, 876, 887, 908, 954, 1199, 1229, 1262, 2035, 2291, 2547, 2882, 2987, 3455, 3704, 3710, 3793, 3922, 3958.</rdfs:comment>
         <rdfs:label>Plant tissue nitrogen content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{N}.kg-1</bervo:BERVO_has_unit>
