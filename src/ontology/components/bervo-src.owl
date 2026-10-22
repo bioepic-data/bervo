@@ -40503,7 +40503,7 @@
         <oboInOwl:hasExactSynonym>gs</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Stomata conductance per leaf area</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 45. Minimum stomatal resistance to carbon dioxide (BERVO:0000164) and Canopy stomatal resistance (BERVO:0000525) are EcoSIM resistances on a velocity basis, in s.m-1 and h.m-1. Their reciprocal is a conductance in m.s-1, which converts to this molar conductance only through the molar density of air, and so they are not the same quantity inverted.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 45. TRY traits mapped here, with the organ or status in contexts: 4032, 4037. Minimum stomatal resistance to carbon dioxide (BERVO:0000164) and Canopy stomatal resistance (BERVO:0000525) are EcoSIM resistances on a velocity basis, in s.m-1 and h.m-1. Their reciprocal is a conductance in m.s-1, which converts to this molar conductance only through the molar density of air, and so they are not the same quantity inverted.</rdfs:comment>
         <rdfs:label>Leaf stomatal conductance</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001299"/>
         <bervo:BERVO_has_unit>mmol{H2O}.m-2.s-1</bervo:BERVO_has_unit>
@@ -40601,6 +40601,251 @@
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000246"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002398 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002398">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Xylem water potential at which a stated percentage of the hydraulic conductivity of the xylem is lost to embolism, most often 50 percent.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>P50</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>embolism vulnerability</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>xylem cavitation vulnerability</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>xylem hydraulic vulnerability</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 719. TRY records it at 20, 50 and 80 percent (P20, P50, P80); the percentage should be reported with the value.</rdfs:comment>
+        <rdfs:label>Xylem vulnerability to embolism</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000789"/>
+        <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001311"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002399 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002399">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Potential energy per unit volume of the water in a leaf, relative to pure free water, the sum of its turgor and osmotic potentials.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000131"/>
+        <oboInOwl:hasRelatedSynonym>Leaf water &amp; osmotic potential: leaf water potential</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 983. TRY traits mapped here, with the organ or status in contexts: 3541, 3542. Usually measured before dawn or at midday. Plant canopy total water potential (BERVO:0000587) is the EcoSIM value for a canopy.</rdfs:comment>
+        <rdfs:label>Leaf water potential</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000789"/>
+        <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002400 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002400">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002399"/>
+        <obo:IAO_0000115>Leaf water potential at which the leaf cells lose turgor, so that the water potential equals the osmotic potential.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>TLP</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>turgor loss point</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf water &amp; osmotic potential: leaf osmotic potential at turgor loss</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf water &amp; osmotic potential: leaf water potential at turgor loss point</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), after Bartlett et al. 2012 (doi:10.1111/j.1461-0248.2012.01751.x), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 189, 3468. TRY records it both as a water potential (3468) and as the osmotic potential at turgor loss (189), which are equal there.</rdfs:comment>
+        <rdfs:label>Leaf water potential at turgor loss point</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000789"/>
+        <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002401 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002401">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Osmotic potential of the cell sap of a fully hydrated leaf.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf water &amp; osmotic potential: leaf osmotic potential at full turgor</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), after Bartlett et al. 2012 (doi:10.1111/j.1461-0248.2012.01751.x), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 188. Canopy osmotic potential when canopy water potential is zero (BERVO:0000745) is the EcoSIM value for all canopy tissues, not leaves alone.</rdfs:comment>
+        <rdfs:label>Leaf osmotic potential at full turgor</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000791"/>
+        <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002402 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002402">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Change in turgor potential of a leaf per unit relative change in its water volume, a measure of the rigidity of its cell walls.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf elastic modulus</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), after Bartlett et al. 2012 (doi:10.1111/j.1461-0248.2012.01751.x), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 190. Usually derived from a pressure-volume curve.</rdfs:comment>
+        <rdfs:label>Leaf bulk modulus of elasticity</rdfs:label>
+        <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002403 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002403">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Water content of a leaf as a fraction of its water content at full saturation.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>RWC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf relative water content (leaf water content fresh / leaf water content saturated; RWC)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 982. Not cross-referenced to leaf relative water content (TO:0000136), which is defined as measured at midday and so is narrower; this term is Midday (BERVO:8001313) in contexts.</rdfs:comment>
+        <rdfs:label>Leaf relative water content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000202"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002404 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002404">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Flow of water through a leaf, from the petiole to the sites of evaporation, per unit leaf area and per unit drop in water potential.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Kleaf</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 748.</rdfs:comment>
+        <rdfs:label>Leaf hydraulic conductance</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001299"/>
+        <bervo:BERVO_has_unit>mmol{H2O}.m-2.s-1.MPa-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002405 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002405">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Hydraulic conductivity of a stem or branch segment divided by the leaf area it supplies.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>leaf specific conductivity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf area-specific conductivity (leaf specific conductivity)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 928. Equal to Sapwood-specific hydraulic conductivity (BERVO:0002406) multiplied by the Huber value (BERVO:0002407).</rdfs:comment>
+        <rdfs:label>Leaf-specific hydraulic conductivity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000813"/>
+        <bervo:BERVO_has_unit>kg{H2O}.m-1.s-1.MPa-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001311"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002406 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002406">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Hydraulic conductivity of a stem or branch segment divided by its sapwood cross-sectional area.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Ks</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>stem specific conductivity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Stem specific hydraulic conductivity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Wood (sapwood) specific conductivity (stem specific conductivity)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 1096, 4010.</rdfs:comment>
+        <rdfs:label>Sapwood-specific hydraulic conductivity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000813"/>
+        <bervo:BERVO_has_unit>kg{H2O}.m-1.s-1.MPa-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001311"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002407 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002407">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Sapwood cross-sectional area of a stem or branch divided by the leaf area it supplies.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Stem, branch or twig sapwood cross-sectional area per supported leaf area (Huber value)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 171. TRY applies it to stems, branches and twigs alike. Huber first defined it per unit mass of the leaves supplied, and some older studies use that basis; TRY trait 171 is per unit leaf area, as this term is.</rdfs:comment>
+        <rdfs:label>Huber value</rdfs:label>
+        <bervo:BERVO_has_unit>m2{sapwood}.m-2{leaf}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001303"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002408 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002408">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Conductance of a leaf to water vapour through its cuticle, measured when the stomata are closed.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>gmin</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>leaf minimum conductance</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 709. Maximum stomatal resistance to vapor (BERVO:0000521) is the EcoSIM resistance of cuticle and closed stomata, on a velocity basis.</rdfs:comment>
+        <rdfs:label>Leaf cuticular conductance</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001299"/>
+        <bervo:BERVO_has_unit>mmol{H2O}.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000118"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002409 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002409">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Lumen diameter of the water-conducting cells of the xylem of a stem, its vessels and tracheids, as a mean over a sample of them.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Stem conduit diameter (vessels, tracheids)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 281. The mean may be arithmetic or hydraulically weighted, the fourth root of the sum of d^5 over the sum of d^4, which weights wide conduits more; TRY does not say which, so the kind of mean should be reported with the value.</rdfs:comment>
+        <rdfs:label>Stem conduit diameter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
+        <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001311"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002410 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002410">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Number of water-conducting cells of the xylem, vessels and tracheids, per unit cross-sectional area of the xylem of a stem.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Stem conduit density (vessels and tracheids)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 169.</rdfs:comment>
+        <rdfs:label>Stem conduit density</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000899"/>
+        <bervo:BERVO_has_unit>mm-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001311"/>
     </Class>
     
 
@@ -58628,6 +58873,48 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>Includes senesced leaves sampled on the plant or freshly abscised, as in nutrient resorption studies, which usually collect them from traps or the ground; shed senesced material is also Dead vegetation (BERVO:8001175). Senesced material that is also dead and still attached, such as dead foliage on the stem, is Standing dead vegetation (BERVO:8001176) as well; the classes overlap there. Leaves early in senescence that are still largely green are not included, since the parent, Non-green vegetation, is material that is no longer green.</rdfs:comment>
         <rdfs:label>Senescent vegetation</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001311 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001311">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Vascular tissue of a plant that conducts water and dissolved minerals from the roots to the shoot and gives mechanical support; in woody plants its secondary form is the wood.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0005352"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>Wood (BERVO:8001182) is secondary xylem with its associated tissues.</rdfs:comment>
+        <rdfs:label>Xylem</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001312 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001312">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001104"/>
+        <obo:IAO_0000115>Last part of the night, before sunrise.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>pre-dawn</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>Plant water potential is measured then because transpiration has stopped overnight, so the plant is closest to equilibrium with the soil. No cross-reference: NCIT, ENVO and PATO have no predawn class.</rdfs:comment>
+        <rdfs:label>Predawn</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001313 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001313">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001103"/>
+        <obo:IAO_0000115>Part of the day around solar noon.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>noon</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>Leaf water potential is usually at its daily minimum then, and stomatal conductance often reduced. No cross-reference: NCIT, ENVO and PATO have no midday class.</rdfs:comment>
+        <rdfs:label>Midday</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     

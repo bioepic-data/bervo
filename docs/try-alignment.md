@@ -14,7 +14,9 @@ schema. The third added the leaf economics and photosynthesis traits: leaf phosp
 N:P ratios, photosynthetic and dark respiration rates, Vcmax, Jmax, stomatal conductance,
 leaf lifespan, thickness, tissue density, dry mass and phenology. The fourth added the
 organ and status concepts the `broader` rows named but BERVO lacked, such as twig, bark,
-coarse woody debris and senescent vegetation. Still to come are the value lists of the
+coarse woody debris and senescent vegetation. The fifth added plant hydraulics and water
+relations: xylem vulnerability to embolism, leaf water potentials, hydraulic conductance and
+conductivity, the Huber value and xylem conduit size. Still to come are the value lists of the
 categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms for the
 gaps listed here.
 
@@ -95,7 +97,7 @@ disagree. `tests/test_try_alignment.py` runs it.
 
 ## Summary
 
-205 TRY traits map to a BERVO term. 2404 are gaps and 52 are
+228 TRY traits map to a BERVO term. 2381 are gaps and 52 are
 species attributes.
 
 | Group | `match` | `broader` | `related` | `gap` | `species_attribute` | Total |
@@ -103,19 +105,19 @@ species attributes.
 | Crown and canopy |  |  |  | 21 |  | 21 |
 | Fine root |  | 22 |  | 381 |  | 403 |
 | Flower and reproduction |  | 5 |  | 121 |  | 126 |
-| Leaf | 23 | 11 | 9 | 374 | 1 | 418 |
+| Leaf | 31 | 13 | 9 | 364 | 1 | 418 |
 | Litter and woody debris |  | 33 | 5 | 161 |  | 199 |
 | Moss and fern |  |  |  | 21 |  | 21 |
-| Photosynthesis and gas exchange | 9 |  | 1 | 103 |  | 113 |
+| Photosynthesis and gas exchange | 10 | 2 | 1 | 100 |  | 113 |
 | Plot and stand | 1 |  |  | 8 | 1 | 10 |
 | Root | 5 | 18 | 1 | 384 |  | 408 |
 | Seed, fruit and dispersal | 5 | 2 |  | 106 |  | 113 |
 | Species ecology and distribution |  |  |  | 3 | 47 | 50 |
 | Species genetics and phylogeny |  |  |  | 13 | 3 | 16 |
-| Stem, wood and bark | 3 | 23 | 1 | 296 |  | 323 |
-| Twig, branch, shoot and bud |  | 14 |  | 157 |  | 171 |
+| Stem, wood and bark | 9 | 23 | 4 | 287 |  | 323 |
+| Twig, branch, shoot and bud |  | 14 | 1 | 156 |  | 171 |
 | Whole plant | 12 |  | 2 | 255 |  | 269 |
-| **Total** | **58** | **128** | **19** | **2404** | **52** | **2661** |
+| **Total** | **73** | **132** | **23** | **2381** | **52** | **2661** |
 
 ## Matches
 
@@ -148,17 +150,30 @@ species attributes.
 | 82 | Root tissue density (root dry mass per root volume) | `BERVO:0002376` Root tissue density |  |
 | 83 | Root diameter | `BERVO:0002375` Root diameter |  |
 | 116 | Root dry mass per root volume (root density, root tissue density) | `BERVO:0002376` Root tissue density |  |
+| 169 | Stem conduit density (vessels and tracheids) | `BERVO:0002410` Stem conduit density |  |
+| 171 | Stem, branch or twig sapwood cross-sectional area per supported leaf area (Huber value) | `BERVO:0002407` Huber value |  |
 | 185 | Photosynthesis carboxylation capacity (Vcmax) per leaf dry mass (Farquhar model) | `BERVO:0002389` Leaf maximum carboxylation rate per unit dry mass |  |
 | 186 | Photosynthesis carboxylation capacity (Vcmax) per leaf area (Farquhar model) | `BERVO:0002388` Leaf maximum carboxylation rate per unit area |  |
+| 188 | Leaf water & osmotic potential: leaf osmotic potential at full turgor | `BERVO:0002401` Leaf osmotic potential at full turgor |  |
+| 189 | Leaf water & osmotic potential: leaf osmotic potential at turgor loss | `BERVO:0002400` Leaf water potential at turgor loss point | Osmotic and water potential are equal at turgor loss, where turgor is zero. |
+| 190 | Leaf elastic modulus | `BERVO:0002402` Leaf bulk modulus of elasticity |  |
 | 233 | Dispersal unit dry mass | `BERVO:0002373` Diaspore dry mass |  |
 | 246 | Root porosity (fraction of root aerenchyma air space) | `BERVO:0001077` Root porosity |  |
 | 269 | Photosynthesis electron transport capacity (Jmax) per leaf area (Farquhar model) | `BERVO:0002390` Leaf maximum electron transport rate per unit area |  |
 | 270 | Photosynthesis electron transport capacity (Jmax) per leaf dry mass (Farquhar model) | `BERVO:0002391` Leaf maximum electron transport rate per unit dry mass |  |
+| 281 | Stem conduit diameter (vessels, tracheids) | `BERVO:0002409` Stem conduit diameter |  |
 | 511 | Plant number of branches per plant | `BERVO:0000787` Number of branches of the plant |  |
 | 570 | Leaf carbon (C) content per leaf area | `BERVO:0002186` Leaf carbon content per unit area |  |
 | 668 | Plant nitrogen (N) content per plant dry mass | `BERVO:0002340` Plant tissue nitrogen content | Whole plant; the term covers whole plant material. |
+| 709 | Leaf cuticular conductance | `BERVO:0002408` Leaf cuticular conductance |  |
+| 719 | Xylem hydraulic vulnerability, xylem cavitation vulnerability, embolism vulnerability, (P20, P50, P8 | `BERVO:0002398` Xylem vulnerability to embolism |  |
+| 748 | Leaf hydraulic conductance | `BERVO:0002404` Leaf hydraulic conductance |  |
+| 928 | Leaf area-specific conductivity (leaf specific conductivity) | `BERVO:0002405` Leaf-specific hydraulic conductivity |  |
+| 982 | Leaf relative water content (leaf water content fresh / leaf water content saturated; RWC) | `BERVO:0002403` Leaf relative water content |  |
+| 983 | Leaf water & osmotic potential: leaf water potential | `BERVO:0002399` Leaf water potential |  |
 | 1021 | Plant carbon/nitrogen (C/N) ratio | `BERVO:0002055` Plant tissue carbon to nitrogen mass ratio | Whole plant; the term covers a whole plant. |
 | 1080 | Root length per root dry mass (specific root length, SRL) | `BERVO:0002374` Specific root length |  |
+| 1096 | Wood (sapwood) specific conductivity (stem specific conductivity) | `BERVO:0002406` Sapwood-specific hydraulic conductivity |  |
 | 2950 | Paleo trait: leaf mass per area | `BERVO:0002185` Leaf mass per area | Reconstructed from fossil leaves; the quantity is the same. |
 | 3027 | Plant carbon (C) content per plant dry mass | `BERVO:0002339` Plant tissue carbon content | Whole plant; the term covers whole plant material. |
 | 3028 | Plant phosphorus (P) content per plant dry mass | `BERVO:0002380` Plant tissue phosphorus content | Whole plant; the term covers whole plant material. |
@@ -177,7 +192,9 @@ species attributes.
 | 3117 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): undefined if petiole is in- or exclu | `BERVO:0002369` Specific leaf area | TRY variants differ in whether the petiole, rhachis and midrib are included. |
 | 3400 | Plant growth form simple consolidated | `BERVO:0002378` Plant growth form | TRY variants differ in their value lists. |
 | 3401 | Plant growth form detailed consolidated | `BERVO:0002378` Plant growth form | TRY variants differ in their value lists. |
+| 3468 | Leaf water & osmotic potential: leaf water potential at turgor loss point | `BERVO:0002400` Leaf water potential at turgor loss point |  |
 | 3764 | Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: stem | `BERVO:0002371` Stem specific density |  |
+| 4010 | Stem specific hydraulic conductivity | `BERVO:0002406` Sapwood-specific hydraulic conductivity |  |
 | 4025 | Plot canopy height | `BERVO:0001967` Canopy height |  |
 
 ## Covered by a general term
@@ -197,7 +214,9 @@ species attributes.
 | `BERVO:0002376` Root tissue density | 1525 Coarse root tissue density (coarse root dry mass per coarse root volume); 1781 Fine root tissue density (fine root dry mass per fine root volume); 2037 Fine root (absorptive) tissue density (absorptive fine root dry mass per absorptive fine root volume; 2293 Fine root (transport) tissue density (transport fine root dry mass per transport fine root volume) |
 | `BERVO:0002380` Plant tissue phosphorus content | 71 Litter phosphorus (P) content per litter dry mass; 340 Shoot phosphorus (P) content per shoot dry mass; 616 Stem phosphorus (P) content per stem dry mass; 619 Bark phosphorus (P) content per bark dry mass; 620 Coarse root phosphorus (P) content per coarse root dry mass; 683 Root phosphorus (P) content per root dry mass; 685 Reproductive organ phosphorus (P) content per reproductive structures dry mass; 698 Fine root phosphorus (P) content per fine root dry mass; 828 Twig phosporus (P) content per twig dry mass; 855 Coarse woody debris (CWD) branch: phosphorus (P) content per branch CWD dry mass; 863 Branch phosphorus (P) content per branch dry mass; 878 Coarse woody debris (CWD): phosphorus (P) content per CWD dry mass; 909 Litter (fine root) phosphorus (P) content per fine root litter dry mass; 957 Litter (leaf) phosphorus (P) content per leaf litter dry mass; 1068 Coarse woody debris (CWD) root: phosphorus (P) content per coarse root CWD dry mass; 2049 Fine root (absorptive) phosphorus (P) content per absorptive fine root dry mass; 2305 Fine root (transport) phosphorus (P) content per transport fine root dry mass; 2561 Belowground plant organ phosphorus (P) content per belowground plant organ dry mass; 2890 Litter other than leaf phosphorus (P) content per litter dry mass; 2988 Cone (strobilus) phosphorus (P) content per cone dry mass; 3924 Trap phosphorus (P) content per trap dry mass; 4011 Stem wood phosphorus (P) content per dry mass |
 | `BERVO:0002381` Plant tissue nitrogen to phosphorus mass ratio | 56 Leaf nitrogen/phosphorus (N/P) ratio; 686 Stem nitrogen/phosphorus (N/P) ratio; 687 Root nitrogen/phosphorus (N/P) ratio; 688 Reproductive organ nitrogen/phosphorus (N/P) ratio; 3011 Fine root nitrogen/phosphorus (N/P) ratio; 3516 Litter nitrogen/phosphorus (N/P) ratio |
+| `BERVO:0002392` Leaf stomatal conductance | 4032 Stomata conductance per leaf area: predawn; 4037 Stomata conductance per leaf area: midday |
 | `BERVO:0002396` Individual leaf dry mass | 3050 Leaf dry mass (cotyledons) |
+| `BERVO:0002399` Leaf water potential | 3541 Leaf water potential predawn; 3542 Leaf water potential midday |
 
 ## Related terms
 
@@ -210,16 +229,20 @@ species attributes.
 | 197 | Plant functional type (PFT) | `BERVO:8000785` Plant functional type | BERVO has Plant functional type as a concept, not a variable whose value is a PFT. |
 | 437 | Plant number of leaves | `BERVO:0000773` Leaf number | The BERVO term comes from a per-branch EcoSIM variable. |
 | 504 | Leaf Rubisco content per leaf area | `BERVO:0000562` Leaf rubisco content | The BERVO term is per unit leaf mass, not per leaf area. |
+| 1237 | Wood vessel density | `BERVO:0002410` Stem conduit density | Vessels only; conduits include tracheids. |
+| 1238 | Wood vessel diameter | `BERVO:0002409` Stem conduit diameter | Vessels only; conduits include tracheids. |
 | 3109 | Leaf area (in case of compound leaves: leaflet, petiole excluded) | `BERVO:0002368` Individual leaf area | The area of one leaflet of a compound leaf, not of the whole leaf. |
 | 3111 | Leaf area (in case of compound leaves: leaflet, petiole included) | `BERVO:0002368` Individual leaf area | The area of one leaflet of a compound leaf, not of the whole leaf. |
 | 3113 | Leaf area (in case of compound leaves: leaflet, undefined if petiole is in- or excluded) | `BERVO:0002368` Individual leaf area | The area of one leaflet of a compound leaf, not of the whole leaf. |
 | 3402 | Leaf water content total | `BERVO:0000176` Leaf water content | The BERVO term is water per unit leaf carbon, an EcoSIM parameter. |
+| 3479 | Xylem hydraulic vulnerability curve (P20, P50, P80) | `BERVO:0002398` Xylem vulnerability to embolism | A vulnerability curve, not a single water potential. |
 | 3521 | Litter decomposition: carbon (C) content per litter dry mass | `BERVO:0002339` Plant tissue carbon content | From litter decomposition studies, where the value may be taken at a stated time after the start; check the TRY data release before mapping it to the static tissue term. |
 | 3522 | Litter decomposition: nitrogen (N) content per litter dry mass | `BERVO:0002340` Plant tissue nitrogen content | From litter decomposition studies, where the value may be taken at a stated time after the start; check the TRY data release before mapping it to the static tissue term. |
 | 3523 | Litter decomposition: phosphorus (P) content per litter dry mass | `BERVO:0002380` Plant tissue phosphorus content | From litter decomposition studies, where the value may be taken at a stated time after the start; check the TRY data release before mapping it to the static tissue term. |
 | 3527 | Litter decomposition: carbon/nitrogen (C/N) ratio | `BERVO:0002055` Plant tissue carbon to nitrogen mass ratio | From litter decomposition studies, where the value may be taken at a stated time after the start; check the TRY data release before mapping it to the static tissue term. |
 | 3529 | Litter decomposition: nitrogen/phosphorus (N/P) ratio | `BERVO:0002381` Plant tissue nitrogen to phosphorus mass ratio | From litter decomposition studies, where the value may be taken at a stated time after the start; check the TRY data release before mapping it to the static tissue term. |
 | 3656 | Leaf rubisco content per dry mass | `BERVO:0000562` Leaf rubisco content | An EcoSIM parameter; the mass basis is not stated as dry mass. |
+| 3661 | Twig leaf area per sapwood area ratio | `BERVO:0002407` Huber value | The reciprocal, leaf area per sapwood area, for a twig. |
 | 4046 | Stem diameter growth | `BERVO:0002346` Stem diameter increment | The BERVO term is the increment at breast height over a stated period. |
 | 4083 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA) of total leaf area | `BERVO:0002369` Specific leaf area | Uses the total leaf area rather than the one-sided area. |
 
