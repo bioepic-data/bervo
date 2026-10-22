@@ -56999,7 +56999,7 @@
     <!-- https://w3id.org/bervo/BERVO_8001188 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001188">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000498"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001189"/>
         <obo:IAO_0000115>Reproductive shoot of a flowering plant that bears stamens or carpels, before the fruit matures.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0009046"/>
         <rdfs:comment>AmeriFlux BADM BIOMASS_ORGAN value: Flowers. AmeriFlux includes inflorescences.</rdfs:comment>
@@ -57014,9 +57014,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001189">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000498"/>
-        <obo:IAO_0000115>Plant structure that encloses or supports seeds, such as a fruit or cone.</obo:IAO_0000115>
-        <rdfs:comment>AmeriFlux BADM BIOMASS_ORGAN value: Reproductive bodies. BIOMASS_ORGAN Foliage maps to Leaf, Seeds to Seed, Stems to Stem, Roots to Root and Total to Total.</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
+        <obo:IAO_0000115>Plant organ involved in sexual reproduction, such as a flower, a fruit or a cone.</obo:IAO_0000115>
+        <rdfs:comment>AmeriFlux BADM BIOMASS_ORGAN value: Reproductive bodies. BIOMASS_ORGAN Foliage maps to Leaf, Seeds to Seed, Stems to Stem, Roots to Root and Total to Total. AmeriFlux lists Flowers separately, so its Reproductive bodies are the part of this concept other than Flower (BERVO:8001188). Broadened from seed-bearing structures for issue #27, so that it holds pollen cones and flowers, which TRY counts among reproductive organs.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5; broadened by Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:label>Reproductive structure</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
