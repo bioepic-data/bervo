@@ -40630,7 +40630,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002399">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>Potential energy of the water in a leaf relative to pure free water, the sum of its turgor and osmotic potentials.</obo:IAO_0000115>
+        <obo:IAO_0000115>Potential energy per unit volume of the water in a leaf, relative to pure free water, the sum of its turgor and osmotic potentials.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Leaf water &amp; osmotic potential: leaf water potential</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 983. TRY traits mapped here, with the organ or status in contexts: 3541, 3542. Usually measured before dawn or at midday. Plant canopy total water potential (BERVO:0000587) is the EcoSIM value for a canopy.</rdfs:comment>
