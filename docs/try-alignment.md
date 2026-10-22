@@ -51,6 +51,11 @@ contents per unit of soil mass and root microbial biomass were excluded from the
 neither is the content of a plant tissue. Every `match` and `related` row was assigned
 by hand.
 
+A `broader` row can only be recorded in full once BERVO has a concept for its organ or
+status. Some have none yet, such as twig, bark, cone, fruit, heartwood, sapwood, coarse
+woody debris, absorptive and transport fine roots, and senescent. Those rows say so in
+`note`, and the concepts are part of the slice that adds terms for that organ.
+
 ## How the alignment is recorded on a term
 
 - A `match` term records the ID in its `Comment` as `TRY trait ID: 14.`, or
