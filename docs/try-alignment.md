@@ -43,7 +43,7 @@ The map is `src/scripts/try/try_alignment.tsv`, one row per TRY trait:
 | `broader` | A general BERVO term covers the trait, with the organ or status in `contexts`. For example, *Stem nitrogen (N) content per stem dry mass* is `Plant tissue nitrogen content` with `Stem` in `contexts`. |
 | `related` | A BERVO term is close but is not the same quantity, such as a reciprocal, a different normalisation, or an EcoSIM parameter defined differently. A term for the TRY trait is still needed. |
 | `gap` | BERVO has no term. |
-| `species_attribute` | The trait records where a species occurs, its habitat or indicator values, its legal status, its phylogeny or its uses, rather than a property of a plant. These are set aside for a decision on scope, not rejected. |
+| `species_attribute` | The trait records where a species occurs, its habitat or indicator values, its legal status, its phylogeny or its uses, or it names a species, such as the dominant species of a plot or the herbivores of a leaf, rather than recording a property of a plant. These are set aside for a decision on scope, not rejected. |
 
 Groups and the `species_attribute` status were first assigned by rules on the trait name,
 then checked by hand. The C, N and C/N rows in `broader` were assigned the same way. Root
@@ -96,10 +96,10 @@ species attributes.
 | Litter and woody debris |  | 24 | 3 | 172 |  | 199 |
 | Moss and fern |  |  |  | 21 |  | 21 |
 | Photosynthesis and gas exchange |  |  | 1 | 112 |  | 113 |
-| Plot and stand | 1 |  |  | 8 |  | 9 |
+| Plot and stand | 1 |  |  | 8 | 1 | 10 |
 | Root | 1 | 11 | 3 | 393 |  | 408 |
 | Seed, fruit and dispersal | 3 | 2 |  | 108 |  | 113 |
-| Species ecology and distribution |  |  |  | 3 | 48 | 51 |
+| Species ecology and distribution |  |  |  | 3 | 47 | 50 |
 | Species genetics and phylogeny |  |  |  | 13 | 3 | 16 |
 | Stem, wood and bark | 1 | 13 | 1 | 308 |  | 323 |
 | Twig, branch, shoot and bud |  | 11 |  | 160 |  | 171 |
