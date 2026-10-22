@@ -40814,10 +40814,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002409">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>Mean lumen diameter of the water-conducting cells of the xylem of a stem, its vessels and tracheids.</obo:IAO_0000115>
+        <obo:IAO_0000115>Lumen diameter of the water-conducting cells of the xylem of a stem, its vessels and tracheids, as a mean over a sample of them.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Stem conduit diameter (vessels, tracheids)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 281.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 281. The mean may be arithmetic or hydraulically weighted, the fourth root of the sum of d^5 over the sum of d^4, which weights wide conduits more; TRY does not say which, so the kind of mean should be reported with the value.</rdfs:comment>
         <rdfs:label>Stem conduit diameter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
         <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
