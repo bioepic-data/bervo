@@ -65,6 +65,13 @@ for r in amap:
     elif b and TERMS[b][H["obsolete"]] == "true":
         problems.append(f"TRY trait {tid}: {b} is obsolete")
 
+# A note that BERVO lacks a concept goes stale once a slice adds it.
+LABELS = {t[1].casefold() for t in TERMS.values() if t[H["obsolete"]] != "true"}
+for r in amap:
+    m = re.search(r"BERVO has no (.+?) concept yet\.", r["note"])
+    if m and m.group(1).casefold() in LABELS:
+        problems.append(f"TRY trait {r['trait_id']}: note says BERVO has no {m.group(1)} concept, but it has one")
+
 # ------------------------------------------------------------- map against the Comments
 from_map = {(r["status"], r["bervo_id"], r["trait_id"]) for r in amap if r["status"] in SENTENCES}
 from_comments = set()

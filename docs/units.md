@@ -17,6 +17,7 @@ total for a grid cell. The rules for writing a unit are in the `has_units` secti
 | `NONE` | UCUM's unity, `1`. `NA` stays for a variable with no numeric magnitude. |
 | Syntax | Exponents joined by `.`. Once a `/` appears, no `.` follows it outside parentheses. |
 | A duration in years | `a`, UCUM's Julian year of 365.25 days. Not `yr`, which is not UCUM, and not `365.d`. First used on `Time since fire` and `Fire return interval` (issue [#134](https://github.com/bioepic-data/bervo/issues/134)). |
+| A duration in months | `mo`, UCUM's mean Julian month of 30.4375 days, where the source reports months, as TRY does for leaf lifespan. Use `a` for years and `d` for days, and keep the source's unit rather than converting. First used on `Leaf lifespan` (issue [#27](https://github.com/bioepic-data/bervo/issues/27)). |
 | An exchange capacity | Moles of charge, UCUM's `eq`: `ceq.kg-1` for cmol(+)/kg. Not `cmol`, which is an amount of substance. See Charge equivalents (issue [#119](https://github.com/bioepic-data/bervo/issues/119)). |
 
 ## What `d-2` means

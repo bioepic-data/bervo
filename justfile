@@ -57,8 +57,9 @@ browser-data:
 ameriflux-doc:
     python3 src/scripts/generate_ameriflux_doc.py
 
-# Regenerate docs/try-alignment.md from the TRY alignment map and the template.
+# Rebuild the TRY alignment map, then docs/try-alignment.md from it and the template.
 try-doc:
+    python3 src/scripts/build_try_alignment.py
     python3 src/scripts/generate_try_doc.py
 
 # Full ODK QC suite. Slow, and needs the odkfull Docker image.
