@@ -74,43 +74,69 @@ disagree. `tests/test_try_alignment.py` runs it.
 
 ## Summary
 
-114 TRY traits map to a BERVO term. 2495 are gaps and 52 are
+151 TRY traits map to a BERVO term. 2458 are gaps and 52 are
 species attributes.
 
 | Group | `match` | `broader` | `related` | `gap` | `species_attribute` | Total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Crown and canopy |  |  |  | 21 |  | 21 |
-| Fine root |  | 9 |  | 394 |  | 403 |
+| Fine root |  | 18 |  | 385 |  | 403 |
 | Flower and reproduction |  | 2 |  | 124 |  | 126 |
-| Leaf | 5 | 7 | 9 | 396 | 1 | 418 |
-| Litter and woody debris |  | 27 |  | 172 |  | 199 |
+| Leaf | 16 | 8 | 9 | 384 | 1 | 418 |
+| Litter and woody debris |  | 28 |  | 171 |  | 199 |
 | Moss and fern |  |  |  | 21 |  | 21 |
 | Photosynthesis and gas exchange |  |  | 1 | 112 |  | 113 |
 | Plot and stand | 1 |  |  | 8 |  | 9 |
-| Root | 1 | 11 | 1 | 395 |  | 408 |
-| Seed, fruit and dispersal | 3 | 2 |  | 108 |  | 113 |
+| Root | 5 | 14 | 1 | 388 |  | 408 |
+| Seed, fruit and dispersal | 5 | 2 |  | 106 |  | 113 |
 | Species ecology and distribution |  |  |  | 3 | 48 | 51 |
 | Species genetics and phylogeny |  |  |  | 13 | 3 | 16 |
-| Stem, wood and bark | 1 | 13 | 1 | 308 |  | 323 |
+| Stem, wood and bark | 3 | 13 | 1 | 306 |  | 323 |
 | Twig, branch, shoot and bud |  | 11 |  | 160 |  | 171 |
-| Whole plant | 1 | 3 | 5 | 260 |  | 269 |
-| **Total** | **12** | **85** | **17** | **2495** | **52** | **2661** |
+| Whole plant | 8 | 3 | 2 | 256 |  | 269 |
+| **Total** | **38** | **99** | **14** | **2458** | **52** | **2661** |
 
 ## Matches
 
 | TRY ID | TRY trait | BERVO term | Note |
 | ---: | --- | --- | --- |
+| 4 | Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density | `BERVO:0002371` Stem specific density |  |
 | 13 | Leaf carbon (C) content per leaf dry mass | `BERVO:0002188` Leaf carbon content per unit dry mass |  |
 | 14 | Leaf nitrogen (N) content per leaf dry mass | `BERVO:0002189` Leaf nitrogen content per unit dry mass |  |
+| 18 | Plant height | `BERVO:0002365` Plant height |  |
 | 21 | Stem diameter | `BERVO:0001884` Stem diameter |  |
+| 26 | Seed dry mass | `BERVO:0002372` Seed dry mass |  |
 | 27 | Seed length | `BERVO:0000705` Seed length |  |
+| 38 | Plant woodiness | `BERVO:0002377` Plant woodiness |  |
+| 42 | Plant growth form | `BERVO:0002378` Plant growth form | TRY variants differ in their value lists. |
+| 43 | Leaf type | `BERVO:0002379` Leaf type |  |
+| 47 | Leaf dry mass per leaf fresh mass (leaf dry matter content, LDMC) | `BERVO:0002370` Leaf dry matter content |  |
 | 50 | Leaf nitrogen (N) content per leaf area | `BERVO:0002187` Leaf nitrogen content per unit area |  |
+| 82 | Root tissue density (root dry mass per root volume) | `BERVO:0002376` Root tissue density |  |
+| 83 | Root diameter | `BERVO:0002375` Root diameter |  |
+| 116 | Root dry mass per root volume (root density, root tissue density) | `BERVO:0002376` Root tissue density |  |
+| 233 | Dispersal unit dry mass | `BERVO:0002373` Diaspore dry mass |  |
 | 246 | Root porosity (fraction of root aerenchyma air space) | `BERVO:0001077` Root porosity |  |
 | 511 | Plant number of branches per plant | `BERVO:0000787` Number of branches of the plant |  |
 | 570 | Leaf carbon (C) content per leaf area | `BERVO:0002186` Leaf carbon content per unit area |  |
+| 1080 | Root length per root dry mass (specific root length, SRL) | `BERVO:0002374` Specific root length |  |
 | 2950 | Paleo trait: leaf mass per area | `BERVO:0002185` Leaf mass per area | Reconstructed from fossil leaves; the quantity is the same. |
 | 3042 | Seed volume | `BERVO:0000704` Seed volume |  |
 | 3043 | Seed surface area | `BERVO:0000706` Seed surface area |  |
+| 3058 | Leaf area (in case of compound leaves undefined if leaf or leaflet, petiole and rhachis excluded) | `BERVO:0002368` Individual leaf area | TRY variants differ in whether the petiole is included. |
+| 3086 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA) petiole, rhachis and midrib excluded | `BERVO:0002369` Specific leaf area | TRY variants differ in whether the petiole, rhachis and midrib are included. |
+| 3106 | Plant height vegetative | `BERVO:0002366` Vegetative plant height |  |
+| 3107 | Plant height generative | `BERVO:0002367` Generative plant height |  |
+| 3108 | Leaf area (in case of compound leaves: leaf, petiole excluded) | `BERVO:0002368` Individual leaf area | TRY variants differ in whether the petiole is included. |
+| 3110 | Leaf area (in case of compound leaves: leaf, petiole included) | `BERVO:0002368` Individual leaf area | TRY variants differ in whether the petiole is included. |
+| 3112 | Leaf area (in case of compound leaves: leaf, undefined if petiole in- or excluded) | `BERVO:0002368` Individual leaf area | TRY variants differ in whether the petiole is included. |
+| 3114 | Leaf area (in case of compound leaves undefined if leaf or leaflet, undefined if petiole is in- or e | `BERVO:0002368` Individual leaf area | TRY variants differ in whether the petiole is included. |
+| 3115 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole excluded | `BERVO:0002369` Specific leaf area | TRY variants differ in whether the petiole, rhachis and midrib are included. |
+| 3116 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole included | `BERVO:0002369` Specific leaf area | TRY variants differ in whether the petiole, rhachis and midrib are included. |
+| 3117 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): undefined if petiole is in- or exclu | `BERVO:0002369` Specific leaf area | TRY variants differ in whether the petiole, rhachis and midrib are included. |
+| 3400 | Plant growth form simple consolidated | `BERVO:0002378` Plant growth form | TRY variants differ in their value lists. |
+| 3401 | Plant growth form detailed consolidated | `BERVO:0002378` Plant growth form | TRY variants differ in their value lists. |
+| 3764 | Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: stem | `BERVO:0002371` Stem specific density |  |
 | 4025 | Plot canopy height | `BERVO:0001967` Canopy height |  |
 
 ## Covered by a general term
@@ -122,6 +148,11 @@ species attributes.
 | `BERVO:0002189` Leaf nitrogen content per unit dry mass | 667 Leaf nitrogen (N) content per dry mass (cotyledons); 3954 Leaf nitrogen (N) content per dry mass (senescent leaves) |
 | `BERVO:0002339` Plant tissue carbon content | 72 Litter carbon (C) content per litter dry mass; 84 Root carbon (C) content per root dry mass; 407 Stem carbon (C) content per stem dry mass; 447 Branch carbon (C) content per branch dry mass; 456 Coarse root carbon (C) content per coarse root dry mass; 471 Fine root carbon (C) content per fine root dry mass; 617 Bark carbon (C) content per bark dry mass; 691 Twig carbon content per twig dry mass; 775 Shoot carbon (C) content per shoot dry mass; 841 Coarse woody debris (CWD) branch: carbon (C) content per branch CWD dry mass; 868 Coarse woody debris (CWD): carbon (C) content per CWD dry mass; 898 Litter (fine root) carbon (C) content per fine root litter dry mass; 944 Litter (leaf) carbon (C) content per leaf litter dry mass; 1058 Coarse woody debris (CWD) root: carbon (C) content per coarse root CWD dry mass; 1527 Coarse root carbon (C) content per coarse root dry mass; 2039 Fine root (absorptive) carbon (C) content per absorptive fine root dry mass; 2295 Fine root (transport) carbon (C) content per transport fine root dry mass; 2551 Belowground plant organ carbon (C) content per belowground plant organ dry mass; 2883 Litter (other than leaf: twigs, bark, flowers…) carbon (C) content per litter dry mass; 3027 Plant carbon (C) content per plant dry mass; 3368 Wood (sapwood) carbon (C) content per dry mass; 3369 Wood (heartwood) carbon (C) content per heartwood dry mass; 3521 Litter decomposition: carbon (C) content per litter dry mass; 3709 Branch bark carbon (C) content per dry mass; 3792 Bark: dead bark carbon (C) content per dry mass; 3923 Trap carbon (C) content per trap dry mass; 3959 Fruit (harvest organ) carbon (C) content per dry mass |
 | `BERVO:0002340` Plant tissue nitrogen content | 70 Litter nitrogen (N) content per litter dry mass; 80 Root nitrogen (N) content per root dry mass; 339 Shoot nitrogen (N) content per shoot dry mass; 406 Stem nitrogen (N) content per stem dry mass; 450 Branch nitrogen (N) content per branch dry mass; 459 Coarse root nitrogen (N) content per coarse root dry mass; 475 Fine root nitrogen (N) content per fine root dry mass; 618 Bark nitrogen (N) content per bark dry mass; 668 Plant nitrogen (N) content per plant dry mass; 684 Reproductive organ nitrogen (N) content per reproductive structures dry mass; 690 Twig nitrogen (N) content per twig dry mass; 854 Coarse woody debris (CWD) branch: nitrogen (N) content per branch CWD dry mass; 876 Coarse woody debris (CWD): nitrogen (N) content per CWD dry mass; 887 Litter (cone, strobilus) nitrogen (N) content per dry mass; 908 Litter (fine root) nitrogen (N) content per fine root litter dry mass; 954 Litter (leaf) nitrogen (N) content per leaf litter dry mass; 1199 Litter twig nitrogen (N) content per twig dry mass; 1229 Wood nitrogen (N) content per wood dry mass; 1262 Coarse woody debris (CWD) root: nitrogen (N) content per coarse root CWD dry mass; 2035 Fine root (absorptive) nitrogen (N) content per absorptive fine root dry mass; 2291 Fine root (transport) nitrogen (N) content per transport fine root dry mass; 2547 Belowground plant organ nitrogen (N) content per belowground plant organ dry mass; 2882 Litter (other than leaf: twigs, bark, flowers...) nitrogen (N) content per litter dry mass; 2987 Cone (strobilus) nitrogen (N) content per cone dry mass; 3455 Wood (heartwood) nitrogen (N) content per heartwood dry mass; 3522 Litter decomposition: nitrogen (N) content per litter dry mass; 3704 Branch wood nitrogen (N) content per dry mass; 3710 Branch bark nitrogen (N) content per dry mass; 3793 Bark: dead bark nitrogen (N) content per dry mass; 3922 Trap nitrogen (N) content per trap dry mass; 3958 Fruit (harvest organ) nitrogen (N) content per dry mass |
+| `BERVO:0002369` Specific leaf area | 69 Litter SLA (leaf area per leaf dry mass, specific leaf area, 1/LMA of leaf litter) |
+| `BERVO:0002370` Leaf dry matter content | 3055 Leaf dry mass per fresh mass (cotyledons, cotyledon LDMC) |
+| `BERVO:0002374` Specific root length | 614 Fine root length per fine root dry mass (specific fine root length, SRL); 1550 Coarse root length per coarse root dry mass (specific coarse root length, SRL); 2062 Fine root (absorptive) length per absorptive fine root dry mass (specific absorptive fine root lengt; 2318 Fine root (transport) length per transport fine root dry mass (specific transport fine root length, |
+| `BERVO:0002375` Root diameter | 896 Fine root diameter; 1526 Coarse root diameter; 2038 Fine root (absorptive) diameter; 2294 Fine root (transport) diameter |
+| `BERVO:0002376` Root tissue density | 1525 Coarse root tissue density (coarse root dry mass per coarse root volume); 1781 Fine root tissue density (fine root dry mass per fine root volume); 2037 Fine root (absorptive) tissue density (absorptive fine root dry mass per absorptive fine root volume; 2293 Fine root (transport) tissue density (transport fine root dry mass per transport fine root volume) |
 
 ## Related terms
 
@@ -129,21 +160,18 @@ species attributes.
 | ---: | --- | --- | --- |
 | 3 | Leaf angle (inclination, orientation) | `BERVO:0001632` Cosine of leaf angle | BERVO has only the cosine and sine of leaf angle, as canopy radiation parameters. |
 | 6 | Root rooting depth | `BERVO:0002351` Rooting depth | BERVO Rooting depth is for a plant community; TRY records it per plant or species. |
-| 18 | Plant height | `BERVO:0001967` Canopy height | BERVO has canopy height, not the height of an individual plant. |
 | 22 | Photosynthesis pathway | `BERVO:0000835` Plant photosynthetic type (C3 or C4) | The BERVO term distinguishes only C3 and C4; TRY includes CAM and intermediates. |
+| 125 | Leaf area per leaf fresh mass (specific leaf area (SLA or 1/LMA) based on leaf fresh mass) | `BERVO:0002369` Specific leaf area | Per unit fresh mass rather than dry mass. |
 | 197 | Plant functional type (PFT) | `BERVO:8000785` Plant functional type | BERVO has Plant functional type as a concept, not a variable whose value is a PFT. |
 | 437 | Plant number of leaves | `BERVO:0000773` Leaf number | The BERVO term comes from a per-branch EcoSIM variable. |
 | 504 | Leaf Rubisco content per leaf area | `BERVO:0000562` Leaf rubisco content | The BERVO term is per unit leaf mass, not per leaf area. |
-| 3086 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA) petiole, rhachis and midrib excluded | `BERVO:0000783` Leaf area:mass during growth | The BERVO term is the EcoSIM specific leaf area of new growth; Leaf mass per area (BERVO:0002185) is the reciprocal of SLA. |
-| 3106 | Plant height vegetative | `BERVO:0001967` Canopy height | BERVO has canopy height, not the height of an individual plant. |
-| 3107 | Plant height generative | `BERVO:0001967` Canopy height | BERVO has canopy height, not the height of an individual plant. |
-| 3115 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole excluded | `BERVO:0000783` Leaf area:mass during growth | The BERVO term is the EcoSIM specific leaf area of new growth; Leaf mass per area (BERVO:0002185) is the reciprocal of SLA. |
-| 3116 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole included | `BERVO:0000783` Leaf area:mass during growth | The BERVO term is the EcoSIM specific leaf area of new growth; Leaf mass per area (BERVO:0002185) is the reciprocal of SLA. |
-| 3117 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): undefined if petiole is in- or exclu | `BERVO:0000783` Leaf area:mass during growth | The BERVO term is the EcoSIM specific leaf area of new growth; Leaf mass per area (BERVO:0002185) is the reciprocal of SLA. |
+| 3109 | Leaf area (in case of compound leaves: leaflet, petiole excluded) | `BERVO:0002368` Individual leaf area | The area of one leaflet of a compound leaf, not of the whole leaf. |
+| 3111 | Leaf area (in case of compound leaves: leaflet, petiole included) | `BERVO:0002368` Individual leaf area | The area of one leaflet of a compound leaf, not of the whole leaf. |
+| 3113 | Leaf area (in case of compound leaves: leaflet, undefined if petiole is in- or excluded) | `BERVO:0002368` Individual leaf area | The area of one leaflet of a compound leaf, not of the whole leaf. |
 | 3402 | Leaf water content total | `BERVO:0000176` Leaf water content | The BERVO term is water per unit leaf carbon, an EcoSIM parameter. |
 | 3656 | Leaf rubisco content per dry mass | `BERVO:0000562` Leaf rubisco content | An EcoSIM parameter; the mass basis is not stated as dry mass. |
 | 4046 | Stem diameter growth | `BERVO:0002346` Stem diameter increment | The BERVO term is the increment at breast height over a stated period. |
-| 4083 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA) of total leaf area | `BERVO:0000783` Leaf area:mass during growth | The BERVO term is the EcoSIM specific leaf area of new growth; Leaf mass per area (BERVO:0002185) is the reciprocal of SLA. |
+| 4083 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA) of total leaf area | `BERVO:0002369` Specific leaf area | Uses the total leaf area rather than the one-sided area. |
 
 ## The plant-functional-traits schema
 
@@ -157,38 +185,38 @@ BERVO already has `Leaf mass per area` (`BERVO:0002185`).
 
 | Schema slot | TRY trait | Status | BERVO term |
 | --- | --- | --- | --- |
-| `diaspore_mass` | 26 Seed dry mass | `gap` |  |
-| `diaspore_mass` | 233 Dispersal unit dry mass | `gap` |  |
-| `growth_form` | 42 Plant growth form | `gap` |  |
-| `growth_form` | 3400 Plant growth form simple consolidated | `gap` |  |
-| `growth_form` | 3401 Plant growth form detailed consolidated | `gap` |  |
-| `leaf_area` | 3108 Leaf area (in case of compound leaves: leaf, petiole excluded) | `gap` |  |
-| `leaf_area` | 3109 Leaf area (in case of compound leaves: leaflet, petiole excluded) | `gap` |  |
-| `leaf_area` | 3110 Leaf area (in case of compound leaves: leaf, petiole included) | `gap` |  |
-| `leaf_area` | 3111 Leaf area (in case of compound leaves: leaflet, petiole included) | `gap` |  |
-| `leaf_area` | 3112 Leaf area (in case of compound leaves: leaf, undefined if petiole in- or excluded) | `gap` |  |
-| `leaf_area` | 3113 Leaf area (in case of compound leaves: leaflet, undefined if petiole is in- or excluded) | `gap` |  |
-| `leaf_area` | 3114 Leaf area (in case of compound leaves undefined if leaf or leaflet, undefined if petiole is in- or e | `gap` |  |
-| `leaf_dry_matter_content` | 47 Leaf dry mass per leaf fresh mass (leaf dry matter content, LDMC) | `gap` |  |
+| `diaspore_mass` | 26 Seed dry mass | `match` | `BERVO:0002372` Seed dry mass |
+| `diaspore_mass` | 233 Dispersal unit dry mass | `match` | `BERVO:0002373` Diaspore dry mass |
+| `growth_form` | 42 Plant growth form | `match` | `BERVO:0002378` Plant growth form |
+| `growth_form` | 3400 Plant growth form simple consolidated | `match` | `BERVO:0002378` Plant growth form |
+| `growth_form` | 3401 Plant growth form detailed consolidated | `match` | `BERVO:0002378` Plant growth form |
+| `leaf_area` | 3108 Leaf area (in case of compound leaves: leaf, petiole excluded) | `match` | `BERVO:0002368` Individual leaf area |
+| `leaf_area` | 3109 Leaf area (in case of compound leaves: leaflet, petiole excluded) | `related` | `BERVO:0002368` Individual leaf area |
+| `leaf_area` | 3110 Leaf area (in case of compound leaves: leaf, petiole included) | `match` | `BERVO:0002368` Individual leaf area |
+| `leaf_area` | 3111 Leaf area (in case of compound leaves: leaflet, petiole included) | `related` | `BERVO:0002368` Individual leaf area |
+| `leaf_area` | 3112 Leaf area (in case of compound leaves: leaf, undefined if petiole in- or excluded) | `match` | `BERVO:0002368` Individual leaf area |
+| `leaf_area` | 3113 Leaf area (in case of compound leaves: leaflet, undefined if petiole is in- or excluded) | `related` | `BERVO:0002368` Individual leaf area |
+| `leaf_area` | 3114 Leaf area (in case of compound leaves undefined if leaf or leaflet, undefined if petiole is in- or e | `match` | `BERVO:0002368` Individual leaf area |
+| `leaf_dry_matter_content` | 47 Leaf dry mass per leaf fresh mass (leaf dry matter content, LDMC) | `match` | `BERVO:0002370` Leaf dry matter content |
 | `leaf_nitrogen_content` | 14 Leaf nitrogen (N) content per leaf dry mass | `match` | `BERVO:0002189` Leaf nitrogen content per unit dry mass |
-| `leaf_type` | 43 Leaf type | `gap` |  |
-| `plant_height` | 18 Plant height | `related` | `BERVO:0001967` Canopy height |
-| `plant_height` | 3106 Plant height vegetative | `related` | `BERVO:0001967` Canopy height |
-| `plant_height` | 3107 Plant height generative | `related` | `BERVO:0001967` Canopy height |
-| `root_diameter` | 83 Root diameter | `gap` |  |
-| `root_diameter` | 896 Fine root diameter | `gap` |  |
+| `leaf_type` | 43 Leaf type | `match` | `BERVO:0002379` Leaf type |
+| `plant_height` | 18 Plant height | `match` | `BERVO:0002365` Plant height |
+| `plant_height` | 3106 Plant height vegetative | `match` | `BERVO:0002366` Vegetative plant height |
+| `plant_height` | 3107 Plant height generative | `match` | `BERVO:0002367` Generative plant height |
+| `root_diameter` | 83 Root diameter | `match` | `BERVO:0002375` Root diameter |
+| `root_diameter` | 896 Fine root diameter | `broader` | `BERVO:0002375` Root diameter |
 | `root_nitrogen_content` | 80 Root nitrogen (N) content per root dry mass | `broader` | `BERVO:0002340` Plant tissue nitrogen content |
 | `root_nitrogen_content` | 475 Fine root nitrogen (N) content per fine root dry mass | `broader` | `BERVO:0002340` Plant tissue nitrogen content |
-| `root_tissue_density` | 82 Root tissue density (root dry mass per root volume) | `gap` |  |
-| `root_tissue_density` | 1781 Fine root tissue density (fine root dry mass per fine root volume) | `gap` |  |
-| `specific_leaf_area` | 3115 Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole excluded | `related` | `BERVO:0000783` Leaf area:mass during growth |
-| `specific_leaf_area` | 3116 Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole included | `related` | `BERVO:0000783` Leaf area:mass during growth |
-| `specific_leaf_area` | 3117 Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): undefined if petiole is in- or exclu | `related` | `BERVO:0000783` Leaf area:mass during growth |
-| `specific_root_length` | 614 Fine root length per fine root dry mass (specific fine root length, SRL) | `gap` |  |
-| `specific_root_length` | 1080 Root length per root dry mass (specific root length, SRL) | `gap` |  |
-| `stem_specific_density` | 4 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density | `gap` |  |
-| `stem_specific_density` | 3764 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: stem | `gap` |  |
-| `woodiness` | 38 Plant woodiness | `gap` |  |
+| `root_tissue_density` | 82 Root tissue density (root dry mass per root volume) | `match` | `BERVO:0002376` Root tissue density |
+| `root_tissue_density` | 1781 Fine root tissue density (fine root dry mass per fine root volume) | `broader` | `BERVO:0002376` Root tissue density |
+| `specific_leaf_area` | 3115 Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole excluded | `match` | `BERVO:0002369` Specific leaf area |
+| `specific_leaf_area` | 3116 Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole included | `match` | `BERVO:0002369` Specific leaf area |
+| `specific_leaf_area` | 3117 Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): undefined if petiole is in- or exclu | `match` | `BERVO:0002369` Specific leaf area |
+| `specific_root_length` | 614 Fine root length per fine root dry mass (specific fine root length, SRL) | `broader` | `BERVO:0002374` Specific root length |
+| `specific_root_length` | 1080 Root length per root dry mass (specific root length, SRL) | `match` | `BERVO:0002374` Specific root length |
+| `stem_specific_density` | 4 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density | `match` | `BERVO:0002371` Stem specific density |
+| `stem_specific_density` | 3764 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: stem | `match` | `BERVO:0002371` Stem specific density |
+| `woodiness` | 38 Plant woodiness | `match` | `BERVO:0002377` Plant woodiness |
 
 ## Species attributes
 
