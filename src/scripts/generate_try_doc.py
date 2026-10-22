@@ -72,9 +72,17 @@ for r in amap:
     m = re.search(r"BERVO has no (.+?) concept yet\.", r["note"])
     if m and m.group(1).casefold() in LABELS:
         problems.append(f"TRY trait {r['trait_id']}: note says BERVO has no {m.group(1)} concept, but it has one")
-    m = re.search(r"(?:^|; )([^;.]+?) goes in contexts\.", r["note"])
-    if m and m.group(1) != "The organ or status" and m.group(1).casefold() not in LABELS:
-        problems.append(f"TRY trait {r['trait_id']}: note puts {m.group(1)} in contexts, but it is not a BERVO label")
+    # Every clause about contexts must read "X goes in contexts." or "X, Y and Z go in contexts."
+    for clause in re.split(r"(?<=[.;]) ", r["note"]):
+        if "in contexts" not in clause:
+            continue
+        m = re.fullmatch(r"(.+?) go(?:es)? in contexts[.;]", clause)
+        if not m:
+            problems.append(f"TRY trait {r['trait_id']}: note mentions contexts without naming the concepts: {clause!r}")
+            continue
+        for concept in re.split(r", | and ", m.group(1)):
+            if concept.casefold() not in LABELS:
+                problems.append(f"TRY trait {r['trait_id']}: note puts {concept} in contexts, but it is not a BERVO label")
 
 # ------------------------------------------------------------- map against the Comments
 from_map = {(r["status"], r["bervo_id"], r["trait_id"]) for r in amap if r["status"] in SENTENCES}

@@ -24,9 +24,10 @@ and the groups. A `match` or `broader` row is also recorded on the BERVO term, i
 
 The generator fails when the two disagree, in either direction, and when the map names a
 term that does not exist or is obsolete, or misses or repeats a TRY trait. It also checks the
-notes: one that puts a concept in contexts (`Twig goes in contexts.`) must name a BERVO
-label, and one that says BERVO has no concept yet must not name one it has. `CONTEXTS` in
-the builder says which concept each organ named in a trait takes.
+notes. A clause about contexts must be the fixed sentence `Twig goes in contexts.` or
+`Bark and Branch go in contexts.`, and each concept it names must be a BERVO label; put any
+gloss in a sentence of its own. A note that says BERVO has no concept yet must not name one
+it has. `CONTEXTS` in the builder gives the concepts for each form of trait name.
 
 When a slice adds a term for a TRY trait, add the trait to `MAPPED` in the script, put the
 sentence on the term, run `just try-doc`, and commit the map and the page with the change.
