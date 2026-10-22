@@ -14,7 +14,9 @@ schema. The third added the leaf economics and photosynthesis traits: leaf phosp
 N:P ratios, photosynthetic and dark respiration rates, Vcmax, Jmax, stomatal conductance,
 leaf lifespan, thickness, tissue density, dry mass and phenology. The fourth added the
 organ and status concepts the `broader` rows named but BERVO lacked, such as twig, bark,
-coarse woody debris and senescent vegetation. Still to come are the value lists of the
+coarse woody debris and senescent vegetation. The fifth added plant hydraulics and water
+relations: xylem vulnerability to embolism, leaf water potentials, hydraulic conductance and
+conductivity, the Huber value and xylem conduit size. Still to come are the value lists of the
 categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms for the
 gaps listed here.
 

@@ -143,9 +143,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 165	Stem carbon/nitrogen (C/N) ratio	Stem, wood and bark	broader	BERVO:0002055		Stem goes in contexts.
 166	Coarse root carbon/nitrogen (C/N) ) ratio	Root	broader	BERVO:0002055		Coarse root goes in contexts.
 167	Fine root carbon/nitrogen (C/N) ratio	Fine root	broader	BERVO:0002055		Fine root goes in contexts.
-169	Stem conduit density (vessels and tracheids)	Stem, wood and bark	gap			
+169	Stem conduit density (vessels and tracheids)	Stem, wood and bark	match	BERVO:0002410		
 170	Stem conduit cross-sectional area (vessels and tracheids)	Stem, wood and bark	gap			
-171	Stem, branch or twig sapwood cross-sectional area per supported leaf area (Huber value)	Stem, wood and bark	gap			
+171	Stem, branch or twig sapwood cross-sectional area per supported leaf area (Huber value)	Stem, wood and bark	match	BERVO:0002407		
 172	Stem conduit lumen cross-sectional area (vessels and tracheids) per stem sapwood cross-sectional are	Stem, wood and bark	gap			
 173	Leaf volume per leaf area	Leaf	gap			
 174	Leaf area index (LAI) total per LAI projected	Leaf	gap			
@@ -161,9 +161,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 185	Photosynthesis carboxylation capacity (Vcmax) per leaf dry mass (Farquhar model)	Photosynthesis and gas exchange	match	BERVO:0002389		
 186	Photosynthesis carboxylation capacity (Vcmax) per leaf area (Farquhar model)	Photosynthesis and gas exchange	match	BERVO:0002388		
 187	Leaf nitrogen (N) fraction in Rubisco	Leaf	gap			
-188	Leaf water & osmotic potential: leaf osmotic potential at full turgor	Leaf	gap			
-189	Leaf water & osmotic potential: leaf osmotic potential at turgor loss	Leaf	gap			
-190	Leaf elastic modulus	Leaf	gap			
+188	Leaf water & osmotic potential: leaf osmotic potential at full turgor	Leaf	match	BERVO:0002401		
+189	Leaf water & osmotic potential: leaf osmotic potential at turgor loss	Leaf	match	BERVO:0002400		Osmotic and water potential are equal at turgor loss, where turgor is zero.
+190	Leaf elastic modulus	Leaf	match	BERVO:0002402		
 191	Leaf water content apoplastic	Leaf	gap			
 193	Dispersal distance	Seed, fruit and dispersal	gap			
 196	Species strategy type according to Grime	Species ecology and distribution	gap			
@@ -237,7 +237,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 278	Wood vessel perforation plates	Stem, wood and bark	gap			
 279	Wood vessel pits characteristics (vestured pits)	Stem, wood and bark	gap			
 280	Wood vessel helical thickenings	Stem, wood and bark	gap			
-281	Stem conduit diameter (vessels, tracheids)	Stem, wood and bark	gap			
+281	Stem conduit diameter (vessels, tracheids)	Stem, wood and bark	match	BERVO:0002409		
 282	Wood vessel element length; stem conduit (vessel and tracheids) element length	Stem, wood and bark	gap			
 283	Wood vessel tyloses and deposits	Stem, wood and bark	gap			
 284	Wood vesselless (vessels absent)	Stem, wood and bark	gap			
@@ -580,13 +580,13 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 705	Shoot iron (Fe) content per shoot dry mass	Twig, branch, shoot and bud	gap			
 707	Leaf water volume per leaf volume	Leaf	gap			
 708	Leaf solid volume per leaf volume	Leaf	gap			
-709	Leaf cuticular conductance	Photosynthesis and gas exchange	gap			
+709	Leaf cuticular conductance	Photosynthesis and gas exchange	match	BERVO:0002408		
 710	Leaf water content at turgor loss point	Leaf	gap			
 711	Leaf water capacitance	Leaf	gap			
 713	Leaf water storage time constant	Leaf	gap			
 714	Leaf water storage transfer resistance	Leaf	gap			
 716	Leaf cuticula thickness	Leaf	gap			
-719	Xylem hydraulic vulnerability, xylem cavitation vulnerability, embolism vulnerability, (P20, P50, P8	Stem, wood and bark	gap			
+719	Xylem hydraulic vulnerability, xylem cavitation vulnerability, embolism vulnerability, (P20, P50, P8	Stem, wood and bark	match	BERVO:0002398		
 720	Photosynthesis irradiance at saturation	Photosynthesis and gas exchange	gap			
 721	Photosynthesis light compensation point	Photosynthesis and gas exchange	gap			
 722	Crown (canopy) density	Crown and canopy	gap			
@@ -610,7 +610,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 743	Leaf mid vein vascular bundle diameter	Leaf	gap			
 744	Leaf mid vein vessel diameter	Leaf	gap			
 745	Leaf mid vein conductivity	Leaf	gap			
-748	Leaf hydraulic conductance	Leaf	gap			
+748	Leaf hydraulic conductance	Leaf	match	BERVO:0002404		
 749	Crown (canopy) transpiration	Crown and canopy	gap			
 751	Leaf epidermis conductance	Leaf	gap			
 752	Plant hydraulic conductance	Whole plant	gap			
@@ -757,7 +757,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 924	Inflorescence position at the shoot axis	Flower and reproduction	gap			
 926	Leaf area index (LAI) of a single plant	Leaf	gap			
 927	Leaf area total at given shoot height	Leaf	gap			
-928	Leaf area-specific conductivity (leaf specific conductivity)	Leaf	gap			
+928	Leaf area-specific conductivity (leaf specific conductivity)	Leaf	match	BERVO:0002405		
 929	Leaf aromatic	Leaf	gap			
 930	Leaf contact angle of water droplets	Leaf	gap			
 931	Leaf display type	Leaf	gap			
@@ -808,8 +808,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 979	Leaf surface pattern type	Leaf	gap			
 980	Leaf surface waxiness	Leaf	gap			
 981	Leaf transpiration rate per leaf dry mass	Photosynthesis and gas exchange	gap			
-982	Leaf relative water content (leaf water content fresh / leaf water content saturated; RWC)	Leaf	gap			
-983	Leaf water & osmotic potential: leaf water potential	Leaf	gap			
+982	Leaf relative water content (leaf water content fresh / leaf water content saturated; RWC)	Leaf	match	BERVO:0002403		
+983	Leaf water & osmotic potential: leaf water potential	Leaf	match	BERVO:0002399		
 984	Leaf water saturation deficit	Leaf	gap			
 985	Leaflet length	Leaf	gap			
 986	Leaflet width	Leaf	gap			
@@ -917,7 +917,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1093	Root position along clonal growth organ	Root	gap			
 1094	Wood (sapwood) biomass per ground area	Stem, wood and bark	gap			
 1095	Wood (sapwood) cross-sectional area	Stem, wood and bark	gap			
-1096	Wood (sapwood) specific conductivity (stem specific conductivity)	Stem, wood and bark	gap			
+1096	Wood (sapwood) specific conductivity (stem specific conductivity)	Stem, wood and bark	match	BERVO:0002406		
 1097	Wood (sapwood) water content	Stem, wood and bark	gap			
 1098	Wood (sapwood) water storage capacity	Stem, wood and bark	gap			
 1099	Seed area	Seed, fruit and dispersal	gap			
@@ -1052,8 +1052,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1234	Wood ray types	Stem, wood and bark	gap			
 1235	Wood storied tissue types	Stem, wood and bark	gap			
 1236	Wood vessel cell-wall thickness	Stem, wood and bark	gap			
-1237	Wood vessel density	Stem, wood and bark	gap			
-1238	Wood vessel diameter	Stem, wood and bark	gap			
+1237	Wood vessel density	Stem, wood and bark	related	BERVO:0002410		Vessels only; conduits include tracheids.
+1238	Wood vessel diameter	Stem, wood and bark	related	BERVO:0002409		Vessels only; conduits include tracheids.
 1239	Wood vessel distribution	Stem, wood and bark	gap			
 1240	Wood vessel intervessel pits	Stem, wood and bark	gap			
 1241	Wood vessel tyloses with thin walls	Stem, wood and bark	gap			
@@ -2083,7 +2083,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3465	Leaf sheath area	Leaf	gap			
 3466	Leaf sheath dry mass	Leaf	gap			
 3467	Leaf sheath area per sheath dry mass (sheath SLA)	Leaf	gap			
-3468	Leaf water & osmotic potential: leaf water potential at turgor loss point	Leaf	gap			
+3468	Leaf water & osmotic potential: leaf water potential at turgor loss point	Leaf	match	BERVO:0002400		
 3471	Crown (canopy) form	Crown and canopy	gap			
 3472	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: sapwood	Stem, wood and bark	broader	BERVO:0002371		Sapwood goes in contexts.
 3473	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: branch	Stem, wood and bark	broader	BERVO:0002371		Branch goes in contexts.
@@ -2092,7 +2092,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3476	Leaf chlorophyll content per leaf area (Chl a)	Leaf	gap			
 3477	Leaf chlorophyll content per leaf area (Chl b)	Leaf	gap			
 3478	Leaf carbon (C) isotope fractionation ('big' Delta 13C)	Leaf	gap			
-3479	Xylem hydraulic vulnerability curve (P20, P50, P80)	Stem, wood and bark	gap			
+3479	Xylem hydraulic vulnerability curve (P20, P50, P80)	Stem, wood and bark	related	BERVO:0002398		A vulnerability curve, not a single water potential.
 3480	Root branching intensity: number of root branches per root length	Root	gap			
 3481	Root links per root branch	Root	gap			
 3482	Seed / ovule ratio	Seed, fruit and dispersal	gap			
@@ -2154,8 +2154,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3538	Stem phosphorus/potassium (P/K) ratio	Stem, wood and bark	gap			
 3539	Wood (sapwood) water hydrogen isotope signature (delta2H)	Stem, wood and bark	gap			
 3540	Wood (sapwood) water oxygen isotope signature (delta18O)	Stem, wood and bark	gap			
-3541	Leaf water potential predawn	Leaf	gap			
-3542	Leaf water potential midday	Leaf	gap			
+3541	Leaf water potential predawn	Leaf	related	BERVO:0002399		Measured before dawn. BERVO has no Predawn concept yet.
+3542	Leaf water potential midday	Leaf	related	BERVO:0002399		Measured at midday. BERVO has no Midday concept yet.
 3543	Litter carbon/potassium (C/K) ratio	Litter and woody debris	gap			
 3544	Litter phosphorus/potassium (P/K) ratio	Litter and woody debris	gap			
 3545	Species phylogenetic line	Species genetics and phylogeny	species_attribute			
@@ -2263,7 +2263,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3658	Leaf rubisco content per leaf chlorophyll content	Leaf	gap			
 3659	Branch sapwood lumen to sapwood area ratio	Twig, branch, shoot and bud	gap			
 3660	Seed fresh mass	Seed, fruit and dispersal	gap			
-3661	Twig leaf area per sapwood area ratio	Twig, branch, shoot and bud	gap			
+3661	Twig leaf area per sapwood area ratio	Twig, branch, shoot and bud	related	BERVO:0002407		The reciprocal, leaf area per sapwood area, for a twig.
 3662	Twig modulus of elasticity (MOE)	Twig, branch, shoot and bud	gap			
 3663	Twig pith area	Twig, branch, shoot and bud	gap			
 3664	Twig vessel area	Twig, branch, shoot and bud	gap			
@@ -2589,7 +2589,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 4007	Stem wood cross-section: fraction of total parenchyma (axial+radial)	Stem, wood and bark	gap			
 4008	Stem wood cross-section: fraction of radial parenchyma	Stem, wood and bark	gap			
 4009	Stem wood cross-section: fraction of vessel lumen	Stem, wood and bark	gap			
-4010	Stem specific hydraulic conductivity	Stem, wood and bark	gap			
+4010	Stem specific hydraulic conductivity	Stem, wood and bark	match	BERVO:0002406		
 4011	Stem wood phosphorus (P) content per dry mass	Stem, wood and bark	broader	BERVO:0002380		Wood and Stem go in contexts.
 4012	Stem wood calcium (Ca) content per dry mass	Stem, wood and bark	gap			
 4013	Stem wood potassium (K) content per dry mass	Stem, wood and bark	gap			

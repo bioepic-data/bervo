@@ -208,6 +208,27 @@ MAPPED = [
     ("match", "BERVO:0002396", "55", ""),
     ("broader", "BERVO:0002396", "3050", COTYLEDON),
     ("match", "BERVO:0002397", "37", ""),
+    # Slice 5: plant hydraulics and water relations
+    ("match", "BERVO:0002398", "719", ""),
+    ("related", "BERVO:0002398", "3479", "A vulnerability curve, not a single water potential."),
+    ("match", "BERVO:0002399", "983", ""),
+    ("related", "BERVO:0002399", "3541", "Measured before dawn. BERVO has no Predawn concept yet."),
+    ("related", "BERVO:0002399", "3542", "Measured at midday. BERVO has no Midday concept yet."),
+    ("match", "BERVO:0002400", "3468", ""),
+    ("match", "BERVO:0002400", "189", "Osmotic and water potential are equal at turgor loss, where turgor is zero."),
+    ("match", "BERVO:0002401", "188", ""),
+    ("match", "BERVO:0002402", "190", ""),
+    ("match", "BERVO:0002403", "982", ""),
+    ("match", "BERVO:0002404", "748", ""),
+    ("match", "BERVO:0002405", "928", ""),
+    ("match", "BERVO:0002406", "1096 4010", ""),
+    ("match", "BERVO:0002407", "171", ""),
+    ("related", "BERVO:0002407", "3661", "The reciprocal, leaf area per sapwood area, for a twig."),
+    ("match", "BERVO:0002408", "709", ""),
+    ("match", "BERVO:0002409", "281", ""),
+    ("related", "BERVO:0002409", "1238", "Vessels only; conduits include tracheids."),
+    ("match", "BERVO:0002410", "169", ""),
+    ("related", "BERVO:0002410", "1237", "Vessels only; conduits include tracheids."),
 ]
 
 # The plant-functional-traits schema slot each TRY trait feeds
