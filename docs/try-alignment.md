@@ -22,7 +22,9 @@ schema come next, and further slices follow from the gaps listed here.
 The TRY list has no units, definitions or value types. A term added from it takes those
 from the TRY data release documentation or from the literature the trait comes from, not
 from the list. TRY cuts trait names at 100 characters, so a few end mid-word; they are
-kept as given.
+kept as given. Eleven names occur twice under different IDs, such as 456 and 1527, both
+*Coarse root carbon (C) content per coarse root dry mass*. The map keeps both IDs and
+points them at the same term.
 
 ## The map
 
