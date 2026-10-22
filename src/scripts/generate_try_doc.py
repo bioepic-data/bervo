@@ -88,7 +88,7 @@ for r in amap:
         problems.append(f"TRY trait {r['trait_id']}: note says BERVO has no {m.group(1)} concept, but it has one")
     # Every clause about contexts must read "X goes in contexts." or "X, Y and Z go in contexts."
     for clause in re.split(r"(?<=[.;]) ", r["note"]):
-        if "in contexts" not in clause:
+        if not re.search(r"\bin contexts?\b", clause):
             continue
         m = re.fullmatch(r"(.+?) go(?:es)? in contexts[.;]", clause)
         if not m:
