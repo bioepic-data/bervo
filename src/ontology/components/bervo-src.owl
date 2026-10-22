@@ -58584,6 +58584,7 @@
         <obo:IAO_0000115>Leaf or part of a leaf of a carnivorous plant that is modified to catch and hold animals, such as a pitcher, a snap trap or a sticky leaf.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>trap</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>The Plant Ontology has no trap term; it gives pitcher as a narrow synonym of vascular leaf (PO:0009025), which is broader.</rdfs:comment>
         <rdfs:label>Carnivorous plant trap</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -58596,7 +58597,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001186"/>
         <obo:IAO_0000115>Fine root of the most distal orders, usually the first to third, whose main function is the uptake of water and nutrients.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), after McCormack et al. 2015 (doi:10.1111/nph.13363), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>Transport fine root (BERVO:8001309) is the other functional class of fine roots.</rdfs:comment>
+        <rdfs:comment>Transport fine root (BERVO:8001309) is the other functional class of fine roots. The Plant Ontology has no term for either functional class, or for fine roots.</rdfs:comment>
         <rdfs:label>Absorptive fine root</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -58608,7 +58609,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001309">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001186"/>
         <obo:IAO_0000115>Fine root of the higher orders, with secondary growth, whose main function is the transport and storage of water, nutrients and carbon.</obo:IAO_0000115>
-        <rdfs:comment>Absorptive fine root (BERVO:8001308) is the other functional class of fine roots.</rdfs:comment>
+        <rdfs:comment>Absorptive fine root (BERVO:8001308) is the other functional class of fine roots. The Plant Ontology has no term for either functional class, or for fine roots.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), after McCormack et al. 2015 (doi:10.1111/nph.13363), TRY alignment for issue #27</rdfs:comment>
         <rdfs:label>Transport fine root</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
