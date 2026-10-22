@@ -40505,6 +40505,7 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 45. Minimum stomatal resistance to carbon dioxide (BERVO:0000164) and Canopy stomatal resistance (BERVO:0000525) are EcoSIM resistances, the reciprocal quantity.</rdfs:comment>
         <rdfs:label>Leaf stomatal conductance</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001299"/>
         <bervo:BERVO_has_unit>mmol{H2O}.m-2.s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
@@ -58466,6 +58467,19 @@
         <oboInOwl:hasExactSynonym>N:P mass ratio</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:label>Nitrogen to phosphorus mass ratio</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001299 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001299">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
+        <obo:IAO_0000115>Rate at which something passes along a pathway, such as water vapour through stomata or heat through a layer, per unit of the difference that drives it; the reciprocal of a resistance.</obo:IAO_0000115>
+        <rdfs:comment>Conductivity (BERVO:8000348) is the property of a material; conductance is that of a particular pathway, and so depends on its size.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Conductance</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
