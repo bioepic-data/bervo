@@ -58619,9 +58619,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001310">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001179"/>
-        <obo:IAO_0000115>Plant material that is undergoing or has completed senescence but is still attached to the plant.</obo:IAO_0000115>
+        <obo:IAO_0000115>Plant material that has lost its chlorophyll through senescence but is still attached to the plant.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>Includes senescent leaves sampled before they fall; once shed, the material is litter, Dead vegetation (BERVO:8001175).</rdfs:comment>
+        <rdfs:comment>Includes senescent leaves sampled before they fall; once shed, the material is litter, Dead vegetation (BERVO:8001175). Senesced material that is also dead, such as dead foliage still on the stem, is Standing dead vegetation (BERVO:8001176) as well; the two classes overlap there. Leaves early in senescence that are still largely green are not included, since the parent, Non-green vegetation, is material that is no longer green.</rdfs:comment>
         <rdfs:label>Senescent vegetation</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
