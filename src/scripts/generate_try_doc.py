@@ -68,6 +68,20 @@ for r in amap:
 # A note that BERVO lacks a concept goes stale once a slice adds it, and a note naming the
 # concept for contexts must name one that exists.
 LABELS = {t[1].casefold() for t in TERMS.values() if t[H["obsolete"]] != "true"}
+
+
+def as_labels(names):
+    """True if names reads as labels joined by ', ' and a final ' and ', so a label that
+    itself contains ' and ' or a comma is not split."""
+    if names.casefold() in LABELS:
+        return True
+    for sep in (", ", " and "):
+        for i in [m.start() for m in re.finditer(re.escape(sep), names)]:
+            if names[:i].casefold() in LABELS and as_labels(names[i + len(sep):]):
+                return True
+    return False
+
+
 for r in amap:
     m = re.search(r"BERVO has no (.+?) concept yet\.", r["note"])
     if m and m.group(1).casefold() in LABELS:
@@ -80,7 +94,7 @@ for r in amap:
         if not m:
             problems.append(f"TRY trait {r['trait_id']}: note mentions contexts without naming the concepts: {clause!r}")
             continue
-        for concept in re.split(r", | and ", m.group(1)):
+        for concept in [] if as_labels(m.group(1)) else re.split(r", | and ", m.group(1)):
             if concept.casefold() not in LABELS:
                 problems.append(f"TRY trait {r['trait_id']}: note puts {concept} in contexts, but it is not a BERVO label")
 
