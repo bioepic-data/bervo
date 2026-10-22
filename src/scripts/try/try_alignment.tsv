@@ -2154,8 +2154,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3538	Stem phosphorus/potassium (P/K) ratio	Stem, wood and bark	gap			
 3539	Wood (sapwood) water hydrogen isotope signature (delta2H)	Stem, wood and bark	gap			
 3540	Wood (sapwood) water oxygen isotope signature (delta18O)	Stem, wood and bark	gap			
-3541	Leaf water potential predawn	Leaf	related	BERVO:0002399		Measured before dawn. BERVO has no Predawn concept yet.
-3542	Leaf water potential midday	Leaf	related	BERVO:0002399		Measured at midday. BERVO has no Midday concept yet.
+3541	Leaf water potential predawn	Leaf	broader	BERVO:0002399		Predawn goes in contexts.
+3542	Leaf water potential midday	Leaf	broader	BERVO:0002399		Midday goes in contexts.
 3543	Litter carbon/potassium (C/K) ratio	Litter and woody debris	gap			
 3544	Litter phosphorus/potassium (P/K) ratio	Litter and woody debris	gap			
 3545	Species phylogenetic line	Species genetics and phylogeny	species_attribute			
@@ -2608,12 +2608,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 4029	Leaf vein length per leaf area	Leaf	gap			
 4030	Tiller thickness	Stem, wood and bark	gap			
 4031	Tiller length	Stem, wood and bark	gap			
-4032	Stomata conductance per leaf area: predawn	Photosynthesis and gas exchange	gap			
+4032	Stomata conductance per leaf area: predawn	Photosynthesis and gas exchange	broader	BERVO:0002392		Predawn goes in contexts.
 4033	Leaf intercellular CO2 concentration (Ci) predawn	Leaf	gap			
 4034	Leaf ratio of intercellular to ambient CO2 concentration (CiCa) predawn	Leaf	gap			
 4035	Leaf temperature predawn	Leaf	gap			
 4036	Leaf vapor pressure deficit predawn	Leaf	gap			
-4037	Stomata conductance per leaf area: midday	Photosynthesis and gas exchange	gap			
+4037	Stomata conductance per leaf area: midday	Photosynthesis and gas exchange	broader	BERVO:0002392		Midday goes in contexts.
 4038	Stomata conductance per leaf area: predawn to midday ratio	Photosynthesis and gas exchange	gap			
 4039	Leaf ratio of intercellular to ambient CO2 concentration (CiCa) midday	Leaf	gap			
 4040	Leaf vapor pressure deficit midday	Leaf	gap			
