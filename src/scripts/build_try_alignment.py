@@ -199,7 +199,12 @@ for status, term, ids, note in MAPPED:
         if tid in curated:
             sys.exit(f"TRY trait {tid} is listed twice in MAPPED")
         curated[tid] = (status, term, note)
-slot_of = {tid: slot for slot, ids in PFT_SLOTS.items() for tid in ids.split()}
+slot_of = {}
+for slot, ids in PFT_SLOTS.items():
+    for tid in ids.split():
+        if tid in slot_of:
+            sys.exit(f"TRY trait {tid} is in two PFT_SLOTS entries, {slot_of[tid]} and {slot}")
+        slot_of[tid] = slot
 
 
 def broader_term(name):
@@ -209,9 +214,10 @@ def broader_term(name):
 
 
 traits = list(csv.DictReader(open(S / "try_traits.csv", encoding="utf-8")))
-unknown = curated.keys() - {t["trait_id"] for t in traits}
-if unknown:
-    sys.exit(f"MAPPED names TRY traits that are not in try_traits.csv: {sorted(unknown, key=int)}")
+known = {t["trait_id"] for t in traits}
+for what, ids in (("MAPPED", curated.keys()), ("PFT_SLOTS", slot_of.keys())):
+    if ids - known:
+        sys.exit(f"{what} names TRY traits that are not in try_traits.csv: {sorted(ids - known, key=int)}")
 
 w = csv.writer(open(OUT, "w", newline="", encoding="utf-8"), delimiter="\t", lineterminator="\n")
 w.writerow(["trait_id", "trait_name", "group", "status", "bervo_id", "pft_slot", "note"])
