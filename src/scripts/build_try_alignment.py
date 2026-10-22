@@ -231,8 +231,8 @@ with open(OUT, "w", newline="", encoding="utf-8") as f:
             status, term, note = curated[tid]
         elif re.match(SPECIES_ATTR, name):
             status = "species_attribute"
-        elif broader_term(name):
-            status, term = "broader", broader_term(name)
+        elif term := broader_term(name):
+            status = "broader"
             need = None if name.startswith("Litter (other") else next((c for pat, c in NEEDS if re.search(pat, name)), None)
             note = missing(need) if need else ORGAN
         w.writerow([tid, name, group, status, term, slot_of.get(tid, ""), note])
