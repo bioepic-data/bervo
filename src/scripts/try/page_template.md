@@ -10,9 +10,11 @@ to BERVO. The work is tracked in
 [issue #27](https://github.com/bioepic-data/bervo/issues/27) and is done in slices. The
 first slice was the map itself. The second added terms for the traits used by the
 [plant-functional-traits](https://github.com/bioepic-data/plant-functional-traits)
-schema. Still to come are the value lists of its categorical traits (woodiness, growth
-form, leaf type), the organ concepts the `broader` rows wait on, and terms for the gaps
-listed here.
+schema. The third added the leaf economics and photosynthesis traits: leaf phosphorus,
+N:P ratios, photosynthetic and dark respiration rates, Vcmax, Jmax, stomatal conductance,
+leaf lifespan, thickness, tissue density, dry mass and phenology. Still to come are the
+value lists of the categorical traits (woodiness, growth form, leaf type, leaf phenology),
+the organ concepts the `broader` rows wait on, and terms for the gaps listed here.
 
 ## Sources
 
