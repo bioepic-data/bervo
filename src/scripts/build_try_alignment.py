@@ -213,25 +213,27 @@ def broader_term(name):
     return next((term for pat, term in BROADER if re.search(pat, name)), None)
 
 
-traits = list(csv.DictReader(open(S / "try_traits.csv", encoding="utf-8")))
+with open(S / "try_traits.csv", encoding="utf-8") as f:
+    traits = list(csv.DictReader(f))
 known = {t["trait_id"] for t in traits}
 for what, ids in (("MAPPED", curated.keys()), ("PFT_SLOTS", slot_of.keys())):
     if ids - known:
         sys.exit(f"{what} names TRY traits that are not in try_traits.csv: {sorted(ids - known, key=int)}")
 
-w = csv.writer(open(OUT, "w", newline="", encoding="utf-8"), delimiter="\t", lineterminator="\n")
-w.writerow(["trait_id", "trait_name", "group", "status", "bervo_id", "pft_slot", "note"])
-for t in traits:
-    tid, name = t["trait_id"], t["trait_name"]
-    group = next((g for g, pat in GROUPS if re.match(pat, name)), "Other")
-    status, term, note = "gap", "", ""
-    if tid in curated:
-        status, term, note = curated[tid]
-    elif re.match(SPECIES_ATTR, name):
-        status = "species_attribute"
-    elif broader_term(name):
-        status, term = "broader", broader_term(name)
-        need = None if name.startswith("Litter (other") else next((c for pat, c in NEEDS if re.search(pat, name)), None)
-        note = missing(need) if need else ORGAN
-    w.writerow([tid, name, group, status, term, slot_of.get(tid, ""), note])
+with open(OUT, "w", newline="", encoding="utf-8") as f:
+    w = csv.writer(f, delimiter="\t", lineterminator="\n")
+    w.writerow(["trait_id", "trait_name", "group", "status", "bervo_id", "pft_slot", "note"])
+    for t in traits:
+        tid, name = t["trait_id"], t["trait_name"]
+        group = next((g for g, pat in GROUPS if re.match(pat, name)), "Other")
+        status, term, note = "gap", "", ""
+        if tid in curated:
+            status, term, note = curated[tid]
+        elif re.match(SPECIES_ATTR, name):
+            status = "species_attribute"
+        elif broader_term(name):
+            status, term = "broader", broader_term(name)
+            need = None if name.startswith("Litter (other") else next((c for pat, c in NEEDS if re.search(pat, name)), None)
+            note = missing(need) if need else ORGAN
+        w.writerow([tid, name, group, status, term, slot_of.get(tid, ""), note])
 print(f"wrote {OUT}", file=sys.stderr)
