@@ -12124,6 +12124,7 @@
         <oboInOwl:hasRelatedSynonym>SeedVolumeMean_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3042.</rdfs:comment>
         <rdfs:label>Seed volume</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000190"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
@@ -12141,6 +12142,7 @@
         <oboInOwl:hasRelatedSynonym>SeedMeanLen_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 27.</rdfs:comment>
         <rdfs:label>Seed length</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
@@ -12157,6 +12159,7 @@
         <oboInOwl:hasRelatedSynonym>SeedAreaMean_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3043.</rdfs:comment>
         <rdfs:label>Seed surface area</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
@@ -13471,8 +13474,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>The total count of lateral shoots or branches on an individual plant, representing architectural complexity and resource allocation to structural development. This number of branches of the plant affects canopy structure and influences light interception and competitive ability.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NumOfBranches_pft</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Plant number of branches per plant</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 511.</rdfs:comment>
         <rdfs:label>Number of branches of the plant</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
@@ -18484,9 +18489,11 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001077">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
         <obo:IAO_0000115>Root porosity refers to the percentage of the total root volume that is not occupied by plant cells or materials. This includes air spaces and intercellular spaces within the root structure. Root porosity is an important factor in determining a plant&apos;s ability to uptake water and nutrients from the soil, and can be influenced by factors such as root architecture, soil conditions, and water availability.|Root porosity refers to the proportion of the root volume that is not occupied by solid materials. This is a measurement of the open space within the root system that can be filled with air or water. Root porosity can have an impact on plant health as it influences the root’s ability to draw up water and nutrients. It can also facilitate the exchange of gases between the root system and the soil environment.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Root porosity (fraction of root aerenchyma air space)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>RootPorosity_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 246.</rdfs:comment>
         <rdfs:label>Root porosity</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>m3.m-3</bervo:BERVO_has_unit>
@@ -31602,7 +31609,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Diameter of a plant stem measured perpendicular to its axis at a stated height above the ground.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5 through Claude Code (Sep 18 2026), CHESS gap analysis for issue #29</rdfs:comment>
-        <rdfs:comment>General form; Stem diameter at breast height is the forest inventory convention.</rdfs:comment>
+        <rdfs:comment>General form; Stem diameter at breast height is the forest inventory convention. TRY trait ID: 21.</rdfs:comment>
         <rdfs:label>Stem diameter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
         <bervo:BERVO_has_unit>cm</bervo:BERVO_has_unit>
@@ -33048,8 +33055,9 @@
         <obo:IAO_0000115>Height of the top of a plant canopy above the ground surface.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/canopyHeight"/>
         <oboInOwl:hasRelatedSynonym>HEIGHTC</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Plot canopy height</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Canopy height&quot;: Forest canopy density and height are used as variables in a number of environmental applications, such as biomass estimation, vegetation coverage, and biodiversity determination. Canopy density, or canopy cover, is the ratio of vegetation to ground as seen from the air. Canopy height measures how far above the ground the top of the canopy is. Lidar can be used to determine both of these variables. AmeriFlux BADM variable name: HEIGHTC. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: HEIGHTC_U. Understory canopy height is this term with Understory in contexts.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Canopy height&quot;: Forest canopy density and height are used as variables in a number of environmental applications, such as biomass estimation, vegetation coverage, and biodiversity determination. Canopy density, or canopy cover, is the ratio of vegetation to ground as seen from the air. Canopy height measures how far above the ground the top of the canopy is. Lidar can be used to determine both of these variables. AmeriFlux BADM variable name: HEIGHTC. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: HEIGHTC_U. Understory canopy height is this term with Understory in contexts. TRY trait ID: 4025.</rdfs:comment>
         <rdfs:label>Canopy height</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000076"/>
         <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
@@ -34514,7 +34522,7 @@
         <obo:IAO_0000115>Mass of carbon divided by the mass of nitrogen in a plant tissue, such as leaf, stem, or root, or in a whole plant.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>plant C:N mass ratio</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_CN_RATIO, AG_LIT_CN_RATIO, ROOT_CN_RATIO. Organ and status go in contexts.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_CN_RATIO, AG_LIT_CN_RATIO, ROOT_CN_RATIO. Organ and status go in contexts. TRY traits mapped here, with the organ or status in contexts: 146, 150, 165, 166, 167, 409, 432, 694, 830, 842, 899, 945, 1021, 1055, 1059, 1154, 1260, 1545, 2057, 2313, 2569, 2884, 3527.</rdfs:comment>
         <rdfs:label>Plant tissue carbon to nitrogen mass ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000917"/>
         <bervo:BERVO_has_unit>g{C}.g-1{N}</bervo:BERVO_has_unit>
@@ -36902,8 +36910,9 @@
         <oboInOwl:hasExactSynonym>SLW</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>leaf mass area</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>specific leaf weight</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Paleo trait: leaf mass per area</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
-        <rdfs:comment>The reciprocal of specific leaf area (TO:0000562), and so not cross-referenced to it. Leaf area:mass during growth (BERVO:0000783) is the EcoSIM specific leaf area. AmeriFlux BADM variable name: LMA.</rdfs:comment>
+        <rdfs:comment>The reciprocal of specific leaf area (TO:0000562), and so not cross-referenced to it. Leaf area:mass during growth (BERVO:0000783) is the EcoSIM specific leaf area. AmeriFlux BADM variable name: LMA. TRY trait ID: 2950.</rdfs:comment>
         <rdfs:label>Leaf mass per area</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
@@ -36921,7 +36930,9 @@
         <obo:IAO_0000115>Mass of carbon in a leaf per unit of its one-sided area.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Carea</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>area-based leaf carbon content</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf carbon (C) content per leaf area</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 570.</rdfs:comment>
         <rdfs:label>Leaf carbon content per unit area</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{C}.m-2</bervo:BERVO_has_unit>
@@ -36938,7 +36949,9 @@
         <obo:IAO_0000115>Mass of nitrogen in a leaf per unit of its one-sided area.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Narea</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>area-based leaf nitrogen content</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf nitrogen (N) content per leaf area</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 50.</rdfs:comment>
         <rdfs:label>Leaf nitrogen content per unit area</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{N}.m-2</bervo:BERVO_has_unit>
@@ -36955,7 +36968,9 @@
         <obo:IAO_0000115>Mass of carbon in a leaf per unit of its dry mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Cmass</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mass-based leaf carbon content</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf carbon (C) content per leaf dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 13. TRY traits mapped here, with the organ or status in contexts: 674, 3955.</rdfs:comment>
         <rdfs:label>Leaf carbon content per unit dry mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>mg{C}.g-1{dry_mass}</bervo:BERVO_has_unit>
@@ -36972,7 +36987,9 @@
         <obo:IAO_0000115>Mass of nitrogen in a leaf per unit of its dry mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Nmass</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mass-based leaf nitrogen content</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf nitrogen (N) content per leaf dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 14. TRY traits mapped here, with the organ or status in contexts: 667, 3954.</rdfs:comment>
         <rdfs:label>Leaf nitrogen content per unit dry mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>mg{N}.g-1{dry_mass}</bervo:BERVO_has_unit>
@@ -39514,7 +39531,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of carbon per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_C, AG_LIT_C, ROOT_C. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_C, AG_LIT_C, ROOT_C. Organ and status go in contexts; litter is Dead vegetation. TRY traits mapped here, with the organ or status in contexts: 72, 84, 407, 447, 456, 471, 617, 691, 775, 841, 868, 898, 944, 1058, 1527, 2039, 2295, 2551, 2883, 3027, 3368, 3369, 3521, 3709, 3792, 3923, 3959.</rdfs:comment>
         <rdfs:label>Plant tissue carbon content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{C}.kg-1</bervo:BERVO_has_unit>
@@ -39530,7 +39547,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of nitrogen per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_N, AG_LIT_N, ROOT_N. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_N, AG_LIT_N, ROOT_N. Organ and status go in contexts; litter is Dead vegetation. TRY traits mapped here, with the organ or status in contexts: 70, 80, 339, 406, 450, 459, 475, 618, 668, 684, 690, 854, 876, 887, 908, 954, 1199, 1229, 1262, 2035, 2291, 2547, 2882, 2987, 3455, 3522, 3704, 3710, 3793, 3922, 3958.</rdfs:comment>
         <rdfs:label>Plant tissue nitrogen content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{N}.kg-1</bervo:BERVO_has_unit>
