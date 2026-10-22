@@ -33,6 +33,7 @@ Never hand-edit these — your changes will be silently overwritten on the next 
 | `src/ontology/bervo.owl`/`.obo`/`.json` (transient, produced during a release) | ODK release pipeline |
 | `docs/assets/data/bervo-browser.json` | `src/scripts/generate_browser_data.py` |
 | `docs/ameriflux-alignment.md` | `src/scripts/generate_ameriflux_doc.py` (`just ameriflux-doc`), from `bervo-src.csv` and `src/scripts/ameriflux/` |
+| `docs/try-alignment.md` | `src/scripts/generate_try_doc.py` (`just try-doc`), from `src/scripts/try/try_alignment.tsv` and `bervo-src.csv` |
 | `site/` | `mkdocs build` |
 
 Files that **are** hand-edited:
@@ -42,9 +43,14 @@ Files that **are** hand-edited:
 - `src/ontology/bervo-annotations.ttl` — ontology-level annotations
 - `src/ontology/bervo-odk.yaml` — ODK configuration
 - `src/sparql/*.sparql` — QC queries
-- Anything under `docs/` except `docs/assets/data/` and `docs/ameriflux-alignment.md`. That page's
-  prose lives in `src/scripts/ameriflux/page_template.md`, and its tables come from the
-  AmeriFlux notes in the `Comment` column; `tests/test_ameriflux_doc.py` fails if it is stale.
+- Anything under `docs/` except `docs/assets/data/`, `docs/ameriflux-alignment.md` and
+  `docs/try-alignment.md`. The AmeriFlux page's prose lives in
+  `src/scripts/ameriflux/page_template.md`, and its tables come from the AmeriFlux notes in
+  the `Comment` column; `tests/test_ameriflux_doc.py` fails if it is stale.
+- `src/scripts/try/try_alignment.tsv` — the TRY trait map (issue #27). The TRY page is built
+  from it and from its prose in `src/scripts/try/page_template.md`;
+  `tests/test_try_alignment.py` fails if the page is stale or the map and the `TRY trait`
+  sentences in `Comment` disagree.
 
 The Google Sheet linked from the README is a **collaboration artefact only**. It is not
 authoritative and must not be used as a build input. Propose changes here, via a branch
@@ -62,6 +68,7 @@ just test              # validator + Makefile integration tests
 just build             # rebuild components/bervo-src.owl from the CSV
 just browser-data      # regenerate the docs browser JSON
 just ameriflux-doc     # regenerate docs/ameriflux-alignment.md
+just try-doc           # regenerate docs/try-alignment.md
 just qc                # full ODK QC suite (needs Docker; slow)
 just docs              # build the mkdocs site locally
 just stats             # term counts by ID block and category
