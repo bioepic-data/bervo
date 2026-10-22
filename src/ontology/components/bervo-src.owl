@@ -40631,6 +40631,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002399">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Potential energy per unit volume of the water in a leaf, relative to pure free water, the sum of its turgor and osmotic potentials.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000131"/>
         <oboInOwl:hasRelatedSynonym>Leaf water &amp; osmotic potential: leaf water potential</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 983. TRY traits mapped here, with the organ or status in contexts: 3541, 3542. Usually measured before dawn or at midday. Plant canopy total water potential (BERVO:0000587) is the EcoSIM value for a canopy.</rdfs:comment>
@@ -40708,7 +40709,7 @@
         <oboInOwl:hasExactSynonym>RWC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Leaf relative water content (leaf water content fresh / leaf water content saturated; RWC)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 982.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 982. Not cross-referenced to leaf relative water content (TO:0000136), which is defined as measured at midday and so is narrower; this term is Midday (BERVO:8001313) in contexts.</rdfs:comment>
         <rdfs:label>Leaf relative water content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000202"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
