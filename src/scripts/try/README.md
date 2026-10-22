@@ -35,6 +35,11 @@ surface organic layer, so it does not hold fine-root litter in the soil, and it 
 the `Vegetation` concepts the organ is paired with. Use `Dead vegetation` for all litter, as
 decided on #214.
 
+The concepts a note names are the set that applies, not an intersection or a union: `Coarse
+woody debris and Coarse root` describes dead coarse roots, and `Twig and Branch` describes
+a trait measured on twigs and branches. `contexts` is an annotation, so it asserts no more
+than that; read the trait name for which is meant.
+
 When a slice adds a term for a TRY trait, add the trait to `MAPPED` in the script, put the
 sentence on the term, run `just try-doc`, and commit the map and the page with the change.
 `related` and `gap` rows are recorded in the map only.
