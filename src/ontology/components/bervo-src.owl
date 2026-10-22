@@ -40124,7 +40124,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002372">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Oven-dry mass of a single seed.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>seed mass</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>seed mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), after Perez-Harguindeguy et al. 2013 (doi:10.1071/BT12225), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 26. Usually reported as the mean of a sample of seeds. Grain size at seeding (BERVO:0000821) is the EcoSIM seed mass at planting.</rdfs:comment>
         <rdfs:label>Seed dry mass</rdfs:label>
@@ -40142,8 +40142,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002373">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Oven-dry mass of a single diaspore, including any structures attached to it when it is dispersed.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>diaspore mass</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Dispersal unit dry mass</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diaspore mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 233. The same as Seed dry mass when the diaspore is a bare seed.</rdfs:comment>
         <rdfs:label>Diaspore dry mass</rdfs:label>
