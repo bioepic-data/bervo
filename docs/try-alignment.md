@@ -16,13 +16,15 @@ schema come next, and further slices follow from the gaps listed here.
 
 | Source | Revision | Used for |
 | --- | --- | --- |
-| `try_traits.csv`, attached to issue #27 | 2026-01-29 | The 2661 TRY traits, as `trait_id` and `trait_name` only. It is byte-identical to `data/try_traits.csv` in plant-functional-traits. |
+| `try_traits.csv`, attached to issue #27 | attached 2026-01-29, fetched 2026-10-22 | The 2661 TRY traits, as `trait_id` and `trait_name` only. It is byte-identical to `data/try_traits.csv` in plant-functional-traits. |
 | [`bioepic-data/plant-functional-traits`](https://github.com/bioepic-data/plant-functional-traits), `src/plant_functional_traits/schema/plant_functional_traits.yaml` | `d083f09` | Which TRY traits the harmonized schema uses, in the `pft_slot` column |
 
 The TRY list has no units, definitions or value types. A term added from it takes those
 from the TRY data release documentation or from the literature the trait comes from, not
 from the list. TRY cuts trait names at 100 characters, so a few end mid-word; they are
-kept as given.
+kept as given. Eleven names occur twice under different IDs, such as 456 and 1527, both
+*Coarse root carbon (C) content per coarse root dry mass*. The map keeps both IDs and
+points them at the same term.
 
 ## The map
 
@@ -43,7 +45,7 @@ The map is `src/scripts/try/try_alignment.tsv`, one row per TRY trait:
 | `broader` | A general BERVO term covers the trait, with the organ or status in `contexts`. For example, *Stem nitrogen (N) content per stem dry mass* is `Plant tissue nitrogen content` with `Stem` in `contexts`. |
 | `related` | A BERVO term is close but is not the same quantity, such as a reciprocal, a different normalisation, or an EcoSIM parameter defined differently. A term for the TRY trait is still needed. |
 | `gap` | BERVO has no term. |
-| `species_attribute` | The trait records where a species occurs, its habitat or indicator values, its legal status, its phylogeny or its uses, rather than a property of a plant. These are set aside for a decision on scope, not rejected. |
+| `species_attribute` | The trait records where a species occurs, its habitat or indicator values, its legal status, its phylogeny or its uses, or it names a species, such as the dominant species of a plot or the herbivores of a leaf, rather than recording a property of a plant. These are set aside for a decision on scope, not rejected. |
 
 Groups and the `species_attribute` status were first assigned by rules on the trait name,
 then checked by hand. The C, N and C/N rows in `broader` were assigned the same way. Root
@@ -55,6 +57,16 @@ A `broader` row can only be recorded in full once BERVO has a concept for its or
 status. Some have none yet, such as twig, bark, cone, fruit, heartwood, sapwood, coarse
 woody debris, absorptive and transport fine roots, and senescent. Those rows say so in
 `note`, and the concepts are part of the slice that adds terms for that organ.
+
+## When an EcoSIM term is a match
+
+Many BERVO plant terms are EcoSIM parameters with `Plant functional type` in `contexts`.
+Such a term is a `match` when it is the same quantity, as `Seed length` and `Root
+porosity` are. A value for a plant functional type is the trait's value for that type, as
+a TRY species mean is the trait's value for a species, and BERVO keeps one term per
+quantity whoever reports it. An EcoSIM variable resolved over something else, such as a
+branch, a node or a grid cell, measures a different thing and is `related`: `Leaf number`
+counts the leaves on a branch, not on a plant, and `Leaf area` is a grid-cell total.
 
 ## How the alignment is recorded on a term
 
@@ -83,18 +95,18 @@ species attributes.
 | Fine root |  | 18 |  | 385 |  | 403 |
 | Flower and reproduction |  | 2 |  | 124 |  | 126 |
 | Leaf | 16 | 8 | 9 | 384 | 1 | 418 |
-| Litter and woody debris |  | 28 |  | 171 |  | 199 |
+| Litter and woody debris |  | 25 | 3 | 171 |  | 199 |
 | Moss and fern |  |  |  | 21 |  | 21 |
 | Photosynthesis and gas exchange |  |  | 1 | 112 |  | 113 |
-| Plot and stand | 1 |  |  | 8 |  | 9 |
+| Plot and stand | 1 |  |  | 8 | 1 | 10 |
 | Root | 5 | 14 | 1 | 388 |  | 408 |
 | Seed, fruit and dispersal | 5 | 2 |  | 106 |  | 113 |
-| Species ecology and distribution |  |  |  | 3 | 48 | 51 |
+| Species ecology and distribution |  |  |  | 3 | 47 | 50 |
 | Species genetics and phylogeny |  |  |  | 13 | 3 | 16 |
 | Stem, wood and bark | 3 | 13 | 1 | 306 |  | 323 |
 | Twig, branch, shoot and bud |  | 11 |  | 160 |  | 171 |
-| Whole plant | 8 | 3 | 2 | 256 |  | 269 |
-| **Total** | **38** | **99** | **14** | **2458** | **52** | **2661** |
+| Whole plant | 11 |  | 2 | 256 |  | 269 |
+| **Total** | **41** | **93** | **17** | **2458** | **52** | **2661** |
 
 ## Matches
 
@@ -119,8 +131,11 @@ species attributes.
 | 246 | Root porosity (fraction of root aerenchyma air space) | `BERVO:0001077` Root porosity |  |
 | 511 | Plant number of branches per plant | `BERVO:0000787` Number of branches of the plant |  |
 | 570 | Leaf carbon (C) content per leaf area | `BERVO:0002186` Leaf carbon content per unit area |  |
+| 668 | Plant nitrogen (N) content per plant dry mass | `BERVO:0002340` Plant tissue nitrogen content | Whole plant; the term covers whole plant material. |
+| 1021 | Plant carbon/nitrogen (C/N) ratio | `BERVO:0002055` Plant tissue carbon to nitrogen mass ratio | Whole plant; the term covers a whole plant. |
 | 1080 | Root length per root dry mass (specific root length, SRL) | `BERVO:0002374` Specific root length |  |
 | 2950 | Paleo trait: leaf mass per area | `BERVO:0002185` Leaf mass per area | Reconstructed from fossil leaves; the quantity is the same. |
+| 3027 | Plant carbon (C) content per plant dry mass | `BERVO:0002339` Plant tissue carbon content | Whole plant; the term covers whole plant material. |
 | 3042 | Seed volume | `BERVO:0000704` Seed volume |  |
 | 3043 | Seed surface area | `BERVO:0000706` Seed surface area |  |
 | 3058 | Leaf area (in case of compound leaves undefined if leaf or leaflet, petiole and rhachis excluded) | `BERVO:0002368` Individual leaf area | TRY variants differ in whether the petiole is included. |
@@ -143,11 +158,11 @@ species attributes.
 
 | BERVO term | TRY traits |
 | --- | --- |
-| `BERVO:0002055` Plant tissue carbon to nitrogen mass ratio | 146 Leaf carbon/nitrogen (C/N) ratio; 150 Litter carbon/nitrogen (C/N) ratio; 165 Stem carbon/nitrogen (C/N) ratio; 166 Coarse root carbon/nitrogen (C/N) ) ratio; 167 Fine root carbon/nitrogen (C/N) ratio; 409 Shoot carbon/nitrogen (C/N) ratio; 432 Coarse woody debris (CWD): carbon/nitrogen (C/N) ratio; 694 Twig carbon/nitrogen (C/N) ratio; 830 Bark carbon/nitrogen (C/N) ratio; 842 Coarse woody debris (CWD) branch: carbon/nitrogen (C/N) ratio; 899 Litter (fine root) carbon/nitrogen (C/N) ratio; 945 Litter (leaf) carbon/nitrogen (C/N) ratio; 1021 Plant carbon/nitrogen (C/N) ratio; 1055 Root carbon/nitrogen (C/N) ratio; 1059 Coarse woody debris (CWD) root: carbon/nitrogen (C/N) ratio; 1154 Coarse woody debris (CWD) stem: carbon/nitrogen (C/N) ratio; 1260 Wood carbon/nitrogen (C/N) ratio; 1545 Coarse root carbon/nitrogen (C/N) ratio; 2057 Fine root (absorptive) carbon/nitrogen (C/N) ratio; 2313 Fine root (transport) carbon/nitrogen (C/N) ratio; 2569 Belowground plant organ carbon/nitrogen (C/N) ratio; 2884 Litter (other than leaf: twigs, bark, flowers…) C/N ratio; 3527 Litter decomposition: carbon/nitrogen (C/N) ratio |
+| `BERVO:0002055` Plant tissue carbon to nitrogen mass ratio | 146 Leaf carbon/nitrogen (C/N) ratio; 150 Litter carbon/nitrogen (C/N) ratio; 165 Stem carbon/nitrogen (C/N) ratio; 166 Coarse root carbon/nitrogen (C/N) ) ratio; 167 Fine root carbon/nitrogen (C/N) ratio; 409 Shoot carbon/nitrogen (C/N) ratio; 432 Coarse woody debris (CWD): carbon/nitrogen (C/N) ratio; 694 Twig carbon/nitrogen (C/N) ratio; 830 Bark carbon/nitrogen (C/N) ratio; 842 Coarse woody debris (CWD) branch: carbon/nitrogen (C/N) ratio; 899 Litter (fine root) carbon/nitrogen (C/N) ratio; 945 Litter (leaf) carbon/nitrogen (C/N) ratio; 1055 Root carbon/nitrogen (C/N) ratio; 1059 Coarse woody debris (CWD) root: carbon/nitrogen (C/N) ratio; 1154 Coarse woody debris (CWD) stem: carbon/nitrogen (C/N) ratio; 1260 Wood carbon/nitrogen (C/N) ratio; 1545 Coarse root carbon/nitrogen (C/N) ratio; 2057 Fine root (absorptive) carbon/nitrogen (C/N) ratio; 2313 Fine root (transport) carbon/nitrogen (C/N) ratio; 2569 Belowground plant organ carbon/nitrogen (C/N) ratio; 2884 Litter (other than leaf: twigs, bark, flowers…) C/N ratio |
 | `BERVO:0002188` Leaf carbon content per unit dry mass | 674 Leaf carbon (C) content per dry mass (cotyledons); 3955 Leaf carbon (C) content per dry mass (senescent leaves) |
 | `BERVO:0002189` Leaf nitrogen content per unit dry mass | 667 Leaf nitrogen (N) content per dry mass (cotyledons); 3954 Leaf nitrogen (N) content per dry mass (senescent leaves) |
-| `BERVO:0002339` Plant tissue carbon content | 72 Litter carbon (C) content per litter dry mass; 84 Root carbon (C) content per root dry mass; 407 Stem carbon (C) content per stem dry mass; 447 Branch carbon (C) content per branch dry mass; 456 Coarse root carbon (C) content per coarse root dry mass; 471 Fine root carbon (C) content per fine root dry mass; 617 Bark carbon (C) content per bark dry mass; 691 Twig carbon content per twig dry mass; 775 Shoot carbon (C) content per shoot dry mass; 841 Coarse woody debris (CWD) branch: carbon (C) content per branch CWD dry mass; 868 Coarse woody debris (CWD): carbon (C) content per CWD dry mass; 898 Litter (fine root) carbon (C) content per fine root litter dry mass; 944 Litter (leaf) carbon (C) content per leaf litter dry mass; 1058 Coarse woody debris (CWD) root: carbon (C) content per coarse root CWD dry mass; 1527 Coarse root carbon (C) content per coarse root dry mass; 2039 Fine root (absorptive) carbon (C) content per absorptive fine root dry mass; 2295 Fine root (transport) carbon (C) content per transport fine root dry mass; 2551 Belowground plant organ carbon (C) content per belowground plant organ dry mass; 2883 Litter (other than leaf: twigs, bark, flowers…) carbon (C) content per litter dry mass; 3027 Plant carbon (C) content per plant dry mass; 3368 Wood (sapwood) carbon (C) content per dry mass; 3369 Wood (heartwood) carbon (C) content per heartwood dry mass; 3521 Litter decomposition: carbon (C) content per litter dry mass; 3709 Branch bark carbon (C) content per dry mass; 3792 Bark: dead bark carbon (C) content per dry mass; 3923 Trap carbon (C) content per trap dry mass; 3959 Fruit (harvest organ) carbon (C) content per dry mass |
-| `BERVO:0002340` Plant tissue nitrogen content | 70 Litter nitrogen (N) content per litter dry mass; 80 Root nitrogen (N) content per root dry mass; 339 Shoot nitrogen (N) content per shoot dry mass; 406 Stem nitrogen (N) content per stem dry mass; 450 Branch nitrogen (N) content per branch dry mass; 459 Coarse root nitrogen (N) content per coarse root dry mass; 475 Fine root nitrogen (N) content per fine root dry mass; 618 Bark nitrogen (N) content per bark dry mass; 668 Plant nitrogen (N) content per plant dry mass; 684 Reproductive organ nitrogen (N) content per reproductive structures dry mass; 690 Twig nitrogen (N) content per twig dry mass; 854 Coarse woody debris (CWD) branch: nitrogen (N) content per branch CWD dry mass; 876 Coarse woody debris (CWD): nitrogen (N) content per CWD dry mass; 887 Litter (cone, strobilus) nitrogen (N) content per dry mass; 908 Litter (fine root) nitrogen (N) content per fine root litter dry mass; 954 Litter (leaf) nitrogen (N) content per leaf litter dry mass; 1199 Litter twig nitrogen (N) content per twig dry mass; 1229 Wood nitrogen (N) content per wood dry mass; 1262 Coarse woody debris (CWD) root: nitrogen (N) content per coarse root CWD dry mass; 2035 Fine root (absorptive) nitrogen (N) content per absorptive fine root dry mass; 2291 Fine root (transport) nitrogen (N) content per transport fine root dry mass; 2547 Belowground plant organ nitrogen (N) content per belowground plant organ dry mass; 2882 Litter (other than leaf: twigs, bark, flowers...) nitrogen (N) content per litter dry mass; 2987 Cone (strobilus) nitrogen (N) content per cone dry mass; 3455 Wood (heartwood) nitrogen (N) content per heartwood dry mass; 3522 Litter decomposition: nitrogen (N) content per litter dry mass; 3704 Branch wood nitrogen (N) content per dry mass; 3710 Branch bark nitrogen (N) content per dry mass; 3793 Bark: dead bark nitrogen (N) content per dry mass; 3922 Trap nitrogen (N) content per trap dry mass; 3958 Fruit (harvest organ) nitrogen (N) content per dry mass |
+| `BERVO:0002339` Plant tissue carbon content | 72 Litter carbon (C) content per litter dry mass; 84 Root carbon (C) content per root dry mass; 407 Stem carbon (C) content per stem dry mass; 447 Branch carbon (C) content per branch dry mass; 456 Coarse root carbon (C) content per coarse root dry mass; 471 Fine root carbon (C) content per fine root dry mass; 617 Bark carbon (C) content per bark dry mass; 691 Twig carbon content per twig dry mass; 775 Shoot carbon (C) content per shoot dry mass; 841 Coarse woody debris (CWD) branch: carbon (C) content per branch CWD dry mass; 868 Coarse woody debris (CWD): carbon (C) content per CWD dry mass; 898 Litter (fine root) carbon (C) content per fine root litter dry mass; 944 Litter (leaf) carbon (C) content per leaf litter dry mass; 1058 Coarse woody debris (CWD) root: carbon (C) content per coarse root CWD dry mass; 1527 Coarse root carbon (C) content per coarse root dry mass; 2039 Fine root (absorptive) carbon (C) content per absorptive fine root dry mass; 2295 Fine root (transport) carbon (C) content per transport fine root dry mass; 2551 Belowground plant organ carbon (C) content per belowground plant organ dry mass; 2883 Litter (other than leaf: twigs, bark, flowers…) carbon (C) content per litter dry mass; 3368 Wood (sapwood) carbon (C) content per dry mass; 3369 Wood (heartwood) carbon (C) content per heartwood dry mass; 3709 Branch bark carbon (C) content per dry mass; 3792 Bark: dead bark carbon (C) content per dry mass; 3923 Trap carbon (C) content per trap dry mass; 3959 Fruit (harvest organ) carbon (C) content per dry mass |
+| `BERVO:0002340` Plant tissue nitrogen content | 70 Litter nitrogen (N) content per litter dry mass; 80 Root nitrogen (N) content per root dry mass; 339 Shoot nitrogen (N) content per shoot dry mass; 406 Stem nitrogen (N) content per stem dry mass; 450 Branch nitrogen (N) content per branch dry mass; 459 Coarse root nitrogen (N) content per coarse root dry mass; 475 Fine root nitrogen (N) content per fine root dry mass; 618 Bark nitrogen (N) content per bark dry mass; 684 Reproductive organ nitrogen (N) content per reproductive structures dry mass; 690 Twig nitrogen (N) content per twig dry mass; 854 Coarse woody debris (CWD) branch: nitrogen (N) content per branch CWD dry mass; 876 Coarse woody debris (CWD): nitrogen (N) content per CWD dry mass; 887 Litter (cone, strobilus) nitrogen (N) content per dry mass; 908 Litter (fine root) nitrogen (N) content per fine root litter dry mass; 954 Litter (leaf) nitrogen (N) content per leaf litter dry mass; 1199 Litter twig nitrogen (N) content per twig dry mass; 1229 Wood nitrogen (N) content per wood dry mass; 1262 Coarse woody debris (CWD) root: nitrogen (N) content per coarse root CWD dry mass; 2035 Fine root (absorptive) nitrogen (N) content per absorptive fine root dry mass; 2291 Fine root (transport) nitrogen (N) content per transport fine root dry mass; 2547 Belowground plant organ nitrogen (N) content per belowground plant organ dry mass; 2882 Litter (other than leaf: twigs, bark, flowers...) nitrogen (N) content per litter dry mass; 2987 Cone (strobilus) nitrogen (N) content per cone dry mass; 3455 Wood (heartwood) nitrogen (N) content per heartwood dry mass; 3704 Branch wood nitrogen (N) content per dry mass; 3710 Branch bark nitrogen (N) content per dry mass; 3793 Bark: dead bark nitrogen (N) content per dry mass; 3922 Trap nitrogen (N) content per trap dry mass; 3958 Fruit (harvest organ) nitrogen (N) content per dry mass |
 | `BERVO:0002369` Specific leaf area | 69 Litter SLA (leaf area per leaf dry mass, specific leaf area, 1/LMA of leaf litter) |
 | `BERVO:0002370` Leaf dry matter content | 3055 Leaf dry mass per fresh mass (cotyledons, cotyledon LDMC) |
 | `BERVO:0002374` Specific root length | 614 Fine root length per fine root dry mass (specific fine root length, SRL); 1550 Coarse root length per coarse root dry mass (specific coarse root length, SRL); 2062 Fine root (absorptive) length per absorptive fine root dry mass (specific absorptive fine root lengt; 2318 Fine root (transport) length per transport fine root dry mass (specific transport fine root length, |
@@ -169,6 +184,9 @@ species attributes.
 | 3111 | Leaf area (in case of compound leaves: leaflet, petiole included) | `BERVO:0002368` Individual leaf area | The area of one leaflet of a compound leaf, not of the whole leaf. |
 | 3113 | Leaf area (in case of compound leaves: leaflet, undefined if petiole is in- or excluded) | `BERVO:0002368` Individual leaf area | The area of one leaflet of a compound leaf, not of the whole leaf. |
 | 3402 | Leaf water content total | `BERVO:0000176` Leaf water content | The BERVO term is water per unit leaf carbon, an EcoSIM parameter. |
+| 3521 | Litter decomposition: carbon (C) content per litter dry mass | `BERVO:0002339` Plant tissue carbon content | From litter decomposition studies, where the value may be taken at a stated time after the start; check the TRY data release before mapping it to the static tissue term. |
+| 3522 | Litter decomposition: nitrogen (N) content per litter dry mass | `BERVO:0002340` Plant tissue nitrogen content | From litter decomposition studies, where the value may be taken at a stated time after the start; check the TRY data release before mapping it to the static tissue term. |
+| 3527 | Litter decomposition: carbon/nitrogen (C/N) ratio | `BERVO:0002055` Plant tissue carbon to nitrogen mass ratio | From litter decomposition studies, where the value may be taken at a stated time after the start; check the TRY data release before mapping it to the static tissue term. |
 | 3656 | Leaf rubisco content per dry mass | `BERVO:0000562` Leaf rubisco content | An EcoSIM parameter; the mass basis is not stated as dry mass. |
 | 4046 | Stem diameter growth | `BERVO:0002346` Stem diameter increment | The BERVO term is the increment at breast height over a stated period. |
 | 4083 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA) of total leaf area | `BERVO:0002369` Specific leaf area | Uses the total leaf area rather than the one-sided area. |

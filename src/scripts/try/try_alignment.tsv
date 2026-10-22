@@ -546,7 +546,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 665	Leaf respiration rate in the dark minus respiration in light, mass based	Photosynthesis and gas exchange	gap			
 666	Photosynthesis oxygenation capacity (Farquhar model)	Photosynthesis and gas exchange	gap			
 667	Leaf nitrogen (N) content per dry mass (cotyledons)	Leaf	broader	BERVO:0002189		Cotyledon goes in contexts.
-668	Plant nitrogen (N) content per plant dry mass	Whole plant	broader	BERVO:0002340		The organ or status goes in contexts.
+668	Plant nitrogen (N) content per plant dry mass	Whole plant	match	BERVO:0002340		Whole plant; the term covers whole plant material.
 669	Plant biomass and allometry: Root nitrogen (N) content per plant nitrogen (N) content	Whole plant	gap			
 670	Plant biomass and allometry: Stem nitrogen (N) content per plant nitrogen (N) content	Whole plant	gap			
 671	Plant biomass and allometry: Leaf nitrogen (N) content per plant nitrogen (N) content	Whole plant	gap			
@@ -845,7 +845,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1017	Plant tree allometry model parameters	Whole plant	gap			
 1019	Coarse root to fine root mass ratio	Root	gap			
 1020	Plant biomass and allometry: Ccone (strobilus) dry mass per plant	Whole plant	gap			
-1021	Plant carbon/nitrogen (C/N) ratio	Whole plant	broader	BERVO:0002055		The organ or status goes in contexts.
+1021	Plant carbon/nitrogen (C/N) ratio	Whole plant	match	BERVO:0002055		Whole plant; the term covers a whole plant.
 1022	Species genotype: genome size	Species genetics and phylogeny	gap			
 1023	Plant containing salt glands	Whole plant	gap			
 1024	Plant dead organ retainment: leaves, branches, flowers	Whole plant	gap			
@@ -1809,7 +1809,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3024	Leaf homeostatic regulation coefficient of N/P (nitrogen to phosphorus) ratio	Leaf	gap			
 3025	Plant wet biomass	Whole plant	gap			
 3026	Leaf phosphorus (P) retranslocation prior to leaf senescence	Leaf	gap			
-3027	Plant carbon (C) content per plant dry mass	Whole plant	broader	BERVO:0002339		The organ or status goes in contexts.
+3027	Plant carbon (C) content per plant dry mass	Whole plant	match	BERVO:0002339		Whole plant; the term covers whole plant material.
 3028	Plant phosphorus (P) content per plant dry mass	Whole plant	gap			
 3029	Root dry mass per soil layer	Root	gap			
 3030	Root length per soil layer	Root	gap			
@@ -2134,13 +2134,13 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3518	Stem carbon/phosporus (C/P) ratio	Stem, wood and bark	gap			
 3519	Litter carbon/phosporus (C/P) ratio	Litter and woody debris	gap			
 3520	Litter decomposition: fraction of mass remaining	Litter and woody debris	gap			
-3521	Litter decomposition: carbon (C) content per litter dry mass	Litter and woody debris	broader	BERVO:0002339		The organ or status goes in contexts.
-3522	Litter decomposition: nitrogen (N) content per litter dry mass	Litter and woody debris	broader	BERVO:0002340		The organ or status goes in contexts.
+3521	Litter decomposition: carbon (C) content per litter dry mass	Litter and woody debris	related	BERVO:0002339		From litter decomposition studies, where the value may be taken at a stated time after the start; check the TRY data release before mapping it to the static tissue term.
+3522	Litter decomposition: nitrogen (N) content per litter dry mass	Litter and woody debris	related	BERVO:0002340		From litter decomposition studies, where the value may be taken at a stated time after the start; check the TRY data release before mapping it to the static tissue term.
 3523	Litter decomposition: phosphorus (P) content per litter dry mass	Litter and woody debris	gap			
 3524	Litter decomposition: fraction of carbon (C) remaining	Litter and woody debris	gap			
 3525	Litter decomposition: fraction of nitrogen (N) remaining	Litter and woody debris	gap			
 3526	Litter decomposition: fraction of phosphorus (P) remaining	Litter and woody debris	gap			
-3527	Litter decomposition: carbon/nitrogen (C/N) ratio	Litter and woody debris	broader	BERVO:0002055		The organ or status goes in contexts.
+3527	Litter decomposition: carbon/nitrogen (C/N) ratio	Litter and woody debris	related	BERVO:0002055		From litter decomposition studies, where the value may be taken at a stated time after the start; check the TRY data release before mapping it to the static tissue term.
 3528	Litter decomposition: carbon/phosphorus (C/P) ratio	Litter and woody debris	gap			
 3529	Litter decomposition: nitrogen/phosphorus (N/P) ratio	Litter and woody debris	gap			
 3530	Leaf carbon/potassium (C/K) ratio	Leaf	gap			
@@ -2604,7 +2604,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 4023	Plot nitrogen content of non-dominant species per dry mass	Plot and stand	gap			
 4024	Plot aboveground biomass per ground area	Plot and stand	gap			
 4025	Plot canopy height	Plot and stand	match	BERVO:0001967		
-4028	Plot dominant species	Species ecology and distribution	species_attribute			
+4028	Plot dominant species	Plot and stand	species_attribute			
 4029	Leaf vein length per leaf area	Leaf	gap			
 4030	Tiller thickness	Stem, wood and bark	gap			
 4031	Tiller length	Stem, wood and bark	gap			

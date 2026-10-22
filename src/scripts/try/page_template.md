@@ -16,13 +16,15 @@ schema come next, and further slices follow from the gaps listed here.
 
 | Source | Revision | Used for |
 | --- | --- | --- |
-| `try_traits.csv`, attached to issue #27 | 2026-01-29 | The {{N_TRAITS}} TRY traits, as `trait_id` and `trait_name` only. It is byte-identical to `data/try_traits.csv` in plant-functional-traits. |
+| `try_traits.csv`, attached to issue #27 | attached 2026-01-29, fetched 2026-10-22 | The {{N_TRAITS}} TRY traits, as `trait_id` and `trait_name` only. It is byte-identical to `data/try_traits.csv` in plant-functional-traits. |
 | [`bioepic-data/plant-functional-traits`](https://github.com/bioepic-data/plant-functional-traits), `src/plant_functional_traits/schema/plant_functional_traits.yaml` | `d083f09` | Which TRY traits the harmonized schema uses, in the `pft_slot` column |
 
 The TRY list has no units, definitions or value types. A term added from it takes those
 from the TRY data release documentation or from the literature the trait comes from, not
 from the list. TRY cuts trait names at 100 characters, so a few end mid-word; they are
-kept as given.
+kept as given. Eleven names occur twice under different IDs, such as 456 and 1527, both
+*Coarse root carbon (C) content per coarse root dry mass*. The map keeps both IDs and
+points them at the same term.
 
 ## The map
 
@@ -43,7 +45,7 @@ The map is `src/scripts/try/try_alignment.tsv`, one row per TRY trait:
 | `broader` | A general BERVO term covers the trait, with the organ or status in `contexts`. For example, *Stem nitrogen (N) content per stem dry mass* is `Plant tissue nitrogen content` with `Stem` in `contexts`. |
 | `related` | A BERVO term is close but is not the same quantity, such as a reciprocal, a different normalisation, or an EcoSIM parameter defined differently. A term for the TRY trait is still needed. |
 | `gap` | BERVO has no term. |
-| `species_attribute` | The trait records where a species occurs, its habitat or indicator values, its legal status, its phylogeny or its uses, rather than a property of a plant. These are set aside for a decision on scope, not rejected. |
+| `species_attribute` | The trait records where a species occurs, its habitat or indicator values, its legal status, its phylogeny or its uses, or it names a species, such as the dominant species of a plot or the herbivores of a leaf, rather than recording a property of a plant. These are set aside for a decision on scope, not rejected. |
 
 Groups and the `species_attribute` status were first assigned by rules on the trait name,
 then checked by hand. The C, N and C/N rows in `broader` were assigned the same way. Root
@@ -55,6 +57,16 @@ A `broader` row can only be recorded in full once BERVO has a concept for its or
 status. Some have none yet, such as twig, bark, cone, fruit, heartwood, sapwood, coarse
 woody debris, absorptive and transport fine roots, and senescent. Those rows say so in
 `note`, and the concepts are part of the slice that adds terms for that organ.
+
+## When an EcoSIM term is a match
+
+Many BERVO plant terms are EcoSIM parameters with `Plant functional type` in `contexts`.
+Such a term is a `match` when it is the same quantity, as `Seed length` and `Root
+porosity` are. A value for a plant functional type is the trait's value for that type, as
+a TRY species mean is the trait's value for a species, and BERVO keeps one term per
+quantity whoever reports it. An EcoSIM variable resolved over something else, such as a
+branch, a node or a grid cell, measures a different thing and is `related`: `Leaf number`
+counts the leaves on a branch, not on a plant, and `Leaf area` is a grid-cell total.
 
 ## How the alignment is recorded on a term
 
