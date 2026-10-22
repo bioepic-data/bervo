@@ -40784,7 +40784,7 @@
         <obo:IAO_0000115>Sapwood cross-sectional area of a stem or branch divided by the leaf area it supplies.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Stem, branch or twig sapwood cross-sectional area per supported leaf area (Huber value)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 171. TRY applies it to stems, branches and twigs alike.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 171. TRY applies it to stems, branches and twigs alike. Huber first defined it per unit mass of the leaves supplied, and some older studies use that basis; TRY trait 171 is per unit leaf area, as this term is.</rdfs:comment>
         <rdfs:label>Huber value</rdfs:label>
         <bervo:BERVO_has_unit>m2{sapwood}.m-2{leaf}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
