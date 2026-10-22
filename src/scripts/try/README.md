@@ -29,6 +29,12 @@ notes. A clause about contexts must be the fixed sentence `Twig goes in contexts
 gloss in a sentence of its own. A note that says BERVO has no concept yet must not name one
 it has. `CONTEXTS` in the builder gives the concepts for each form of trait name.
 
+Litter traits take `Dead vegetation` (`BERVO:8001175`) in contexts, not `Litter`
+(`BERVO:8000055`). `Litter` is an environmental material, fallen material forming the
+surface organic layer, so it does not hold fine-root litter in the soil, and it sits outside
+the `Vegetation` concepts the organ is paired with. Use `Dead vegetation` for all litter, as
+decided on #214.
+
 When a slice adds a term for a TRY trait, add the trait to `MAPPED` in the script, put the
 sentence on the term, run `just try-doc`, and commit the map and the page with the change.
 `related` and `gap` rows are recorded in the map only.
