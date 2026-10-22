@@ -76,7 +76,8 @@ counts the leaves on a branch, not on a plant, and `Leaf area` is a grid-cell to
   contexts: 80, 406.`, following the pattern of the AmeriFlux BADM fields mapped to the same
   terms.
 - A `match` term takes the TRY trait name as a `Related Synonyms` value, unless the name is
-  already its label or is a label or synonym of another term. TRY's own abbreviations,
+  already its label, is a label or synonym of another term, or is cut off at 100
+  characters in the TRY list. TRY's own abbreviations,
   such as SLA, LDMC and SSD, go in `Exact Synonyms`.
 - TRY has no registered prefix, and its trait pages have no stable URL, so there is no
   `TRY:` cross-reference in `DbXrefs`.
