@@ -89,7 +89,7 @@ disagree. `tests/test_try_alignment.py` runs it.
 
 ## Summary
 
-151 TRY traits map to a BERVO term. 2458 are gaps and 52 are
+157 TRY traits map to a BERVO term. 2452 are gaps and 52 are
 species attributes.
 
 | Group | `match` | `broader` | `related` | `gap` | `species_attribute` | Total |
@@ -106,10 +106,10 @@ species attributes.
 | Seed, fruit and dispersal | 5 | 2 |  | 106 |  | 113 |
 | Species ecology and distribution |  |  |  | 3 | 47 | 50 |
 | Species genetics and phylogeny |  |  |  | 13 | 3 | 16 |
-| Stem, wood and bark | 3 | 13 | 1 | 306 |  | 323 |
+| Stem, wood and bark | 3 | 19 | 1 | 300 |  | 323 |
 | Twig, branch, shoot and bud |  | 11 |  | 160 |  | 171 |
 | Whole plant | 11 |  | 2 | 256 |  | 269 |
-| **Total** | **41** | **93** | **17** | **2458** | **52** | **2661** |
+| **Total** | **41** | **99** | **17** | **2452** | **52** | **2661** |
 
 ## Matches
 
@@ -168,6 +168,7 @@ species attributes.
 | `BERVO:0002340` Plant tissue nitrogen content | 70 Litter nitrogen (N) content per litter dry mass; 80 Root nitrogen (N) content per root dry mass; 339 Shoot nitrogen (N) content per shoot dry mass; 406 Stem nitrogen (N) content per stem dry mass; 450 Branch nitrogen (N) content per branch dry mass; 459 Coarse root nitrogen (N) content per coarse root dry mass; 475 Fine root nitrogen (N) content per fine root dry mass; 618 Bark nitrogen (N) content per bark dry mass; 684 Reproductive organ nitrogen (N) content per reproductive structures dry mass; 690 Twig nitrogen (N) content per twig dry mass; 854 Coarse woody debris (CWD) branch: nitrogen (N) content per branch CWD dry mass; 876 Coarse woody debris (CWD): nitrogen (N) content per CWD dry mass; 887 Litter (cone, strobilus) nitrogen (N) content per dry mass; 908 Litter (fine root) nitrogen (N) content per fine root litter dry mass; 954 Litter (leaf) nitrogen (N) content per leaf litter dry mass; 1199 Litter twig nitrogen (N) content per twig dry mass; 1229 Wood nitrogen (N) content per wood dry mass; 1262 Coarse woody debris (CWD) root: nitrogen (N) content per coarse root CWD dry mass; 2035 Fine root (absorptive) nitrogen (N) content per absorptive fine root dry mass; 2291 Fine root (transport) nitrogen (N) content per transport fine root dry mass; 2547 Belowground plant organ nitrogen (N) content per belowground plant organ dry mass; 2882 Litter (other than leaf: twigs, bark, flowers...) nitrogen (N) content per litter dry mass; 2987 Cone (strobilus) nitrogen (N) content per cone dry mass; 3455 Wood (heartwood) nitrogen (N) content per heartwood dry mass; 3704 Branch wood nitrogen (N) content per dry mass; 3710 Branch bark nitrogen (N) content per dry mass; 3793 Bark: dead bark nitrogen (N) content per dry mass; 3922 Trap nitrogen (N) content per trap dry mass; 3958 Fruit (harvest organ) nitrogen (N) content per dry mass |
 | `BERVO:0002369` Specific leaf area | 69 Litter SLA (leaf area per leaf dry mass, specific leaf area, 1/LMA of leaf litter) |
 | `BERVO:0002370` Leaf dry matter content | 3055 Leaf dry mass per fresh mass (cotyledons, cotyledon LDMC) |
+| `BERVO:0002371` Stem specific density | 1204 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: twigs and branches; 3452 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: heartwood; 3472 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: sapwood; 3473 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: branch; 3736 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: twig; 3877 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: branch |
 | `BERVO:0002374` Specific root length | 614 Fine root length per fine root dry mass (specific fine root length, SRL); 1550 Coarse root length per coarse root dry mass (specific coarse root length, SRL); 2062 Fine root (absorptive) length per absorptive fine root dry mass (specific absorptive fine root lengt; 2318 Fine root (transport) length per transport fine root dry mass (specific transport fine root length, |
 | `BERVO:0002375` Root diameter | 896 Fine root diameter; 1526 Coarse root diameter; 2038 Fine root (absorptive) diameter; 2294 Fine root (transport) diameter |
 | `BERVO:0002376` Root tissue density | 1525 Coarse root tissue density (coarse root dry mass per coarse root volume); 1781 Fine root tissue density (fine root dry mass per fine root volume); 2037 Fine root (absorptive) tissue density (absorptive fine root dry mass per absorptive fine root volume; 2293 Fine root (transport) tissue density (transport fine root dry mass per transport fine root volume) |

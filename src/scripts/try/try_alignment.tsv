@@ -1021,7 +1021,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1201	Twig dry mass	Twig, branch, shoot and bud	gap			
 1202	Twig length	Twig, branch, shoot and bud	gap			
 1203	Twig number of leaves per twig	Twig, branch, shoot and bud	gap			
-1204	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: twigs and branches	Stem, wood and bark	gap			
+1204	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: twigs and branches	Stem, wood and bark	broader	BERVO:0002371		The organ or status goes in contexts. BERVO has no Twig concept yet.
 1205	Wood vessels surrounded by tracheids (vasicentric tracheids)	Stem, wood and bark	gap			
 1206	Plant vegetative reproduction: pattern forming	Whole plant	gap			
 1207	Plant vegetative reproduction: spread distance	Whole plant	gap			
@@ -2070,7 +2070,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3449	Plant biomass and allometry: Coarse root dry mass per plant	Whole plant	gap			
 3450	Plant biomass and allometry: Root dry mass per plant	Whole plant	gap			
 3451	Plant biomass and allometry: Plant dry mass	Whole plant	gap			
-3452	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: heartwood	Stem, wood and bark	gap			
+3452	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: heartwood	Stem, wood and bark	broader	BERVO:0002371		The organ or status goes in contexts. BERVO has no Heartwood concept yet.
 3453	Wood (sapwood) nitrogen content per dry mass	Stem, wood and bark	gap			
 3455	Wood (heartwood) nitrogen (N) content per heartwood dry mass	Stem, wood and bark	broader	BERVO:0002340		The organ or status goes in contexts. BERVO has no Heartwood concept yet.
 3456	Leaf dry mass per branch	Leaf	gap			
@@ -2085,8 +2085,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3467	Leaf sheath area per sheath dry mass (sheath SLA)	Leaf	gap			
 3468	Leaf water & osmotic potential: leaf water potential at turgor loss point	Leaf	gap			
 3471	Crown (canopy) form	Crown and canopy	gap			
-3472	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: sapwood	Stem, wood and bark	gap			
-3473	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: branch	Stem, wood and bark	gap			
+3472	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: sapwood	Stem, wood and bark	broader	BERVO:0002371		The organ or status goes in contexts. BERVO has no Sapwood concept yet.
+3473	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: branch	Stem, wood and bark	broader	BERVO:0002371		Branch goes in contexts.
 3474	Leaf chlorophyll content per leaf dry mass (Chl a)	Leaf	gap			
 3475	Leaf chlorophyll content per leaf dry mass (Chl b)	Leaf	gap			
 3476	Leaf chlorophyll content per leaf area (Chl a)	Leaf	gap			
@@ -2335,7 +2335,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3733	Twig wood total non-structural carbohydrate concentration	Twig, branch, shoot and bud	gap			
 3734	Twig total bark density	Twig, branch, shoot and bud	gap			
 3735	Twig inner bark density	Twig, branch, shoot and bud	gap			
-3736	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: twig	Stem, wood and bark	gap			
+3736	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: twig	Stem, wood and bark	broader	BERVO:0002371		The organ or status goes in contexts. BERVO has no Twig concept yet.
 3737	Twig relative total bark thickness	Twig, branch, shoot and bud	gap			
 3738	Twig relative inner bark thickness	Twig, branch, shoot and bud	gap			
 3739	Coarse root total bark thickness	Root	gap			
@@ -2475,7 +2475,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3874	Species cambial variants: successive cambia presence / absence	Whole plant	gap			
 3875	Wood background imperforate tracheary element type	Stem, wood and bark	gap			
 3876	Xylem vasicentric tracheid presence/absence	Stem, wood and bark	gap			
-3877	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: branch	Stem, wood and bark	gap			
+3877	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: branch	Stem, wood and bark	broader	BERVO:0002371		Branch goes in contexts.
 3878	Photosynthesis performance index	Photosynthesis and gas exchange	gap			
 3879	Plant size: patch length	Whole plant	gap			
 3880	Plant size: patch width	Whole plant	gap			

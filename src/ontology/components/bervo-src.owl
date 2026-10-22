@@ -40108,7 +40108,7 @@
         <oboInOwl:hasRelatedSynonym>Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: stem</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>wood density</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), after Perez-Harguindeguy et al. 2013 (doi:10.1071/BT12225), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait IDs: 4, 3764. For woody plants this is wood density; TRY records the density of twigs, branches, heartwood and sapwood as separate traits. Stalk density (BERVO:0000183) is the EcoSIM carbon density of stalk tissue.</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 4, 3764. For woody plants this is wood density; TRY traits mapped here, with the organ or status in contexts: 1204, 3452, 3472, 3473, 3736, 3877. Stalk density (BERVO:0000183) is the EcoSIM carbon density of stalk tissue.</rdfs:comment>
         <rdfs:label>Stem specific density</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
         <bervo:BERVO_has_unit>g.cm-3</bervo:BERVO_has_unit>
