@@ -70,7 +70,7 @@ just test              # validator + Makefile integration tests
 just build             # rebuild components/bervo-src.owl from the CSV
 just browser-data      # regenerate the docs browser JSON
 just ameriflux-doc     # regenerate docs/ameriflux-alignment.md
-just try-doc           # regenerate docs/try-alignment.md
+just try-doc           # rebuild the TRY alignment map, then docs/try-alignment.md
 just qc                # full ODK QC suite (needs Docker; slow)
 just docs              # build the mkdocs site locally
 just stats             # term counts by ID block and category
