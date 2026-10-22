@@ -16,7 +16,7 @@ schema come next, and further slices follow from the gaps listed here.
 
 | Source | Revision | Used for |
 | --- | --- | --- |
-| `try_traits.csv`, attached to issue #27 | 2026-01-29 | The {{N_TRAITS}} TRY traits, as `trait_id` and `trait_name` only. It is byte-identical to `data/try_traits.csv` in plant-functional-traits. |
+| `try_traits.csv`, attached to issue #27 | attached 2026-01-29, fetched 2026-10-22 | The {{N_TRAITS}} TRY traits, as `trait_id` and `trait_name` only. It is byte-identical to `data/try_traits.csv` in plant-functional-traits. |
 | [`bioepic-data/plant-functional-traits`](https://github.com/bioepic-data/plant-functional-traits), `src/plant_functional_traits/schema/plant_functional_traits.yaml` | `d083f09` | Which TRY traits the harmonized schema uses, in the `pft_slot` column |
 
 The TRY list has no units, definitions or value types. A term added from it takes those
