@@ -40611,6 +40611,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Xylem water potential at which a stated percentage of the hydraulic conductivity of the xylem is lost to embolism, most often 50 percent.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>P50</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>embolism vulnerability</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>xylem cavitation vulnerability</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>xylem hydraulic vulnerability</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 719. TRY records it at 20, 50 and 80 percent (P20, P50, P80); the percentage should be reported with the value.</rdfs:comment>
         <rdfs:label>Xylem vulnerability to embolism</rdfs:label>
