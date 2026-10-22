@@ -58582,8 +58582,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001307">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <obo:IAO_0000115>Leaf or part of a leaf of a carnivorous plant that is modified to catch and hold animals, such as a pitcher, a snap trap or a sticky leaf.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>trap</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:label>Trap</rdfs:label>
+        <rdfs:label>Carnivorous plant trap</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     

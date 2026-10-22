@@ -62,7 +62,7 @@ EXCLUDE = r"soil dry mass|microbial|fungal|bacterial|labile|structural|soluble|T
 CONTEXTS = [
     (r"absorptive", "Absorptive fine root"), (r"\(transport\)", "Transport fine root"),
     (r"^Coarse woody debris", "Coarse woody debris"), (r"heartwood", "Heartwood"), (r"sapwood", "Sapwood"),
-    (r"^Twig|Litter twig", "Twig"), (r"[Bb]ark", "Bark"), (r"[Cc]one", "Cone"), (r"^Trap", "Trap"),
+    (r"^Twig|Litter twig", "Twig"), (r"[Bb]ark", "Bark"), (r"[Cc]one", "Cone"), (r"^Trap", "Carnivorous plant trap"),
     (r"^Fruit", "Fruit"), (r"^Reproductive organ", "Reproductive structure"),
     (r"^Belowground", "Belowground plant material"), (r"senescent", "Senescent vegetation"),
 ]
