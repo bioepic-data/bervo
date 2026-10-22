@@ -58485,6 +58485,149 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_8001300 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001300">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000145"/>
+        <obo:IAO_0000115>Small terminal branch of a woody plant, usually the growth of the current or the last few seasons.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>The Plant Ontology has no twig term; branch (PO:0025073) is broader.</rdfs:comment>
+        <rdfs:label>Twig</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001301 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001301">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Tissues of a woody stem, branch or root outside the vascular cambium, including the phloem and the periderm.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0004518"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Bark</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001302 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001302">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
+        <obo:IAO_0000115>Inner wood of a stem or branch whose cells no longer conduct water or store reserves, often darkened by deposits.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0004512"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Heartwood</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001303 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001303">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
+        <obo:IAO_0000115>Outer wood of a stem or branch, between the heartwood and the vascular cambium, whose cells conduct water and store reserves.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0004513"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Sapwood</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001304 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001304">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001175"/>
+        <obo:IAO_0000115>Dead wood above a stated minimum diameter, lying on the ground or standing, such as fallen trunks and branches, snags and stumps.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>The minimum diameter differs between protocols, commonly 7.5 or 10 cm. Coarse wood (BERVO:8001183) is the size class, for live or dead wood. ENVO has no coarse woody debris term. Usually abbreviated CWD, which is not a synonym here because BERVO uses it for Climatic water deficit (BERVO:0001896).</rdfs:comment>
+        <rdfs:label>Coarse woody debris</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001305 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001305">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001189"/>
+        <obo:IAO_0000115>Structure of a flowering plant that develops from the ovary and encloses the seeds.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0009001"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Fruit</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001306 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001306">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001189"/>
+        <obo:IAO_0000115>Reproductive structure of a gymnosperm or other non-flowering plant, an axis bearing scales or sporophylls that carry the ovules, seeds or pollen.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0025083"/>
+        <oboInOwl:hasExactSynonym>strobilus</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Cone</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001307 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001307">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <obo:IAO_0000115>Leaf or part of a leaf of a carnivorous plant that is modified to catch and hold animals, such as a pitcher, a snap trap or a sticky leaf.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Trap</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001308 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001308">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001186"/>
+        <obo:IAO_0000115>Fine root of the most distal orders, usually the first to third, whose main function is the uptake of water and nutrients.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), after McCormack et al. 2015 (doi:10.1111/nph.13363), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>Transport fine root (BERVO:8001309) is the other functional class of fine roots.</rdfs:comment>
+        <rdfs:label>Absorptive fine root</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001309 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001309">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001186"/>
+        <obo:IAO_0000115>Fine root of the higher orders, with secondary growth, whose main function is the transport and storage of water, nutrients and carbon.</obo:IAO_0000115>
+        <rdfs:comment>Absorptive fine root (BERVO:8001308) is the other functional class of fine roots.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), after McCormack et al. 2015 (doi:10.1111/nph.13363), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Transport fine root</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001310 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001310">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001179"/>
+        <obo:IAO_0000115>Plant material that is undergoing or has completed senescence but is still attached to the plant.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>Includes senescent leaves sampled before they fall; once shed, the material is litter, Dead vegetation (BERVO:8001175).</rdfs:comment>
+        <rdfs:label>Senescent vegetation</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_9000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000000">
