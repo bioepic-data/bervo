@@ -40371,7 +40371,7 @@
         <rdfs:comment>TRY trait ID: 40. Most TRY values are light-saturated rates at ambient carbon dioxide (Amax); the light, carbon dioxide and temperature of measurement should be reported with the value.</rdfs:comment>
         <rdfs:label>Leaf net photosynthetic rate per unit dry mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
-        <bervo:BERVO_has_unit>nmol{CO2}.g-1.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>nmol{CO2}.g-1{dry_mass}.s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
@@ -40409,7 +40409,7 @@
         <rdfs:comment>TRY trait ID: 41. The temperature of measurement should be reported with the value.</rdfs:comment>
         <rdfs:label>Leaf dark respiration rate per unit dry mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
-        <bervo:BERVO_has_unit>nmol{CO2}.g-1.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>nmol{CO2}.g-1{dry_mass}.s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
@@ -40449,7 +40449,7 @@
         <rdfs:label>Leaf maximum carboxylation rate per unit dry mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
-        <bervo:BERVO_has_unit>nmol{CO2}.g-1.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>nmol{CO2}.g-1{dry_mass}.s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
@@ -40488,7 +40488,7 @@
         <rdfs:label>Leaf maximum electron transport rate per unit dry mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
-        <bervo:BERVO_has_unit>nmol{electron}.g-1.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>nmol{electron}.g-1{dry_mass}.s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
     </Class>
