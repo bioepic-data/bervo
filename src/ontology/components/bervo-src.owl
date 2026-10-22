@@ -58099,7 +58099,7 @@
         <obo:IAO_0000115>Part of a plant that is dispersed and can establish a new plant, such as a seed, a fruit, or a seed or fruit with the structures attached to it.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>dispersal unit</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>The Plant Ontology has no diaspore term.</rdfs:comment>
+        <rdfs:comment>The Plant Ontology has no diaspore term. It gives diaspore as a broad synonym of six terms, seed (PO:0009010), fruit (PO:0009001), shoot axis tuber (PO:0004543), plant spore (PO:0025017), corm (PO:0025355) and bulb (PO:0025356), each narrower than this concept, so none is cross-referenced.</rdfs:comment>
         <rdfs:label>Diaspore</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
