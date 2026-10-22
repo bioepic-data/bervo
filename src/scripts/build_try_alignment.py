@@ -82,6 +82,9 @@ CONTEXTS = [
     (r"^Bark", ["Bark"]),
     (r"^Branch", ["Branch"]),
     (r"^Twig", ["Twig"]),
+    # Wood zones come after the organ prefixes, so a name with both, such as gap trait 171
+    # "Stem, branch or twig sapwood ... (Huber value)", gets one concept; add a pattern for it
+    # here, before ^Twig, when a slice maps it.
     (r"heartwood", ["Heartwood"]),
     (r"sapwood", ["Sapwood"]),
     (r"^Stem wood", ["Wood", "Stem"]),
