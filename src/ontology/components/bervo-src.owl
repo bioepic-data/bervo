@@ -18798,9 +18798,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001096">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
         <obo:IAO_0000115>Root branching frequency refers to the number of root branches per unit length of root. This is an important attribute of root system architecture and can significantly influence root function, including nutrient and water uptake.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>root branching density</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Root branching intensity: number of root branches per root length</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>RootBranchFreq_pft</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>root branching density</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>root branching intensity</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
@@ -40858,11 +40858,11 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002411">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>Oven-dry mass of a root divided by its fresh mass.</obo:IAO_0000115>
+        <obo:IAO_0000115>Oven-dry mass of a root divided by its water-saturated fresh mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>RDMC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Root dry mass per root fresh mass (root dry matter content; RDMC)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 25 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 785. TRY traits mapped here, with what narrows each one in contexts: 695, 1538.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 785. TRY traits mapped here, with what narrows each one in contexts: 695, 1538. Freschet et al. 2021 (section XII.3) take the fresh mass after rehydrating the root where its saturation is in doubt and blotting off surface water.</rdfs:comment>
         <rdfs:label>Root dry matter content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>mg{dry_mass}.g-1{fresh_mass}</bervo:BERVO_has_unit>
@@ -40994,7 +40994,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002418">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>Depth below the soil surface reached by the roots of a plant, reported as a statistic such as the maximum or the median.</obo:IAO_0000115>
+        <obo:IAO_0000115>Depth below the soil surface reached by the roots of a plant, reported as a statistic such as the mean or maximum.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0001058"/>
         <oboInOwl:hasRelatedSynonym>Root rooting depth</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 25 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
