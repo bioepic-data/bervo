@@ -34523,7 +34523,7 @@
         <oboInOwl:hasExactSynonym>plant C:N mass ratio</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Plant carbon/nitrogen (C/N) ratio</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_CN_RATIO, AG_LIT_CN_RATIO, ROOT_CN_RATIO. Organ and status go in contexts. TRY trait ID: 1021. TRY traits mapped here, with the organ or status in contexts: 146, 150, 165, 166, 167, 409, 432, 694, 830, 842, 899, 945, 1055, 1059, 1154, 1260, 1545, 2057, 2313, 2569, 2884.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_CN_RATIO, AG_LIT_CN_RATIO, ROOT_CN_RATIO. Organ and status go in contexts. TRY trait ID: 1021. TRY traits mapped here, with what narrows each one in contexts: 146, 150, 165, 166, 167, 409, 432, 694, 830, 842, 899, 945, 1055, 1059, 1154, 1260, 1545, 2057, 2313, 2569, 2884.</rdfs:comment>
         <rdfs:label>Plant tissue carbon to nitrogen mass ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000917"/>
         <bervo:BERVO_has_unit>g{C}.g-1{N}</bervo:BERVO_has_unit>
@@ -36971,7 +36971,7 @@
         <oboInOwl:hasExactSynonym>mass-based leaf carbon content</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Leaf carbon (C) content per leaf dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 13. TRY traits mapped here, with the organ or status in contexts: 674, 3955.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 13. TRY traits mapped here, with what narrows each one in contexts: 674, 3955.</rdfs:comment>
         <rdfs:label>Leaf carbon content per unit dry mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>mg{C}.g-1{dry_mass}</bervo:BERVO_has_unit>
@@ -36990,7 +36990,7 @@
         <oboInOwl:hasExactSynonym>mass-based leaf nitrogen content</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Leaf nitrogen (N) content per leaf dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 14. TRY traits mapped here, with the organ or status in contexts: 667, 3954.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 14. TRY traits mapped here, with what narrows each one in contexts: 667, 3954.</rdfs:comment>
         <rdfs:label>Leaf nitrogen content per unit dry mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>mg{N}.g-1{dry_mass}</bervo:BERVO_has_unit>
@@ -39533,7 +39533,7 @@
         <obo:IAO_0000115>Mass of carbon per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Plant carbon (C) content per plant dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_C, AG_LIT_C, ROOT_C. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 3027. TRY traits mapped here, with the organ or status in contexts: 72, 84, 407, 447, 456, 471, 617, 691, 775, 841, 868, 898, 944, 1058, 1527, 2039, 2295, 2551, 2883, 3368, 3369, 3709, 3792, 3923, 3959.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_C, AG_LIT_C, ROOT_C. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 3027. TRY traits mapped here, with what narrows each one in contexts: 72, 84, 407, 447, 456, 471, 617, 691, 775, 841, 868, 898, 944, 1058, 1527, 2039, 2295, 2551, 2883, 3368, 3369, 3709, 3792, 3923, 3959.</rdfs:comment>
         <rdfs:label>Plant tissue carbon content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{C}.kg-1</bervo:BERVO_has_unit>
@@ -39550,7 +39550,7 @@
         <obo:IAO_0000115>Mass of nitrogen per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Plant nitrogen (N) content per plant dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_N, AG_LIT_N, ROOT_N. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 668. TRY traits mapped here, with the organ or status in contexts: 70, 80, 339, 406, 450, 459, 475, 618, 684, 690, 854, 876, 887, 908, 954, 1199, 1229, 1262, 2035, 2291, 2547, 2882, 2987, 3455, 3704, 3710, 3793, 3922, 3958.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_N, AG_LIT_N, ROOT_N. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 668. TRY traits mapped here, with what narrows each one in contexts: 70, 80, 339, 406, 450, 459, 475, 618, 684, 690, 854, 876, 887, 908, 954, 1199, 1229, 1262, 2035, 2291, 2547, 2882, 2987, 3455, 3704, 3710, 3793, 3922, 3958.</rdfs:comment>
         <rdfs:label>Plant tissue nitrogen content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{N}.kg-1</bervo:BERVO_has_unit>
@@ -40066,7 +40066,7 @@
         <oboInOwl:hasRelatedSynonym>Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole excluded</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole included</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), after Perez-Harguindeguy et al. 2013 (doi:10.1071/BT12225), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait IDs: 3086, 3115, 3116, 3117. TRY traits mapped here, with the organ or status in contexts: 69. The reciprocal of Leaf mass per area (BERVO:0002185). Leaf area:mass during growth (BERVO:0000783) is the EcoSIM specific leaf area of new growth.</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 3086, 3115, 3116, 3117. TRY traits mapped here, with what narrows each one in contexts: 69. The reciprocal of Leaf mass per area (BERVO:0002185). Leaf area:mass during growth (BERVO:0000783) is the EcoSIM specific leaf area of new growth.</rdfs:comment>
         <rdfs:label>Specific leaf area</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
@@ -40087,7 +40087,7 @@
         <oboInOwl:hasExactSynonym>LDMC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Leaf dry mass per leaf fresh mass (leaf dry matter content, LDMC)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), after Perez-Harguindeguy et al. 2013 (doi:10.1071/BT12225), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 47. TRY traits mapped here, with the organ or status in contexts: 3055.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 47. TRY traits mapped here, with what narrows each one in contexts: 3055.</rdfs:comment>
         <rdfs:label>Leaf dry matter content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>mg{dry_mass}.g-1{fresh_mass}</bervo:BERVO_has_unit>
@@ -40108,7 +40108,7 @@
         <oboInOwl:hasRelatedSynonym>Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: stem</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>wood density</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), after Perez-Harguindeguy et al. 2013 (doi:10.1071/BT12225), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait IDs: 4, 3764. For woody plants this is wood density; TRY traits mapped here, with the organ or status in contexts: 1204, 3452, 3472, 3473, 3736, 3877. Stalk density (BERVO:0000183) is the EcoSIM carbon density of stalk tissue.</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 4, 3764. For woody plants this is wood density; TRY traits mapped here, with what narrows each one in contexts: 1204, 3452, 3472, 3473, 3736, 3877. Stalk density (BERVO:0000183) is the EcoSIM carbon density of stalk tissue.</rdfs:comment>
         <rdfs:label>Stem specific density</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
         <bervo:BERVO_has_unit>g.cm-3</bervo:BERVO_has_unit>
@@ -40164,7 +40164,7 @@
         <oboInOwl:hasExactSynonym>SRL</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Root length per root dry mass (specific root length, SRL)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), after Perez-Harguindeguy et al. 2013 (doi:10.1071/BT12225), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 1080. TRY traits mapped here, with the organ or status in contexts: 614, 1550, 2062, 2318. Specific root length primary axes (BERVO:0001114) and Specific root length secondary axes (BERVO:0001115) are the EcoSIM values for each root axis order.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1080. TRY traits mapped here, with what narrows each one in contexts: 614, 1550, 2062, 2318. Specific root length primary axes (BERVO:0001114) and Specific root length secondary axes (BERVO:0001115) are the EcoSIM values for each root axis order.</rdfs:comment>
         <rdfs:label>Specific root length</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
@@ -40182,7 +40182,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
         <obo:IAO_0000115>Distance across a root segment, measured perpendicular to the long axis of the root.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 83. Usually reported as the mean of a sample of roots of one order or diameter class. TRY traits mapped here, with the organ or status in contexts: 896, 1526, 2038, 2294. Root diameter primary axes (BERVO:0001070) and Root diameter secondary axes (BERVO:0001071) are the EcoSIM values for each root axis order.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 83. Usually reported as the mean of a sample of roots of one order or diameter class. TRY traits mapped here, with what narrows each one in contexts: 896, 1526, 2038, 2294. Root diameter primary axes (BERVO:0001070) and Root diameter secondary axes (BERVO:0001071) are the EcoSIM values for each root axis order.</rdfs:comment>
         <rdfs:label>Root diameter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
         <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
@@ -40202,7 +40202,7 @@
         <oboInOwl:hasRelatedSynonym>Root dry mass per root volume (root density, root tissue density)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Root tissue density (root dry mass per root volume)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait IDs: 82, 116. TRY traits mapped here, with the organ or status in contexts: 1525, 1781, 2037, 2293. Not root mass density, which is root mass per unit volume of soil.</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 82, 116. TRY traits mapped here, with what narrows each one in contexts: 1525, 1781, 2037, 2293. Not root mass density, which is root mass per unit volume of soil.</rdfs:comment>
         <rdfs:label>Root tissue density</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
         <bervo:BERVO_has_unit>g.cm-3</bervo:BERVO_has_unit>
@@ -40272,7 +40272,7 @@
         <obo:IAO_0000115>Mass of phosphorus per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Plant phosphorus (P) content per plant dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 3028. TRY traits mapped here, with the organ or status in contexts: 71, 340, 616, 619, 620, 683, 685, 698, 828, 855, 863, 878, 909, 957, 1068, 2049, 2305, 2561, 2890, 2988, 3924, 4011. Organ and status go in contexts; litter is Dead vegetation. Plant phosphorus to carbon ratio (BERVO:0001856) is the same element relative to carbon.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3028. TRY traits mapped here, with what narrows each one in contexts: 71, 340, 616, 619, 620, 683, 685, 698, 828, 855, 863, 878, 909, 957, 1068, 2049, 2305, 2561, 2890, 2988, 3924, 4011. Organ and status go in contexts; litter is Dead vegetation. Plant phosphorus to carbon ratio (BERVO:0001856) is the same element relative to carbon.</rdfs:comment>
         <rdfs:label>Plant tissue phosphorus content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{P}.kg-1</bervo:BERVO_has_unit>
@@ -40289,7 +40289,7 @@
         <obo:IAO_0000115>Mass of nitrogen divided by the mass of phosphorus in a plant tissue, such as leaf, stem, or root, or in a whole plant.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>plant N:P mass ratio</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with the organ or status in contexts: 56, 686, 687, 688, 3011, 3516. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 56, 686, 687, 688, 3011, 3516. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
         <rdfs:label>Plant tissue nitrogen to phosphorus mass ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001298"/>
         <bervo:BERVO_has_unit>g{N}.g-1{P}</bervo:BERVO_has_unit>
@@ -40503,7 +40503,7 @@
         <oboInOwl:hasExactSynonym>gs</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Stomata conductance per leaf area</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 45. TRY traits mapped here, with the organ or status in contexts: 4032, 4037. Minimum stomatal resistance to carbon dioxide (BERVO:0000164) and Canopy stomatal resistance (BERVO:0000525) are EcoSIM resistances on a velocity basis, in s.m-1 and h.m-1. Their reciprocal is a conductance in m.s-1, which converts to this molar conductance only through the molar density of air, and so they are not the same quantity inverted.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 45. TRY traits mapped here, with what narrows each one in contexts: 4032, 4037. Minimum stomatal resistance to carbon dioxide (BERVO:0000164) and Canopy stomatal resistance (BERVO:0000525) are EcoSIM resistances on a velocity basis, in s.m-1 and h.m-1. Their reciprocal is a conductance in m.s-1, which converts to this molar conductance only through the molar density of air, and so they are not the same quantity inverted.</rdfs:comment>
         <rdfs:label>Leaf stomatal conductance</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001299"/>
         <bervo:BERVO_has_unit>mmol{H2O}.m-2.s-1</bervo:BERVO_has_unit>
@@ -40577,7 +40577,7 @@
         <oboInOwl:hasExactSynonym>single leaf dry mass</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Leaf dry mass (single leaf)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 55. TRY traits mapped here, with the organ or status in contexts: 3050.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 55. TRY traits mapped here, with what narrows each one in contexts: 3050.</rdfs:comment>
         <rdfs:label>Individual leaf dry mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>mg</bervo:BERVO_has_unit>
@@ -40634,7 +40634,7 @@
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000131"/>
         <oboInOwl:hasRelatedSynonym>Leaf water &amp; osmotic potential: leaf water potential</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 983. TRY traits mapped here, with the organ or status in contexts: 3541, 3542. Usually measured before dawn or at midday. Plant canopy total water potential (BERVO:0000587) is the EcoSIM value for a canopy.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 983. TRY traits mapped here, with what narrows each one in contexts: 3541, 3542. Usually measured before dawn or at midday. Plant canopy total water potential (BERVO:0000587) is the EcoSIM value for a canopy.</rdfs:comment>
         <rdfs:label>Leaf water potential</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000789"/>
         <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>

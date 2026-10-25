@@ -20,7 +20,7 @@ and the groups. A `match` or `broader` row is also recorded on the BERVO term, i
 | Status | Sentence on the term |
 | --- | --- |
 | `match` | `TRY trait ID: 14.` or `TRY trait IDs: 3108, 3109.` |
-| `broader` | `TRY traits mapped here, with the organ or status in contexts: 80, 406.` |
+| `broader` | `TRY traits mapped here, with what narrows each one in contexts: 80, 406.` |
 
 The generator fails when the two disagree, in either direction, and when the map names a
 term that does not exist or is obsolete, or misses or repeats a TRY trait. It also checks the
