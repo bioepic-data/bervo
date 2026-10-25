@@ -18798,12 +18798,13 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001096">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
         <obo:IAO_0000115>Root branching frequency refers to the number of root branches per unit length of root. This is an important attribute of root system architecture and can significantly influence root function, including nutrient and water uptake.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>root branching intensity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>root branching density</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Root branching intensity: number of root branches per root length</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>RootBranchFreq_pft</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>root branching intensity</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 3480.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3480. TRY also says branching intensity for the branching ratio, Root branching ratio (BERVO:0002415), so root branching intensity is only a related synonym here.</rdfs:comment>
         <rdfs:label>Root branching frequency</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>m-1</bervo:BERVO_has_unit>
@@ -40857,7 +40858,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002411">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>Oven-dry mass of a root divided by its water-saturated fresh mass.</obo:IAO_0000115>
+        <obo:IAO_0000115>Oven-dry mass of a root divided by its fresh mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>RDMC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Root dry mass per root fresh mass (root dry matter content; RDMC)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 25 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
@@ -40895,6 +40896,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
         <obo:IAO_0000115>Rate of carbon dioxide release by a root per unit of its dry mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>mass-based root respiration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>specific root respiration</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Root respiration rate per root dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 25 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 514. TRY traits mapped here, with what narrows each one in contexts: 1535, 1791, 2047, 2303. The temperature of measurement should be reported with the value. Distinct from Root autotrophic respiration (BERVO:0000434), the EcoSIM flux from the roots in a soil layer of a grid cell.</rdfs:comment>
@@ -40936,8 +40938,8 @@
         <obo:IAO_0000115>Number of roots of one branching order divided by the number of roots of the next higher order, which bear them.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>branching ratio</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Root branching intensity 1 (branching ratio): number of roots per higher order root</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 25 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 1295. TRY traits mapped here, with what narrows each one in contexts: 1841, 2097, 2353. Distinct from Root branching frequency (BERVO:0001096), which counts branches per unit length of root.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 25 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1295. TRY traits mapped here, with what narrows each one in contexts: 1841, 2097, 2353. Distinct from Root branching frequency (BERVO:0001096), which counts branches per unit length of root. Root orders are counted from the tips, which are first order, as in TRY and Freschet et al. 2021; under a developmental ordering, which counts from the base, the bearing root has the lower order.</rdfs:comment>
         <rdfs:label>Root branching ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -40955,12 +40957,12 @@
         <obo:IAO_0000115>Number of root tips per unit of root dry mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>SRTA</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Root tips per root dry mass (specific root tip abundance, SRTA)</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 25 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 25 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 1298. TRY traits mapped here, with what narrows each one in contexts: 1843, 2099.</rdfs:comment>
         <rdfs:label>Specific root tip abundance</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
-        <bervo:BERVO_has_unit>{tip}.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>{tips}.g-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
@@ -40992,12 +40994,11 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002418">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>Maximum depth below the soil surface reached by the roots of a plant.</obo:IAO_0000115>
+        <obo:IAO_0000115>Depth below the soil surface reached by the roots of a plant, reported as a statistic such as the maximum or the median.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0001058"/>
-        <oboInOwl:hasExactSynonym>maximum rooting depth</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Root rooting depth</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 25 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 6. TRY traits mapped here, with what narrows each one in contexts: 1521, 1777, 2545. Distinct from Rooting depth (BERVO:0002351), which is for a plant community.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 6. TRY traits mapped here, with what narrows each one in contexts: 1521, 1777. The TRY trait does not say which statistic its values are. Distinct from Rooting depth (BERVO:0002351), which is for a plant community.</rdfs:comment>
         <rdfs:label>Plant rooting depth</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000069"/>
         <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
@@ -41014,7 +41015,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
         <obo:IAO_0000115>Fraction of the length of a root that contains arbuscular mycorrhizal structures.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>AM colonization</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym>Mycorrhizal colonization AM: fraction of root length that contains arbuscular mycorrhizal structures</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 25 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 1430.</rdfs:comment>
         <rdfs:label>Arbuscular mycorrhizal root colonization</rdfs:label>
