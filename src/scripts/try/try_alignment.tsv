@@ -1635,7 +1635,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2537	Fine root (transport) length per soil volume	Fine root	gap			
 2538	Plant biomass and allometry: Fine root (transport) length per plant	Whole plant	gap			
 2543	Fine root (transport) debris decomposition rate constant	Fine root	gap			
-2545	Belowground plant organ rooting depth	Root	broader	BERVO:0002418		Belowground plant material goes in contexts.
+2545	Belowground plant organ rooting depth	Root	related	BERVO:0002418		Belowground plant organs include rhizomes and tubers as well as roots, so the depth is not only of roots.
 2546	Belowground plant organ/shoot ratio	Root	gap			
 2547	Belowground plant organ nitrogen (N) content per belowground plant organ dry mass	Root	broader	BERVO:0002340		Belowground plant material goes in contexts.
 2549	Belowground plant organ tissue density (belowground plant organ dry mass per belowground plant organ	Root	gap			

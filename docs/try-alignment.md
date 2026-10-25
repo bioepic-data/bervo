@@ -112,14 +112,14 @@ species attributes.
 | Moss and fern |  |  |  | 21 |  | 21 |
 | Photosynthesis and gas exchange | 10 | 2 | 1 | 100 |  | 113 |
 | Plot and stand | 1 |  |  | 8 | 1 | 10 |
-| Root | 16 | 25 | 6 | 361 |  | 408 |
+| Root | 16 | 24 | 7 | 361 |  | 408 |
 | Seed, fruit and dispersal | 5 | 2 |  | 106 |  | 113 |
 | Species ecology and distribution |  |  |  | 3 | 47 | 50 |
 | Species genetics and phylogeny |  |  |  | 13 | 3 | 16 |
 | Stem, wood and bark | 9 | 23 | 4 | 287 |  | 323 |
 | Twig, branch, shoot and bud |  | 14 | 1 | 156 |  | 171 |
 | Whole plant | 12 |  | 2 | 255 |  | 269 |
-| **Total** | **84** | **156** | **28** | **2341** | **52** | **2661** |
+| **Total** | **84** | **155** | **29** | **2341** | **52** | **2661** |
 
 ## Matches
 
@@ -237,7 +237,7 @@ species attributes.
 | `BERVO:0002415` Root branching ratio | 1841 Fine root branching intensity 1 (branching ratio): number of fine roots per higher order root; 2097 Fine root (absorptive) branching intensity 1 (branching ratio): number of absorptive fine roots per; 2353 Fine root (transport) branching intensity 1(branching ratio): number of transport fine roots per hig |
 | `BERVO:0002416` Specific root tip abundance | 1843 Root tips per fine root dry mass (specific fine root tip abundance, SRTA); 2099 Root tips per absorptive fine root dry mass (specific absorptive fine root tip abundance, SRTA) |
 | `BERVO:0002417` Root lifespan | 1809 Fine root persistence (lifespan, longevity); 2065 Fine root (absorptive) persistence (lifespan, longevity); 2321 Fine root (transport) persistence (lifespan, longevity) |
-| `BERVO:0002418` Plant rooting depth | 1521 Coarse root rooting depth; 1777 Fine root rooting depth; 2545 Belowground plant organ rooting depth |
+| `BERVO:0002418` Plant rooting depth | 1521 Coarse root rooting depth; 1777 Fine root rooting depth |
 
 ## Related terms
 
@@ -256,6 +256,7 @@ species attributes.
 | 1296 | Root branching intensity 2: number of root tips per higher order root length | `BERVO:0001096` Root branching frequency | Counts root tips per unit length of the bearing root; tips equal branches only where the branches are unbranched. |
 | 1435 | Mycorrhizal colonization: fraction of root length with mycorrhizla hyphae, arbuscules, or vesicles | `BERVO:0002419` Arbuscular mycorrhizal root colonization | Counts root length with hyphae, arbuscules or vesicles; hyphae alone need not be arbuscular mycorrhizal. |
 | 1508 | Root length per soil volume | `BERVO:0001103` Root length density in soil layers | The BERVO term is an EcoSIM variable per soil layer. |
+| 2545 | Belowground plant organ rooting depth | `BERVO:0002418` Plant rooting depth | Belowground plant organs include rhizomes and tubers as well as roots, so the depth is not only of roots. |
 | 3109 | Leaf area (in case of compound leaves: leaflet, petiole excluded) | `BERVO:0002368` Individual leaf area | The area of one leaflet of a compound leaf, not of the whole leaf. |
 | 3111 | Leaf area (in case of compound leaves: leaflet, petiole included) | `BERVO:0002368` Individual leaf area | The area of one leaflet of a compound leaf, not of the whole leaf. |
 | 3113 | Leaf area (in case of compound leaves: leaflet, undefined if petiole is in- or excluded) | `BERVO:0002368` Individual leaf area | The area of one leaflet of a compound leaf, not of the whole leaf. |

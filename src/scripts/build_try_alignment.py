@@ -267,7 +267,7 @@ MAPPED = [
     ("match", "BERVO:0002418", "6", ""),
     ("broader", "BERVO:0002418", "1521", ctx("Coarse root")),
     ("broader", "BERVO:0002418", "1777", ctx("Fine root")),
-    ("broader", "BERVO:0002418", "2545", ctx("Belowground plant material")),
+    ("related", "BERVO:0002418", "2545", "Belowground plant organs include rhizomes and tubers as well as roots, so the depth is not only of roots."),
     ("match", "BERVO:0002419", "1430", ""),
     ("related", "BERVO:0002419", "1435", "Counts root length with hyphae, arbuscules or vesicles; hyphae alone need not be arbuscular mycorrhizal."),
     ("match", "BERVO:0002420", "1431", ""),
