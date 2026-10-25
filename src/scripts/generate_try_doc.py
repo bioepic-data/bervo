@@ -32,7 +32,7 @@ MAPPED = {"match", "broader", "related"}
 # The two Comment sentences, as written by curators; see src/scripts/try/README.md.
 SENTENCES = {
     "match": re.compile(r"TRY trait IDs?: ([0-9, ]+)\."),
-    "broader": re.compile(r"TRY traits mapped here, with the organ or status in contexts: ([0-9, ]+)\."),
+    "broader": re.compile(r"TRY traits mapped here, with what narrows each one in contexts: ([0-9, ]+)\."),
 }
 problems = []
 

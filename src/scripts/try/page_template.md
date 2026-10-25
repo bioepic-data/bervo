@@ -16,9 +16,11 @@ leaf lifespan, thickness, tissue density, dry mass and phenology. The fourth add
 organ and status concepts the `broader` rows named but BERVO lacked, such as twig, bark,
 coarse woody debris and senescent vegetation. The fifth added plant hydraulics and water
 relations: xylem vulnerability to embolism, leaf water potentials, hydraulic conductance and
-conductivity, the Huber value and xylem conduit size. Still to come are the value lists of the
-categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms for the
-gaps listed here.
+conductivity, the Huber value and xylem conduit size. The sixth added root traits: dry
+matter content, lignin content, respiration rate, branching ratio, root tip abundance,
+lifespan, rooting depth and mycorrhizal colonization, with the root to shoot ratio. Still
+to come are the value lists of the categorical traits (woodiness, growth form, leaf type,
+leaf phenology) and terms for the gaps listed here.
 
 ## Sources
 
@@ -51,7 +53,7 @@ The map is `src/scripts/try/try_alignment.tsv`, written by
 | Status | Means |
 | --- | --- |
 | `match` | A BERVO term is the same quantity. |
-| `broader` | A general BERVO term covers the trait, with the organ or status in `contexts`. For example, *Stem nitrogen (N) content per stem dry mass* is `Plant tissue nitrogen content` with `Stem` in `contexts`. |
+| `broader` | A general BERVO term covers the trait, with what narrows it, such as an organ, a status or a time of day, in `contexts`. For example, *Stem nitrogen (N) content per stem dry mass* is `Plant tissue nitrogen content` with `Stem` in `contexts`. |
 | `related` | A BERVO term is close but is not the same quantity, such as a reciprocal, a different normalisation, or an EcoSIM parameter defined differently. A term for the TRY trait is still needed. |
 | `gap` | BERVO has no term. |
 | `species_attribute` | The trait records where a species occurs, its habitat or indicator values, its legal status, its phylogeny or its uses, or it names a species, such as the dominant species of a plot or the herbivores of a leaf, rather than recording a property of a plant. These are set aside for a decision on scope, not rejected. |
@@ -62,8 +64,8 @@ contents per unit of soil mass and root microbial biomass were excluded from the
 neither is the content of a plant tissue. Every `match` and `related` row was assigned
 by hand.
 
-A `broader` row is recorded with a concept for its organ or status in `contexts`. Where
-the trait name says which, the row's `note` names the concept, such as *Twig goes in
+A `broader` row is recorded with a concept for what narrows it in `contexts`: an organ, a
+status such as senescent, or a time of day such as predawn. Where the trait name says which, the row's `note` names the concept, such as *Twig goes in
 contexts.* Some TRY organs map to a BERVO concept with another name: a *belowground plant
 organ* is `Belowground plant material`, a *reproductive organ* is `Reproductive
 structure`, and *senescent* leaves take `Senescent vegetation`.
@@ -82,7 +84,7 @@ counts the leaves on a branch, not on a plant, and `Leaf area` is a grid-cell to
 
 - A `match` term records the ID in its `Comment` as `TRY trait ID: 14.`, or
   `TRY trait IDs: 3108, 3109.` when several TRY traits are the same quantity.
-- A `broader` term records the IDs as `TRY traits mapped here, with the organ or status in
+- A `broader` term records the IDs as `TRY traits mapped here, with what narrows each one in
   contexts: 80, 406.`, following the pattern of the AmeriFlux BADM fields mapped to the same
   terms.
 - A `match` term takes the TRY trait name as a `Related Synonyms` value, unless the name is
