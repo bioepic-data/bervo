@@ -39539,7 +39539,7 @@
         <obo:IAO_0000115>Mass of carbon per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Plant carbon (C) content per plant dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_C, AG_LIT_C, ROOT_C. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 3027. TRY traits mapped here, with what narrows each one in contexts: 72, 84, 407, 447, 456, 471, 617, 691, 775, 841, 868, 898, 944, 1058, 1527, 2039, 2295, 2551, 2883, 2944, 3368, 3369, 3709, 3792, 3923, 3959.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_C, AG_LIT_C, ROOT_C. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 3027. TRY traits mapped here, with what narrows each one in contexts: 72, 84, 407, 447, 456, 471, 617, 691, 775, 841, 868, 898, 944, 1058, 1527, 2039, 2295, 2551, 2883, 2944, 3368, 3369, 3709, 3790, 3792, 3923, 3957, 3959.</rdfs:comment>
         <rdfs:label>Plant tissue carbon content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{C}.kg-1</bervo:BERVO_has_unit>
@@ -39556,7 +39556,7 @@
         <obo:IAO_0000115>Mass of nitrogen per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Plant nitrogen (N) content per plant dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_N, AG_LIT_N, ROOT_N. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 668. TRY traits mapped here, with what narrows each one in contexts: 70, 80, 339, 406, 450, 459, 475, 618, 684, 690, 854, 876, 887, 908, 954, 1199, 1229, 1262, 2035, 2291, 2547, 2882, 2945, 2987, 3455, 3704, 3710, 3793, 3922, 3958.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_N, AG_LIT_N, ROOT_N. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 668. TRY traits mapped here, with what narrows each one in contexts: 70, 80, 339, 406, 450, 459, 475, 618, 684, 690, 854, 876, 887, 908, 954, 1199, 1229, 1262, 2035, 2291, 2547, 2882, 2945, 2987, 3453, 3455, 3704, 3710, 3791, 3793, 3922, 3956, 3958.</rdfs:comment>
         <rdfs:label>Plant tissue nitrogen content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{N}.kg-1</bervo:BERVO_has_unit>
@@ -41350,6 +41350,192 @@
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002438 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002438">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Radial distance from the vascular cambium to the outer surface of the bark of a stem.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>total bark thickness</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Stem total bark thickness</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 24, 3753. TRY traits mapped here, with what narrows each one in contexts: 3355, 3356, 3754. Usually measured at breast height on trees.</rdfs:comment>
+        <rdfs:label>Bark thickness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001301"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002439 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002439">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Oven-dry mass of a sample of bark divided by its fresh volume.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Bark density (bark dry mass per bark volume)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Stem total bark density</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 248, 3762. TRY traits mapped here, with what narrows each one in contexts: 3763, 3846. Stem specific density (BERVO:0002371) is the same measure for the wood.</rdfs:comment>
+        <rdfs:label>Bark density</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
+        <bervo:BERVO_has_unit>g.cm-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001301"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002440 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002440">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Oven-dry mass of a stem divided by its fresh mass.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>StDMC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Stem dry mass per stem fresh mass (stem dry matter content, StDMC)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1181. TRY traits mapped here, with what narrows each one in contexts: 3714. TRY&apos;s name does not say whether the fresh mass is taken at water saturation, as it is in Leaf dry matter content (BERVO:0002370) and Root dry matter content (BERVO:0002411); for wood, TRY 3714 says it is.</rdfs:comment>
+        <rdfs:label>Stem dry matter content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>mg{dry_mass}.g-1{fresh_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002441 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002441">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Rate of carbon dioxide release by a stem per unit of its dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>mass-based stem respiration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Stem respiration rate per stem dry mass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 519. The temperature of measurement should be reported with the value.</rdfs:comment>
+        <rdfs:label>Stem respiration rate per unit dry mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_has_unit>nmol{CO2}.g-1{dry_mass}.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002442 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002442">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Length of a stem divided by its oven-dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>SSL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Stem length per stem dry mass (stem specific length; SSL)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3553. Named like Stem specific density (BERVO:0002371), as TRY names it, rather than like Specific root length (BERVO:0002374).</rdfs:comment>
+        <rdfs:label>Stem specific length</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>m.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002443 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002443">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Radial width of one annual growth ring in the wood of a stem.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>annual ring width</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3483. Stem diameter increment (BERVO:0002346) is the change in stem diameter over a stated period.</rdfs:comment>
+        <rdfs:label>Tree ring width</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000197"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002444 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002444">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Rate of water flow through a stem or branch segment divided by the pressure gradient along it.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Kh</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after Sperry et al. 1988 (Plant, Cell &amp; Environment 11: 35-40), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3794. Divided by the sapwood area it is Sapwood-specific hydraulic conductivity (BERVO:0002406), and divided by the leaf area the segment supplies, Leaf-specific hydraulic conductivity (BERVO:0002405).</rdfs:comment>
+        <rdfs:label>Stem hydraulic conductivity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000813"/>
+        <bervo:BERVO_has_unit>kg{H2O}.m.s-1.MPa-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001311"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002445 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002445">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Cross-sectional area of the lumen of the water-conducting cells of the xylem of a stem, its vessels and tracheids, as a mean over a sample of them.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Stem conduit cross-sectional area (vessels and tracheids)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 170. TRY names the cross-sectional area of the conduit, which is measured on its lumen. Stem conduit diameter (BERVO:0002409) is the corresponding diameter.</rdfs:comment>
+        <rdfs:label>Stem conduit lumen area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_has_unit>um2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001311"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002446 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002446">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>End-to-end length of a water-conducting conduit of the xylem of a stem, either a vessel of joined vessel elements or a single tracheid.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1177. Not the length of a single vessel element.</rdfs:comment>
+        <rdfs:label>Stem conduit length</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>cm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001311"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002447 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002447">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Cross-sectional area of the sapwood of a stem, at the height of measurement.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>sapwood cross-sectional area</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Wood (sapwood) cross-sectional area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1095. Usually measured at breast height on trees. Huber value (BERVO:0002407) is the ratio of sapwood area to the leaf area it supplies.</rdfs:comment>
+        <rdfs:label>Sapwood area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_has_unit>cm2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001303"/>
     </Class>
     
 
@@ -59475,6 +59661,34 @@
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18059"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after ChEBI (CHEBI:18059), TRY alignment for issue #27</rdfs:comment>
         <rdfs:label>Lipid</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001318 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001318">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001301"/>
+        <obo:IAO_0000115>Living part of the bark, between the vascular cambium and the innermost periderm, mostly secondary phloem.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>living bark</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>No cross-reference: the Plant Ontology has bark (PO:0004518) but no inner or outer bark.</rdfs:comment>
+        <rdfs:label>Inner bark</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001319 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001319">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001301"/>
+        <obo:IAO_0000115>Dead part of the bark, outside the innermost periderm.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>rhytidome</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>No cross-reference: the Plant Ontology has bark (PO:0004518) but no inner or outer bark.</rdfs:comment>
+        <rdfs:label>Outer bark</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     

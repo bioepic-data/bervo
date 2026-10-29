@@ -21,9 +21,12 @@ matter content, lignin content, respiration rate, branching ratio, root tip abun
 lifespan, rooting depth and mycorrhizal colonization, with the root to shoot ratio. The
 seventh added seed, fruit and dispersal traits: seed and diaspore dimensions, seed fresh
 mass, terminal velocity, oil and protein content, seeds per fruit, dispersal distance,
-fruit size and mass, and the base temperature and water potential for germination. Still
-to come are the value lists of the categorical traits (woodiness, growth form, leaf type,
-leaf phenology) and terms for the gaps listed here.
+fruit size and mass, and the base temperature and water potential for germination. The
+eighth added stem, wood and bark traits: bark thickness and density, with inner and outer
+bark, stem dry matter content, respiration rate and specific length, tree ring width, stem
+hydraulic conductivity, conduit lumen area and length, and sapwood area. Still to come
+are the value lists of the categorical traits (woodiness, growth form, leaf type, leaf
+phenology) and terms for the gaps listed here.
 
 ## Sources
 
