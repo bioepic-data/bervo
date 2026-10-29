@@ -76,7 +76,8 @@ CONTEXTS = [
     (r"^Coarse root", ["Coarse root"]),
     (r"^Root", ["Root"]),
     (r"^Belowground", ["Belowground plant material"]),
-    (r"^Bark: dead bark", ["Bark", "Dead vegetation"]),
+    # TRY splits bark into alive and dead (3790-3793); alive is the inner bark, dead the outer.
+    (r"^Bark: dead bark", ["Outer bark"]),
     (r"^Branch bark", ["Bark", "Branch"]),
     (r"^Branch wood", ["Wood", "Branch"]),
     (r"^Bark", ["Bark"]),
@@ -322,8 +323,8 @@ MAPPED = [
     ("related", "BERVO:0001880", "518", "TRY does not say whether the woody area is projected, as in the BERVO term, or the total surface area."),
     # The rule in BROADER misses these: the names end in a qualifier after "dry mass",
     # or say "nitrogen content" without "(N)".
-    ("broader", "BERVO:0002339", "3790", ctx("Inner bark") + " TRY's alive bark is the living part of the bark."),
-    ("broader", "BERVO:0002340", "3791", ctx("Inner bark") + " TRY's alive bark is the living part of the bark."),
+    ("broader", "BERVO:0002339", "3790", ctx("Inner bark") + " TRY splits bark into alive and dead bark (3792, 3793); the alive bark is the inner bark."),
+    ("broader", "BERVO:0002340", "3791", ctx("Inner bark") + " TRY splits bark into alive and dead bark (3792, 3793); the alive bark is the inner bark."),
     ("broader", "BERVO:0002339", "3957", ctx("Stem", "Senescent vegetation")),
     ("broader", "BERVO:0002340", "3956", ctx("Stem", "Senescent vegetation")),
     ("broader", "BERVO:0002340", "3453", ctx("Sapwood")),

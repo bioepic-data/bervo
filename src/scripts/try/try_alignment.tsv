@@ -2389,10 +2389,10 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3787	Inflorescence osmotically active compounds per dry mass	Flower and reproduction	gap			
 3788	Inflorescence dry matter content (Inflorescence DMC)	Flower and reproduction	gap			
 3789	Inflorescence dry mass	Flower and reproduction	gap			
-3790	Bark carbon (C) content per dry mass (alive bark)	Stem, wood and bark	broader	BERVO:0002339		Inner bark goes in contexts. TRY's alive bark is the living part of the bark.
-3791	Bark nitrogen (N) content per dry mass (alive bark)	Stem, wood and bark	broader	BERVO:0002340		Inner bark goes in contexts. TRY's alive bark is the living part of the bark.
-3792	Bark: dead bark carbon (C) content per dry mass	Stem, wood and bark	broader	BERVO:0002339		Bark and Dead vegetation go in contexts.
-3793	Bark: dead bark nitrogen (N) content per dry mass	Stem, wood and bark	broader	BERVO:0002340		Bark and Dead vegetation go in contexts.
+3790	Bark carbon (C) content per dry mass (alive bark)	Stem, wood and bark	broader	BERVO:0002339		Inner bark goes in contexts. TRY splits bark into alive and dead bark (3792, 3793); the alive bark is the inner bark.
+3791	Bark nitrogen (N) content per dry mass (alive bark)	Stem, wood and bark	broader	BERVO:0002340		Inner bark goes in contexts. TRY splits bark into alive and dead bark (3792, 3793); the alive bark is the inner bark.
+3792	Bark: dead bark carbon (C) content per dry mass	Stem, wood and bark	broader	BERVO:0002339		Outer bark goes in contexts.
+3793	Bark: dead bark nitrogen (N) content per dry mass	Stem, wood and bark	broader	BERVO:0002340		Outer bark goes in contexts.
 3794	Stem hydraulic conductivity	Stem, wood and bark	match	BERVO:0002444		
 3795	Stem vessel lumen area	Stem, wood and bark	related	BERVO:0002445		Vessels only; conduits include tracheids.
 3796	Stem sap flow rate	Stem, wood and bark	related	BERVO:0001951		TRY does not give the basis of the rate; the BERVO term is per plant, and a sap flux density would be per unit sapwood area.
