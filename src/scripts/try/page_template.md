@@ -24,9 +24,12 @@ mass, terminal velocity, oil and protein content, seeds per fruit, dispersal dis
 fruit size and mass, and the base temperature and water potential for germination. The
 eighth added stem, wood and bark traits: bark thickness and density, with inner and outer
 bark, stem dry matter content, respiration rate and specific length, tree ring width, stem
-hydraulic conductivity, conduit lumen area and length, and sapwood area. Still to come
-are the value lists of the categorical traits (woodiness, growth form, leaf type, leaf
-phenology) and terms for the gaps listed here.
+hydraulic conductivity, conduit lumen area and length, and sapwood area. The ninth added
+root traits that TRY also splits into coarse, fine, absorptive and transport roots:
+non-structural carbohydrate and starch content, stele diameter, cortex thickness, conduit
+diameter, specific root area and turnover rate. Still to come are the value lists of the
+categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms for the
+gaps listed here.
 
 ## Sources
 

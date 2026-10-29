@@ -33113,7 +33113,7 @@
         <obo:IAO_0000115>Dry mass of plant material per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomassVegetation"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Biomass, vegetation&quot;: Total dry mass of plant material per unit area or volume. AmeriFlux BADM variable name: BIOMASS. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: ROOT_BIOMASS_TOT, ROOT_BIOMASS_FINE, ROOT_BIOMASS_CRS, SNAG_MASS. The current BADM standard reports one BIOMASS value with BIOMASS_ORGAN, BIOMASS_STATUS and BIOMASS_VEGTYPE, which map to the plant organ, vegetation status and plant functional type concepts. Snags, dead trees still standing, are biomass with BIOMASS_STATUS Dead Standing, so SNAG_MASS maps here; stumps go to Litter and debris mass (BERVO:0002338).</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Biomass, vegetation&quot;: Total dry mass of plant material per unit area or volume. AmeriFlux BADM variable name: BIOMASS. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: ROOT_BIOMASS_TOT, ROOT_BIOMASS_FINE, ROOT_BIOMASS_CRS, SNAG_MASS. The current BADM standard reports one BIOMASS value with BIOMASS_ORGAN, BIOMASS_STATUS and BIOMASS_VEGTYPE, which map to the plant organ, vegetation status and plant functional type concepts. Snags, dead trees still standing, are biomass with BIOMASS_STATUS Dead Standing, so SNAG_MASS maps here; stumps go to Litter and debris mass (BERVO:0002338). TRY traits mapped here, with what narrows each one in contexts: 457, 798, 1795, 2051, 2307, 2563.</rdfs:comment>
         <rdfs:label>Vegetation biomass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
@@ -33129,9 +33129,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001970"/>
         <obo:IAO_0000115>Dry mass of the living plant material above the ground surface, per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomassAboveGround"/>
+        <oboInOwl:hasRelatedSynonym>Plot aboveground biomass per ground area</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>above-ground biomass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Biomass, above-ground&quot;: The biomass is the mass of living biological organisms in a given area or ecosystem at a given time on or above the surface of the ground. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: AG_BIOMASS_TREE, AG_BIOMASS_SHRUB, AG_BIOMASS_GRASS, AG_BIOMASS_CROP, AG_BIOMASS_OTHER. The vegetation type goes in contexts.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Biomass, above-ground&quot;: The biomass is the mass of living biological organisms in a given area or ecosystem at a given time on or above the surface of the ground. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: AG_BIOMASS_TREE, AG_BIOMASS_SHRUB, AG_BIOMASS_GRASS, AG_BIOMASS_CROP, AG_BIOMASS_OTHER. The vegetation type goes in contexts. TRY trait ID: 4024. TRY traits mapped here, with what narrows each one in contexts: 448, 494, 524.</rdfs:comment>
         <rdfs:label>Aboveground biomass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
@@ -41358,7 +41359,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002438">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>Radial distance from the vascular cambium to the outer surface of the bark of a stem.</obo:IAO_0000115>
+        <obo:IAO_0000115>Radial distance from the vascular cambium to the outer surface of the bark of a stem or branch.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>total bark thickness</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Stem total bark thickness</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
@@ -41536,6 +41537,131 @@
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001303"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002448 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002448">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Mass of non-structural carbohydrates, sugars and starch, in a root per unit of its dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>root NSC concentration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>root TNC content</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Root total non-structural carbon (TNC) content per root dry mass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), section XIV.6, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 675. TRY traits mapped here, with what narrows each one in contexts: 1536, 1792, 2048, 2304. TRY expands TNC as total non-structural carbon; in the root literature TNC usually stands for total non-structural carbohydrates, the quantity defined here. TRY 1361, root non-structural carbon per root carbon, is a different quantity.</rdfs:comment>
+        <rdfs:label>Root non-structural carbohydrate content per unit dry mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{NSC}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000189"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002449 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002449">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Mass of starch in a root per unit of its dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Root starch content per dry mass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3147. TRY traits mapped here, with what narrows each one in contexts: 3187, 3224, 3261, 3298. Part of Root non-structural carbohydrate content per unit dry mass (BERVO:0002448).</rdfs:comment>
+        <rdfs:label>Root starch content per unit dry mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{starch}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001320"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002450 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002450">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Diameter of the stele of a root, the central cylinder of vascular tissue inside the endodermis, as a mean over a sample of roots.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1279. TRY traits mapped here, with what narrows each one in contexts: 1569, 1825, 2081, 2337.</rdfs:comment>
+        <rdfs:label>Root stele diameter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
+        <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001321"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002451 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002451">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Thickness of the ring of cortex between the stele and the epidermis of a root, as a mean over a sample of roots.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), section XIII.4, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY has no trait for roots in general. TRY traits mapped here, with what narrows each one in contexts: 1563, 1819, 2075, 2331.</rdfs:comment>
+        <rdfs:label>Root cortex thickness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001322"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002452 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002452">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Lumen diameter of the water-conducting cells of the xylem of a root, its vessels and tracheids, as a mean over a sample of them.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), section XIII.7, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1287. TRY traits mapped here, with what narrows each one in contexts: 1577, 1833, 2089, 2345. Stem conduit diameter (BERVO:0002409) is the same measure for a stem.</rdfs:comment>
+        <rdfs:label>Root conduit diameter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
+        <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001311"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002453 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002453">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Surface area of a root divided by its oven-dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>SRA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Root surface area per root dry mass (specific root area)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1089. TRY traits mapped here, with what narrows each one in contexts: 1557, 1813, 2069, 2325.</rdfs:comment>
+        <rdfs:label>Specific root area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>cm2.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002454 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002454">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Dry mass of roots produced per unit time divided by the dry mass of the standing root pool, usually expressed per year.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Root dry mass turnover rate</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), section XVI.2, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1418. TRY traits mapped here, with what narrows each one in contexts: 1699, 1955, 2211, 2467. Its reciprocal estimates the mean root lifespan; Root lifespan (BERVO:0002417) is the lifespan measured directly.</rdfs:comment>
+        <rdfs:label>Root turnover rate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_has_unit>a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
     </Class>
     
 
@@ -59672,7 +59798,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001301"/>
         <obo:IAO_0000115>Living part of the bark, between the vascular cambium and the innermost periderm, mostly secondary phloem.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>living bark</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after the Plant Ontology definition of bark (PO:0004518), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>No cross-reference: the Plant Ontology has bark (PO:0004518) but no inner or outer bark.</rdfs:comment>
         <rdfs:label>Inner bark</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -59686,9 +59812,48 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001301"/>
         <obo:IAO_0000115>Dead part of the bark, outside the innermost periderm.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>rhytidome</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after the Plant Ontology definition of bark (PO:0004518), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>No cross-reference: the Plant Ontology has bark (PO:0004518) but no inner or outer bark.</rdfs:comment>
         <rdfs:label>Outer bark</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001320 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001320">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Storage polysaccharide of plants, a glucan made of amylose and amylopectin.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28017"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after ChEBI (CHEBI:28017), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Starch</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001321 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001321">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Central column of a root or shoot axis, made of the primary vascular tissue and the ground tissue around it, bounded in a root by the pericycle.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0025197"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after the Plant Ontology (PO:0025197), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Stele</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001322 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001322">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Ground tissue between the vascular system and the epidermis of a root or shoot axis.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0005708"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after the Plant Ontology (PO:0005708), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Cortex</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
