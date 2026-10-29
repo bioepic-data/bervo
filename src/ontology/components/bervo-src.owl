@@ -12138,9 +12138,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000705">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The maximum linear dimension of seeds measured along their longest axis, important for species identification and seed quality assessment. This seed length measurement influences dispersal mechanisms, germination requirements, and seedling establishment success, representing genetic and environmental factors affecting reproductive strategies.</obo:IAO_0000115>
+        <obo:IAO_0000115>Longest dimension of a seed.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000146"/>
         <oboInOwl:hasRelatedSynonym>SeedMeanLen_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), replacing an earlier generated gloss, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:comment>TRY trait ID: 27. Seed width (BERVO:0002421) and Seed thickness (BERVO:0002422) are the other two dimensions.</rdfs:comment>
         <rdfs:label>Seed length</rdfs:label>
@@ -41072,7 +41073,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Smallest dimension of a seed, at right angles to both its length and its width.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000304"/>
-        <oboInOwl:hasExactSynonym>seed depth</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 238. Seed length (BERVO:0000705) and Seed width (BERVO:0002421) are the other two dimensions.</rdfs:comment>
         <rdfs:label>Seed thickness</rdfs:label>
@@ -41270,8 +41270,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Largest dimension of a single fruit at right angles to its length; the diameter of a round fruit.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0002627"/>
-        <oboInOwl:hasExactSynonym>fruit diameter</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Fruit width (diameter)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>fruit diameter</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 917.</rdfs:comment>
         <rdfs:label>Fruit width</rdfs:label>
