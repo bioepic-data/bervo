@@ -110,6 +110,7 @@ def ctx(*concepts):
 
 
 COTYLEDON = ctx("Cotyledon")
+SEED = ctx("Seed") + " TRY allows a value for the whole diaspore instead of the seed alone."
 
 
 # (status, BERVO term, TRY trait IDs, note), grouped by term.
@@ -272,6 +273,31 @@ MAPPED = [
     ("related", "BERVO:0002419", "1435", "Counts root length with hyphae, arbuscules or vesicles; hyphae alone need not be arbuscular mycorrhizal."),
     ("match", "BERVO:0002420", "1431", ""),
     ("related", "BERVO:0001103", "1508", "The BERVO term is an EcoSIM variable per soil layer."),
+    # Slice 7: seed, fruit and dispersal traits
+    ("match", "BERVO:0002421", "239", ""),
+    ("match", "BERVO:0002422", "238", ""),
+    ("match", "BERVO:0002423", "237", ""),
+    ("match", "BERVO:0002424", "236", ""),
+    ("match", "BERVO:0002425", "235", ""),
+    ("match", "BERVO:0002426", "3660", ""),
+    ("match", "BERVO:0002427", "66", "Measured on the diaspore, which may be more than the seed."),
+    ("match", "BERVO:0002428", "96", ""),
+    ("match", "BERVO:0002429", "97", ""),
+    ("match", "BERVO:0002430", "3614", ""),
+    ("related", "BERVO:0002430", "138", "Per reproduction unit, which TRY does not define; it may be a fruit, a flower or an inflorescence."),
+    ("related", "BERVO:0002430", "351", "Per diaspore rather than per fruit; the two differ where a fruit splits into several diaspores."),
+    ("related", "BERVO:0002430", "1103", "Per flower rather than per fruit; flowers that set no fruit count toward it."),
+    ("match", "BERVO:0002431", "193", ""),
+    ("match", "BERVO:0002432", "918", ""),
+    ("match", "BERVO:0002433", "917", ""),
+    ("match", "BERVO:0002434", "919", ""),
+    ("match", "BERVO:0002435", "4076", ""),
+    ("match", "BERVO:0002436", "3634", ""),
+    ("match", "BERVO:0002437", "3635", ""),
+    # The rule in BROADER misses these: the names end "(or diaspore)", not "dry mass".
+    ("broader", "BERVO:0002339", "2944", SEED),
+    ("broader", "BERVO:0002340", "2945", SEED),
+    ("broader", "BERVO:0002380", "3000", SEED),
 ]
 
 # The plant-functional-traits schema slot each TRY trait feeds

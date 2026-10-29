@@ -39537,7 +39537,7 @@
         <obo:IAO_0000115>Mass of carbon per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Plant carbon (C) content per plant dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_C, AG_LIT_C, ROOT_C. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 3027. TRY traits mapped here, with what narrows each one in contexts: 72, 84, 407, 447, 456, 471, 617, 691, 775, 841, 868, 898, 944, 1058, 1527, 2039, 2295, 2551, 2883, 3368, 3369, 3709, 3792, 3923, 3959.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_C, AG_LIT_C, ROOT_C. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 3027. TRY traits mapped here, with what narrows each one in contexts: 72, 84, 407, 447, 456, 471, 617, 691, 775, 841, 868, 898, 944, 1058, 1527, 2039, 2295, 2551, 2883, 2944, 3368, 3369, 3709, 3792, 3923, 3959.</rdfs:comment>
         <rdfs:label>Plant tissue carbon content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{C}.kg-1</bervo:BERVO_has_unit>
@@ -39554,7 +39554,7 @@
         <obo:IAO_0000115>Mass of nitrogen per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Plant nitrogen (N) content per plant dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_N, AG_LIT_N, ROOT_N. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 668. TRY traits mapped here, with what narrows each one in contexts: 70, 80, 339, 406, 450, 459, 475, 618, 684, 690, 854, 876, 887, 908, 954, 1199, 1229, 1262, 2035, 2291, 2547, 2882, 2987, 3455, 3704, 3710, 3793, 3922, 3958.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_N, AG_LIT_N, ROOT_N. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 668. TRY traits mapped here, with what narrows each one in contexts: 70, 80, 339, 406, 450, 459, 475, 618, 684, 690, 854, 876, 887, 908, 954, 1199, 1229, 1262, 2035, 2291, 2547, 2882, 2945, 2987, 3455, 3704, 3710, 3793, 3922, 3958.</rdfs:comment>
         <rdfs:label>Plant tissue nitrogen content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{N}.kg-1</bervo:BERVO_has_unit>
@@ -40276,7 +40276,7 @@
         <obo:IAO_0000115>Mass of phosphorus per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Plant phosphorus (P) content per plant dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 3028. TRY traits mapped here, with what narrows each one in contexts: 71, 340, 616, 619, 620, 683, 685, 698, 828, 855, 863, 878, 909, 957, 1068, 2049, 2305, 2561, 2890, 2988, 3924, 4011. Organ and status go in contexts; litter is Dead vegetation. Plant phosphorus to carbon ratio (BERVO:0001856) is the same element relative to carbon.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3028. TRY traits mapped here, with what narrows each one in contexts: 71, 340, 616, 619, 620, 683, 685, 698, 828, 855, 863, 878, 909, 957, 1068, 2049, 2305, 2561, 2890, 2988, 3000, 3924, 4011. Organ and status go in contexts; litter is Dead vegetation. Plant phosphorus to carbon ratio (BERVO:0001856) is the same element relative to carbon.</rdfs:comment>
         <rdfs:label>Plant tissue phosphorus content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{P}.kg-1</bervo:BERVO_has_unit>
@@ -41043,6 +41043,305 @@
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001316"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002421 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002421">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Largest dimension of a seed at right angles to its length.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 239. Seed length (BERVO:0000705) and Seed thickness (BERVO:0002422) are the other two dimensions.</rdfs:comment>
+        <rdfs:label>Seed width</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000197"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002422 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002422">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Smallest dimension of a seed, at right angles to both its length and its width.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>seed depth</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 238.</rdfs:comment>
+        <rdfs:label>Seed thickness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002423 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002423">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Longest dimension of a diaspore, including any structures attached to it when it is dispersed.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Dispersal unit length</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 237. The same as Seed length (BERVO:0000705) when the diaspore is a bare seed.</rdfs:comment>
+        <rdfs:label>Diaspore length</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001296"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001296"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002424 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002424">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Largest dimension of a diaspore at right angles to its length, including any structures attached to it when it is dispersed.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Dispersal unit width</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 236. The same as Seed width (BERVO:0002421) when the diaspore is a bare seed.</rdfs:comment>
+        <rdfs:label>Diaspore width</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000197"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001296"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001296"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002425 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002425">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Smallest dimension of a diaspore, at right angles to both its length and its width, including any structures attached to it when it is dispersed.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Dispersal unit thickness</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 235. The same as Seed thickness (BERVO:0002422) when the diaspore is a bare seed.</rdfs:comment>
+        <rdfs:label>Diaspore thickness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001296"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001296"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002426 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002426">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of a single seed as collected, before drying.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3660. Usually reported as the mean of a sample of seeds. Seed dry mass (BERVO:0002372) is the oven-dry mass.</rdfs:comment>
+        <rdfs:label>Seed fresh mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>mg</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002427 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002427">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Constant speed at which a diaspore falls through still air, reached when the drag on it balances its weight.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>diaspore terminal velocity</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 66. Measured on the diaspore, which may be a bare seed or a seed with a wing, a pappus or a fruit attached; TRY names it for the seed. A lower terminal velocity means the diaspore can be carried further by wind.</rdfs:comment>
+        <rdfs:label>Seed terminal velocity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000101"/>
+        <bervo:BERVO_has_unit>m.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001296"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001296"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002428 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002428">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of oil in a seed per unit of its mass.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Seed oil content per seed mass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 96. Seed oil is the lipid extracted from a seed with a nonpolar solvent, mostly triacylglycerols. TRY does not say whether the seed mass is a dry mass.</rdfs:comment>
+        <rdfs:label>Seed oil content per unit mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{oil}.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001317"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002429 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002429">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of protein in a seed per unit of its mass.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Seed protein content per seed mass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 97. TRY does not say whether the seed mass is a dry mass, or whether the protein was measured directly or estimated from the nitrogen content.</rdfs:comment>
+        <rdfs:label>Seed protein content per unit mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{protein}.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000333"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002430 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002430">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Number of seeds in a single fruit.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>seeds per fruit</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Fruit number of seeds (seeds per fruit)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3614. Usually reported as the mean of a sample of fruits.</rdfs:comment>
+        <rdfs:label>Seed number per fruit</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001305"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002431 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002431">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Distance from the parent plant to the place where a diaspore it releases comes to rest, reported as a statistic such as the mean or maximum.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 193. TRY does not say which statistic its values are.</rdfs:comment>
+        <rdfs:label>Dispersal distance</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000520"/>
+        <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001296"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002432 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002432">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Longest dimension of a single fruit.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 918.</rdfs:comment>
+        <rdfs:label>Fruit length</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001305"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001305"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002433 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002433">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Largest dimension of a single fruit at right angles to its length; the diameter of a round fruit.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>fruit diameter</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Fruit width (diameter)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 917.</rdfs:comment>
+        <rdfs:label>Fruit width</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000197"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001305"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001305"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002434 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002434">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Oven-dry mass of a single fruit, including its seeds.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 919. Usually reported as the mean of a sample of fruits.</rdfs:comment>
+        <rdfs:label>Fruit dry mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>g</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001305"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001305"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002435 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002435">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of a single fruit, including its seeds, as collected, before drying.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 4076. Usually reported as the mean of a sample of fruits.</rdfs:comment>
+        <rdfs:label>Fruit fresh mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>g</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001305"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001305"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002436 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002436">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Temperature below which a seed does not germinate, the base temperature of a thermal time model of germination.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>base temperature for germination</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after Bradford 2002 (Weed Science 50: 248-260), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3634. In a thermal time model, the germination rate of a seed rises in proportion to the temperature above the base temperature, up to an optimum.</rdfs:comment>
+        <rdfs:label>Seed germination base temperature</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
+        <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002437 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002437">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Water potential below which a seed does not germinate, the base water potential of a hydrotime model of germination.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>base water potential for germination</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after Bradford 2002 (Weed Science 50: 248-260), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3635. In a hydrotime model, the germination rate of a seed rises in proportion to the water potential above its base water potential. The base water potential varies among the seeds of a population, and a value is usually its median.</rdfs:comment>
+        <rdfs:label>Seed germination base water potential</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000789"/>
+        <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
     </Class>
     
 
@@ -59155,6 +59454,19 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 25 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>Not cross-referenced to a taxon: ectomycorrhizal fungi arose many times, in several lineages.</rdfs:comment>
         <rdfs:label>Ectomycorrhizal fungi</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001317 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001317">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Substance of biological origin that is soluble in nonpolar solvents, such as a fat, an oil, a wax or a sterol.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18059"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after ChEBI (CHEBI:18059), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Lipid</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
