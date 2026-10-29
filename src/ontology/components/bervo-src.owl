@@ -41074,7 +41074,7 @@
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000304"/>
         <oboInOwl:hasExactSynonym>seed depth</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 238.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 238. Seed length (BERVO:0000705) and Seed width (BERVO:0002421) are the other two dimensions.</rdfs:comment>
         <rdfs:label>Seed thickness</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
         <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
@@ -41236,7 +41236,7 @@
         <obo:IAO_0000115>Distance from the parent plant to the place where a diaspore it releases comes to rest, reported as a statistic such as the mean or maximum.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Dispersal distance</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 193. TRY does not say which statistic its values are. measured_ins is left empty because the distance is measured across the ground, not within the diaspore.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 193. TRY does not say which statistic its values are.</rdfs:comment>
         <rdfs:label>Seed dispersal distance</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000520"/>
         <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>

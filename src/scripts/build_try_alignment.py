@@ -280,7 +280,7 @@ MAPPED = [
     ("match", "BERVO:0002424", "236", ""),
     ("match", "BERVO:0002425", "235", ""),
     ("match", "BERVO:0002426", "3660", ""),
-    ("match", "BERVO:0002427", "66", "Measured on the diaspore, which may be more than the seed."),
+    ("match", "BERVO:0002427", "66", "TRY names it for the seed; what falls is the diaspore."),
     ("match", "BERVO:0002428", "96", ""),
     ("match", "BERVO:0002429", "97", ""),
     ("match", "BERVO:0002430", "3614", ""),

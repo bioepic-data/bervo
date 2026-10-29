@@ -154,7 +154,7 @@ species attributes.
 | 53 | Photosynthesis rate per leaf area | `BERVO:0002384` Leaf net photosynthetic rate per unit area |  |
 | 54 | Leaf respiration rate in the dark per leaf area | `BERVO:0002386` Leaf dark respiration rate per unit area |  |
 | 55 | Leaf dry mass (single leaf) | `BERVO:0002396` Individual leaf dry mass |  |
-| 66 | Seed terminal velocity | `BERVO:0002427` Diaspore terminal velocity | Measured on the diaspore, which may be more than the seed. |
+| 66 | Seed terminal velocity | `BERVO:0002427` Diaspore terminal velocity | TRY names it for the seed; what falls is the diaspore. |
 | 82 | Root tissue density (root dry mass per root volume) | `BERVO:0002376` Root tissue density |  |
 | 83 | Root diameter | `BERVO:0002375` Root diameter |  |
 | 88 | Root lignin content per root dry mass | `BERVO:0002412` Root lignin content per unit dry mass |  |
