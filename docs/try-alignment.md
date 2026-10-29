@@ -108,7 +108,7 @@ disagree. `tests/test_try_alignment.py` runs it.
 
 ## Summary
 
-363 TRY traits map to a BERVO term. 2246 are gaps and 52 are
+368 TRY traits map to a BERVO term. 2241 are gaps and 52 are
 species attributes.
 
 | Group | `match` | `broader` | `related` | `gap` | `species_attribute` | Total |
@@ -116,19 +116,19 @@ species attributes.
 | Crown and canopy |  |  |  | 21 |  | 21 |
 | Fine root |  | 61 | 3 | 339 |  | 403 |
 | Flower and reproduction |  | 5 |  | 121 |  | 126 |
-| Leaf | 31 | 13 | 9 | 364 | 1 | 418 |
+| Leaf | 31 | 14 | 9 | 363 | 1 | 418 |
 | Litter and woody debris |  | 35 | 5 | 159 |  | 199 |
 | Moss and fern |  |  |  | 21 |  | 21 |
 | Photosynthesis and gas exchange | 10 | 2 | 1 | 100 |  | 113 |
-| Plot and stand | 1 |  |  | 8 | 1 | 10 |
-| Root | 22 | 33 | 8 | 345 |  | 408 |
+| Plot and stand | 2 |  |  | 7 | 1 | 10 |
+| Root | 22 | 34 | 8 | 344 |  | 408 |
 | Seed, fruit and dispersal | 22 | 5 | 3 | 83 |  | 113 |
 | Species ecology and distribution |  |  |  | 3 | 47 | 50 |
 | Species genetics and phylogeny |  |  |  | 13 | 3 | 16 |
-| Stem, wood and bark | 21 | 34 | 10 | 258 |  | 323 |
-| Twig, branch, shoot and bud |  | 14 | 1 | 156 |  | 171 |
+| Stem, wood and bark | 21 | 35 | 10 | 257 |  | 323 |
+| Twig, branch, shoot and bud |  | 15 | 1 | 155 |  | 171 |
 | Whole plant | 12 |  | 2 | 255 |  | 269 |
-| **Total** | **119** | **202** | **42** | **2246** | **52** | **2661** |
+| **Total** | **120** | **206** | **42** | **2241** | **52** | **2661** |
 
 ## Matches
 
@@ -251,6 +251,7 @@ species attributes.
 | 3764 | Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: stem | `BERVO:0002371` Stem specific density |  |
 | 3794 | Stem hydraulic conductivity | `BERVO:0002444` Stem hydraulic conductivity |  |
 | 4010 | Stem specific hydraulic conductivity | `BERVO:0002406` Sapwood-specific hydraulic conductivity |  |
+| 4024 | Plot aboveground biomass per ground area | `BERVO:0001971` Aboveground biomass |  |
 | 4025 | Plot canopy height | `BERVO:0001967` Canopy height |  |
 | 4076 | Fruit fresh mass | `BERVO:0002435` Fruit fresh mass |  |
 
@@ -258,7 +259,7 @@ species attributes.
 
 | BERVO term | TRY traits |
 | --- | --- |
-| `BERVO:0001970` Vegetation biomass | 457 Coarse root dry mass per ground area; 798 Root dry mass per ground area; 1795 Fine root dry mass per ground area; 2051 Fine root (absorptive) dry mass per ground area; 2307 Fine root (transport) dry mass per ground area |
+| `BERVO:0001970` Vegetation biomass | 448 Branch dry mass per ground area; 457 Coarse root dry mass per ground area; 494 Leaf dry mass per ground area; 524 Stem dry mass per ground area; 798 Root dry mass per ground area; 1795 Fine root dry mass per ground area; 2051 Fine root (absorptive) dry mass per ground area; 2307 Fine root (transport) dry mass per ground area; 2563 Belowground plant organ dry mass per ground area |
 | `BERVO:0002055` Plant tissue carbon to nitrogen mass ratio | 146 Leaf carbon/nitrogen (C/N) ratio; 150 Litter carbon/nitrogen (C/N) ratio; 165 Stem carbon/nitrogen (C/N) ratio; 166 Coarse root carbon/nitrogen (C/N) ) ratio; 167 Fine root carbon/nitrogen (C/N) ratio; 409 Shoot carbon/nitrogen (C/N) ratio; 432 Coarse woody debris (CWD): carbon/nitrogen (C/N) ratio; 694 Twig carbon/nitrogen (C/N) ratio; 830 Bark carbon/nitrogen (C/N) ratio; 842 Coarse woody debris (CWD) branch: carbon/nitrogen (C/N) ratio; 899 Litter (fine root) carbon/nitrogen (C/N) ratio; 945 Litter (leaf) carbon/nitrogen (C/N) ratio; 1055 Root carbon/nitrogen (C/N) ratio; 1059 Coarse woody debris (CWD) root: carbon/nitrogen (C/N) ratio; 1154 Coarse woody debris (CWD) stem: carbon/nitrogen (C/N) ratio; 1260 Wood carbon/nitrogen (C/N) ratio; 1545 Coarse root carbon/nitrogen (C/N) ratio; 2057 Fine root (absorptive) carbon/nitrogen (C/N) ratio; 2313 Fine root (transport) carbon/nitrogen (C/N) ratio; 2569 Belowground plant organ carbon/nitrogen (C/N) ratio; 2884 Litter (other than leaf: twigs, bark, flowers…) C/N ratio |
 | `BERVO:0002188` Leaf carbon content per unit dry mass | 674 Leaf carbon (C) content per dry mass (cotyledons); 3955 Leaf carbon (C) content per dry mass (senescent leaves) |
 | `BERVO:0002189` Leaf nitrogen content per unit dry mass | 667 Leaf nitrogen (N) content per dry mass (cotyledons); 3954 Leaf nitrogen (N) content per dry mass (senescent leaves) |

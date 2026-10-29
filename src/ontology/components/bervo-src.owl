@@ -33113,7 +33113,7 @@
         <obo:IAO_0000115>Dry mass of plant material per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomassVegetation"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Biomass, vegetation&quot;: Total dry mass of plant material per unit area or volume. AmeriFlux BADM variable name: BIOMASS. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: ROOT_BIOMASS_TOT, ROOT_BIOMASS_FINE, ROOT_BIOMASS_CRS, SNAG_MASS. The current BADM standard reports one BIOMASS value with BIOMASS_ORGAN, BIOMASS_STATUS and BIOMASS_VEGTYPE, which map to the plant organ, vegetation status and plant functional type concepts. Snags, dead trees still standing, are biomass with BIOMASS_STATUS Dead Standing, so SNAG_MASS maps here; stumps go to Litter and debris mass (BERVO:0002338). TRY traits mapped here, with what narrows each one in contexts: 457, 798, 1795, 2051, 2307.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Biomass, vegetation&quot;: Total dry mass of plant material per unit area or volume. AmeriFlux BADM variable name: BIOMASS. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: ROOT_BIOMASS_TOT, ROOT_BIOMASS_FINE, ROOT_BIOMASS_CRS, SNAG_MASS. The current BADM standard reports one BIOMASS value with BIOMASS_ORGAN, BIOMASS_STATUS and BIOMASS_VEGTYPE, which map to the plant organ, vegetation status and plant functional type concepts. Snags, dead trees still standing, are biomass with BIOMASS_STATUS Dead Standing, so SNAG_MASS maps here; stumps go to Litter and debris mass (BERVO:0002338). TRY traits mapped here, with what narrows each one in contexts: 448, 457, 494, 524, 798, 1795, 2051, 2307, 2563.</rdfs:comment>
         <rdfs:label>Vegetation biomass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
@@ -33129,9 +33129,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001970"/>
         <obo:IAO_0000115>Dry mass of the living plant material above the ground surface, per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomassAboveGround"/>
+        <oboInOwl:hasRelatedSynonym>Plot aboveground biomass per ground area</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>above-ground biomass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Biomass, above-ground&quot;: The biomass is the mass of living biological organisms in a given area or ecosystem at a given time on or above the surface of the ground. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: AG_BIOMASS_TREE, AG_BIOMASS_SHRUB, AG_BIOMASS_GRASS, AG_BIOMASS_CROP, AG_BIOMASS_OTHER. The vegetation type goes in contexts.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Biomass, above-ground&quot;: The biomass is the mass of living biological organisms in a given area or ecosystem at a given time on or above the surface of the ground. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: AG_BIOMASS_TREE, AG_BIOMASS_SHRUB, AG_BIOMASS_GRASS, AG_BIOMASS_CROP, AG_BIOMASS_OTHER. The vegetation type goes in contexts. TRY trait ID: 4024.</rdfs:comment>
         <rdfs:label>Aboveground biomass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
@@ -41549,7 +41550,7 @@
         <oboInOwl:hasExactSynonym>root TNC content</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Root total non-structural carbon (TNC) content per root dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), section XIV.6, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 675. TRY traits mapped here, with what narrows each one in contexts: 1536, 1792, 2048, 2304. TRY calls it total non-structural carbon (TNC); the values are carbohydrate masses.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 675. TRY traits mapped here, with what narrows each one in contexts: 1536, 1792, 2048, 2304. TRY expands TNC as total non-structural carbon; in the root literature TNC usually stands for total non-structural carbohydrates, the quantity defined here. TRY 1361, root non-structural carbon per root carbon, is a different quantity.</rdfs:comment>
         <rdfs:label>Root non-structural carbohydrate content per unit dry mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>mg{NSC}.g-1{dry_mass}</bervo:BERVO_has_unit>
@@ -41651,7 +41652,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002454">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>Dry mass of roots produced over a period per unit dry mass of the standing root pool, usually per year.</obo:IAO_0000115>
+        <obo:IAO_0000115>Dry mass of roots produced per unit time divided by the dry mass of the standing root pool, usually expressed per year.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Root dry mass turnover rate</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), section XVI.2, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 1418. TRY traits mapped here, with what narrows each one in contexts: 1699, 1955, 2211, 2467. Its reciprocal estimates the mean root lifespan; Root lifespan (BERVO:0002417) is the lifespan measured directly.</rdfs:comment>

@@ -365,7 +365,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 445	Branch respiration temperature dependence	Twig, branch, shoot and bud	gap			
 446	Branch respiration rate per branch surface area	Twig, branch, shoot and bud	gap			
 447	Branch carbon (C) content per branch dry mass	Twig, branch, shoot and bud	broader	BERVO:0002339		Branch goes in contexts.
-448	Branch dry mass per ground area	Twig, branch, shoot and bud	gap			
+448	Branch dry mass per ground area	Twig, branch, shoot and bud	broader	BERVO:0001970		Branch goes in contexts.
 449	Plant biomass and allometry: Branch dry mass (alive, dead) per plant	Whole plant	gap			
 450	Branch nitrogen (N) content per branch dry mass	Twig, branch, shoot and bud	broader	BERVO:0002340		Branch goes in contexts.
 451	Branch nitrogen (N) content per ground area	Twig, branch, shoot and bud	gap			
@@ -399,7 +399,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 489	Crown (canopy) radiation extinction coefficient	Crown and canopy	gap			
 490	Leaf area fraction in given age class	Leaf	gap			
 491	Leaf carotenoid content per leaf area	Leaf	gap			
-494	Leaf dry mass per ground area	Leaf	gap			
+494	Leaf dry mass per ground area	Leaf	broader	BERVO:0001970		Leaf goes in contexts.
 496	Leaf respiration coefficient: growth	Photosynthesis and gas exchange	gap			
 498	Leaf mineral content per leaf dry mass	Leaf	gap			
 499	Leaf respiration coefficient: maintenance	Photosynthesis and gas exchange	gap			
@@ -426,7 +426,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 520	Stem respiration rate per stem surface area	Stem, wood and bark	related	BERVO:0002441		Per unit stem surface area rather than dry mass.
 521	Stem respiration rate per stem nitrogen (N) content	Stem, wood and bark	related	BERVO:0002441		Per unit stem nitrogen rather than dry mass.
 522	Stem respiration temperature dependence	Stem, wood and bark	gap			
-524	Stem dry mass per ground area	Stem, wood and bark	gap			
+524	Stem dry mass per ground area	Stem, wood and bark	broader	BERVO:0001970		Stem goes in contexts.
 526	Stem sapwood carbon (C) content: empirical form factor for calculation	Stem, wood and bark	gap			
 527	Stem respiration growth coefficient	Stem, wood and bark	gap			
 528	Stem nitrogen (N) content per unit ground area	Stem, wood and bark	gap			
@@ -1648,7 +1648,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2559	Belowground plant organ respiration rate per belowground plant organ dry mass	Root	gap			
 2561	Belowground plant organ phosphorus (P) content per belowground plant organ dry mass	Root	broader	BERVO:0002380		Belowground plant material goes in contexts.
 2562	Belowground plant organ dry mass per belowground plant organ fresh mass (belowground plant organ dry	Root	gap			
-2563	Belowground plant organ dry mass per ground area	Root	gap			
+2563	Belowground plant organ dry mass per ground area	Root	broader	BERVO:0001970		Belowground plant material goes in contexts.
 2564	Belowground plant organ morphological adaptations: aerenchyma	Root	gap			
 2568	Belowground plant organ calcium (Ca) content per belowground plant organ dry mass	Root	gap			
 2569	Belowground plant organ carbon/nitrogen (C/N) ratio	Root	broader	BERVO:0002055		Belowground plant material goes in contexts.
@@ -2602,7 +2602,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 4021	Plot aboveground biomass carbon (C) content per drymass	Plot and stand	gap			
 4022	Plot carbon content of non-dominant species per dry mass	Plot and stand	gap			
 4023	Plot nitrogen content of non-dominant species per dry mass	Plot and stand	gap			
-4024	Plot aboveground biomass per ground area	Plot and stand	gap			
+4024	Plot aboveground biomass per ground area	Plot and stand	match	BERVO:0001971		
 4025	Plot canopy height	Plot and stand	match	BERVO:0001967		
 4028	Plot dominant species	Plot and stand	species_attribute			
 4029	Leaf vein length per leaf area	Leaf	gap			
