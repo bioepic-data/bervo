@@ -154,7 +154,7 @@ species attributes.
 | 53 | Photosynthesis rate per leaf area | `BERVO:0002384` Leaf net photosynthetic rate per unit area |  |
 | 54 | Leaf respiration rate in the dark per leaf area | `BERVO:0002386` Leaf dark respiration rate per unit area |  |
 | 55 | Leaf dry mass (single leaf) | `BERVO:0002396` Individual leaf dry mass |  |
-| 66 | Seed terminal velocity | `BERVO:0002427` Seed terminal velocity | Measured on the diaspore, which may be more than the seed. |
+| 66 | Seed terminal velocity | `BERVO:0002427` Diaspore terminal velocity | Measured on the diaspore, which may be more than the seed. |
 | 82 | Root tissue density (root dry mass per root volume) | `BERVO:0002376` Root tissue density |  |
 | 83 | Root diameter | `BERVO:0002375` Root diameter |  |
 | 88 | Root lignin content per root dry mass | `BERVO:0002412` Root lignin content per unit dry mass |  |
@@ -168,7 +168,7 @@ species attributes.
 | 188 | Leaf water & osmotic potential: leaf osmotic potential at full turgor | `BERVO:0002401` Leaf osmotic potential at full turgor |  |
 | 189 | Leaf water & osmotic potential: leaf osmotic potential at turgor loss | `BERVO:0002400` Leaf water potential at turgor loss point | Osmotic and water potential are equal at turgor loss, where turgor is zero. |
 | 190 | Leaf elastic modulus | `BERVO:0002402` Leaf bulk modulus of elasticity |  |
-| 193 | Dispersal distance | `BERVO:0002431` Dispersal distance |  |
+| 193 | Dispersal distance | `BERVO:0002431` Seed dispersal distance |  |
 | 233 | Dispersal unit dry mass | `BERVO:0002373` Diaspore dry mass |  |
 | 235 | Dispersal unit thickness | `BERVO:0002425` Diaspore thickness |  |
 | 236 | Dispersal unit width | `BERVO:0002424` Diaspore width |  |

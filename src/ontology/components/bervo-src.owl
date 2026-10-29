@@ -12142,10 +12142,11 @@
         <oboInOwl:hasRelatedSynonym>SeedMeanLen_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 27.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 27. Seed width (BERVO:0002421) and Seed thickness (BERVO:0002422) are the other two dimensions.</rdfs:comment>
         <rdfs:label>Seed length</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
     </Class>
     
@@ -40130,7 +40131,7 @@
         <obo:IAO_0000115>Oven-dry mass of a single seed.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>seed mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), after Perez-Harguindeguy et al. 2013 (doi:10.1071/BT12225), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 26. Usually reported as the mean of a sample of seeds. Grain size at seeding (BERVO:0000821) is the EcoSIM seed mass at planting.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 26. Usually reported as the mean of a sample of seeds. Grain size at seeding (BERVO:0000821) is the EcoSIM seed mass at planting. Seed fresh mass (BERVO:0002426) is the mass before drying.</rdfs:comment>
         <rdfs:label>Seed dry mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>mg</bervo:BERVO_has_unit>
@@ -41052,6 +41053,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002421">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Largest dimension of a seed at right angles to its length.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000149"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 239. Seed length (BERVO:0000705) and Seed thickness (BERVO:0002422) are the other two dimensions.</rdfs:comment>
         <rdfs:label>Seed width</rdfs:label>
@@ -41069,6 +41071,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002422">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Smallest dimension of a seed, at right angles to both its length and its width.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000304"/>
         <oboInOwl:hasExactSynonym>seed depth</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 238.</rdfs:comment>
@@ -41158,10 +41161,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002427">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Constant speed at which a diaspore falls through still air, reached when the drag on it balances its weight.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>diaspore terminal velocity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Seed terminal velocity</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 66. Measured on the diaspore, which may be a bare seed or a seed with a wing, a pappus or a fruit attached; TRY names it for the seed. A lower terminal velocity means the diaspore can be carried further by wind.</rdfs:comment>
-        <rdfs:label>Seed terminal velocity</rdfs:label>
+        <rdfs:comment>TRY trait ID: 66. TRY names it for the seed, but what falls is the diaspore, which may be a bare seed or a seed with a wing, a pappus or a fruit attached. A lower terminal velocity means the diaspore can be carried further by wind.</rdfs:comment>
+        <rdfs:label>Diaspore terminal velocity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000101"/>
         <bervo:BERVO_has_unit>m.s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
@@ -41193,6 +41196,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002429">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of protein in a seed per unit of its mass.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000490"/>
         <oboInOwl:hasRelatedSynonym>Seed protein content per seed mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 97. TRY does not say whether the seed mass is a dry mass, or whether the protein was measured directly or estimated from the nitrogen content.</rdfs:comment>
@@ -41210,6 +41214,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002430">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Number of seeds in a single fruit.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000445"/>
         <oboInOwl:hasExactSynonym>seeds per fruit</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Fruit number of seeds (seeds per fruit)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
@@ -41229,9 +41234,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002431">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Distance from the parent plant to the place where a diaspore it releases comes to rest, reported as a statistic such as the mean or maximum.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Dispersal distance</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 193. TRY does not say which statistic its values are.</rdfs:comment>
-        <rdfs:label>Dispersal distance</rdfs:label>
+        <rdfs:comment>TRY trait ID: 193. TRY does not say which statistic its values are. measured_ins is left empty because the distance is measured across the ground, not within the diaspore.</rdfs:comment>
+        <rdfs:label>Seed dispersal distance</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000520"/>
         <bervo:BERVO_has_unit>m</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
@@ -41245,6 +41251,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002432">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Longest dimension of a single fruit.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0002626"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 918.</rdfs:comment>
         <rdfs:label>Fruit length</rdfs:label>
@@ -41262,6 +41269,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002433">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Largest dimension of a single fruit at right angles to its length; the diameter of a round fruit.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0002627"/>
         <oboInOwl:hasExactSynonym>fruit diameter</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Fruit width (diameter)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
