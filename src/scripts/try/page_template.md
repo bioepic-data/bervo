@@ -18,7 +18,10 @@ coarse woody debris and senescent vegetation. The fifth added plant hydraulics a
 relations: xylem vulnerability to embolism, leaf water potentials, hydraulic conductance and
 conductivity, the Huber value and xylem conduit size. The sixth added root traits: dry
 matter content, lignin content, respiration rate, branching ratio, root tip abundance,
-lifespan, rooting depth and mycorrhizal colonization, with the root to shoot ratio. Still
+lifespan, rooting depth and mycorrhizal colonization, with the root to shoot ratio. The
+seventh added seed, fruit and dispersal traits: seed and diaspore dimensions, seed fresh
+mass, terminal velocity, oil and protein content, seeds per fruit, dispersal distance,
+fruit size and mass, and the base temperature and water potential for germination. Still
 to come are the value lists of the categorical traits (woodiness, growth form, leaf type,
 leaf phenology) and terms for the gaps listed here.
 

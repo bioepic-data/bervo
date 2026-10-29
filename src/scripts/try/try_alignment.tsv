@@ -57,7 +57,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 62	Leaf inrolling of lamina	Leaf	gap			
 63	Stomata density	Photosynthesis and gas exchange	gap			
 65	Root type, root architecture	Root	gap			
-66	Seed terminal velocity	Seed, fruit and dispersal	gap			
+66	Seed terminal velocity	Seed, fruit and dispersal	match	BERVO:0002427		TRY names it for the seed; what falls is the diaspore.
 67	Stomata index (number of stomata per epidermis cells)	Photosynthesis and gas exchange	gap			
 68	Stomata cross-sectional area	Photosynthesis and gas exchange	gap			
 69	Litter SLA (leaf area per leaf dry mass, specific leaf area, 1/LMA of leaf litter)	Litter and woody debris	broader	BERVO:0002369		Leaf and Dead vegetation go in contexts.
@@ -87,8 +87,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 93	Root hemicellulose content per root dry mass	Root	gap			
 94	Leaf hemi-cellulose content per leaf dry mass	Leaf	gap			
 95	Seed germination rate (germination efficiency)	Seed, fruit and dispersal	gap			
-96	Seed oil content per seed mass	Seed, fruit and dispersal	gap			
-97	Seed protein content per seed mass	Seed, fruit and dispersal	gap			
+96	Seed oil content per seed mass	Seed, fruit and dispersal	match	BERVO:0002428		
+97	Seed protein content per seed mass	Seed, fruit and dispersal	match	BERVO:0002429		
 98	Seed storage behaviour	Seed, fruit and dispersal	gap			
 99	Fruit type	Seed, fruit and dispersal	gap			
 101	Leaf epidermis thickness	Leaf	gap			
@@ -121,7 +121,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 135	Photosynthesis rate per leaf nitrogen (N) content (photosynthetic nitrogen use efficiency, PNUE)	Photosynthesis and gas exchange	gap			
 136	Plant biomass and allometry: Stem dry mass per plant dry mass	Whole plant	gap			
 137	Plant biomass and allometry: Branch dry mass per plant dry mass	Whole plant	gap			
-138	Seed number per reproducton unit	Seed, fruit and dispersal	gap			
+138	Seed number per reproducton unit	Seed, fruit and dispersal	related	BERVO:0002430		Per reproduction unit, which TRY does not define; it may be a fruit, a flower or an inflorescence.
 140	Shoot branching type; shoot branching architecture	Twig, branch, shoot and bud	gap			
 142	Leaf perimeter	Leaf	gap			
 143	Leaf petiole length	Leaf	gap			
@@ -165,7 +165,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 189	Leaf water & osmotic potential: leaf osmotic potential at turgor loss	Leaf	match	BERVO:0002400		Osmotic and water potential are equal at turgor loss, where turgor is zero.
 190	Leaf elastic modulus	Leaf	match	BERVO:0002402		
 191	Leaf water content apoplastic	Leaf	gap			
-193	Dispersal distance	Seed, fruit and dispersal	gap			
+193	Dispersal distance	Seed, fruit and dispersal	match	BERVO:0002431		
 196	Species strategy type according to Grime	Species ecology and distribution	gap			
 197	Plant functional type (PFT)	Whole plant	related	BERVO:8000785		BERVO has Plant functional type as a concept, not a variable whose value is a PFT.
 199	Species tolerance to human impact	Whole plant	gap			
@@ -194,11 +194,11 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 232	Dispersal unit shape	Seed, fruit and dispersal	gap			
 233	Dispersal unit dry mass	Seed, fruit and dispersal	match	BERVO:0002373	diaspore_mass	
 234	Seed heteromorphy	Seed, fruit and dispersal	gap			
-235	Dispersal unit thickness	Seed, fruit and dispersal	gap			
-236	Dispersal unit width	Seed, fruit and dispersal	gap			
-237	Dispersal unit length	Seed, fruit and dispersal	gap			
-238	Seed thickness	Seed, fruit and dispersal	gap			
-239	Seed width	Seed, fruit and dispersal	gap			
+235	Dispersal unit thickness	Seed, fruit and dispersal	match	BERVO:0002425		
+236	Dispersal unit width	Seed, fruit and dispersal	match	BERVO:0002424		
+237	Dispersal unit length	Seed, fruit and dispersal	match	BERVO:0002423		
+238	Seed thickness	Seed, fruit and dispersal	match	BERVO:0002422		
+239	Seed width	Seed, fruit and dispersal	match	BERVO:0002421		
 242	Species occurrence range: mode of introduction	Species ecology and distribution	species_attribute			
 243	Species occurrence range: neophyt status	Species ecology and distribution	species_attribute			
 244	Species occurrence range: endemism	Species ecology and distribution	species_attribute			
@@ -291,7 +291,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 347	Plant mating system	Whole plant	gap			
 349	Seed shape	Seed, fruit and dispersal	gap			
 350	Seed morphology type	Seed, fruit and dispersal	gap			
-351	Seed number per dispersal unit	Seed, fruit and dispersal	gap			
+351	Seed number per dispersal unit	Seed, fruit and dispersal	related	BERVO:0002430		Per diaspore rather than per fruit; the two differ where a fruit splits into several diaspores.
 353	Seed germination temperature	Seed, fruit and dispersal	gap			
 356	Plant vegetative reproduction: clonal growth organ	Whole plant	gap			
 357	Plant vegetative reproduction: role of clonal growth organ in plant growth	Whole plant	gap			
@@ -747,9 +747,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 914	Flower heteromorphy	Flower and reproduction	gap			
 915	Flower sexual syndrome (dichogamy, cleistogamy, dioecious, monoecious)	Flower and reproduction	gap			
 916	Plant fragmentation	Whole plant	gap			
-917	Fruit width (diameter)	Seed, fruit and dispersal	gap			
-918	Fruit length	Seed, fruit and dispersal	gap			
-919	Fruit dry mass	Seed, fruit and dispersal	gap			
+917	Fruit width (diameter)	Seed, fruit and dispersal	match	BERVO:0002433		
+918	Fruit length	Seed, fruit and dispersal	match	BERVO:0002432		
+919	Fruit dry mass	Seed, fruit and dispersal	match	BERVO:0002434		
 920	Inflorescence diameter at base	Flower and reproduction	gap			
 921	Inflorescence diameter at top	Flower and reproduction	gap			
 922	Inflorescence nectar volume	Flower and reproduction	gap			
@@ -924,7 +924,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1100	Plant recruitment efficiency	Whole plant	gap			
 1101	Seed germinability group	Seed, fruit and dispersal	gap			
 1102	Seed germination type	Seed, fruit and dispersal	gap			
-1103	Seed number per flower	Seed, fruit and dispersal	gap			
+1103	Seed number per flower	Seed, fruit and dispersal	related	BERVO:0002430		Per flower rather than per fruit; flowers that set no fruit count toward it.
 1104	Inflorescence: seed number per inflorescence (total, fertile, infertile)	Flower and reproduction	gap			
 1105	Seed number per square meter	Seed, fruit and dispersal	gap			
 1106	Seed number per stem	Seed, fruit and dispersal	gap			
@@ -1727,8 +1727,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2941	Fruit surface type	Seed, fruit and dispersal	gap			
 2942	Species important species diagnostic traits	Species ecology and distribution	species_attribute			
 2943	Leaf respiration rate in the dark as fraction of photosynthetic carboxylation capacity (Vcmax)	Photosynthesis and gas exchange	gap			
-2944	Seed carbon (C) content per dry mass (or diaspore)	Seed, fruit and dispersal	gap			
-2945	Seed nitrogen (N) content per dry mass (or diaspore)	Seed, fruit and dispersal	gap			
+2944	Seed carbon (C) content per dry mass (or diaspore)	Seed, fruit and dispersal	broader	BERVO:0002339		Seed goes in contexts. TRY allows a value for the whole diaspore instead of the seed alone.
+2945	Seed nitrogen (N) content per dry mass (or diaspore)	Seed, fruit and dispersal	broader	BERVO:0002340		Seed goes in contexts. TRY allows a value for the whole diaspore instead of the seed alone.
 2946	Inflorescene: seed mass per inflorescence	Flower and reproduction	gap			
 2947	Inflorescence: number of flowers per inflorescence	Flower and reproduction	gap			
 2948	Paleo trait: leaf petiole width	Leaf	gap			
@@ -1782,7 +1782,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2997	Leaf magnesium (Mg) content per leaf	Leaf	gap			
 2998	Leaf sulphate (SO4) content per dry mass	Leaf	gap			
 2999	Flower number per plant	Flower and reproduction	gap			
-3000	Seed phosphorus (P) content per dry mass (or diaspore)	Seed, fruit and dispersal	gap			
+3000	Seed phosphorus (P) content per dry mass (or diaspore)	Seed, fruit and dispersal	broader	BERVO:0002380		Seed goes in contexts. TRY allows a value for the whole diaspore instead of the seed alone.
 3001	Leaf chlorophyll content in SPAD units relative	Leaf	gap			
 3002	Leaf mesophyll surface area exposed to internal airspace	Leaf	gap			
 3003	Leaf chloroplast surface area exposed to internal airspace	Leaf	gap			
@@ -2226,7 +2226,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3611	Shoot cellulose, hemicellulose and lignin content per dry mass	Twig, branch, shoot and bud	gap			
 3612	Shoot fraction of digestible protein, non structural carbohydrates, cellulose, hemicellulose and lig	Twig, branch, shoot and bud	gap			
 3613	Infructescence number of fruits (fruits per infructescence)	Seed, fruit and dispersal	gap			
-3614	Fruit number of seeds (seeds per fruit)	Seed, fruit and dispersal	gap			
+3614	Fruit number of seeds (seeds per fruit)	Seed, fruit and dispersal	match	BERVO:0002430		
 3615	Plant surviving (survival)	Whole plant	gap			
 3616	Plant flowering	Whole plant	gap			
 3617	Branch age of largest branch	Twig, branch, shoot and bud	gap			
@@ -2246,8 +2246,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3631	Spines length	Stem, wood and bark	gap			
 3632	Spines width	Stem, wood and bark	gap			
 3633	Spines per node	Stem, wood and bark	gap			
-3634	Seed germination base temperature	Seed, fruit and dispersal	gap			
-3635	Seed germination base water potential	Seed, fruit and dispersal	gap			
+3634	Seed germination base temperature	Seed, fruit and dispersal	match	BERVO:0002436		
+3635	Seed germination base water potential	Seed, fruit and dispersal	match	BERVO:0002437		
 3636	Seed coat thickness	Seed, fruit and dispersal	gap			
 3637	Shoot length	Twig, branch, shoot and bud	gap			
 3648	Stolon number of internodes	Stem, wood and bark	gap			
@@ -2262,7 +2262,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3657	Leaf rubisco content per chloroplast	Leaf	gap			
 3658	Leaf rubisco content per leaf chlorophyll content	Leaf	gap			
 3659	Branch sapwood lumen to sapwood area ratio	Twig, branch, shoot and bud	gap			
-3660	Seed fresh mass	Seed, fruit and dispersal	gap			
+3660	Seed fresh mass	Seed, fruit and dispersal	match	BERVO:0002426		
 3661	Twig leaf area per sapwood area ratio	Twig, branch, shoot and bud	related	BERVO:0002407		The reciprocal, leaf area per sapwood area, for a twig.
 3662	Twig modulus of elasticity (MOE)	Twig, branch, shoot and bud	gap			
 3663	Twig pith area	Twig, branch, shoot and bud	gap			
@@ -2652,7 +2652,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 4073	Reproductive organ staminate rachilla count	Flower and reproduction	gap			
 4074	Reproductive organ staminate rachilla length	Flower and reproduction	gap			
 4075	Photosynthesis C4: Vpmax25 per leaf area	Photosynthesis and gas exchange	gap			
-4076	Fruit fresh mass	Seed, fruit and dispersal	gap			
+4076	Fruit fresh mass	Seed, fruit and dispersal	match	BERVO:0002435		
 4077	Root length per root diameter bin	Root	gap			
 4078	Leaf paracotyledon dry mass per plant dry mass; paracotyledon weight fraction	Leaf	gap			
 4079	Bark volume relative to wood volume	Stem, wood and bark	gap			
