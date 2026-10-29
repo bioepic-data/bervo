@@ -365,16 +365,17 @@ MAPPED = [
     ("broader", "BERVO:0002454", "2211", ctx("Absorptive fine root")),
     ("broader", "BERVO:0002454", "2467", ctx("Transport fine root")),
     ("related", "BERVO:0002454", "2214", "Over a growing season rather than a year."),
-    # Organ dry mass per ground area is vegetation biomass with the organ in contexts,
-    # as for the AmeriFlux ROOT_BIOMASS variables.
+    # Organ dry mass per ground area is biomass with the organ in contexts, as for the
+    # AmeriFlux ROOT_BIOMASS variables: aboveground organs on Aboveground biomass, the
+    # rest on Vegetation biomass, which has no belowground child.
     ("broader", "BERVO:0001970", "798", ctx("Root")),
     ("broader", "BERVO:0001970", "457", ctx("Coarse root")),
     ("broader", "BERVO:0001970", "1795", ctx("Fine root")),
     ("broader", "BERVO:0001970", "2051", ctx("Absorptive fine root")),
     ("broader", "BERVO:0001970", "2307", ctx("Transport fine root")),
-    ("broader", "BERVO:0001970", "494", ctx("Leaf")),
-    ("broader", "BERVO:0001970", "524", ctx("Stem")),
-    ("broader", "BERVO:0001970", "448", ctx("Branch")),
+    ("broader", "BERVO:0001971", "494", ctx("Leaf")),
+    ("broader", "BERVO:0001971", "524", ctx("Stem")),
+    ("broader", "BERVO:0001971", "448", ctx("Branch")),
     ("broader", "BERVO:0001970", "2563", ctx("Belowground plant material")),
     ("match", "BERVO:0001971", "4024", ""),
 ]
