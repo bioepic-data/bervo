@@ -56,6 +56,17 @@ BROADER = [
     (r"potassium \(K\) content per [\w\s(),-]*dry mass$", "BERVO:0002455"),
     (r"calcium \(Ca\) content per [\w\s(),-]*dry mass$", "BERVO:0002456"),
     (r"magnesium \(Mg\) content per [\w\s(),-]*dry mass$", "BERVO:0002457"),
+    (r"sul(?:f|ph)ur \(S\) content per [\w\s(),-]*dry mass$", "BERVO:0002458"),
+    (r"sodium \(Na\) content per [\w\s(),-]*dry mass$", "BERVO:0002459"),
+    (r"manganese \(Mn\) content per [\w\s(),-]*dry mass$", "BERVO:0002460"),
+    (r"iron \(Fe\) content per [\w\s(),-]*dry mass$", "BERVO:0002461"),
+    (r"zinc \(Zn\) content per [\w\s(),-]*dry mass$", "BERVO:0002462"),
+    (r"copper \(Cu\) content per [\w\s(),-]*dry mass$", "BERVO:0002463"),
+    (r"aluminium \(Al\) content per [\w\s(),-]*dry mass$", "BERVO:0002464"),
+    (r"nickel \(Ni\) content per [\w\s(),-]*dry mass$", "BERVO:0002465"),
+    (r"silicon \(Si\) content per [\w\s(),-]*dry mass$", "BERVO:0002466"),
+    (r"boron \(B\) content per [\w\s(),-]*dry mass$", "BERVO:0002467"),
+    (r"molybdenum \(Mo\) content per [\w\s(),-]*dry mass$", "BERVO:0002468"),
 ]
 # Look like tissue contents but are not: amounts per unit soil, microbial biomass, fractions...
 EXCLUDE = r"soil dry mass|microbial|fungal|bacterial|labile|structural|soluble|TNC|non-structural|cellulose|lignin|isotope|versus| vs |per leaf nitrogen|cell wall|organic|ground area|per plant$|fraction"
@@ -114,6 +125,7 @@ def ctx(*concepts):
 
 
 COTYLEDON = ctx("Cotyledon")
+CWD_STEM = " TRY leaves 'dry mass' out of the name, but the trait is the same content."
 SEED = ctx("Seed") + " TRY allows a value for the whole diaspore instead of the seed alone."
 
 
@@ -408,6 +420,35 @@ MAPPED = [
     ("broader", "BERVO:0002217", "3358", ctx("Leaf")),
     ("broader", "BERVO:0002223", "3540", ctx("Sapwood") + " Measured on the water extracted from the sapwood."),
     ("broader", "BERVO:0002224", "3539", ctx("Sapwood") + " Measured on the water extracted from the sapwood."),
+    # Slice 11: leaf traits, the coarse woody debris stem contents, and eleven more tissue
+    # elements (by the BROADER rules).
+    ("match", "BERVO:0002469", "63", ""),
+    ("match", "BERVO:0002470", "144", ""),
+    ("related", "BERVO:0002470", "940", "The length of the lamina alone, without the petiole."),
+    ("match", "BERVO:0002471", "145", ""),
+    ("match", "BERVO:0002472", "143", ""),
+    ("match", "BERVO:0002473", "163", ""),
+    ("match", "BERVO:0002474", "413", ""),
+    ("related", "BERVO:0002474", "3476", "Chlorophyll a only."),
+    ("related", "BERVO:0002474", "3477", "Chlorophyll b only."),
+    ("match", "BERVO:0002475", "164", ""),
+    ("related", "BERVO:0002475", "3474", "Chlorophyll a only."),
+    ("related", "BERVO:0002475", "3475", "Chlorophyll b only."),
+    ("match", "BERVO:0002476", "87", ""),
+    ("match", "BERVO:0002477", "92", ""),
+    ("match", "BERVO:0002478", "507", ""),
+    ("match", "BERVO:0002479", "505", ""),
+    ("match", "BERVO:0002480", "740 4029", ""),
+    ("match", "BERVO:0002481", "135", ""),
+    ("match", "BERVO:0002482", "134", ""),
+    ("match", "BERVO:0002483", "111", ""),
+    ("match", "BERVO:0002484", "109", ""),
+    ("broader", "BERVO:0002339", "1153", ctx("Coarse woody debris", "Stem") + CWD_STEM),
+    ("broader", "BERVO:0002340", "1165", ctx("Coarse woody debris", "Stem") + CWD_STEM),
+    ("broader", "BERVO:0002380", "1169", ctx("Coarse woody debris", "Stem") + CWD_STEM),
+    ("broader", "BERVO:0002455", "1170", ctx("Coarse woody debris", "Stem") + CWD_STEM),
+    ("broader", "BERVO:0002456", "1152", ctx("Coarse woody debris", "Stem") + CWD_STEM),
+    ("broader", "BERVO:0002457", "1162", ctx("Coarse woody debris", "Stem") + CWD_STEM),
     ("match", "BERVO:0001971", "4024", ""),
 ]
 

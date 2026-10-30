@@ -31,9 +31,14 @@ diameter, specific root area and turnover rate, with organ dry mass per ground a
 mapped to the biomass terms. The tenth added potassium, calcium and magnesium content
 for any plant tissue, mapped the carbon, nitrogen and oxygen isotope signatures of plant
 organs to the existing isotope delta terms and the oxygen and hydrogen signatures of
-sapwood water to the water delta terms, and finished the woody organ biomass traits.
-Still to come are the value lists of the categorical traits (woodiness, growth form, leaf
-type, leaf phenology) and terms for the gaps listed here.
+sapwood water to the water delta terms, and finished the woody organ biomass traits. The
+eleventh added the content of eleven more elements for any plant tissue (S, Na, Mn, Fe,
+Zn, Cu, Al, Ni, Si, B and Mo) and the most used leaf traits: stomatal density, leaf
+length and width, petiole length, fresh mass, chlorophyll, lignin, cellulose,
+non-structural carbohydrate and starch content, vein density, photosynthetic nitrogen and
+water use efficiency, transpiration rate and leaf area ratio. Still to come are the value
+lists of the categorical traits (woodiness, growth form, leaf type, leaf phenology) and
+terms for the gaps listed here.
 
 ## Sources
 
@@ -72,8 +77,9 @@ The map is `src/scripts/try/try_alignment.tsv`, written by
 | `species_attribute` | The trait records where a species occurs, its habitat or indicator values, its legal status, its phylogeny or its uses, or it names a species, such as the dominant species of a plot or the herbivores of a leaf, rather than recording a property of a plant. These are set aside for a decision on scope, not rejected. |
 
 Groups and the `species_attribute` status are assigned by rules on the trait name, which
-were checked by hand. The C, N, P, K, Ca, Mg, C/N and N/P rows in `broader` are
-assigned the same way. Root contents per unit of soil mass and root microbial biomass
+were checked by hand. The C/N and N/P rows in `broader` are assigned the same way, as
+are the element contents per unit dry mass for C, N, P, K, Ca, Mg, S, Na, Mn, Fe, Zn,
+Cu, Al, Ni, Si, B and Mo. Root contents per unit of soil mass and root microbial biomass
 were excluded from them, since neither is the content of a plant tissue. Every `match`
 and `related` row was assigned by hand.
 
