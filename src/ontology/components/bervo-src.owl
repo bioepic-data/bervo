@@ -33132,7 +33132,7 @@
         <oboInOwl:hasRelatedSynonym>Plot aboveground biomass per ground area</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>above-ground biomass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Biomass, above-ground&quot;: The biomass is the mass of living biological organisms in a given area or ecosystem at a given time on or above the surface of the ground. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: AG_BIOMASS_TREE, AG_BIOMASS_SHRUB, AG_BIOMASS_GRASS, AG_BIOMASS_CROP, AG_BIOMASS_OTHER. The vegetation type goes in contexts. TRY trait ID: 4024. TRY traits mapped here, with what narrows each one in contexts: 448, 494, 524, 1094, 1183, 3124.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Biomass, above-ground&quot;: The biomass is the mass of living biological organisms in a given area or ecosystem at a given time on or above the surface of the ground. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: AG_BIOMASS_TREE, AG_BIOMASS_SHRUB, AG_BIOMASS_GRASS, AG_BIOMASS_CROP, AG_BIOMASS_OTHER. The vegetation type goes in contexts. TRY trait ID: 4024. TRY traits mapped here, with what narrows each one in contexts: 448, 494, 524, 1094, 1183, 3124. Living plant material includes the heartwood of a living tree, though heartwood cells are dead.</rdfs:comment>
         <rdfs:label>Aboveground biomass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
@@ -37435,7 +37435,7 @@
         <oboInOwl:hasExactSynonym>d13C</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>delta 13C</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Carbon-13, stable isotope ratio delta&quot;: Difference in the 13C:12C ratio between the sample and standard (del C 13). TRY traits mapped here, with what narrows each one in contexts: 89, 90, 829, 1115, 1213, 1252, 3016, 3707, 3712, 4048, 4049.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Carbon-13, stable isotope ratio delta&quot;: Difference in the 13C:12C ratio between the sample and standard (del C 13). TRY traits mapped here, with what narrows each one in contexts: 89, 90, 829, 1115, 1213, 1252, 3016, 3707, 3712, 4048, 4049. Plant tissue values are mapped here with the organ in contexts, as for the plant tissue element contents, rather than to a plant tissue delta term.</rdfs:comment>
         <rdfs:label>Delta carbon-13</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001069"/>
@@ -37455,7 +37455,7 @@
         <oboInOwl:hasExactSynonym>delta 2H</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>delta D</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Hydrogen-2, stable isotope ratio delta&quot;: Difference in the 2H:1H ratio between the sample and standard. TRY traits mapped here, with what narrows each one in contexts: 3539.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Hydrogen-2, stable isotope ratio delta&quot;: Difference in the 2H:1H ratio between the sample and standard</rdfs:comment>
         <rdfs:label>Delta deuterium</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001070"/>
@@ -37474,7 +37474,7 @@
         <oboInOwl:hasExactSynonym>d15N</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>delta 15N</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Nitrogen-15, stable isotope ratio delta&quot;: Difference in the 15N:14N ratio between the sample and standard (del N 15). TRY traits mapped here, with what narrows each one in contexts: 78, 81, 832, 1001, 1125, 1230, 2036, 2292, 3708, 3713.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Nitrogen-15, stable isotope ratio delta&quot;: Difference in the 15N:14N ratio between the sample and standard (del N 15). TRY traits mapped here, with what narrows each one in contexts: 78, 81, 832, 1001, 1125, 1230, 2036, 2292, 3708, 3713. Plant tissue values are mapped here with the organ in contexts, as for the plant tissue element contents, rather than to a plant tissue delta term.</rdfs:comment>
         <rdfs:label>Delta nitrogen-15</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001071"/>
@@ -37493,7 +37493,7 @@
         <oboInOwl:hasExactSynonym>d18O</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>delta 18O</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Oxygen-18, stable isotope ratio delta&quot;: Difference in the 18O:16O ratio between the sample and standard. TRY traits mapped here, with what narrows each one in contexts: 3358, 3540.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Oxygen-18, stable isotope ratio delta&quot;: Difference in the 18O:16O ratio between the sample and standard. TRY traits mapped here, with what narrows each one in contexts: 3358.</rdfs:comment>
         <rdfs:label>Delta oxygen-18</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
         <bervo:BERVO_has_unit>[ppth]</bervo:BERVO_has_unit>
@@ -37614,7 +37614,7 @@
         <oboInOwl:hasExactSynonym>d18O-H2O</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>delta 18O of water</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;delta-18O of H2O&quot;: Isotope 18O of water</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;delta-18O of H2O&quot;: Isotope 18O of water. TRY traits mapped here, with what narrows each one in contexts: 3540.</rdfs:comment>
         <rdfs:label>Water delta oxygen-18</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001070"/>
@@ -37635,7 +37635,7 @@
         <oboInOwl:hasExactSynonym>dD-H2O</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>delta 2H of water</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;delta-D of H2O&quot;: hydrogen isotopes of water</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;delta-D of H2O&quot;: hydrogen isotopes of water. TRY traits mapped here, with what narrows each one in contexts: 3539.</rdfs:comment>
         <rdfs:label>Water delta deuterium</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001070"/>

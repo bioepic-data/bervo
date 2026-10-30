@@ -406,8 +406,8 @@ MAPPED = [
     ("broader", "BERVO:0002216", "3708", ctx("Wood", "Branch")),
     ("broader", "BERVO:0002216", "3713", ctx("Bark", "Branch")),
     ("broader", "BERVO:0002217", "3358", ctx("Leaf")),
-    ("broader", "BERVO:0002217", "3540", ctx("Sapwood", "Water") + " Measured on the water extracted from the sapwood."),
-    ("broader", "BERVO:0002215", "3539", ctx("Sapwood", "Water") + " Measured on the water extracted from the sapwood."),
+    ("broader", "BERVO:0002223", "3540", ctx("Sapwood") + " Measured on the water extracted from the sapwood."),
+    ("broader", "BERVO:0002224", "3539", ctx("Sapwood") + " Measured on the water extracted from the sapwood."),
     ("match", "BERVO:0001971", "4024", ""),
 ]
 
