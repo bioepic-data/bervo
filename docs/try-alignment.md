@@ -30,10 +30,10 @@ non-structural carbohydrate and starch content, stele diameter, cortex thickness
 diameter, specific root area and turnover rate, with organ dry mass per ground area
 mapped to the biomass terms. The tenth added potassium, calcium and magnesium content
 for any plant tissue, mapped the carbon, nitrogen and oxygen isotope signatures of plant
-organs to the existing isotope delta terms and those of sapwood water to the water delta
-terms, and finished the woody organ biomass traits. Still to come are the value lists of
-the categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms for
-the gaps listed here.
+organs to the existing isotope delta terms and the oxygen and hydrogen signatures of
+sapwood water to the water delta terms, and finished the woody organ biomass traits.
+Still to come are the value lists of the categorical traits (woodiness, growth form, leaf
+type, leaf phenology) and terms for the gaps listed here.
 
 ## Sources
 
