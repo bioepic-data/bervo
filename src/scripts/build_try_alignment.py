@@ -53,6 +53,9 @@ BROADER = [
     (r"carbon/nitrogen \(C/N\)|\bC/N ratio", "BERVO:0002055"),
     (r"phos\w*rus \(P\) content per [\w\s(),-]*dry mass$", "BERVO:0002380"),  # TRY spells it "phosporus" once
     (r"nitrogen/phosphorus \(N/P\)|\bN/P ratio", "BERVO:0002381"),
+    (r"potassium \(K\) content per [\w\s(),-]*dry mass$", "BERVO:0002455"),
+    (r"calcium \(Ca\) content per [\w\s(),-]*dry mass$", "BERVO:0002456"),
+    (r"magnesium \(Mg\) content per [\w\s(),-]*dry mass$", "BERVO:0002457"),
 ]
 # Look like tissue contents but are not: amounts per unit soil, microbial biomass, fractions...
 EXCLUDE = r"soil dry mass|microbial|fungal|bacterial|labile|structural|soluble|TNC|non-structural|cellulose|lignin|isotope|versus| vs |per leaf nitrogen|cell wall|organic|ground area|per plant$|fraction"
@@ -377,6 +380,34 @@ MAPPED = [
     ("broader", "BERVO:0001971", "524", ctx("Stem")),
     ("broader", "BERVO:0001971", "448", ctx("Branch")),
     ("broader", "BERVO:0001970", "2563", ctx("Belowground plant material")),
+    # Slice 10: woody biomass, isotope signatures, and potassium, calcium and magnesium
+    # contents (the last three by the BROADER rules).
+    ("broader", "BERVO:0001971", "1094", ctx("Sapwood")),
+    ("broader", "BERVO:0001971", "1183", ctx("Heartwood") + " Heartwood is dead tissue, but the biomass of a living tree conventionally includes it."),
+    ("broader", "BERVO:0001971", "3124", ctx("Wood")),
+    ("broader", "BERVO:0002214", "89", ctx("Leaf")),
+    ("broader", "BERVO:0002214", "90", ctx("Root")),
+    ("broader", "BERVO:0002214", "829", ctx("Bark")),
+    ("broader", "BERVO:0002214", "1115", ctx("Shoot")),
+    ("broader", "BERVO:0002214", "1213 3016", ctx("Wood")),
+    ("broader", "BERVO:0002214", "1252", ctx("Dead vegetation") + " Litter is dead vegetation."),
+    ("broader", "BERVO:0002214", "3707", ctx("Wood", "Branch")),
+    ("broader", "BERVO:0002214", "3712", ctx("Bark", "Branch")),
+    ("broader", "BERVO:0002214", "4048", ctx("Flower")),
+    ("broader", "BERVO:0002214", "4049", ctx("Stem")),
+    ("broader", "BERVO:0002216", "78", ctx("Leaf")),
+    ("broader", "BERVO:0002216", "81", ctx("Root")),
+    ("broader", "BERVO:0002216", "832", ctx("Bark")),
+    ("broader", "BERVO:0002216", "1001", ctx("Dead vegetation") + " Litter is dead vegetation."),
+    ("broader", "BERVO:0002216", "1125", ctx("Shoot")),
+    ("broader", "BERVO:0002216", "1230", ctx("Wood")),
+    ("broader", "BERVO:0002216", "2036", ctx("Absorptive fine root")),
+    ("broader", "BERVO:0002216", "2292", ctx("Transport fine root")),
+    ("broader", "BERVO:0002216", "3708", ctx("Wood", "Branch")),
+    ("broader", "BERVO:0002216", "3713", ctx("Bark", "Branch")),
+    ("broader", "BERVO:0002217", "3358", ctx("Leaf")),
+    ("broader", "BERVO:0002217", "3540", ctx("Sapwood", "Water") + " Measured on the water extracted from the sapwood."),
+    ("broader", "BERVO:0002215", "3539", ctx("Sapwood", "Water") + " Measured on the water extracted from the sapwood."),
     ("match", "BERVO:0001971", "4024", ""),
 ]
 

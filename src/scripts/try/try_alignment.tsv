@@ -37,7 +37,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 41	Leaf respiration rate in the dark per leaf dry mass	Photosynthesis and gas exchange	match	BERVO:0002387		
 42	Plant growth form	Whole plant	match	BERVO:0002378	growth_form	TRY variants differ in their value lists.
 43	Leaf type	Leaf	match	BERVO:0002379	leaf_type	
-44	Leaf potassium (K) content per leaf dry mass	Leaf	gap			
+44	Leaf potassium (K) content per leaf dry mass	Leaf	broader	BERVO:0002455		Leaf goes in contexts.
 45	Stomata conductance per leaf area	Photosynthesis and gas exchange	match	BERVO:0002392		
 46	Leaf thickness	Leaf	match	BERVO:0002394		
 47	Leaf dry mass per leaf fresh mass (leaf dry matter content, LDMC)	Leaf	match	BERVO:0002370	leaf_dry_matter_content	
@@ -69,10 +69,10 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 75	Litter water soluble carbon (C) content per litter dry mass	Litter and woody debris	gap			
 76	Litter cellulose content per litter dry mass	Litter and woody debris	gap			
 77	Plant growth rate relative (plant relative growth rate, RGR)	Whole plant	gap			
-78	Leaf nitrogen (N) isotope signature (delta 15N)	Leaf	gap			
+78	Leaf nitrogen (N) isotope signature (delta 15N)	Leaf	broader	BERVO:0002216		Leaf goes in contexts.
 79	Leaf minus soil nitrogen (N) isotope signature (leaf delta 15N minus soil delta 15N)	Leaf	gap			
 80	Root nitrogen (N) content per root dry mass	Root	broader	BERVO:0002340	root_nitrogen_content	Root goes in contexts.
-81	Root nitrogen (N) isotope signature (delta 15N)	Root	gap			
+81	Root nitrogen (N) isotope signature (delta 15N)	Root	broader	BERVO:0002216		Root goes in contexts.
 82	Root tissue density (root dry mass per root volume)	Root	match	BERVO:0002376	root_tissue_density	
 83	Root diameter	Root	match	BERVO:0002375	root_diameter	
 84	Root carbon (C) content per root dry mass	Root	broader	BERVO:0002339		Root goes in contexts.
@@ -80,8 +80,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 86	Root soluble components content per root dry mass	Root	gap			
 87	Leaf lignin content per leaf dry mass	Leaf	gap			
 88	Root lignin content per root dry mass	Root	match	BERVO:0002412		
-89	Leaf carbon isotope signature (delta 13C)	Leaf	gap			
-90	Root carbon isotope signature (delta 13C)	Root	gap			
+89	Leaf carbon isotope signature (delta 13C)	Leaf	broader	BERVO:0002214		Leaf goes in contexts.
+90	Root carbon isotope signature (delta 13C)	Root	broader	BERVO:0002214		Root goes in contexts.
 91	Root cellulose content per root dry mass	Root	gap			
 92	Leaf cellulose content per leaf dry mass	Leaf	gap			
 93	Root hemicellulose content per root dry mass	Root	gap			
@@ -209,12 +209,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 249	Leaf aluminium (Al) content per leaf dry mass	Leaf	gap			
 250	Leaf boron (B) content per leaf dry mass	Leaf	gap			
 251	Leaf barium (Ba) content per leaf dry mass	Leaf	gap			
-252	Leaf calcium (Ca) content per leaf dry mass	Leaf	gap			
+252	Leaf calcium (Ca) content per leaf dry mass	Leaf	broader	BERVO:0002456		Leaf goes in contexts.
 253	Leaf cobalt (Co) content per leaf dry mass	Leaf	gap			
 254	Leaf chromium (Cr) content per leaf dry mass	Leaf	gap			
 255	Leaf copper (Cu) content per leaf dry mass	Leaf	gap			
 256	Leaf iron (Fe) content per leaf dry mass	Leaf	gap			
-257	Leaf magnesium (Mg) content per leaf dry mass	Leaf	gap			
+257	Leaf magnesium (Mg) content per leaf dry mass	Leaf	broader	BERVO:0002457		Leaf goes in contexts.
 258	Leaf manganese (Mn) content per leaf dry mass	Leaf	gap			
 259	Leaf molybdenum (Mo) content per leaf dry mass	Leaf	gap			
 260	Leaf sodium (Na) content per leaf dry mass	Leaf	gap			
@@ -502,12 +502,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 619	Bark phosphorus (P) content per bark dry mass	Stem, wood and bark	broader	BERVO:0002380		Bark goes in contexts.
 620	Coarse root phosphorus (P) content per coarse root dry mass	Root	broader	BERVO:0002380		Coarse root goes in contexts.
 621	Plant relationship of stem mass, height and diameter	Whole plant	gap			
-623	Stem calcium (Ca) content per stem dry mass	Stem, wood and bark	gap			
-624	Stem magnesium (Mg) content per stem dry mass	Stem, wood and bark	gap			
+623	Stem calcium (Ca) content per stem dry mass	Stem, wood and bark	broader	BERVO:0002456		Stem goes in contexts.
+624	Stem magnesium (Mg) content per stem dry mass	Stem, wood and bark	broader	BERVO:0002457		Stem goes in contexts.
 625	Stem aluminium (Al) content per stem dry mass	Stem, wood and bark	gap			
 626	Stem iron (Fe) content per stem dry mass	Stem, wood and bark	gap			
 627	Stem sodium (Na) content per stem dry mass	Stem, wood and bark	gap			
-628	Stem potassium (K) content per stem dry mass	Stem, wood and bark	gap			
+628	Stem potassium (K) content per stem dry mass	Stem, wood and bark	broader	BERVO:0002455		Stem goes in contexts.
 629	Stem sulfur (S) content per stem dry mass	Stem, wood and bark	gap			
 630	Stem mercury (Hg) content per stem dry mass	Stem, wood and bark	gap			
 631	Stem antimony (Sb) content per stem dry mass	Stem, wood and bark	gap			
@@ -520,12 +520,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 638	Stem zinc (Zn) content per stem dry mass	Stem, wood and bark	gap			
 639	Stem arsenic (As) content per stem dry mass	Stem, wood and bark	gap			
 640	Stem chromium (Cr) content per stem dry mass	Stem, wood and bark	gap			
-641	Coarse root calcium (Ca) content per coarse root dry mass	Root	gap			
-642	Coarse root magnesium (Mg) content per coarse root dry mass	Root	gap			
+641	Coarse root calcium (Ca) content per coarse root dry mass	Root	broader	BERVO:0002456		Coarse root goes in contexts.
+642	Coarse root magnesium (Mg) content per coarse root dry mass	Root	broader	BERVO:0002457		Coarse root goes in contexts.
 643	Coarse root aluminium (Al) content per coarse root dry mass	Root	gap			
 644	Coarse root iron (Fe) content per coarse root dry mass	Root	gap			
 645	Coarse root sodium (Na) content per coarse root dry mass	Root	gap			
-646	Coarse root potassium (K) content per coarse root dry mass	Root	gap			
+646	Coarse root potassium (K) content per coarse root dry mass	Root	broader	BERVO:0002455		Coarse root goes in contexts.
 647	Coarse root sulfur (S) content per coarse root dry mass	Root	gap			
 648	Coarse root mercury (Hg) content per coarse root dry mass	Root	gap			
 649	Coarse root antimony (Sb) content per coarse root dry mass	Root	gap			
@@ -573,10 +573,10 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 698	Fine root phosphorus (P) content per fine root dry mass	Fine root	broader	BERVO:0002380		Fine root goes in contexts.
 699	Fine root pH	Fine root	gap			
 700	Plant biomass and allometry: Plant dry mass	Whole plant	gap			
-701	Shoot potassium (K) content per shoot dry mass	Twig, branch, shoot and bud	gap			
-702	Shoot magnesium (Mg) content per shoot dry mass	Twig, branch, shoot and bud	gap			
+701	Shoot potassium (K) content per shoot dry mass	Twig, branch, shoot and bud	broader	BERVO:0002455		Shoot goes in contexts.
+702	Shoot magnesium (Mg) content per shoot dry mass	Twig, branch, shoot and bud	broader	BERVO:0002457		Shoot goes in contexts.
 703	Shoot manganese (Mn) content per shoot dry mass	Twig, branch, shoot and bud	gap			
-704	Shoot calcium (Ca) content per shoot dry mass	Twig, branch, shoot and bud	gap			
+704	Shoot calcium (Ca) content per shoot dry mass	Twig, branch, shoot and bud	broader	BERVO:0002456		Shoot goes in contexts.
 705	Shoot iron (Fe) content per shoot dry mass	Twig, branch, shoot and bud	gap			
 707	Leaf water volume per leaf volume	Leaf	gap			
 708	Leaf solid volume per leaf volume	Leaf	gap			
@@ -669,10 +669,10 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 826	Species occurrence range: altitude of origin	Species ecology and distribution	species_attribute			
 827	Species occurrence range: origin zonal	Species ecology and distribution	species_attribute			
 828	Twig phosporus (P) content per twig dry mass	Twig, branch, shoot and bud	broader	BERVO:0002380		Twig goes in contexts.
-829	Bark carbon (C) isotope signature (delta 13C)	Stem, wood and bark	gap			
+829	Bark carbon (C) isotope signature (delta 13C)	Stem, wood and bark	broader	BERVO:0002214		Bark goes in contexts.
 830	Bark carbon/nitrogen (C/N) ratio	Stem, wood and bark	broader	BERVO:0002055		Bark goes in contexts.
 831	Bark crystals	Stem, wood and bark	gap			
-832	Bark nitrogen (N) isotope signature (delta 15N)	Stem, wood and bark	gap			
+832	Bark nitrogen (N) isotope signature (delta 15N)	Stem, wood and bark	broader	BERVO:0002216		Bark goes in contexts.
 833	Bark persistence (deciduous, persistent)	Stem, wood and bark	gap			
 834	Bark sclereids arrangement	Stem, wood and bark	gap			
 835	Bark secondary compounds: oil, tannins, latex, slime	Stem, wood and bark	gap			
@@ -680,7 +680,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 837	Bark structure	Stem, wood and bark	gap			
 838	Bark surface structure, texture, age	Stem, wood and bark	gap			
 839	Bark thickness per stem diameter	Stem, wood and bark	gap			
-840	Coarse woody debris (CWD) branch: calcium (Ca) content per branch CWD dry mass	Litter and woody debris	gap			
+840	Coarse woody debris (CWD) branch: calcium (Ca) content per branch CWD dry mass	Litter and woody debris	broader	BERVO:0002456		Coarse woody debris and Branch go in contexts.
 841	Coarse woody debris (CWD) branch: carbon (C) content per branch CWD dry mass	Litter and woody debris	broader	BERVO:0002339		Coarse woody debris and Branch go in contexts.
 842	Coarse woody debris (CWD) branch: carbon/nitrogen (C/N) ratio	Litter and woody debris	broader	BERVO:0002055		Coarse woody debris and Branch go in contexts.
 843	Coarse woody debris (CWD) branch: cellulose content per branch CWD dry mass	Litter and woody debris	gap			
@@ -692,11 +692,11 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 849	Coarse woody debris (CWD) branch: iron (Fe) content per branch CWD dry mass	Litter and woody debris	gap			
 850	Coarse woody debris (CWD) branch: lignin content per branch CWD dry mass	Litter and woody debris	gap			
 851	Coarse woody debris (CWD) branch: lignin/nitrogen (lignin/N) ratio	Litter and woody debris	gap			
-852	Coarse woody debris (CWD) branch: magnesium (Mg) content per branch CWD dry mass	Litter and woody debris	gap			
+852	Coarse woody debris (CWD) branch: magnesium (Mg) content per branch CWD dry mass	Litter and woody debris	broader	BERVO:0002457		Coarse woody debris and Branch go in contexts.
 853	Coarse woody debris (CWD) branch: manganese (Mn) content per branch CWD dry mass	Litter and woody debris	gap			
 854	Coarse woody debris (CWD) branch: nitrogen (N) content per branch CWD dry mass	Litter and woody debris	broader	BERVO:0002340		Coarse woody debris and Branch go in contexts.
 855	Coarse woody debris (CWD) branch: phosphorus (P) content per branch CWD dry mass	Litter and woody debris	broader	BERVO:0002380		Coarse woody debris and Branch go in contexts.
-856	Coarse woody debris (CWD) branch: potassium (K) content per branch CWD dry mass	Litter and woody debris	gap			
+856	Coarse woody debris (CWD) branch: potassium (K) content per branch CWD dry mass	Litter and woody debris	broader	BERVO:0002455		Coarse woody debris and Branch go in contexts.
 857	Coarse woody debris (CWD) branch: rot type	Litter and woody debris	gap			
 858	Coarse woody debris (CWD) branch: sodium (Na) content per branch CWD dry mass	Litter and woody debris	gap			
 859	Coarse woody debris (CWD) branch: sulfur (S) content per branch CWD dry mass	Litter and woody debris	gap			
@@ -704,17 +704,17 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 861	Branch number of secondary branches at first branching	Twig, branch, shoot and bud	gap			
 862	Branch number per height along the shoot axis	Twig, branch, shoot and bud	gap			
 863	Branch phosphorus (P) content per branch dry mass	Twig, branch, shoot and bud	broader	BERVO:0002380		Branch goes in contexts.
-864	Branch potassium (K) content per branch dry mass	Twig, branch, shoot and bud	gap			
+864	Branch potassium (K) content per branch dry mass	Twig, branch, shoot and bud	broader	BERVO:0002455		Branch goes in contexts.
 865	Budbank seasonality	Twig, branch, shoot and bud	gap			
-867	Coarse woody debris (CWD): calcium (Ca) content per CWD dry mass	Litter and woody debris	gap			
+867	Coarse woody debris (CWD): calcium (Ca) content per CWD dry mass	Litter and woody debris	broader	BERVO:0002456		Coarse woody debris goes in contexts.
 868	Coarse woody debris (CWD): carbon (C) content per CWD dry mass	Litter and woody debris	broader	BERVO:0002339		Coarse woody debris goes in contexts.
 869	Coarse woody debris (CWD): decomposition rate	Litter and woody debris	gap			
 871	Coarse woody debris (CWD): density	Litter and woody debris	gap			
-874	Coarse woody debris (CWD): magnesium (Mg) content per CWD dry mass	Litter and woody debris	gap			
+874	Coarse woody debris (CWD): magnesium (Mg) content per CWD dry mass	Litter and woody debris	broader	BERVO:0002457		Coarse woody debris goes in contexts.
 875	Coarse woody debris (CWD): manganese (Mn) content per CWD dry mass	Litter and woody debris	gap			
 876	Coarse woody debris (CWD): nitrogen (N) content per CWD dry mass	Litter and woody debris	broader	BERVO:0002340		Coarse woody debris goes in contexts.
 878	Coarse woody debris (CWD): phosphorus (P) content per CWD dry mass	Litter and woody debris	broader	BERVO:0002380		Coarse woody debris goes in contexts.
-879	Coarse woody debris (CWD): potassium (K) content per CWD dry mass	Litter and woody debris	gap			
+879	Coarse woody debris (CWD): potassium (K) content per CWD dry mass	Litter and woody debris	broader	BERVO:0002455		Coarse woody debris goes in contexts.
 882	Coarse woody debris (CWD): sodium (Na) content per CWD dry mass	Litter and woody debris	gap			
 885	Cone (strobilus) diameter	Flower and reproduction	gap			
 886	Cone (strobilus) length	Flower and reproduction	gap			
@@ -727,7 +727,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 893	Dispersal unit exposure	Seed, fruit and dispersal	gap			
 894	Dispersal unit surface structure	Seed, fruit and dispersal	gap			
 896	Fine root diameter	Fine root	broader	BERVO:0002375	root_diameter	Fine root goes in contexts.
-897	Litter (fine root) calcium (Ca) content per fine root litter dry mass	Litter and woody debris	gap			
+897	Litter (fine root) calcium (Ca) content per fine root litter dry mass	Litter and woody debris	broader	BERVO:0002456		Fine root and Dead vegetation go in contexts.
 898	Litter (fine root) carbon (C) content per fine root litter dry mass	Litter and woody debris	broader	BERVO:0002339		Fine root and Dead vegetation go in contexts.
 899	Litter (fine root) carbon/nitrogen (C/N) ratio	Litter and woody debris	broader	BERVO:0002055		Fine root and Dead vegetation go in contexts.
 900	Litter (fine root) cellulose content per fine root litter dry mass	Litter and woody debris	gap			
@@ -736,11 +736,11 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 903	Litter (fine root) hemicellulose content per fine root litter dry mass	Litter and woody debris	gap			
 904	Litter (fine root) lignin content per fine root litter dry mass	Litter and woody debris	broader	BERVO:0002412		Fine root and Dead vegetation go in contexts.
 905	Litter (fine root) lignin/nitrogen (lignin/N) ratio	Litter and woody debris	gap			
-906	Litter (fine root) magnesium (Mg) content per fine root litter dry mass	Litter and woody debris	gap			
+906	Litter (fine root) magnesium (Mg) content per fine root litter dry mass	Litter and woody debris	broader	BERVO:0002457		Fine root and Dead vegetation go in contexts.
 907	Litter (fine root) manganese (Mn) content per fine root litter dry mass	Litter and woody debris	gap			
 908	Litter (fine root) nitrogen (N) content per fine root litter dry mass	Litter and woody debris	broader	BERVO:0002340		Fine root and Dead vegetation go in contexts.
 909	Litter (fine root) phosphorus (P) content per fine root litter dry mass	Litter and woody debris	broader	BERVO:0002380		Fine root and Dead vegetation go in contexts.
-910	Litter (fine root) potassium (K) content per fine root litter dry mass	Litter and woody debris	gap			
+910	Litter (fine root) potassium (K) content per fine root litter dry mass	Litter and woody debris	broader	BERVO:0002455		Fine root and Dead vegetation go in contexts.
 911	Litter (fine root) sodium (Na) content per fine root litter dry mass	Litter and woody debris	gap			
 912	Litter (fine root) sulfur (S) content per fine root litter dry mass	Litter and woody debris	gap			
 913	Flower corolla length	Flower and reproduction	gap			
@@ -770,7 +770,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 938	Leaf isoprene emission rate per leaf area	Photosynthesis and gas exchange	gap			
 939	Leaf isoprene emission rate per leaf dry mass	Photosynthesis and gas exchange	gap			
 940	Leaf length excluding petiole (leaf lamina length)	Leaf	gap			
-943	Litter (leaf) calcium (Ca) content per leaf litter dry mass	Litter and woody debris	gap			
+943	Litter (leaf) calcium (Ca) content per leaf litter dry mass	Litter and woody debris	broader	BERVO:0002456		Leaf and Dead vegetation go in contexts.
 944	Litter (leaf) carbon (C) content per leaf litter dry mass	Litter and woody debris	broader	BERVO:0002339		Leaf and Dead vegetation go in contexts.
 945	Litter (leaf) carbon/nitrogen (C/N) ratio	Litter and woody debris	broader	BERVO:0002055		Leaf and Dead vegetation go in contexts.
 946	Litter (leaf) cellulose content per leaf litter dry mass	Litter and woody debris	gap			
@@ -779,12 +779,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 949	Litter (leaf) decomposition rate constant	Litter and woody debris	gap			
 950	Litter (leaf) iron (Fe) content per leaf litter dry mass	Litter and woody debris	gap			
 951	Litter (leaf) lignin content per leaf litter dry mass	Litter and woody debris	gap			
-952	Litter (leaf) magnesium (Mg) content per leaf litter dry mass	Litter and woody debris	gap			
+952	Litter (leaf) magnesium (Mg) content per leaf litter dry mass	Litter and woody debris	broader	BERVO:0002457		Leaf and Dead vegetation go in contexts.
 953	Litter (leaf) manganese (Mn) content per leaf litter dry mass	Litter and woody debris	gap			
 954	Litter (leaf) nitrogen (N) content per leaf litter dry mass	Litter and woody debris	broader	BERVO:0002340		Leaf and Dead vegetation go in contexts.
 956	Litter (leaf) phenols content per leaf litter dry mass	Litter and woody debris	gap			
 957	Litter (leaf) phosphorus (P) content per leaf litter dry mass	Litter and woody debris	broader	BERVO:0002380		Leaf and Dead vegetation go in contexts.
-958	Litter (leaf) potassium (K) content per leaf litter dry mass	Litter and woody debris	gap			
+958	Litter (leaf) potassium (K) content per leaf litter dry mass	Litter and woody debris	broader	BERVO:0002455		Leaf and Dead vegetation go in contexts.
 959	Litter (leaf) protein content per leaf litter dry mass	Litter and woody debris	gap			
 960	Litter (leaf) sodium (Na) content per leaf litter dry mass	Litter and woody debris	gap			
 961	Litter (leaf) sulfur (S) content per leaf litter dry mass	Litter and woody debris	gap			
@@ -817,19 +817,19 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 988	Litter antimony (Sb) content per litter dry mass	Litter and woody debris	gap			
 989	Litter arsenic (As) content per litter dry mass	Litter and woody debris	gap			
 990	Litter cadmium (Cd) content per litter dry mass	Litter and woody debris	gap			
-991	Litter calcium (Ca) content per litter dry mass	Litter and woody debris	gap			
+991	Litter calcium (Ca) content per litter dry mass	Litter and woody debris	broader	BERVO:0002456		Dead vegetation goes in contexts.
 992	Litter chromium (Cr) content per litter dry mass	Litter and woody debris	gap			
 993	Litter copper (Cu) content per litter dry mass	Litter and woody debris	gap			
 994	Litter decomposition rate constant	Litter and woody debris	gap			
 995	Litter iron (Fe) content per litter dry mass	Litter and woody debris	gap			
 996	Litter lead (Pb) content per litter dry mass	Litter and woody debris	gap			
-997	Litter magnesium (Mg) content per litter dry mass	Litter and woody debris	gap			
+997	Litter magnesium (Mg) content per litter dry mass	Litter and woody debris	broader	BERVO:0002457		Dead vegetation goes in contexts.
 998	Litter mercury (Hg) content per litter dry mass	Litter and woody debris	gap			
 999	Litter molybdenium (Mo) content per litter dry mass	Litter and woody debris	gap			
 1000	Litter nickel (Ni) content per litter dry mass	Litter and woody debris	gap			
-1001	Litter nitrogen (N) isotope signature (delta 15N)	Litter and woody debris	gap			
+1001	Litter nitrogen (N) isotope signature (delta 15N)	Litter and woody debris	broader	BERVO:0002216		Dead vegetation goes in contexts. Litter is dead vegetation.
 1002	Litter phenols content per litter dry mass	Litter and woody debris	gap			
-1003	Litter potassium (K) content per litter dry mass	Litter and woody debris	gap			
+1003	Litter potassium (K) content per litter dry mass	Litter and woody debris	broader	BERVO:0002455		Dead vegetation goes in contexts.
 1004	Litter sodium (Na) content per litter dry mass	Litter and woody debris	gap			
 1005	Litter sulfur (S) content per litter dry mass	Litter and woody debris	gap			
 1006	Litter titanium (Ti) content per litter dry mass	Litter and woody debris	gap			
@@ -875,10 +875,10 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1050	Root antimony (Sb) content per root dry mass	Root	gap			
 1051	Root arsenic (As) content per root dry mass	Root	gap			
 1053	Root cadmium (Cd) content per root dry mass	Root	gap			
-1054	Root calcium (Ca) content per root dry mass	Root	gap			
+1054	Root calcium (Ca) content per root dry mass	Root	broader	BERVO:0002456		Root goes in contexts.
 1055	Root carbon/nitrogen (C/N) ratio	Root	broader	BERVO:0002055		Root goes in contexts.
 1056	Root chromium (Cr) content per root dry mass	Root	gap			
-1057	Coarse woody debris (CWD) root: calcium (Ca) content per coarse root CWD dry mass	Litter and woody debris	gap			
+1057	Coarse woody debris (CWD) root: calcium (Ca) content per coarse root CWD dry mass	Litter and woody debris	broader	BERVO:0002456		Coarse woody debris and Coarse root go in contexts.
 1058	Coarse woody debris (CWD) root: carbon (C) content per coarse root CWD dry mass	Litter and woody debris	broader	BERVO:0002339		Coarse woody debris and Coarse root go in contexts.
 1059	Coarse woody debris (CWD) root: carbon/nitrogen (C/N) ratio	Litter and woody debris	broader	BERVO:0002055		Coarse woody debris and Coarse root go in contexts.
 1060	Coarse woody debris (CWD) root: cellulose content per coarse root CWD dry mass	Litter and woody debris	gap			
@@ -887,10 +887,10 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1063	Coarse woody debris (CWD) root: density	Litter and woody debris	gap			
 1064	Coarse woody debris (CWD) root: lignin content per coarse root CWD dry mass	Litter and woody debris	broader	BERVO:0002412		Coarse woody debris and Coarse root go in contexts.
 1065	Coarse woody debris (CWD) root: lignin/nitrogen (lignin/N) ratio	Litter and woody debris	gap			
-1066	Coarse woody debris (CWD) root: magnesium (Mg) content per coarse root CWD dry mass	Litter and woody debris	gap			
+1066	Coarse woody debris (CWD) root: magnesium (Mg) content per coarse root CWD dry mass	Litter and woody debris	broader	BERVO:0002457		Coarse woody debris and Coarse root go in contexts.
 1067	Coarse woody debris (CWD) root: manganese (Mn) content per coarse root CWD dry mass	Litter and woody debris	gap			
 1068	Coarse woody debris (CWD) root: phosphorus (P) content per coarse root CWD dry mass	Litter and woody debris	broader	BERVO:0002380		Coarse woody debris and Coarse root go in contexts.
-1069	Coarse woody debris (CWD) root: potassium (K) content per coarse root CWD dry mass	Litter and woody debris	gap			
+1069	Coarse woody debris (CWD) root: potassium (K) content per coarse root CWD dry mass	Litter and woody debris	broader	BERVO:0002455		Coarse woody debris and Coarse root go in contexts.
 1070	Coarse woody debris (CWD) root: rot type	Litter and woody debris	gap			
 1071	Coarse woody debris (CWD) root: sodium (Na) content per coarse root CWD dry mass	Litter and woody debris	gap			
 1072	Coarse woody debris (CWD) root: wood fraction	Litter and woody debris	gap			
@@ -902,12 +902,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1078	Root lead (Pb) content per root dry mass	Root	gap			
 1079	Root length	Root	gap			
 1080	Root length per root dry mass (specific root length, SRL)	Root	match	BERVO:0002374	specific_root_length	
-1081	Root magnesium (Mg) content per root dry mass	Root	gap			
+1081	Root magnesium (Mg) content per root dry mass	Root	broader	BERVO:0002457		Root goes in contexts.
 1082	Root mercury (Hg) content per root dry mass	Root	gap			
 1083	Root molybdenum (Mo) content per root dry mass	Root	gap			
 1084	Root nickel (Ni) content per root dry mass	Root	gap			
 1085	Root persistence (lifespan, longevity)	Root	match	BERVO:0002417		
-1086	Root potassium (K) content per root dry mass	Root	gap			
+1086	Root potassium (K) content per root dry mass	Root	broader	BERVO:0002455		Root goes in contexts.
 1087	Root sodium (Na) content per root dry mass	Root	gap			
 1088	Root sulfur (S) content per root dry mass	Root	gap			
 1089	Root surface area per root dry mass (specific root area)	Root	match	BERVO:0002453		
@@ -915,7 +915,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1091	Root volume per root dry mass	Root	gap			
 1092	Root zinc (Zn) content per root dry mass	Root	gap			
 1093	Root position along clonal growth organ	Root	gap			
-1094	Wood (sapwood) biomass per ground area	Stem, wood and bark	gap			
+1094	Wood (sapwood) biomass per ground area	Stem, wood and bark	broader	BERVO:0001971		Sapwood goes in contexts.
 1095	Wood (sapwood) cross-sectional area	Stem, wood and bark	match	BERVO:0002447		
 1096	Wood (sapwood) specific conductivity (stem specific conductivity)	Stem, wood and bark	match	BERVO:0002406		
 1097	Wood (sapwood) water content	Stem, wood and bark	gap			
@@ -936,7 +936,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1112	Seed presence or absence	Seed, fruit and dispersal	gap			
 1113	Shoot aluminium (Al) content per shoot dry mass	Twig, branch, shoot and bud	gap			
 1114	Shoot branching density	Twig, branch, shoot and bud	gap			
-1115	Shoot carbon (C) isotope signature (delta 13C)	Twig, branch, shoot and bud	gap			
+1115	Shoot carbon (C) isotope signature (delta 13C)	Twig, branch, shoot and bud	broader	BERVO:0002214		Shoot goes in contexts.
 1116	Shoot cellulose content per shoot dry mass	Twig, branch, shoot and bud	gap			
 1117	Shoot copper (Cu) content per shoot dry mass	Twig, branch, shoot and bud	gap			
 1118	Shoot cyclicity	Twig, branch, shoot and bud	gap			
@@ -946,7 +946,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1122	Shoot lignin content per shoot dry mass	Twig, branch, shoot and bud	gap			
 1123	Shoot branching number	Twig, branch, shoot and bud	gap			
 1124	Shoot nickel (Ni) content per shoot dry mass	Twig, branch, shoot and bud	gap			
-1125	Shoot nitrogen (N) isotope signature (delta 15N)	Twig, branch, shoot and bud	gap			
+1125	Shoot nitrogen (N) isotope signature (delta 15N)	Twig, branch, shoot and bud	broader	BERVO:0002216		Shoot goes in contexts.
 1126	Shoot organic nitrogen (N) content per shoot dry mass	Twig, branch, shoot and bud	gap			
 1127	Shoot sodium (Na) content per shoot dry mass	Twig, branch, shoot and bud	gap			
 1128	Shoot sulfur (S) content per shoot dry mass	Twig, branch, shoot and bud	gap			
@@ -1001,7 +1001,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1177	Stem conduit length	Stem, wood and bark	match	BERVO:0002446		
 1181	Stem dry mass per stem fresh mass (stem dry matter content, StDMC)	Stem, wood and bark	match	BERVO:0002440		
 1182	Stem form (stem cross-sectional type)	Stem, wood and bark	gap			
-1183	Stem heartwood biomass per ground area	Stem, wood and bark	gap			
+1183	Stem heartwood biomass per ground area	Stem, wood and bark	broader	BERVO:0001971		Heartwood goes in contexts. Heartwood is dead tissue, but the biomass of a living tree conventionally includes it.
 1184	Stem latex production	Stem, wood and bark	gap			
 1186	Shoot length to first flower	Twig, branch, shoot and bud	gap			
 1187	Stem longevity	Stem, wood and bark	gap			
@@ -1030,7 +1030,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1210	Wood vestures presence	Stem, wood and bark	gap			
 1211	Wood axial parenchyma types	Stem, wood and bark	gap			
 1212	Wood canals types	Stem, wood and bark	gap			
-1213	Wood carbon (C) isotope signature (delta 13C)	Stem, wood and bark	gap			
+1213	Wood carbon (C) isotope signature (delta 13C)	Stem, wood and bark	broader	BERVO:0002214		Wood goes in contexts.
 1214	Wood conduit pit fraction	Stem, wood and bark	gap			
 1215	Wood conduit pit membrane thickness	Stem, wood and bark	gap			
 1216	Wood fiber cell wall thickness	Stem, wood and bark	gap			
@@ -1045,7 +1045,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1225	Wood intervessel or intertracheid cell wall thickness	Stem, wood and bark	gap			
 1226	Wood mechanical property: flexual stiffness, elasticity, rupture	Stem, wood and bark	gap			
 1229	Wood nitrogen (N) content per wood dry mass	Stem, wood and bark	broader	BERVO:0002340		Wood goes in contexts.
-1230	Wood nitrogen (N) isotope signature (delta 15N)	Stem, wood and bark	gap			
+1230	Wood nitrogen (N) isotope signature (delta 15N)	Stem, wood and bark	broader	BERVO:0002216		Wood goes in contexts.
 1231	Wood outer pit aperture diameter	Stem, wood and bark	gap			
 1232	Wood outer pit aperture diameter / interconduit pit size	Stem, wood and bark	gap			
 1233	Stem pith type	Stem, wood and bark	gap			
@@ -1063,7 +1063,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1246	Wood vessel: dark staining substances in vessels and/or fibers (gum, tannins)	Stem, wood and bark	gap			
 1250	Species yield power class	Species ecology and distribution	gap			
 1251	Plant vegetative phenology (leaf phenology)	Whole plant	gap			
-1252	Litter carbon (C) isotope signature (delta 13C)	Litter and woody debris	gap			
+1252	Litter carbon (C) isotope signature (delta 13C)	Litter and woody debris	broader	BERVO:0002214		Dead vegetation goes in contexts. Litter is dead vegetation.
 1253	Leaf magnesium (Mg) content per leaf area	Leaf	gap			
 1254	Species tolerance to salt	Whole plant	gap			
 1255	Shoot emergences (pubescence, hairs, spines, thorns)	Twig, branch, shoot and bud	gap			
@@ -1207,7 +1207,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1535	Coarse root respiration rate per coarse root dry mass	Root	broader	BERVO:0002413		Coarse root goes in contexts.
 1536	Coarse root total non-structural carbon (TNC) content per coarse root dry mass	Root	broader	BERVO:0002448		Coarse root goes in contexts.
 1538	Coarse root dry mass per coarse root fresh mass (coarse root dry matter content; RDMC)	Root	broader	BERVO:0002411		Coarse root goes in contexts.
-1544	Coarse root calcium (Ca) content per coarse root dry mass	Root	gap			
+1544	Coarse root calcium (Ca) content per coarse root dry mass	Root	broader	BERVO:0002456		Coarse root goes in contexts.
 1545	Coarse root carbon/nitrogen (C/N) ratio	Root	broader	BERVO:0002055		Coarse root goes in contexts.
 1550	Coarse root length per coarse root dry mass (specific coarse root length, SRL)	Root	broader	BERVO:0002374		Coarse root goes in contexts.
 1557	Coarse root surface area per coarse root dry mass (specific coarse root area)	Root	broader	BERVO:0002453		Coarse root goes in contexts.
@@ -1290,15 +1290,15 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1797	Fine root aluminium (Al) content per fine root dry mass	Fine root	gap			
 1798	Fine root arsenic (As) content per fine root dry mass	Fine root	gap			
 1799	Fine root cadmium (Cd) content per fine root dry mass	Fine root	gap			
-1800	Fine root calcium (Ca) content per fine root dry mass	Fine root	gap			
+1800	Fine root calcium (Ca) content per fine root dry mass	Fine root	broader	BERVO:0002456		Fine root goes in contexts.
 1802	Fine root chromium (Cr) content per fine root dry mass	Fine root	gap			
 1803	Fine root copper (Cu) content per fine root dry mass	Fine root	gap			
 1804	Fine root iron (Fe) content per fine root dry mass	Fine root	gap			
 1805	Fine root lead (Pb) content per fine root dry mass	Fine root	gap			
-1807	Fine root magnesium (Mg) content per fine root dry mass	Fine root	gap			
+1807	Fine root magnesium (Mg) content per fine root dry mass	Fine root	broader	BERVO:0002457		Fine root goes in contexts.
 1808	Fine root nickel (Ni) content per fine root dry mass	Fine root	gap			
 1809	Fine root persistence (lifespan, longevity)	Fine root	broader	BERVO:0002417		Fine root goes in contexts.
-1810	Fine root potassium (K) content per fine root dry mass	Fine root	gap			
+1810	Fine root potassium (K) content per fine root dry mass	Fine root	broader	BERVO:0002455		Fine root goes in contexts.
 1811	Fine root sodium (Na) content per fine root dry mass	Fine root	gap			
 1812	Fine root sulfur (S) content per fine root dry mass	Fine root	gap			
 1813	Fine root surface area per fine root dry mass (specific fine root area)	Fine root	broader	BERVO:0002453		Fine root goes in contexts.
@@ -1463,7 +1463,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2031	Fine root debris decomposition rate constant	Fine root	gap			
 2034	Fine root (absorptive)/shoot ratio	Fine root	broader	BERVO:0002414		Absorptive fine root goes in contexts.
 2035	Fine root (absorptive) nitrogen (N) content per absorptive fine root dry mass	Fine root	broader	BERVO:0002340		Absorptive fine root goes in contexts.
-2036	Fine root (absorptive) nitrogen (N) isotope signature (delta 15N)	Fine root	gap			
+2036	Fine root (absorptive) nitrogen (N) isotope signature (delta 15N)	Fine root	broader	BERVO:0002216		Absorptive fine root goes in contexts.
 2037	Fine root (absorptive) tissue density (absorptive fine root dry mass per absorptive fine root volume	Fine root	broader	BERVO:0002376		Absorptive fine root goes in contexts.
 2038	Fine root (absorptive) diameter	Fine root	broader	BERVO:0002375		Absorptive fine root goes in contexts.
 2039	Fine root (absorptive) carbon (C) content per absorptive fine root dry mass	Fine root	broader	BERVO:0002339		Absorptive fine root goes in contexts.
@@ -1479,17 +1479,17 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2053	Fine root (absorptive) aluminium (Al) content per absorptive fine root dry mass	Fine root	gap			
 2054	Fine root (absorptive) arsenic (As) content per absorptive fine root dry mass	Fine root	gap			
 2055	Fine root (absorptive) cadmium (Cd) content per absorptive fine root dry mass	Fine root	gap			
-2056	Fine root (absorptive) calcium (Ca) content per absorptive fine root dry mass	Fine root	gap			
+2056	Fine root (absorptive) calcium (Ca) content per absorptive fine root dry mass	Fine root	broader	BERVO:0002456		Absorptive fine root goes in contexts.
 2057	Fine root (absorptive) carbon/nitrogen (C/N) ratio	Fine root	broader	BERVO:0002055		Absorptive fine root goes in contexts.
 2058	Fine root (absorptive) chromium (Cr) content per absorptive fine root dry mass	Fine root	gap			
 2059	Fine root (absorptive) copper (Cu) content per absorptive fine root dry mass	Fine root	gap			
 2060	Fine root (absorptive) iron (Fe) content per absorptive fine root dry mass	Fine root	gap			
 2061	Fine root (absorptive) lead (Pb) content per absorptive fine root dry mass	Fine root	gap			
 2062	Fine root (absorptive) length per absorptive fine root dry mass (specific absorptive fine root lengt	Fine root	broader	BERVO:0002374		Absorptive fine root goes in contexts.
-2063	Fine root (absorptive) magnesium (Mg) content per absorptive fine root dry mass	Fine root	gap			
+2063	Fine root (absorptive) magnesium (Mg) content per absorptive fine root dry mass	Fine root	broader	BERVO:0002457		Absorptive fine root goes in contexts.
 2064	Fine root (absorptive) nickel (Ni) content per absorptive fine root dry mass	Fine root	gap			
 2065	Fine root (absorptive) persistence (lifespan, longevity)	Fine root	broader	BERVO:0002417		Absorptive fine root goes in contexts.
-2066	Fine root (absorptive) potassium (K) content per absorptive fine root dry mass	Fine root	gap			
+2066	Fine root (absorptive) potassium (K) content per absorptive fine root dry mass	Fine root	broader	BERVO:0002455		Absorptive fine root goes in contexts.
 2067	Fine root (absorptive) sodium (Na) content per absorptive fine root dry mass	Fine root	gap			
 2068	Fine root (absorptive) sulfur (S) content per absorptive fine root dry mass	Fine root	gap			
 2069	Fine root (absorptive) surface area per absorptive fine root dry mass (specific absorptive fine root	Fine root	broader	BERVO:0002453		Absorptive fine root goes in contexts.
@@ -1578,7 +1578,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2287	Fine root (absorptive) debris decomposition rate constant	Fine root	gap			
 2288	Fine root (absorptive) lignin phenol vegetation index	Fine root	gap			
 2291	Fine root (transport) nitrogen (N) content per transport fine root dry mass	Fine root	broader	BERVO:0002340		Transport fine root goes in contexts.
-2292	Fine root (transport) nitrogen (N) isotope signature (delta 15N)	Fine root	gap			
+2292	Fine root (transport) nitrogen (N) isotope signature (delta 15N)	Fine root	broader	BERVO:0002216		Transport fine root goes in contexts.
 2293	Fine root (transport) tissue density (transport fine root dry mass per transport fine root volume)	Fine root	broader	BERVO:0002376		Transport fine root goes in contexts.
 2294	Fine root (transport) diameter	Fine root	broader	BERVO:0002375		Transport fine root goes in contexts.
 2295	Fine root (transport) carbon (C) content per transport fine root dry mass	Fine root	broader	BERVO:0002339		Transport fine root goes in contexts.
@@ -1590,7 +1590,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2307	Fine root (transport) dry mass per ground area	Fine root	broader	BERVO:0001970		Transport fine root goes in contexts.
 2310	Fine root (transport) arsenic (As) content per transport fine root dry mass	Fine root	gap			
 2311	Fine root (transport) cadmium (Cd) content per transport fine root dry mass	Fine root	gap			
-2312	Fine root (transport) calcium (Ca) content per transport fine root dry mass	Fine root	gap			
+2312	Fine root (transport) calcium (Ca) content per transport fine root dry mass	Fine root	broader	BERVO:0002456		Transport fine root goes in contexts.
 2313	Fine root (transport) carbon/nitrogen (C/N) ratio	Fine root	broader	BERVO:0002055		Transport fine root goes in contexts.
 2314	Fine root (transport) chromium (Cr) content per transport fine root dry mass	Fine root	gap			
 2315	Fine root (transport) copper (Cu) content per transport fine root dry mass	Fine root	gap			
@@ -1598,7 +1598,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2318	Fine root (transport) length per transport fine root dry mass (specific transport fine root length,	Fine root	broader	BERVO:0002374		Transport fine root goes in contexts.
 2320	Fine root (transport) nickel (Ni) content per transport fine root dry mass	Fine root	gap			
 2321	Fine root (transport) persistence (lifespan, longevity)	Fine root	broader	BERVO:0002417		Transport fine root goes in contexts.
-2322	Fine root (transport) potassium (K) content per transport fine root dry mass	Fine root	gap			
+2322	Fine root (transport) potassium (K) content per transport fine root dry mass	Fine root	broader	BERVO:0002455		Transport fine root goes in contexts.
 2323	Fine root (transport) sodium (Na) content per transport fine root dry mass	Fine root	gap			
 2325	Fine root (transport) surface area per transport fine root dry mass (specific transport fine root ar	Fine root	broader	BERVO:0002453		Transport fine root goes in contexts.
 2326	Fine root (transport) zinc (Zn) content per transport fine root dry mass	Fine root	gap			
@@ -1650,13 +1650,13 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2562	Belowground plant organ dry mass per belowground plant organ fresh mass (belowground plant organ dry	Root	gap			
 2563	Belowground plant organ dry mass per ground area	Root	broader	BERVO:0001970		Belowground plant material goes in contexts.
 2564	Belowground plant organ morphological adaptations: aerenchyma	Root	gap			
-2568	Belowground plant organ calcium (Ca) content per belowground plant organ dry mass	Root	gap			
+2568	Belowground plant organ calcium (Ca) content per belowground plant organ dry mass	Root	broader	BERVO:0002456		Belowground plant material goes in contexts.
 2569	Belowground plant organ carbon/nitrogen (C/N) ratio	Root	broader	BERVO:0002055		Belowground plant material goes in contexts.
 2572	Belowground plant organ iron (Fe) content per belowground plant organ dry mass	Root	gap			
 2574	Belowground plant organ length per belowground plant organ dry mass (specific belowground plant orga	Root	gap			
-2575	Belowground plant organ magnesium (Mg) content per belowground plant organ dry mass	Root	gap			
+2575	Belowground plant organ magnesium (Mg) content per belowground plant organ dry mass	Root	broader	BERVO:0002457		Belowground plant material goes in contexts.
 2577	Belowground plant organ persistence (lifespan, longevity)	Root	gap			
-2578	Belowground plant organ potassium (K) content per belowground plant organ dry mass	Root	gap			
+2578	Belowground plant organ potassium (K) content per belowground plant organ dry mass	Root	broader	BERVO:0002455		Belowground plant material goes in contexts.
 2585	Belowground plant organ phenols content per belowground plant organ dry mass	Root	gap			
 2622	Belowground plant organ hemicellulose content per belowground plant organ dry mass	Root	gap			
 2623	Belowground plant organ cellulose and hemicellulose content per belowground plant organ dry mass	Root	gap			
@@ -1707,9 +1707,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2887	Litter (other than leaf: twigs, bark, flowers...) water content per litter dry mass	Litter and woody debris	gap			
 2888	Litter (other than leaf: twigs, bark, flowers…) cellulose content per litter dry mass	Litter and woody debris	gap			
 2890	Litter other than leaf phosphorus (P) content per litter dry mass	Litter and woody debris	broader	BERVO:0002380		Dead vegetation goes in contexts.
-2891	Litter (other than leaf: twigs, bark, flowers...) potassium (K) content per litter dry mass	Litter and woody debris	gap			
-2892	Litter (other than leaf: twigs, bark, flowers…) calcium (Ca) content per litter dry mass	Litter and woody debris	gap			
-2893	Litter (other than leaf: twigs, bark, flowers...) magnesium (Mg) content per litter dry mass	Litter and woody debris	gap			
+2891	Litter (other than leaf: twigs, bark, flowers...) potassium (K) content per litter dry mass	Litter and woody debris	broader	BERVO:0002455		Dead vegetation goes in contexts.
+2892	Litter (other than leaf: twigs, bark, flowers…) calcium (Ca) content per litter dry mass	Litter and woody debris	broader	BERVO:0002456		Dead vegetation goes in contexts.
+2893	Litter (other than leaf: twigs, bark, flowers...) magnesium (Mg) content per litter dry mass	Litter and woody debris	broader	BERVO:0002457		Dead vegetation goes in contexts.
 2896	Litter (other than leaf: twigs, bark, flowers...) phenols content per litter dry mass	Litter and woody debris	gap			
 2897	Litter (other than leaf: twigs, bark, flowers...) manganese (Mn) content per litter dry mass	Litter and woody debris	gap			
 2898	Litter (other than leaf: twigs, bark, flowers...) sodium (Na) content per litter dry mass	Litter and woody debris	gap			
@@ -1740,35 +1740,35 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2954	Leaf energy content	Leaf	gap			
 2955	Leaf hydrogen (H) content per leaf dry mass	Leaf	gap			
 2956	Flower onset of flowering (first flowering date, flowering beginning)	Flower and reproduction	gap			
-2957	Bark calcium (Ca) content per bark dry mass	Stem, wood and bark	gap			
+2957	Bark calcium (Ca) content per bark dry mass	Stem, wood and bark	broader	BERVO:0002456		Bark goes in contexts.
 2958	Bark copper (Cu) content per bark dry mass	Stem, wood and bark	gap			
 2959	Bark iron (Fe) content per bark dry mass	Stem, wood and bark	gap			
-2960	Bark potassium (K) content per bark dry mass	Stem, wood and bark	gap			
-2961	Bark magnesium (Mg) content per bark dry mass	Stem, wood and bark	gap			
+2960	Bark potassium (K) content per bark dry mass	Stem, wood and bark	broader	BERVO:0002455		Bark goes in contexts.
+2961	Bark magnesium (Mg) content per bark dry mass	Stem, wood and bark	broader	BERVO:0002457		Bark goes in contexts.
 2962	Bark manganese (Mn) content per bark dry mass	Stem, wood and bark	gap			
 2963	Bark sulfur (S) content per bark dry mass	Stem, wood and bark	gap			
 2964	Bark zinc (Zn) content per bark dry mass	Stem, wood and bark	gap			
-2965	Twig calcium (Ca) content per dry mass	Twig, branch, shoot and bud	gap			
+2965	Twig calcium (Ca) content per dry mass	Twig, branch, shoot and bud	broader	BERVO:0002456		Twig goes in contexts.
 2966	Twig copper (Cu) content per dry mass	Twig, branch, shoot and bud	gap			
 2967	Twig iron (Fe) content per dry mass	Twig, branch, shoot and bud	gap			
-2968	Twig potassium (K) content per dry mass	Twig, branch, shoot and bud	gap			
-2969	Twig magnesium (Mg) content per dry mass	Twig, branch, shoot and bud	gap			
+2968	Twig potassium (K) content per dry mass	Twig, branch, shoot and bud	broader	BERVO:0002455		Twig goes in contexts.
+2969	Twig magnesium (Mg) content per dry mass	Twig, branch, shoot and bud	broader	BERVO:0002457		Twig goes in contexts.
 2970	Twig manganese (Mn) content per dry mass	Twig, branch, shoot and bud	gap			
 2971	Twig sulfur (S) content per dry mass	Twig, branch, shoot and bud	gap			
 2972	Twig zinc (Zn) content per dry mass	Twig, branch, shoot and bud	gap			
-2973	Branch calcium (Ca) content per branch dry mass	Twig, branch, shoot and bud	gap			
+2973	Branch calcium (Ca) content per branch dry mass	Twig, branch, shoot and bud	broader	BERVO:0002456		Branch goes in contexts.
 2974	Branch copper (Cu) content per branch dry mass	Twig, branch, shoot and bud	gap			
 2975	Branch iron (Fe) content per branch dry mass	Twig, branch, shoot and bud	gap			
-2976	Branch magnesium (Mg) content per branch dry mass	Twig, branch, shoot and bud	gap			
+2976	Branch magnesium (Mg) content per branch dry mass	Twig, branch, shoot and bud	broader	BERVO:0002457		Branch goes in contexts.
 2977	Branch manganese (Mn) content per branch dry mass	Twig, branch, shoot and bud	gap			
 2978	Branch sulfur (S) content per branch dry mass	Twig, branch, shoot and bud	gap			
 2979	Branch zinc (Zn) content per branch dry mass	Twig, branch, shoot and bud	gap			
 2980	Branch annual growth	Twig, branch, shoot and bud	gap			
-2981	Cone (strobilus) calcium (Ca) content per cone dry mass	Flower and reproduction	gap			
+2981	Cone (strobilus) calcium (Ca) content per cone dry mass	Flower and reproduction	broader	BERVO:0002456		Cone goes in contexts.
 2982	Cone (strobilus) copper (Cu) content per cone dry mass	Flower and reproduction	gap			
 2983	Cone (strobilus) iron (Fe) content per cone dry mass	Flower and reproduction	gap			
-2984	Cone (strobilus) potassium (K) content per cone dry mass	Flower and reproduction	gap			
-2985	Cone (strobilus) magnesium (Mg) content per cone dry mass	Flower and reproduction	gap			
+2984	Cone (strobilus) potassium (K) content per cone dry mass	Flower and reproduction	broader	BERVO:0002455		Cone goes in contexts.
+2985	Cone (strobilus) magnesium (Mg) content per cone dry mass	Flower and reproduction	broader	BERVO:0002457		Cone goes in contexts.
 2986	Cone (strobilus) manganese (Mn) content per cone dry mass	Flower and reproduction	gap			
 2987	Cone (strobilus) nitrogen (N) content per cone dry mass	Flower and reproduction	broader	BERVO:0002340		Cone goes in contexts.
 2988	Cone (strobilus) phosphorus (P) content per cone dry mass	Flower and reproduction	broader	BERVO:0002380		Cone goes in contexts.
@@ -1798,7 +1798,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3013	Leaf sugar/starch ratio	Leaf	gap			
 3014	Root silica (SiO2) content per root dry mass	Root	gap			
 3015	Root tannin content per root dry mass	Root	gap			
-3016	Wood carbon isotope signature (delta13C)	Stem, wood and bark	gap			
+3016	Wood carbon isotope signature (delta13C)	Stem, wood and bark	broader	BERVO:0002214		Wood goes in contexts.
 3017	Twig loss of xylem hydraulic conductivity	Twig, branch, shoot and bud	gap			
 3018	Wood cross-sectional fraction of Vessel (conduit) area	Stem, wood and bark	gap			
 3019	Wood cross-sectional fraction of fibre area	Stem, wood and bark	gap			
@@ -1897,7 +1897,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3121	Leaf water content per leaf dry mass missing to leaf water saturation	Leaf	gap			
 3122	Leaf water content per leaf dry mass (at saturation)	Leaf	gap			
 3123	Seed germination rate per day (maximum)	Seed, fruit and dispersal	gap			
-3124	Shoot: plant aboveground woody biomass per ground area	Twig, branch, shoot and bud	gap			
+3124	Shoot: plant aboveground woody biomass per ground area	Twig, branch, shoot and bud	broader	BERVO:0001971		Wood goes in contexts.
 3125	Plant biomass and allometry: Leaf petiole dry mass per plant	Whole plant	gap			
 3126	Photosynthesis drawdown of CO2 concentration from ambient airspace to intercellular airspace	Photosynthesis and gas exchange	gap			
 3127	Dispersal kernel measurement (relative abundance at given distance)	Seed, fruit and dispersal	gap			
@@ -1978,7 +1978,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3355	Bark thickness (inner bark)	Stem, wood and bark	broader	BERVO:0002438		Inner bark goes in contexts.
 3356	Bark thickness (outer bark)	Stem, wood and bark	broader	BERVO:0002438		Outer bark goes in contexts.
 3357	Stem construction type	Stem, wood and bark	gap			
-3358	Leaf oxygen (O) isotope signature (delta 18O)	Leaf	gap			
+3358	Leaf oxygen (O) isotope signature (delta 18O)	Leaf	broader	BERVO:0002217		Leaf goes in contexts.
 3359	Leaf construction cost per leaf area	Leaf	gap			
 3360	Branch length	Twig, branch, shoot and bud	gap			
 3361	Plant height of lowest flower	Whole plant	gap			
@@ -2152,8 +2152,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3536	Stem carbon/potassium (C/K) ratio	Stem, wood and bark	gap			
 3537	Stem nitrogen/potassium (N/K) ratio	Stem, wood and bark	gap			
 3538	Stem phosphorus/potassium (P/K) ratio	Stem, wood and bark	gap			
-3539	Wood (sapwood) water hydrogen isotope signature (delta2H)	Stem, wood and bark	gap			
-3540	Wood (sapwood) water oxygen isotope signature (delta18O)	Stem, wood and bark	gap			
+3539	Wood (sapwood) water hydrogen isotope signature (delta2H)	Stem, wood and bark	broader	BERVO:0002215		Sapwood and Water go in contexts. Measured on the water extracted from the sapwood.
+3540	Wood (sapwood) water oxygen isotope signature (delta18O)	Stem, wood and bark	broader	BERVO:0002217		Sapwood and Water go in contexts. Measured on the water extracted from the sapwood.
 3541	Leaf water potential predawn	Leaf	broader	BERVO:0002399		Predawn goes in contexts.
 3542	Leaf water potential midday	Leaf	broader	BERVO:0002399		Midday goes in contexts.
 3543	Litter carbon/potassium (C/K) ratio	Litter and woody debris	gap			
@@ -2306,13 +2306,13 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3702	Internode specific length	Stem, wood and bark	gap			
 3703	Branch wood carbon/nitogen (C/N) ratio	Twig, branch, shoot and bud	gap			
 3704	Branch wood nitrogen (N) content per dry mass	Twig, branch, shoot and bud	broader	BERVO:0002340		Wood and Branch go in contexts.
-3707	Branch wood carbon isotope ratio (delta 13C)	Twig, branch, shoot and bud	gap			
-3708	Branch wood nitrogen isotope ratio (delta 15N)	Twig, branch, shoot and bud	gap			
+3707	Branch wood carbon isotope ratio (delta 13C)	Twig, branch, shoot and bud	broader	BERVO:0002214		Wood and Branch go in contexts.
+3708	Branch wood nitrogen isotope ratio (delta 15N)	Twig, branch, shoot and bud	broader	BERVO:0002216		Wood and Branch go in contexts.
 3709	Branch bark carbon (C) content per dry mass	Twig, branch, shoot and bud	broader	BERVO:0002339		Bark and Branch go in contexts.
 3710	Branch bark nitrogen (N) content per dry mass	Twig, branch, shoot and bud	broader	BERVO:0002340		Bark and Branch go in contexts.
 3711	Branch bark carbon/nitogen (C/N) ratio	Twig, branch, shoot and bud	gap			
-3712	Branch bark carbon isotope ratio (delta 13C)	Twig, branch, shoot and bud	gap			
-3713	Branch bark nitrogen isotope ratio (delta 15N)	Twig, branch, shoot and bud	gap			
+3712	Branch bark carbon isotope ratio (delta 13C)	Twig, branch, shoot and bud	broader	BERVO:0002214		Bark and Branch go in contexts.
+3713	Branch bark nitrogen isotope ratio (delta 15N)	Twig, branch, shoot and bud	broader	BERVO:0002216		Bark and Branch go in contexts.
 3714	Wood dry mass per saturated wood fresh mass (wood dry matter content, WDMC)	Stem, wood and bark	broader	BERVO:0002440		Wood goes in contexts. The fresh mass is taken at water saturation.
 3715	Flower number of fruits	Flower and reproduction	gap			
 3716	Root tip volume	Root	gap			
@@ -2514,7 +2514,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3922	Trap nitrogen (N) content per trap dry mass	Leaf	broader	BERVO:0002340		Carnivorous plant trap goes in contexts.
 3923	Trap carbon (C) content per trap dry mass	Leaf	broader	BERVO:0002339		Carnivorous plant trap goes in contexts.
 3924	Trap phosphorus (P) content per trap dry mass	Leaf	broader	BERVO:0002380		Carnivorous plant trap goes in contexts.
-3925	Trap potassium (K) content per trap dry mass	Leaf	gap			
+3925	Trap potassium (K) content per trap dry mass	Leaf	broader	BERVO:0002455		Carnivorous plant trap goes in contexts.
 3926	Trap dry mass	Leaf	gap			
 3927	Trap SLA	Leaf	gap			
 3928	Trap area	Leaf	gap			
@@ -2591,9 +2591,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 4009	Stem wood cross-section: fraction of vessel lumen	Stem, wood and bark	gap			
 4010	Stem specific hydraulic conductivity	Stem, wood and bark	match	BERVO:0002406		
 4011	Stem wood phosphorus (P) content per dry mass	Stem, wood and bark	broader	BERVO:0002380		Wood and Stem go in contexts.
-4012	Stem wood calcium (Ca) content per dry mass	Stem, wood and bark	gap			
-4013	Stem wood potassium (K) content per dry mass	Stem, wood and bark	gap			
-4014	Stem wood magnesium (Mg) content per dry mass	Stem, wood and bark	gap			
+4012	Stem wood calcium (Ca) content per dry mass	Stem, wood and bark	broader	BERVO:0002456		Wood and Stem go in contexts.
+4013	Stem wood potassium (K) content per dry mass	Stem, wood and bark	broader	BERVO:0002455		Wood and Stem go in contexts.
+4014	Stem wood magnesium (Mg) content per dry mass	Stem, wood and bark	broader	BERVO:0002457		Wood and Stem go in contexts.
 4015	Shoot: plant aboveground (shoot) fresh biomass water content	Twig, branch, shoot and bud	gap			
 4017	Plot aboveground dry mass	Plot and stand	gap			
 4018	Plot aboveground woody biomass of dominant species (dry)	Plot and stand	gap			
@@ -2624,8 +2624,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 4045	Species genom size: 2C	Species genetics and phylogeny	gap			
 4046	Stem diameter growth	Stem, wood and bark	related	BERVO:0002346		The BERVO term is the increment at breast height over a stated period.
 4047	Leaf calcium/magnesium (Ca/Mg) ratio	Leaf	gap			
-4048	Flower carbon isotope ratio (delta 13C)	Flower and reproduction	gap			
-4049	Stem carbon isotope ratio (delta 13C)	Stem, wood and bark	gap			
+4048	Flower carbon isotope ratio (delta 13C)	Flower and reproduction	broader	BERVO:0002214		Flower goes in contexts.
+4049	Stem carbon isotope ratio (delta 13C)	Stem, wood and bark	broader	BERVO:0002214		Stem goes in contexts.
 4050	Leaf prophyll leaf length	Leaf	gap			
 4051	Reproductive organ pistillate flower rachilla length	Flower and reproduction	gap			
 4052	Reproductive organ pistillate flower rachilla count	Flower and reproduction	gap			
