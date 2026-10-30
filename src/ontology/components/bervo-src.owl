@@ -39540,7 +39540,7 @@
         <obo:IAO_0000115>Mass of carbon per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Plant carbon (C) content per plant dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_C, AG_LIT_C, ROOT_C. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 3027. TRY traits mapped here, with what narrows each one in contexts: 72, 84, 407, 447, 456, 471, 617, 691, 775, 841, 868, 898, 944, 1058, 1527, 2039, 2295, 2551, 2883, 2944, 3368, 3369, 3709, 3790, 3792, 3923, 3957, 3959.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_C, AG_LIT_C, ROOT_C. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 3027. TRY traits mapped here, with what narrows each one in contexts: 72, 84, 407, 447, 456, 471, 617, 691, 775, 841, 868, 898, 944, 1058, 1153, 1527, 2039, 2295, 2551, 2883, 2944, 3368, 3369, 3709, 3790, 3792, 3923, 3957, 3959.</rdfs:comment>
         <rdfs:label>Plant tissue carbon content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{C}.kg-1</bervo:BERVO_has_unit>
@@ -39557,7 +39557,7 @@
         <obo:IAO_0000115>Mass of nitrogen per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Plant nitrogen (N) content per plant dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_N, AG_LIT_N, ROOT_N. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 668. TRY traits mapped here, with what narrows each one in contexts: 70, 80, 339, 406, 450, 459, 475, 618, 684, 690, 854, 876, 887, 908, 954, 1199, 1229, 1262, 2035, 2291, 2547, 2882, 2945, 2987, 3453, 3455, 3704, 3710, 3791, 3793, 3922, 3956, 3958.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_N, AG_LIT_N, ROOT_N. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 668. TRY traits mapped here, with what narrows each one in contexts: 70, 80, 339, 406, 450, 459, 475, 618, 684, 690, 854, 876, 887, 908, 954, 1165, 1199, 1229, 1262, 2035, 2291, 2547, 2882, 2945, 2987, 3453, 3455, 3704, 3710, 3791, 3793, 3922, 3956, 3958.</rdfs:comment>
         <rdfs:label>Plant tissue nitrogen content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{N}.kg-1</bervo:BERVO_has_unit>
@@ -40279,7 +40279,7 @@
         <obo:IAO_0000115>Mass of phosphorus per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Plant phosphorus (P) content per plant dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 3028. TRY traits mapped here, with what narrows each one in contexts: 71, 340, 616, 619, 620, 683, 685, 698, 828, 855, 863, 878, 909, 957, 1068, 2049, 2305, 2561, 2890, 2988, 3000, 3924, 4011. Organ and status go in contexts; litter is Dead vegetation. Plant phosphorus to carbon ratio (BERVO:0001856) is the same element relative to carbon.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3028. TRY traits mapped here, with what narrows each one in contexts: 71, 340, 616, 619, 620, 683, 685, 698, 828, 855, 863, 878, 909, 957, 1068, 1169, 2049, 2305, 2561, 2890, 2988, 3000, 3924, 4011. Organ and status go in contexts; litter is Dead vegetation. Plant phosphorus to carbon ratio (BERVO:0001856) is the same element relative to carbon.</rdfs:comment>
         <rdfs:label>Plant tissue phosphorus content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{P}.kg-1</bervo:BERVO_has_unit>
@@ -41672,7 +41672,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of potassium per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 44, 628, 646, 701, 856, 864, 879, 910, 958, 1003, 1069, 1086, 1810, 2066, 2322, 2578, 2891, 2960, 2968, 2984, 3925, 4013. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 44, 628, 646, 701, 856, 864, 879, 910, 958, 1003, 1069, 1086, 1170, 1810, 2066, 2322, 2578, 2891, 2960, 2968, 2984, 3925, 4013. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
         <rdfs:label>Plant tissue potassium content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{K}.kg-1</bervo:BERVO_has_unit>
@@ -41688,7 +41688,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of calcium per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 252, 623, 641, 704, 840, 867, 897, 943, 991, 1054, 1057, 1544, 1800, 2056, 2312, 2568, 2892, 2957, 2965, 2973, 2981, 4012. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 252, 623, 641, 704, 840, 867, 897, 943, 991, 1054, 1057, 1152, 1544, 1800, 2056, 2312, 2568, 2892, 2957, 2965, 2973, 2981, 4012. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
         <rdfs:label>Plant tissue calcium content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{Ca}.kg-1</bervo:BERVO_has_unit>
@@ -41704,12 +41704,482 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of magnesium per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 257, 624, 642, 702, 852, 874, 906, 952, 997, 1066, 1081, 1807, 2063, 2575, 2893, 2961, 2969, 2976, 2985, 4014. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 257, 624, 642, 702, 852, 874, 906, 952, 997, 1066, 1081, 1162, 1807, 2063, 2575, 2893, 2961, 2969, 2976, 2985, 4014. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
         <rdfs:label>Plant tissue magnesium content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{Mg}.kg-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000207"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002458 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002458">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of sulfur per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 262, 629, 647, 859, 912, 961, 1005, 1088, 1128, 1174, 1812, 2068, 2901, 2963, 2971, 2978, 2989. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue sulfur content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>g{S}.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000614"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002459 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002459">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of sodium per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 260, 627, 645, 858, 882, 911, 960, 1004, 1071, 1087, 1127, 1173, 1811, 2067, 2323, 2898, 3464. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue sodium content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>g{Na}.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000143"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002460 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002460">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of manganese per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 258, 703, 853, 875, 907, 953, 1067, 1163, 1269, 1559, 1815, 2071, 2327, 2897, 2962, 2970, 2977, 2986, 2994, 3463. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue manganese content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{Mn}.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000608"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002461 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002461">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of iron per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 256, 626, 644, 705, 849, 950, 995, 1077, 1159, 1804, 2060, 2572, 2910, 2959, 2967, 2975, 2983. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue iron content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{Fe}.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000182"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002462 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002462">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of zinc per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 268, 638, 656, 860, 962, 1007, 1073, 1092, 1129, 1259, 1814, 2070, 2326, 2964, 2972, 2979, 2990. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue zinc content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{Zn}.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000625"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002463 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002463">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of copper per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 255, 636, 654, 844, 947, 993, 1074, 1117, 1803, 2059, 2315, 2958, 2966, 2974, 2982. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue copper content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{Cu}.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000605"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002464 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002464">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of aluminum per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>plant tissue aluminium content</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 249, 625, 643, 987, 1049, 1113, 1149, 1797, 2053, 2913. Organ and status go in contexts; litter is Dead vegetation. BERVO spells the element Aluminum (BERVO:8000180); TRY writes aluminium, kept as an exact synonym.</rdfs:comment>
+        <rdfs:label>Plant tissue aluminum content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{Al}.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000180"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002465 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002465">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of nickel per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 261, 635, 653, 1000, 1084, 1124, 1808, 2064, 2320. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue nickel content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{Ni}.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000610"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002466 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002466">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of silicon per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 264, 1270, 1560, 1816, 3934. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue silicon content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>g{Si}.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000617"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002467 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002467">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of boron per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 250, 1318, 1860, 3555. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue boron content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{B}.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000597"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002468 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002468">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of molybdenum per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 259, 632, 650, 1083. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue molybdenum content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{Mo}.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000609"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002469 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002469">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Number of stomata per unit area of leaf surface.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Stomata density</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 63. Usually counted on one surface, or as the sum of both, which the value should state.</rdfs:comment>
+        <rdfs:label>Stomatal density</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000899"/>
+        <bervo:BERVO_has_unit>mm-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000201"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002470 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002470">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Length of a leaf from its base to its tip along the midrib.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000135"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 144. TRY does not say whether the petiole is included; TRY 940 is the length of the lamina alone. Leaf length:width ratio (BERVO:0000782) is the EcoSIM shape parameter.</rdfs:comment>
+        <rdfs:label>Leaf length</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002471 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002471">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Largest dimension of a leaf at right angles to its length.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000370"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 145. Leaf length:width ratio (BERVO:0000782) is the EcoSIM shape parameter.</rdfs:comment>
+        <rdfs:label>Leaf width</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000197"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002472 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002472">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Length of the petiole of a leaf, from its attachment to the stem to the base of the lamina.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000766"/>
+        <oboInOwl:hasRelatedSynonym>Leaf petiole length</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 143.</rdfs:comment>
+        <rdfs:label>Petiole length</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000580"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000580"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002473 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002473">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of a single leaf as collected, before drying.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf fresh mass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 163. TRY traits mapped here, with what narrows each one in contexts: 3053. Individual leaf dry mass (BERVO:0002396) is the oven-dry mass.</rdfs:comment>
+        <rdfs:label>Individual leaf fresh mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>mg</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002474 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002474">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of chlorophyll, a and b together, in a leaf per unit of its one-sided area.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf chlorophyll content per leaf area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 413. Distinct from Leaf chlorophyll-bound protein fraction (BERVO:0001847), the EcoSIM fraction of leaf protein bound to chlorophyll.</rdfs:comment>
+        <rdfs:label>Leaf chlorophyll content per unit area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{chlorophyll}.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000214"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002475 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002475">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of chlorophyll, a and b together, in a leaf per unit of its dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf chlorophyll content per leaf dry mass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 164. Distinct from Leaf chlorophyll-bound protein fraction (BERVO:0001847), the EcoSIM fraction of leaf protein bound to chlorophyll.</rdfs:comment>
+        <rdfs:label>Leaf chlorophyll content per unit dry mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{chlorophyll}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000214"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002476 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002476">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of lignin in a leaf per unit of its dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf lignin content per leaf dry mass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 87. TRY traits mapped here, with what narrows each one in contexts: 951. Root lignin content per unit dry mass (BERVO:0002412) is the same measure for a root.</rdfs:comment>
+        <rdfs:label>Leaf lignin content per unit dry mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{lignin}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001314"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002477 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002477">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of cellulose in a leaf per unit of its dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf cellulose content per leaf dry mass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 92. TRY traits mapped here, with what narrows each one in contexts: 946.</rdfs:comment>
+        <rdfs:label>Leaf cellulose content per unit dry mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{cellulose}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001323"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002478 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002478">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of non-structural carbohydrates, sugars and starch, in a leaf per unit of its dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>leaf NSC concentration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>leaf TNC content</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf non-structural carbon (TNC) content per leaf dry mass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 507. TRY expands TNC as total non-structural carbon; TNC usually stands for total non-structural carbohydrates, the quantity defined here. Root non-structural carbohydrate content per unit dry mass (BERVO:0002448) is the same measure for a root.</rdfs:comment>
+        <rdfs:label>Leaf non-structural carbohydrate content per unit dry mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{NSC}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000189"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002479 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002479">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of starch in a leaf per unit of its dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf starch content per leaf dry mass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 505. Part of Leaf non-structural carbohydrate content per unit dry mass (BERVO:0002478).</rdfs:comment>
+        <rdfs:label>Leaf starch content per unit dry mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{starch}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001320"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002480 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002480">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Total length of veins in a leaf lamina per unit of lamina area.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>VLA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>vein length per area</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf vein length per leaf area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 740, 4029.</rdfs:comment>
+        <rdfs:label>Leaf vein density</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>mm.mm-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002481 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002481">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Rate of net photosynthesis of a leaf divided by its nitrogen content, both per unit leaf area or both per unit leaf mass.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>PNUE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis rate per leaf nitrogen (N) content (photosynthetic nitrogen use efficiency, PNUE)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 135. Usually taken from light-saturated photosynthesis.</rdfs:comment>
+        <rdfs:label>Photosynthetic nitrogen use efficiency</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_has_unit>umol{CO2}.mol-1{N}.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002482 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002482">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Rate of net photosynthesis of a leaf divided by its rate of transpiration, measured together.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>instantaneous water use efficiency</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis rate per leaf transpiration (photosynthetic water use effinciency: WUE)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 134. Also called instantaneous water use efficiency; distinct from intrinsic water use efficiency, which divides by stomatal conductance. The related synonym keeps TRY&apos;s spelling.</rdfs:comment>
+        <rdfs:label>Photosynthetic water use efficiency</rdfs:label>
+        <bervo:BERVO_has_unit>mmol{CO2}.mol-1{H2O}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000118"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002483 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002483">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Rate of water vapour loss from a leaf per unit of its one-sided area.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf transpiration rate per leaf area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 111. The leaf temperature and air vapour pressure deficit should be reported with the value.</rdfs:comment>
+        <rdfs:label>Leaf transpiration rate per unit area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_has_unit>mmol{H2O}.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000118"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002484 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002484">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Total leaf area of a plant divided by its total dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>LAR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf area per plant dry mass (leaf area ratio; LAR)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 109. Divided by the dry mass of the whole plant; Specific leaf area (BERVO:0002369) divides by leaf dry mass, so leaf area ratio is specific leaf area times the leaf mass fraction. Leaf area:mass during growth (BERVO:0000783) is an EcoSIM parameter, not this term.</rdfs:comment>
+        <rdfs:label>Leaf area ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>m2.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
     </Class>
     
 
@@ -59902,6 +60372,20 @@
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0005708"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after the Plant Ontology (PO:0005708), TRY alignment for issue #27</rdfs:comment>
         <rdfs:label>Cortex</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001323 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001323">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Structural polysaccharide of plant cell walls, a linear glucan of beta-1,4-linked glucose units.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18246"/>
+        <rdfs:comment>Cross-referenced to (1-&gt;4)-beta-D-glucan, which ChEBI gives with cellulose as a related synonym.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after ChEBI (CHEBI:18246), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Cellulose</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
