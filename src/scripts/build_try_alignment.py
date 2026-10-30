@@ -449,6 +449,12 @@ MAPPED = [
     ("broader", "BERVO:0002455", "1170", ctx("Coarse woody debris", "Stem") + CWD_STEM),
     ("broader", "BERVO:0002456", "1152", ctx("Coarse woody debris", "Stem") + CWD_STEM),
     ("broader", "BERVO:0002457", "1162", ctx("Coarse woody debris", "Stem") + CWD_STEM),
+    ("broader", "BERVO:0002458", "1174", ctx("Coarse woody debris", "Stem") + CWD_STEM),
+    ("broader", "BERVO:0002459", "1173", ctx("Coarse woody debris", "Stem") + CWD_STEM),
+    ("broader", "BERVO:0002460", "1163", ctx("Coarse woody debris", "Stem") + CWD_STEM),
+    ("broader", "BERVO:0002461", "1159", ctx("Coarse woody debris", "Stem") + CWD_STEM),
+    ("broader", "BERVO:0002462", "1259", ctx("Coarse woody debris", "Stem") + CWD_STEM),
+    ("broader", "BERVO:0002464", "1149", ctx("Coarse woody debris", "Stem") + CWD_STEM),
     ("match", "BERVO:0001971", "4024", ""),
 ]
 
