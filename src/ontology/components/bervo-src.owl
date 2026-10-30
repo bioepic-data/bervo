@@ -41736,7 +41736,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of sodium per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 260, 627, 645, 858, 882, 911, 960, 1004, 1071, 1087, 1127, 1173, 1811, 2067, 2323, 2898. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 260, 627, 645, 858, 882, 911, 960, 1004, 1071, 1087, 1127, 1173, 1811, 2067, 2323, 2898, 3464. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
         <rdfs:label>Plant tissue sodium content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{Na}.kg-1</bervo:BERVO_has_unit>
@@ -41752,7 +41752,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of manganese per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 258, 703, 853, 875, 907, 953, 1067, 1163, 1269, 1559, 1815, 2071, 2327, 2897, 2962, 2970, 2977, 2986, 2994. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 258, 703, 853, 875, 907, 953, 1067, 1163, 1269, 1559, 1815, 2071, 2327, 2897, 2962, 2970, 2977, 2986, 2994, 3463. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
         <rdfs:label>Plant tissue manganese content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>mg{Mn}.kg-1</bervo:BERVO_has_unit>
@@ -41817,7 +41817,7 @@
         <obo:IAO_0000115>Mass of aluminum per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>plant tissue aluminium content</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 249, 625, 643, 1049, 1113, 1149, 1797, 2053, 2913. Organ and status go in contexts; litter is Dead vegetation. BERVO spells the element Aluminum (BERVO:8000180); TRY writes aluminium, kept as an exact synonym.</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 249, 625, 643, 987, 1049, 1113, 1149, 1797, 2053, 2913. Organ and status go in contexts; litter is Dead vegetation. BERVO spells the element Aluminum (BERVO:8000180); TRY writes aluminium, kept as an exact synonym.</rdfs:comment>
         <rdfs:label>Plant tissue aluminum content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>mg{Al}.kg-1</bervo:BERVO_has_unit>
@@ -41971,7 +41971,7 @@
         <obo:IAO_0000115>Mass of a single leaf as collected, before drying.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Leaf fresh mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 163. Individual leaf dry mass (BERVO:0002396) is the oven-dry mass.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 163. TRY traits mapped here, with what narrows each one in contexts: 3053. Individual leaf dry mass (BERVO:0002396) is the oven-dry mass.</rdfs:comment>
         <rdfs:label>Individual leaf fresh mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>mg</bervo:BERVO_has_unit>
@@ -42023,7 +42023,7 @@
         <obo:IAO_0000115>Mass of lignin in a leaf per unit of its dry mass.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Leaf lignin content per leaf dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 87. Root lignin content per unit dry mass (BERVO:0002412) is the same measure for a root.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 87. TRY traits mapped here, with what narrows each one in contexts: 951. Root lignin content per unit dry mass (BERVO:0002412) is the same measure for a root.</rdfs:comment>
         <rdfs:label>Leaf lignin content per unit dry mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>mg{lignin}.g-1{dry_mass}</bervo:BERVO_has_unit>
@@ -42040,7 +42040,7 @@
         <obo:IAO_0000115>Mass of cellulose in a leaf per unit of its dry mass.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Leaf cellulose content per leaf dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 92.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 92. TRY traits mapped here, with what narrows each one in contexts: 946.</rdfs:comment>
         <rdfs:label>Leaf cellulose content per unit dry mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>mg{cellulose}.g-1{dry_mass}</bervo:BERVO_has_unit>

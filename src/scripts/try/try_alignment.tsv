@@ -773,12 +773,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 943	Litter (leaf) calcium (Ca) content per leaf litter dry mass	Litter and woody debris	broader	BERVO:0002456		Leaf and Dead vegetation go in contexts.
 944	Litter (leaf) carbon (C) content per leaf litter dry mass	Litter and woody debris	broader	BERVO:0002339		Leaf and Dead vegetation go in contexts.
 945	Litter (leaf) carbon/nitrogen (C/N) ratio	Litter and woody debris	broader	BERVO:0002055		Leaf and Dead vegetation go in contexts.
-946	Litter (leaf) cellulose content per leaf litter dry mass	Litter and woody debris	gap			
+946	Litter (leaf) cellulose content per leaf litter dry mass	Litter and woody debris	broader	BERVO:0002477		Leaf and Dead vegetation go in contexts.
 947	Litter (leaf) copper (Cu) content per leaf litter dry mass	Litter and woody debris	broader	BERVO:0002463		Leaf and Dead vegetation go in contexts.
 948	Litter (leaf) decomposition rate	Litter and woody debris	gap			
 949	Litter (leaf) decomposition rate constant	Litter and woody debris	gap			
 950	Litter (leaf) iron (Fe) content per leaf litter dry mass	Litter and woody debris	broader	BERVO:0002461		Leaf and Dead vegetation go in contexts.
-951	Litter (leaf) lignin content per leaf litter dry mass	Litter and woody debris	gap			
+951	Litter (leaf) lignin content per leaf litter dry mass	Litter and woody debris	broader	BERVO:0002476		Leaf and Dead vegetation go in contexts.
 952	Litter (leaf) magnesium (Mg) content per leaf litter dry mass	Litter and woody debris	broader	BERVO:0002457		Leaf and Dead vegetation go in contexts.
 953	Litter (leaf) manganese (Mn) content per leaf litter dry mass	Litter and woody debris	broader	BERVO:0002460		Leaf and Dead vegetation go in contexts.
 954	Litter (leaf) nitrogen (N) content per leaf litter dry mass	Litter and woody debris	broader	BERVO:0002340		Leaf and Dead vegetation go in contexts.
@@ -807,13 +807,13 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 978	Leaf shrinkage	Leaf	gap			
 979	Leaf surface pattern type	Leaf	gap			
 980	Leaf surface waxiness	Leaf	gap			
-981	Leaf transpiration rate per leaf dry mass	Photosynthesis and gas exchange	gap			
+981	Leaf transpiration rate per leaf dry mass	Photosynthesis and gas exchange	related	BERVO:0002483		Per unit leaf dry mass rather than area.
 982	Leaf relative water content (leaf water content fresh / leaf water content saturated; RWC)	Leaf	match	BERVO:0002403		
 983	Leaf water & osmotic potential: leaf water potential	Leaf	match	BERVO:0002399		
 984	Leaf water saturation deficit	Leaf	gap			
 985	Leaflet length	Leaf	gap			
 986	Leaflet width	Leaf	gap			
-987	Litter aluminium (Al ) content per litter dry mass	Litter and woody debris	gap			
+987	Litter aluminium (Al ) content per litter dry mass	Litter and woody debris	broader	BERVO:0002464		Dead vegetation goes in contexts. The rule misses it for a stray space in TRY's '(Al )'.
 988	Litter antimony (Sb) content per litter dry mass	Litter and woody debris	gap			
 989	Litter arsenic (As) content per litter dry mass	Litter and woody debris	gap			
 990	Litter cadmium (Cd) content per litter dry mass	Litter and woody debris	gap			
@@ -1833,7 +1833,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3048	Fruit palatability	Seed, fruit and dispersal	gap			
 3050	Leaf dry mass (cotyledons)	Leaf	broader	BERVO:0002396		Cotyledon goes in contexts.
 3051	Plant biomass and allometry: Leaf dry mass (cotyledons) per plant	Whole plant	gap			
-3053	Leaf fresh mass (cotyledons)	Leaf	gap			
+3053	Leaf fresh mass (cotyledons)	Leaf	broader	BERVO:0002473		Cotyledon goes in contexts.
 3054	Leaf area (cotyledons)	Leaf	gap			
 3055	Leaf dry mass per fresh mass (cotyledons, cotyledon LDMC)	Leaf	broader	BERVO:0002370		Cotyledon goes in contexts.
 3056	Leaf area per dry mass (cotyledons, specific leaf area (SLA) of cotyledons)	Leaf	gap			
@@ -1983,7 +1983,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3360	Branch length	Twig, branch, shoot and bud	gap			
 3361	Plant height of lowest flower	Whole plant	gap			
 3362	Photosynthesis: maximum rate of PEPc carboxylation (Vpmax) per leaf area	Photosynthesis and gas exchange	gap			
-3363	Stomata density ratio from one side of leaf to other	Photosynthesis and gas exchange	gap			
+3363	Stomata density ratio from one side of leaf to other	Photosynthesis and gas exchange	related	BERVO:0002469		The ratio of the densities on the two leaf surfaces, not a density.
 3364	Photosynthesis A/Ci curve: photosynthetic rate per leaf area	Photosynthesis and gas exchange	gap			
 3365	Photosynthesis A/Ci curve: stomata conductance per leaf area	Photosynthesis and gas exchange	gap			
 3366	Photosynthesis A/Ci curve: intercellular CO2 concentration	Photosynthesis and gas exchange	gap			
@@ -2078,8 +2078,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3459	Plant belowground relative growth rate	Whole plant	gap			
 3460	Plant biomass and allometry: Litter (leaf) number of dead leaves per plant	Whole plant	gap			
 3461	Plant biomass and allometry: Root length of primary roots per plant	Whole plant	gap			
-3463	Stem manganese (Mn) (manganese) content per dry mass	Stem, wood and bark	gap			
-3464	Stem Na (sodium) content per dry mass	Stem, wood and bark	gap			
+3463	Stem manganese (Mn) (manganese) content per dry mass	Stem, wood and bark	broader	BERVO:0002460		Stem goes in contexts. TRY repeats the element name after the symbol; the same quantity as 2994.
+3464	Stem Na (sodium) content per dry mass	Stem, wood and bark	broader	BERVO:0002459		Stem goes in contexts. TRY gives the symbol before the element name.
 3465	Leaf sheath area	Leaf	gap			
 3466	Leaf sheath dry mass	Leaf	gap			
 3467	Leaf sheath area per sheath dry mass (sheath SLA)	Leaf	gap			
@@ -2448,8 +2448,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3847	Stem bark water content	Stem, wood and bark	gap			
 3848	Stem inner bark water content	Stem, wood and bark	gap			
 3849	Stem outer bark water content	Stem, wood and bark	gap			
-3850	Leaf width: left of midrib	Leaf	gap			
-3851	Leaf width: right of midrib	Leaf	gap			
+3850	Leaf width: left of midrib	Leaf	related	BERVO:0002471		The width on one side of the midrib only.
+3851	Leaf width: right of midrib	Leaf	related	BERVO:0002471		The width on one side of the midrib only.
 3852	Leaf width asymmetry	Leaf	gap			
 3853	Leaf axil water conductivity	Leaf	gap			
 3854	Leaf axil water pH	Leaf	gap			
@@ -2626,7 +2626,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 4047	Leaf calcium/magnesium (Ca/Mg) ratio	Leaf	gap			
 4048	Flower carbon isotope ratio (delta 13C)	Flower and reproduction	broader	BERVO:0002214		Flower goes in contexts.
 4049	Stem carbon isotope ratio (delta 13C)	Stem, wood and bark	broader	BERVO:0002214		Stem goes in contexts.
-4050	Leaf prophyll leaf length	Leaf	gap			
+4050	Leaf prophyll leaf length	Leaf	related	BERVO:0002470		The length of a prophyll, the first leaf of a shoot.
 4051	Reproductive organ pistillate flower rachilla length	Flower and reproduction	gap			
 4052	Reproductive organ pistillate flower rachilla count	Flower and reproduction	gap			
 4053	Reproductive organ pistillate inflorescence length	Flower and reproduction	gap			

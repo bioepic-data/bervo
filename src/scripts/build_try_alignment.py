@@ -455,6 +455,17 @@ MAPPED = [
     ("broader", "BERVO:0002461", "1159", ctx("Coarse woody debris", "Stem") + CWD_STEM),
     ("broader", "BERVO:0002462", "1259", ctx("Coarse woody debris", "Stem") + CWD_STEM),
     ("broader", "BERVO:0002464", "1149", ctx("Coarse woody debris", "Stem") + CWD_STEM),
+    # Rows the element rules miss because of a quirk in the TRY trait name.
+    ("broader", "BERVO:0002464", "987", ctx("Dead vegetation") + " The rule misses it for a stray space in TRY's '(Al )'."),
+    ("broader", "BERVO:0002460", "3463", ctx("Stem") + " TRY repeats the element name after the symbol; the same quantity as 2994."),
+    ("broader", "BERVO:0002459", "3464", ctx("Stem") + " TRY gives the symbol before the element name."),
+    ("broader", "BERVO:0002473", "3053", COTYLEDON),
+    ("broader", "BERVO:0002476", "951", ctx("Leaf", "Dead vegetation")),
+    ("broader", "BERVO:0002477", "946", ctx("Leaf", "Dead vegetation")),
+    ("related", "BERVO:0002483", "981", "Per unit leaf dry mass rather than area."),
+    ("related", "BERVO:0002469", "3363", "The ratio of the densities on the two leaf surfaces, not a density."),
+    ("related", "BERVO:0002471", "3850 3851", "The width on one side of the midrib only."),
+    ("related", "BERVO:0002470", "4050", "The length of a prophyll, the first leaf of a shoot."),
     ("match", "BERVO:0001971", "4024", ""),
 ]
 
