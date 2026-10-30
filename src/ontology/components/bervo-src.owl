@@ -33132,7 +33132,7 @@
         <oboInOwl:hasRelatedSynonym>Plot aboveground biomass per ground area</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>above-ground biomass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Biomass, above-ground&quot;: The biomass is the mass of living biological organisms in a given area or ecosystem at a given time on or above the surface of the ground. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: AG_BIOMASS_TREE, AG_BIOMASS_SHRUB, AG_BIOMASS_GRASS, AG_BIOMASS_CROP, AG_BIOMASS_OTHER. The vegetation type goes in contexts. TRY trait ID: 4024. TRY traits mapped here, with what narrows each one in contexts: 448, 494, 524.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Biomass, above-ground&quot;: The biomass is the mass of living biological organisms in a given area or ecosystem at a given time on or above the surface of the ground. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: AG_BIOMASS_TREE, AG_BIOMASS_SHRUB, AG_BIOMASS_GRASS, AG_BIOMASS_CROP, AG_BIOMASS_OTHER. The vegetation type goes in contexts. Living plant material includes the heartwood of a living tree, though heartwood cells are dead. TRY trait ID: 4024. TRY traits mapped here, with what narrows each one in contexts: 448, 494, 524, 1094, 1183, 3124.</rdfs:comment>
         <rdfs:label>Aboveground biomass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
@@ -37435,7 +37435,7 @@
         <oboInOwl:hasExactSynonym>d13C</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>delta 13C</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Carbon-13, stable isotope ratio delta&quot;: Difference in the 13C:12C ratio between the sample and standard (del C 13)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Carbon-13, stable isotope ratio delta&quot;: Difference in the 13C:12C ratio between the sample and standard (del C 13). TRY traits mapped here, with what narrows each one in contexts: 89, 90, 829, 1115, 1213, 1252, 3016, 3707, 3712, 4048, 4049. Plant tissue values are mapped here with the organ in contexts, as for the plant tissue element contents, rather than to a plant tissue delta term.</rdfs:comment>
         <rdfs:label>Delta carbon-13</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001069"/>
@@ -37474,7 +37474,7 @@
         <oboInOwl:hasExactSynonym>d15N</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>delta 15N</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Nitrogen-15, stable isotope ratio delta&quot;: Difference in the 15N:14N ratio between the sample and standard (del N 15)</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Nitrogen-15, stable isotope ratio delta&quot;: Difference in the 15N:14N ratio between the sample and standard (del N 15). TRY traits mapped here, with what narrows each one in contexts: 78, 81, 832, 1001, 1125, 1230, 2036, 2292, 3708, 3713. Plant tissue values are mapped here with the organ in contexts, as for the plant tissue element contents, rather than to a plant tissue delta term.</rdfs:comment>
         <rdfs:label>Delta nitrogen-15</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001071"/>
@@ -37493,7 +37493,7 @@
         <oboInOwl:hasExactSynonym>d18O</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>delta 18O</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Oxygen-18, stable isotope ratio delta&quot;: Difference in the 18O:16O ratio between the sample and standard</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Oxygen-18, stable isotope ratio delta&quot;: Difference in the 18O:16O ratio between the sample and standard. TRY traits mapped here, with what narrows each one in contexts: 3358. Plant tissue values are mapped here with the organ in contexts, as for the plant tissue element contents, rather than to a plant tissue delta term.</rdfs:comment>
         <rdfs:label>Delta oxygen-18</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
         <bervo:BERVO_has_unit>[ppth]</bervo:BERVO_has_unit>
@@ -37614,7 +37614,7 @@
         <oboInOwl:hasExactSynonym>d18O-H2O</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>delta 18O of water</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;delta-18O of H2O&quot;: Isotope 18O of water</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;delta-18O of H2O&quot;: Isotope 18O of water. TRY traits mapped here, with what narrows each one in contexts: 3540.</rdfs:comment>
         <rdfs:label>Water delta oxygen-18</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001070"/>
@@ -37635,7 +37635,7 @@
         <oboInOwl:hasExactSynonym>dD-H2O</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>delta 2H of water</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), ESS-DIVE survey alignment for issue #171</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;delta-D of H2O&quot;: hydrogen isotopes of water</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;delta-D of H2O&quot;: hydrogen isotopes of water. TRY traits mapped here, with what narrows each one in contexts: 3539.</rdfs:comment>
         <rdfs:label>Water delta deuterium</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001067"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001070"/>
@@ -41662,6 +41662,54 @@
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002455 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002455">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of potassium per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 44, 628, 646, 701, 856, 864, 879, 910, 958, 1003, 1069, 1086, 1810, 2066, 2322, 2578, 2891, 2960, 2968, 2984, 3925, 4013. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue potassium content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>g{K}.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000198"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002456 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002456">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of calcium per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 252, 623, 641, 704, 840, 867, 897, 943, 991, 1054, 1057, 1544, 1800, 2056, 2312, 2568, 2892, 2957, 2965, 2973, 2981, 4012. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue calcium content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>g{Ca}.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000108"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002457 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002457">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of magnesium per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 30 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 257, 624, 642, 702, 852, 874, 906, 952, 997, 1066, 1081, 1807, 2063, 2575, 2893, 2961, 2969, 2976, 2985, 4014. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue magnesium content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>g{Mg}.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000207"/>
     </Class>
     
 
