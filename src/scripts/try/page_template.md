@@ -36,9 +36,12 @@ eleventh added the content of eleven more elements for any plant tissue (S, Na, 
 Zn, Cu, Al, Ni, Si, B and Mo) and the most used leaf traits: stomatal density, leaf
 length and width, petiole length, fresh mass, chlorophyll, lignin, cellulose,
 non-structural carbohydrate and starch content, vein density, photosynthetic nitrogen and
-water use efficiency, transpiration rate and leaf area ratio. Still to come are the value
-lists of the categorical traits (woodiness, growth form, leaf type, leaf phenology) and
-terms for the gaps listed here.
+water use efficiency, transpiration rate and leaf area ratio. The twelfth added lignin,
+cellulose, hemicellulose, phenolics, non-structural carbohydrate and starch content for
+any plant tissue, with the leaf and root terms as their subclasses, and a decomposition
+rate constant for dead plant material. Still to come are the value lists of the
+categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms for the
+gaps listed here.
 
 ## Sources
 
@@ -79,7 +82,8 @@ The map is `src/scripts/try/try_alignment.tsv`, written by
 Groups and the `species_attribute` status are assigned by rules on the trait name, which
 were checked by hand. The C/N and N/P rows in `broader` are assigned the same way, as
 are the element contents per unit dry mass for C, N, P, K, Ca, Mg, S, Na, Mn, Fe, Zn,
-Cu, Al, Ni, Si, B and Mo. Root contents per unit of soil mass and root microbial biomass
+Cu, Al, Ni, Si, B and Mo, and the lignin, cellulose, hemicellulose, phenolics,
+non-structural carbohydrate and starch contents. Root contents per unit of soil mass and root microbial biomass
 were excluded from them, since neither is the content of a plant tissue. Every `match`
 and `related` row was assigned by hand.
 
