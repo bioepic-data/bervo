@@ -68,12 +68,29 @@ BROADER = [
     (r"boron \(B\) content per [\w\s(),-]*dry mass$", "BERVO:0002467"),
     (r"molybdenum \(Mo\) content per [\w\s(),-]*dry mass$", "BERVO:0002468"),
 ]
+# Compound contents, ruled separately because EXCLUDE keeps them out of the element rules.
+# COMPOUND_EXCLUDE keeps out mixtures ("cellulose and lignin"), contents per unit carbon,
+# and phenol measures other than total phenolics.
+BROADER_COMPOUNDS = [
+    (r"(?<![\w-])lignin content per [\w\s(),-]*dry mass$", "BERVO:0002485"),
+    (r"(?<![\w-])cellulose content per [\w\s(),-]*dry mass$", "BERVO:0002486"),
+    (r"hemi-?cellulose content per [\w\s(),-]*dry mass$", "BERVO:0002487"),
+    (r"(?<!\w)phenols content per [\w\s(),-]*dry mass$", "BERVO:0002488"),
+    (r"total non-?structural carbo\w* \(TNC\) content per [\w\s(),-]*dry mass$|total non-structural carbohydrate concentration$", "BERVO:0002489"),
+    (r"starch content per [\w\s(),-]*dry mass$|starch concentration$", "BERVO:0002490"),
+]
+COMPOUND_EXCLUDE = r"carbon \(C\)| and |\+|/|\bratio\b|soluble|polyphenol|chlorogenic"
 # Look like tissue contents but are not: amounts per unit soil, microbial biomass, fractions...
 EXCLUDE = r"soil dry mass|microbial|fungal|bacterial|labile|structural|soluble|TNC|non-structural|cellulose|lignin|isotope|versus| vs |per leaf nitrogen|cell wall|organic|ground area|per plant$|fraction"
 # The concepts a broader row takes in contexts: its organ or part, and its status where the
 # name gives one. First match wins, so each pattern carries the whole set for its name form,
 # and the more specific forms come first. A broader row that matches none stops the builder.
 CONTEXTS = [
+    (r"^Twig inner bark", ["Inner bark", "Twig"]),
+    (r"^Twig wood", ["Wood", "Twig"]),
+    (r"^Coarse root inner bark", ["Inner bark", "Coarse root"]),
+    (r"^Coarse root wood", ["Wood", "Coarse root"]),
+    (r"^Stem inner bark", ["Inner bark", "Stem"]),
     (r"^Litter (\(other|other)", ["Dead vegetation"]),  # mixed litter: twigs, bark, flowers...
     (r"^Litter \(fine root\)", ["Fine root", "Dead vegetation"]),
     (r"^Litter \(leaf\)", ["Leaf", "Dead vegetation"]),
@@ -87,6 +104,7 @@ CONTEXTS = [
     (r"absorptive", ["Absorptive fine root"]),
     (r"\(transport\)", ["Transport fine root"]),
     (r"^Fine root", ["Fine root"]),
+    (r"^Fibrous root", ["Fine root"]),  # fibrous roots of a TRY NSC trait are fine roots
     (r"^Coarse root", ["Coarse root"]),
     (r"^Root", ["Root"]),
     (r"^Belowground", ["Belowground plant material"]),
@@ -110,6 +128,7 @@ CONTEXTS = [
     (r"^Reproductive organ", ["Reproductive structure"]),
     (r"^Cone", ["Cone"]),
     (r"^Fruit", ["Fruit"]),
+    (r"^Seed", ["Seed"]),
     (r"^Trap", ["Carnivorous plant trap"]),
 ]
 
@@ -466,6 +485,44 @@ MAPPED = [
     ("related", "BERVO:0002469", "3363", "The ratio of the densities on the two leaf surfaces, not a density."),
     ("related", "BERVO:0002471", "3850 3851", "The width on one side of the midrib only."),
     ("related", "BERVO:0002470", "4050", "The length of a prophyll, the first leaf of a shoot."),
+    # Slice 12: tissue compounds (the first ones by BROADER_COMPOUNDS), decomposition, and
+    # related rows for per-fresh-mass contents and leaf traits.
+    ("broader", "BERVO:0002485", "1160", ctx("Coarse woody debris", "Stem") + CWD_STEM),
+    ("broader", "BERVO:0002486", "1156", ctx("Coarse woody debris", "Stem") + CWD_STEM),
+    ("broader", "BERVO:0002488", "1168", ctx("Coarse woody debris", "Stem") + CWD_STEM),
+    ("match", "BERVO:0002491", "994", ""),
+    ("broader", "BERVO:0002491", "949", ctx("Leaf", "Dead vegetation")),
+    ("broader", "BERVO:0002491", "902 1910", ctx("Fine root", "Dead vegetation")),
+    ("broader", "BERVO:0002491", "2881", ctx("Dead vegetation") + " Litter other than leaves: twigs, bark, flowers and the like."),
+    ("broader", "BERVO:0002491", "846", ctx("Coarse woody debris", "Branch")),
+    ("broader", "BERVO:0002491", "1062", ctx("Coarse woody debris", "Coarse root")),
+    ("broader", "BERVO:0002491", "1158", ctx("Coarse woody debris", "Stem")),
+    ("broader", "BERVO:0002491", "1519", ctx("Root", "Dead vegetation")),
+    ("broader", "BERVO:0002491", "1775", ctx("Coarse root", "Dead vegetation")),
+    ("broader", "BERVO:0002491", "2031", ctx("Fine root", "Dead vegetation")),
+    ("broader", "BERVO:0002491", "2287", ctx("Absorptive fine root", "Dead vegetation")),
+    ("broader", "BERVO:0002491", "2543", ctx("Transport fine root", "Dead vegetation")),
+    ("broader", "BERVO:0002491", "2799", ctx("Belowground plant material", "Dead vegetation")),
+    ("related", "BERVO:0002491", "39 845 869 901 948 1061 1157 2880 3951", "TRY does not say whether this is a rate constant or a mass loss per unit time."),
+    ("related", "BERVO:0002491", "1908", "A monthly rate; TRY does not say whether it is a rate constant or a mass loss."),
+    ("related", "BERVO:0002456", "3215", "Per unit fine root fresh mass rather than dry mass."),
+    ("related", "BERVO:0002455", "3216", "Per unit fine root fresh mass rather than dry mass."),
+    ("related", "BERVO:0002457", "3217", "Per unit fine root fresh mass rather than dry mass."),
+    ("related", "BERVO:0002380", "3218", "Per unit fine root fresh mass rather than dry mass."),
+    ("related", "BERVO:0002458", "3219", "Per unit fine root fresh mass rather than dry mass."),
+    ("related", "BERVO:0002464", "3220", "Per unit fine root fresh mass rather than dry mass."),
+    ("related", "BERVO:0002460", "3221", "Per unit fine root fresh mass rather than dry mass."),
+    ("related", "BERVO:0002469", "67", "Stomata per epidermal cell, not per unit area."),
+    ("related", "BERVO:0002469", "781", "How the stomata are divided between the two leaf surfaces."),
+    ("related", "BERVO:0002480", "741", "The density of free vein endings, not vein length per area."),
+    ("related", "BERVO:0002480", "3904", "The distance between veins, which falls as vein density rises."),
+    ("related", "BERVO:0002482", "3128", "Intrinsic water use efficiency, divided by stomatal conductance rather than transpiration."),
+    ("related", "BERVO:0002474", "416", "The ratio of chlorophyll a to chlorophyll b."),
+    ("related", "BERVO:0002474", "3001 3932", "A relative optical index of chlorophyll, not a mass."),
+    ("related", "BERVO:0002475", "732", "Per unit leaf nitrogen rather than dry mass."),
+    ("related", "BERVO:0002472", "1264", "Petiole length per unit petiole dry mass."),
+    ("related", "BERVO:0002472", "3873", "Petiole length divided by petiole diameter."),
+    ("related", "BERVO:0002471", "3852", "The asymmetry of the two half-widths."),
     ("match", "BERVO:0001971", "4024", ""),
 ]
 
@@ -503,6 +560,10 @@ for slot, ids in PFT_SLOTS.items():
 
 
 def broader_term(name):
+    if not re.search(COMPOUND_EXCLUDE, name):
+        term = next((term for pat, term in BROADER_COMPOUNDS if re.search(pat, name)), None)
+        if term:
+            return term
     if re.search(EXCLUDE, name):
         return None
     return next((term for pat, term in BROADER if re.search(pat, name)), None)
