@@ -42967,7 +42967,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002528">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>Oven-dry mass of a plant organ or tissue divided by its fresh mass.</obo:IAO_0000115>
+        <obo:IAO_0000115>Oven-dry mass of a plant organ or tissue, or of whole plant material, divided by its fresh mass.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Stem dry matter content (BERVO:0002440), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 119, 689, 1010, 3559, 3588, 3788. Organ goes in contexts. Leaf dry matter content (BERVO:0002370), Root dry matter content (BERVO:0002411) and Stem dry matter content (BERVO:0002440) are its leaf, root and stem subclasses. Whether the fresh mass is taken at water saturation should be reported with the value.</rdfs:comment>
         <rdfs:label>Plant tissue dry matter content</rdfs:label>
@@ -43649,7 +43649,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002566">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Proportional change in the respiration rate of a plant organ or tissue with temperature, usually given as Q10, the factor by which the rate rises for a 10 degree Celsius rise.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>respiration Q10</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>respiration Q10</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 272, 445, 516, 522. Organ goes in contexts. Some studies give an activation energy instead of Q10, so the term takes either unit; the form and the temperature range should be reported with the value.</rdfs:comment>
         <rdfs:label>Plant tissue respiration temperature sensitivity</rdfs:label>
@@ -43755,14 +43755,13 @@
     <!-- https://w3id.org/bervo/BERVO_0002572 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002572">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
         <obo:IAO_0000115>Number of seeds per unit ground area, either produced by plants over a season or present at a time.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>Seed number per ground area</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Seed number per square meter</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait IDs: 1105, 3603. What is counted, such as the seed rain over a year or the seeds in the soil, should be reported with the value. Soil seed bank density (BERVO:0002573) is its subclass for seeds in the soil.</rdfs:comment>
         <rdfs:label>Seed number per ground area</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000899"/>
         <bervo:BERVO_has_unit>{seeds}.m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
@@ -43774,14 +43773,15 @@
     <!-- https://w3id.org/bervo/BERVO_0002573 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002573">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002572"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
         <obo:IAO_0000115>Number of viable seeds in the soil per unit ground area, to a stated depth.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>seed bank density</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Seedbank density</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 1111. Usually estimated by germinating seeds from soil cores, or by extracting them.</rdfs:comment>
         <rdfs:label>Soil seed bank density</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000899"/>
         <bervo:BERVO_has_unit>{seeds}.m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
@@ -43889,10 +43889,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002579">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Number of flowers produced by a plant in a flowering season.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>Flower number per plant</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>number of flowers per plant</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 2999.</rdfs:comment>
-        <rdfs:label>Number of flowers per plant</rdfs:label>
+        <rdfs:label>Flower number per plant</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
@@ -43906,12 +43906,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002580">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>Number of flowers in an inflorescence.</obo:IAO_0000115>
+        <obo:IAO_0000115>Count of the flowers borne on one inflorescence, whether open or not.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>number of flowers per inflorescence</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Inflorescence number of flowers (floral density)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Inflorescence: number of flowers per inflorescence</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait IDs: 2947, 3719.</rdfs:comment>
-        <rdfs:label>Number of flowers per inflorescence</rdfs:label>
+        <rdfs:label>Flower number per inflorescence</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
@@ -43926,11 +43927,12 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002581">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Number of fruits that develop from one inflorescence.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>number of fruits per infructescence</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Inflorescence: number of fruits per inflorescence</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Infructescence number of fruits (fruits per infructescence)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait IDs: 3613, 3881. Number of flowers per inflorescence (BERVO:0002580) is the number of flowers the fruits develop from.</rdfs:comment>
-        <rdfs:label>Number of fruits per infructescence</rdfs:label>
+        <rdfs:comment>TRY trait IDs: 3613, 3881. Flower number per inflorescence (BERVO:0002580) is the number of flowers the fruits develop from.</rdfs:comment>
+        <rdfs:label>Fruit number per infructescence</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
@@ -43968,7 +43970,7 @@
         <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 669, 670, 671. Organ goes in contexts. The nitrogen counterpart of Plant organ mass fraction (BERVO:0002582).</rdfs:comment>
         <rdfs:label>Plant organ nitrogen fraction</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
-        <bervo:BERVO_has_unit>g{N}.g-1{N}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
@@ -43986,7 +43988,8 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 1504. TRY traits mapped here, with what narrows each one in contexts: 2021. Root class goes in contexts. Specific root length (BERVO:0002374) divides by the root dry mass instead.</rdfs:comment>
         <rdfs:label>Root length ratio</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
         <bervo:BERVO_has_unit>m.g-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
@@ -43999,7 +44002,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002585">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>Age of a plant when it first flowers.</obo:IAO_0000115>
+        <obo:IAO_0000115>Time from germination to the production of the first flowers of a plant.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>age at maturity</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Plant ontogeny: age of maturity (first flowering)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
@@ -44017,7 +44020,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002586 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002586">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
         <obo:IAO_0000115>Fraction of the individuals of a population of plants that die per unit time.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 770. Usually given per year for trees in forest plots; the census interval should be reported with the value.</rdfs:comment>
@@ -62578,8 +62581,8 @@
     <!-- https://w3id.org/bervo/BERVO_8001348 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001348">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
-        <obo:IAO_0000115>Horizontal underground stem that produces roots and shoots from its nodes.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+        <obo:IAO_0000115>Horizontal stem at or below the soil surface that produces roots and shoots from its nodes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0004542"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Plant Ontology (PO:0004542), TRY alignment for issue #27</rdfs:comment>
         <rdfs:label>Rhizome</rdfs:label>

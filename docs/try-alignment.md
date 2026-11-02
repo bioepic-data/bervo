@@ -325,9 +325,9 @@ species attributes.
 | 1507 | Root length density (RLD): root length per ground area | `BERVO:0002534` Root length per ground area |  |
 | 1508 | Root length per soil volume | `BERVO:0002544` Root length per soil volume |  |
 | 2700 | Belowground plant organ growth: belowground plant organ dry mass production per ground area per year | `BERVO:0002342` Belowground net primary production |  |
-| 2947 | Inflorescence: number of flowers per inflorescence | `BERVO:0002580` Number of flowers per inflorescence |  |
+| 2947 | Inflorescence: number of flowers per inflorescence | `BERVO:0002580` Flower number per inflorescence |  |
 | 2950 | Paleo trait: leaf mass per area | `BERVO:0002185` Leaf mass per area | Reconstructed from fossil leaves; the quantity is the same. |
-| 2999 | Flower number per plant | `BERVO:0002579` Number of flowers per plant |  |
+| 2999 | Flower number per plant | `BERVO:0002579` Flower number per plant |  |
 | 3018 | Wood cross-sectional fraction of Vessel (conduit) area | `BERVO:0002523` Wood vessel area fraction |  |
 | 3019 | Wood cross-sectional fraction of fibre area | `BERVO:0002524` Wood fibre area fraction |  |
 | 3020 | Wood cross-sectional fraction of wod ray area | `BERVO:0002525` Wood ray parenchyma area fraction |  |
@@ -364,13 +364,13 @@ species attributes.
 | 3526 | Litter decomposition: fraction of phosphorus (P) remaining | `BERVO:0002496` Phosphorus remaining fraction of decomposing plant material |  |
 | 3553 | Stem length per stem dry mass (stem specific length; SSL) | `BERVO:0002442` Stem specific length |  |
 | 3603 | Seed number per ground area | `BERVO:0002572` Seed number per ground area |  |
-| 3613 | Infructescence number of fruits (fruits per infructescence) | `BERVO:0002581` Number of fruits per infructescence |  |
+| 3613 | Infructescence number of fruits (fruits per infructescence) | `BERVO:0002581` Fruit number per infructescence |  |
 | 3614 | Fruit number of seeds (seeds per fruit) | `BERVO:0002430` Seed number per fruit |  |
 | 3634 | Seed germination base temperature | `BERVO:0002436` Seed germination base temperature |  |
 | 3635 | Seed germination base water potential | `BERVO:0002437` Seed germination base water potential |  |
 | 3636 | Seed coat thickness | `BERVO:0002574` Seed coat thickness |  |
 | 3660 | Seed fresh mass | `BERVO:0002426` Seed fresh mass |  |
-| 3719 | Inflorescence number of flowers (floral density) | `BERVO:0002580` Number of flowers per inflorescence |  |
+| 3719 | Inflorescence number of flowers (floral density) | `BERVO:0002580` Flower number per inflorescence |  |
 | 3753 | Stem total bark thickness | `BERVO:0002438` Bark thickness |  |
 | 3762 | Stem total bark density | `BERVO:0002439` Bark density |  |
 | 3764 | Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: stem | `BERVO:0002371` Stem specific density |  |
@@ -379,7 +379,7 @@ species attributes.
 | 3794 | Stem hydraulic conductivity | `BERVO:0002444` Stem hydraulic conductivity |  |
 | 3805 | Photosynthesis: light saturation point | `BERVO:0002555` Leaf light saturation point |  |
 | 3828 | Leaf cuticle thickness | `BERVO:0002550` Leaf cuticle thickness |  |
-| 3881 | Inflorescence: number of fruits per inflorescence | `BERVO:0002581` Number of fruits per infructescence |  |
+| 3881 | Inflorescence: number of fruits per inflorescence | `BERVO:0002581` Fruit number per infructescence |  |
 | 3997 | Wood compressive strength | `BERVO:0002532` Wood compressive strength |  |
 | 3998 | Wood flexural strength | `BERVO:0002531` Wood flexural strength |  |
 | 3999 | Wood tensile strength | `BERVO:0002533` Wood tensile strength |  |
