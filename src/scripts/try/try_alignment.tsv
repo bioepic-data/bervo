@@ -146,7 +146,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 169	Stem conduit density (vessels and tracheids)	Stem, wood and bark	match	BERVO:0002410		
 170	Stem conduit cross-sectional area (vessels and tracheids)	Stem, wood and bark	match	BERVO:0002445		
 171	Stem, branch or twig sapwood cross-sectional area per supported leaf area (Huber value)	Stem, wood and bark	match	BERVO:0002407		
-172	Stem conduit lumen cross-sectional area (vessels and tracheids) per stem sapwood cross-sectional are	Stem, wood and bark	gap			
+172	Stem conduit lumen cross-sectional area (vessels and tracheids) per stem sapwood cross-sectional are	Stem, wood and bark	related	BERVO:0002523		Conduits, vessels with tracheids, as a lumen area per unit of sapwood area.
 173	Leaf volume per leaf area	Leaf	gap			
 174	Leaf area index (LAI) total per LAI projected	Leaf	gap			
 175	Leaf mesophyll cell thickness	Leaf	gap			
@@ -835,7 +835,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1006	Litter titanium (Ti) content per litter dry mass	Litter and woody debris	gap			
 1007	Litter zinc (Zn) content per litter dry mass	Litter and woody debris	broader	BERVO:0002462		Dead vegetation goes in contexts.
 1008	Plant vegetative regeneration species offspring size relative to parent	Whole plant	gap			
-1010	Leaf petiole dry mass per petiole fresh mass (leaf petiole dry matter content; LDMC petiole)	Leaf	gap			
+1010	Leaf petiole dry mass per petiole fresh mass (leaf petiole dry matter content; LDMC petiole)	Leaf	broader	BERVO:0002528		Petiole goes in contexts.
 1011	Leaf petiole projected area per petiole dry mass (specific leaf area (SLA) of leaf petiole)	Leaf	gap			
 1012	Photosynthesis photoperiodism: threshold value	Photosynthesis and gas exchange	gap			
 1013	Photosynthesis photoperiodism: type	Photosynthesis and gas exchange	gap			
@@ -918,7 +918,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1094	Wood (sapwood) biomass per ground area	Stem, wood and bark	broader	BERVO:0001971		Sapwood goes in contexts.
 1095	Wood (sapwood) cross-sectional area	Stem, wood and bark	match	BERVO:0002447		
 1096	Wood (sapwood) specific conductivity (stem specific conductivity)	Stem, wood and bark	match	BERVO:0002406		
-1097	Wood (sapwood) water content	Stem, wood and bark	gap			
+1097	Wood (sapwood) water content	Stem, wood and bark	broader	BERVO:0002521		Sapwood goes in contexts. TRY gives no basis for the water content; per unit dry mass is assumed.
 1098	Wood (sapwood) water storage capacity	Stem, wood and bark	gap			
 1099	Seed area	Seed, fruit and dispersal	gap			
 1100	Plant recruitment efficiency	Whole plant	gap			

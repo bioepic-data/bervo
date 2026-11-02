@@ -51,7 +51,9 @@ mortality and necromass to the existing belowground production, belowground litt
 vegetation biomass terms. The fifteenth added the vessel, fibre and parenchyma area
 fractions of wood, the dry matter content and modulus of elasticity of any plant tissue,
 relative bark thickness and the flexural, compressive and tensile strength of wood, and
-mapped twig and branch bark to the existing bark thickness and density terms. The trace
+mapped twig and branch bark to the existing bark thickness and density terms, branch wood
+and bark C/N to the tissue C:N ratio, and stem and sapwood water content to the tissue
+water content term. The trace
 element and contaminant contents wait on the decisions in
 [issue #230](https://github.com/bioepic-data/bervo/issues/230). Still to come are the value lists of the
 categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms for the

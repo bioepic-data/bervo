@@ -51,7 +51,9 @@ mortality and necromass to the existing belowground production, belowground litt
 vegetation biomass terms. The fifteenth added the vessel, fibre and parenchyma area
 fractions of wood, the dry matter content and modulus of elasticity of any plant tissue,
 relative bark thickness and the flexural, compressive and tensile strength of wood, and
-mapped twig and branch bark to the existing bark thickness and density terms. The trace
+mapped twig and branch bark to the existing bark thickness and density terms, branch wood
+and bark C/N to the tissue C:N ratio, and stem and sapwood water content to the tissue
+water content term. The trace
 element and contaminant contents wait on the decisions in
 [issue #230](https://github.com/bioepic-data/bervo/issues/230). Still to come are the value lists of the
 categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms for the
@@ -136,7 +138,7 @@ disagree. `tests/test_try_alignment.py` runs it.
 
 ## Summary
 
-938 TRY traits map to a BERVO term. 1671 are gaps and 52 are
+941 TRY traits map to a BERVO term. 1668 are gaps and 52 are
 species attributes.
 
 | Group | `match` | `broader` | `related` | `gap` | `species_attribute` | Total |
@@ -144,7 +146,7 @@ species attributes.
 | Crown and canopy |  | 1 |  | 20 |  | 21 |
 | Fine root |  | 140 | 20 | 243 |  | 403 |
 | Flower and reproduction |  | 16 |  | 110 |  | 126 |
-| Leaf | 44 | 47 | 29 | 297 | 1 | 418 |
+| Leaf | 44 | 48 | 29 | 296 | 1 | 418 |
 | Litter and woody debris | 5 | 146 | 15 | 33 |  | 199 |
 | Moss and fern |  |  |  | 21 |  | 21 |
 | Photosynthesis and gas exchange | 19 | 2 | 10 | 82 |  | 113 |
@@ -153,10 +155,10 @@ species attributes.
 | Seed, fruit and dispersal | 22 | 6 | 3 | 82 |  | 113 |
 | Species ecology and distribution |  |  |  | 3 | 47 | 50 |
 | Species genetics and phylogeny |  |  |  | 13 | 3 | 16 |
-| Stem, wood and bark | 29 | 96 | 12 | 186 |  | 323 |
+| Stem, wood and bark | 29 | 97 | 13 | 184 |  | 323 |
 | Twig, branch, shoot and bud |  | 86 | 9 | 76 |  | 171 |
 | Whole plant | 12 |  | 2 | 255 |  | 269 |
-| **Total** | **157** | **663** | **118** | **1671** | **52** | **2661** |
+| **Total** | **157** | **665** | **119** | **1668** | **52** | **2661** |
 
 ## Matches
 
@@ -414,14 +416,14 @@ species attributes.
 | `BERVO:0002513` Necromass to biomass ratio | 1513 Root necromass to biomass ratio; 1774 Coarse root necromass to biomass ratio; 2030 Fine root necromass to biomass ratio; 2798 Belowground plant organ necromass to biomass ratio |
 | `BERVO:0002519` Plant tissue respiration rate per unit dry mass | 442 Branch respiration rate per branch dry mass; 2559 Belowground plant organ respiration rate per belowground plant organ dry mass |
 | `BERVO:0002520` Vegetation nitrogen stock | 451 Branch nitrogen (N) content per ground area; 455 Coarse root nitrogen (N) content per ground area; 468 Fine root nitrogen (N) content per ground area; 501 Crown (canopy) nitrogen (N) content per ground area; 528 Stem nitrogen (N) content per unit ground area |
-| `BERVO:0002521` Plant tissue water content | 2887 Litter (other than leaf: twigs, bark, flowers...) water content per litter dry mass; 3120 Leaf water content per leaf dry mass (not saturated); 3554 Stem water cotent per stem dry mass |
+| `BERVO:0002521` Plant tissue water content | 1097 Wood (sapwood) water content; 2887 Litter (other than leaf: twigs, bark, flowers...) water content per litter dry mass; 3120 Leaf water content per leaf dry mass (not saturated); 3554 Stem water cotent per stem dry mass |
 | `BERVO:0002522` Plant tissue saturated water content | 3122 Leaf water content per leaf dry mass (at saturation); 3863 Branch xylem water content per dry mass (saturated); 3864 Branch bark water content per dry mass (saturated) |
 | `BERVO:0002523` Wood vessel area fraction | 3910 Stem wood cross-section: fraction of vessels |
 | `BERVO:0002524` Wood fibre area fraction | 3683 Twig fibre fraction; 3913 Stem wood cross-section: fraction of fiber area (wall+lumen) |
 | `BERVO:0002525` Wood ray parenchyma area fraction | 3670 Twig ray fraction; 3912 Stem wood cross-section: fraction of ray parenchyma; 4008 Stem wood cross-section: fraction of radial parenchyma |
 | `BERVO:0002526` Wood axial parenchyma area fraction | 3669 Twig axial parenchyma fraction; 3911 Stem wood cross-section: fraction of axial parenchyma; 3915 Stem wood cross-section: fraction of axial parenchyma |
 | `BERVO:0002527` Wood parenchyma area fraction | 3682 Twig axial+ray parenchyma fraction; 4007 Stem wood cross-section: fraction of total parenchyma (axial+radial) |
-| `BERVO:0002528` Plant tissue dry matter content | 689 Twig dry mass per twig fresh mass (twig dry matter content, TDMC); 3559 Flower dry matter content (flower dry mass per flower fresh mass); 3588 Shoot dry matter content per fresh mass; 3788 Inflorescence dry matter content (Inflorescence DMC) |
+| `BERVO:0002528` Plant tissue dry matter content | 689 Twig dry mass per twig fresh mass (twig dry matter content, TDMC); 1010 Leaf petiole dry mass per petiole fresh mass (leaf petiole dry matter content; LDMC petiole); 3559 Flower dry matter content (flower dry mass per flower fresh mass); 3588 Shoot dry matter content per fresh mass; 3788 Inflorescence dry matter content (Inflorescence DMC) |
 | `BERVO:0002529` Relative bark thickness | 3737 Twig relative total bark thickness; 3738 Twig relative inner bark thickness; 3766 Stem relative inner bark thickness; 3843 Stem relative outer bark thickness (outer bark thickness / radius) |
 | `BERVO:0002530` Plant tissue modulus of elasticity | 3662 Twig modulus of elasticity (MOE); 3816 Twig modulus of elasticity (Youngs modulus); 3817 Twig wood modulus of elasticity (Youngs modulus); 3818 Twig bark modulus of elasticity (Youngs modulus) |
 
@@ -436,6 +438,7 @@ species attributes.
 | 67 | Stomata index (number of stomata per epidermis cells) | `BERVO:0002469` Stomatal density | Stomata per epidermal cell, not per unit area. |
 | 125 | Leaf area per leaf fresh mass (specific leaf area (SLA or 1/LMA) based on leaf fresh mass) | `BERVO:0002369` Specific leaf area | Per unit fresh mass rather than dry mass. |
 | 138 | Seed number per reproducton unit | `BERVO:0002430` Seed number per fruit | Per reproduction unit, which TRY does not define; it may be a fruit, a flower or an inflorescence. |
+| 172 | Stem conduit lumen cross-sectional area (vessels and tracheids) per stem sapwood cross-sectional are | `BERVO:0002523` Wood vessel area fraction | Conduits, vessels with tracheids, as a lumen area per unit of sapwood area. |
 | 197 | Plant functional type (PFT) | `BERVO:8000785` Plant functional type | BERVO has Plant functional type as a concept, not a variable whose value is a PFT. |
 | 351 | Seed number per dispersal unit | `BERVO:0002430` Seed number per fruit | Per diaspore rather than per fruit; the two differ where a fruit splits into several diaspores. |
 | 371 | Root vessel diameter | `BERVO:0002452` Root conduit diameter | Vessels only; conduits include tracheids. |
