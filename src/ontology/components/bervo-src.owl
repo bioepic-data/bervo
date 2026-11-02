@@ -36972,6 +36972,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002188 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002188">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002339"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of carbon in a leaf per unit of its dry mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Cmass</oboInOwl:hasExactSynonym>
@@ -36991,6 +36992,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002189 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002189">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002340"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of nitrogen in a leaf per unit of its dry mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Nmass</oboInOwl:hasExactSynonym>
@@ -40311,6 +40313,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002382 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002382">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002380"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of phosphorus in a leaf per unit of its dry mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Pmass</oboInOwl:hasExactSynonym>
@@ -42229,7 +42232,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of hemicellulose per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 93, 94, 848, 903, 1121, 1312, 1598, 1854, 2622. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 93, 94, 848, 903, 1121, 1312, 1598, 1854, 2622. Organ and status go in contexts; litter is Dead vegetation. Usually measured as a fraction by sequential extraction of the cell wall, as in the van Soest method.</rdfs:comment>
         <rdfs:label>Plant tissue hemicellulose content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>mg{hemicellulose}.g-1{dry_mass}</bervo:BERVO_has_unit>
@@ -42302,6 +42305,328 @@
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001175"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001175"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002492 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002492">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of lignin divided by the mass of nitrogen in a plant tissue, such as leaf, stem, or root, or in a whole plant.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>lignin:nitrogen ratio</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>plant lignin:N ratio</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Plant tissue carbon to nitrogen mass ratio (BERVO:0002055), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 851, 905, 1065, 1161, 1356, 1898, 2154, 2666, 2886. Organ and status go in contexts; litter is Dead vegetation. A predictor of the decomposition rate of plant litter.</rdfs:comment>
+        <rdfs:label>Plant tissue lignin to nitrogen mass ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_has_unit>g{lignin}.g-1{N}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001314"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002493 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002493">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Dry mass of decomposing dead plant material at a time after the start of decomposition, as a fraction of its dry mass at the start.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>fraction of mass remaining</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>litter mass remaining</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Litter decomposition: fraction of mass remaining</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3520. TRY traits mapped here, with what narrows each one in contexts: 1367, 1653, 1909, 2165, 2421, 2677. Usually from litterbag studies, where the time since the start of decomposition should be reported with the value. The material decomposing goes in contexts. Decomposition rate constant (BERVO:0002491) is fitted to a series of these values.</rdfs:comment>
+        <rdfs:label>Mass remaining fraction of decomposing plant material</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001175"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001175"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002494 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002494">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of carbon in decomposing dead plant material at a time after the start of decomposition, as a fraction of the mass of carbon it held at the start.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>fraction of carbon remaining</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Litter decomposition: fraction of carbon (C) remaining</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3524. TRY traits mapped here, with what narrows each one in contexts: 3148, 3225, 3336. Usually from litterbag studies, where the time since the start of decomposition should be reported with the value. The material decomposing goes in contexts.</rdfs:comment>
+        <rdfs:label>Carbon remaining fraction of decomposing plant material</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001175"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002495 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002495">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of nitrogen in decomposing dead plant material at a time after the start of decomposition, as a fraction of the mass of nitrogen it held at the start.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>fraction of nitrogen remaining</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Litter decomposition: fraction of nitrogen (N) remaining</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3525. TRY traits mapped here, with what narrows each one in contexts: 3149, 3189, 3226, 3263, 3300, 3337. Usually from litterbag studies, where the time since the start of decomposition should be reported with the value. The material decomposing goes in contexts. It can exceed 1 while decomposers immobilize nitrogen from outside the material.</rdfs:comment>
+        <rdfs:label>Nitrogen remaining fraction of decomposing plant material</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001175"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002496 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002496">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of phosphorus in decomposing dead plant material at a time after the start of decomposition, as a fraction of the mass of phosphorus it held at the start.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>fraction of phosphorus remaining</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Litter decomposition: fraction of phosphorus (P) remaining</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3526. Usually from litterbag studies, where the time since the start of decomposition should be reported with the value. The material decomposing goes in contexts. It can exceed 1 while decomposers immobilize phosphorus from outside the material.</rdfs:comment>
+        <rdfs:label>Phosphorus remaining fraction of decomposing plant material</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001175"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002497 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002497">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of soluble sugars per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), section XIV.6, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 506, 662, 1891, 2147, 2403, 2659, 3728, 3729, 3742, 3743, 3756, 3757. Organ and status go in contexts; litter is Dead vegetation. Measured as the water- or ethanol-soluble carbohydrate of the tissue, often by the anthrone or phenol-sulfuric acid method. With Plant tissue starch content (BERVO:0002490) it makes up Plant tissue non-structural carbohydrate content (BERVO:0002489).</rdfs:comment>
+        <rdfs:label>Plant tissue soluble sugar content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{sugar}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001326"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002498 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002498">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of carbon held in lignin as a fraction of the total carbon mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 424, 1331, 2129, 2385. Organ and status go in contexts; litter is Dead vegetation. Distinct from Plant tissue lignin content (BERVO:0002485), which is per unit dry mass.</rdfs:comment>
+        <rdfs:label>Plant tissue lignin carbon fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001314"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002499 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002499">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of carbon divided by the mass of phosphorus in a plant tissue, such as leaf, stem, or root, or in a whole plant.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>plant C:P mass ratio</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Plant tissue nitrogen to phosphorus mass ratio (BERVO:0002381), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 151, 3517, 3518, 3519, 3899. Organ and status go in contexts; litter is Dead vegetation. Distinct from Plant phosphorus to carbon ratio (BERVO:0001856), the EcoSIM reciprocal.</rdfs:comment>
+        <rdfs:label>Plant tissue carbon to phosphorus mass ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000072"/>
+        <bervo:BERVO_has_unit>g{C}.g-1{P}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002500 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002500">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of nitrogen divided by the mass of potassium in a plant tissue, such as leaf, stem, or root, or in a whole plant.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>plant N:K mass ratio</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Plant tissue nitrogen to phosphorus mass ratio (BERVO:0002381), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 3500, 3531, 3534, 3537. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue nitrogen to potassium mass ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_has_unit>g{N}.g-1{K}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000198"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002501 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002501">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of phosphorus divided by the mass of potassium in a plant tissue, such as leaf, stem, or root, or in a whole plant.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>plant P:K mass ratio</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Plant tissue nitrogen to phosphorus mass ratio (BERVO:0002381), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 3532, 3535, 3538, 3544. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue phosphorus to potassium mass ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_has_unit>g{P}.g-1{K}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000198"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002502 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002502">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of carbon divided by the mass of potassium in a plant tissue, such as leaf, stem, or root, or in a whole plant.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>plant C:K mass ratio</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Plant tissue nitrogen to phosphorus mass ratio (BERVO:0002381), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 3530, 3533, 3536, 3543. Organ and status go in contexts; litter is Dead vegetation.</rdfs:comment>
+        <rdfs:label>Plant tissue carbon to potassium mass ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_has_unit>g{C}.g-1{K}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000198"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002503 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002503">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of ash per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 333, 758, 1324, 1866. Organ and status go in contexts; litter is Dead vegetation. Measured as the residue left after the dry tissue is burned in a muffle furnace, mostly mineral elements.</rdfs:comment>
+        <rdfs:label>Plant tissue ash content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{ash}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000940"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002504 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002504">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of protein per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 503, 959, 1171, 2908, 3609. Organ and status go in contexts; litter is Dead vegetation. Often estimated from the nitrogen content with a conversion factor rather than measured directly.</rdfs:comment>
+        <rdfs:label>Plant tissue protein content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{protein}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000333"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002505 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002505">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of lipid per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 1345, 1887, 2143, 3979. Organ and status go in contexts; litter is Dead vegetation. Measured as the mass extracted with a nonpolar solvent.</rdfs:comment>
+        <rdfs:label>Plant tissue lipid content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{lipid}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001317"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002506 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002506">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of tannin per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 74, 148, 3015. Organ and status go in contexts; litter is Dead vegetation. Condensed and hydrolysable tannins are measured by different assays; the method should be reported with the value.</rdfs:comment>
+        <rdfs:label>Plant tissue tannin content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{tannin}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001327"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002507 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002507">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of glucose needed to build a unit dry mass of a plant tissue, counting both the carbon skeletons and the energy to synthesize them.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>specific construction cost</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tissue construction cost</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 1856, 2624, 2953. Organ and status go in contexts; litter is Dead vegetation. Usually estimated from the heat of combustion or the carbon content, with the ash and organic nitrogen contents of the tissue.</rdfs:comment>
+        <rdfs:label>Plant tissue construction cost</rdfs:label>
+        <bervo:BERVO_has_unit>g{glucose}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002508 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002508">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of carbon in the acid-insoluble residue of a plant tissue as a fraction of its total carbon mass.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 1336, 1622, 1878, 2134, 2390. Organ and status go in contexts; litter is Dead vegetation. A measure of the recalcitrant carbon, mostly in lignin, left after the tissue is hydrolysed in strong acid.</rdfs:comment>
+        <rdfs:label>Plant tissue acid-insoluble carbon fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001328"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002509 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002509">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of acid-insoluble residue per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 1877, 2133. Organ and status go in contexts; litter is Dead vegetation. Often reported as lignin, though it also holds cutin, suberin, tannin complexes and other compounds that resist acid hydrolysis.</rdfs:comment>
+        <rdfs:label>Plant tissue acid-insoluble residue content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{AIR}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001328"/>
     </Class>
     
 
@@ -60520,7 +60845,6 @@
         <obo:IAO_0000115>Plant cell wall polysaccharide other than cellulose with a beta-1,4-linked backbone, such as a xylan, xyloglucan, mannan or mixed-linkage glucan.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_61266"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after ChEBI (CHEBI:61266), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>Measured as a fraction by sequential extraction of the cell wall, as in the van Soest method.</rdfs:comment>
         <rdfs:label>Hemicellulose</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -60538,6 +60862,50 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after ChEBI (CHEBI:33853), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>Distinct from Phenol (BERVO:8000664), the single compound.</rdfs:comment>
         <rdfs:label>Phenolic compound</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001326 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001326">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Low-molecular-weight carbohydrate that dissolves in water, chiefly the monosaccharides, disaccharides and small oligosaccharides of plant tissue, such as glucose, fructose, sucrose and the raffinose family.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>free sugar</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>soluble sugars</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>With Starch (BERVO:8001320), the main part of Non-structural carbohydrate (BERVO:8000189). ChEBI has no class for it.</rdfs:comment>
+        <rdfs:label>Soluble sugar</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001327 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001327">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001325"/>
+        <obo:IAO_0000115>Astringent polyphenolic compound of plant tissue that binds and precipitates proteins, either condensed, a polymer of flavan-3-ols, or hydrolysable, an ester of gallic or ellagic acid with a sugar.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26848"/>
+        <oboInOwl:hasExactSynonym>tannins</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after ChEBI (CHEBI:26848), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Tannin</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001328 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001328">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000587"/>
+        <obo:IAO_0000115>Fraction of plant material left undissolved after hydrolysis in strong sulfuric acid, mostly lignin with cutin, suberin and other compounds that resist acid hydrolysis.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>acid-unhydrolyzable residue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Klason lignin</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Called Klason lignin in wood chemistry, and acid-unhydrolyzable residue in litter studies. Abbreviated AIR.</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Acid-insoluble residue</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
