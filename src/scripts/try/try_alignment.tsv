@@ -45,7 +45,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 49	Photosynthesis: intercellular CO2 concentration	Photosynthesis and gas exchange	related	BERVO:0000529		EcoSIM's value for a plant functional type, as a concentration per unit volume rather than a mole fraction.
 50	Leaf nitrogen (N) content per leaf area	Leaf	match	BERVO:0002187		
 51	Leaf phosphorus (P) content per leaf area	Leaf	match	BERVO:0002383		
-52	Leaf potassium (K) content per leaf area	Leaf	gap			
+52	Leaf potassium (K) content per leaf area	Leaf	match	BERVO:0002567		
 53	Photosynthesis rate per leaf area	Photosynthesis and gas exchange	match	BERVO:0002384		
 54	Leaf respiration rate in the dark per leaf area	Photosynthesis and gas exchange	match	BERVO:0002386		
 55	Leaf dry mass (single leaf)	Leaf	match	BERVO:0002396		
@@ -86,7 +86,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 92	Leaf cellulose content per leaf dry mass	Leaf	match	BERVO:0002477		
 93	Root hemicellulose content per root dry mass	Root	broader	BERVO:0002487		Root goes in contexts.
 94	Leaf hemi-cellulose content per leaf dry mass	Leaf	broader	BERVO:0002487		Leaf goes in contexts.
-95	Seed germination rate (germination efficiency)	Seed, fruit and dispersal	gap			
+95	Seed germination rate (germination efficiency)	Seed, fruit and dispersal	match	BERVO:0002569		
 96	Seed oil content per seed mass	Seed, fruit and dispersal	match	BERVO:0002428		
 97	Seed protein content per seed mass	Seed, fruit and dispersal	match	BERVO:0002429		
 98	Seed storage behaviour	Seed, fruit and dispersal	gap			
@@ -99,14 +99,14 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 107	Leaf mesophyll area per leaf area	Leaf	gap			
 108	Leaf mesophyll density (number of mesophyll cells per area)	Leaf	gap			
 109	Leaf area per plant dry mass (leaf area ratio; LAR)	Leaf	match	BERVO:0002484		
-110	Plant biomass and allometry: Leaf dry mass per plant dry mass (leaf weight ratio, LWR)	Whole plant	gap			
+110	Plant biomass and allometry: Leaf dry mass per plant dry mass (leaf weight ratio, LWR)	Whole plant	broader	BERVO:0002582		Leaf goes in contexts.
 111	Leaf transpiration rate per leaf area	Photosynthesis and gas exchange	match	BERVO:0002483		
-112	Seed germination lag time	Seed, fruit and dispersal	gap			
+112	Seed germination lag time	Seed, fruit and dispersal	match	BERVO:0002571		
 115	Leaf structural dry matter per leaf volume	Leaf	gap			
 116	Root dry mass per root volume (root density, root tissue density)	Root	match	BERVO:0002376		
 117	Plant biomass and allometry: Plant dry mass per plant volume	Whole plant	gap			
 118	Leaf structural dry matter per leaf dry mass	Leaf	gap			
-119	Plant biomass and allometry: Plant dry mass per plant fresh mass	Whole plant	gap			
+119	Plant biomass and allometry: Plant dry mass per plant fresh mass	Whole plant	broader	BERVO:0002528		Whole plant; the term covers whole plant material.
 120	Leaf volume	Leaf	gap			
 121	Leaf intercellular volume	Leaf	gap			
 123	Leaf intercellular volume per leaf volume	Leaf	gap			
@@ -119,8 +119,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 132	Plant biomass and allometry: Seed mass per plant	Whole plant	gap			
 134	Photosynthesis rate per leaf transpiration (photosynthetic water use effinciency: WUE)	Photosynthesis and gas exchange	match	BERVO:0002482		
 135	Photosynthesis rate per leaf nitrogen (N) content (photosynthetic nitrogen use efficiency, PNUE)	Photosynthesis and gas exchange	match	BERVO:0002481		
-136	Plant biomass and allometry: Stem dry mass per plant dry mass	Whole plant	gap			
-137	Plant biomass and allometry: Branch dry mass per plant dry mass	Whole plant	gap			
+136	Plant biomass and allometry: Stem dry mass per plant dry mass	Whole plant	broader	BERVO:0002582		Stem goes in contexts.
+137	Plant biomass and allometry: Branch dry mass per plant dry mass	Whole plant	broader	BERVO:0002582		Branch goes in contexts.
 138	Seed number per reproducton unit	Seed, fruit and dispersal	related	BERVO:0002430		Per reproduction unit, which TRY does not define; it may be a fruit, a flower or an inflorescence.
 140	Shoot branching type; shoot branching architecture	Twig, branch, shoot and bud	gap			
 142	Leaf perimeter	Leaf	gap			
@@ -136,7 +136,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 152	Leaf palatability	Leaf	gap			
 153	Budbank height distribution	Twig, branch, shoot and bud	gap			
 154	Leaf shape	Leaf	gap			
-155	Plant ontogeny: age of maturity (first flowering)	Whole plant	gap			
+155	Plant ontogeny: age of maturity (first flowering)	Whole plant	match	BERVO:0002585		
 159	Seedbank type	Seed, fruit and dispersal	gap			
 163	Leaf fresh mass	Leaf	match	BERVO:0002473		
 164	Leaf chlorophyll content per leaf dry mass	Leaf	match	BERVO:0002475		
@@ -176,7 +176,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 207	Flower color	Flower and reproduction	gap			
 208	Species reproduction type	Whole plant	gap			
 209	Flower heterostyly	Flower and reproduction	gap			
-210	Flower number of pollen per ovule	Flower and reproduction	gap			
+210	Flower number of pollen per ovule	Flower and reproduction	match	BERVO:0002577		
 211	Flower sexual self-incompatibility mechanism	Flower and reproduction	gap			
 212	Flower sex timing	Flower and reproduction	gap			
 213	Flower sex	Flower and reproduction	gap			
@@ -229,7 +229,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 269	Photosynthesis electron transport capacity (Jmax) per leaf area (Farquhar model)	Photosynthesis and gas exchange	match	BERVO:0002390		
 270	Photosynthesis electron transport capacity (Jmax) per leaf dry mass (Farquhar model)	Photosynthesis and gas exchange	match	BERVO:0002391		
 271	Photosynthesis light use efficiency (LUE)	Photosynthesis and gas exchange	gap			
-272	Leaf respiration rate in the dark temperature dependence	Photosynthesis and gas exchange	gap			
+272	Leaf respiration rate in the dark temperature dependence	Photosynthesis and gas exchange	broader	BERVO:0002566		Leaf goes in contexts. Respiration in the dark.
 273	Wood growth ring distinction	Stem, wood and bark	gap			
 275	Wood vessel arrangement	Stem, wood and bark	gap			
 276	Wood vessel grouping	Stem, wood and bark	gap			
@@ -278,7 +278,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 329	Plant vegetative reproduction: clonality of ramets	Whole plant	gap			
 333	Leaf ash content per leaf dry mass	Leaf	broader	BERVO:0002503		Leaf goes in contexts.
 334	Plant vegetative reproduction: lateral spread	Whole plant	gap			
-335	Plant reproductive phenology timing (flowering time)	Flower and reproduction	gap			
+335	Plant reproductive phenology timing (flowering time)	Flower and reproduction	related	BERVO:0002352		Usually the months of flowering rather than a date.
 336	Seed number per ramet	Seed, fruit and dispersal	gap			
 338	Leaf epidermis cell area	Leaf	gap			
 339	Shoot nitrogen (N) content per shoot dry mass	Twig, branch, shoot and bud	broader	BERVO:0002340		Shoot goes in contexts.
@@ -362,7 +362,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 442	Branch respiration rate per branch dry mass	Twig, branch, shoot and bud	broader	BERVO:0002519		Branch goes in contexts.
 443	Branch nitrogen (N) content per branch dry mass per leaf nitrogen (N) content per leaf dry mass (bra	Twig, branch, shoot and bud	gap			
 444	Branch respiration rate per branch nitrogen (N) content	Twig, branch, shoot and bud	gap			
-445	Branch respiration temperature dependence	Twig, branch, shoot and bud	gap			
+445	Branch respiration temperature dependence	Twig, branch, shoot and bud	broader	BERVO:0002566		Branch goes in contexts.
 446	Branch respiration rate per branch surface area	Twig, branch, shoot and bud	gap			
 447	Branch carbon (C) content per branch dry mass	Twig, branch, shoot and bud	broader	BERVO:0002339		Branch goes in contexts.
 448	Branch dry mass per ground area	Twig, branch, shoot and bud	broader	BERVO:0001971		Branch goes in contexts.
@@ -379,17 +379,17 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 459	Coarse root nitrogen (N) content per coarse root dry mass	Root	broader	BERVO:0002340		Coarse root goes in contexts.
 462	Root nitrogen (N) uptake rate	Root	gap			
 463	Root nitrogen (N) uptake rate per NPP	Root	gap			
-465	Plant biomass and allometry: Coarse root dry mass per plant dry mass	Whole plant	gap			
-466	Plant biomass and allometry: Fine root dry mass per plant dry mass	Whole plant	gap			
+465	Plant biomass and allometry: Coarse root dry mass per plant dry mass	Whole plant	broader	BERVO:0002582		Coarse root goes in contexts.
+466	Plant biomass and allometry: Fine root dry mass per plant dry mass	Whole plant	broader	BERVO:0002582		Fine root goes in contexts.
 468	Fine root nitrogen (N) content per ground area	Fine root	broader	BERVO:0002520		Fine root goes in contexts.
 469	Plant biomass and allometry: Fine root nitrogen (N) content per plant	Whole plant	gap			
-470	Plant biomass and allometry: Root mass fraction (fraction of root dry mass per whole plant dry mass)	Whole plant	gap			
+470	Plant biomass and allometry: Root mass fraction (fraction of root dry mass per whole plant dry mass)	Whole plant	broader	BERVO:0002582		Root goes in contexts.
 471	Fine root carbon (C) content per fine root dry mass	Fine root	broader	BERVO:0002339		Fine root goes in contexts.
 473	Plant biomass and allometry: Fine root dry mass per plant	Whole plant	gap			
 474	Leaf and fine root turnover	Leaf	gap			
 475	Fine root nitrogen (N) content per fine root dry mass	Fine root	broader	BERVO:0002340	root_nitrogen_content	Fine root goes in contexts.
 476	Stem sapwood volume per stem volume	Stem, wood and bark	gap			
-478	Plant biomass and allometry: Wood dry mass per plant dry mass	Whole plant	gap			
+478	Plant biomass and allometry: Wood dry mass per plant dry mass	Whole plant	broader	BERVO:0002582		Wood goes in contexts.
 479	Photosynthesis CO2 compensation point	Photosynthesis and gas exchange	related	BERVO:0000542		EcoSIM resolves it by node, not by leaf or plant.
 480	Crown (canopy) ground area fraction covered by projected canopy	Crown and canopy	gap			
 481	Stomata conductance model parameter (Ball-Berry, Jarvis, Leuning)	Photosynthesis and gas exchange	gap			
@@ -419,13 +419,13 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 513	Root nitrogen (N) content per root dry mass versus leaf nitrogen (N) content per leaf dry mass	Root	gap			
 514	Root respiration rate per root dry mass	Root	match	BERVO:0002413		
 515	Root respiration rate per root nitrogen (N) content	Root	related	BERVO:0002413		Per unit root nitrogen rather than dry mass.
-516	Root respiration temperature dependence	Root	gap			
+516	Root respiration temperature dependence	Root	broader	BERVO:0002566		Root goes in contexts.
 517	Root respiration rate per root surface area	Root	related	BERVO:0002413		Per unit root surface area rather than dry mass.
 518	Woody area index (woody stem area per ground area)	Stem, wood and bark	related	BERVO:0001880		TRY does not say whether the woody area is projected, as in the BERVO term, or the total surface area.
 519	Stem respiration rate per stem dry mass	Stem, wood and bark	match	BERVO:0002441		
 520	Stem respiration rate per stem surface area	Stem, wood and bark	related	BERVO:0002441		Per unit stem surface area rather than dry mass.
 521	Stem respiration rate per stem nitrogen (N) content	Stem, wood and bark	related	BERVO:0002441		Per unit stem nitrogen rather than dry mass.
-522	Stem respiration temperature dependence	Stem, wood and bark	gap			
+522	Stem respiration temperature dependence	Stem, wood and bark	broader	BERVO:0002566		Stem goes in contexts.
 524	Stem dry mass per ground area	Stem, wood and bark	broader	BERVO:0001971		Stem goes in contexts.
 526	Stem sapwood carbon (C) content: empirical form factor for calculation	Stem, wood and bark	gap			
 527	Stem respiration growth coefficient	Stem, wood and bark	gap			
@@ -547,9 +547,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 666	Photosynthesis oxygenation capacity (Farquhar model)	Photosynthesis and gas exchange	gap			
 667	Leaf nitrogen (N) content per dry mass (cotyledons)	Leaf	broader	BERVO:0002189		Cotyledon goes in contexts.
 668	Plant nitrogen (N) content per plant dry mass	Whole plant	match	BERVO:0002340		Whole plant; the term covers whole plant material.
-669	Plant biomass and allometry: Root nitrogen (N) content per plant nitrogen (N) content	Whole plant	gap			
-670	Plant biomass and allometry: Stem nitrogen (N) content per plant nitrogen (N) content	Whole plant	gap			
-671	Plant biomass and allometry: Leaf nitrogen (N) content per plant nitrogen (N) content	Whole plant	gap			
+669	Plant biomass and allometry: Root nitrogen (N) content per plant nitrogen (N) content	Whole plant	broader	BERVO:0002583		Root goes in contexts.
+670	Plant biomass and allometry: Stem nitrogen (N) content per plant nitrogen (N) content	Whole plant	broader	BERVO:0002583		Stem goes in contexts.
+671	Plant biomass and allometry: Leaf nitrogen (N) content per plant nitrogen (N) content	Whole plant	broader	BERVO:0002583		Leaf goes in contexts.
 674	Leaf carbon (C) content per dry mass (cotyledons)	Leaf	broader	BERVO:0002188		Cotyledon goes in contexts.
 675	Root total non-structural carbon (TNC) content per root dry mass	Root	match	BERVO:0002448		
 676	Stem total non-structural carbon (TNC) content per stem dry mass	Stem, wood and bark	broader	BERVO:0002489		Stem goes in contexts.
@@ -581,7 +581,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 707	Leaf water volume per leaf volume	Leaf	gap			
 708	Leaf solid volume per leaf volume	Leaf	gap			
 709	Leaf cuticular conductance	Photosynthesis and gas exchange	match	BERVO:0002408		
-710	Leaf water content at turgor loss point	Leaf	gap			
+710	Leaf water content at turgor loss point	Leaf	related	BERVO:0002564		TRY says water content, not relative water content.
 711	Leaf water capacitance	Leaf	gap			
 713	Leaf water storage time constant	Leaf	gap			
 714	Leaf water storage transfer resistance	Leaf	gap			
@@ -625,7 +625,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 766	Moss and fern spore volume	Moss and fern	gap			
 767	Moss and fern spore mass	Moss and fern	gap			
 768	Litterfall per ground area	Litter and woody debris	gap			
-770	Plant mortality rate	Whole plant	gap			
+770	Plant mortality rate	Whole plant	match	BERVO:0002586		
 773	Crown (canopy) height (base to top)	Crown and canopy	gap			
 775	Shoot carbon (C) content per shoot dry mass	Twig, branch, shoot and bud	broader	BERVO:0002339		Shoot goes in contexts.
 776	Plant biomass and allometry: Plant surface area per plant dry mass of all green parts	Whole plant	gap			
@@ -865,12 +865,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1039	Species tolerance to nitrogen inputs	Whole plant	gap			
 1040	Species tolerance to soil aluminium concentration	Whole plant	gap			
 1041	Species tolerance to temperature	Whole plant	gap			
-1042	Pollen diameter	Flower and reproduction	gap			
+1042	Pollen diameter	Flower and reproduction	match	BERVO:0002575		
 1043	Pollen heteromorphy	Flower and reproduction	gap			
-1044	Pollen viability	Flower and reproduction	gap			
-1046	Plant biomass and allometry: Reproductive dry mass per plant dry mass (reproductive weight fraction)	Whole plant	gap			
+1044	Pollen viability	Flower and reproduction	match	BERVO:0002576		
+1046	Plant biomass and allometry: Reproductive dry mass per plant dry mass (reproductive weight fraction)	Whole plant	broader	BERVO:0002582		Reproductive structure goes in contexts.
 1047	Rhizome (presence / absence)	Root	gap			
-1048	Plant biomass and allometry: Rhizome dry mass per plant dry mass (rhizome weight fraction)	Whole plant	gap			
+1048	Plant biomass and allometry: Rhizome dry mass per plant dry mass (rhizome weight fraction)	Whole plant	broader	BERVO:0002582		Rhizome goes in contexts.
 1049	Root aluminium (Al) content per root dry mass	Root	broader	BERVO:0002464		Root goes in contexts.
 1050	Root antimony (Sb) content per root dry mass	Root	gap			
 1051	Root arsenic (As) content per root dry mass	Root	gap			
@@ -926,13 +926,13 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1102	Seed germination type	Seed, fruit and dispersal	gap			
 1103	Seed number per flower	Seed, fruit and dispersal	related	BERVO:0002430		Per flower rather than per fruit; flowers that set no fruit count toward it.
 1104	Inflorescence: seed number per inflorescence (total, fertile, infertile)	Flower and reproduction	gap			
-1105	Seed number per square meter	Seed, fruit and dispersal	gap			
+1105	Seed number per square meter	Seed, fruit and dispersal	match	BERVO:0002572		
 1106	Seed number per stem	Seed, fruit and dispersal	gap			
 1107	Seed releasing height	Seed, fruit and dispersal	gap			
 1108	Seed structure type	Seed, fruit and dispersal	gap			
-1109	Seed viability	Seed, fruit and dispersal	gap			
-1110	Seed or fruit biomass per ground area	Seed, fruit and dispersal	gap			
-1111	Seedbank density	Seed, fruit and dispersal	gap			
+1109	Seed viability	Seed, fruit and dispersal	match	BERVO:0002570		
+1110	Seed or fruit biomass per ground area	Seed, fruit and dispersal	broader	BERVO:0001970		Reproductive structure goes in contexts. Seeds or fruits.
+1111	Seedbank density	Seed, fruit and dispersal	match	BERVO:0002573		
 1112	Seed presence or absence	Seed, fruit and dispersal	gap			
 1113	Shoot aluminium (Al) content per shoot dry mass	Twig, branch, shoot and bud	broader	BERVO:0002464		Shoot goes in contexts.
 1114	Shoot branching density	Twig, branch, shoot and bud	gap			
@@ -1064,7 +1064,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1250	Species yield power class	Species ecology and distribution	gap			
 1251	Plant vegetative phenology (leaf phenology)	Whole plant	gap			
 1252	Litter carbon (C) isotope signature (delta 13C)	Litter and woody debris	broader	BERVO:0002214		Dead vegetation goes in contexts. Litter is dead vegetation.
-1253	Leaf magnesium (Mg) content per leaf area	Leaf	gap			
+1253	Leaf magnesium (Mg) content per leaf area	Leaf	match	BERVO:0002568		
 1254	Species tolerance to salt	Whole plant	gap			
 1255	Shoot emergences (pubescence, hairs, spines, thorns)	Twig, branch, shoot and bud	gap			
 1256	Stem emergences (pubescence, hairs, spines, thorns)	Stem, wood and bark	gap			
@@ -1076,9 +1076,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1262	Coarse woody debris (CWD) root: nitrogen (N) content per coarse root CWD dry mass	Litter and woody debris	broader	BERVO:0002340		Coarse woody debris and Coarse root go in contexts.
 1263	Dispersal unit floating capacity	Seed, fruit and dispersal	gap			
 1264	Leaf petiole specific length (petiole length per petiole dry mass)	Leaf	related	BERVO:0002472		Petiole length per unit petiole dry mass.
-1265	Stomata conductance per leaf area: nighttime	Photosynthesis and gas exchange	gap			
+1265	Stomata conductance per leaf area: nighttime	Photosynthesis and gas exchange	broader	BERVO:0002392		Nighttime goes in contexts.
 1266	Leaf respiration intercellular CO2 concentration at nighttime	Photosynthesis and gas exchange	gap			
-1267	Leaf transpiration rate at nighttime	Photosynthesis and gas exchange	gap			
+1267	Leaf transpiration rate at nighttime	Photosynthesis and gas exchange	broader	BERVO:0002483		Nighttime goes in contexts.
 1268	Seed lift-off velocity	Seed, fruit and dispersal	gap			
 1269	Root manganese (Mn) content per root dry mass	Root	broader	BERVO:0002460		Root goes in contexts.
 1270	Root silicon (Si) content per root dry mass	Root	broader	BERVO:0002466		Root goes in contexts.
@@ -1185,7 +1185,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1498	Root carbon (C) content per ground area	Root	broader	BERVO:0002536		Root goes in contexts.
 1501	Root necromass (dead dry mass) per ground area for specified soil depth increment	Root	broader	BERVO:0001970		Root and Dead vegetation go in contexts. The soil depth increment goes with the value.
 1502	Root nitrogen (N) per ground area	Root	broader	BERVO:0002520		Root goes in contexts.
-1504	Plant biomass and allometry: Root length ratio (RLR): root length per plant dry mass	Whole plant	gap			
+1504	Plant biomass and allometry: Root length ratio (RLR): root length per plant dry mass	Whole plant	match	BERVO:0002584		
 1506	Root length fraction belonging to species	Root	gap			
 1507	Root length density (RLD): root length per ground area	Root	match	BERVO:0002534		
 1508	Root length per soil volume	Root	match	BERVO:0002544		
@@ -1203,7 +1203,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1527	Coarse root carbon (C) content per coarse root dry mass	Root	broader	BERVO:0002339		Coarse root goes in contexts.
 1528	Coarse root lignin content per coarse root dry mass	Root	broader	BERVO:0002412		Coarse root goes in contexts.
 1529	Coarse root cellulose content per coarse root dry mass	Root	broader	BERVO:0002486		Coarse root goes in contexts.
-1534	Plant biomass and allometry: Coarse root mass fraction (fraction of coarse root dry mass per whole p	Whole plant	gap			
+1534	Plant biomass and allometry: Coarse root mass fraction (fraction of coarse root dry mass per whole p	Whole plant	broader	BERVO:0002582		Coarse root goes in contexts.
 1535	Coarse root respiration rate per coarse root dry mass	Root	broader	BERVO:0002413		Coarse root goes in contexts.
 1536	Coarse root total non-structural carbon (TNC) content per coarse root dry mass	Root	broader	BERVO:0002448		Coarse root goes in contexts.
 1538	Coarse root dry mass per coarse root fresh mass (coarse root dry matter content; RDMC)	Root	broader	BERVO:0002411		Coarse root goes in contexts.
@@ -1438,7 +1438,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2000	Fine root water uptake rate per fine root surface area	Fine root	gap			
 2003	Fine root dry mass to leaf dry mass ratio	Fine root	gap			
 2004	Fine root carbon (C) content to leaf carbon (C) content ratio	Fine root	gap			
-2005	Plant biomass and allometry: Fine root mass fraction (fraction of fine root dry mass to whole plant	Whole plant	gap			
+2005	Plant biomass and allometry: Fine root mass fraction (fraction of fine root dry mass to whole plant	Whole plant	broader	BERVO:0002582		Fine root goes in contexts.
 2006	Fine root dry mass fraction in respective root diameter class	Fine root	gap			
 2008	Fine root length fraction in respective root diameter class	Fine root	gap			
 2009	Fine root length fraction in respective root order	Fine root	gap			
@@ -1451,7 +1451,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2017	Fine root carbon content per ground area	Fine root	broader	BERVO:0002536		Fine root goes in contexts.
 2018	Fine root necromass (dead dry mass) per ground area for specified soil depth increment	Fine root	broader	BERVO:0001970		Fine root and Dead vegetation go in contexts. The soil depth increment goes with the value.
 2020	Fine root nitrogen (N) content per soil dry mass	Fine root	gap			
-2021	Plant biomass and allometry: Fine root length ratio (RLR): fine root length per plant dry mass	Whole plant	gap			
+2021	Plant biomass and allometry: Fine root length ratio (RLR): fine root length per plant dry mass	Whole plant	broader	BERVO:0002584		Fine root goes in contexts.
 2022	Fine root length per minirhizotron frame	Fine root	gap			
 2024	Fine root length per ground area	Fine root	broader	BERVO:0002534		Fine root goes in contexts.
 2025	Fine root length per soil volume	Fine root	broader	BERVO:0002544		Fine root goes in contexts.
@@ -1564,7 +1564,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2233	Fine root (absorptive) exudation: carbon (C) exudation as fraction of absorptive fine root dry mass	Fine root	gap			
 2248	Fine root (absorptive) phosphorus (P) uptake rate per absorptive fine root surface area	Fine root	gap			
 2253	Fine root (absorptive) respiration rate per absorptive fine root length	Fine root	gap			
-2261	Plant biomass and allometry: Fine root (absorptive) mass fraction (fraction of absorptive fine root	Whole plant	gap			
+2261	Plant biomass and allometry: Fine root (absorptive) mass fraction (fraction of absorptive fine root	Whole plant	broader	BERVO:0002582		Absorptive fine root goes in contexts.
 2263	Fine root (absorptive) dry mass fraction in respective root order	Fine root	gap			
 2265	Fine root (absorptive) length fraction in respective root order	Fine root	gap			
 2266	Fine root (absorptive) surface area fraction in respective root order	Fine root	gap			
@@ -1636,7 +1636,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2538	Plant biomass and allometry: Fine root (transport) length per plant	Whole plant	gap			
 2543	Fine root (transport) debris decomposition rate constant	Fine root	broader	BERVO:0002491		Transport fine root and Dead vegetation go in contexts.
 2545	Belowground plant organ rooting depth	Root	related	BERVO:0002418		Belowground plant organs include rhizomes and tubers as well as roots, so the depth is not only of roots.
-2546	Belowground plant organ/shoot ratio	Root	gap			
+2546	Belowground plant organ/shoot ratio	Root	broader	BERVO:0002414		Belowground plant material goes in contexts.
 2547	Belowground plant organ nitrogen (N) content per belowground plant organ dry mass	Root	broader	BERVO:0002340		Belowground plant material goes in contexts.
 2549	Belowground plant organ tissue density (belowground plant organ dry mass per belowground plant organ	Root	gap			
 2550	Belowground plant organ diameter	Root	gap			
@@ -1677,7 +1677,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2723	Belowground plant organ dry mass turnover rate	Root	broader	BERVO:0002454		Belowground plant material goes in contexts.
 2756	Belowground plant organ nitrogen (N) uptake per ground area per year	Root	gap			
 2771	Belowground plant organ dry mass to leaf dry mass ratio	Root	gap			
-2773	Plant biomass and allometry: Belowground plant organ mass fraction (fraction of belowground plant or	Whole plant	gap			
+2773	Plant biomass and allometry: Belowground plant organ mass fraction (fraction of belowground plant or	Whole plant	broader	BERVO:0002582		Belowground plant material goes in contexts.
 2786	Belowground plant organ necromass (dead dry mass) per ground area for specified soil depth increment	Root	broader	BERVO:0001970		Belowground plant material and Dead vegetation go in contexts. The soil depth increment goes with the value.
 2787	Belowground plant organ nitrogen (N) per ground area	Root	broader	BERVO:0002520		Belowground plant material goes in contexts.
 2798	Belowground plant organ necromass to biomass ratio	Root	broader	BERVO:0002513		Belowground plant material goes in contexts.
@@ -1730,7 +1730,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2944	Seed carbon (C) content per dry mass (or diaspore)	Seed, fruit and dispersal	broader	BERVO:0002339		Seed goes in contexts. TRY allows a value for the whole diaspore instead of the seed alone.
 2945	Seed nitrogen (N) content per dry mass (or diaspore)	Seed, fruit and dispersal	broader	BERVO:0002340		Seed goes in contexts. TRY allows a value for the whole diaspore instead of the seed alone.
 2946	Inflorescene: seed mass per inflorescence	Flower and reproduction	gap			
-2947	Inflorescence: number of flowers per inflorescence	Flower and reproduction	gap			
+2947	Inflorescence: number of flowers per inflorescence	Flower and reproduction	match	BERVO:0002580		
 2948	Paleo trait: leaf petiole width	Leaf	gap			
 2949	Paleo trait: leaf area	Leaf	gap			
 2950	Paleo trait: leaf mass per area	Leaf	match	BERVO:0002185		Reconstructed from fossil leaves; the quantity is the same.
@@ -1739,7 +1739,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2953	Leaf construction cost per leaf dry mass	Leaf	broader	BERVO:0002507		Leaf goes in contexts.
 2954	Leaf energy content	Leaf	gap			
 2955	Leaf hydrogen (H) content per leaf dry mass	Leaf	gap			
-2956	Flower onset of flowering (first flowering date, flowering beginning)	Flower and reproduction	gap			
+2956	Flower onset of flowering (first flowering date, flowering beginning)	Flower and reproduction	broader	BERVO:0002352		Flowering goes in contexts. The start of flowering goes in qualifiers.
 2957	Bark calcium (Ca) content per bark dry mass	Stem, wood and bark	broader	BERVO:0002456		Bark goes in contexts.
 2958	Bark copper (Cu) content per bark dry mass	Stem, wood and bark	broader	BERVO:0002463		Bark goes in contexts.
 2959	Bark iron (Fe) content per bark dry mass	Stem, wood and bark	broader	BERVO:0002461		Bark goes in contexts.
@@ -1781,7 +1781,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2996	Leaf potassium (K) content per leaf	Leaf	gap			
 2997	Leaf magnesium (Mg) content per leaf	Leaf	gap			
 2998	Leaf sulphate (SO4) content per dry mass	Leaf	gap			
-2999	Flower number per plant	Flower and reproduction	gap			
+2999	Flower number per plant	Flower and reproduction	match	BERVO:0002579		
 3000	Seed phosphorus (P) content per dry mass (or diaspore)	Seed, fruit and dispersal	broader	BERVO:0002380		Seed goes in contexts. TRY allows a value for the whole diaspore instead of the seed alone.
 3001	Leaf chlorophyll content in SPAD units relative	Leaf	related	BERVO:0002474		A relative optical index of chlorophyll, not a mass.
 3002	Leaf mesophyll surface area exposed to internal airspace	Leaf	gap			
@@ -1896,7 +1896,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3120	Leaf water content per leaf dry mass (not saturated)	Leaf	broader	BERVO:0002521		Leaf goes in contexts.
 3121	Leaf water content per leaf dry mass missing to leaf water saturation	Leaf	gap			
 3122	Leaf water content per leaf dry mass (at saturation)	Leaf	broader	BERVO:0002522		Leaf goes in contexts.
-3123	Seed germination rate per day (maximum)	Seed, fruit and dispersal	gap			
+3123	Seed germination rate per day (maximum)	Seed, fruit and dispersal	related	BERVO:0002569		The maximum germination rate per day, not the final fraction germinated.
 3124	Shoot: plant aboveground woody biomass per ground area	Twig, branch, shoot and bud	broader	BERVO:0001971		Wood goes in contexts.
 3125	Plant biomass and allometry: Leaf petiole dry mass per plant	Whole plant	gap			
 3126	Photosynthesis drawdown of CO2 concentration from ambient airspace to intercellular airspace	Photosynthesis and gas exchange	gap			
@@ -2095,7 +2095,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3479	Xylem hydraulic vulnerability curve (P20, P50, P80)	Stem, wood and bark	related	BERVO:0002398		A vulnerability curve, not a single water potential.
 3480	Root branching intensity: number of root branches per root length	Root	match	BERVO:0001096		
 3481	Root links per root branch	Root	gap			
-3482	Seed / ovule ratio	Seed, fruit and dispersal	gap			
+3482	Seed / ovule ratio	Seed, fruit and dispersal	match	BERVO:0002578		
 3483	Tree ring width	Stem, wood and bark	match	BERVO:0002443		
 3484	Tree mortality factor	Whole plant	gap			
 3485	Photosynthesis: rate of triose phosphate utilisation (TPU)	Photosynthesis and gas exchange	gap			
@@ -2215,7 +2215,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3599	Leaf rachis length	Leaf	gap			
 3600	Fruit shape	Seed, fruit and dispersal	gap			
 3601	Stem perimeter	Stem, wood and bark	gap			
-3603	Seed number per ground area	Seed, fruit and dispersal	gap			
+3603	Seed number per ground area	Seed, fruit and dispersal	match	BERVO:0002572		
 3604	Resprout diameter (for coppiced trees)	Stem, wood and bark	gap			
 3605	Shoot apical dominance index	Twig, branch, shoot and bud	gap			
 3606	Branch number of leaves (leaves per branch)	Twig, branch, shoot and bud	gap			
@@ -2225,12 +2225,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3610	Shoot cellulose and lignin content per dry mass	Twig, branch, shoot and bud	gap			
 3611	Shoot cellulose, hemicellulose and lignin content per dry mass	Twig, branch, shoot and bud	gap			
 3612	Shoot fraction of digestible protein, non structural carbohydrates, cellulose, hemicellulose and lig	Twig, branch, shoot and bud	gap			
-3613	Infructescence number of fruits (fruits per infructescence)	Seed, fruit and dispersal	gap			
+3613	Infructescence number of fruits (fruits per infructescence)	Seed, fruit and dispersal	match	BERVO:0002581		
 3614	Fruit number of seeds (seeds per fruit)	Seed, fruit and dispersal	match	BERVO:0002430		
 3615	Plant surviving (survival)	Whole plant	gap			
 3616	Plant flowering	Whole plant	gap			
 3617	Branch age of largest branch	Twig, branch, shoot and bud	gap			
-3618	Fruits per ground area	Seed, fruit and dispersal	gap			
+3618	Fruits per ground area	Seed, fruit and dispersal	related	BERVO:0002572		Fruits rather than seeds per unit ground area.
 3619	Leaf non-volatile resin content per dry mass	Leaf	gap			
 3620	Seedling establishment	Seed, fruit and dispersal	gap			
 3621	Shoot height of basal leaves (graminoid and rosette plants)	Twig, branch, shoot and bud	gap			
@@ -2248,7 +2248,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3633	Spines per node	Stem, wood and bark	gap			
 3634	Seed germination base temperature	Seed, fruit and dispersal	match	BERVO:0002436		
 3635	Seed germination base water potential	Seed, fruit and dispersal	match	BERVO:0002437		
-3636	Seed coat thickness	Seed, fruit and dispersal	gap			
+3636	Seed coat thickness	Seed, fruit and dispersal	match	BERVO:0002574		
 3637	Shoot length	Twig, branch, shoot and bud	gap			
 3648	Stolon number of internodes	Stem, wood and bark	gap			
 3649	Stolon length of internodes	Stem, wood and bark	gap			
@@ -2318,7 +2318,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3716	Root tip volume	Root	gap			
 3717	Root tip length	Root	gap			
 3718	Root tip dry mass	Root	gap			
-3719	Inflorescence number of flowers (floral density)	Flower and reproduction	gap			
+3719	Inflorescence number of flowers (floral density)	Flower and reproduction	match	BERVO:0002580		
 3720	Species light preference	Species ecology and distribution	species_attribute			
 3721	Species number of pollinators	Whole plant	gap			
 3722	Root surface area per soil volume (root surface area density)	Root	gap			
@@ -2369,23 +2369,23 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3767	Leaf equivalent water thickness (EWT)	Leaf	match	BERVO:0002562		
 3768	Plant size	Whole plant	gap			
 3769	Species cushion forming	Whole plant	gap			
-3770	Leaf water content difference between full turgor and turgor loss, per dry mass	Leaf	gap			
+3770	Leaf water content difference between full turgor and turgor loss, per dry mass	Leaf	broader	BERVO:0002565		Leaf goes in contexts.
 3771	Leaf osmotically active compounds per dry mass	Leaf	gap			
 3772	Flower dry mass	Flower and reproduction	gap			
 3773	Flower osmotic potential	Flower and reproduction	gap			
 3774	Flower water potential	Flower and reproduction	gap			
 3775	Flower water capacitance	Flower and reproduction	gap			
-3776	Flower saturated water content	Flower and reproduction	gap			
-3777	Flower bulk modulus of elasticity	Flower and reproduction	gap			
-3778	Flower water content difference between full turgor and turgor loss, per dry mass	Flower and reproduction	gap			
+3776	Flower saturated water content	Flower and reproduction	broader	BERVO:0002522		Flower goes in contexts. TRY gives no basis; per unit dry mass is assumed.
+3777	Flower bulk modulus of elasticity	Flower and reproduction	broader	BERVO:0002563		Flower goes in contexts.
+3778	Flower water content difference between full turgor and turgor loss, per dry mass	Flower and reproduction	broader	BERVO:0002565		Flower goes in contexts.
 3779	Flower osmotically active compounds per dry mass	Flower and reproduction	gap			
-3780	Inflorescence saturated water content	Flower and reproduction	gap			
+3780	Inflorescence saturated water content	Flower and reproduction	broader	BERVO:0002522		Inflorescence goes in contexts. TRY gives no basis; per unit dry mass is assumed.
 3781	Inflorescence osmotic potential	Flower and reproduction	gap			
 3782	Inflorescence water potential	Flower and reproduction	gap			
-3783	Inflorescence relative water content at the point of turgor loss	Flower and reproduction	gap			
-3784	Inflorescence bulk modulus of elasticity	Flower and reproduction	gap			
+3783	Inflorescence relative water content at the point of turgor loss	Flower and reproduction	broader	BERVO:0002564		Inflorescence goes in contexts.
+3784	Inflorescence bulk modulus of elasticity	Flower and reproduction	broader	BERVO:0002563		Inflorescence goes in contexts.
 3785	Inflorescence water capacitance	Flower and reproduction	gap			
-3786	Inflorescence water content difference between full turgor and turgor loss, per dry mass	Flower and reproduction	gap			
+3786	Inflorescence water content difference between full turgor and turgor loss, per dry mass	Flower and reproduction	broader	BERVO:0002565		Inflorescence goes in contexts.
 3787	Inflorescence osmotically active compounds per dry mass	Flower and reproduction	gap			
 3788	Inflorescence dry matter content (Inflorescence DMC)	Flower and reproduction	broader	BERVO:0002528		Inflorescence goes in contexts.
 3789	Inflorescence dry mass	Flower and reproduction	gap			
@@ -2432,8 +2432,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3830	Plant biomass and allometry: stem wet mass per plant	Whole plant	gap			
 3832	Seed surface structure	Seed, fruit and dispersal	gap			
 3833	Seed abortion: fraction of seeds without embryo	Seed, fruit and dispersal	gap			
-3834	Seed viability: fraction of seeds with low viabilty	Seed, fruit and dispersal	gap			
-3835	Seed viability: fraction of seeds without embryo or dead embryo	Seed, fruit and dispersal	gap			
+3834	Seed viability: fraction of seeds with low viabilty	Seed, fruit and dispersal	related	BERVO:0002570		The fraction of seeds of low viability or without a live embryo, roughly the complement.
+3835	Seed viability: fraction of seeds without embryo or dead embryo	Seed, fruit and dispersal	related	BERVO:0002570		The fraction of seeds of low viability or without a live embryo, roughly the complement.
 3836	Seed mass per fruit	Seed, fruit and dispersal	gap			
 3837	Leaf lipid hydroperoxide content per dry mass	Leaf	gap			
 3838	Leaf malondialdehyd content per dry mass	Leaf	gap			
@@ -2479,7 +2479,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3878	Photosynthesis performance index	Photosynthesis and gas exchange	gap			
 3879	Plant size: patch length	Whole plant	gap			
 3880	Plant size: patch width	Whole plant	gap			
-3881	Inflorescence: number of fruits per inflorescence	Flower and reproduction	gap			
+3881	Inflorescence: number of fruits per inflorescence	Flower and reproduction	match	BERVO:0002581		
 3882	Stomata conductance: potential stomatal conductance index (PCI)	Photosynthesis and gas exchange	gap			
 3883	Leaf fresh mass change due to rehydration	Leaf	gap			
 3884	Inflorescence: number of umbels	Flower and reproduction	gap			
@@ -2522,7 +2522,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3930	Leaf expansion interval	Leaf	gap			
 3931	Leaf expansion rate	Leaf	gap			
 3932	Leaf chlorophyll index	Leaf	related	BERVO:0002474		A relative optical index of chlorophyll, not a mass.
-3933	Plant biomass and allometry: root dry mass per plant dry mass (root mass ratio, root mass fraction)	Whole plant	gap			
+3933	Plant biomass and allometry: root dry mass per plant dry mass (root mass ratio, root mass fraction)	Whole plant	broader	BERVO:0002582		Root goes in contexts.
 3934	Stem silicon (Si) content per dry mass	Stem, wood and bark	broader	BERVO:0002466		Stem goes in contexts.
 3942	Plant height versus stem diameter ratio	Whole plant	gap			
 3943	Plant growth form factor (according to FIA)	Whole plant	gap			
@@ -2541,9 +2541,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3957	Stem carbon (C) content per dry mass (senescent stem)	Stem, wood and bark	broader	BERVO:0002339		Stem and Senescent vegetation go in contexts.
 3958	Fruit (harvest organ) nitrogen (N) content per dry mass	Seed, fruit and dispersal	broader	BERVO:0002340		Fruit goes in contexts.
 3959	Fruit (harvest organ) carbon (C) content per dry mass	Seed, fruit and dispersal	broader	BERVO:0002339		Fruit goes in contexts.
-3960	Plant biomass and allometry: leaf dry mass per shoot dry mass; leaf weight ratio, LWR aboveground	Whole plant	gap			
-3961	Plant biomass and allometry: stem dry mass per shoot dry mass; Stem mass fraction aboveground	Whole plant	gap			
-3962	Plant biomass and allometry: fruit (harvest organ) dry mass per shoot dry mass; Fruit mass fraction	Whole plant	gap			
+3960	Plant biomass and allometry: leaf dry mass per shoot dry mass; leaf weight ratio, LWR aboveground	Whole plant	related	BERVO:0002582		A fraction of the shoot dry mass, not of the whole plant.
+3961	Plant biomass and allometry: stem dry mass per shoot dry mass; Stem mass fraction aboveground	Whole plant	related	BERVO:0002582		A fraction of the shoot dry mass, not of the whole plant.
+3962	Plant biomass and allometry: fruit (harvest organ) dry mass per shoot dry mass; Fruit mass fraction	Whole plant	related	BERVO:0002582		A fraction of the shoot dry mass, not of the whole plant.
 3963	Species phylogenetic age	Species genetics and phylogeny	species_attribute			
 3964	Leaf expiration	Leaf	gap			
 3965	Species use	Species ecology and distribution	species_attribute			
@@ -2654,7 +2654,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 4075	Photosynthesis C4: Vpmax25 per leaf area	Photosynthesis and gas exchange	gap			
 4076	Fruit fresh mass	Seed, fruit and dispersal	match	BERVO:0002435		
 4077	Root length per root diameter bin	Root	gap			
-4078	Leaf paracotyledon dry mass per plant dry mass; paracotyledon weight fraction	Leaf	gap			
+4078	Leaf paracotyledon dry mass per plant dry mass; paracotyledon weight fraction	Leaf	broader	BERVO:0002582		Cotyledon goes in contexts. Paracotyledons, the cotyledons once they emerge as the first photosynthetic leaves.
 4079	Bark volume relative to wood volume	Stem, wood and bark	gap			
 4080	Budbank type belowground (Belowground Bud Bank, BBB)	Twig, branch, shoot and bud	gap			
 4082	Seed persistence	Seed, fruit and dispersal	gap			
