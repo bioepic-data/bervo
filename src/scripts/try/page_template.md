@@ -64,7 +64,15 @@ epidermis, cuticle, mesophyll and its palisade and spongy layers, the light comp
 and saturation points, leaf respiration in the light, nitrogen and phosphorus resorption
 efficiency, the maximum quantum efficiency of photosystem II, mesophyll conductance, the
 ratio of intercellular to ambient carbon dioxide and leaf equivalent water thickness. The
-trace element and contaminant contents wait on the decisions in [issue
+eighteenth added, for any plant tissue, the bulk modulus of elasticity, the relative water
+content at and water lost to the turgor loss point, and the temperature sensitivity of
+respiration; leaf potassium and magnesium per unit area; seed germinability, viability,
+germination lag time, seed coat thickness, seed number per ground area and soil seed bank
+density; pollen grain diameter, pollen viability, and the pollen and seed to ovule ratios;
+flowers per plant and per inflorescence and fruits per infructescence; and the mass and
+nitrogen fractions of plant organs, the root length ratio, the age at first flowering and
+plant mortality rate, and mapped first flowering to the phenological event date. The trace
+element and contaminant contents wait on the decisions in [issue
 #230](https://github.com/bioepic-data/bervo/issues/230). Still to come are the value lists
 of the categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms
 for the gaps listed here.
