@@ -39,7 +39,13 @@ non-structural carbohydrate and starch content, vein density, photosynthetic nit
 water use efficiency, transpiration rate and leaf area ratio. The twelfth added lignin,
 cellulose, hemicellulose, phenolics, non-structural carbohydrate and starch content for
 any plant tissue, with the leaf and root terms as their subclasses, and a decomposition
-rate constant for dead plant material. Still to come are the value lists of the
+rate constant for dead plant material. The thirteenth added, for any plant tissue, the lignin to
+nitrogen, carbon to phosphorus and potassium ratios, the soluble sugar, ash, protein,
+lipid, tannin and acid-insoluble residue contents, the lignin and acid-insoluble carbon
+fractions and the construction cost, and the fractions of mass, carbon, nitrogen and
+phosphorus remaining in decomposing plant material. The trace element and contaminant
+contents wait on the decisions in
+[issue #230](https://github.com/bioepic-data/bervo/issues/230). Still to come are the value lists of the
 categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms for the
 gaps listed here.
 
