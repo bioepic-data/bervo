@@ -39595,7 +39595,7 @@
         <oboInOwl:hasRelatedSynonym>BNPP</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Belowground plant organ growth: belowground plant organ dry mass production per ground area per year</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: ROOT_PROD_TOT, ROOT_PROD_FINE, ROOT_PROD_CRS. Fine and coarse roots go in contexts. TRY trait ID: 2700. TRY traits mapped here, with what narrows each one in contexts: 1390, 1391, 1675, 1676, 1931, 1932, 2188, 2444.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: ROOT_PROD_TOT, ROOT_PROD_FINE, ROOT_PROD_CRS. Fine and coarse roots go in contexts. TRY trait ID: 2700. TRY traits mapped here, with what narrows each one in contexts: 1391, 1676, 1932, 2188, 2444.</rdfs:comment>
         <rdfs:label>Belowground net primary production</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000546"/>
@@ -42658,7 +42658,7 @@
         <obo:IAO_0000115>Length of new root produced per unit ground area and time, usually per year.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Root growth: root length production per ground area per year</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), section XVI.1, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 1401. TRY traits mapped here, with what narrows each one in contexts: 1685, 1941, 2197. Root class goes in contexts. Usually measured with minirhizotrons or ingrowth cores. Belowground net primary production (BERVO:0002342) is the same production as a mass.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1401. TRY traits mapped here, with what narrows each one in contexts: 1685, 1941, 2197. Root class goes in contexts. Usually measured with minirhizotrons or ingrowth cores. Belowground net primary production (BERVO:0002342) is root production measured as a mass.</rdfs:comment>
         <rdfs:label>Root length production</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
         <bervo:BERVO_has_unit>m.m-2.a-1</bervo:BERVO_has_unit>
@@ -42690,7 +42690,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002513">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
-        <obo:IAO_0000115>Dry mass of dead plant material divided by the dry mass of living plant material of the same kind, per unit ground area.</obo:IAO_0000115>
+        <obo:IAO_0000115>Dry mass of dead plant material divided by the dry mass of living plant material of the same kind, both measured over the same ground area.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>dead to live mass ratio</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>necromass:biomass ratio</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
@@ -42747,8 +42747,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002516">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Length of a stoma, the pair of guard cells, along its long axis.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>guard cell length</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Stomata length</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>guard cell length</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 1190. Distinct from Stomatal pore length (BERVO:0002518), the length of the opening between the guard cells.</rdfs:comment>
         <rdfs:label>Stomatal length</rdfs:label>

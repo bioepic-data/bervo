@@ -145,8 +145,9 @@ def ctx(*concepts):
 
 COTYLEDON = ctx("Cotyledon")
 CWD_STEM = " TRY leaves 'dry mass' out of the name, but the trait is the same content."
-DRY_BASIS = " TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed."
-CARBON_PROD = " Carbon production, which the term's g{C} unit covers; TRY does not give the time base."
+DRY_BASIS = " TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed."
+CARBON_PROD = ("Carbon production, which the term's g{C} unit covers, but TRY gives no time base, so it "
+               "may be a rate for part of a season rather than per year.")
 DEPTH = " The soil depth increment goes with the value."
 EXPOSITION = ("Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the "
               "value, rather than a year.")
@@ -633,9 +634,7 @@ MAPPED = [
     ("broader", "BERVO:0002342", "1932", ctx("Fine root")),
     ("broader", "BERVO:0002342", "2188", ctx("Absorptive fine root")),
     ("broader", "BERVO:0002342", "2444", ctx("Transport fine root")),
-    ("broader", "BERVO:0002342", "1390", ctx("Root") + CARBON_PROD),
-    ("broader", "BERVO:0002342", "1675", ctx("Coarse root") + CARBON_PROD),
-    ("broader", "BERVO:0002342", "1931", ctx("Fine root") + CARBON_PROD),
+    ("related", "BERVO:0002342", "1390 1675 1931", CARBON_PROD),
     ("related", "BERVO:0002342", "1392 1933", "Per month rather than per year, usually a rate for part of the season."),
     ("related", "BERVO:0002342", "1394 1679 1935 2703", "Per day rather than per year, usually a rate for part of the season."),
     ("related", "BERVO:0002342", "1393 1678 1934 2446", EXPOSITION),

@@ -1124,7 +1124,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1375	Root lifespan: fraction of root tips that survive after one year	Root	gap			
 1379	Root mortality: root dry mass mortality per ground area and time	Root	broader	BERVO:0002344		Root goes in contexts.
 1389	Root length relative growth rate	Root	gap			
-1390	Root growth: root carbon (C) production per ground area and time	Root	broader	BERVO:0002342		Root goes in contexts. Carbon production, which the term's g{C} unit covers; TRY does not give the time base.
+1390	Root growth: root carbon (C) production per ground area and time	Root	related	BERVO:0002342		Carbon production, which the term's g{C} unit covers, but TRY gives no time base, so it may be a rate for part of a season rather than per year.
 1391	Root growth: root dry mass production per ground area per year	Root	broader	BERVO:0002342		Root goes in contexts.
 1392	Root growth: root dry mass production per ground area per month	Root	related	BERVO:0002342		Per month rather than per year, usually a rate for part of the season.
 1393	Root growth: root dry mass production per ground area per duration of exposition	Root	related	BERVO:0002342		Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the value, rather than a year.
@@ -1249,7 +1249,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1653	Coarse root decomposition: fraction of coarse root dry mass not decomposed to original coarse root d	Root	broader	BERVO:0002493		Coarse root and Dead vegetation go in contexts.
 1658	Coarse root lifespan: fraction of coarse roots that live to the age in “coarse root age”	Root	gap			
 1664	Coarse root mortality: coarse root dry mass mortality per ground area and time	Root	broader	BERVO:0002344		Coarse root goes in contexts.
-1675	Coarse root growth: coarse root carbon (C) production per ground area and time	Root	broader	BERVO:0002342		Coarse root goes in contexts. Carbon production, which the term's g{C} unit covers; TRY does not give the time base.
+1675	Coarse root growth: coarse root carbon (C) production per ground area and time	Root	related	BERVO:0002342		Carbon production, which the term's g{C} unit covers, but TRY gives no time base, so it may be a rate for part of a season rather than per year.
 1676	Coarse root growth: coarse root dry mass production per ground area per year	Root	broader	BERVO:0002342		Coarse root goes in contexts.
 1678	Coarse root growth: coarse root dry mass production per ground area per duration of exposition	Root	related	BERVO:0002342		Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the value, rather than a year.
 1679	Coarse root growth: coarse root dry mass production per ground area per day	Root	related	BERVO:0002342		Per day rather than per year, usually a rate for part of the season.
@@ -1389,7 +1389,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1928	Fine root growth: new fine root length growth per ground area per year	Fine root	gap			
 1929	Fine root growth: relative fine root production: ratio fine root production rate at given time to ma	Fine root	gap			
 1930	Fine root length relative growth rate	Fine root	gap			
-1931	Fine root growth: fine root carbon (C) production per ground area and time	Fine root	broader	BERVO:0002342		Fine root goes in contexts. Carbon production, which the term's g{C} unit covers; TRY does not give the time base.
+1931	Fine root growth: fine root carbon (C) production per ground area and time	Fine root	related	BERVO:0002342		Carbon production, which the term's g{C} unit covers, but TRY gives no time base, so it may be a rate for part of a season rather than per year.
 1932	Fine root growth: fine root dry mass production per ground area per year	Fine root	broader	BERVO:0002342		Fine root goes in contexts.
 1933	Fine root growth: fine root dry mass production per ground area per month	Fine root	related	BERVO:0002342		Per month rather than per year, usually a rate for part of the season.
 1934	Fine root growth: fine root dry mass production per ground area per duration of exposition	Fine root	related	BERVO:0002342		Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the value, rather than a year.
@@ -2327,12 +2327,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3725	Twig total bark thickness	Twig, branch, shoot and bud	gap			
 3726	Twig inner bark thickness	Twig, branch, shoot and bud	gap			
 3727	Photosynthesis: twig photosynthetic bark	Photosynthesis and gas exchange	gap			
-3728	Twig inner bark soluble sugar concentration	Twig, branch, shoot and bud	broader	BERVO:0002497		Inner bark and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3729	Twig wood soluble sugar concentration	Twig, branch, shoot and bud	broader	BERVO:0002497		Wood and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3730	Twig inner bark starch concentration	Twig, branch, shoot and bud	broader	BERVO:0002490		Inner bark and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3731	Twig wood starch concentration	Twig, branch, shoot and bud	broader	BERVO:0002490		Wood and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3732	Twig inner bark total non-structural carbohydrate concentration	Twig, branch, shoot and bud	broader	BERVO:0002489		Inner bark and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3733	Twig wood total non-structural carbohydrate concentration	Twig, branch, shoot and bud	broader	BERVO:0002489		Wood and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
+3728	Twig inner bark soluble sugar concentration	Twig, branch, shoot and bud	broader	BERVO:0002497		Inner bark and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3729	Twig wood soluble sugar concentration	Twig, branch, shoot and bud	broader	BERVO:0002497		Wood and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3730	Twig inner bark starch concentration	Twig, branch, shoot and bud	broader	BERVO:0002490		Inner bark and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3731	Twig wood starch concentration	Twig, branch, shoot and bud	broader	BERVO:0002490		Wood and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3732	Twig inner bark total non-structural carbohydrate concentration	Twig, branch, shoot and bud	broader	BERVO:0002489		Inner bark and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3733	Twig wood total non-structural carbohydrate concentration	Twig, branch, shoot and bud	broader	BERVO:0002489		Wood and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
 3734	Twig total bark density	Twig, branch, shoot and bud	gap			
 3735	Twig inner bark density	Twig, branch, shoot and bud	gap			
 3736	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: twig	Stem, wood and bark	broader	BERVO:0002371		Twig goes in contexts.
@@ -2341,12 +2341,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3739	Coarse root total bark thickness	Root	gap			
 3740	Coarse root inner bark thickness	Root	gap			
 3741	Coarse root photosynthetic bark	Root	gap			
-3742	Coarse root inner bark soluble sugar concentration	Root	broader	BERVO:0002497		Inner bark and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3743	Coarse root wood soluble sugar concentration	Root	broader	BERVO:0002497		Wood and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3744	Coarse root inner bark starch concentration	Root	broader	BERVO:0002490		Inner bark and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3745	Coarse root wood starch concentration	Root	broader	BERVO:0002490		Wood and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3746	Coarse root inner bark total non-structural carbohydrate concentration	Root	broader	BERVO:0002489		Inner bark and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3747	Coarse root wood total non-structural carbohydrate concentration	Root	broader	BERVO:0002489		Wood and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
+3742	Coarse root inner bark soluble sugar concentration	Root	broader	BERVO:0002497		Inner bark and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3743	Coarse root wood soluble sugar concentration	Root	broader	BERVO:0002497		Wood and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3744	Coarse root inner bark starch concentration	Root	broader	BERVO:0002490		Inner bark and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3745	Coarse root wood starch concentration	Root	broader	BERVO:0002490		Wood and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3746	Coarse root inner bark total non-structural carbohydrate concentration	Root	broader	BERVO:0002489		Inner bark and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3747	Coarse root wood total non-structural carbohydrate concentration	Root	broader	BERVO:0002489		Wood and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
 3748	Coarse root total bark density	Root	gap			
 3749	Coarse root inner bark density	Root	gap			
 3750	Coarse root wood density	Root	gap			
@@ -2355,12 +2355,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3753	Stem total bark thickness	Stem, wood and bark	match	BERVO:0002438		
 3754	Stem inner bark thickness	Stem, wood and bark	broader	BERVO:0002438		Inner bark goes in contexts.
 3755	Photosynthesis: stem photosynthetic bark	Photosynthesis and gas exchange	gap			
-3756	Stem inner bark soluble sugar concentration	Stem, wood and bark	broader	BERVO:0002497		Inner bark and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3757	Stem wood soluble sugar concentration	Stem, wood and bark	broader	BERVO:0002497		Wood and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3758	Stem inner bark starch concentration	Stem, wood and bark	broader	BERVO:0002490		Inner bark and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3759	Stem wood starch concentration	Stem, wood and bark	broader	BERVO:0002490		Wood and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3760	Stem inner bark total non-structural carbohydrate concentration	Stem, wood and bark	broader	BERVO:0002489		Inner bark and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3761	Stem wood total non-structural carbohydrate concentration	Stem, wood and bark	broader	BERVO:0002489		Wood and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
+3756	Stem inner bark soluble sugar concentration	Stem, wood and bark	broader	BERVO:0002497		Inner bark and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3757	Stem wood soluble sugar concentration	Stem, wood and bark	broader	BERVO:0002497		Wood and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3758	Stem inner bark starch concentration	Stem, wood and bark	broader	BERVO:0002490		Inner bark and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3759	Stem wood starch concentration	Stem, wood and bark	broader	BERVO:0002490		Wood and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3760	Stem inner bark total non-structural carbohydrate concentration	Stem, wood and bark	broader	BERVO:0002489		Inner bark and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3761	Stem wood total non-structural carbohydrate concentration	Stem, wood and bark	broader	BERVO:0002489		Wood and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
 3762	Stem total bark density	Stem, wood and bark	match	BERVO:0002439		
 3763	Stem inner bark density	Stem, wood and bark	broader	BERVO:0002439		Inner bark goes in contexts.
 3764	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: stem	Stem, wood and bark	match	BERVO:0002371	stem_specific_density	
