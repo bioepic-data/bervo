@@ -136,19 +136,19 @@ species attributes.
 | Crown and canopy |  |  |  | 21 |  | 21 |
 | Fine root |  | 126 | 13 | 264 |  | 403 |
 | Flower and reproduction |  | 14 |  | 112 |  | 126 |
-| Leaf | 44 | 45 | 28 | 300 | 1 | 418 |
+| Leaf | 44 | 44 | 29 | 300 | 1 | 418 |
 | Litter and woody debris | 5 | 144 | 15 | 35 |  | 199 |
 | Moss and fern |  |  |  | 21 |  | 21 |
 | Photosynthesis and gas exchange | 14 | 2 | 6 | 91 |  | 113 |
 | Plot and stand | 2 |  |  | 7 | 1 | 10 |
-| Root | 22 | 110 | 8 | 268 |  | 408 |
+| Root | 22 | 109 | 9 | 268 |  | 408 |
 | Seed, fruit and dispersal | 22 | 6 | 3 | 82 |  | 113 |
 | Species ecology and distribution |  |  |  | 3 | 47 | 50 |
 | Species genetics and phylogeny |  |  |  | 13 | 3 | 16 |
 | Stem, wood and bark | 21 | 85 | 10 | 207 |  | 323 |
 | Twig, branch, shoot and bud |  | 60 | 1 | 110 |  | 171 |
 | Whole plant | 12 |  | 2 | 255 |  | 269 |
-| **Total** | **142** | **592** | **86** | **1789** | **52** | **2661** |
+| **Total** | **142** | **590** | **88** | **1789** | **52** | **2661** |
 
 ## Matches
 
@@ -370,7 +370,7 @@ species attributes.
 | `BERVO:0002493` Mass remaining fraction of decomposing plant material | 1367 Root decomposition: fraction of root dry mass not decomposed to original root dry mass; 1653 Coarse root decomposition: fraction of coarse root dry mass not decomposed to original coarse root d; 1909 Litter (fine root) decomposition: fraction of fine root dry mass not decomposed to original fine roo; 2165 Fine root (absorptive) decomposition: fraction of absorptive fine root dry mass not decomposed to or; 2421 Fine root (transport) decomposition: fraction of transport fine root dry mass not decomposed to orig; 2677 Belowground plant organ decomposition: fraction of belowground plant organ dry mass not decomposed t |
 | `BERVO:0002494` Carbon remaining fraction of decomposing plant material | 3148 Root decomposition: fraction of carbon (C) remaining; 3225 Fine root decomposition: fraction carbon (C) remaining; 3336 Belowground plant organ decomposition: fraction carbon (C) remaining |
 | `BERVO:0002495` Nitrogen remaining fraction of decomposing plant material | 3149 Root decomposition: fraction of nitrogen (N) remaining; 3189 Coarse root decomposition: fraction nitrogen (N) remaining; 3226 Fine root decomposition: fraction nitrogen (N) remaining; 3263 Fine root (absorptive) decomposition: fraction nitrogen (N) remaining; 3300 Fine root (transport) decomposition: fraction nitrogen (N) remaining; 3337 Belowground plant organ decomposition: fraction nitrogen (N) remaining |
-| `BERVO:0002497` Plant tissue soluble sugar content | 506 Leaf sugar content per leaf dry mass; 662 Root sugar content per root dry mass; 1891 Fine root water soluble sugar content per fine root dry mass; 2147 Fine root (absorptive) water soluble sugar content per absorptive fine root dry mass; 2403 Fine root (transport) water soluble sugar content per transport fine root dry mass; 2659 Belowground plant organ water soluble sugar content per belowground plant organ dry mass; 3728 Twig inner bark soluble sugar concentration; 3729 Twig wood soluble sugar concentration; 3742 Coarse root inner bark soluble sugar concentration; 3743 Coarse root wood soluble sugar concentration; 3756 Stem inner bark soluble sugar concentration; 3757 Stem wood soluble sugar concentration |
+| `BERVO:0002497` Plant tissue soluble sugar content | 1891 Fine root water soluble sugar content per fine root dry mass; 2147 Fine root (absorptive) water soluble sugar content per absorptive fine root dry mass; 2403 Fine root (transport) water soluble sugar content per transport fine root dry mass; 2659 Belowground plant organ water soluble sugar content per belowground plant organ dry mass; 3728 Twig inner bark soluble sugar concentration; 3729 Twig wood soluble sugar concentration; 3742 Coarse root inner bark soluble sugar concentration; 3743 Coarse root wood soluble sugar concentration; 3756 Stem inner bark soluble sugar concentration; 3757 Stem wood soluble sugar concentration |
 | `BERVO:0002498` Plant tissue lignin carbon fraction | 424 Fine root lignin carbon (C) content per fine root carbon (C) content; 1331 Root lignin carbon (C) content per root carbon (C) content; 2129 Fine root (absorptive) lignin carbon (C) content per absorptive fine root carbon (C) content; 2385 Fine root (transport) lignin carbon (C) content per transport fine root carbon (C) content |
 | `BERVO:0002499` Plant tissue carbon to phosphorus mass ratio | 151 Leaf carbon/phosphorus (C/P) ratio; 3517 Root carbon/phosporus (C/P) ratio; 3518 Stem carbon/phosporus (C/P) ratio; 3519 Litter carbon/phosporus (C/P) ratio; 3899 Fine root carbon/phosporus (C/P) ratio |
 | `BERVO:0002500` Plant tissue nitrogen to potassium mass ratio | 3500 Litter nitrogen/potassium (N/K) ratio; 3531 Leaf nitrogen/potassium (N/K) ratio; 3534 Root nitrogen/potassium (N/K) ratio; 3537 Stem nitrogen/potassium (N/K) ratio |
@@ -400,12 +400,14 @@ species attributes.
 | 416 | Leaf chlorophyll a/b ratio | `BERVO:0002474` Leaf chlorophyll content per unit area | The ratio of chlorophyll a to chlorophyll b. |
 | 437 | Plant number of leaves | `BERVO:0000773` Leaf number | The BERVO term comes from a per-branch EcoSIM variable. |
 | 504 | Leaf Rubisco content per leaf area | `BERVO:0000562` Leaf rubisco content | The BERVO term is per unit leaf mass, not per leaf area. |
+| 506 | Leaf sugar content per leaf dry mass | `BERVO:0002497` Plant tissue soluble sugar content | TRY says only sugar, which may include sugars that are not soluble. |
 | 515 | Root respiration rate per root nitrogen (N) content | `BERVO:0002413` Root respiration rate per unit dry mass | Per unit root nitrogen rather than dry mass. |
 | 517 | Root respiration rate per root surface area | `BERVO:0002413` Root respiration rate per unit dry mass | Per unit root surface area rather than dry mass. |
 | 518 | Woody area index (woody stem area per ground area) | `BERVO:0001880` Canopy stem area index | TRY does not say whether the woody area is projected, as in the BERVO term, or the total surface area. |
 | 520 | Stem respiration rate per stem surface area | `BERVO:0002441` Stem respiration rate per unit dry mass | Per unit stem surface area rather than dry mass. |
 | 521 | Stem respiration rate per stem nitrogen (N) content | `BERVO:0002441` Stem respiration rate per unit dry mass | Per unit stem nitrogen rather than dry mass. |
 | 532 | Stem respiration rate per stem volume | `BERVO:0002441` Stem respiration rate per unit dry mass | Per unit stem volume rather than dry mass. |
+| 662 | Root sugar content per root dry mass | `BERVO:0002497` Plant tissue soluble sugar content | TRY says only sugar, which may include sugars that are not soluble. |
 | 732 | Leaf chlorophyll content per leaf nitrogen (N) content | `BERVO:0002475` Leaf chlorophyll content per unit dry mass | Per unit leaf nitrogen rather than dry mass. |
 | 741 | Leaf veins free ending density | `BERVO:0002480` Leaf vein density | The density of free vein endings, not vein length per area. |
 | 781 | Stomata distribution to ab- and adaxial leaf surfaces | `BERVO:0002469` Stomatal density | How the stomata are divided between the two leaf surfaces. |

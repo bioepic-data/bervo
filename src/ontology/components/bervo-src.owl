@@ -42334,9 +42334,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002493">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Dry mass of decomposing dead plant material at a time after the start of decomposition, as a fraction of its dry mass at the start.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>fraction of mass remaining</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>litter mass remaining</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Litter decomposition: fraction of mass remaining</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>fraction of mass remaining</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 3520. TRY traits mapped here, with what narrows each one in contexts: 1367, 1653, 1909, 2165, 2421, 2677. Usually from litterbag studies, where the time since the start of decomposition should be reported with the value. The material decomposing goes in contexts. Decomposition rate constant (BERVO:0002491) is fitted to a series of these values.</rdfs:comment>
         <rdfs:label>Mass remaining fraction of decomposing plant material</rdfs:label>
@@ -42354,13 +42354,13 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002494">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of carbon in decomposing dead plant material at a time after the start of decomposition, as a fraction of the mass of carbon it held at the start.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>fraction of carbon remaining</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Litter decomposition: fraction of carbon (C) remaining</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>fraction of carbon remaining</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 3524. TRY traits mapped here, with what narrows each one in contexts: 3148, 3225, 3336. Usually from litterbag studies, where the time since the start of decomposition should be reported with the value. The material decomposing goes in contexts.</rdfs:comment>
         <rdfs:label>Carbon remaining fraction of decomposing plant material</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
-        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001175"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
@@ -42373,13 +42373,13 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002495">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of nitrogen in decomposing dead plant material at a time after the start of decomposition, as a fraction of the mass of nitrogen it held at the start.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>fraction of nitrogen remaining</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Litter decomposition: fraction of nitrogen (N) remaining</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>fraction of nitrogen remaining</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 3525. TRY traits mapped here, with what narrows each one in contexts: 3149, 3189, 3226, 3263, 3300, 3337. Usually from litterbag studies, where the time since the start of decomposition should be reported with the value. The material decomposing goes in contexts. It can exceed 1 while decomposers immobilize nitrogen from outside the material.</rdfs:comment>
         <rdfs:label>Nitrogen remaining fraction of decomposing plant material</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
-        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.g-1{N}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001175"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
@@ -42392,13 +42392,13 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002496">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of phosphorus in decomposing dead plant material at a time after the start of decomposition, as a fraction of the mass of phosphorus it held at the start.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>fraction of phosphorus remaining</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Litter decomposition: fraction of phosphorus (P) remaining</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>fraction of phosphorus remaining</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 3526. Usually from litterbag studies, where the time since the start of decomposition should be reported with the value. The material decomposing goes in contexts. It can exceed 1 while decomposers immobilize phosphorus from outside the material.</rdfs:comment>
         <rdfs:label>Phosphorus remaining fraction of decomposing plant material</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
-        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.g-1{P}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001175"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
@@ -42412,10 +42412,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of soluble sugars per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), section XIV.6, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 506, 662, 1891, 2147, 2403, 2659, 3728, 3729, 3742, 3743, 3756, 3757. Organ and status go in contexts; litter is Dead vegetation. Measured as the water- or ethanol-soluble carbohydrate of the tissue, often by the anthrone or phenol-sulfuric acid method. With Plant tissue starch content (BERVO:0002490) it makes up Plant tissue non-structural carbohydrate content (BERVO:0002489).</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 1891, 2147, 2403, 2659, 3728, 3729, 3742, 3743, 3756, 3757. Organ and status go in contexts; litter is Dead vegetation. Measured as the water- or ethanol-soluble carbohydrate of the tissue, often by the anthrone or phenol-sulfuric acid method. With Plant tissue starch content (BERVO:0002490) it makes up Plant tissue non-structural carbohydrate content (BERVO:0002489).</rdfs:comment>
         <rdfs:label>Plant tissue soluble sugar content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
-        <bervo:BERVO_has_unit>mg{sugar}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>mg{soluble_sugar}.g-1{dry_mass}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001326"/>
     </Class>

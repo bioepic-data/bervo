@@ -145,6 +145,7 @@ def ctx(*concepts):
 
 COTYLEDON = ctx("Cotyledon")
 CWD_STEM = " TRY leaves 'dry mass' out of the name, but the trait is the same content."
+DRY_BASIS = " TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed."
 SEED = ctx("Seed") + " TRY allows a value for the whole diaspore instead of the seed alone."
 
 
@@ -554,18 +555,17 @@ MAPPED = [
     ("broader", "BERVO:0002495", "3300", ctx("Transport fine root", "Dead vegetation")),
     ("broader", "BERVO:0002495", "3337", ctx("Belowground plant material", "Dead vegetation")),
     ("match", "BERVO:0002496", "3526", ""),
-    ("broader", "BERVO:0002497", "506", ctx("Leaf") + " TRY says only sugar; the free sugars of a tissue are the soluble ones."),
-    ("broader", "BERVO:0002497", "662", ctx("Root") + " TRY says only sugar; the free sugars of a tissue are the soluble ones."),
+    ("related", "BERVO:0002497", "506 662", "TRY says only sugar, which may include sugars that are not soluble."),
     ("broader", "BERVO:0002497", "1891", ctx("Fine root")),
     ("broader", "BERVO:0002497", "2147", ctx("Absorptive fine root")),
     ("broader", "BERVO:0002497", "2403", ctx("Transport fine root")),
     ("broader", "BERVO:0002497", "2659", ctx("Belowground plant material")),
-    ("broader", "BERVO:0002497", "3728", ctx("Inner bark", "Twig")),
-    ("broader", "BERVO:0002497", "3729", ctx("Wood", "Twig")),
-    ("broader", "BERVO:0002497", "3742", ctx("Inner bark", "Coarse root")),
-    ("broader", "BERVO:0002497", "3743", ctx("Wood", "Coarse root")),
-    ("broader", "BERVO:0002497", "3756", ctx("Inner bark", "Stem")),
-    ("broader", "BERVO:0002497", "3757", ctx("Wood", "Stem")),
+    ("broader", "BERVO:0002497", "3728", ctx("Inner bark", "Twig") + DRY_BASIS),
+    ("broader", "BERVO:0002497", "3729", ctx("Wood", "Twig") + DRY_BASIS),
+    ("broader", "BERVO:0002497", "3742", ctx("Inner bark", "Coarse root") + DRY_BASIS),
+    ("broader", "BERVO:0002497", "3743", ctx("Wood", "Coarse root") + DRY_BASIS),
+    ("broader", "BERVO:0002497", "3756", ctx("Inner bark", "Stem") + DRY_BASIS),
+    ("broader", "BERVO:0002497", "3757", ctx("Wood", "Stem") + DRY_BASIS),
     ("broader", "BERVO:0002498", "424", ctx("Fine root")),
     ("broader", "BERVO:0002498", "1331", ctx("Root")),
     ("broader", "BERVO:0002498", "2129", ctx("Absorptive fine root")),

@@ -409,7 +409,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 503	Leaf protein content per leaf dry mass	Leaf	broader	BERVO:0002504		Leaf goes in contexts.
 504	Leaf Rubisco content per leaf area	Leaf	related	BERVO:0000562		The BERVO term is per unit leaf mass, not per leaf area.
 505	Leaf starch content per leaf dry mass	Leaf	match	BERVO:0002479		
-506	Leaf sugar content per leaf dry mass	Leaf	broader	BERVO:0002497		Leaf goes in contexts. TRY says only sugar; the free sugars of a tissue are the soluble ones.
+506	Leaf sugar content per leaf dry mass	Leaf	related	BERVO:0002497		TRY says only sugar, which may include sugars that are not soluble.
 507	Leaf non-structural carbon (TNC) content per leaf dry mass	Leaf	match	BERVO:0002478		
 508	Leaf dry mass fraction per leaf age class	Leaf	gap			
 509	Leaf dry mass per area (LMA) versus leaf nitrogen (N) content	Leaf	gap			
@@ -540,7 +540,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 658	Coarse root chromium (Cr) content per coarse root dry mass	Root	gap			
 660	Leaf nitrogen (N) content organic per leaf dry mass	Leaf	gap			
 661	Leaf nitrate (NO3-) content per leaf dry mass	Leaf	gap			
-662	Root sugar content per root dry mass	Root	broader	BERVO:0002497		Root goes in contexts. TRY says only sugar; the free sugars of a tissue are the soluble ones.
+662	Root sugar content per root dry mass	Root	related	BERVO:0002497		TRY says only sugar, which may include sugars that are not soluble.
 663	Leaf respiration rate in light per dry mass	Photosynthesis and gas exchange	gap			
 664	Leaf respiration rate in light per leaf respiration rate in the dark	Photosynthesis and gas exchange	gap			
 665	Leaf respiration rate in the dark minus respiration in light, mass based	Photosynthesis and gas exchange	gap			
@@ -2327,8 +2327,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3725	Twig total bark thickness	Twig, branch, shoot and bud	gap			
 3726	Twig inner bark thickness	Twig, branch, shoot and bud	gap			
 3727	Photosynthesis: twig photosynthetic bark	Photosynthesis and gas exchange	gap			
-3728	Twig inner bark soluble sugar concentration	Twig, branch, shoot and bud	broader	BERVO:0002497		Inner bark and Twig go in contexts.
-3729	Twig wood soluble sugar concentration	Twig, branch, shoot and bud	broader	BERVO:0002497		Wood and Twig go in contexts.
+3728	Twig inner bark soluble sugar concentration	Twig, branch, shoot and bud	broader	BERVO:0002497		Inner bark and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
+3729	Twig wood soluble sugar concentration	Twig, branch, shoot and bud	broader	BERVO:0002497		Wood and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
 3730	Twig inner bark starch concentration	Twig, branch, shoot and bud	broader	BERVO:0002490		Inner bark and Twig go in contexts.
 3731	Twig wood starch concentration	Twig, branch, shoot and bud	broader	BERVO:0002490		Wood and Twig go in contexts.
 3732	Twig inner bark total non-structural carbohydrate concentration	Twig, branch, shoot and bud	broader	BERVO:0002489		Inner bark and Twig go in contexts.
@@ -2341,8 +2341,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3739	Coarse root total bark thickness	Root	gap			
 3740	Coarse root inner bark thickness	Root	gap			
 3741	Coarse root photosynthetic bark	Root	gap			
-3742	Coarse root inner bark soluble sugar concentration	Root	broader	BERVO:0002497		Inner bark and Coarse root go in contexts.
-3743	Coarse root wood soluble sugar concentration	Root	broader	BERVO:0002497		Wood and Coarse root go in contexts.
+3742	Coarse root inner bark soluble sugar concentration	Root	broader	BERVO:0002497		Inner bark and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
+3743	Coarse root wood soluble sugar concentration	Root	broader	BERVO:0002497		Wood and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
 3744	Coarse root inner bark starch concentration	Root	broader	BERVO:0002490		Inner bark and Coarse root go in contexts.
 3745	Coarse root wood starch concentration	Root	broader	BERVO:0002490		Wood and Coarse root go in contexts.
 3746	Coarse root inner bark total non-structural carbohydrate concentration	Root	broader	BERVO:0002489		Inner bark and Coarse root go in contexts.
@@ -2355,8 +2355,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3753	Stem total bark thickness	Stem, wood and bark	match	BERVO:0002438		
 3754	Stem inner bark thickness	Stem, wood and bark	broader	BERVO:0002438		Inner bark goes in contexts.
 3755	Photosynthesis: stem photosynthetic bark	Photosynthesis and gas exchange	gap			
-3756	Stem inner bark soluble sugar concentration	Stem, wood and bark	broader	BERVO:0002497		Inner bark and Stem go in contexts.
-3757	Stem wood soluble sugar concentration	Stem, wood and bark	broader	BERVO:0002497		Wood and Stem go in contexts.
+3756	Stem inner bark soluble sugar concentration	Stem, wood and bark	broader	BERVO:0002497		Inner bark and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
+3757	Stem wood soluble sugar concentration	Stem, wood and bark	broader	BERVO:0002497		Wood and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
 3758	Stem inner bark starch concentration	Stem, wood and bark	broader	BERVO:0002490		Inner bark and Stem go in contexts.
 3759	Stem wood starch concentration	Stem, wood and bark	broader	BERVO:0002490		Wood and Stem go in contexts.
 3760	Stem inner bark total non-structural carbohydrate concentration	Stem, wood and bark	broader	BERVO:0002489		Inner bark and Stem go in contexts.
