@@ -156,14 +156,14 @@ species attributes.
 | Moss and fern |  |  |  | 21 |  | 21 |
 | Photosynthesis and gas exchange | 19 | 2 | 10 | 82 |  | 113 |
 | Plot and stand | 2 |  |  | 7 | 1 | 10 |
-| Root | 29 | 133 | 19 | 227 |  | 408 |
+| Root | 31 | 133 | 17 | 227 |  | 408 |
 | Seed, fruit and dispersal | 22 | 6 | 3 | 82 |  | 113 |
 | Species ecology and distribution |  |  |  | 3 | 47 | 50 |
 | Species genetics and phylogeny |  |  |  | 13 | 3 | 16 |
 | Stem, wood and bark | 29 | 97 | 13 | 184 |  | 323 |
 | Twig, branch, shoot and bud |  | 86 | 9 | 76 |  | 171 |
 | Whole plant | 12 |  | 2 | 255 |  | 269 |
-| **Total** | **162** | **701** | **124** | **1622** | **52** | **2661** |
+| **Total** | **164** | **701** | **122** | **1622** | **52** | **2661** |
 
 ## Matches
 
@@ -282,6 +282,7 @@ species attributes.
 | 1431 | Mycorrhizal colonization EM: fraction of root length colonized by ectomycorrhizal structure | `BERVO:0002420` Ectomycorrhizal root colonization |  |
 | 1494 | Root dry mass per soil volume | `BERVO:0002535` Root mass density |  |
 | 1507 | Root length density (RLD): root length per ground area | `BERVO:0002534` Root length per ground area |  |
+| 1508 | Root length per soil volume | `BERVO:0002544` Root length per soil volume |  |
 | 2700 | Belowground plant organ growth: belowground plant organ dry mass production per ground area per year | `BERVO:0002342` Belowground net primary production |  |
 | 2950 | Paleo trait: leaf mass per area | `BERVO:0002185` Leaf mass per area | Reconstructed from fossil leaves; the quantity is the same. |
 | 3018 | Wood cross-sectional fraction of Vessel (conduit) area | `BERVO:0002523` Wood vessel area fraction |  |
@@ -303,6 +304,7 @@ species attributes.
 | 3115 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole excluded | `BERVO:0002369` Specific leaf area | TRY variants differ in whether the petiole, rhachis and midrib are included. |
 | 3116 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole included | `BERVO:0002369` Specific leaf area | TRY variants differ in whether the petiole, rhachis and midrib are included. |
 | 3117 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): undefined if petiole is in- or exclu | `BERVO:0002369` Specific leaf area | TRY variants differ in whether the petiole, rhachis and midrib are included. |
+| 3136 | Root branching intensity 3: number of root tips per total root length | `BERVO:0002542` Root tips per unit root length |  |
 | 3147 | Root starch content per dry mass | `BERVO:0002449` Root starch content per unit dry mass |  |
 | 3400 | Plant growth form simple consolidated | `BERVO:0002378` Plant growth form | TRY variants differ in their value lists. |
 | 3401 | Plant growth form detailed consolidated | `BERVO:0002378` Plant growth form | TRY variants differ in their value lists. |
@@ -493,14 +495,13 @@ species attributes.
 | 1237 | Wood vessel density | `BERVO:0002410` Stem conduit density | Vessels only; conduits include tracheids. |
 | 1238 | Wood vessel diameter | `BERVO:0002409` Stem conduit diameter | Vessels only; conduits include tracheids. |
 | 1264 | Leaf petiole specific length (petiole length per petiole dry mass) | `BERVO:0002472` Petiole length | Petiole length per unit petiole dry mass. |
-| 1296 | Root branching intensity 2: number of root tips per higher order root length | `BERVO:0001096` Root branching frequency | Counts root tips per unit length of the bearing root; tips equal branches only where the branches are unbranched. |
+| 1296 | Root branching intensity 2: number of root tips per higher order root length | `BERVO:0002542` Root tips per unit root length | Tips per unit length of the higher-order root that bears them, not per total root length. |
 | 1390 | Root growth: root carbon (C) production per ground area and time | `BERVO:0002342` Belowground net primary production | Carbon production, which the term's g{C} unit covers, but TRY gives no time base, so it may be a rate for part of a season rather than per year. |
 | 1392 | Root growth: root dry mass production per ground area per month | `BERVO:0002342` Belowground net primary production | Per month rather than per year, usually a rate for part of the season. |
 | 1393 | Root growth: root dry mass production per ground area per duration of exposition | `BERVO:0002342` Belowground net primary production | Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the value, rather than a year. |
 | 1394 | Root growth: root dry mass production per ground area per day | `BERVO:0002342` Belowground net primary production | Per day rather than per year, usually a rate for part of the season. |
 | 1400 | Root growth: root length production per ground area per exposition period | `BERVO:0002511` Root length production | Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the value, rather than a year. |
 | 1435 | Mycorrhizal colonization: fraction of root length with mycorrhizla hyphae, arbuscules, or vesicles | `BERVO:0002419` Arbuscular mycorrhizal root colonization | Counts root length with hyphae, arbuscules or vesicles; hyphae alone need not be arbuscular mycorrhizal. |
-| 1508 | Root length per soil volume | `BERVO:0001103` Root length density in soil layers | The BERVO term is an EcoSIM variable per soil layer. |
 | 1675 | Coarse root growth: coarse root carbon (C) production per ground area and time | `BERVO:0002342` Belowground net primary production | Carbon production, which the term's g{C} unit covers, but TRY gives no time base, so it may be a rate for part of a season rather than per year. |
 | 1678 | Coarse root growth: coarse root dry mass production per ground area per duration of exposition | `BERVO:0002342` Belowground net primary production | Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the value, rather than a year. |
 | 1679 | Coarse root growth: coarse root dry mass production per ground area per day | `BERVO:0002342` Belowground net primary production | Per day rather than per year, usually a rate for part of the season. |
@@ -529,7 +530,6 @@ species attributes.
 | 3111 | Leaf area (in case of compound leaves: leaflet, petiole included) | `BERVO:0002368` Individual leaf area | The area of one leaflet of a compound leaf, not of the whole leaf. |
 | 3113 | Leaf area (in case of compound leaves: leaflet, undefined if petiole is in- or excluded) | `BERVO:0002368` Individual leaf area | The area of one leaflet of a compound leaf, not of the whole leaf. |
 | 3128 | Photosynthesis rate per stomatal conductance | `BERVO:0002482` Photosynthetic water use efficiency | Intrinsic water use efficiency, divided by stomatal conductance rather than transpiration. |
-| 3136 | Root branching intensity 3: number of root tips per total root length | `BERVO:0001096` Root branching frequency | Counts root tips per unit of total root length, not of the bearing root. |
 | 3214 | Fine root forks per fine root length. | `BERVO:0002542` Root tips per unit root length | Forks rather than tips per unit root length. |
 | 3215 | Fine root calcium (Ca) content per fine root fresh mass | `BERVO:0002456` Plant tissue calcium content | Per unit fine root fresh mass rather than dry mass. |
 | 3216 | Fine root potassium (K) content per fine root fresh mass | `BERVO:0002455` Plant tissue potassium content | Per unit fine root fresh mass rather than dry mass. |

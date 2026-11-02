@@ -1096,7 +1096,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1289	Root metaxylem cell wall thickness	Root	gap			
 1290	Root protoxylem cell wall thickness	Root	gap			
 1295	Root branching intensity 1 (branching ratio): number of roots per higher order root	Root	match	BERVO:0002415		
-1296	Root branching intensity 2: number of root tips per higher order root length	Root	related	BERVO:0001096		Counts root tips per unit length of the bearing root; tips equal branches only where the branches are unbranched.
+1296	Root branching intensity 2: number of root tips per higher order root length	Root	related	BERVO:0002542		Tips per unit length of the higher-order root that bears them, not per total root length.
 1298	Root tips per root dry mass (specific root tip abundance, SRTA)	Root	match	BERVO:0002416		
 1301	Root link length (segments between two nodes or a node and a tip)	Root	gap			
 1306	Root tips per ground area	Root	gap			
@@ -1188,7 +1188,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1504	Plant biomass and allometry: Root length ratio (RLR): root length per plant dry mass	Whole plant	gap			
 1506	Root length fraction belonging to species	Root	gap			
 1507	Root length density (RLD): root length per ground area	Root	match	BERVO:0002534		
-1508	Root length per soil volume	Root	related	BERVO:0001103		The BERVO term is an EcoSIM variable per soil layer.
+1508	Root length per soil volume	Root	match	BERVO:0002544		
 1509	Plant biomass and allometry: Root length per plant	Whole plant	gap			
 1510	Root length per minirhizotron screen area	Root	gap			
 1512	Root rooting depth: fraction of root dry mass contained in depth interval	Root	gap			
@@ -1905,7 +1905,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3130	Root number of vessels per cross-section	Root	gap			
 3131	Root cross-sectional area of root stele	Root	gap			
 3132	Root cross-sectional area of vessel	Root	gap			
-3136	Root branching intensity 3: number of root tips per total root length	Root	related	BERVO:0001096		Counts root tips per unit of total root length, not of the bearing root.
+3136	Root branching intensity 3: number of root tips per total root length	Root	match	BERVO:0002542		
 3147	Root starch content per dry mass	Root	match	BERVO:0002449		
 3148	Root decomposition: fraction of carbon (C) remaining	Root	broader	BERVO:0002494		Root and Dead vegetation go in contexts.
 3149	Root decomposition: fraction of nitrogen (N) remaining	Root	broader	BERVO:0002495		Root and Dead vegetation go in contexts.

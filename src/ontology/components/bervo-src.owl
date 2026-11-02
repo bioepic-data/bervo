@@ -43072,7 +43072,7 @@
         <obo:IAO_0000115>Length of root per unit ground area, summed over the soil depth sampled.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Root length density (RLD): root length per ground area</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 1507. TRY traits mapped here, with what narrows each one in contexts: 1768, 2024, 2280, 2536. Root class goes in contexts. TRY calls it root length density (RLD), a name more often used for length per unit soil volume, as in Total root length density (BERVO:0000408). The soil depth sampled should be reported with the value.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1507. TRY traits mapped here, with what narrows each one in contexts: 1768, 2024, 2280, 2536. Root class goes in contexts. TRY calls it root length density (RLD), a name more often used for length per unit soil volume, as in Root length per soil volume (BERVO:0002544). The soil depth sampled should be reported with the value.</rdfs:comment>
         <rdfs:label>Root length per ground area</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
         <bervo:BERVO_has_unit>m.m-2</bervo:BERVO_has_unit>
@@ -43213,8 +43213,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002542">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
         <obo:IAO_0000115>Number of root tips per unit length of root.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Root branching intensity 3: number of root tips per total root length</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 3176, 3213, 3250. Root class goes in contexts. TRY calls it branching intensity 3. Specific root tip abundance (BERVO:0002416) is the number of tips per unit root dry mass; Root branching frequency (BERVO:0001096) counts branches, not tips, per unit length.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3136. TRY traits mapped here, with what narrows each one in contexts: 3176, 3213, 3250. Root class goes in contexts. TRY calls it branching intensity 3. Specific root tip abundance (BERVO:0002416) is the number of tips per unit root dry mass; Root branching frequency (BERVO:0001096) counts branches, not tips, per unit length.</rdfs:comment>
         <rdfs:label>Root tips per unit root length</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000899"/>
         <bervo:BERVO_has_unit>{tips}.cm-1</bervo:BERVO_has_unit>
@@ -43249,7 +43250,7 @@
         <obo:IAO_0000115>Length of root per unit volume of soil.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>root length density</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 1769, 2025, 2281, 2537. Root class goes in contexts. Usually from soil cores, for a stated depth interval. The EcoSIM variables Total root length density (BERVO:0000408), summed over all plants in a soil layer of a grid cell, and Root length density in soil layers (BERVO:0001103), for one plant in a soil layer, are its subclasses. Root length per ground area (BERVO:0002534) is the same length summed over depth.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1508. TRY traits mapped here, with what narrows each one in contexts: 1769, 2025, 2281, 2537. Root class goes in contexts. Usually from soil cores, for a stated depth interval. The EcoSIM variables Total root length density (BERVO:0000408), summed over all plants in a soil layer of a grid cell, and Root length density in soil layers (BERVO:0001103), for one plant in a soil layer, are its subclasses. Root length per ground area (BERVO:0002534) is the same length summed over depth.</rdfs:comment>
         <rdfs:label>Root length per soil volume</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
         <bervo:BERVO_has_unit>m.m-3</bervo:BERVO_has_unit>
