@@ -42245,7 +42245,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of phenolic compounds per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Plant tissue phosphorus content (BERVO:0002380), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 147, 956, 1002, 1168, 1271, 1817, 2073, 2585, 2896. Organ and status go in contexts; litter is Dead vegetation. TRY calls it phenols content; the values are total phenolics, usually by the Folin method. Polyphenol and soluble phenol contents are measured differently and are not mapped here.</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 147, 956, 1002, 1168, 1271, 1817, 2073, 2585, 2896. Organ and status go in contexts; litter is Dead vegetation. TRY calls it phenols content; the values are total phenolics, usually by the Folin method, which reports them as gallic acid equivalents rather than as a true mass of phenolic compounds. Polyphenol and soluble phenol contents are measured differently and are not mapped here.</rdfs:comment>
         <rdfs:label>Plant tissue phenolics content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>mg{phenolics}.g-1{dry_mass}</bervo:BERVO_has_unit>
@@ -42292,10 +42292,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002491">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>First-order rate constant of mass loss from decomposing dead plant material, k in the model in which the mass remaining falls exponentially with time.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>decay constant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>litter decay constant</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Litter decomposition rate constant</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 994. TRY traits mapped here, with what narrows each one in contexts: 846, 902, 949, 1062, 1158, 1519, 1775, 1910, 2031, 2287, 2543, 2799, 2881. Usually estimated from litterbag or chronosequence studies, whose duration should be reported with the value. The material decomposing goes in contexts.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 994. TRY traits mapped here, with what narrows each one in contexts: 846, 902, 949, 1062, 1158, 1519, 1775, 1910, 2031, 2287, 2543, 2799, 2881. Usually estimated from litterbag or chronosequence studies, whose duration should be reported with the value. The material decomposing goes in contexts. Distinct from Specific decomposition rate constant (BERVO:0001470) and the other EcoSIM specific decomposition rate constants (BERVO:0001247, BERVO:0001248, BERVO:0001250, BERVO:0001251), which are kinetic parameters for microbial turnover of organic matter.</rdfs:comment>
         <rdfs:label>Decomposition rate constant</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000270"/>
         <bervo:BERVO_has_unit>a-1</bervo:BERVO_has_unit>
@@ -60517,9 +60517,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001324">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
-        <obo:IAO_0000115>Plant cell wall polysaccharides with beta-1,4-linked backbones other than cellulose, such as xylans, xyloglucans and mannans.</obo:IAO_0000115>
+        <obo:IAO_0000115>Plant cell wall polysaccharide other than cellulose with a beta-1,4-linked backbone, such as a xylan, xyloglucan, mannan or mixed-linkage glucan.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_61266"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after ChEBI (CHEBI:61266), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>Measured as a fraction by sequential extraction of the cell wall, as in the van Soest method.</rdfs:comment>
         <rdfs:label>Hemicellulose</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -60533,7 +60534,7 @@
         <obo:IAO_0000115>Aromatic compound with one or more hydroxy groups attached to an aromatic ring, the class measured as the total phenolics of plant tissue.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33853"/>
         <oboInOwl:hasExactSynonym>phenolics</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>phenols</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>phenols</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after ChEBI (CHEBI:33853), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>Distinct from Phenol (BERVO:8000664), the single compound.</rdfs:comment>
         <rdfs:label>Phenolic compound</rdfs:label>

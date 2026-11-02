@@ -91,8 +91,6 @@ CONTEXTS = [
     (r"^Coarse root inner bark", ["Inner bark", "Coarse root"]),
     (r"^Coarse root wood", ["Wood", "Coarse root"]),
     (r"^Stem inner bark", ["Inner bark", "Stem"]),
-    (r"^Fibrous root", ["Fine root"]),
-    (r"^Seed", ["Seed"]),
     (r"^Litter (\(other|other)", ["Dead vegetation"]),  # mixed litter: twigs, bark, flowers...
     (r"^Litter \(fine root\)", ["Fine root", "Dead vegetation"]),
     (r"^Litter \(leaf\)", ["Leaf", "Dead vegetation"]),
@@ -106,6 +104,7 @@ CONTEXTS = [
     (r"absorptive", ["Absorptive fine root"]),
     (r"\(transport\)", ["Transport fine root"]),
     (r"^Fine root", ["Fine root"]),
+    (r"^Fibrous root", ["Fine root"]),  # fibrous roots of a TRY NSC trait are fine roots
     (r"^Coarse root", ["Coarse root"]),
     (r"^Root", ["Root"]),
     (r"^Belowground", ["Belowground plant material"]),
@@ -129,6 +128,7 @@ CONTEXTS = [
     (r"^Reproductive organ", ["Reproductive structure"]),
     (r"^Cone", ["Cone"]),
     (r"^Fruit", ["Fruit"]),
+    (r"^Seed", ["Seed"]),
     (r"^Trap", ["Carnivorous plant trap"]),
 ]
 
