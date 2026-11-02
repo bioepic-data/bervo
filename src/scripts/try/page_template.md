@@ -53,11 +53,13 @@ fractions of wood, the dry matter content and modulus of elasticity of any plant
 relative bark thickness and the flexural, compressive and tensile strength of wood, and
 mapped twig and branch bark to the existing bark thickness and density terms, branch wood
 and bark C/N to the tissue C:N ratio, stem and sapwood water content to the tissue water
-content term, and petiole dry matter content to the tissue term. The sixteenth added root
-length per ground area, root mass density, the carbon stock of vegetation, the root area
-index, root hair length and diameter, the stele diameter and area fractions of roots, root
-tips per unit root length and root acid phosphatase activity. The trace element and
-contaminant contents wait on the decisions in [issue
+content term, and petiole dry matter content to the tissue dry matter content term. The
+sixteenth added root length per ground area and per soil volume, root mass density, the
+carbon stock of vegetation, the root area index, root hair length and diameter, the stele
+diameter and area fractions of roots, root tips per unit root length and root acid
+phosphatase activity, with root hair and root tip concepts, and mapped root nitrogen per
+ground area to the vegetation nitrogen stock and fine root porosity to root porosity. The
+trace element and contaminant contents wait on the decisions in [issue
 #230](https://github.com/bioepic-data/bervo/issues/230). Still to come are the value lists
 of the categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms
 for the gaps listed here.

@@ -151,8 +151,6 @@ DRY_BASIS = " TRY gives no basis for the concentration; per unit dry mass, the u
 BRANCH_SECTION = ("A fraction of the whole branch cross-section, which may include bark and pith, "
                   "rather than of the wood.")
 NITOGEN = " TRY spells nitrogen 'nitogen' in the name, so the C/N rule misses it."
-SOIL_RLD = ("Measured in a soil sample; EcoSIM's is the total for all plants in a soil layer "
-            "of a grid cell.")
 CARBON_PROD = ("Carbon production, which the term's g{C} unit covers, but TRY gives no time base, so it "
                "may be a rate for part of a season rather than per year.")
 DEPTH = " The soil depth increment goes with the value."
@@ -782,7 +780,10 @@ MAPPED = [
     ("related", "BERVO:0002543", "1979", "Per unit fine root length rather than dry mass."),
     ("broader", "BERVO:0001077", "1786", ctx("Fine root")),
     ("broader", "BERVO:0001077", "2042", ctx("Absorptive fine root")),
-    ("related", "BERVO:0000408", "1769 2025 2281 2537", SOIL_RLD),
+    ("broader", "BERVO:0002544", "1769", ctx("Coarse root")),
+    ("broader", "BERVO:0002544", "2025", ctx("Fine root")),
+    ("broader", "BERVO:0002544", "2281", ctx("Absorptive fine root")),
+    ("broader", "BERVO:0002544", "2537", ctx("Transport fine root")),
 ]
 
 # The plant-functional-traits schema slot each TRY trait feeds

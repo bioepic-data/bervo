@@ -1271,7 +1271,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1761	Coarse root carbon (C) content per ground area	Root	broader	BERVO:0002536		Coarse root goes in contexts.
 1762	Coarse root necromass (dead dry mass) per ground area for specified soil depth increment	Root	broader	BERVO:0001970		Coarse root and Dead vegetation go in contexts. The soil depth increment goes with the value.
 1768	Coarse root length density (RLD): coarse root length per ground area	Root	broader	BERVO:0002534		Coarse root goes in contexts.
-1769	Coarse root length per soil volume	Root	related	BERVO:0000408		Measured in a soil sample; EcoSIM's is the total for all plants in a soil layer of a grid cell.
+1769	Coarse root length per soil volume	Root	broader	BERVO:0002544		Coarse root goes in contexts.
 1770	Plant biomass and allometry: Coarse root length per plant	Whole plant	gap			
 1772	Coarse root volume per ground area	Root	gap			
 1773	Coarse root rooting depth: fraction of coarse root dry mass contained in depth interval	Root	gap			
@@ -1454,7 +1454,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2021	Plant biomass and allometry: Fine root length ratio (RLR): fine root length per plant dry mass	Whole plant	gap			
 2022	Fine root length per minirhizotron frame	Fine root	gap			
 2024	Fine root length per ground area	Fine root	broader	BERVO:0002534		Fine root goes in contexts.
-2025	Fine root length per soil volume	Fine root	related	BERVO:0000408		Measured in a soil sample; EcoSIM's is the total for all plants in a soil layer of a grid cell.
+2025	Fine root length per soil volume	Fine root	broader	BERVO:0002544		Fine root goes in contexts.
 2026	Plant biomass and allometry: Fine root length per plant	Whole plant	gap			
 2027	Fine root length per minirhizotron screen area	Fine root	gap			
 2028	Fine root volume per ground area	Fine root	gap			
@@ -1572,7 +1572,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2273	Fine root (absorptive) carbon content per ground area	Fine root	broader	BERVO:0002536		Absorptive fine root goes in contexts.
 2276	Fine root (absorptive) nitrogen (N) per soil dry mass	Fine root	gap			
 2280	Fine root (absorptive) length density (RLD): absorptive fine root length per ground area	Fine root	broader	BERVO:0002534		Absorptive fine root goes in contexts.
-2281	Fine root (absorptive) length per soil volume	Fine root	related	BERVO:0000408		Measured in a soil sample; EcoSIM's is the total for all plants in a soil layer of a grid cell.
+2281	Fine root (absorptive) length per soil volume	Fine root	broader	BERVO:0002544		Absorptive fine root goes in contexts.
 2282	Plant biomass and allometry: Fine root (absorptive) length per plant	Whole plant	gap			
 2283	Fine root (absorptive) length per minirhizotron screen area	Fine root	gap			
 2287	Fine root (absorptive) debris decomposition rate constant	Fine root	broader	BERVO:0002491		Absorptive fine root and Dead vegetation go in contexts.
@@ -1632,7 +1632,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2529	Fine root (transport) carbon (C) content per ground area	Fine root	broader	BERVO:0002536		Transport fine root goes in contexts.
 2532	Fine root (transport) nitrogen (N) per soil dry mass	Fine root	gap			
 2536	Fine root (transport) length density (RLD): transport fine root length per ground area	Fine root	broader	BERVO:0002534		Transport fine root goes in contexts.
-2537	Fine root (transport) length per soil volume	Fine root	related	BERVO:0000408		Measured in a soil sample; EcoSIM's is the total for all plants in a soil layer of a grid cell.
+2537	Fine root (transport) length per soil volume	Fine root	broader	BERVO:0002544		Transport fine root goes in contexts.
 2538	Plant biomass and allometry: Fine root (transport) length per plant	Whole plant	gap			
 2543	Fine root (transport) debris decomposition rate constant	Fine root	broader	BERVO:0002491		Transport fine root and Dead vegetation go in contexts.
 2545	Belowground plant organ rooting depth	Root	related	BERVO:0002418		Belowground plant organs include rhizomes and tubers as well as roots, so the depth is not only of roots.

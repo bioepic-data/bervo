@@ -53,11 +53,13 @@ fractions of wood, the dry matter content and modulus of elasticity of any plant
 relative bark thickness and the flexural, compressive and tensile strength of wood, and
 mapped twig and branch bark to the existing bark thickness and density terms, branch wood
 and bark C/N to the tissue C:N ratio, stem and sapwood water content to the tissue water
-content term, and petiole dry matter content to the tissue term. The sixteenth added root
-length per ground area, root mass density, the carbon stock of vegetation, the root area
-index, root hair length and diameter, the stele diameter and area fractions of roots, root
-tips per unit root length and root acid phosphatase activity. The trace element and
-contaminant contents wait on the decisions in [issue
+content term, and petiole dry matter content to the tissue dry matter content term. The
+sixteenth added root length per ground area and per soil volume, root mass density, the
+carbon stock of vegetation, the root area index, root hair length and diameter, the stele
+diameter and area fractions of roots, root tips per unit root length and root acid
+phosphatase activity, with root hair and root tip concepts, and mapped root nitrogen per
+ground area to the vegetation nitrogen stock and fine root porosity to root porosity. The
+trace element and contaminant contents wait on the decisions in [issue
 #230](https://github.com/bioepic-data/bervo/issues/230). Still to come are the value lists
 of the categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms
 for the gaps listed here.
@@ -147,21 +149,21 @@ species attributes.
 | Group | `match` | `broader` | `related` | `gap` | `species_attribute` | Total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Crown and canopy |  | 1 |  | 20 |  | 21 |
-| Fine root |  | 163 | 27 | 213 |  | 403 |
+| Fine root |  | 166 | 24 | 213 |  | 403 |
 | Flower and reproduction |  | 16 |  | 110 |  | 126 |
 | Leaf | 44 | 48 | 29 | 296 | 1 | 418 |
 | Litter and woody debris | 5 | 146 | 15 | 33 |  | 199 |
 | Moss and fern |  |  |  | 21 |  | 21 |
 | Photosynthesis and gas exchange | 19 | 2 | 10 | 82 |  | 113 |
 | Plot and stand | 2 |  |  | 7 | 1 | 10 |
-| Root | 29 | 132 | 20 | 227 |  | 408 |
+| Root | 29 | 133 | 19 | 227 |  | 408 |
 | Seed, fruit and dispersal | 22 | 6 | 3 | 82 |  | 113 |
 | Species ecology and distribution |  |  |  | 3 | 47 | 50 |
 | Species genetics and phylogeny |  |  |  | 13 | 3 | 16 |
 | Stem, wood and bark | 29 | 97 | 13 | 184 |  | 323 |
 | Twig, branch, shoot and bud |  | 86 | 9 | 76 |  | 171 |
 | Whole plant | 12 |  | 2 | 255 |  | 269 |
-| **Total** | **162** | **697** | **128** | **1622** | **52** | **2661** |
+| **Total** | **162** | **701** | **124** | **1622** | **52** | **2661** |
 
 ## Matches
 
@@ -444,6 +446,7 @@ species attributes.
 | `BERVO:0002541` Root stele area fraction | 1570 Coarse root cross-sectional fraction of stele area to coarse root area; 1826 Fine root cross-sectional fraction of stele area to fine root area; 2082 Fine root (absorptive) cross-sectional fraction of stele area to absorptive fine root area; 2338 Fine root (transport) cross-sectional fraction of stele area to transport fine root area |
 | `BERVO:0002542` Root tips per unit root length | 3176 Coarse root branching intensity 3: number of root tips per total coarse root length; 3213 Fine root branching intensity 3: number of root tips per total fine root length; 3250 Fine root (absorptive) branching intensity 3: number of root tips per total fine root (absorptive) l |
 | `BERVO:0002543` Root acid phosphatase activity | 1975 Fine root acid phosphatase activity per fine root dry mass; 2231 Fine root (absorptive) acid phosphatase activity per absorptive fine root dry mass |
+| `BERVO:0002544` Root length per soil volume | 1769 Coarse root length per soil volume; 2025 Fine root length per soil volume; 2281 Fine root (absorptive) length per soil volume; 2537 Fine root (transport) length per soil volume |
 
 ## Related terms
 
@@ -501,7 +504,6 @@ species attributes.
 | 1675 | Coarse root growth: coarse root carbon (C) production per ground area and time | `BERVO:0002342` Belowground net primary production | Carbon production, which the term's g{C} unit covers, but TRY gives no time base, so it may be a rate for part of a season rather than per year. |
 | 1678 | Coarse root growth: coarse root dry mass production per ground area per duration of exposition | `BERVO:0002342` Belowground net primary production | Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the value, rather than a year. |
 | 1679 | Coarse root growth: coarse root dry mass production per ground area per day | `BERVO:0002342` Belowground net primary production | Per day rather than per year, usually a rate for part of the season. |
-| 1769 | Coarse root length per soil volume | `BERVO:0000408` Total root length density | Measured in a soil sample; EcoSIM's is the total for all plants in a soil layer of a grid cell. |
 | 1908 | Fine root monthly decomposition rate | `BERVO:0002491` Decomposition rate constant | A monthly rate; TRY does not say whether it is a rate constant or a mass loss. |
 | 1931 | Fine root growth: fine root carbon (C) production per ground area and time | `BERVO:0002342` Belowground net primary production | Carbon production, which the term's g{C} unit covers, but TRY gives no time base, so it may be a rate for part of a season rather than per year. |
 | 1933 | Fine root growth: fine root dry mass production per ground area per month | `BERVO:0002342` Belowground net primary production | Per month rather than per year, usually a rate for part of the season. |
@@ -510,15 +512,12 @@ species attributes.
 | 1940 | Fine root growth: fine root length production per ground area per exposition period | `BERVO:0002511` Root length production | Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the value, rather than a year. |
 | 1978 | Fine root phosphatase activity per fine root dry mass | `BERVO:0002543` Root acid phosphatase activity | Phosphatase or phosphomonoesterase activity without the acid pH stated. |
 | 1979 | Fine root phosphatase activity per fine root length | `BERVO:0002543` Root acid phosphatase activity | Per unit fine root length rather than dry mass. |
-| 2025 | Fine root length per soil volume | `BERVO:0000408` Total root length density | Measured in a soil sample; EcoSIM's is the total for all plants in a soil layer of a grid cell. |
 | 2044 | Fine root (absorptive) vessel diameter | `BERVO:0002452` Root conduit diameter | Vessels only; conduits include tracheids. |
 | 2098 | Fine root (absorptive) branching intensity 2: number of root tips per higher order root length | `BERVO:0002542` Root tips per unit root length | Tips per unit length of the higher-order root that bears them, not per total root length. |
 | 2196 | Fine root (absorptive) growth: absorptive fine root length production per ground area per exposition | `BERVO:0002511` Root length production | Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the value, rather than a year. |
 | 2214 | Fine root (absorptive) turnover rate during growing season | `BERVO:0002454` Root turnover rate | Over a growing season rather than a year. |
-| 2281 | Fine root (absorptive) length per soil volume | `BERVO:0000408` Total root length density | Measured in a soil sample; EcoSIM's is the total for all plants in a soil layer of a grid cell. |
 | 2300 | Fine root (transport) vessel diameter | `BERVO:0002452` Root conduit diameter | Vessels only; conduits include tracheids. |
 | 2446 | Fine root (transport) growth: transport fine root dry mass production per ground area per duration o | `BERVO:0002342` Belowground net primary production | Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the value, rather than a year. |
-| 2537 | Fine root (transport) length per soil volume | `BERVO:0000408` Total root length density | Measured in a soil sample; EcoSIM's is the total for all plants in a soil layer of a grid cell. |
 | 2545 | Belowground plant organ rooting depth | `BERVO:0002418` Plant rooting depth | Belowground plant organs include rhizomes and tubers as well as roots, so the depth is not only of roots. |
 | 2703 | Belowground plant organ growth: belowground plant organ dry mass production per ground area per day | `BERVO:0002342` Belowground net primary production | Per day rather than per year, usually a rate for part of the season. |
 | 2880 | Litter (other than leaf: twigs, bark, flowers...) decomposition rate | `BERVO:0002491` Decomposition rate constant | TRY does not say whether this is a rate constant or a mass loss per unit time. |
