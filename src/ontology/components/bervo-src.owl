@@ -6934,11 +6934,13 @@
     <!-- https://w3id.org/bervo/BERVO_0000408 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000408">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002544"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000006"/>
         <obo:IAO_0000115>The total length of plant roots per unit volume of soil within each soil layer contributed by all plant species in a model grid cell. Root length density represents the spatial extent of root systems within soil and is a key parameter for modeling water and nutrient uptake capacity in terrestrial ecosystem models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>totRootLenDens_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantDataRateType.txt</rdfs:comment>
+        <rdfs:comment>Root length per soil volume (BERVO:0002544) is the general measured term.</rdfs:comment>
         <rdfs:label>Total root length density</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
@@ -18926,10 +18928,12 @@
     <!-- https://w3id.org/bervo/BERVO_0001103 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001103">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002544"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>The quantity of root length per unit volume of soil, commonly expressed as root length per cubic meter. This measurement is crucial for understanding root space occupation and the efficiency of soil exploration for nutrient and water uptake.</obo:IAO_0000115>
+        <obo:IAO_0000115>Root length of one plant per unit volume of soil, in each soil layer, commonly expressed as root length per cubic meter. This measurement is crucial for understanding root space occupation and the efficiency of soil exploration for nutrient and water uptake.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RootLenDensPerPlant_pvr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM resolves it by plant and by soil layer. Root length per soil volume (BERVO:0002544) is the general measured term.</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Root length density in soil layers</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
@@ -40213,7 +40217,7 @@
         <oboInOwl:hasRelatedSynonym>Root dry mass per root volume (root density, root tissue density)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Root tissue density (root dry mass per root volume)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait IDs: 82, 116. TRY traits mapped here, with what narrows each one in contexts: 1525, 1781, 2037, 2293. Not root mass density, which is root mass per unit volume of soil.</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 82, 116. TRY traits mapped here, with what narrows each one in contexts: 1525, 1781, 2037, 2293. Not Root mass density (BERVO:0002535), which is root mass per unit volume of soil.</rdfs:comment>
         <rdfs:label>Root tissue density</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
         <bervo:BERVO_has_unit>g.cm-3</bervo:BERVO_has_unit>
@@ -42825,7 +42829,7 @@
         <obo:IAO_0000115>Mass of nitrogen in plant material per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>plant nitrogen pool</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Vegetation biomass (BERVO:0001970), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 451, 455, 468, 501, 528, 1502, 2787. Organ and status go in contexts. The nitrogen counterpart of Vegetation biomass (BERVO:0001970). Distinct from Leaf nitrogen content per unit area (BERVO:0002187), which is per unit leaf area.</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 451, 455, 468, 501, 528, 1502, 2787. Organ and status go in contexts. The nitrogen counterpart of Vegetation biomass (BERVO:0001970). Distinct from Leaf nitrogen content per unit area (BERVO:0002187), which is per unit leaf area. Vegetation carbon stock (BERVO:0002536) is its carbon counterpart.</rdfs:comment>
         <rdfs:label>Vegetation nitrogen stock</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>g{N}.m-2</bervo:BERVO_has_unit>
@@ -43245,7 +43249,7 @@
         <obo:IAO_0000115>Length of root per unit volume of soil.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>root length density</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 1769, 2025, 2281, 2537. Root class goes in contexts. Usually from soil cores, for a stated depth interval. The measured counterpart of the EcoSIM variables Total root length density (BERVO:0000408), summed over all plants in a soil layer of a grid cell, and Root length density in soil layers (BERVO:0001103), for one plant. Root length per ground area (BERVO:0002534) is the same length summed over depth.</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 1769, 2025, 2281, 2537. Root class goes in contexts. Usually from soil cores, for a stated depth interval. The EcoSIM variables Total root length density (BERVO:0000408), summed over all plants in a soil layer of a grid cell, and Root length density in soil layers (BERVO:0001103), for one plant in a soil layer, are its subclasses. Root length per ground area (BERVO:0002534) is the same length summed over depth.</rdfs:comment>
         <rdfs:label>Root length per soil volume</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
         <bervo:BERVO_has_unit>m.m-3</bervo:BERVO_has_unit>
@@ -61655,7 +61659,7 @@
         <obo:IAO_0000115>Tubular outgrowth of an epidermal cell of a root that increases the root surface in contact with the soil.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/GO_0035618"/>
         <oboInOwl:hasExactSynonym>root hairs</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Gene Ontology (GO:0035618), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Plant Ontology (PO:0000256) and the Gene Ontology (GO:0035618), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>The Plant Ontology has only the root hair cell (PO:0000256), whose definition points to GO:0035618 for the hair itself.</rdfs:comment>
         <rdfs:label>Root hair</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
