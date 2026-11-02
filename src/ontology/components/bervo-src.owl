@@ -33113,7 +33113,7 @@
         <obo:IAO_0000115>Dry mass of plant material per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/biomassVegetation"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Biomass, vegetation&quot;: Total dry mass of plant material per unit area or volume. AmeriFlux BADM variable name: BIOMASS. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: ROOT_BIOMASS_TOT, ROOT_BIOMASS_FINE, ROOT_BIOMASS_CRS, SNAG_MASS. The current BADM standard reports one BIOMASS value with BIOMASS_ORGAN, BIOMASS_STATUS and BIOMASS_VEGTYPE, which map to the plant organ, vegetation status and plant functional type concepts. Snags, dead trees still standing, are biomass with BIOMASS_STATUS Dead Standing, so SNAG_MASS maps here; stumps go to Litter and debris mass (BERVO:0002338). TRY traits mapped here, with what narrows each one in contexts: 457, 798, 1795, 2051, 2307, 2563.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Biomass, vegetation&quot;: Total dry mass of plant material per unit area or volume. AmeriFlux BADM variable name: BIOMASS. The code is not recorded as a synonym because it is also the label, symbol or synonym of another BERVO term. Legacy BADM variables mapped here, with the variant in contexts or qualifiers: ROOT_BIOMASS_TOT, ROOT_BIOMASS_FINE, ROOT_BIOMASS_CRS, SNAG_MASS. The current BADM standard reports one BIOMASS value with BIOMASS_ORGAN, BIOMASS_STATUS and BIOMASS_VEGTYPE, which map to the plant organ, vegetation status and plant functional type concepts. Snags, dead trees still standing, are biomass with BIOMASS_STATUS Dead Standing, so SNAG_MASS maps here; stumps go to Litter and debris mass (BERVO:0002338). TRY traits mapped here, with what narrows each one in contexts: 457, 798, 1501, 1762, 1795, 2018, 2051, 2307, 2563, 2786.</rdfs:comment>
         <rdfs:label>Vegetation biomass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
@@ -39593,8 +39593,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001961"/>
         <obo:IAO_0000115>Rate of production of new root and other belowground plant mass, net of autotrophic respiration, per unit ground area, usually summed over a year.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>BNPP</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Belowground plant organ growth: belowground plant organ dry mass production per ground area per year</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: ROOT_PROD_TOT, ROOT_PROD_FINE, ROOT_PROD_CRS. Fine and coarse roots go in contexts.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: ROOT_PROD_TOT, ROOT_PROD_FINE, ROOT_PROD_CRS. Fine and coarse roots go in contexts. TRY trait ID: 2700. TRY traits mapped here, with what narrows each one in contexts: 1390, 1391, 1675, 1676, 1931, 1932, 2188, 2444.</rdfs:comment>
         <rdfs:label>Belowground net primary production</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000546"/>
@@ -39629,7 +39630,7 @@
         <obo:IAO_0000115>Mass of dead root and other belowground plant material added to the soil per unit ground area and time.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>BG_LIT_PROD</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variable name: BG_LIT_PROD.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variable name: BG_LIT_PROD. Root mortality per unit ground area is the same flux. TRY traits mapped here, with what narrows each one in contexts: 1379, 1664, 1920, 2176.</rdfs:comment>
         <rdfs:label>Belowground litter production</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
         <bervo:BERVO_has_unit>g.m-2.a-1</bervo:BERVO_has_unit>
@@ -40411,6 +40412,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002387 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002387">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002519"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Rate of carbon dioxide release by a leaf in darkness per unit of its dry mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>mass-based leaf dark respiration</oboInOwl:hasExactSynonym>
@@ -40900,6 +40902,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002413 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002413">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002519"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
         <obo:IAO_0000115>Rate of carbon dioxide release by a root per unit of its dry mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>mass-based root respiration</oboInOwl:hasExactSynonym>
@@ -41419,6 +41422,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002441 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002441">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002519"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Rate of carbon dioxide release by a stem per unit of its dry mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>mass-based stem respiration</oboInOwl:hasExactSynonym>
@@ -41661,7 +41665,7 @@
         <obo:IAO_0000115>Dry mass of roots produced per unit time divided by the dry mass of the standing root pool, usually expressed per year.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Root dry mass turnover rate</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), section XVI.2, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 1418. TRY traits mapped here, with what narrows each one in contexts: 1699, 1955, 2211, 2467. Its reciprocal estimates the mean root lifespan; Root lifespan (BERVO:0002417) is the lifespan measured directly.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1418. TRY traits mapped here, with what narrows each one in contexts: 1699, 1955, 2211, 2467, 2723. Its reciprocal estimates the mean root lifespan; Root lifespan (BERVO:0002417) is the lifespan measured directly.</rdfs:comment>
         <rdfs:label>Root turnover rate</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
         <bervo:BERVO_has_unit>a-1</bervo:BERVO_has_unit>
@@ -42334,9 +42338,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002493">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Dry mass of decomposing dead plant material at a time after the start of decomposition, as a fraction of its dry mass at the start.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>litter mass remaining</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Litter decomposition: fraction of mass remaining</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>fraction of mass remaining</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>litter mass remaining</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 3520. TRY traits mapped here, with what narrows each one in contexts: 1367, 1653, 1909, 2165, 2421, 2677. Usually from litterbag studies, where the time since the start of decomposition should be reported with the value. The material decomposing goes in contexts. Decomposition rate constant (BERVO:0002491) is fitted to a series of these values.</rdfs:comment>
         <rdfs:label>Mass remaining fraction of decomposing plant material</rdfs:label>
@@ -42627,6 +42631,239 @@
         <bervo:BERVO_has_unit>mg{AIR}.g-1{dry_mass}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001328"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002510 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002510">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Acidity of a plant tissue, as the pH of a suspension of the ground tissue in water.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Cornelissen et al. 2006 (doi:10.1007/s00442-005-0269-z), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 615, 693, 699, 1167. Organ and status go in contexts; litter is Dead vegetation. The tissue may be fresh or dried and the ratio of tissue to water varies; both should be reported with the value.</rdfs:comment>
+        <rdfs:label>Plant tissue pH</rdfs:label>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000261"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002511 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002511">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Length of new root produced per unit ground area and time, usually per year.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Root growth: root length production per ground area per year</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), section XVI.1, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1401. TRY traits mapped here, with what narrows each one in contexts: 1685, 1941, 2197. Root class goes in contexts. Usually measured with minirhizotrons or ingrowth cores. Belowground net primary production (BERVO:0002342) is the same production as a mass.</rdfs:comment>
+        <rdfs:label>Root length production</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_has_unit>m.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002512 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002512">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Length of root that dies per unit ground area and time, usually per year.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), section XVI.1, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 1924, 2180, 2436. Root class goes in contexts. Usually measured with minirhizotrons. Belowground litter production (BERVO:0002344) is root mortality as a mass.</rdfs:comment>
+        <rdfs:label>Root length mortality</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_has_unit>m.m-2.a-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002513 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002513">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Dry mass of dead plant material divided by the dry mass of living plant material of the same kind, per unit ground area.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>dead to live mass ratio</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>necromass:biomass ratio</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 1513, 1774, 2030, 2798. Organ goes in contexts. Necromass is Vegetation biomass (BERVO:0001970) with Dead vegetation in contexts.</rdfs:comment>
+        <rdfs:label>Necromass to biomass ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000296"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001175"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002514 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002514">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Rate of isoprene emission from a leaf per unit leaf area.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf isoprene emission rate per leaf area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Guenther et al. 1993 (doi:10.1029/93JD00527), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 938. Usually given as the basal emission rate at a standard leaf temperature of 30 degrees Celsius and a photosynthetic photon flux density of 1000 umol m-2 s-1, as used by emission models such as MEGAN.</rdfs:comment>
+        <rdfs:label>Leaf isoprene emission rate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000538"/>
+        <bervo:BERVO_has_unit>nmol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001329"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002515 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002515">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Rate of monoterpene emission from a leaf per unit leaf area.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf volatile organic carbon (VOC): monoterpene emission rate per leaf area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Guenther et al. 1993 (doi:10.1029/93JD00527), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 966. Usually given as the basal emission rate at a standard leaf temperature of 30 degrees Celsius; it may include monoterpenes emitted from storage pools as well as those emitted as they are made.</rdfs:comment>
+        <rdfs:label>Leaf monoterpene emission rate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000538"/>
+        <bervo:BERVO_has_unit>nmol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001330"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002516 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002516">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Length of a stoma, the pair of guard cells, along its long axis.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>guard cell length</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Stomata length</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1190. Distinct from Stomatal pore length (BERVO:0002518), the length of the opening between the guard cells.</rdfs:comment>
+        <rdfs:label>Stomatal length</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000201"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002517 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002517">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Width of a stoma, the pair of guard cells, across its long axis.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Stomata width</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1192.</rdfs:comment>
+        <rdfs:label>Stomatal width</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000197"/>
+        <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000201"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002518 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002518">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Length of the opening between the guard cells of a stoma, which sets the maximum stomatal aperture.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Stomata pore length</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 734.</rdfs:comment>
+        <rdfs:label>Stomatal pore length</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000201"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002519 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002519">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Rate of carbon dioxide release by a plant tissue, or by whole plant material, per unit of its dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>mass-based tissue respiration</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Root respiration rate per unit dry mass (BERVO:0002413), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 442, 2559. Organ and status go in contexts; litter is Dead vegetation. Leaf dark respiration rate per unit dry mass (BERVO:0002387), Root respiration rate per unit dry mass (BERVO:0002413) and Stem respiration rate per unit dry mass (BERVO:0002441) are its leaf, root and stem subclasses. The temperature of measurement should be reported with the value.</rdfs:comment>
+        <rdfs:label>Plant tissue respiration rate per unit dry mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_has_unit>nmol{CO2}.g-1{dry_mass}.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002520 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002520">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Mass of nitrogen in plant material per unit ground area.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>plant nitrogen pool</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Vegetation biomass (BERVO:0001970), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 451, 455, 468, 501, 528. Organ and status go in contexts. The nitrogen counterpart of Vegetation biomass (BERVO:0001970). Distinct from Leaf nitrogen content per unit area (BERVO:0002187), which is per unit leaf area.</rdfs:comment>
+        <rdfs:label>Vegetation nitrogen stock</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>g{N}.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002521 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002521">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of water in a plant tissue per unit of its dry mass, at the hydration at which it was sampled.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 2887, 3120. Organ and status go in contexts; litter is Dead vegetation. Distinct from Plant tissue saturated water content (BERVO:0002522), at full hydration, from Leaf relative water content (BERVO:0002403), a fraction of the saturated content, and from the EcoSIM Leaf water content (BERVO:0000176), per unit carbon.</rdfs:comment>
+        <rdfs:label>Plant tissue water content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>g{H2O}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002522 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002522">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of water in a fully hydrated plant tissue per unit of its dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>saturated water content</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 3122, 3863, 3864. Organ and status go in contexts; litter is Dead vegetation. Usually measured after rehydrating the tissue to constant mass; the denominator of Leaf relative water content (BERVO:0002403).</rdfs:comment>
+        <rdfs:label>Plant tissue saturated water content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>g{H2O}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
     </Class>
     
 
@@ -60906,6 +61143,34 @@
         <rdfs:comment>Called Klason lignin in wood chemistry, and acid-unhydrolyzable residue in litter studies. Abbreviated AIR.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:label>Acid-insoluble residue</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001329 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001329">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Hemiterpene, 2-methylbuta-1,3-diene, C5H8, emitted by many plants and the largest biogenic source of volatile organic compounds in the atmosphere.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35194"/>
+        <oboInOwl:hasExactSynonym>2-methylbuta-1,3-diene</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after ChEBI (CHEBI:35194), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Isoprene</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001330 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001330">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Terpene with ten carbon atoms, built from two isoprene units, such as alpha-pinene or limonene.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35187"/>
+        <oboInOwl:hasExactSynonym>monoterpenes</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after ChEBI (CHEBI:35187), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Monoterpene</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
