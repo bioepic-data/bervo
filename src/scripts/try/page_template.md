@@ -59,6 +59,11 @@ carbon stock of vegetation, the root area index, root hair length and diameter, 
 diameter and area fractions of roots, root tips per unit root length and root acid
 phosphatase activity, with root hair and root tip concepts, and mapped root nitrogen per
 ground area to the vegetation nitrogen stock and fine root porosity to root porosity. The
+seventeenth added leaf carotenoid and anthocyanin contents, the thickness of the leaf
+epidermis, cuticle, mesophyll and its palisade and spongy layers, the light compensation
+and saturation points, leaf respiration in the light, nitrogen and phosphorus resorption
+efficiency, the maximum quantum efficiency of photosystem II, mesophyll conductance, the
+ratio of intercellular to ambient carbon dioxide and leaf equivalent water thickness. The
 trace element and contaminant contents wait on the decisions in [issue
 #230](https://github.com/bioepic-data/bervo/issues/230). Still to come are the value lists
 of the categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms

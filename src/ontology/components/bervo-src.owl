@@ -43261,6 +43261,333 @@
     
 
 
+    <!-- https://w3id.org/bervo/BERVO_0002545 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002545">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of carotenoids, carotenes and xanthophylls together, in a leaf per unit of its area.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf carotenoid content per leaf area</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf xanthophyll plus carotene content per leaf area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Leaf chlorophyll content per unit area (BERVO:0002474), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 417, 491. Usually extracted in a solvent and measured by spectrophotometry, with the chlorophylls. Leaf chlorophyll content per unit area (BERVO:0002474) is its chlorophyll counterpart.</rdfs:comment>
+        <rdfs:label>Leaf carotenoid content per unit area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{carotenoid}.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001343"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002546 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002546">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of carotenoids, carotenes and xanthophylls together, in a leaf per unit of its dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf carotenoid content per leaf dry mass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Leaf chlorophyll content per unit dry mass (BERVO:0002475), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 809. Leaf chlorophyll content per unit dry mass (BERVO:0002475) is its chlorophyll counterpart.</rdfs:comment>
+        <rdfs:label>Leaf carotenoid content per unit dry mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{carotenoid}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001343"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002547 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002547">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of anthocyanins in a leaf per unit of its area.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf anthocyanin content per leaf area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Leaf chlorophyll content per unit area (BERVO:0002474), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 810. Values may be given as cyanidin-3-glucoside equivalents; the standard should be reported with the value.</rdfs:comment>
+        <rdfs:label>Leaf anthocyanin content per unit area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{anthocyanin}.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001344"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002548 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002548">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of anthocyanins in a leaf per unit of its dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf anthocyanin content per leaf dry mass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Leaf chlorophyll content per unit dry mass (BERVO:0002475), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 731. Values may be given as cyanidin-3-glucoside equivalents; the standard should be reported with the value.</rdfs:comment>
+        <rdfs:label>Leaf anthocyanin content per unit dry mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{anthocyanin}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001344"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002549 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002549">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Thickness of the epidermis of a leaf, measured on a cross-section of the lamina.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 101. Leaf thickness (BERVO:0002394) is the thickness of the whole lamina. Usually given for the adaxial or abaxial epidermis, or both; the surface should be reported with the value.</rdfs:comment>
+        <rdfs:label>Leaf epidermis thickness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001339"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002550 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002550">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Thickness of the cuticle of a leaf, measured on a cross-section of the lamina.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 716, 3828. Leaf thickness (BERVO:0002394) is the thickness of the whole lamina.</rdfs:comment>
+        <rdfs:label>Leaf cuticle thickness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001340"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002551 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002551">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Thickness of the mesophyll of a leaf, measured on a cross-section of the lamina.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 103. Leaf thickness (BERVO:0002394) is the thickness of the whole lamina.</rdfs:comment>
+        <rdfs:label>Leaf mesophyll thickness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000275"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002552 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002552">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Thickness of the palisade mesophyll of a leaf, measured on a cross-section of the lamina.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf mesophyll palisade parenchym thickness</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 804. Leaf mesophyll thickness (BERVO:0002551) includes it.</rdfs:comment>
+        <rdfs:label>Leaf palisade mesophyll thickness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001341"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002553 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002553">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Thickness of the spongy mesophyll of a leaf, measured on a cross-section of the lamina.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf mesophyll spongiophyll thickness</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 805. Leaf mesophyll thickness (BERVO:0002551) includes it.</rdfs:comment>
+        <rdfs:label>Leaf spongy mesophyll thickness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001342"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002554 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002554">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Photosynthetic photon flux density at which the net photosynthetic carbon dioxide uptake of a leaf is zero.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis light compensation point</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 721. Read from a light response curve. Distinct from Carbon dioxide compensation point (BERVO:0000542), the carbon dioxide concentration at zero net uptake.</rdfs:comment>
+        <rdfs:label>Leaf light compensation point</rdfs:label>
+        <bervo:BERVO_has_unit>umol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000212"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002555 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002555">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Photosynthetic photon flux density above which the net photosynthetic rate of a leaf no longer rises appreciably.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis irradiance at saturation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis: light saturation point</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 720, 3805. Read from a light response curve; because the curve approaches its maximum gradually, the criterion used, such as 90 percent of the maximum rate, should be reported with the value.</rdfs:comment>
+        <rdfs:label>Leaf light saturation point</rdfs:label>
+        <bervo:BERVO_has_unit>umol.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000212"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002556 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002556">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Rate of non-photorespiratory carbon dioxide release by a leaf in the light per unit of its area.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf respiration rate in light per leaf area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Leaf dark respiration rate per unit area (BERVO:0002386), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 512. Usually estimated by the Kok or Laisk method. Leaf dark respiration rate per unit area (BERVO:0002386) is the rate in darkness, which is usually higher.</rdfs:comment>
+        <rdfs:label>Leaf respiration rate in light per unit area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_has_unit>umol{CO2}.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002557 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002557">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Fraction of the nitrogen in a mature green leaf that the plant withdraws before the leaf is shed.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>NRE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nitrogen resorption efficiency</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf nitrogen (N) retranslocation prior to leaf senescence</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 510. Usually computed as one minus the ratio of the nitrogen content of senesced leaves to that of green leaves, which should be corrected for mass loss during senescence.</rdfs:comment>
+        <rdfs:label>Leaf nitrogen resorption efficiency</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001310"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002558 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002558">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Fraction of the phosphorus in a mature green leaf that the plant withdraws before the leaf is shed.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>PRE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>phosphorus resorption efficiency</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf phosphorus (P) retranslocation prior to leaf senescence</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3026. Usually computed as one minus the ratio of the phosphorus content of senesced leaves to that of green leaves, which should be corrected for mass loss during senescence.</rdfs:comment>
+        <rdfs:label>Leaf phosphorus resorption efficiency</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001310"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002559 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002559">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Variable chlorophyll fluorescence of a dark-adapted leaf divided by its maximum fluorescence, Fv/Fm, a measure of the maximum efficiency of photosystem II.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Fv/Fm</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3393. Values near 0.83 are typical of unstressed leaves. Distinct from the operating efficiency of photosystem II in the light, and from Quantum efficiency (BERVO:0000168), an EcoSIM parameter.</rdfs:comment>
+        <rdfs:label>Leaf maximum quantum efficiency of photosystem II</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000214"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002560 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002560">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Conductance to carbon dioxide diffusion from the intercellular air spaces of a leaf to the sites of carboxylation in the chloroplasts, per unit leaf area.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 964. Distinct from Leaf stomatal conductance (BERVO:0002392), the conductance from the air to the intercellular spaces.</rdfs:comment>
+        <rdfs:label>Leaf mesophyll conductance</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001299"/>
+        <bervo:BERVO_has_unit>mol{CO2}.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002561 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002561">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Carbon dioxide concentration in the intercellular air spaces of a leaf divided by that of the surrounding air.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Ci/Ca</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis: intercellular CO2 concentration to ambient CO2 (ci/ca)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3379. TRY traits mapped here, with what narrows each one in contexts: 4034, 4039. Time of day goes in contexts. Leaf gaseous carbon dioxide concentration (BERVO:0000529) is the EcoSIM intercellular concentration.</rdfs:comment>
+        <rdfs:label>Leaf intercellular to ambient carbon dioxide ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002562 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002562">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of water in a leaf per unit of its area, the depth of a layer of water of the same volume.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>EWT</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3767. Computed as fresh minus dry mass, divided by leaf area; estimated from reflectance in remote sensing.</rdfs:comment>
+        <rdfs:label>Leaf equivalent water thickness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
     <!-- https://w3id.org/bervo/BERVO_8000000 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000000">
@@ -61676,6 +62003,88 @@
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0000025"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Plant Ontology (PO:0000025), TRY alignment for issue #27</rdfs:comment>
         <rdfs:label>Root tip</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001339 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001339">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Outermost layer of cells of a plant organ, such as a leaf, stem or root.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0005679"/>
+        <oboInOwl:hasExactSynonym>plant epidermis</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Plant Ontology (PO:0005679), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Epidermis</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001340 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001340">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Waxy, non-cellular layer of cutin and waxes on the outer surface of the epidermis of aerial plant organs.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0000022"/>
+        <oboInOwl:hasExactSynonym>plant cuticle</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Plant Ontology (PO:0000022), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Cuticle</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001341 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001341">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000275"/>
+        <obo:IAO_0000115>Mesophyll of elongated cells packed in rows, usually below the upper epidermis of a leaf.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0005648"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Plant Ontology (PO:0005648), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Palisade mesophyll</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001342 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001342">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000275"/>
+        <obo:IAO_0000115>Mesophyll of loosely packed, irregular cells with large intercellular spaces, usually above the lower epidermis of a leaf.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0005647"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Plant Ontology (PO:0005647), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Spongy mesophyll</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001343 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001343">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000590"/>
+        <obo:IAO_0000115>Tetraterpenoid pigment, a carotene or a xanthophyll, that harvests light and protects the photosynthetic apparatus against excess light.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23044"/>
+        <oboInOwl:hasExactSynonym>carotenoids</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after ChEBI (CHEBI:23044), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Carotenoid</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001344 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001344">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001325"/>
+        <obo:IAO_0000115>Water-soluble flavonoid pigment, a glycoside of an anthocyanidin, that colours plant tissues red, purple or blue.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38697"/>
+        <oboInOwl:hasExactSynonym>anthocyanins</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after ChEBI (CHEBI:38697), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Anthocyanin</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
