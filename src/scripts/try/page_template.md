@@ -3,20 +3,20 @@
 
 # Alignment with TRY
 
-[TRY](https://www.try-db.org/) is the plant trait database run by the Max Planck
-Institute for Biogeochemistry. It defines traits by name and number, such as trait 14,
-*Leaf nitrogen (N) content per leaf dry mass*. This page maps the {{N_TRAITS}} TRY traits
-to BERVO. The work is tracked in
-[issue #27](https://github.com/bioepic-data/bervo/issues/27) and is done in slices. The
-first slice was the map itself. The second added terms for the traits used by the
-[plant-functional-traits](https://github.com/bioepic-data/plant-functional-traits)
-schema. The third added the leaf economics and photosynthesis traits: leaf phosphorus,
-N:P ratios, photosynthetic and dark respiration rates, Vcmax, Jmax, stomatal conductance,
-leaf lifespan, thickness, tissue density, dry mass and phenology. The fourth added the
-organ and status concepts the `broader` rows named but BERVO lacked, such as twig, bark,
-coarse woody debris and senescent vegetation. The fifth added plant hydraulics and water
-relations: xylem vulnerability to embolism, leaf water potentials, hydraulic conductance and
-conductivity, the Huber value and xylem conduit size. The sixth added root traits: dry
+[TRY](https://www.try-db.org/) is the plant trait database run by the Max Planck Institute
+for Biogeochemistry. It defines traits by name and number, such as trait 14, *Leaf
+nitrogen (N) content per leaf dry mass*. This page maps the {{N_TRAITS}} TRY traits to
+BERVO. The work is tracked in [issue #27](https://github.com/bioepic-data/bervo/issues/27)
+and is done in slices. The first slice was the map itself. The second added terms for the
+traits used by the
+[plant-functional-traits](https://github.com/bioepic-data/plant-functional-traits) schema.
+The third added the leaf economics and photosynthesis traits: leaf phosphorus, N:P ratios,
+photosynthetic and dark respiration rates, Vcmax, Jmax, stomatal conductance, leaf
+lifespan, thickness, tissue density, dry mass and phenology. The fourth added the organ
+and status concepts the `broader` rows named but BERVO lacked, such as twig, bark, coarse
+woody debris and senescent vegetation. The fifth added plant hydraulics and water
+relations: xylem vulnerability to embolism, leaf water potentials, hydraulic conductance
+and conductivity, the Huber value and xylem conduit size. The sixth added root traits: dry
 matter content, lignin content, respiration rate, branching ratio, root tip abundance,
 lifespan, rooting depth and mycorrhizal colonization, with the root to shoot ratio. The
 seventh added seed, fruit and dispersal traits: seed and diaspore dimensions, seed fresh
@@ -27,20 +27,20 @@ bark, stem dry matter content, respiration rate and specific length, tree ring w
 hydraulic conductivity, conduit lumen area and length, and sapwood area. The ninth added
 root traits that TRY also splits into coarse, fine, absorptive and transport roots:
 non-structural carbohydrate and starch content, stele diameter, cortex thickness, conduit
-diameter, specific root area and turnover rate, with organ dry mass per ground area
-mapped to the biomass terms. The tenth added potassium, calcium and magnesium content
-for any plant tissue, mapped the carbon, nitrogen and oxygen isotope signatures of plant
-organs to the existing isotope delta terms and the oxygen and hydrogen signatures of
-sapwood water to the water delta terms, and finished the woody organ biomass traits. The
-eleventh added the content of eleven more elements for any plant tissue (S, Na, Mn, Fe,
-Zn, Cu, Al, Ni, Si, B and Mo) and the most used leaf traits: stomatal density, leaf
-length and width, petiole length, fresh mass, chlorophyll, lignin, cellulose,
-non-structural carbohydrate and starch content, vein density, photosynthetic nitrogen and
-water use efficiency, transpiration rate and leaf area ratio. The twelfth added lignin,
-cellulose, hemicellulose, phenolics, non-structural carbohydrate and starch content for
-any plant tissue, with the leaf and root terms as their subclasses, and a decomposition
-rate constant for dead plant material. The thirteenth added, for any plant tissue, the lignin to
-nitrogen, carbon to phosphorus and potassium ratios, the soluble sugar, ash, protein,
+diameter, specific root area and turnover rate, with organ dry mass per ground area mapped
+to the biomass terms. The tenth added potassium, calcium and magnesium content for any
+plant tissue, mapped the carbon, nitrogen and oxygen isotope signatures of plant organs to
+the existing isotope delta terms and the oxygen and hydrogen signatures of sapwood water
+to the water delta terms, and finished the woody organ biomass traits. The eleventh added
+the content of eleven more elements for any plant tissue (S, Na, Mn, Fe, Zn, Cu, Al, Ni,
+Si, B and Mo) and the most used leaf traits: stomatal density, leaf length and width,
+petiole length, fresh mass, chlorophyll, lignin, cellulose, non-structural carbohydrate
+and starch content, vein density, photosynthetic nitrogen and water use efficiency,
+transpiration rate and leaf area ratio. The twelfth added lignin, cellulose,
+hemicellulose, phenolics, non-structural carbohydrate and starch content for any plant
+tissue, with the leaf and root terms as their subclasses, and a decomposition rate
+constant for dead plant material. The thirteenth added, for any plant tissue, the lignin
+to nitrogen, carbon to phosphorus and potassium ratios, the soluble sugar, ash, protein,
 lipid, tannin and acid-insoluble residue contents, the lignin and acid-insoluble carbon
 fractions and the construction cost, and the fractions of mass, carbon, nitrogen and
 phosphorus remaining in decomposing plant material. The fourteenth added plant tissue pH,
@@ -52,12 +52,15 @@ vegetation biomass terms. The fifteenth added the vessel, fibre and parenchyma a
 fractions of wood, the dry matter content and modulus of elasticity of any plant tissue,
 relative bark thickness and the flexural, compressive and tensile strength of wood, and
 mapped twig and branch bark to the existing bark thickness and density terms, branch wood
-and bark C/N to the tissue C:N ratio, and stem and sapwood water content to the tissue
-water content term. The trace
-element and contaminant contents wait on the decisions in
-[issue #230](https://github.com/bioepic-data/bervo/issues/230). Still to come are the value lists of the
-categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms for the
-gaps listed here.
+and bark C/N to the tissue C:N ratio, stem and sapwood water content to the tissue water
+content term, and petiole dry matter content to the tissue term. The sixteenth added root
+length per ground area, root mass density, the carbon stock of vegetation, the root area
+index, root hair length and diameter, the stele diameter and area fractions of roots, root
+tips per unit root length and root acid phosphatase activity. The trace element and
+contaminant contents wait on the decisions in [issue
+#230](https://github.com/bioepic-data/bervo/issues/230). Still to come are the value lists
+of the categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms
+for the gaps listed here.
 
 ## Sources
 

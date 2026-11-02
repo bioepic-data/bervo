@@ -896,7 +896,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1072	Coarse woody debris (CWD) root: wood fraction	Litter and woody debris	gap			
 1073	Coarse woody debris (CWD) root: zinc (Zn) content per coarse root CWD dry mass	Litter and woody debris	broader	BERVO:0002462		Coarse woody debris and Coarse root go in contexts.
 1074	Root copper (Cu) content per root dry mass	Root	broader	BERVO:0002463		Root goes in contexts.
-1075	Root root hair length	Root	gap			
+1075	Root root hair length	Root	match	BERVO:0002538		
 1076	Root root hair presence	Root	gap			
 1077	Root iron (Fe) content per root dry mass	Root	broader	BERVO:0002461		Root goes in contexts.
 1078	Root lead (Pb) content per root dry mass	Root	gap			
@@ -1083,9 +1083,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1269	Root manganese (Mn) content per root dry mass	Root	broader	BERVO:0002460		Root goes in contexts.
 1270	Root silicon (Si) content per root dry mass	Root	broader	BERVO:0002466		Root goes in contexts.
 1271	Root phenols content per root dry mass	Root	broader	BERVO:0002488		Root goes in contexts.
-1278	Root stele fraction: stele diameter divided by root diameter	Root	gap			
+1278	Root stele fraction: stele diameter divided by root diameter	Root	match	BERVO:0002540		
 1279	Root stele diameter	Root	match	BERVO:0002450		
-1280	Root cross-sectional fraction of stele area to root area	Root	gap			
+1280	Root cross-sectional fraction of stele area to root area	Root	match	BERVO:0002541		
 1281	Root fraction of metaxylem cell wall thickness to vessel diameter	Root	gap			
 1282	Root fraction of protoxylem cell wall thickness to vessel diameter	Root	gap			
 1283	Root number of tracheary elements per crossection	Root	gap			
@@ -1180,14 +1180,14 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1487	Root dry mass fraction in respective root order	Root	gap			
 1489	Root length fraction in respective root diameter class (e.g. fine root length per total root length;	Root	gap			
 1491	Root surface area fraction in respective root order	Root	gap			
-1494	Root dry mass per soil volume	Root	gap			
+1494	Root dry mass per soil volume	Root	match	BERVO:0002535		
 1495	Root species abundance: fraction of total root dry mass composed of respective species	Root	gap			
-1498	Root carbon (C) content per ground area	Root	gap			
+1498	Root carbon (C) content per ground area	Root	broader	BERVO:0002536		Root goes in contexts.
 1501	Root necromass (dead dry mass) per ground area for specified soil depth increment	Root	broader	BERVO:0001970		Root and Dead vegetation go in contexts. The soil depth increment goes with the value.
-1502	Root nitrogen (N) per ground area	Root	gap			
+1502	Root nitrogen (N) per ground area	Root	broader	BERVO:0002520		Root goes in contexts.
 1504	Plant biomass and allometry: Root length ratio (RLR): root length per plant dry mass	Whole plant	gap			
 1506	Root length fraction belonging to species	Root	gap			
-1507	Root length density (RLD): root length per ground area	Root	gap			
+1507	Root length density (RLD): root length per ground area	Root	match	BERVO:0002534		
 1508	Root length per soil volume	Root	related	BERVO:0001103		The BERVO term is an EcoSIM variable per soil layer.
 1509	Plant biomass and allometry: Root length per plant	Whole plant	gap			
 1510	Root length per minirhizotron screen area	Root	gap			
@@ -1214,9 +1214,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1559	Coarse root manganese (Mn) content per coarse root dry mass	Root	broader	BERVO:0002460		Coarse root goes in contexts.
 1560	Coarse root silicon (Si) content per coarse root dry mass	Root	broader	BERVO:0002466		Coarse root goes in contexts.
 1563	Coarse root cortex thickness	Root	broader	BERVO:0002451		Coarse root goes in contexts.
-1568	Coarse root stele fraction: stele diameter divided by coarse root diameter	Root	gap			
+1568	Coarse root stele fraction: stele diameter divided by coarse root diameter	Root	broader	BERVO:0002540		Coarse root goes in contexts.
 1569	Coarse root stele diameter	Root	broader	BERVO:0002450		Coarse root goes in contexts.
-1570	Coarse root cross-sectional fraction of stele area to coarse root area	Root	gap			
+1570	Coarse root cross-sectional fraction of stele area to coarse root area	Root	broader	BERVO:0002541		Coarse root goes in contexts.
 1575	Coarse root xylem vessel density in stele: number of xylem vessels per square millimeter of coarse r	Root	gap			
 1577	Coarse root conduit diameter	Root	broader	BERVO:0002452		Coarse root goes in contexts.
 1598	Coarse root hemicellulose content per coarse root dry mass	Root	broader	BERVO:0002487		Coarse root goes in contexts.
@@ -1266,12 +1266,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1751	Coarse root dry mass fraction in respective root order	Root	gap			
 1752	Coarse root length fraction in respective root diameter class	Root	gap			
 1754	Coarse root surface area fraction in respective root order	Root	gap			
-1757	Coarse root dry mass per soil volume	Root	gap			
+1757	Coarse root dry mass per soil volume	Root	broader	BERVO:0002535		Coarse root goes in contexts.
 1759	Coarse root density on screen: number of coarse roots per area of in-growth screen	Root	gap			
-1761	Coarse root carbon (C) content per ground area	Root	gap			
+1761	Coarse root carbon (C) content per ground area	Root	broader	BERVO:0002536		Coarse root goes in contexts.
 1762	Coarse root necromass (dead dry mass) per ground area for specified soil depth increment	Root	broader	BERVO:0001970		Coarse root and Dead vegetation go in contexts. The soil depth increment goes with the value.
-1768	Coarse root length density (RLD): coarse root length per ground area	Root	gap			
-1769	Coarse root length per soil volume	Root	gap			
+1768	Coarse root length density (RLD): coarse root length per ground area	Root	broader	BERVO:0002534		Coarse root goes in contexts.
+1769	Coarse root length per soil volume	Root	related	BERVO:0000408		Measured in a soil sample; EcoSIM's is the total for all plants in a soil layer of a grid cell.
 1770	Plant biomass and allometry: Coarse root length per plant	Whole plant	gap			
 1772	Coarse root volume per ground area	Root	gap			
 1773	Coarse root rooting depth: fraction of coarse root dry mass contained in depth interval	Root	gap			
@@ -1283,7 +1283,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1781	Fine root tissue density (fine root dry mass per fine root volume)	Fine root	broader	BERVO:0002376	root_tissue_density	Fine root goes in contexts.
 1784	Fine root lignin content per fine root dry mass	Fine root	broader	BERVO:0002412		Fine root goes in contexts.
 1785	Fine root cellulose content per fine root dry mass	Fine root	broader	BERVO:0002486		Fine root goes in contexts.
-1786	Fine root porosity (volume of root air space)	Fine root	gap			
+1786	Fine root porosity (volume of root air space)	Fine root	broader	BERVO:0001077		Fine root goes in contexts.
 1791	Fine root respiration rate per fine root dry mass	Fine root	broader	BERVO:0002413		Fine root goes in contexts.
 1792	Fine root total non-structural carbon (TNC) content per fine root dry mass	Fine root	broader	BERVO:0002448		Fine root goes in contexts.
 1795	Fine root dry mass per ground area	Fine root	broader	BERVO:0001970		Fine root goes in contexts.
@@ -1312,9 +1312,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1821	Fine root exodermis passage cell frequency per length of fine root circumference	Fine root	gap			
 1822	Fine root length fraction that contains fungal/mycorrhizal arbuscules	Fine root	gap			
 1823	Fine root length fraction that contains fungal/mycorrhizal vesicles	Fine root	gap			
-1824	Fine root stele fraction: stele diameter divided by fine root diameter	Fine root	gap			
+1824	Fine root stele fraction: stele diameter divided by fine root diameter	Fine root	broader	BERVO:0002540		Fine root goes in contexts.
 1825	Fine root stele diameter	Fine root	broader	BERVO:0002450		Fine root goes in contexts.
-1826	Fine root cross-sectional fraction of stele area to fine root area	Fine root	gap			
+1826	Fine root cross-sectional fraction of stele area to fine root area	Fine root	broader	BERVO:0002541		Fine root goes in contexts.
 1827	Fine root fraction of metaxylem cell wall thickness to vessel diameter	Fine root	gap			
 1828	Fine root fraction of protoxylem cell wall thickness to vessel diameter	Fine root	gap			
 1829	Fine root number of tracheary elements per crossection	Fine root	gap			
@@ -1418,10 +1418,10 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1972	Fine root root hair incidence: fraction of fine root intersections that contain root hairs	Fine root	gap			
 1973	Fine root specific root hair cylinder volume: volume of root hairs per fine root dry mass	Fine root	gap			
 1974	Fine root length: distance from fine root base to tip	Fine root	gap			
-1975	Fine root acid phosphatase activity per fine root dry mass	Fine root	gap			
+1975	Fine root acid phosphatase activity per fine root dry mass	Fine root	broader	BERVO:0002543		Fine root goes in contexts.
 1977	Fine root exudation: carbon (C) exudation as fraction of fine root dry mass	Fine root	gap			
-1978	Fine root phosphatase activity per fine root dry mass	Fine root	gap			
-1979	Fine root phosphatase activity per fine root length	Fine root	gap			
+1978	Fine root phosphatase activity per fine root dry mass	Fine root	related	BERVO:0002543		Phosphatase or phosphomonoesterase activity without the acid pH stated.
+1979	Fine root phosphatase activity per fine root length	Fine root	related	BERVO:0002543		Per unit fine root length rather than dry mass.
 1980	Fine root phosphorus (P) uptake relative to maximum fine root phosphorus (P) uptake	Fine root	gap			
 1981	Fine root potassium (K) uptake in depth interval relative to total fine root potassium (K) uptake	Fine root	gap			
 1984	Fine root nitrogen (N) turnover per ground area per year	Fine root	gap			
@@ -1443,18 +1443,18 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2008	Fine root length fraction in respective root diameter class	Fine root	gap			
 2009	Fine root length fraction in respective root order	Fine root	gap			
 2011	Fine root dry mass fraction that is taproot (taproot dry mass per fine root dry mass)	Fine root	gap			
-2012	Fine root area index (RAI): fine root surface area per ground area	Fine root	gap			
-2013	Fine root dry mass per soil volume	Fine root	gap			
+2012	Fine root area index (RAI): fine root surface area per ground area	Fine root	broader	BERVO:0002537		Fine root goes in contexts.
+2013	Fine root dry mass per soil volume	Fine root	broader	BERVO:0002535		Fine root goes in contexts.
 2014	Fine root species abundance: fraction of total fine root dry mass composed of respective species	Fine root	gap			
 2015	Fine root density on screen: number of fine roots per area of in-growth screen	Fine root	gap			
 2016	Fine root carbon content per soil dry mass	Fine root	gap			
-2017	Fine root carbon content per ground area	Fine root	gap			
+2017	Fine root carbon content per ground area	Fine root	broader	BERVO:0002536		Fine root goes in contexts.
 2018	Fine root necromass (dead dry mass) per ground area for specified soil depth increment	Fine root	broader	BERVO:0001970		Fine root and Dead vegetation go in contexts. The soil depth increment goes with the value.
 2020	Fine root nitrogen (N) content per soil dry mass	Fine root	gap			
 2021	Plant biomass and allometry: Fine root length ratio (RLR): fine root length per plant dry mass	Whole plant	gap			
 2022	Fine root length per minirhizotron frame	Fine root	gap			
-2024	Fine root length per ground area	Fine root	gap			
-2025	Fine root length per soil volume	Fine root	gap			
+2024	Fine root length per ground area	Fine root	broader	BERVO:0002534		Fine root goes in contexts.
+2025	Fine root length per soil volume	Fine root	related	BERVO:0000408		Measured in a soil sample; EcoSIM's is the total for all plants in a soil layer of a grid cell.
 2026	Plant biomass and allometry: Fine root length per plant	Whole plant	gap			
 2027	Fine root length per minirhizotron screen area	Fine root	gap			
 2028	Fine root volume per ground area	Fine root	gap			
@@ -1468,7 +1468,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2038	Fine root (absorptive) diameter	Fine root	broader	BERVO:0002375		Absorptive fine root goes in contexts.
 2039	Fine root (absorptive) carbon (C) content per absorptive fine root dry mass	Fine root	broader	BERVO:0002339		Absorptive fine root goes in contexts.
 2040	Fine root (absorptive) lignin content per absorptive fine root dry mass	Fine root	broader	BERVO:0002412		Absorptive fine root goes in contexts.
-2042	Fine root (absorptive) porosity (volume of root air space)	Fine root	gap			
+2042	Fine root (absorptive) porosity (volume of root air space)	Fine root	broader	BERVO:0001077		Absorptive fine root goes in contexts.
 2043	Plant biomass and allometry: Fine root (absorptive) dry mass per plant	Whole plant	gap			
 2044	Fine root (absorptive) vessel diameter	Fine root	related	BERVO:0002452		Vessels only; conduits include tracheids.
 2047	Fine root (absorptive) respiration rate per absorptive fine root dry mass	Fine root	broader	BERVO:0002413		Absorptive fine root goes in contexts.
@@ -1499,16 +1499,16 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2075	Fine root (absorptive) cortex thickness	Fine root	broader	BERVO:0002451		Absorptive fine root goes in contexts.
 2076	Fine root (absorptive) exodermal wall thickness	Fine root	gap			
 2077	Fine root (absorptive) exodermis passage cell frequency per length of absorptive fine root circumfer	Fine root	gap			
-2080	Fine root (absorptive) stele fraction: stele diameter divided by absorptive fine root diameter	Fine root	gap			
+2080	Fine root (absorptive) stele fraction: stele diameter divided by absorptive fine root diameter	Fine root	broader	BERVO:0002540		Absorptive fine root goes in contexts.
 2081	Fine root (absorptive) stele diameter	Fine root	broader	BERVO:0002450		Absorptive fine root goes in contexts.
-2082	Fine root (absorptive) cross-sectional fraction of stele area to absorptive fine root area	Fine root	gap			
+2082	Fine root (absorptive) cross-sectional fraction of stele area to absorptive fine root area	Fine root	broader	BERVO:0002541		Absorptive fine root goes in contexts.
 2086	Fine root (absorptive) conduit density: number of conduits per stele cross-section area	Fine root	gap			
 2087	Fine root (absorptive) xylem vessel density in stele: number of xylem vessels per square millimeter	Fine root	gap			
 2089	Fine root (absorptive) conduit diameter	Fine root	broader	BERVO:0002452		Absorptive fine root goes in contexts.
 2093	Fine root (absorptive) conduit cell wall thickness	Fine root	gap			
 2094	Fine root (absorptive) passage cell number in exodermis per absorptive fine root circumference	Fine root	gap			
 2097	Fine root (absorptive) branching intensity 1 (branching ratio): number of absorptive fine roots per	Fine root	broader	BERVO:0002415		Absorptive fine root goes in contexts.
-2098	Fine root (absorptive) branching intensity 2: number of root tips per higher order root length	Fine root	gap			
+2098	Fine root (absorptive) branching intensity 2: number of root tips per higher order root length	Fine root	related	BERVO:0002542		Tips per unit length of the higher-order root that bears them, not per total root length.
 2099	Root tips per absorptive fine root dry mass (specific absorptive fine root tip abundance, SRTA)	Root	broader	BERVO:0002416		Absorptive fine root goes in contexts.
 2101	Fine root (absorptive) fractal dimension	Fine root	gap			
 2102	Fine root (absorptive) link length (segments between two nodes or a node and a tip)	Fine root	gap			
@@ -1560,7 +1560,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2214	Fine root (absorptive) turnover rate during growing season	Fine root	related	BERVO:0002454		Over a growing season rather than a year.
 2227	Fine root (absorptive) color	Fine root	gap			
 2230	Fine root (absorptive) length: distance from absorptive fine root base to tip	Fine root	gap			
-2231	Fine root (absorptive) acid phosphatase activity per absorptive fine root dry mass	Fine root	gap			
+2231	Fine root (absorptive) acid phosphatase activity per absorptive fine root dry mass	Fine root	broader	BERVO:0002543		Absorptive fine root goes in contexts.
 2233	Fine root (absorptive) exudation: carbon (C) exudation as fraction of absorptive fine root dry mass	Fine root	gap			
 2248	Fine root (absorptive) phosphorus (P) uptake rate per absorptive fine root surface area	Fine root	gap			
 2253	Fine root (absorptive) respiration rate per absorptive fine root length	Fine root	gap			
@@ -1569,10 +1569,10 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2265	Fine root (absorptive) length fraction in respective root order	Fine root	gap			
 2266	Fine root (absorptive) surface area fraction in respective root order	Fine root	gap			
 2272	Fine root (absorptive) carbon content per soil dry mass	Fine root	gap			
-2273	Fine root (absorptive) carbon content per ground area	Fine root	gap			
+2273	Fine root (absorptive) carbon content per ground area	Fine root	broader	BERVO:0002536		Absorptive fine root goes in contexts.
 2276	Fine root (absorptive) nitrogen (N) per soil dry mass	Fine root	gap			
-2280	Fine root (absorptive) length density (RLD): absorptive fine root length per ground area	Fine root	gap			
-2281	Fine root (absorptive) length per soil volume	Fine root	gap			
+2280	Fine root (absorptive) length density (RLD): absorptive fine root length per ground area	Fine root	broader	BERVO:0002534		Absorptive fine root goes in contexts.
+2281	Fine root (absorptive) length per soil volume	Fine root	related	BERVO:0000408		Measured in a soil sample; EcoSIM's is the total for all plants in a soil layer of a grid cell.
 2282	Plant biomass and allometry: Fine root (absorptive) length per plant	Whole plant	gap			
 2283	Fine root (absorptive) length per minirhizotron screen area	Fine root	gap			
 2287	Fine root (absorptive) debris decomposition rate constant	Fine root	broader	BERVO:0002491		Absorptive fine root and Dead vegetation go in contexts.
@@ -1604,9 +1604,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2326	Fine root (transport) zinc (Zn) content per transport fine root dry mass	Fine root	broader	BERVO:0002462		Transport fine root goes in contexts.
 2327	Fine root (transport) manganese (Mn) content per transport fine root dry mass	Fine root	broader	BERVO:0002460		Transport fine root goes in contexts.
 2331	Fine root (transport) cortex thickness	Fine root	broader	BERVO:0002451		Transport fine root goes in contexts.
-2336	Fine root (transport) stele fraction: stele diameter divided by transport fine root diameter	Fine root	gap			
+2336	Fine root (transport) stele fraction: stele diameter divided by transport fine root diameter	Fine root	broader	BERVO:0002540		Transport fine root goes in contexts.
 2337	Fine root (transport) stele diameter	Fine root	broader	BERVO:0002450		Transport fine root goes in contexts.
-2338	Fine root (transport) cross-sectional fraction of stele area to transport fine root area	Fine root	gap			
+2338	Fine root (transport) cross-sectional fraction of stele area to transport fine root area	Fine root	broader	BERVO:0002541		Transport fine root goes in contexts.
 2342	Fine root (transport) conduit density: number of conduits per stele cross-section area	Fine root	gap			
 2343	Fine root (transport) xylem vessel density in stele: number of xylem vessels per square millimeter o	Fine root	gap			
 2345	Fine root (transport) conduit diameter	Fine root	broader	BERVO:0002452		Transport fine root goes in contexts.
@@ -1629,10 +1629,10 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2521	Fine root (transport) length fraction in respective root order	Fine root	gap			
 2522	Fine root (transport) surface area fraction in respective root order	Fine root	gap			
 2528	Fine root (transport) carbon (C) content per soil dry mass	Fine root	gap			
-2529	Fine root (transport) carbon (C) content per ground area	Fine root	gap			
+2529	Fine root (transport) carbon (C) content per ground area	Fine root	broader	BERVO:0002536		Transport fine root goes in contexts.
 2532	Fine root (transport) nitrogen (N) per soil dry mass	Fine root	gap			
-2536	Fine root (transport) length density (RLD): transport fine root length per ground area	Fine root	gap			
-2537	Fine root (transport) length per soil volume	Fine root	gap			
+2536	Fine root (transport) length density (RLD): transport fine root length per ground area	Fine root	broader	BERVO:0002534		Transport fine root goes in contexts.
+2537	Fine root (transport) length per soil volume	Fine root	related	BERVO:0000408		Measured in a soil sample; EcoSIM's is the total for all plants in a soil layer of a grid cell.
 2538	Plant biomass and allometry: Fine root (transport) length per plant	Whole plant	gap			
 2543	Fine root (transport) debris decomposition rate constant	Fine root	broader	BERVO:0002491		Transport fine root and Dead vegetation go in contexts.
 2545	Belowground plant organ rooting depth	Root	related	BERVO:0002418		Belowground plant organs include rhizomes and tubers as well as roots, so the depth is not only of roots.
@@ -1679,7 +1679,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2771	Belowground plant organ dry mass to leaf dry mass ratio	Root	gap			
 2773	Plant biomass and allometry: Belowground plant organ mass fraction (fraction of belowground plant or	Whole plant	gap			
 2786	Belowground plant organ necromass (dead dry mass) per ground area for specified soil depth increment	Root	broader	BERVO:0001970		Belowground plant material and Dead vegetation go in contexts. The soil depth increment goes with the value.
-2787	Belowground plant organ nitrogen (N) per ground area	Root	gap			
+2787	Belowground plant organ nitrogen (N) per ground area	Root	broader	BERVO:0002520		Belowground plant material goes in contexts.
 2798	Belowground plant organ necromass to biomass ratio	Root	broader	BERVO:0002513		Belowground plant material goes in contexts.
 2799	Belowground plant organ debris decomposition rate constant	Root	broader	BERVO:0002491		Belowground plant material and Dead vegetation go in contexts.
 2803	Fine root rooting depth where most of the root activity of interest occurs	Fine root	gap			
@@ -1915,7 +1915,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3157	Root exudation rate per root surface area	Root	gap			
 3158	Root exudate content per soil dry mass: soil concentration of root exudates	Root	gap			
 3168	Root lithium (Li)uptake of molar lithium (Li)per root length	Root	gap			
-3176	Coarse root branching intensity 3: number of root tips per total coarse root length	Root	gap			
+3176	Coarse root branching intensity 3: number of root tips per total coarse root length	Root	broader	BERVO:0002542		Coarse root goes in contexts.
 3187	Coarse root starch content per dry mass	Root	broader	BERVO:0002449		Coarse root goes in contexts.
 3189	Coarse root decomposition: fraction nitrogen (N) remaining	Root	broader	BERVO:0002495		Coarse root and Dead vegetation go in contexts.
 3196	Coarse root nitrogen (N) uptake of molar 15N-Glycine per shoot dry mass	Root	gap			
@@ -1926,8 +1926,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3201	Coarse root nitrogen (N) uptake of molar NH4+ uptake per coarse root area	Root	gap			
 3202	Coarse root nitrogen (N) uptake of molar NO3- uptake per coarse root area	Root	gap			
 3203	Coarse root nitrogen (N) uptake of molar organic N uptake per coarse root area	Root	gap			
-3213	Fine root branching intensity 3: number of root tips per total fine root length	Fine root	gap			
-3214	Fine root forks per fine root length.	Fine root	gap			
+3213	Fine root branching intensity 3: number of root tips per total fine root length	Fine root	broader	BERVO:0002542		Fine root goes in contexts.
+3214	Fine root forks per fine root length.	Fine root	related	BERVO:0002542		Forks rather than tips per unit root length.
 3215	Fine root calcium (Ca) content per fine root fresh mass	Fine root	related	BERVO:0002456		Per unit fine root fresh mass rather than dry mass.
 3216	Fine root potassium (K) content per fine root fresh mass	Fine root	related	BERVO:0002455		Per unit fine root fresh mass rather than dry mass.
 3217	Fine root magnesium (Mg) content per fine root fresh mass	Fine root	related	BERVO:0002457		Per unit fine root fresh mass rather than dry mass.
@@ -1940,7 +1940,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3225	Fine root decomposition: fraction carbon (C) remaining	Fine root	broader	BERVO:0002494		Fine root and Dead vegetation go in contexts.
 3226	Fine root decomposition: fraction nitrogen (N) remaining	Fine root	broader	BERVO:0002495		Fine root and Dead vegetation go in contexts.
 3228	Fine root root hair density	Fine root	gap			
-3229	Fine root root hair diameter	Fine root	gap			
+3229	Fine root root hair diameter	Fine root	broader	BERVO:0002539		Fine root goes in contexts.
 3233	Fine root nitrogen (N) uptake rate of molar 15N-Glycine per shoot dry mass	Fine root	gap			
 3234	Fine root nitrogen (N) uptake rate of molar 15NH4+ per shoot dry mass	Fine root	gap			
 3235	Fine root nitrogen (N) uptake rate of molar 15NO3- per shoot dry mass	Fine root	gap			
@@ -1956,14 +1956,14 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3247	Fine root (absorptive) number of vessels per cross-sectional area	Fine root	gap			
 3248	Fine root (absorptive) cross-sectional area of xylem	Fine root	gap			
 3249	Fine root (absorptive) fraction of cross-sectional area occupied by xylem	Fine root	gap			
-3250	Fine root (absorptive) branching intensity 3: number of root tips per total fine root (absorptive) l	Fine root	gap			
+3250	Fine root (absorptive) branching intensity 3: number of root tips per total fine root (absorptive) l	Fine root	broader	BERVO:0002542		Absorptive fine root goes in contexts.
 3259	Fine root (absorptive) condensed tannins	Fine root	related	BERVO:0002506		Condensed tannins only, and TRY does not say per what.
 3260	Fine root (absorptive) phenols chlorogenic acid molarity per absorptive fine root mass	Fine root	gap			
 3261	Fine root (absorptive) starch content per dry mass	Fine root	broader	BERVO:0002449		Absorptive fine root goes in contexts.
 3263	Fine root (absorptive) decomposition: fraction nitrogen (N) remaining	Fine root	broader	BERVO:0002495		Absorptive fine root and Dead vegetation go in contexts.
 3264	Fine root (absorptive) cross-sectional area	Fine root	gap			
 3265	Fine root (absorptive) root hair density	Fine root	gap			
-3266	Fine root (absorptive) root hair diameter	Fine root	gap			
+3266	Fine root (absorptive) root hair diameter	Fine root	broader	BERVO:0002539		Absorptive fine root goes in contexts.
 3267	Fine root (absorptive) exudation rate per length	Fine root	gap			
 3268	Plant biomass and allometry: Fine root (absorptive) exudation rate per plant	Whole plant	gap			
 3280	Fine root (transport) number of phellem layers	Fine root	gap			
@@ -1971,7 +1971,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3298	Fine root (transport) starch content per dry mass	Fine root	broader	BERVO:0002449		Transport fine root goes in contexts.
 3300	Fine root (transport) decomposition: fraction nitrogen (N) remaining	Fine root	broader	BERVO:0002495		Transport fine root and Dead vegetation go in contexts.
 3302	Fine root (transport) root hair density	Fine root	gap			
-3303	Fine root (transport) root hair diameter	Fine root	gap			
+3303	Fine root (transport) root hair diameter	Fine root	broader	BERVO:0002539		Transport fine root goes in contexts.
 3336	Belowground plant organ decomposition: fraction carbon (C) remaining	Root	broader	BERVO:0002494		Belowground plant material and Dead vegetation go in contexts.
 3337	Belowground plant organ decomposition: fraction nitrogen (N) remaining	Root	broader	BERVO:0002495		Belowground plant material and Dead vegetation go in contexts.
 3354	Leaf lithium (Li) content per leaf dry mass	Leaf	gap			
@@ -2175,7 +2175,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3559	Flower dry matter content (flower dry mass per flower fresh mass)	Flower and reproduction	broader	BERVO:0002528		Flower goes in contexts.
 3560	Root crossectional area	Root	gap			
 3561	Plant biomass and allometry: dead leaf fraction (dead leaf dry mass per plant aboveground dry mass)	Whole plant	gap			
-3562	Root phosphomonoesterase activity	Root	gap			
+3562	Root phosphomonoesterase activity	Root	related	BERVO:0002543		Phosphatase or phosphomonoesterase activity without the acid pH stated.
 3563	Root system projected area per plant	Root	gap			
 3564	Root system surface area per plant	Root	gap			
 3565	Root length per root volume	Root	gap			

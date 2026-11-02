@@ -151,6 +151,8 @@ DRY_BASIS = " TRY gives no basis for the concentration; per unit dry mass, the u
 BRANCH_SECTION = ("A fraction of the whole branch cross-section, which may include bark and pith, "
                   "rather than of the wood.")
 NITOGEN = " TRY spells nitrogen 'nitogen' in the name, so the C/N rule misses it."
+SOIL_RLD = ("Measured in a soil sample; EcoSIM's is the total for all plants in a soil layer "
+            "of a grid cell.")
 CARBON_PROD = ("Carbon production, which the term's g{C} unit covers, but TRY gives no time base, so it "
                "may be a rate for part of a season rather than per year.")
 DEPTH = " The soil depth increment goes with the value."
@@ -737,6 +739,50 @@ MAPPED = [
     ("related", "BERVO:0002409", "3665", "Vessels only, hydraulically weighted, and in a twig; conduits include tracheids."),
     ("related", "BERVO:0002410", "3390", "Vessels only, and in a branch; conduits include tracheids."),
     ("related", "BERVO:0002410", "3666", "Vessels only, and in a twig; conduits include tracheids."),
+    # Slice 16: belowground stocks and densities, root hairs, stele fractions, root tips
+    # per length, root acid phosphatase, and broader rows on existing root terms.
+    ("match", "BERVO:0002534", "1507", ""),
+    ("broader", "BERVO:0002534", "1768", ctx("Coarse root")),
+    ("broader", "BERVO:0002534", "2024", ctx("Fine root")),
+    ("broader", "BERVO:0002534", "2280", ctx("Absorptive fine root")),
+    ("broader", "BERVO:0002534", "2536", ctx("Transport fine root")),
+    ("match", "BERVO:0002535", "1494", ""),
+    ("broader", "BERVO:0002535", "1757", ctx("Coarse root")),
+    ("broader", "BERVO:0002535", "2013", ctx("Fine root")),
+    ("broader", "BERVO:0002536", "1498", ctx("Root")),
+    ("broader", "BERVO:0002536", "1761", ctx("Coarse root")),
+    ("broader", "BERVO:0002536", "2017", ctx("Fine root")),
+    ("broader", "BERVO:0002536", "2273", ctx("Absorptive fine root")),
+    ("broader", "BERVO:0002536", "2529", ctx("Transport fine root")),
+    ("broader", "BERVO:0002520", "1502", ctx("Root")),
+    ("broader", "BERVO:0002520", "2787", ctx("Belowground plant material")),
+    ("broader", "BERVO:0002537", "2012", ctx("Fine root")),
+    ("match", "BERVO:0002538", "1075", ""),
+    ("broader", "BERVO:0002539", "3229", ctx("Fine root")),
+    ("broader", "BERVO:0002539", "3266", ctx("Absorptive fine root")),
+    ("broader", "BERVO:0002539", "3303", ctx("Transport fine root")),
+    ("match", "BERVO:0002540", "1278", ""),
+    ("broader", "BERVO:0002540", "1568", ctx("Coarse root")),
+    ("broader", "BERVO:0002540", "1824", ctx("Fine root")),
+    ("broader", "BERVO:0002540", "2080", ctx("Absorptive fine root")),
+    ("broader", "BERVO:0002540", "2336", ctx("Transport fine root")),
+    ("match", "BERVO:0002541", "1280", ""),
+    ("broader", "BERVO:0002541", "1570", ctx("Coarse root")),
+    ("broader", "BERVO:0002541", "1826", ctx("Fine root")),
+    ("broader", "BERVO:0002541", "2082", ctx("Absorptive fine root")),
+    ("broader", "BERVO:0002541", "2338", ctx("Transport fine root")),
+    ("broader", "BERVO:0002542", "3176", ctx("Coarse root")),
+    ("broader", "BERVO:0002542", "3213", ctx("Fine root")),
+    ("broader", "BERVO:0002542", "3250", ctx("Absorptive fine root")),
+    ("related", "BERVO:0002542", "2098", "Tips per unit length of the higher-order root that bears them, not per total root length."),
+    ("related", "BERVO:0002542", "3214", "Forks rather than tips per unit root length."),
+    ("broader", "BERVO:0002543", "1975", ctx("Fine root")),
+    ("broader", "BERVO:0002543", "2231", ctx("Absorptive fine root")),
+    ("related", "BERVO:0002543", "1978 3562", "Phosphatase or phosphomonoesterase activity without the acid pH stated."),
+    ("related", "BERVO:0002543", "1979", "Per unit fine root length rather than dry mass."),
+    ("broader", "BERVO:0001077", "1786", ctx("Fine root")),
+    ("broader", "BERVO:0001077", "2042", ctx("Absorptive fine root")),
+    ("related", "BERVO:0000408", "1769 2025 2281 2537", SOIL_RLD),
 ]
 
 # The plant-functional-traits schema slot each TRY trait feeds
