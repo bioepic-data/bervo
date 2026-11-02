@@ -6934,11 +6934,13 @@
     <!-- https://w3id.org/bervo/BERVO_0000408 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000408">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002544"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000006"/>
         <obo:IAO_0000115>The total length of plant roots per unit volume of soil within each soil layer contributed by all plant species in a model grid cell. Root length density represents the spatial extent of root systems within soil and is a key parameter for modeling water and nutrient uptake capacity in terrestrial ecosystem models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>totRootLenDens_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantDataRateType.txt</rdfs:comment>
+        <rdfs:comment>Root length per soil volume (BERVO:0002544) is the general measured term.</rdfs:comment>
         <rdfs:label>Total root length density</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
@@ -18495,7 +18497,7 @@
         <oboInOwl:hasRelatedSynonym>RootPorosity_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 246.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 246. TRY traits mapped here, with what narrows each one in contexts: 1786, 2042.</rdfs:comment>
         <rdfs:label>Root porosity</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>m3.m-3</bervo:BERVO_has_unit>
@@ -18926,10 +18928,12 @@
     <!-- https://w3id.org/bervo/BERVO_0001103 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001103">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002544"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>The quantity of root length per unit volume of soil, commonly expressed as root length per cubic meter. This measurement is crucial for understanding root space occupation and the efficiency of soil exploration for nutrient and water uptake.</obo:IAO_0000115>
+        <obo:IAO_0000115>Root length of one plant per unit volume of soil, in each soil layer, commonly expressed as root length per cubic meter. This measurement is crucial for understanding root space occupation and the efficiency of soil exploration for nutrient and water uptake.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RootLenDensPerPlant_pvr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM resolves it by plant and by soil layer. Root length per soil volume (BERVO:0002544) is the general measured term.</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Root length density in soil layers</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
@@ -40213,7 +40217,7 @@
         <oboInOwl:hasRelatedSynonym>Root dry mass per root volume (root density, root tissue density)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Root tissue density (root dry mass per root volume)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait IDs: 82, 116. TRY traits mapped here, with what narrows each one in contexts: 1525, 1781, 2037, 2293. Not root mass density, which is root mass per unit volume of soil.</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 82, 116. TRY traits mapped here, with what narrows each one in contexts: 1525, 1781, 2037, 2293. Not Root mass density (BERVO:0002535), which is root mass per unit volume of soil.</rdfs:comment>
         <rdfs:label>Root tissue density</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
         <bervo:BERVO_has_unit>g.cm-3</bervo:BERVO_has_unit>
@@ -40977,7 +40981,7 @@
         <bervo:BERVO_has_unit>{tips}.g-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001338"/>
     </Class>
     
 
@@ -42825,7 +42829,7 @@
         <obo:IAO_0000115>Mass of nitrogen in plant material per unit ground area.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>plant nitrogen pool</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Vegetation biomass (BERVO:0001970), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 451, 455, 468, 501, 528. Organ and status go in contexts. The nitrogen counterpart of Vegetation biomass (BERVO:0001970). Distinct from Leaf nitrogen content per unit area (BERVO:0002187), which is per unit leaf area.</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 451, 455, 468, 501, 528, 1502, 2787. Organ and status go in contexts. The nitrogen counterpart of Vegetation biomass (BERVO:0001970). Distinct from Leaf nitrogen content per unit area (BERVO:0002187), which is per unit leaf area. Vegetation carbon stock (BERVO:0002536) is its carbon counterpart.</rdfs:comment>
         <rdfs:label>Vegetation nitrogen stock</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>g{N}.m-2</bervo:BERVO_has_unit>
@@ -43057,6 +43061,202 @@
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002534 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002534">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Length of root per unit ground area, summed over the soil depth sampled.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Root length density (RLD): root length per ground area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1507. TRY traits mapped here, with what narrows each one in contexts: 1768, 2024, 2280, 2536. Root class goes in contexts. TRY calls it root length density (RLD), a name more often used for length per unit soil volume, as in Root length per soil volume (BERVO:0002544). The soil depth sampled should be reported with the value.</rdfs:comment>
+        <rdfs:label>Root length per ground area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>m.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002535 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002535">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Dry mass of root per unit volume of soil.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Root dry mass per soil volume</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1494. TRY traits mapped here, with what narrows each one in contexts: 1757, 2013. Root class goes in contexts. Usually from soil cores, for a stated depth interval. Distinct from Root tissue density (BERVO:0002376), which is root dry mass per unit root volume.</rdfs:comment>
+        <rdfs:label>Root mass density</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
+        <bervo:BERVO_has_unit>kg.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002536 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002536">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000040"/>
+        <obo:IAO_0000115>Mass of carbon in plant material per unit ground area.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>plant carbon pool</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Vegetation nitrogen stock (BERVO:0002520), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 1498, 1761, 2017, 2273, 2529. Organ and status go in contexts. The carbon counterpart of Vegetation biomass (BERVO:0001970) and Vegetation nitrogen stock (BERVO:0002520).</rdfs:comment>
+        <rdfs:label>Vegetation carbon stock</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>g{C}.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002537 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002537">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Surface area of root per unit ground area.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>RAI</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 2012. Root class goes in contexts. The belowground counterpart of Plant area index (BERVO:0001890). Whether one side or the whole surface of the root is counted should be reported with the value.</rdfs:comment>
+        <rdfs:label>Root area index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_has_unit>m2.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002538 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002538">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Length of a root hair from the root epidermis to its tip, as a mean over a sample of root hairs.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Root root hair length</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1075.</rdfs:comment>
+        <rdfs:label>Root hair length</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001337"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002539 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002539">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Diameter of a root hair, as a mean over a sample of root hairs.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 3229, 3266, 3303. Root class goes in contexts.</rdfs:comment>
+        <rdfs:label>Root hair diameter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
+        <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001337"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002540 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002540">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Diameter of the stele of a root divided by the diameter of the root.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Root stele fraction: stele diameter divided by root diameter</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1278. TRY traits mapped here, with what narrows each one in contexts: 1568, 1824, 2080, 2336. Root class goes in contexts. Root stele diameter (BERVO:0002450) is the numerator.</rdfs:comment>
+        <rdfs:label>Root stele diameter fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001321"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002541 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002541">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Cross-sectional area of the stele of a root as a fraction of the cross-sectional area of the root.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Root cross-sectional fraction of stele area to root area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1280. TRY traits mapped here, with what narrows each one in contexts: 1570, 1826, 2082, 2338. Root class goes in contexts. For a circular root and stele it is the square of Root stele diameter fraction (BERVO:0002540).</rdfs:comment>
+        <rdfs:label>Root stele area fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001321"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002542 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002542">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Number of root tips per unit length of root.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Root branching intensity 3: number of root tips per total root length</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3136. TRY traits mapped here, with what narrows each one in contexts: 3176, 3213, 3250. Root class goes in contexts. TRY calls it branching intensity 3. Specific root tip abundance (BERVO:0002416) is the number of tips per unit root dry mass; Root branching frequency (BERVO:0001096) counts branches, not tips, per unit length.</rdfs:comment>
+        <rdfs:label>Root tips per unit root length</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000899"/>
+        <bervo:BERVO_has_unit>{tips}.cm-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001338"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002543 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002543">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Activity of acid phosphatase associated with a root, which releases inorganic phosphate from organic phosphate monoesters, per unit root dry mass.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 1975, 2231. Root class goes in contexts. Usually assayed on excised roots as the p-nitrophenol (pNP) released from p-nitrophenyl phosphate, at a stated pH and temperature. Acid phosphatase activity (BERVO:0002027) is the soil activity.</rdfs:comment>
+        <rdfs:label>Root acid phosphatase activity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000353"/>
+        <bervo:BERVO_has_unit>umol{pNP}.g-1{dry_mass}.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000853"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002544 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002544">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <obo:IAO_0000115>Length of root per unit volume of soil.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>root length density</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Freschet et al. 2021 (doi:10.1111/nph.17572), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1508. TRY traits mapped here, with what narrows each one in contexts: 1769, 2025, 2281, 2537. Root class goes in contexts. Usually from soil cores, for a stated depth interval. The EcoSIM variables Total root length density (BERVO:0000408), summed over all plants in a soil layer of a grid cell, and Root length density in soil layers (BERVO:0001103), for one plant in a soil layer, are its subclasses. Root length per ground area (BERVO:0002534) is the same length summed over depth.</rdfs:comment>
+        <rdfs:label>Root length per soil volume</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
+        <bervo:BERVO_has_unit>m.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
     </Class>
     
 
@@ -61448,6 +61648,34 @@
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0009049"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Plant Ontology (PO:0009049), TRY alignment for issue #27</rdfs:comment>
         <rdfs:label>Inflorescence</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001337 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001337">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Tubular outgrowth of an epidermal cell of a root that increases the root surface in contact with the soil.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/GO_0035618"/>
+        <oboInOwl:hasExactSynonym>root hairs</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Plant Ontology (PO:0000256) and the Gene Ontology (GO:0035618), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>The Plant Ontology has only the root hair cell (PO:0000256), whose definition points to GO:0035618 for the hair itself.</rdfs:comment>
+        <rdfs:label>Root hair</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001338 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001338">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Apical portion of a root, including the root apical meristem and the root cap.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0000025"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Plant Ontology (PO:0000025), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Root tip</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
