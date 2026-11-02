@@ -612,7 +612,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 745	Leaf mid vein conductivity	Leaf	gap			
 748	Leaf hydraulic conductance	Leaf	match	BERVO:0002404		
 749	Crown (canopy) transpiration	Crown and canopy	gap			
-751	Leaf epidermis conductance	Leaf	gap			
+751	Leaf epidermis conductance	Leaf	related	BERVO:0002408		Epidermal conductance, which may include leakage through incompletely closed stomata as well as through the cuticle.
 752	Plant hydraulic conductance	Whole plant	gap			
 753	Leaf chlorophyll fluorescence	Leaf	gap			
 755	Leaf lead (Pb) content per leaf dry mass	Leaf	gap			
@@ -2609,7 +2609,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 4030	Tiller thickness	Stem, wood and bark	gap			
 4031	Tiller length	Stem, wood and bark	gap			
 4032	Stomata conductance per leaf area: predawn	Photosynthesis and gas exchange	broader	BERVO:0002392		Predawn goes in contexts.
-4033	Leaf intercellular CO2 concentration (Ci) predawn	Leaf	gap			
+4033	Leaf intercellular CO2 concentration (Ci) predawn	Leaf	related	BERVO:0000529		The predawn intercellular concentration; EcoSIM's value is for a plant functional type, as a concentration per unit volume.
 4034	Leaf ratio of intercellular to ambient CO2 concentration (CiCa) predawn	Leaf	broader	BERVO:0002561		Predawn goes in contexts.
 4035	Leaf temperature predawn	Leaf	gap			
 4036	Leaf vapor pressure deficit predawn	Leaf	gap			

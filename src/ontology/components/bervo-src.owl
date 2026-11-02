@@ -9557,11 +9557,13 @@
     <!-- https://w3id.org/bervo/BERVO_0000567 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000567">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002561"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
-        <obo:IAO_0000115>EcoSIM input: it is a parameter that specifies the ratio between leaf intracellular CO2 to amospheric CO2. It is trait parameter that characterizes different plant species.</obo:IAO_0000115>
+        <obo:IAO_0000115>EcoSIM input: it is a parameter that specifies the ratio between leaf intercellular CO2 to atmospheric CO2. It is trait parameter that characterizes different plant species.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>CanPCi2CaRatio</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Leaf intercellular to ambient carbon dioxide ratio (BERVO:0002561), the measured ratio, is its general term.</rdfs:comment>
         <rdfs:label>Ci:Ca ratio</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
@@ -43265,7 +43267,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002545">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>Mass of carotenoids, carotenes and xanthophylls together, in a leaf per unit of its area.</obo:IAO_0000115>
+        <obo:IAO_0000115>Combined mass of the carotenes and xanthophylls in a leaf per unit of its area.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Leaf carotenoid content per leaf area</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Leaf xanthophyll plus carotene content per leaf area</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Leaf chlorophyll content per unit area (BERVO:0002474), TRY alignment for issue #27</rdfs:comment>
@@ -43284,7 +43286,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002546">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>Mass of carotenoids, carotenes and xanthophylls together, in a leaf per unit of its dry mass.</obo:IAO_0000115>
+        <obo:IAO_0000115>Combined mass of the carotenes and xanthophylls in a leaf per unit of its dry mass.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Leaf carotenoid content per leaf dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Leaf chlorophyll content per unit dry mass (BERVO:0002475), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 809. Leaf chlorophyll content per unit dry mass (BERVO:0002475) is its chlorophyll counterpart.</rdfs:comment>
@@ -43430,6 +43432,7 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 721. Read from a light response curve. Distinct from Carbon dioxide compensation point (BERVO:0000542), the carbon dioxide concentration at zero net uptake.</rdfs:comment>
         <rdfs:label>Leaf light compensation point</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_has_unit>umol.m-2.s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
@@ -43448,6 +43451,7 @@
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait IDs: 720, 3805. Read from a light response curve; because the curve approaches its maximum gradually, the criterion used, such as 90 percent of the maximum rate, should be reported with the value.</rdfs:comment>
         <rdfs:label>Leaf light saturation point</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_has_unit>umol.m-2.s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
@@ -43523,7 +43527,7 @@
         <obo:IAO_0000115>Variable chlorophyll fluorescence of a dark-adapted leaf divided by its maximum fluorescence, Fv/Fm, a measure of the maximum efficiency of photosystem II.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Fv/Fm</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 3393. Values near 0.83 are typical of unstressed leaves. Distinct from the operating efficiency of photosystem II in the light, and from Quantum efficiency (BERVO:0000168), an EcoSIM parameter.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3393. Values near 0.83 are typical of unstressed leaves. Distinct from the operating efficiency of photosystem II in the light, and from Quantum efficiency (BERVO:0000168), an EcoSIM parameter. Its measurement_ofs, Chlorophyll, stands in for photosystem II, for which BERVO has no concept.</rdfs:comment>
         <rdfs:label>Leaf maximum quantum efficiency of photosystem II</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -43559,7 +43563,7 @@
         <oboInOwl:hasExactSynonym>Ci/Ca</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Photosynthesis: intercellular CO2 concentration to ambient CO2 (ci/ca)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 3379. TRY traits mapped here, with what narrows each one in contexts: 4034, 4039. Time of day goes in contexts. Leaf gaseous carbon dioxide concentration (BERVO:0000529) is the EcoSIM intercellular concentration.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3379. TRY traits mapped here, with what narrows each one in contexts: 4034, 4039. Time of day goes in contexts. Leaf gaseous carbon dioxide concentration (BERVO:0000529) is the EcoSIM intercellular concentration. Ci:Ca ratio (BERVO:0000567), the EcoSIM parameter set for each plant functional type, is its subclass.</rdfs:comment>
         <rdfs:label>Leaf intercellular to ambient carbon dioxide ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -43580,7 +43584,7 @@
         <rdfs:comment>TRY trait ID: 3767. Computed as fresh minus dry mass, divided by leaf area; estimated from reflectance in remote sensing.</rdfs:comment>
         <rdfs:label>Leaf equivalent water thickness</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
-        <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{H2O}.m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>

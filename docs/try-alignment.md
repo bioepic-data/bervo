@@ -148,7 +148,7 @@ disagree. `tests/test_try_alignment.py` runs it.
 
 ## Summary
 
-1017 TRY traits map to a BERVO term. 1592 are gaps and 52 are
+1019 TRY traits map to a BERVO term. 1590 are gaps and 52 are
 species attributes.
 
 | Group | `match` | `broader` | `related` | `gap` | `species_attribute` | Total |
@@ -156,7 +156,7 @@ species attributes.
 | Crown and canopy |  | 1 | 2 | 18 |  | 21 |
 | Fine root |  | 166 | 24 | 213 |  | 403 |
 | Flower and reproduction |  | 16 |  | 110 |  | 126 |
-| Leaf | 58 | 50 | 30 | 279 | 1 | 418 |
+| Leaf | 58 | 50 | 32 | 277 | 1 | 418 |
 | Litter and woody debris | 5 | 146 | 15 | 33 |  | 199 |
 | Moss and fern |  |  |  | 21 |  | 21 |
 | Photosynthesis and gas exchange | 26 | 2 | 14 | 71 |  | 113 |
@@ -168,7 +168,7 @@ species attributes.
 | Stem, wood and bark | 29 | 97 | 13 | 184 |  | 323 |
 | Twig, branch, shoot and bud |  | 86 | 9 | 76 |  | 171 |
 | Whole plant | 12 |  | 2 | 255 |  | 269 |
-| **Total** | **185** | **703** | **129** | **1592** | **52** | **2661** |
+| **Total** | **185** | **703** | **131** | **1590** | **52** | **2661** |
 
 ## Matches
 
@@ -508,6 +508,7 @@ species attributes.
 | 664 | Leaf respiration rate in light per leaf respiration rate in the dark | `BERVO:0002556` Leaf respiration rate in light per unit area | The ratio of respiration in light to respiration in the dark. |
 | 732 | Leaf chlorophyll content per leaf nitrogen (N) content | `BERVO:0002475` Leaf chlorophyll content per unit dry mass | Per unit leaf nitrogen rather than dry mass. |
 | 741 | Leaf veins free ending density | `BERVO:0002480` Leaf vein density | The density of free vein endings, not vein length per area. |
+| 751 | Leaf epidermis conductance | `BERVO:0002408` Leaf cuticular conductance | Epidermal conductance, which may include leakage through incompletely closed stomata as well as through the cuticle. |
 | 781 | Stomata distribution to ab- and adaxial leaf surfaces | `BERVO:0002469` Stomatal density | How the stomata are divided between the two leaf surfaces. |
 | 839 | Bark thickness per stem diameter | `BERVO:0002529` Relative bark thickness | Per stem diameter rather than radius, so half the value. |
 | 845 | Coarse woody debris (CWD) branch: decomposition rate | `BERVO:0002491` Decomposition rate constant | TRY does not say whether this is a rate constant or a mass loss per unit time. |
@@ -607,6 +608,7 @@ species attributes.
 | 3932 | Leaf chlorophyll index | `BERVO:0002474` Leaf chlorophyll content per unit area | A relative optical index of chlorophyll, not a mass. |
 | 3951 | Snag decomposition rate | `BERVO:0002491` Decomposition rate constant | TRY does not say whether this is a rate constant or a mass loss per unit time. |
 | 4009 | Stem wood cross-section: fraction of vessel lumen | `BERVO:0002523` Wood vessel area fraction | Vessel lumens only. |
+| 4033 | Leaf intercellular CO2 concentration (Ci) predawn | `BERVO:0000529` Leaf gaseous carbon dioxide concentration | The predawn intercellular concentration; EcoSIM's value is for a plant functional type, as a concentration per unit volume. |
 | 4046 | Stem diameter growth | `BERVO:0002346` Stem diameter increment | The BERVO term is the increment at breast height over a stated period. |
 | 4050 | Leaf prophyll leaf length | `BERVO:0002470` Leaf length | The length of a prophyll, the first leaf of a shoot. |
 | 4083 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA) of total leaf area | `BERVO:0002369` Specific leaf area | Uses the total leaf area rather than the one-sided area. |

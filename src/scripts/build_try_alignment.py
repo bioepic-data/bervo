@@ -813,6 +813,8 @@ MAPPED = [
     ("broader", "BERVO:0002561", "4034", ctx("Predawn")),
     ("broader", "BERVO:0002561", "4039", ctx("Midday")),
     ("match", "BERVO:0002562", "3767", ""),
+    ("related", "BERVO:0002408", "751", "Epidermal conductance, which may include leakage through incompletely closed stomata as well as through the cuticle."),
+    ("related", "BERVO:0000529", "4033", "The predawn intercellular concentration; EcoSIM's value is for a plant functional type, as a concentration per unit volume."),
 ]
 
 # The plant-functional-traits schema slot each TRY trait feeds
