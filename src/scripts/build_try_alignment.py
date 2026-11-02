@@ -145,7 +145,12 @@ def ctx(*concepts):
 
 COTYLEDON = ctx("Cotyledon")
 CWD_STEM = " TRY leaves 'dry mass' out of the name, but the trait is the same content."
-DRY_BASIS = " TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed."
+DRY_BASIS = " TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed."
+CARBON_PROD = ("Carbon production, which the term's g{C} unit covers, but TRY gives no time base, so it "
+               "may be a rate for part of a season rather than per year.")
+DEPTH = " The soil depth increment goes with the value."
+EXPOSITION = ("Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the "
+              "value, rather than a year.")
 SEED = ctx("Seed") + " TRY allows a value for the whole diaspore instead of the seed alone."
 
 
@@ -617,6 +622,64 @@ MAPPED = [
     ("broader", "BERVO:0002508", "2390", ctx("Transport fine root")),
     ("broader", "BERVO:0002509", "1877", ctx("Fine root")),
     ("broader", "BERVO:0002509", "2133", ctx("Absorptive fine root")),
+    # Slice 14: tissue pH, root production and mortality, necromass, leaf emissions,
+    # stomatal dimensions, and related rows for EcoSIM photosynthesis variables.
+    ("broader", "BERVO:0002510", "615", ctx("Leaf")),
+    ("broader", "BERVO:0002510", "693", ctx("Twig")),
+    ("broader", "BERVO:0002510", "699", ctx("Fine root")),
+    ("broader", "BERVO:0002510", "1167", ctx("Coarse woody debris", "Stem")),
+    ("match", "BERVO:0002342", "2700", ""),
+    ("broader", "BERVO:0002342", "1391", ctx("Root")),
+    ("broader", "BERVO:0002342", "1676", ctx("Coarse root")),
+    ("broader", "BERVO:0002342", "1932", ctx("Fine root")),
+    ("broader", "BERVO:0002342", "2188", ctx("Absorptive fine root")),
+    ("broader", "BERVO:0002342", "2444", ctx("Transport fine root")),
+    ("related", "BERVO:0002342", "1390 1675 1931", CARBON_PROD),
+    ("related", "BERVO:0002342", "1392 1933", "Per month rather than per year, usually a rate for part of the season."),
+    ("related", "BERVO:0002342", "1394 1679 1935 2703", "Per day rather than per year, usually a rate for part of the season."),
+    ("related", "BERVO:0002342", "1393 1678 1934 2446", EXPOSITION),
+    ("broader", "BERVO:0002344", "1379", ctx("Root")),
+    ("broader", "BERVO:0002344", "1664", ctx("Coarse root")),
+    ("broader", "BERVO:0002344", "1920", ctx("Fine root")),
+    ("broader", "BERVO:0002344", "2176", ctx("Absorptive fine root")),
+    ("match", "BERVO:0002511", "1401", ""),
+    ("broader", "BERVO:0002511", "1685", ctx("Coarse root")),
+    ("broader", "BERVO:0002511", "1941", ctx("Fine root")),
+    ("broader", "BERVO:0002511", "2197", ctx("Absorptive fine root")),
+    ("related", "BERVO:0002511", "1400 1940 2196", EXPOSITION),
+    ("broader", "BERVO:0002512", "1924", ctx("Fine root")),
+    ("broader", "BERVO:0002512", "2180", ctx("Absorptive fine root")),
+    ("broader", "BERVO:0002512", "2436", ctx("Transport fine root")),
+    ("broader", "BERVO:0001970", "1501", ctx("Root", "Dead vegetation") + DEPTH),
+    ("broader", "BERVO:0001970", "1762", ctx("Coarse root", "Dead vegetation") + DEPTH),
+    ("broader", "BERVO:0001970", "2018", ctx("Fine root", "Dead vegetation") + DEPTH),
+    ("broader", "BERVO:0001970", "2786", ctx("Belowground plant material", "Dead vegetation") + DEPTH),
+    ("broader", "BERVO:0002513", "1513", ctx("Root")),
+    ("broader", "BERVO:0002513", "1774", ctx("Coarse root")),
+    ("broader", "BERVO:0002513", "2030", ctx("Fine root")),
+    ("broader", "BERVO:0002513", "2798", ctx("Belowground plant material")),
+    ("broader", "BERVO:0002454", "2723", ctx("Belowground plant material")),
+    ("match", "BERVO:0002514", "938", ""),
+    ("related", "BERVO:0002514", "939", "Per unit leaf dry mass rather than area."),
+    ("match", "BERVO:0002515", "966", ""),
+    ("related", "BERVO:0002515", "967", "Per unit leaf dry mass rather than area."),
+    ("match", "BERVO:0002516", "1190", ""),
+    ("match", "BERVO:0002517", "1192", ""),
+    ("match", "BERVO:0002518", "734", ""),
+    ("related", "BERVO:0000529", "49", "EcoSIM's value for a plant functional type, as a concentration per unit volume rather than a mole fraction."),
+    ("related", "BERVO:0000542", "479", "EcoSIM resolves it by node, not by leaf or plant."),
+    ("broader", "BERVO:0002519", "442", ctx("Branch")),
+    ("broader", "BERVO:0002519", "2559", ctx("Belowground plant material")),
+    ("broader", "BERVO:0002520", "451", ctx("Branch")),
+    ("broader", "BERVO:0002520", "455", ctx("Coarse root")),
+    ("broader", "BERVO:0002520", "468", ctx("Fine root")),
+    ("broader", "BERVO:0002520", "501", ctx("Canopy")),
+    ("broader", "BERVO:0002520", "528", ctx("Stem")),
+    ("broader", "BERVO:0002521", "3120", ctx("Leaf")),
+    ("broader", "BERVO:0002521", "2887", ctx("Dead vegetation") + " Litter other than leaves: twigs, bark, flowers and the like."),
+    ("broader", "BERVO:0002522", "3122", ctx("Leaf")),
+    ("broader", "BERVO:0002522", "3863", ctx("Xylem", "Branch")),
+    ("broader", "BERVO:0002522", "3864", ctx("Bark", "Branch")),
 ]
 
 # The plant-functional-traits schema slot each TRY trait feeds
@@ -686,5 +749,7 @@ with open(OUT, "w", newline="", encoding="utf-8") as f:
             if concepts is None:
                 sys.exit(f"TRY trait {tid} is broader, but no CONTEXTS pattern names its organ: {name}")
             note = ctx(*concepts)
+            if name.endswith("concentration"):
+                note += DRY_BASIS
         w.writerow([tid, name, group, status, term, slot_of.get(tid, ""), note])
 print(f"wrote {OUT}", file=sys.stderr)

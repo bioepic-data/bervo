@@ -42,7 +42,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 46	Leaf thickness	Leaf	match	BERVO:0002394		
 47	Leaf dry mass per leaf fresh mass (leaf dry matter content, LDMC)	Leaf	match	BERVO:0002370	leaf_dry_matter_content	
 48	Leaf density (leaf tissue density, leaf dry mass per leaf volume)	Leaf	match	BERVO:0002395		
-49	Photosynthesis: intercellular CO2 concentration	Photosynthesis and gas exchange	gap			
+49	Photosynthesis: intercellular CO2 concentration	Photosynthesis and gas exchange	related	BERVO:0000529		EcoSIM's value for a plant functional type, as a concentration per unit volume rather than a mole fraction.
 50	Leaf nitrogen (N) content per leaf area	Leaf	match	BERVO:0002187		
 51	Leaf phosphorus (P) content per leaf area	Leaf	match	BERVO:0002383		
 52	Leaf potassium (K) content per leaf area	Leaf	gap			
@@ -359,7 +359,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 436	Crown (canopy) rainfall (water) interception	Crown and canopy	gap			
 437	Plant number of leaves	Whole plant	related	BERVO:0000773		The BERVO term comes from a per-branch EcoSIM variable.
 439	Plant respiration rate per plant nitrogen (N) content	Photosynthesis and gas exchange	gap			
-442	Branch respiration rate per branch dry mass	Twig, branch, shoot and bud	gap			
+442	Branch respiration rate per branch dry mass	Twig, branch, shoot and bud	broader	BERVO:0002519		Branch goes in contexts.
 443	Branch nitrogen (N) content per branch dry mass per leaf nitrogen (N) content per leaf dry mass (bra	Twig, branch, shoot and bud	gap			
 444	Branch respiration rate per branch nitrogen (N) content	Twig, branch, shoot and bud	gap			
 445	Branch respiration temperature dependence	Twig, branch, shoot and bud	gap			
@@ -368,11 +368,11 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 448	Branch dry mass per ground area	Twig, branch, shoot and bud	broader	BERVO:0001971		Branch goes in contexts.
 449	Plant biomass and allometry: Branch dry mass (alive, dead) per plant	Whole plant	gap			
 450	Branch nitrogen (N) content per branch dry mass	Twig, branch, shoot and bud	broader	BERVO:0002340		Branch goes in contexts.
-451	Branch nitrogen (N) content per ground area	Twig, branch, shoot and bud	gap			
+451	Branch nitrogen (N) content per ground area	Twig, branch, shoot and bud	broader	BERVO:0002520		Branch goes in contexts.
 452	Plant biomass and allometry: Branch nitrogen (N) content per plant	Whole plant	gap			
 453	Branch respiration rate per branch volume	Twig, branch, shoot and bud	gap			
 454	Leaf clumping factor	Leaf	gap			
-455	Coarse root nitrogen (N) content per ground area	Root	gap			
+455	Coarse root nitrogen (N) content per ground area	Root	broader	BERVO:0002520		Coarse root goes in contexts.
 456	Coarse root carbon (C) content per coarse root dry mass	Root	broader	BERVO:0002339		Coarse root goes in contexts.
 457	Coarse root dry mass per ground area	Root	broader	BERVO:0001970		Coarse root goes in contexts.
 458	Plant biomass and allometry: Coarse root dry mass per plant	Whole plant	gap			
@@ -381,7 +381,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 463	Root nitrogen (N) uptake rate per NPP	Root	gap			
 465	Plant biomass and allometry: Coarse root dry mass per plant dry mass	Whole plant	gap			
 466	Plant biomass and allometry: Fine root dry mass per plant dry mass	Whole plant	gap			
-468	Fine root nitrogen (N) content per ground area	Fine root	gap			
+468	Fine root nitrogen (N) content per ground area	Fine root	broader	BERVO:0002520		Fine root goes in contexts.
 469	Plant biomass and allometry: Fine root nitrogen (N) content per plant	Whole plant	gap			
 470	Plant biomass and allometry: Root mass fraction (fraction of root dry mass per whole plant dry mass)	Whole plant	gap			
 471	Fine root carbon (C) content per fine root dry mass	Fine root	broader	BERVO:0002339		Fine root goes in contexts.
@@ -390,7 +390,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 475	Fine root nitrogen (N) content per fine root dry mass	Fine root	broader	BERVO:0002340	root_nitrogen_content	Fine root goes in contexts.
 476	Stem sapwood volume per stem volume	Stem, wood and bark	gap			
 478	Plant biomass and allometry: Wood dry mass per plant dry mass	Whole plant	gap			
-479	Photosynthesis CO2 compensation point	Photosynthesis and gas exchange	gap			
+479	Photosynthesis CO2 compensation point	Photosynthesis and gas exchange	related	BERVO:0000542		EcoSIM resolves it by node, not by leaf or plant.
 480	Crown (canopy) ground area fraction covered by projected canopy	Crown and canopy	gap			
 481	Stomata conductance model parameter (Ball-Berry, Jarvis, Leuning)	Photosynthesis and gas exchange	gap			
 486	Photosynthesis electron transport capacity (Jmax) per leaf nitrogen (N) content (Farquhar model)	Photosynthesis and gas exchange	gap			
@@ -404,7 +404,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 498	Leaf mineral content per leaf dry mass	Leaf	gap			
 499	Leaf respiration coefficient: maintenance	Photosynthesis and gas exchange	gap			
 500	Leaf respiration rate in the dark per leaf nitrogen (N) content	Photosynthesis and gas exchange	gap			
-501	Crown (canopy) nitrogen (N) content per ground area	Crown and canopy	gap			
+501	Crown (canopy) nitrogen (N) content per ground area	Crown and canopy	broader	BERVO:0002520		Canopy goes in contexts.
 502	Plant biomass and allometry: Leaf nitrogen (N) content per plant	Whole plant	gap			
 503	Leaf protein content per leaf dry mass	Leaf	broader	BERVO:0002504		Leaf goes in contexts.
 504	Leaf Rubisco content per leaf area	Leaf	related	BERVO:0000562		The BERVO term is per unit leaf mass, not per leaf area.
@@ -429,7 +429,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 524	Stem dry mass per ground area	Stem, wood and bark	broader	BERVO:0001971		Stem goes in contexts.
 526	Stem sapwood carbon (C) content: empirical form factor for calculation	Stem, wood and bark	gap			
 527	Stem respiration growth coefficient	Stem, wood and bark	gap			
-528	Stem nitrogen (N) content per unit ground area	Stem, wood and bark	gap			
+528	Stem nitrogen (N) content per unit ground area	Stem, wood and bark	broader	BERVO:0002520		Stem goes in contexts.
 529	Plant biomass and allometry: Stem nitrogen (N) content per plant	Whole plant	gap			
 530	Stem surface area per stem dry mass	Stem, wood and bark	gap			
 531	Stem surface area per stem volume	Stem, wood and bark	gap			
@@ -495,7 +495,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 611	Seedling vigor	Seed, fruit and dispersal	gap			
 613	Plant vegetative reproduction: spread rate	Whole plant	gap			
 614	Fine root length per fine root dry mass (specific fine root length, SRL)	Fine root	broader	BERVO:0002374	specific_root_length	Fine root goes in contexts.
-615	Leaf pH	Leaf	gap			
+615	Leaf pH	Leaf	broader	BERVO:0002510		Leaf goes in contexts.
 616	Stem phosphorus (P) content per stem dry mass	Stem, wood and bark	broader	BERVO:0002380		Stem goes in contexts.
 617	Bark carbon (C) content per bark dry mass	Stem, wood and bark	broader	BERVO:0002339		Bark goes in contexts.
 618	Bark nitrogen (N) content per bark dry mass	Stem, wood and bark	broader	BERVO:0002340		Bark goes in contexts.
@@ -567,11 +567,11 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 690	Twig nitrogen (N) content per twig dry mass	Twig, branch, shoot and bud	broader	BERVO:0002340		Twig goes in contexts.
 691	Twig carbon content per twig dry mass	Twig, branch, shoot and bud	broader	BERVO:0002339		Twig goes in contexts.
 692	Twig lignin content per twig dry mass	Twig, branch, shoot and bud	broader	BERVO:0002485		Twig goes in contexts.
-693	Twig pH	Twig, branch, shoot and bud	gap			
+693	Twig pH	Twig, branch, shoot and bud	broader	BERVO:0002510		Twig goes in contexts.
 694	Twig carbon/nitrogen (C/N) ratio	Twig, branch, shoot and bud	broader	BERVO:0002055		Twig goes in contexts.
 695	Fine root dry mass per fine root fresh mass (fine root dry matter content; RDMC)	Fine root	broader	BERVO:0002411		Fine root goes in contexts.
 698	Fine root phosphorus (P) content per fine root dry mass	Fine root	broader	BERVO:0002380		Fine root goes in contexts.
-699	Fine root pH	Fine root	gap			
+699	Fine root pH	Fine root	broader	BERVO:0002510		Fine root goes in contexts.
 700	Plant biomass and allometry: Plant dry mass	Whole plant	gap			
 701	Shoot potassium (K) content per shoot dry mass	Twig, branch, shoot and bud	broader	BERVO:0002455		Shoot goes in contexts.
 702	Shoot magnesium (Mg) content per shoot dry mass	Twig, branch, shoot and bud	broader	BERVO:0002457		Shoot goes in contexts.
@@ -600,7 +600,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 731	Leaf anthocyanin content per leaf dry mass	Leaf	gap			
 732	Leaf chlorophyll content per leaf nitrogen (N) content	Leaf	related	BERVO:0002475		Per unit leaf nitrogen rather than dry mass.
 733	Stomata guard cell size	Photosynthesis and gas exchange	gap			
-734	Stomata pore length	Photosynthesis and gas exchange	gap			
+734	Stomata pore length	Photosynthesis and gas exchange	match	BERVO:0002518		
 735	Stomata pore area per leaf surface area (abaxial, adaxial, total)	Photosynthesis and gas exchange	gap			
 738	Leaf veins number of vein orders	Leaf	gap			
 739	Leaf veins number of veins on first order	Leaf	gap			
@@ -767,8 +767,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 935	Leaf herbivore species	Leaf	species_attribute			
 936	Leaf heterophylly	Leaf	gap			
 937	Leaf isoprene emission category	Photosynthesis and gas exchange	gap			
-938	Leaf isoprene emission rate per leaf area	Photosynthesis and gas exchange	gap			
-939	Leaf isoprene emission rate per leaf dry mass	Photosynthesis and gas exchange	gap			
+938	Leaf isoprene emission rate per leaf area	Photosynthesis and gas exchange	match	BERVO:0002514		
+939	Leaf isoprene emission rate per leaf dry mass	Photosynthesis and gas exchange	related	BERVO:0002514		Per unit leaf dry mass rather than area.
 940	Leaf length excluding petiole (leaf lamina length)	Leaf	related	BERVO:0002470		The length of the lamina alone, without the petiole.
 943	Litter (leaf) calcium (Ca) content per leaf litter dry mass	Litter and woody debris	broader	BERVO:0002456		Leaf and Dead vegetation go in contexts.
 944	Litter (leaf) carbon (C) content per leaf litter dry mass	Litter and woody debris	broader	BERVO:0002339		Leaf and Dead vegetation go in contexts.
@@ -792,8 +792,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 963	Leaf margin type	Leaf	gap			
 964	Leaf mesophyll conductance	Photosynthesis and gas exchange	gap			
 965	Leaf volatile organic carbon (VOC): monoterpene emission category	Photosynthesis and gas exchange	gap			
-966	Leaf volatile organic carbon (VOC): monoterpene emission rate per leaf area	Photosynthesis and gas exchange	gap			
-967	Leaf volatile organic carbon (VOC): monoterpene emission rate per leaf dry mass	Photosynthesis and gas exchange	gap			
+966	Leaf volatile organic carbon (VOC): monoterpene emission rate per leaf area	Photosynthesis and gas exchange	match	BERVO:0002515		
+967	Leaf volatile organic carbon (VOC): monoterpene emission rate per leaf dry mass	Photosynthesis and gas exchange	related	BERVO:0002515		Per unit leaf dry mass rather than area.
 968	Leaf nitrogen (N) fraction in ammonium (NH4+)	Leaf	gap			
 969	Leaf nitrogen (N) fraction in N2	Leaf	gap			
 970	Leaf nitrogen (N) fraction in nitrate (NO3-)	Leaf	gap			
@@ -988,7 +988,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1164	Coarse woody debris (CWD) stem: N-alkyl content per stem CWD	Litter and woody debris	gap			
 1165	Coarse woody debris (CWD) stem: nitrogen (N) content per stem CWD	Litter and woody debris	broader	BERVO:0002340		Coarse woody debris and Stem go in contexts. TRY leaves 'dry mass' out of the name, but the trait is the same content.
 1166	Coarse woody debris (CWD) stem: O-alkyl content per stem CWD	Litter and woody debris	gap			
-1167	Coarse woody debris (CWD) stem: pH	Litter and woody debris	gap			
+1167	Coarse woody debris (CWD) stem: pH	Litter and woody debris	broader	BERVO:0002510		Coarse woody debris and Stem go in contexts.
 1168	Coarse woody debris (CWD) stem: phenols content per stem CWD	Litter and woody debris	broader	BERVO:0002488		Coarse woody debris and Stem go in contexts. TRY leaves 'dry mass' out of the name, but the trait is the same content.
 1169	Coarse woody debris (CWD) stem: phosphorus (P) content per stem CWD	Litter and woody debris	broader	BERVO:0002380		Coarse woody debris and Stem go in contexts. TRY leaves 'dry mass' out of the name, but the trait is the same content.
 1170	Coarse woody debris (CWD) stem: potassium (K) content per stem CWD	Litter and woody debris	broader	BERVO:0002455		Coarse woody debris and Stem go in contexts. TRY leaves 'dry mass' out of the name, but the trait is the same content.
@@ -1007,9 +1007,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1187	Stem longevity	Stem, wood and bark	gap			
 1188	Stem self-supporting	Stem, wood and bark	gap			
 1189	Stem surface patterning	Stem, wood and bark	gap			
-1190	Stomata length	Photosynthesis and gas exchange	gap			
+1190	Stomata length	Photosynthesis and gas exchange	match	BERVO:0002516		
 1191	Stomata surface area	Photosynthesis and gas exchange	gap			
-1192	Stomata width	Photosynthesis and gas exchange	gap			
+1192	Stomata width	Photosynthesis and gas exchange	match	BERVO:0002517		
 1193	Tiller density: number of tiller per ground area	Stem, wood and bark	gap			
 1194	Tillering type	Stem, wood and bark	gap			
 1195	Wood xylem torus diameter	Stem, wood and bark	gap			
@@ -1122,15 +1122,15 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1367	Root decomposition: fraction of root dry mass not decomposed to original root dry mass	Root	broader	BERVO:0002493		Root and Dead vegetation go in contexts.
 1372	Root lifespan: fraction of roots that live to the age in “root age”	Root	gap			
 1375	Root lifespan: fraction of root tips that survive after one year	Root	gap			
-1379	Root mortality: root dry mass mortality per ground area and time	Root	gap			
+1379	Root mortality: root dry mass mortality per ground area and time	Root	broader	BERVO:0002344		Root goes in contexts.
 1389	Root length relative growth rate	Root	gap			
-1390	Root growth: root carbon (C) production per ground area and time	Root	gap			
-1391	Root growth: root dry mass production per ground area per year	Root	gap			
-1392	Root growth: root dry mass production per ground area per month	Root	gap			
-1393	Root growth: root dry mass production per ground area per duration of exposition	Root	gap			
-1394	Root growth: root dry mass production per ground area per day	Root	gap			
-1400	Root growth: root length production per ground area per exposition period	Root	gap			
-1401	Root growth: root length production per ground area per year	Root	gap			
+1390	Root growth: root carbon (C) production per ground area and time	Root	related	BERVO:0002342		Carbon production, which the term's g{C} unit covers, but TRY gives no time base, so it may be a rate for part of a season rather than per year.
+1391	Root growth: root dry mass production per ground area per year	Root	broader	BERVO:0002342		Root goes in contexts.
+1392	Root growth: root dry mass production per ground area per month	Root	related	BERVO:0002342		Per month rather than per year, usually a rate for part of the season.
+1393	Root growth: root dry mass production per ground area per duration of exposition	Root	related	BERVO:0002342		Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the value, rather than a year.
+1394	Root growth: root dry mass production per ground area per day	Root	related	BERVO:0002342		Per day rather than per year, usually a rate for part of the season.
+1400	Root growth: root length production per ground area per exposition period	Root	related	BERVO:0002511		Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the value, rather than a year.
+1401	Root growth: root length production per ground area per year	Root	match	BERVO:0002511		
 1407	Root growth: amplitude of monthly net root production	Root	gap			
 1408	Root growth: probability that monthly net root production is greater than 0	Root	gap			
 1410	Root growth rate: fine root length production per day per coarse root length	Root	gap			
@@ -1183,7 +1183,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1494	Root dry mass per soil volume	Root	gap			
 1495	Root species abundance: fraction of total root dry mass composed of respective species	Root	gap			
 1498	Root carbon (C) content per ground area	Root	gap			
-1501	Root necromass (dead dry mass) per ground area for specified soil depth increment	Root	gap			
+1501	Root necromass (dead dry mass) per ground area for specified soil depth increment	Root	broader	BERVO:0001970		Root and Dead vegetation go in contexts. The soil depth increment goes with the value.
 1502	Root nitrogen (N) per ground area	Root	gap			
 1504	Plant biomass and allometry: Root length ratio (RLR): root length per plant dry mass	Whole plant	gap			
 1506	Root length fraction belonging to species	Root	gap			
@@ -1192,7 +1192,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1509	Plant biomass and allometry: Root length per plant	Whole plant	gap			
 1510	Root length per minirhizotron screen area	Root	gap			
 1512	Root rooting depth: fraction of root dry mass contained in depth interval	Root	gap			
-1513	Root necromass to biomass ratio	Root	gap			
+1513	Root necromass to biomass ratio	Root	broader	BERVO:0002513		Root goes in contexts.
 1514	Root tip fraction in diameter class	Root	gap			
 1515	Root length per length of higher order root (root branching architecture)	Root	gap			
 1517	Root cross-sectional area ratio of stele to cortex	Root	gap			
@@ -1248,14 +1248,14 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1646	Coarse root ratio of vanillyl phenol to lignin phenol	Root	gap			
 1653	Coarse root decomposition: fraction of coarse root dry mass not decomposed to original coarse root d	Root	broader	BERVO:0002493		Coarse root and Dead vegetation go in contexts.
 1658	Coarse root lifespan: fraction of coarse roots that live to the age in “coarse root age”	Root	gap			
-1664	Coarse root mortality: coarse root dry mass mortality per ground area and time	Root	gap			
-1675	Coarse root growth: coarse root carbon (C) production per ground area and time	Root	gap			
-1676	Coarse root growth: coarse root dry mass production per ground area per year	Root	gap			
-1678	Coarse root growth: coarse root dry mass production per ground area per duration of exposition	Root	gap			
-1679	Coarse root growth: coarse root dry mass production per ground area per day	Root	gap			
+1664	Coarse root mortality: coarse root dry mass mortality per ground area and time	Root	broader	BERVO:0002344		Coarse root goes in contexts.
+1675	Coarse root growth: coarse root carbon (C) production per ground area and time	Root	related	BERVO:0002342		Carbon production, which the term's g{C} unit covers, but TRY gives no time base, so it may be a rate for part of a season rather than per year.
+1676	Coarse root growth: coarse root dry mass production per ground area per year	Root	broader	BERVO:0002342		Coarse root goes in contexts.
+1678	Coarse root growth: coarse root dry mass production per ground area per duration of exposition	Root	related	BERVO:0002342		Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the value, rather than a year.
+1679	Coarse root growth: coarse root dry mass production per ground area per day	Root	related	BERVO:0002342		Per day rather than per year, usually a rate for part of the season.
 1681	Coarse root growth: fraction of coarse root number that has elongated since last measurement to tota	Root	gap			
 1682	Coarse root growth: coarse root elongation	Root	gap			
-1685	Coarse root growth: coarse root length production per ground area per year	Root	gap			
+1685	Coarse root growth: coarse root length production per ground area per year	Root	broader	BERVO:0002511		Coarse root goes in contexts.
 1694	Coarse root growth: coarse root surface area produced per ground area per year	Root	gap			
 1698	Coarse root dry mass turnover	Root	gap			
 1699	Coarse root dry mass turnover rate	Root	broader	BERVO:0002454		Coarse root goes in contexts.
@@ -1269,13 +1269,13 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1757	Coarse root dry mass per soil volume	Root	gap			
 1759	Coarse root density on screen: number of coarse roots per area of in-growth screen	Root	gap			
 1761	Coarse root carbon (C) content per ground area	Root	gap			
-1762	Coarse root necromass (dead dry mass) per ground area for specified soil depth increment	Root	gap			
+1762	Coarse root necromass (dead dry mass) per ground area for specified soil depth increment	Root	broader	BERVO:0001970		Coarse root and Dead vegetation go in contexts. The soil depth increment goes with the value.
 1768	Coarse root length density (RLD): coarse root length per ground area	Root	gap			
 1769	Coarse root length per soil volume	Root	gap			
 1770	Plant biomass and allometry: Coarse root length per plant	Whole plant	gap			
 1772	Coarse root volume per ground area	Root	gap			
 1773	Coarse root rooting depth: fraction of coarse root dry mass contained in depth interval	Root	gap			
-1774	Coarse root necromass to biomass ratio	Root	gap			
+1774	Coarse root necromass to biomass ratio	Root	broader	BERVO:0002513		Coarse root goes in contexts.
 1775	Coarse root debris decomposition rate constant	Root	broader	BERVO:0002491		Coarse root and Dead vegetation go in contexts.
 1776	Coarse root lignin phenol vegetation index	Root	gap			
 1777	Fine root rooting depth	Fine root	broader	BERVO:0002418		Fine root goes in contexts.
@@ -1378,28 +1378,28 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1917	Litter (fine root) decomposition: fine root dry mass decomposed per soil volume and time	Litter and woody debris	gap			
 1918	Fine root mortality: fine root dry mass mortality per soil volume and time	Fine root	gap			
 1919	Litter (fine root) decomposition: fine root length decomposed per ground area during exposition	Litter and woody debris	gap			
-1920	Fine root mortality: fine root dry mass mortality per ground area and time	Fine root	gap			
+1920	Fine root mortality: fine root dry mass mortality per ground area and time	Fine root	broader	BERVO:0002344		Fine root goes in contexts.
 1921	Fine root mortality: fine root length mortality per minirhizotron frame and time	Fine root	gap			
 1922	Fine root mortality: fine root length mortality per minirhizotron surface per day	Fine root	gap			
 1923	Fine root mortality: fine root length mortality per minirhizotron surface per year	Fine root	gap			
-1924	Fine root mortality: fine root length mortality per ground area and year	Fine root	gap			
+1924	Fine root mortality: fine root length mortality per ground area and year	Fine root	broader	BERVO:0002512		Fine root goes in contexts.
 1925	Fine root mortality: fine root number mortality per in-growth screen area and time	Fine root	gap			
 1926	Fine root mortality: fraction of fine root screen contacts lost during exposition	Fine root	gap			
 1927	Fine root growth: cumulative new fine root length growth per ground area per exposition period	Fine root	gap			
 1928	Fine root growth: new fine root length growth per ground area per year	Fine root	gap			
 1929	Fine root growth: relative fine root production: ratio fine root production rate at given time to ma	Fine root	gap			
 1930	Fine root length relative growth rate	Fine root	gap			
-1931	Fine root growth: fine root carbon (C) production per ground area and time	Fine root	gap			
-1932	Fine root growth: fine root dry mass production per ground area per year	Fine root	gap			
-1933	Fine root growth: fine root dry mass production per ground area per month	Fine root	gap			
-1934	Fine root growth: fine root dry mass production per ground area per duration of exposition	Fine root	gap			
-1935	Fine root growth: fine root dry mass production per ground area per day	Fine root	gap			
+1931	Fine root growth: fine root carbon (C) production per ground area and time	Fine root	related	BERVO:0002342		Carbon production, which the term's g{C} unit covers, but TRY gives no time base, so it may be a rate for part of a season rather than per year.
+1932	Fine root growth: fine root dry mass production per ground area per year	Fine root	broader	BERVO:0002342		Fine root goes in contexts.
+1933	Fine root growth: fine root dry mass production per ground area per month	Fine root	related	BERVO:0002342		Per month rather than per year, usually a rate for part of the season.
+1934	Fine root growth: fine root dry mass production per ground area per duration of exposition	Fine root	related	BERVO:0002342		Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the value, rather than a year.
+1935	Fine root growth: fine root dry mass production per ground area per day	Fine root	related	BERVO:0002342		Per day rather than per year, usually a rate for part of the season.
 1936	Fine root growth: fine root dry mass production per soil volume and time	Fine root	gap			
 1937	Fine root growth: fraction of fine root number that has elongated since last measurement to total nu	Fine root	gap			
 1938	Fine root growth: fine root elongation	Fine root	gap			
 1939	Fine root growth: fine root length production per minirhizotron frame per exposition period	Fine root	gap			
-1940	Fine root growth: fine root length production per ground area per exposition period	Fine root	gap			
-1941	Fine root growth: fine root length production per ground area per year	Fine root	gap			
+1940	Fine root growth: fine root length production per ground area per exposition period	Fine root	related	BERVO:0002511		Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the value, rather than a year.
+1941	Fine root growth: fine root length production per ground area per year	Fine root	broader	BERVO:0002511		Fine root goes in contexts.
 1942	Fine root growth: fine root length production per minirhizotron surface area per day	Fine root	gap			
 1943	Fine root growth: fine root length production per minirhizotron surface area per year	Fine root	gap			
 1945	Fine root growth: number of fine roots born per area of in-growth screen per time	Fine root	gap			
@@ -1449,7 +1449,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2015	Fine root density on screen: number of fine roots per area of in-growth screen	Fine root	gap			
 2016	Fine root carbon content per soil dry mass	Fine root	gap			
 2017	Fine root carbon content per ground area	Fine root	gap			
-2018	Fine root necromass (dead dry mass) per ground area for specified soil depth increment	Fine root	gap			
+2018	Fine root necromass (dead dry mass) per ground area for specified soil depth increment	Fine root	broader	BERVO:0001970		Fine root and Dead vegetation go in contexts. The soil depth increment goes with the value.
 2020	Fine root nitrogen (N) content per soil dry mass	Fine root	gap			
 2021	Plant biomass and allometry: Fine root length ratio (RLR): fine root length per plant dry mass	Whole plant	gap			
 2022	Fine root length per minirhizotron frame	Fine root	gap			
@@ -1459,7 +1459,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2027	Fine root length per minirhizotron screen area	Fine root	gap			
 2028	Fine root volume per ground area	Fine root	gap			
 2029	Fine root rooting depth: fraction of fine root dry mass contained in depth interval	Fine root	gap			
-2030	Fine root necromass to biomass ratio	Fine root	gap			
+2030	Fine root necromass to biomass ratio	Fine root	broader	BERVO:0002513		Fine root goes in contexts.
 2031	Fine root debris decomposition rate constant	Fine root	broader	BERVO:0002491		Fine root and Dead vegetation go in contexts.
 2034	Fine root (absorptive)/shoot ratio	Fine root	broader	BERVO:0002414		Absorptive fine root goes in contexts.
 2035	Fine root (absorptive) nitrogen (N) content per absorptive fine root dry mass	Fine root	broader	BERVO:0002340		Absorptive fine root goes in contexts.
@@ -1545,14 +1545,14 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2170	Fine root (absorptive) lifespan: fraction of absorptive fine roots that live to the age in “absorpti	Fine root	gap			
 2171	Fine root (absorptive) lifespan: fraction of absorptive fine roots that survive over the course of a	Fine root	gap			
 2175	Fine root (absorptive) decomposition: absorptive fine root length decomposed per ground area during	Fine root	gap			
-2176	Fine root (absorptive) mortality: absorptive fine root dry mass mortality per ground area and time	Fine root	gap			
-2180	Fine root (absorptive) mortality: absorptive fine root length mortality per ground area and year	Fine root	gap			
+2176	Fine root (absorptive) mortality: absorptive fine root dry mass mortality per ground area and time	Fine root	broader	BERVO:0002344		Absorptive fine root goes in contexts.
+2180	Fine root (absorptive) mortality: absorptive fine root length mortality per ground area and year	Fine root	broader	BERVO:0002512		Absorptive fine root goes in contexts.
 2186	Fine root (absorptive) length relative growth rate	Fine root	gap			
-2188	Fine root (absorptive) growth: absorptive fine root dry mass production per ground area per year	Fine root	gap			
+2188	Fine root (absorptive) growth: absorptive fine root dry mass production per ground area per year	Fine root	broader	BERVO:0002342		Absorptive fine root goes in contexts.
 2193	Fine root (absorptive) growth: fraction of absorptive fine root number that has elongated since last	Fine root	gap			
 2194	Fine root (absorptive) growth: absorptive fine root elongation	Fine root	gap			
-2196	Fine root (absorptive) growth: absorptive fine root length production per ground area per exposition	Fine root	gap			
-2197	Fine root (absorptive) growth: absorptive fine root length production per ground area per year	Fine root	gap			
+2196	Fine root (absorptive) growth: absorptive fine root length production per ground area per exposition	Fine root	related	BERVO:0002511		Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the value, rather than a year.
+2197	Fine root (absorptive) growth: absorptive fine root length production per ground area per year	Fine root	broader	BERVO:0002511		Absorptive fine root goes in contexts.
 2199	Fine root (absorptive) growth: absorptive fine root length production per minirhizotron surface area	Fine root	gap			
 2204	Fine root (absorptive) growth: absorptive fine root length recovery from pruning	Fine root	gap			
 2210	Fine root (absorptive) dry mass turnover	Fine root	gap			
@@ -1619,9 +1619,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2390	Fine root (transport) carbon (C) content not hydrolyzable in acid extractives per transport fine roo	Fine root	broader	BERVO:0002508		Transport fine root goes in contexts.
 2403	Fine root (transport) water soluble sugar content per transport fine root dry mass	Fine root	broader	BERVO:0002497		Transport fine root goes in contexts.
 2421	Fine root (transport) decomposition: fraction of transport fine root dry mass not decomposed to orig	Fine root	broader	BERVO:0002493		Transport fine root and Dead vegetation go in contexts.
-2436	Fine root (transport) mortality: transport fine root length mortality per ground area and year	Fine root	gap			
-2444	Fine root (transport) growth: transport fine root dry mass production per ground area per year	Fine root	gap			
-2446	Fine root (transport) growth: transport fine root dry mass production per ground area per duration o	Fine root	gap			
+2436	Fine root (transport) mortality: transport fine root length mortality per ground area and year	Fine root	broader	BERVO:0002512		Transport fine root goes in contexts.
+2444	Fine root (transport) growth: transport fine root dry mass production per ground area per year	Fine root	broader	BERVO:0002342		Transport fine root goes in contexts.
+2446	Fine root (transport) growth: transport fine root dry mass production per ground area per duration o	Fine root	related	BERVO:0002342		Over the exposure period of an ingrowth core or minirhizotron, whose length goes with the value, rather than a year.
 2455	Fine root (transport) growth: transport fine root length production per minirhizotron surface area p	Fine root	gap			
 2467	Fine root (transport) dry mass turnover rate	Fine root	broader	BERVO:0002454		Transport fine root goes in contexts.
 2486	Fine root (transport) length: distance from transport fine root base to tip	Fine root	gap			
@@ -1645,7 +1645,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2553	Belowground plant organ cellulose content per belowground plant organ dry mass	Root	broader	BERVO:0002486		Belowground plant material goes in contexts.
 2555	Plant biomass and allometry: Belowground plant organ dry mass per plant	Whole plant	gap			
 2557	Belowground plant organ nitrogen (N) uptake rate	Root	gap			
-2559	Belowground plant organ respiration rate per belowground plant organ dry mass	Root	gap			
+2559	Belowground plant organ respiration rate per belowground plant organ dry mass	Root	broader	BERVO:0002519		Belowground plant material goes in contexts.
 2561	Belowground plant organ phosphorus (P) content per belowground plant organ dry mass	Root	broader	BERVO:0002380		Belowground plant material goes in contexts.
 2562	Belowground plant organ dry mass per belowground plant organ fresh mass (belowground plant organ dry	Root	gap			
 2563	Belowground plant organ dry mass per ground area	Root	broader	BERVO:0001970		Belowground plant material goes in contexts.
@@ -1669,18 +1669,18 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2659	Belowground plant organ water soluble sugar content per belowground plant organ dry mass	Root	broader	BERVO:0002497		Belowground plant material goes in contexts.
 2666	Belowground plant organ ratio of lignin to nitrogen (N)	Root	broader	BERVO:0002492		Belowground plant material goes in contexts.
 2677	Belowground plant organ decomposition: fraction of belowground plant organ dry mass not decomposed t	Root	broader	BERVO:0002493		Belowground plant material and Dead vegetation go in contexts.
-2700	Belowground plant organ growth: belowground plant organ dry mass production per ground area per year	Root	gap			
-2703	Belowground plant organ growth: belowground plant organ dry mass production per ground area per day	Root	gap			
+2700	Belowground plant organ growth: belowground plant organ dry mass production per ground area per year	Root	match	BERVO:0002342		
+2703	Belowground plant organ growth: belowground plant organ dry mass production per ground area per day	Root	related	BERVO:0002342		Per day rather than per year, usually a rate for part of the season.
 2717	Belowground plant organ growth: fraction of belowground plant organs recovering from pruning	Root	gap			
 2720	Belowground plant organ annual loss of nitrogen (N) through belowground plant organ mortality as a f	Root	gap			
 2721	Belowground plant organ annual loss of nitrogen (N) through belowground plant organ mortality as a f	Root	gap			
-2723	Belowground plant organ dry mass turnover rate	Root	gap			
+2723	Belowground plant organ dry mass turnover rate	Root	broader	BERVO:0002454		Belowground plant material goes in contexts.
 2756	Belowground plant organ nitrogen (N) uptake per ground area per year	Root	gap			
 2771	Belowground plant organ dry mass to leaf dry mass ratio	Root	gap			
 2773	Plant biomass and allometry: Belowground plant organ mass fraction (fraction of belowground plant or	Whole plant	gap			
-2786	Belowground plant organ necromass (dead dry mass) per ground area for specified soil depth increment	Root	gap			
+2786	Belowground plant organ necromass (dead dry mass) per ground area for specified soil depth increment	Root	broader	BERVO:0001970		Belowground plant material and Dead vegetation go in contexts. The soil depth increment goes with the value.
 2787	Belowground plant organ nitrogen (N) per ground area	Root	gap			
-2798	Belowground plant organ necromass to biomass ratio	Root	gap			
+2798	Belowground plant organ necromass to biomass ratio	Root	broader	BERVO:0002513		Belowground plant material goes in contexts.
 2799	Belowground plant organ debris decomposition rate constant	Root	broader	BERVO:0002491		Belowground plant material and Dead vegetation go in contexts.
 2803	Fine root rooting depth where most of the root activity of interest occurs	Fine root	gap			
 2807	Seedbank number of layers	Seed, fruit and dispersal	gap			
@@ -1704,7 +1704,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2884	Litter (other than leaf: twigs, bark, flowers…) C/N ratio	Litter and woody debris	broader	BERVO:0002055		Dead vegetation goes in contexts.
 2885	Litter (other than leaf: twigs, bark, flowers...) lignin content per litter dry mass	Litter and woody debris	broader	BERVO:0002485		Dead vegetation goes in contexts.
 2886	Litter (other than leaf: twigs, bark, flowers...) lignin/nitrogen (N) ratio	Litter and woody debris	broader	BERVO:0002492		Dead vegetation goes in contexts. Litter other than leaves: twigs, bark, flowers and the like.
-2887	Litter (other than leaf: twigs, bark, flowers...) water content per litter dry mass	Litter and woody debris	gap			
+2887	Litter (other than leaf: twigs, bark, flowers...) water content per litter dry mass	Litter and woody debris	broader	BERVO:0002521		Dead vegetation goes in contexts. Litter other than leaves: twigs, bark, flowers and the like.
 2888	Litter (other than leaf: twigs, bark, flowers…) cellulose content per litter dry mass	Litter and woody debris	broader	BERVO:0002486		Dead vegetation goes in contexts.
 2890	Litter other than leaf phosphorus (P) content per litter dry mass	Litter and woody debris	broader	BERVO:0002380		Dead vegetation goes in contexts.
 2891	Litter (other than leaf: twigs, bark, flowers...) potassium (K) content per litter dry mass	Litter and woody debris	broader	BERVO:0002455		Dead vegetation goes in contexts.
@@ -1893,9 +1893,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3117	Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): undefined if petiole is in- or exclu	Leaf	match	BERVO:0002369	specific_leaf_area	TRY variants differ in whether the petiole, rhachis and midrib are included.
 3118	Plant height: coefficient of variation of plant height	Whole plant	gap			
 3119	Plant height: %trees > 6m	Whole plant	gap			
-3120	Leaf water content per leaf dry mass (not saturated)	Leaf	gap			
+3120	Leaf water content per leaf dry mass (not saturated)	Leaf	broader	BERVO:0002521		Leaf goes in contexts.
 3121	Leaf water content per leaf dry mass missing to leaf water saturation	Leaf	gap			
-3122	Leaf water content per leaf dry mass (at saturation)	Leaf	gap			
+3122	Leaf water content per leaf dry mass (at saturation)	Leaf	broader	BERVO:0002522		Leaf goes in contexts.
 3123	Seed germination rate per day (maximum)	Seed, fruit and dispersal	gap			
 3124	Shoot: plant aboveground woody biomass per ground area	Twig, branch, shoot and bud	broader	BERVO:0001971		Wood goes in contexts.
 3125	Plant biomass and allometry: Leaf petiole dry mass per plant	Whole plant	gap			
@@ -2327,12 +2327,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3725	Twig total bark thickness	Twig, branch, shoot and bud	gap			
 3726	Twig inner bark thickness	Twig, branch, shoot and bud	gap			
 3727	Photosynthesis: twig photosynthetic bark	Photosynthesis and gas exchange	gap			
-3728	Twig inner bark soluble sugar concentration	Twig, branch, shoot and bud	broader	BERVO:0002497		Inner bark and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3729	Twig wood soluble sugar concentration	Twig, branch, shoot and bud	broader	BERVO:0002497		Wood and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3730	Twig inner bark starch concentration	Twig, branch, shoot and bud	broader	BERVO:0002490		Inner bark and Twig go in contexts.
-3731	Twig wood starch concentration	Twig, branch, shoot and bud	broader	BERVO:0002490		Wood and Twig go in contexts.
-3732	Twig inner bark total non-structural carbohydrate concentration	Twig, branch, shoot and bud	broader	BERVO:0002489		Inner bark and Twig go in contexts.
-3733	Twig wood total non-structural carbohydrate concentration	Twig, branch, shoot and bud	broader	BERVO:0002489		Wood and Twig go in contexts.
+3728	Twig inner bark soluble sugar concentration	Twig, branch, shoot and bud	broader	BERVO:0002497		Inner bark and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3729	Twig wood soluble sugar concentration	Twig, branch, shoot and bud	broader	BERVO:0002497		Wood and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3730	Twig inner bark starch concentration	Twig, branch, shoot and bud	broader	BERVO:0002490		Inner bark and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3731	Twig wood starch concentration	Twig, branch, shoot and bud	broader	BERVO:0002490		Wood and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3732	Twig inner bark total non-structural carbohydrate concentration	Twig, branch, shoot and bud	broader	BERVO:0002489		Inner bark and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3733	Twig wood total non-structural carbohydrate concentration	Twig, branch, shoot and bud	broader	BERVO:0002489		Wood and Twig go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
 3734	Twig total bark density	Twig, branch, shoot and bud	gap			
 3735	Twig inner bark density	Twig, branch, shoot and bud	gap			
 3736	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: twig	Stem, wood and bark	broader	BERVO:0002371		Twig goes in contexts.
@@ -2341,12 +2341,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3739	Coarse root total bark thickness	Root	gap			
 3740	Coarse root inner bark thickness	Root	gap			
 3741	Coarse root photosynthetic bark	Root	gap			
-3742	Coarse root inner bark soluble sugar concentration	Root	broader	BERVO:0002497		Inner bark and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3743	Coarse root wood soluble sugar concentration	Root	broader	BERVO:0002497		Wood and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3744	Coarse root inner bark starch concentration	Root	broader	BERVO:0002490		Inner bark and Coarse root go in contexts.
-3745	Coarse root wood starch concentration	Root	broader	BERVO:0002490		Wood and Coarse root go in contexts.
-3746	Coarse root inner bark total non-structural carbohydrate concentration	Root	broader	BERVO:0002489		Inner bark and Coarse root go in contexts.
-3747	Coarse root wood total non-structural carbohydrate concentration	Root	broader	BERVO:0002489		Wood and Coarse root go in contexts.
+3742	Coarse root inner bark soluble sugar concentration	Root	broader	BERVO:0002497		Inner bark and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3743	Coarse root wood soluble sugar concentration	Root	broader	BERVO:0002497		Wood and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3744	Coarse root inner bark starch concentration	Root	broader	BERVO:0002490		Inner bark and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3745	Coarse root wood starch concentration	Root	broader	BERVO:0002490		Wood and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3746	Coarse root inner bark total non-structural carbohydrate concentration	Root	broader	BERVO:0002489		Inner bark and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3747	Coarse root wood total non-structural carbohydrate concentration	Root	broader	BERVO:0002489		Wood and Coarse root go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
 3748	Coarse root total bark density	Root	gap			
 3749	Coarse root inner bark density	Root	gap			
 3750	Coarse root wood density	Root	gap			
@@ -2355,12 +2355,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3753	Stem total bark thickness	Stem, wood and bark	match	BERVO:0002438		
 3754	Stem inner bark thickness	Stem, wood and bark	broader	BERVO:0002438		Inner bark goes in contexts.
 3755	Photosynthesis: stem photosynthetic bark	Photosynthesis and gas exchange	gap			
-3756	Stem inner bark soluble sugar concentration	Stem, wood and bark	broader	BERVO:0002497		Inner bark and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3757	Stem wood soluble sugar concentration	Stem, wood and bark	broader	BERVO:0002497		Wood and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual one for wood and bark, is assumed.
-3758	Stem inner bark starch concentration	Stem, wood and bark	broader	BERVO:0002490		Inner bark and Stem go in contexts.
-3759	Stem wood starch concentration	Stem, wood and bark	broader	BERVO:0002490		Wood and Stem go in contexts.
-3760	Stem inner bark total non-structural carbohydrate concentration	Stem, wood and bark	broader	BERVO:0002489		Inner bark and Stem go in contexts.
-3761	Stem wood total non-structural carbohydrate concentration	Stem, wood and bark	broader	BERVO:0002489		Wood and Stem go in contexts.
+3756	Stem inner bark soluble sugar concentration	Stem, wood and bark	broader	BERVO:0002497		Inner bark and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3757	Stem wood soluble sugar concentration	Stem, wood and bark	broader	BERVO:0002497		Wood and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3758	Stem inner bark starch concentration	Stem, wood and bark	broader	BERVO:0002490		Inner bark and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3759	Stem wood starch concentration	Stem, wood and bark	broader	BERVO:0002490		Wood and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3760	Stem inner bark total non-structural carbohydrate concentration	Stem, wood and bark	broader	BERVO:0002489		Inner bark and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
+3761	Stem wood total non-structural carbohydrate concentration	Stem, wood and bark	broader	BERVO:0002489		Wood and Stem go in contexts. TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed.
 3762	Stem total bark density	Stem, wood and bark	match	BERVO:0002439		
 3763	Stem inner bark density	Stem, wood and bark	broader	BERVO:0002439		Inner bark goes in contexts.
 3764	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: stem	Stem, wood and bark	match	BERVO:0002371	stem_specific_density	
@@ -2461,8 +2461,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3860	Leaf protein class 3: sub groups	Leaf	gap			
 3861	Metamer dry mass	Whole plant	gap			
 3862	Metamer width	Whole plant	gap			
-3863	Branch xylem water content per dry mass (saturated)	Twig, branch, shoot and bud	gap			
-3864	Branch bark water content per dry mass (saturated)	Twig, branch, shoot and bud	gap			
+3863	Branch xylem water content per dry mass (saturated)	Twig, branch, shoot and bud	broader	BERVO:0002522		Xylem and Branch go in contexts.
+3864	Branch bark water content per dry mass (saturated)	Twig, branch, shoot and bud	broader	BERVO:0002522		Bark and Branch go in contexts.
 3865	Flower calyx color	Flower and reproduction	gap			
 3866	Flower corolla color	Flower and reproduction	gap			
 3867	Diaspore color	Seed, fruit and dispersal	gap			
