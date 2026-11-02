@@ -34530,7 +34530,7 @@
         <oboInOwl:hasExactSynonym>plant C:N mass ratio</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Plant carbon/nitrogen (C/N) ratio</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_CN_RATIO, AG_LIT_CN_RATIO, ROOT_CN_RATIO. Organ and status go in contexts. TRY trait ID: 1021. TRY traits mapped here, with what narrows each one in contexts: 146, 150, 165, 166, 167, 409, 432, 694, 830, 842, 899, 945, 1055, 1059, 1154, 1260, 1545, 2057, 2313, 2569, 2884.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_CN_RATIO, AG_LIT_CN_RATIO, ROOT_CN_RATIO. Organ and status go in contexts. TRY trait ID: 1021. TRY traits mapped here, with what narrows each one in contexts: 146, 150, 165, 166, 167, 409, 432, 694, 830, 842, 899, 945, 1055, 1059, 1154, 1260, 1545, 2057, 2313, 2569, 2884, 3703, 3711.</rdfs:comment>
         <rdfs:label>Plant tissue carbon to nitrogen mass ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000917"/>
         <bervo:BERVO_has_unit>g{C}.g-1{N}</bervo:BERVO_has_unit>
@@ -40092,6 +40092,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002370 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002370">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002528"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Oven-dry mass of a leaf divided by its water-saturated fresh mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>LDMC</oboInOwl:hasExactSynonym>
@@ -40865,6 +40866,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002411 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002411">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002528"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
         <obo:IAO_0000115>Oven-dry mass of a root divided by its water-saturated fresh mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>RDMC</oboInOwl:hasExactSynonym>
@@ -41370,7 +41372,7 @@
         <oboInOwl:hasExactSynonym>total bark thickness</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Stem total bark thickness</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait IDs: 24, 3753. TRY traits mapped here, with what narrows each one in contexts: 3355, 3356, 3754. Usually measured at breast height on trees.</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 24, 3753. TRY traits mapped here, with what narrows each one in contexts: 3355, 3356, 3725, 3726, 3754, 3815, 3844, 3845. Usually measured at breast height on trees.</rdfs:comment>
         <rdfs:label>Bark thickness</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
         <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
@@ -41389,7 +41391,7 @@
         <oboInOwl:hasRelatedSynonym>Bark density (bark dry mass per bark volume)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Stem total bark density</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait IDs: 248, 3762. TRY traits mapped here, with what narrows each one in contexts: 3763, 3846. Stem specific density (BERVO:0002371) is the same measure for the wood.</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 248, 3762. TRY traits mapped here, with what narrows each one in contexts: 3734, 3735, 3763, 3846. Stem specific density (BERVO:0002371) is the same measure for the wood.</rdfs:comment>
         <rdfs:label>Bark density</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
         <bervo:BERVO_has_unit>g.cm-3</bervo:BERVO_has_unit>
@@ -41403,6 +41405,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002440 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002440">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002528"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Oven-dry mass of a stem divided by its fresh mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>StDMC</oboInOwl:hasExactSynonym>
@@ -42839,7 +42842,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of water in a plant tissue per unit of its dry mass, at the hydration at which it was sampled.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 2887, 3120. Organ and status go in contexts; litter is Dead vegetation. Distinct from Plant tissue saturated water content (BERVO:0002522), at full hydration, from Leaf relative water content (BERVO:0002403), a fraction of the saturated content, and from the EcoSIM Leaf water content (BERVO:0000176), per unit carbon.</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 2887, 3120, 3554. Organ and status go in contexts; litter is Dead vegetation. Distinct from Plant tissue saturated water content (BERVO:0002522), at full hydration, from Leaf relative water content (BERVO:0002403), a fraction of the saturated content, and from the EcoSIM Leaf water content (BERVO:0000176), per unit carbon.</rdfs:comment>
         <rdfs:label>Plant tissue water content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{H2O}.g-1{dry_mass}</bervo:BERVO_has_unit>
@@ -42864,6 +42867,196 @@
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002523 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002523">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Cross-sectional area of the vessel of wood, as a fraction of the cross-sectional area of the wood.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3018. TRY traits mapped here, with what narrows each one in contexts: 3910. Organ goes in contexts. Measured on a transverse section of the wood, usually of the outer sapwood. Some studies count the vessel lumens only, others the lumens with their walls; the convention should be reported with the value.</rdfs:comment>
+        <rdfs:label>Wood vessel area fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001331"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002524 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002524">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Cross-sectional area of the fibre of wood, as a fraction of the cross-sectional area of the wood.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3019. TRY traits mapped here, with what narrows each one in contexts: 3683, 3913. Organ goes in contexts. Measured on a transverse section of the wood, usually of the outer sapwood.</rdfs:comment>
+        <rdfs:label>Wood fibre area fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001332"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002525 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002525">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Cross-sectional area of the ray parenchyma of wood, as a fraction of the cross-sectional area of the wood.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3020. TRY traits mapped here, with what narrows each one in contexts: 3670, 3912, 4008. Organ goes in contexts. Measured on a transverse section of the wood, usually of the outer sapwood.</rdfs:comment>
+        <rdfs:label>Wood ray parenchyma area fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001335"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002526 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002526">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Cross-sectional area of the axial parenchyma of wood, as a fraction of the cross-sectional area of the wood.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3021. TRY traits mapped here, with what narrows each one in contexts: 3669, 3911, 3915. Organ goes in contexts. Measured on a transverse section of the wood, usually of the outer sapwood.</rdfs:comment>
+        <rdfs:label>Wood axial parenchyma area fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001334"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002527 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002527">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Cross-sectional area of the axial and ray parenchyma of wood together, as a fraction of the cross-sectional area of the wood.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 3682, 4007. Organ goes in contexts. Measured on a transverse section of the wood, usually of the outer sapwood. The sum of Wood axial parenchyma area fraction (BERVO:0002526) and Wood ray parenchyma area fraction (BERVO:0002525).</rdfs:comment>
+        <rdfs:label>Wood parenchyma area fraction</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001333"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002528 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002528">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Oven-dry mass of a plant organ or tissue divided by its fresh mass.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Stem dry matter content (BERVO:0002440), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 689, 3559, 3588, 3788. Organ goes in contexts. Leaf dry matter content (BERVO:0002370), Root dry matter content (BERVO:0002411) and Stem dry matter content (BERVO:0002440) are its leaf, root and stem subclasses. Whether the fresh mass is taken at water saturation should be reported with the value.</rdfs:comment>
+        <rdfs:label>Plant tissue dry matter content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>mg{dry_mass}.g-1{fresh_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002529 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002529">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Bark thickness of a stem or branch divided by its radius, measured with the bark.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Stem relative total bark thickness</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Bark thickness (BERVO:0002438), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3765. TRY traits mapped here, with what narrows each one in contexts: 3737, 3738, 3766, 3843. Organ and bark layer go in contexts. A measure of the investment in bark that removes the effect of stem size, used in studies of fire resistance.</rdfs:comment>
+        <rdfs:label>Relative bark thickness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001301"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002530 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002530">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Ratio of the stress on a plant organ or tissue to the strain it causes, within the range of elastic deformation, measured in bending or tension.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>MOE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Young&apos;s modulus</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 3662, 3816, 3817, 3818. Organ and tissue go in contexts. Distinct from Leaf bulk modulus of elasticity (BERVO:0002402), which relates turgor to cell volume, and from Root modulus of elasticity (BERVO:0000167), an EcoSIM parameter.</rdfs:comment>
+        <rdfs:label>Plant tissue modulus of elasticity</rdfs:label>
+        <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002531 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002531">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Maximum bending stress that a sample of wood bears before it breaks.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>MOR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>bending strength</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>modulus of rupture</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3998. Usually measured in a three-point bending test on a small clear sample.</rdfs:comment>
+        <rdfs:label>Wood flexural strength</rdfs:label>
+        <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002532 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002532">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Maximum compressive stress that a sample of wood bears, usually parallel to the grain, before it fails.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>crushing strength</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3997.</rdfs:comment>
+        <rdfs:label>Wood compressive strength</rdfs:label>
+        <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002533 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002533">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Maximum tensile stress that a sample of wood bears, usually parallel to the grain, before it breaks.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3999.</rdfs:comment>
+        <rdfs:label>Wood tensile strength</rdfs:label>
+        <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001182"/>
     </Class>
     
 
@@ -61171,6 +61364,90 @@
         <oboInOwl:hasExactSynonym>monoterpenes</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after ChEBI (CHEBI:35187), TRY alignment for issue #27</rdfs:comment>
         <rdfs:label>Monoterpene</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001331 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001331">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001311"/>
+        <obo:IAO_0000115>Tube of the xylem formed by a column of vessel members joined end to end through perforation plates, which conducts water in angiosperm wood.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>vessel</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Plant Ontology (PO:0002003), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>Not cross-referenced: the Plant Ontology has the vessel member (PO:0002003), a single cell, but no term for the vessel.</rdfs:comment>
+        <rdfs:label>Xylem vessel</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001332 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001332">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001311"/>
+        <obo:IAO_0000115>Elongated, thick-walled cell of the xylem that gives wood its mechanical strength, such as a libriform fibre or a fibre tracheid.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0000274"/>
+        <oboInOwl:hasExactSynonym>wood fibre</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>xylem fiber</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Plant Ontology (PO:0000274), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Xylem fibre</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001333 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001333">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001311"/>
+        <obo:IAO_0000115>Living, thin-walled cells of the secondary xylem, in axial strands and in rays, that store and move carbohydrates and water.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0004532"/>
+        <oboInOwl:hasExactSynonym>secondary xylem parenchyma</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Plant Ontology (PO:0004532), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Wood parenchyma</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001334 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001334">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001333"/>
+        <obo:IAO_0000115>Wood parenchyma in strands running parallel to the long axis of the stem.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0004533"/>
+        <oboInOwl:hasExactSynonym>axial secondary xylem parenchyma</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Plant Ontology (PO:0004533), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Axial parenchyma</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001335 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001335">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001333"/>
+        <obo:IAO_0000115>Wood parenchyma in rays running radially from the pith or cambium across the wood.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0004534"/>
+        <oboInOwl:hasExactSynonym>ray secondary xylem parenchyma</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Plant Ontology (PO:0004534), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Ray parenchyma</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001336 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001336">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001189"/>
+        <obo:IAO_0000115>Reproductive shoot system on which two or more flowers develop.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0009049"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Plant Ontology (PO:0009049), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Inflorescence</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     

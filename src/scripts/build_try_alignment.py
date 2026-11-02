@@ -143,9 +143,14 @@ def ctx(*concepts):
     return f"{', '.join(concepts[:-1])} and {concepts[-1]} go in contexts."
 
 
+# Notes for MAPPED rows. One that starts with a space follows a ctx() sentence, as in
+# ctx("Stem") + CWD_STEM; one that does not is a note on its own, for a related row.
 COTYLEDON = ctx("Cotyledon")
 CWD_STEM = " TRY leaves 'dry mass' out of the name, but the trait is the same content."
 DRY_BASIS = " TRY gives no basis for the concentration; per unit dry mass, the usual basis for plant tissue, is assumed."
+BRANCH_SECTION = ("A fraction of the whole branch cross-section, which may include bark and pith, "
+                  "rather than of the wood.")
+NITOGEN = " TRY spells nitrogen 'nitogen' in the name, so the C/N rule misses it."
 CARBON_PROD = ("Carbon production, which the term's g{C} unit covers, but TRY gives no time base, so it "
                "may be a rate for part of a season rather than per year.")
 DEPTH = " The soil depth increment goes with the value."
@@ -680,6 +685,55 @@ MAPPED = [
     ("broader", "BERVO:0002522", "3122", ctx("Leaf")),
     ("broader", "BERVO:0002522", "3863", ctx("Xylem", "Branch")),
     ("broader", "BERVO:0002522", "3864", ctx("Bark", "Branch")),
+    # Slice 15: wood anatomy, tissue dry matter content, bark, mechanics, and broader rows
+    # on the existing bark, C/N and water content terms.
+    ("match", "BERVO:0002523", "3018", ""),
+    ("broader", "BERVO:0002523", "3910", ctx("Stem")),
+    ("related", "BERVO:0002523", "3667 4009", "Vessel lumens only."),
+    ("related", "BERVO:0002523", "3066", BRANCH_SECTION),
+    ("match", "BERVO:0002524", "3019", ""),
+    ("broader", "BERVO:0002524", "3913", ctx("Stem")),
+    ("broader", "BERVO:0002524", "3683", ctx("Twig")),
+    ("related", "BERVO:0002524", "3067", BRANCH_SECTION),
+    ("match", "BERVO:0002525", "3020", ""),
+    ("broader", "BERVO:0002525", "3912 4008", ctx("Stem")),
+    ("broader", "BERVO:0002525", "3670", ctx("Twig")),
+    ("match", "BERVO:0002526", "3021", ""),
+    ("broader", "BERVO:0002526", "3911 3915", ctx("Stem")),
+    ("broader", "BERVO:0002526", "3669", ctx("Twig")),
+    ("broader", "BERVO:0002527", "4007", ctx("Stem")),
+    ("broader", "BERVO:0002527", "3682", ctx("Twig")),
+    ("related", "BERVO:0002527", "3065", BRANCH_SECTION),
+    ("broader", "BERVO:0002528", "689", ctx("Twig")),
+    ("broader", "BERVO:0002528", "3588", ctx("Shoot")),
+    ("broader", "BERVO:0002528", "3559", ctx("Flower")),
+    ("broader", "BERVO:0002528", "3788", ctx("Inflorescence")),
+    ("match", "BERVO:0002529", "3765", ""),
+    ("broader", "BERVO:0002529", "3766", ctx("Inner bark", "Stem")),
+    ("broader", "BERVO:0002529", "3843", ctx("Outer bark", "Stem")),
+    ("broader", "BERVO:0002529", "3737", ctx("Twig")),
+    ("broader", "BERVO:0002529", "3738", ctx("Inner bark", "Twig")),
+    ("related", "BERVO:0002529", "839", "Per stem diameter rather than radius, so half the value."),
+    ("broader", "BERVO:0002530", "3662 3816", ctx("Twig")),
+    ("broader", "BERVO:0002530", "3817", ctx("Wood", "Twig")),
+    ("broader", "BERVO:0002530", "3818", ctx("Bark", "Twig")),
+    ("match", "BERVO:0002531", "3998", ""),
+    ("match", "BERVO:0002532", "3997", ""),
+    ("match", "BERVO:0002533", "3999", ""),
+    ("broader", "BERVO:0002438", "3725", ctx("Twig")),
+    ("broader", "BERVO:0002438", "3726", ctx("Inner bark", "Twig")),
+    ("broader", "BERVO:0002438", "3815", ctx("Outer bark", "Twig")),
+    ("broader", "BERVO:0002438", "3844", ctx("Inner bark", "Branch")),
+    ("broader", "BERVO:0002438", "3845", ctx("Outer bark", "Branch")),
+    ("broader", "BERVO:0002439", "3734", ctx("Twig")),
+    ("broader", "BERVO:0002439", "3735", ctx("Inner bark", "Twig")),
+    ("broader", "BERVO:0002055", "3703", ctx("Wood", "Branch") + NITOGEN),
+    ("broader", "BERVO:0002055", "3711", ctx("Bark", "Branch") + NITOGEN),
+    ("broader", "BERVO:0002521", "3554", ctx("Stem")),
+    ("related", "BERVO:0002409", "3391", "Vessels only, and in a branch; conduits include tracheids."),
+    ("related", "BERVO:0002409", "3665", "Vessels only, hydraulically weighted, and in a twig; conduits include tracheids."),
+    ("related", "BERVO:0002410", "3390", "Vessels only, and in a branch; conduits include tracheids."),
+    ("related", "BERVO:0002410", "3666", "Vessels only, and in a twig; conduits include tracheids."),
 ]
 
 # The plant-functional-traits schema slot each TRY trait feeds

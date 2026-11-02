@@ -45,11 +45,14 @@ lipid, tannin and acid-insoluble residue contents, the lignin and acid-insoluble
 fractions and the construction cost, and the fractions of mass, carbon, nitrogen and
 phosphorus remaining in decomposing plant material. The fourteenth added plant tissue pH,
 root length production and mortality, the necromass to biomass ratio, leaf isoprene and
-monoterpene emission rates, stomatal dimensions, the respiration rate and water
-content of any plant tissue and the nitrogen stock of vegetation, and mapped root mass production,
+monoterpene emission rates, stomatal dimensions, the respiration rate and water content of
+any plant tissue and the nitrogen stock of vegetation, and mapped root mass production,
 mortality and necromass to the existing belowground production, belowground litter and
-vegetation biomass terms. The trace element and contaminant
-contents wait on the decisions in
+vegetation biomass terms. The fifteenth added the vessel, fibre and parenchyma area
+fractions of wood, the dry matter content and modulus of elasticity of any plant tissue,
+relative bark thickness and the flexural, compressive and tensile strength of wood, and
+mapped twig and branch bark to the existing bark thickness and density terms. The trace
+element and contaminant contents wait on the decisions in
 [issue #230](https://github.com/bioepic-data/bervo/issues/230). Still to come are the value lists of the
 categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms for the
 gaps listed here.
