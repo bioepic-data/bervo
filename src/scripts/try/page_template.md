@@ -71,11 +71,22 @@ germination lag time, seed coat thickness, seed number per ground area and soil 
 density; pollen grain diameter, pollen viability, and the pollen and seed to ovule ratios;
 flowers per plant and per inflorescence and fruits per infructescence; and the mass and
 nitrogen fractions of plant organs, the root length ratio, the age at first flowering and
-plant mortality rate, and mapped first flowering to the phenological event date. The trace
-element and contaminant contents wait on the decisions in [issue
-#230](https://github.com/bioepic-data/bervo/issues/230). Still to come are the value lists
-of the categorical traits (woodiness, growth form, leaf type, leaf phenology) and terms
-for the gaps listed here.
+plant mortality rate, and mapped first flowering to the phenological event date.
+The nineteenth added the leaf maximum carboxylation and electron transport rates per unit
+nitrogen and their temperature sensitivities, the respiration rate per unit nitrogen of
+any plant tissue, the maximum PEP carboxylation rate, the triose phosphate utilisation
+rate, gross photosynthesis, the photosynthetic quantum yield, light response curvature and
+non-photochemical quenching; the mesophyll and chloroplast surface areas exposed to the
+intercellular space, leaf porosity, and leaf cell wall thickness, mass and content, with
+plant cell wall, chloroplast and intercellular space concepts; for any plant tissue, the
+water and osmotic potentials, the hydraulic capacitance and the osmotic solute content;
+the canopy radiation extinction coefficient; plant relative growth rate, lifespan,
+hydraulic conductance and nitrogen uptake efficiency; and the nitrogen and phosphorus
+content per seed and the numbers of seeds, fruits and inflorescences per plant and seeds
+per inflorescence. The trace element and contaminant contents wait on the decisions in
+[issue #230](https://github.com/bioepic-data/bervo/issues/230). Still to come are the
+value lists of the categorical traits (woodiness, growth form, leaf type, leaf phenology)
+and terms for the gaps listed here.
 
 ## Sources
 
