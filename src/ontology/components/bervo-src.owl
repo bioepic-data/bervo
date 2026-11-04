@@ -39565,7 +39565,7 @@
         <obo:IAO_0000115>Mass of nitrogen per unit dry mass of a plant tissue or of whole plant material.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Plant nitrogen (N) content per plant dry mass</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5</rdfs:comment>
-        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_N, AG_LIT_N, ROOT_N. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 668. TRY traits mapped here, with what narrows each one in contexts: 70, 80, 339, 406, 450, 459, 475, 618, 684, 690, 854, 876, 887, 908, 954, 1165, 1199, 1229, 1262, 2035, 2291, 2547, 2882, 2945, 2987, 3453, 3455, 3704, 3710, 3791, 3793, 3922, 3956, 3958.</rdfs:comment>
+        <rdfs:comment>Legacy BADM variables mapped here, with the variant in contexts or qualifiers: BIOMASS_N, AG_LIT_N, ROOT_N. Organ and status go in contexts; litter is Dead vegetation. TRY trait ID: 668. TRY traits mapped here, with what narrows each one in contexts: 70, 80, 339, 406, 450, 459, 475, 618, 684, 690, 854, 876, 887, 908, 954, 1165, 1199, 1229, 1262, 2035, 2291, 2547, 2882, 2945, 2987, 3376, 3453, 3455, 3704, 3710, 3791, 3793, 3922, 3956, 3958.</rdfs:comment>
         <rdfs:label>Plant tissue nitrogen content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_has_unit>g{N}.kg-1</bervo:BERVO_has_unit>
@@ -40648,6 +40648,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002399 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002399">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002607"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Potential energy per unit volume of the water in a leaf, relative to pure free water, the sum of its turgor and osmotic potentials.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000131"/>
@@ -40688,6 +40689,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002401 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002401">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002608"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Osmotic potential of the cell sap of a fully hydrated leaf.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Leaf water &amp; osmotic potential: leaf osmotic potential at full turgor</oboInOwl:hasRelatedSynonym>
@@ -43764,7 +43766,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000899"/>
         <bervo:BERVO_has_unit>{seeds}.m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
     </Class>
     
@@ -44030,6 +44032,680 @@
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000716"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002587 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002587">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Maximum rate of carboxylation of ribulose-1,5-bisphosphate by Rubisco in a leaf, divided by the leaf&apos;s nitrogen content.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Vcmax per unit nitrogen</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis carboxylation capacity (Vcmax) per leaf nitrogen (N) content (Farquhar model)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 487. Leaf maximum carboxylation rate per unit area (BERVO:0002388) is the rate before it is divided by nitrogen; the two are usually on the same area or mass basis. The temperature of measurement, or the reference temperature it was normalised to, should be reported with the value.</rdfs:comment>
+        <rdfs:label>Leaf maximum carboxylation rate per unit nitrogen</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
+        <bervo:BERVO_has_unit>umol{CO2}.g-1{N}.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002588 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002588">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Maximum rate of photosynthetic electron transport in a leaf, divided by the leaf&apos;s nitrogen content.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Jmax per unit nitrogen</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis electron transport capacity (Jmax) per leaf nitrogen (N) content (Farquhar model)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 486. Leaf maximum electron transport rate per unit area (BERVO:0002390) is the rate before it is divided by nitrogen. The temperature of measurement, or the reference temperature it was normalised to, should be reported with the value.</rdfs:comment>
+        <rdfs:label>Leaf maximum electron transport rate per unit nitrogen</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
+        <bervo:BERVO_has_unit>umol{electron}.g-1{N}.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002589 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002589">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Proportional change in the photosynthetic rate or capacity of a leaf with temperature, given as an activation energy, a Q10 or the parameters of a temperature response curve.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis temperature dependence</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), after Kattge and Knorr 2007 (doi:10.1111/j.1365-3040.2007.01690.x), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 534. Leaf maximum carboxylation rate temperature sensitivity (BERVO:0002590) and Leaf maximum electron transport rate temperature sensitivity (BERVO:0002591) are its subclasses for the two Farquhar model capacities. The form and the temperature range should be reported with the value. Plant tissue respiration temperature sensitivity (BERVO:0002566) is the counterpart for respiration.</rdfs:comment>
+        <rdfs:label>Leaf photosynthesis temperature sensitivity</rdfs:label>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>kJ.mol-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002590 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002590">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002589"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Proportional change in the maximum carboxylation rate of Rubisco in a leaf with temperature, usually the activation energy of an Arrhenius function fitted to it.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Vcmax temperature dependence</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis carboxylation capacity (Vcmax) temperature dependence (Farquhar model)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), after Kattge and Knorr 2007 (doi:10.1111/j.1365-3040.2007.01690.x), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 537. When a peaked function is fitted, its deactivation energy and entropy term are reported with the activation energy. Some studies give a Q10 instead, so the term takes either unit; the form should be reported with the value.</rdfs:comment>
+        <rdfs:label>Leaf maximum carboxylation rate temperature sensitivity</rdfs:label>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>kJ.mol-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002591 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002591">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002589"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Proportional change in the maximum photosynthetic electron transport rate of a leaf with temperature, usually the activation energy of an Arrhenius function fitted to it.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Jmax temperature dependence</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis electron transport capacity (Jmax) temperature dependence (Farquhar model)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), after Kattge and Knorr 2007 (doi:10.1111/j.1365-3040.2007.01690.x), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 488. When a peaked function is fitted, its deactivation energy and entropy term are reported with the activation energy. Some studies give a Q10 instead, so the term takes either unit; the form should be reported with the value.</rdfs:comment>
+        <rdfs:label>Leaf maximum electron transport rate temperature sensitivity</rdfs:label>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>kJ.mol-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002592 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002592">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Rate of carbon dioxide release by a plant organ or tissue, or by a whole plant, divided by its nitrogen content.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>nitrogen-based tissue respiration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Plant respiration rate per plant nitrogen (N) content</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), after Plant tissue respiration rate per unit dry mass (BERVO:0002519), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 439. TRY traits mapped here, with what narrows each one in contexts: 500. Organ goes in contexts. Plant tissue respiration rate per unit dry mass (BERVO:0002519) divides by dry mass instead. Specific maintenance respiration rate (BERVO:0000162) is an EcoSIM parameter. The temperature of measurement, or the reference temperature it was normalised to, should be reported with the value.</rdfs:comment>
+        <rdfs:label>Plant tissue respiration rate per unit nitrogen</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_has_unit>nmol{CO2}.g-1{N}.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002593 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002593">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Maximum rate of carboxylation by phosphoenolpyruvate carboxylase in the mesophyll of a C4 leaf, per unit of its one-sided area.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Vpmax</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis: maximum rate of PEPc carboxylation (Vpmax) per leaf area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3362. TRY traits mapped here, with what narrows each one in contexts: 4075. A rate normalised to 25 degrees Celsius takes Standard ambient temperature in contexts. Maximum dark C4 carboxylation rate under saturating carbon dioxide (BERVO:0000546) is the EcoSIM value for a plant functional type. The temperature of measurement, or the reference temperature it was normalised to, should be reported with the value.</rdfs:comment>
+        <rdfs:label>Leaf maximum phosphoenolpyruvate carboxylation rate per unit area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
+        <bervo:BERVO_has_unit>umol{CO2}.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002594 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002594">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Rate at which a leaf uses the triose phosphates made by photosynthesis, the third limit on carbon dioxide assimilation in the Farquhar model besides Rubisco and electron transport, per unit of its one-sided area.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>TPU</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis: rate of triose phosphate utilisation (TPU)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3485. Usually fitted to the plateau of a response of assimilation to intercellular carbon dioxide. The temperature of measurement, or the reference temperature it was normalised to, should be reported with the value.</rdfs:comment>
+        <rdfs:label>Leaf triose phosphate utilisation rate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_has_unit>umol{CO2}.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002595 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002595">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Rate of carbon dioxide fixation by a leaf before respiration is subtracted, per unit of its one-sided area, usually net photosynthesis plus respiration.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>area-based gross photosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis: gross photosynthesis per leaf area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3803. Leaf net photosynthetic rate per unit area (BERVO:0002384) is the rate after respiration. How respiration was estimated, and the light, carbon dioxide and temperature of measurement, should be reported with the value.</rdfs:comment>
+        <rdfs:label>Leaf gross photosynthetic rate per unit area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000887"/>
+        <bervo:BERVO_has_unit>umol{CO2}.m-2.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002596 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002596">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Rate of carbon dioxide fixation by a leaf before respiration is subtracted, per unit of its dry mass, usually net photosynthesis plus respiration.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>mass-based gross photosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis: gross photosynthesis per leaf dry mass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3804. Leaf net photosynthetic rate per unit dry mass (BERVO:0002385) is the rate after respiration. How respiration was estimated, and the light, carbon dioxide and temperature of measurement, should be reported with the value.</rdfs:comment>
+        <rdfs:label>Leaf gross photosynthetic rate per unit dry mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
+        <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000887"/>
+        <bervo:BERVO_has_unit>nmol{CO2}.g-1{dry_mass}.s-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002597 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002597">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Moles of carbon dioxide fixed by a leaf per mole of photons, the initial slope of its photosynthetic light response curve.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>apparent quantum yield</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>photosynthetic quantum efficiency</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis quantum yield (QY; corresponding to photosynthetic efficiency)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis: Quantum use efficiency</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 3394, 3973. Whether the photons are those incident on the leaf or those it absorbs should be reported with the value. Quantum efficiency (BERVO:0000168) is the EcoSIM parameter for electrons transported per photon absorbed, and Leaf maximum quantum efficiency of photosystem II (BERVO:0002559) is a fluorescence ratio.</rdfs:comment>
+        <rdfs:label>Leaf photosynthetic quantum yield</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_has_unit>mol{CO2}.mol-1{photon}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000212"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002598 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002598">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Dimensionless parameter of a non-rectangular hyperbola fitted to the light response of leaf photosynthesis, which sets how sharply the curve bends from its initial slope to its plateau.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>light response curve convexity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>theta</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis light response curvatur</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis: convexity parameter of light response curve</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 533, 3802. Takes values from 0, a rectangular hyperbola, to 1, a Blackman response. Shape parameter for electron transport response to photosynthetically active radiation (BERVO:0000169) is the EcoSIM parameter for the light response of electron transport.</rdfs:comment>
+        <rdfs:label>Leaf photosynthetic light response curvature</rdfs:label>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000212"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002599 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002599">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Decrease in the maximum chlorophyll fluorescence of a leaf in the light relative to its dark-adapted maximum, (Fm - Fm&apos;)/Fm&apos;, a measure of the absorbed light energy dissipated as heat.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>NPQ</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Photosynthesis: non-photochemical quenching (NPQ)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3978. The light intensity and the time in the light should be reported with the value.</rdfs:comment>
+        <rdfs:label>Leaf non-photochemical quenching</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000214"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002600 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002600">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Surface area of the mesophyll cells of a leaf that faces the intercellular air spaces, per unit of one-sided leaf area.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Sm/S</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Smes</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf mesophyll surface area exposed to internal airspace</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf surface area of mesophyll cells per leaf area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), after Onoda et al. 2017 (doi:10.1111/nph.14496), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 3002, 3381. TRY 3002 leaves &apos;per leaf area&apos; out of the name, but the quantity is reported on that basis. Usually measured on cross-sections; with chloroplast surface area exposed to intercellular space it sets the path for carbon dioxide diffusion into the cells. Leaf mesophyll conductance (BERVO:0002560) depends on it.</rdfs:comment>
+        <rdfs:label>Leaf mesophyll surface area exposed to intercellular space per unit leaf area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_has_unit>m2.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000275"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002601 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002601">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Surface area of the chloroplasts of a leaf that lies against the parts of the mesophyll cell walls facing the intercellular air spaces, per unit of one-sided leaf area.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Sc/S</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf chloroplast surface area exposed to internal airspace</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf surface area of chloroplasts exposed to intercellular airspace per leaf area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), after Onoda et al. 2017 (doi:10.1111/nph.14496), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 3003, 3382. TRY 3003 leaves &apos;per leaf area&apos; out of the name, but the quantity is reported on that basis. It is at most Leaf mesophyll surface area exposed to intercellular space per unit leaf area (BERVO:0002600).</rdfs:comment>
+        <rdfs:label>Leaf chloroplast surface area exposed to intercellular space per unit leaf area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_has_unit>m2.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001350"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002602 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002602">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Volume of the intercellular air spaces of a leaf divided by the volume of the leaf.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>leaf intercellular air space fraction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf intercellular volume per leaf volume</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 123, 583. Root porosity (BERVO:0001077) is the counterpart for roots.</rdfs:comment>
+        <rdfs:label>Leaf porosity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000500"/>
+        <bervo:BERVO_has_unit>m3.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001351"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002603 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002603">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Thickness of the walls of the mesophyll cells of a leaf, measured on cross-sections where the walls face the intercellular air spaces.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>mesophyll cell wall thickness</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), after Onoda et al. 2017 (doi:10.1111/nph.14496), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3383. A thick wall lengthens the diffusion path for carbon dioxide and lowers Leaf mesophyll conductance (BERVO:0002560).</rdfs:comment>
+        <rdfs:label>Leaf mesophyll cell wall thickness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000275"/>
+        <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001349"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002604 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002604">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Thickness of the walls of the epidermal cells of a leaf, measured on a cross-section of the lamina.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 183. Usually the outer periclinal wall; which wall and which surface should be reported with the value. Leaf epidermis thickness (BERVO:0002549) is the thickness of the whole epidermis.</rdfs:comment>
+        <rdfs:label>Leaf epidermis cell wall thickness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8001339"/>
+        <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001349"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002605 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002605">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Dry mass of the cell walls of a leaf per unit of its one-sided area, usually measured as the residue left after the cell contents are extracted.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf cell wall mass per leaf area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), after Onoda et al. 2017 (doi:10.1111/nph.14496), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3374. Leaf mass per area (BERVO:0002185) is the mass of the whole leaf.</rdfs:comment>
+        <rdfs:label>Leaf cell wall mass per unit area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001349"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002606 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002606">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Dry mass of the cell walls of a leaf divided by the dry mass of the leaf, usually measured as the residue left after the cell contents are extracted.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>leaf cell wall mass fraction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf cell wall mass per leaf dry mass</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), after Onoda et al. 2017 (doi:10.1111/nph.14496), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3375.</rdfs:comment>
+        <rdfs:label>Leaf cell wall content per unit dry mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{cell_wall}.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001349"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002607 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002607">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Potential energy per unit volume of the water in a plant organ or tissue, relative to pure free water, the sum of its turgor and osmotic potentials.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>tissue water potential</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), after Leaf water potential (BERVO:0002399), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 3774, 3782. Organ goes in contexts. Leaf water potential (BERVO:0002399) is its leaf subclass. The time of day and the hydration state should be reported with the value. Root total water potential (BERVO:0001117) and Plant canopy total water potential (BERVO:0000587) are EcoSIM variables.</rdfs:comment>
+        <rdfs:label>Plant tissue water potential</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000789"/>
+        <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002608 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002608">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Component of the water potential of a plant organ or tissue that is due to the solutes in its cell sap.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>tissue osmotic potential</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), after Bartlett et al. 2012 (doi:10.1111/j.1461-0248.2012.01751.x), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 3773, 3781. Organ goes in contexts. Leaf osmotic potential at full turgor (BERVO:0002401) is its subclass for a fully hydrated leaf. The hydration state should be reported with the value, since the osmotic potential falls as the tissue dries.</rdfs:comment>
+        <rdfs:label>Plant tissue osmotic potential</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000791"/>
+        <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002609 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002609">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Change in the water content of a plant organ or tissue per unit change in its water potential, the amount of water it can release to buffer the transpiration stream.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>tissue water capacitance</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), after Bartlett et al. 2012 (doi:10.1111/j.1461-0248.2012.01751.x), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 711, 3775, 3785. Organ goes in contexts. Studies give it as relative water content per unit water potential or as water per unit area per unit water potential, so the term takes either unit; the form, and whether it is taken above or below the turgor loss point, should be reported with the value.</rdfs:comment>
+        <rdfs:label>Plant tissue hydraulic capacitance</rdfs:label>
+        <bervo:BERVO_has_unit>MPa-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>mol{H2O}.m-2.MPa-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002610 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002610">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Amount of osmotically active solutes in a plant organ or tissue per unit of its dry mass, usually derived from the osmolality of its expressed sap and its water content.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>osmolyte content</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 3771, 3779, 3787. Organ goes in contexts.</rdfs:comment>
+        <rdfs:label>Plant tissue osmotic solute content</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mosm.g-1{dry_mass}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000125"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002611 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002611">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000029"/>
+        <obo:IAO_0000115>Coefficient of the exponential decrease of radiation with cumulative leaf area index down through a canopy, as in Beer&apos;s law.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>canopy light extinction coefficient</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Crown (canopy) radiation extinction coefficient</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 489. The waveband, such as photosynthetically active radiation, and whether the radiation is direct or diffuse should be reported with the value. Clumping factor for self-shading in canopy layer (BERVO:0000815) is the EcoSIM correction for non-random leaf placement.</rdfs:comment>
+        <rdfs:label>Canopy radiation extinction coefficient</rdfs:label>
+        <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000164"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002612 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002612">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Increase in the dry mass of a plant over a period, divided by its dry mass at the start and by the length of the period, usually computed from the natural logarithms of the two masses.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>RGR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Plant growth rate relative (plant relative growth rate, RGR)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), after Perez-Harguindeguy et al. 2013 (doi:10.1071/BT12225), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 77. TRY traits mapped here, with what narrows each one in contexts: 3459. Organ goes in contexts. Fungal mat relative growth rate (BERVO:0002209) is the counterpart for fungal mat area.</rdfs:comment>
+        <rdfs:label>Plant relative growth rate</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000337"/>
+        <bervo:BERVO_has_unit>d-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002613 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002613">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Time from the establishment of a plant to its death, typically or at most for its species.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>plant longevity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Plant lifespan (longevity)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 59. Whether the value is a typical or a maximum lifespan should be reported with it. Leaf lifespan (BERVO:0002393) and Root lifespan (BERVO:0002417) are the counterparts for single organs.</rdfs:comment>
+        <rdfs:label>Plant lifespan</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_has_unit>a</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002614 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002614">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Flow of water through a whole plant, from the soil or the roots to the leaves, per unit leaf area and per unit drop in water potential between them.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Kplant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>whole-plant hydraulic conductance</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 752. Usually computed from the transpiration rate and the difference between soil or predawn and midday leaf water potential. Leaf hydraulic conductance (BERVO:0002404) is the conductance of the leaf alone.</rdfs:comment>
+        <rdfs:label>Plant hydraulic conductance</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001299"/>
+        <bervo:BERVO_has_unit>mmol{H2O}.m-2.s-1.MPa-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002615 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002615">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Nitrogen taken up by a plant divided by the nitrogen available to it, such as the nitrogen supplied in an experiment or present in the soil.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>nitrogen uptake efficiency</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Plant nitrogen (N) uptake efficiency (plant nitrogen acquired per nitrogen available)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3070. What counts as available nitrogen should be reported with the value.</rdfs:comment>
+        <rdfs:label>Plant nitrogen uptake efficiency</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002616 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002616">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of nitrogen in a single seed.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Seed nitrogen (N) content per seed</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3372. Plant tissue nitrogen content (BERVO:0002340) with Seed in contexts is the content per unit dry mass instead.</rdfs:comment>
+        <rdfs:label>Seed nitrogen content per seed</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{N}/{seed}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002617 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002617">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of phosphorus in a single seed.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Seed phosphorus (P) content per seed</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3373. Plant tissue phosphorus content (BERVO:0002380) with Seed in contexts is the content per unit dry mass instead.</rdfs:comment>
+        <rdfs:label>Seed phosphorus content per seed</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
+        <bervo:BERVO_has_unit>mg{P}/{seed}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002618 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002618">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Number of seeds produced by a plant in a reproductive season.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>number of seeds per plant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>seed output</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Plant biomass and allometry: Seed number per plant</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 131. Seed number per fruit (BERVO:0002430) and Seed number per inflorescence (BERVO:0002621) count the seeds of one fruit or inflorescence.</rdfs:comment>
+        <rdfs:label>Seed number per plant</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002619 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002619">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Number of fruits produced by a plant in a reproductive season.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>number of fruits per plant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Plant number of fruits per plant</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3515.</rdfs:comment>
+        <rdfs:label>Fruit number per plant</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001305"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002620 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002620">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Number of inflorescences produced by a plant in a flowering season.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>number of inflorescences per plant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Plant biomass and allometry: number of inflorescences per plant</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1031. Flower number per plant (BERVO:0002579) counts the flowers instead.</rdfs:comment>
+        <rdfs:label>Inflorescence number per plant</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001336"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002621 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002621">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Number of seeds borne on one inflorescence.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>number of seeds per inflorescence</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Inflorescence: seed number per inflorescence (total, fertile, infertile)</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 1104. TRY allows a count of all, fertile or infertile seeds; which should be reported with the value.</rdfs:comment>
+        <rdfs:label>Seed number per inflorescence</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001336"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
     </Class>
     
 
@@ -62586,6 +63262,48 @@
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0004542"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after the Plant Ontology (PO:0004542), TRY alignment for issue #27</rdfs:comment>
         <rdfs:label>Rhizome</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001349 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001349">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Rigid layer outside the cell membrane of a plant cell, made of cellulose, hemicellulose, pectin and, in many cells, lignin.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/GO_0009505"/>
+        <oboInOwl:hasExactSynonym>plant cell wall</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>plant-type cell wall</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), after the Gene Ontology (GO:0009505), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Cell wall</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001350 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001350">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Chlorophyll-containing plastid of a plant cell, with thylakoids organised into grana and embedded in a stroma, where photosynthesis takes place.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/GO_0009507"/>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), after the Gene Ontology (GO:0009507), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Chloroplast</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001351 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001351">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <obo:IAO_0000115>Space between the cells of a plant tissue, filled with air or fluid, such as the air spaces of a leaf mesophyll.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0025379"/>
+        <oboInOwl:hasExactSynonym>intercellular air space</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Code (Nov 04 2026), after the Plant Ontology (PO:0025379), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Intercellular space</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
