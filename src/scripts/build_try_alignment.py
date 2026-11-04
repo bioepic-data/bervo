@@ -909,7 +909,7 @@ MAPPED = [
     ("match", "BERVO:0002604", "183", ""),
     ("match", "BERVO:0002605", "3374", ""),
     ("match", "BERVO:0002606", "3375", ""),
-    ("broader", "BERVO:0002340", "3376", ctx("Cell wall", "Leaf") + " Per unit cell wall dry mass."),
+    ("broader", "BERVO:0002340", "3376", ctx("Plant cell wall", "Leaf") + " Per unit cell wall dry mass."),
     ("broader", "BERVO:0002607", "3774", ctx("Flower")),
     ("broader", "BERVO:0002607", "3782", ctx("Inflorescence")),
     ("broader", "BERVO:0002608", "3773", ctx("Flower")),
