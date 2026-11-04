@@ -44084,7 +44084,7 @@
         <obo:IAO_0000115>Proportional change in the photosynthetic rate or capacity of a leaf with temperature, given as an activation energy, a Q10 or the parameters of a temperature response curve.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Photosynthesis temperature dependence</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Code (Nov 04 2026), after Kattge and Knorr 2007 (doi:10.1111/j.1365-3040.2007.01690.x), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 534. Leaf maximum carboxylation rate temperature sensitivity (BERVO:0002590) and Leaf maximum electron transport rate temperature sensitivity (BERVO:0002591) are its subclasses for the two Farquhar model capacities. The form and the temperature range should be reported with the value. Plant tissue respiration temperature sensitivity (BERVO:0002566) is the counterpart for respiration.</rdfs:comment>
+        <rdfs:comment>Leaf maximum carboxylation rate temperature sensitivity (BERVO:0002590) and Leaf maximum electron transport rate temperature sensitivity (BERVO:0002591) are its subclasses for the two Farquhar model capacities. The form and the temperature range should be reported with the value. Plant tissue respiration temperature sensitivity (BERVO:0002566) is the counterpart for respiration.</rdfs:comment>
         <rdfs:label>Leaf photosynthesis temperature sensitivity</rdfs:label>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_unit>kJ.mol-1</bervo:BERVO_has_unit>
@@ -44183,7 +44183,7 @@
         <oboInOwl:hasRelatedSynonym>Photosynthesis: rate of triose phosphate utilisation (TPU)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait ID: 3485. Usually fitted to the plateau of a response of assimilation to intercellular carbon dioxide. The temperature of measurement, or the reference temperature it was normalised to, should be reported with the value.</rdfs:comment>
-        <rdfs:label>Leaf triose phosphate utilisation rate</rdfs:label>
+        <rdfs:label>Leaf triose phosphate utilisation rate per unit area</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
         <bervo:BERVO_has_unit>umol{CO2}.m-2.s-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
@@ -44279,7 +44279,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002599">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>Decrease in the maximum chlorophyll fluorescence of a leaf in the light relative to its dark-adapted maximum, (Fm - Fm&apos;)/Fm&apos;, a measure of the absorbed light energy dissipated as heat.</obo:IAO_0000115>
+        <obo:IAO_0000115>Decrease in the maximum chlorophyll fluorescence of a leaf from its dark-adapted to its light-adapted value, expressed relative to the light-adapted maximum, (Fm - Fm&apos;)/Fm&apos;, a measure of the absorbed light energy dissipated as heat.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>NPQ</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Photosynthesis: non-photochemical quenching (NPQ)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Code (Nov 04 2026), TRY alignment for issue #27</rdfs:comment>
@@ -44403,7 +44403,7 @@
         <rdfs:comment>TRY trait ID: 3374. Leaf mass per area (BERVO:0002185) is the mass of the whole leaf.</rdfs:comment>
         <rdfs:label>Leaf cell wall mass per unit area</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
-        <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{cell_wall}.m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001349"/>
@@ -44544,7 +44544,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002613">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>Time from the establishment of a plant to its death, typically or at most for its species.</obo:IAO_0000115>
+        <obo:IAO_0000115>Time from the establishment of a plant to its death, reported either as a typical or as a maximum value for its species.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>plant longevity</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Plant lifespan (longevity)</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Code (Nov 04 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>

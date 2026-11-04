@@ -884,7 +884,7 @@ MAPPED = [
     # seed nutrients per seed and seed, fruit and inflorescence counts.
     ("match", "BERVO:0002587", "487", ""),
     ("match", "BERVO:0002588", "486", ""),
-    ("match", "BERVO:0002589", "534", ""),
+    ("related", "BERVO:0002589", "534", "TRY does not say what form the value takes; it may be a temperature optimum rather than a sensitivity."),
     ("match", "BERVO:0002590", "537", ""),
     ("match", "BERVO:0002591", "488", ""),
     ("match", "BERVO:0002592", "439", "Whole plant; the term covers a whole plant."),

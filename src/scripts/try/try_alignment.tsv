@@ -435,7 +435,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 531	Stem surface area per stem volume	Stem, wood and bark	gap			
 532	Stem respiration rate per stem volume	Stem, wood and bark	related	BERVO:0002441		Per unit stem volume rather than dry mass.
 533	Photosynthesis light response curvatur	Photosynthesis and gas exchange	match	BERVO:0002598		
-534	Photosynthesis temperature dependence	Photosynthesis and gas exchange	match	BERVO:0002589		
+534	Photosynthesis temperature dependence	Photosynthesis and gas exchange	related	BERVO:0002589		TRY does not say what form the value takes; it may be a temperature optimum rather than a sensitivity.
 535	Leaf light transmittance	Leaf	gap			
 537	Photosynthesis carboxylation capacity (Vcmax) temperature dependence (Farquhar model)	Photosynthesis and gas exchange	match	BERVO:0002590		
 539	Leaf chlorine (Cl) content per leaf dry mass	Leaf	gap			

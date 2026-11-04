@@ -179,7 +179,7 @@ species attributes.
 | Leaf | 70 | 55 | 36 | 256 | 1 | 418 |
 | Litter and woody debris | 5 | 146 | 15 | 33 |  | 199 |
 | Moss and fern |  |  |  | 21 |  | 21 |
-| Photosynthesis and gas exchange | 41 | 7 | 16 | 49 |  | 113 |
+| Photosynthesis and gas exchange | 40 | 7 | 17 | 49 |  | 113 |
 | Plot and stand | 2 |  |  | 7 | 1 | 10 |
 | Root | 31 | 135 | 17 | 225 |  | 408 |
 | Seed, fruit and dispersal | 33 | 7 | 9 | 64 |  | 113 |
@@ -188,7 +188,7 @@ species attributes.
 | Stem, wood and bark | 29 | 98 | 13 | 183 |  | 323 |
 | Twig, branch, shoot and bud |  | 87 | 9 | 75 |  | 171 |
 | Whole plant | 22 | 20 | 8 | 219 |  | 269 |
-| **Total** | **242** | **754** | **150** | **1463** | **52** | **2661** |
+| **Total** | **241** | **754** | **151** | **1463** | **52** | **2661** |
 
 ## Matches
 
@@ -288,7 +288,6 @@ species attributes.
 | 514 | Root respiration rate per root dry mass | `BERVO:0002413` Root respiration rate per unit dry mass |  |
 | 519 | Stem respiration rate per stem dry mass | `BERVO:0002441` Stem respiration rate per unit dry mass |  |
 | 533 | Photosynthesis light response curvatur | `BERVO:0002598` Leaf photosynthetic light response curvature |  |
-| 534 | Photosynthesis temperature dependence | `BERVO:0002589` Leaf photosynthesis temperature sensitivity |  |
 | 537 | Photosynthesis carboxylation capacity (Vcmax) temperature dependence (Farquhar model) | `BERVO:0002590` Leaf maximum carboxylation rate temperature sensitivity |  |
 | 570 | Leaf carbon (C) content per leaf area | `BERVO:0002186` Leaf carbon content per unit area |  |
 | 583 | Leaf porosity | `BERVO:0002602` Leaf porosity |  |
@@ -399,7 +398,7 @@ species attributes.
 | 3480 | Root branching intensity: number of root branches per root length | `BERVO:0001096` Root branching frequency |  |
 | 3482 | Seed / ovule ratio | `BERVO:0002578` Seed to ovule ratio |  |
 | 3483 | Tree ring width | `BERVO:0002443` Tree ring width |  |
-| 3485 | Photosynthesis: rate of triose phosphate utilisation (TPU) | `BERVO:0002594` Leaf triose phosphate utilisation rate |  |
+| 3485 | Photosynthesis: rate of triose phosphate utilisation (TPU) | `BERVO:0002594` Leaf triose phosphate utilisation rate per unit area |  |
 | 3515 | Plant number of fruits per plant | `BERVO:0002619` Fruit number per plant |  |
 | 3520 | Litter decomposition: fraction of mass remaining | `BERVO:0002493` Mass remaining fraction of decomposing plant material |  |
 | 3524 | Litter decomposition: fraction of carbon (C) remaining | `BERVO:0002494` Carbon remaining fraction of decomposing plant material |  |
@@ -599,6 +598,7 @@ species attributes.
 | 520 | Stem respiration rate per stem surface area | `BERVO:0002441` Stem respiration rate per unit dry mass | Per unit stem surface area rather than dry mass. |
 | 521 | Stem respiration rate per stem nitrogen (N) content | `BERVO:0002441` Stem respiration rate per unit dry mass | Per unit stem nitrogen rather than dry mass. |
 | 532 | Stem respiration rate per stem volume | `BERVO:0002441` Stem respiration rate per unit dry mass | Per unit stem volume rather than dry mass. |
+| 534 | Photosynthesis temperature dependence | `BERVO:0002589` Leaf photosynthesis temperature sensitivity | TRY does not say what form the value takes; it may be a temperature optimum rather than a sensitivity. |
 | 587 | Plant growth rate | `BERVO:0002612` Plant relative growth rate | TRY does not say the rate is relative; it may be an absolute rate of mass or height growth. |
 | 662 | Root sugar content per root dry mass | `BERVO:0002497` Plant tissue soluble sugar content | TRY says only sugar, which may include sugars that are not soluble. |
 | 663 | Leaf respiration rate in light per dry mass | `BERVO:0002556` Leaf respiration rate in light per unit area | Per unit leaf dry mass rather than area. |
@@ -616,7 +616,7 @@ species attributes.
 | 940 | Leaf length excluding petiole (leaf lamina length) | `BERVO:0002470` Leaf length | The length of the lamina alone, without the petiole. |
 | 948 | Litter (leaf) decomposition rate | `BERVO:0002491` Decomposition rate constant | TRY does not say whether this is a rate constant or a mass loss per unit time. |
 | 967 | Leaf volatile organic carbon (VOC): monoterpene emission rate per leaf dry mass | `BERVO:0002515` Leaf monoterpene emission rate | Per unit leaf dry mass rather than area. |
-| 974 | Photosynthesis rate per leaf area: transition to TPU limited photosynthesis | `BERVO:0002594` Leaf triose phosphate utilisation rate | The photosynthetic rate at which TPU starts to limit assimilation, not the TPU rate. |
+| 974 | Photosynthesis rate per leaf area: transition to TPU limited photosynthesis | `BERVO:0002594` Leaf triose phosphate utilisation rate per unit area | The photosynthetic rate at which TPU starts to limit assimilation, not the TPU rate. |
 | 981 | Leaf transpiration rate per leaf dry mass | `BERVO:0002483` Leaf transpiration rate per unit area | Per unit leaf dry mass rather than area. |
 | 1061 | Coarse woody debris (CWD) root: decomposition rate | `BERVO:0002491` Decomposition rate constant | TRY does not say whether this is a rate constant or a mass loss per unit time. |
 | 1103 | Seed number per flower | `BERVO:0002430` Seed number per fruit | Per flower rather than per fruit; flowers that set no fruit count toward it. |
