@@ -277,7 +277,8 @@ one. A member that is only sometimes in a panel fits neither axiom.
 
 | Row | `part_ofs` |
 | --- | --- |
-| `Osmotic soil water potential` | `Elevation adjusted total soil micropore total water potential\|Soil water potential` |
+| `Soil micropore matric water potential` | `Elevation adjusted total soil micropore total water potential\|Soil water potential` |
+| `Osmotic soil water potential` | `Soil water potential` |
 | `Root turgor water potential` | `Root total water potential` |
 
 `part of` is transitive (declared in `bervo-edit.owl`), so name the nearest whole. BERVO

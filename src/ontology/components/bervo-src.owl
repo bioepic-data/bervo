@@ -30368,19 +30368,13 @@
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_0001751"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_0002277"/>
             </Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The component of soil water potential arising from dissolved solutes in soil solution, representing the chemical energy contribution to total water potential. This parameter quantifies the effect of salt concentration on soil water availability to plants and microbial processes in environmental systems.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PSISoilOsmotic_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>One of the three components EcoSIM sums into Elevation adjusted total soil micropore total water potential (BERVO:0001751), with the matric and gravitational components.</rdfs:comment>
+        <rdfs:comment>One of the three components EcoSIM sums into Elevation adjusted total soil micropore total water potential (BERVO:0001751), with the matric and gravitational components. Its part-of link to that total runs through Soil micropore osmotic water potential (BERVO:0002622).</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Osmotic soil water potential</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000791"/>
@@ -30394,17 +30388,11 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001805">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000032"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_0001751"/>
-            </Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>The component of soil water potential arising from gravitational forces acting on soil water at different elevations. This parameter quantifies the effect of gravity on water movement and energy status in soil profiles, essential for understanding vertical water flow and hydraulic gradients in environmental models.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Gravimetric soil water potential</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>PSIGrav_vr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>One of the three components EcoSIM sums into Elevation adjusted total soil micropore total water potential (BERVO:0001751), with the matric and osmotic components. It lies outside Soil water potential (BERVO:0002277), which is defined at the same elevation. Formerly labelled Gravimetric soil water potential.</rdfs:comment>
+        <rdfs:comment>One of the three components EcoSIM sums into Elevation adjusted total soil micropore total water potential (BERVO:0001751), with the matric and osmotic components. Its part-of link to that total runs through Soil micropore gravitational water potential (BERVO:0002623). It lies outside Soil water potential (BERVO:0002277), which is defined at the same elevation. Formerly labelled Gravimetric soil water potential.</rdfs:comment>
         <rdfs:comment>SoilWaterDataType.txt</rdfs:comment>
         <rdfs:label>Gravitational soil water potential</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000806"/>
@@ -44773,6 +44761,48 @@
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001336"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002622 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002622">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001804"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_0001751"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Component of the water potential of soil micropore water arising from dissolved solutes.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #201</rdfs:comment>
+        <rdfs:comment>EcoSIM has no separate variable for this. It adds the layer value, Osmotic soil water potential (BERVO:0001804), into Elevation adjusted total soil micropore total water potential (BERVO:0001751).</rdfs:comment>
+        <rdfs:label>Soil micropore osmotic water potential</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000791"/>
+        <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000012"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002623 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002623">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001805"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_0001751"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Component of the water potential of soil micropore water arising from gravity, varying with elevation.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #201</rdfs:comment>
+        <rdfs:comment>EcoSIM has no separate variable for this. It adds the layer value, Gravitational soil water potential (BERVO:0001805), into Elevation adjusted total soil micropore total water potential (BERVO:0001751).</rdfs:comment>
+        <rdfs:label>Soil micropore gravitational water potential</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000806"/>
+        <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000012"/>
     </Class>
     
 
