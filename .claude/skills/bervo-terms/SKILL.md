@@ -273,12 +273,13 @@ Use it only when every instance of the part belongs to some instance of the whol
 instance here is a quantity of a particular system, not a measurement event: the osmotic
 potential of a soil is a term of that soil's total whether or not anyone measured the total.
 The members of a panel fail the test, so `part_ofs` is wrong for them: a panel is a grouping
-for reporting, and the quantity exists whether or not any panel was run.
+for reporting, and the quantity exists whether or not any panel was run. A panel with fixed
+contents needs `has part` (`BFO:0000051`) on the panel's row; BERVO has no panel terms and no
+such column yet, so raise that with the first one. A member that is only sometimes in a panel
+fits neither axiom.
 
 The part must also fall within the scope of the whole, so a micropore total takes
-micropore-scoped parts, not soil-scoped ones. A panel with fixed contents needs `has part` (`BFO:0000051`) on the
-panel's row; BERVO has no panel terms and no such column yet, so raise that with the first
-one. A member that is only sometimes in a panel fits neither axiom.
+micropore-scoped parts, not soil-scoped ones.
 
 | Row | `part_ofs` |
 | --- | --- |
