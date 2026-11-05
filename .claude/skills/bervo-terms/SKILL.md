@@ -269,9 +269,14 @@ says every flower is on some plant. It does not say every plant has a flower, so
 be absent from a given whole. That is the reason for the direction: the reverse axiom, `has
 part` on the whole, would require every plant to bear flowers.
 
-Use it only when every instance of the part belongs to some instance of the whole. A
-measurement that can also stand alone fails that test, so `part_ofs` is wrong for the
-members of a panel. A panel with fixed contents needs `has part` (`BFO:0000051`) on the
+Use it only when every instance of the part belongs to some instance of the whole. An
+instance here is a quantity of a particular system, not a measurement event: the osmotic
+potential of a soil is a term of that soil's total whether or not anyone measured the total.
+The members of a panel fail the test, so `part_ofs` is wrong for them: a panel is a grouping
+for reporting, and the quantity exists whether or not any panel was run.
+
+The part must also fall within the scope of the whole, so a micropore total takes
+micropore-scoped parts, not soil-scoped ones. A panel with fixed contents needs `has part` (`BFO:0000051`) on the
 panel's row; BERVO has no panel terms and no such column yet, so raise that with the first
 one. A member that is only sometimes in a panel fits neither axiom.
 
