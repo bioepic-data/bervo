@@ -163,7 +163,7 @@
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
         <obo:IAO_0000115>A core relation that holds between a part and its whole.</obo:IAO_0000115>
         <rdfs:comment>Definition source - RO (release 2026-09-04)</rdfs:comment>
-        <rdfs:comment>Reused from RO without importing it. Written on the row of the part, in part_ofs, as a some restriction: every instance of the part is part of some instance of the whole. That leaves open whether every whole has that part.</rdfs:comment>
+        <rdfs:comment>Reused from RO without importing it. Written on the row of the part, in part_ofs, as a some restriction: every instance of the part is part of some instance of the whole. That leaves open whether every whole has that part. The definition stays so the property reads on its own in BERVO, though a merge with RO puts two definitions on this IRI.</rdfs:comment>
         <rdfs:label>part of</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </ObjectProperty>
