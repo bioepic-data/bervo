@@ -655,6 +655,25 @@ class TestPartOf(ValidatorTestCase):
                 ]))
                 self.assertTrue(any("names the term itself" in e for e in report.errors))
 
+    def test_cycle_is_an_error(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:0000001", "Osmotic potential", part_ofs="Total water potential"),
+            row("BERVO:0000002", "Total water potential", part_ofs="BERVO:0000003"),
+            row("BERVO:0000003", "Turgor potential", part_ofs="Osmotic potential"),
+        ]))
+        cycles = [e for e in report.errors if "forms a cycle" in e]
+        self.assertEqual(len(cycles), 1, report.errors)
+        self.assertIn("BERVO:0000001 -> BERVO:0000002 -> BERVO:0000003 -> BERVO:0000001", cycles[0])
+
+    def test_shared_whole_is_not_a_cycle(self):
+        report = validator.validate(self.write([
+            ROOT, self.WHOLE,
+            row("BERVO:0000003", "Soil potential", part_ofs="Total water potential"),
+            row("BERVO:0000001", "Osmotic potential", part_ofs="Total water potential|Soil potential"),
+        ]))
+        self.assertEqual(report.errors, [])
+
     def test_only_the_declared_external_property_is_accepted(self):
         property_row = dict(category="", type_="owl:ObjectProperty")
         report = validator.validate(self.write([ROOT, row("BFO:0000050", "part of", **property_row)]))

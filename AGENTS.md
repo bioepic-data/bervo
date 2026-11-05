@@ -268,7 +268,7 @@ malformed IDs, missing labels, unrecognised `Type`, references to terms that do 
 that are not CURIE-shaped, `NA` (or `N/A`, `none`, in any capitalisation) in a term-reference column,
 `involves_chemicals`, `part_ofs`, `Category`, `Parents` or `DbXrefs`, an `obsolete ` label prefix that disagrees with the `obsolete`
 flag, a live term whose `Category`, `Parents`, `involves_chemicals` or `part_ofs` names an
-obsolete term, and a restriction filler that names its own term.
+obsolete term, a restriction filler that names its own term, and a cycle in `part_ofs`.
 
 **Warnings** (do not fail CI): missing `Type`, IDs outside the allocated blocks, orphan
 classes with no parent, mixed `Class`/`owl:Class` spelling, unresolvable relationship

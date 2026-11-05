@@ -203,6 +203,9 @@ CLASS_EXPRESSION_COLUMNS = ("involves_chemicals", "part_ofs")
 # is not one: its filler is a specific whole, which needs no subclasses.
 GENERALISING_RESTRICTION_COLUMNS = ("involves_chemicals",)
 
+# ``part of`` is transitive, so a loop of these says each term is part of itself.
+PART_OF_COLUMN = "part_ofs"
+
 # Terms legitimately without a parent: the two roots and the properties. Variable
 # heads the 0xxxxxx block and Concept heads the 8xxxxxx block (issue #64).
 ROOTLESS_IDS = {"BERVO:0000000", "BERVO:8000232"} | MNEMONIC_IDS | EXTERNAL_PROPERTY_IDS
@@ -247,6 +250,24 @@ def _tokens(value: str) -> list[str]:
 def _split(value: str) -> list[str]:
     """Split a ROBOT ``SPLIT=|`` cell into meaningful tokens, dropping placeholders."""
     return [tok.strip() for tok in value.split("|") if not _is_placeholder(tok.strip())]
+
+
+def _cycles(edges: dict[str, list[str]]) -> list[list[str]]:
+    """Each cycle in a directed graph, found once, by depth-first search."""
+    cycles: list[list[str]] = []
+    done: set[str] = set()
+
+    def visit(node: str, path: list[str]) -> None:
+        if node in path:
+            cycles.append(path[path.index(node):])
+        elif node not in done:
+            for successor in edges.get(node, []):
+                visit(successor, [*path, node])
+            done.add(node)
+
+    for start in sorted(edges):
+        visit(start, [])
+    return cycles
 
 
 def read_template(path: Path) -> tuple[list[str], list[str], list[list[str]]]:
@@ -376,6 +397,8 @@ def validate(path: Path) -> Report:
     xref_prefixes: Counter = Counter()
     # (column, filler) -> rows carrying it, for the inert-filler check below.
     fillers: dict[tuple[str, str], list[int]] = defaultdict(list)
+    part_edges: dict[str, list[str]] = defaultdict(list)
+    part_lines: dict[str, int] = {}
 
     for offset, row in enumerate(data):
         line = FIRST_DATA_ROW + offset
@@ -476,8 +499,12 @@ def validate(path: Path) -> Report:
                         f"{term_id}.{column} restriction filler {token!r} is not a class"
                         f"{suggestion}",
                     )
-                elif not obsolete and column in GENERALISING_RESTRICTION_COLUMNS:
-                    fillers[(column, token)].append(line)
+                else:
+                    if column == PART_OF_COLUMN:
+                        part_edges[term_id].append(label_ids.get(token, token))
+                        part_lines[term_id] = line
+                    if not obsolete and column in GENERALISING_RESTRICTION_COLUMNS:
+                        fillers[(column, token)].append(line)
 
         parented = False
         for column in LABEL_OR_CURIE_COLUMNS:
@@ -528,6 +555,12 @@ def validate(path: Path) -> Report:
                 )
         if not parented and not obsolete and term_id not in ROOTLESS_IDS:
             report.warn(line, f"{term_id} has no Category and no Parents; it will be an orphan class")
+
+    for cycle in _cycles(part_edges):
+        report.error(
+            part_lines[cycle[0]],
+            f"{PART_OF_COLUMN} forms a cycle: {' -> '.join([*cycle, cycle[0]])}",
+        )
 
     # A `some X` restriction only says something when X has subclasses; with
     # none, a reasoner learns nothing from it (issue #56). One warning per
