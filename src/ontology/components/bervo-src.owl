@@ -19197,9 +19197,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001117">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>The total water potential within plant roots, representing the sum of osmotic, turgor, and matric potentials. This measurement is fundamental for understanding water transport from soil to plant and predicting water stress responses in vegetation modeling.</obo:IAO_0000115>
+        <obo:IAO_0000115>The total water potential within plant roots, representing the sum of osmotic and turgor potentials. This measurement is fundamental for understanding water transport from soil to plant and predicting water stress responses in vegetation modeling.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PSIRoot_pvr</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025), edited by Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #201</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Root total water potential</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000789"/>
