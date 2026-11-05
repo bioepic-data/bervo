@@ -44,6 +44,7 @@ FIELD_MAP = {
     "Comment from Chris": "comment_from_chris",
     "obsolete": "obsolete",
     "replaced_by": "replaced_by",
+    "part_ofs": "part_ofs",
 }
 
 BOOL_FIELDS = {"obsolete"}
@@ -58,6 +59,7 @@ LIST_FIELDS = {
     "measurement_ofs",
     "contexts",
     "value_types",
+    "part_ofs",
     "parents",
 }
 

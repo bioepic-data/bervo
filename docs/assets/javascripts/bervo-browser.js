@@ -226,6 +226,7 @@
       listBlock("Qualifiers", entry.qualifiers, true),
       listBlock("Measured In", entry.measured_ins, true),
       listBlock("Measurement Of", entry.measurement_ofs, true),
+      listBlock("Part Of", entry.part_ofs, true),
       listBlock("Contexts", entry.contexts, true),
       listBlock("Value Types", entry.value_types, true),
       listBlock("Related Synonyms", entry.related_synonyms),

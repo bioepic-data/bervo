@@ -261,6 +261,10 @@ class MakefileIntegrationTest(unittest.TestCase):
             "id: BERVO:involves_chemicals",
             # Issue #131, end to end.
             "xref: http://vocabulary.odm2.org/variablename/sigma_t",
+            # Issue #201: the restriction, and transitivity from bervo-edit.owl.
+            "id: BFO:0000050",
+            "is_transitive: true",
+            "relationship: BFO:0000050 BERVO:0001117 ! part of Root total water potential",
         ):
             self.assertTrue(expected in line_set, f"bervo.obo has no line {expected!r}")
         self.assertTrue(

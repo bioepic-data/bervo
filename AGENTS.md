@@ -113,6 +113,7 @@ Columns that carry ontology semantics:
 | `Exact Synonyms` / `Related Synonyms` | `A oio:hasExactSynonym` / `hasRelatedSynonym` | `SPLIT=\|` |
 | `has_units`, `qualifiers`, `attributes`, `measured_ins`, `measurement_ofs`, `contexts`, `value_types` | `A`/`AI BERVO:…` | References to other BERVO terms, `SPLIT=\|` |
 | `involves_chemicals` | `C BERVO:involves_chemicals some % SPLIT=\|` | An OWL **existential restriction**, not an annotation. Each filler must name a class; `NA` is an error, so leave it empty when it does not apply. See "Variables that involve a set of chemicals" in the `bervo-terms` skill. |
+| `part_ofs` | `C BFO:0000050 some % SPLIT=\|` | Also an **existential restriction**: the term is part of some instance of each filler, which names the whole. Filled on the part's row, so a part may be absent from a given whole. See "Parts and wholes" in the `bervo-terms` skill. |
 | `obsolete` | `AT owl:deprecated^^xsd:boolean` | `true` on an obsoleted term, empty otherwise. Must agree with the `obsolete ` label prefix; the validator errors when they disagree. |
 | `replaced_by` | `AI IAO:0100001` | The ID of the term that supersedes an obsoleted one. Must name an existing term. |
 
@@ -179,7 +180,7 @@ Conventions:
 - Multi-valued cells are separated by `|` with no surrounding spaces.
 - In the term-reference columns (`qualifiers`, `attributes`, `measured_ins`,
   `measurement_ofs`, `contexts`, `value_types`, `replaced_by`) and in
-  `involves_chemicals`, leave a cell **empty** when no value applies. `NA` there is an
+  `involves_chemicals` and `part_ofs`, leave a cell **empty** when no value applies. `NA` there is an
   error: ROBOT turns each value into an IRI, so `NA` became a broken relative IRI, and
   most of the old `NA`s were a bulk default rather than a curator's decision (issue
   #127). An empty cell does not record whether anyone has reviewed the row.
@@ -215,7 +216,9 @@ Nine properties predate this scheme and keep mnemonic local names: `BERVO:has_un
 `BERVO:Qualifier`, `BERVO:Attribute`, `BERVO:measured_in`, `BERVO:measurement_of`,
 `BERVO:Context`, `BERVO:has_value_type`, `BERVO:involves_taxa`, `BERVO:involves_chemicals`.
 Do not invent new mnemonic IDs; if a new property is genuinely needed, raise it in an issue
-first, then add it to `MNEMONIC_IDS` in `src/scripts/validate_bervo_src.py`.
+first, then add it to `MNEMONIC_IDS` in `src/scripts/validate_bervo_src.py`. A published
+relation reused under its own ID goes in `EXTERNAL_PROPERTY_IDS` instead; `part of`
+(`BFO:0000050`, from RO) is the only one, and BERVO imports neither RO nor BFO.
 
 **To allocate a new ID**, take the next unused number in the appropriate block:
 
@@ -263,9 +266,9 @@ subtly broken ontology from a broken template, so run the validator first.
 malformed IDs, missing labels, unrecognised `Type`, references to terms that do not exist,
 `Category`/`Parents` values that resolve to neither an ID nor a label, `DbXrefs` values
 that are not CURIE-shaped, `NA` (or `N/A`, `none`, in any capitalisation) in a term-reference column,
-`involves_chemicals`, `Category`, `Parents` or `DbXrefs`, an `obsolete ` label prefix that disagrees with the `obsolete`
-flag, and a live term whose `Category`, `Parents` or `involves_chemicals` names an
-obsolete term.
+`involves_chemicals`, `part_ofs`, `Category`, `Parents` or `DbXrefs`, an `obsolete ` label prefix that disagrees with the `obsolete`
+flag, a live term whose `Category`, `Parents`, `involves_chemicals` or `part_ofs` names an
+obsolete term, and a restriction filler that names its own term.
 
 **Warnings** (do not fail CI): missing `Type`, IDs outside the allocated blocks, orphan
 classes with no parent, mixed `Class`/`owl:Class` spelling, unresolvable relationship

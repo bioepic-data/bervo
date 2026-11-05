@@ -256,6 +256,35 @@ directly under `Concept`. The validator warns when a filler has no subclasses at
 `src/sparql/variables-involving-chemicals.sparql` lists every variable that reaches
 `Chemical` by either route.
 
+## Parts and wholes
+
+`Category` and `Parents` say a term is a **kind of** another. `part_ofs` says it is a **part
+of** another: a matric potential is one part of a total water potential, not a kind of one
+(issue #201). The column emits `C BFO:0000050 some %`, an existential restriction on RO's
+`part of`, and takes the whole's label or ID. It is not a parent, so the term still needs a
+`Category`.
+
+**Fill it on the part's row, never the whole's.** `Flower SubClassOf 'part of' some Plant`
+says every flower is on some plant. It does not say every plant has a flower, so a part may
+be absent from a given whole. That is the reason for the direction: the reverse axiom, `has
+part` on the whole, would require every plant to bear flowers.
+
+Use it only when every instance of the part belongs to some instance of the whole. A
+measurement that can also stand alone fails that test, so `part_ofs` is wrong for the
+members of a panel. A panel with fixed contents needs `has part` (`BFO:0000051`) on the
+panel's row; BERVO has no panel terms and no such column yet, so raise that with the first
+one. A member that is only sometimes in a panel fits neither axiom.
+
+| Row | `part_ofs` |
+| --- | --- |
+| `Osmotic soil water potential` | `Elevation adjusted total soil micropore total water potential\|Soil water potential` |
+| `Root turgor water potential` | `Root total water potential` |
+
+`part of` is transitive (declared in `bervo-edit.owl`), so name the nearest whole. BERVO
+imports neither RO nor BFO: the property has its own row in the template because ROBOT
+cannot parse the column without one, and RO's continuant and occurrent axioms do not apply.
+`NA` is an error here, a filler must not be obsolete, and a term cannot be part of itself.
+
 ## Cross-references to other ontologies
 
 The `DbXrefs` column maps a BERVO term to an equivalent term elsewhere. There are 1,145

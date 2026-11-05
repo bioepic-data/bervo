@@ -22,6 +22,7 @@ Annotation(dcterms:title "BERVO")
 
 Declaration(ObjectProperty(bervo:BERVO_involves_chemicals))
 Declaration(ObjectProperty(bervo:BERVO_involves_taxa))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -47,6 +48,15 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 # Annotation Property: dcterms:title (title)
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
+############################
+#   Object Properties
+############################
+
+# Object Property: part of. RO's relation, declared here without importing RO or
+# BFO, so RO's continuant and occurrent axioms do not apply (issue #201).
+
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>)
 
 
 

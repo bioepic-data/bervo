@@ -19,7 +19,7 @@ HEADER = [
     "ID", "Label (description)", "Category", "Definition", "Type",
     "has_units", "qualifiers", "attributes", "measured_ins",
     "measurement_ofs", "contexts", "value_types", "Parents", "DbXrefs",
-    "involves_chemicals", "obsolete", "replaced_by",
+    "involves_chemicals", "obsolete", "replaced_by", "part_ofs",
 ]
 TYPE_ROW = [
     "ID", "LABEL", "SC %", "A IAO:0000115", "TYPE",
@@ -29,6 +29,7 @@ TYPE_ROW = [
     "AI BERVO:has_value_type SPLIT=|", "SC % SPLIT=|",
     "AI oio:hasDbXref SPLIT=|", "C BERVO:involves_chemicals some % SPLIT=|",
     "AT owl:deprecated^^xsd:boolean", "AI IAO:0100001",
+    "C BFO:0000050 some % SPLIT=|",
 ]
 
 
@@ -604,6 +605,63 @@ class TestRealTemplate(unittest.TestCase):
         """Every `involves_chemicals` filler must keep its subclasses (issue #56)."""
         report = validator.validate(REPO_ROOT / "src" / "ontology" / "bervo-src.csv")
         self.assertEqual([w for w in report.warnings if "has no subclasses" in w], [])
+
+
+class TestPartOf(ValidatorTestCase):
+    """``part_ofs`` is a `some` restriction on the part's row (issue #201)."""
+
+    WHOLE = row("BERVO:0000002", "Total water potential")
+
+    def test_label_and_id_fillers_pass(self):
+        report = validator.validate(self.write([
+            ROOT, self.WHOLE,
+            row("BERVO:0000001", "Osmotic potential", part_ofs="Total water potential"),
+            row("BERVO:0000003", "Turgor potential", part_ofs="BERVO:0000002"),
+        ]))
+        self.assertEqual(report.errors, [])
+
+    def test_a_whole_with_no_subclasses_is_not_inert(self):
+        report = validator.validate(self.write([
+            ROOT, self.WHOLE,
+            row("BERVO:0000001", "Osmotic potential", part_ofs="Total water potential"),
+        ]))
+        self.assertEqual([w for w in report.warnings if "has no subclasses" in w], [])
+
+    def test_unknown_filler_is_an_error(self):
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:0000001", "Osmotic potential", part_ofs="Nonexistent"),
+        ]))
+        self.assertTrue(any("part_ofs restriction filler 'Nonexistent'" in e for e in report.errors))
+
+    def test_na_is_an_error(self):
+        report = validator.validate(self.write([
+            ROOT, row("BERVO:0000001", "Osmotic potential", part_ofs="NA"),
+        ]))
+        self.assertTrue(any("part_ofs is a restriction filler" in e for e in report.errors))
+
+    def test_obsolete_filler_is_an_error(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:0000002", "obsolete Total water potential", category="", obsolete="true"),
+            row("BERVO:0000001", "Osmotic potential", part_ofs="obsolete Total water potential"),
+        ]))
+        self.assertTrue(any("is an obsolete term" in e for e in report.errors))
+
+    def test_term_cannot_be_part_of_itself(self):
+        for filler in ("Osmotic potential", "BERVO:0000001"):
+            with self.subTest(filler=filler):
+                report = validator.validate(self.write([
+                    ROOT, row("BERVO:0000001", "Osmotic potential", part_ofs=filler),
+                ]))
+                self.assertTrue(any("names the term itself" in e for e in report.errors))
+
+    def test_only_the_declared_external_property_is_accepted(self):
+        property_row = dict(category="", type_="owl:ObjectProperty")
+        report = validator.validate(self.write([ROOT, row("BFO:0000050", "part of", **property_row)]))
+        self.assertEqual(report.errors, [])
+        self.assertEqual([w for w in report.warnings if "no Category" in w], [])
+        report = validator.validate(self.write([ROOT, row("BFO:0000051", "has part", **property_row)]))
+        self.assertTrue(any("known property ID" in e for e in report.errors))
 
 
 class TestUnits(ValidatorTestCase):

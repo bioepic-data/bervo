@@ -48,6 +48,11 @@ MNEMONIC_IDS = {
     "BERVO:involves_chemicals",
 }
 
+# Published relations reused under their own IDs rather than minted as BERVO terms.
+# ``part of`` needs a template row because ROBOT can parse ``C BFO:0000050 some %``
+# only when the property is declared in the template (issue #201).
+EXTERNAL_PROPERTY_IDS = {"BFO:0000050"}
+
 # Numeric IDs are allocated in blocks by term kind. See AGENTS.md.
 ID_BLOCKS = {
     0: "variable",
@@ -192,11 +197,15 @@ LABEL_OR_CURIE_COLUMNS = ("Category", "Parents")
 # Declared ``C <property> some %``: the value is the filler of an OWL restriction,
 # so it must name a class. Checked for resolution like a term reference, but it is
 # not a parent -- a term with only this filled in is still an orphan.
-CLASS_EXPRESSION_COLUMNS = ("involves_chemicals",)
+CLASS_EXPRESSION_COLUMNS = ("involves_chemicals", "part_ofs")
+
+# Of those, the columns that generalise over the filler's subclasses. ``part_ofs``
+# is not one: its filler is a specific whole, which needs no subclasses.
+GENERALISING_RESTRICTION_COLUMNS = ("involves_chemicals",)
 
 # Terms legitimately without a parent: the two roots and the properties. Variable
 # heads the 0xxxxxx block and Concept heads the 8xxxxxx block (issue #64).
-ROOTLESS_IDS = {"BERVO:0000000", "BERVO:8000232"} | MNEMONIC_IDS
+ROOTLESS_IDS = {"BERVO:0000000", "BERVO:8000232"} | MNEMONIC_IDS | EXTERNAL_PROPERTY_IDS
 
 # Obsolete terms keep their row and ID but leave the hierarchy, so a label with
 # this prefix is not an orphan either.
@@ -308,10 +317,10 @@ def validate(path: Path) -> Report:
             report.error(line, f"duplicate ID {term_id} (first seen on row {ids[term_id]})")
         else:
             ids[term_id] = line
-            if not NUMERIC_ID.match(term_id) and term_id not in MNEMONIC_IDS:
+            if not NUMERIC_ID.match(term_id) and term_id not in MNEMONIC_IDS | EXTERNAL_PROPERTY_IDS:
                 report.error(
                     line,
-                    f"ID {term_id!r} is neither a 7-digit BERVO CURIE nor a known mnemonic property ID",
+                    f"ID {term_id!r} is neither a 7-digit BERVO CURIE nor a known property ID",
                 )
             elif NUMERIC_ID.match(term_id):
                 block = int(term_id.split(":")[1]) // 1_000_000
@@ -449,10 +458,12 @@ def validate(path: Path) -> Report:
                         f"{token!r}; leave it empty instead",
                     )
                     continue
-                # The one column that emits a logical axiom: an obsolete row that
-                # keeps it still constrains inference, so it counts as a relationship.
+                # These columns emit logical axioms: an obsolete row that keeps
+                # one still constrains inference, so it counts as a relationship.
                 relationships.append(column)
-                if token in obsolete_terms:
+                if token in (term_id, cell(row, label_col)):
+                    report.error(line, f"{term_id}.{column} names the term itself")
+                elif token in obsolete_terms:
                     report.error(
                         line,
                         f"{term_id}.{column} restriction filler {token!r} is an obsolete term",
@@ -465,7 +476,7 @@ def validate(path: Path) -> Report:
                         f"{term_id}.{column} restriction filler {token!r} is not a class"
                         f"{suggestion}",
                     )
-                elif not obsolete:
+                elif not obsolete and column in GENERALISING_RESTRICTION_COLUMNS:
                     fillers[(column, token)].append(line)
 
         parented = False
