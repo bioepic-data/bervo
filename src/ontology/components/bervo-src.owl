@@ -63819,6 +63819,7 @@
         <obo:IAO_0000115>Protective tissue that replaces the epidermis of stems and roots after secondary growth, made up of cork, cork cambium and phelloderm.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0005046"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0005046)</rdfs:comment>
+        <rdfs:comment>Periderm also occurs on non-woody organs such as a tuber, so the whole that always holds is Plant, not Bark.</rdfs:comment>
         <rdfs:label>Periderm</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
