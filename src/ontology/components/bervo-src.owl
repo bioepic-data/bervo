@@ -63634,8 +63634,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001355">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
-        <obo:IAO_0000115>Material made up of plants or plant parts, taken together by position rather than by anatomy, such as all the plant parts above the ground.</obo:IAO_0000115>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215</rdfs:comment>
+        <obo:IAO_0000115>Material composed of plants or plant parts, living or dead, taken as a whole rather than by anatomy, such as all the plant parts above the ground.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001121"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215; reworded by Claude Opus 5.5 through Claude Code (Nov 06 2026), issue #215, after ENVO:01001121</rdfs:comment>
         <rdfs:label>Plant material</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
