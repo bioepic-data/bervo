@@ -606,6 +606,11 @@ class TestRealTemplate(unittest.TestCase):
         report = validator.validate(REPO_ROOT / "src" / "ontology" / "bervo-src.csv")
         self.assertEqual([w for w in report.warnings if "has no subclasses" in w], [])
 
+    def test_repository_terms_are_not_both_kind_and_part_of_a_whole(self):
+        """A warning fails nothing, so hold the checked-in template to it here (issue #201)."""
+        report = validator.validate(REPO_ROOT / "src" / "ontology" / "bervo-src.csv")
+        self.assertEqual([w for w in report.warnings if "a kind or a part" in w], [])
+
 
 class TestPartOf(ValidatorTestCase):
     """``part_ofs`` is a `some` restriction on the part's row (issue #201)."""
