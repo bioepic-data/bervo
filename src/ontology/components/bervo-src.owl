@@ -46487,7 +46487,6 @@
         <obo:IAO_0000115>A reproductive unit of a flowering plant that contains an embryo and stored nutrients capable of developing into a new plant under appropriate conditions. This structure is fundamental for understanding plant reproduction, population dynamics, genetic diversity, and ecosystem regeneration processes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0009010"/>
         <oboInOwl:hasRelatedSynonym>germ</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>kernel</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>pip</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Seed</rdfs:label>
@@ -46928,7 +46927,7 @@
                 <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
             </Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Elongated, more or less cylindrical part of a plant organ that supports another part of it.</obo:IAO_0000115>
+        <obo:IAO_0000115>Elongated, more or less cylindrical part of a plant organ that supports another organ part.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0025066"/>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025); redefined by Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0025066)</rdfs:comment>
         <rdfs:label>Stalk</rdfs:label>
@@ -47311,7 +47310,6 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115>The main structural axis of a plant that provides mechanical support and serves as a conduit for transporting water, nutrients, and photosynthetic products between roots and leaves. This organ system controls plant architecture, competitive ability, and resource allocation while serving as a storage site for carbohydrates and other compounds.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0009047"/>
-        <oboInOwl:hasRelatedSynonym>stalk</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Stem</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -63612,6 +63610,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001352"/>
         <obo:IAO_0000115>Group of plant cells with a similar structure and function, such as xylem, mesophyll or epidermis.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0009007"/>
+        <oboInOwl:hasExactSynonym>portion of plant tissue</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215</rdfs:comment>
         <rdfs:label>Plant tissue</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -63707,6 +63706,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115>Strand of vascular tissue in a leaf lamina that carries water and sugars between the lamina and the stem.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0020138"/>
+        <oboInOwl:hasExactSynonym>leaf lamina vein</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0020138)</rdfs:comment>
         <rdfs:label>Leaf vein</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -63738,7 +63738,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001361">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
         <obo:IAO_0000115>Main woody stem of a tree, from the ground to the crown.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>bole</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>bole</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215</rdfs:comment>
         <rdfs:label>Trunk</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -63810,7 +63810,7 @@
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8001301"/>
             </Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Protective tissue that replaces the epidermis of stems and roots after secondary growth, made up of cork, cork cambium and phelloderm.</obo:IAO_0000115>
@@ -63880,6 +63880,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000224"/>
         <obo:IAO_0000115>Highly compacted pistillate inflorescence of Zea species, bearing the grains.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0020136"/>
+        <oboInOwl:hasExactSynonym>ear inflorescence</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0020136)</rdfs:comment>
         <rdfs:label>Maize ear</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
