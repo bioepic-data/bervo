@@ -1,3 +1,4 @@
+import csv
 import shutil
 import subprocess
 import tempfile
@@ -168,6 +169,34 @@ class MakefileIntegrationTest(unittest.TestCase):
         # as a CURIE; the validator can catch only one known case at a time.
         self.assertEqual(unresolved_iris(component), {})
 
+    def test_part_of_report_finds_every_part_ofs_filler(self) -> None:
+        """The query returns nothing, without failing, if its BFO IRI is wrong (issue #201)."""
+        self.run_make("components/bervo-src.owl")
+        report = Path(self.tempdir.name) / "part-of-pairs.tsv"
+        subprocess.run(
+            [
+                "robot", "query",
+                "-i", str(self.ontology_dir / "components" / "bervo-src.owl"),
+                "-q", str(self.repo_copy / "src" / "sparql" / "part-of-pairs.sparql"),
+                str(report),
+            ],
+            text=True,
+            capture_output=True,
+            check=True,
+        )
+
+        with (self.ontology_dir / "bervo-src.csv").open(encoding="utf-8", newline="") as handle:
+            header, _template, *rows = csv.reader(handle)
+        column = header.index("part_ofs")
+        fillers = sum(len(row[column].split("|")) for row in rows if row[column])
+
+        lines = report.read_text(encoding="utf-8").splitlines()[1:]
+        self.assertEqual(len(lines), fillers)
+        self.assertTrue(
+            any("BERVO_0001117>" in line and "BERVO_0001119>" in line for line in lines),
+            "Root turgor water potential should be part of Root total water potential",
+        )
+
     def test_export_google_sheet_copies_repo_tracked_template(self) -> None:
         template = self.ontology_dir / "bervo-src.csv"
         export_path = self.ontology_dir / "tmp" / "bervo-src-for-google-sheet.csv"
@@ -261,6 +290,10 @@ class MakefileIntegrationTest(unittest.TestCase):
             "id: BERVO:involves_chemicals",
             # Issue #131, end to end.
             "xref: http://vocabulary.odm2.org/variablename/sigma_t",
+            # Issue #201: the restriction, and transitivity from bervo-edit.owl.
+            "id: BFO:0000050",
+            "is_transitive: true",
+            "relationship: BFO:0000050 BERVO:0001117 ! part of Root total water potential",
         ):
             self.assertTrue(expected in line_set, f"bervo.obo has no line {expected!r}")
         self.assertTrue(

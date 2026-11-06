@@ -70,17 +70,17 @@ duplicate and near-duplicate terms are the hardest problem to unwind later.
 - To obsolete: prefix the label with `obsolete `, set `obsolete` to `true`, clear
   `Category` and `Parents` so the term leaves the hierarchy, empty the row's own
   relationship cells (`qualifiers`, `attributes`, `measured_ins`, `measurement_ofs`,
-  `contexts`, `value_types`, `involves_chemicals`), and put the successor's ID in
+  `contexts`, `value_types`, `involves_chemicals`, `part_ofs`), and put the successor's ID in
   `replaced_by` where one exists. Move any `DbXrefs` and useful synonyms to the successor, and re-point every
   relationship cell on other rows that named the old label. Keep the row and its
   definition; never delete it and never reuse the ID.
 - The validator enforces this: the label prefix and the `obsolete` flag must agree
-  (error); a live term whose `Category`, `Parents` or `involves_chemicals` names an
-  obsolete term is an error, because those three columns emit logical axioms; a reference
+  (error); a live term whose `Category`, `Parents`, `involves_chemicals` or `part_ofs` names an
+  obsolete term is an error, because those four columns emit logical axioms; a reference
   to an obsolete term from any annotation column (`qualifiers`, `attributes`,
   `measured_ins`, `measurement_ofs`, `contexts`, `value_types`), a `replaced_by` that
   points at another obsolete term, or an obsolete row that still carries relationships or
-  an `involves_chemicals` filler, is a warning.
+  an `involves_chemicals` or `part_ofs` filler, is a warning.
 
 ## Interpreting validator output
 
@@ -231,7 +231,7 @@ a substance:
 | `Gaseous argon diffusivity` | `Argon` | *(blank)* |
 | `Gaseous diffusivity` | `Gas` | `Chemical` |
 
-`involves_chemicals` is the ontology's one **`C … some % SPLIT=|`** column: it emits an OWL
+`involves_chemicals` is a **`C … some % SPLIT=|`** column, as `part_ofs` is: it emits an OWL
 existential restriction rather than an annotation, so its value must name a class. `Chemical`
 (`BERVO:8000586`) is the general filler. Do not put a literal or a bare adjective there —
 `just validate` reports an unresolvable filler as a hard error.
@@ -255,6 +255,46 @@ substances sit under it, directly or via `Element`, `Ion`, `Organic compound`, `
 directly under `Concept`. The validator warns when a filler has no subclasses at all, and
 `src/sparql/variables-involving-chemicals.sparql` lists every variable that reaches
 `Chemical` by either route.
+
+## Parts and wholes
+
+`Category` and `Parents` say a term is a **kind of** another. `part_ofs` says it is a **part
+of** another: a matric potential is one part of a total water potential, not a kind of one
+(issue #201). The column emits `C BFO:0000050 some %`, an existential restriction on RO's
+`part of`, and takes the whole's label or ID. It is not a parent, so the term still needs a
+`Category`.
+
+**Fill it on the part's row, never the whole's.** `Flower SubClassOf 'part of' some Plant`
+says every flower is on some plant. It does not say every plant has a flower, so a part may
+be absent from a given whole. That is the reason for the direction: the reverse axiom, `has
+part` on the whole, would require every plant to bear flowers.
+
+Use it only when every instance of the part belongs to some instance of the whole. An
+instance here is a quantity of a particular system, not a measurement event: the osmotic
+potential of a soil is a term of that soil's total whether or not anyone measured the total.
+The members of a panel fail the test, so `part_ofs` is wrong for them: a panel is a grouping
+for reporting, and the quantity exists whether or not any panel was run. A panel with fixed
+contents needs `has part` (`BFO:0000051`) on the panel's row; BERVO has no panel terms and no
+such column yet, so raise that with the first one. A member that is only sometimes in a panel
+fits neither axiom.
+
+The part must also fall within the scope of the whole, so a micropore total takes
+micropore-scoped parts, not soil-scoped ones.
+
+| Row | `part_ofs` |
+| --- | --- |
+| `Soil micropore matric water potential` | `Elevation adjusted total soil micropore total water potential\|Soil water potential` |
+| `Osmotic soil water potential` | `Soil water potential` |
+| `Soil micropore osmotic water potential` | `Elevation adjusted total soil micropore total water potential` |
+| `Root turgor water potential` | `Root total water potential` |
+
+`part of` is transitive (declared in `bervo-edit.owl`), so name the nearest whole. BERVO
+imports neither RO nor BFO: the property has its own row in the template because ROBOT
+cannot parse the column without one, and RO's continuant and occurrent axioms do not apply.
+A term is usually a kind of a thing or a part of it, not both, so the validator warns when a
+filler is also the term's ancestor or descendant in `Category` or `Parents`.
+`NA` is an error here, a filler must not be obsolete, a term cannot be part of itself, and
+`part_ofs` cannot form a cycle. `src/sparql/part-of-pairs.sparql` lists every part and whole.
 
 ## Cross-references to other ontologies
 

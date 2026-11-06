@@ -48,6 +48,11 @@ MNEMONIC_IDS = {
     "BERVO:involves_chemicals",
 }
 
+# Published relations reused under their own IDs rather than minted as BERVO terms.
+# ``part of`` needs a template row because ROBOT can parse ``C BFO:0000050 some %``
+# only when the property is declared in the template (issue #201).
+EXTERNAL_PROPERTY_IDS = {"BFO:0000050"}
+
 # Numeric IDs are allocated in blocks by term kind. See AGENTS.md.
 ID_BLOCKS = {
     0: "variable",
@@ -192,11 +197,18 @@ LABEL_OR_CURIE_COLUMNS = ("Category", "Parents")
 # Declared ``C <property> some %``: the value is the filler of an OWL restriction,
 # so it must name a class. Checked for resolution like a term reference, but it is
 # not a parent -- a term with only this filled in is still an orphan.
-CLASS_EXPRESSION_COLUMNS = ("involves_chemicals",)
+CLASS_EXPRESSION_COLUMNS = ("involves_chemicals", "part_ofs")
+
+# Of those, the columns that generalise over the filler's subclasses. ``part_ofs``
+# is not one: its filler is a specific whole, which needs no subclasses.
+GENERALISING_RESTRICTION_COLUMNS = ("involves_chemicals",)
+
+# ``part of`` is transitive, so a loop of these says each term is part of itself.
+PART_OF_COLUMN = "part_ofs"
 
 # Terms legitimately without a parent: the two roots and the properties. Variable
 # heads the 0xxxxxx block and Concept heads the 8xxxxxx block (issue #64).
-ROOTLESS_IDS = {"BERVO:0000000", "BERVO:8000232"} | MNEMONIC_IDS
+ROOTLESS_IDS = {"BERVO:0000000", "BERVO:8000232"} | MNEMONIC_IDS | EXTERNAL_PROPERTY_IDS
 
 # Obsolete terms keep their row and ID but leave the hierarchy, so a label with
 # this prefix is not an orphan either.
@@ -238,6 +250,36 @@ def _tokens(value: str) -> list[str]:
 def _split(value: str) -> list[str]:
     """Split a ROBOT ``SPLIT=|`` cell into meaningful tokens, dropping placeholders."""
     return [tok.strip() for tok in value.split("|") if not _is_placeholder(tok.strip())]
+
+
+def _cycles(edges: dict[str, list[str]]) -> list[list[str]]:
+    """Each cycle in a directed graph, found once, by depth-first search."""
+    cycles: list[list[str]] = []
+    done: set[str] = set()
+
+    def visit(node: str, path: list[str]) -> None:
+        if node in path:
+            cycles.append(path[path.index(node):])
+        elif node not in done:
+            for successor in edges.get(node, []):
+                visit(successor, [*path, node])
+            done.add(node)
+
+    for start in sorted(edges):
+        visit(start, [])
+    return cycles
+
+
+def _ancestors(edges: dict[str, list[str]], node: str) -> set[str]:
+    """Everything reachable from ``node``, not counting ``node`` unless a cycle returns to it."""
+    seen: set[str] = set()
+    stack = list(edges.get(node, []))
+    while stack:
+        current = stack.pop()
+        if current not in seen:
+            seen.add(current)
+            stack.extend(edges.get(current, []))
+    return seen
 
 
 def read_template(path: Path) -> tuple[list[str], list[str], list[list[str]]]:
@@ -308,10 +350,10 @@ def validate(path: Path) -> Report:
             report.error(line, f"duplicate ID {term_id} (first seen on row {ids[term_id]})")
         else:
             ids[term_id] = line
-            if not NUMERIC_ID.match(term_id) and term_id not in MNEMONIC_IDS:
+            if not NUMERIC_ID.match(term_id) and term_id not in MNEMONIC_IDS | EXTERNAL_PROPERTY_IDS:
                 report.error(
                     line,
-                    f"ID {term_id!r} is neither a 7-digit BERVO CURIE nor a known mnemonic property ID",
+                    f"ID {term_id!r} is neither a 7-digit BERVO CURIE nor a known property ID",
                 )
             elif NUMERIC_ID.match(term_id):
                 block = int(term_id.split(":")[1]) // 1_000_000
@@ -367,6 +409,9 @@ def validate(path: Path) -> Report:
     xref_prefixes: Counter = Counter()
     # (column, filler) -> rows carrying it, for the inert-filler check below.
     fillers: dict[tuple[str, str], list[int]] = defaultdict(list)
+    part_edges: dict[str, list[str]] = defaultdict(list)
+    part_lines: dict[str, int] = {}
+    parent_edges: dict[str, list[str]] = defaultdict(list)
 
     for offset, row in enumerate(data):
         line = FIRST_DATA_ROW + offset
@@ -449,10 +494,12 @@ def validate(path: Path) -> Report:
                         f"{token!r}; leave it empty instead",
                     )
                     continue
-                # The one column that emits a logical axiom: an obsolete row that
-                # keeps it still constrains inference, so it counts as a relationship.
+                # These columns emit logical axioms: an obsolete row that keeps
+                # one still constrains inference, so it counts as a relationship.
                 relationships.append(column)
-                if token in obsolete_terms:
+                if token in (term_id, cell(row, label_col)):
+                    report.error(line, f"{term_id}.{column} names the term itself")
+                elif token in obsolete_terms:
                     report.error(
                         line,
                         f"{term_id}.{column} restriction filler {token!r} is an obsolete term",
@@ -465,8 +512,12 @@ def validate(path: Path) -> Report:
                         f"{term_id}.{column} restriction filler {token!r} is not a class"
                         f"{suggestion}",
                     )
-                elif not obsolete:
-                    fillers[(column, token)].append(line)
+                else:
+                    if column == PART_OF_COLUMN:
+                        part_edges[term_id].append(label_ids.get(token, token))
+                        part_lines[term_id] = line
+                    if not obsolete and column in GENERALISING_RESTRICTION_COLUMNS:
+                        fillers[(column, token)].append(line)
 
         parented = False
         for column in LABEL_OR_CURIE_COLUMNS:
@@ -482,6 +533,7 @@ def validate(path: Path) -> Report:
                     )
                     continue
                 parented = True
+                parent_edges[term_id].append(label_ids.get(token, token))
                 if token in obsolete_terms:
                     # A live class under a deprecated parent inherits from a corpse.
                     report.error(line, f"{term_id}.{column} names obsolete term {token!r} as a parent")
@@ -517,6 +569,29 @@ def validate(path: Path) -> Report:
                 )
         if not parented and not obsolete and term_id not in ROOTLESS_IDS:
             report.warn(line, f"{term_id} has no Category and no Parents; it will be an orphan class")
+
+    for cycle in _cycles(part_edges):
+        report.error(
+            part_lines[cycle[0]],
+            f"{PART_OF_COLUMN} forms a cycle: {' -> '.join([*cycle, cycle[0]])}",
+        )
+
+    # A term is usually a kind of a thing or a part of it, not both. Only a warning:
+    # hierarchy repairs (issues #215, #237) can pass through this state.
+    for term_id, wholes in sorted(part_edges.items()):
+        ancestors = _ancestors(parent_edges, term_id)
+        for whole in wholes:
+            if whole in ancestors:
+                relation = "an ancestor"
+            elif term_id in _ancestors(parent_edges, whole):
+                relation = "a descendant"
+            else:
+                continue
+            report.warn(
+                part_lines[term_id],
+                f"{term_id}.{PART_OF_COLUMN} names {whole}, which is also {relation} of the "
+                f"term in Category/Parents; a term is usually a kind or a part, not both",
+            )
 
     # A `some X` restriction only says something when X has subclasses; with
     # none, a reasoner learns nothing from it (issue #56). One warning per

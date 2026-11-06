@@ -39,6 +39,7 @@ Regenerate this table with `python3 src/scripts/dump_column_contract.py`.
 | 30 | `involves_chemicals` | `C BERVO:involves_chemicals some % SPLIT=\|` | **restriction filler** (must name a class) |
 | 31 | `obsolete` | `AT owl:deprecated^^xsd:boolean` | typed literal annotation |
 | 32 | `replaced_by` | `AI IAO:0100001` | **term reference** (label or ID) |
+| 33 | `part_ofs` | `C BFO:0000050 some % SPLIT=\|` | **restriction filler** (must name a class) |
 
 ## Reading the template strings
 
