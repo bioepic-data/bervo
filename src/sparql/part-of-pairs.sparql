@@ -1,0 +1,23 @@
+# Report: every part and the whole it is part of.
+#
+# `part_ofs` emits `part of some <whole>` on the part's row (issue #201). This
+# lists the asserted pairs only; `part of` is transitive, but the query does not
+# follow chains.
+#
+#   robot query -i src/ontology/components/bervo-src.owl \
+#       -q src/sparql/part-of-pairs.sparql out.tsv
+
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix BFO: <http://purl.obolibrary.org/obo/BFO_>
+
+SELECT DISTINCT ?whole ?whole_label ?part ?part_label
+WHERE {
+  ?part rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty BFO:0000050 ;
+    owl:someValuesFrom ?whole ] .
+  ?part rdfs:label ?part_label .
+  ?whole rdfs:label ?whole_label .
+}
+ORDER BY ?whole_label ?part_label

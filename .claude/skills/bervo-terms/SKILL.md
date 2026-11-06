@@ -292,7 +292,7 @@ micropore-scoped parts, not soil-scoped ones.
 imports neither RO nor BFO: the property has its own row in the template because ROBOT
 cannot parse the column without one, and RO's continuant and occurrent axioms do not apply.
 `NA` is an error here, a filler must not be obsolete, a term cannot be part of itself, and
-`part_ofs` cannot form a cycle.
+`part_ofs` cannot form a cycle. `src/sparql/part-of-pairs.sparql` lists every part and whole.
 
 ## Cross-references to other ontologies
 
