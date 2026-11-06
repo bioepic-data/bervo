@@ -61312,7 +61312,7 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001189">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001352"/>
         <obo:IAO_0000115>Plant part involved in sexual reproduction, such as a flower, a fruit, a cone, a seed or pollen.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>reproductive organ</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>reproductive organ</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>AmeriFlux BADM BIOMASS_ORGAN value: Reproductive bodies. BIOMASS_ORGAN Foliage maps to Leaf, Seeds to Seed, Stems to Stem, Roots to Root and Total to Total. AmeriFlux lists Flowers separately, so its Reproductive bodies are the part of this concept other than Flower (BERVO:8001188). Broadened from seed-bearing structures for issue #27, so that it holds pollen cones and flowers, which TRY counts among reproductive organs.</rdfs:comment>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 5; broadened by Claude Opus 5.5 through Claude Code (Oct 22 2026), TRY alignment for issue #27; reworded by Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215</rdfs:comment>
         <rdfs:label>Reproductive structure</rdfs:label>
