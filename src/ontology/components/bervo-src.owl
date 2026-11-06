@@ -8806,7 +8806,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
         <bervo:BERVO_has_unit>s.h-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000201"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001370"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
     
@@ -8958,7 +8958,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
         <bervo:BERVO_has_unit>umol.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000201"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001370"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
     
@@ -42812,10 +42812,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002516">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>Length of a stoma, the pair of guard cells, along its long axis.</obo:IAO_0000115>
+        <obo:IAO_0000115>Length of a stoma, the two guard cells and the pore between them, along its long axis.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Stomata length</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>guard cell length</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), from the TRY trait of the same name, TRY alignment for issue #27; reworded by Claude Opus 5.5 through Claude Code (Nov 06 2026), issue #215</rdfs:comment>
         <rdfs:comment>TRY trait ID: 1190. Distinct from Stomatal pore length (BERVO:0002518), the length of the opening between the guard cells.</rdfs:comment>
         <rdfs:label>Stomatal length</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
@@ -42831,9 +42831,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002517">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>Width of a stoma, the pair of guard cells, across its long axis.</obo:IAO_0000115>
+        <obo:IAO_0000115>Width of a stoma, the two guard cells and the pore between them, across its long axis.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Stomata width</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), from the TRY trait of the same name, TRY alignment for issue #27; reworded by Claude Opus 5.5 through Claude Code (Nov 06 2026), issue #215</rdfs:comment>
         <rdfs:comment>TRY trait ID: 1192.</rdfs:comment>
         <rdfs:label>Stomatal width</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000197"/>
