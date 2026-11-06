@@ -42858,7 +42858,7 @@
         <bervo:BERVO_has_unit>um</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000201"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001370"/>
     </Class>
     
 
@@ -47598,9 +47598,12 @@
                 <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
             </Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A microscopic pore in plant leaves and stems that regulates gas exchange between the plant and atmosphere, controlling carbon dioxide uptake and water vapor loss. These structures are fundamental for understanding photosynthesis, transpiration, water use efficiency, and plant responses to environmental conditions such as drought and atmospheric composition.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0008032"/>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <obo:IAO_0000115>Epidermal complex of two guard cells and the pore between them, in leaves and stems, that regulates gas exchange between the plant and the atmosphere.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0002000"/>
+        <oboInOwl:hasExactSynonym>stomatal apparatus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>stomatal complex</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>stomate</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025); redefined by Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0002000)</rdfs:comment>
         <rdfs:label>Stoma</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -63879,6 +63882,26 @@
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0020136"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0020136)</rdfs:comment>
         <rdfs:label>Maize ear</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001370 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001370">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001352"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000201"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Opening in an epidermis between the two guard cells of a stoma, through which gases pass.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0008032"/>
+        <oboInOwl:hasRelatedSynonym>stomatal aperture</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0008032)</rdfs:comment>
+        <rdfs:label>Stomatal pore</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
