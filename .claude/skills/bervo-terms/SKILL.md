@@ -289,8 +289,8 @@ senesces, falls or is cut keeps its whole, so `Flower`, `Cone`, `Leaf` and `Wood
 
 Several fillers mean all of them, not either. `Stoma` occurs on leaves and on stems, so it
 names what those share, `Plant`, not `Leaf|Stem`. A subclass inherits the axiom, so `Fine
-root` needs none of its own. That is also why `Reproductive structure` and `Plant organ` stay
-empty: a filler on either would reach the dispersal units beneath them.
+root` needs none of its own. That is also why `Plant part`, `Reproductive structure` and
+`Plant organ` stay empty: a filler on any of them would reach the dispersal units beneath it.
 
 Plant anatomy sits under `Plant part` (`BERVO:8001352`), directly or through `Plant organ`,
 `Plant tissue` or `Reproductive structure`. Never parent a part on `Plant`, which is the
