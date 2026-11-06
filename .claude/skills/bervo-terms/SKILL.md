@@ -281,6 +281,19 @@ fits neither axiom.
 The part must also fall within the scope of the whole, so a micropore total takes
 micropore-scoped parts, not soil-scoped ones.
 
+A part that is routinely shed fails the test: a seed in the soil is on no plant. `Seed`,
+`Pollen`, `Fruit` and `Diaspore` have no `part_ofs`, and neither do `Cotyledon`, which a shed
+seed carries, or `Husk`, which is on a fruit or a seed.
+
+Several fillers mean all of them, not either. `Stoma` occurs on leaves and on stems, so it
+names what those share, `Plant`, not `Leaf|Stem`. A subclass inherits the axiom, so `Fine
+root` needs none of its own.
+
+Plant anatomy sits under `Plant part` (`BERVO:8001352`), through `Plant organ`, `Plant
+tissue` or `Reproductive structure`. Never parent a part on `Plant`, which is the organism
+(issue #215). A process goes under `Biological process`, and a collection of parts, such as
+`Aboveground plant material`, under `Plant material`.
+
 | Row | `part_ofs` |
 | --- | --- |
 | `Soil micropore matric water potential` | `Elevation adjusted total soil micropore total water potential\|Soil water potential` |
