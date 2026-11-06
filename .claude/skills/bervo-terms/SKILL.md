@@ -281,9 +281,11 @@ fits neither axiom.
 The part must also fall within the scope of the whole, so a micropore total takes
 micropore-scoped parts, not soil-scoped ones.
 
-A part that is routinely shed fails the test: a seed in the soil is on no plant. `Seed`,
-`Pollen`, `Fruit` and `Diaspore` have no `part_ofs`, and neither do `Cotyledon`, which a shed
-seed carries, or `Husk`, which is on a fruit or a seed.
+A dispersal unit fails the test, because its normal life includes time away from the parent:
+a seed in the soil is on no plant. `Seed`, `Pollen`, `Fruit` and `Diaspore` have no
+`part_ofs`, and neither do `Cotyledon` and `Husk`, which travel with one. A part that merely
+senesces, falls or is cut keeps its whole, so `Flower`, `Cone`, `Leaf` and `Wood` name
+`Plant`. So does `Ovule`, which becomes the seed while still attached.
 
 Several fillers mean all of them, not either. `Stoma` occurs on leaves and on stems, so it
 names what those share, `Plant`, not `Leaf|Stem`. A subclass inherits the axiom, so `Fine
