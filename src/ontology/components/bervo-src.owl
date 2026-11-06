@@ -3259,7 +3259,7 @@
         <rdfs:label>Stalk density</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000233"/>
         <bervo:BERVO_has_unit>Mg{C}.m-3</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000151"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
     </Class>
     
 
@@ -12563,7 +12563,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000151"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000225"/>
     </Class>
     
@@ -12690,7 +12690,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000151"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000211"/>
     </Class>
     
@@ -39312,7 +39312,7 @@
         <rdfs:label>Bole temperature</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000133"/>
         <bervo:BERVO_has_unit>Cel</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001361"/>
     </Class>
     
 
@@ -42182,7 +42182,7 @@
         <bervo:BERVO_has_unit>mm.mm-2</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001359"/>
     </Class>
     
 
@@ -45489,8 +45489,8 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000047">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001352"/>
-        <obo:IAO_0000115>The dry outer covering of fruits or seeds that provides protection for the inner reproductive parts during development and dispersal. This plant structure is important for understanding reproductive strategies, seed dispersal mechanisms, and agricultural processing considerations in crop and wild plant systems.</obo:IAO_0000115>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <obo:IAO_0000115>Dry outer covering of a fruit, a seed or a cluster of them, such as the hull of a cereal grain or the bracts around an ear of maize.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025); redefined by Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215</rdfs:comment>
         <rdfs:label>Husk</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -46921,16 +46921,16 @@
     <!-- https://w3id.org/bervo/BERVO_8000151 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000151">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000498"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001352"/>
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
             </Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The main stem or support structure of a plant that provides mechanical support and serves as a conduit for water, nutrients, and photosynthetic products. This structural component controls plant height, competitive ability, resource transport, and represents the primary architectural framework of herbaceous plants and crop species.</obo:IAO_0000115>
+        <obo:IAO_0000115>Elongated, more or less cylindrical part of a plant organ that supports another part of it.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0025066"/>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025); redefined by Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0025066)</rdfs:comment>
         <rdfs:label>Stalk</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -47192,7 +47192,7 @@
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8001356"/>
             </Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The underground portion of a plant that anchors the plant in soil and absorbs water and nutrients essential for growth and survival. This organ system controls plant nutrition, soil stabilization, symbiotic relationships, and represents the primary interface between plants and the soil environment.</obo:IAO_0000115>
@@ -47310,7 +47310,8 @@
             </Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The main structural axis of a plant that provides mechanical support and serves as a conduit for transporting water, nutrients, and photosynthetic products between roots and leaves. This organ system controls plant architecture, competitive ability, and resource allocation while serving as a storage site for carbohydrates and other compounds.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>stalk</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0009047"/>
+        <oboInOwl:hasRelatedSynonym>stalk</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Stem</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -47344,8 +47345,8 @@
                 <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
             </Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A protective covering or wrapper structure that surrounds and protects plant organs such as stems, leaves, or reproductive parts. These anatomical features provide mechanical protection, support, and can influence plant architecture and development while serving specialized functions in different plant families and growth forms.</obo:IAO_0000115>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <obo:IAO_0000115>Covering structure that surrounds and protects a plant organ, such as the base of a grass leaf around the stem.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025); redefined by Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215</rdfs:comment>
         <rdfs:label>Sheath</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -47910,9 +47911,8 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000224">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001336"/>
-        <obo:IAO_0000115>The seed-bearing reproductive structure of cereal plants such as corn and wheat that contains the harvestable grains. This agricultural organ determines crop yield, grain quality, and represents the economically important portion of cereal crops in agricultural production systems.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0020136"/>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <obo:IAO_0000115>Compact inflorescence of a cereal that bears the grains, such as the ear of maize or the spike of wheat.</obo:IAO_0000115>
+        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025); redefined by Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215</rdfs:comment>
         <rdfs:label>Ear</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -63635,6 +63635,250 @@
         <obo:IAO_0000115>Material made up of plants or plant parts, taken together by position rather than by anatomy, such as all the plant parts above the ground.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215</rdfs:comment>
         <rdfs:label>Plant material</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001356 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001356">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001352"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>All the roots of a single plant, taken as a connected whole.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0025025"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0025025)</rdfs:comment>
+        <rdfs:label>Root system</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001357 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001357">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
+        <obo:IAO_0000115>Root that branches from another root.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0020121"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0020121)</rdfs:comment>
+        <rdfs:label>Lateral root</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001358 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001358">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001352"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Flattened, expanded part of a leaf, beyond the petiole or sheath where one is present.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0020039"/>
+        <oboInOwl:hasExactSynonym>leaf blade</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0020039)</rdfs:comment>
+        <rdfs:label>Leaf lamina</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001359 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001359">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001352"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8001358"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Strand of vascular tissue in a leaf lamina that carries water and sugars between the lamina and the stem.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0020138"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0020138)</rdfs:comment>
+        <rdfs:label>Leaf vein</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001360 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001360">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000183"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Base of a leaf that wraps around the stem, as in grasses and other monocots.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0020104"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0020104)</rdfs:comment>
+        <rdfs:label>Leaf sheath</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001361 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001361">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
+        <obo:IAO_0000115>Main woody stem of a tree, from the ground to the crown.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>bole</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215</rdfs:comment>
+        <rdfs:label>Trunk</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001362 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001362">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001352"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Undeveloped shoot system, usually protected by scales, from which a shoot, a flower or an inflorescence grows.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0000055"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0000055)</rdfs:comment>
+        <rdfs:label>Bud</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001363 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001363">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001353"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Vascular tissue of a plant that conducts sugars and other organic substances from where they are made or stored to where they are used.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0005417"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0005417)</rdfs:comment>
+        <rdfs:label>Phloem</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001364 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001364">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001353"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Lateral meristem that produces secondary xylem toward the inside of a plant axis and secondary phloem toward the outside.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0005598"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0005598)</rdfs:comment>
+        <rdfs:label>Vascular cambium</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001365 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001365">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001353"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Protective tissue that replaces the epidermis of stems and roots after secondary growth, made up of cork, cork cambium and phelloderm.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0005046"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0005046)</rdfs:comment>
+        <rdfs:label>Periderm</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001366 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001366">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001352"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8001311"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Elongated, dead, water-conducting cell of the xylem with tapered ends and bordered pits, connected to its neighbours without perforations.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0000301"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0000301)</rdfs:comment>
+        <rdfs:label>Tracheid</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001367 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001367">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001352"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000201"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>One of the pair of cells that surround the pore of a stoma and open or close it through changes in turgor.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0000293"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0000293)</rdfs:comment>
+        <rdfs:label>Guard cell</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001368 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001368">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000047"/>
+        <obo:IAO_0000115>Husk that encloses a grass caryopsis, formed from the dried lemma and palea.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0006000"/>
+        <oboInOwl:hasExactSynonym>hull</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0006000)</rdfs:comment>
+        <rdfs:label>Caryopsis hull</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001369 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001369">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000224"/>
+        <obo:IAO_0000115>Highly compacted pistillate inflorescence of Zea species, bearing the grains.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0020136"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0020136)</rdfs:comment>
+        <rdfs:label>Maize ear</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
