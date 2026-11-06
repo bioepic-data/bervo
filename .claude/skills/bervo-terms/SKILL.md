@@ -289,9 +289,10 @@ Several fillers mean all of them, not either. `Stoma` occurs on leaves and on st
 names what those share, `Plant`, not `Leaf|Stem`. A subclass inherits the axiom, so `Fine
 root` needs none of its own.
 
-Plant anatomy sits under `Plant part` (`BERVO:8001352`), through `Plant organ`, `Plant
-tissue` or `Reproductive structure`. Never parent a part on `Plant`, which is the organism
-(issue #215). A process goes under `Biological process`, and a collection of parts, such as
+Plant anatomy sits under `Plant part` (`BERVO:8001352`), directly or through `Plant organ`,
+`Plant tissue` or `Reproductive structure`. Never parent a part on `Plant`, which is the
+organism (issue #215). A plant process goes under `Plant growth process` where it is growth
+or development, otherwise `Biological process`, and a collection of parts, such as
 `Aboveground plant material`, under `Plant material`.
 
 | Row | `part_ofs` |
