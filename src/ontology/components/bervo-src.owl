@@ -8778,6 +8778,7 @@
         <oboInOwl:hasRelatedSynonym>CuticleResist_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM treats this parameter as a cuticular resistance, the pathway left when the stomata are shut, so measured_ins names Stoma rather than Stomatal pore. BERVO:0000522 is the same parameter for carbon dioxide.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:label>Maximum stomatal resistance to vapor</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000540"/>
@@ -8800,13 +8801,14 @@
         <oboInOwl:hasRelatedSynonym>CO2CuticleResist_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM derives this from BERVO:0000521 as a cuticular resistance, the pathway left when the stomata are shut, so measured_ins names Stoma rather than Stomatal pore.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:label>Maximum stomatal resistance to carbon dioxide</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000540"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
         <bervo:BERVO_has_unit>s.h-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001370"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000201"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
     
