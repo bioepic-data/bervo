@@ -70,17 +70,17 @@ duplicate and near-duplicate terms are the hardest problem to unwind later.
 - To obsolete: prefix the label with `obsolete `, set `obsolete` to `true`, clear
   `Category` and `Parents` so the term leaves the hierarchy, empty the row's own
   relationship cells (`qualifiers`, `attributes`, `measured_ins`, `measurement_ofs`,
-  `contexts`, `value_types`, `involves_chemicals`), and put the successor's ID in
+  `contexts`, `value_types`, `involves_chemicals`, `part_ofs`), and put the successor's ID in
   `replaced_by` where one exists. Move any `DbXrefs` and useful synonyms to the successor, and re-point every
   relationship cell on other rows that named the old label. Keep the row and its
   definition; never delete it and never reuse the ID.
 - The validator enforces this: the label prefix and the `obsolete` flag must agree
-  (error); a live term whose `Category`, `Parents` or `involves_chemicals` names an
-  obsolete term is an error, because those three columns emit logical axioms; a reference
+  (error); a live term whose `Category`, `Parents`, `involves_chemicals` or `part_ofs` names an
+  obsolete term is an error, because those four columns emit logical axioms; a reference
   to an obsolete term from any annotation column (`qualifiers`, `attributes`,
   `measured_ins`, `measurement_ofs`, `contexts`, `value_types`), a `replaced_by` that
   points at another obsolete term, or an obsolete row that still carries relationships or
-  an `involves_chemicals` filler, is a warning.
+  an `involves_chemicals` or `part_ofs` filler, is a warning.
 
 ## Interpreting validator output
 
@@ -231,7 +231,7 @@ a substance:
 | `Gaseous argon diffusivity` | `Argon` | *(blank)* |
 | `Gaseous diffusivity` | `Gas` | `Chemical` |
 
-`involves_chemicals` is the ontology's one **`C … some % SPLIT=|`** column: it emits an OWL
+`involves_chemicals` is a **`C … some % SPLIT=|`** column, as `part_ofs` is: it emits an OWL
 existential restriction rather than an annotation, so its value must name a class. `Chemical`
 (`BERVO:8000586`) is the general filler. Do not put a literal or a bare adjective there —
 `just validate` reports an unresolvable filler as a hard error.
@@ -285,6 +285,7 @@ micropore-scoped parts, not soil-scoped ones.
 | --- | --- |
 | `Soil micropore matric water potential` | `Elevation adjusted total soil micropore total water potential\|Soil water potential` |
 | `Osmotic soil water potential` | `Soil water potential` |
+| `Soil micropore osmotic water potential` | `Elevation adjusted total soil micropore total water potential` |
 | `Root turgor water potential` | `Root total water potential` |
 
 `part of` is transitive (declared in `bervo-edit.owl`), so name the nearest whole. BERVO
