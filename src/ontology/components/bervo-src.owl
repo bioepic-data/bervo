@@ -8796,11 +8796,11 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000522">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
-        <obo:IAO_0000115>The maximum resistance to carbon dioxide diffusion through plant stomata when stomatal apertures are at minimum opening. This resistance parameter represents the upper limit of stomatal barrier to carbon dioxide uptake and is critical for modeling photosynthetic carbon assimilation under stress conditions.</obo:IAO_0000115>
+        <obo:IAO_0000115>The maximum resistance to carbon dioxide diffusion through plant cuticles and closed stomata when stomatal conductance is minimal. This resistance parameter represents the upper limit of stomatal barrier to carbon dioxide uptake and is critical for modeling photosynthetic carbon assimilation under stress conditions.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>RCMX</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>CO2CuticleResist_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025); reworded by Claude Opus 5.5 through Claude Code (Nov 06 2026), issue #215</rdfs:comment>
         <rdfs:comment>EcoSIM derives this from BERVO:0000521 as a cuticular resistance, the pathway left when the stomata are shut, so measured_ins names Stoma rather than Stomatal pore.</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
         <rdfs:label>Maximum stomatal resistance to carbon dioxide</rdfs:label>
