@@ -63595,9 +63595,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001352">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
-        <obo:IAO_0000115>Anatomical entity of a plant, such as an organ, a tissue, a cell component or a space between cells.</obo:IAO_0000115>
+        <obo:IAO_0000115>Anatomical entity of a plant, such as an organ, a tissue, a cell, a cell component or a space between cells.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0025131"/>
-        <oboInOwl:hasExactSynonym>plant anatomical entity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>plant anatomical entity</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215</rdfs:comment>
         <rdfs:label>Plant part</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
@@ -63634,7 +63634,7 @@
     <!-- https://w3id.org/bervo/BERVO_8001355 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001355">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
         <obo:IAO_0000115>Material made up of plants or plant parts, taken together by position rather than by anatomy, such as all the plant parts above the ground.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215</rdfs:comment>
         <rdfs:label>Plant material</rdfs:label>
