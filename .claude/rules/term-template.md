@@ -21,6 +21,9 @@ labels are a hard error and near-duplicates are the most common review finding.
 - `Category` and `Parents` take a term **label** or ID. `qualifiers`, `attributes`,
   `measured_ins`, `measurement_ofs`, `contexts`, and `value_types` also resolve to
   terms. `has_units` holds **literal** unit strings and is not a reference.
+- `involves_chemicals` and `part_ofs` emit existential restrictions, not annotations.
+  Each filler must name an existing class, and `NA` is an error: leave the cell empty.
+  See the `bervo-terms` skill.
 - Allocate IDs with `just next-id <0|8|9>`. Never reuse a retired ID.
 
 **After editing:** run `just validate`. A PostToolUse hook runs it automatically and
