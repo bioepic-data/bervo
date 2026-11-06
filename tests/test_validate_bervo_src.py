@@ -674,6 +674,35 @@ class TestPartOf(ValidatorTestCase):
         ]))
         self.assertEqual(report.errors, [])
 
+    def test_whole_that_is_also_an_ancestor_warns(self):
+        report = validator.validate(self.write([
+            ROOT, self.WHOLE,
+            row("BERVO:0000003", "Soil potential", category="Total water potential"),
+            row("BERVO:0000001", "Osmotic potential", category="BERVO:0000003",
+                part_ofs="Total water potential"),
+        ]))
+        self.assertEqual(report.errors, [])
+        warnings = [w for w in report.warnings if "a kind or a part" in w]
+        self.assertEqual(len(warnings), 1, report.warnings)
+        self.assertIn("names BERVO:0000002, which is also an ancestor", warnings[0])
+
+    def test_whole_that_is_also_a_descendant_warns(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:0000001", "Osmotic potential", part_ofs="BERVO:0000002"),
+            row("BERVO:0000002", "Total water potential", category="Osmotic potential"),
+        ]))
+        warnings = [w for w in report.warnings if "a kind or a part" in w]
+        self.assertEqual(len(warnings), 1, report.warnings)
+        self.assertIn("names BERVO:0000002, which is also a descendant", warnings[0])
+
+    def test_sibling_whole_does_not_warn(self):
+        report = validator.validate(self.write([
+            ROOT, self.WHOLE,
+            row("BERVO:0000001", "Osmotic potential", part_ofs="Total water potential"),
+        ]))
+        self.assertEqual([w for w in report.warnings if "a kind or a part" in w], [])
+
     def test_only_the_declared_external_property_is_accepted(self):
         property_row = dict(category="", type_="owl:ObjectProperty")
         report = validator.validate(self.write([ROOT, row("BFO:0000050", "part of", **property_row)]))

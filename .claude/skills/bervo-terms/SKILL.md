@@ -291,6 +291,8 @@ micropore-scoped parts, not soil-scoped ones.
 `part of` is transitive (declared in `bervo-edit.owl`), so name the nearest whole. BERVO
 imports neither RO nor BFO: the property has its own row in the template because ROBOT
 cannot parse the column without one, and RO's continuant and occurrent axioms do not apply.
+A term is usually a kind of a thing or a part of it, not both, so the validator warns when a
+filler is also the term's ancestor or descendant in `Category` or `Parents`.
 `NA` is an error here, a filler must not be obsolete, a term cannot be part of itself, and
 `part_ofs` cannot form a cycle. `src/sparql/part-of-pairs.sparql` lists every part and whole.
 

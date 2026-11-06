@@ -270,6 +270,18 @@ def _cycles(edges: dict[str, list[str]]) -> list[list[str]]:
     return cycles
 
 
+def _ancestors(edges: dict[str, list[str]], node: str) -> set[str]:
+    """Everything reachable from ``node``, not counting ``node`` unless a cycle returns to it."""
+    seen: set[str] = set()
+    stack = list(edges.get(node, []))
+    while stack:
+        current = stack.pop()
+        if current not in seen:
+            seen.add(current)
+            stack.extend(edges.get(current, []))
+    return seen
+
+
 def read_template(path: Path) -> tuple[list[str], list[str], list[list[str]]]:
     with path.open(encoding="utf-8", newline="") as handle:
         rows = list(csv.reader(handle))
@@ -399,6 +411,7 @@ def validate(path: Path) -> Report:
     fillers: dict[tuple[str, str], list[int]] = defaultdict(list)
     part_edges: dict[str, list[str]] = defaultdict(list)
     part_lines: dict[str, int] = {}
+    parent_edges: dict[str, list[str]] = defaultdict(list)
 
     for offset, row in enumerate(data):
         line = FIRST_DATA_ROW + offset
@@ -520,6 +533,7 @@ def validate(path: Path) -> Report:
                     )
                     continue
                 parented = True
+                parent_edges[term_id].append(label_ids.get(token, token))
                 if token in obsolete_terms:
                     # A live class under a deprecated parent inherits from a corpse.
                     report.error(line, f"{term_id}.{column} names obsolete term {token!r} as a parent")
@@ -561,6 +575,23 @@ def validate(path: Path) -> Report:
             part_lines[cycle[0]],
             f"{PART_OF_COLUMN} forms a cycle: {' -> '.join([*cycle, cycle[0]])}",
         )
+
+    # A term is usually a kind of a thing or a part of it, not both. Only a warning:
+    # hierarchy repairs (issues #215, #237) can pass through this state.
+    for term_id, wholes in sorted(part_edges.items()):
+        ancestors = _ancestors(parent_edges, term_id)
+        for whole in wholes:
+            if whole in ancestors:
+                relation = "an ancestor"
+            elif term_id in _ancestors(parent_edges, whole):
+                relation = "a descendant"
+            else:
+                continue
+            report.warn(
+                part_lines[term_id],
+                f"{term_id}.{PART_OF_COLUMN} names {whole}, which is also {relation} of the "
+                f"term in Category/Parents; a term is usually a kind or a part, not both",
+            )
 
     # A `some X` restriction only says something when X has subclasses; with
     # none, a reasoner learns nothing from it (issue #56). One warning per

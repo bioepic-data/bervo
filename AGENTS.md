@@ -275,7 +275,8 @@ classes with no parent, mixed `Class`/`owl:Class` spelling, unresolvable relatio
 labels, annotation cells that reference an obsolete term, a `replaced_by` that points at
 another obsolete term, obsolete rows that still carry a parent, relationships or an
 `involves_chemicals` or `part_ofs` filler, an `involves_chemicals` filler with no subclasses (the
-restriction then generalises nothing; reported once per filler), and `DbXrefs` prefixes
+restriction then generalises nothing; reported once per filler), a `part_ofs` filler that
+is also the term's ancestor or descendant in `Category`/`Parents`, and `DbXrefs` prefixes
 ROBOT cannot expand (reported once per prefix, not per row).
 
 On cross-references specifically, see the "Cross-references to other ontologies" section of
