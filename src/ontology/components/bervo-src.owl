@@ -45055,9 +45055,9 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002636">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Perimeter of a leaf lamina divided by the square root of its area, a measure of how lobed or toothed its margin is.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>leaf complexity</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Leaf complexity (leaf perimeter per square root of area)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Leaf lamina dissection index: lamina perimeter / square root of lamina area</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>leaf complexity</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>TRY trait IDs: 3062, 3887. Some studies divide by a further two times the square root of pi, so that a circle scores 1; the formula should be reported with the value. Leaf perimeter (BERVO:0002635) and Individual leaf area (BERVO:0002368) are its inputs.</rdfs:comment>
         <rdfs:label>Leaf dissection index</rdfs:label>
