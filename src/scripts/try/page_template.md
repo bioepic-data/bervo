@@ -83,7 +83,14 @@ water and osmotic potentials, the hydraulic capacitance and the osmotic solute c
 the canopy radiation extinction coefficient; plant relative growth rate, lifespan,
 hydraulic conductance and nitrogen uptake efficiency; and the nitrogen and phosphorus
 content per seed and the numbers of seeds, fruits and inflorescences per plant and seeds
-per inflorescence. The trace element and contaminant contents wait on the decisions in
+per inflorescence. The twentieth added, for a single organ of any kind, the dry mass,
+fresh mass, projected area and specific area, which take the petiole, rachis, sheath and
+trap traits with the organ in contexts; the petiole diameter, the lamina to petiole dry
+mass ratio, and the rachis and sheath lengths; leaflet length, width and number per leaf;
+leaf perimeter, the dissection index and the number of teeth per leaf, per unit area and
+per unit perimeter; leaf volume and volume per unit area; and the thickness, length and
+cross-sectional area of the midvein, with leaf rachis, leaflet, leaf midvein and leaf
+lamina tooth concepts. The trace element and contaminant contents wait on the decisions in
 [issue #230](https://github.com/bioepic-data/bervo/issues/230). Still to come are the
 value lists of the categorical traits (woodiness, growth form, leaf type, leaf phenology)
 and terms for the gaps listed here.

@@ -93,7 +93,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 99	Fruit type	Seed, fruit and dispersal	gap			
 101	Leaf epidermis thickness	Leaf	match	BERVO:0002549		
 103	Leaf mesophyll thickness	Leaf	match	BERVO:0002551		
-104	Leaf mid vein thickness	Leaf	gap			
+104	Leaf mid vein thickness	Leaf	match	BERVO:0002642		
 105	Leaf mid vein support tissue thickness	Leaf	gap			
 106	Stomata conductance per leaf dry mass	Photosynthesis and gas exchange	gap			
 107	Leaf mesophyll area per leaf area	Leaf	gap			
@@ -107,7 +107,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 117	Plant biomass and allometry: Plant dry mass per plant volume	Whole plant	gap			
 118	Leaf structural dry matter per leaf dry mass	Leaf	gap			
 119	Plant biomass and allometry: Plant dry mass per plant fresh mass	Whole plant	broader	BERVO:0002528		Whole plant; the term covers whole plant material.
-120	Leaf volume	Leaf	gap			
+120	Leaf volume	Leaf	match	BERVO:0002640		
 121	Leaf intercellular volume	Leaf	gap			
 123	Leaf intercellular volume per leaf volume	Leaf	match	BERVO:0002602		
 125	Leaf area per leaf fresh mass (specific leaf area (SLA or 1/LMA) based on leaf fresh mass)	Leaf	related	BERVO:0002369		Per unit fresh mass rather than dry mass.
@@ -123,7 +123,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 137	Plant biomass and allometry: Branch dry mass per plant dry mass	Whole plant	broader	BERVO:0002582		Branch goes in contexts.
 138	Seed number per reproducton unit	Seed, fruit and dispersal	related	BERVO:0002430		Per reproduction unit, which TRY does not define; it may be a fruit, a flower or an inflorescence.
 140	Shoot branching type; shoot branching architecture	Twig, branch, shoot and bud	gap			
-142	Leaf perimeter	Leaf	gap			
+142	Leaf perimeter	Leaf	match	BERVO:0002635		
 143	Leaf petiole length	Leaf	match	BERVO:0002472		
 144	Leaf length	Leaf	match	BERVO:0002470		
 145	Leaf width	Leaf	match	BERVO:0002471		
@@ -147,7 +147,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 170	Stem conduit cross-sectional area (vessels and tracheids)	Stem, wood and bark	match	BERVO:0002445		
 171	Stem, branch or twig sapwood cross-sectional area per supported leaf area (Huber value)	Stem, wood and bark	match	BERVO:0002407		
 172	Stem conduit lumen cross-sectional area (vessels and tracheids) per stem sapwood cross-sectional are	Stem, wood and bark	related	BERVO:0002523		Conduits, vessels with tracheids, as a lumen area per unit of sapwood area.
-173	Leaf volume per leaf area	Leaf	gap			
+173	Leaf volume per leaf area	Leaf	match	BERVO:0002641		
 174	Leaf area index (LAI) total per LAI projected	Leaf	gap			
 175	Leaf mesophyll cell thickness	Leaf	gap			
 176	Leaf cell lumen volume	Leaf	gap			
@@ -590,8 +590,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 720	Photosynthesis irradiance at saturation	Photosynthesis and gas exchange	match	BERVO:0002555		
 721	Photosynthesis light compensation point	Photosynthesis and gas exchange	match	BERVO:0002554		
 722	Crown (canopy) density	Crown and canopy	gap			
-723	Leaf mid vein length	Leaf	gap			
-724	Leaf mid vein cross-sectional area	Leaf	gap			
+723	Leaf mid vein length	Leaf	match	BERVO:0002643		
+724	Leaf mid vein cross-sectional area	Leaf	match	BERVO:0002644		
 725	Leaf cell lumen area per leaf area	Leaf	gap			
 726	Leaf cell number per leaf area	Leaf	gap			
 727	Leaf cell lumen length	Leaf	gap			
@@ -617,7 +617,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 753	Leaf chlorophyll fluorescence	Leaf	gap			
 755	Leaf lead (Pb) content per leaf dry mass	Leaf	gap			
 758	Litter ash content per litter dry mass	Litter and woody debris	broader	BERVO:0002503		Dead vegetation goes in contexts.
-759	Leaflet number per leaf	Leaf	gap			
+759	Leaflet number per leaf	Leaf	match	BERVO:0002634		
 761	Species habitat characterisation / Plant requirement: soil type	Species ecology and distribution	species_attribute			
 762	Species understory/overstory	Species ecology and distribution	gap			
 763	Moss and fern spore length	Moss and fern	gap			
@@ -629,9 +629,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 773	Crown (canopy) height (base to top)	Crown and canopy	gap			
 775	Shoot carbon (C) content per shoot dry mass	Twig, branch, shoot and bud	broader	BERVO:0002339		Shoot goes in contexts.
 776	Plant biomass and allometry: Plant surface area per plant dry mass of all green parts	Whole plant	gap			
-777	Leaf petiole fresh mass	Leaf	gap			
-778	Leaf petiole dry mass	Leaf	gap			
-779	Leaf petiole diameter (width)	Leaf	gap			
+777	Leaf petiole fresh mass	Leaf	broader	BERVO:0002625		Petiole goes in contexts.
+778	Leaf petiole dry mass	Leaf	broader	BERVO:0002624		Petiole goes in contexts.
+779	Leaf petiole diameter (width)	Leaf	match	BERVO:0002628		
 780	Stomata area per leaf area	Photosynthesis and gas exchange	gap			
 781	Stomata distribution to ab- and adaxial leaf surfaces	Photosynthesis and gas exchange	related	BERVO:0002469		How the stomata are divided between the two leaf surfaces.
 782	Leaf volume of chloroplasts	Leaf	gap			
@@ -797,13 +797,13 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 968	Leaf nitrogen (N) fraction in ammonium (NH4+)	Leaf	gap			
 969	Leaf nitrogen (N) fraction in N2	Leaf	gap			
 970	Leaf nitrogen (N) fraction in nitrate (NO3-)	Leaf	gap			
-971	Leaflet number of first order per leaf	Leaf	gap			
-972	Leaflet number of second order per leaf	Leaf	gap			
-973	Leaf petiole projected area	Leaf	gap			
+971	Leaflet number of first order per leaf	Leaf	related	BERVO:0002634		Counts only the first-order leaflets, or pinnae, of a bipinnate leaf.
+972	Leaflet number of second order per leaf	Leaf	related	BERVO:0002634		Counts only the second-order leaflets, or pinnules, of a bipinnate leaf.
+973	Leaf petiole projected area	Leaf	broader	BERVO:0002626		Petiole goes in contexts.
 974	Photosynthesis rate per leaf area: transition to TPU limited photosynthesis	Photosynthesis and gas exchange	related	BERVO:0002594		The photosynthetic rate at which TPU starts to limit assimilation, not the TPU rate.
 975	Leaf revolute or involute	Leaf	gap			
 976	Leaf secondary compound types	Leaf	gap			
-977	Leaf sheath length	Leaf	gap			
+977	Leaf sheath length	Leaf	match	BERVO:0002631		
 978	Leaf shrinkage	Leaf	gap			
 979	Leaf surface pattern type	Leaf	gap			
 980	Leaf surface waxiness	Leaf	gap			
@@ -811,8 +811,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 982	Leaf relative water content (leaf water content fresh / leaf water content saturated; RWC)	Leaf	match	BERVO:0002403		
 983	Leaf water & osmotic potential: leaf water potential	Leaf	match	BERVO:0002399		
 984	Leaf water saturation deficit	Leaf	gap			
-985	Leaflet length	Leaf	gap			
-986	Leaflet width	Leaf	gap			
+985	Leaflet length	Leaf	match	BERVO:0002632		
+986	Leaflet width	Leaf	match	BERVO:0002633		
 987	Litter aluminium (Al ) content per litter dry mass	Litter and woody debris	broader	BERVO:0002464		Dead vegetation goes in contexts. The rule misses it for a stray space in TRY's '(Al )'.
 988	Litter antimony (Sb) content per litter dry mass	Litter and woody debris	gap			
 989	Litter arsenic (As) content per litter dry mass	Litter and woody debris	gap			
@@ -836,7 +836,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1007	Litter zinc (Zn) content per litter dry mass	Litter and woody debris	broader	BERVO:0002462		Dead vegetation goes in contexts.
 1008	Plant vegetative regeneration species offspring size relative to parent	Whole plant	gap			
 1010	Leaf petiole dry mass per petiole fresh mass (leaf petiole dry matter content; LDMC petiole)	Leaf	broader	BERVO:0002528		Petiole goes in contexts.
-1011	Leaf petiole projected area per petiole dry mass (specific leaf area (SLA) of leaf petiole)	Leaf	gap			
+1011	Leaf petiole projected area per petiole dry mass (specific leaf area (SLA) of leaf petiole)	Leaf	broader	BERVO:0002627		Petiole goes in contexts.
 1012	Photosynthesis photoperiodism: threshold value	Photosynthesis and gas exchange	gap			
 1013	Photosynthesis photoperiodism: type	Photosynthesis and gas exchange	gap			
 1014	Shoot: plant above ground hydraulic conductance	Twig, branch, shoot and bud	gap			
@@ -1731,8 +1731,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 2945	Seed nitrogen (N) content per dry mass (or diaspore)	Seed, fruit and dispersal	broader	BERVO:0002340		Seed goes in contexts. TRY allows a value for the whole diaspore instead of the seed alone.
 2946	Inflorescene: seed mass per inflorescence	Flower and reproduction	gap			
 2947	Inflorescence: number of flowers per inflorescence	Flower and reproduction	match	BERVO:0002580		
-2948	Paleo trait: leaf petiole width	Leaf	gap			
-2949	Paleo trait: leaf area	Leaf	gap			
+2948	Paleo trait: leaf petiole width	Leaf	match	BERVO:0002628		Measured on fossil leaves; the quantity is the same.
+2949	Paleo trait: leaf area	Leaf	match	BERVO:0002368		Reconstructed from fossil leaves; the quantity is the same.
 2950	Paleo trait: leaf mass per area	Leaf	match	BERVO:0002185		Reconstructed from fossil leaves; the quantity is the same.
 2951	Leaf venation index (VEI)	Leaf	gap			
 2952	Plant water loss on drying	Whole plant	gap			
@@ -1820,7 +1820,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3035	Root evenness of length vertical distribution	Root	gap			
 3036	Plant biomass and allometry: Leaf number production rate per plant	Whole plant	gap			
 3037	Leaf shape: circularity - leaf area per leaf perimeter	Leaf	gap			
-3038	Leaf shape: roundness - leaf blade width per leaf blade length (or length per width)	Leaf	gap			
+3038	Leaf shape: roundness - leaf blade width per leaf blade length (or length per width)	Leaf	related	BERVO:0000782		TRY allows width per length as well as length per width, so a value may be the reciprocal.
 3039	Plant height: erectness ratio of not elongated to elongated height	Whole plant	gap			
 3040	Plant biomass and allometry: Leaf dry mass production rate per plant	Whole plant	gap			
 3041	Seed curvature	Seed, fruit and dispersal	gap			
@@ -1834,14 +1834,14 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3050	Leaf dry mass (cotyledons)	Leaf	broader	BERVO:0002396		Cotyledon goes in contexts.
 3051	Plant biomass and allometry: Leaf dry mass (cotyledons) per plant	Whole plant	gap			
 3053	Leaf fresh mass (cotyledons)	Leaf	broader	BERVO:0002473		Cotyledon goes in contexts.
-3054	Leaf area (cotyledons)	Leaf	gap			
+3054	Leaf area (cotyledons)	Leaf	broader	BERVO:0002368		Cotyledon goes in contexts.
 3055	Leaf dry mass per fresh mass (cotyledons, cotyledon LDMC)	Leaf	broader	BERVO:0002370		Cotyledon goes in contexts.
-3056	Leaf area per dry mass (cotyledons, specific leaf area (SLA) of cotyledons)	Leaf	gap			
+3056	Leaf area per dry mass (cotyledons, specific leaf area (SLA) of cotyledons)	Leaf	broader	BERVO:0002369		Cotyledon goes in contexts.
 3058	Leaf area (in case of compound leaves undefined if leaf or leaflet, petiole and rhachis excluded)	Leaf	match	BERVO:0002368		TRY variants differ in whether the petiole is included.
 3059	Plant biomass and allometry: Supportive structure (stem, twig, leaf petiole, leaf sheeth) dry mass p	Whole plant	gap			
-3060	Leaf perimeter excluding petiol (leaf lamina perimeter)	Leaf	gap			
-3061	Leaf shape index: lamina length / lamina width	Leaf	gap			
-3062	Leaf lamina dissection index: lamina perimeter / square root of lamina area	Leaf	gap			
+3060	Leaf perimeter excluding petiol (leaf lamina perimeter)	Leaf	related	BERVO:0002635		The perimeter of the lamina alone, without the petiole.
+3061	Leaf shape index: lamina length / lamina width	Leaf	match	BERVO:0000782		
+3062	Leaf lamina dissection index: lamina perimeter / square root of lamina area	Leaf	match	BERVO:0002636		
 3063	Species invasion introduction year	Species ecology and distribution	species_attribute			
 3064	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: wood density of wo	Stem, wood and bark	gap			
 3065	Branch cross-sectional fraction of parenchyma	Twig, branch, shoot and bud	related	BERVO:0002527		A fraction of the whole branch cross-section, which may include bark and pith, rather than of the wood.
@@ -1849,16 +1849,16 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3067	Branch cross-sectional fraction of fiber	Twig, branch, shoot and bud	related	BERVO:0002524		A fraction of the whole branch cross-section, which may include bark and pith, rather than of the wood.
 3068	Stem slenderness (plant height per diameter at breast height (dbh))	Stem, wood and bark	gap			
 3070	Plant nitrogen (N) uptake efficiency (plant nitrogen acquired per nitrogen available)	Whole plant	match	BERVO:0002615		
-3071	Leaf rhachis length	Leaf	gap			
+3071	Leaf rhachis length	Leaf	match	BERVO:0002630		
 3072	Leaf terminal section length	Leaf	gap			
 3073	Leaf and leaf-structures fresh to dry shrinkage ratio (length, width, thickness, area)	Leaf	gap			
 3074	Leaf and leaf-structures fresh to dry shrinkage ratio (mass)	Leaf	gap			
-3076	Leaf rhachis projected area	Leaf	gap			
+3076	Leaf rhachis projected area	Leaf	broader	BERVO:0002626		Leaf rachis goes in contexts.
 3078	Leaf terminal section projected area	Leaf	gap			
-3079	Leaf rhachis dry mass	Leaf	gap			
-3080	Leaf rhachis fresh mass	Leaf	gap			
-3081	Leaf rhachis dry mass per leaf rhachis fresh mass (leaf rhachis dry matter content; LDMC rachis)	Leaf	gap			
-3084	Leaf rhachis area per dry mass (specific leaf area (SLA) of leaf rhachis)	Leaf	gap			
+3079	Leaf rhachis dry mass	Leaf	broader	BERVO:0002624		Leaf rachis goes in contexts.
+3080	Leaf rhachis fresh mass	Leaf	broader	BERVO:0002625		Leaf rachis goes in contexts.
+3081	Leaf rhachis dry mass per leaf rhachis fresh mass (leaf rhachis dry matter content; LDMC rachis)	Leaf	broader	BERVO:0002528		Leaf rachis goes in contexts.
+3084	Leaf rhachis area per dry mass (specific leaf area (SLA) of leaf rhachis)	Leaf	broader	BERVO:0002627		Leaf rachis goes in contexts.
 3086	Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA) petiole, rhachis and midrib excluded	Leaf	match	BERVO:0002369		TRY variants differ in whether the petiole, rhachis and midrib are included.
 3087	Stomata conductance per leaf area at turgor loss point	Photosynthesis and gas exchange	gap			
 3088	Leaf water & osmotic potential: soil water potential at leaf turgor loss point	Leaf	gap			
@@ -2080,9 +2080,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3461	Plant biomass and allometry: Root length of primary roots per plant	Whole plant	gap			
 3463	Stem manganese (Mn) (manganese) content per dry mass	Stem, wood and bark	broader	BERVO:0002460		Stem goes in contexts. TRY repeats the element name after the symbol; the same quantity as 2994.
 3464	Stem Na (sodium) content per dry mass	Stem, wood and bark	broader	BERVO:0002459		Stem goes in contexts. TRY gives the symbol before the element name.
-3465	Leaf sheath area	Leaf	gap			
-3466	Leaf sheath dry mass	Leaf	gap			
-3467	Leaf sheath area per sheath dry mass (sheath SLA)	Leaf	gap			
+3465	Leaf sheath area	Leaf	broader	BERVO:0002626		Leaf sheath goes in contexts. TRY does not say the area is projected.
+3466	Leaf sheath dry mass	Leaf	broader	BERVO:0002624		Leaf sheath goes in contexts.
+3467	Leaf sheath area per sheath dry mass (sheath SLA)	Leaf	broader	BERVO:0002627		Leaf sheath goes in contexts.
 3468	Leaf water & osmotic potential: leaf water potential at turgor loss point	Leaf	match	BERVO:0002400		
 3471	Crown (canopy) form	Crown and canopy	gap			
 3472	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: sapwood	Stem, wood and bark	broader	BERVO:0002371		Sapwood goes in contexts.
@@ -2107,7 +2107,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3491	Stolon number of branches	Stem, wood and bark	gap			
 3492	Stolon branch length	Stem, wood and bark	gap			
 3493	Plant biomass and allometry: Stolon dry mass per plant	Whole plant	gap			
-3494	Leaf lamina dry mass per petiole dry mass	Leaf	gap			
+3494	Leaf lamina dry mass per petiole dry mass	Leaf	match	BERVO:0002629		
 3495	Plant biomass and allometry: Stolon dry mass per plant dry mass (stolon mass ratio)	Whole plant	gap			
 3496	Plant leaf number: development during growth, leaf accumulation per plant	Whole plant	gap			
 3497	Flowering lag time: number of days from exposition start to flowering	Flower and reproduction	gap			
@@ -2212,7 +2212,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3596	Stem solitary	Stem, wood and bark	gap			
 3597	Stem armed	Stem, wood and bark	gap			
 3598	Leaf armed	Leaf	gap			
-3599	Leaf rachis length	Leaf	gap			
+3599	Leaf rachis length	Leaf	match	BERVO:0002630		
 3600	Fruit shape	Seed, fruit and dispersal	gap			
 3601	Stem perimeter	Stem, wood and bark	gap			
 3603	Seed number per ground area	Seed, fruit and dispersal	match	BERVO:0002572		
@@ -2400,7 +2400,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3798	Leaf venation: number of secondary veins on the left side of the lamina	Leaf	gap			
 3799	Leaf length (leaf outer radius)	Leaf	gap			
 3800	Leaf width (leaf inner radius)	Leaf	gap			
-3801	Leaf shape: slenderness (length/width)	Leaf	gap			
+3801	Leaf shape: slenderness (length/width)	Leaf	match	BERVO:0000782		
 3802	Photosynthesis: convexity parameter of light response curve	Photosynthesis and gas exchange	match	BERVO:0002598		
 3803	Photosynthesis: gross photosynthesis per leaf area	Photosynthesis and gas exchange	match	BERVO:0002595		
 3804	Photosynthesis: gross photosynthesis per leaf dry mass	Photosynthesis and gas exchange	match	BERVO:0002596		
@@ -2428,7 +2428,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3826	Plant size: patch perimeter	Whole plant	gap			
 3827	Plant shape: patch shape	Whole plant	gap			
 3828	Leaf cuticle thickness	Leaf	match	BERVO:0002550		
-3829	Leaf lamina dry mass to petiole dry mass ratio	Leaf	gap			
+3829	Leaf lamina dry mass to petiole dry mass ratio	Leaf	match	BERVO:0002629		
 3830	Plant biomass and allometry: stem wet mass per plant	Whole plant	gap			
 3832	Seed surface structure	Seed, fruit and dispersal	gap			
 3833	Seed abortion: fraction of seeds without embryo	Seed, fruit and dispersal	gap			
@@ -2468,7 +2468,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3867	Diaspore color	Seed, fruit and dispersal	gap			
 3868	Diaspore type	Seed, fruit and dispersal	gap			
 3869	Leaf terminal thorn width at base	Leaf	gap			
-3870	Leaf number of teeth	Leaf	gap			
+3870	Leaf number of teeth	Leaf	match	BERVO:0002637		
 3871	Leaf teeth length (longest tooth)	Leaf	gap			
 3872	Pollination efficiency	Flower and reproduction	gap			
 3873	Leaf petiole length per petiole diameter	Leaf	related	BERVO:0002472		Petiole length divided by petiole diameter.
@@ -2485,9 +2485,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3884	Inflorescence: number of umbels	Flower and reproduction	gap			
 3885	Species habitat characterization: climate preference: presence in Koeppen-Geiger Climate Zone	Species ecology and distribution	species_attribute			
 3886	Leaf dissection (teeth, lobes) deepness	Leaf	gap			
-3887	Leaf complexity (leaf perimeter per square root of area)	Leaf	gap			
-3888	Leaf number of teeth per leaf area	Leaf	gap			
-3889	Leaf number of teeth per leaf perimeter	Leaf	gap			
+3887	Leaf complexity (leaf perimeter per square root of area)	Leaf	match	BERVO:0002636		
+3888	Leaf number of teeth per leaf area	Leaf	match	BERVO:0002638		
+3889	Leaf number of teeth per leaf perimeter	Leaf	match	BERVO:0002639		
 3899	Fine root carbon/phosporus (C/P) ratio	Fine root	broader	BERVO:0002499		Fine root goes in contexts.
 3900	Leaf lignin + cutin content per dry mass	Leaf	gap			
 3901	Leaf palisade parenchym number of cell rows	Leaf	gap			
@@ -2515,10 +2515,10 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3923	Trap carbon (C) content per trap dry mass	Leaf	broader	BERVO:0002339		Carnivorous plant trap goes in contexts.
 3924	Trap phosphorus (P) content per trap dry mass	Leaf	broader	BERVO:0002380		Carnivorous plant trap goes in contexts.
 3925	Trap potassium (K) content per trap dry mass	Leaf	broader	BERVO:0002455		Carnivorous plant trap goes in contexts.
-3926	Trap dry mass	Leaf	gap			
-3927	Trap SLA	Leaf	gap			
-3928	Trap area	Leaf	gap			
-3929	Trap dry matter content per fresh mass (DMC)	Leaf	gap			
+3926	Trap dry mass	Leaf	broader	BERVO:0002624		Carnivorous plant trap goes in contexts.
+3927	Trap SLA	Leaf	broader	BERVO:0002627		Carnivorous plant trap goes in contexts.
+3928	Trap area	Leaf	broader	BERVO:0002626		Carnivorous plant trap goes in contexts. TRY does not say the area is projected.
+3929	Trap dry matter content per fresh mass (DMC)	Leaf	broader	BERVO:0002528		Carnivorous plant trap goes in contexts.
 3930	Leaf expansion interval	Leaf	gap			
 3931	Leaf expansion rate	Leaf	gap			
 3932	Leaf chlorophyll index	Leaf	related	BERVO:0002474		A relative optical index of chlorophyll, not a mass.
