@@ -7648,15 +7648,18 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000459">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
-        <obo:IAO_0000115>The hydrogen ion concentration of water used in surface irrigation systems, expressed on the logarithmic pH scale. This irrigation water acidity affects soil pH, nutrient availability, and plant uptake processes, and is important for managing soil chemistry and crop nutrition in agricultural systems.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002645"/>
+        <obo:IAO_0000115>Negative logarithm of the hydrogen ion activity of water applied to a field by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PHQ</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 11 2026), issue #173</rdfs:comment>
+        <rdfs:comment>Irrigation water pH affects soil pH, nutrient availability and plant uptake, and is managed for soil chemistry and crop nutrition.</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
         <rdfs:label>Surface irrigation pH</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000261"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000135"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000261"/>
     </Class>
     
 
@@ -24026,15 +24029,19 @@
     <!-- https://w3id.org/bervo/BERVO_0001427 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001427">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002645"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
-        <obo:IAO_0000115>The acidity or alkalinity of a precipitation event such as rain or snowfall. This measure is important in understanding the environmental impact of atmospheric pollution, as it can indicate the presence of acid rain. Acid rain is primarily caused by emissions of sulfur dioxide and nitrogen oxide, which react with the water molecules in the atmosphere to produce acids.</obo:IAO_0000115>
+        <obo:IAO_0000115>Negative logarithm of the hydrogen ion activity of precipitation, such as rain or snow.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>pH_rain_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 11 2026), issue #173</rdfs:comment>
+        <rdfs:comment>Low values indicate acid rain, which forms mainly when emissions of sulfur dioxide and nitrogen oxides react with water in the atmosphere to produce acids.</rdfs:comment>
         <rdfs:label>Precipitation pH</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000261"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
     </Class>
     
 
@@ -36283,17 +36290,17 @@
     <!-- https://w3id.org/bervo/BERVO_0002147 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002147">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002645"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000044"/>
-        <obo:IAO_0000115>Negative logarithm of the hydrogen ion activity of wastewater, measured on a sample at the time of collection.</obo:IAO_0000115>
+        <obo:IAO_0000115>Negative logarithm of the hydrogen ion activity of wastewater.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>sewage pH</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
-        <rdfs:comment>Recorded for each sample in the Global Sewage Project, BioProject PRJEB13831 (Hendriksen et al. 2019, Nat Commun 10:1124, doi:10.1038/s41467-019-08853-3).</rdfs:comment>
+        <rdfs:comment>Measured on a sample at the time of collection. Recorded for each sample in the Global Sewage Project, BioProject PRJEB13831 (Hendriksen et al. 2019, Nat Commun 10:1124, doi:10.1038/s41467-019-08853-3).</rdfs:comment>
         <rdfs:label>Wastewater pH</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000261"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000946"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000261"/>
     </Class>
     
 
@@ -45212,6 +45219,23 @@
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001373"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002645 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002645">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
+        <obo:IAO_0000115>Negative logarithm of the hydrogen ion activity of water, of any kind or origin.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="https://w3id.org/mixs/0001175"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 11 2026), issue #173</rdfs:comment>
+        <rdfs:comment>Measured in situ or on a sample. Applies to any water, including porewater, groundwater and surface water; where a narrower term exists, it names the kind of water. The ODM2 variable name pH (ODM2:variablename/pH) is mapped to the pH concept (BERVO:8000261), not here, because ODM2 applies it to any solution, soil suspensions included.</rdfs:comment>
+        <rdfs:label>Water pH</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000261"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
     </Class>
     
 
@@ -64976,7 +65000,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_9000043">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0000000"/>
-        <obo:IAO_0000115>Grouping class for observed variables that describe the quality of water for its uses and for aquatic life: its capacity to neutralize acid or base, oxygen demand, hardness, solids, the concentrations of dissolved solutes and gases, optical and sensory properties, mineral saturation state, trophic state, and gross radioactivity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Grouping class for observed variables that describe the quality of water for its uses and for aquatic life, such as its temperature, pH, electrical conductivity, capacity to neutralize acid or base, oxygen demand, hardness, solids, the concentrations of dissolved solutes and gases, optical and sensory properties, mineral saturation state, trophic state, and gross radioactivity.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 25 2026), ODM2 variable name alignment for issue #66, slice 6</rdfs:comment>
         <rdfs:label>Water quality variable</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
