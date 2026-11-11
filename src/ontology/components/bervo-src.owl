@@ -7649,9 +7649,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000459">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001857"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002645"/>
-        <obo:IAO_0000115>The hydrogen ion concentration of water used in surface irrigation systems, expressed on the logarithmic pH scale. This irrigation water acidity affects soil pH, nutrient availability, and plant uptake processes, and is important for managing soil chemistry and crop nutrition in agricultural systems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Negative logarithm of the hydrogen ion activity of water applied to a field by surface irrigation.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PHQ</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 11 2026), issue #173</rdfs:comment>
+        <rdfs:comment>Irrigation water pH affects soil pH, nutrient availability and plant uptake, and is managed for soil chemistry and crop nutrition.</rdfs:comment>
         <rdfs:comment>IrrigationDataType.txt</rdfs:comment>
         <rdfs:label>Surface irrigation pH</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000261"/>
@@ -24030,10 +24031,11 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001427">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002645"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000021"/>
-        <obo:IAO_0000115>The acidity or alkalinity of a precipitation event such as rain or snowfall. This measure is important in understanding the environmental impact of atmospheric pollution, as it can indicate the presence of acid rain. Acid rain is primarily caused by emissions of sulfur dioxide and nitrogen oxide, which react with the water molecules in the atmosphere to produce acids.</obo:IAO_0000115>
+        <obo:IAO_0000115>Negative logarithm of the hydrogen ion activity of precipitation, such as rain or snow.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>pH_rain_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>ClimForcDataType.txt</rdfs:comment>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 11 2026), issue #173</rdfs:comment>
+        <rdfs:comment>Low values indicate acid rain, which forms mainly when emissions of sulfur dioxide and nitrogen oxides react with water in the atmosphere to produce acids.</rdfs:comment>
         <rdfs:label>Precipitation pH</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000261"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000032"/>
