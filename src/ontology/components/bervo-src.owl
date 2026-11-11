@@ -44863,10 +44863,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002626">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>Area of the outline of a single plant organ or part of one projected onto a plane, as when it is laid flat and scanned.</obo:IAO_0000115>
+        <obo:IAO_0000115>Area of the outline of a single plant organ or part of one projected onto a plane.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>organ projected area</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), after Individual leaf area (BERVO:0002368), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 973, 3076, 3465, 3928. Organ goes in contexts. Individual leaf area (BERVO:0002368) is its subclass for a leaf.</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 973, 3076, 3465, 3928. Organ goes in contexts. Individual leaf area (BERVO:0002368) is its subclass for a leaf. Usually measured by laying the organ flat and scanning it.</rdfs:comment>
         <rdfs:label>Plant organ projected area</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
         <bervo:BERVO_has_unit>cm2</bervo:BERVO_has_unit>
@@ -45126,11 +45126,11 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002640">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>Volume of a single leaf, usually measured by the water it displaces.</obo:IAO_0000115>
+        <obo:IAO_0000115>Volume of a single leaf.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000826"/>
         <oboInOwl:hasRelatedSynonym>Leaf volume</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait ID: 120. Leaf tissue density (BERVO:0002395) is the dry mass of a leaf divided by its volume.</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 120. Usually measured by the water the leaf displaces. Leaf tissue density (BERVO:0002395) is the dry mass of a leaf divided by its volume.</rdfs:comment>
         <rdfs:label>Individual leaf volume</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000190"/>
         <bervo:BERVO_has_unit>cm3</bervo:BERVO_has_unit>
