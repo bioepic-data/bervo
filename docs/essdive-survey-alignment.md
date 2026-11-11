@@ -70,7 +70,7 @@ these rules:
 | `fco2 dry` | Carbon dioxide flux (`BERVO:0001943`) | Chamber flux from soil |
 | `co2 dry mean`, `ch4 dry mean`, `n2o dry mean`, `h2o mean` | Not mapped | Chamber headspace mole fractions and water vapor; see below |
 | `eh …` | Redox potential (`BERVO:8000349`) | A concept that carries `ODM2:variablename/reductionPotential` |
-| `ph …` | pH (`BERVO:8000261`) | A concept; BERVO has pH variables for soil, precipitation, irrigation, and wastewater, not for water in general |
+| `ph …` | Water pH (`BERVO:0002645`) | Porewater. Added in issue #173; the survey first mapped these columns to the pH concept (`BERVO:8000261`), as BERVO then had no pH variable for water in general |
 | `ch4 flag`, `fe flag`, `hs flag`, … | Quality control flag (`BERVO:8000563`) | Six flags |
 | `easting`, `northing` | Easting (`BERVO:8000440`), Northing (`BERVO:8000441`) | |
 | `normalized absorption` | Absorbance (`BERVO:8000236`) | Y axis of the XANES and NEXAFS spectra |
