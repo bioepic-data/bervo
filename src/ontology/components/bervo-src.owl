@@ -58303,6 +58303,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000946 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000946">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>Water whose quality has been degraded by domestic, commercial, or industrial use, or by runoff from built surfaces, and that is collected for treatment or disposal.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002001"/>
@@ -59934,6 +59935,7 @@
     <!-- https://w3id.org/bervo/BERVO_8001059 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001059">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000402"/>
         <obo:IAO_0000115>Liquid water held in the pore spaces of soil, sediment, or rock, together with the solutes dissolved in it.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>interstitial water</oboInOwl:hasExactSynonym>
