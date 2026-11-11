@@ -83,7 +83,14 @@ water and osmotic potentials, the hydraulic capacitance and the osmotic solute c
 the canopy radiation extinction coefficient; plant relative growth rate, lifespan,
 hydraulic conductance and nitrogen uptake efficiency; and the nitrogen and phosphorus
 content per seed and the numbers of seeds, fruits and inflorescences per plant and seeds
-per inflorescence. The trace element and contaminant contents wait on the decisions in
+per inflorescence. The twentieth added, for a single organ of any kind, the dry mass,
+fresh mass, projected area and specific area, which take the petiole, rachis, sheath and
+trap traits with the organ in contexts; the petiole diameter, the lamina to petiole dry
+mass ratio, and the rachis and sheath lengths; leaflet length, width and number per leaf;
+leaf perimeter, the dissection index and the number of teeth per leaf, per unit area and
+per unit perimeter; leaf volume and volume per unit area; and the thickness, length and
+cross-sectional area of the midvein, with leaf rachis, leaflet, leaf midvein and leaf
+lamina tooth concepts. The trace element and contaminant contents wait on the decisions in
 [issue #230](https://github.com/bioepic-data/bervo/issues/230). Still to come are the
 value lists of the categorical traits (woodiness, growth form, leaf type, leaf phenology)
 and terms for the gaps listed here.
@@ -167,7 +174,7 @@ disagree. `tests/test_try_alignment.py` runs it.
 
 ## Summary
 
-1146 TRY traits map to a BERVO term. 1463 are gaps and 52 are
+1192 TRY traits map to a BERVO term. 1417 are gaps and 52 are
 species attributes.
 
 | Group | `match` | `broader` | `related` | `gap` | `species_attribute` | Total |
@@ -175,7 +182,7 @@ species attributes.
 | Crown and canopy | 1 | 1 | 2 | 17 |  | 21 |
 | Fine root |  | 166 | 24 | 213 |  | 403 |
 | Flower and reproduction | 8 | 32 | 1 | 85 |  | 126 |
-| Leaf | 70 | 55 | 36 | 256 | 1 | 418 |
+| Leaf | 94 | 73 | 40 | 210 | 1 | 418 |
 | Litter and woody debris | 5 | 146 | 15 | 33 |  | 199 |
 | Moss and fern |  |  |  | 21 |  | 21 |
 | Photosynthesis and gas exchange | 40 | 7 | 17 | 49 |  | 113 |
@@ -187,7 +194,7 @@ species attributes.
 | Stem, wood and bark | 29 | 98 | 13 | 183 |  | 323 |
 | Twig, branch, shoot and bud |  | 87 | 9 | 75 |  | 171 |
 | Whole plant | 22 | 20 | 8 | 219 |  | 269 |
-| **Total** | **241** | **754** | **151** | **1463** | **52** | **2661** |
+| **Total** | **265** | **772** | **155** | **1417** | **52** | **2661** |
 
 ## Matches
 
@@ -235,14 +242,17 @@ species attributes.
 | 97 | Seed protein content per seed mass | `BERVO:0002429` Seed protein content per unit mass |  |
 | 101 | Leaf epidermis thickness | `BERVO:0002549` Leaf epidermis thickness |  |
 | 103 | Leaf mesophyll thickness | `BERVO:0002551` Leaf mesophyll thickness |  |
+| 104 | Leaf mid vein thickness | `BERVO:0002642` Leaf midvein thickness |  |
 | 109 | Leaf area per plant dry mass (leaf area ratio; LAR) | `BERVO:0002484` Leaf area ratio |  |
 | 111 | Leaf transpiration rate per leaf area | `BERVO:0002483` Leaf transpiration rate per unit area |  |
 | 112 | Seed germination lag time | `BERVO:0002571` Seed germination lag time |  |
 | 116 | Root dry mass per root volume (root density, root tissue density) | `BERVO:0002376` Root tissue density |  |
+| 120 | Leaf volume | `BERVO:0002640` Individual leaf volume |  |
 | 123 | Leaf intercellular volume per leaf volume | `BERVO:0002602` Leaf porosity |  |
 | 131 | Plant biomass and allometry: Seed number per plant | `BERVO:0002618` Seed number per plant |  |
 | 134 | Photosynthesis rate per leaf transpiration (photosynthetic water use effinciency: WUE) | `BERVO:0002482` Photosynthetic water use efficiency |  |
 | 135 | Photosynthesis rate per leaf nitrogen (N) content (photosynthetic nitrogen use efficiency, PNUE) | `BERVO:0002481` Photosynthetic nitrogen use efficiency |  |
+| 142 | Leaf perimeter | `BERVO:0002635` Leaf perimeter |  |
 | 143 | Leaf petiole length | `BERVO:0002472` Petiole length |  |
 | 144 | Leaf length | `BERVO:0002470` Leaf length |  |
 | 145 | Leaf width | `BERVO:0002471` Leaf width |  |
@@ -252,6 +262,7 @@ species attributes.
 | 169 | Stem conduit density (vessels and tracheids) | `BERVO:0002410` Stem conduit density |  |
 | 170 | Stem conduit cross-sectional area (vessels and tracheids) | `BERVO:0002445` Stem conduit lumen area |  |
 | 171 | Stem, branch or twig sapwood cross-sectional area per supported leaf area (Huber value) | `BERVO:0002407` Huber value |  |
+| 173 | Leaf volume per leaf area | `BERVO:0002641` Leaf volume per unit area |  |
 | 183 | Leaf epidermis cell wall thickness | `BERVO:0002604` Leaf epidermis cell wall thickness |  |
 | 185 | Photosynthesis carboxylation capacity (Vcmax) per leaf dry mass (Farquhar model) | `BERVO:0002389` Leaf maximum carboxylation rate per unit dry mass |  |
 | 186 | Photosynthesis carboxylation capacity (Vcmax) per leaf area (Farquhar model) | `BERVO:0002388` Leaf maximum carboxylation rate per unit area |  |
@@ -297,12 +308,16 @@ species attributes.
 | 719 | Xylem hydraulic vulnerability, xylem cavitation vulnerability, embolism vulnerability, (P20, P50, P8 | `BERVO:0002398` Xylem vulnerability to embolism |  |
 | 720 | Photosynthesis irradiance at saturation | `BERVO:0002555` Leaf light saturation point |  |
 | 721 | Photosynthesis light compensation point | `BERVO:0002554` Leaf light compensation point |  |
+| 723 | Leaf mid vein length | `BERVO:0002643` Leaf midvein length |  |
+| 724 | Leaf mid vein cross-sectional area | `BERVO:0002644` Leaf midvein cross-sectional area |  |
 | 731 | Leaf anthocyanin content per leaf dry mass | `BERVO:0002548` Leaf anthocyanin content per unit dry mass |  |
 | 734 | Stomata pore length | `BERVO:0002518` Stomatal pore length |  |
 | 740 | Leaf vein density | `BERVO:0002480` Leaf vein density |  |
 | 748 | Leaf hydraulic conductance | `BERVO:0002404` Leaf hydraulic conductance |  |
 | 752 | Plant hydraulic conductance | `BERVO:0002614` Plant hydraulic conductance |  |
+| 759 | Leaflet number per leaf | `BERVO:0002634` Leaflet number per leaf |  |
 | 770 | Plant mortality rate | `BERVO:0002586` Plant mortality rate |  |
+| 779 | Leaf petiole diameter (width) | `BERVO:0002628` Petiole diameter |  |
 | 785 | Root dry mass per root fresh mass (root dry matter content; RDMC) | `BERVO:0002411` Root dry matter content |  |
 | 804 | Leaf mesophyll palisade parenchym thickness | `BERVO:0002552` Leaf palisade mesophyll thickness |  |
 | 805 | Leaf mesophyll spongiophyll thickness | `BERVO:0002553` Leaf spongy mesophyll thickness |  |
@@ -315,8 +330,11 @@ species attributes.
 | 938 | Leaf isoprene emission rate per leaf area | `BERVO:0002514` Leaf isoprene emission rate |  |
 | 964 | Leaf mesophyll conductance | `BERVO:0002560` Leaf mesophyll conductance |  |
 | 966 | Leaf volatile organic carbon (VOC): monoterpene emission rate per leaf area | `BERVO:0002515` Leaf monoterpene emission rate |  |
+| 977 | Leaf sheath length | `BERVO:0002631` Leaf sheath length |  |
 | 982 | Leaf relative water content (leaf water content fresh / leaf water content saturated; RWC) | `BERVO:0002403` Leaf relative water content |  |
 | 983 | Leaf water & osmotic potential: leaf water potential | `BERVO:0002399` Leaf water potential |  |
+| 985 | Leaflet length | `BERVO:0002632` Leaflet length |  |
+| 986 | Leaflet width | `BERVO:0002633` Leaflet width |  |
 | 994 | Litter decomposition rate constant | `BERVO:0002491` Decomposition rate constant |  |
 | 1021 | Plant carbon/nitrogen (C/N) ratio | `BERVO:0002055` Plant tissue carbon to nitrogen mass ratio | Whole plant; the term covers a whole plant. |
 | 1031 | Plant biomass and allometry: number of inflorescences per plant | `BERVO:0002620` Inflorescence number per plant |  |
@@ -353,6 +371,8 @@ species attributes.
 | 1508 | Root length per soil volume | `BERVO:0002544` Root length per soil volume |  |
 | 2700 | Belowground plant organ growth: belowground plant organ dry mass production per ground area per year | `BERVO:0002342` Belowground net primary production |  |
 | 2947 | Inflorescence: number of flowers per inflorescence | `BERVO:0002580` Flower number per inflorescence |  |
+| 2948 | Paleo trait: leaf petiole width | `BERVO:0002628` Petiole diameter | Measured on fossil leaves; the quantity is the same. |
+| 2949 | Paleo trait: leaf area | `BERVO:0002368` Individual leaf area | Reconstructed from fossil leaves; the quantity is the same. |
 | 2950 | Paleo trait: leaf mass per area | `BERVO:0002185` Leaf mass per area | Reconstructed from fossil leaves; the quantity is the same. |
 | 2999 | Flower number per plant | `BERVO:0002579` Flower number per plant |  |
 | 3002 | Leaf mesophyll surface area exposed to internal airspace | `BERVO:0002600` Leaf mesophyll surface area exposed to intercellular space per unit leaf area |  |
@@ -367,7 +387,10 @@ species attributes.
 | 3042 | Seed volume | `BERVO:0000704` Seed volume |  |
 | 3043 | Seed surface area | `BERVO:0000706` Seed surface area |  |
 | 3058 | Leaf area (in case of compound leaves undefined if leaf or leaflet, petiole and rhachis excluded) | `BERVO:0002368` Individual leaf area | TRY variants differ in whether the petiole is included. |
+| 3061 | Leaf shape index: lamina length / lamina width | `BERVO:0000782` Leaf length:width ratio |  |
+| 3062 | Leaf lamina dissection index: lamina perimeter / square root of lamina area | `BERVO:0002636` Leaf dissection index |  |
 | 3070 | Plant nitrogen (N) uptake efficiency (plant nitrogen acquired per nitrogen available) | `BERVO:0002615` Plant nitrogen uptake efficiency |  |
+| 3071 | Leaf rhachis length | `BERVO:0002630` Leaf rachis length |  |
 | 3086 | Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA) petiole, rhachis and midrib excluded | `BERVO:0002369` Specific leaf area | TRY variants differ in whether the petiole, rhachis and midrib are included. |
 | 3106 | Plant height vegetative | `BERVO:0002366` Vegetative plant height |  |
 | 3107 | Plant height generative | `BERVO:0002367` Generative plant height |  |
@@ -398,12 +421,14 @@ species attributes.
 | 3482 | Seed / ovule ratio | `BERVO:0002578` Seed to ovule ratio |  |
 | 3483 | Tree ring width | `BERVO:0002443` Tree ring width |  |
 | 3485 | Photosynthesis: rate of triose phosphate utilisation (TPU) | `BERVO:0002594` Leaf triose phosphate utilisation rate per unit area |  |
+| 3494 | Leaf lamina dry mass per petiole dry mass | `BERVO:0002629` Leaf lamina to petiole dry mass ratio |  |
 | 3515 | Plant number of fruits per plant | `BERVO:0002619` Fruit number per plant |  |
 | 3520 | Litter decomposition: fraction of mass remaining | `BERVO:0002493` Mass remaining fraction of decomposing plant material |  |
 | 3524 | Litter decomposition: fraction of carbon (C) remaining | `BERVO:0002494` Carbon remaining fraction of decomposing plant material |  |
 | 3525 | Litter decomposition: fraction of nitrogen (N) remaining | `BERVO:0002495` Nitrogen remaining fraction of decomposing plant material |  |
 | 3526 | Litter decomposition: fraction of phosphorus (P) remaining | `BERVO:0002496` Phosphorus remaining fraction of decomposing plant material |  |
 | 3553 | Stem length per stem dry mass (stem specific length; SSL) | `BERVO:0002442` Stem specific length |  |
+| 3599 | Leaf rachis length | `BERVO:0002630` Leaf rachis length |  |
 | 3603 | Seed number per ground area | `BERVO:0002572` Seed number per ground area |  |
 | 3613 | Infructescence number of fruits (fruits per infructescence) | `BERVO:0002581` Fruit number per infructescence |  |
 | 3614 | Fruit number of seeds (seeds per fruit) | `BERVO:0002430` Seed number per fruit |  |
@@ -418,12 +443,18 @@ species attributes.
 | 3765 | Stem relative total bark thickness | `BERVO:0002529` Relative bark thickness |  |
 | 3767 | Leaf equivalent water thickness (EWT) | `BERVO:0002562` Leaf equivalent water thickness |  |
 | 3794 | Stem hydraulic conductivity | `BERVO:0002444` Stem hydraulic conductivity |  |
+| 3801 | Leaf shape: slenderness (length/width) | `BERVO:0000782` Leaf length:width ratio |  |
 | 3802 | Photosynthesis: convexity parameter of light response curve | `BERVO:0002598` Leaf photosynthetic light response curvature |  |
 | 3803 | Photosynthesis: gross photosynthesis per leaf area | `BERVO:0002595` Leaf gross photosynthetic rate per unit area |  |
 | 3804 | Photosynthesis: gross photosynthesis per leaf dry mass | `BERVO:0002596` Leaf gross photosynthetic rate per unit dry mass |  |
 | 3805 | Photosynthesis: light saturation point | `BERVO:0002555` Leaf light saturation point |  |
 | 3828 | Leaf cuticle thickness | `BERVO:0002550` Leaf cuticle thickness |  |
+| 3829 | Leaf lamina dry mass to petiole dry mass ratio | `BERVO:0002629` Leaf lamina to petiole dry mass ratio |  |
+| 3870 | Leaf number of teeth | `BERVO:0002637` Leaf tooth number |  |
 | 3881 | Inflorescence: number of fruits per inflorescence | `BERVO:0002581` Fruit number per infructescence |  |
+| 3887 | Leaf complexity (leaf perimeter per square root of area) | `BERVO:0002636` Leaf dissection index |  |
+| 3888 | Leaf number of teeth per leaf area | `BERVO:0002638` Leaf tooth number per unit area |  |
+| 3889 | Leaf number of teeth per leaf perimeter | `BERVO:0002639` Leaf tooth number per unit perimeter |  |
 | 3973 | Photosynthesis: Quantum use efficiency | `BERVO:0002597` Leaf photosynthetic quantum yield |  |
 | 3978 | Photosynthesis: non-photochemical quenching (NPQ) | `BERVO:0002599` Leaf non-photochemical quenching |  |
 | 3997 | Wood compressive strength | `BERVO:0002532` Wood compressive strength |  |
@@ -455,7 +486,8 @@ species attributes.
 | `BERVO:0002342` Belowground net primary production | 1391 Root growth: root dry mass production per ground area per year; 1676 Coarse root growth: coarse root dry mass production per ground area per year; 1932 Fine root growth: fine root dry mass production per ground area per year; 2188 Fine root (absorptive) growth: absorptive fine root dry mass production per ground area per year; 2444 Fine root (transport) growth: transport fine root dry mass production per ground area per year |
 | `BERVO:0002344` Belowground litter production | 1379 Root mortality: root dry mass mortality per ground area and time; 1664 Coarse root mortality: coarse root dry mass mortality per ground area and time; 1920 Fine root mortality: fine root dry mass mortality per ground area and time; 2176 Fine root (absorptive) mortality: absorptive fine root dry mass mortality per ground area and time |
 | `BERVO:0002352` Phenological event date | 2956 Flower onset of flowering (first flowering date, flowering beginning) |
-| `BERVO:0002369` Specific leaf area | 69 Litter SLA (leaf area per leaf dry mass, specific leaf area, 1/LMA of leaf litter) |
+| `BERVO:0002368` Individual leaf area | 3054 Leaf area (cotyledons) |
+| `BERVO:0002369` Specific leaf area | 69 Litter SLA (leaf area per leaf dry mass, specific leaf area, 1/LMA of leaf litter); 3056 Leaf area per dry mass (cotyledons, specific leaf area (SLA) of cotyledons) |
 | `BERVO:0002370` Leaf dry matter content | 3055 Leaf dry mass per fresh mass (cotyledons, cotyledon LDMC) |
 | `BERVO:0002371` Stem specific density | 1204 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: twigs and branches; 3452 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: heartwood; 3472 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: sapwood; 3473 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: branch; 3736 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: twig; 3877 Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: branch |
 | `BERVO:0002374` Specific root length | 614 Fine root length per fine root dry mass (specific fine root length, SRL); 1550 Coarse root length per coarse root dry mass (specific coarse root length, SRL); 2062 Fine root (absorptive) length per absorptive fine root dry mass (specific absorptive fine root lengt; 2318 Fine root (transport) length per transport fine root dry mass (specific transport fine root length, |
@@ -539,7 +571,7 @@ species attributes.
 | `BERVO:0002525` Wood ray parenchyma area fraction | 3670 Twig ray fraction; 3912 Stem wood cross-section: fraction of ray parenchyma; 4008 Stem wood cross-section: fraction of radial parenchyma |
 | `BERVO:0002526` Wood axial parenchyma area fraction | 3669 Twig axial parenchyma fraction; 3911 Stem wood cross-section: fraction of axial parenchyma; 3915 Stem wood cross-section: fraction of axial parenchyma |
 | `BERVO:0002527` Wood parenchyma area fraction | 3682 Twig axial+ray parenchyma fraction; 4007 Stem wood cross-section: fraction of total parenchyma (axial+radial) |
-| `BERVO:0002528` Plant tissue dry matter content | 119 Plant biomass and allometry: Plant dry mass per plant fresh mass; 689 Twig dry mass per twig fresh mass (twig dry matter content, TDMC); 1010 Leaf petiole dry mass per petiole fresh mass (leaf petiole dry matter content; LDMC petiole); 3559 Flower dry matter content (flower dry mass per flower fresh mass); 3588 Shoot dry matter content per fresh mass; 3788 Inflorescence dry matter content (Inflorescence DMC) |
+| `BERVO:0002528` Plant tissue dry matter content | 119 Plant biomass and allometry: Plant dry mass per plant fresh mass; 689 Twig dry mass per twig fresh mass (twig dry matter content, TDMC); 1010 Leaf petiole dry mass per petiole fresh mass (leaf petiole dry matter content; LDMC petiole); 3081 Leaf rhachis dry mass per leaf rhachis fresh mass (leaf rhachis dry matter content; LDMC rachis); 3559 Flower dry matter content (flower dry mass per flower fresh mass); 3588 Shoot dry matter content per fresh mass; 3788 Inflorescence dry matter content (Inflorescence DMC); 3929 Trap dry matter content per fresh mass (DMC) |
 | `BERVO:0002529` Relative bark thickness | 3737 Twig relative total bark thickness; 3738 Twig relative inner bark thickness; 3766 Stem relative inner bark thickness; 3843 Stem relative outer bark thickness (outer bark thickness / radius) |
 | `BERVO:0002530` Plant tissue modulus of elasticity | 3662 Twig modulus of elasticity (MOE); 3816 Twig modulus of elasticity (Youngs modulus); 3817 Twig wood modulus of elasticity (Youngs modulus); 3818 Twig bark modulus of elasticity (Youngs modulus) |
 | `BERVO:0002534` Root length per ground area | 1768 Coarse root length density (RLD): coarse root length per ground area; 2024 Fine root length per ground area; 2280 Fine root (absorptive) length density (RLD): absorptive fine root length per ground area; 2536 Fine root (transport) length density (RLD): transport fine root length per ground area |
@@ -567,6 +599,10 @@ species attributes.
 | `BERVO:0002609` Plant tissue hydraulic capacitance | 711 Leaf water capacitance; 3775 Flower water capacitance; 3785 Inflorescence water capacitance |
 | `BERVO:0002610` Plant tissue osmotic solute content | 3771 Leaf osmotically active compounds per dry mass; 3779 Flower osmotically active compounds per dry mass; 3787 Inflorescence osmotically active compounds per dry mass |
 | `BERVO:0002612` Plant relative growth rate | 3459 Plant belowground relative growth rate |
+| `BERVO:0002624` Plant organ dry mass | 778 Leaf petiole dry mass; 3079 Leaf rhachis dry mass; 3466 Leaf sheath dry mass; 3926 Trap dry mass |
+| `BERVO:0002625` Plant organ fresh mass | 777 Leaf petiole fresh mass; 3080 Leaf rhachis fresh mass |
+| `BERVO:0002626` Plant organ projected area | 973 Leaf petiole projected area; 3076 Leaf rhachis projected area; 3465 Leaf sheath area; 3928 Trap area |
+| `BERVO:0002627` Plant organ specific area | 1011 Leaf petiole projected area per petiole dry mass (specific leaf area (SLA) of leaf petiole); 3084 Leaf rhachis area per dry mass (specific leaf area (SLA) of leaf rhachis); 3467 Leaf sheath area per sheath dry mass (sheath SLA); 3927 Trap SLA |
 
 ## Related terms
 
@@ -615,6 +651,8 @@ species attributes.
 | 940 | Leaf length excluding petiole (leaf lamina length) | `BERVO:0002470` Leaf length | The length of the lamina alone, without the petiole. |
 | 948 | Litter (leaf) decomposition rate | `BERVO:0002491` Decomposition rate constant | TRY does not say whether this is a rate constant or a mass loss per unit time. |
 | 967 | Leaf volatile organic carbon (VOC): monoterpene emission rate per leaf dry mass | `BERVO:0002515` Leaf monoterpene emission rate | Per unit leaf dry mass rather than area. |
+| 971 | Leaflet number of first order per leaf | `BERVO:0002634` Leaflet number per leaf | Counts only the first-order leaflets, or pinnae, of a bipinnate leaf. |
+| 972 | Leaflet number of second order per leaf | `BERVO:0002634` Leaflet number per leaf | Counts only the second-order leaflets, or pinnules, of a bipinnate leaf. |
 | 974 | Photosynthesis rate per leaf area: transition to TPU limited photosynthesis | `BERVO:0002594` Leaf triose phosphate utilisation rate per unit area | The photosynthetic rate at which TPU starts to limit assimilation, not the TPU rate. |
 | 981 | Leaf transpiration rate per leaf dry mass | `BERVO:0002483` Leaf transpiration rate per unit area | Per unit leaf dry mass rather than area. |
 | 1061 | Coarse woody debris (CWD) root: decomposition rate | `BERVO:0002491` Decomposition rate constant | TRY does not say whether this is a rate constant or a mass loss per unit time. |
@@ -653,6 +691,8 @@ species attributes.
 | 2880 | Litter (other than leaf: twigs, bark, flowers...) decomposition rate | `BERVO:0002491` Decomposition rate constant | TRY does not say whether this is a rate constant or a mass loss per unit time. |
 | 3001 | Leaf chlorophyll content in SPAD units relative | `BERVO:0002474` Leaf chlorophyll content per unit area | A relative optical index of chlorophyll, not a mass. |
 | 3006 | Leaf intercellular airspace area per leaf area | `BERVO:0002602` Leaf porosity | An area fraction on a cross-section, rather than a volume fraction. |
+| 3038 | Leaf shape: roundness - leaf blade width per leaf blade length (or length per width) | `BERVO:0000782` Leaf length:width ratio | TRY allows width per length as well as length per width, so a value may be the reciprocal. |
+| 3060 | Leaf perimeter excluding petiol (leaf lamina perimeter) | `BERVO:0002635` Leaf perimeter | The perimeter of the lamina alone, without the petiole. |
 | 3065 | Branch cross-sectional fraction of parenchyma | `BERVO:0002527` Wood parenchyma area fraction | A fraction of the whole branch cross-section, which may include bark and pith, rather than of the wood. |
 | 3066 | Branch cross-sectional fraction of conduits (vessels) | `BERVO:0002523` Wood vessel area fraction | A fraction of the whole branch cross-section, which may include bark and pith, rather than of the wood. |
 | 3067 | Branch cross-sectional fraction of fiber | `BERVO:0002524` Wood fibre area fraction | A fraction of the whole branch cross-section, which may include bark and pith, rather than of the wood. |
