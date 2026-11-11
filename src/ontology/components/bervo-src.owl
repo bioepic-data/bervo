@@ -40221,7 +40221,6 @@
     <!-- https://w3id.org/bervo/BERVO_0002373 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002373">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002624"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Oven-dry mass of a single diaspore, including any structures attached to it when it is dispersed.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Dispersal unit dry mass</oboInOwl:hasRelatedSynonym>
@@ -44830,7 +44829,7 @@
         <obo:IAO_0000115>Oven-dry mass of a single plant organ or part of one, such as a petiole, a leaf sheath or a fruit.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>organ dry mass</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), after Individual leaf dry mass (BERVO:0002396), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 778, 3079, 3466, 3926. Organ goes in contexts. Individual leaf dry mass (BERVO:0002396), Seed dry mass (BERVO:0002372), Diaspore dry mass (BERVO:0002373) and Fruit dry mass (BERVO:0002434) are its subclasses for those organs. Usually reported as the mean of a sample of organs.</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 778, 3079, 3466, 3926. Organ goes in contexts. Individual leaf dry mass (BERVO:0002396), Seed dry mass (BERVO:0002372) and Fruit dry mass (BERVO:0002434) are its subclasses for those organs. Diaspore dry mass (BERVO:0002373) is not, because a diaspore may be several organs dispersed together, such as a fruit with its bracts. Usually reported as the mean of a sample of organs.</rdfs:comment>
         <rdfs:label>Plant organ dry mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>g</bervo:BERVO_has_unit>
