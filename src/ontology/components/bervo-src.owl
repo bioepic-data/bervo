@@ -13414,13 +13414,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000782">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The ratio of leaf length to leaf width, representing leaf shape and morphological characteristics that affect light interception and water loss patterns. This leaf length to width ratio influences photosynthetic efficiency and transpiration rates in plant canopies.</obo:IAO_0000115>
+        <obo:IAO_0000115>Length of a leaf divided by its width, a measure of how narrow the leaf is.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000542"/>
         <oboInOwl:hasExactSynonym>WDLF</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Leaf shape index: lamina length / lamina width</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Leaf shape: slenderness (length/width)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>rLen2WidthLeaf_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), after the Trait Ontology (TO:0000542), TRY alignment for issue #27</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:comment>TRY trait IDs: 3061, 3801. TRY 3061 measures the lamina alone.</rdfs:comment>
         <rdfs:label>Leaf length:width ratio</rdfs:label>
