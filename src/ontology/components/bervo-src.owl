@@ -36292,10 +36292,10 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002147">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002645"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000044"/>
-        <obo:IAO_0000115>Negative logarithm of the hydrogen ion activity of wastewater, measured on a sample at the time of collection.</obo:IAO_0000115>
+        <obo:IAO_0000115>Negative logarithm of the hydrogen ion activity of wastewater.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>sewage pH</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 7 2026), wastewater terms for issue #143</rdfs:comment>
-        <rdfs:comment>Recorded for each sample in the Global Sewage Project, BioProject PRJEB13831 (Hendriksen et al. 2019, Nat Commun 10:1124, doi:10.1038/s41467-019-08853-3).</rdfs:comment>
+        <rdfs:comment>Measured on a sample at the time of collection. Recorded for each sample in the Global Sewage Project, BioProject PRJEB13831 (Hendriksen et al. 2019, Nat Commun 10:1124, doi:10.1038/s41467-019-08853-3).</rdfs:comment>
         <rdfs:label>Wastewater pH</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000261"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -45227,9 +45227,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002645">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000043"/>
-        <obo:IAO_0000115>Negative logarithm of the hydrogen ion activity of water of any kind or origin, measured in situ or on a sample.</obo:IAO_0000115>
-        <rdfs:comment>Applies to any water, including porewater, groundwater, surface water and precipitation; narrower terms name the kind of water. The ODM2 variable name pH (ODM2:variablename/pH) is mapped to the pH concept (BERVO:8000261), not here, because ODM2 applies it to any solution, soil suspensions included.</rdfs:comment>
+        <obo:IAO_0000115>Negative logarithm of the hydrogen ion activity of water, of any kind or origin.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 11 2026), issue #173</rdfs:comment>
+        <rdfs:comment>Measured in situ or on a sample. Applies to any water, including porewater, groundwater, surface water and precipitation; narrower terms name the kind of water. The ODM2 variable name pH (ODM2:variablename/pH) is mapped to the pH concept (BERVO:8000261), not here, because ODM2 applies it to any solution, soil suspensions included.</rdfs:comment>
         <rdfs:label>Water pH</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000261"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
