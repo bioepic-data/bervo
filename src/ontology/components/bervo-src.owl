@@ -13415,10 +13415,14 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000782">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>The ratio of leaf length to leaf width, representing leaf shape and morphological characteristics that affect light interception and water loss patterns. This leaf length to width ratio influences photosynthetic efficiency and transpiration rates in plant canopies.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000542"/>
         <oboInOwl:hasExactSynonym>WDLF</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf shape index: lamina length / lamina width</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf shape: slenderness (length/width)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>rLen2WidthLeaf_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 3061, 3801. TRY 3061 measures the lamina alone.</rdfs:comment>
         <rdfs:label>Leaf length:width ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
@@ -40106,6 +40110,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002368 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002368">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002626"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>One-sided or projected area of a single leaf.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>leaf size</oboInOwl:hasExactSynonym>
@@ -40114,8 +40119,9 @@
         <oboInOwl:hasRelatedSynonym>Leaf area (in case of compound leaves: leaf, petiole excluded)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Leaf area (in case of compound leaves: leaf, petiole included)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Leaf area (in case of compound leaves: leaf, undefined if petiole in- or excluded)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Paleo trait: leaf area</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), after Perez-Harguindeguy et al. 2013 (doi:10.1071/BT12225), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait IDs: 3058, 3108, 3110, 3112, 3114. TRY splits leaf area by whether the petiole is included, which is a matter of protocol; the leaflet variants (3109, 3111, 3113) are the area of one leaflet of a compound leaf and are not mapped here. Leaf area (BERVO:0000716) is the EcoSIM leaf area at a node.</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 2949, 3058, 3108, 3110, 3112, 3114. TRY traits mapped here, with what narrows each one in contexts: 3054. TRY 2949 is reconstructed from fossil leaves. TRY splits leaf area by whether the petiole is included, which is a matter of protocol; the leaflet variants (3109, 3111, 3113) are the area of one leaflet of a compound leaf and are not mapped here. Leaf area (BERVO:0000716) is the EcoSIM leaf area at a node.</rdfs:comment>
         <rdfs:label>Individual leaf area</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
         <bervo:BERVO_has_unit>cm2</bervo:BERVO_has_unit>
@@ -40130,6 +40136,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002369 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002369">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002627"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>One-sided area of a fresh leaf divided by its oven-dry mass.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000562"/>
@@ -40138,7 +40145,7 @@
         <oboInOwl:hasRelatedSynonym>Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole excluded</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole included</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), after Perez-Harguindeguy et al. 2013 (doi:10.1071/BT12225), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY trait IDs: 3086, 3115, 3116, 3117. TRY traits mapped here, with what narrows each one in contexts: 69. The reciprocal of Leaf mass per area (BERVO:0002185). Leaf area:mass during growth (BERVO:0000783) is the EcoSIM specific leaf area of new growth.</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 3086, 3115, 3116, 3117. TRY traits mapped here, with what narrows each one in contexts: 69, 3056. The reciprocal of Leaf mass per area (BERVO:0002185). Leaf area:mass during growth (BERVO:0000783) is the EcoSIM specific leaf area of new growth.</rdfs:comment>
         <rdfs:label>Specific leaf area</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
@@ -40195,6 +40202,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002372 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002372">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002624"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Oven-dry mass of a single seed.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>seed mass</oboInOwl:hasRelatedSynonym>
@@ -40213,6 +40221,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002373 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002373">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002624"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Oven-dry mass of a single diaspore, including any structures attached to it when it is dispersed.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Dispersal unit dry mass</oboInOwl:hasRelatedSynonym>
@@ -40647,6 +40656,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002396 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002396">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002624"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Oven-dry mass of a single leaf.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>single leaf dry mass</oboInOwl:hasExactSynonym>
@@ -41217,6 +41227,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002426 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002426">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002625"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of a single seed as collected, before drying.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
@@ -41362,6 +41373,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002434 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002434">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002624"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Oven-dry mass of a single fruit, including its seeds.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
@@ -41379,6 +41391,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002435 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002435">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002625"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of a single fruit, including its seeds, as collected, before drying.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 29 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
@@ -42045,6 +42058,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002473 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002473">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002625"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Mass of a single leaf as collected, before drying.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Leaf fresh mass</oboInOwl:hasRelatedSynonym>
@@ -43027,7 +43041,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Oven-dry mass of a plant organ or tissue, or of whole plant material, divided by its fresh mass.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 02 2026), after Stem dry matter content (BERVO:0002440), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 119, 689, 1010, 3559, 3588, 3788. Organ goes in contexts. Leaf dry matter content (BERVO:0002370), Root dry matter content (BERVO:0002411) and Stem dry matter content (BERVO:0002440) are its leaf, root and stem subclasses. Whether the fresh mass is taken at water saturation should be reported with the value.</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 119, 689, 1010, 3081, 3559, 3588, 3788, 3929. Organ goes in contexts. Leaf dry matter content (BERVO:0002370), Root dry matter content (BERVO:0002411) and Stem dry matter content (BERVO:0002440) are its leaf, root and stem subclasses. Whether the fresh mass is taken at water saturation should be reported with the value.</rdfs:comment>
         <rdfs:label>Plant tissue dry matter content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_has_unit>mg{dry_mass}.g-1{fresh_mass}</bervo:BERVO_has_unit>
@@ -44805,6 +44819,401 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000806"/>
         <bervo:BERVO_has_unit>MPa</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000012"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002624 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002624">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Oven-dry mass of a single plant organ or part of one, such as a petiole, a leaf sheath or a fruit.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>organ dry mass</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), after Individual leaf dry mass (BERVO:0002396), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 778, 3079, 3466, 3926. Organ goes in contexts. Individual leaf dry mass (BERVO:0002396), Seed dry mass (BERVO:0002372), Diaspore dry mass (BERVO:0002373) and Fruit dry mass (BERVO:0002434) are its subclasses for those organs. Usually reported as the mean of a sample of organs.</rdfs:comment>
+        <rdfs:label>Plant organ dry mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>g</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>mg</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002625 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002625">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Mass of a single plant organ or part of one as collected, before drying.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>organ fresh mass</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), after Individual leaf fresh mass (BERVO:0002473), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 777, 3080. Organ goes in contexts. Individual leaf fresh mass (BERVO:0002473), Seed fresh mass (BERVO:0002426) and Fruit fresh mass (BERVO:0002435) are its subclasses for those organs. Plant organ dry mass (BERVO:0002624) is the oven-dry mass.</rdfs:comment>
+        <rdfs:label>Plant organ fresh mass</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>g</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>mg</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002626 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002626">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Area of the outline of a single plant organ or part of one projected onto a plane, as when it is laid flat and scanned.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>organ projected area</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), after Individual leaf area (BERVO:0002368), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 973, 3076, 3465, 3928. Organ goes in contexts. Individual leaf area (BERVO:0002368) is its subclass for a leaf.</rdfs:comment>
+        <rdfs:label>Plant organ projected area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_has_unit>cm2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>mm2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002627 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002627">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Projected area of a single plant organ or part of one divided by its oven-dry mass.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>organ specific area</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), after Specific leaf area (BERVO:0002369), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 1011, 3084, 3467, 3927. Organ goes in contexts. Specific leaf area (BERVO:0002369) is its subclass for a leaf. Plant organ projected area (BERVO:0002626) divided by Plant organ dry mass (BERVO:0002624).</rdfs:comment>
+        <rdfs:label>Plant organ specific area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_has_unit>m2.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>mm2.mg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002628 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002628">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Distance across the petiole of a leaf, measured perpendicular to its long axis.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>petiole width</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf petiole diameter (width)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Paleo trait: leaf petiole width</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 779, 2948. TRY 2948 is measured on fossil leaves, where the width of the petiole at the base of the lamina is used with leaf area to estimate leaf mass per area. Where along the petiole it was measured should be reported with the value.</rdfs:comment>
+        <rdfs:label>Petiole diameter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000580"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000580"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002629 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002629">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Oven-dry mass of the lamina of a leaf divided by the oven-dry mass of its petiole.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf lamina dry mass per petiole dry mass</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf lamina dry mass to petiole dry mass ratio</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 3494, 3829.</rdfs:comment>
+        <rdfs:label>Leaf lamina to petiole dry mass ratio</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000580"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001358"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002630 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002630">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Length of the rachis of a compound leaf, from its lowest leaflets to its tip.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf rhachis length</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 3071, 3599. TRY spells it rhachis in 3071 and rachis in 3599. Petiole length (BERVO:0002472) is the length below the lowest leaflets.</rdfs:comment>
+        <rdfs:label>Leaf rachis length</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001371"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001371"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002631 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002631">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Length of the sheath of a leaf, from its base on the stem to its junction with the lamina.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0002689"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 977. Sheath height (BERVO:0000717) is the EcoSIM height of the sheaths at a canopy node.</rdfs:comment>
+        <rdfs:label>Leaf sheath length</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001360"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001360"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002632 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002632">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Length of a single leaflet of a compound leaf, from its base to its apex.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0001115"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 985. Leaf length (BERVO:0002470) is the length of a whole leaf.</rdfs:comment>
+        <rdfs:label>Leaflet length</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001372"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001372"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002633 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002633">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Largest dimension of a single leaflet of a compound leaf at right angles to its length.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0001118"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 986. Leaf width (BERVO:0002471) is the width of a whole leaf.</rdfs:comment>
+        <rdfs:label>Leaflet width</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000197"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8001372"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001372"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002634 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002634">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Number of leaflets on a single compound leaf.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0002636"/>
+        <oboInOwl:hasExactSynonym>leaflets per leaf</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 759. TRY 971 and 972 count the first-order and second-order leaflets of a bipinnate leaf separately.</rdfs:comment>
+        <rdfs:label>Leaflet number per leaf</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001372"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002635 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002635">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Length of the margin of a single leaf, around its whole outline.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000616"/>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 142. TRY does not say whether the petiole is included; TRY 3060 is the perimeter of the lamina alone.</rdfs:comment>
+        <rdfs:label>Leaf perimeter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002636 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002636">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Perimeter of a leaf lamina divided by the square root of its area, a measure of how lobed or toothed its margin is.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>leaf complexity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf complexity (leaf perimeter per square root of area)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Leaf lamina dissection index: lamina perimeter / square root of lamina area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait IDs: 3062, 3887. Some studies divide by a further two times the square root of pi, so that a circle scores 1; the formula should be reported with the value. Leaf perimeter (BERVO:0002635) and Individual leaf area (BERVO:0002368) are its inputs.</rdfs:comment>
+        <rdfs:label>Leaf dissection index</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001358"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002637 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002637">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Number of teeth on the margin of a single leaf lamina.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf number of teeth</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3870. With the other tooth counts, used in leaf physiognomy to infer past climate from fossil leaves.</rdfs:comment>
+        <rdfs:label>Leaf tooth number</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001374"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002638 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002638">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Number of teeth on the margin of a leaf lamina divided by the area of the lamina.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf number of teeth per leaf area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3888. Leaf tooth number (BERVO:0002637) divided by Individual leaf area (BERVO:0002368).</rdfs:comment>
+        <rdfs:label>Leaf tooth number per unit area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000899"/>
+        <bervo:BERVO_has_unit>{teeth}.cm-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001374"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002639 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002639">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Number of teeth on the margin of a leaf lamina divided by the perimeter of the lamina.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf number of teeth per leaf perimeter</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 3889. Leaf tooth number (BERVO:0002637) divided by Leaf perimeter (BERVO:0002635).</rdfs:comment>
+        <rdfs:label>Leaf tooth number per unit perimeter</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000899"/>
+        <bervo:BERVO_has_unit>{teeth}.cm-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001374"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002640 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002640">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Volume of a single leaf, usually measured by the water it displaces.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000826"/>
+        <oboInOwl:hasRelatedSynonym>Leaf volume</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 120. Leaf tissue density (BERVO:0002395) is the dry mass of a leaf divided by its volume.</rdfs:comment>
+        <rdfs:label>Individual leaf volume</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000190"/>
+        <bervo:BERVO_has_unit>cm3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>mm3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002641 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002641">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Volume of a leaf divided by its one-sided area.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf volume per leaf area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 173. The mean thickness of the leaf over its whole area, veins included; Leaf thickness (BERVO:0002394) is measured away from the major veins.</rdfs:comment>
+        <rdfs:label>Leaf volume per unit area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000190"/>
+        <bervo:BERVO_has_unit>mm3.mm-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002642 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002642">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Distance between the upper and lower surfaces of the midvein of a leaf, measured on a cross-section of the lamina.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/TO_0000823"/>
+        <oboInOwl:hasRelatedSynonym>Leaf mid vein thickness</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 104. Leaf thickness (BERVO:0002394) is measured away from the major veins.</rdfs:comment>
+        <rdfs:label>Leaf midvein thickness</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001373"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002643 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002643">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Length of the midvein of a leaf lamina, from the base of the lamina to where the vein ends near the apex.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf mid vein length</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 723.</rdfs:comment>
+        <rdfs:label>Leaf midvein length</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000260"/>
+        <bervo:BERVO_has_unit>mm</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001373"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_0002644 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_0002644">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
+        <obo:IAO_0000115>Area of a cross-section through the midvein of a leaf, taken at right angles to its length.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Leaf mid vein cross-sectional area</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
+        <rdfs:comment>TRY trait ID: 724. Where along the midvein the section was cut should be reported with the value.</rdfs:comment>
+        <rdfs:label>Leaf midvein cross-sectional area</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
+        <bervo:BERVO_has_unit>mm2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000244"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001373"/>
     </Class>
     
 
@@ -63907,6 +64316,86 @@
         <oboInOwl:hasRelatedSynonym>stomatal aperture</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 05 2026), issue #215, after the Plant Ontology (PO:0008032)</rdfs:comment>
         <rdfs:label>Stomatal pore</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001371 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001371">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001352"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Main axis of a pinnate or more highly compound leaf, continuing from the petiole, that bears the leaflets.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0020055"/>
+        <oboInOwl:hasExactSynonym>leaf rhachis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>rachis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>rhachis</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), after the Plant Ontology (PO:0020055), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Leaf rachis</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001372 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001372">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001352"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>One of the ultimate segments of a compound leaf, each with a lamina of its own.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0020049"/>
+        <oboInOwl:hasRelatedSynonym>pinna</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>pinnule</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), after the Plant Ontology (PO:0020049), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Leaflet</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001373 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001373">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001359"/>
+        <obo:IAO_0000115>Central primary vein of a leaf lamina, usually its largest and most prominent vein.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0020139"/>
+        <oboInOwl:hasExactSynonym>leaf mid vein</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mid vein</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>midrib</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), after the Plant Ontology (PO:0020139), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Leaf midvein</rdfs:label>
+        <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/bervo/BERVO_8001374 -->
+
+    <Class rdf:about="https://w3id.org/bervo/BERVO_8001374">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001352"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8001358"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Small angular projection on the margin of a leaf lamina, whose sinus reaches less than a quarter of the way to the midline of the lamina.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/PO_0025518"/>
+        <oboInOwl:hasExactSynonym>leaf tooth</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>leaf teeth</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Nov 10 2026), after the Plant Ontology (PO:0025518), TRY alignment for issue #27</rdfs:comment>
+        <rdfs:label>Leaf lamina tooth</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
