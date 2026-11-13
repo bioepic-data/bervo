@@ -1049,9 +1049,11 @@ MAPPED = [
     ("broader", "BERVO:0002673", "3677", ctx("Twig")),
     ("broader", "BERVO:0002674", "3676", ctx("Twig")),
     # TRY 3671 "Twig fibre wall fraction" and 3672 "Twig fibre lumen fraction" stay gaps. They
-    # may be fractions of one fibre, as 3677 and 3678 say outright, or of the twig wood
-    # cross-section, as 3683 "Twig fibre fraction" and the gap 3668 "Twig vessel wall
-    # fraction" are; TRY lists them beside 3677 and 3678, which suggests the second.
+    # follow 3667-3670 (vessel lumen, vessel wall, axial parenchyma and ray fractions), which
+    # are fractions of the twig wood cross-section, and 3677 and 3678 already give the
+    # fractions within one fibre outright, so they are probably fibre wall and fibre lumen
+    # area as fractions of the cross-section. BERVO has no term for those, nor for 3668, the
+    # same form for vessel walls, which is a gap for the same reason.
     ("match", "BERVO:0002675", "282", ""),
     ("match", "BERVO:0002676", "1236", ""),
     ("match", "BERVO:0002677", "1208", ""),
