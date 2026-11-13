@@ -90,7 +90,18 @@ mass ratio, and the rachis and sheath lengths; leaflet length, width and number 
 leaf perimeter, the dissection index and the number of teeth per leaf, per unit area and
 per unit perimeter; leaf volume and volume per unit area; and the thickness, length and
 cross-sectional area of the midvein, with leaf rachis, leaflet, leaf midvein and leaf
-lamina tooth concepts. The trace element and contaminant contents wait on the decisions in
+lamina tooth concepts. The twenty-first added, for a single organ of any kind, the
+length, diameter, cross-sectional area and volume, which take the stem, branch, twig,
+shoot, internode, stolon, tiller and spine traits with the organ in contexts; stem
+circumference, surface area per unit dry mass and per unit volume, slenderness and
+lifespan, the sapwood volume fraction and the bark to wood volume ratio; leaves and fruits
+per branch and stolons per plant; the pith, xylem, bark, collenchyma and cell wall area
+fractions of a stem or branch cross-section; the length, wall thickness, lumen diameter
+and areas of wood fibres; vessel element length, vessel wall thickness and the
+interconduit wall; the pit membrane, torus, aperture and pit area traits; ray density and
+height; and the torsional, impact and splitting strength, hardness and volumetric
+shrinkage of wood, with pith, collenchyma, stolon, tiller, spine, interconduit pit, pit
+membrane and torus concepts. The trace element and contaminant contents wait on the decisions in
 [issue #230](https://github.com/bioepic-data/bervo/issues/230). Still to come are the
 value lists of the categorical traits (woodiness, growth form, leaf type, leaf phenology)
 and terms for the gaps listed here.

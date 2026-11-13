@@ -238,14 +238,14 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 279	Wood vessel pits characteristics (vestured pits)	Stem, wood and bark	gap			
 280	Wood vessel helical thickenings	Stem, wood and bark	gap			
 281	Stem conduit diameter (vessels, tracheids)	Stem, wood and bark	match	BERVO:0002409		
-282	Wood vessel element length; stem conduit (vessel and tracheids) element length	Stem, wood and bark	gap			
+282	Wood vessel element length; stem conduit (vessel and tracheids) element length	Stem, wood and bark	match	BERVO:0002675		
 283	Wood vessel tyloses and deposits	Stem, wood and bark	gap			
 284	Wood vesselless (vessels absent)	Stem, wood and bark	gap			
 285	Wood tracheids and fibres	Stem, wood and bark	gap			
 286	Wood fibre types	Stem, wood and bark	gap			
 287	Wood septate fibres and parenchyma-like fibre bands	Stem, wood and bark	gap			
-288	Stem wood fiber wall thickness	Stem, wood and bark	gap			
-289	Wood fiber lengths	Stem, wood and bark	gap			
+288	Stem wood fiber wall thickness	Stem, wood and bark	broader	BERVO:0002665		Stem goes in contexts.
+289	Wood fiber lengths	Stem, wood and bark	match	BERVO:0002666		
 290	Wood parenchyma characteristics	Stem, wood and bark	gap			
 291	Wood ray width	Stem, wood and bark	gap			
 292	Wood cellular composition of rays	Stem, wood and bark	gap			
@@ -253,7 +253,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 294	Wood tile cells	Stem, wood and bark	gap			
 295	Wood ray cells perforated	Stem, wood and bark	gap			
 296	Wood with disjunctive ray parenchyma cell walls	Stem, wood and bark	gap			
-297	Wood rays per millimetre (wood ray density)	Stem, wood and bark	gap			
+297	Wood rays per millimetre (wood ray density)	Stem, wood and bark	match	BERVO:0002688		
 298	Wood rayless	Stem, wood and bark	gap			
 299	Wood storied structure	Stem, wood and bark	gap			
 300	Wood oil and mucilage cells presence	Stem, wood and bark	gap			
@@ -273,7 +273,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 320	Plant vital attributes of persistence and establishment	Whole plant	gap			
 324	Crown (canopy) length: diameter along the longest axis	Crown and canopy	gap			
 325	Crown (canopy) width	Crown and canopy	gap			
-326	Stem length	Stem, wood and bark	gap			
+326	Stem length	Stem, wood and bark	broader	BERVO:0002646		Stem goes in contexts.
 328	Plant vegetative reproduction: number of ramets	Whole plant	gap			
 329	Plant vegetative reproduction: clonality of ramets	Whole plant	gap			
 333	Leaf ash content per leaf dry mass	Leaf	broader	BERVO:0002503		Leaf goes in contexts.
@@ -298,7 +298,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 358	Plant vegetative reproduction: persistence of connection between clonal growth organs	Whole plant	gap			
 359	Seeding frequency	Seed, fruit and dispersal	gap			
 361	Plant number of offspring shoots per parent shoot per year	Whole plant	gap			
-362	Stem volume	Stem, wood and bark	gap			
+362	Stem volume	Stem, wood and bark	broader	BERVO:0002649		Stem goes in contexts.
 363	Plant biomass and allometry: Root dry mass per plant	Whole plant	gap			
 364	Plant height of lowest branch	Whole plant	gap			
 365	Leaf mesophyll palisade parenchyma cell area	Leaf	gap			
@@ -310,19 +310,19 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 373	Stem fraction of cell wall in pith	Stem, wood and bark	gap			
 374	Stem fraction of cell wall in collenchym	Stem, wood and bark	gap			
 377	Stem cross-sectional area tissue types: pith, xylem, others	Stem, wood and bark	gap			
-378	Stem cross-sectional area	Stem, wood and bark	gap			
+378	Stem cross-sectional area	Stem, wood and bark	broader	BERVO:0002648		Stem goes in contexts.
 379	Root cross-sectional xylem area	Root	gap			
-380	Stem fraction of pith	Stem, wood and bark	gap			
-381	Stem cross-sectional area: fraction of xylem	Stem, wood and bark	gap			
-382	Stem cross-sectional area: fraction of tissue other than pith or xylem	Stem, wood and bark	gap			
-383	Stem cross-sectional area: fraction of xylem cell wall	Stem, wood and bark	gap			
-384	Stem cross-sectional area: fraction of collenchyma cell wall	Stem, wood and bark	gap			
-385	Stem cross-sectional area: fraction pith cell wall	Stem, wood and bark	gap			
-386	Stem cross-sectional area: fraction of cell wall	Stem, wood and bark	gap			
+380	Stem fraction of pith	Stem, wood and bark	broader	BERVO:0002660		Stem goes in contexts.
+381	Stem cross-sectional area: fraction of xylem	Stem, wood and bark	broader	BERVO:0002661		Stem goes in contexts.
+382	Stem cross-sectional area: fraction of tissue other than pith or xylem	Stem, wood and bark	related	BERVO:0002662		Everything outside the pith and the xylem, which is mostly bark in a woody stem but cortex and collenchyma in a herbaceous one.
+383	Stem cross-sectional area: fraction of xylem cell wall	Stem, wood and bark	broader	BERVO:0002664		Xylem and Stem go in contexts.
+384	Stem cross-sectional area: fraction of collenchyma cell wall	Stem, wood and bark	broader	BERVO:0002664		Collenchyma and Stem go in contexts.
+385	Stem cross-sectional area: fraction pith cell wall	Stem, wood and bark	broader	BERVO:0002664		Pith and Stem go in contexts.
+386	Stem cross-sectional area: fraction of cell wall	Stem, wood and bark	broader	BERVO:0002664		Stem goes in contexts.
 389	Leaf dry mass (paracotyledons)	Leaf	gap			
 390	Root phosphorus (P) uptake rate per root dry mass	Root	gap			
 392	Dispersal unit color	Seed, fruit and dispersal	gap			
-393	Stem internode length	Stem, wood and bark	gap			
+393	Stem internode length	Stem, wood and bark	broader	BERVO:0002646		Internode goes in contexts.
 394	Stem specific internode mass	Stem, wood and bark	gap			
 395	Metamer: stem internode mass per stem metamer mass	Whole plant	gap			
 396	Metamer: leaf petiole dry mass per metamer dry mass	Leaf	gap			
@@ -388,7 +388,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 473	Plant biomass and allometry: Fine root dry mass per plant	Whole plant	gap			
 474	Leaf and fine root turnover	Leaf	gap			
 475	Fine root nitrogen (N) content per fine root dry mass	Fine root	broader	BERVO:0002340	root_nitrogen_content	Fine root goes in contexts.
-476	Stem sapwood volume per stem volume	Stem, wood and bark	gap			
+476	Stem sapwood volume per stem volume	Stem, wood and bark	match	BERVO:0002654		
 478	Plant biomass and allometry: Wood dry mass per plant dry mass	Whole plant	broader	BERVO:0002582		Wood goes in contexts.
 479	Photosynthesis CO2 compensation point	Photosynthesis and gas exchange	related	BERVO:0000542		EcoSIM resolves it by node, not by leaf or plant.
 480	Crown (canopy) ground area fraction covered by projected canopy	Crown and canopy	gap			
@@ -431,8 +431,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 527	Stem respiration growth coefficient	Stem, wood and bark	gap			
 528	Stem nitrogen (N) content per unit ground area	Stem, wood and bark	broader	BERVO:0002520		Stem goes in contexts.
 529	Plant biomass and allometry: Stem nitrogen (N) content per plant	Whole plant	gap			
-530	Stem surface area per stem dry mass	Stem, wood and bark	gap			
-531	Stem surface area per stem volume	Stem, wood and bark	gap			
+530	Stem surface area per stem dry mass	Stem, wood and bark	match	BERVO:0002651		
+531	Stem surface area per stem volume	Stem, wood and bark	match	BERVO:0002652		
 532	Stem respiration rate per stem volume	Stem, wood and bark	related	BERVO:0002441		Per unit stem volume rather than dry mass.
 533	Photosynthesis light response curvatur	Photosynthesis and gas exchange	match	BERVO:0002598		
 534	Photosynthesis temperature dependence	Photosynthesis and gas exchange	related	BERVO:0002589		TRY does not say what form the value takes; it may be a temperature optimum rather than a sensitivity.
@@ -645,11 +645,11 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 794	Leaf vascular bundle cell size (area): sclerenchym	Leaf	gap			
 795	Leaf vascular bundle volume fraction: phloem	Leaf	gap			
 796	Leaf vascular bundle volume fraction: sclerenchym	Leaf	gap			
-797	Stem fraction of collenchym	Stem, wood and bark	gap			
+797	Stem fraction of collenchym	Stem, wood and bark	broader	BERVO:0002663		Stem goes in contexts. TRY spells it collenchym and does not say the fraction is of the cross-section, as its neighbours 380 and 384 are.
 798	Root dry mass per ground area	Root	broader	BERVO:0001970		Root goes in contexts.
 799	Stem nitrogen (N) content per stem dry mass vs leaf nitrogen (N) content per leaf dry mass	Stem, wood and bark	gap			
 800	Plant biomass and allometry: Wood dry mass per plant	Whole plant	gap			
-801	Stem cross-sectional area at base	Stem, wood and bark	gap			
+801	Stem cross-sectional area at base	Stem, wood and bark	broader	BERVO:0002648		Stem goes in contexts. Taken at the base of the stem.
 804	Leaf mesophyll palisade parenchym thickness	Leaf	match	BERVO:0002552		
 805	Leaf mesophyll spongiophyll thickness	Leaf	match	BERVO:0002553		
 806	Leaf hypodermis thickness	Leaf	gap			
@@ -839,7 +839,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1011	Leaf petiole projected area per petiole dry mass (specific leaf area (SLA) of leaf petiole)	Leaf	broader	BERVO:0002627		Petiole goes in contexts.
 1012	Photosynthesis photoperiodism: threshold value	Photosynthesis and gas exchange	gap			
 1013	Photosynthesis photoperiodism: type	Photosynthesis and gas exchange	gap			
-1014	Shoot: plant above ground hydraulic conductance	Twig, branch, shoot and bud	gap			
+1014	Shoot: plant above ground hydraulic conductance	Twig, branch, shoot and bud	related	BERVO:0002614		The conductance of the shoot alone, from the base of the stem to the leaves, rather than from the soil.
 1015	Plant height growth relative to diameter growth	Whole plant	gap			
 1016	Plant height versus plant width relationship	Whole plant	gap			
 1017	Plant tree allometry model parameters	Whole plant	gap			
@@ -919,7 +919,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1095	Wood (sapwood) cross-sectional area	Stem, wood and bark	match	BERVO:0002447		
 1096	Wood (sapwood) specific conductivity (stem specific conductivity)	Stem, wood and bark	match	BERVO:0002406		
 1097	Wood (sapwood) water content	Stem, wood and bark	broader	BERVO:0002521		Sapwood goes in contexts. TRY gives no basis for the water content; per unit dry mass is assumed.
-1098	Wood (sapwood) water storage capacity	Stem, wood and bark	gap			
+1098	Wood (sapwood) water storage capacity	Stem, wood and bark	broader	BERVO:0002609		Sapwood goes in contexts. TRY calls it water storage capacity.
 1099	Seed area	Seed, fruit and dispersal	gap			
 1100	Plant recruitment efficiency	Whole plant	gap			
 1101	Seed germinability group	Seed, fruit and dispersal	gap			
@@ -940,8 +940,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1116	Shoot cellulose content per shoot dry mass	Twig, branch, shoot and bud	broader	BERVO:0002486		Shoot goes in contexts.
 1117	Shoot copper (Cu) content per shoot dry mass	Twig, branch, shoot and bud	broader	BERVO:0002463		Shoot goes in contexts.
 1118	Shoot cyclicity	Twig, branch, shoot and bud	gap			
-1119	Shoot fresh mass	Twig, branch, shoot and bud	gap			
-1120	Shoot fresh mass per shoot dry mass	Twig, branch, shoot and bud	gap			
+1119	Shoot fresh mass	Twig, branch, shoot and bud	broader	BERVO:0002625		Shoot goes in contexts.
+1120	Shoot fresh mass per shoot dry mass	Twig, branch, shoot and bud	related	BERVO:0002528		Fresh mass per dry mass, the reciprocal of dry matter content, for the shoot.
 1121	Shoot hemicellulose content per shoot dry mass	Twig, branch, shoot and bud	broader	BERVO:0002487		Shoot goes in contexts.
 1122	Shoot lignin content per shoot dry mass	Twig, branch, shoot and bud	broader	BERVO:0002485		Shoot goes in contexts.
 1123	Shoot branching number	Twig, branch, shoot and bud	gap			
@@ -1004,36 +1004,36 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1183	Stem heartwood biomass per ground area	Stem, wood and bark	broader	BERVO:0001971		Heartwood goes in contexts. Heartwood is dead tissue, but the biomass of a living tree conventionally includes it.
 1184	Stem latex production	Stem, wood and bark	gap			
 1186	Shoot length to first flower	Twig, branch, shoot and bud	gap			
-1187	Stem longevity	Stem, wood and bark	gap			
+1187	Stem longevity	Stem, wood and bark	match	BERVO:0002656		
 1188	Stem self-supporting	Stem, wood and bark	gap			
 1189	Stem surface patterning	Stem, wood and bark	gap			
 1190	Stomata length	Photosynthesis and gas exchange	match	BERVO:0002516		
 1191	Stomata surface area	Photosynthesis and gas exchange	gap			
 1192	Stomata width	Photosynthesis and gas exchange	match	BERVO:0002517		
-1193	Tiller density: number of tiller per ground area	Stem, wood and bark	gap			
+1193	Tiller density: number of tiller per ground area	Stem, wood and bark	broader	BERVO:0001888		Tiller goes in contexts.
 1194	Tillering type	Stem, wood and bark	gap			
-1195	Wood xylem torus diameter	Stem, wood and bark	gap			
-1196	Wood xylem torus diameter per outer pit apertuer diameter	Stem, wood and bark	gap			
-1197	Wood xylem torus thickness	Stem, wood and bark	gap			
-1198	Wood total interconduit pit (membrane) surface area	Stem, wood and bark	gap			
+1195	Wood xylem torus diameter	Stem, wood and bark	match	BERVO:0002680		
+1196	Wood xylem torus diameter per outer pit apertuer diameter	Stem, wood and bark	match	BERVO:0002682		
+1197	Wood xylem torus thickness	Stem, wood and bark	match	BERVO:0002681		
+1198	Wood total interconduit pit (membrane) surface area	Stem, wood and bark	match	BERVO:0002685		
 1199	Litter twig nitrogen (N) content per twig dry mass	Litter and woody debris	broader	BERVO:0002340		Twig and Dead vegetation go in contexts.
-1200	Twig diameter	Twig, branch, shoot and bud	gap			
-1201	Twig dry mass	Twig, branch, shoot and bud	gap			
-1202	Twig length	Twig, branch, shoot and bud	gap			
-1203	Twig number of leaves per twig	Twig, branch, shoot and bud	gap			
+1200	Twig diameter	Twig, branch, shoot and bud	broader	BERVO:0002647		Twig goes in contexts.
+1201	Twig dry mass	Twig, branch, shoot and bud	broader	BERVO:0002624		Twig goes in contexts.
+1202	Twig length	Twig, branch, shoot and bud	broader	BERVO:0002646		Twig goes in contexts.
+1203	Twig number of leaves per twig	Twig, branch, shoot and bud	broader	BERVO:0002657		Twig goes in contexts.
 1204	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: twigs and branches	Stem, wood and bark	broader	BERVO:0002371		Twig and Branch go in contexts.
 1205	Wood vessels surrounded by tracheids (vasicentric tracheids)	Stem, wood and bark	gap			
 1206	Plant vegetative reproduction: pattern forming	Whole plant	gap			
 1207	Plant vegetative reproduction: spread distance	Whole plant	gap			
-1208	Wood vessel cell wall thickness per vessel diameter	Stem, wood and bark	gap			
+1208	Wood vessel cell wall thickness per vessel diameter	Stem, wood and bark	match	BERVO:0002677		
 1209	Wood vessel grouping index	Stem, wood and bark	gap			
 1210	Wood vestures presence	Stem, wood and bark	gap			
 1211	Wood axial parenchyma types	Stem, wood and bark	gap			
 1212	Wood canals types	Stem, wood and bark	gap			
 1213	Wood carbon (C) isotope signature (delta 13C)	Stem, wood and bark	broader	BERVO:0002214		Wood goes in contexts.
-1214	Wood conduit pit fraction	Stem, wood and bark	gap			
-1215	Wood conduit pit membrane thickness	Stem, wood and bark	gap			
-1216	Wood fiber cell wall thickness	Stem, wood and bark	gap			
+1214	Wood conduit pit fraction	Stem, wood and bark	match	BERVO:0002686		
+1215	Wood conduit pit membrane thickness	Stem, wood and bark	match	BERVO:0002679		
+1216	Wood fiber cell wall thickness	Stem, wood and bark	match	BERVO:0002665		
 1217	Wood fiber septate fibers present	Stem, wood and bark	gap			
 1218	Wood fiber tension wood present	Stem, wood and bark	gap			
 1219	Wood fiber-band types	Stem, wood and bark	gap			
@@ -1041,17 +1041,17 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1221	Wood fibers absent	Stem, wood and bark	gap			
 1222	Wood fibers absent in the center, present at the periphery of the stem	Stem, wood and bark	gap			
 1223	Wood fibers not lignified	Stem, wood and bark	gap			
-1224	Wood intervessel contact fraction	Stem, wood and bark	gap			
-1225	Wood intervessel or intertracheid cell wall thickness	Stem, wood and bark	gap			
-1226	Wood mechanical property: flexual stiffness, elasticity, rupture	Stem, wood and bark	gap			
+1224	Wood intervessel contact fraction	Stem, wood and bark	match	BERVO:0002687		
+1225	Wood intervessel or intertracheid cell wall thickness	Stem, wood and bark	match	BERVO:0002678		
+1226	Wood mechanical property: flexual stiffness, elasticity, rupture	Stem, wood and bark	related	BERVO:0002531		TRY groups flexural stiffness, elasticity and rupture; only the rupture value is the flexural strength.
 1229	Wood nitrogen (N) content per wood dry mass	Stem, wood and bark	broader	BERVO:0002340		Wood goes in contexts.
 1230	Wood nitrogen (N) isotope signature (delta 15N)	Stem, wood and bark	broader	BERVO:0002216		Wood goes in contexts.
-1231	Wood outer pit aperture diameter	Stem, wood and bark	gap			
-1232	Wood outer pit aperture diameter / interconduit pit size	Stem, wood and bark	gap			
+1231	Wood outer pit aperture diameter	Stem, wood and bark	match	BERVO:0002683		
+1232	Wood outer pit aperture diameter / interconduit pit size	Stem, wood and bark	match	BERVO:0002684		
 1233	Stem pith type	Stem, wood and bark	gap			
 1234	Wood ray types	Stem, wood and bark	gap			
 1235	Wood storied tissue types	Stem, wood and bark	gap			
-1236	Wood vessel cell-wall thickness	Stem, wood and bark	gap			
+1236	Wood vessel cell-wall thickness	Stem, wood and bark	match	BERVO:0002676		
 1237	Wood vessel density	Stem, wood and bark	related	BERVO:0002410		Vessels only; conduits include tracheids.
 1238	Wood vessel diameter	Stem, wood and bark	related	BERVO:0002409		Vessels only; conduits include tracheids.
 1239	Wood vessel distribution	Stem, wood and bark	gap			
@@ -1072,7 +1072,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 1258	Leaf water transport system type	Leaf	gap			
 1259	Coarse woody debris (CWD) stem: zinc (Zn) content per stem CWD	Litter and woody debris	broader	BERVO:0002462		Coarse woody debris and Stem go in contexts. TRY leaves 'dry mass' out of the name, but the trait is the same content.
 1260	Wood carbon/nitrogen (C/N) ratio	Stem, wood and bark	broader	BERVO:0002055		Wood goes in contexts.
-1261	Stem circumference	Stem, wood and bark	gap			
+1261	Stem circumference	Stem, wood and bark	match	BERVO:0002650		
 1262	Coarse woody debris (CWD) root: nitrogen (N) content per coarse root CWD dry mass	Litter and woody debris	broader	BERVO:0002340		Coarse woody debris and Coarse root go in contexts.
 1263	Dispersal unit floating capacity	Seed, fruit and dispersal	gap			
 1264	Leaf petiole specific length (petiole length per petiole dry mass)	Leaf	related	BERVO:0002472		Petiole length per unit petiole dry mass.
@@ -1847,7 +1847,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3065	Branch cross-sectional fraction of parenchyma	Twig, branch, shoot and bud	related	BERVO:0002527		A fraction of the whole branch cross-section, which may include bark and pith, rather than of the wood.
 3066	Branch cross-sectional fraction of conduits (vessels)	Twig, branch, shoot and bud	related	BERVO:0002523		A fraction of the whole branch cross-section, which may include bark and pith, rather than of the wood.
 3067	Branch cross-sectional fraction of fiber	Twig, branch, shoot and bud	related	BERVO:0002524		A fraction of the whole branch cross-section, which may include bark and pith, rather than of the wood.
-3068	Stem slenderness (plant height per diameter at breast height (dbh))	Stem, wood and bark	gap			
+3068	Stem slenderness (plant height per diameter at breast height (dbh))	Stem, wood and bark	match	BERVO:0002653		
 3070	Plant nitrogen (N) uptake efficiency (plant nitrogen acquired per nitrogen available)	Whole plant	match	BERVO:0002615		
 3071	Leaf rhachis length	Leaf	match	BERVO:0002630		
 3072	Leaf terminal section length	Leaf	gap			
@@ -1980,7 +1980,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3357	Stem construction type	Stem, wood and bark	gap			
 3358	Leaf oxygen (O) isotope signature (delta 18O)	Leaf	broader	BERVO:0002217		Leaf goes in contexts.
 3359	Leaf construction cost per leaf area	Leaf	related	BERVO:0002507		Per unit leaf area rather than dry mass.
-3360	Branch length	Twig, branch, shoot and bud	gap			
+3360	Branch length	Twig, branch, shoot and bud	broader	BERVO:0002646		Branch goes in contexts.
 3361	Plant height of lowest flower	Whole plant	gap			
 3362	Photosynthesis: maximum rate of PEPc carboxylation (Vpmax) per leaf area	Photosynthesis and gas exchange	match	BERVO:0002593		
 3363	Stomata density ratio from one side of leaf to other	Photosynthesis and gas exchange	related	BERVO:0002469		The ratio of the densities on the two leaf surfaces, not a density.
@@ -2006,10 +2006,10 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3383	Leaf mesophyll cell wall thickness	Leaf	match	BERVO:0002603		
 3384	Leaf mesophyll porosity (air space versus volume or area)	Leaf	related	BERVO:0002602		The mesophyll only, and TRY allows an area fraction on a cross-section as well as a volume fraction.
 3385	Leaf mesophyll conductance for CO2 per unit chloroplast surface area	Photosynthesis and gas exchange	related	BERVO:0002560		Per unit chloroplast surface area rather than leaf area.
-3386	Branch cross-sectional fraction of bark	Twig, branch, shoot and bud	gap			
-3387	Branch cross-sectional fraction of pith	Twig, branch, shoot and bud	gap			
-3388	Branch cross-sectional fraction of xylem	Twig, branch, shoot and bud	gap			
-3389	Branch dry mass	Twig, branch, shoot and bud	gap			
+3386	Branch cross-sectional fraction of bark	Twig, branch, shoot and bud	broader	BERVO:0002662		Branch goes in contexts.
+3387	Branch cross-sectional fraction of pith	Twig, branch, shoot and bud	broader	BERVO:0002660		Branch goes in contexts.
+3388	Branch cross-sectional fraction of xylem	Twig, branch, shoot and bud	broader	BERVO:0002661		Branch goes in contexts.
+3389	Branch dry mass	Twig, branch, shoot and bud	broader	BERVO:0002624		Branch goes in contexts.
 3390	Branch vessel density	Twig, branch, shoot and bud	related	BERVO:0002410		Vessels only, and in a branch; conduits include tracheids.
 3391	Branch vessel diameter	Twig, branch, shoot and bud	related	BERVO:0002409		Vessels only, and in a branch; conduits include tracheids.
 3392	Branch hydraulic conductance	Twig, branch, shoot and bud	gap			
@@ -2024,7 +2024,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3401	Plant growth form detailed consolidated	Whole plant	match	BERVO:0002378	growth_form	TRY variants differ in their value lists.
 3402	Leaf water content total	Leaf	related	BERVO:0000176		The BERVO term is water per unit leaf carbon, an EcoSIM parameter.
 3403	Shoot branching distance	Twig, branch, shoot and bud	gap			
-3404	Branch diameter	Twig, branch, shoot and bud	gap			
+3404	Branch diameter	Twig, branch, shoot and bud	broader	BERVO:0002647		Branch goes in contexts.
 3405	Plant biomass and allometry: Root fresh mass per plant	Whole plant	gap			
 3406	Plant biomass and allometry: Leaf fresh mass per plant	Whole plant	gap			
 3407	Plant fresh mass	Whole plant	gap			
@@ -2102,8 +2102,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3486	Plant biomass and allometry: ratio of coarse to fine standing dead biomass (fuel)	Whole plant	gap			
 3487	Plant biomass and allometry: fraction of standing dead biomass (fuel) per total biomass	Whole plant	gap			
 3488	Species nutritional relationships (mycorrhizal symbioses, N-fixation, parasitism, carnivory, …)	Whole plant	gap			
-3489	Stolon number per plant	Stem, wood and bark	gap			
-3490	Stolon length	Stem, wood and bark	gap			
+3489	Stolon number per plant	Stem, wood and bark	match	BERVO:0002659		
+3490	Stolon length	Stem, wood and bark	broader	BERVO:0002646		Stolon goes in contexts.
 3491	Stolon number of branches	Stem, wood and bark	gap			
 3492	Stolon branch length	Stem, wood and bark	gap			
 3493	Plant biomass and allometry: Stolon dry mass per plant	Whole plant	gap			
@@ -2115,7 +2115,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3499	Branch length to start of foliage	Twig, branch, shoot and bud	gap			
 3500	Litter nitrogen/potassium (N/K) ratio	Litter and woody debris	broader	BERVO:0002500		Dead vegetation goes in contexts.
 3501	Twig leaf dry mass (twig foliage dry mass)	Twig, branch, shoot and bud	gap			
-3502	Twig woody dry mass	Twig, branch, shoot and bud	gap			
+3502	Twig woody dry mass	Twig, branch, shoot and bud	broader	BERVO:0002624		Wood and Twig go in contexts.
 3503	Plant height: development during growth	Whole plant	gap			
 3504	Plant width: development during growth	Whole plant	gap			
 3505	Plant number of floral buds	Whole plant	gap			
@@ -2214,12 +2214,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3598	Leaf armed	Leaf	gap			
 3599	Leaf rachis length	Leaf	match	BERVO:0002630		
 3600	Fruit shape	Seed, fruit and dispersal	gap			
-3601	Stem perimeter	Stem, wood and bark	gap			
+3601	Stem perimeter	Stem, wood and bark	match	BERVO:0002650		
 3603	Seed number per ground area	Seed, fruit and dispersal	match	BERVO:0002572		
 3604	Resprout diameter (for coppiced trees)	Stem, wood and bark	gap			
 3605	Shoot apical dominance index	Twig, branch, shoot and bud	gap			
-3606	Branch number of leaves (leaves per branch)	Twig, branch, shoot and bud	gap			
-3607	Branch number of fruits (fruits per branch)	Twig, branch, shoot and bud	gap			
+3606	Branch number of leaves (leaves per branch)	Twig, branch, shoot and bud	match	BERVO:0002657		
+3607	Branch number of fruits (fruits per branch)	Twig, branch, shoot and bud	match	BERVO:0002658		
 3608	Shoot fraction of digestible plant tissue	Twig, branch, shoot and bud	gap			
 3609	Shoot protein content per dry mass	Twig, branch, shoot and bud	broader	BERVO:0002504		Shoot goes in contexts.
 3610	Shoot cellulose and lignin content per dry mass	Twig, branch, shoot and bud	gap			
@@ -2243,16 +2243,16 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3628	Leaf spines density	Leaf	gap			
 3629	Spines type	Stem, wood and bark	gap			
 3630	Spines form	Stem, wood and bark	gap			
-3631	Spines length	Stem, wood and bark	gap			
+3631	Spines length	Stem, wood and bark	broader	BERVO:0002646		Spine goes in contexts.
 3632	Spines width	Stem, wood and bark	gap			
 3633	Spines per node	Stem, wood and bark	gap			
 3634	Seed germination base temperature	Seed, fruit and dispersal	match	BERVO:0002436		
 3635	Seed germination base water potential	Seed, fruit and dispersal	match	BERVO:0002437		
 3636	Seed coat thickness	Seed, fruit and dispersal	match	BERVO:0002574		
-3637	Shoot length	Twig, branch, shoot and bud	gap			
+3637	Shoot length	Twig, branch, shoot and bud	broader	BERVO:0002646		Shoot goes in contexts.
 3648	Stolon number of internodes	Stem, wood and bark	gap			
-3649	Stolon length of internodes	Stem, wood and bark	gap			
-3650	Stem dry mass per shoot dry mass (aboveground)	Stem, wood and bark	gap			
+3649	Stolon length of internodes	Stem, wood and bark	broader	BERVO:0002646		Internode and Stolon go in contexts.
+3650	Stem dry mass per shoot dry mass (aboveground)	Stem, wood and bark	related	BERVO:0002582		Stem mass as a fraction of the aboveground shoot, not of the whole plant.
 3651	Leaf mesophyll type	Leaf	gap			
 3652	Leaf number of chloroplasts per leaf area	Leaf	gap			
 3653	Leaf surface of chloroplasts area per leaf area	Leaf	related	BERVO:0002601		The name does not say the surface is the part exposed to the intercellular space; it may be the whole chloroplast surface.
@@ -2261,11 +2261,11 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3656	Leaf rubisco content per dry mass	Leaf	related	BERVO:0000562		An EcoSIM parameter; the mass basis is not stated as dry mass.
 3657	Leaf rubisco content per chloroplast	Leaf	gap			
 3658	Leaf rubisco content per leaf chlorophyll content	Leaf	gap			
-3659	Branch sapwood lumen to sapwood area ratio	Twig, branch, shoot and bud	gap			
+3659	Branch sapwood lumen to sapwood area ratio	Twig, branch, shoot and bud	related	BERVO:0002523		Lumens as a fraction of the sapwood cross-section, in a branch; TRY does not say whether fibre lumens are counted.
 3660	Seed fresh mass	Seed, fruit and dispersal	match	BERVO:0002426		
 3661	Twig leaf area per sapwood area ratio	Twig, branch, shoot and bud	related	BERVO:0002407		The reciprocal, leaf area per sapwood area, for a twig.
 3662	Twig modulus of elasticity (MOE)	Twig, branch, shoot and bud	broader	BERVO:0002530		Twig goes in contexts.
-3663	Twig pith area	Twig, branch, shoot and bud	gap			
+3663	Twig pith area	Twig, branch, shoot and bud	broader	BERVO:0002648		Pith and Twig go in contexts.
 3664	Twig vessel area	Twig, branch, shoot and bud	gap			
 3665	Twig hydraulically-weighted vessel diameter (Sperry equation)	Twig, branch, shoot and bud	related	BERVO:0002409		Vessels only, hydraulically weighted, and in a twig; conduits include tracheids.
 3666	Twig vessel density (vessels per crossescional area)	Twig, branch, shoot and bud	related	BERVO:0002410		Vessels only, and in a twig; conduits include tracheids.
@@ -2275,12 +2275,12 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3670	Twig ray fraction	Twig, branch, shoot and bud	broader	BERVO:0002525		Twig goes in contexts.
 3671	Twig fibre wall fraction	Twig, branch, shoot and bud	gap			
 3672	Twig fibre lumen fraction	Twig, branch, shoot and bud	gap			
-3673	Twig fibre wall area	Twig, branch, shoot and bud	gap			
-3674	Twig fibre lumen area	Twig, branch, shoot and bud	gap			
-3675	Twig fibre area	Twig, branch, shoot and bud	gap			
-3676	Twig fibre wall area to fibre lumen ratio (averaged across multiple fibres measured)	Twig, branch, shoot and bud	gap			
-3677	Twig fibre wall to fibre area ratio (averaged across multiple fibres measured)	Twig, branch, shoot and bud	gap			
-3678	Twig fibre lumen to fibre area ratio (averaged across multiple fibres measured)	Twig, branch, shoot and bud	gap			
+3673	Twig fibre wall area	Twig, branch, shoot and bud	broader	BERVO:0002671		Twig goes in contexts.
+3674	Twig fibre lumen area	Twig, branch, shoot and bud	broader	BERVO:0002670		Twig goes in contexts.
+3675	Twig fibre area	Twig, branch, shoot and bud	broader	BERVO:0002669		Twig goes in contexts.
+3676	Twig fibre wall area to fibre lumen ratio (averaged across multiple fibres measured)	Twig, branch, shoot and bud	broader	BERVO:0002674		Twig goes in contexts.
+3677	Twig fibre wall to fibre area ratio (averaged across multiple fibres measured)	Twig, branch, shoot and bud	broader	BERVO:0002673		Twig goes in contexts.
+3678	Twig fibre lumen to fibre area ratio (averaged across multiple fibres measured)	Twig, branch, shoot and bud	broader	BERVO:0002672		Twig goes in contexts.
 3679	Twig tracheid fraction	Twig, branch, shoot and bud	gap			
 3680	Twig conduits less 15 micrometer fraction	Twig, branch, shoot and bud	gap			
 3681	Twig mucilage canals fraction	Twig, branch, shoot and bud	gap			
@@ -2301,9 +2301,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3696	Root morphology	Root	gap			
 3697	Plant nutrient minig	Whole plant	gap			
 3699	Plant microbial association	Whole plant	gap			
-3700	Internode diameter	Stem, wood and bark	gap			
-3701	Internode dry mass	Stem, wood and bark	gap			
-3702	Internode specific length	Stem, wood and bark	gap			
+3700	Internode diameter	Stem, wood and bark	broader	BERVO:0002647		Internode goes in contexts.
+3701	Internode dry mass	Stem, wood and bark	broader	BERVO:0002624		Internode goes in contexts.
+3702	Internode specific length	Stem, wood and bark	broader	BERVO:0002442		Internode goes in contexts.
 3703	Branch wood carbon/nitogen (C/N) ratio	Twig, branch, shoot and bud	broader	BERVO:0002055		Wood and Branch go in contexts. TRY spells nitrogen 'nitogen' in the name, so the C/N rule misses it.
 3704	Branch wood nitrogen (N) content per dry mass	Twig, branch, shoot and bud	broader	BERVO:0002340		Wood and Branch go in contexts.
 3707	Branch wood carbon isotope ratio (delta 13C)	Twig, branch, shoot and bud	broader	BERVO:0002214		Wood and Branch go in contexts.
@@ -2445,9 +2445,9 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3844	Branch inner bark thickness	Twig, branch, shoot and bud	broader	BERVO:0002438		Inner bark and Branch go in contexts.
 3845	Branch outer bark thickness	Twig, branch, shoot and bud	broader	BERVO:0002438		Outer bark and Branch go in contexts.
 3846	Stem outer bark density	Stem, wood and bark	broader	BERVO:0002439		Outer bark goes in contexts.
-3847	Stem bark water content	Stem, wood and bark	gap			
-3848	Stem inner bark water content	Stem, wood and bark	gap			
-3849	Stem outer bark water content	Stem, wood and bark	gap			
+3847	Stem bark water content	Stem, wood and bark	broader	BERVO:0002521		Bark and Stem go in contexts. TRY gives no basis for the water content; per unit dry mass is assumed.
+3848	Stem inner bark water content	Stem, wood and bark	broader	BERVO:0002521		Inner bark and Stem go in contexts. TRY gives no basis for the water content; per unit dry mass is assumed.
+3849	Stem outer bark water content	Stem, wood and bark	broader	BERVO:0002521		Outer bark and Stem go in contexts. TRY gives no basis for the water content; per unit dry mass is assumed.
 3850	Leaf width: left of midrib	Leaf	related	BERVO:0002471		The width on one side of the midrib only.
 3851	Leaf width: right of midrib	Leaf	related	BERVO:0002471		The width on one side of the midrib only.
 3852	Leaf width asymmetry	Leaf	related	BERVO:0002471		The asymmetry of the two half-widths.
@@ -2503,7 +2503,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3911	Stem wood cross-section: fraction of axial parenchyma	Stem, wood and bark	broader	BERVO:0002526		Stem goes in contexts.
 3912	Stem wood cross-section: fraction of ray parenchyma	Stem, wood and bark	broader	BERVO:0002525		Stem goes in contexts.
 3913	Stem wood cross-section: fraction of fiber area (wall+lumen)	Stem, wood and bark	broader	BERVO:0002524		Stem goes in contexts.
-3914	Stem wood cross-section: fiber lumen area fraction of toal fiber area	Stem, wood and bark	gap			
+3914	Stem wood cross-section: fiber lumen area fraction of toal fiber area	Stem, wood and bark	broader	BERVO:0002672		Stem goes in contexts.
 3915	Stem wood cross-section: fraction of axial parenchyma	Stem, wood and bark	broader	BERVO:0002526		Stem goes in contexts.
 3916	Stem wood cross-section: perimeter fraction of vessels in contact with axial parenchyma	Stem, wood and bark	gap			
 3917	Stem wood cross-section: perimeter fraction of vessels in contact with fibers	Stem, wood and bark	gap			
@@ -2569,21 +2569,21 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 3986	Seed aril color	Seed, fruit and dispersal	gap			
 3987	Flower stipe color	Flower and reproduction	gap			
 3988	Wood axial parenchyma arrangement	Stem, wood and bark	gap			
-3989	Wood rays height	Stem, wood and bark	gap			
-3990	Wood rays density	Stem, wood and bark	gap			
+3989	Wood rays height	Stem, wood and bark	match	BERVO:0002689		
+3990	Wood rays density	Stem, wood and bark	related	BERVO:0002688		TRY gives no basis, which may be per unit length, as here, or per unit area of a tangential section.
 3991	Stem sapwood cross-section: fraction of rays plus axial parenchyma	Stem, wood and bark	gap			
 3992	Stem sapwood cross-section: libriform fibres present	Stem, wood and bark	gap			
 3993	Stem sapwood cross-section: fibre-tracheids present	Stem, wood and bark	gap			
-3994	Stem sapwood crossection: fibre lumen diameter	Stem, wood and bark	gap			
-3995	Stem sapwood crossection: fibre wall thickness/lumen ratio	Stem, wood and bark	gap			
-3996	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: wood volume shrink	Stem, wood and bark	gap			
+3994	Stem sapwood crossection: fibre lumen diameter	Stem, wood and bark	broader	BERVO:0002667		Sapwood and Stem go in contexts.
+3995	Stem sapwood crossection: fibre wall thickness/lumen ratio	Stem, wood and bark	broader	BERVO:0002668		Sapwood and Stem go in contexts.
+3996	Stem specific density (SSD, stem dry mass per stem fresh volume) or wood density: wood volume shrink	Stem, wood and bark	match	BERVO:0002694		
 3997	Wood compressive strength	Stem, wood and bark	match	BERVO:0002532		
 3998	Wood flexural strength	Stem, wood and bark	match	BERVO:0002531		
 3999	Wood tensile strength	Stem, wood and bark	match	BERVO:0002533		
-4000	Wood tortional strength	Stem, wood and bark	gap			
-4001	Wood impact strength	Stem, wood and bark	gap			
-4002	Wood hardness parallel	Stem, wood and bark	gap			
-4004	Wood splitting strenth	Stem, wood and bark	gap			
+4000	Wood tortional strength	Stem, wood and bark	match	BERVO:0002690		
+4001	Wood impact strength	Stem, wood and bark	match	BERVO:0002691		
+4002	Wood hardness parallel	Stem, wood and bark	match	BERVO:0002692		
+4004	Wood splitting strenth	Stem, wood and bark	match	BERVO:0002693		
 4005	Wood lignin content per dry mass	Stem, wood and bark	broader	BERVO:0002485		Wood goes in contexts.
 4006	Wood cellulose content per dry mass	Stem, wood and bark	broader	BERVO:0002486		Wood goes in contexts.
 4007	Stem wood cross-section: fraction of total parenchyma (axial+radial)	Stem, wood and bark	broader	BERVO:0002527		Stem goes in contexts.
@@ -2594,7 +2594,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 4012	Stem wood calcium (Ca) content per dry mass	Stem, wood and bark	broader	BERVO:0002456		Wood and Stem go in contexts.
 4013	Stem wood potassium (K) content per dry mass	Stem, wood and bark	broader	BERVO:0002455		Wood and Stem go in contexts.
 4014	Stem wood magnesium (Mg) content per dry mass	Stem, wood and bark	broader	BERVO:0002457		Wood and Stem go in contexts.
-4015	Shoot: plant aboveground (shoot) fresh biomass water content	Twig, branch, shoot and bud	gap			
+4015	Shoot: plant aboveground (shoot) fresh biomass water content	Twig, branch, shoot and bud	related	BERVO:0002521		TRY gives no basis; the name suggests water as a fraction of the fresh mass of the shoot rather than per unit dry mass.
 4017	Plot aboveground dry mass	Plot and stand	gap			
 4018	Plot aboveground woody biomass of dominant species (dry)	Plot and stand	gap			
 4019	Plot leaf drymass of dominant species	Plot and stand	gap			
@@ -2606,8 +2606,8 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 4025	Plot canopy height	Plot and stand	match	BERVO:0001967		
 4028	Plot dominant species	Plot and stand	species_attribute			
 4029	Leaf vein length per leaf area	Leaf	match	BERVO:0002480		
-4030	Tiller thickness	Stem, wood and bark	gap			
-4031	Tiller length	Stem, wood and bark	gap			
+4030	Tiller thickness	Stem, wood and bark	broader	BERVO:0002647		Tiller goes in contexts. TRY calls the diameter thickness.
+4031	Tiller length	Stem, wood and bark	broader	BERVO:0002646		Tiller goes in contexts.
 4032	Stomata conductance per leaf area: predawn	Photosynthesis and gas exchange	broader	BERVO:0002392		Predawn goes in contexts.
 4033	Leaf intercellular CO2 concentration (Ci) predawn	Leaf	related	BERVO:0000529		The predawn intercellular concentration; EcoSIM's value is for a plant functional type, as a concentration per unit volume.
 4034	Leaf ratio of intercellular to ambient CO2 concentration (CiCa) predawn	Leaf	broader	BERVO:0002561		Predawn goes in contexts.
@@ -2655,7 +2655,7 @@ trait_id	trait_name	group	status	bervo_id	pft_slot	note
 4076	Fruit fresh mass	Seed, fruit and dispersal	match	BERVO:0002435		
 4077	Root length per root diameter bin	Root	gap			
 4078	Leaf paracotyledon dry mass per plant dry mass; paracotyledon weight fraction	Leaf	broader	BERVO:0002582		Cotyledon goes in contexts. Paracotyledons, the cotyledons once they emerge as the first photosynthetic leaves.
-4079	Bark volume relative to wood volume	Stem, wood and bark	gap			
+4079	Bark volume relative to wood volume	Stem, wood and bark	match	BERVO:0002655		
 4080	Budbank type belowground (Belowground Bud Bank, BBB)	Twig, branch, shoot and bud	gap			
 4082	Seed persistence	Seed, fruit and dispersal	gap			
 4083	Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA) of total leaf area	Leaf	related	BERVO:0002369		Uses the total leaf area rather than the one-sided area.
