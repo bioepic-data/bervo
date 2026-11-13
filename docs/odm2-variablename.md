@@ -1142,8 +1142,9 @@ ODM2 name.
   fluorescence now sits beside Dissolved organic matter fluorescence, which has
   the same shape. Turbidity of water now takes the Turbidity concept
   (`BERVO:8000294`) as its attribute, as its new siblings name theirs. Measured
-  electrical conductivity (`BERVO:0001703`) stays: it is EcoSIM's, with
-  `measured_ins` of Soil.
+  electrical conductivity (`BERVO:0001703`, relabelled Soil solution electrical
+  conductivity and moved to Soil biogeochemistry variable in issue #194) did not
+  move here: it is EcoSIM's soil-solution term.
 - **Dissolved oxygen concentration is not here.** ODM2's `oxygenDissolved` is a
   chemical species name and waits with the other 602.
 
