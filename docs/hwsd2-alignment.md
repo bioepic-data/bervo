@@ -114,8 +114,9 @@ Points to note:
 - **Electrical conductivity.** HWSD v1.2 named the field `T_ECE` and `S_ECE`, the
   conductivity of a saturated paste extract. That is distinct from Bulk
   electrical conductivity (`BERVO:0002036`), read in place by a sensor, and from
-  EcoSIM's Measured electrical conductivity (`BERVO:0001703`), whose method is not
-  stated.
+  Soil solution electrical conductivity (`BERVO:0001703`), the conductivity of
+  in situ soil pore water, which EcoSIM computes from micropore ion
+  concentrations.
 
 ## HWSD2 fields not mapped
 
