@@ -61203,8 +61203,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001084">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
         <obo:IAO_0000115>Electromagnetic radiation in the narrow visible waveband near 570 nm where leaf reflectance changes little with the xanthophyll cycle, used as the reference in the photochemical reflectance index.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>PRI reference radiation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>PRI reference band</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>PRI reference radiation</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Photochemical reflectance index reference band</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 13 2026), issue #189</rdfs:comment>
         <rdfs:label>Photochemical reflectance index reference radiation</rdfs:label>
@@ -61218,8 +61218,8 @@
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001085">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
         <obo:IAO_0000115>Electromagnetic radiation in the narrow visible waveband near 531 nm where leaf reflectance changes with the de-epoxidation state of the xanthophyll cycle, used as the target in the photochemical reflectance index.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>PRI target radiation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>PRI target band</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>PRI target radiation</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Photochemical reflectance index target band</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 13 2026), issue #189</rdfs:comment>
         <rdfs:label>Photochemical reflectance index target radiation</rdfs:label>
