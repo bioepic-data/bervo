@@ -61170,14 +61170,14 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001082">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
-        <obo:IAO_0000115>Electromagnetic radiation with wavelengths just longer than visible light, roughly 700 to 2500 nm, including the roughly 700 to 1300 nm interval where green leaves reflect strongly.</obo:IAO_0000115>
+        <obo:IAO_0000115>Electromagnetic radiation in the shortest-wavelength part of the infrared spectrum, from roughly 700 nm to about 2500 nm, including the roughly 700 to 1300 nm interval where green leaves reflect strongly.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_03500014"/>
         <oboInOwl:hasExactSynonym>NIR radiation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>NIR</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>NIR band</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Near-infrared band</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 13 2026), issue #189</rdfs:comment>
-        <rdfs:comment>ENVO:03500014 defines near-infrared radiation as 750 nm to 2.5 um; vegetation remote sensing commonly places the lower bound near 700 nm and separates shortwave infrared above about 1300 to 1400 nm.</rdfs:comment>
+        <rdfs:comment>ENVO:03500014 defines near-infrared radiation as 750 nm to 2.5 um; vegetation remote sensing commonly places the lower bound near 700 nm and separates shortwave infrared above about 1300 to 1400 nm. Distinct from Longwave radiation (BERVO:8000029), which in earth-system and flux measurements (such as the LW_* variables) denotes thermal infrared radiation above roughly 4 um.</rdfs:comment>
         <rdfs:label>Near-infrared radiation</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
