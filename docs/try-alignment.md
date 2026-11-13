@@ -658,7 +658,7 @@ species attributes.
 | `BERVO:0002661` Xylem area fraction | 381 Stem cross-sectional area: fraction of xylem; 3388 Branch cross-sectional fraction of xylem |
 | `BERVO:0002662` Bark area fraction | 3386 Branch cross-sectional fraction of bark |
 | `BERVO:0002663` Collenchyma area fraction | 797 Stem fraction of collenchym |
-| `BERVO:0002664` Cell wall area fraction | 383 Stem cross-sectional area: fraction of xylem cell wall; 384 Stem cross-sectional area: fraction of collenchyma cell wall; 385 Stem cross-sectional area: fraction pith cell wall; 386 Stem cross-sectional area: fraction of cell wall |
+| `BERVO:0002664` Plant cell wall area fraction | 383 Stem cross-sectional area: fraction of xylem cell wall; 384 Stem cross-sectional area: fraction of collenchyma cell wall; 385 Stem cross-sectional area: fraction pith cell wall; 386 Stem cross-sectional area: fraction of cell wall |
 | `BERVO:0002665` Wood fibre wall thickness | 288 Stem wood fiber wall thickness |
 | `BERVO:0002667` Wood fibre lumen diameter | 3994 Stem sapwood crossection: fibre lumen diameter |
 | `BERVO:0002668` Wood fibre wall thickness to lumen diameter ratio | 3995 Stem sapwood crossection: fibre wall thickness/lumen ratio |

@@ -1048,6 +1048,10 @@ MAPPED = [
     ("broader", "BERVO:0002672", "3914", ctx("Stem")),
     ("broader", "BERVO:0002673", "3677", ctx("Twig")),
     ("broader", "BERVO:0002674", "3676", ctx("Twig")),
+    # TRY 3671 "Twig fibre wall fraction" and 3672 "Twig fibre lumen fraction" stay gaps. They
+    # may be fractions of one fibre, as 3677 and 3678 say outright, or of the twig wood
+    # cross-section, as 3683 "Twig fibre fraction" and the gap 3668 "Twig vessel wall
+    # fraction" are; TRY lists them beside 3677 and 3678, which suggests the second.
     ("match", "BERVO:0002675", "282", ""),
     ("match", "BERVO:0002676", "1236", ""),
     ("match", "BERVO:0002677", "1208", ""),
