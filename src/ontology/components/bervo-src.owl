@@ -38814,7 +38814,6 @@
         <rdfs:comment>General term for the AmeriFlux SPEC_*_IN variables.</rdfs:comment>
         <rdfs:label>Incoming spectral irradiance</rdfs:label>
         <bervo:BERVO_has_unit>W.m-2.nm-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001081"/>
     </Class>
     
 
@@ -38828,7 +38827,6 @@
         <rdfs:comment>General term for the AmeriFlux SPEC_*_OUT variables.</rdfs:comment>
         <rdfs:label>Outgoing spectral radiance</rdfs:label>
         <bervo:BERVO_has_unit>W.m-2.sr-1.nm-1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001081"/>
     </Class>
     
 
@@ -38843,7 +38841,6 @@
         <rdfs:label>Surface spectral reflectance</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001080"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8001081"/>
     </Class>
     
 
@@ -61155,11 +61152,12 @@
     <!-- https://w3id.org/bervo/BERVO_8001081 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001081">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
         <obo:IAO_0000115>Radiation within a defined interval of wavelengths, such as the interval sampled by a narrow-band radiometer.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>waveband</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0100001 rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
-        <rdfs:label>Spectral band</rdfs:label>
+        <rdfs:comment>Obsoleted in issue #189: wavelength ranges sit directly under Radiation (BERVO:8000111) rather than a separate spectral band grouping.</rdfs:comment>
+        <rdfs:label>obsolete Spectral band</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
@@ -61168,11 +61166,16 @@
     <!-- https://w3id.org/bervo/BERVO_8001082 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001082">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001081"/>
-        <obo:IAO_0000115>Spectral band in the near infrared, roughly 700 to 1300 nm, where green leaves reflect strongly.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
+        <obo:IAO_0000115>Electromagnetic radiation in the shortest-wavelength part of the infrared spectrum, from roughly 700 nm to about 2500 nm, including the roughly 700 to 1300 nm interval where green leaves reflect strongly.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_03500014"/>
+        <oboInOwl:hasExactSynonym>NIR radiation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>NIR</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>NIR band</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
-        <rdfs:label>Near-infrared band</rdfs:label>
+        <oboInOwl:hasRelatedSynonym>Near-infrared band</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 13 2026), issue #189</rdfs:comment>
+        <rdfs:comment>ENVO:03500014 defines near-infrared radiation as 750 nm to 2.5 um; vegetation remote sensing commonly places the lower bound near 700 nm and separates shortwave infrared above about 1300 to 1400 nm. Distinct from Longwave radiation (BERVO:8000029), which in earth-system and flux measurements (such as the LW_* variables) denotes thermal infrared radiation above roughly 4 um.</rdfs:comment>
+        <rdfs:label>Near-infrared radiation</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
@@ -61181,10 +61184,12 @@
     <!-- https://w3id.org/bervo/BERVO_8001083 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001083">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001081"/>
-        <obo:IAO_0000115>Spectral band in the red part of the visible spectrum, roughly 620 to 700 nm, where chlorophyll absorbs strongly.</obo:IAO_0000115>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
-        <rdfs:label>Red band</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
+        <obo:IAO_0000115>Electromagnetic radiation in the red part of the visible spectrum, with wavelengths roughly from 620 to 700 nm, where chlorophyll absorbs strongly.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Red band</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>red light</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 13 2026), issue #189</rdfs:comment>
+        <rdfs:label>Red radiation</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
@@ -61193,11 +61198,13 @@
     <!-- https://w3id.org/bervo/BERVO_8001084 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001084">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001081"/>
-        <obo:IAO_0000115>Spectral band near 570 nm whose reflectance changes little with the xanthophyll cycle, used as the reference in the photochemical reflectance index.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
+        <obo:IAO_0000115>Electromagnetic radiation in the narrow visible waveband near 570 nm where leaf reflectance changes little with the xanthophyll cycle, used as the reference in the photochemical reflectance index.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PRI reference band</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
-        <rdfs:label>Photochemical reflectance index reference band</rdfs:label>
+        <oboInOwl:hasRelatedSynonym>PRI reference radiation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Photochemical reflectance index reference band</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 13 2026), issue #189</rdfs:comment>
+        <rdfs:label>Photochemical reflectance index reference radiation</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
@@ -61206,11 +61213,13 @@
     <!-- https://w3id.org/bervo/BERVO_8001085 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8001085">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8001081"/>
-        <obo:IAO_0000115>Spectral band near 531 nm whose reflectance changes with the de-epoxidation state of the xanthophyll cycle, used as the target in the photochemical reflectance index.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
+        <obo:IAO_0000115>Electromagnetic radiation in the narrow visible waveband near 531 nm where leaf reflectance changes with the de-epoxidation state of the xanthophyll cycle, used as the target in the photochemical reflectance index.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PRI target band</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 15 2026), AmeriFlux alignment for issue #178, slice 2</rdfs:comment>
-        <rdfs:label>Photochemical reflectance index target band</rdfs:label>
+        <oboInOwl:hasRelatedSynonym>PRI target radiation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Photochemical reflectance index target band</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 13 2026), issue #189</rdfs:comment>
+        <rdfs:label>Photochemical reflectance index target radiation</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
     
