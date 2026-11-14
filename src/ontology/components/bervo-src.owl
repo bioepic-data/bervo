@@ -46568,10 +46568,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000029">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
-        <obo:IAO_0000115>Electromagnetic radiation with wavelengths longer than those of visible light, typically in the infrared range, that is emitted by all objects based on their temperature. This energy form is crucial for understanding earth&apos;s energy balance, greenhouse effect, nocturnal cooling processes, and heat transfer between earth&apos;s surface and atmosphere.</obo:IAO_0000115>
+        <obo:IAO_0000115>Electromagnetic radiation in the thermal infrared spectrum, above roughly 3 to 4 um (commonly about 4 to 100 um), emitted by terrestrial surfaces, vegetation, clouds, and atmospheric gases according to their temperature.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>LW</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>infrared radiation</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <oboInOwl:hasExactSynonym>long-wave radiation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>terrestrial radiation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>thermal infrared radiation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Conventional meteorological boundary with Shortwave radiation (BERVO:8000115) lies near 3 to 4 um, where solar irradiance drops off and terrestrial thermal emission takes over; pyrgeometers for LW_* variables typically sample roughly 4.5 to 42 um. Distinct from solar-reflected Near-infrared radiation (BERVO:8001082, roughly 700 to 2500 nm). No ENVO cross-reference: ENVO has outgoing longwave radiation (ENVO:01001857, emitted out to space) and infrared radiation (ENVO:21001214, 760 nm to 1 mm), neither of which matches general thermal longwave radiation.</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 13 2026), issue #259</rdfs:comment>
         <rdfs:label>Longwave radiation</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -47750,9 +47753,12 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000115">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000111"/>
-        <obo:IAO_0000115>Electromagnetic radiation with wavelengths shorter than infrared radiation, primarily including visible light and ultraviolet radiation from the sun. This energy form drives photosynthesis, affects atmospheric chemistry, controls surface heating, and represents the primary energy input to earth&apos;s climate system.</obo:IAO_0000115>
+        <obo:IAO_0000115>Electromagnetic radiation in the near-ultraviolet, visible, near-infrared, and shortwave infrared regions below roughly 3 to 4 um (commonly about 0.2 to 3 um), the wavelength range that carries nearly all incoming and reflected solar radiant energy in Earth&apos;s climate system.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001861"/>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <oboInOwl:hasExactSynonym>short-wave radiation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>solar shortwave radiation</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Conventional meteorological boundary with Longwave radiation (BERVO:8000029) lies near 3 to 4 um; pyranometers for SW_* variables typically sample roughly 0.3 to 3 um. Includes solar-reflected infrared (such as Near-infrared radiation, BERVO:8001082) in addition to ultraviolet and visible wavelengths. The abbreviation SW is not recorded as a synonym because it is the soil classification symbol of Well-graded sand (BERVO:8001048).</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 13 2026), issue #259</rdfs:comment>
         <rdfs:label>Shortwave radiation</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -61174,7 +61180,7 @@
         <oboInOwl:hasRelatedSynonym>NIR band</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Near-infrared band</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 13 2026), issue #189</rdfs:comment>
-        <rdfs:comment>ENVO:03500014 defines near-infrared radiation as 750 nm to 2.5 um; vegetation remote sensing commonly places the lower bound near 700 nm and separates shortwave infrared above about 1300 to 1400 nm. Distinct from Longwave radiation (BERVO:8000029), which in earth-system and flux measurements (such as the LW_* variables) denotes thermal infrared radiation above roughly 4 um.</rdfs:comment>
+        <rdfs:comment>ENVO:03500014 defines near-infrared radiation as 750 nm to 2.5 um; vegetation remote sensing commonly places the lower bound near 700 nm and separates shortwave infrared above about 1300 to 1400 nm. Distinct from Longwave radiation (BERVO:8000029), which in earth-system and flux measurements (such as the LW_* variables) denotes thermal infrared radiation above roughly 3 to 4 um.</rdfs:comment>
         <rdfs:label>Near-infrared radiation</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
