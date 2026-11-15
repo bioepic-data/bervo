@@ -31,7 +31,7 @@ These were settled on issue #178 and its pull requests.
    than a quantity, and are left out.
 2. **EcoSIM terms tied to the model are left as they are.** Where BERVO's only match was
    an EcoSIM variable defined for the model, such as the grid-cell
-   `Net ecosystem carbon dioxide exchange` (`BERVO:0000326`, in `g.h-1/{grid}`), a
+   `Net ecosystem carbon dioxide exchange` (`BERVO:0000326`, in `g{C}.h-1/{grid}`), a
    tower-level term was added beside it, and the EcoSIM term was given the new term as
    an additional parent.
 3. **Variants.** A variant that is a physically different quantity gets its own term:
