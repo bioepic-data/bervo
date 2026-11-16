@@ -43,7 +43,9 @@ All 235 strings that were in the column, with the number of rows each was on.
 rows, see Logarithms) after review: 1575 in all. A note marks a typo fixed on the
 way (the row's meaning was clear) or a meaning that looks wrong (converted as written,
 and left for a curator). Element annotations (`{C}`, `{N}`, `{P}`) were later added to
-210 bare-gram rows in [#261](https://github.com/bioepic-data/bervo/pull/261) (issue
+210 bare-gram rows in [#261](https://github.com/bioepic-data/bervo/pull/261) and
+`/{seed}` denominators to `BERVO:0000819`, `BERVO:0000821`, and `BERVO:0000822` in
+[#264](https://github.com/bioepic-data/bervo/pull/264) (issue
 [#175](https://github.com/bioepic-data/bervo/issues/175)), so the `UCUM` column below
 records the state at the time of the initial conversion rather than the current CSV.
 
