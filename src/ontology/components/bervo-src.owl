@@ -19540,9 +19540,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001136">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>Ratio of root protein carbon mass to active root and mycorrhizal structural carbon mass within a soil layer, capped at the plant functional type&apos;s maximum root protein concentration and used to scale root nutrient transporter activity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Ratio of root protein carbon mass to active root and mycorrhizal structural carbon mass within a soil layer.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RootProteinConc_rpvr</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
+        <rdfs:comment>In EcoSIM (NutUptakeMod.F90), capped at the plant functional type&apos;s maximum root protein concentration (RootProteinCMax_pft) and used to scale root nutrient transporter activity.</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Root layer protein carbon concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
