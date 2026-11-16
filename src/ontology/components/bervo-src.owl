@@ -14030,7 +14030,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
-        <bervo:BERVO_has_unit>g{C}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{seed}</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000136"/>
     </Class>
     
@@ -14064,7 +14064,7 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Grain size at seeding</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g{C}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{seed}</bervo:BERVO_has_unit>
     </Class>
     
 
@@ -14081,7 +14081,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
-        <bervo:BERVO_has_unit>g{C}.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{seed}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000136"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000136"/>
     </Class>
@@ -19540,9 +19540,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001136">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>Root layer protein C concentration refers to the concentration of organic carbon in the root layer of the soil. It represents the amount of carbon contained in proteins found in the roots of plants within a given area of soil. This parameter is important in earth systems modeling as it influences nutrient uptake, soil carbon dynamics, and soil microbial activity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Ratio of root protein carbon mass to active root and mycorrhizal structural carbon mass within a soil layer.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RootProteinConc_rpvr</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
+        <rdfs:comment>In EcoSIM (NutUptakeMod.F90), capped at the plant functional type&apos;s maximum root protein concentration (RootProteinCMax_pft) and used to scale root nutrient transporter activity.</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Root layer protein carbon concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
