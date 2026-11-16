@@ -13441,9 +13441,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000783">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The ratio of leaf surface area to leaf dry mass during active growth periods, representing leaf construction efficiency and photosynthetic investment strategies. This leaf area to mass during growth affects light capture per unit of biomass investment and influences plant competitive ability and resource use efficiency.</obo:IAO_0000115>
+        <obo:IAO_0000115>Ratio of leaf surface area to leaf carbon mass during active growth, parameterizing specific leaf area expansion per unit of carbon allocated to leaf construction.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SLA1_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Leaf area:mass during growth</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
@@ -13479,9 +13479,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000785">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The ratio of petiole length to petiole mass during active growth periods, representing petiole construction efficiency and support structure investment. This petiole length to mass during growth affects leaf positioning and mechanical support per unit of biomass investment.</obo:IAO_0000115>
+        <obo:IAO_0000115>Ratio of petiole or leaf sheath length to petiole or sheath carbon mass during active growth, parameterizing elongation per unit of carbon allocated to support tissue construction.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PetoLen2Mass_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Petiole length:mass during growth</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
@@ -13860,9 +13860,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000810">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The ratio of internode length to internode mass during active growth periods, representing stem construction efficiency and elongation patterns. This internode length to mass during growth affects plant height development and influences mechanical support per unit of biomass investment.</obo:IAO_0000115>
+        <obo:IAO_0000115>Ratio of stem internode length to internode carbon mass during active growth, parameterizing stalk elongation per unit of carbon allocated to structural stem construction.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NodeLenPergC_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Internode length:mass during growth</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
@@ -14022,9 +14022,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000819">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The largest possible individual grain mass that can be achieved under optimal growing conditions, representing the genetic potential for seed size. This maximum grain size affects seed quality and influences crop market value and nutritional content.</obo:IAO_0000115>
+        <obo:IAO_0000115>Upper limit on the carbon mass of an individual seed or grain attainable during reproductive filling.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>MaxSeedCMass_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Maximum grain size</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
@@ -14058,9 +14058,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000821">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The individual mass of seeds used for planting, representing the initial resource endowment for seedling establishment and early growth. This grain size at seeding affects germination success and influences early seedling vigor and competitive ability.</obo:IAO_0000115>
+        <obo:IAO_0000115>Initial carbon mass of an individual seed at planting, representing the seed carbon reserve available for germination and early seedling establishment.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SeedCMass_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Grain size at seeding</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
@@ -14073,9 +14073,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000822">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The highest possible rate of mass accumulation in individual grains during the grain filling period, representing the genetic potential for seed development rate. This maximum rate of fill per grain determines harvest timing and affects final grain quality under optimal conditions.</obo:IAO_0000115>
+        <obo:IAO_0000115>Maximum rate of carbon accumulation in an individual seed or grain during the grain-filling period at 25 degrees Celsius.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>GrainFillRate25C_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Maximum rate of fill per grain</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
@@ -18386,9 +18386,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001069">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>Root volume:mass ratio (DMVL) is a measure of the volume and mass of plant roots. It provides insights into the root system architecture, root density, and the overall growth and health of plants. This ratio can vary widely among different plant species and can be influenced by various environmental factors such as soil type, nutrient availability, and water content.</obo:IAO_0000115>
+        <obo:IAO_0000115>Ratio of fine root volume (including internal pore space and tissue water) to fine root carbon mass, derived from root carbon bulk density and porosity and used to compute specific root length.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RootVolPerMassC_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Root volume:mass ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000190"/>
@@ -19156,9 +19156,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001114">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>The length of primary root axes per unit mass of root biomass, indicating root efficiency in soil exploration. This parameter is crucial for understanding how plants allocate carbon to root construction and the cost-effectiveness of different root architectures in nutrient acquisition.</obo:IAO_0000115>
+        <obo:IAO_0000115>Length of primary root axes per unit of primary root carbon mass, governing primary root axis extension per unit of carbon allocated to root growth.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Root1stSpecLen_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Specific root length primary axes</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
@@ -19173,9 +19173,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001115">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>The length of secondary root axes per unit mass of root biomass, representing the efficiency of lateral root development. This metric helps evaluate how plants optimize their fine root systems for maximum soil volume exploration while minimizing carbon investment costs.</obo:IAO_0000115>
+        <obo:IAO_0000115>Length of secondary root axes per unit of secondary root carbon mass, governing lateral fine root extension per unit of carbon allocated to root growth.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Root2ndSpecLen_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Specific root length secondary axes</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000163"/>
