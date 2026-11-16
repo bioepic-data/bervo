@@ -3306,7 +3306,7 @@
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Km for nonstructural carbon concentration on seed set</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000268"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -3322,7 +3322,7 @@
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Km for nonstructural nitrogen concentration on seed set</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000268"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.g-1{C}</bervo:BERVO_has_unit>
     </Class>
     
 
@@ -3337,7 +3337,7 @@
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Km for nonstructural phosphorus concentration on seed set</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000268"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.g-1{C}</bervo:BERVO_has_unit>
     </Class>
     
 
@@ -3487,7 +3487,7 @@
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Specific respiration rate by bacterial nitrogen fixers</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
-        <bervo:BERVO_has_unit>g.g-1.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}.h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000782"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
@@ -5161,7 +5161,7 @@
         <rdfs:label>Total soil ammonium content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
     </Class>
@@ -5179,7 +5179,7 @@
         <rdfs:label>Total soil nitrate content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
@@ -5197,7 +5197,7 @@
         <rdfs:label>Total soil phosphate content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
@@ -5256,7 +5256,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000153"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -5274,7 +5274,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000153"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
     
@@ -5292,7 +5292,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000153"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
     </Class>
     
@@ -5421,7 +5421,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
@@ -5440,7 +5440,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
     </Class>
@@ -5457,7 +5457,7 @@
         <rdfs:comment>EcoSimSumDataType.txt</rdfs:comment>
         <rdfs:label>Total soil carbon dioxide</rdfs:label>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
@@ -5474,7 +5474,7 @@
         <rdfs:comment>EcoSimSumDataType.txt</rdfs:comment>
         <rdfs:label>Total soil nitrogen</rdfs:label>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
@@ -5511,7 +5511,7 @@
         <rdfs:label>Net ecosystem carbon dioxide exchange</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000043"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
     
@@ -5529,7 +5529,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
     </Class>
@@ -5592,7 +5592,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
     </Class>
@@ -5723,7 +5723,7 @@
         <rdfs:label>Root uptake of dihydrogen phosphate non-band</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
@@ -5741,7 +5741,7 @@
         <rdfs:label>Root uptake of dihydrogen phosphate band</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
@@ -5759,7 +5759,7 @@
         <rdfs:label>Hydrogen phosphate demand in non-band by each root population</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
@@ -5777,7 +5777,7 @@
         <rdfs:label>Hydrogen phosphate demand in band by each root population</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
@@ -5830,7 +5830,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000887"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
@@ -5852,7 +5852,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000887"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
@@ -5895,7 +5895,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000782"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
@@ -5916,7 +5916,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
     </Class>
     
@@ -5933,7 +5933,7 @@
         <rdfs:label>Pft level plant respiration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000539"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
     </Class>
     
@@ -6045,7 +6045,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000539"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
     </Class>
     
@@ -6096,7 +6096,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000538"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
@@ -6116,7 +6116,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000538"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000024"/>
     </Class>
@@ -6155,7 +6155,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000538"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
     </Class>
@@ -6174,7 +6174,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000538"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000017"/>
     </Class>
@@ -6193,7 +6193,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000538"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
@@ -6261,7 +6261,7 @@
         <rdfs:label>Aqueous carbon dioxide flux from roots to root water</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000196"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000102"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
@@ -6296,7 +6296,7 @@
         <rdfs:comment>PlantDataRateType.txt</rdfs:comment>
         <rdfs:label>Root respiration unconstrained by oxygen gas</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000539"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
     </Class>
     
 
@@ -6311,7 +6311,7 @@
         <rdfs:comment>PlantDataRateType.txt</rdfs:comment>
         <rdfs:label>Root respiration constrained by oxygen gas</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000539"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
     </Class>
     
 
@@ -6349,7 +6349,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
     </Class>
@@ -6369,7 +6369,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
@@ -6389,7 +6389,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
@@ -6409,7 +6409,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000073"/>
     </Class>
@@ -6429,7 +6429,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000782"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
@@ -6502,7 +6502,7 @@
         <rdfs:comment>PlantDataRateType.txt</rdfs:comment>
         <rdfs:label>Root carbon dioxide efflux unconstrained by root nonstructural C</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
@@ -6520,7 +6520,7 @@
         <rdfs:label>Root uptake of ammonium non-band unconstrained by ammonium</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
     </Class>
@@ -6538,7 +6538,7 @@
         <rdfs:label>Root uptake of ammonium band unconstrained by ammonium</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
     </Class>
@@ -6556,7 +6556,7 @@
         <rdfs:label>Root uptake of nitrate band unconstrained by nitrate</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
@@ -6574,7 +6574,7 @@
         <rdfs:label>Root uptake of nitrate non-band unconstrained by nitrate</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
@@ -6593,7 +6593,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000565"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
     </Class>
     
@@ -6670,7 +6670,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
     
@@ -6689,7 +6689,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000534"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
     </Class>
     
@@ -6866,7 +6866,7 @@
         <rdfs:label>Total root carbon dioxide flux into roots</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
@@ -6996,7 +6996,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
@@ -7016,7 +7016,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
@@ -7036,7 +7036,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000627"/>
@@ -7056,7 +7056,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
@@ -7076,7 +7076,7 @@
         <rdfs:label>Total root + microbial nitrous oxide uptake</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000017"/>
@@ -7096,7 +7096,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
@@ -7116,7 +7116,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
@@ -7136,7 +7136,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000627"/>
@@ -7156,7 +7156,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
@@ -7175,7 +7175,7 @@
         <rdfs:label>Total root + microbial dissolved organic carbon uptake</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000097"/>
@@ -7194,7 +7194,7 @@
         <rdfs:label>Total root + microbial acetate uptake</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000205"/>
@@ -9217,7 +9217,7 @@
         <rdfs:label>Bundle sheath nonstructural C3 content in C4 photosynthesis</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000169"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000145"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000080"/>
@@ -9303,7 +9303,7 @@
         <rdfs:label>Leaf nonstructural C4 content in C4 photosynthesis</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000169"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000156"/>
@@ -9357,7 +9357,7 @@
         <rdfs:label>Total net canopy carbon dioxide exchange</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
@@ -10394,7 +10394,7 @@
         <rdfs:label>Bundle sheath C4 carbon product to support C3 photosynthesis during C4 photosynthesis on a leaf node</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000564"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000252"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
     </Class>
@@ -10413,7 +10413,7 @@
         <rdfs:label>Total leaf mass</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
     </Class>
@@ -10722,7 +10722,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
@@ -10740,7 +10740,7 @@
         <rdfs:label>Canopy layer leaf carbon</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
@@ -10878,7 +10878,7 @@
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Branch sapwood carbon</rdfs:label>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
     </Class>
@@ -10916,7 +10916,7 @@
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Plant branch leaf + sheath carbon</rdfs:label>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
     </Class>
@@ -11344,7 +11344,7 @@
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Layer leaf protein carbon</rdfs:label>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000022"/>
     </Class>
@@ -11361,7 +11361,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
         <rdfs:label>Layer sheath protein carbon</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000170"/>
     </Class>
@@ -11399,7 +11399,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Maximum grain carbon during grain fill</rdfs:label>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000136"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
@@ -11504,7 +11504,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000229"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000259"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
@@ -12514,7 +12514,7 @@
         <rdfs:label>Maximum leaf nitrogen to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000225"/>
@@ -12533,7 +12533,7 @@
         <rdfs:label>Maximum leaf phosphorus to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000211"/>
@@ -12551,7 +12551,7 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Sheath nitrogen to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000183"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000225"/>
@@ -12569,7 +12569,7 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Stalk nitrogen to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000225"/>
@@ -12587,7 +12587,7 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Reserve nitrogen to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000044"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000225"/>
@@ -12605,7 +12605,7 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Husk nitrogen to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000047"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000225"/>
@@ -12623,7 +12623,7 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Ear nitrogen to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000224"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000225"/>
@@ -12641,7 +12641,7 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Grain nitrogen to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000136"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000225"/>
@@ -12660,7 +12660,7 @@
         <rdfs:label>Nodule nitrogen to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000555"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000078"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000225"/>
@@ -12678,7 +12678,7 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Sheath phosphorus to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000183"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000211"/>
@@ -12696,7 +12696,7 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Stalk phosphorus to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000181"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000211"/>
@@ -12714,7 +12714,7 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Reserve phosphorus to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000044"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000211"/>
@@ -12732,7 +12732,7 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Husk phosphorus to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000047"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000211"/>
@@ -12750,7 +12750,7 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Ear phosphorus to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000224"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000211"/>
@@ -12768,7 +12768,7 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Grain phosphorus to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000136"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000211"/>
@@ -12787,7 +12787,7 @@
         <rdfs:label>Nodule phosphorus to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000555"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000078"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000211"/>
@@ -13136,7 +13136,7 @@
         <rdfs:label>Sheath growth yield</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000183"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
     </Class>
@@ -13154,7 +13154,7 @@
         <rdfs:label>Stalk growth yield</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
     </Class>
     
@@ -13171,7 +13171,7 @@
         <rdfs:label>Reserve growth yield</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000044"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000044"/>
     </Class>
     
@@ -13188,7 +13188,7 @@
         <rdfs:label>Husk growth yield</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000047"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000047"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
     </Class>
@@ -13206,7 +13206,7 @@
         <rdfs:label>Ear growth yield</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000224"/>
     </Class>
     
@@ -13223,7 +13223,7 @@
         <rdfs:label>Grain growth yield</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000084"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000077"/>
     </Class>
@@ -13242,7 +13242,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000555"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000078"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
     </Class>
@@ -13260,7 +13260,7 @@
         <rdfs:label>Leaf growth yield</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
     </Class>
     
@@ -13441,16 +13441,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000783">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The ratio of leaf surface area to leaf dry mass during active growth periods, representing leaf construction efficiency and photosynthetic investment strategies. This leaf area to mass during growth affects light capture per unit of biomass investment and influences plant competitive ability and resource use efficiency.</obo:IAO_0000115>
+        <obo:IAO_0000115>Ratio of leaf surface area to leaf carbon mass during active growth, parameterizing specific leaf area expansion per unit of carbon allocated to leaf construction.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SLA1_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Leaf area:mass during growth</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000079"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>m2.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>m2.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
     </Class>
@@ -13479,15 +13479,15 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000785">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The ratio of petiole length to petiole mass during active growth periods, representing petiole construction efficiency and support structure investment. This petiole length to mass during growth affects leaf positioning and mechanical support per unit of biomass investment.</obo:IAO_0000115>
+        <obo:IAO_0000115>Ratio of petiole or leaf sheath length to petiole or sheath carbon mass during active growth, parameterizing elongation per unit of carbon allocated to support tissue construction.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>PetoLen2Mass_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Petiole length:mass during growth</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>m.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>m.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000580"/>
     </Class>
     
@@ -13713,7 +13713,7 @@
         <rdfs:label>Branch nonstructural carbon content required for new branch</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
@@ -13860,15 +13860,15 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000810">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The ratio of internode length to internode mass during active growth periods, representing stem construction efficiency and elongation patterns. This internode length to mass during growth affects plant height development and influences mechanical support per unit of biomass investment.</obo:IAO_0000115>
+        <obo:IAO_0000115>Ratio of stem internode length to internode carbon mass during active growth, parameterizing stalk elongation per unit of carbon allocated to structural stem construction.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NodeLenPergC_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Internode length:mass during growth</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>m.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>m.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000206"/>
     </Class>
     
@@ -14022,15 +14022,15 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000819">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The largest possible individual grain mass that can be achieved under optimal growing conditions, representing the genetic potential for seed size. This maximum grain size affects seed quality and influences crop market value and nutritional content.</obo:IAO_0000115>
+        <obo:IAO_0000115>Upper limit on the carbon mass of an individual seed or grain attainable during reproductive filling.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>MaxSeedCMass_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Maximum grain size</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
-        <bervo:BERVO_has_unit>g</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000136"/>
     </Class>
     
@@ -14058,13 +14058,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000821">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The individual mass of seeds used for planting, representing the initial resource endowment for seedling establishment and early growth. This grain size at seeding affects germination success and influences early seedling vigor and competitive ability.</obo:IAO_0000115>
+        <obo:IAO_0000115>Initial carbon mass of an individual seed at planting, representing the seed carbon reserve available for germination and early seedling establishment.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>SeedCMass_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Grain size at seeding</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}</bervo:BERVO_has_unit>
     </Class>
     
 
@@ -14073,15 +14073,15 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000822">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The highest possible rate of mass accumulation in individual grains during the grain filling period, representing the genetic potential for seed development rate. This maximum rate of fill per grain determines harvest timing and affects final grain quality under optimal conditions.</obo:IAO_0000115>
+        <obo:IAO_0000115>Maximum rate of carbon accumulation in an individual seed or grain during the grain-filling period at 25 degrees Celsius.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>GrainFillRate25C_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Maximum rate of fill per grain</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
-        <bervo:BERVO_has_unit>g.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000136"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000136"/>
     </Class>
@@ -14558,7 +14558,7 @@
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000196"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000533"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
     </Class>
     
 
@@ -14724,7 +14724,7 @@
         <rdfs:label>Phosphate concentration band micropore</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
-        <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000012"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
@@ -14743,7 +14743,7 @@
         <rdfs:label>Phosphate concentration non-band micropore</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
-        <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000012"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
@@ -15328,7 +15328,7 @@
         <rdfs:label>Total carbon amendment</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000545"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
@@ -15365,7 +15365,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000545"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000153"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
@@ -15384,7 +15384,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000545"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000153"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
     </Class>
@@ -15403,7 +15403,7 @@
         <rdfs:label>Total surface dissolved organic carbon flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000097"/>
     </Class>
@@ -15422,7 +15422,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000053"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000053"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000097"/>
     </Class>
@@ -15459,7 +15459,7 @@
         <rdfs:label>Total surface dissolved organic nitrogen flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000100"/>
     </Class>
@@ -15478,7 +15478,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000053"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000053"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000100"/>
     </Class>
@@ -15496,7 +15496,7 @@
         <rdfs:label>Total surface dissolved organic phosphorus flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000185"/>
     </Class>
@@ -15515,7 +15515,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000053"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000053"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000185"/>
     </Class>
@@ -15533,7 +15533,7 @@
         <rdfs:label>Total soil precipited phosphorus</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
     </Class>
@@ -15553,7 +15553,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
@@ -15571,7 +15571,7 @@
         <rdfs:label>Total surface dissolved inorganic carbon flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000008"/>
     </Class>
@@ -15590,7 +15590,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000053"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000053"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000008"/>
     </Class>
@@ -15608,7 +15608,7 @@
         <rdfs:label>Total surface dissolved inorganic nitrogen flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000048"/>
     </Class>
@@ -15627,7 +15627,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000053"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000053"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000048"/>
     </Class>
@@ -15645,7 +15645,7 @@
         <rdfs:label>Total surface dissolved inorganic phosphorus flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000067"/>
     </Class>
@@ -15664,7 +15664,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000053"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000053"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000067"/>
     </Class>
@@ -15699,7 +15699,7 @@
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
         <rdfs:label>Total nitrogen drainage below root zone</rdfs:label>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
@@ -15716,7 +15716,7 @@
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
         <rdfs:label>Total phosphorus drainage below root zone</rdfs:label>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
     </Class>
@@ -15821,7 +15821,7 @@
         <rdfs:comment>SoilBGCDataType.txt</rdfs:comment>
         <rdfs:label>Net microbial nitrogen exchange</rdfs:label>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
@@ -16179,7 +16179,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000627"/>
     </Class>
@@ -16199,7 +16199,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000627"/>
     </Class>
@@ -17114,7 +17114,7 @@
         <rdfs:label>Net microbial dissolved organic carbon flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000097"/>
     </Class>
@@ -17132,7 +17132,7 @@
         <rdfs:label>Net microbial acetate flux</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000262"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000091"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000205"/>
     </Class>
@@ -17149,7 +17149,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Heterotrophic microbial ammonium demand in soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
@@ -17167,7 +17167,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Heterotrophic microbial nitrate demand in soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
@@ -17185,7 +17185,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Heterotrophic microbial phosphate demand in soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
@@ -17203,7 +17203,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Heterotrophic microbial ammonium demand in surface litter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
     </Class>
@@ -17220,7 +17220,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Heterotrophic microbial phosphate demand in surface litter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
@@ -17237,7 +17237,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Heterotrophic microbial nitrate demand in surface litter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
@@ -17256,7 +17256,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
@@ -17276,7 +17276,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000627"/>
@@ -17296,7 +17296,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
@@ -17316,7 +17316,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000627"/>
@@ -17335,7 +17335,7 @@
         <rdfs:label>Total heterotrophic microbial nitrous oxide uptake unconstrained by N2O</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000017"/>
@@ -17354,7 +17354,7 @@
         <rdfs:label>Heterotrophic microbial ammonium immobilization (+ve) - mineralization (-ve) in band soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000542"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
@@ -17373,7 +17373,7 @@
         <rdfs:label>Heterotrophic microbial nitrate immobilization (+ve) - mineralization (-ve) in band soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000542"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
@@ -17391,7 +17391,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Heterotrophic substrate-unlimited dihydrogen phosphate mineraln-immobiln in band soil</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
@@ -17410,7 +17410,7 @@
         <rdfs:label>Heterotrophic substrate-unlimited hydrogen phosphate immobilization in non-band soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000542"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
@@ -17428,7 +17428,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Heterotrophic substrate-unlimited hydrogen phosphate mineraln-immobiln in band soil</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
@@ -17446,7 +17446,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Heterotrophic substrate-unlimited hydrogen phosphate immobilization in surface litter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000542"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000772"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
@@ -17526,7 +17526,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial ammonium demand in soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
@@ -17544,7 +17544,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial nitrate demand in soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
@@ -17562,7 +17562,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbes dihydrogen phosphate demand in soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
@@ -17580,7 +17580,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial ammonium demand in surface litter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
     </Class>
@@ -17597,7 +17597,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial dihydrogen phosphate demand in surface litter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
@@ -17614,7 +17614,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial nitrate demand in surface litter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
@@ -17631,7 +17631,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic ammonia oxidation in non-band soil</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
@@ -17649,7 +17649,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic nitrite oxidation in non-band soil</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000627"/>
@@ -17667,7 +17667,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic ammonia oxidation in band soil</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
@@ -17685,7 +17685,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic nitrite oxidation in band soil</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000627"/>
@@ -17703,7 +17703,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial nitrous oxide demand for reduction</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000017"/>
     </Class>
@@ -17721,7 +17721,7 @@
         <rdfs:label>Autotrophic microbial ammonium demand in band soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
@@ -17740,7 +17740,7 @@
         <rdfs:label>Autotrophic microbial nitrate demand in band soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
@@ -17759,7 +17759,7 @@
         <rdfs:label>Autotrophic microbial dihydrogen phosphate demand in band soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
@@ -17778,7 +17778,7 @@
         <rdfs:label>Autotrophic microbial hydrogen phosphate demand in non-band soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000556"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
@@ -17797,7 +17797,7 @@
         <rdfs:label>Autotrophic microbial hydrogen phosphate demand in band soil</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000175"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
@@ -17815,7 +17815,7 @@
         <rdfs:comment>MicrobialDataType.txt</rdfs:comment>
         <rdfs:label>Autotrophic microbial hydrogen phosphate demand in surface litter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000770"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000773"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
@@ -18086,7 +18086,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000188"/>
     </Class>
@@ -18105,7 +18105,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000024"/>
     </Class>
@@ -18144,7 +18144,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
     </Class>
@@ -18164,7 +18164,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000017"/>
     </Class>
@@ -18184,7 +18184,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000172"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000050"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
@@ -18338,7 +18338,7 @@
         <rdfs:label>Measurement of root growth yield</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
     </Class>
@@ -18356,7 +18356,7 @@
         <rdfs:label>Threshold root nonstructural carbon content for initiating new root axis</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
@@ -18386,14 +18386,14 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001069">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>Root volume:mass ratio (DMVL) is a measure of the volume and mass of plant roots. It provides insights into the root system architecture, root density, and the overall growth and health of plants. This ratio can vary widely among different plant species and can be influenced by various environmental factors such as soil type, nutrient availability, and water content.</obo:IAO_0000115>
+        <obo:IAO_0000115>Ratio of fine root volume (including internal pore space and tissue water) to fine root carbon mass, derived from root carbon bulk density and porosity and used to compute specific root length.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RootVolPerMassC_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Root volume:mass ratio</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000190"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>m3.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>m3.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
     </Class>
@@ -18499,7 +18499,7 @@
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Root nitrogen to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000225"/>
@@ -18517,7 +18517,7 @@
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Root phosphorus to carbon ratio</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000211"/>
@@ -18608,7 +18608,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
-        <bervo:BERVO_has_unit>g.m-2.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.m-2.h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
     </Class>
@@ -18626,7 +18626,7 @@
         <rdfs:label>Km for root ammonium uptake</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000268"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000113"/>
     </Class>
@@ -18645,7 +18645,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000252"/>
-        <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
     </Class>
     
@@ -18663,7 +18663,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
-        <bervo:BERVO_has_unit>g.m-2.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.m-2.h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
@@ -18681,7 +18681,7 @@
         <rdfs:label>Km for root nitrate uptake</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000268"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
@@ -18700,7 +18700,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000252"/>
-        <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
     </Class>
     
@@ -18718,7 +18718,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000193"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
-        <bervo:BERVO_has_unit>g.m-2.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.m-2.h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
@@ -18736,7 +18736,7 @@
         <rdfs:label>Km for root phosphate uptake</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000268"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
@@ -18755,7 +18755,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000252"/>
-        <bervo:BERVO_has_unit>g.m-3</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.m-3</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000138"/>
     </Class>
@@ -19156,14 +19156,14 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001114">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>The length of primary root axes per unit mass of root biomass, indicating root efficiency in soil exploration. This parameter is crucial for understanding how plants allocate carbon to root construction and the cost-effectiveness of different root architectures in nutrient acquisition.</obo:IAO_0000115>
+        <obo:IAO_0000115>Length of primary root axes per unit of primary root carbon mass, governing primary root axis extension per unit of carbon allocated to root growth.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Root1stSpecLen_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Specific root length primary axes</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000798"/>
-        <bervo:BERVO_has_unit>m.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>m.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
     </Class>
     
@@ -19173,14 +19173,14 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001115">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
-        <obo:IAO_0000115>The length of secondary root axes per unit mass of root biomass, representing the efficiency of lateral root development. This metric helps evaluate how plants optimize their fine root systems for maximum soil volume exploration while minimizing carbon investment costs.</obo:IAO_0000115>
+        <obo:IAO_0000115>Length of secondary root axes per unit of secondary root carbon mass, governing lateral fine root extension per unit of carbon allocated to root growth.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Root2ndSpecLen_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Specific root length secondary axes</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000163"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>m.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>m.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
     </Class>
     
@@ -19329,7 +19329,7 @@
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Root carbon per plant</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g/{plant}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{plant}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000171"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
@@ -19392,7 +19392,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Root layer protein carbon</rdfs:label>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000006"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
@@ -19442,7 +19442,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Root layer carbon</rdfs:label>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000006"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
@@ -19496,7 +19496,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Root layer structural carbon</rdfs:label>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000006"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000093"/>
     </Class>
@@ -19513,7 +19513,7 @@
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Root layer nonstructural element concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000006"/>
     </Class>
     
@@ -19546,7 +19546,7 @@
         <rdfs:comment>RootDataType.txt</rdfs:comment>
         <rdfs:label>Root layer protein carbon concentration</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000023"/>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000006"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000022"/>
     </Class>
@@ -19891,7 +19891,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
         <rdfs:label>Surface litter organic matter in each complex</rdfs:label>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000096"/>
     </Class>
     
@@ -20377,7 +20377,7 @@
         <rdfs:comment>NitroPars.txt</rdfs:comment>
         <rdfs:label>Specific oxidation rates for ammonia oxidizers</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000277"/>
-        <bervo:BERVO_has_unit>g.g-1{C}.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.g-1{C}.h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000015"/>
     </Class>
@@ -20394,7 +20394,7 @@
         <rdfs:comment>NitroPars.txt</rdfs:comment>
         <rdfs:label>Specific oxidation rates for nitrite oxidizers</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000277"/>
-        <bervo:BERVO_has_unit>g.g-1{C}.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.g-1{C}.h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000777"/>
     </Class>
     
@@ -20410,7 +20410,7 @@
         <rdfs:comment>NitroPars.txt</rdfs:comment>
         <rdfs:label>Specific oxidation rates for methanotrophs</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000277"/>
-        <bervo:BERVO_has_unit>g.g-1{C}.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.g-1{C}.h-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000781"/>
     </Class>
     
@@ -21905,7 +21905,7 @@
         <rdfs:comment>SedimentDataType.txt</rdfs:comment>
         <rdfs:label>Colonized humus carbon erosion</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000020"/>
-        <bervo:BERVO_has_unit>g.h-1/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000160"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
@@ -22270,7 +22270,7 @@
         <rdfs:comment>EcoSimConst.txt</rdfs:comment>
         <rdfs:label>Minimum soil organic carbon for combustion</rdfs:label>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000252"/>
-        <bervo:BERVO_has_unit>g.Mg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.Mg-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
     </Class>
     
@@ -25617,7 +25617,7 @@
         <rdfs:comment>SoilPropertyDataType.txt</rdfs:comment>
         <rdfs:label>Soil organic carbon content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
-        <bervo:BERVO_has_unit>g.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.kg-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
     </Class>
@@ -27612,7 +27612,7 @@
         <rdfs:label>Initial surface litter carbon</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000265"/>
-        <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000055"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
@@ -27630,7 +27630,7 @@
         <rdfs:label>Initial surface litter nitrogen</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000265"/>
-        <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000055"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000167"/>
     </Class>
@@ -27648,7 +27648,7 @@
         <rdfs:label>Initial surface litter phosphorus</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000025"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000265"/>
-        <bervo:BERVO_has_unit>g.m-2</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.m-2</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000055"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000001"/>
     </Class>
@@ -27682,7 +27682,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SOMDataType.txt</rdfs:comment>
         <rdfs:label>N:C ratios of soil organic carbon kinetic components</rdfs:label>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000225"/>
@@ -27699,7 +27699,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SOMDataType.txt</rdfs:comment>
         <rdfs:label>P:C ratios of soil organic carbon kinetic components</rdfs:label>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000211"/>
@@ -27898,7 +27898,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>SOMDataType.txt</rdfs:comment>
         <rdfs:label>Colonized humus carbon in each complex</rdfs:label>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000033"/>
     </Class>
@@ -27915,7 +27915,7 @@
         <rdfs:comment>SOMDataType.txt</rdfs:comment>
         <rdfs:label>Total particulate organic carbon</rdfs:label>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000802"/>
     </Class>
@@ -27949,7 +27949,7 @@
         <rdfs:comment>SOMDataType.txt</rdfs:comment>
         <rdfs:label>Soil litter particulate carbon content</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
-        <bervo:BERVO_has_unit>g.kg-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.kg-1</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
@@ -28161,7 +28161,7 @@
         <rdfs:label>Total soil dissolved inorganic carbon</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
-        <bervo:BERVO_has_unit>g/{grid}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{grid}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000062"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000008"/>
     </Class>
@@ -31183,7 +31183,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>The nitrogen to carbon mass ratio in plant tissues.</obo:IAO_0000115>
         <rdfs:label>Plant nitrogen to carbon ratio</rdfs:label>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{N}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000225"/>
@@ -31197,7 +31197,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>The phosphorus to carbon mass ratio in plant tissues.</obo:IAO_0000115>
         <rdfs:label>Plant phosphorus to carbon ratio</rdfs:label>
-        <bervo:BERVO_has_unit>g.g-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{P}.g-1{C}</bervo:BERVO_has_unit>
         <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000211"/>
