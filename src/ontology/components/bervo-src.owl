@@ -14030,7 +14030,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000137"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
-        <bervo:BERVO_has_unit>g{C}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{seed}</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000136"/>
     </Class>
     
@@ -14064,7 +14064,7 @@
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Grain size at seeding</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>g{C}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}/{seed}</bervo:BERVO_has_unit>
     </Class>
     
 
@@ -14081,7 +14081,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000095"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
-        <bervo:BERVO_has_unit>g{C}.h-1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>g{C}.h-1/{seed}</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000136"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000136"/>
     </Class>
