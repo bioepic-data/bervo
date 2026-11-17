@@ -2766,8 +2766,8 @@
         <oboInOwl:hasRelatedSynonym>Hours4PhyslMature</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
-        <rdfs:label>Number of hours with no grain filling required for physilogical maturity</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <rdfs:label>Number of hours with no grain filling required for physiological maturity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
     
@@ -2781,8 +2781,8 @@
         <oboInOwl:hasRelatedSynonym>Hours4FullSenes</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
-        <rdfs:label>Number of hours until full senescence after physl maturity</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <rdfs:label>Number of hours until full senescence after physiological maturity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
     
@@ -3982,8 +3982,8 @@
         <oboInOwl:hasRelatedSynonym>Hours4SenesAftMature</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
-        <rdfs:label>Number of hours after physiol maturity required for senescence</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <rdfs:label>Number of hours after physiological maturity required for senescence</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
     
@@ -3998,7 +3998,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Number of hours required to initiate remobilization of storage carbon for leafout</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
@@ -13712,7 +13712,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Hour counter for phenological senescence of a branch</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
@@ -14234,7 +14234,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Counter for mobilizing nonstructural carbon during spring leafout/dehardening</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
     
@@ -14249,7 +14249,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Counter for mobilizing nonstructural carbon during autumn leafoff/hardening</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000189"/>
     </Class>
