@@ -13575,7 +13575,7 @@
         <oboInOwl:hasRelatedSynonym>MainBranchNum_pft</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Number of main branch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #112</rdfs:comment>
-        <rdfs:comment>EcoSIM&apos;s MainBranchNum_pft carries the code comment &quot;number of main branch&quot; (&quot;id number of main branch&quot; in PlantPhenolMod.F90:400) and stores the 1-based array slot index of the oldest live branch, not a count of branches; compare Main branch number (BERVO:0000788, BranchNumber_pft) and Branch number id (BERVO:0000789, BranchNumerID_brch).</rdfs:comment>
+        <rdfs:comment>EcoSIM&apos;s MainBranchNum_pft carries the code comment &quot;number of main branch&quot; (&quot;id number of main branch&quot; in PlantPhenolMod.F90:400) and stores the 1-based array slot index of the oldest live branch, not a count of branches; compare Main branch number (BERVO:0000788, BranchNumber_pft) and Branch number id (BERVO:0000789, BranchNumber_brch; renamed BranchNumerID_brch in PlantTraitDataType.F90:148).</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Main branch index</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
