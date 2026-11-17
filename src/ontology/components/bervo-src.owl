@@ -18210,7 +18210,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001057">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000015"/>
-        <obo:IAO_0000115>Count of plant functional types tracked or assigned in a grid cell or management unit.</obo:IAO_0000115>
+        <obo:IAO_0000115>Count of non-fallow plant functional types assigned to grow in a grid cell or management unit during a growing season or year, whether or not each type has currently emerged.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NP_col</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Number of plant species</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #112</rdfs:comment>
@@ -18228,8 +18228,8 @@
     <!-- https://w3id.org/bervo/BERVO_0001058 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001058">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001057"/>
-        <obo:IAO_0000115>Count of plant functional types tracked or assigned in a grid cell or management unit at initialization, retained across simulation years including slots that later lie fallow with crop residue.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000015"/>
+        <obo:IAO_0000115>Count of plant functional type slots configured for a grid cell or management unit at initialization, retained across simulation years including slots that lie fallow while holding crop residue.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Initial number of plant species</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>NP0_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #112</rdfs:comment>
