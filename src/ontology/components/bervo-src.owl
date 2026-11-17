@@ -13371,14 +13371,17 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000778">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>A numerical index that tracks the developmental stage or maturity level of individual leaves within plant canopies, providing information about leaf phenology and growth progression. This parameter is essential for modeling leaf area development, photosynthetic capacity changes, and seasonal patterns of canopy structure in vegetation growth models and ecological studies.</obo:IAO_0000115>
+        <obo:IAO_0000115>Sequential node index of the lowest node on a branch that carries live leaf or petiole tissue, marking the lower bound of the active foliage zone and the starting position for acropetal leaf senescence and remobilization.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>KLowestGroLeafNode_brch</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym>Leaf growth stage counter</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #112</rdfs:comment>
+        <rdfs:comment>EcoSIM&apos;s PlantTraitDataType.F90:137-139 gives both KLowestGroLeafNode_brch and KHiestGroLeafNode_brch the generic comment &quot;leaf growth stage counter, [-]&quot;; in PlantBranchMod.F90:1398, 1794, 1903-1908, 3845-3860, KLowestGroLeafNode_brch stores the sequential node index of the lowest leafed node with positive petiole protein carbon on a branch.</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
-        <rdfs:label>Leaf growth stage counter</rdfs:label>
+        <rdfs:label>Lowest growing leaf node index</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000145"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000122"/>
     </Class>
     
 
