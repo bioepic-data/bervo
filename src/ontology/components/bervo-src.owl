@@ -13375,7 +13375,7 @@
         <oboInOwl:hasRelatedSynonym>KLowestGroLeafNode_brch</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Leaf growth stage counter</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #112</rdfs:comment>
-        <rdfs:comment>EcoSIM&apos;s PlantTraitDataType.F90:137-139 gives both KLowestGroLeafNode_brch and KHiestGroLeafNode_brch the generic comment &quot;leaf growth stage counter, [-]&quot;; in PlantBranchMod.F90:1398, 1794, 1903-1908, 3845-3860, KLowestGroLeafNode_brch stores the sequential node index of the lowest leafed node with positive petiole protein carbon on a branch.</rdfs:comment>
+        <rdfs:comment>EcoSIM&apos;s PlantTraitDataType.F90:137-139 gives both KLowestGroLeafNode_brch and KHiestGroLeafNode_brch the generic comment &quot;leaf growth stage counter, [-]&quot;; in PlantBranchMod.F90:1398, 1794, 1903-1908, 3845-3860, KLowestGroLeafNode_brch stores the sequential node index of the lowest leafed node with positive petiole protein carbon on a branch, while KHiestGroLeafNode_brch has no separate BERVO term yet.</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Lowest growing leaf node index</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
