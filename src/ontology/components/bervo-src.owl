@@ -10183,8 +10183,7 @@
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:label>Total canopy evaporation + transpiration</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000114"/>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000895"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8001386"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000254"/>
         <bervo:BERVO_has_unit>m3.h-1/{grid}</bervo:BERVO_has_unit>
@@ -48008,7 +48007,7 @@
     <!-- https://w3id.org/bervo/BERVO_8000114 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000114">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000232"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000106"/>
         <obo:IAO_0000115>The process by which liquid water changes into water vapor due to thermal energy, representing a major component of the hydrological cycle. This phase transition controls water loss from soil and plant surfaces, affects local humidity, and influences energy balance and climate patterns in environmental systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500034"/>
         <oboInOwl:hasExactSynonym>vaporization</oboInOwl:hasExactSynonym>
