@@ -65759,8 +65759,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <obo:IAO_0000115>Radiant flux received by a surface per unit area.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), issue #105</rdfs:comment>
-        <rdfs:comment>FALSE</rdfs:comment>
-        <rdfs:comment>TRUE</rdfs:comment>
         <rdfs:label>Irradiance</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -65773,8 +65771,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <obo:IAO_0000115>Radiant flux emitted, reflected, transmitted, or received by a given surface per unit solid angle per unit projected area.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), issue #105</rdfs:comment>
-        <rdfs:comment>FALSE</rdfs:comment>
-        <rdfs:comment>TRUE</rdfs:comment>
         <rdfs:label>Radiance</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -65787,8 +65783,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000559"/>
         <obo:IAO_0000115>Compass direction that a topographic slope faces, measured clockwise from true north.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), issue #105</rdfs:comment>
-        <rdfs:comment>FALSE</rdfs:comment>
-        <rdfs:comment>TRUE</rdfs:comment>
         <rdfs:label>Slope aspect</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -65801,8 +65795,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000106"/>
         <obo:IAO_0000115>Combined transfer of water vapor to the atmosphere by evaporation from soil and surface water and by transpiration from plants.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), issue #105</rdfs:comment>
-        <rdfs:comment>FALSE</rdfs:comment>
-        <rdfs:comment>TRUE</rdfs:comment>
         <rdfs:label>Evapotranspiration process</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -65815,8 +65807,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000106"/>
         <obo:IAO_0000115>Downward entry and movement of water from the land surface into soil or porous rock.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), issue #105</rdfs:comment>
-        <rdfs:comment>FALSE</rdfs:comment>
-        <rdfs:comment>TRUE</rdfs:comment>
         <rdfs:label>Infiltration</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -65830,8 +65820,6 @@
         <obo:IAO_0000115>Fraction of incident radiation or energy transmitted through a medium or canopy layer.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Transmittance</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), issue #105</rdfs:comment>
-        <rdfs:comment>FALSE</rdfs:comment>
-        <rdfs:comment>TRUE</rdfs:comment>
         <rdfs:label>Transmissivity</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -65845,8 +65833,6 @@
         <obo:IAO_0000115>Total capacity of a soil, sediment, or organic material to hold and exchange positively charged ions (cations) per unit mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>CEC</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), issue #105</rdfs:comment>
-        <rdfs:comment>FALSE</rdfs:comment>
-        <rdfs:comment>TRUE</rdfs:comment>
         <rdfs:label>Cation exchange capacity</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -65860,8 +65846,6 @@
         <obo:IAO_0000115>Total capacity of a soil, sediment, or organic material to hold and exchange negatively charged ions (anions) per unit mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>AEC</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), issue #105</rdfs:comment>
-        <rdfs:comment>FALSE</rdfs:comment>
-        <rdfs:comment>TRUE</rdfs:comment>
         <rdfs:label>Anion exchange capacity</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -65874,8 +65858,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
         <obo:IAO_0000115>Ratio of leaf surface area to leaf dry mass.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), issue #105</rdfs:comment>
-        <rdfs:comment>FALSE</rdfs:comment>
-        <rdfs:comment>TRUE</rdfs:comment>
         <rdfs:label>Leaf area per unit mass</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -65888,8 +65870,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <obo:IAO_0000115>Length of time an organism, stand, or system has existed since its origin or establishment.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), issue #105</rdfs:comment>
-        <rdfs:comment>FALSE</rdfs:comment>
-        <rdfs:comment>TRUE</rdfs:comment>
         <rdfs:label>Age</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -65903,8 +65883,6 @@
         <obo:IAO_0000115>Ratio of mechanical stress to elastic strain in a material or plant tissue.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Elastic modulus</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), issue #105</rdfs:comment>
-        <rdfs:comment>FALSE</rdfs:comment>
-        <rdfs:comment>TRUE</rdfs:comment>
         <rdfs:label>Modulus of elasticity</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
@@ -65917,8 +65895,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000241"/>
         <obo:IAO_0000115>Degree to which a biological or physical process rate changes in response to a change in temperature, such as Q10 or activation energy.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), issue #105</rdfs:comment>
-        <rdfs:comment>FALSE</rdfs:comment>
-        <rdfs:comment>TRUE</rdfs:comment>
         <rdfs:label>Temperature sensitivity</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
