@@ -13731,9 +13731,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000800">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>Ratio of shoot nodes initiated since floral initiation to the maturity-group node requirement of a plant or branch, used as a continuous developmental progress scale through pre-anthesis stem growth stages such as jointing, elongation, and heading.</obo:IAO_0000115>
+        <obo:IAO_0000115>Ratio of shoot nodes initiated since floral initiation to the maturity-group node requirement of a branch, used as a continuous developmental progress scale through pre-anthesis stem growth stages such as jointing, elongation, and heading.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NodeNumNormByMatgrp_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #112</rdfs:comment>
+        <rdfs:comment>In EcoSIM (PlantPhenolMod.F90:1155, 1197-1205), NodeNumNormByMatgrp_brch(NB,NZ) = (ShootNodeNum_brch(NB,NZ) - ShootNodeNumAtInitFloral_brch(NB,NZ)) / MatureGroup_pft(NZ) (real(r8)), compared against 0.25, 0.50, and 1.00 * GrothStageNorm4VegetaPheno for jointing, elongation, and heading.</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Normalized node number during vegetative growth stages</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
@@ -13817,9 +13818,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000805">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>Ratio of shoot nodes initiated since anthesis to the maturity-group node requirement of a plant or branch, used as a continuous developmental progress scale through post-anthesis reproductive stages such as grain-filling onset and seed number and mass determination.</obo:IAO_0000115>
+        <obo:IAO_0000115>Ratio of shoot nodes initiated since anthesis to the maturity-group node requirement of a branch, used as a continuous developmental progress scale through post-anthesis reproductive stages such as grain-filling onset and seed number and mass determination.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>ReprodNodeNumNormByMatrgrp_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #112</rdfs:comment>
+        <rdfs:comment>In EcoSIM (PlantPhenolMod.F90:1161, 1209-1217), ReprodNodeNumNormByMatrgrp_brch(NB,NZ) = (ShootNodeNum_brch(NB,NZ) - ShootNodeNumAtAnthesis_brch(NB,NZ)) / MatureGroup_pft(NZ) (real(r8)), compared against 0.50, 1.00, and 1.50 * GrothStageNorm4ReprodPheno for begin seed fill, set seed number, and set seed mass.</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Normalized node number during reproductive growth stages</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
