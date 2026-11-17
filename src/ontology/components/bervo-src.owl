@@ -2777,11 +2777,11 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000154">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>The threshold accumulation of hours between physiological maturity and the initiation of complete plant senescence. This parameter controls the duration of the post-maturity phase and affects the timing of nutrient remobilization and litterfall in agricultural and natural ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Duration of autumn remobilization in hours required for phenologically driven senescence respiration in perennial plants to reach its full rate, scaling the respiration rate by the ratio of accumulated remobilization hours to this threshold (capped at 1).</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Hours4FullSenes</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), from the EcoSIM source (PlantBGCPars.F90, PlantBranchMod.F90), issue #268</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
-        <rdfs:label>Number of hours until full senescence after physiological maturity</rdfs:label>
+        <rdfs:label>Number of hours of remobilization until full senescence</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
@@ -3979,11 +3979,11 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000226">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameter specifies the number of hours required for a plant to initiate senescence after maturity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Post-maturity delay in hours after physiological maturity without grain filling required to trigger leaf-off senescence in non-evergreen annual plants, indexed by plant phenology type.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Hours4SenesAftMature</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), from the EcoSIM source (PlantBGCPars.F90, PlantBranchMod.F90), issue #268</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
-        <rdfs:label>Number of hours after physiological maturity required for senescence</rdfs:label>
+        <rdfs:label>Number of hours after physiological maturity required to trigger annual senescence</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
@@ -3994,9 +3994,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000227">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameter specifies the number of hours required for a plant to initiate storage carbon remobilization after leafout.</obo:IAO_0000115>
+        <obo:IAO_0000115>Threshold duration in hours of spring leafout accumulation required to initiate remobilization of seasonal storage carbon reserves, indexed by plant growth habit (annual or perennial).</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HourReq2InitSStor4LeafOut</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), from the EcoSIM source (PlantBGCPars.F90, PlantNonstElmDynMod.F90), issue #268</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Number of hours required to initiate remobilization of storage carbon for leafout</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
