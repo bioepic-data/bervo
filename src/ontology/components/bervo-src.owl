@@ -13570,10 +13570,11 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <obo:IAO_0000115>Numerical branch-slot index identifying which live branch on a plant represents the main stem or primary axis.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>MainBranchNum_pft</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Number of main branch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #112</rdfs:comment>
-        <rdfs:comment>EcoSIM&apos;s MainBranchNum_pft carries the code comment &quot;number of main branch&quot; (&quot;id number of main branch&quot; in PlantPhenolMod.F90) and stores the 1-based array index of the oldest live branch slot, not a count of branches.</rdfs:comment>
+        <rdfs:comment>EcoSIM&apos;s MainBranchNum_pft carries the code comment &quot;number of main branch&quot; (&quot;id number of main branch&quot; in PlantPhenolMod.F90:400) and stores the 1-based array slot index of the oldest live branch, not a count of branches; compare Main branch number (BERVO:0000788, BranchNumber_pft) and Branch number id (BERVO:0000789, BranchNumerID_brch).</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
-        <rdfs:label>Number of main branch</rdfs:label>
+        <rdfs:label>Main branch index</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000145"/>
