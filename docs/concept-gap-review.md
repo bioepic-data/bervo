@@ -227,13 +227,13 @@ settled.
   typically produces its own food through photosynthesis"*. Vegetation
   (`BERVO:8000716`) is *"plant cover of an area taken as a whole, without
   regard to the taxa that compose it"*. So a row about organisms takes Plant,
-  a row about functional groups takes Plant functional type — Number of plant
-  species (`BERVO:0001057`, `NP_col`) had taken Plant here before issue #112
-  relabelled it and `BERVO:0001058` (`NP0_col`) as Number of plant functional
-  types and Initial number of plant functional types and moved both to Plant
-  functional type — and a row about the stand on a piece of ground takes
-  Vegetation, as the planting and harvest dates do. The later slices of #83
-  should follow that split rather than re-deriving it.
+  a row about functional groups takes Plant functional type, and a row about
+  the stand on a piece of ground takes Vegetation, as the planting and harvest
+  dates do. Number of plant species (`BERVO:0001057`, `NP_col`) had originally
+  taken Plant here before issue #112 relabelled it and `BERVO:0001058`
+  (`NP0_col`) as Number of plant functional types and Initial number of plant
+  functional types and moved both to Plant functional type. The later slices of
+  #83 should follow that split rather than re-deriving it.
 
   One row in the block was left with no relation at all: Match plant functional
   type from different scenarios (`BERVO:0001059`). Its label and its definition
