@@ -3760,9 +3760,9 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000213">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Number of hours need to accumulate to trigger litterfall after leaf maturity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Threshold duration in hours after physiological maturity until litterfall begins, triggered when the branch litterfall hour counter (Hours4LiterfalAftMature_brch) reaches this value.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HoursReq4LiterfalAftMature</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), from the EcoSIM source (PlantBGCPars.F90, PlantBranchMod.F90), issue #268</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Required hours after physiological maturity until start of litterfall</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
@@ -3982,7 +3982,7 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000226">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Post-maturity delay in hours after physiological maturity without grain filling required to trigger leaf-off senescence in non-evergreen annual plants, indexed by plant phenology type.</obo:IAO_0000115>
+        <obo:IAO_0000115>Delay in hours after physiological maturity without grain filling required to trigger leaf-off senescence in non-evergreen annual plants, indexed by plant phenology type.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Hours4SenesAftMature</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), from the EcoSIM source (PlantBGCPars.F90, PlantBranchMod.F90), issue #268</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
@@ -3998,9 +3998,10 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000227">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Threshold duration in hours of spring leafout accumulation required to initiate remobilization of seasonal storage carbon reserves, indexed by plant growth habit (annual or perennial).</obo:IAO_0000115>
+        <obo:IAO_0000115>Threshold duration in hours of accumulated spring leafout, indexed by plant growth habit (annual or perennial), over which remobilization of seasonal storage carbon into the shoot and root nonstructural pools proceeds; remobilization ceases once accumulated leafout hours exceed it.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HourReq2InitSStor4LeafOut</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), from the EcoSIM source (PlantBGCPars.F90, PlantNonstElmDynMod.F90), issue #268</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), from the EcoSIM source (PlantBGCPars.F90, PlantBranchMod.F90), issue #268</rdfs:comment>
+        <rdfs:comment>EcoSIM declares HourReq2InitSStor4LeafOut as &apos;number of hours required to initiate remobilization of storage C for leafout&apos;, but PlantBranchMod.F90 gates storage drawdown on Hours2LeafOut_brch .LE. HourReq2InitSStor4LeafOut (and PlantNonstElmDynMod.F90 runs on .GT., when seasonal storage C is not being mobilized).</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Number of hours required to initiate remobilization of storage carbon for leafout</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
