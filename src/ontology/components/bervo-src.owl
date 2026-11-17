@@ -3762,7 +3762,8 @@
         <oboInOwl:hasRelatedSynonym>HoursReq4LiterfalAftMature</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
-        <rdfs:label>Required hours after physical maturity until start of litterfall</rdfs:label>
+        <rdfs:label>Required hours after physiological maturity until start of litterfall</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000547"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
