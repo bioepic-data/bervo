@@ -2768,6 +2768,7 @@
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Number of hours with no grain filling required for physiological maturity</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000833"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
     
@@ -2783,6 +2784,7 @@
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Number of hours of remobilization until full senescence</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000833"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
     
@@ -3765,6 +3767,7 @@
         <rdfs:label>Required hours after physiological maturity until start of litterfall</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000547"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000833"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
     
@@ -3985,6 +3988,7 @@
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Number of hours after physiological maturity required to trigger annual senescence</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000833"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
     
@@ -4000,6 +4004,7 @@
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Number of hours required to initiate remobilization of storage carbon for leafout</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000833"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
