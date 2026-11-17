@@ -12999,14 +12999,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000755">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The count of plant functional types that are actively growing and contributing to ecosystem processes within a given area or community. This number of active plant functional types reflects ecosystem diversity and functional complexity in biogeochemical cycling models.</obo:IAO_0000115>
+        <obo:IAO_0000115>Count of plant functional types in a grid cell or stand that are phenologically active and growing at a given time, excluding fallow slots and assigned types that are dormant, unemerged, or harvested.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NumActivePlants_col</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #112</rdfs:comment>
+        <rdfs:comment>In EcoSIM (NumActivePlants_col), counts the plant functional types with IsPlantActive_pft enabled at the current time step; compare Number of plant functional types (BERVO:0001057, NP_col), which counts all non-fallow types assigned to grow in the current year whether currently emerged or not, and Initial number of plant functional types (BERVO:0001058, NP0_col), which counts all tracked slots including fallow residue slots.</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Number of active plant functional types</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
     </Class>
     
 
@@ -13059,10 +13061,10 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Canopy plant water stress indicator, number of hours PSILT &lt; PSILY</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
-        <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000007"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000142"/>
     </Class>
@@ -13310,6 +13312,7 @@
         <rdfs:label>Leaf number</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
     </Class>
@@ -13327,6 +13330,7 @@
         <rdfs:label>Leaf number at floral initiation</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
     </Class>
@@ -13367,15 +13371,17 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000778">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>A numerical index that tracks the developmental stage or maturity level of individual leaves within plant canopies, providing information about leaf phenology and growth progression. This parameter is essential for modeling leaf area development, photosynthetic capacity changes, and seasonal patterns of canopy structure in vegetation growth models and ecological studies.</obo:IAO_0000115>
+        <obo:IAO_0000115>Sequential node index of the lowest node on a branch that carries live leaf or petiole tissue, marking the lower bound of the active foliage zone and the starting position for acropetal leaf senescence and remobilization.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>KLowestGroLeafNode_brch</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym>Leaf growth stage counter</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #112</rdfs:comment>
+        <rdfs:comment>EcoSIM&apos;s PlantTraitDataType.F90:137-139 gives both KLowestGroLeafNode_brch and KHiestGroLeafNode_brch the generic comment &quot;leaf growth stage counter, [-]&quot;; in PlantBranchMod.F90:1398, 1794, 1903-1908, 3845-3860, KLowestGroLeafNode_brch stores the sequential node index of the lowest leafed node with positive petiole protein carbon on a branch, while KHiestGroLeafNode_brch has no separate BERVO term yet.</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
-        <rdfs:label>Leaf growth stage counter</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <rdfs:label>Lowest growing leaf node index</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000002"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000145"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000122"/>
     </Class>
     
 
@@ -13523,6 +13529,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000145"/>
     </Class>
@@ -13564,12 +13571,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000790">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The total count of primary branches emerging from the central stem or trunk, representing the fundamental branching pattern of plant architecture. This number of main branch determines structural complexity and affects mechanical stability and resource distribution.</obo:IAO_0000115>
+        <obo:IAO_0000115>Numerical branch-slot index identifying which live branch on a plant represents the main stem or primary axis.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>MainBranchNum_pft</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym>Number of main branch</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #112</rdfs:comment>
+        <rdfs:comment>EcoSIM&apos;s MainBranchNum_pft carries the code comment &quot;number of main branch&quot; (&quot;id number of main branch&quot; in PlantPhenolMod.F90:400) and stores the 1-based array slot index of the oldest live branch, not a count of branches; compare Main branch number (BERVO:0000788, BranchNumber_pft) and Branch number id (BERVO:0000789, BranchNumber_brch; renamed BranchNumerID_brch in PlantTraitDataType.F90:148).</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
-        <rdfs:label>Number of main branch</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <rdfs:label>Main branch index</rdfs:label>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000145"/>
@@ -13723,15 +13731,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000800">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The standardized count of stem nodes during vegetative development, adjusted for maturity group and growth conditions to enable comparison across varieties. This normalized node number during vegetative growth stages tracks developmental progress and affects leaf production capacity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Ratio of shoot nodes initiated since floral initiation to the maturity-group node requirement of a branch, used as a continuous developmental progress scale through pre-anthesis stem growth stages such as jointing, elongation, and heading.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NodeNumNormByMatgrp_brch</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #112</rdfs:comment>
+        <rdfs:comment>In EcoSIM (PlantPhenolMod.F90:1155, 1197-1205), NodeNumNormByMatgrp_brch(NB,NZ) = (ShootNodeNum_brch(NB,NZ) - ShootNodeNumAtInitFloral_brch(NB,NZ)) / MatureGroup_pft(NZ) (real(r8)), compared against 0.25, 0.50, and 1.00 * GrothStageNorm4VegetaPheno for jointing, elongation, and heading.</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Normalized node number during vegetative growth stages</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000122"/>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000145"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000122"/>
     </Class>
     
@@ -13781,6 +13790,7 @@
         <rdfs:label>Shoot node number</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000122"/>
     </Class>
     
@@ -13797,6 +13807,7 @@
         <rdfs:label>Node number at floral initiation</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000122"/>
     </Class>
@@ -13807,15 +13818,16 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000805">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
-        <obo:IAO_0000115>The standardized count of stem nodes during reproductive development, adjusted for maturity group to enable comparison of reproductive development across varieties. This normalized node number during reproductive growth stages tracks flowering progression and affects reproductive site availability.</obo:IAO_0000115>
+        <obo:IAO_0000115>Ratio of shoot nodes initiated since anthesis to the maturity-group node requirement of a branch, used as a continuous developmental progress scale through post-anthesis reproductive stages such as grain-filling onset and seed number and mass determination.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>ReprodNodeNumNormByMatrgrp_brch</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #112</rdfs:comment>
+        <rdfs:comment>In EcoSIM (PlantPhenolMod.F90:1161, 1209-1217), ReprodNodeNumNormByMatrgrp_brch(NB,NZ) = (ShootNodeNum_brch(NB,NZ) - ShootNodeNumAtAnthesis_brch(NB,NZ)) / MatureGroup_pft(NZ) (real(r8)), compared against 0.50, 1.00, and 1.50 * GrothStageNorm4ReprodPheno for begin seed fill, set seed number, and set seed mass.</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Normalized node number during reproductive growth stages</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
+        <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000145"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000122"/>
     </Class>
     
@@ -13832,6 +13844,7 @@
         <rdfs:label>Node number at anthesis</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000122"/>
     </Class>
@@ -13904,6 +13917,7 @@
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000122"/>
     </Class>
     
@@ -13988,14 +14002,16 @@
         <obo:IAO_0000115>The highest possible number of grain-bearing nodes that can develop on a single branch, representing the genetic potential for reproductive site formation. This maximum grain node number per branch determines yield potential and affects crop productivity under optimal growing conditions.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>MaxPotentSeedNumber_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM&apos;s PlantTraitDataType.F90 declares GrothStalkMaxSeedSites_pft (formerly MaxPotentSeedNumber_pft, PFT parameter STMX) with the comment &quot;maximum grain node number per branch, [-]&quot;, whereas PlantInfoMod.F90 and PlantBranchMod.F90 apply it as maximum potential seed sites per gram of pre-anthesis stalk carbon (issue #266).</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Maximum grain node number per branch</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000253"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000145"/>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000145"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000122"/>
     </Class>
     
 
@@ -14048,6 +14064,7 @@
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000120"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000122"/>
     </Class>
@@ -18195,14 +18212,17 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001057">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000015"/>
-        <obo:IAO_0000115>The current number of active plant function types in a grid.</obo:IAO_0000115>
+        <obo:IAO_0000115>Count of non-fallow plant functional types assigned to grow in a grid cell or management unit during a growing season or year, whether or not each type has currently emerged.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>NP_col</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Manual (JHC, Sep 25 2025)</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym>Number of plant species</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #112</rdfs:comment>
+        <rdfs:comment>In EcoSIM (NP_col, carrying the legacy code comment &quot;number of plant species&quot;), counts the non-fallow plant functional type slots assigned to grow in the current year, whether or not each type has emerged; compare Number of active plant functional types (BERVO:0000755, NumActivePlants_col) and Initial number of plant functional types (BERVO:0001058, NP0_col). Earlier definition (Manual, JHC, Sep 25 2025): The current number of active plant function types in a grid.</rdfs:comment>
         <rdfs:comment>PlantMgmtDataType.txt</rdfs:comment>
-        <rdfs:label>Number of plant species</rdfs:label>
+        <rdfs:label>Number of plant functional types</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
-        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000021"/>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
     </Class>
     
 
@@ -18210,15 +18230,19 @@
     <!-- https://w3id.org/bervo/BERVO_0001058 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001058">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0001057"/>
-        <obo:IAO_0000115>The initial number of active plant function types in a grid.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000015"/>
+        <obo:IAO_0000115>Count of plant functional type slots configured for a grid cell or management unit at initialization, retained across simulation years including slots that lie fallow while holding crop residue.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Initial number of plant species</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>NP0_col</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Manual (JHC, Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #112</rdfs:comment>
+        <rdfs:comment>In EcoSIM (NP0_col, carrying the legacy code comment &quot;intitial number of plant species&quot;), gives the total number of tracked plant functional type slots in the column, including fallow slots (NP0_col &gt;= NP_col). Earlier definition (Manual, JHC, Sep 25 2025): The initial number of active plant function types in a grid.</rdfs:comment>
         <rdfs:comment>PlantMgmtDataType.txt</rdfs:comment>
-        <rdfs:label>Initial number of plant species</rdfs:label>
+        <rdfs:label>Initial number of plant functional types</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_Qualifier rdf:resource="https://w3id.org/bervo/BERVO_8000265"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000785"/>
     </Class>
     
 
@@ -26351,6 +26375,7 @@
         <rdfs:label>Number of snow layers in column</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000204"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000204"/>
     </Class>
@@ -28778,6 +28803,7 @@
         <rdfs:label>Number of ions when the salt is fully dissociated</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000199"/>
     </Class>
     
