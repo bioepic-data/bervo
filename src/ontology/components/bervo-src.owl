@@ -2766,8 +2766,9 @@
         <oboInOwl:hasRelatedSynonym>Hours4PhyslMature</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
-        <rdfs:label>Number of hours with no grain filling required for physilogical maturity</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <rdfs:label>Number of hours with no grain filling required for physiological maturity</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000833"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
     
@@ -2777,12 +2778,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000154">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>The threshold accumulation of hours between physiological maturity and the initiation of complete plant senescence. This parameter controls the duration of the post-maturity phase and affects the timing of nutrient remobilization and litterfall in agricultural and natural ecosystems.</obo:IAO_0000115>
+        <obo:IAO_0000115>Duration of autumn remobilization in hours required for phenologically driven senescence respiration in perennial plants to reach its full rate, scaling the respiration rate by the ratio of accumulated remobilization hours to this threshold (capped at 1).</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Hours4FullSenes</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), from the EcoSIM source (PlantBGCPars.F90, PlantBranchMod.F90), issue #268</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
-        <rdfs:label>Number of hours until full senescence after physl maturity</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <rdfs:label>Number of hours of remobilization until full senescence</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000833"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
     
@@ -3758,12 +3760,14 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000213">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>Number of hours need to accumulate to trigger litterfall after leaf maturity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Threshold duration in hours after physiological maturity until litterfall begins, triggered when the branch litterfall hour counter (Hours4LiterfalAftMature_brch) reaches this value.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HoursReq4LiterfalAftMature</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), from the EcoSIM source (PlantBGCPars.F90, PlantBranchMod.F90), issue #268</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
-        <rdfs:label>Required hours after physical maturity until start of litterfall</rdfs:label>
+        <rdfs:label>Required hours after physiological maturity until start of litterfall</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000547"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000833"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
     
@@ -3978,12 +3982,13 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000226">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameter specifies the number of hours required for a plant to initiate senescence after maturity.</obo:IAO_0000115>
+        <obo:IAO_0000115>Delay in hours after physiological maturity without grain filling required to trigger leaf-off senescence in non-evergreen annual plants, indexed by plant phenology type.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Hours4SenesAftMature</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), from the EcoSIM source (PlantBGCPars.F90, PlantBranchMod.F90), issue #268</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
-        <rdfs:label>Number of hours after physiol maturity required for senescence</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <rdfs:label>Number of hours after physiological maturity required to trigger annual senescence</rdfs:label>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000833"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
     
@@ -3993,12 +3998,14 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000227">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000002"/>
-        <obo:IAO_0000115>This parameter specifies the number of hours required for a plant to initiate storage carbon remobilization after leafout.</obo:IAO_0000115>
+        <obo:IAO_0000115>Threshold duration in hours of accumulated spring leafout, indexed by plant growth habit (annual or perennial), over which remobilization of seasonal storage carbon into the shoot and root nonstructural pools proceeds; remobilization ceases once accumulated leafout hours exceed it.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>HourReq2InitSStor4LeafOut</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Definition source - Gemini 4 Hydrogen through Antigravity (Nov 17 2026), from the EcoSIM source (PlantBGCPars.F90, PlantBranchMod.F90), issue #268</rdfs:comment>
+        <rdfs:comment>EcoSIM declares HourReq2InitSStor4LeafOut as &apos;number of hours required to initiate remobilization of storage C for leafout&apos;, but PlantBranchMod.F90 gates storage drawdown on Hours2LeafOut_brch .LE. HourReq2InitSStor4LeafOut (and PlantNonstElmDynMod.F90 runs on .GT., when seasonal storage C is not being mobilized).</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Number of hours required to initiate remobilization of storage carbon for leafout</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000833"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
@@ -13712,7 +13719,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Hour counter for phenological senescence of a branch</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <bervo:BERVO_Context rdf:resource="https://w3id.org/bervo/BERVO_8000116"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
@@ -14234,7 +14241,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Counter for mobilizing nonstructural carbon during spring leafout/dehardening</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
     </Class>
     
@@ -14249,7 +14256,7 @@
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
         <rdfs:comment>PlantTraitDataType.txt</rdfs:comment>
         <rdfs:label>Counter for mobilizing nonstructural carbon during autumn leafoff/hardening</rdfs:label>
-        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000237"/>
+        <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000065"/>
         <bervo:BERVO_has_unit>h</bervo:BERVO_has_unit>
         <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000189"/>
     </Class>
