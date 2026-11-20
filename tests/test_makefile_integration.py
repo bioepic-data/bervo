@@ -163,7 +163,10 @@ class MakefileIntegrationTest(unittest.TestCase):
         component.unlink(missing_ok=True)
         self.run_make("components/bervo-src.owl")
 
-        # Runs in both CI lanes: template-qc.yml (ROBOT 1.9.7, pinned in
+        # A CSV edit committed without rebuilding leaves the component stale, and
+        # nothing else catches that because the ODK release chain builds its own
+        # copy rather than checking the committed one. Runs in both CI lanes:
+        # template-qc.yml (ROBOT 1.9.7, pinned in
         # .github/actions/setup-robot/action.yml) and qc.yml's integration_test
         # (ROBOT 1.9.8 in the ODK image). Both produce byte-identical output for
         # this template. If a future ROBOT changes the serialisation this fails
