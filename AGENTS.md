@@ -287,7 +287,9 @@ resolves.
 
 The checked-in template is expected to be error-free at all times;
 `tests/test_validate_bervo_src.py` enforces that. Behind the validator,
-`tests/test_makefile_integration.py` builds the component and fails if any IRI in it
+`tests/test_makefile_integration.py` builds the component, checks that the committed
+`src/ontology/components/bervo-src.owl` is byte-identical to a fresh build (skipping
+`robot`-dependent tests when `robot` is not on `PATH`), and fails if any IRI in it
 is relative or is anything but an `http:` or `https:` IRI, such as an unexpanded CURIE.
 It runs the same check on a freshly built `bervo.owl` and `bervo-full.owl`, where a
 relative IRI has already been resolved against the component's base and appears as

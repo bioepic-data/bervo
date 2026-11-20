@@ -31,7 +31,7 @@ validate-strict:
 fix-template:
     python3 {{validator}} {{template}} --fix
 
-# Run the Python test suite (validator + Makefile integration).
+# Run the Python test suite (validator + Makefile integration; robot-dependent tests skip if robot is not on PATH).
 test:
     python3 -m pytest tests/ -q
 
