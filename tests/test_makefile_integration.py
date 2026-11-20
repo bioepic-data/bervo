@@ -12,6 +12,7 @@ from urllib.parse import urlsplit
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+requires_robot = unittest.skipUnless(shutil.which("robot"), "robot not on PATH")
 
 
 def robot_version() -> tuple[int, ...]:
@@ -156,7 +157,7 @@ class MakefileIntegrationTest(unittest.TestCase):
             check=True,
         )
 
-    @unittest.skipUnless(shutil.which("robot"), "robot not on PATH")
+    @requires_robot
     def test_committed_component_matches_fresh_build(self) -> None:
         component = self.ontology_dir / "components" / "bervo-src.owl"
         component.unlink(missing_ok=True)
@@ -175,7 +176,7 @@ class MakefileIntegrationTest(unittest.TestCase):
             "src/ontology/components/bervo-src.owl is out of date; run `just build` and commit it",
         )
 
-    @unittest.skipUnless(shutil.which("robot"), "robot not on PATH")
+    @requires_robot
     def test_component_build_recreates_generated_component(self) -> None:
         component = self.ontology_dir / "components" / "bervo-src.owl"
         component.unlink(missing_ok=True)
@@ -190,7 +191,7 @@ class MakefileIntegrationTest(unittest.TestCase):
         # as a CURIE; the validator can catch only one known case at a time.
         self.assertEqual(unresolved_iris(component), {})
 
-    @unittest.skipUnless(shutil.which("robot"), "robot not on PATH")
+    @requires_robot
     def test_part_of_report_finds_every_part_ofs_filler(self) -> None:
         """The query returns nothing, without failing, if its BFO IRI is wrong (issue #201)."""
         self.run_make("components/bervo-src.owl")
@@ -243,7 +244,7 @@ class MakefileIntegrationTest(unittest.TestCase):
         self.assertIn("bioportal_term_url", payload["entries"][0])
         self.assertIn("conceptid=https%3A%2F%2Fw3id.org%2Fbervo%2FBERVO_0000000", payload["entries"][0]["bioportal_term_url"])
 
-    @unittest.skipUnless(shutil.which("robot"), "robot not on PATH")
+    @requires_robot
     def test_obo_release_keeps_underscored_odm2_xrefs_whole(self) -> None:
         # Issue #131: the OBO writer split these at an underscore. The
         # Cyanobacteria value was never split and must stay whole too.
@@ -291,7 +292,7 @@ class MakefileIntegrationTest(unittest.TestCase):
             self.assertIn(f"xref: http://vocabulary.odm2.org/{v}", lines)
         self.assertIn("xref: CHEBI:17045", lines)
 
-    @unittest.skipUnless(shutil.which("robot"), "robot not on PATH")
+    @requires_robot
     def test_release_chain_output(self) -> None:
         # Builds the real release chain once from bervo-edit.owl and the
         # component and checks its output: OBO IDs written as BERVO: (#137), the
@@ -362,7 +363,7 @@ class MakefileIntegrationTest(unittest.TestCase):
 
         self.assertEqual(template.read_bytes(), legacy_export.read_bytes())
 
-    @unittest.skipUnless(shutil.which("robot"), "robot not on PATH")
+    @requires_robot
     def test_remove_old_input_cleans_generated_outputs_only(self) -> None:
         template = self.ontology_dir / "bervo-src.csv"
         component = self.ontology_dir / "components" / "bervo-src.owl"
