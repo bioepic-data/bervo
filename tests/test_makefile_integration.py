@@ -155,6 +155,22 @@ class MakefileIntegrationTest(unittest.TestCase):
             check=True,
         )
 
+    def test_committed_component_matches_fresh_build(self) -> None:
+        component = self.ontology_dir / "components" / "bervo-src.owl"
+        component.unlink(missing_ok=True)
+        self.run_make("components/bervo-src.owl")
+
+        # Byte-for-byte: ROBOT's template output is stable across runs, and 1.9.7
+        # (pinned in template-qc.yml) and 1.9.8 (the ODK image) agree on this
+        # template. If a future ROBOT changes the serialisation this fails as
+        # "stale" when nothing in the CSV moved -- check `robot --version` first.
+        committed = REPO_ROOT / "src" / "ontology" / "components" / "bervo-src.owl"
+        self.assertEqual(
+            component.read_bytes(),
+            committed.read_bytes(),
+            "src/ontology/components/bervo-src.owl is out of date; run `just build` and commit it",
+        )
+
     def test_component_build_recreates_generated_component(self) -> None:
         component = self.ontology_dir / "components" / "bervo-src.owl"
         component.unlink(missing_ok=True)
@@ -168,11 +184,6 @@ class MakefileIntegrationTest(unittest.TestCase):
         # #41) comes out as a relative IRI, and an undeclared CURIE prefix (#43)
         # as a CURIE; the validator can catch only one known case at a time.
         self.assertEqual(unresolved_iris(component), {})
-        committed = REPO_ROOT / "src" / "ontology" / "components" / "bervo-src.owl"
-        self.assertTrue(
-            component.read_bytes() == committed.read_bytes(),
-            "src/ontology/components/bervo-src.owl is out of date; run `just build` and commit it",
-        )
 
     def test_part_of_report_finds_every_part_ofs_filler(self) -> None:
         """The query returns nothing, without failing, if its BFO IRI is wrong (issue #201)."""
