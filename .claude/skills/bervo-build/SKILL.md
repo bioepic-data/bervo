@@ -30,11 +30,13 @@ the one above.
 | Step | Command | Needs |
 | --- | --- | --- |
 | 1. Structural validation | `just validate` | Python only — seconds |
-| 2. Tests | `just test` | Python (`robot`-dependent tests skip if `robot` is absent, so a green run without `robot` does not confirm the component is current) |
+| 2. Tests | `just test` | Python, `robot` for the integration tests |
 | 3. Component build | `just build` | `robot` on `PATH` |
 | 4. Full ODK QC | `just qc` | Docker + `obolibrary/odkfull:v1.6` — slow |
 
 Most template mistakes are caught at step 1. Never jump straight to step 4.
+Robot-dependent tests in `just test` skip when `robot` is not on `PATH`, so a green run
+without `robot` does not confirm the component is current.
 
 ## If `robot` is not installed
 
@@ -59,7 +61,9 @@ cd src/ontology && sh run.sh make components/bervo-src.owl
   template.
 - `.github/workflows/docs.yml` — regenerates browser data and deploys the mkdocs site.
 
-Reproduce the validator and pytest checks locally with `just ci` (run `python3 src/scripts/dump_column_contract.py` separately for the column contract check).
+Reproduce the validator and pytest checks locally with `just ci`. For the column contract
+check, run `python3 src/scripts/dump_column_contract.py` and confirm `git diff --
+.claude/skills/bervo-terms/references/column-contract.md` is empty.
 
 ## Troubleshooting
 
