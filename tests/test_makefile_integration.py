@@ -163,12 +163,11 @@ class MakefileIntegrationTest(unittest.TestCase):
         component.unlink(missing_ok=True)
         self.run_make("components/bervo-src.owl")
 
-        # Checked here because the ODK job builds its own copy rather than
-        # checking the committed one. Byte-for-byte: ROBOT's template output is
-        # stable across runs, and 1.9.7 (pinned in .github/actions/setup-robot/action.yml)
-        # and 1.9.8 (the ODK image) agree on this template. If a future ROBOT
-        # changes the serialisation this fails as "stale" when nothing in the
-        # CSV moved -- check `robot --version` first.
+        # Runs in both CI lanes: template-qc.yml (ROBOT 1.9.7, pinned in
+        # .github/actions/setup-robot/action.yml) and qc.yml's integration_test
+        # (ROBOT 1.9.8 in the ODK image). Both produce byte-identical output for
+        # this template. If a future ROBOT changes the serialisation this fails
+        # as "stale" when nothing in the CSV moved -- check `robot --version` first.
         committed = REPO_ROOT / "src" / "ontology" / "components" / "bervo-src.owl"
         self.assertEqual(
             component.read_bytes(),
