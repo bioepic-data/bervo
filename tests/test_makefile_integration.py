@@ -28,9 +28,10 @@ def release_chain_overrides() -> list[str]:
     """Make variables that let the ODK release chain run on ROBOT before 1.9.8.
 
     `--clean-obo` (OBO_FORMAT_OPTIONS) and `reduce --include-subproperties`
-    (REDUCE_OPTIONS) are new in 1.9.8; template-qc.yml pins 1.9.7, the ODK image
-    has 1.9.8. Neither option affects prefixes or cross-references. A version
-    that cannot be read gets the overrides, which work on either.
+    (REDUCE_OPTIONS) are new in 1.9.8; .github/actions/setup-robot/action.yml
+    pins 1.9.7, the ODK image has 1.9.8. Neither option affects prefixes or
+    cross-references. A version that cannot be read gets the overrides, which
+    work on either.
     """
     if robot_version() >= (1, 9, 8):
         return []
@@ -160,10 +161,12 @@ class MakefileIntegrationTest(unittest.TestCase):
         component.unlink(missing_ok=True)
         self.run_make("components/bervo-src.owl")
 
-        # Byte-for-byte: ROBOT's template output is stable across runs, and 1.9.7
-        # (pinned in template-qc.yml) and 1.9.8 (the ODK image) agree on this
-        # template. If a future ROBOT changes the serialisation this fails as
-        # "stale" when nothing in the CSV moved -- check `robot --version` first.
+        # Checked here because the ODK job builds its own copy rather than
+        # checking the committed one. Byte-for-byte: ROBOT's template output is
+        # stable across runs, and 1.9.7 (pinned in .github/actions/setup-robot/action.yml)
+        # and 1.9.8 (the ODK image) agree on this template. If a future ROBOT
+        # changes the serialisation this fails as "stale" when nothing in the
+        # CSV moved -- check `robot --version` first.
         committed = REPO_ROOT / "src" / "ontology" / "components" / "bervo-src.owl"
         self.assertEqual(
             component.read_bytes(),
