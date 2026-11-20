@@ -12,6 +12,7 @@ from urllib.parse import urlsplit
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+requires_robot = unittest.skipUnless(shutil.which("robot"), "robot not on PATH")
 
 
 def robot_version() -> tuple[int, ...]:
@@ -28,9 +29,10 @@ def release_chain_overrides() -> list[str]:
     """Make variables that let the ODK release chain run on ROBOT before 1.9.8.
 
     `--clean-obo` (OBO_FORMAT_OPTIONS) and `reduce --include-subproperties`
-    (REDUCE_OPTIONS) are new in 1.9.8; template-qc.yml pins 1.9.7, the ODK image
-    has 1.9.8. Neither option affects prefixes or cross-references. A version
-    that cannot be read gets the overrides, which work on either.
+    (REDUCE_OPTIONS) are new in 1.9.8; .github/actions/setup-robot/action.yml
+    pins 1.9.7, the ODK image has 1.9.8. Neither option affects prefixes or
+    cross-references. A version that cannot be read gets the overrides, which
+    work on either.
     """
     if robot_version() >= (1, 9, 8):
         return []
@@ -155,6 +157,28 @@ class MakefileIntegrationTest(unittest.TestCase):
             check=True,
         )
 
+    @requires_robot
+    def test_committed_component_matches_fresh_build(self) -> None:
+        component = self.ontology_dir / "components" / "bervo-src.owl"
+        component.unlink(missing_ok=True)
+        self.run_make("components/bervo-src.owl")
+
+        # A CSV edit committed without rebuilding leaves the component stale, and
+        # nothing else catches that because the ODK release chain builds its own
+        # copy rather than checking the committed one. Runs in both CI lanes:
+        # template-qc.yml (ROBOT 1.9.7, pinned in
+        # .github/actions/setup-robot/action.yml) and qc.yml's integration_test
+        # (ROBOT 1.9.8 in the ODK image). Both produce byte-identical output for
+        # this template. If a future ROBOT changes the serialisation this fails
+        # as "stale" when nothing in the CSV moved -- check `robot --version` first.
+        committed = REPO_ROOT / "src" / "ontology" / "components" / "bervo-src.owl"
+        self.assertEqual(
+            component.read_bytes(),
+            committed.read_bytes(),
+            "src/ontology/components/bervo-src.owl is out of date; run `just build` and commit it",
+        )
+
+    @requires_robot
     def test_component_build_recreates_generated_component(self) -> None:
         component = self.ontology_dir / "components" / "bervo-src.owl"
         component.unlink(missing_ok=True)
@@ -169,6 +193,7 @@ class MakefileIntegrationTest(unittest.TestCase):
         # as a CURIE; the validator can catch only one known case at a time.
         self.assertEqual(unresolved_iris(component), {})
 
+    @requires_robot
     def test_part_of_report_finds_every_part_ofs_filler(self) -> None:
         """The query returns nothing, without failing, if its BFO IRI is wrong (issue #201)."""
         self.run_make("components/bervo-src.owl")
@@ -221,6 +246,7 @@ class MakefileIntegrationTest(unittest.TestCase):
         self.assertIn("bioportal_term_url", payload["entries"][0])
         self.assertIn("conceptid=https%3A%2F%2Fw3id.org%2Fbervo%2FBERVO_0000000", payload["entries"][0]["bioportal_term_url"])
 
+    @requires_robot
     def test_obo_release_keeps_underscored_odm2_xrefs_whole(self) -> None:
         # Issue #131: the OBO writer split these at an underscore. The
         # Cyanobacteria value was never split and must stay whole too.
@@ -268,6 +294,7 @@ class MakefileIntegrationTest(unittest.TestCase):
             self.assertIn(f"xref: http://vocabulary.odm2.org/{v}", lines)
         self.assertIn("xref: CHEBI:17045", lines)
 
+    @requires_robot
     def test_release_chain_output(self) -> None:
         # Builds the real release chain once from bervo-edit.owl and the
         # component and checks its output: OBO IDs written as BERVO: (#137), the
@@ -338,6 +365,7 @@ class MakefileIntegrationTest(unittest.TestCase):
 
         self.assertEqual(template.read_bytes(), legacy_export.read_bytes())
 
+    @requires_robot
     def test_remove_old_input_cleans_generated_outputs_only(self) -> None:
         template = self.ontology_dir / "bervo-src.csv"
         component = self.ontology_dir / "components" / "bervo-src.owl"

@@ -38,5 +38,5 @@ alongside a content change unless you are deliberately cutting a release.
 
 `src/ontology/components/bervo-src.owl` is the exception: it is a tracked build
 product, and a content change is expected to commit it regenerated alongside the
-CSV edit. Rebuild it with `just build` rather than editing it, and check the
-resulting diff corresponds to your CSV change.
+CSV edit (`just test` fails if it is stale). Rebuild it with `just build` rather
+than editing it, and check the resulting diff corresponds to your CSV change.
