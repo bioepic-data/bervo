@@ -168,6 +168,11 @@ class MakefileIntegrationTest(unittest.TestCase):
         # #41) comes out as a relative IRI, and an undeclared CURIE prefix (#43)
         # as a CURIE; the validator can catch only one known case at a time.
         self.assertEqual(unresolved_iris(component), {})
+        committed = REPO_ROOT / "src" / "ontology" / "components" / "bervo-src.owl"
+        self.assertTrue(
+            component.read_bytes() == committed.read_bytes(),
+            "src/ontology/components/bervo-src.owl is out of date; run `just build` and commit it",
+        )
 
     def test_part_of_report_finds_every_part_ofs_filler(self) -> None:
         """The query returns nothing, without failing, if its BFO IRI is wrong (issue #201)."""
