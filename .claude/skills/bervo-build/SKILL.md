@@ -30,7 +30,7 @@ the one above.
 | Step | Command | Needs |
 | --- | --- | --- |
 | 1. Structural validation | `just validate` | Python only — seconds |
-| 2. Tests | `just test` | Python (`robot`-dependent integration tests skip if `robot` is not on `PATH`) |
+| 2. Tests | `just test` | Python (`robot`-dependent tests skip if `robot` is absent, so a green run without `robot` does not confirm the component is current) |
 | 3. Component build | `just build` | `robot` on `PATH` |
 | 4. Full ODK QC | `just qc` | Docker + `obolibrary/odkfull:v1.6` — slow |
 
@@ -59,7 +59,7 @@ cd src/ontology && sh run.sh make components/bervo-src.owl
   template.
 - `.github/workflows/docs.yml` — regenerates browser data and deploys the mkdocs site.
 
-Reproduce the fast checks locally with `just ci`.
+Reproduce the validator and pytest checks locally with `just ci` (run `python3 src/scripts/dump_column_contract.py` separately for the column contract check).
 
 ## Troubleshooting
 
