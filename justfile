@@ -32,6 +32,8 @@ fix-template:
     python3 {{validator}} {{template}} --fix
 
 # Run the Python test suite (validator + Makefile integration).
+# Robot-dependent tests skip if `robot` is not on PATH, so a green `just test`
+# without `robot` does not confirm the component is current.
 test:
     python3 -m pytest tests/ -q
 

@@ -35,6 +35,8 @@ the one above.
 | 4. Full ODK QC | `just qc` | Docker + `obolibrary/odkfull:v1.6` — slow |
 
 Most template mistakes are caught at step 1. Never jump straight to step 4.
+Robot-dependent tests in `just test` skip when `robot` is not on `PATH`, so a green run
+without `robot` does not confirm the component is current.
 
 ## If `robot` is not installed
 
@@ -51,14 +53,17 @@ cd src/ontology && sh run.sh make components/bervo-src.owl
 
 - `.github/workflows/qc.yml` — `make test IMP=false PAT=false MIR=false` inside
   `obolibrary/odkfull:v1.6`, then `make integration_test`.
-- `.github/workflows/template-qc.yml` — the validator, the full pytest suite, and a check
-  that the committed component is current. It installs ROBOT directly via
-  `.github/actions/setup-robot`, **pinned to 1.9.7**; keep that close to the ROBOT version
-  in the ODK image `qc.yml` uses, and re-check them when bumping ODK. They currently
-  produce byte-identical output for this template.
+- `.github/workflows/template-qc.yml` — the validator, the full pytest suite (which
+  includes the check that the committed component matches a fresh build), and the column
+  contract check. It installs ROBOT directly via `.github/actions/setup-robot`, **pinned to
+  1.9.7**; keep that close to the ROBOT version in the ODK image `qc.yml` uses, and
+  re-check them when bumping ODK. They currently produce byte-identical output for this
+  template.
 - `.github/workflows/docs.yml` — regenerates browser data and deploys the mkdocs site.
 
-Reproduce the fast checks locally with `just ci`.
+Reproduce the validator and pytest checks locally with `just ci`. For the column contract
+check, run `python3 src/scripts/dump_column_contract.py` and confirm
+`git diff -- .claude/skills/bervo-terms/references/column-contract.md` is empty.
 
 ## Troubleshooting
 
