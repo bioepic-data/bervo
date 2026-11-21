@@ -164,13 +164,16 @@ class MakefileIntegrationTest(unittest.TestCase):
         self.run_make("components/bervo-src.owl")
 
         # A CSV edit committed without rebuilding leaves the component stale, and
-        # nothing else catches that because the ODK release chain builds its own
-        # copy rather than checking the committed one. Runs in both CI lanes:
-        # template-qc.yml (ROBOT 1.9.7, pinned in
-        # .github/actions/setup-robot/action.yml) and qc.yml's integration_test
-        # (ROBOT 1.9.8 in the ODK image). Both produce byte-identical output for
-        # this template. If a future ROBOT changes the serialisation this fails
-        # as "stale" when nothing in the CSV moved -- check `robot --version` first.
+        # nothing else catches that: the ODK lanes merge the committed component
+        # as-is when make judges it current and regenerate it in place when they
+        # do not, so neither compares committed bytes against a fresh build (a
+        # stale component would be reasoned over and carried into release
+        # artefacts). Runs in both CI lanes: template-qc.yml (ROBOT 1.9.7,
+        # pinned in .github/actions/setup-robot/action.yml) and qc.yml's
+        # integration_test (ROBOT 1.9.8 in the ODK image). Both produce
+        # byte-identical output for this template. If a future ROBOT changes
+        # the serialisation this fails as "stale" when nothing in the CSV
+        # moved -- check `robot --version` first.
         committed = REPO_ROOT / "src" / "ontology" / "components" / "bervo-src.owl"
         self.assertEqual(
             component.read_bytes(),
