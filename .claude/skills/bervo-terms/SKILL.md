@@ -194,6 +194,30 @@ apart.
 > `EcoSIM Other Names` is populated on **zero** rows. Leave it alone rather than inventing a
 > use for it.
 
+## Variables are method-agnostic (no observed/modelled split)
+
+BERVO variables name the quantity itself, not how a value was obtained (issue #78): `Air
+temperature` (`BERVO:0001370`) is the same variable whether it comes from a model
+parameter, a thermometer, or an unattributed lab notebook.
+
+- **Never mint a separate "observed", "field", or "modelled" duplicate** for a quantity
+  that already exists — map field observations (e.g. CHESS `L_2200`) and model outputs
+  (e.g. EcoSIM `tlai_day_pft`) to the same variable (`Canopy leaf area index`,
+  `BERVO:0001879`).
+- **Do not add `Observed` (`BERVO:8000483`) or a modelled qualifier to `qualifiers`** as
+  a default on variables (no `Modelled`/`Modeled`/`Simulated` term exists in
+  `bervo-src.csv`). Method and instrument provenance belong in the dataset's metadata
+  (BERVO models methods as concepts under `Method`, `BERVO:8000303`, such as `X-ray
+  diffraction` `BERVO:8000911` and `Grab sampling` `BERVO:8000970`, for datasets to
+  reference). Method-restricted variables are rare (no current BERVO variable restricts
+  the method); separately, `Gap-filled` (`BERVO:8001086`, under `Quantitative value`) is
+  a qualifier concept available for `qualifiers`/dataset use (not yet referenced on any
+  row in `bervo-src.csv`; e.g., for AmeriFlux `_F` series). `Measured wind speed`
+  (`BERVO:0001372`, named to distinguish the variable from the `Wind speed` concept
+  `BERVO:8000278`) and the four `Measurement of …` variables (`BERVO:0000683`, `BERVO:0000684`, `BERVO:0001066`, `BERVO:0001350`) are
+  label disambiguations/legacy names rather than method-restricted terms or a pattern to
+  copy.
+
 ## Reference conditions go in `contexts`
 
 A condition a value is measured or reported under goes in `contexts`. It does not go in
