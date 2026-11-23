@@ -215,9 +215,10 @@ written in a lab notebook with no context about how it was obtained.
   for AmeriFlux `_F` gap-filled series) and its complement `Observed` (`BERVO:8000483`,
   `COMO:0000462`) exist as `Concept` terms for specific qualifier/dataset needs. A
   variable restricts the method only when its definition genuinely defines a method-specific
-  quantity; `Measured wind speed` (`BERVO:0001372`) and the four `Measurement of …`
-  variables (`BERVO:0000683`, `BERVO:0000684`, `BERVO:0001066`, `BERVO:0001350`) are
-  legacy labels rather than a pattern to copy.
+  quantity; `Measured wind speed` (`BERVO:0001372`, named to distinguish the variable from
+  the `Wind speed` concept `BERVO:8000278`) and the four `Measurement of …` variables
+  (`BERVO:0000683`, `BERVO:0000684`, `BERVO:0001066`, `BERVO:0001350`) are label
+  disambiguations/legacy names rather than method-restricted terms or a pattern to copy.
 
 ## ID allocation
 

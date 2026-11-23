@@ -209,9 +209,11 @@ parameter, a thermometer, or an unattributed lab notebook.
   models methods as concepts under `Method`, `BERVO:8000303`, such as `X-ray diffraction`
   `BERVO:8000911` and `Grab sampling` `BERVO:8000970`, for datasets to reference).
   Method-restricted variables are rare (e.g., AmeriFlux `_F` / `Gap-filled`,
-  `BERVO:8001086`); `Measured wind speed` (`BERVO:0001372`) and the four `Measurement of …`
+  `BERVO:8001086`); `Measured wind speed` (`BERVO:0001372`, named to distinguish the
+  variable from the `Wind speed` concept `BERVO:8000278`) and the four `Measurement of …`
   variables (`BERVO:0000683`, `BERVO:0000684`, `BERVO:0001066`, `BERVO:0001350`) are
-  legacy labels rather than a pattern to copy.
+  label disambiguations/legacy names rather than method-restricted terms or a pattern to
+  copy.
 
 ## Reference conditions go in `contexts`
 
