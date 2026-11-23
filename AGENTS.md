@@ -262,7 +262,8 @@ and a `replaced_by` where one applies.
 `src/scripts/validate_bervo_src.py` checks what ROBOT does not. ROBOT will happily build a
 subtly broken ontology from a broken template, so run the validator first.
 
-**Errors** (fail CI): ragged rows, duplicate IDs, duplicate labels (case-insensitive),
+**Errors** (fail CI): ragged rows, duplicate IDs, duplicate labels (case-insensitive and
+normalised for whitespace/punctuation),
 malformed IDs, missing labels, unrecognised `Type`, references to terms that do not exist,
 `Category`/`Parents` values that resolve to neither an ID nor a label, `DbXrefs` values
 that are not CURIE-shaped, `NA` (or `N/A`, `none`, in any capitalisation) in a term-reference column,

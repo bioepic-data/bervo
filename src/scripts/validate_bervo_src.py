@@ -313,6 +313,8 @@ def validate(path: Path, *, verbose: bool = False) -> Report:
     # --- Pass 1: shape, identity, and the term index the later passes need. ---
     ids: dict[str, int] = {}
     labels: dict[str, int] = {}
+    # normalised label (alphanumeric only, lowercased) -> (first_line, first_label)
+    norm_labels: dict[str, tuple[int, str]] = {}
     known_labels: set[str] = set()
     # casefolded label -> canonical spelling, for "did you mean" hints.
     folded_labels: dict[str, str] = {}
@@ -368,10 +370,21 @@ def validate(path: Path, *, verbose: bool = False) -> Report:
             report.error(line, f"{term_id or '<no ID>'} has no label")
         else:
             key = label.casefold()
+            norm_key = re.sub(r"[^a-z0-9]", "", label.lower())
             if key in labels:
                 report.error(line, f"duplicate label {label!r} (first seen on row {labels[key]})")
             else:
                 labels[key] = line
+                if norm_key:
+                    if norm_key in norm_labels:
+                        first_line, first_label = norm_labels[norm_key]
+                        report.error(
+                            line,
+                            f"normalised duplicate label {label!r} collides with "
+                            f"{first_label!r} (first seen on row {first_line})",
+                        )
+                    else:
+                        norm_labels[norm_key] = (line, label)
             known_labels.add(label)
             folded_labels.setdefault(key, label)
             if term_id:
