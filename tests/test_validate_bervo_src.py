@@ -650,6 +650,25 @@ class TestRealTemplate(unittest.TestCase):
         report = validator.validate(REPO_ROOT / "src" / "ontology" / "bervo-src.csv")
         self.assertEqual([w for w in report.warnings if "measurement_ofs" in w and "name" in w], [])
 
+    def test_repository_self_reference_backlog_counts_are_pinned(self):
+        """Pin pre-existing self-reference counts so new ones cannot hide in the summary."""
+        from collections import Counter
+        import re
+
+        report = validator.validate(REPO_ROOT / "src" / "ontology" / "bervo-src.csv", verbose=True)
+        counts = Counter()
+        for warning in report.warnings:
+            match = re.search(r"BERVO:\w+\.(\w+) names the term itself$", warning)
+            if match:
+                counts[match.group(1)] += 1
+        expected = {"attributes": 36, "contexts": 19, "qualifiers": 15, "measured_ins": 2}
+        self.assertEqual(
+            dict(counts),
+            expected,
+            "Self-reference counts changed; clear any newly added self-reference or update "
+            "this pin deliberately if you cleaned up part of the issue #176 backlog.",
+        )
+
 
 class TestPartOf(ValidatorTestCase):
     """``part_ofs`` is a `some` restriction on the part's row (issue #201)."""
