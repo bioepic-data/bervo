@@ -264,7 +264,7 @@ directly under `Concept`. The validator warns when a filler has no subclasses at
 
 `Category` and `Parents` say a term is a **kind of** another. `part_ofs` says it is a **part
 of** another: a matric potential is one part of a total water potential, not a kind of one
-(issue #201). The column emits `C BFO:0000050 some %`, an existential restriction on RO's
+(issue #201). The column emits `C BFO:0000050 some % SPLIT=|`, an existential restriction on RO's
 `part of`, and takes the whole's label or ID. It is not a parent, so the term still needs a
 `Category`.
 
@@ -390,7 +390,7 @@ runoak -i ols:envo info ENVO:06105211
 
 ### Prefixes must be declared to resolve
 
-`DbXrefs` is declared `AI oio:hasDbXref` — the value is emitted as an **IRI**, not a string.
+`DbXrefs` is declared `AI oio:hasDbXref SPLIT=|` — the value is emitted as an **IRI**, not a string.
 ROBOT expands OBO-registered prefixes (`CHEBI`, `ENVO`, `PO`, `PATO`, `GO`, `AGRO`, …) to
 absolute IRIs automatically. Anything else is emitted as an **unexpanded CURIE**. That is
 technically an IRI whose scheme is the prefix (`notreal:`), and nothing resolves it, so it is

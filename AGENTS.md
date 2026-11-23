@@ -110,7 +110,7 @@ Columns that carry ontology semantics:
 | `Parents` | `SC % SPLIT=\|` | Additional parents |
 | `Definition` | `A IAO:0000115` | Textual definition |
 | `Type` | `TYPE` | `Class`, `owl:AnnotationProperty`, or `owl:ObjectProperty` |
-| `Exact Synonyms` / `Related Synonyms` | `A oio:hasExactSynonym` / `hasRelatedSynonym` | `SPLIT=\|` |
+| `Exact Synonyms` / `Related Synonyms` | `A oio:hasExactSynonym SPLIT=\|` / `A oio:hasRelatedSynonym SPLIT=\|` | Multi-valued synonyms |
 | `has_units`, `qualifiers`, `attributes`, `measured_ins`, `measurement_ofs`, `contexts`, `value_types` | `A`/`AI BERVO:…` | References to other BERVO terms, `SPLIT=\|` |
 | `involves_chemicals` | `C BERVO:involves_chemicals some % SPLIT=\|` | An OWL **existential restriction**, not an annotation. Each filler must name a class; `NA` is an error, so leave it empty when it does not apply. See "Variables that involve a set of chemicals" in the `bervo-terms` skill. |
 | `part_ofs` | `C BFO:0000050 some % SPLIT=\|` | Also an **existential restriction**: the term is part of some instance of each filler, which names the whole. Filled on the part's row, so a part may be absent from a given whole. See "Parts and wholes" in the `bervo-terms` skill. |
