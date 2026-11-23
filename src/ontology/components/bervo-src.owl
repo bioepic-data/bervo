@@ -20043,6 +20043,7 @@
         <obo:IAO_0000115>FracSurfByLitR refers to the proportion of the soil surface that is covered by surface litter. Surface litter refers to the layer of fallen leaves, twigs, bark, and other organic material that covers the soil surface. It plays a crucial role in the nutrient cycling processes in ecosystems, providing a source of nutrients and organic matter to the soil below and offering protection against soil erosion.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>FracSurfByLitR_col</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Part of the unvegetated fraction (Unvegetated cover, BERVO:0001975), not a complement of it or of Fractional vegetation cover (BERVO:0001883).</rdfs:comment>
         <rdfs:comment>SurfLitterDataType.txt</rdfs:comment>
         <rdfs:label>Fraction of soil surface covered by surface litter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
@@ -33722,7 +33723,7 @@
         <obo:IAO_0000115>Fraction of a horizontal ground area covered by wrack.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://vocabulary.odm2.org/variablename/wrackCoverage"/>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Sep 24 2026), ODM2 variable name alignment for issue #66, slice 3</rdfs:comment>
-        <rdfs:comment>ODM2 variable name concept &quot;Wrack coverage&quot;: Areal coverage of dead vegetation.</rdfs:comment>
+        <rdfs:comment>ODM2 variable name concept &quot;Wrack coverage&quot;: Areal coverage of dead vegetation. Part of the unvegetated fraction (Unvegetated cover, BERVO:0001975), not a complement of it or of Fractional vegetation cover (BERVO:0001883).</rdfs:comment>
         <rdfs:label>Wrack cover</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000247"/>
         <bervo:BERVO_has_unit>1</bervo:BERVO_has_unit>
