@@ -36,6 +36,8 @@ jobs:
       # like a real regression.
       - name: Set up ROBOT
         uses: ./.github/actions/setup-robot
+        with:
+          java-args: -Xmx8G
 
       - name: Validate bervo-src.csv
         run: python3 src/scripts/validate_bervo_src.py
