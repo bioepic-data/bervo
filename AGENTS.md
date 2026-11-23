@@ -262,8 +262,8 @@ and a `replaced_by` where one applies.
 `src/scripts/validate_bervo_src.py` checks what ROBOT does not. ROBOT will happily build a
 subtly broken ontology from a broken template, so run the validator first.
 
-**Errors** (fail CI): ragged rows, duplicate IDs, duplicate labels (case-insensitive),
-malformed IDs, missing labels, unrecognised `Type`, references to terms that do not exist,
+**Errors** (fail CI): ragged rows, duplicate IDs, duplicate labels (case-insensitive
+and normalised for whitespace, punctuation, and diacritics), malformed IDs, missing labels, unrecognised `Type`, references to terms that do not exist,
 `Category`/`Parents` values that resolve to neither an ID nor a label, `DbXrefs` values
 that are not CURIE-shaped, `NA` (or `N/A`, `none`, in any capitalisation) in a term-reference column,
 `involves_chemicals`, `part_ofs`, `Category`, `Parents` or `DbXrefs`, an `obsolete ` label prefix that disagrees with the `obsolete`
@@ -320,8 +320,8 @@ queries that ODK runs during `make test`.
    normalises quoting.
 3. **`Category` is by label, not ID.** A typo in a category silently creates an
    unresolvable parent. The validator catches it; ROBOT does not.
-4. **Labels must be unique.** Case-insensitively. The ontology has had duplicate-label
-   bugs before.
+4. **Labels must be unique.** Case-insensitively, and after normalising whitespace,
+   punctuation, and diacritics. The ontology has had duplicate-label bugs before.
 5. **Don't touch `bervo-idranges.owl`** to make it agree with the CSV without discussing it
    — see the note under ID allocation.
 6. **Don't add release artefacts to a content PR.** `bervo-full.owl` alone is 3.5 MB.
