@@ -203,7 +203,8 @@ written in a lab notebook with no context about how it was obtained.
   `L_2200` optical-analyser column and EcoSIM's `tlai_day_pft` model output map to
   `Canopy leaf area index` (`BERVO:0001879`); instrument/model/run provenance belongs in
   the dataset's own metadata (e.g., ODM2 `MethodTypeCV` or ESS-DIVE method fields), not in
-  the BERVO term or as a default `Observed`/`Modelled` qualifier.
+  the BERVO term or as a default `Observed` or modelled qualifier (no `Modelled` term
+  exists in `bervo-src.csv`).
 - **BERVO models methods as concepts, not on variables.** `Method` (`BERVO:8000303`, 22
   descendants such as `X-ray diffraction` `BERVO:8000911` and `Grab sampling`
   `BERVO:8000970`) provides method concepts for datasets to reference in metadata;
@@ -215,7 +216,7 @@ written in a lab notebook with no context about how it was obtained.
   for AmeriFlux `_F` gap-filled series) and its complement `Observed` (`BERVO:8000483`,
   `COMO:0000462`) exist as `Concept` terms for specific qualifier/dataset needs. A
   variable restricts the method only when its definition genuinely defines a method-specific
-  quantity; `Measured wind speed` (`BERVO:0001372`, named to distinguish the variable from
+  quantity (no current BERVO variable does this); `Measured wind speed` (`BERVO:0001372`, named to distinguish the variable from
   the `Wind speed` concept `BERVO:8000278`) and the four `Measurement of …` variables
   (`BERVO:0000683`, `BERVO:0000684`, `BERVO:0001066`, `BERVO:0001350`) are label
   disambiguations/legacy names rather than method-restricted terms or a pattern to copy.

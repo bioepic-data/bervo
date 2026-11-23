@@ -204,12 +204,15 @@ parameter, a thermometer, or an unattributed lab notebook.
   that already exists — map field observations (e.g. CHESS `L_2200`) and model outputs
   (e.g. EcoSIM `tlai_day_pft`) to the same variable (`Canopy leaf area index`,
   `BERVO:0001879`).
-- **Do not add `Observed` (`BERVO:8000483`) or `Modelled` to `qualifiers`** as a default
-  on variables. Method and instrument provenance belong in the dataset's metadata (BERVO
-  models methods as concepts under `Method`, `BERVO:8000303`, such as `X-ray diffraction`
-  `BERVO:8000911` and `Grab sampling` `BERVO:8000970`, for datasets to reference).
-  Method-restricted variables are rare (e.g., AmeriFlux `_F` / `Gap-filled`,
-  `BERVO:8001086`); `Measured wind speed` (`BERVO:0001372`, named to distinguish the
+- **Do not add `Observed` (`BERVO:8000483`) or a modelled qualifier to `qualifiers`** as
+  a default on variables (no `Modelled`/`Modeled`/`Simulated` term exists in
+  `bervo-src.csv`). Method and instrument provenance belong in the dataset's metadata
+  (BERVO models methods as concepts under `Method`, `BERVO:8000303`, such as `X-ray
+  diffraction` `BERVO:8000911` and `Grab sampling` `BERVO:8000970`, for datasets to
+  reference). Method-restricted variables are rare (no current BERVO variable restricts
+  the method); separately, `Gap-filled` (`BERVO:8001086`, under `Quantitative value`) is
+  a qualifier concept that may be used in `qualifiers` (e.g., for AmeriFlux `_F`
+  series). `Measured wind speed` (`BERVO:0001372`, named to distinguish the variable from
   variable from the `Wind speed` concept `BERVO:8000278`) and the four `Measurement of …`
   variables (`BERVO:0000683`, `BERVO:0000684`, `BERVO:0001066`, `BERVO:0001350`) are
   label disambiguations/legacy names rather than method-restricted terms or a pattern to
