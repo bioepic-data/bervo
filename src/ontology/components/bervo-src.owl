@@ -18552,7 +18552,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001070 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001070">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002375"/>
         <obo:IAO_0000115>Root diameter primary axes measures the thickness of the main structural roots that develop directly from the plant stem or root crown. This morphological parameter influences water and nutrient transport capacity, mechanical support, and overall root system architecture in terrestrial vegetation models and ecosystem carbon allocation studies.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Root1stMaxRadius1_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
@@ -18570,7 +18570,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001071 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001071">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002375"/>
         <obo:IAO_0000115>Root diameter refers to the thickness of the root and root diameter secondary axes refers to the thickness of the secondary (or lateral) roots. Different species of plants have different types of roots systems and different root thicknesses. This thickness can play a significant role in the plant&apos;s ability to take up water and nutrients from the soil.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Root2ndMaxRadius1_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
@@ -19318,7 +19318,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001114 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001114">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002374"/>
         <obo:IAO_0000115>Length of primary root axes per unit of primary root carbon mass, governing primary root axis extension per unit of carbon allocated to root growth.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Root1stSpecLen_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
@@ -19335,7 +19335,7 @@
     <!-- https://w3id.org/bervo/BERVO_0001115 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001115">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002374"/>
         <obo:IAO_0000115>Length of secondary root axes per unit of secondary root carbon mass, governing lateral fine root extension per unit of carbon allocated to root growth.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>Root2ndSpecLen_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Gemini 4 Carbon through Antigravity (Nov 16 2026), from the EcoSIM source, issue #175</rdfs:comment>
@@ -40519,6 +40519,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002374 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002374">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
         <obo:IAO_0000115>Length of a root divided by its oven-dry mass.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>SRL</oboInOwl:hasExactSynonym>
@@ -40539,6 +40540,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002375 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002375">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_0002647"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
         <obo:IAO_0000115>Distance across a root segment, measured perpendicular to the long axis of the root.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Opus 5.5 through Claude Code (Oct 22 2026), from the TRY trait of the same name, TRY alignment for issue #27</rdfs:comment>
@@ -40556,6 +40558,7 @@
     <!-- https://w3id.org/bervo/BERVO_0002376 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0002376">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000010"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000016"/>
         <obo:IAO_0000115>Oven-dry mass of a root divided by its fresh volume.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>RTD</oboInOwl:hasExactSynonym>
@@ -45556,7 +45559,7 @@
         <obo:IAO_0000115>Distance across a single cylindrical plant organ or part of one, such as a stem, a branch or an internode, measured perpendicular to its long axis.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>organ diameter</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition source - Claude Code (Nov 13 2026), after Stem diameter (BERVO:0001884), TRY alignment for issue #27</rdfs:comment>
-        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 1200, 3404, 3700, 4030. Organ goes in contexts. Stem diameter (BERVO:0001884) and Petiole diameter (BERVO:0002628) are its subclasses for those organs. Where along the organ it was measured should be reported with the value.</rdfs:comment>
+        <rdfs:comment>TRY traits mapped here, with what narrows each one in contexts: 1200, 3404, 3700, 4030. Organ goes in contexts. Stem diameter (BERVO:0001884), Petiole diameter (BERVO:0002628), and Root diameter (BERVO:0002375) are its subclasses for those organs. Where along the organ it was measured should be reported with the value.</rdfs:comment>
         <rdfs:label>Plant organ diameter</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000444"/>
         <bervo:BERVO_has_unit>cm</bervo:BERVO_has_unit>
