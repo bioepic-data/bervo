@@ -19,12 +19,24 @@ import argparse
 import csv
 import re
 import sys
+import unicodedata
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_TEMPLATE = REPO_ROOT / "src" / "ontology" / "bervo-src.csv"
+
+
+def _normalise_label(label: str) -> str:
+    """Collapse case, whitespace, punctuation, and diacritics for near-duplicate detection.
+
+    Note: stripping punctuation means reaction labels differing only in ``+``/``-``
+    would collide (a known trade-off; zero such pairs exist in the template today).
+    """
+    decomposed = unicodedata.normalize("NFKD", label.casefold())
+    stripped = "".join(c for c in decomposed if not unicodedata.combining(c))
+    return re.sub(r"[\W_]+", "", stripped)
 
 # The template's first row is human-readable headers and its second row is the
 # ROBOT template string for each column. Data starts on the third row, which is
@@ -370,7 +382,7 @@ def validate(path: Path, *, verbose: bool = False) -> Report:
             report.error(line, f"{term_id or '<no ID>'} has no label")
         else:
             key = label.casefold()
-            norm_key = re.sub(r"[^a-z0-9]", "", label.lower())
+            norm_key = _normalise_label(label)
             if key in labels:
                 report.error(line, f"duplicate label {label!r} (first seen on row {labels[key]})")
             else:

@@ -75,14 +75,17 @@ class TestStructuralChecks(ValidatorTestCase):
         self.assertTrue(any("duplicate label" in e for e in report.errors), report.errors)
 
     def test_normalised_duplicate_label_is_an_error(self):
-        """Whitespace and punctuation variants like 'Dew point' / 'Dewpoint' collide (#52)."""
+        """Whitespace, punctuation, and diacritic variants collide (#52)."""
         report = validator.validate(self.write([
             ROOT,
             row("BERVO:8000504", "Dew point"),
             row("BERVO:8000554", "Dewpoint"),
             row("BERVO:0000001", "Soil-carbon"),
             row("BERVO:0000002", "Soil carbon"),
+            row("BERVO:0000003", "Köppen climate class"),
+            row("BERVO:0000004", "Koppen climate class"),
         ]))
+        self.assertEqual(len(report.errors), 3, report.errors)
         self.assertTrue(
             any("normalised duplicate label 'Dewpoint' collides with 'Dew point'" in e for e in report.errors),
             report.errors,
@@ -91,6 +94,23 @@ class TestStructuralChecks(ValidatorTestCase):
             any("normalised duplicate label 'Soil carbon' collides with 'Soil-carbon'" in e for e in report.errors),
             report.errors,
         )
+        self.assertTrue(
+            any("normalised duplicate label 'Koppen climate class' collides with 'Köppen climate class'" in e for e in report.errors),
+            report.errors,
+        )
+
+    def test_unicode_letters_obsolete_prefix_and_punctuation_only_labels(self):
+        """Greek letters stay distinct, obsolete prefix prevents collision, and empty norm_key is skipped."""
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:0000001", "α diversity"),
+            row("BERVO:0000002", "β diversity"),
+            row("BERVO:8000504", "obsolete Dew point", category="", obsolete="true"),
+            row("BERVO:8000554", "Dewpoint"),
+            row("BERVO:0000003", "---"),
+            row("BERVO:0000004", "___"),
+        ]))
+        self.assertEqual(report.errors, [], report.errors)
 
     def test_malformed_id_is_an_error(self):
         report = validator.validate(self.write([ROOT, row("BERVO:123", "Short ID")]))
