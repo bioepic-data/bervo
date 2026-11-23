@@ -11350,6 +11350,12 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0000647">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000008"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/bervo/BERVO_involves_chemicals"/>
+                <someValuesFrom rdf:resource="https://w3id.org/bervo/BERVO_8000586"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Mass of a nonstructural chemical element in a branch per unit mass of the branch&apos;s leaf and sheath carbon.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>LeafPetoNonstElmConc_brch</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
