@@ -23,7 +23,8 @@ terms BERVO added, or amended, so that the mapping resolves. It addresses
   than a controlled vocabulary, so they are not stored as synonyms.
 - CHESS measures some quantities that EcoSIM computes, such as leaf area index
   and canopy height. BERVO keeps **one term per quantity**; whether a value was
-  observed or modelled belongs to the dataset, not to the term. No observed
+  observed or modelled belongs to the dataset, not to the term (see
+  [Method-agnostic variables](contributing.md#method-agnostic-variables)). No observed
   versus modelled term pairs were added.
 - Where a CHESS variable already had a BERVO term under another name, the CHESS
   name was added as a synonym and the column names went into the comment.
