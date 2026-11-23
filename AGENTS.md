@@ -212,14 +212,16 @@ written in a lab notebook with no context about how it was obtained.
 - **Provenance columns on the row are not method restrictions.** `EcoSIM Variable Name`,
   `File Name`, and `Definition Source` record where a BERVO term was catalogued from,
   not that the term applies only to model runs.
-- **Explicit method/estimation terms are rare exceptions.** `Gap-filled` (`BERVO:8001086`,
-  for AmeriFlux `_F` gap-filled series) and its complement `Observed` (`BERVO:8000483`,
-  `COMO:0000462`) exist as `Concept` terms for specific qualifier/dataset needs. A
-  variable restricts the method only when its definition genuinely defines a method-specific
-  quantity (no current BERVO variable does this); `Measured wind speed` (`BERVO:0001372`, named to distinguish the variable from
-  the `Wind speed` concept `BERVO:8000278`) and the four `Measurement of …` variables
-  (`BERVO:0000683`, `BERVO:0000684`, `BERVO:0001066`, `BERVO:0001350`) are label
-  disambiguations/legacy names rather than method-restricted terms or a pattern to copy.
+- **Explicit estimation/status concepts are available for dataset use.** `Gap-filled`
+  (`BERVO:8001086`, for AmeriFlux `_F` gap-filled series) and its complement `Observed`
+  (`BERVO:8000483`, `COMO:0000462`) exist as `Concept` terms available for
+  qualifier/dataset use (not yet referenced on any row in `bervo-src.csv`). A variable
+  restricts the method only when its definition genuinely defines a method-specific
+  quantity (no current BERVO variable does this); `Measured wind speed` (`BERVO:0001372`,
+  named to distinguish the variable from the `Wind speed` concept `BERVO:8000278`) and
+  the four `Measurement of …` variables (`BERVO:0000683`, `BERVO:0000684`,
+  `BERVO:0001066`, `BERVO:0001350`) are label disambiguations/legacy names rather than
+  method-restricted terms or a pattern to copy.
 
 ## ID allocation
 

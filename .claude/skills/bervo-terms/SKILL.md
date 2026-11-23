@@ -211,10 +211,10 @@ parameter, a thermometer, or an unattributed lab notebook.
   diffraction` `BERVO:8000911` and `Grab sampling` `BERVO:8000970`, for datasets to
   reference). Method-restricted variables are rare (no current BERVO variable restricts
   the method); separately, `Gap-filled` (`BERVO:8001086`, under `Quantitative value`) is
-  a qualifier concept that may be used in `qualifiers` (e.g., for AmeriFlux `_F`
-  series). `Measured wind speed` (`BERVO:0001372`, named to distinguish the variable from
-  variable from the `Wind speed` concept `BERVO:8000278`) and the four `Measurement of …`
-  variables (`BERVO:0000683`, `BERVO:0000684`, `BERVO:0001066`, `BERVO:0001350`) are
+  a qualifier concept available for `qualifiers`/dataset use (not yet referenced on any
+  row in `bervo-src.csv`; e.g., for AmeriFlux `_F` series). `Measured wind speed`
+  (`BERVO:0001372`, named to distinguish the variable from the `Wind speed` concept
+  `BERVO:8000278`) and the four `Measurement of …` variables (`BERVO:0000683`, `BERVO:0000684`, `BERVO:0001066`, `BERVO:0001350`) are
   label disambiguations/legacy names rather than method-restricted terms or a pattern to
   copy.
 
