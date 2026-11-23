@@ -190,6 +190,29 @@ Conventions:
 - The file uses **CRLF** line endings. Preserve them; a whole-file re-encoding turns a
   three-row change into a 2,000-row diff and destroys `git blame`.
 
+### Variables are method-agnostic
+
+**BERVO variables are method-agnostic unless stated otherwise** (settled in issue #78). A
+variable term names the physical, chemical, or biological quantity itself — not how a
+value was obtained. `Air temperature` (`BERVO:0001370`) refers to the same variable
+whether it is a parameter in a model, a direct observation from a thermometer, or a value
+written in a lab notebook with no context about how it was obtained.
+
+- **Do not split variables by observation vs. model provenance.** Field campaigns,
+  models, and lab datasets map onto the same variable term. For example, both CHESS's
+  `L_2200` optical-analyser column and EcoSIM's `tlai_day_pft` model output map to
+  `Canopy leaf area index` (`BERVO:0001879`); instrument/model/run provenance belongs in
+  the dataset's own metadata (e.g., ODM2 `methodType` or ESS-DIVE method fields), not in
+  the BERVO term or as a default `Observed`/`Modelled` qualifier.
+- **Provenance columns on the row are not method restrictions.** `EcoSIM Variable Name`,
+  `File Name`, and `Definition Source` record where a BERVO term was catalogued from,
+  not that the term applies only to model runs.
+- **Explicit method/estimation terms are the exception.** `Observed` (`BERVO:8000483`,
+  `COMO:0000462`) and `Gap-filled` (`BERVO:8001086`) exist as `Concept` terms for
+  specific qualifier/dataset needs (such as AmeriFlux `_F` gap-filled series), and a
+  variable carries a method or observation restriction only when its label and definition
+  explicitly state one (e.g., `Measured wind speed`, `BERVO:0001372`).
+
 ## ID allocation
 
 Numeric IDs are 7 digits, allocated in blocks by term kind:

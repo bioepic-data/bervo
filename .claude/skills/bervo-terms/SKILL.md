@@ -194,6 +194,21 @@ apart.
 > `EcoSIM Other Names` is populated on **zero** rows. Leave it alone rather than inventing a
 > use for it.
 
+## Variables are method-agnostic (no observed/modelled split)
+
+BERVO variables name the quantity itself, not how a value was obtained (issue #78): `Air
+temperature` (`BERVO:0001370`) is the same variable whether it comes from a model
+parameter, a thermometer, or an unattributed lab notebook.
+
+- **Never mint a separate "observed", "field", or "modelled" duplicate** for a quantity
+  that already exists — map field observations (e.g. CHESS `L_2200`) and model outputs
+  (e.g. EcoSIM `tlai_day_pft`) to the same variable (`Canopy leaf area index`,
+  `BERVO:0001879`).
+- **Do not add `Observed` (`BERVO:8000483`) or `Modelled` to `qualifiers`** as a default
+  on variables. Method and instrument provenance belong in the dataset's metadata unless
+  the term itself explicitly restricts the method (e.g., `Measured wind speed`,
+  `BERVO:0001372`, or AmeriFlux `_F` / `Gap-filled`, `BERVO:8001086`).
+
 ## Reference conditions go in `contexts`
 
 A condition a value is measured or reported under goes in `contexts`. It does not go in

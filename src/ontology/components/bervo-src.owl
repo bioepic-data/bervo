@@ -212,7 +212,7 @@
         <rdfs:comment>Definition Curated</rdfs:comment>
         <rdfs:comment>Definition source - Manual (JHC, Sep 25 2025)</rdfs:comment>
         <rdfs:comment>Group Curated</rdfs:comment>
-        <rdfs:comment>root class of ontology</rdfs:comment>
+        <rdfs:comment>Root class of ontology. BERVO variables are method-agnostic unless stated otherwise: a variable names the quantity itself whether it is a model parameter, a direct observation, or an unattributed measurement.</rdfs:comment>
         <rdfs:label>Variable</rdfs:label>
         <bervo:BERVO_has_unit>NA</bervo:BERVO_has_unit>
     </Class>
