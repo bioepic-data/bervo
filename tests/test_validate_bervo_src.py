@@ -213,6 +213,7 @@ class TestReferentialIntegrity(ValidatorTestCase):
             ROOT,
             row("BERVO:8000001", "Phosphorus", category="Variable", measurement_ofs="Phosphorus"),
             row("BERVO:8000002", "Flux", category="Variable", attributes="BERVO:8000002"),
+            row("BERVO:0000001", "Soil phosphorus", measurement_ofs="Phosphorus", attributes="Flux"),
         ]))
         self.assertEqual(report.errors, [])
         self.assertTrue(
@@ -223,6 +224,23 @@ class TestReferentialIntegrity(ValidatorTestCase):
             any("BERVO:8000002.attributes names the term itself" in w for w in report.warnings),
             report.warnings,
         )
+        self.assertFalse(
+            any("BERVO:0000001" in w and "names the term itself" in w for w in report.warnings),
+            report.warnings,
+        )
+
+    def test_multiple_self_references_in_one_column_are_summarised(self):
+        rows = [
+            ROOT,
+            row("BERVO:8000001", "Phosphorus", category="Variable", measurement_ofs="Phosphorus"),
+            row("BERVO:8000002", "Nitrogen", category="Variable", measurement_ofs="Nitrogen"),
+        ]
+        summary = validator.validate(self.write(rows))
+        self.assertEqual(len([w for w in summary.warnings if "measurement_ofs" in w]), 1, summary.warnings)
+        self.assertTrue(any("2 row(s) name themselves in measurement_ofs" in w for w in summary.warnings))
+
+        verbose = validator.validate(self.write(rows), verbose=True)
+        self.assertEqual(len([w for w in verbose.warnings if "measurement_ofs names the term itself" in w]), 2)
 
     def test_orphan_class_warns_but_does_not_fail(self):
         report = validator.validate(self.write([ROOT, row("BERVO:8000001", "Loose concept", category="")]))
@@ -630,7 +648,7 @@ class TestRealTemplate(unittest.TestCase):
     def test_repository_measurement_ofs_do_not_name_themselves(self):
         """Cleared in issue #176; keep measurement_ofs free of self-references."""
         report = validator.validate(REPO_ROOT / "src" / "ontology" / "bervo-src.csv")
-        self.assertEqual([w for w in report.warnings if ".measurement_ofs names the term itself" in w], [])
+        self.assertEqual([w for w in report.warnings if "measurement_ofs" in w and "name" in w], [])
 
 
 class TestPartOf(ValidatorTestCase):
