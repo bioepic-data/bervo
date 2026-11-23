@@ -93,11 +93,15 @@ Errors always block. Warnings need a judgement call:
 | `has no Type` | Set `Class` unless it is a property. |
 | `has no Category and no Parents` | Give it a parent unless it is one of the two roots (`Variable`, `Concept`) or a property. |
 | `ID … outside the allocated blocks` | You allocated by hand. Use `just next-id`. |
+| `<id>.<column> names the term itself` / `N row(s) name themselves in <column>` | Clear self-references you introduced; for pre-existing concept rows in `attributes`, `contexts`, `qualifiers`, or `measured_ins`, check with a curator first. |
 
-There is a known backlog of unresolvable-label warnings in `qualifiers`,
-`measurement_ofs`, and `contexts`. Do not bulk-fix them as a side effect of an
-unrelated task — they need curator judgement about whether the target term should
-exist. Fix only the ones your change touches.
+There is a known backlog of 72 self-referential concept cells across `attributes` (36),
+`contexts` (19), `qualifiers` (15), and `measured_ins` (2) left after issue #176 cleared
+`measurement_ofs` (summarised as one warning per column; run
+`python3 src/scripts/validate_bervo_src.py --verbose` to list all). Do not bulk-fix them
+as a side effect of an unrelated task — they need curator judgement about whether each
+concept was meant to mark itself as usable in that role. Fix only the ones your change
+touches.
 
 ## EcoSIM provenance
 

@@ -290,7 +290,7 @@ def read_template(path: Path) -> tuple[list[str], list[str], list[list[str]]]:
     return rows[0], rows[1], rows[2:]
 
 
-def validate(path: Path) -> Report:
+def validate(path: Path, *, verbose: bool = False) -> Report:
     report = Report()
     header, types, data = read_template(path)
     width = len(header)
@@ -409,6 +409,8 @@ def validate(path: Path) -> Report:
     xref_prefixes: Counter = Counter()
     # (column, filler) -> rows carrying it, for the inert-filler check below.
     fillers: dict[tuple[str, str], list[int]] = defaultdict(list)
+    # column -> [(line, term_id), ...] for self-referential relationship cells.
+    self_refs: dict[str, list[tuple[int, str]]] = defaultdict(list)
     part_edges: dict[str, list[str]] = defaultdict(list)
     part_lines: dict[str, int] = {}
     parent_edges: dict[str, list[str]] = defaultdict(list)
@@ -434,6 +436,8 @@ def validate(path: Path) -> Report:
                         f"{term_id}.{column} cannot be {token!r}; leave it empty instead",
                     )
                     continue
+                if token in (term_id, cell(row, label_col)):
+                    self_refs[column].append((line, term_id))
                 if column != REPLACED_BY_COLUMN:
                     relationships.append(column)
                 if token in obsolete_terms:
@@ -625,6 +629,20 @@ def validate(path: Path) -> Report:
                 f"--add-prefix in src/ontology/bervo.Makefile.",
             )
 
+    # One summary warning per column when a backlog exists so per-row noise
+    # does not bury new warnings; pass --verbose for per-row detail.
+    for column, entries in sorted(self_refs.items()):
+        if verbose or len(entries) == 1:
+            for line, term_id in entries:
+                report.warn(line, f"{term_id}.{column} names the term itself")
+        else:
+            first_line, first_id = entries[0]
+            report.warn(
+                first_line,
+                f"{len(entries)} row(s) name themselves in {column} "
+                f"(first: {first_id}; pass --verbose to list all)",
+            )
+
     return report
 
 
@@ -670,6 +688,8 @@ def main(argv: list[str] | None = None) -> int:
                         help="treat warnings as errors")
     parser.add_argument("--quiet", action="store_true",
                         help="print only the summary line")
+    parser.add_argument("--verbose", action="store_true",
+                        help="list every per-row self-reference warning")
     args = parser.parse_args(argv)
 
     if not args.template.exists():
@@ -681,7 +701,7 @@ def main(argv: list[str] | None = None) -> int:
         print(f"fixed row width on {changed} row(s)")
 
     try:
-        report = validate(args.template)
+        report = validate(args.template, verbose=args.verbose)
     except ValueError as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 2

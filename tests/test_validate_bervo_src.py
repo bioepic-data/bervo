@@ -208,6 +208,40 @@ class TestReferentialIntegrity(ValidatorTestCase):
             "unit literals must never be reported as unresolved term references",
         )
 
+    def test_self_referential_relationship_warns(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "Phosphorus", category="Variable", measurement_ofs="Phosphorus"),
+            row("BERVO:8000002", "Flux", category="Variable", attributes="BERVO:8000002"),
+            row("BERVO:0000001", "Soil phosphorus", measurement_ofs="Phosphorus", attributes="Flux"),
+        ]))
+        self.assertEqual(report.errors, [])
+        self.assertTrue(
+            any("BERVO:8000001.measurement_ofs names the term itself" in w for w in report.warnings),
+            report.warnings,
+        )
+        self.assertTrue(
+            any("BERVO:8000002.attributes names the term itself" in w for w in report.warnings),
+            report.warnings,
+        )
+        self.assertFalse(
+            any("BERVO:0000001" in w and "names the term itself" in w for w in report.warnings),
+            report.warnings,
+        )
+
+    def test_multiple_self_references_in_one_column_are_summarised(self):
+        rows = [
+            ROOT,
+            row("BERVO:8000001", "Phosphorus", category="Variable", measurement_ofs="Phosphorus"),
+            row("BERVO:8000002", "Nitrogen", category="Variable", measurement_ofs="Nitrogen"),
+        ]
+        summary = validator.validate(self.write(rows))
+        self.assertEqual(len([w for w in summary.warnings if "measurement_ofs" in w]), 1, summary.warnings)
+        self.assertTrue(any("2 row(s) name themselves in measurement_ofs" in w for w in summary.warnings))
+
+        verbose = validator.validate(self.write(rows), verbose=True)
+        self.assertEqual(len([w for w in verbose.warnings if "measurement_ofs names the term itself" in w]), 2)
+
     def test_orphan_class_warns_but_does_not_fail(self):
         report = validator.validate(self.write([ROOT, row("BERVO:8000001", "Loose concept", category="")]))
         self.assertEqual(report.errors, [])
@@ -610,6 +644,30 @@ class TestRealTemplate(unittest.TestCase):
         """A warning fails nothing, so hold the checked-in template to it here (issue #201)."""
         report = validator.validate(REPO_ROOT / "src" / "ontology" / "bervo-src.csv")
         self.assertEqual([w for w in report.warnings if "a kind or a part" in w], [])
+
+    def test_repository_measurement_ofs_do_not_name_themselves(self):
+        """Cleared in issue #176; keep measurement_ofs free of self-references."""
+        report = validator.validate(REPO_ROOT / "src" / "ontology" / "bervo-src.csv")
+        self.assertEqual([w for w in report.warnings if "measurement_ofs" in w and "name" in w], [])
+
+    def test_repository_self_reference_backlog_counts_are_pinned(self):
+        """Pin pre-existing self-reference counts so new ones cannot hide in the summary."""
+        from collections import Counter
+        import re
+
+        report = validator.validate(REPO_ROOT / "src" / "ontology" / "bervo-src.csv", verbose=True)
+        counts = Counter()
+        for warning in report.warnings:
+            match = re.search(r"BERVO:\w+\.(\w+) names the term itself$", warning)
+            if match:
+                counts[match.group(1)] += 1
+        expected = {"attributes": 36, "contexts": 19, "qualifiers": 15, "measured_ins": 2}
+        self.assertEqual(
+            dict(counts),
+            expected,
+            "Self-reference counts changed; clear any newly added self-reference or update "
+            "this pin deliberately if you cleaned up part of the issue #176 backlog.",
+        )
 
 
 class TestPartOf(ValidatorTestCase):

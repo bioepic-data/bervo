@@ -272,7 +272,9 @@ obsolete term, a restriction filler that names its own term, and a cycle in `par
 
 **Warnings** (do not fail CI): missing `Type`, IDs outside the allocated blocks, orphan
 classes with no parent, mixed `Class`/`owl:Class` spelling, unresolvable relationship
-labels, annotation cells that reference an obsolete term, a `replaced_by` that points at
+labels, annotation cells that reference an obsolete term, relationship cells that name
+the term's own ID or label (summarised once per column when multiple rows match; run
+`python3 src/scripts/validate_bervo_src.py --verbose` for per-row detail), a `replaced_by` that points at
 another obsolete term, obsolete rows that still carry a parent, relationships or an
 `involves_chemicals` or `part_ofs` filler, an `involves_chemicals` filler with no subclasses (the
 restriction then generalises nothing; reported once per filler), a `part_ofs` filler that
