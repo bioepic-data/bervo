@@ -436,6 +436,8 @@ def validate(path: Path) -> Report:
                     continue
                 if column != REPLACED_BY_COLUMN:
                     relationships.append(column)
+                    if token in (term_id, cell(row, label_col)):
+                        report.warn(line, f"{term_id}.{column} names the term itself")
                 if token in obsolete_terms:
                     if column == REPLACED_BY_COLUMN:
                         report.warn(

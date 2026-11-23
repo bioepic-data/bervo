@@ -208,6 +208,22 @@ class TestReferentialIntegrity(ValidatorTestCase):
             "unit literals must never be reported as unresolved term references",
         )
 
+    def test_self_referential_relationship_warns(self):
+        report = validator.validate(self.write([
+            ROOT,
+            row("BERVO:8000001", "Phosphorus", category="Variable", measurement_ofs="Phosphorus"),
+            row("BERVO:8000002", "Flux", category="Variable", attributes="BERVO:8000002"),
+        ]))
+        self.assertEqual(report.errors, [])
+        self.assertTrue(
+            any("BERVO:8000001.measurement_ofs names the term itself" in w for w in report.warnings),
+            report.warnings,
+        )
+        self.assertTrue(
+            any("BERVO:8000002.attributes names the term itself" in w for w in report.warnings),
+            report.warnings,
+        )
+
     def test_orphan_class_warns_but_does_not_fail(self):
         report = validator.validate(self.write([ROOT, row("BERVO:8000001", "Loose concept", category="")]))
         self.assertEqual(report.errors, [])
@@ -610,6 +626,11 @@ class TestRealTemplate(unittest.TestCase):
         """A warning fails nothing, so hold the checked-in template to it here (issue #201)."""
         report = validator.validate(REPO_ROOT / "src" / "ontology" / "bervo-src.csv")
         self.assertEqual([w for w in report.warnings if "a kind or a part" in w], [])
+
+    def test_repository_measurement_ofs_do_not_name_themselves(self):
+        """Cleared in issue #176; keep measurement_ofs free of self-references."""
+        report = validator.validate(REPO_ROOT / "src" / "ontology" / "bervo-src.csv")
+        self.assertEqual([w for w in report.warnings if ".measurement_ofs names the term itself" in w], [])
 
 
 class TestPartOf(ValidatorTestCase):
