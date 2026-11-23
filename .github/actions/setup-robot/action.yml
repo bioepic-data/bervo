@@ -14,6 +14,10 @@ inputs:
     description: Temurin JDK version (ROBOT needs 11 or newer)
     required: false
     default: '17'
+  java-args:
+    description: Optional JVM arguments exported as ROBOT_JAVA_ARGS (e.g. -Xmx8G)
+    required: false
+    default: ''
 
 runs:
   using: composite
@@ -46,18 +50,23 @@ runs:
 
     - name: Install wrapper on PATH
       shell: bash
+      env:
+        INPUT_JAVA_ARGS: ${{ inputs.java-args }}
       run: |
         set -euo pipefail
         # Mirrors the wrapper shipped with ROBOT, which passes ROBOT_JAVA_ARGS
-        # through so a caller can raise the heap. Nothing in this repo sets it
-        # today -- qc.yml passes ROBOT_ENV as a make variable that the ODK
-        # Makefile never references, so that heap raise is inert (issue #49) --
-        # but matching upstream costs nothing and keeps the escape hatch open.
+        # through so a caller can raise the heap via the java-args input; qc.yml
+        # sets its own -Xmx8G for the ODK container.
         # The jar path is resolved now, not at call time: make and the test
         # suite may invoke robot from a different HOME than this step has.
         printf '#!/bin/sh\nexec java $ROBOT_JAVA_ARGS -jar "%s/.robot/robot.jar" "$@"\n' "$HOME" \
           | sudo tee /usr/local/bin/robot >/dev/null
         sudo chmod +x /usr/local/bin/robot
+        # Export to $GITHUB_ENV (not step env) so ROBOT_JAVA_ARGS persists for
+        # subsequent job steps (e.g. pytest / make) that invoke robot.
+        if [ -n "$INPUT_JAVA_ARGS" ]; then
+          echo "ROBOT_JAVA_ARGS=$INPUT_JAVA_ARGS" >> "$GITHUB_ENV"
+        fi
 
     - name: Verify
       shell: bash
