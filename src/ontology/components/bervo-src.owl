@@ -48651,7 +48651,6 @@
     <!-- https://w3id.org/bervo/BERVO_8000147 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000147">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000544"/>
         <obo:IAO_0000115>The amount of thermal energy needed to raise the temperature of a substance by one degree, controlling how materials respond to temperature changes. This property affects thermal buffering, temperature regulation, heat storage, and energy balance processes that influence ecosystem functioning and climate dynamics.</obo:IAO_0000115>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)</rdfs:comment>
@@ -50365,7 +50364,6 @@
     <!-- https://w3id.org/bervo/BERVO_8000273 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000273">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000531"/>
         <obo:IAO_0000115>The rate of thermal energy transfer per unit area across a surface or interface, typically measured in watts per square meter. This concept is fundamental for understanding energy balance, temperature regulation, and thermal processes in atmospheric, terrestrial, and aquatic environmental systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/COMO_0000535"/>
@@ -50577,7 +50575,6 @@
     <!-- https://w3id.org/bervo/BERVO_8000287 -->
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_8000287">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000092"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_8000126"/>
         <obo:IAO_0000115>The total amount of thermal energy contained within a system that can be released or absorbed during physical or chemical processes at constant pressure. This property controls phase transitions, chemical reaction rates, and energy balance processes that influence ecosystem functioning and environmental dynamics in terrestrial and aquatic systems.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/COMO_0000533"/>
