@@ -202,16 +202,22 @@ written in a lab notebook with no context about how it was obtained.
   models, and lab datasets map onto the same variable term. For example, both CHESS's
   `L_2200` optical-analyser column and EcoSIM's `tlai_day_pft` model output map to
   `Canopy leaf area index` (`BERVO:0001879`); instrument/model/run provenance belongs in
-  the dataset's own metadata (e.g., ODM2 `methodType` or ESS-DIVE method fields), not in
+  the dataset's own metadata (e.g., ODM2 `MethodTypeCV` or ESS-DIVE method fields), not in
   the BERVO term or as a default `Observed`/`Modelled` qualifier.
+- **BERVO models methods as concepts, not on variables.** `Method` (`BERVO:8000303`, 22
+  descendants such as `X-ray diffraction` `BERVO:8000911` and `Grab sampling`
+  `BERVO:8000970`) provides method concepts for datasets to reference in metadata;
+  variables are never restricted by them.
 - **Provenance columns on the row are not method restrictions.** `EcoSIM Variable Name`,
   `File Name`, and `Definition Source` record where a BERVO term was catalogued from,
   not that the term applies only to model runs.
-- **Explicit method/estimation terms are the exception.** `Observed` (`BERVO:8000483`,
-  `COMO:0000462`) and `Gap-filled` (`BERVO:8001086`) exist as `Concept` terms for
-  specific qualifier/dataset needs (such as AmeriFlux `_F` gap-filled series), and a
-  variable carries a method or observation restriction only when its label and definition
-  explicitly state one (e.g., `Measured wind speed`, `BERVO:0001372`).
+- **Explicit method/estimation terms are rare exceptions.** `Gap-filled` (`BERVO:8001086`,
+  for AmeriFlux `_F` gap-filled series) and its complement `Observed` (`BERVO:8000483`,
+  `COMO:0000462`) exist as `Concept` terms for specific qualifier/dataset needs. A
+  variable restricts the method only when its definition genuinely defines a method-specific
+  quantity; `Measured wind speed` (`BERVO:0001372`) and the four `Measurement of …`
+  variables (`BERVO:0000683`, `BERVO:0000684`, `BERVO:0001066`, `BERVO:0001350`) are
+  legacy labels rather than a pattern to copy.
 
 ## ID allocation
 

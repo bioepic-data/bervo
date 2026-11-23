@@ -205,9 +205,13 @@ parameter, a thermometer, or an unattributed lab notebook.
   (e.g. EcoSIM `tlai_day_pft`) to the same variable (`Canopy leaf area index`,
   `BERVO:0001879`).
 - **Do not add `Observed` (`BERVO:8000483`) or `Modelled` to `qualifiers`** as a default
-  on variables. Method and instrument provenance belong in the dataset's metadata unless
-  the term itself explicitly restricts the method (e.g., `Measured wind speed`,
-  `BERVO:0001372`, or AmeriFlux `_F` / `Gap-filled`, `BERVO:8001086`).
+  on variables. Method and instrument provenance belong in the dataset's metadata (BERVO
+  models methods as concepts under `Method`, `BERVO:8000303`, such as `X-ray diffraction`
+  `BERVO:8000911` and `Grab sampling` `BERVO:8000970`, for datasets to reference).
+  Method-restricted variables are rare (e.g., AmeriFlux `_F` / `Gap-filled`,
+  `BERVO:8001086`); `Measured wind speed` (`BERVO:0001372`) and the four `Measurement of …`
+  variables (`BERVO:0000683`, `BERVO:0000684`, `BERVO:0001066`, `BERVO:0001350`) are
+  legacy labels rather than a pattern to copy.
 
 ## Reference conditions go in `contexts`
 
