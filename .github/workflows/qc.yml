@@ -29,7 +29,8 @@ jobs:
       - name: Run ontology QC checks
         env:
           DEFAULT_BRANCH: main
-        run: cd src/ontology && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' test IMP=false PAT=false MIR=false
+          ROBOT_JAVA_ARGS: -Xmx6G
+        run: cd src/ontology && make test IMP=false PAT=false MIR=false
 
       - name: Run BERVO integration tests
         run: cd src/ontology && make integration_test
