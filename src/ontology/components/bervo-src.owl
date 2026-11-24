@@ -21202,14 +21202,18 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001214">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000018"/>
-        <obo:IAO_0000115>Stoichiometric mass ratio of organic carbon oxidized (from CH2O) to nitrate nitrogen reduced to nitrite by denitrifying bacteria during anaerobic respiration (12/28 g C per g N, from 2 NO3- + CH2O -&gt; 2 NO2- + CO2 + H2O).</obo:IAO_0000115>
+        <obo:IAO_0000115>Stoichiometric mass ratio of organic carbon oxidized to nitrate nitrogen reduced to nitrite by denitrifying bacteria during anaerobic respiration.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>eQNO3toOxy</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025); rewritten by Gemini 4 Hydrogen through Antigravity (Nov 24 2026), from EcoSIM DenitrifierMod.F90 (c5e0ae6), issue #177</rdfs:comment>
+        <rdfs:comment>EcoSIM (DenitrifierMod.F90, c5e0ae6) sets eQNO3toOxy = 12/28 g{C}.g-1{N} from 2 NO3- + CH2O -&gt; 2 NO2- + CO2 + H2O.</rdfs:comment>
         <rdfs:comment>NitroPars.txt</rdfs:comment>
         <rdfs:label>Carbon oxidized per nitrogen reduced, nitrate to nitrite, by denitrifiers</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_has_unit>g{C}.g-1{N}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000776"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000168"/>
     </Class>
     
 
@@ -21218,14 +21222,18 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001215">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000018"/>
-        <obo:IAO_0000115>Stoichiometric mass ratio of organic carbon oxidized (from CH2O) to nitrite nitrogen reduced to nitrous oxide by denitrifying bacteria during anaerobic respiration (12/28 g C per g N, from 2 NO2- + CH2O -&gt; N2O + CO2 + 2 OH-).</obo:IAO_0000115>
+        <obo:IAO_0000115>Stoichiometric mass ratio of organic carbon oxidized to nitrite nitrogen reduced to nitrous oxide by denitrifying bacteria during anaerobic respiration.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>eQNO2toOxy</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025); rewritten by Gemini 4 Hydrogen through Antigravity (Nov 24 2026), from EcoSIM DenitrifierMod.F90 (c5e0ae6), issue #177</rdfs:comment>
+        <rdfs:comment>EcoSIM (DenitrifierMod.F90, c5e0ae6) sets eQNO2toOxy = 12/28 g{C}.g-1{N} from 2 NO2- + CH2O -&gt; N2O + CO2 + 2 OH-.</rdfs:comment>
         <rdfs:comment>NitroPars.txt</rdfs:comment>
         <rdfs:label>Carbon oxidized per nitrogen reduced, nitrite to nitrous oxide, by denitrifiers</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_has_unit>g{C}.g-1{N}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000776"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000627"/>
     </Class>
     
 
@@ -21234,14 +21242,18 @@
 
     <Class rdf:about="https://w3id.org/bervo/BERVO_0001216">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bervo/BERVO_9000018"/>
-        <obo:IAO_0000115>Stoichiometric mass ratio of organic carbon oxidized (from CH2O) to nitrous oxide nitrogen reduced to dinitrogen by denitrifying bacteria during anaerobic respiration (12/56 g C per g N, from 2 N2O + CH2O -&gt; 2 N2 + CO2 + H2O).</obo:IAO_0000115>
+        <obo:IAO_0000115>Stoichiometric mass ratio of organic carbon oxidized to nitrous oxide nitrogen reduced to nitrogen gas by denitrifying bacteria during anaerobic respiration.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>eQN2OtoOxy</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025); rewritten by Gemini 4 Hydrogen through Antigravity (Nov 24 2026), from EcoSIM DenitrifierMod.F90 (c5e0ae6), issue #177</rdfs:comment>
+        <rdfs:comment>EcoSIM (DenitrifierMod.F90, c5e0ae6) sets eQN2OtoOxy = 12/56 g{C}.g-1{N} from 2 N2O + CH2O -&gt; 2 N2 + CO2 + H2O.</rdfs:comment>
         <rdfs:comment>NitroPars.txt</rdfs:comment>
-        <rdfs:label>Carbon oxidized per nitrogen reduced, nitrous oxide to dinitrogen, by denitrifiers</rdfs:label>
+        <rdfs:label>Carbon oxidized per nitrogen reduced, nitrous oxide to nitrogen gas, by denitrifiers</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_has_unit>g{C}.g-1{N}</bervo:BERVO_has_unit>
+        <bervo:BERVO_has_value_type rdf:resource="https://w3id.org/bervo/BERVO_8000245"/>
         <bervo:BERVO_measured_in rdf:resource="https://w3id.org/bervo/BERVO_8000776"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000017"/>
+        <bervo:BERVO_measurement_of rdf:resource="https://w3id.org/bervo/BERVO_8000075"/>
     </Class>
     
 
