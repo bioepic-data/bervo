@@ -3124,6 +3124,7 @@
         <obo:IAO_0000115>The lower boundary of stomatal resistance to carbon dioxide diffusion between leaf internal air spaces and the atmosphere. This parameter sets the maximum possible rate of carbon dioxide uptake for photosynthesis and is fundamental for modeling plant water use efficiency and carbon assimilation under varying environmental conditions.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>RCMN</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>EcoSIM&apos;s RCMN is the open-aperture lower bound on resistance to carbon dioxide diffusion, unlike RCMX / CO2CuticleResist_pft (BERVO:0000522), which is the cuticular pathway left when the stomata are shut, so measured_ins names Stomatal pore rather than Stoma.</rdfs:comment>
         <rdfs:comment>GrosubPars.txt</rdfs:comment>
         <rdfs:label>Minimum stomatal resistance to carbon dioxide</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000540"/>
@@ -9027,6 +9028,7 @@
         <oboInOwl:hasRelatedSynonym>RCS_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
+        <rdfs:comment>Keeps measured_ins = Stoma because turgor pressure acts across the whole stomatal complex rather than the stomatal pore alone.</rdfs:comment>
         <rdfs:label>Shape parameter for calculating stomatal resistance from turgor pressure</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000518"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000829"/>
