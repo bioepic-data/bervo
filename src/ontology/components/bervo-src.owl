@@ -9028,7 +9028,7 @@
         <oboInOwl:hasRelatedSynonym>RCS_pft</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CanopyDataType.txt</rdfs:comment>
         <rdfs:comment>Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 25 2025)</rdfs:comment>
-        <rdfs:comment>Keeps measured_ins = Stoma because turgor pressure acts across the whole stomatal complex rather than the stomatal pore alone.</rdfs:comment>
+        <rdfs:comment>EcoSIM applies this parameter to the turgor response of the whole stomatal complex rather than the pore alone, so measured_ins names Stoma rather than Stomatal pore.</rdfs:comment>
         <rdfs:label>Shape parameter for calculating stomatal resistance from turgor pressure</rdfs:label>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000518"/>
         <bervo:BERVO_Attribute rdf:resource="https://w3id.org/bervo/BERVO_8000829"/>
